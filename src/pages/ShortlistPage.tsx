@@ -1,0 +1,231 @@
+import { useMemo, useEffect } from 'react'
+import { useSearchParams, Link } from 'react-router-dom'
+import { useData } from '../context/DataContext'
+import { buildSlugSets, getShortlistRanked } from '../data'
+import { Badge } from '../components/ui/Badge'
+import { SearchBar } from '../components/ui/SearchBar'
+import { Pagination } from '../components/ui/Pagination'
+import { Breadcrumb } from '../components/ui/Breadcrumb'
+import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { EmptyState } from '../components/ui/EmptyState'
+import { ErrorBoundary } from '../components/ui/ErrorBoundary'
+
+export function ShortlistPage() {
+  const { data, loading } = useData()
+  const [searchParams, setSearchParams] = useSearchParams()
+
+  useEffect(() => { document.title = 'Priority Shortlist'; }, [])
+
+  const slugSets = useMemo(() => {
+    if (!data) return null
+    return buildSlugSets(data)
+  }, [data])
+
+  const query = searchParams.get('q') || ''
+  const priorityFilter = searchParams.get('priority') || ''
+  const seniorityFilter = searchParams.get('seniority') || ''
+  const sort = searchParams.get('sort') || 'rank'
+  const order = searchParams.get('order') || 'asc'
+  const page = parseInt(searchParams.get('page') || '1', 10)
+  const pageSize = 25
+
+  const entries = useMemo(() => {
+    if (!data) return []
+    let result = getShortlistRanked(data.shortlist)
+    if (query) {
+      const q = query.toLowerCase()
+      result = result.filter(e =>
+        e['Full Name'].toLowerCase().includes(q) ||
+        e['Current Company'].toLowerCase().includes(q) ||
+        e.Title.toLowerCase().includes(q)
+      )
+    }
+    if (priorityFilter) {
+      const p = priorityFilter === 'P1' ? 'P1' : priorityFilter === 'P2' ? 'P2' : 'P3'
+      result = result.filter(e => e['Recruitment Priority']?.startsWith(p))
+    }
+    if (seniorityFilter) {
+      result = result.filter(e => e.Seniority === seniorityFilter)
+    }
+    result.sort((a, b) => {
+      let cmp = 0
+      if (sort === 'rank') cmp = parseInt(a.Rank) - parseInt(b.Rank)
+      else if (sort === 'fit_score') {
+        const aProfile = data.profiles.find(p => p.name === a['Full Name'])
+        const bProfile = data.profiles.find(p => p.name === b['Full Name'])
+        cmp = (aProfile?.fit_score || 0) - (bProfile?.fit_score || 0)
+      }
+      return order === 'desc' ? -cmp : cmp
+    })
+    return result
+  }, [data, query, priorityFilter, seniorityFilter, sort, order])
+
+  const totalPages = Math.max(1, Math.ceil(entries.length / pageSize))
+  const paginated = entries.slice((page - 1) * pageSize, page * pageSize)
+
+  const seniorityOptions = useMemo(() => {
+    if (!data) return []
+    return [...new Set(data.shortlist.map(e => e.Seniority))].sort()
+  }, [data])
+
+  const priorityCounts = useMemo(() => {
+    if (!data) return { P1: 0, P2: 0, P3: 0 }
+    const counts = { P1: 0, P2: 0, P3: 0 }
+    for (const e of data.shortlist) {
+      if (e['Recruitment Priority']?.startsWith('P1')) counts.P1++
+      else if (e['Recruitment Priority']?.startsWith('P2')) counts.P2++
+      else if (e['Recruitment Priority']?.startsWith('P3')) counts.P3++
+    }
+    return counts
+  }, [data])
+
+  if (loading) return <LoadingSpinner size="lg" />
+  if (!data) return null
+
+  const getProfileSlug = (name: string): string | undefined => {
+    if (!slugSets) return undefined
+    const profile = data.profiles.find(p => p.name === name)
+    if (!profile) return undefined
+    return [...slugSets.profileSlugs.entries()].find(([, id]) => id === profile.id)?.[0]
+  }
+
+  return (
+    <ErrorBoundary>
+      <div className="page">
+        <div className="container">
+          <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Shortlist' }]} />
+
+          <div className="flex items-center justify-between mb-2">
+            <h1>Priority Shortlist ({entries.length})</h1>
+          </div>
+
+          <div className="flex items-center gap-2 mb-2 flex-wrap">
+            <SearchBar
+              value={query}
+              onChange={(val) => {
+                setSearchParams(prev => {
+                  const next = new URLSearchParams(prev)
+                  if (val) next.set('q', val); else next.delete('q')
+                  next.delete('page')
+                  return next
+                })
+              }}
+              placeholder="Search shortlist..."
+            />
+            <select
+              value={priorityFilter}
+              onChange={e => {
+                setSearchParams(prev => {
+                  const next = new URLSearchParams(prev)
+                  if (e.target.value) next.set('priority', e.target.value); else next.delete('priority')
+                  next.delete('page')
+                  return next
+                })
+              }}
+              aria-label="Filter by priority"
+              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+            >
+              <option value="">All Priority</option>
+              <option value="P1">P1 ({priorityCounts.P1})</option>
+              <option value="P2">P2 ({priorityCounts.P2})</option>
+              <option value="P3">P3 ({priorityCounts.P3})</option>
+            </select>
+            <select
+              value={seniorityFilter}
+              onChange={e => {
+                setSearchParams(prev => {
+                  const next = new URLSearchParams(prev)
+                  if (e.target.value) next.set('seniority', e.target.value); else next.delete('seniority')
+                  next.delete('page')
+                  return next
+                })
+              }}
+              aria-label="Filter by seniority"
+              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+            >
+              <option value="">All Seniority</option>
+              {seniorityOptions.map(s => <option key={s} value={s}>{s}</option>)}
+            </select>
+            <select
+              value={`${sort}-${order}`}
+              onChange={e => {
+                const [s, o] = e.target.value.split('-')
+                setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
+              }}
+              aria-label="Sort"
+              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+            >
+              <option value="rank-asc">Rank 1-50</option>
+              <option value="rank-desc">Rank 50-1</option>
+              <option value="fit_score-desc">Fit Score (high)</option>
+              <option value="fit_score-asc">Fit Score (low)</option>
+            </select>
+          </div>
+
+          {paginated.length === 0 ? (
+            <EmptyState
+              title="No entries found"
+              description={query ? `No entries matching "${query}"` : 'No entries match your filters'}
+              action={query ? { label: 'Clear search', to: '/shortlist' } : undefined}
+            />
+          ) : (
+            <>
+              <div style={{ overflowX: 'auto' }}>
+                <table className="shortlist-table">
+                  <thead>
+                    <tr>
+                      <th>Rank</th>
+                      <th>Name</th>
+                      <th>Company</th>
+                      <th>Title</th>
+                      <th>Priority</th>
+                      <th>Specialism</th>
+                      <th>Seniority</th>
+                      <th>Why Strong Fit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {paginated.map(e => {
+                      const pSlug = getProfileSlug(e['Full Name'])
+                      const priority = e['Recruitment Priority']?.startsWith('P1') ? 'P1' as const
+                        : e['Recruitment Priority']?.startsWith('P2') ? 'P2' as const
+                        : 'P3' as const
+                      return (
+                        <tr key={e.Rank}>
+                          <td style={{ fontWeight: 600 }}>#{e.Rank}</td>
+                          <td>
+                            {pSlug ? (
+                              <Link to={`/profiles/${pSlug}`}>{e['Full Name']}</Link>
+                            ) : (
+                              e['Full Name']
+                            )}
+                          </td>
+                          <td>{e['Current Company']}</td>
+                          <td style={{ maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e.Title}</td>
+                          <td><Badge text={priority} variant="priority" priority={priority} /></td>
+                          <td style={{ maxWidth: 150, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e['Credit Risk Specialism']}</td>
+                          <td>{e.Seniority}</td>
+                          <td style={{ maxWidth: 250, fontSize: '0.8rem', color: '#6b7280' }}>
+                            {e['Why Strong Fit']}
+                          </td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <Pagination
+                page={page}
+                totalPages={totalPages}
+                total={entries.length}
+                onChange={p => {
+                  setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('page', String(p)); return n })
+                }}
+              />
+            </>
+          )}
+        </div>
+      </div>
+    </ErrorBoundary>
+  )
+}
