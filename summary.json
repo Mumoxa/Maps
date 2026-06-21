@@ -1,0 +1,356 @@
+{
+  "total_profiles": 344,
+  "total_companies": 79,
+  "total_segments": 67,
+  "avg_fit_score": 8.1,
+  "confidence_split": [
+    {
+      "confidence": "High",
+      "count": 272
+    },
+    {
+      "confidence": "Medium",
+      "count": 70
+    },
+    {
+      "confidence": "Low",
+      "count": 2
+    }
+  ],
+  "seniority_distribution": [
+    {
+      "seniority": "Analyst",
+      "count": 74
+    },
+    {
+      "seniority": "Senior Analyst",
+      "count": 57
+    },
+    {
+      "seniority": "Manager",
+      "count": 70
+    },
+    {
+      "seniority": "Consultant",
+      "count": 19
+    },
+    {
+      "seniority": "Executive",
+      "count": 25
+    },
+    {
+      "seniority": "Head",
+      "count": 54
+    },
+    {
+      "seniority": "Senior Manager",
+      "count": 25
+    },
+    {
+      "seniority": "Lead / Team Lead",
+      "count": 6
+    },
+    {
+      "seniority": "Junior",
+      "count": 2
+    },
+    {
+      "seniority": "Senior Consultant",
+      "count": 2
+    },
+    {
+      "seniority": "Manager/Senior Manager",
+      "count": 2
+    },
+    {
+      "seniority": "Analyst/Senior Analyst",
+      "count": 2
+    },
+    {
+      "seniority": "Consultant/Manager",
+      "count": 1
+    },
+    {
+      "seniority": "Consultant/Academic",
+      "count": 3
+    },
+    {
+      "seniority": "Senior Manager/Head",
+      "count": 1
+    },
+    {
+      "seniority": "Manager/Senior Consultant",
+      "count": 1
+    }
+  ],
+  "segment_distribution": [
+    {
+      "name": "Retail credit",
+      "count": 35
+    },
+    {
+      "name": "Bank / unsecured lender",
+      "count": 4
+    },
+    {
+      "name": "Financial services",
+      "count": 3
+    },
+    {
+      "name": "Fintech lending / non-bank lender",
+      "count": 2
+    },
+    {
+      "name": "Analytics vendor / consulting",
+      "count": 5
+    },
+    {
+      "name": "Bank / development finance",
+      "count": 2
+    },
+    {
+      "name": "Consulting / analytics",
+      "count": 2
+    },
+    {
+      "name": "Bank",
+      "count": 116
+    },
+    {
+      "name": "Consulting",
+      "count": 30
+    },
+    {
+      "name": "Home loans / development finance",
+      "count": 1
+    },
+    {
+      "name": "Corporate credit / trade credit",
+      "count": 1
+    },
+    {
+      "name": "Credit bureau / analytics vendor",
+      "count": 1
+    },
+    {
+      "name": "Risk software / bank",
+      "count": 1
+    },
+    {
+      "name": "Corporate credit / energy",
+      "count": 1
+    },
+    {
+      "name": "Analytics / credit decisioning",
+      "count": 1
+    },
+    {
+      "name": "Bank / vehicle finance",
+      "count": 4
+    },
+    {
+      "name": "Bank / analytics",
+      "count": 1
+    },
+    {
+      "name": "Digital bank",
+      "count": 15
+    },
+    {
+      "name": "Analytics vendor / fintech",
+      "count": 1
+    },
+    {
+      "name": "Credit bureau / analytics",
+      "count": 5
+    },
+    {
+      "name": "Insurance / lending",
+      "count": 2
+    },
+    {
+      "name": "Fintech lending",
+      "count": 17
+    },
+    {
+      "name": "Unsecured lender",
+      "count": 2
+    },
+    {
+      "name": "Retail credit / analytics vendor",
+      "count": 1
+    },
+    {
+      "name": "Fintech / consulting",
+      "count": 1
+    },
+    {
+      "name": "Credit bureau",
+      "count": 3
+    },
+    {
+      "name": "Bank / financial services",
+      "count": 13
+    },
+    {
+      "name": "Digital bank / insurance",
+      "count": 3
+    },
+    {
+      "name": "Retail credit / insurance",
+      "count": 1
+    },
+    {
+      "name": "Bank / retail credit",
+      "count": 1
+    },
+    {
+      "name": "Digital bank / telecoms",
+      "count": 1
+    },
+    {
+      "name": "Vehicle finance",
+      "count": 5
+    },
+    {
+      "name": "Debt review / fintech",
+      "count": 1
+    },
+    {
+      "name": "Credit bureau / risk software",
+      "count": 1
+    },
+    {
+      "name": "Vehicle finance / asset finance",
+      "count": 1
+    },
+    {
+      "name": "Telecoms / enterprise credit",
+      "count": 1
+    },
+    {
+      "name": "Telecoms / fintech lending",
+      "count": 1
+    },
+    {
+      "name": "Retail credit / consulting",
+      "count": 1
+    },
+    {
+      "name": "Digital bank / fintech lending",
+      "count": 1
+    },
+    {
+      "name": "Bank / consulting",
+      "count": 1
+    },
+    {
+      "name": "Digital bank / consulting",
+      "count": 1
+    },
+    {
+      "name": "Bank / fintech",
+      "count": 1
+    },
+    {
+      "name": "Agricultural finance / lending",
+      "count": 1
+    },
+    {
+      "name": "Bank / commercial lending",
+      "count": 1
+    },
+    {
+      "name": "Collections / debt recovery",
+      "count": 1
+    },
+    {
+      "name": "Regulator",
+      "count": 1
+    },
+    {
+      "name": "Analytics / bank",
+      "count": 1
+    },
+    {
+      "name": "Retail credit / financial services",
+      "count": 1
+    },
+    {
+      "name": "Fintech lending / consulting",
+      "count": 1
+    },
+    {
+      "name": "Credit Bureau",
+      "count": 3
+    },
+    {
+      "name": "Analytics Consulting",
+      "count": 1
+    },
+    {
+      "name": "Retail Credit",
+      "count": 9
+    },
+    {
+      "name": "Consulting/Academic",
+      "count": 1
+    },
+    {
+      "name": "Academic/Bank",
+      "count": 1
+    },
+    {
+      "name": "Analytics / Software",
+      "count": 1
+    },
+    {
+      "name": "Academic",
+      "count": 1
+    },
+    {
+      "name": "Digital Bank",
+      "count": 1
+    },
+    {
+      "name": "Banks",
+      "count": 19
+    },
+    {
+      "name": "Investment / Credit Assessment",
+      "count": 1
+    },
+    {
+      "name": "Fintech / SME Lending",
+      "count": 1
+    },
+    {
+      "name": "Investment / Credit",
+      "count": 1
+    },
+    {
+      "name": "Vehicle Finance",
+      "count": 1
+    },
+    {
+      "name": "Retail Credit / Collections",
+      "count": 1
+    },
+    {
+      "name": "Retail credit providers",
+      "count": 1
+    },
+    {
+      "name": "Development Finance",
+      "count": 1
+    },
+    {
+      "name": "Bank / Former",
+      "count": 1
+    },
+    {
+      "name": "Retail Credit / Unsecured Lending",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+[
+  {
+    "Company": "Standard Bank Group",
+    "Segment": "Bank",
+    "Credit Risk Relevance": "Retail, Commercial, CIB, Wealth credit risk; IFRS 9; Basel; Collections",
+    "Likely Credit Risk Teams": "PBB Credit Risk, CIB Credit Risk, Group Credit Risk Assurance, Credit Portfolio Management, Collections Strategy, Impairment Modelling, Quantitative Analytics",
+    "Website / Source": "standardbank.com",
+    "Priority": "P1"
+  },
+  {
+    "Company": "FirstRand / FNB / WesBank / RMB",
+    "Segment": "Bank",
+    "Credit Risk Relevance": "Retail, Business, Vehicle Finance, Corporate credit risk; Scorecards; Decisioning",
+    "Likely Credit Risk Teams": "FNB Credit Risk, WesBank Risk, RMB Credit, FirstRand Group Risk, Credit Analytics, IFRS 9 Modelling",
+    "Website / Source": "firstrand.co.za",
+    "Priority": "P1"
+  },
+  {
+    "Company": "Absa Group",
+    "Segment": "Bank",
+    "Credit Risk Relevance": "Retail, Business, Corporate, Investment Banking credit risk; Credit Risk Quantification",
+    "Likely Credit Risk Teams": "Absa Group Credit Risk, Credit Risk Assurance, Business Bank Credit, CIB Credit, Wealth Credit, Quantitative Credit Analytics",
+    "Website / Source": "absa.africa",
+    "Priority": "P1"
+  },
+  {
+    "Company": "Nedbank",
+    "Segment": "Bank",
+    "Credit Risk Relevance": "Retail, Business, CIB, Digital credit risk; Quant Academy; Collections",
+    "Likely Credit Risk Teams": "Nedbank Credit Risk, CIB Credit Risk, Quantitative Analytics, Credit Risk Modelling, Credit Strategy, Collections",
+    "Website / Source": "nedbank.co.za",
+    "Priority": "P1"
+  },
+  {
+    "Company": "Capitec",
+    "Segment": "Bank / Digital Bank",
+    "Credit Risk Relevance": "Mass retail credit risk; affordability; credit scoring; digital decisioning; collections",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Scorecard Development, IFRS 9, Capital & Impairment Modelling, Collections Strategy",
+    "Website / Source": "capitecbank.co.za",
+    "Priority": "P1"
+  },
+  {
+    "Company": "African Bank",
+    "Segment": "Bank",
+    "Credit Risk Relevance": "Unsecured lending; credit risk; impairment; collections",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Collections Strategy, Reckless Lending Investigation, IFRS 9",
+    "Website / Source": "africanbank.co.za",
+    "Priority": "P1"
+  },
+  {
+    "Company": "Investec",
+    "Segment": "Bank / Wealth",
+    "Credit Risk Relevance": "Private Banking, Asset Management, Corporate credit risk; IFRS 9; Structured Credit",
+    "Likely Credit Risk Teams": "Credit Risk, Portfolio Management, CIB Credit, Wealth Credit Risk, Structured Credit, Asset Management Credit",
+    "Website / Source": "investec.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Discovery Bank",
+    "Segment": "Digital Bank",
+    "Credit Risk Relevance": "Health-linked banking; credit risk; life insurance integration; credit life",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Actuarial Credit, IFRS 9, Capital Modelling",
+    "Website / Source": "discovery.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "TymeBank",
+    "Segment": "Digital Bank",
+    "Credit Risk Relevance": "Mass market digital lending; credit risk; alternative data; credit scoring",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Strategy, Scorecard Development, IFRS 9, Capital Modelling, Collections",
+    "Website / Source": "tymebank.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Old Mutual Finance / OM Bank",
+    "Segment": "Finance / Insurance",
+    "Credit Risk Relevance": "Unsecured lending; credit life; retail credit; IFRS 9",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Credit Life, Collections, IFRS 9 Modelling",
+    "Website / Source": "oldmutual.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Sanlam",
+    "Segment": "Insurance / Finance",
+    "Credit Risk Relevance": "Lending partnerships; credit life; wealth management credit",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Credit Life, Actuarial Credit Risk",
+    "Website / Source": "sanlam.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "WesBank",
+    "Segment": "Vehicle Finance",
+    "Credit Risk Relevance": "Vehicle and asset finance credit risk; dealer credit; residual risk",
+    "Likely Credit Risk Teams": "Credit Risk, Vehicle Finance Risk, Asset Finance, Credit Analytics, IFRS 9, Capital Modelling",
+    "Website / Source": "wesbank.co.za",
+    "Priority": "P1"
+  },
+  {
+    "Company": "DirectAxis",
+    "Segment": "Unsecured Lender",
+    "Credit Risk Relevance": "Personal loans; credit risk; credit scoring; digital decisioning",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Scorecard Development, Collections, IFRS 9",
+    "Website / Source": "directaxis.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Bayport Financial Services",
+    "Segment": "Unsecured Lender",
+    "Credit Risk Relevance": "Personal loans; credit risk; collections; fraud",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Collections, Fraud Risk, IFRS 9",
+    "Website / Source": "bayport.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "FinChoice",
+    "Segment": "Unsecured Lender",
+    "Credit Risk Relevance": "Digital lending; credit risk; affordability; collections",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Scorecards, Collections",
+    "Website / Source": "finchoice.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Capfin",
+    "Segment": "Unsecured Lender",
+    "Credit Risk Relevance": "Retail credit; credit risk; collections",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Collections",
+    "Website / Source": "capfin.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "RCS",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Store cards; retail credit; credit risk; collections",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Scorecards, Collections",
+    "Website / Source": "rcs.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "TFG (The Foschini Group)",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Store cards; credit accounts; retail credit strategy; credit optimisation",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Strategy, Credit Analytics, Collections, IFRS 9",
+    "Website / Source": "tfg.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Truworths",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Store cards; credit risk; collections; credit life",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Collections, Credit Life",
+    "Website / Source": "truworths.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Mr Price Money",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Store cards; credit accounts; retail credit analytics",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Scorecards, Collections",
+    "Website / Source": "mrpricegroup.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Woolworths Financial Services",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Store cards; credit risk; credit analytics; collections",
+    "Likely Credit Risk Teams": "Credit Risk, Credit Analytics, Collections, Credit Life",
+    "Website / Source": "woolworths.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "HomeChoice",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Homeware retail credit; credit risk; collections; debt recovery",
+    "Likely Credit Risk Teams": "Credit Risk, Collections, Debt Recovery, Credit Analytics",
+    "Website / Source": "homechoice.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Shoprite / Money Market",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Money transfers; informal financial services; credit risk emerging",
+    "Likely Credit Risk Teams": "Emerging Credit Risk, Financial Services Risk, Compliance",
+    "Website / Source": "shoprite.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "Pepkor",
+    "Segment": "Retail Credit",
+    "Credit Risk Relevance": "Lay-bye; credit emerging; informal credit",
+    "Likely Credit Risk Teams": "Credit Risk (Emerging), Financial Services",
+    "Website / Source": "pepkor.com",
+    "Priority": "P3"
+  },
+  {
+    "Company": "SA Taxi",
+    "Segment": "Vehicle Finance",
+    "Credit Risk Relevance": "Taxi asset finance; credit risk; vehicle finance; collections",
+    "Likely Credit Risk Teams": "Credit Risk, Vehicle Finance, Asset Finance, Collections",
+    "Website / Source": "sataxi.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Transaction Capital",
+    "Segment": "Lending / Collections",
+    "Credit Risk Relevance": "Debt recovery; lending; credit risk; collections analytics",
+    "Likely Credit Risk Teams": "Credit Risk, Collections Analytics, Debt Recovery, Lending Risk",
+    "Website / Source": "transactioncapital.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Merchant Capital",
+    "Segment": "Fintech Lending",
+    "Credit Risk Relevance": "SME lending; merchant cash advances; credit risk; alternative data",
+    "Likely Credit Risk Teams": "Credit Risk, SME Credit, Alternative Data, Credit Analytics",
+    "Website / Source": "merchantcapital.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Lula / Lulalend",
+    "Segment": "Fintech Lending",
+    "Credit Risk Relevance": "SME lending; digital credit; alternative data; credit scoring",
+    "Likely Credit Risk Teams": "Credit Risk, SME Credit, Credit Analytics, Alternative Data",
+    "Website / Source": "lula.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Retail Capital",
+    "Segment": "Fintech Lending",
+    "Credit Risk Relevance": "SME lending; credit risk; alternative data",
+    "Likely Credit Risk Teams": "Credit Risk, SME Credit, Credit Analytics",
+    "Website / Source": "retailcapital.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Yoco Capital",
+    "Segment": "Fintech Lending",
+    "Credit Risk Relevance": "Merchant cash advances; SME lending; credit risk",
+    "Likely Credit Risk Teams": "Credit Risk, SME Lending, Alternative Data",
+    "Website / Source": "yoco.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "RainFin",
+    "Segment": "Fintech Lending",
+    "Credit Risk Relevance": "Marketplace lending; credit risk; alternative scoring",
+    "Likely Credit Risk Teams": "Credit Risk, Marketplace Lending, Credit Analytics",
+    "Website / Source": "rainfin.com",
+    "Priority": "P3"
+  },
+  {
+    "Company": "FASTA",
+    "Segment": "Fintech / BNPL",
+    "Credit Risk Relevance": "Digital lending; BNPL; credit risk; IFRS 9",
+    "Likely Credit Risk Teams": "Credit Risk, BNPL, Credit Analytics, IFRS 9",
+    "Website / Source": "fasta.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Payflex",
+    "Segment": "BNPL",
+    "Credit Risk Relevance": "Buy-now-pay-later; retail credit; alternative data",
+    "Likely Credit Risk Teams": "Credit Risk, BNPL, Retail Credit, Alternative Data",
+    "Website / Source": "payflex.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "PayJustNow",
+    "Segment": "BNPL",
+    "Credit Risk Relevance": "Buy-now-pay-later; credit risk; retail credit analytics",
+    "Likely Credit Risk Teams": "Credit Risk, BNPL, Credit Analytics",
+    "Website / Source": "payjustnow.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "FoneYam (Pepkor)",
+    "Segment": "BNPL",
+    "Credit Risk Relevance": "Mobile-led BNPL; alternative data; credit risk",
+    "Likely Credit Risk Teams": "Credit Risk, BNPL, Alternative Data, Retail Credit",
+    "Website / Source": "pepkor.com",
+    "Priority": "P3"
+  },
+  {
+    "Company": "TransUnion Africa",
+    "Segment": "Credit Bureau",
+    "Credit Risk Relevance": "Credit scoring; bureau analytics; decisioning; fraud; credit risk solutions",
+    "Likely Credit Risk Teams": "Credit Risk Solutions, Scorecard Development, Analytics, Fraud Risk, Product Management",
+    "Website / Source": "transunion.co.za",
+    "Priority": "P1"
+  },
+  {
+    "Company": "Experian South Africa",
+    "Segment": "Credit Bureau",
+    "Credit Risk Relevance": "Credit scoring; bureau analytics; decisioning; fraud; credit risk consulting",
+    "Likely Credit Risk Teams": "Decision Analytics, Credit Risk Modelling, Scorecard Development, Fraud",
+    "Website / Source": "experian.co.za",
+    "Priority": "P1"
+  },
+  {
+    "Company": "XDS",
+    "Segment": "Credit Bureau",
+    "Credit Risk Relevance": "Credit bureau data; trade credit; SME credit; credit risk platforms",
+    "Likely Credit Risk Teams": "Credit Bureau Analytics, Trade Credit Risk, SME Credit, Data Analytics",
+    "Website / Source": "xds.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "VeriCred (VCCB)",
+    "Segment": "Credit Bureau",
+    "Credit Risk Relevance": "Credit bureau data; consumer credit information; credit risk",
+    "Likely Credit Risk Teams": "Credit Bureau Operations, Data Analytics, Credit Risk",
+    "Website / Source": "vccb.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Consumer Profile Bureau (CPB)",
+    "Segment": "Credit Bureau",
+    "Credit Risk Relevance": "Credit reports; credit data; disputes",
+    "Likely Credit Risk Teams": "Credit Bureau Operations, Data Quality, Consumer Credit",
+    "Website / Source": "cpbonline.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Compuscan",
+    "Segment": "Credit Bureau / Data",
+    "Credit Risk Relevance": "Credit bureau data; credit scoring; credit information",
+    "Likely Credit Risk Teams": "Credit Bureau Analytics, Scorecard Development, Data Analytics",
+    "Website / Source": "compuscan.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Lightstone",
+    "Segment": "Data Provider",
+    "Credit Risk Relevance": "Property and vehicle data; credit risk data; alternative data",
+    "Likely Credit Risk Teams": "Data Analytics, Property Risk, Vehicle Risk, Credit Risk Data",
+    "Website / Source": "lightstone.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "LexisNexis Risk Solutions",
+    "Segment": "Risk Data / Analytics",
+    "Credit Risk Relevance": "Fraud; identity verification; KYC; credit risk; alternative data",
+    "Likely Credit Risk Teams": "Fraud Risk, Identity Verification, KYC, Credit Risk Analytics, Decisioning",
+    "Website / Source": "lexisnexisrisk.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "TPN Credit Bureau",
+    "Segment": "Credit Bureau",
+    "Credit Risk Relevance": "Tenant and commercial credit bureau; credit risk",
+    "Likely Credit Risk Teams": "Commercial Credit Bureau, Tenant Risk, Credit Analytics",
+    "Website / Source": "tpncreditbureau.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Cred-it-data",
+    "Segment": "Credit Bureau / Data",
+    "Credit Risk Relevance": "Multi-bureau insights; credit risk decisioning",
+    "Likely Credit Risk Teams": "Credit Bureau Data, Credit Risk Analytics, Decisioning",
+    "Website / Source": "cred-it-data.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "VVM",
+    "Segment": "Collections / Debt Recovery",
+    "Credit Risk Relevance": "Debt collection; collections analytics; dialer management; credit management",
+    "Likely Credit Risk Teams": "Collections Strategy, Collections Analytics, Operations Management, Portfolio Management",
+    "Website / Source": "vvm.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Debt Rescue SA",
+    "Segment": "Debt Review",
+    "Credit Risk Relevance": "Debt counselling; debt review; credit rehabilitation",
+    "Likely Credit Risk Teams": "Debt Review, Credit Counselling, Collections, NCA Compliance",
+    "Website / Source": "debtrescue.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "DebtBusters / IDM",
+    "Segment": "Debt Review",
+    "Credit Risk Relevance": "Debt counselling; debt management; financial consulting",
+    "Likely Credit Risk Teams": "Debt Review, Credit Counselling, Financial Consulting",
+    "Website / Source": "debtbusters.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Intelligent Debt Management",
+    "Segment": "Debt Review",
+    "Credit Risk Relevance": "Debt counselling; debt management; financial consulting",
+    "Likely Credit Risk Teams": "Debt Review, Credit Counselling, Financial Consulting",
+    "Website / Source": "idm.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Hilton-Baird Collection Services",
+    "Segment": "Collections",
+    "Credit Risk Relevance": "Debt collection; commercial collections; international collections",
+    "Likely Credit Risk Teams": "Collections, Debt Recovery, Commercial Collections",
+    "Website / Source": "hilton-baird.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Bredell Ferreira",
+    "Segment": "Collections",
+    "Credit Risk Relevance": "Debt collection; legal collections; pre-legal collections",
+    "Likely Credit Risk Teams": "Collections, Debt Recovery, Legal Collections",
+    "Website / Source": "bredellferreira.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Building Credit Management (BCM)",
+    "Segment": "Credit Risk Consulting",
+    "Credit Risk Relevance": "B2B credit management; trade credit; credit risk advisory; debt recovery",
+    "Likely Credit Risk Teams": "Credit Risk Advisory, Trade Credit, Collections, Credit Management",
+    "Website / Source": "bcmza.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Redtree Capital",
+    "Segment": "Fintech / Asset Finance",
+    "Credit Risk Relevance": "SMME asset finance; credit analysis; fintech lending",
+    "Likely Credit Risk Teams": "Credit Analysis, Asset Finance, Fintech Lending, SME Credit",
+    "Website / Source": "redtreecapital.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Revfin",
+    "Segment": "Fintech Lending",
+    "Credit Risk Relevance": "Private credit; secured lending; non-vanilla lending; credit management",
+    "Likely Credit Risk Teams": "Credit Management, Private Credit, Secured Lending, Credit Analysis",
+    "Website / Source": "revfin.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Monocle Solutions",
+    "Segment": "Consulting / Analytics",
+    "Credit Risk Relevance": "SME trade credit; analytics; credit risk platforms",
+    "Likely Credit Risk Teams": "Credit Risk Consulting, Analytics, SME Credit, Trade Credit",
+    "Website / Source": "monocle.solutions",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Deloitte South Africa",
+    "Segment": "Consulting",
+    "Credit Risk Relevance": "Credit risk; IFRS 9; Basel; model development; model validation; ESG",
+    "Likely Credit Risk Teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, ECL",
+    "Website / Source": "deloitte.com",
+    "Priority": "P1"
+  },
+  {
+    "Company": "EY South Africa",
+    "Segment": "Consulting",
+    "Credit Risk Relevance": "Credit risk; IFRS 9; Basel; model development; model validation; climate risk",
+    "Likely Credit Risk Teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, ECL",
+    "Website / Source": "ey.com",
+    "Priority": "P1"
+  },
+  {
+    "Company": "PwC South Africa",
+    "Segment": "Consulting",
+    "Credit Risk Relevance": "Credit risk; IFRS 9; Basel; model development; model validation; regulatory",
+    "Likely Credit Risk Teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, Regulatory",
+    "Website / Source": "pwc.com",
+    "Priority": "P1"
+  },
+  {
+    "Company": "KPMG South Africa",
+    "Segment": "Consulting",
+    "Credit Risk Relevance": "Credit risk; IFRS 9; Basel; model development; model validation; ESG",
+    "Likely Credit Risk Teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, ECL",
+    "Website / Source": "kpmg.com",
+    "Priority": "P1"
+  },
+  {
+    "Company": "Accenture South Africa",
+    "Segment": "Consulting / Technology",
+    "Credit Risk Relevance": "Credit risk; digital transformation; decisioning; analytics; risk technology",
+    "Likely Credit Risk Teams": "Credit Risk Consulting, Decisioning Technology, Risk Analytics, Digital Transformation",
+    "Website / Source": "accenture.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "McKinsey & Company",
+    "Segment": "Consulting",
+    "Credit Risk Relevance": "Credit risk; strategy; digital lending; analytics; risk transformation",
+    "Likely Credit Risk Teams": "Credit Risk Strategy, Digital Lending, Risk Analytics, Transformation",
+    "Website / Source": "mckinsey.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "SAS South Africa",
+    "Segment": "Analytics Software",
+    "Credit Risk Relevance": "Credit risk; scorecards; IFRS 9; analytics; fraud",
+    "Likely Credit Risk Teams": "Credit Risk Solutions, Scorecard Development, IFRS 9, Analytics, Fraud",
+    "Website / Source": "sas.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "FICO Partners",
+    "Segment": "Risk Software",
+    "Credit Risk Relevance": "Credit scoring; decision management; fraud; collections optimisation",
+    "Likely Credit Risk Teams": "Credit Scoring, Decision Management, Collections Optimisation, Fraud",
+    "Website / Source": "fico.com",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Old Mutual Insure",
+    "Segment": "Insurance",
+    "Credit Risk Relevance": "Credit life; short-term insurance; risk management; claims",
+    "Likely Credit Risk Teams": "Credit Life, Insurance Risk, Claims, Risk Management",
+    "Website / Source": "oldmutual.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Hollard Insurance",
+    "Segment": "Insurance",
+    "Credit Risk Relevance": "Credit life; short-term insurance; risk management",
+    "Likely Credit Risk Teams": "Credit Life, Insurance Risk, Risk Management",
+    "Website / Source": "hollard.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "OUTsurance",
+    "Segment": "Insurance",
+    "Credit Risk Relevance": "Credit life; short-term insurance; risk management",
+    "Likely Credit Risk Teams": "Credit Life, Insurance Risk, Risk Management",
+    "Website / Source": "outsurance.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Guardrisk",
+    "Segment": "Insurance",
+    "Credit Risk Relevance": "Cell captive; credit life; insurance risk",
+    "Likely Credit Risk Teams": "Credit Life, Cell Captive, Insurance Risk",
+    "Website / Source": "guardrisk.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Sanlam",
+    "Segment": "Insurance / Wealth",
+    "Credit Risk Relevance": "Credit life; lending; wealth management; risk",
+    "Likely Credit Risk Teams": "Credit Life, Lending Risk, Wealth Risk, Risk Management",
+    "Website / Source": "sanlam.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "Discovery Limited",
+    "Segment": "Insurance / Digital",
+    "Credit Risk Relevance": "Credit life; health-linked credit; digital banking risk",
+    "Likely Credit Risk Teams": "Credit Life, Digital Banking Risk, Health-Linked Credit",
+    "Website / Source": "discovery.co.za",
+    "Priority": "P2"
+  },
+  {
+    "Company": "South African Reserve Bank (PA)",
+    "Segment": "Regulator",
+    "Credit Risk Relevance": "Banking regulation; Basel supervision; credit risk regulation; prudential",
+    "Likely Credit Risk Teams": "Credit Risk Regulation, Basel Supervision, Prudential Regulation",
+    "Website / Source": "resbank.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "FSCA",
+    "Segment": "Regulator",
+    "Credit Risk Relevance": "Financial conduct; credit conduct; NCA enforcement; reckless lending",
+    "Likely Credit Risk Teams": "Credit Conduct Regulation, NCA Enforcement, Reckless Lending",
+    "Website / Source": "fsca.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "National Credit Regulator (NCR)",
+    "Segment": "Regulator",
+    "Credit Risk Relevance": "Credit regulation; debt review; credit bureau; reckless lending",
+    "Likely Credit Risk Teams": "Credit Regulation, Debt Review Oversight, Credit Bureau Regulation",
+    "Website / Source": "ncr.org.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "Acies / Acies Consulting",
+    "Segment": "Risk Technology",
+    "Credit Risk Relevance": "Basel; IFRS 9; RWA; capital computation; credit risk technology",
+    "Likely Credit Risk Teams": "Credit Risk Technology, Basel Implementation, IFRS 9, RWA, Antares CM",
+    "Website / Source": "acies.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "36ONE Asset Management",
+    "Segment": "Asset Management",
+    "Credit Risk Relevance": "Credit risk; fixed income; portfolio management; IFRS 9",
+    "Likely Credit Risk Teams": "Credit Risk, Fixed Income, Portfolio Management, IFRS 9",
+    "Website / Source": "36one.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "Futuregrowth Asset Management",
+    "Segment": "Asset Management",
+    "Credit Risk Relevance": "Fixed income; credit analysis; portfolio management; ESG credit",
+    "Likely Credit Risk Teams": "Credit Analysis, Fixed Income, Portfolio Management, ESG Credit",
+    "Website / Source": "futuregrowth.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "Ninety One",
+    "Segment": "Asset Management",
+    "Credit Risk Relevance": "Fixed income; credit analysis; emerging market debt; banking credit",
+    "Likely Credit Risk Teams": "Credit Analysis, Fixed Income, Emerging Market Debt, Banking Credit",
+    "Website / Source": "ninetyone.com",
+    "Priority": "P3"
+  },
+  {
+    "Company": "Accountability / Credit Fix AI",
+    "Segment": "Credit Repair / Fintech",
+    "Credit Risk Relevance": "Credit repair; credit scoring; AI-driven credit optimisation",
+    "Likely Credit Risk Teams": "Credit Repair, Credit Scoring, AI, Fintech",
+    "Website / Source": "accountability.co.za",
+    "Priority": "P3"
+  },
+  {
+    "Company": "PayFast / PayShap",
+    "Segment": "Payments / Fintech",
+    "Credit Risk Relevance": "Fraud risk; credit risk; payment risk; KYC",
+    "Likely Credit Risk Teams": "Payment Risk, Fraud Risk, KYC, Credit Risk",
+    "Website / Source": "payfast.io",
+    "Priority": "P3"
+  },
+  {
+    "Company": "SearchWorks",
+    "Segment": "KYC / Fraud",
+    "Credit Risk Relevance": "Fraud prevention; KYC; due diligence; credit risk data",
+    "Likely Credit Risk Teams": "Fraud Prevention, KYC, Due Diligence, Credit Risk Data",
+    "Website / Source": "searchworks.co.za",
+    "Priority": "P3"
+  }
+]

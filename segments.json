@@ -1,0 +1,623 @@
+[
+  {
+    "id": "SEG-1",
+    "name": "Retail credit",
+    "profile_count": 35,
+    "companies": [
+      "TFG (The Foschini Group)",
+      "Truworths",
+      "Woolworths Financial Services",
+      "RCS",
+      "RCS Personal Finance",
+      "Needs verification",
+      "HomeChoice",
+      "The Shoprite Group of Companies",
+      "Lewis Group Ltd",
+      "Shoprite Checkers - OK Franchise Division"
+    ]
+  },
+  {
+    "id": "SEG-2",
+    "name": "Bank / unsecured lender",
+    "profile_count": 4,
+    "companies": [
+      "African Bank"
+    ]
+  },
+  {
+    "id": "SEG-3",
+    "name": "Financial services",
+    "profile_count": 3,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-4",
+    "name": "Fintech lending / non-bank lender",
+    "profile_count": 2,
+    "companies": [
+      "365 Finance",
+      "MarquisFinance / Gomo"
+    ]
+  },
+  {
+    "id": "SEG-5",
+    "name": "Analytics vendor / consulting",
+    "profile_count": 5,
+    "companies": [
+      "Needs verification",
+      "Analytix Engine",
+      "Principa",
+      "Principa Decisions"
+    ]
+  },
+  {
+    "id": "SEG-6",
+    "name": "Bank / development finance",
+    "profile_count": 2,
+    "companies": [
+      "Land and Agricultural Development Bank of South Africa"
+    ]
+  },
+  {
+    "id": "SEG-7",
+    "name": "Consulting / analytics",
+    "profile_count": 2,
+    "companies": [
+      "Rayan Risk Analytics / Independent",
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-8",
+    "name": "Bank",
+    "profile_count": 116,
+    "companies": [
+      "Absa Group",
+      "Standard Bank Group",
+      "HBZ Bank Limited South Africa",
+      "FNB South Africa",
+      "Bidvest Bank Limited",
+      "Nedbank Corporate & Investment Banking",
+      "Standard Bank South Africa",
+      "Nedbank",
+      "African Bank",
+      "FNB",
+      "Needs verification",
+      "Standard Bank",
+      "FirstRand Group",
+      "FirstRand Bank Limited",
+      "FirstRand Group / Rand Merchant Bank",
+      "Rand Merchant Bank",
+      "FNB Commercial South Africa",
+      "Barclays Africa Group Limited",
+      "First National Bank",
+      "Investec",
+      "Absa",
+      "Capitec Bank",
+      "Capitec",
+      "ABSA",
+      "FNB / RMB",
+      "Absa Card",
+      "FirstRand Bank Ltd",
+      "Absa CIB",
+      "TymeBank"
+    ]
+  },
+  {
+    "id": "SEG-9",
+    "name": "Consulting",
+    "profile_count": 30,
+    "companies": [
+      "KPMG",
+      "KPMG South Africa",
+      "Anchor Point Risk / BDO South Africa",
+      "Monocle Solutions",
+      "EY",
+      "Independent / Advisor",
+      "Monocle Solutions / GSFP",
+      "Independent",
+      "Deloitte South Africa",
+      "PwC South Africa",
+      "Deloitte",
+      "Optimate Consulting"
+    ]
+  },
+  {
+    "id": "SEG-10",
+    "name": "Home loans / development finance",
+    "profile_count": 1,
+    "companies": [
+      "National Housing Finance Corporation"
+    ]
+  },
+  {
+    "id": "SEG-11",
+    "name": "Corporate credit / trade credit",
+    "profile_count": 1,
+    "companies": [
+      "Yara Southern Africa"
+    ]
+  },
+  {
+    "id": "SEG-12",
+    "name": "Credit bureau / analytics vendor",
+    "profile_count": 1,
+    "companies": [
+      "Experian / Credit Risk & Finance Professional"
+    ]
+  },
+  {
+    "id": "SEG-13",
+    "name": "Risk software / bank",
+    "profile_count": 1,
+    "companies": [
+      "Murex / Standard Bank South Africa"
+    ]
+  },
+  {
+    "id": "SEG-14",
+    "name": "Corporate credit / energy",
+    "profile_count": 1,
+    "companies": [
+      "Sasol Energy"
+    ]
+  },
+  {
+    "id": "SEG-15",
+    "name": "Analytics / credit decisioning",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-16",
+    "name": "Bank / vehicle finance",
+    "profile_count": 4,
+    "companies": [
+      "FNB South Africa",
+      "Standard Bank South Africa",
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-17",
+    "name": "Bank / analytics",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-18",
+    "name": "Digital bank",
+    "profile_count": 15,
+    "companies": [
+      "Capitec",
+      "Capitec Bank",
+      "Discovery Bank",
+      "Tyme"
+    ]
+  },
+  {
+    "id": "SEG-19",
+    "name": "Analytics vendor / fintech",
+    "profile_count": 1,
+    "companies": [
+      "Confluent"
+    ]
+  },
+  {
+    "id": "SEG-20",
+    "name": "Credit bureau / analytics",
+    "profile_count": 5,
+    "companies": [
+      "Needs verification",
+      "Experian",
+      "Experian South Africa"
+    ]
+  },
+  {
+    "id": "SEG-21",
+    "name": "Insurance / lending",
+    "profile_count": 2,
+    "companies": [
+      "Old Mutual South Africa"
+    ]
+  },
+  {
+    "id": "SEG-22",
+    "name": "Fintech lending",
+    "profile_count": 17,
+    "companies": [
+      "JUMO",
+      "Kuda",
+      "Yoco",
+      "Lula",
+      "Prodigy Finance",
+      "JUMO.WORLD"
+    ]
+  },
+  {
+    "id": "SEG-23",
+    "name": "Unsecured lender",
+    "profile_count": 2,
+    "companies": [
+      "Capfin"
+    ]
+  },
+  {
+    "id": "SEG-24",
+    "name": "Retail credit / analytics vendor",
+    "profile_count": 1,
+    "companies": [
+      "RCS / Principa"
+    ]
+  },
+  {
+    "id": "SEG-25",
+    "name": "Fintech / consulting",
+    "profile_count": 1,
+    "companies": [
+      "Kifiya Financial Technology / Independent"
+    ]
+  },
+  {
+    "id": "SEG-26",
+    "name": "Credit bureau",
+    "profile_count": 3,
+    "companies": [
+      "TransUnion Africa",
+      "TransUnion"
+    ]
+  },
+  {
+    "id": "SEG-27",
+    "name": "Bank / financial services",
+    "profile_count": 13,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-28",
+    "name": "Digital bank / insurance",
+    "profile_count": 3,
+    "companies": [
+      "Discovery Limited"
+    ]
+  },
+  {
+    "id": "SEG-29",
+    "name": "Retail credit / insurance",
+    "profile_count": 1,
+    "companies": [
+      "Woolworths Financial Services"
+    ]
+  },
+  {
+    "id": "SEG-30",
+    "name": "Bank / retail credit",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-31",
+    "name": "Digital bank / telecoms",
+    "profile_count": 1,
+    "companies": [
+      "Vodacom / former Capitec"
+    ]
+  },
+  {
+    "id": "SEG-32",
+    "name": "Vehicle finance",
+    "profile_count": 5,
+    "companies": [
+      "WesBank",
+      "BMW Financial Services South Africa"
+    ]
+  },
+  {
+    "id": "SEG-33",
+    "name": "Debt review / fintech",
+    "profile_count": 1,
+    "companies": [
+      "Intelligent Debt Management"
+    ]
+  },
+  {
+    "id": "SEG-34",
+    "name": "Credit bureau / risk software",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-35",
+    "name": "Vehicle finance / asset finance",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-36",
+    "name": "Telecoms / enterprise credit",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-37",
+    "name": "Telecoms / fintech lending",
+    "profile_count": 1,
+    "companies": [
+      "Vodacom"
+    ]
+  },
+  {
+    "id": "SEG-38",
+    "name": "Retail credit / consulting",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-39",
+    "name": "Digital bank / fintech lending",
+    "profile_count": 1,
+    "companies": [
+      "Capitec / Prodigy Finance"
+    ]
+  },
+  {
+    "id": "SEG-40",
+    "name": "Bank / consulting",
+    "profile_count": 1,
+    "companies": [
+      "FNB Namibia / FNB South Africa history"
+    ]
+  },
+  {
+    "id": "SEG-41",
+    "name": "Digital bank / consulting",
+    "profile_count": 1,
+    "companies": [
+      "Capitec / KPMG South Africa"
+    ]
+  },
+  {
+    "id": "SEG-42",
+    "name": "Bank / fintech",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-43",
+    "name": "Agricultural finance / lending",
+    "profile_count": 1,
+    "companies": [
+      "Capital Harvest"
+    ]
+  },
+  {
+    "id": "SEG-44",
+    "name": "Bank / commercial lending",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-45",
+    "name": "Collections / debt recovery",
+    "profile_count": 1,
+    "companies": [
+      "VVM Inc"
+    ]
+  },
+  {
+    "id": "SEG-46",
+    "name": "Regulator",
+    "profile_count": 1,
+    "companies": [
+      "South African Reserve Bank - Prudential Authority"
+    ]
+  },
+  {
+    "id": "SEG-47",
+    "name": "Analytics / bank",
+    "profile_count": 1,
+    "companies": [
+      "Tesserai / Standard Bank history"
+    ]
+  },
+  {
+    "id": "SEG-48",
+    "name": "Retail credit / financial services",
+    "profile_count": 1,
+    "companies": [
+      "Needs verification"
+    ]
+  },
+  {
+    "id": "SEG-49",
+    "name": "Fintech lending / consulting",
+    "profile_count": 1,
+    "companies": [
+      "Bestec Financial Solutions"
+    ]
+  },
+  {
+    "id": "SEG-50",
+    "name": "Credit Bureau",
+    "profile_count": 3,
+    "companies": [
+      "TransUnion Africa",
+      "Experian South Africa",
+      "Experian"
+    ]
+  },
+  {
+    "id": "SEG-51",
+    "name": "Analytics Consulting",
+    "profile_count": 1,
+    "companies": [
+      "Principa"
+    ]
+  },
+  {
+    "id": "SEG-52",
+    "name": "Retail Credit",
+    "profile_count": 9,
+    "companies": [
+      "Woolworths Financial Services",
+      "TFG",
+      "Pepkor Payments and Lending",
+      "Bayport Financial Services",
+      "Lewis Group",
+      "DirectAxis"
+    ]
+  },
+  {
+    "id": "SEG-53",
+    "name": "Consulting/Academic",
+    "profile_count": 1,
+    "companies": [
+      "Academic/Consulting"
+    ]
+  },
+  {
+    "id": "SEG-54",
+    "name": "Academic/Bank",
+    "profile_count": 1,
+    "companies": [
+      "University of Pretoria / Banking sector"
+    ]
+  },
+  {
+    "id": "SEG-55",
+    "name": "Analytics / Software",
+    "profile_count": 1,
+    "companies": [
+      "SAS Institute South Africa"
+    ]
+  },
+  {
+    "id": "SEG-56",
+    "name": "Academic",
+    "profile_count": 1,
+    "companies": [
+      "University of Pretoria / Industry"
+    ]
+  },
+  {
+    "id": "SEG-57",
+    "name": "Digital Bank",
+    "profile_count": 1,
+    "companies": [
+      "Discovery Bank"
+    ]
+  },
+  {
+    "id": "SEG-58",
+    "name": "Banks",
+    "profile_count": 19,
+    "companies": [
+      "FNB (FirstRand) / recent moves noted",
+      "Standard Bank South Africa",
+      "Nedbank",
+      "Capitec Bank (former)",
+      "Standard Bank Corporate and Investment Banking",
+      "FirstRand Bank Ltd",
+      "RMB - Rand Merchant Bank",
+      "FNB South Africa",
+      "Rand Merchant Bank",
+      "FirstRand",
+      "Absa Group",
+      "Standard Bank Group"
+    ]
+  },
+  {
+    "id": "SEG-59",
+    "name": "Investment / Credit Assessment",
+    "profile_count": 1,
+    "companies": [
+      "Public Investment Corporation (PIC)"
+    ]
+  },
+  {
+    "id": "SEG-60",
+    "name": "Fintech / SME Lending",
+    "profile_count": 1,
+    "companies": [
+      "Merchant Capital South Africa"
+    ]
+  },
+  {
+    "id": "SEG-61",
+    "name": "Investment / Credit",
+    "profile_count": 1,
+    "companies": [
+      "Public Investment Corporation (PIC)"
+    ]
+  },
+  {
+    "id": "SEG-62",
+    "name": "Vehicle Finance",
+    "profile_count": 1,
+    "companies": [
+      "WesBank (FirstRand)"
+    ]
+  },
+  {
+    "id": "SEG-63",
+    "name": "Retail Credit / Collections",
+    "profile_count": 1,
+    "companies": [
+      "Pepkor Lifestyle / Connect Financial Solutions"
+    ]
+  },
+  {
+    "id": "SEG-64",
+    "name": "Retail credit providers",
+    "profile_count": 1,
+    "companies": [
+      "Capfin"
+    ]
+  },
+  {
+    "id": "SEG-65",
+    "name": "Development Finance",
+    "profile_count": 1,
+    "companies": [
+      "DBSA"
+    ]
+  },
+  {
+    "id": "SEG-66",
+    "name": "Bank / Former",
+    "profile_count": 1,
+    "companies": [
+      "Former WesBank"
+    ]
+  },
+  {
+    "id": "SEG-67",
+    "name": "Retail Credit / Unsecured Lending",
+    "profile_count": 1,
+    "companies": [
+      "Sanlam Personal Loans / former DirectAxis"
+    ]
+  }
+]

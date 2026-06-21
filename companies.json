@@ -1,0 +1,792 @@
+[
+  {
+    "id": "COM-1",
+    "name": "Standard Bank Group",
+    "segment": "Bank",
+    "relevance": "Retail, Commercial, CIB, Wealth credit risk; IFRS 9; Basel; Collections",
+    "risk_teams": "PBB Credit Risk, CIB Credit Risk, Group Credit Risk Assurance, Credit Portfolio Management, Collections Strategy, Impairment Modelling, Quantitative Analytics",
+    "website": "standardbank.com",
+    "priority": "P1",
+    "profile_count": 9
+  },
+  {
+    "id": "COM-2",
+    "name": "FirstRand / FNB / WesBank / RMB",
+    "segment": "Bank",
+    "relevance": "Retail, Business, Vehicle Finance, Corporate credit risk; Scorecards; Decisioning",
+    "risk_teams": "FNB Credit Risk, WesBank Risk, RMB Credit, FirstRand Group Risk, Credit Analytics, IFRS 9 Modelling",
+    "website": "firstrand.co.za",
+    "priority": "P1",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-3",
+    "name": "Absa Group",
+    "segment": "Bank",
+    "relevance": "Retail, Business, Corporate, Investment Banking credit risk; Credit Risk Quantification",
+    "risk_teams": "Absa Group Credit Risk, Credit Risk Assurance, Business Bank Credit, CIB Credit, Wealth Credit, Quantitative Credit Analytics",
+    "website": "absa.africa",
+    "priority": "P1",
+    "profile_count": 17
+  },
+  {
+    "id": "COM-4",
+    "name": "Nedbank",
+    "segment": "Bank",
+    "relevance": "Retail, Business, CIB, Digital credit risk; Quant Academy; Collections",
+    "risk_teams": "Nedbank Credit Risk, CIB Credit Risk, Quantitative Analytics, Credit Risk Modelling, Credit Strategy, Collections",
+    "website": "nedbank.co.za",
+    "priority": "P1",
+    "profile_count": 20
+  },
+  {
+    "id": "COM-5",
+    "name": "Capitec",
+    "segment": "Bank / Digital Bank",
+    "relevance": "Mass retail credit risk; affordability; credit scoring; digital decisioning; collections",
+    "risk_teams": "Credit Risk, Credit Analytics, Scorecard Development, IFRS 9, Capital & Impairment Modelling, Collections Strategy",
+    "website": "capitecbank.co.za",
+    "priority": "P1",
+    "profile_count": 6
+  },
+  {
+    "id": "COM-6",
+    "name": "African Bank",
+    "segment": "Bank",
+    "relevance": "Unsecured lending; credit risk; impairment; collections",
+    "risk_teams": "Credit Risk, Credit Analytics, Collections Strategy, Reckless Lending Investigation, IFRS 9",
+    "website": "africanbank.co.za",
+    "priority": "P1",
+    "profile_count": 6
+  },
+  {
+    "id": "COM-7",
+    "name": "Investec",
+    "segment": "Bank / Wealth",
+    "relevance": "Private Banking, Asset Management, Corporate credit risk; IFRS 9; Structured Credit",
+    "risk_teams": "Credit Risk, Portfolio Management, CIB Credit, Wealth Credit Risk, Structured Credit, Asset Management Credit",
+    "website": "investec.com",
+    "priority": "P2",
+    "profile_count": 4
+  },
+  {
+    "id": "COM-8",
+    "name": "Discovery Bank",
+    "segment": "Digital Bank",
+    "relevance": "Health-linked banking; credit risk; life insurance integration; credit life",
+    "risk_teams": "Credit Risk, Credit Analytics, Actuarial Credit, IFRS 9, Capital Modelling",
+    "website": "discovery.co.za",
+    "priority": "P2",
+    "profile_count": 8
+  },
+  {
+    "id": "COM-9",
+    "name": "TymeBank",
+    "segment": "Digital Bank",
+    "relevance": "Mass market digital lending; credit risk; alternative data; credit scoring",
+    "risk_teams": "Credit Risk, Credit Strategy, Scorecard Development, IFRS 9, Capital Modelling, Collections",
+    "website": "tymebank.co.za",
+    "priority": "P2",
+    "profile_count": 1
+  },
+  {
+    "id": "COM-10",
+    "name": "Old Mutual Finance / OM Bank",
+    "segment": "Finance / Insurance",
+    "relevance": "Unsecured lending; credit life; retail credit; IFRS 9",
+    "risk_teams": "Credit Risk, Credit Analytics, Credit Life, Collections, IFRS 9 Modelling",
+    "website": "oldmutual.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-11",
+    "name": "Sanlam",
+    "segment": "Insurance / Finance",
+    "relevance": "Lending partnerships; credit life; wealth management credit",
+    "risk_teams": "Credit Risk, Credit Analytics, Credit Life, Actuarial Credit Risk",
+    "website": "sanlam.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-12",
+    "name": "WesBank",
+    "segment": "Vehicle Finance",
+    "relevance": "Vehicle and asset finance credit risk; dealer credit; residual risk",
+    "risk_teams": "Credit Risk, Vehicle Finance Risk, Asset Finance, Credit Analytics, IFRS 9, Capital Modelling",
+    "website": "wesbank.co.za",
+    "priority": "P1",
+    "profile_count": 4
+  },
+  {
+    "id": "COM-13",
+    "name": "DirectAxis",
+    "segment": "Unsecured Lender",
+    "relevance": "Personal loans; credit risk; credit scoring; digital decisioning",
+    "risk_teams": "Credit Risk, Credit Analytics, Scorecard Development, Collections, IFRS 9",
+    "website": "directaxis.co.za",
+    "priority": "P2",
+    "profile_count": 2
+  },
+  {
+    "id": "COM-14",
+    "name": "Bayport Financial Services",
+    "segment": "Unsecured Lender",
+    "relevance": "Personal loans; credit risk; collections; fraud",
+    "risk_teams": "Credit Risk, Credit Analytics, Collections, Fraud Risk, IFRS 9",
+    "website": "bayport.co.za",
+    "priority": "P2",
+    "profile_count": 2
+  },
+  {
+    "id": "COM-15",
+    "name": "FinChoice",
+    "segment": "Unsecured Lender",
+    "relevance": "Digital lending; credit risk; affordability; collections",
+    "risk_teams": "Credit Risk, Credit Analytics, Scorecards, Collections",
+    "website": "finchoice.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-16",
+    "name": "Capfin",
+    "segment": "Unsecured Lender",
+    "relevance": "Retail credit; credit risk; collections",
+    "risk_teams": "Credit Risk, Credit Analytics, Collections",
+    "website": "capfin.co.za",
+    "priority": "P2",
+    "profile_count": 3
+  },
+  {
+    "id": "COM-17",
+    "name": "RCS",
+    "segment": "Retail Credit",
+    "relevance": "Store cards; retail credit; credit risk; collections",
+    "risk_teams": "Credit Risk, Credit Analytics, Scorecards, Collections",
+    "website": "rcs.co.za",
+    "priority": "P2",
+    "profile_count": 4
+  },
+  {
+    "id": "COM-18",
+    "name": "TFG (The Foschini Group)",
+    "segment": "Retail Credit",
+    "relevance": "Store cards; credit accounts; retail credit strategy; credit optimisation",
+    "risk_teams": "Credit Risk, Credit Strategy, Credit Analytics, Collections, IFRS 9",
+    "website": "tfg.co.za",
+    "priority": "P2",
+    "profile_count": 4
+  },
+  {
+    "id": "COM-19",
+    "name": "Truworths",
+    "segment": "Retail Credit",
+    "relevance": "Store cards; credit risk; collections; credit life",
+    "risk_teams": "Credit Risk, Credit Analytics, Collections, Credit Life",
+    "website": "truworths.co.za",
+    "priority": "P2",
+    "profile_count": 9
+  },
+  {
+    "id": "COM-20",
+    "name": "Mr Price Money",
+    "segment": "Retail Credit",
+    "relevance": "Store cards; credit accounts; retail credit analytics",
+    "risk_teams": "Credit Risk, Credit Analytics, Scorecards, Collections",
+    "website": "mrpricegroup.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-21",
+    "name": "Woolworths Financial Services",
+    "segment": "Retail Credit",
+    "relevance": "Store cards; credit risk; credit analytics; collections",
+    "risk_teams": "Credit Risk, Credit Analytics, Collections, Credit Life",
+    "website": "woolworths.co.za",
+    "priority": "P2",
+    "profile_count": 7
+  },
+  {
+    "id": "COM-22",
+    "name": "HomeChoice",
+    "segment": "Retail Credit",
+    "relevance": "Homeware retail credit; credit risk; collections; debt recovery",
+    "risk_teams": "Credit Risk, Collections, Debt Recovery, Credit Analytics",
+    "website": "homechoice.co.za",
+    "priority": "P2",
+    "profile_count": 6
+  },
+  {
+    "id": "COM-23",
+    "name": "Shoprite / Money Market",
+    "segment": "Retail Credit",
+    "relevance": "Money transfers; informal financial services; credit risk emerging",
+    "risk_teams": "Emerging Credit Risk, Financial Services Risk, Compliance",
+    "website": "shoprite.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-24",
+    "name": "Pepkor",
+    "segment": "Retail Credit",
+    "relevance": "Lay-bye; credit emerging; informal credit",
+    "risk_teams": "Credit Risk (Emerging), Financial Services",
+    "website": "pepkor.com",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-25",
+    "name": "SA Taxi",
+    "segment": "Vehicle Finance",
+    "relevance": "Taxi asset finance; credit risk; vehicle finance; collections",
+    "risk_teams": "Credit Risk, Vehicle Finance, Asset Finance, Collections",
+    "website": "sataxi.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-26",
+    "name": "Transaction Capital",
+    "segment": "Lending / Collections",
+    "relevance": "Debt recovery; lending; credit risk; collections analytics",
+    "risk_teams": "Credit Risk, Collections Analytics, Debt Recovery, Lending Risk",
+    "website": "transactioncapital.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-27",
+    "name": "Merchant Capital",
+    "segment": "Fintech Lending",
+    "relevance": "SME lending; merchant cash advances; credit risk; alternative data",
+    "risk_teams": "Credit Risk, SME Credit, Alternative Data, Credit Analytics",
+    "website": "merchantcapital.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-28",
+    "name": "Lula / Lulalend",
+    "segment": "Fintech Lending",
+    "relevance": "SME lending; digital credit; alternative data; credit scoring",
+    "risk_teams": "Credit Risk, SME Credit, Credit Analytics, Alternative Data",
+    "website": "lula.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-29",
+    "name": "Retail Capital",
+    "segment": "Fintech Lending",
+    "relevance": "SME lending; credit risk; alternative data",
+    "risk_teams": "Credit Risk, SME Credit, Credit Analytics",
+    "website": "retailcapital.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-30",
+    "name": "Yoco Capital",
+    "segment": "Fintech Lending",
+    "relevance": "Merchant cash advances; SME lending; credit risk",
+    "risk_teams": "Credit Risk, SME Lending, Alternative Data",
+    "website": "yoco.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-31",
+    "name": "RainFin",
+    "segment": "Fintech Lending",
+    "relevance": "Marketplace lending; credit risk; alternative scoring",
+    "risk_teams": "Credit Risk, Marketplace Lending, Credit Analytics",
+    "website": "rainfin.com",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-32",
+    "name": "FASTA",
+    "segment": "Fintech / BNPL",
+    "relevance": "Digital lending; BNPL; credit risk; IFRS 9",
+    "risk_teams": "Credit Risk, BNPL, Credit Analytics, IFRS 9",
+    "website": "fasta.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-33",
+    "name": "Payflex",
+    "segment": "BNPL",
+    "relevance": "Buy-now-pay-later; retail credit; alternative data",
+    "risk_teams": "Credit Risk, BNPL, Retail Credit, Alternative Data",
+    "website": "payflex.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-34",
+    "name": "PayJustNow",
+    "segment": "BNPL",
+    "relevance": "Buy-now-pay-later; credit risk; retail credit analytics",
+    "risk_teams": "Credit Risk, BNPL, Credit Analytics",
+    "website": "payjustnow.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-35",
+    "name": "FoneYam (Pepkor)",
+    "segment": "BNPL",
+    "relevance": "Mobile-led BNPL; alternative data; credit risk",
+    "risk_teams": "Credit Risk, BNPL, Alternative Data, Retail Credit",
+    "website": "pepkor.com",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-36",
+    "name": "TransUnion Africa",
+    "segment": "Credit Bureau",
+    "relevance": "Credit scoring; bureau analytics; decisioning; fraud; credit risk solutions",
+    "risk_teams": "Credit Risk Solutions, Scorecard Development, Analytics, Fraud Risk, Product Management",
+    "website": "transunion.co.za",
+    "priority": "P1",
+    "profile_count": 2
+  },
+  {
+    "id": "COM-37",
+    "name": "Experian South Africa",
+    "segment": "Credit Bureau",
+    "relevance": "Credit scoring; bureau analytics; decisioning; fraud; credit risk consulting",
+    "risk_teams": "Decision Analytics, Credit Risk Modelling, Scorecard Development, Fraud",
+    "website": "experian.co.za",
+    "priority": "P1",
+    "profile_count": 2
+  },
+  {
+    "id": "COM-38",
+    "name": "XDS",
+    "segment": "Credit Bureau",
+    "relevance": "Credit bureau data; trade credit; SME credit; credit risk platforms",
+    "risk_teams": "Credit Bureau Analytics, Trade Credit Risk, SME Credit, Data Analytics",
+    "website": "xds.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-39",
+    "name": "VeriCred (VCCB)",
+    "segment": "Credit Bureau",
+    "relevance": "Credit bureau data; consumer credit information; credit risk",
+    "risk_teams": "Credit Bureau Operations, Data Analytics, Credit Risk",
+    "website": "vccb.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-40",
+    "name": "Consumer Profile Bureau (CPB)",
+    "segment": "Credit Bureau",
+    "relevance": "Credit reports; credit data; disputes",
+    "risk_teams": "Credit Bureau Operations, Data Quality, Consumer Credit",
+    "website": "cpbonline.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-41",
+    "name": "Compuscan",
+    "segment": "Credit Bureau / Data",
+    "relevance": "Credit bureau data; credit scoring; credit information",
+    "risk_teams": "Credit Bureau Analytics, Scorecard Development, Data Analytics",
+    "website": "compuscan.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-42",
+    "name": "Lightstone",
+    "segment": "Data Provider",
+    "relevance": "Property and vehicle data; credit risk data; alternative data",
+    "risk_teams": "Data Analytics, Property Risk, Vehicle Risk, Credit Risk Data",
+    "website": "lightstone.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-43",
+    "name": "LexisNexis Risk Solutions",
+    "segment": "Risk Data / Analytics",
+    "relevance": "Fraud; identity verification; KYC; credit risk; alternative data",
+    "risk_teams": "Fraud Risk, Identity Verification, KYC, Credit Risk Analytics, Decisioning",
+    "website": "lexisnexisrisk.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-44",
+    "name": "TPN Credit Bureau",
+    "segment": "Credit Bureau",
+    "relevance": "Tenant and commercial credit bureau; credit risk",
+    "risk_teams": "Commercial Credit Bureau, Tenant Risk, Credit Analytics",
+    "website": "tpncreditbureau.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-45",
+    "name": "Cred-it-data",
+    "segment": "Credit Bureau / Data",
+    "relevance": "Multi-bureau insights; credit risk decisioning",
+    "risk_teams": "Credit Bureau Data, Credit Risk Analytics, Decisioning",
+    "website": "cred-it-data.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-46",
+    "name": "VVM",
+    "segment": "Collections / Debt Recovery",
+    "relevance": "Debt collection; collections analytics; dialer management; credit management",
+    "risk_teams": "Collections Strategy, Collections Analytics, Operations Management, Portfolio Management",
+    "website": "vvm.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-47",
+    "name": "Debt Rescue SA",
+    "segment": "Debt Review",
+    "relevance": "Debt counselling; debt review; credit rehabilitation",
+    "risk_teams": "Debt Review, Credit Counselling, Collections, NCA Compliance",
+    "website": "debtrescue.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-48",
+    "name": "DebtBusters / IDM",
+    "segment": "Debt Review",
+    "relevance": "Debt counselling; debt management; financial consulting",
+    "risk_teams": "Debt Review, Credit Counselling, Financial Consulting",
+    "website": "debtbusters.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-49",
+    "name": "Intelligent Debt Management",
+    "segment": "Debt Review",
+    "relevance": "Debt counselling; debt management; financial consulting",
+    "risk_teams": "Debt Review, Credit Counselling, Financial Consulting",
+    "website": "idm.co.za",
+    "priority": "P2",
+    "profile_count": 1
+  },
+  {
+    "id": "COM-50",
+    "name": "Hilton-Baird Collection Services",
+    "segment": "Collections",
+    "relevance": "Debt collection; commercial collections; international collections",
+    "risk_teams": "Collections, Debt Recovery, Commercial Collections",
+    "website": "hilton-baird.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-51",
+    "name": "Bredell Ferreira",
+    "segment": "Collections",
+    "relevance": "Debt collection; legal collections; pre-legal collections",
+    "risk_teams": "Collections, Debt Recovery, Legal Collections",
+    "website": "bredellferreira.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-52",
+    "name": "Building Credit Management (BCM)",
+    "segment": "Credit Risk Consulting",
+    "relevance": "B2B credit management; trade credit; credit risk advisory; debt recovery",
+    "risk_teams": "Credit Risk Advisory, Trade Credit, Collections, Credit Management",
+    "website": "bcmza.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-53",
+    "name": "Redtree Capital",
+    "segment": "Fintech / Asset Finance",
+    "relevance": "SMME asset finance; credit analysis; fintech lending",
+    "risk_teams": "Credit Analysis, Asset Finance, Fintech Lending, SME Credit",
+    "website": "redtreecapital.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-54",
+    "name": "Revfin",
+    "segment": "Fintech Lending",
+    "relevance": "Private credit; secured lending; non-vanilla lending; credit management",
+    "risk_teams": "Credit Management, Private Credit, Secured Lending, Credit Analysis",
+    "website": "revfin.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-55",
+    "name": "Monocle Solutions",
+    "segment": "Consulting / Analytics",
+    "relevance": "SME trade credit; analytics; credit risk platforms",
+    "risk_teams": "Credit Risk Consulting, Analytics, SME Credit, Trade Credit",
+    "website": "monocle.solutions",
+    "priority": "P2",
+    "profile_count": 8
+  },
+  {
+    "id": "COM-56",
+    "name": "Deloitte South Africa",
+    "segment": "Consulting",
+    "relevance": "Credit risk; IFRS 9; Basel; model development; model validation; ESG",
+    "risk_teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, ECL",
+    "website": "deloitte.com",
+    "priority": "P1",
+    "profile_count": 1
+  },
+  {
+    "id": "COM-57",
+    "name": "EY South Africa",
+    "segment": "Consulting",
+    "relevance": "Credit risk; IFRS 9; Basel; model development; model validation; climate risk",
+    "risk_teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, ECL",
+    "website": "ey.com",
+    "priority": "P1",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-58",
+    "name": "PwC South Africa",
+    "segment": "Consulting",
+    "relevance": "Credit risk; IFRS 9; Basel; model development; model validation; regulatory",
+    "risk_teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, Regulatory",
+    "website": "pwc.com",
+    "priority": "P1",
+    "profile_count": 2
+  },
+  {
+    "id": "COM-59",
+    "name": "KPMG South Africa",
+    "segment": "Consulting",
+    "relevance": "Credit risk; IFRS 9; Basel; model development; model validation; ESG",
+    "risk_teams": "FSRM Credit Risk, IFRS 9 Advisory, Model Development, Model Validation, ECL",
+    "website": "kpmg.com",
+    "priority": "P1",
+    "profile_count": 8
+  },
+  {
+    "id": "COM-60",
+    "name": "Accenture South Africa",
+    "segment": "Consulting / Technology",
+    "relevance": "Credit risk; digital transformation; decisioning; analytics; risk technology",
+    "risk_teams": "Credit Risk Consulting, Decisioning Technology, Risk Analytics, Digital Transformation",
+    "website": "accenture.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-61",
+    "name": "McKinsey & Company",
+    "segment": "Consulting",
+    "relevance": "Credit risk; strategy; digital lending; analytics; risk transformation",
+    "risk_teams": "Credit Risk Strategy, Digital Lending, Risk Analytics, Transformation",
+    "website": "mckinsey.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-62",
+    "name": "SAS South Africa",
+    "segment": "Analytics Software",
+    "relevance": "Credit risk; scorecards; IFRS 9; analytics; fraud",
+    "risk_teams": "Credit Risk Solutions, Scorecard Development, IFRS 9, Analytics, Fraud",
+    "website": "sas.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-63",
+    "name": "FICO Partners",
+    "segment": "Risk Software",
+    "relevance": "Credit scoring; decision management; fraud; collections optimisation",
+    "risk_teams": "Credit Scoring, Decision Management, Collections Optimisation, Fraud",
+    "website": "fico.com",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-64",
+    "name": "Old Mutual Insure",
+    "segment": "Insurance",
+    "relevance": "Credit life; short-term insurance; risk management; claims",
+    "risk_teams": "Credit Life, Insurance Risk, Claims, Risk Management",
+    "website": "oldmutual.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-65",
+    "name": "Hollard Insurance",
+    "segment": "Insurance",
+    "relevance": "Credit life; short-term insurance; risk management",
+    "risk_teams": "Credit Life, Insurance Risk, Risk Management",
+    "website": "hollard.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-66",
+    "name": "OUTsurance",
+    "segment": "Insurance",
+    "relevance": "Credit life; short-term insurance; risk management",
+    "risk_teams": "Credit Life, Insurance Risk, Risk Management",
+    "website": "outsurance.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-67",
+    "name": "Guardrisk",
+    "segment": "Insurance",
+    "relevance": "Cell captive; credit life; insurance risk",
+    "risk_teams": "Credit Life, Cell Captive, Insurance Risk",
+    "website": "guardrisk.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-68",
+    "name": "Sanlam",
+    "segment": "Insurance / Wealth",
+    "relevance": "Credit life; lending; wealth management; risk",
+    "risk_teams": "Credit Life, Lending Risk, Wealth Risk, Risk Management",
+    "website": "sanlam.co.za",
+    "priority": "P2",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-69",
+    "name": "Discovery Limited",
+    "segment": "Insurance / Digital",
+    "relevance": "Credit life; health-linked credit; digital banking risk",
+    "risk_teams": "Credit Life, Digital Banking Risk, Health-Linked Credit",
+    "website": "discovery.co.za",
+    "priority": "P2",
+    "profile_count": 3
+  },
+  {
+    "id": "COM-70",
+    "name": "South African Reserve Bank (PA)",
+    "segment": "Regulator",
+    "relevance": "Banking regulation; Basel supervision; credit risk regulation; prudential",
+    "risk_teams": "Credit Risk Regulation, Basel Supervision, Prudential Regulation",
+    "website": "resbank.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-71",
+    "name": "FSCA",
+    "segment": "Regulator",
+    "relevance": "Financial conduct; credit conduct; NCA enforcement; reckless lending",
+    "risk_teams": "Credit Conduct Regulation, NCA Enforcement, Reckless Lending",
+    "website": "fsca.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-72",
+    "name": "National Credit Regulator (NCR)",
+    "segment": "Regulator",
+    "relevance": "Credit regulation; debt review; credit bureau; reckless lending",
+    "risk_teams": "Credit Regulation, Debt Review Oversight, Credit Bureau Regulation",
+    "website": "ncr.org.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-73",
+    "name": "Acies / Acies Consulting",
+    "segment": "Risk Technology",
+    "relevance": "Basel; IFRS 9; RWA; capital computation; credit risk technology",
+    "risk_teams": "Credit Risk Technology, Basel Implementation, IFRS 9, RWA, Antares CM",
+    "website": "acies.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-74",
+    "name": "36ONE Asset Management",
+    "segment": "Asset Management",
+    "relevance": "Credit risk; fixed income; portfolio management; IFRS 9",
+    "risk_teams": "Credit Risk, Fixed Income, Portfolio Management, IFRS 9",
+    "website": "36one.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-75",
+    "name": "Futuregrowth Asset Management",
+    "segment": "Asset Management",
+    "relevance": "Fixed income; credit analysis; portfolio management; ESG credit",
+    "risk_teams": "Credit Analysis, Fixed Income, Portfolio Management, ESG Credit",
+    "website": "futuregrowth.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-76",
+    "name": "Ninety One",
+    "segment": "Asset Management",
+    "relevance": "Fixed income; credit analysis; emerging market debt; banking credit",
+    "risk_teams": "Credit Analysis, Fixed Income, Emerging Market Debt, Banking Credit",
+    "website": "ninetyone.com",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-77",
+    "name": "Accountability / Credit Fix AI",
+    "segment": "Credit Repair / Fintech",
+    "relevance": "Credit repair; credit scoring; AI-driven credit optimisation",
+    "risk_teams": "Credit Repair, Credit Scoring, AI, Fintech",
+    "website": "accountability.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-78",
+    "name": "PayFast / PayShap",
+    "segment": "Payments / Fintech",
+    "relevance": "Fraud risk; credit risk; payment risk; KYC",
+    "risk_teams": "Payment Risk, Fraud Risk, KYC, Credit Risk",
+    "website": "payfast.io",
+    "priority": "P3",
+    "profile_count": 0
+  },
+  {
+    "id": "COM-79",
+    "name": "SearchWorks",
+    "segment": "KYC / Fraud",
+    "relevance": "Fraud prevention; KYC; due diligence; credit risk data",
+    "risk_teams": "Fraud Prevention, KYC, Due Diligence, Credit Risk Data",
+    "website": "searchworks.co.za",
+    "priority": "P3",
+    "profile_count": 0
+  }
+]
