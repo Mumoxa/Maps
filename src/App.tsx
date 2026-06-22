@@ -31,7 +31,7 @@ function AppRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Maps">
       <DataProvider>
         <ErrorBoundary>
           <Layout>
