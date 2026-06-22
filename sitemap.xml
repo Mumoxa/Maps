@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>/</loc><priority>1.0</priority></url>
-  <url><loc>/map</loc><priority>0.9</priority></url>
-  <url><loc>/segments</loc><priority>0.8</priority></url>
-  <url><loc>/companies</loc><priority>0.8</priority></url>
-  <url><loc>/profiles</loc><priority>0.8</priority></url>
-  <url><loc>/shortlist</loc><priority>0.9</priority></url>
+  <url><loc>https://mumoxa.github.io/Maps/</loc><priority>1.0</priority></url>
+  <url><loc>https://mumoxa.github.io/Maps/map</loc><priority>0.9</priority></url>
+  <url><loc>https://mumoxa.github.io/Maps/segments</loc><priority>0.8</priority></url>
+  <url><loc>https://mumoxa.github.io/Maps/companies</loc><priority>0.8</priority></url>
+  <url><loc>https://mumoxa.github.io/Maps/profiles</loc><priority>0.8</priority></url>
+  <url><loc>https://mumoxa.github.io/Maps/shortlist</loc><priority>0.9</priority></url>
 </urlset>
