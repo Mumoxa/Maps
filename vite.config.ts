@@ -2,7 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/Maps/',
+  // Use relative asset URLs so the same build works on Cloudflare Pages at `/`
+  // and on GitHub Pages under `/Maps/`.
+  base: './',
   plugins: [react()],
   build: {
     rollupOptions: {
