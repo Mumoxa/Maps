@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useRoutes } from 'react-router-dom'
+import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { DataProvider } from './context/DataContext'
 import { Layout } from './components/layout/Layout'
 import { ErrorBoundary } from './components/ui/ErrorBoundary'
@@ -17,6 +17,8 @@ function AppRoutes() {
   const element = useRoutes([
     { path: '/', element: <HomePage /> },
     { path: '/map', element: <MapPage /> },
+    { path: '/maps', element: <MapPage /> },
+    { path: '/maps/:marketAreaSlug', element: <MapPage /> },
     { path: '/segments', element: <SegmentDirectory /> },
     { path: '/segments/:slug', element: <SegmentPage /> },
     { path: '/companies', element: <CompanyDirectory /> },
@@ -29,9 +31,11 @@ function AppRoutes() {
   return element
 }
 
+const routerBasename = window.location.pathname.startsWith('/Maps') ? '/Maps' : '/'
+
 export default function App() {
   return (
-    <BrowserRouter basename="/Maps">
+    <BrowserRouter basename={routerBasename}>
       <DataProvider>
         <ErrorBoundary>
           <Layout>

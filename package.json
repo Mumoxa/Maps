@@ -1,11 +1,11 @@
 {
-  "name": "sa-credit-risk-market-map",
+  "name": "mumoxa-talent-intelligence-maps",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
+    "build": "tsc -b && vite build && node scripts/copy-spa-fallback.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,5 +22,8 @@
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.6.3",
     "vite": "^5.4.11"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

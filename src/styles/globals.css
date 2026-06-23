@@ -520,3 +520,29 @@ h3 { font-size: 1.25rem; }
 }
 .not-found { text-align: center; padding: 6rem 2rem; }
 .not-found h1 { font-size: 4rem; color: var(--color-text-secondary); margin-bottom: 1rem; }
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.status-live { background: #d1fae5; color: #065f46; }
+.status-planned { background: #e5e7eb; color: #374151; }
+.status-researching { background: #dbeafe; color: #1e40af; }
+
+.data-chip {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 9999px;
+  padding: 0.25rem 0.65rem;
+  background: #f8fafc;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
