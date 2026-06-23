@@ -85,7 +85,7 @@ export function ProfilePage() {
           ]} />
 
           {otherDavidColeman && (
-            <div className="card mb-2" style={{ background: '#e0e7ff', borderColor: '#6366f1' }}>
+            <div className="card mb-2 notice-card">
               <p className="text-sm">
                 Note: Another profile with the same name ('David Coleman') exists at{' '}
                 <strong>{otherDavidColeman.company}</strong>.
@@ -106,9 +106,9 @@ export function ProfilePage() {
               )}
             </div>
 
-            <div className="grid grid-2 mt-2" style={{ gap: '1rem' }}>
+            <div className="grid grid-2 mt-2">
               <div>
-                <div className="text-secondary text-sm">Company</div>
+                <div className="detail-label">Company</div>
                 <div>
                   {needsVerification ? (
                     <Link to="/profiles?needs_verification=true">
@@ -122,39 +122,39 @@ export function ProfilePage() {
                 </div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Title</div>
+                <div className="detail-label">Title</div>
                 <div>{profile.title}</div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Location</div>
+                <div className="detail-label">Location</div>
                 <div>{profile.location}</div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Segment</div>
+                <div className="detail-label">Segment</div>
                 <div>{segmentSlug ? <Link to={`/segments/${segmentSlug}`}>{profile.segment}</Link> : profile.segment}</div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Function</div>
+                <div className="detail-label">Function</div>
                 <div>{profile.function}</div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Specialism</div>
+                <div className="detail-label">Specialism</div>
                 <div>{profile.specialism}</div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Category</div>
+                <div className="detail-label">Category</div>
                 <div>{profile.category}</div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Seniority</div>
+                <div className="detail-label">Seniority</div>
                 <div>{profile.seniority}</div>
               </div>
               <div>
-                <div className="text-secondary text-sm">Fit Score</div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <span style={{ fontWeight: 700, fontSize: '1.25rem' }}>{profile.fit_score}/10</span>
-                  <div style={{ width: 100, height: 8, background: '#e5e7eb', borderRadius: 4, overflow: 'hidden' }}>
-                    <div style={{ width: `${profile.fit_score * 10}%`, height: '100%', background: '#1a56db', borderRadius: 4 }} />
+                <div className="detail-label">Fit Score</div>
+                <div className="fit-score">
+                  <span className="fit-score-value">{profile.fit_score}/10</span>
+                  <div className="fit-score-track">
+                    <div className="fit-score-fill" style={{ width: `${profile.fit_score * 10}%` }} />
                   </div>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export function ProfilePage() {
           )}
 
           {shortlistEntry && (
-            <div className="card mb-2" style={{ borderColor: '#f59e0b' }}>
+            <div className="card mb-2 shortlist-highlight-card">
               <h3 className="mb-1">Priority Shortlist — Rank #{shortlistEntry.Rank}</h3>
               <p className="text-sm"><strong>Why Strong Fit:</strong> {shortlistEntry['Why Strong Fit']}</p>
               <p className="text-sm mt-1"><strong>Recruitment Priority:</strong> {shortlistEntry['Recruitment Priority']}</p>

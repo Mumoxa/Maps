@@ -25,7 +25,7 @@ export function CompanyCard({ company, profileCount, slug }: CompanyCardProps) {
       </div>
       <div className="company-card-meta">
         <div>{segmentLabel}</div>
-        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+        <div className="company-card-meta-row">
           <Badge text={company.priority} variant="priority" priority={company.priority} />
           <span>{profileCount} {profileCount === 1 ? 'profile' : 'profiles'}</span>
         </div>

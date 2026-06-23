@@ -91,7 +91,7 @@ export function CompanyDirectory() {
                 })
               }}
               aria-label="Filter by priority"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Priorities</option>
               <option value="P1">P1</option>
@@ -109,7 +109,7 @@ export function CompanyDirectory() {
                 })
               }}
               aria-label="Filter by segment"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Segments</option>
               {[...new Set(data.companies.map(c => c.segment))].sort().map(s => (

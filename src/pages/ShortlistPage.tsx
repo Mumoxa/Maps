@@ -130,7 +130,7 @@ export function ShortlistPage() {
                 })
               }}
               aria-label="Filter by priority"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Priority</option>
               <option value="P1">P1 ({priorityCounts.P1})</option>
@@ -148,7 +148,7 @@ export function ShortlistPage() {
                 })
               }}
               aria-label="Filter by seniority"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Seniority</option>
               {seniorityOptions.map(s => <option key={s} value={s}>{s}</option>)}
@@ -160,7 +160,7 @@ export function ShortlistPage() {
                 setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
               }}
               aria-label="Sort"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="rank-asc">Rank 1-50</option>
               <option value="rank-desc">Rank 50-1</option>
@@ -177,7 +177,7 @@ export function ShortlistPage() {
             />
           ) : (
             <>
-              <div style={{ overflowX: 'auto' }}>
+              <div className="shortlist-table-wrap">
                 <table className="shortlist-table">
                   <thead>
                     <tr>
@@ -199,7 +199,7 @@ export function ShortlistPage() {
                         : 'P3' as const
                       return (
                         <tr key={e.Rank}>
-                          <td style={{ fontWeight: 600 }}>#{e.Rank}</td>
+                          <td className="shortlist-rank">#{e.Rank}</td>
                           <td>
                             {pSlug ? (
                               <Link to={`/profiles/${pSlug}`}>{e['Full Name']}</Link>
@@ -208,11 +208,11 @@ export function ShortlistPage() {
                             )}
                           </td>
                           <td>{e['Current Company']}</td>
-                          <td style={{ maxWidth: 200, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e.Title}</td>
+                          <td className="shortlist-title truncate">{e.Title}</td>
                           <td><Badge text={priority} variant="priority" priority={priority} /></td>
-                          <td style={{ maxWidth: 150, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e['Credit Risk Specialism']}</td>
+                          <td className="shortlist-specialism truncate">{e['Credit Risk Specialism']}</td>
                           <td>{e.Seniority}</td>
-                          <td style={{ maxWidth: 250, fontSize: '0.8rem', color: '#6b7280' }}>
+                          <td className="shortlist-why">
                             {e['Why Strong Fit']}
                           </td>
                         </tr>

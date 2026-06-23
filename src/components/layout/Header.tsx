@@ -98,8 +98,8 @@ export function Header() {
               <div className="search-results">
                 {searchResults.map((item, i) => (
                   <div key={i} className="search-result-item" onClick={() => handleSelect(item)}>
-                    <div style={{ fontWeight: 500 }}>{item.label}</div>
-                    <div style={{ fontSize: '0.75rem', color: '#6b7280' }}>{item.type}</div>
+                    <div className="search-result-name">{item.label}</div>
+                    <div className="search-result-type">{item.type}</div>
                   </div>
                 ))}
               </div>

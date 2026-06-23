@@ -66,10 +66,10 @@ export function HomePage() {
           </div>
 
           <div className="stats-bar">
-            <StatCard value={data.summary.total_profiles} label="Profiles" color="#1a56db" />
-            <StatCard value={data.companies.length} label="Companies" color="#10b981" />
-            <StatCard value={data.segments.length} label="Segments" color="#f59e0b" />
-            <StatCard value={data.summary.avg_fit_score} label="Avg Fit Score" color="#8b5cf6" />
+            <StatCard value={data.summary.total_profiles} label="Profiles" color="var(--color-primary)" />
+            <StatCard value={data.companies.length} label="Companies" color="var(--color-success)" />
+            <StatCard value={data.segments.length} label="Segments" color="var(--color-accent)" />
+            <StatCard value={data.summary.avg_fit_score} label="Avg Fit Score" color="var(--color-purple)" />
           </div>
 
           <div className="mb-3">
@@ -146,29 +146,29 @@ export function HomePage() {
           <div>
             <h2 className="mb-2">Quick Links</h2>
             <div className="grid grid-4">
-              <Link to="/map" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
-                <MapIcon size={32} style={{ margin: '0 auto 0.5rem', color: '#1a56db' }} />
-                <div style={{ fontWeight: 600 }}>Interactive Map</div>
+              <Link to="/map" className="card card-hover quick-link-card">
+                <MapIcon size={32} className="quick-link-icon" style={{ color: 'var(--color-primary)' }} />
+                <div className="quick-link-title">Interactive Map</div>
                 <div className="text-sm text-secondary">Explore the ecosystem</div>
               </Link>
-              <Link to="/segments" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
-                <Layers size={32} style={{ margin: '0 auto 0.5rem', color: '#10b981' }} />
-                <div style={{ fontWeight: 600 }}>Segments</div>
+              <Link to="/segments" className="card card-hover quick-link-card">
+                <Layers size={32} className="quick-link-icon" style={{ color: 'var(--color-success)' }} />
+                <div className="quick-link-title">Segments</div>
                 <div className="text-sm text-secondary">{data.segments.length} industry segments</div>
               </Link>
-              <Link to="/companies" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
-                <Building2 size={32} style={{ margin: '0 auto 0.5rem', color: '#f59e0b' }} />
-                <div style={{ fontWeight: 600 }}>Companies</div>
+              <Link to="/companies" className="card card-hover quick-link-card">
+                <Building2 size={32} className="quick-link-icon" style={{ color: 'var(--color-accent)' }} />
+                <div className="quick-link-title">Companies</div>
                 <div className="text-sm text-secondary">{data.companies.length} companies</div>
               </Link>
-              <Link to="/profiles" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
-                <Users size={32} style={{ margin: '0 auto 0.5rem', color: '#8b5cf6' }} />
-                <div style={{ fontWeight: 600 }}>Profiles</div>
+              <Link to="/profiles" className="card card-hover quick-link-card">
+                <Users size={32} className="quick-link-icon" style={{ color: 'var(--color-purple)' }} />
+                <div className="quick-link-title">Profiles</div>
                 <div className="text-sm text-secondary">{data.profiles.length} professionals</div>
               </Link>
-              <Link to="/shortlist" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
-                <ListOrdered size={32} style={{ margin: '0 auto 0.5rem', color: '#ef4444' }} />
-                <div style={{ fontWeight: 600 }}>Shortlist</div>
+              <Link to="/shortlist" className="card card-hover quick-link-card">
+                <ListOrdered size={32} className="quick-link-icon" style={{ color: 'var(--color-error)' }} />
+                <div className="quick-link-title">Shortlist</div>
                 <div className="text-sm text-secondary">Top 50 priority candidates</div>
               </Link>
             </div>

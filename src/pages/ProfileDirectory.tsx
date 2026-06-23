@@ -120,7 +120,7 @@ export function ProfileDirectory() {
                 })
               }}
               aria-label="Filter by segment"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Segments</option>
               {segmentOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
@@ -136,7 +136,7 @@ export function ProfileDirectory() {
                 })
               }}
               aria-label="Filter by confidence"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Confidence</option>
               <option value="High">High</option>
@@ -154,7 +154,7 @@ export function ProfileDirectory() {
                 })
               }}
               aria-label="Filter by seniority"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Seniority</option>
               {[...new Set(data.profiles.map(p => p.seniority))].sort().map(s => (
@@ -168,7 +168,7 @@ export function ProfileDirectory() {
                 setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
               }}
               aria-label="Sort"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="fit_score-desc">Fit Score (high)</option>
               <option value="fit_score-asc">Fit Score (low)</option>
@@ -176,7 +176,7 @@ export function ProfileDirectory() {
               <option value="name-desc">Name Z-A</option>
               <option value="company-asc">Company A-Z</option>
             </select>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.85rem', cursor: 'pointer' }}>
+            <label className="filter-checkbox">
               <input
                 type="checkbox"
                 checked={needsVerification}
