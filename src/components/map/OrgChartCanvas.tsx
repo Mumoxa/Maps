@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import {
   ReactFlow,
   useNodesState,
@@ -15,36 +15,45 @@ import {
 import '@xyflow/react/dist/style.css'
 import type { TreeNode, Profile } from '../../data'
 
+interface NodeData extends Record<string, unknown> {
+  label: string
+  subtitle?: string
+  profile?: Profile
+}
+
 function SegmentNode({ data }: NodeProps) {
+  const d = data as NodeData
   return (
     <div className="segment-node">
       <Handle type="source" position={Position.Bottom} />
-      <div>{data.label as string}</div>
+      <div>{d.label}</div>
       <div style={{ fontSize: '0.7rem', color: '#6b7280' }}>Segment</div>
     </div>
   )
 }
 
 function CompanyNode({ data }: NodeProps) {
+  const d = data as NodeData
   return (
     <div className="company-node">
       <Handle type="target" position={Position.Top} />
       <Handle type="source" position={Position.Bottom} />
-      <div style={{ fontWeight: 500 }}>{(data as any).label}</div>
-      <div style={{ fontSize: '0.7rem', color: '#6b7280' }}>{(data as any).subtitle || 'Company'}</div>
+      <div style={{ fontWeight: 500 }}>{d.label}</div>
+      <div style={{ fontSize: '0.7rem', color: '#6b7280' }}>{d.subtitle || 'Company'}</div>
     </div>
   )
 }
 
 function ProfileNode({ data }: NodeProps) {
-  const profile = (data as any).profile as Profile | undefined
+  const d = data as NodeData
+  const profile = d.profile
   const isVerification = profile?.company === 'Needs verification'
   const isDup = profile?.name === 'David Coleman'
   return (
     <div className={`profile-node ${isVerification ? 'verification' : ''}`}>
       <Handle type="target" position={Position.Top} />
       <div style={{ fontWeight: 500, fontSize: '0.75rem' }}>
-        {profile?.name || (data as any).label}
+        {profile?.name || d.label}
         {isDup && <span style={{ color: '#6b7280', fontSize: '0.65rem' }}> (dup)</span>}
       </div>
       {profile && (
@@ -66,12 +75,11 @@ interface OrgChartCanvasProps {
   tree: TreeNode[]
   searchQuery?: string
   onProfileClick?: (profile: Profile) => void
-  onNodeHover?: (node: { label: string; data: any } | null) => void
+  onNodeHover?: (node: { label: string; data: Record<string, unknown> } | null) => void
   filterSegment?: string
 }
 
 const NODE_WIDTH = 160
-const NODE_HEIGHT = 60
 const LEVEL_SPACING = 80
 const SIBLING_SPACING = 20
 
@@ -140,22 +148,21 @@ function layoutTree(tree: TreeNode[]): { nodes: Node[]; edges: Edge[] } {
 
 export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover, filterSegment }: OrgChartCanvasProps) {
   const layout = useMemo(() => layoutTree(tree), [tree])
-  const [nodes, setNodes, onNodesChange] = useNodesState(layout.nodes)
-  const [edges, setEdges, onEdgesChange] = useEdgesState(layout.edges)
-  const [hoveredNode, setHoveredNode] = useState<{ label: string; data: any } | null>(null)
+  const [nodes, , onNodesChange] = useNodesState(layout.nodes)
+  const [edges, , onEdgesChange] = useEdgesState(layout.edges)
+  const [hoveredNode, setHoveredNode] = useState<{ label: string; data: NodeData } | null>(null)
   const [tooltipPos, setTooltipPos] = useState({ x: 0, y: 0 })
 
-  ReactFlow as any
-
-  const onNodeClick = useCallback((_event: any, node: Node) => {
+  const onNodeClick = useCallback((_event: React.MouseEvent, node: Node) => {
     if (node.type === 'profile' && onProfileClick) {
-      const profile = (node.data as any).profile as Profile
+      const profile = (node.data as NodeData).profile
       if (profile) onProfileClick(profile)
     }
   }, [onProfileClick])
 
-  const onNodeMouseEnter = useCallback((_event: any, node: Node) => {
-    const info = { label: node.data?.label as string, data: node.data }
+  const onNodeMouseEnter = useCallback((_event: React.MouseEvent, node: Node) => {
+    const d = node.data as NodeData
+    const info = { label: d.label, data: d }
     setHoveredNode(info)
     if (onNodeHover) onNodeHover(info)
   }, [onNodeHover])
@@ -205,15 +212,15 @@ export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover,
           style={{ left: tooltipPos.x, top: tooltipPos.y }}
         >
           <div style={{ fontWeight: 600 }}>{hoveredNode.label}</div>
-          {(hoveredNode.data as any)?.profile && (
+          {hoveredNode.data.profile && (
             <div style={{ fontSize: '0.75rem', marginTop: '0.25rem' }}>
-              Company: {(hoveredNode.data as any).profile.company}<br />
-              Title: {(hoveredNode.data as any).profile.title}<br />
-              Fit: {(hoveredNode.data as any).profile.fit_score}/10
+              Company: {hoveredNode.data.profile.company}<br />
+              Title: {hoveredNode.data.profile.title}<br />
+              Fit: {hoveredNode.data.profile.fit_score}/10
             </div>
           )}
-          {(hoveredNode.data as any)?.subtitle && (
-            <div style={{ fontSize: '0.75rem', color: '#6b7280' }}>{(hoveredNode.data as any).subtitle}</div>
+          {hoveredNode.data.subtitle && (
+            <div style={{ fontSize: '0.75rem', color: '#6b7280' }}>{hoveredNode.data.subtitle}</div>
           )}
         </div>
       )}

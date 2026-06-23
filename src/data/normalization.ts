@@ -3,7 +3,7 @@ import type { DataBundle, CompanyAliasMap, SegmentNormalizationMap } from './typ
 let cachedAliasMap: CompanyAliasMap | null = null
 let cachedSegmentMap: SegmentNormalizationMap | null = null
 
-export function buildCompanyAliasMap(data: DataBundle): CompanyAliasMap {
+export function buildCompanyAliasMap(_data: DataBundle): CompanyAliasMap {
   if (cachedAliasMap) return cachedAliasMap
 
   const map: CompanyAliasMap = {
@@ -86,7 +86,7 @@ export function buildCompanyAliasMap(data: DataBundle): CompanyAliasMap {
   return map
 }
 
-export function buildSegmentNormalizationMap(data: DataBundle): SegmentNormalizationMap {
+export function buildSegmentNormalizationMap(_data: DataBundle): SegmentNormalizationMap {
   if (cachedSegmentMap) return cachedSegmentMap
 
   const map: SegmentNormalizationMap = {

@@ -1,12 +1,11 @@
 import { useMemo, useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { ExternalLink } from 'lucide-react'
 import { useData } from '../context/DataContext'
-import { buildSlugSets, getProfilesByCompany, getSegmentsByCompany, getUnverifiedProfilesByCompany, normalizeCompanyName } from '../data'
+import { buildSlugSets, getProfilesByCompany, getSegmentsByCompany, getUnverifiedProfilesByCompany } from '../data'
 import { ProfileCard } from '../components/ui/ProfileCard'
 import { Badge } from '../components/ui/Badge'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { Button } from '../components/ui/Button'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
@@ -99,7 +98,7 @@ export function CompanyPage() {
             ) : (
               <div className="grid grid-2">
                 {profiles.map(p => {
-                  const pSlug = slugSets ? [...slugSets.profileSlugs.entries()].find(([, id]) => id === p.id)?.[0] : undefined
+                  const pSlug = slugSets ? slugSets.profileIdToSlug.get(p.id) : undefined
                   return <ProfileCard key={p.id} profile={p} profileSlug={pSlug} />
                 })}
               </div>
@@ -114,7 +113,7 @@ export function CompanyPage() {
               </p>
               <div className="grid grid-2">
                 {unverifiedProfiles.map(p => {
-                  const pSlug = slugSets ? [...slugSets.profileSlugs.entries()].find(([, id]) => id === p.id)?.[0] : undefined
+                  const pSlug = slugSets ? slugSets.profileIdToSlug.get(p.id) : undefined
                   return <ProfileCard key={p.id} profile={p} profileSlug={pSlug} />
                 })}
               </div>

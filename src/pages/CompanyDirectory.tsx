@@ -1,7 +1,7 @@
 import { useMemo, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useData } from '../context/DataContext'
-import { buildSlugSets, normalizeCompanyName, normalizeSegmentName } from '../data'
+import { buildSlugSets, normalizeCompanyName } from '../data'
 import { CompanyCard } from '../components/ui/CompanyCard'
 import { SearchBar } from '../components/ui/SearchBar'
 import { Pagination } from '../components/ui/Pagination'
@@ -128,7 +128,7 @@ export function CompanyDirectory() {
             <>
               <div className="grid grid-3">
                 {paginated.map(c => {
-                  const slug = slugSets ? [...slugSets.companySlugs.entries()].find(([, id]) => id === c.id)?.[0] : undefined
+                  const slug = slugSets?.companyIdToSlug.get(c.id)
                   return <CompanyCard key={c.id} company={c} profileCount={c.profileCount} slug={slug} />
                 })}
               </div>
@@ -142,5 +142,3 @@ export function CompanyDirectory() {
     </ErrorBoundary>
   )
 }
-
-// normalizeCompanyName imported from data layer

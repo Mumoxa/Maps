@@ -47,13 +47,15 @@ export function ShortlistPage() {
     if (seniorityFilter) {
       result = result.filter(e => e.Seniority === seniorityFilter)
     }
+    const nameToFitScore = new Map<string, number>()
+    for (const p of data.profiles) {
+      if (!nameToFitScore.has(p.name)) nameToFitScore.set(p.name, p.fit_score)
+    }
     result.sort((a, b) => {
       let cmp = 0
       if (sort === 'rank') cmp = parseInt(a.Rank) - parseInt(b.Rank)
       else if (sort === 'fit_score') {
-        const aProfile = data.profiles.find(p => p.name === a['Full Name'])
-        const bProfile = data.profiles.find(p => p.name === b['Full Name'])
-        cmp = (aProfile?.fit_score || 0) - (bProfile?.fit_score || 0)
+        cmp = (nameToFitScore.get(a['Full Name']) || 0) - (nameToFitScore.get(b['Full Name']) || 0)
       }
       return order === 'desc' ? -cmp : cmp
     })
@@ -82,11 +84,16 @@ export function ShortlistPage() {
   if (loading) return <LoadingSpinner size="lg" />
   if (!data) return null
 
+  const profileNameToId = new Map<string, string>()
+  for (const p of data.profiles) {
+    if (!profileNameToId.has(p.name)) profileNameToId.set(p.name, p.id)
+  }
+
   const getProfileSlug = (name: string): string | undefined => {
     if (!slugSets) return undefined
-    const profile = data.profiles.find(p => p.name === name)
-    if (!profile) return undefined
-    return [...slugSets.profileSlugs.entries()].find(([, id]) => id === profile.id)?.[0]
+    const id = profileNameToId.get(name)
+    if (!id) return undefined
+    return slugSets.profileIdToSlug.get(id)
   }
 
   return (

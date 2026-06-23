@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
-import { ExternalLink, AlertTriangle } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import { Badge } from './Badge'
 import { Tooltip } from './Tooltip'
 import type { Profile, ShortlistEntry } from '../../data'
-import { getShortlistByProfile } from '../../data'
 
 interface ProfileCardProps {
   profile: Profile

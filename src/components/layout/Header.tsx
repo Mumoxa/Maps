@@ -43,15 +43,15 @@ export function Header() {
     const slugSets = buildSlugSets(data)
     const items: { label: string; type: string; slug: string }[] = []
     for (const p of result.profiles) {
-      const slug = [...slugSets.profileSlugs.entries()].find(([, id]) => id === p.id)?.[0]
+      const slug = slugSets.profileIdToSlug.get(p.id)
       if (slug) items.push({ label: p.name, type: 'Profile', slug })
     }
     for (const c of result.companies) {
-      const slug = [...slugSets.companySlugs.entries()].find(([, id]) => id === c.id)?.[0]
+      const slug = slugSets.companyIdToSlug.get(c.id)
       if (slug) items.push({ label: c.name, type: 'Company', slug })
     }
     for (const s of result.segments) {
-      const slug = [...slugSets.segmentSlugs.entries()].find(([, id]) => id === s.id)?.[0]
+      const slug = slugSets.segmentIdToSlug.get(s.id)
       if (slug) items.push({ label: s.name, type: 'Segment', slug })
     }
     setSearchResults(items.slice(0, 8))

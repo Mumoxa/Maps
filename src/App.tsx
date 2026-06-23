@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useRoutes } from 'react-router-dom'
+import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { DataProvider } from './context/DataContext'
 import { Layout } from './components/layout/Layout'
 import { ErrorBoundary } from './components/ui/ErrorBoundary'

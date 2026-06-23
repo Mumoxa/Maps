@@ -29,29 +29,40 @@ export function generateSlug(name: string, id: string, existingSlugs: Set<string
   return slug
 }
 
-export function buildSlugSets(data: { profiles: { id: string; name: string }[]; companies: { id: string; name: string }[]; segments: { id: string; name: string }[] }): {
+export interface SlugSets {
   profileSlugs: Map<string, string>
   companySlugs: Map<string, string>
   segmentSlugs: Map<string, string>
+  profileIdToSlug: Map<string, string>
+  companyIdToSlug: Map<string, string>
+  segmentIdToSlug: Map<string, string>
   allSlugs: Set<string>
-} {
+}
+
+export function buildSlugSets(data: { profiles: { id: string; name: string }[]; companies: { id: string; name: string }[]; segments: { id: string; name: string }[] }): SlugSets {
   const allSlugs = new Set<string>()
   const profileSlugs = new Map<string, string>()
   const companySlugs = new Map<string, string>()
   const segmentSlugs = new Map<string, string>()
+  const profileIdToSlug = new Map<string, string>()
+  const companyIdToSlug = new Map<string, string>()
+  const segmentIdToSlug = new Map<string, string>()
 
   for (const p of data.profiles) {
     const slug = generateSlug(p.name, p.id, allSlugs)
     profileSlugs.set(slug, p.id)
+    profileIdToSlug.set(p.id, slug)
   }
   for (const c of data.companies) {
     const slug = generateSlug(c.name, c.id, allSlugs)
     companySlugs.set(slug, c.id)
+    companyIdToSlug.set(c.id, slug)
   }
   for (const s of data.segments) {
     const slug = generateSlug(s.name, s.id, allSlugs)
     segmentSlugs.set(slug, s.id)
+    segmentIdToSlug.set(s.id, slug)
   }
 
-  return { profileSlugs, companySlugs, segmentSlugs, allSlugs }
+  return { profileSlugs, companySlugs, segmentSlugs, profileIdToSlug, companyIdToSlug, segmentIdToSlug, allSlugs }
 }

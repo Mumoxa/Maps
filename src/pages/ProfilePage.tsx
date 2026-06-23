@@ -48,17 +48,17 @@ export function ProfilePage() {
 
   const otherColemanSlug = useMemo(() => {
     if (!otherDavidColeman || !slugSets) return ''
-    return [...slugSets.profileSlugs.entries()].find(([, id]) => id === otherDavidColeman.id)?.[0] || ''
+    return slugSets.profileIdToSlug.get(otherDavidColeman.id) || ''
   }, [otherDavidColeman, slugSets])
 
   const companySlug = useMemo(() => {
     if (!company || !slugSets) return ''
-    return [...slugSets.companySlugs.entries()].find(([, id]) => id === company.id)?.[0] || ''
+    return slugSets.companyIdToSlug.get(company.id) || ''
   }, [company, slugSets])
 
   const segmentSlug = useMemo(() => {
     if (!segment || !slugSets) return ''
-    return [...slugSets.segmentSlugs.entries()].find(([, id]) => id === segment.id)?.[0] || ''
+    return slugSets.segmentIdToSlug.get(segment.id) || ''
   }, [segment, slugSets])
 
   useEffect(() => {

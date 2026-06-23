@@ -1,5 +1,5 @@
 import { useMemo, useState, useCallback, useEffect } from 'react'
-import { useSearchParams, useNavigate } from 'react-router-dom'
+import { useSearchParams } from 'react-router-dom'
 import { useData } from '../context/DataContext'
 import { buildCompleteOrgChart, buildTree, buildSlugSets } from '../data'
 import { OrgChartCanvas } from '../components/map/OrgChartCanvas'
@@ -16,8 +16,6 @@ import type { Profile } from '../data'
 export function MapPage() {
   const { data, loading } = useData()
   const [searchParams, setSearchParams] = useSearchParams()
-  const navigate = useNavigate()
-
   useEffect(() => { document.title = 'Interactive Industry Map'; }, [])
   const [searchVal, setSearchVal] = useState(searchParams.get('search') || '')
   const [segmentFilter, setSegmentFilter] = useState(searchParams.get('segment') || '')
@@ -66,7 +64,7 @@ export function MapPage() {
 
   const profileSlug = useMemo(() => {
     if (!selectedProfile || !slugSets) return ''
-    return [...slugSets.profileSlugs.entries()].find(([, id]) => id === selectedProfile.id)?.[0] || ''
+    return slugSets.profileIdToSlug.get(selectedProfile.id) || ''
   }, [selectedProfile, slugSets])
 
   if (loading) return <LoadingSpinner size="lg" />

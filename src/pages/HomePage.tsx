@@ -1,6 +1,6 @@
 import { useMemo, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Map, Users, Building2, Layers, ListOrdered, Search } from 'lucide-react'
+import { Map as MapIcon, Users, Building2, Layers, ListOrdered } from 'lucide-react'
 import { useData } from '../context/DataContext'
 import { StatCard } from '../components/ui/StatCard'
 import { ProfileCard } from '../components/ui/ProfileCard'
@@ -8,7 +8,7 @@ import { SearchBar } from '../components/ui/SearchBar'
 import { Button } from '../components/ui/Button'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
-import { buildSlugSets, globalSearch, getShortlistEntryByName } from '../data'
+import { buildSlugSets } from '../data'
 
 export function HomePage() {
   const { data, loading, error } = useData()
@@ -19,6 +19,13 @@ export function HomePage() {
   const slugSets = useMemo(() => {
     if (!data?.profiles) return null
     return buildSlugSets(data)
+  }, [data])
+
+  const segmentNameToId = useMemo(() => {
+    if (!data?.segments) return new Map<string, string>()
+    const m = new Map<string, string>()
+    for (const s of data.segments) m.set(s.name, s.id)
+    return m
   }, [data])
 
   const topSegments = useMemo(() => {
@@ -54,7 +61,7 @@ export function HomePage() {
             <h1>SA Credit Risk Market Map</h1>
             <p>Recruitment Market Intelligence for Credit Risk Talent</p>
             <Button variant="primary" to="/map">
-              <Map size={18} /> Explore the Interactive Map
+              <MapIcon size={18} /> Explore the Interactive Map
             </Button>
           </div>
 
@@ -84,7 +91,7 @@ export function HomePage() {
                 return (
                   <div key={i} className="bar-row">
                     <div className="bar-label">
-                      <Link to={`/segments/${slugSets ? [...slugSets.segmentSlugs.entries()].find(([,id]) => id === data.segments.find(s => s.name === seg.name)?.id)?.[0] || '' : ''}`}>
+                      <Link to={`/segments/${slugSets?.segmentIdToSlug.get(segmentNameToId.get(seg.name) ?? '') ?? ''}`}>
                         {seg.name}
                       </Link>
                     </div>
@@ -106,7 +113,7 @@ export function HomePage() {
             <div className="grid grid-2">
               {topShortlist.map((entry, i) => {
                 const profile = data.profiles.find(p => p.name === entry['Full Name'])
-                const slug = profile && slugSets ? [...slugSets.profileSlugs.entries()].find(([,id]) => id === profile.id)?.[0] : undefined
+                const slug = profile && slugSets ? slugSets.profileIdToSlug.get(profile.id) : undefined
                 return (
                   <ProfileCard
                     key={i}
@@ -140,7 +147,7 @@ export function HomePage() {
             <h2 className="mb-2">Quick Links</h2>
             <div className="grid grid-4">
               <Link to="/map" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
-                <Map size={32} style={{ margin: '0 auto 0.5rem', color: '#1a56db' }} />
+                <MapIcon size={32} style={{ margin: '0 auto 0.5rem', color: '#1a56db' }} />
                 <div style={{ fontWeight: 600 }}>Interactive Map</div>
                 <div className="text-sm text-secondary">Explore the ecosystem</div>
               </Link>

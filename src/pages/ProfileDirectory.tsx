@@ -45,7 +45,7 @@ export function ProfileDirectory() {
     query: query || undefined,
     segment: segmentFilter || undefined,
     company: companyFilter || undefined,
-    confidence: (confidenceFilter as any) || undefined,
+    confidence: (confidenceFilter as FilterOptions['confidence']) || undefined,
     seniority: seniorityFilter || undefined,
     needsVerification: needsVerification || undefined,
   }), [query, segmentFilter, companyFilter, confidenceFilter, seniorityFilter, needsVerification])
@@ -81,11 +81,6 @@ export function ProfileDirectory() {
   const segmentOptions = useMemo(() => {
     if (!data) return []
     return [...new Set(data.profiles.map(p => p.segment))].sort().map(s => ({ value: s, label: s }))
-  }, [data])
-
-  const companyOptions = useMemo(() => {
-    if (!data) return []
-    return [...new Set(data.profiles.map(p => p.company))].sort().map(s => ({ value: s, label: s }))
   }, [data])
 
   if (loading) return <LoadingSpinner size="lg" />
@@ -208,7 +203,7 @@ export function ProfileDirectory() {
             <>
               <div className="grid grid-2">
                 {paginated.map(p => {
-                  const pSlug = slugSets ? [...slugSets.profileSlugs.entries()].find(([, id]) => id === p.id)?.[0] : undefined
+                  const pSlug = slugSets?.profileIdToSlug.get(p.id)
                   return <ProfileCard key={p.id} profile={p} profileSlug={pSlug} />
                 })}
               </div>

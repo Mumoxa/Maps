@@ -9,9 +9,9 @@ export function useSearchFilters() {
     query: searchParams.get('q') || undefined,
     segment: searchParams.get('segment') || undefined,
     company: searchParams.get('company') || undefined,
-    confidence: (searchParams.get('confidence') as any) || undefined,
+    confidence: (searchParams.get('confidence') as FilterOptions['confidence']) || undefined,
     seniority: searchParams.get('seniority') || undefined,
-    priority: (searchParams.get('priority') as any) || undefined,
+    priority: (searchParams.get('priority') as FilterOptions['priority']) || undefined,
     needsVerification: searchParams.get('needs_verification') === 'true' || undefined,
   }), [searchParams])
 
