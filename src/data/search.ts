@@ -2,11 +2,12 @@ import Fuse from 'fuse.js'
 import type { Profile, Company, Segment, FilterOptions, DataBundle } from './types'
 
 let fuseInstance: Fuse<Profile> | null = null
+let allProfiles: Profile[] = []
 
 export function createSearchIndex(profiles: Profile[]): Fuse<Profile> {
   if (fuseInstance) return fuseInstance
 
-  const options: /* Fuse.IFuseOptions<Profile> */ any = {
+  const options = {
     keys: [
       { name: 'name', weight: 0.4 },
       { name: 'company', weight: 0.2 },
@@ -20,6 +21,7 @@ export function createSearchIndex(profiles: Profile[]): Fuse<Profile> {
   }
 
   fuseInstance = new Fuse(profiles, options)
+  allProfiles = profiles
   return fuseInstance
 }
 
@@ -30,39 +32,12 @@ export function searchProfiles(
 ): Profile[] {
   let results: Profile[]
 
-  try {
-    if (query.trim()) {
-      results = fuse.search(query).map(r => r.item)
-    } else {
-      results = (fuse as any).__profiles || []
-    }
-  } catch {
-    results = filterProfilesFallback(
-      (fuse as any).__profiles || [],
-      { ...filters, query }
-    )
-  }
-
-  if (!query.trim()) {
-    const allProfiles = (fuse as any).__profiles as Profile[] || []
+  if (query.trim()) {
+    results = fuse.search(query).map(r => r.item)
+  } else {
     results = [...allProfiles]
   }
 
-  return applyFilters(results, filters)
-}
-
-function filterProfilesFallback(profiles: Profile[], filters: FilterOptions & { query?: string }): Profile[] {
-  let results = [...profiles]
-  if (filters.query) {
-    const q = filters.query.toLowerCase()
-    results = results.filter(p =>
-      p.name.toLowerCase().includes(q) ||
-      p.company.toLowerCase().includes(q) ||
-      p.title.toLowerCase().includes(q) ||
-      p.segment.toLowerCase().includes(q) ||
-      p.specialism.toLowerCase().includes(q)
-    )
-  }
   return applyFilters(results, filters)
 }
 
@@ -123,11 +98,5 @@ export function globalSearch(
     profiles: matchedProfiles.slice(0, 5),
     companies: matchedCompanies.slice(0, 5),
     segments: matchedSegments.slice(0, 5),
-  }
-}
-
-export function setFuseProfiles(profiles: Profile[]) {
-  if (fuseInstance) {
-    (fuseInstance as any).__profiles = profiles
   }
 }

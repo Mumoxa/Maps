@@ -1,4 +1,4 @@
-import { ZoomIn, ZoomOut, Maximize2, RotateCcw } from 'lucide-react'
+import { ZoomIn, ZoomOut, Maximize2 } from 'lucide-react'
 
 interface MapControlsProps {
   onZoomIn: () => void

@@ -101,7 +101,7 @@ export function SegmentDirectory() {
             <>
               <div className="grid grid-3">
                 {paginated.map(seg => {
-                  const slug = slugSets ? [...slugSets.segmentSlugs.entries()].find(([, id]) => id === seg.id)?.[0] : undefined
+                  const slug = slugSets?.segmentIdToSlug.get(seg.id)
                   return (
                     <SegmentCard
                       key={seg.id}

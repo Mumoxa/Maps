@@ -45,7 +45,7 @@ export function ProfileDirectory() {
     query: query || undefined,
     segment: segmentFilter || undefined,
     company: companyFilter || undefined,
-    confidence: (confidenceFilter as any) || undefined,
+    confidence: (confidenceFilter as FilterOptions['confidence']) || undefined,
     seniority: seniorityFilter || undefined,
     needsVerification: needsVerification || undefined,
   }), [query, segmentFilter, companyFilter, confidenceFilter, seniorityFilter, needsVerification])
@@ -81,11 +81,6 @@ export function ProfileDirectory() {
   const segmentOptions = useMemo(() => {
     if (!data) return []
     return [...new Set(data.profiles.map(p => p.segment))].sort().map(s => ({ value: s, label: s }))
-  }, [data])
-
-  const companyOptions = useMemo(() => {
-    if (!data) return []
-    return [...new Set(data.profiles.map(p => p.company))].sort().map(s => ({ value: s, label: s }))
   }, [data])
 
   if (loading) return <LoadingSpinner size="lg" />
@@ -125,7 +120,7 @@ export function ProfileDirectory() {
                 })
               }}
               aria-label="Filter by segment"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Segments</option>
               {segmentOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
@@ -141,7 +136,7 @@ export function ProfileDirectory() {
                 })
               }}
               aria-label="Filter by confidence"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Confidence</option>
               <option value="High">High</option>
@@ -159,7 +154,7 @@ export function ProfileDirectory() {
                 })
               }}
               aria-label="Filter by seniority"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Seniority</option>
               {[...new Set(data.profiles.map(p => p.seniority))].sort().map(s => (
@@ -173,7 +168,7 @@ export function ProfileDirectory() {
                 setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
               }}
               aria-label="Sort"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="fit_score-desc">Fit Score (high)</option>
               <option value="fit_score-asc">Fit Score (low)</option>
@@ -181,7 +176,7 @@ export function ProfileDirectory() {
               <option value="name-desc">Name Z-A</option>
               <option value="company-asc">Company A-Z</option>
             </select>
-            <label style={{ display: 'flex', alignItems: 'center', gap: '0.25rem', fontSize: '0.85rem', cursor: 'pointer' }}>
+            <label className="filter-checkbox">
               <input
                 type="checkbox"
                 checked={needsVerification}
@@ -208,7 +203,7 @@ export function ProfileDirectory() {
             <>
               <div className="grid grid-2">
                 {paginated.map(p => {
-                  const pSlug = slugSets ? [...slugSets.profileSlugs.entries()].find(([, id]) => id === p.id)?.[0] : undefined
+                  const pSlug = slugSets?.profileIdToSlug.get(p.id)
                   return <ProfileCard key={p.id} profile={p} profileSlug={pSlug} />
                 })}
               </div>

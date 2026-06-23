@@ -1,5 +1,6 @@
 import type { DataBundle, OrgChartEntry, OrgChartCompany, TreeNode, Profile, Company } from './types'
 import { normalizeCompanyName } from './normalization'
+import { slugify } from './slug'
 
 export function buildCompleteOrgChart(data: DataBundle): OrgChartEntry[] {
   const profileMap = new Map<string, Profile[]>()
@@ -74,9 +75,6 @@ export function buildCompleteOrgChart(data: DataBundle): OrgChartEntry[] {
   return entries
 }
 
-function slugify(text: string): string {
-  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
-}
 
 export function buildTree(orgChart: OrgChartEntry[]): TreeNode[] {
   return orgChart.map(entry => {

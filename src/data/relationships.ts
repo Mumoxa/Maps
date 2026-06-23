@@ -1,5 +1,6 @@
 import type { DataBundle, Profile, Company, Segment } from './types'
-import { normalizeCompanyName } from './normalization'
+import { normalizeCompanyName, normalizeSegmentName } from './normalization'
+import { getCompanyByName, getSegmentByName } from './lookups'
 
 export function getProfilesBySegment(data: DataBundle, segmentName: string): Profile[] {
   return data.profiles.filter(p => p.segment === segmentName)
@@ -13,22 +14,23 @@ export function getProfilesByCompany(data: DataBundle, companyName: string): Pro
 }
 
 export function getUnverifiedProfilesByCompany(data: DataBundle, companyName: string): Profile[] {
-  const company = data.companies.find(c => c.name === companyName)
+  const company = getCompanyByName(data, companyName)
   if (!company) return []
+  const normalizedCompanySegment = normalizeSegmentName(company.segment, data)
   return data.profiles.filter(p => {
     if (p.company !== 'Needs verification') return false
-    return p.segment === company.segment || true
+    return p.segment === normalizedCompanySegment || p.segment === company.segment
   })
 }
 
 export function getCompanyByProfile(data: DataBundle, profile: Profile): Company | undefined {
   if (profile.company === 'Needs verification') return undefined
   const canonical = normalizeCompanyName(profile.company, data)
-  return data.companies.find(c => c.name === canonical)
+  return getCompanyByName(data, canonical)
 }
 
 export function getSegmentByProfile(data: DataBundle, profile: Profile): Segment | undefined {
-  return data.segments.find(s => s.name === profile.segment)
+  return getSegmentByName(data, profile.segment)
 }
 
 export function getSegmentsByCompany(data: DataBundle, company: Company): Segment[] {
@@ -41,7 +43,7 @@ export function getSegmentsByCompany(data: DataBundle, company: Company): Segmen
     }
   }
   if (matching.length === 0) {
-    const normSegment = data.segments.find(s => s.name === company.segment)
+    const normSegment = getSegmentByName(data, company.segment)
     if (normSegment) matching.push(normSegment)
   }
   return matching

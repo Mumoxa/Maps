@@ -4,7 +4,6 @@ import { useData } from '../context/DataContext'
 import { buildSlugSets, getProfilesBySegment, normalizeCompanyName } from '../data'
 import { ProfileCard } from '../components/ui/ProfileCard'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { Badge } from '../components/ui/Badge'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
@@ -42,7 +41,7 @@ export function SegmentPage() {
         seen.add(canonical)
         const company = data.companies.find(c => c.name === canonical)
         if (company) {
-          const companySlug = [...slugSets.companySlugs.entries()].find(([, id]) => id === company.id)?.[0]
+          const companySlug = slugSets.companyIdToSlug.get(company.id)
           if (companySlug) result.push({ name: canonical, slug: companySlug })
         }
       }
@@ -98,7 +97,7 @@ export function SegmentPage() {
             ) : (
               <div className="grid grid-2">
                 {profiles.map(p => {
-                  const slug = slugSets ? [...slugSets.profileSlugs.entries()].find(([, id]) => id === p.id)?.[0] : undefined
+                  const slug = slugSets?.profileIdToSlug.get(p.id)
                   return <ProfileCard key={p.id} profile={p} profileSlug={slug} />
                 })}
               </div>

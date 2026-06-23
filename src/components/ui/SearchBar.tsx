@@ -18,7 +18,7 @@ interface SearchBarProps {
   global?: boolean
 }
 
-export function SearchBar({ value, onChange, onSearch, placeholder = 'Search...', results = [], onSelect, global }: SearchBarProps) {
+export function SearchBar({ value, onChange, onSearch, placeholder = 'Search...', results = [], onSelect }: SearchBarProps) {
   const [internalValue, setInternalValue] = useState(value || '')
   const [showResults, setShowResults] = useState(false)
   const ref = useRef<HTMLDivElement>(null)

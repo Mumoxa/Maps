@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
-import { ExternalLink, AlertTriangle } from 'lucide-react'
+import { ExternalLink } from 'lucide-react'
 import { Badge } from './Badge'
 import { Tooltip } from './Tooltip'
 import type { Profile, ShortlistEntry } from '../../data'
-import { getShortlistByProfile } from '../../data'
 
 interface ProfileCardProps {
   profile: Profile
@@ -26,9 +25,7 @@ export function ProfileCard({ profile, shortlistEntry, profileSlug }: ProfileCar
               profile.name
             )}
             {shortlistEntry && (
-              <span style={{ fontSize: '0.75rem', marginLeft: '0.5rem', color: '#f59e0b' }}>
-                #{shortlistEntry.Rank}
-              </span>
+              <span className="profile-card-rank">#{shortlistEntry.Rank}</span>
             )}
           </div>
           {isDavidColeman && (
@@ -55,10 +52,10 @@ export function ProfileCard({ profile, shortlistEntry, profileSlug }: ProfileCar
         </div>
         <div>{profile.title}</div>
         <div>{profile.location}</div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+        <div className="profile-card-meta-row">
           <span>Fit: {profile.fit_score}/10</span>
           <span>{profile.seniority}</span>
-          {profile.segment && <span style={{ fontSize: '0.75rem', color: '#6b7280' }}>{profile.segment}</span>}
+          {profile.segment && <span className="text-tertiary">{profile.segment}</span>}
         </div>
       </div>
       <div className="profile-card-actions">

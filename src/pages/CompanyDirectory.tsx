@@ -1,7 +1,7 @@
 import { useMemo, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useData } from '../context/DataContext'
-import { buildSlugSets, normalizeCompanyName, normalizeSegmentName } from '../data'
+import { buildSlugSets, normalizeCompanyName } from '../data'
 import { CompanyCard } from '../components/ui/CompanyCard'
 import { SearchBar } from '../components/ui/SearchBar'
 import { Pagination } from '../components/ui/Pagination'
@@ -91,7 +91,7 @@ export function CompanyDirectory() {
                 })
               }}
               aria-label="Filter by priority"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Priorities</option>
               <option value="P1">P1</option>
@@ -109,7 +109,7 @@ export function CompanyDirectory() {
                 })
               }}
               aria-label="Filter by segment"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
+              className="filter-select"
             >
               <option value="">All Segments</option>
               {[...new Set(data.companies.map(c => c.segment))].sort().map(s => (
@@ -128,7 +128,7 @@ export function CompanyDirectory() {
             <>
               <div className="grid grid-3">
                 {paginated.map(c => {
-                  const slug = slugSets ? [...slugSets.companySlugs.entries()].find(([, id]) => id === c.id)?.[0] : undefined
+                  const slug = slugSets?.companyIdToSlug.get(c.id)
                   return <CompanyCard key={c.id} company={c} profileCount={c.profileCount} slug={slug} />
                 })}
               </div>
@@ -142,5 +142,3 @@ export function CompanyDirectory() {
     </ErrorBoundary>
   )
 }
-
-// normalizeCompanyName imported from data layer
