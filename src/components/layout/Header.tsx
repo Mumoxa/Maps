@@ -4,10 +4,11 @@ import { Search, Menu, X } from 'lucide-react'
 import { useData } from '../../context/DataContext'
 import { globalSearch } from '../../data'
 import { buildSlugSets } from '../../data'
+import { platformConfig } from '../../config/marketConfig'
 
 const navLinks = [
   { to: '/', label: 'Home' },
-  { to: '/map', label: 'Map' },
+  { to: '/map', label: 'Speciality Map' },
   { to: '/segments', label: 'Segments' },
   { to: '/companies', label: 'Companies' },
   { to: '/profiles', label: 'Profiles' },
@@ -68,7 +69,7 @@ export function Header() {
     <header className="header">
       <div className="header-inner">
         <Link to="/" className="header-logo">
-          SA Credit Risk Market Map
+          {platformConfig.platformName}
         </Link>
 
         <nav className="header-nav">

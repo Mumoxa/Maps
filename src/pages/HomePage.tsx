@@ -1,6 +1,6 @@
 import { useMemo, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Map, Users, Building2, Layers, ListOrdered, Search } from 'lucide-react'
+import { Map, Users, Building2, Layers, ListOrdered, Search, Database, ShieldCheck } from 'lucide-react'
 import { useData } from '../context/DataContext'
 import { StatCard } from '../components/ui/StatCard'
 import { ProfileCard } from '../components/ui/ProfileCard'
@@ -8,13 +8,14 @@ import { SearchBar } from '../components/ui/SearchBar'
 import { Button } from '../components/ui/Button'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
-import { buildSlugSets, globalSearch, getShortlistEntryByName } from '../data'
+import { buildSlugSets } from '../data'
+import { platformConfig, liveMarketArea } from '../config/marketConfig'
 
 export function HomePage() {
   const { data, loading, error } = useData()
   const navigate = useNavigate()
 
-  useEffect(() => { document.title = 'SA Credit Risk Market Map'; }, [])
+  useEffect(() => { document.title = platformConfig.platformName }, [])
 
   const slugSets = useMemo(() => {
     if (!data?.profiles) return null
@@ -51,17 +52,69 @@ export function HomePage() {
       <div className="page">
         <div className="container">
           <div className="hero">
-            <h1>SA Credit Risk Market Map</h1>
-            <p>Recruitment Market Intelligence for Credit Risk Talent</p>
-            <Button variant="primary" to="/map">
-              <Map size={18} /> Explore the Interactive Map
-            </Button>
+            <h1>{platformConfig.platformName}</h1>
+            <p>{platformConfig.tagline}</p>
+            <div className="flex flex-wrap gap-2" style={{ justifyContent: 'center' }}>
+              <Button variant="primary" to="/map">
+                <Map size={18} /> Open {liveMarketArea.name}
+              </Button>
+              <Button variant="secondary" to="/companies">
+                <Building2 size={18} /> Explore by Company
+              </Button>
+            </div>
+          </div>
+
+
+          <div className="mb-3">
+            <div className="flex items-center justify-between mb-2">
+              <h2>Explore by Scarce Skill Area</h2>
+              <span className="text-sm text-secondary">Live map plus planned expansion areas</span>
+            </div>
+            <div className="grid grid-4">
+              {platformConfig.marketAreas.map(area => (
+                <div key={area.id} className="card">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3>{area.name}</h3>
+                    <span className={`status-pill status-${area.status}`}>{area.status}</span>
+                  </div>
+                  <p className="text-sm text-secondary mb-2">{area.summary}</p>
+                  {area.status === 'live' ? (
+                    <Button variant="ghost" to="/map">Open live speciality map →</Button>
+                  ) : (
+                    <p className="text-sm"><ShieldCheck size={14} style={{ display: 'inline', marginRight: 4 }} /> Planned — no live data claimed yet.</p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mb-3">
+            <h2 className="mb-2">Company Universe Structure</h2>
+            <div className="grid grid-3">
+              {platformConfig.companyGroups.map(group => (
+                <div key={group.id} className="card">
+                  <h3>{group.name}</h3>
+                  <p className="text-sm text-secondary">{group.summary}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="card mb-3">
+            <div className="flex items-center gap-2 mb-1">
+              <Database size={22} color="#1a56db" />
+              <h2>Repeatable Data-Pack Rules</h2>
+            </div>
+            <p className="text-sm text-secondary mb-2">Every future speciality map will use the same contract so XLS/XLSX imports can scale cleanly.</p>
+            <div className="flex flex-wrap gap-1">
+              {platformConfig.dataPackContract.requiredFiles.map(file => <span key={file} className="data-chip">{file}</span>)}
+            </div>
           </div>
 
           <div className="stats-bar">
             <StatCard value={data.summary.total_profiles} label="Profiles" color="#1a56db" />
             <StatCard value={data.companies.length} label="Companies" color="#10b981" />
-            <StatCard value={data.segments.length} label="Segments" color="#f59e0b" />
+            <StatCard value={data.segments.length} label="Credit-risk segments" color="#f59e0b" />
             <StatCard value={data.summary.avg_fit_score} label="Avg Fit Score" color="#8b5cf6" />
           </div>
 
@@ -76,7 +129,7 @@ export function HomePage() {
           </div>
 
           <div className="mb-3">
-            <h2 className="mb-2">Top Segments by Profile Count</h2>
+            <h2 className="mb-2">Current Live Map: Credit Risk Segments by Profile Count</h2>
             <div className="bar-chart">
               {topSegments.map((seg, i) => {
                 const maxCount = topSegments[0]?.count || 1
@@ -142,7 +195,7 @@ export function HomePage() {
               <Link to="/map" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
                 <Map size={32} style={{ margin: '0 auto 0.5rem', color: '#1a56db' }} />
                 <div style={{ fontWeight: 600 }}>Interactive Map</div>
-                <div className="text-sm text-secondary">Explore the ecosystem</div>
+                <div className="text-sm text-secondary">Live Credit Risk speciality map</div>
               </Link>
               <Link to="/segments" className="card card-hover" style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center', padding: '2rem 1rem' }}>
                 <Layers size={32} style={{ margin: '0 auto 0.5rem', color: '#10b981' }} />

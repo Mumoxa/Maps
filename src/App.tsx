@@ -17,6 +17,8 @@ function AppRoutes() {
   const element = useRoutes([
     { path: '/', element: <HomePage /> },
     { path: '/map', element: <MapPage /> },
+    { path: '/maps', element: <MapPage /> },
+    { path: '/maps/:marketAreaSlug', element: <MapPage /> },
     { path: '/segments', element: <SegmentDirectory /> },
     { path: '/segments/:slug', element: <SegmentPage /> },
     { path: '/companies', element: <CompanyDirectory /> },

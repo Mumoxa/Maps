@@ -1,12 +1,12 @@
 import { useMemo, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, Layers } from 'lucide-react'
 import { useData } from '../context/DataContext'
-import { buildSlugSets, getProfilesByCompany, getSegmentsByCompany, getUnverifiedProfilesByCompany, normalizeCompanyName } from '../data'
+import { buildSlugSets, getProfilesByCompany, getSegmentsByCompany, getUnverifiedProfilesByCompany } from '../data'
+import { platformConfig, liveMarketArea } from '../config/marketConfig'
 import { ProfileCard } from '../components/ui/ProfileCard'
 import { Badge } from '../components/ui/Badge'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { Button } from '../components/ui/Button'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
@@ -42,6 +42,34 @@ export function CompanyPage() {
     return getUnverifiedProfilesByCompany(data, company.name)
   }, [data, company])
 
+  const skillPockets = useMemo(() => {
+    if (!profiles.length || !company) return []
+    const senioritySpread = Array.from(new Set(profiles.map(p => p.seniority).filter(Boolean))).sort()
+    return [
+      {
+        id: liveMarketArea.id,
+        name: liveMarketArea.name,
+        status: liveMarketArea.status,
+        profileCount: profiles.length,
+        senioritySpread,
+        confidence: profiles.some(p => p.confidence === 'High') ? 'High' : profiles[0]?.confidence ?? 'Medium',
+        evidenceNotes: company.risk_teams || company.relevance || 'Mapped from the current live Credit Risk & Analytics speciality map.',
+      },
+      ...platformConfig.marketAreas
+        .filter(area => area.id !== liveMarketArea.id)
+        .slice(0, 5)
+        .map(area => ({
+          id: area.id,
+          name: area.name,
+          status: area.status,
+          profileCount: 0,
+          senioritySpread: [],
+          confidence: 'Low' as const,
+          evidenceNotes: 'Planned skill pocket. No profiles are claimed until an import batch and data pack validation populate this area.',
+        })),
+    ]
+  }, [profiles, company])
+
   useEffect(() => {
     if (company) document.title = `${company.name} — Company`
   }, [company])
@@ -76,6 +104,31 @@ export function CompanyPage() {
                 <ExternalLink size={14} /> {company.website}
               </a>
             )}
+          </div>
+
+
+          <div className="mb-3">
+            <div className="flex items-center gap-2 mb-2">
+              <Layers size={22} color="#1a56db" />
+              <h2>Company Skill Pockets</h2>
+            </div>
+            <p className="text-sm text-secondary mb-2">
+              This company view treats {company.name} as a talent ecosystem across multiple scarce-skill pockets. Only the live Credit Risk & Analytics pocket is populated today; planned pockets remain explicitly empty until imported data supports them.
+            </p>
+            <div className="grid grid-3">
+              {skillPockets.map(pocket => (
+                <div key={pocket.id} className="card">
+                  <div className="flex items-center justify-between mb-1">
+                    <h3>{pocket.name}</h3>
+                    <span className={`status-pill status-${pocket.status}`}>{pocket.status}</span>
+                  </div>
+                  <p className="text-sm"><strong>{pocket.profileCount}</strong> mapped profiles</p>
+                  <p className="text-sm text-secondary">Seniority: {pocket.senioritySpread.length ? pocket.senioritySpread.join(', ') : 'Not populated yet'}</p>
+                  <p className="text-sm text-secondary">Confidence: {pocket.profileCount > 0 ? pocket.confidence : 'Not assessed'}</p>
+                  <p className="text-sm text-secondary mt-1">{pocket.evidenceNotes}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {company.relevance && (

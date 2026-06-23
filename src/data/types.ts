@@ -134,3 +134,45 @@ export interface ValidationWarning {
   entityId?: string;
   entityName?: string;
 }
+
+export type MarketAreaStatus = 'live' | 'planned' | 'researching';
+
+export interface MarketArea {
+  id: string;
+  name: string;
+  slug: string;
+  status: MarketAreaStatus;
+  summary: string;
+  dataPackId?: string;
+}
+
+export interface CompanyGroup {
+  id: string;
+  name: string;
+  summary: string;
+}
+
+export interface DataPackContract {
+  requiredFiles: string[];
+  profileColumns: string[];
+}
+
+export interface PlatformConfig {
+  platformName: string;
+  tagline: string;
+  currentLiveMapId: string;
+  marketAreas: MarketArea[];
+  companyGroups: CompanyGroup[];
+  dataPackContract: DataPackContract;
+}
+
+export interface CompanySkillPocket {
+  companyId: string;
+  marketAreaId: string;
+  pocketName: string;
+  profileCount: number;
+  senioritySpread: string[];
+  confidence: 'High' | 'Medium' | 'Low';
+  evidenceNotes: string;
+  researchGaps: string[];
+}
