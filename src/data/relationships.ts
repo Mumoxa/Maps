@@ -1,5 +1,5 @@
 import type { DataBundle, Profile, Company, Segment } from './types'
-import { normalizeCompanyName } from './normalization'
+import { normalizeCompanyName, normalizeSegmentName } from './normalization'
 import { getCompanyByName, getSegmentByName } from './lookups'
 
 export function getProfilesBySegment(data: DataBundle, segmentName: string): Profile[] {
@@ -16,9 +16,10 @@ export function getProfilesByCompany(data: DataBundle, companyName: string): Pro
 export function getUnverifiedProfilesByCompany(data: DataBundle, companyName: string): Profile[] {
   const company = getCompanyByName(data, companyName)
   if (!company) return []
+  const normalizedCompanySegment = normalizeSegmentName(company.segment, data)
   return data.profiles.filter(p => {
     if (p.company !== 'Needs verification') return false
-    return p.segment === company.segment
+    return p.segment === normalizedCompanySegment || p.segment === company.segment
   })
 }
 

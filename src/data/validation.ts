@@ -70,5 +70,14 @@ export function validateData(data: DataBundle): ValidationWarning[] {
     })
   }
 
+  if (warnings.length > 0) {
+    console.group('[validateData] Data Validation Results')
+    for (const w of warnings) {
+      const icon = w.severity === 'error' ? '❌' : w.severity === 'warning' ? '⚠️' : 'ℹ️'
+      console.warn(`${icon} [${w.type}] ${w.message}`)
+    }
+    console.groupEnd()
+  }
+
   return warnings
 }
