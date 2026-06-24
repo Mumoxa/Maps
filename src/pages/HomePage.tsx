@@ -1,8 +1,9 @@
-import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { ArrowRight, BadgeCheck, BriefcaseBusiness, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
-import { Button } from '../components/ui/Button'
-import { talentTracks, type TalentTrack } from '../data'
+import { FormEvent, useEffect, useMemo, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import { ArrowRight, BriefcaseBusiness, Search, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { useData } from '../context/DataContext'
+import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { getTalentProfiles, talentTracks, type TalentTrack } from '../data'
 
 const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
   salesforce: BriefcaseBusiness,
@@ -11,40 +12,76 @@ const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
   calypso: Sparkles,
 }
 
+const suggestedSearches = ['Salesforce Architect', 'Credit Risk', 'Murex', 'Calypso', 'Johannesburg', 'Market Risk']
+
 export function HomePage() {
+  const { data, loading } = useData()
+  const [query, setQuery] = useState('')
+  const navigate = useNavigate()
+
   useEffect(() => {
     document.title = 'SA Talent Maps'
   }, [])
 
+  const talentProfiles = useMemo(() => {
+    if (!data) return []
+    return getTalentProfiles(data)
+  }, [data])
+
+  const trackCounts = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const profile of talentProfiles) {
+      counts.set(profile.trackSlug, (counts.get(profile.trackSlug) ?? 0) + 1)
+    }
+    return counts
+  }, [talentProfiles])
+
+  const handleSearch = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const trimmed = query.trim()
+    navigate(trimmed ? `/talent-search?q=${encodeURIComponent(trimmed)}` : '/talent-search')
+  }
+
+  if (loading) return <LoadingSpinner size="lg" />
+
   return (
     <div className="page talent-home-page">
       <div className="container">
-        <section className="talent-home-hero">
-          <div className="talent-home-kicker">
-            <BadgeCheck size={16} />
-            <span>SA Talent intelligence platform</span>
+        <section className="talent-home-search">
+          <div>
+            <h1>Find South African talent across specialist markets.</h1>
+            <p>
+              Search by skill, location, platform, company, seniority, and market signal.
+            </p>
           </div>
-          <h1>Choose the SA Talent map you want to explore.</h1>
-          <p>
-            The interactive hub now supports multiple market tracks so Salesforce, Credit Risk, Murex, Calypso,
-            and future additions can grow in one structured experience.
-          </p>
-          <div className="talent-home-actions">
-            <Button variant="secondary" to="/talent-search">
-              Open Talent Search <ArrowRight size={18} />
-            </Button>
-            <Button variant="primary" to="/credit-risk">
-              Open Credit Risk <ArrowRight size={18} />
-            </Button>
-            <Button variant="ghost" to="/salesforce">
-              Open Salesforce <ArrowRight size={18} />
-            </Button>
+
+          <form className="talent-home-searchbox" onSubmit={handleSearch}>
+            <Search size={20} />
+            <input
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search people, skills, companies, locations..."
+              aria-label="Search people, skills, companies, and locations"
+            />
+            <button type="submit">
+              Search
+              <ArrowRight size={18} />
+            </button>
+          </form>
+
+          <div className="talent-home-suggestions" aria-label="Suggested searches">
+            {suggestedSearches.map((suggestion) => (
+              <Link key={suggestion} to={`/talent-search?q=${encodeURIComponent(suggestion)}`}>
+                {suggestion}
+              </Link>
+            ))}
           </div>
         </section>
 
-        <section className="talent-home-grid" aria-label="Talent map options">
+        <section className="talent-home-overview" aria-label="Talent map options">
           {talentTracks.map((track) => {
             const AccentIcon = accentIconMap[track.accent]
+            const count = trackCounts.get(track.slug) ?? 0
 
             return (
               <Link key={track.id} to={`/${track.slug}`} className={`talent-track-card talent-track-card-${track.accent}`}>
@@ -62,7 +99,7 @@ export function HomePage() {
                   <p>{track.summary}</p>
                 </div>
                 <span className="talent-track-cta">
-                  Enter {track.name} page <ArrowRight size={18} />
+                  {count.toLocaleString()} searchable profile{count === 1 ? '' : 's'} <ArrowRight size={18} />
                 </span>
               </Link>
             )
