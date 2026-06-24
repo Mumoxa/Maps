@@ -1,41 +1,33 @@
 # South Africa Salesforce Ecosystem Map
 
-This folder contains the Salesforce market-map data added from `sa_salesforce_people_full_1047.csv`.
+This folder documents the Salesforce market-map layer added from `sa_salesforce_people_full_1047.csv`.
 
 ## Scope
 
-- Total profiles: 1047
+- Total profiles analysed: 1,047
 - Total companies: 59
 - Ecosystem segments: Vendor, Partner, Customer
 - Primary geography: South Africa
-- Evidence field retained: LinkedIn profile URL
-- Inferred email field: intentionally excluded from public website JSON because the source field is inferred, not verified
+- Website route: `/markets/salesforce`
 
-## Files
+## Website Layer Added
 
-| File | Purpose |
-|---|---|
-| `profiles.json` | Normalised Salesforce professional records |
-| `companies.json` | Company-level Salesforce ecosystem mapping |
-| `segments.json` | Vendor / Partner / Customer segmentation |
-| `org_chart.json` | Segment → company → professional hierarchy |
-| `summary.json` | KPI and distribution summary |
-| `priority_shortlist.json` | Top 100 ranked Salesforce profiles |
-| `ecosystem_map.json` | High-level relationship model and ecosystem metadata |
-| `company_map_full.json` | Company relationship and profile-id mapping |
-| `cloud_expertise.json` | Cloud specialism distribution and expert profile references |
-| `certifications.json` | Certification frequency list |
+The React page exposes:
 
-## Website Route
-
-The React app exposes the dataset at:
-
-```text
-/markets/salesforce
-```
+- ecosystem summary KPIs
+- Vendor / Partner / Customer segmentation
+- cloud expertise heat map
+- seniority distribution
+- geographic concentration
+- top Salesforce ecosystem companies
+- data-quality and privacy guardrails
 
 ## Data Quality Notes
 
-- Duplicate names are retained as separate source rows and flagged in `profiles.json`.
-- `Email_Pattern_Inferred` was present in the uploaded CSV but is not published in this folder.
-- Scores and shortlist ranking are market-map prioritisation signals, not verified employment recommendations.
+- Duplicate names are retained in the generated data pack and flagged rather than deleted.
+- `Email_Pattern_Inferred` was present in the uploaded CSV but is intentionally excluded from the public website layer.
+- Scores and ranking signals are market-map prioritisation indicators, not verified hiring recommendations.
+
+## Next Data Expansion
+
+The generated local data pack contains profile-level JSON, company hierarchy, cloud-expertise files, shortlist files and full org-chart structures. These files are large and should be committed via local git/CLI or a batch upload path rather than pasted through the GitHub connector.
