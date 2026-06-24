@@ -22,9 +22,9 @@ export const talentTracks: TalentTrack[] = [
     slug: 'salesforce',
     name: 'Salesforce',
     shortLabel: 'Track 01',
-    status: 'planned',
-    summary: 'A dedicated home for South African Salesforce talent mapping, market segmentation, and future recruiting workflows.',
-    detail: 'This page establishes the Salesforce branch of the SA Talent app so the experience now clearly separates Salesforce from Credit Risk.',
+    status: 'live',
+    summary: 'Search South African Salesforce professionals by cloud, certification signal, employer, location, and ecosystem segment.',
+    detail: 'The Salesforce branch now includes the imported v2 market-map people table alongside manual corrections and the ecosystem intelligence page.',
     accent: 'salesforce',
     actions: {
       primaryLabel: 'Back to SA Talent home',
@@ -33,9 +33,9 @@ export const talentTracks: TalentTrack[] = [
       secondaryHref: '/credit-risk',
     },
     nextSteps: [
-      'Define the Salesforce dataset and import path for profiles, companies, and segments.',
-      'Mirror the proven directory and detail-page patterns from Credit Risk where they fit.',
-      'Add Salesforce-specific market views once the first bundled data files land in the repo.',
+      'Keep profile-level Salesforce additions flowing through the HTML importer or manual correction registry.',
+      'Add Salesforce company/detail pages if the next data pack includes deeper account hierarchy fields.',
+      'Layer in verification status and outreach workflow fields before using records for client submission.',
     ],
   },
   {

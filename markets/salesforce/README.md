@@ -17,6 +17,8 @@ This folder documents the Salesforce market-map layer for `Mumoxa/Maps`.
 
 The React page exposes:
 
+- 1,047 imported source people in `people.json`, plus manual corrections through the shared talent registry
+- Salesforce people in the global `/talent-search` experience with skill, location, company, seniority and sector facets
 - ecosystem summary KPIs
 - Vendor / Partner / Customer segmentation plus manual corrections queue
 - leadership and 2026 market signals
@@ -34,9 +36,15 @@ The React page exposes:
 
 The second uploaded HTML map added customer, partner, Agentforce and surrounding-stack context on top of the original people CSV. The page now uses that information as a compact market intelligence layer rather than only a people-cluster layer.
 
+The source people table is imported from `SA_Salesforce_Market_Map_v2_FULL.html` by running:
+
+```bash
+npm run import:salesforce -- "C:\Users\craff\Downloads\SA_Salesforce_Market_Map_v2_FULL.html"
+```
+
 ## Manual Corrections
 
-- Katlego Magnificent Seapi — Pretoria, Gauteng — LinkedIn: `https://www.linkedin.com/in/seapi-katlego-96a955165/`
+- Katlego Magnificent Seapi - Pretoria, Gauteng - LinkedIn: `https://www.linkedin.com/in/seapi-katlego-96a955165/`
 - Status: added as a user-supplied correction; Salesforce role, current employer and profile evidence still need verification before client/candidate use.
 
 ## Data Quality Notes
@@ -49,4 +57,4 @@ The second uploaded HTML map added customer, partner, Agentforce and surrounding
 
 ## Next Data Expansion
 
-The generated local data pack contains profile-level JSON, company hierarchy, cloud-expertise files, shortlist files, full org-chart structures and a parsed 295-customer technographic JSON. These files are larger and should be committed through local git/CLI or a batch upload path if the site needs full-table interactive filtering rather than compact page-level rendering.
+The Salesforce people table is now committed as structured JSON and included in global search. The remaining generated local data pack may still contain company hierarchy, cloud-expertise files, shortlist files, full org-chart structures and a parsed 295-customer technographic JSON. Those should be committed through local git/CLI or a batch upload path if the site needs full-table interactive filtering beyond the current people-search layer.

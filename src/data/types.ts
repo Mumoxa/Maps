@@ -98,7 +98,7 @@ export interface TalentProfile {
   sectors: string[];
   summary: string;
   linkedinUrl: string;
-  sourceType: 'bundled' | 'manual';
+  sourceType: 'bundled' | 'imported' | 'manual';
   sourceProfileId?: string;
 }
 

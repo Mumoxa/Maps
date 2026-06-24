@@ -316,6 +316,7 @@ function FacetGroup({
 function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile; creditRiskSlug?: string }) {
   const profileLink = profile.sourceType === 'bundled' && creditRiskSlug ? `/profiles/${creditRiskSlug}` : undefined
   const skills = profile.skills.slice(0, 5)
+  const sourceClass = profile.sourceType === 'manual' ? 'planned' : 'live'
 
   return (
     <article className="talent-result-row">
@@ -326,8 +327,8 @@ function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile;
           <div>
             <div className="talent-result-name-row">
               <h2>{profile.name}</h2>
-              {profile.sourceType === 'bundled' && <span className="verified-dot" title="Bundled verified source"><Check size={12} /></span>}
-              <span className={`track-status-badge track-status-${profile.sourceType === 'bundled' ? 'live' : 'planned'}`}>
+              {profile.sourceType === 'bundled' && <span className="verified-dot" title="Bundled profile source"><Check size={12} /></span>}
+              <span className={`track-status-badge track-status-${sourceClass}`}>
                 {profile.track}
               </span>
             </div>
@@ -364,8 +365,10 @@ function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile;
 }
 
 function createFacets(profiles: TalentProfile[]): Record<FacetKey, Facet[]> {
+  const trackLabels = profilesByTrack(profiles)
+
   return {
-    track: countFacet(profiles, (profile) => [profile.trackSlug], (value) => profilesByTrack(profiles).get(value) ?? value),
+    track: countFacet(profiles, (profile) => [profile.trackSlug], (value) => trackLabels.get(value) ?? value),
     company: countFacet(profiles, (profile) => [profile.company]),
     location: countFacet(profiles, (profile) => [profile.location]),
     seniority: countFacet(profiles, (profile) => [profile.seniority]),

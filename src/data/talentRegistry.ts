@@ -4,18 +4,18 @@ import type { TalentProfile } from './types'
 // The search page reads these entries directly, so new people become searchable immediately.
 export const manualTalentProfiles: TalentProfile[] = [
   {
-    id: 'salesforce-manual-1',
+    id: 'salesforce-manual-katlego-magnificent-seapi',
     track: 'Salesforce',
     trackSlug: 'salesforce',
-    name: 'Anele Mokoena',
-    company: 'Independent Consultant',
-    title: 'Salesforce Solution Architect',
-    location: 'Johannesburg, South Africa',
-    seniority: 'Senior',
-    skills: ['Salesforce', 'Service Cloud', 'Sales Cloud', 'CRM Architecture', 'Stakeholder Management'],
-    sectors: ['Salesforce', 'Customer Platforms'],
-    summary: 'Salesforce architect profile placeholder for future expansion of the SA Salesforce talent map.',
-    linkedinUrl: '',
+    name: 'Katlego Magnificent Seapi',
+    company: 'Needs verification',
+    title: 'Salesforce Practitioner (verification pending)',
+    location: 'Pretoria, Gauteng, South Africa',
+    seniority: 'Professional',
+    skills: ['Salesforce', 'CRM', 'Customer Platforms', 'Verification Pending'],
+    sectors: ['Salesforce', 'CRM / Digital'],
+    summary: 'User-supplied correction for the Salesforce market map. Role, employer, and Salesforce evidence need verification before client or candidate use.',
+    linkedinUrl: 'https://www.linkedin.com/in/seapi-katlego-96a955165/',
     sourceType: 'manual',
   },
   {

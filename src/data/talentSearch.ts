@@ -1,5 +1,6 @@
 import Fuse from 'fuse.js'
 import type { DataBundle, TalentProfile } from './types'
+import { getSalesforceTalentProfiles } from './salesforcePeople'
 import { manualTalentProfiles } from './talentRegistry'
 
 let cachedTalentProfiles: TalentProfile[] | null = null
@@ -24,11 +25,28 @@ function toCreditRiskTalentProfiles(data: DataBundle): TalentProfile[] {
   }))
 }
 
+function talentProfileKey(profile: TalentProfile) {
+  const linkedinKey = profile.linkedinUrl.trim().toLowerCase()
+  if (linkedinKey) return `linkedin:${linkedinKey}`
+  return `profile:${profile.trackSlug}:${profile.name}:${profile.company}`.toLowerCase()
+}
+
+function dedupeTalentProfiles(profiles: TalentProfile[]) {
+  const profilesByKey = new Map<string, TalentProfile>()
+
+  for (const profile of profiles) {
+    profilesByKey.set(talentProfileKey(profile), profile)
+  }
+
+  return [...profilesByKey.values()]
+}
+
 export function getTalentProfiles(data: DataBundle): TalentProfile[] {
   if (cachedTalentProfiles) return cachedTalentProfiles
 
   const bundledProfiles = toCreditRiskTalentProfiles(data)
-  cachedTalentProfiles = [...bundledProfiles, ...manualTalentProfiles]
+  const salesforceProfiles = getSalesforceTalentProfiles()
+  cachedTalentProfiles = dedupeTalentProfiles([...bundledProfiles, ...salesforceProfiles, ...manualTalentProfiles])
   return cachedTalentProfiles
 }
 
