@@ -11,6 +11,7 @@ import { CompanyPage } from './pages/CompanyPage'
 import { ProfileDirectory } from './pages/ProfileDirectory'
 import { ProfilePage } from './pages/ProfilePage'
 import { ShortlistPage } from './pages/ShortlistPage'
+import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
 import { NotFound } from './pages/NotFound'
 
 function AppRoutes() {
@@ -24,6 +25,7 @@ function AppRoutes() {
     { path: '/profiles', element: <ProfileDirectory /> },
     { path: '/profiles/:slug', element: <ProfilePage /> },
     { path: '/shortlist', element: <ShortlistPage /> },
+    { path: '/markets/salesforce', element: <SalesforceEcosystemPage /> },
     { path: '*', element: <NotFound /> },
   ])
   return element
