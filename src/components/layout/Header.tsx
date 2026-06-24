@@ -12,6 +12,7 @@ const navLinks = [
   { to: '/companies', label: 'Companies' },
   { to: '/profiles', label: 'Profiles' },
   { to: '/shortlist', label: 'Shortlist' },
+  { to: '/markets/salesforce', label: 'Salesforce' },
 ]
 
 export function Header() {
@@ -68,7 +69,7 @@ export function Header() {
     <header className="header">
       <div className="header-inner">
         <Link to="/" className="header-logo">
-          SA Credit Risk Market Map
+          SA Market Maps
         </Link>
 
         <nav className="header-nav">
@@ -89,7 +90,7 @@ export function Header() {
             <Search className="search-icon" size={14} />
             <input
               type="text"
-              placeholder="Search..."
+              placeholder="Search credit risk map..."
               value={searchVal}
               onChange={e => handleSearch(e.target.value)}
               aria-label="Global search"
