@@ -1,53 +1,46 @@
-# SA Credit Risk Market Map
+# Mumoxa Maps
 
-## Data Files
+A React/Vite market-intelligence map site for South African talent ecosystems.
+
+## Current Market Areas
+
+| Market | Website Route | Status | Data Scope |
+|---|---|---|---|
+| SA Credit Risk Market Map | `/` | Live existing map | Credit risk profiles, companies, segments, org chart and shortlist |
+| SA Salesforce Ecosystem Map | `/markets/salesforce` | Added | 1,047 Salesforce professionals, 59 companies, vendor/partner/customer segmentation, cloud expertise, top companies and market intelligence summary |
+
+## Credit Risk Data Files
 
 | File | Description |
 |------|-------------|
-| `profiles.json` | All profiles with full fields (name, company, title, LinkedIn, fit score, confidence, etc.) |
-| `profiles.csv` | Same data in CSV format |
-| `companies.json` | Company universe with segment, relevance, risk teams |
-| `segments.json` | Industry segments with profile counts and company lists |
-| `summary.json` | Summary statistics (totals, averages, distributions) |
-| `org_chart.json` | Org chart structure: segment → company → profiles (nested) |
-| `priority_shortlist.json` | Top 50 priority recruitment shortlist |
-| `company_map_full.json` | Raw company map with full details |
+| `profiles.json` | All credit-risk profiles with full fields |
+| `profiles.csv` | Credit-risk CSV export |
+| `companies.json` | Credit-risk company universe |
+| `segments.json` | Credit-risk segments |
+| `summary.json` | Credit-risk summary statistics |
+| `org_chart.json` | Credit-risk segment → company → profiles hierarchy |
+| `priority_shortlist.json` | Credit-risk priority recruitment shortlist |
+| `company_map_full.json` | Credit-risk raw company map |
 
-## Data Fields (profiles)
+## Salesforce Data Pack
 
-| Field | Description |
-|-------|-------------|
-| `id` | Unique profile ID |
-| `name` | Full name |
-| `linkedin_url` | LinkedIn profile URL |
-| `location` | City / Country |
-| `company` | Current employer |
-| `title` | Current job title |
-| `seniority` | Seniority level |
-| `function` | Functional area |
-| `segment` | Industry segment |
-| `specialism` | Credit risk specialism |
-| `fit_score` | Fit score 1-10 |
-| `confidence` | Confidence level (High, Medium, Low) |
-| `evidence` | Evidence of credit risk relevance |
-| `source_url` | Source verification URL |
+Salesforce market-map documentation lives under:
 
-## Summary
+```text
+markets/salesforce/
+```
 
-- **Total profiles:** 344
-- **Total companies:** 79
-- **Total segments:** 67
-- **Confidence split:** High: 272, Medium: 70, Low: 2
+The website page at `/markets/salesforce` currently exposes the Salesforce ecosystem summary, cloud expertise map, seniority distribution, geographic concentration, data-quality guardrails and top company clusters.
 
-## Suggested Frontend Features
+## Salesforce Data Quality Note
 
-1. **Org chart view** - segment → company → profiles hierarchy
-2. **Search & filter** - by name, company, title, segment, seniority, confidence, fit score
-3. **Profile cards** - clickable cards with full profile details and LinkedIn links
-4. **Company view** - hover/click to show all credit risk people at a company
-5. **Segment breakdown** - charts by segment, seniority, confidence
-6. **Priority shortlist** - top candidates ranked by fit score
+The uploaded Salesforce CSV contained `Email_Pattern_Inferred`. That field is intentionally excluded from the public website layer because it is inferred rather than verified. LinkedIn URLs are the retained evidence source in the generated data pack. Duplicate names are kept as separate records and flagged in the profile data pack.
 
-## Source
+## Build
 
-Data compiled from public LinkedIn profiles and web search. Workbook: SA_Credit_Risk_Market_Map_1200_Target_Buildout_Addendum_v6_2026-06-19.xlsx
+```bash
+npm install
+npm run build
+```
+
+The build script runs TypeScript and Vite, then copies `dist/index.html` to `dist/404.html` for SPA routing.

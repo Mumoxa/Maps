@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import type { ReactNode } from 'react'
 import { ArrowRight, BriefcaseBusiness, LayoutTemplate, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { getTalentTrackBySlug, type TalentTrack } from '../data'
@@ -14,9 +15,10 @@ const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
 
 interface MarketTrackPageProps {
   trackSlug: string
+  extraContent?: ReactNode
 }
 
-export function MarketTrackPage({ trackSlug }: MarketTrackPageProps) {
+export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProps) {
   const track = getTalentTrackBySlug(trackSlug)
 
   useEffect(() => {
@@ -88,6 +90,8 @@ export function MarketTrackPage({ trackSlug }: MarketTrackPageProps) {
             </p>
           )}
         </section>
+
+        {extraContent}
       </div>
     </div>
   )

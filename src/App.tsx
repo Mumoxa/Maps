@@ -16,6 +16,7 @@ import { MurexPage } from './pages/MurexPage'
 import { CalypsoPage } from './pages/CalypsoPage'
 import { TalentSearchPage } from './pages/TalentSearchPage'
 import { ShortlistPage } from './pages/ShortlistPage'
+import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
 import { NotFound } from './pages/NotFound'
 
 function AppRoutes() {
@@ -34,6 +35,7 @@ function AppRoutes() {
     { path: '/profiles', element: <ProfileDirectory /> },
     { path: '/profiles/:slug', element: <ProfilePage /> },
     { path: '/shortlist', element: <ShortlistPage /> },
+    { path: '/markets/salesforce', element: <SalesforceEcosystemPage /> },
     { path: '*', element: <NotFound /> },
   ])
   return element

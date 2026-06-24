@@ -20,6 +20,7 @@ const creditRiskNavLinks = [
   { to: '/companies', label: 'Companies' },
   { to: '/profiles', label: 'Profiles' },
   { to: '/shortlist', label: 'Shortlist' },
+  { to: '/markets/salesforce', label: 'Salesforce' },
 ]
 
 export function Header() {
