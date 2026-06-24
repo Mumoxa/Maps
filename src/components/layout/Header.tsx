@@ -5,8 +5,16 @@ import { useData } from '../../context/DataContext'
 import { globalSearch } from '../../data'
 import { buildSlugSets } from '../../data'
 
-const navLinks = [
+const trackNavLinks = [
   { to: '/', label: 'Home' },
+  { to: '/talent-search', label: 'Talent Search' },
+  { to: '/credit-risk', label: 'Credit Risk' },
+  { to: '/salesforce', label: 'Salesforce' },
+  { to: '/murex', label: 'Murex' },
+  { to: '/calypso', label: 'Calypso' },
+]
+
+const creditRiskNavLinks = [
   { to: '/map', label: 'Map' },
   { to: '/segments', label: 'Segments' },
   { to: '/companies', label: 'Companies' },
@@ -22,6 +30,8 @@ export function Header() {
   const location = useLocation()
   const { data } = useData()
   const searchRef = useRef<HTMLDivElement>(null)
+  const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/shortlist']
+    .some((path) => location.pathname === path || location.pathname.startsWith(`${path}/`))
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -68,11 +78,11 @@ export function Header() {
     <header className="header">
       <div className="header-inner">
         <Link to="/" className="header-logo">
-          SA Credit Risk Market Map
+          SA Talent Maps
         </Link>
 
         <nav className="header-nav">
-          {navLinks.map(link => (
+          {trackNavLinks.map(link => (
             <Link
               key={link.to}
               to={link.to}
@@ -84,36 +94,65 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="header-search" ref={searchRef}>
-          <div className="search-bar">
-            <Search className="search-icon" size={14} />
-            <input
-              type="text"
-              placeholder="Search..."
-              value={searchVal}
-              onChange={e => handleSearch(e.target.value)}
-              aria-label="Global search"
-            />
-            {searchResults.length > 0 && (
-              <div className="search-results">
-                {searchResults.map((item, i) => (
-                  <div key={i} className="search-result-item" onClick={() => handleSelect(item)}>
-                    <div className="search-result-name">{item.label}</div>
-                    <div className="search-result-type">{item.type}</div>
-                  </div>
-                ))}
-              </div>
-            )}
+        {showCreditRiskNav && (
+          <div className="header-search" ref={searchRef}>
+            <div className="search-bar">
+              <Search className="search-icon" size={14} />
+              <input
+                type="text"
+                placeholder="Search credit risk data..."
+                value={searchVal}
+                onChange={e => handleSearch(e.target.value)}
+                aria-label="Search credit risk data"
+              />
+              {searchResults.length > 0 && (
+                <div className="search-results">
+                  {searchResults.map((item, i) => (
+                    <div key={i} className="search-result-item" onClick={() => handleSelect(item)}>
+                      <div className="search-result-name">{item.label}</div>
+                      <div className="search-result-type">{item.type}</div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
         <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
           {menuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
+      {showCreditRiskNav && (
+        <div className="header-subnav">
+          <div className="header-subnav-inner">
+            {creditRiskNavLinks.map(link => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className={location.pathname === link.to ? 'active' : ''}
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+
       <div className={`mobile-nav ${menuOpen ? 'open' : ''}`}>
-        {navLinks.map(link => (
+        {trackNavLinks.map(link => (
+          <Link
+            key={link.to}
+            to={link.to}
+            className={location.pathname === link.to ? 'active' : ''}
+            onClick={() => setMenuOpen(false)}
+          >
+            {link.label}
+          </Link>
+        ))}
+        {showCreditRiskNav && creditRiskNavLinks.map(link => (
           <Link
             key={link.to}
             to={link.to}

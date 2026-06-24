@@ -85,6 +85,23 @@ export interface DataBundle {
   summary: Summary;
 }
 
+export interface TalentProfile {
+  id: string;
+  track: string;
+  trackSlug: string;
+  name: string;
+  company: string;
+  title: string;
+  location: string;
+  seniority: string;
+  skills: string[];
+  sectors: string[];
+  summary: string;
+  linkedinUrl: string;
+  sourceType: 'bundled' | 'manual';
+  sourceProfileId?: string;
+}
+
 export type TreeNodeType = 'segment' | 'company' | 'profile';
 
 export interface TreeNode {

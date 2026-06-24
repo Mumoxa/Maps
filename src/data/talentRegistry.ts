@@ -1,0 +1,51 @@
+import type { TalentProfile } from './types'
+
+// Add future manual profiles here as needed.
+// The search page reads these entries directly, so new people become searchable immediately.
+export const manualTalentProfiles: TalentProfile[] = [
+  {
+    id: 'salesforce-manual-1',
+    track: 'Salesforce',
+    trackSlug: 'salesforce',
+    name: 'Anele Mokoena',
+    company: 'Independent Consultant',
+    title: 'Salesforce Solution Architect',
+    location: 'Johannesburg, South Africa',
+    seniority: 'Senior',
+    skills: ['Salesforce', 'Service Cloud', 'Sales Cloud', 'CRM Architecture', 'Stakeholder Management'],
+    sectors: ['Salesforce', 'Customer Platforms'],
+    summary: 'Salesforce architect profile placeholder for future expansion of the SA Salesforce talent map.',
+    linkedinUrl: '',
+    sourceType: 'manual',
+  },
+  {
+    id: 'murex-manual-1',
+    track: 'Murex',
+    trackSlug: 'murex',
+    name: 'Thabo Naidoo',
+    company: 'Capital Markets Advisory',
+    title: 'Murex Business Analyst',
+    location: 'Cape Town, South Africa',
+    seniority: 'Mid-Senior',
+    skills: ['Murex', 'Capital Markets', 'Business Analysis', 'Trade Lifecycle', 'Front-to-Back'],
+    sectors: ['Murex', 'Capital Markets'],
+    summary: 'Example Murex candidate entry showing how platform-specific talent can be added before a full dataset lands.',
+    linkedinUrl: '',
+    sourceType: 'manual',
+  },
+  {
+    id: 'calypso-manual-1',
+    track: 'Calypso',
+    trackSlug: 'calypso',
+    name: 'Naledi Khumalo',
+    company: 'Treasury Transformation Partner',
+    title: 'Calypso Functional Specialist',
+    location: 'Sandton, South Africa',
+    seniority: 'Senior',
+    skills: ['Calypso', 'Treasury Systems', 'Functional Design', 'Implementation', 'Market Risk'],
+    sectors: ['Calypso', 'Treasury'],
+    summary: 'Example Calypso profile entry for the upcoming platform-specific search experience.',
+    linkedinUrl: '',
+    sourceType: 'manual',
+  },
+]
