@@ -23,7 +23,7 @@ export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProp
 
   useEffect(() => {
     if (track) {
-      document.title = `SA ${track.name} Talent`
+      document.title = `SA Talent Map | ${track.name}`
     }
   }, [track])
 

@@ -1,15 +1,19 @@
 import { useData } from '../../context/DataContext'
+import { getTalentProfiles } from '../../data'
 
 export function Footer() {
   const { data } = useData()
+  const totalTalentProfiles = data ? getTalentProfiles(data).length : 0
 
   return (
     <footer className="footer">
       <div className="footer-inner">
-        <p>SA Credit Risk Market Map — Recruitment Market Intelligence</p>
-        <p>Data compiled from public LinkedIn profiles and web search</p>
+        <p>SA Talent Map - Multi-track recruitment market intelligence</p>
+        <p>Data compiled from public LinkedIn profiles and web research</p>
         {data && (
-          <p>{data.profiles.length} Profiles · {data.companies.length} Companies · {data.segments.length} Segments</p>
+          <p>
+            {totalTalentProfiles.toLocaleString()} searchable professionals · {data.profiles.length} credit risk profiles · {data.companies.length} companies
+          </p>
         )}
       </div>
     </footer>

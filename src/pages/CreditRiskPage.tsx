@@ -15,7 +15,7 @@ export function CreditRiskPage() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    document.title = 'SA Credit Risk Market Map'
+    document.title = 'SA Talent Map | Credit Risk'
   }, [])
 
   const slugSets = useMemo(() => {
@@ -71,10 +71,10 @@ export function CreditRiskPage() {
       <div className="page">
         <div className="container">
           <div className="hero">
-            <h1>SA Credit Risk Market Map</h1>
-            <p>Recruitment Market Intelligence for Credit Risk Talent</p>
+            <h1>Credit Risk Track</h1>
+            <p>The SA Talent Map view for credit risk talent, companies, segments, and shortlist intelligence.</p>
             <Button variant="primary" to="/map">
-              <MapIcon size={18} /> Explore the Interactive Map
+              <MapIcon size={18} /> Explore the Credit Risk Map
             </Button>
           </div>
 

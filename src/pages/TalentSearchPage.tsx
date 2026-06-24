@@ -48,7 +48,7 @@ export function TalentSearchPage() {
   const talentSearchRef = useRef<ReturnType<typeof createTalentSearchIndex> | null>(null)
 
   useEffect(() => {
-    document.title = 'Talent Search'
+    document.title = 'SA Talent Map | Talent Search'
   }, [])
 
   const talentProfiles = useMemo(() => {
@@ -136,7 +136,7 @@ export function TalentSearchPage() {
             </div>
             <Link to="/credit-risk" className="btn btn-ghost">
               <Layers size={18} />
-              Credit Risk map
+              Credit Risk track
             </Link>
           </section>
 

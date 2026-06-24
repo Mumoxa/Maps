@@ -79,7 +79,7 @@ export function Header() {
     <header className="header">
       <div className="header-inner">
         <Link to="/" className="header-logo">
-          SA Talent Maps
+          SA Talent Map
         </Link>
 
         <nav className="header-nav">
@@ -101,10 +101,10 @@ export function Header() {
               <Search className="search-icon" size={14} />
               <input
                 type="text"
-                placeholder="Search credit risk data..."
+                placeholder="Search credit risk track data..."
                 value={searchVal}
                 onChange={e => handleSearch(e.target.value)}
-                aria-label="Search credit risk data"
+                aria-label="Search credit risk track data"
               />
               {searchResults.length > 0 && (
                 <div className="search-results">

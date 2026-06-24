@@ -20,7 +20,7 @@ export function HomePage() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    document.title = 'SA Talent Maps'
+    document.title = 'SA Talent Map'
   }, [])
 
   const talentProfiles = useMemo(() => {
@@ -51,7 +51,7 @@ export function HomePage() {
           <div>
             <h1>Find South African talent across specialist markets.</h1>
             <p>
-              Search by skill, location, platform, company, seniority, and market signal.
+              SA Talent Map brings Salesforce, Credit Risk, Murex, Calypso, and future specialist tracks into one searchable platform.
             </p>
           </div>
 
@@ -99,7 +99,9 @@ export function HomePage() {
                   <p>{track.summary}</p>
                 </div>
                 <span className="talent-track-cta">
-                  {count.toLocaleString()} searchable profile{count === 1 ? '' : 's'} <ArrowRight size={18} />
+                  {track.status === 'live'
+                    ? `${count.toLocaleString()} searchable profile${count === 1 ? '' : 's'}`
+                    : 'Dataset coming next'} <ArrowRight size={18} />
                 </span>
               </Link>
             )
