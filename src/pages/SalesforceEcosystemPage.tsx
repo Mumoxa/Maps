@@ -7,11 +7,11 @@ const primaryStats = [
   { value: 295, label: 'Salesforce Customers SA', color: 'var(--color-primary)' },
   { value: 266, label: 'BuiltWith .za Domains', color: 'var(--color-success)' },
   { value: 23, label: 'SI / ISV Partners', color: 'var(--color-accent)' },
-  { value: '1,047', label: 'Named Practitioners', color: 'var(--color-purple)' },
+  { value: '1,048', label: 'Named Practitioners', color: 'var(--color-purple)' },
 ] as const
 
 const secondaryStats = [
-  { value: '1,018', label: 'SA-based practitioners' },
+  { value: '1,019', label: 'SA-based practitioners' },
   { value: '$5.1B', label: 'IDC SA ecosystem 2020–26' },
   { value: '31,800', label: 'IDC jobs impact note' },
   { value: 'Agentforce', label: 'SA GA tracked Jun 2026' },
@@ -21,9 +21,10 @@ const employerTypes = [
   { name: 'Partner', count: 998 },
   { name: 'Customer', count: 31 },
   { name: 'Vendor', count: 18 },
+  { name: 'Manual Correction', count: 1 },
 ] as const
 
-const practitionerClouds = [
+const cloudDistribution = [
   { name: 'Agentforce', count: 221 },
   { name: 'Service Cloud', count: 191 },
   { name: 'Marketing Cloud', count: 185 },
@@ -50,7 +51,23 @@ const customerClouds = [
   { name: 'CPQ', count: 2 },
 ] as const
 
-const customerIndustries = [
+const seniorityDistribution = [
+  { seniority: 'Consultant / Specialist', count: 748 },
+  { seniority: 'Senior', count: 121 },
+  { seniority: 'Lead / Manager', count: 87 },
+  { seniority: 'Principal / Architect', count: 51 },
+  { seniority: 'Executive', count: 34 },
+  { seniority: 'Professional', count: 6 },
+] as const
+
+const provinceDistribution = [
+  { name: 'Gauteng', count: 662 },
+  { name: 'Western Cape', count: 340 },
+  { name: 'KwaZulu-Natal', count: 44 },
+  { name: 'International', count: 2 },
+] as const
+
+const topIndustries = [
   { name: 'Technology / Services', count: 25 },
   { name: 'Retail', count: 14 },
   { name: 'Hospitality', count: 12 },
@@ -63,22 +80,6 @@ const customerIndustries = [
   { name: 'CPG', count: 8 },
   { name: 'Construction', count: 8 },
   { name: 'Asset Management', count: 7 },
-] as const
-
-const seniorityDistribution = [
-  { seniority: 'Consultant / Specialist', count: 748 },
-  { seniority: 'Senior', count: 121 },
-  { seniority: 'Lead / Manager', count: 87 },
-  { seniority: 'Principal / Architect', count: 51 },
-  { seniority: 'Executive', count: 34 },
-  { seniority: 'Professional', count: 6 },
-] as const
-
-const provinceDistribution = [
-  { name: 'Gauteng', count: 661 },
-  { name: 'Western Cape', count: 340 },
-  { name: 'KwaZulu-Natal', count: 44 },
-  { name: 'International', count: 2 },
 ] as const
 
 const leadershipSignals = [
@@ -147,54 +148,67 @@ const implementationPartners = [
   { partner: 'Capgemini / C Ahead', tier: 'Gold', hc: '100+', certs: '100', focus: 'Global delivery, enterprise integration' },
   { partner: 'BlueSky Digital Solutions', tier: 'Gold', hc: '35+', certs: '55', focus: 'Commercial, telecom, insurance' },
   { partner: 'iCloudius', tier: 'Gold', hc: '25+', certs: '40', focus: 'SMB, retail and commercial implementations' },
-  { partner: 'Weku', tier: 'Select', hc: '20+', certs: '30', focus: 'Commercial new logos and SMB' },
-  { partner: 'Smarten UP', tier: 'Gold', hc: '30+', certs: '45', focus: 'Implementation partner, sales and service' },
-  { partner: 'Cloud23', tier: 'Gold', hc: '25+', certs: '50', focus: 'Knowledge partner, customer success and commercial' },
-  { partner: 'AdvanceForce', tier: 'Gold', hc: '30+', certs: '60', focus: 'Alliance partner since 2008' },
-  { partner: 'thryve', tier: 'Ridge', hc: '15+', certs: '25', focus: 'Insurance and financial services' },
-  { partner: 'Megabytes Tech', tier: 'Registered', hc: '12+', certs: '20', focus: 'Implementation support' },
-  { partner: 'Xsmths', tier: 'Marketing Cloud specialist', hc: '40+', certs: '60', focus: 'Marketing Cloud, Commerce, retail' },
-  { partner: 'mPHATEK Systems', tier: 'Consulting', hc: '15+', certs: '22', focus: 'Consulting and integration' },
-  { partner: 'Q.LAB', tier: 'Consulting', hc: '10+', certs: '12', focus: 'Consulting and delivery' },
-  { partner: 'CRMAutomate', tier: 'Consulting', hc: '12+', certs: '18', focus: 'CRM automation' },
-  { partner: 'IBM South Africa', tier: 'Global SI', hc: '40+', certs: '70', focus: 'Enterprise SI and integration' },
-  { partner: 'EY South Africa', tier: 'Global SI', hc: '25+', certs: '40', focus: 'Advisory and Salesforce transformation' },
-  { partner: 'KPMG South Africa', tier: 'Global SI', hc: '20+', certs: '35', focus: 'Advisory and implementation' },
-  { partner: 'Infosys South Africa', tier: 'Global SI', hc: '30+', certs: '50', focus: 'Global delivery and managed services' },
-  { partner: 'Tech Mahindra SA', tier: 'Global SI', hc: '25+', certs: '40', focus: 'Telecom and enterprise transformation' },
-] as const
-
-const siMentions = [
-  { partner: 'CloudSmiths', count: 175 },
-  { partner: 'NTT DATA / EXAH', count: 25 },
-  { partner: 'PwC South Africa', count: 25 },
-  { partner: 'Accenture', count: 13 },
-  { partner: 'Deloitte', count: 7 },
-  { partner: 'Smarten UP', count: 6 },
-  { partner: 'PwC', count: 5 },
-  { partner: 'BlueSky', count: 5 },
-  { partner: 'Cloud23', count: 5 },
-  { partner: 'iCloudius', count: 4 },
+  { partner: 'Smarten UP', tier: 'Gold', hc: '30+', certs: '45', focus: 'Insurance, hospitality, travel and financial services' },
+  { partner: 'Cloud23', tier: 'Gold', hc: '25+', certs: '50', focus: 'Commerce Cloud, Marketing Cloud, retail and tourism' },
+  { partner: 'Weku', tier: 'Select', hc: '20+', certs: '30', focus: 'Insurance, retail and commercial implementations' },
+  { partner: 'AdvanceForce', tier: 'Gold', hc: '30+', certs: '60', focus: 'CPG, RegTech, Field Service and B2B' },
+  { partner: 'thryve', tier: 'Silver', hc: '25+', certs: '35', focus: 'Financial Services Cloud, insurance and service' },
+  { partner: 'Xsmths', tier: 'Commerce specialist', hc: '35+', certs: '45', focus: 'Commerce Cloud, Marketing Cloud, retail and CPG' },
+  { partner: 'mPHATEK', tier: 'Select', hc: '15+', certs: '25', focus: 'Sales, Service, MuleSoft, ICT and public sector' },
+  { partner: 'Acceleration.biz', tier: 'Data / MC', hc: '20+', certs: '30', focus: 'Marketing Cloud, Data Cloud, Datorama and banking' },
+  { partner: 'IBM South Africa', tier: 'Global SI', hc: '40+', certs: '80', focus: 'Sales, Service, MuleSoft, banking and telecom' },
+  { partner: 'Cognizant South Africa', tier: 'Global SI', hc: '20+', certs: '35', focus: 'Financial services, retail, Sales, Service and Marketing Cloud' },
+  { partner: 'TCS South Africa', tier: 'Global SI', hc: '30+', certs: '60', focus: 'Banking, telecom, Sales, Service and MuleSoft' },
+  { partner: 'Wipro South Africa', tier: 'Global SI', hc: '25+', certs: '40', focus: 'Financial services, Sales, Service and Tableau' },
+  { partner: 'KPMG South Africa', tier: 'Global SI', hc: '20+', certs: '35', focus: 'Public sector, financial services, Sales and Service' },
+  { partner: 'Infosys South Africa', tier: 'Global SI', hc: '30+', certs: '50', focus: 'All Clouds, telecom and banking' },
+  { partner: 'Tech Mahindra SA', tier: 'Global SI', hc: '25+', certs: '40', focus: 'Communications Cloud and telecom' },
 ] as const
 
 const surroundingTechStack = [
-  { layer: 'Core banking / ERP', standard: 'SAP S/4HANA, Temenos T24, Hogan, Oracle, Avaloq, SimCorp', example: 'Standard Bank core banking APIs via MuleSoft; Capitec Temenos T24; Woolworths SAP retail stack' },
-  { layer: 'Integration', standard: 'MuleSoft, APIs, event streaming, middleware', example: 'Old Mutual, Standard Bank, Seacom and Telviva integration patterns' },
-  { layer: 'Cloud infrastructure', standard: 'AWS, Azure, GCP, Hyperforce', example: 'Hyperforce, AWS Marketplace SA, enterprise data and service deployments' },
-  { layer: 'Analytics / BI', standard: 'Tableau, Tableau CRM, Snowflake, SAS, Teradata', example: 'Absa, Investec, Ninety One and Johannesburg Children’s Home analytics signals' },
-  { layer: 'Retail / Commerce', standard: 'SAP CAR, Oracle Retail, Commerce Cloud, GCP', example: 'TFG, Shoprite, Woolworths/Bash, Pick n Pay and Cape Union Mart' },
-  { layer: 'Insurance / Health', standard: 'Guidewire, policy admin, Health Cloud, broker portals', example: 'Sanlam, Old Mutual, Santam, Discovery and Momentum' },
-  { layer: 'Service and contact centre', standard: 'Service Cloud, CTI, ServiceNow, Amdocs, NetCracker', example: 'Vodacom, MTN, Telkom, MultiChoice and Cell C service footprints' },
-  { layer: 'Data / AI', standard: 'Data Cloud, Agentforce, Einstein, Snowflake, ML services', example: 'The Courier Guy Agentforce GA signal and Standard Bank Data Cloud signal' },
-  { layer: 'Marketing', standard: 'Marketing Cloud, Datorama, CDP, loyalty platforms', example: 'Retail, banking, CPG and MVNO personalization layers' },
+  { layer: 'Core banking / ERP', standard: 'SAP S/4HANA, Temenos T24, Hogan, Oracle, Avaloq, SimCorp', example: 'Standard Bank – core banking APIs via MuleSoft; Capitec – Temenos T24; Woolworths – SAP CAR' },
+  { layer: 'Integration / iPaaS', standard: 'MuleSoft, Boomi, Jitterbit, Informatica, AWS EventBridge, Azure Logic Apps', example: 'Standard Bank, Old Mutual and Seacom examples are MuleSoft-heavy in the supplied map.' },
+  { layer: 'Data / AI / CDP', standard: 'Data Cloud 360, Snowflake, Teradata, SAS, Databricks, Tableau CRM, Einstein / Agentforce', example: 'Courier Guy is the supplied Agentforce + Data Cloud 360 example.' },
+  { layer: 'Cloud hosting / residency', standard: 'AWS Africa, Azure South Africa North, GCP Johannesburg, Hyperforce SA', example: 'Hyperforce and POPIA/residency are repeated enterprise buying signals.' },
+  { layer: 'Marketing / CDP', standard: 'Marketing Cloud Personalization, Audience Studio, Adobe Experience, Bloomreach, Comarch Loyalty', example: 'Standard Bank, Woolworths and Shoprite appear as marketing/CDP examples.' },
+  { layer: 'CPQ / Billing', standard: 'Revenue Cloud, nCino FSC pattern, Zuora', example: 'ArcelorMittal SA and SA Home Loans appear as CPQ/FSC-pattern examples.' },
+  { layer: 'Industry clouds', standard: 'FSC, Health Cloud, Automotive Cloud, Communications Cloud, Nonprofit Cloud', example: 'Big 5 banks, Discovery, Mercedes-Benz SA, MTN and JCH are example clusters.' },
+  { layer: 'Contact centre / CTI', standard: 'Service Cloud Voice, Five9, Genesys, Telviva CTI, WhatsApp Business API', example: 'Telviva, Coca-Cola PB and Clickatell are named surrounding-stack examples.' },
+  { layer: 'Identity / Security', standard: 'Salesforce Shield, Okta, Azure AD, Ping', example: 'POPIA, FSCA and Shield encryption are governance signals.' },
+] as const
+
+const manualPractitionerCorrections = [
+  {
+    name: 'Katlego Magnificent Seapi',
+    location: 'Pretoria, Gauteng, South Africa',
+    linkedIn: 'https://www.linkedin.com/in/seapi-katlego-96a955165/',
+    status: 'Needs Salesforce role/employer verification',
+    note: 'User-supplied correction added after the original 1,047-person source batch missed this profile.',
+  },
 ] as const
 
 function topBarWidth(count: number, max: number) {
   return `${Math.max(6, Math.round((count / Math.max(max, 1)) * 100))}%`
 }
 
-function truncate(value: string, max = 115) {
+function truncate(value: string, max = 120) {
   return value.length > max ? `${value.slice(0, max)}…` : value
+}
+
+function MetricBars({ items, max }: { items: readonly { name: string; count: number }[]; max: number }) {
+  return (
+    <div className="bar-chart">
+      {items.map(item => (
+        <div className="bar-row" key={item.name}>
+          <div className="bar-label">{item.name}</div>
+          <div className="bar-track">
+            <div className="bar-fill" style={{ width: topBarWidth(item.count, max) }} />
+          </div>
+          <div className="bar-count">{item.count}</div>
+        </div>
+      ))}
+    </div>
+  )
 }
 
 export function SalesforceEcosystemPage() {
@@ -202,10 +216,10 @@ export function SalesforceEcosystemPage() {
     document.title = 'SA Salesforce Ecosystem Map'
   }, [])
 
-  const maxPractitionerCloud = practitionerClouds[0]?.count ?? 1
-  const maxCustomerCloud = customerClouds[0]?.count ?? 1
-  const maxIndustry = customerIndustries[0]?.count ?? 1
-  const maxProvince = provinceDistribution[0]?.count ?? 1
+  const maxCloudCount = cloudDistribution[0]?.count ?? 1
+  const maxProvinceCount = provinceDistribution[0]?.count ?? 1
+  const maxCustomerCloudCount = customerClouds[0]?.count ?? 1
+  const maxIndustryCount = topIndustries[0]?.count ?? 1
 
   return (
     <div className="page">
@@ -217,7 +231,7 @@ export function SalesforceEcosystemPage() {
 
         <div className="hero">
           <h1>SA Salesforce Ecosystem Map</h1>
-          <p>Customer, partner, practitioner, cloud, Agentforce and surrounding-technology intelligence for the South African Salesforce market.</p>
+          <p>Complete South African Salesforce market layer covering customers, implementation partners, practitioner clusters, cloud footprint, surrounding technology, Agentforce signals and data-quality boundaries.</p>
         </div>
 
         <div className="stats-bar">
@@ -238,7 +252,7 @@ export function SalesforceEcosystemPage() {
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
             <ShieldCheck size={20} />
-            <h2>2026 Market Signals</h2>
+            <h2>Market Leadership & 2026 Signals</h2>
           </div>
           <div className="grid grid-2">
             {leadershipSignals.map(signal => (
@@ -247,10 +261,10 @@ export function SalesforceEcosystemPage() {
               </div>
             ))}
           </div>
-          <p className="text-sm text-secondary mt-2">These are market-map signals from the supplied v2 file. Use them for mapping and prioritisation, then verify before client-facing use.</p>
+          <p className="text-sm text-secondary mt-2">Agentforce, AWS Marketplace SA, Data Cloud 360 and The Courier Guy live demo are treated as 2026 market signals that still need source-level validation before client submission.</p>
         </section>
 
-        <div className="grid grid-3 mb-3">
+        <div className="grid grid-4 mb-3">
           {employerTypes.map(segment => (
             <div className="card" key={segment.name}>
               <div className="flex items-center gap-1 mb-1">
@@ -269,38 +283,22 @@ export function SalesforceEcosystemPage() {
               <Cloud size={20} />
               <h2>Practitioner Cloud Expertise</h2>
             </div>
-            <div className="bar-chart">
-              {practitionerClouds.map(item => (
-                <div className="bar-row" key={item.name}>
-                  <div className="bar-label">{item.name}</div>
-                  <div className="bar-track"><div className="bar-fill" style={{ width: topBarWidth(item.count, maxPractitionerCloud) }} /></div>
-                  <div className="bar-count">{item.count}</div>
-                </div>
-              ))}
-            </div>
+            <MetricBars items={cloudDistribution} max={maxCloudCount} />
           </section>
 
           <section className="card">
             <div className="flex items-center gap-1 mb-2">
-              <Cloud size={20} />
+              <BarChart3 size={20} />
               <h2>Customer Cloud Footprint</h2>
             </div>
-            <div className="bar-chart">
-              {customerClouds.map(item => (
-                <div className="bar-row" key={item.name}>
-                  <div className="bar-label">{item.name}</div>
-                  <div className="bar-track"><div className="bar-fill" style={{ width: topBarWidth(item.count, maxCustomerCloud) }} /></div>
-                  <div className="bar-count">{item.count}</div>
-                </div>
-              ))}
-            </div>
+            <MetricBars items={customerClouds} max={maxCustomerCloudCount} />
           </section>
         </div>
 
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
             <Cloud size={20} />
-            <h2>Cloud Footprint Notes</h2>
+            <h2>Cloud Map — SA Footprint Notes</h2>
           </div>
           <div>
             {cloudFootprintBadges.map(item => <span className="badge badge-Medium" key={item}>{item}</span>)}
@@ -313,15 +311,7 @@ export function SalesforceEcosystemPage() {
               <BarChart3 size={20} />
               <h2>Customer Industries</h2>
             </div>
-            <div className="bar-chart">
-              {customerIndustries.map(item => (
-                <div className="bar-row" key={item.name}>
-                  <div className="bar-label">{item.name}</div>
-                  <div className="bar-track"><div className="bar-fill" style={{ width: topBarWidth(item.count, maxIndustry) }} /></div>
-                  <div className="bar-count">{item.count}</div>
-                </div>
-              ))}
-            </div>
+            <MetricBars items={topIndustries} max={maxIndustryCount} />
           </section>
 
           <section className="card">
@@ -329,15 +319,7 @@ export function SalesforceEcosystemPage() {
               <BarChart3 size={20} />
               <h2>Geographic Concentration</h2>
             </div>
-            <div className="bar-chart">
-              {provinceDistribution.map(item => (
-                <div className="bar-row" key={item.name}>
-                  <div className="bar-label">{item.name}</div>
-                  <div className="bar-track"><div className="bar-fill" style={{ width: topBarWidth(item.count, maxProvince) }} /></div>
-                  <div className="bar-count">{item.count}</div>
-                </div>
-              ))}
-            </div>
+            <MetricBars items={provinceDistribution} max={maxProvinceCount} />
           </section>
         </div>
 
@@ -364,8 +346,40 @@ export function SalesforceEcosystemPage() {
 
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
+            <ShieldCheck size={20} />
+            <h2>Manual Practitioner Corrections</h2>
+          </div>
+          <p className="text-sm text-secondary mb-2">Profiles supplied after the first dataset build are held separately until role, employer and Salesforce evidence are verified.</p>
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
+              <thead>
+                <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
+                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Name</th>
+                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Location</th>
+                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>LinkedIn</th>
+                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Status</th>
+                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Note</th>
+                </tr>
+              </thead>
+              <tbody>
+                {manualPractitionerCorrections.map(person => (
+                  <tr key={person.linkedIn} style={{ borderBottom: '1px solid var(--color-border-light)' }}>
+                    <td style={{ padding: '0.75rem', fontWeight: 700 }}>{person.name}</td>
+                    <td style={{ padding: '0.75rem' }}>{person.location}</td>
+                    <td style={{ padding: '0.75rem' }}><a href={person.linkedIn} target="_blank" rel="noreferrer">LinkedIn profile</a></td>
+                    <td style={{ padding: '0.75rem' }}>{person.status}</td>
+                    <td style={{ padding: '0.75rem' }}>{person.note}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="card mb-3">
+          <div className="flex items-center gap-1 mb-2">
             <Building2 size={20} />
-            <h2>Top 24 Salesforce Users — Customer Map</h2>
+            <h2>Top 24 Verified Salesforce Users</h2>
           </div>
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
@@ -386,7 +400,7 @@ export function SalesforceEcosystemPage() {
                     <td style={{ padding: '0.75rem' }}>{customer.industry}</td>
                     <td style={{ padding: '0.75rem' }}>{customer.clouds}</td>
                     <td style={{ padding: '0.75rem' }}>{customer.build}</td>
-                    <td style={{ padding: '0.75rem' }}>{truncate(customer.useCase)}</td>
+                    <td style={{ padding: '0.75rem' }}>{truncate(customer.useCase, 140)}</td>
                     <td style={{ padding: '0.75rem' }}>{customer.si}</td>
                   </tr>
                 ))}
@@ -403,33 +417,16 @@ export function SalesforceEcosystemPage() {
           <div className="grid grid-3">
             {implementationPartners.map(partner => (
               <div className="card" key={partner.partner} style={{ padding: '0.875rem' }}>
-                <div className="flex justify-between gap-1 mb-1">
-                  <h3>{partner.partner}</h3>
-                  <span className="badge badge-Medium">{partner.tier}</span>
-                </div>
-                <div className="text-sm"><strong>SF HC:</strong> {partner.hc} | <strong>Certs:</strong> {partner.certs}</div>
-                <div className="text-sm text-secondary">{partner.focus}</div>
+                <h3>{partner.partner}</h3>
+                <div className="text-sm text-secondary">{partner.tier}</div>
+                <div className="text-sm"><strong>HC:</strong> {partner.hc} | <strong>Certs:</strong> {partner.certs}</div>
+                <p className="text-sm text-secondary">{partner.focus}</p>
               </div>
             ))}
           </div>
         </section>
 
         <div className="grid grid-2 mb-3">
-          <section className="card">
-            <div className="flex items-center gap-1 mb-2">
-              <Building2 size={20} />
-              <h2>SI Partner Mentions in Customer Map</h2>
-            </div>
-            <div className="grid">
-              {siMentions.map(item => (
-                <div className="flex justify-between items-center" key={item.partner}>
-                  <span>{item.partner}</span>
-                  <span className="badge badge-Medium">{item.count}</span>
-                </div>
-              ))}
-            </div>
-          </section>
-
           <section className="card">
             <div className="flex items-center gap-1 mb-2">
               <BarChart3 size={20} />
@@ -442,6 +439,27 @@ export function SalesforceEcosystemPage() {
                   <span className="badge badge-Medium">{item.count}</span>
                 </div>
               ))}
+            </div>
+          </section>
+
+          <section className="card">
+            <div className="flex items-center gap-1 mb-2">
+              <ShieldCheck size={20} />
+              <h2>Data Quality Guardrails</h2>
+            </div>
+            <div className="grid">
+              <div className="flex justify-between items-center">
+                <span>LinkedIn evidence links retained, including manual corrections</span>
+                <span className="badge badge-Medium">1,048</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span>Inferred email records excluded from public page</span>
+                <span className="badge badge-Medium">1,047</span>
+              </div>
+              <div className="flex justify-between items-center">
+                <span>Human verification required before client/candidate use</span>
+                <span className="badge badge-P1">Required</span>
+              </div>
             </div>
           </section>
         </div>
@@ -465,23 +483,9 @@ export function SalesforceEcosystemPage() {
         <section className="card">
           <div className="flex items-center gap-1 mb-2">
             <ShieldCheck size={20} />
-            <h2>Data Quality Guardrails</h2>
+            <h2>Verification Boundary</h2>
           </div>
-          <div className="grid grid-3">
-            <div>
-              <div className="text-xl font-bold">1,047</div>
-              <div className="text-sm text-secondary">LinkedIn evidence links retained</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold">1,047</div>
-              <div className="text-sm text-secondary">inferred email records excluded from public page</div>
-            </div>
-            <div>
-              <div className="text-xl font-bold">Human verify</div>
-              <div className="text-sm text-secondary">required before client / candidate use</div>
-            </div>
-          </div>
-          <p className="text-sm text-secondary mt-2">Customer cloud use, licence estimates, AI status, revenue, implementation partner attribution, current employer and candidate availability must be verified before client submission. This is a market-map layer, not a final evidence pack.</p>
+          <p className="text-sm text-secondary">Market-map signals are not proof of current employment, active Salesforce use, licence count, implementation partner involvement or candidate availability. Manual corrections are visible but treated as verification-pending until role and employer evidence is confirmed. Keep LinkedIn/profile evidence and direct verification as the final source of truth.</p>
         </section>
       </div>
     </div>
