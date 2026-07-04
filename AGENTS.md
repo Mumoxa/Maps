@@ -1,3 +1,11 @@
+# Mumoxa Canonical Agent Requirement
+
+Before making any change in this repository, every coding agent must read and follow the canonical Mumoxa agent rules in `Mumoxa/Agent-OS/AGENTS.md`.
+
+Do not invent facts, requirements, architecture, build status, test results, security status or deployment status. Check for duplicate components, routes, utilities, schemas and features before adding anything new. Run available verification checks and report only evidence-backed results.
+
+---
+
 # AGENTS.md — Development Standards for SA Credit Risk Market Map
 
 ## Project Overview
