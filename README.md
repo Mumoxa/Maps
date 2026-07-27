@@ -7,7 +7,7 @@ A React/Vite market-intelligence map site for South African talent ecosystems.
 | Market | Website Route | Status | Data Scope |
 |---|---|---|---|
 | SA Credit Risk Market Map | `/` | Live existing map | Credit risk profiles, companies, segments, org chart and shortlist |
-| SA Salesforce Ecosystem Map | `/markets/salesforce` | Added | 1,047 Salesforce professionals, 59 companies, vendor/partner/customer segmentation, cloud expertise, top companies and market intelligence summary |
+| SA Salesforce Dataset Overview | `/markets/salesforce` | Added | Imported professional records and dataset-derived employer, location and cloud-label summaries |
 
 ## Credit Risk Data Files
 
@@ -30,11 +30,11 @@ Salesforce market-map documentation lives under:
 markets/salesforce/
 ```
 
-The website page at `/markets/salesforce` currently exposes the Salesforce ecosystem summary, cloud expertise map, seniority distribution, geographic concentration, data-quality guardrails and top company clusters.
+The website page at `/markets/salesforce` exposes only summaries derived from the committed people dataset and explains the evidence boundary. Claim-level market intelligence requires reviewable sources under [`markets/salesforce/SOURCE_POLICY.md`](markets/salesforce/SOURCE_POLICY.md).
 
 ## Salesforce Data Quality Note
 
-The uploaded Salesforce CSV contained `Email_Pattern_Inferred`. That field is intentionally excluded from the public website layer because it is inferred rather than verified. LinkedIn URLs are the retained evidence source in the generated data pack. Duplicate names are kept as separate records and flagged in the profile data pack.
+The uploaded Salesforce CSV contained `Email_Pattern_Inferred`. That field is intentionally excluded from the public website layer because it is inferred rather than verified. Profile URLs retain the stated provenance of imported records but do not by themselves verify that fields are current. Duplicate names are kept as separate records rather than assumed to be the same person.
 
 ## Build
 
