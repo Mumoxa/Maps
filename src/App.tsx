@@ -12,6 +12,7 @@ import { CompanyPage } from './pages/CompanyPage'
 import { ProfileDirectory } from './pages/ProfileDirectory'
 import { ProfilePage } from './pages/ProfilePage'
 import { SalesforcePage } from './pages/SalesforcePage'
+import { SapErpPage } from './pages/SapErpPage'
 import { MurexPage } from './pages/MurexPage'
 import { CalypsoPage } from './pages/CalypsoPage'
 import { TalentSearchPage } from './pages/TalentSearchPage'
@@ -24,6 +25,7 @@ function AppRoutes() {
     { path: '/', element: <HomePage /> },
     { path: '/credit-risk', element: <CreditRiskPage /> },
     { path: '/salesforce', element: <SalesforcePage /> },
+    { path: '/sap-erp', element: <SapErpPage /> },
     { path: '/murex', element: <MurexPage /> },
     { path: '/calypso', element: <CalypsoPage /> },
     { path: '/talent-search', element: <TalentSearchPage /> },

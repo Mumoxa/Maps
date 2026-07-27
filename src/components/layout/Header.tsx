@@ -2,16 +2,13 @@ import { useState, useCallback, useRef, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { Search, Menu, X } from 'lucide-react'
 import { useData } from '../../context/DataContext'
-import { globalSearch } from '../../data'
+import { globalSearch, talentTracks } from '../../data'
 import { buildSlugSets } from '../../data'
 
 const trackNavLinks = [
   { to: '/', label: 'Home' },
   { to: '/talent-search', label: 'Talent Search' },
-  { to: '/credit-risk', label: 'Credit Risk' },
-  { to: '/salesforce', label: 'Salesforce' },
-  { to: '/murex', label: 'Murex' },
-  { to: '/calypso', label: 'Calypso' },
+  ...talentTracks.map((track) => ({ to: `/${track.slug}`, label: track.name })),
 ]
 
 const creditRiskNavLinks = [
@@ -108,11 +105,11 @@ export function Header() {
               />
               {searchResults.length > 0 && (
                 <div className="search-results">
-                  {searchResults.map((item, i) => (
-                    <div key={i} className="search-result-item" onClick={() => handleSelect(item)}>
+                  {searchResults.map((item) => (
+                    <button key={`${item.type}-${item.slug}`} type="button" className="search-result-item" onClick={() => handleSelect(item)}>
                       <div className="search-result-name">{item.label}</div>
                       <div className="search-result-type">{item.type}</div>
-                    </div>
+                    </button>
                   ))}
                 </div>
               )}

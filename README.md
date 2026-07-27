@@ -8,6 +8,11 @@ A React/Vite market-intelligence map site for South African talent ecosystems.
 |---|---|---|---|
 | SA Credit Risk Market Map | `/` | Live existing map | Credit risk profiles, companies, segments, org chart and shortlist |
 | SA Salesforce Ecosystem Map | `/markets/salesforce` | Added | 1,047 Salesforce professionals, 59 companies, vendor/partner/customer segmentation, cloud expertise, top companies and market intelligence summary |
+| SA SAP ERP Market | `/sap-erp` | Added | Verified South African SAP ERP market track, aligned to the shared specialist-talent structure |
+
+Future markets must be registered in `src/data/tracks.ts` with a South African geography, supported product category, and explicit evidence status. Routes and navigation should consume that registry so additions remain within the SA Talent Map product scope.
+
+Production deploys run automatically after the `CI` workflow succeeds on `main`. The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised redeploy is required.
 
 ## Credit Risk Data Files
 

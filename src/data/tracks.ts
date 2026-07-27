@@ -6,7 +6,12 @@ export interface TalentTrack {
   status: 'live' | 'planned'
   summary: string
   detail: string
-  accent: 'salesforce' | 'credit' | 'murex' | 'calypso'
+  accent: 'salesforce' | 'credit' | 'sap' | 'murex' | 'calypso'
+  scope: {
+    geography: 'South Africa'
+    category: 'business-platform' | 'risk-discipline' | 'capital-markets-platform'
+    evidenceStatus: 'verified' | 'awaiting-data'
+  }
   actions: {
     primaryLabel: string
     primaryHref: string
@@ -26,6 +31,7 @@ export const talentTracks: TalentTrack[] = [
     summary: 'Search South African Salesforce professionals by cloud, certification signal, employer, location, and ecosystem segment.',
     detail: 'The Salesforce branch now includes the imported v2 market-map people table alongside manual corrections and the ecosystem intelligence page.',
     accent: 'salesforce',
+    scope: { geography: 'South Africa', category: 'business-platform', evidenceStatus: 'verified' },
     actions: {
       primaryLabel: 'Back to SA Talent home',
       primaryHref: '/',
@@ -47,6 +53,7 @@ export const talentTracks: TalentTrack[] = [
     summary: 'Continue into the current South African Credit Risk market map with profiles, companies, segments, shortlist, and the interactive map.',
     detail: 'The Credit Risk branch is the live reference implementation with the full bundled dataset and interactive exploration experience.',
     accent: 'credit',
+    scope: { geography: 'South Africa', category: 'risk-discipline', evidenceStatus: 'verified' },
     actions: {
       primaryLabel: 'Open Credit Risk',
       primaryHref: '/credit-risk',
@@ -60,14 +67,37 @@ export const talentTracks: TalentTrack[] = [
     ],
   },
   {
+    id: 'sap-erp',
+    slug: 'sap-erp',
+    name: 'SAP ERP',
+    shortLabel: 'Track 03',
+    status: 'live',
+    summary: 'Explore the verified South African SAP ERP market information within the same specialist-talent product structure.',
+    detail: 'The SAP ERP market is now part of SA Talent Map as a verified specialist business-platform track, ready for structured people, company, skill, and ecosystem additions.',
+    accent: 'sap',
+    scope: { geography: 'South Africa', category: 'business-platform', evidenceStatus: 'verified' },
+    actions: {
+      primaryLabel: 'Search specialist talent',
+      primaryHref: '/talent-search?q=SAP%20ERP',
+      secondaryLabel: 'Back to SA Talent home',
+      secondaryHref: '/',
+    },
+    nextSteps: [
+      'Keep additions within the South African SAP ERP talent and ecosystem scope.',
+      'Add people through the shared talent profile model with a source and verification state.',
+      'Introduce SAP-specific company, skill, and ecosystem views only when their supporting data is available.',
+    ],
+  },
+  {
     id: 'murex',
     slug: 'murex',
     name: 'Murex',
-    shortLabel: 'Track 03',
+    shortLabel: 'Track 04',
     status: 'planned',
     summary: 'Prepare a dedicated route for South African Murex talent, platform specialists, and adjacent market intelligence.',
     detail: 'The Murex branch is now reserved in the app structure so incoming additions can plug straight into a dedicated page and future data model.',
     accent: 'murex',
+    scope: { geography: 'South Africa', category: 'capital-markets-platform', evidenceStatus: 'awaiting-data' },
     actions: {
       primaryLabel: 'Back to SA Talent home',
       primaryHref: '/',
@@ -84,11 +114,12 @@ export const talentTracks: TalentTrack[] = [
     id: 'calypso',
     slug: 'calypso',
     name: 'Calypso',
-    shortLabel: 'Track 04',
+    shortLabel: 'Track 05',
     status: 'planned',
     summary: 'Create space for South African Calypso talent mapping, market coverage, and future recruiting workflows.',
     detail: 'The Calypso branch gives the interactive site a clear place for the next wave of platform-specific additions without crowding the home page.',
     accent: 'calypso',
+    scope: { geography: 'South Africa', category: 'capital-markets-platform', evidenceStatus: 'awaiting-data' },
     actions: {
       primaryLabel: 'Back to SA Talent home',
       primaryHref: '/',
@@ -103,6 +134,8 @@ export const talentTracks: TalentTrack[] = [
   },
 ]
 
+const talentTrackBySlug = new Map(talentTracks.map((track) => [track.slug, track]))
+
 export function getTalentTrackBySlug(slug: string) {
-  return talentTracks.find((track) => track.slug === slug)
+  return talentTrackBySlug.get(slug)
 }
