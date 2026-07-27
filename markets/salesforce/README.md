@@ -4,48 +4,30 @@ This folder documents the Salesforce market-map layer for `Mumoxa/Maps`.
 
 ## Scope
 
-- Total named Salesforce practitioners analysed: 1,048 (1,047 source records + 1 manual correction)
-- South Africa-based practitioners: 1,019
-- Salesforce customer technographic records in the supplied v2 map: 295
-- BuiltWith live `.za` domain signal records in the supplied v2 map: 266
-- Implementation / ISV partners in the supplied v2 map: 23
-- Ecosystem segments: Vendor, Partner, Customer, Manual Correction
-- Primary geography: South Africa
+- Imported Salesforce-related professional records and their source links
+- Dataset labels for employers, ecosystem types, locations and cloud associations
+- Primary intended geography: South Africa
 - Website route: `/markets/salesforce`
 
-## Website Layer Added
+## Public Website Scope
 
 The React page exposes:
 
-- 1,047 imported source people in `people.json`, plus manual corrections through the shared talent registry
+- imported records in `people.json`, plus verification-pending corrections through the shared talent registry
 - Salesforce people in the global `/talent-search` experience with skill, location, company, seniority and sector facets
-- ecosystem summary KPIs
-- Vendor / Partner / Customer segmentation plus manual corrections queue
-- leadership and 2026 market signals
-- practitioner cloud expertise heat map
-- customer cloud footprint heat map
-- customer industry distribution
-- seniority and geography distribution
-- top Salesforce ecosystem company clusters
-- top 24 Salesforce users from the supplied v2 market map
-- 23 implementation partners with tier, Salesforce headcount estimate, certification estimate and focus context
-- surrounding technology stack patterns
+- dataset-derived record, employer-label, employer-type, province and cloud-label counts
+- an explicit evidence boundary distinguishing imported claims from verified facts
 - data-quality and privacy guardrails
 
 ## V2 Enrichment Source
 
-The second uploaded HTML map added customer, partner, Agentforce and surrounding-stack context on top of the original people CSV. The page now uses that information as a compact market intelligence layer rather than only a people-cluster layer.
+The second uploaded HTML map supplied people records and additional market claims. Only aggregates derived from the committed people records are displayed publicly. Customer, partner, product, event and surrounding-stack claims are excluded unless claim-level sources can be reviewed.
 
 The source people table is imported from `SA_Salesforce_Market_Map_v2_FULL.html` by running:
 
 ```bash
 npm run import:salesforce -- "C:\Users\craff\Downloads\SA_Salesforce_Market_Map_v2_FULL.html"
 ```
-
-## Manual Corrections
-
-- Katlego Magnificent Seapi - Pretoria, Gauteng - LinkedIn: `https://www.linkedin.com/in/seapi-katlego-96a955165/`
-- Status: added as a user-supplied correction; Salesforce role, current employer and profile evidence still need verification before client/candidate use.
 
 ## Data Quality Notes
 
@@ -57,4 +39,6 @@ npm run import:salesforce -- "C:\Users\craff\Downloads\SA_Salesforce_Market_Map_
 
 ## Next Data Expansion
 
-The Salesforce people table is now committed as structured JSON and included in global search. The remaining generated local data pack may still contain company hierarchy, cloud-expertise files, shortlist files, full org-chart structures and a parsed 295-customer technographic JSON. Those should be committed through local git/CLI or a batch upload path if the site needs full-table interactive filtering beyond the current people-search layer.
+The Salesforce people table is committed as structured JSON and included in global search. Additional company hierarchy, cloud expertise, shortlist, org-chart or customer-technographic data may be added only when each public claim meets the source policy.
+
+Before adding any of that information, follow [`SOURCE_POLICY.md`](SOURCE_POLICY.md). An unavailable local source filename or a disclaimer does not make a claim source-verified.
