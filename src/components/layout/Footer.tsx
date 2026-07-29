@@ -1,9 +1,9 @@
 import { useData } from '../../context/DataContext'
-import { getTalentProfiles } from '../../data'
+import { deriveMarketSummary, getTalentProfiles } from '../../data'
 
 export function Footer() {
   const { data } = useData()
-  const totalTalentProfiles = data ? getTalentProfiles(data).length : 0
+  const summary = deriveMarketSummary(data ? getTalentProfiles(data) : [])
 
   return (
     <footer className="footer">
@@ -12,7 +12,7 @@ export function Footer() {
         <p>Data compiled from public LinkedIn profiles and web research</p>
         {data && (
           <p>
-            {totalTalentProfiles.toLocaleString()} searchable professionals · {data.profiles.length} credit risk profiles · {data.companies.length} companies
+            {summary.totalProfiles.toLocaleString()} searchable professionals · {summary.byTrack.size} populated tracks · {data.companies.length} credit-risk companies
           </p>
         )}
       </div>

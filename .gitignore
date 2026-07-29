@@ -1,6 +1,9 @@
 # Dependencies
 node_modules/
 
+# Isolated development worktrees
+.worktrees/
+
 # Build output
 dist/
 
@@ -20,3 +23,6 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# Local source files awaiting import
+incoming/

@@ -1,9 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import type { ReactNode } from 'react'
 import { ArrowRight, BriefcaseBusiness, Database, LayoutTemplate, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
 import { Button } from '../components/ui/Button'
-import { getTalentTrackBySlug, type TalentTrack } from '../data'
+import { deriveMarketSummary, getTalentProfiles, getTalentTrackBySlug, type TalentTrack } from '../data'
+import { useData } from '../context/DataContext'
 import { NotFound } from './NotFound'
 
 const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
@@ -20,7 +21,11 @@ interface MarketTrackPageProps {
 }
 
 export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProps) {
+  const { data } = useData()
   const track = getTalentTrackBySlug(trackSlug)
+  const profiles = useMemo(() => data ? getTalentProfiles(data) : [], [data])
+  const summary = useMemo(() => deriveMarketSummary(profiles), [profiles])
+  const profileCount = summary.byTrack.get(trackSlug) ?? 0
 
   useEffect(() => {
     if (track) {
@@ -31,7 +36,7 @@ export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProp
   if (!track) return <NotFound />
 
   const AccentIcon = accentIconMap[track.accent]
-  const isLive = track.status === 'live'
+  const isLive = profileCount > 0
 
   return (
     <div className="page">
@@ -56,8 +61,8 @@ export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProp
         <section className="salesforce-next card">
           <div className="track-page-heading">
             <h2 className="mb-2">Buildout status</h2>
-            <span className={`track-status-badge track-status-${track.status}`}>
-              {isLive ? 'Live track' : 'Planned track'}
+            <span className={`track-status-badge track-status-${isLive ? 'live' : 'planned'}`}>
+              {isLive ? `${profileCount.toLocaleString()} searchable profiles` : 'Ready for verified additions'}
             </span>
           </div>
           <div className="salesforce-next-grid">
@@ -82,8 +87,8 @@ export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProp
           </div>
           <p className="text-secondary">
             {isLive
-              ? 'This track is already connected to the working interactive experience and remains the base implementation for future branches.'
-              : 'As new information lands, this track can be connected to the same high-performance lookup and directory patterns already proven in the credit-risk implementation.'}
+              ? 'This track is connected to the shared registry. New verified batches update its search results and counts without page changes.'
+              : 'This track is registered and can accept a verified batch through the shared importer without new track-specific code.'}
           </p>
           {!isLive && (
             <p className="mt-2">

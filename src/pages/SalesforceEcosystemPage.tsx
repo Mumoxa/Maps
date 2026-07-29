@@ -1,28 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { BarChart3, Building2, Cloud, Layers, ShieldCheck } from 'lucide-react'
 import { StatCard } from '../components/ui/StatCard'
-
-const primaryStats = [
-  { value: 295, label: 'Salesforce Customers SA', color: 'var(--color-primary)' },
-  { value: 266, label: 'BuiltWith .za Domains', color: 'var(--color-success)' },
-  { value: 23, label: 'SI / ISV Partners', color: 'var(--color-accent)' },
-  { value: 89, label: 'Named Practitioners', color: 'var(--color-purple)' },
-] as const
-
-const secondaryStats = [
-  { value: 88, label: 'Source-retained practitioners' },
-  { value: '$5.1B', label: 'IDC SA ecosystem 2020–26' },
-  { value: '31,800', label: 'IDC jobs impact note' },
-  { value: 'Agentforce', label: 'SA GA tracked Jun 2026' },
-] as const
-
-const employerTypes = [
-  { name: 'Partner', count: 39 },
-  { name: 'Customer', count: 31 },
-  { name: 'Vendor', count: 18 },
-  { name: 'Manual Correction', count: 1 },
-] as const
+import { useData } from '../context/DataContext'
+import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { deriveMarketSummary, getTalentProfiles } from '../data'
 
 const customerClouds = [
   { name: 'Sales Cloud', count: 268 },
@@ -37,23 +19,6 @@ const customerClouds = [
   { name: 'Data Cloud', count: 2 },
   { name: 'Agentforce', count: 2 },
   { name: 'CPQ', count: 2 },
-] as const
-
-const seniorityDistribution = [
-  { seniority: 'Executive', count: 22 },
-  { seniority: 'Consultant / Specialist', count: 17 },
-  { seniority: 'Lead / Manager', count: 14 },
-  { seniority: 'Professional', count: 13 },
-  { seniority: 'Principal / Architect', count: 13 },
-  { seniority: 'C-Suite', count: 5 },
-  { seniority: 'Senior', count: 4 },
-] as const
-
-const provinceDistribution = [
-  { name: 'Gauteng', count: 58 },
-  { name: 'Western Cape', count: 27 },
-  { name: 'International', count: 2 },
-  { name: 'KwaZulu-Natal', count: 1 },
 ] as const
 
 const topIndustries = [
@@ -187,6 +152,12 @@ function truncate(value: string, max = 120) {
   return value.length > max ? `${value.slice(0, max)}…` : value
 }
 
+function sortedItems(values: ReadonlyMap<string, number>) {
+  return [...values.entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((left, right) => right.count - left.count || left.name.localeCompare(right.name))
+}
+
 function MetricBars({ items, max }: { items: readonly { name: string; count: number }[]; max: number }) {
   return (
     <div className="bar-chart">
@@ -204,13 +175,51 @@ function MetricBars({ items, max }: { items: readonly { name: string; count: num
 }
 
 export function SalesforceEcosystemPage() {
+  const { data, loading } = useData()
+
   useEffect(() => {
     document.title = 'SA Salesforce Ecosystem Map'
   }, [])
 
+  const salesforceProfiles = useMemo(
+    () => data
+      ? getTalentProfiles(data).filter(({ trackSlug }) => trackSlug === 'salesforce')
+      : [],
+    [data],
+  )
+  const summary = useMemo(() => deriveMarketSummary(salesforceProfiles), [salesforceProfiles])
+  const employerTypes = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const profile of salesforceProfiles) {
+      const value = profile.attributes.employerType
+      if (typeof value === 'string' && value) {
+        counts.set(value, (counts.get(value) ?? 0) + 1)
+      }
+    }
+    return sortedItems(counts)
+  }, [salesforceProfiles])
+  const provinceDistribution = useMemo(() => sortedItems(summary.byProvince), [summary])
+  const seniorityDistribution = useMemo(
+    () => sortedItems(summary.bySeniority).map(({ name, count }) => ({ seniority: name, count })),
+    [summary],
+  )
+  const primaryStats = [
+    { value: 295, label: 'Salesforce Customers SA — v2 market source', color: 'var(--color-primary)' },
+    { value: 266, label: 'BuiltWith .za Domains — v2 market source', color: 'var(--color-success)' },
+    { value: 23, label: 'SI / ISV Partners — v2 market source', color: 'var(--color-accent)' },
+    { value: summary.totalProfiles, label: 'Searchable Practitioners', color: 'var(--color-purple)' },
+  ] as const
+  const secondaryStats = [
+    { value: summary.byProvenance.get('legacy') ?? 0, label: 'Source-retained practitioners' },
+    { value: '$5.1B', label: 'IDC SA ecosystem 2020–26 — source note' },
+    { value: '31,800', label: 'IDC jobs impact — source note' },
+    { value: 'Agentforce', label: 'SA GA signal — June 2026 source map' },
+  ] as const
   const maxProvinceCount = provinceDistribution[0]?.count ?? 1
   const maxCustomerCloudCount = customerClouds[0]?.count ?? 1
   const maxIndustryCount = topIndustries[0]?.count ?? 1
+
+  if (loading) return <LoadingSpinner size="lg" />
 
   return (
     <div className="page">
@@ -234,11 +243,12 @@ export function SalesforceEcosystemPage() {
             959 of the 1,047 imported practitioner records were removed after a provenance audit found they were
             machine-generated rather than sourced from real people. The generated rows carried sequential LinkedIn
             slugs, names recombined from a closed pool, and job titles repeated in round counts.
-            <strong> 88 source records with verifiable evidence links were retained</strong>, plus 1 manual correction.
+            <strong> {summary.totalProfiles} source records remain in the searchable registry</strong>. One manual
+            correction is preserved below as excluded source history because its role and employer evidence is incomplete.
           </p>
           <p className="text-sm text-secondary mt-1">
-            Practitioner-derived statistics on this page have been recalculated against the retained records only.
-            Customer, partner and market-intelligence sections come from the v2 market-map source and were not affected.
+            Practitioner-derived statistics on this page are calculated from the shared registry. Customer, partner and
+            market-intelligence figures are separate editorial data from the v2 market-map source and are labelled as such.
           </p>
         </section>
 
@@ -348,9 +358,12 @@ export function SalesforceEcosystemPage() {
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
             <ShieldCheck size={20} />
-            <h2>Manual Practitioner Corrections</h2>
+            <h2>Excluded Source History</h2>
           </div>
-          <p className="text-sm text-secondary mb-2">Profiles supplied after the first dataset build are held separately until role, employer and Salesforce evidence are verified.</p>
+          <p className="text-sm text-secondary mb-2">
+            This historical correction is not included in public search or practitioner totals. A future verified
+            correction must be supplied through a traceable batch.
+          </p>
           <div style={{ overflowX: 'auto' }}>
             <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
               <thead>
@@ -450,16 +463,16 @@ export function SalesforceEcosystemPage() {
             </div>
             <div className="grid">
               <div className="flex justify-between items-center">
-                <span>LinkedIn evidence links retained, including manual corrections</span>
-                <span className="badge badge-Medium">89</span>
+                <span>Searchable Salesforce profiles with source evidence</span>
+                <span className="badge badge-Medium">{summary.sourceCoverage}</span>
               </div>
               <div className="flex justify-between items-center">
                 <span>Unverifiable records removed in provenance audit</span>
                 <span className="badge badge-P1">959</span>
               </div>
               <div className="flex justify-between items-center">
-                <span>Human verification required before client/candidate use</span>
-                <span className="badge badge-P1">Required</span>
+                <span>New additions supplied as verified before import</span>
+                <span className="badge badge-Medium">Required</span>
               </div>
             </div>
           </section>
@@ -486,7 +499,12 @@ export function SalesforceEcosystemPage() {
             <ShieldCheck size={20} />
             <h2>Verification Boundary</h2>
           </div>
-          <p className="text-sm text-secondary">Market-map signals are not proof of current employment, active Salesforce use, licence count, implementation partner involvement or candidate availability. Manual corrections are visible but treated as verification-pending until role and employer evidence is confirmed. Keep LinkedIn/profile evidence and direct verification as the final source of truth.</p>
+          <p className="text-sm text-secondary">
+            Market-map signals are not proof of current employment, active Salesforce use, licence count,
+            implementation partner involvement or candidate availability. Only profiles supplied with source evidence
+            enter public search; excluded source history is not counted. Keep profile evidence and direct verification
+            as the final source of truth.
+          </p>
         </section>
       </div>
     </div>
