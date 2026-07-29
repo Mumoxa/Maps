@@ -210,7 +210,7 @@ export function SalesforceEcosystemPage() {
     { value: summary.totalProfiles, label: 'Searchable Practitioners', color: 'var(--color-purple)' },
   ] as const
   const secondaryStats = [
-    { value: summary.byProvenance.get('legacy') ?? 0, label: 'Source-retained practitioners' },
+    { value: summary.byProvenance.get('legacy') ?? 0, label: 'Legacy profiles retained' },
     { value: '$5.1B', label: 'IDC SA ecosystem 2020–26 — source note' },
     { value: '31,800', label: 'IDC jobs impact — source note' },
     { value: 'Agentforce', label: 'SA GA signal — June 2026 source map' },
