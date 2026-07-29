@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ArrowRight, BriefcaseBusiness, Database, Search, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
 import { useData } from '../context/DataContext'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
-import { getTalentProfiles, talentTracks, type TalentTrack } from '../data'
+import { deriveMarketSummary, getTalentProfiles, talentTracks, type TalentTrack } from '../data'
 
 const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
   salesforce: BriefcaseBusiness,
@@ -29,13 +29,7 @@ export function HomePage() {
     return getTalentProfiles(data)
   }, [data])
 
-  const trackCounts = useMemo(() => {
-    const counts = new Map<string, number>()
-    for (const profile of talentProfiles) {
-      counts.set(profile.trackSlug, (counts.get(profile.trackSlug) ?? 0) + 1)
-    }
-    return counts
-  }, [talentProfiles])
+  const marketSummary = useMemo(() => deriveMarketSummary(talentProfiles), [talentProfiles])
 
   const handleSearch = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -82,7 +76,8 @@ export function HomePage() {
         <section className="talent-home-overview" aria-label="Talent map options">
           {talentTracks.map((track) => {
             const AccentIcon = accentIconMap[track.accent]
-            const count = trackCounts.get(track.slug) ?? 0
+            const count = marketSummary.byTrack.get(track.slug) ?? 0
+            const isLive = count > 0
 
             return (
               <Link key={track.id} to={`/${track.slug}`} className={`talent-track-card talent-track-card-${track.accent}`}>
@@ -92,19 +87,17 @@ export function HomePage() {
                 <div className="talent-track-content">
                   <div className="talent-track-topline">
                     <span className="talent-track-label">{track.shortLabel}</span>
-                    <span className={`track-status-badge track-status-${track.status}`}>
-                      {track.status === 'live' ? 'Live' : 'Planned'}
+                    <span className={`track-status-badge track-status-${isLive ? 'live' : 'planned'}`}>
+                      {isLive ? 'Live' : 'Ready for additions'}
                     </span>
                   </div>
                   <h2>{track.name}</h2>
                   <p>{track.summary}</p>
                 </div>
                 <span className="talent-track-cta">
-                  {track.status === 'live' && count > 0
+                  {isLive
                     ? `${count.toLocaleString()} searchable profile${count === 1 ? '' : 's'}`
-                    : track.status === 'live'
-                      ? 'Verified market added'
-                    : 'Dataset coming next'} <ArrowRight size={18} />
+                    : 'Ready for a verified batch'} <ArrowRight size={18} />
                 </span>
               </Link>
             )

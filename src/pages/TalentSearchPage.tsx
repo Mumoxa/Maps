@@ -88,7 +88,7 @@ export function TalentSearchPage() {
     const filtered = queryMatchedProfiles.filter((profile) => {
       if (params.track && profile.trackSlug !== params.track) return false
       if (params.company && profile.company !== params.company) return false
-      if (params.location && profile.location !== params.location) return false
+      if (params.location && profile.locationLabel !== params.location) return false
       if (params.seniority && profile.seniority !== params.seniority) return false
       if (params.skill && !profile.skills.includes(params.skill)) return false
       if (params.sector && !profile.sectors.includes(params.sector)) return false
@@ -212,7 +212,8 @@ export function TalentSearchPage() {
               ) : (
                 <div className="talent-results-list">
                   {paginatedResults.map((profile) => {
-                    const creditRiskSlug = profile.sourceProfileId ? slugSets?.profileIdToSlug.get(profile.sourceProfileId) : undefined
+                    const sourceProfileId = profile.provenance.sourceProfileId
+                    const creditRiskSlug = sourceProfileId ? slugSets?.profileIdToSlug.get(sourceProfileId) : undefined
                     return <TalentSearchCard key={profile.id} profile={profile} creditRiskSlug={creditRiskSlug} />
                   })}
                 </div>
@@ -314,9 +315,9 @@ function FacetGroup({
 }
 
 function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile; creditRiskSlug?: string }) {
-  const profileLink = profile.sourceType === 'bundled' && creditRiskSlug ? `/profiles/${creditRiskSlug}` : undefined
+  const profileLink = profile.trackSlug === 'credit-risk' && creditRiskSlug ? `/profiles/${creditRiskSlug}` : undefined
   const skills = profile.skills.slice(0, 5)
-  const sourceClass = profile.sourceType === 'manual' ? 'planned' : 'live'
+  const source = profile.sources[0]
 
   return (
     <article className="talent-result-row">
@@ -327,8 +328,8 @@ function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile;
           <div>
             <div className="talent-result-name-row">
               <h2>{profile.name}</h2>
-              {profile.sourceType === 'bundled' && <span className="verified-dot" title="Bundled profile source"><Check size={12} /></span>}
-              <span className={`track-status-badge track-status-${sourceClass}`}>
+              <span className="verified-dot" title="Profile supplied with source evidence"><Check size={12} /></span>
+              <span className="track-status-badge track-status-live">
                 {profile.track}
               </span>
             </div>
@@ -346,11 +347,17 @@ function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile;
 
         <div className="talent-result-meta">
           <span><Building2 size={15} /> {profile.company || 'Company not added'}</span>
-          <span><MapPin size={15} /> {profile.location || 'Location not added'}</span>
+          <span><MapPin size={15} /> {profile.locationLabel || 'Location not added'}</span>
           <span><BriefcaseBusiness size={15} /> {profile.seniority || 'Seniority not added'}</span>
         </div>
 
         <p className="talent-result-summary">{profile.summary}</p>
+        {source && (
+          <p className="text-sm text-secondary">
+            Evidence: <a href={source.url} target="_blank" rel="noreferrer">{source.type}</a>
+            {source.checkedOn ? ` · checked ${source.checkedOn}` : ' · legacy source date not recorded'}
+          </p>
+        )}
 
         <div className="talent-result-skill-group">
           {skills.map((skill) => (
@@ -370,7 +377,7 @@ function createFacets(profiles: TalentProfile[]): Record<FacetKey, Facet[]> {
   return {
     track: countFacet(profiles, (profile) => [profile.trackSlug], (value) => trackLabels.get(value) ?? value),
     company: countFacet(profiles, (profile) => [profile.company]),
-    location: countFacet(profiles, (profile) => [profile.location]),
+    location: countFacet(profiles, (profile) => [profile.locationLabel]),
     seniority: countFacet(profiles, (profile) => [profile.seniority]),
     skill: countFacet(profiles, (profile) => profile.skills),
     sector: countFacet(profiles, (profile) => profile.sectors),

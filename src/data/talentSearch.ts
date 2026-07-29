@@ -1,52 +1,27 @@
 import Fuse from 'fuse.js'
 import type { DataBundle, TalentProfile } from './types'
-import { getSalesforceTalentProfiles } from './salesforcePeople'
-import { manualTalentProfiles } from './talentRegistry'
+import { adaptCreditRiskProfiles, adaptSalesforceProfiles } from './marketData/adapters'
+import { loadPublishedMarketBatches } from './marketData/batchLoader'
+import { buildMarketRegistry } from './marketData/registry'
+import { salesforcePeople } from './salesforcePeople'
+import { talentTracks } from './tracks'
 
 let cachedTalentProfiles: TalentProfile[] | null = null
 let cachedTalentIndex: Fuse<TalentProfile> | null = null
 
-function toCreditRiskTalentProfiles(data: DataBundle): TalentProfile[] {
-  return data.profiles.map((profile) => ({
-    id: `credit-risk-${profile.id}`,
-    track: 'Credit Risk',
-    trackSlug: 'credit-risk',
-    name: profile.name,
-    company: profile.company,
-    title: profile.title,
-    location: profile.location,
-    seniority: profile.seniority,
-    skills: [profile.specialism, profile.function, profile.segment].filter(Boolean),
-    sectors: [profile.segment, profile.category].filter(Boolean),
-    summary: profile.evidence || profile.notes || `${profile.title} at ${profile.company}`,
-    linkedinUrl: profile.linkedin_url,
-    sourceType: 'bundled',
-    sourceProfileId: profile.id,
-  }))
-}
-
-function talentProfileKey(profile: TalentProfile) {
-  const linkedinKey = profile.linkedinUrl.trim().toLowerCase()
-  if (linkedinKey) return `linkedin:${linkedinKey}`
-  return `profile:${profile.trackSlug}:${profile.name}:${profile.company}`.toLowerCase()
-}
-
-function dedupeTalentProfiles(profiles: TalentProfile[]) {
-  const profilesByKey = new Map<string, TalentProfile>()
-
-  for (const profile of profiles) {
-    profilesByKey.set(talentProfileKey(profile), profile)
-  }
-
-  return [...profilesByKey.values()]
-}
-
 export function getTalentProfiles(data: DataBundle): TalentProfile[] {
   if (cachedTalentProfiles) return cachedTalentProfiles
 
-  const bundledProfiles = toCreditRiskTalentProfiles(data)
-  const salesforceProfiles = getSalesforceTalentProfiles()
-  cachedTalentProfiles = dedupeTalentProfiles([...bundledProfiles, ...salesforceProfiles, ...manualTalentProfiles])
+  const legacyProfiles = [
+    ...adaptCreditRiskProfiles(data),
+    ...adaptSalesforceProfiles(salesforcePeople),
+  ]
+  const trackNames = new Map(talentTracks.map((track) => [track.slug, track.name]))
+  cachedTalentProfiles = buildMarketRegistry({
+    legacyProfiles,
+    batches: loadPublishedMarketBatches(),
+    trackNames,
+  })
   return cachedTalentProfiles
 }
 
@@ -58,7 +33,7 @@ export function createTalentSearchIndex(talentProfiles: TalentProfile[]) {
       { name: 'name', weight: 0.24 },
       { name: 'title', weight: 0.18 },
       { name: 'company', weight: 0.14 },
-      { name: 'location', weight: 0.14 },
+      { name: 'locationLabel', weight: 0.14 },
       { name: 'skills', weight: 0.16 },
       { name: 'summary', weight: 0.08 },
       { name: 'track', weight: 0.04 },
@@ -93,7 +68,7 @@ function arrayIncludesIgnoreCase(values: string[], query?: string) {
 export function filterTalentProfiles(profiles: TalentProfile[], filters: TalentSearchFilters) {
   return profiles.filter((profile) => {
     if (filters.track && profile.trackSlug !== filters.track) return false
-    if (filters.location && !includesIgnoreCase(profile.location, filters.location)) return false
+    if (filters.location && !includesIgnoreCase(profile.locationLabel, filters.location)) return false
     if (filters.seniority && profile.seniority !== filters.seniority) return false
     if (filters.skill && !arrayIncludesIgnoreCase(profile.skills, filters.skill) && !includesIgnoreCase(profile.summary, filters.skill)) return false
     return true
