@@ -1,12 +1,13 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
+import { resolve } from 'node:path'
+import { loadRepositoryMarketData } from '../scripts/market-data-repository'
 import { loadData } from '../src/data/loadData'
 import {
   adaptCreditRiskProfiles,
   adaptSalesforceProfiles,
 } from '../src/data/marketData/adapters'
 import { salesforcePeople } from '../src/data/salesforcePeople'
-import { getTalentProfiles } from '../src/data/talentSearch'
 
 test('retains all legacy Credit Risk and Salesforce records', () => {
   assert.equal(adaptCreditRiskProfiles(loadData()).length, 344)
@@ -23,7 +24,8 @@ test('preserves legacy IDs and auditable source provenance', () => {
   assert.equal(salesforce.sources.length > 0, true)
 })
 
-test('excludes the unverified manual correction from the public registry', () => {
-  const names = getTalentProfiles(loadData()).map((profile) => profile.name)
+test('excludes the unverified manual correction from the public registry', async () => {
+  const repository = await loadRepositoryMarketData(resolve('.'))
+  const names = repository.profiles.map((profile) => profile.name)
   assert.equal(names.includes('Katlego Magnificent Seapi'), false)
 })

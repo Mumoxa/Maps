@@ -1,11 +1,9 @@
 import type { MarketBatch } from './types'
 
-const modules: Record<string, unknown> = typeof import.meta.glob === 'function'
-  ? import.meta.glob('../../../markets/*/batches/*.json', {
-      eager: true,
-      import: 'default',
-    })
-  : {}
+const modules: Record<string, unknown> = import.meta.glob('../../../markets/*/batches/*.json', {
+  eager: true,
+  import: 'default',
+})
 
 export function loadPublishedMarketBatches(): MarketBatch[] {
   return Object.entries(modules)
