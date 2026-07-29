@@ -88,6 +88,59 @@ if (people.length === 0) {
   throw new Error('No Salesforce people rows were parsed from the HTML export.')
 }
 
+// --- Provenance guard (added July 2026 audit) -------------------------------
+// The original SA_Salesforce_Market_Map_v2_FULL.html contained 959 machine-generated
+// people out of 1,047. Re-running this importer against that file would reintroduce
+// them. These checks fail the import when the tell-tale signatures reappear.
+// Override only for a source you have manually verified: --allow-unverified
+function auditProvenance(rows) {
+  const warnings = []
+  const slugOf = (row) => row.linkedinUrl.replace(/\/+$/, '').split('/').pop() ?? ''
+
+  const sequential = rows.filter((row) => /-\d{1,4}$/.test(slugOf(row)))
+  if (sequential.length > rows.length * 0.1) {
+    warnings.push(
+      `${sequential.length}/${rows.length} LinkedIn slugs end in a short numeric counter ` +
+      `(e.g. "${slugOf(sequential[0])}"). Real LinkedIn identifiers are 7-9 digit hashes.`,
+    )
+  }
+
+  const names = new Map()
+  for (const row of rows) names.set(row.fullName, (names.get(row.fullName) ?? 0) + 1)
+  const duplicates = [...names.values()].filter((count) => count > 1).length
+  if (duplicates > rows.length * 0.02) {
+    warnings.push(`${duplicates} full names occur more than once - suggests names recombined from a fixed pool.`)
+  }
+
+  const firstNames = new Set(rows.map((row) => row.fullName.split(' ')[0]))
+  if (rows.length > 100 && firstNames.size < rows.length * 0.3) {
+    warnings.push(`Only ${firstNames.size} distinct first names across ${rows.length} people - name pool is too small to be organic.`)
+  }
+
+  const titles = new Map()
+  for (const row of rows) titles.set(row.jobTitle, (titles.get(row.jobTitle) ?? 0) + 1)
+  const massRepeated = [...titles.values()].filter((count) => count >= 50).length
+  if (massRepeated >= 5) {
+    warnings.push(`${massRepeated} job titles each appear 50+ times - bulk rows are template-generated.`)
+  }
+
+  return warnings
+}
+
+const warnings = auditProvenance(people)
+if (warnings.length > 0) {
+  const report = warnings.map((warning) => `  - ${warning}`).join('\n')
+  if (!process.argv.includes('--allow-unverified')) {
+    throw new Error(
+      `Provenance check failed for ${path.basename(sourcePath)}:\n${report}\n\n` +
+      'This source looks machine-generated. 959 such records were removed from this repo in the\n' +
+      'July 2026 audit - see markets/salesforce/README.md. Verify the export before importing.\n' +
+      'To import anyway after manual verification, re-run with --allow-unverified.',
+    )
+  }
+  process.stderr.write(`WARNING - provenance check flagged this source:\n${report}\n\n`)
+}
+
 fs.mkdirSync(path.dirname(outputPath), { recursive: true })
 fs.writeFileSync(outputPath, `${JSON.stringify(people, null, 2)}\n`)
 
