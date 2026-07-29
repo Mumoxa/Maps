@@ -12,10 +12,18 @@ test('loads every registered track without track-specific importer code', async 
   )
 })
 
-test('combines the complete legacy registry before any new batches', async () => {
+test('combines the complete legacy registry with every published batch', async () => {
   const repository = await loadRepositoryMarketData(resolve('.'))
+  const batchRecordCount = repository.batches.reduce(
+    (total, batch) => total + batch.records.length,
+    0,
+  )
 
   assert.equal(repository.legacyProfiles.length, 432)
-  assert.equal(repository.profiles.length, 432)
-  assert.equal(repository.batches.length, 0)
+  assert.equal(repository.batches.length, 1)
+  assert.equal(batchRecordCount, 851)
+  assert.equal(
+    repository.profiles.length,
+    repository.legacyProfiles.length + batchRecordCount,
+  )
 })

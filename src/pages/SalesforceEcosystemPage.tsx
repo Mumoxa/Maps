@@ -243,8 +243,10 @@ export function SalesforceEcosystemPage() {
             959 of the 1,047 imported practitioner records were removed after a provenance audit found they were
             machine-generated rather than sourced from real people. The generated rows carried sequential LinkedIn
             slugs, names recombined from a closed pool, and job titles repeated in round counts.
-            <strong> {summary.totalProfiles} source records remain in the searchable registry</strong>. One manual
-            correction is preserved below as excluded source history because its role and employer evidence is incomplete.
+            The audit retained 88 legacy profiles, and later verified additions now load through immutable batches.
+            <strong> The searchable registry currently contains {summary.totalProfiles} Salesforce profiles</strong>.
+            One manual correction is preserved below as excluded source history because its role and employer evidence
+            is incomplete.
           </p>
           <p className="text-sm text-secondary mt-1">
             Practitioner-derived statistics on this page are calculated from the shared registry. Customer, partner and

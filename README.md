@@ -7,7 +7,7 @@ A React/Vite market-intelligence map site for South African talent ecosystems.
 | Market | Website Route | Status | Data Scope |
 |---|---|---|---|
 | SA Credit Risk Market Map | `/` | Live existing map | Credit risk profiles, companies, segments, org chart and shortlist |
-| SA Salesforce Ecosystem Map | `/markets/salesforce` | Added | 88 source-retained Salesforce practitioners + 1 manual correction, vendor/partner/customer segmentation, customer technographics, partner tiers and market intelligence summary |
+| SA Salesforce Ecosystem Map | `/markets/salesforce` | Live | 88 legacy source-retained profiles plus append-only source-verified batches, vendor/partner/customer segmentation, customer technographics, partner tiers and market intelligence summary |
 | SA SAP ERP Market | `/sap-erp` | Added | Verified South African SAP ERP market track, aligned to the shared specialist-talent structure |
 
 Future markets must be registered in `src/data/tracks.ts` with a South African geography, supported product category, and explicit evidence status. Routes and navigation should consume that registry so additions remain within the SA Talent Map product scope.
@@ -54,6 +54,12 @@ established they were machine-generated rather than sourced from real people. De
 
 88 records with genuine evidence links were retained (`sf-0001` to `sf-0088`). Removed IDs are listed in
 `markets/salesforce/removed_records_manifest.json`. **These records must not be re-imported.**
+
+On 29 July 2026, a separately sourced project export was reconciled through the shared batch importer.
+It added 851 unique profiles with direct public LinkedIn identities. Its immutable batch and the
+230-record exclusion audit are stored under `markets/salesforce/batches/` and
+`markets/salesforce/import-audits/`. Public totals are calculated from the registry rather than
+maintained in this document.
 
 The HTML importer (`scripts/import-salesforce-html.mjs`) will regenerate the removed rows if it is
 re-run against the original `SA_Salesforce_Market_Map_v2_FULL.html`. Validate any new source export

@@ -26,7 +26,7 @@ export const talentTracks: TalentTrack[] = [
     name: 'Salesforce',
     shortLabel: 'Track 01',
     summary: 'Search South African Salesforce professionals by cloud, certification signal, employer, location, and ecosystem segment.',
-    detail: 'The Salesforce branch now includes the imported v2 market-map people table alongside manual corrections and the ecosystem intelligence page.',
+    detail: 'The Salesforce branch combines the retained legacy dataset with append-only source-verified batches and the ecosystem intelligence page.',
     accent: 'salesforce',
     scope: { geography: 'South Africa', category: 'business-platform' },
     actions: {
@@ -36,7 +36,7 @@ export const talentTracks: TalentTrack[] = [
       secondaryHref: '/credit-risk',
     },
     nextSteps: [
-      'Add verified Salesforce profiles through the shared append-only batch importer.',
+      'Continue adding verified Salesforce profiles through the shared append-only batch importer.',
       'Add Salesforce company/detail pages if the next data pack includes deeper account hierarchy fields.',
       'Keep market-specific Salesforce facts in auditable attributes without changing the shared profile contract.',
     ],
