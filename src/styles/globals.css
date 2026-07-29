@@ -23,6 +23,9 @@
   --color-border-light: #f1f5f9;
   --color-verification: #f97316;
   --color-purple: #7c3aed;
+  --color-sap: #0f766e;
+  --color-sap-light: #f0fdfa;
+  --color-sap-border: #99f6e4;
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
   --radius-sm: 6px;
@@ -293,8 +296,16 @@ h3 { font-size: 1.125rem; }
   overflow-y: auto;
 }
 .search-result-item {
+  width: 100%;
   padding: 0.75rem 1rem;
   cursor: pointer;
+  background: var(--color-surface);
+  color: var(--color-text);
+  text-align: left;
+  font: inherit;
+  border-top: none;
+  border-right: none;
+  border-left: none;
   border-bottom: 1px solid var(--color-border-light);
   display: flex;
   flex-direction: column;
@@ -990,6 +1001,10 @@ h3 { font-size: 1.125rem; }
   background: linear-gradient(180deg, #eff6ff 0%, #ffffff 70%);
   border-color: #bfdbfe;
 }
+.talent-track-card-sap {
+  background: linear-gradient(180deg, var(--color-sap-light) 0%, var(--color-surface) 70%);
+  border-color: var(--color-sap-border);
+}
 .talent-track-icon {
   display: inline-flex;
   align-items: center;
@@ -1050,6 +1065,10 @@ h3 { font-size: 1.125rem; }
 .track-hero-murex .track-hero-badge {
   border-color: rgba(234, 88, 12, 0.18);
   color: #9a3412;
+}
+.track-hero-sap .track-hero-badge {
+  border-color: var(--color-sap-border);
+  color: var(--color-sap);
 }
 .track-hero-calypso .track-hero-badge {
   border-color: rgba(109, 40, 217, 0.18);

@@ -17,6 +17,7 @@ import { CalypsoPage } from './pages/CalypsoPage'
 import { TalentSearchPage } from './pages/TalentSearchPage'
 import { ShortlistPage } from './pages/ShortlistPage'
 import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
+import { TalentTrackRoutePage } from './pages/TrackPage'
 import { NotFound } from './pages/NotFound'
 
 function AppRoutes() {
@@ -36,6 +37,7 @@ function AppRoutes() {
     { path: '/profiles/:slug', element: <ProfilePage /> },
     { path: '/shortlist', element: <ShortlistPage /> },
     { path: '/markets/salesforce', element: <SalesforceEcosystemPage /> },
+    { path: '/:trackSlug', element: <TalentTrackRoutePage /> },
     { path: '*', element: <NotFound /> },
   ])
   return element

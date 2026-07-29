@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import type { ReactNode } from 'react'
-import { ArrowRight, BriefcaseBusiness, LayoutTemplate, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { ArrowRight, BriefcaseBusiness, Database, LayoutTemplate, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { getTalentTrackBySlug, type TalentTrack } from '../data'
 import { NotFound } from './NotFound'
@@ -9,6 +9,7 @@ import { NotFound } from './NotFound'
 const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
   salesforce: BriefcaseBusiness,
   credit: ShieldCheck,
+  sap: Database,
   murex: Workflow,
   calypso: Sparkles,
 }
@@ -16,6 +17,12 @@ const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
 interface MarketTrackPageProps {
   trackSlug: string
   extraContent?: ReactNode
+}
+
+export function TalentTrackRoutePage() {
+  const { trackSlug } = useParams<{ trackSlug: string }>()
+
+  return trackSlug ? <MarketTrackPage trackSlug={trackSlug} /> : <NotFound />
 }
 
 export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProps) {

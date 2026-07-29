@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowRight, BriefcaseBusiness, Search, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { ArrowRight, BriefcaseBusiness, Database, Search, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
 import { useData } from '../context/DataContext'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { getTalentProfiles, talentTracks, type TalentTrack } from '../data'
@@ -8,11 +8,12 @@ import { getTalentProfiles, talentTracks, type TalentTrack } from '../data'
 const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
   salesforce: BriefcaseBusiness,
   credit: ShieldCheck,
+  sap: Database,
   murex: Workflow,
   calypso: Sparkles,
 }
 
-const suggestedSearches = ['Salesforce Architect', 'Credit Risk', 'Murex', 'Calypso', 'Johannesburg', 'Market Risk']
+const suggestedSearches = ['Salesforce Architect', 'SAP ERP', 'Credit Risk', 'Murex', 'Calypso', 'Johannesburg']
 
 export function HomePage() {
   const { data, loading } = useData()
@@ -51,7 +52,7 @@ export function HomePage() {
           <div>
             <h1>Find South African talent across specialist markets.</h1>
             <p>
-              SA Talent Map brings Salesforce, Credit Risk, Murex, Calypso, and future specialist tracks into one searchable platform.
+              SA Talent Map brings Salesforce, SAP ERP, Credit Risk, Murex, Calypso, and future specialist tracks into one searchable platform.
             </p>
           </div>
 
@@ -99,8 +100,10 @@ export function HomePage() {
                   <p>{track.summary}</p>
                 </div>
                 <span className="talent-track-cta">
-                  {track.status === 'live'
+                  {track.status === 'live' && count > 0
                     ? `${count.toLocaleString()} searchable profile${count === 1 ? '' : 's'}`
+                    : track.status === 'live'
+                      ? 'Verified market added'
                     : 'Dataset coming next'} <ArrowRight size={18} />
                 </span>
               </Link>
