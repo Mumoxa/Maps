@@ -4,13 +4,12 @@ This folder documents the Salesforce market-map layer for `Mumoxa/Maps`.
 
 > **Provenance audit, July 2026:** 959 of the original 1,047 imported practitioner records were removed
 > after they were found to be machine-generated rather than real people. See "Provenance Audit" below.
-> Counts in this document reflect the post-audit dataset.
+> Legacy counts below explain that audit. Current public totals are derived from the shared registry.
 
 ## Scope
 
-- Public searchable Salesforce practitioners: 88 source-retained records
+- Public searchable Salesforce practitioners: 88 legacy source-retained records plus validated batch records
 - Excluded source history: 1 incomplete manual correction
-- South Africa-based public practitioners: 88
 - Salesforce customer technographic records in the supplied v2 map: 295
 - BuiltWith live `.za` domain signal records in the supplied v2 map: 266
 - Implementation / ISV partners in the supplied v2 map: 23
@@ -23,7 +22,7 @@ This folder documents the Salesforce market-map layer for `Mumoxa/Maps`.
 The React page exposes:
 
 - 88 source-retained people in `people.json`, loaded through the shared legacy adapter
-- future verified additions loaded from immutable `markets/salesforce/batches/*.json` files
+- verified additions loaded from immutable `markets/salesforce/batches/*.json` files
 - Salesforce people in the global `/talent-search` experience with skill, location, company, seniority and sector facets
 - ecosystem summary KPIs
 - data-derived Vendor / Partner / Customer segmentation
@@ -36,6 +35,21 @@ The React page exposes:
 - 23 implementation partners with tier, Salesforce headcount estimate, certification estimate and focus context
 - surrounding technology stack patterns
 - data-quality and privacy guardrails
+
+## Source-Verified Project Batch — 29 July 2026
+
+The project export contained 1,081 named Salesforce ecosystem records. MAPS added 851 records that
+had a direct public LinkedIn identity and passed duplicate and safety checks. The import excluded
+230 records rather than weakening the public data standard:
+
+- records without a direct public profile identity;
+- records explicitly flagged as weak, false-positive, placeholder, unresolved or do-not-approach;
+- duplicate LinkedIn identities; and
+- identities or normalised names already represented in MAPS.
+
+The batch is `batches/2026-07-29-salesforce-sa-source-verified.json`. The complete reconciliation,
+source checksum, exclusion rules and per-record reasons are in
+`import-audits/2026-07-29-salesforce-sa-source-verified.json`.
 
 ## V2 Enrichment Source
 
@@ -91,7 +105,7 @@ records**. Validate any new export against the signals above before committing.
 
 ## Next Data Expansion
 
-The people layer now needs rebuilding from a verifiable source. Requirements for the next dataset:
+Requirements for later datasets:
 
 1. Every record must carry a resolvable evidence URL that has been checked, not pattern-generated.
 2. Reject any export where LinkedIn slugs are sequential, names repeat across a small pool, or job titles cluster into round counts.
