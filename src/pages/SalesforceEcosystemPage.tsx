@@ -7,33 +7,21 @@ const primaryStats = [
   { value: 295, label: 'Salesforce Customers SA', color: 'var(--color-primary)' },
   { value: 266, label: 'BuiltWith .za Domains', color: 'var(--color-success)' },
   { value: 23, label: 'SI / ISV Partners', color: 'var(--color-accent)' },
-  { value: '1,048', label: 'Named Practitioners', color: 'var(--color-purple)' },
+  { value: 89, label: 'Named Practitioners', color: 'var(--color-purple)' },
 ] as const
 
 const secondaryStats = [
-  { value: '1,019', label: 'SA-based practitioners' },
+  { value: 88, label: 'Source-retained practitioners' },
   { value: '$5.1B', label: 'IDC SA ecosystem 2020–26' },
   { value: '31,800', label: 'IDC jobs impact note' },
   { value: 'Agentforce', label: 'SA GA tracked Jun 2026' },
 ] as const
 
 const employerTypes = [
-  { name: 'Partner', count: 998 },
+  { name: 'Partner', count: 39 },
   { name: 'Customer', count: 31 },
   { name: 'Vendor', count: 18 },
   { name: 'Manual Correction', count: 1 },
-] as const
-
-const cloudDistribution = [
-  { name: 'Agentforce', count: 221 },
-  { name: 'Service Cloud', count: 191 },
-  { name: 'Marketing Cloud', count: 185 },
-  { name: 'Financial Services Cloud', count: 102 },
-  { name: 'Data Cloud', count: 79 },
-  { name: 'Sales Cloud', count: 69 },
-  { name: 'MuleSoft', count: 66 },
-  { name: 'CPQ', count: 59 },
-  { name: 'Tableau', count: 56 },
 ] as const
 
 const customerClouds = [
@@ -52,19 +40,20 @@ const customerClouds = [
 ] as const
 
 const seniorityDistribution = [
-  { seniority: 'Consultant / Specialist', count: 748 },
-  { seniority: 'Senior', count: 121 },
-  { seniority: 'Lead / Manager', count: 87 },
-  { seniority: 'Principal / Architect', count: 51 },
-  { seniority: 'Executive', count: 34 },
-  { seniority: 'Professional', count: 6 },
+  { seniority: 'Executive', count: 22 },
+  { seniority: 'Consultant / Specialist', count: 17 },
+  { seniority: 'Lead / Manager', count: 14 },
+  { seniority: 'Professional', count: 13 },
+  { seniority: 'Principal / Architect', count: 13 },
+  { seniority: 'C-Suite', count: 5 },
+  { seniority: 'Senior', count: 4 },
 ] as const
 
 const provinceDistribution = [
-  { name: 'Gauteng', count: 662 },
-  { name: 'Western Cape', count: 340 },
-  { name: 'KwaZulu-Natal', count: 44 },
+  { name: 'Gauteng', count: 58 },
+  { name: 'Western Cape', count: 27 },
   { name: 'International', count: 2 },
+  { name: 'KwaZulu-Natal', count: 1 },
 ] as const
 
 const topIndustries = [
@@ -97,19 +86,22 @@ const cloudFootprintBadges = [
   'Agentforce 6 pilot / 1 GA', 'Tableau 47', 'MuleSoft 62', 'CPQ 19', 'Field Service 22',
 ] as const
 
+// Per-company practitioner counts were removed in the July 2026 provenance audit: the
+// original figures (CloudSmiths 179, Accenture 137, ...) were inflated by machine-generated
+// records. Cloud focus and partner tier come from the v2 market-map source and are retained.
 const topCompanies = [
-  { name: 'CloudSmiths', type: 'Partner', count: 179, priority: 'P1', clouds: 'Agentforce, Service Cloud, Marketing Cloud, Financial Services Cloud, Data Cloud' },
-  { name: 'Accenture South Africa', type: 'Partner', count: 137, priority: 'P1', clouds: 'Service Cloud, Marketing Cloud, Agentforce, Sales Cloud, Financial Services Cloud' },
-  { name: 'Deloitte Digital South Africa', type: 'Partner', count: 109, priority: 'P1', clouds: 'Agentforce, Service Cloud, Data Cloud, Marketing Cloud, Financial Services Cloud' },
-  { name: 'PwC South Africa', type: 'Partner', count: 85, priority: 'P1', clouds: 'Marketing Cloud, Agentforce, Service Cloud, Financial Services Cloud, Data Cloud' },
-  { name: 'NTT DATA / EXAH', type: 'Partner', count: 76, priority: 'P1', clouds: 'Agentforce, Service Cloud, Marketing Cloud, Financial Services Cloud, MuleSoft' },
-  { name: 'Capgemini South Africa', type: 'Partner', count: 55, priority: 'P1', clouds: 'Service Cloud, Marketing Cloud, Agentforce, Sales Cloud, CPQ' },
-  { name: 'IBM South Africa', type: 'Partner', count: 42, priority: 'P1', clouds: 'Service Cloud, Agentforce, MuleSoft, Marketing Cloud, Sales Cloud' },
-  { name: 'Xsmths', type: 'Partner', count: 36, priority: 'P2', clouds: 'Agentforce, Service Cloud, MuleSoft, Data Cloud, Financial Services Cloud' },
-  { name: 'BlueSky Digital Solutions', type: 'Partner', count: 34, priority: 'P2', clouds: 'Service Cloud, Marketing Cloud, Agentforce, Financial Services Cloud, Sales Cloud' },
-  { name: 'AdvanceForce', type: 'Partner', count: 33, priority: 'P2', clouds: 'Agentforce, Service Cloud, Marketing Cloud, Sales Cloud, Financial Services Cloud' },
-  { name: 'Smarten UP', type: 'Partner', count: 32, priority: 'P2', clouds: 'Agentforce, Marketing Cloud, Service Cloud, Data Cloud, CPQ' },
-  { name: 'Cloud23', type: 'Partner', count: 30, priority: 'P2', clouds: 'Marketing Cloud, Agentforce, Service Cloud, Financial Services Cloud, MuleSoft' },
+  { name: 'CloudSmiths', type: 'Partner', priority: 'P1', clouds: 'Agentforce, Service Cloud, Marketing Cloud, Financial Services Cloud, Data Cloud' },
+  { name: 'Accenture South Africa', type: 'Partner', priority: 'P1', clouds: 'Service Cloud, Marketing Cloud, Agentforce, Sales Cloud, Financial Services Cloud' },
+  { name: 'Deloitte Digital South Africa', type: 'Partner', priority: 'P1', clouds: 'Agentforce, Service Cloud, Data Cloud, Marketing Cloud, Financial Services Cloud' },
+  { name: 'PwC South Africa', type: 'Partner', priority: 'P1', clouds: 'Marketing Cloud, Agentforce, Service Cloud, Financial Services Cloud, Data Cloud' },
+  { name: 'NTT DATA / EXAH', type: 'Partner', priority: 'P1', clouds: 'Agentforce, Service Cloud, Marketing Cloud, Financial Services Cloud, MuleSoft' },
+  { name: 'Capgemini South Africa', type: 'Partner', priority: 'P1', clouds: 'Service Cloud, Marketing Cloud, Agentforce, Sales Cloud, CPQ' },
+  { name: 'IBM South Africa', type: 'Partner', priority: 'P1', clouds: 'Service Cloud, Agentforce, MuleSoft, Marketing Cloud, Sales Cloud' },
+  { name: 'Xsmths', type: 'Partner', priority: 'P2', clouds: 'Agentforce, Service Cloud, MuleSoft, Data Cloud, Financial Services Cloud' },
+  { name: 'BlueSky Digital Solutions', type: 'Partner', priority: 'P2', clouds: 'Service Cloud, Marketing Cloud, Agentforce, Financial Services Cloud, Sales Cloud' },
+  { name: 'AdvanceForce', type: 'Partner', priority: 'P2', clouds: 'Agentforce, Service Cloud, Marketing Cloud, Sales Cloud, Financial Services Cloud' },
+  { name: 'Smarten UP', type: 'Partner', priority: 'P2', clouds: 'Agentforce, Marketing Cloud, Service Cloud, Data Cloud, CPQ' },
+  { name: 'Cloud23', type: 'Partner', priority: 'P2', clouds: 'Marketing Cloud, Agentforce, Service Cloud, Financial Services Cloud, MuleSoft' },
 ] as const
 
 const verifiedCustomers = [
@@ -183,7 +175,7 @@ const manualPractitionerCorrections = [
     location: 'Pretoria, Gauteng, South Africa',
     linkedIn: 'https://www.linkedin.com/in/seapi-katlego-96a955165/',
     status: 'Needs Salesforce role/employer verification',
-    note: 'User-supplied correction added after the original 1,047-person source batch missed this profile.',
+    note: 'User-supplied correction. Retained through the July 2026 provenance audit; still requires role and employer verification.',
   },
 ] as const
 
@@ -216,7 +208,6 @@ export function SalesforceEcosystemPage() {
     document.title = 'SA Salesforce Ecosystem Map'
   }, [])
 
-  const maxCloudCount = cloudDistribution[0]?.count ?? 1
   const maxProvinceCount = provinceDistribution[0]?.count ?? 1
   const maxCustomerCloudCount = customerClouds[0]?.count ?? 1
   const maxIndustryCount = topIndustries[0]?.count ?? 1
@@ -231,8 +222,25 @@ export function SalesforceEcosystemPage() {
 
         <div className="hero">
           <h1>SA Salesforce Ecosystem Map</h1>
-          <p>Complete South African Salesforce market layer covering customers, implementation partners, practitioner clusters, cloud footprint, surrounding technology, Agentforce signals and data-quality boundaries.</p>
+          <p>South African Salesforce market layer covering customers, implementation partners, cloud footprint, surrounding technology, Agentforce signals and data-quality boundaries.</p>
         </div>
+
+        <section className="card mb-3" style={{ borderLeft: '4px solid var(--color-danger, #dc2626)' }}>
+          <div className="flex items-center gap-1 mb-1">
+            <ShieldCheck size={20} />
+            <h2>Provenance Audit — July 2026</h2>
+          </div>
+          <p className="text-sm">
+            959 of the 1,047 imported practitioner records were removed after a provenance audit found they were
+            machine-generated rather than sourced from real people. The generated rows carried sequential LinkedIn
+            slugs, names recombined from a closed pool, and job titles repeated in round counts.
+            <strong> 88 source records with verifiable evidence links were retained</strong>, plus 1 manual correction.
+          </p>
+          <p className="text-sm text-secondary mt-1">
+            Practitioner-derived statistics on this page have been recalculated against the retained records only.
+            Customer, partner and market-intelligence sections come from the v2 market-map source and were not affected.
+          </p>
+        </section>
 
         <div className="stats-bar">
           {primaryStats.map(stat => (
@@ -277,23 +285,18 @@ export function SalesforceEcosystemPage() {
           ))}
         </div>
 
-        <div className="grid grid-2 mb-3">
-          <section className="card">
-            <div className="flex items-center gap-1 mb-2">
-              <Cloud size={20} />
-              <h2>Practitioner Cloud Expertise</h2>
-            </div>
-            <MetricBars items={cloudDistribution} max={maxCloudCount} />
-          </section>
-
-          <section className="card">
-            <div className="flex items-center gap-1 mb-2">
-              <BarChart3 size={20} />
-              <h2>Customer Cloud Footprint</h2>
-            </div>
-            <MetricBars items={customerClouds} max={maxCustomerCloudCount} />
-          </section>
-        </div>
+        <section className="card mb-3">
+          <div className="flex items-center gap-1 mb-2">
+            <BarChart3 size={20} />
+            <h2>Customer Cloud Footprint</h2>
+          </div>
+          <MetricBars items={customerClouds} max={maxCustomerCloudCount} />
+          <p className="text-sm text-secondary mt-2">
+            Customer-side technographic counts come from the v2 market-map source, not from the practitioner table.
+            The practitioner cloud-expertise heat map was withdrawn in the July 2026 provenance audit because it was
+            derived from records that failed verification.
+          </p>
+        </section>
 
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
@@ -326,7 +329,7 @@ export function SalesforceEcosystemPage() {
         <section className="mb-3">
           <div className="flex items-center gap-1 mb-2">
             <Building2 size={20} />
-            <h2>Top Salesforce Ecosystem Companies — People Cluster</h2>
+            <h2>Salesforce Ecosystem Companies — Cloud Focus</h2>
           </div>
           <div className="grid grid-3">
             {topCompanies.map(company => (
@@ -336,8 +339,6 @@ export function SalesforceEcosystemPage() {
                   <span className={`badge badge-${company.priority}`}>{company.priority}</span>
                 </div>
                 <div className="text-sm text-secondary mb-1">{company.type}</div>
-                <div className="text-xl font-bold">{company.count}</div>
-                <div className="text-sm text-secondary mb-1">mapped profiles</div>
                 <div className="text-sm"><strong>Clouds:</strong> {company.clouds}</div>
               </div>
             ))}
@@ -450,11 +451,11 @@ export function SalesforceEcosystemPage() {
             <div className="grid">
               <div className="flex justify-between items-center">
                 <span>LinkedIn evidence links retained, including manual corrections</span>
-                <span className="badge badge-Medium">1,048</span>
+                <span className="badge badge-Medium">89</span>
               </div>
               <div className="flex justify-between items-center">
-                <span>Inferred email records excluded from public page</span>
-                <span className="badge badge-Medium">1,047</span>
+                <span>Unverifiable records removed in provenance audit</span>
+                <span className="badge badge-P1">959</span>
               </div>
               <div className="flex justify-between items-center">
                 <span>Human verification required before client/candidate use</span>
