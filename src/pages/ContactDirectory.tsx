@@ -62,11 +62,21 @@ const FACET_GROUPS: { key: ContactFacetKey; label: string; defaultOpen?: boolean
 ]
 
 function firstPosition(contact: Contact): ContactPosition {
-  return contact.positions.find(position => position.title || position.company) ?? contact.positions[0]
+  for (const position of contact.positions) {
+    if (position.title || position.company) return position
+  }
+  return contact.positions[0]
 }
 
 function unique(values: string[]): string[] {
-  return [...new Set(values.filter(Boolean))]
+  const result: string[] = []
+  const seen = new Set<string>()
+  for (const value of values) {
+    if (!value || seen.has(value)) continue
+    seen.add(value)
+    result.push(value)
+  }
+  return result
 }
 
 function sourceLabel(contact: Contact): string {
@@ -92,7 +102,10 @@ function buildContactCardData(contact: Contact): ContactCardData {
   const sizes = unique(contact.positions.map(position => position.companySize))
   const companies = unique(contact.positions.map(position => position.company))
   const titles = unique(contact.positions.map(position => position.title))
-  const companyOverviews = contact.positions.filter(position => position.companyDescription)
+  const companyOverviews: ContactPosition[] = []
+  for (const position of contact.positions) {
+    if (position.companyDescription) companyOverviews.push(position)
+  }
   const facetDetails = unique([
     ...contact.seniorities,
     ...contact.departments,
@@ -100,15 +113,26 @@ function buildContactCardData(contact: Contact): ContactCardData {
     ...contact.software,
     ...contact.tags,
   ])
-  const initials = contact.name.split(' ').filter(Boolean).slice(0, 2).map(part => part[0]).join('').toLocaleUpperCase()
+  const initialParts: string[] = []
+  for (const part of contact.name.split(' ')) {
+    if (!part) continue
+    initialParts.push(part[0])
+    if (initialParts.length === 2) break
+  }
+  const initials = initialParts.join('').toLocaleUpperCase()
 
   return { contact, primary, sectors, sizes, companies, titles, companyOverviews, facetDetails, initials }
 }
 
-const CONTACT_CARD_DATA = new Map(contacts.map(contact => [contact.id, buildContactCardData(contact)]))
-const CONTACT_COMPANY_COUNT = new Set(
-  contacts.flatMap(contact => contact.positions.map(position => position.company).filter(Boolean)),
-).size
+const CONTACT_CARD_DATA = new Map<string, ContactCardData>()
+const CONTACT_COMPANIES = new Set<string>()
+for (const contact of contacts) {
+  CONTACT_CARD_DATA.set(contact.id, buildContactCardData(contact))
+  for (const position of contact.positions) {
+    if (position.company) CONTACT_COMPANIES.add(position.company)
+  }
+}
+const CONTACT_COMPANY_COUNT = CONTACT_COMPANIES.size
 
 function ContactCard({ data }: { data: ContactCardData }) {
   const { contact, primary, sectors, sizes, companies, titles, companyOverviews, facetDetails, initials } = data
