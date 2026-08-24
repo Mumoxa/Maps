@@ -11,6 +11,7 @@ from dataclasses import dataclass
 from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Iterable
+from urllib.parse import urlparse
 
 from openpyxl import load_workbook
 
@@ -43,10 +44,41 @@ def normalise_header(value: Any) -> str:
 
 def normalise_url(value: str) -> str:
     text = clean(value).casefold().split("?", 1)[0].rstrip("/")
+    if text and not re.match(r"^https?://", text):
+        text = f"https://{text}"
     text = text.replace("https://za.linkedin.com/", "https://www.linkedin.com/")
     text = text.replace("http://za.linkedin.com/", "https://www.linkedin.com/")
     text = text.replace("http://www.linkedin.com/", "https://www.linkedin.com/")
+    parsed = urlparse(text)
+    host = parsed.netloc.casefold().split(":", 1)[0]
+    if host not in {"linkedin.com", "www.linkedin.com"} or not parsed.path.startswith("/in/"):
+        return ""
+    return f"https://www.linkedin.com{parsed.path.rstrip('/')}"
+
+
+def normalise_website_url(value: str) -> str:
+    text = clean(value)
+    if not text or "@" in text or re.search(r"\s", text):
+        return ""
+    if not re.match(r"^https?://", text, flags=re.IGNORECASE):
+        text = f"https://{text}"
+    parsed = urlparse(text)
+    if parsed.scheme.casefold() not in {"http", "https"} or "." not in parsed.netloc:
+        return ""
     return text
+
+
+def normalise_company_linkedin_url(value: str) -> str:
+    text = clean(value).split("?", 1)[0].rstrip("/")
+    if text and not re.match(r"^https?://", text, flags=re.IGNORECASE):
+        text = f"https://{text}"
+    text = re.sub(r"^http://(za\.)?linkedin\.com/", "https://www.linkedin.com/", text, flags=re.IGNORECASE)
+    text = re.sub(r"^https://za\.linkedin\.com/", "https://www.linkedin.com/", text, flags=re.IGNORECASE)
+    parsed = urlparse(text)
+    host = parsed.netloc.casefold().split(":", 1)[0]
+    if host not in {"linkedin.com", "www.linkedin.com"} or not parsed.path.startswith("/company/"):
+        return ""
+    return f"https://www.linkedin.com{parsed.path.rstrip('/')}"
 
 
 def split_values(value: Any) -> list[str]:
@@ -119,8 +151,8 @@ def make_position(
         "company": clean(company),
         "sector": clean(sector),
         "companySize": clean(company_size),
-        "website": clean(website),
-        "companyLinkedin": clean(company_linkedin),
+        "website": normalise_website_url(website),
+        "companyLinkedin": normalise_company_linkedin_url(company_linkedin),
         "companyDomain": clean(company_domain),
         "companyDescription": clean(company_description),
         "companySubIndustry": clean(company_sub_industry),
@@ -468,9 +500,22 @@ def strong_email(record: dict[str, Any]) -> list[str]:
     return [entry["address"].casefold() for entry in record["emails"] if not entry["masked"]]
 
 
+def names_compatible(left: str, right: str) -> bool:
+    left_tokens = normalise(left).split()
+    right_tokens = normalise(right).split()
+    if left_tokens == right_tokens:
+        return True
+    return (
+        len(left_tokens) >= 2
+        and len(right_tokens) >= 2
+        and left_tokens[0] == right_tokens[0]
+        and left_tokens[-1] == right_tokens[-1]
+    )
+
+
 def group_records(records: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
     dsu = DisjointSet.create(len(records))
-    linkedin_owner: dict[str, int] = {}
+    linkedin_owners: dict[str, list[int]] = defaultdict(list)
     name_company_title_owner: dict[str, int] = {}
     email_name_owner: dict[str, int] = {}
     mobile_name_owner: dict[str, int] = {}
@@ -482,10 +527,10 @@ def group_records(records: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
             key = normalise_url(linkedin)
             if "/in/" not in key:
                 continue
-            if key in linkedin_owner:
-                dsu.union(index, linkedin_owner[key])
-            else:
-                linkedin_owner[key] = index
+            for owner in linkedin_owners[key]:
+                if names_compatible(record["name"], records[owner]["name"]):
+                    dsu.union(index, owner)
+            linkedin_owners[key].append(index)
         for position in positions:
             company_key = normalise(position["company"])
             title_key = normalise(position["title"])

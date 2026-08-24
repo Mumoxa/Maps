@@ -26,7 +26,7 @@ npm run contacts:import -- src/data/contact-parts contacts.audit.json SOURCE_1.x
 npm run validate:contacts
 ```
 
-The checked-in validator reconciles the expected source counts and rejects shifted spreadsheet values such as email addresses in person names or dates in telephone fields. The directory contains personal contact details and relationship notes and must remain behind the project's private access boundary.
+The checked-in validator reconciles each generated source audit and rejects shifted spreadsheet values such as email addresses in person names or dates in telephone fields. The directory contains personal contact details and relationship notes and must remain behind the project's private access boundary.
 
 ## Credit Risk Data Files
 
