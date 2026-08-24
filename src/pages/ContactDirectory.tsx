@@ -74,7 +74,19 @@ function sourceLabel(contact: Contact): string {
   return `${count.toLocaleString()} source record${count === 1 ? '' : 's'}`
 }
 
-function ContactCard({ contact }: { contact: Contact }) {
+interface ContactCardData {
+  contact: Contact
+  primary: ContactPosition
+  sectors: string[]
+  sizes: string[]
+  companies: string[]
+  titles: string[]
+  companyOverviews: ContactPosition[]
+  facetDetails: string[]
+  initials: string
+}
+
+function buildContactCardData(contact: Contact): ContactCardData {
   const primary = firstPosition(contact)
   const sectors = unique(contact.positions.map(position => position.sector))
   const sizes = unique(contact.positions.map(position => position.companySize))
@@ -88,12 +100,24 @@ function ContactCard({ contact }: { contact: Contact }) {
     ...contact.software,
     ...contact.tags,
   ])
+  const initials = contact.name.split(' ').filter(Boolean).slice(0, 2).map(part => part[0]).join('').toLocaleUpperCase()
+
+  return { contact, primary, sectors, sizes, companies, titles, companyOverviews, facetDetails, initials }
+}
+
+const CONTACT_CARD_DATA = new Map(contacts.map(contact => [contact.id, buildContactCardData(contact)]))
+const CONTACT_COMPANY_COUNT = new Set(
+  contacts.flatMap(contact => contact.positions.map(position => position.company).filter(Boolean)),
+).size
+
+function ContactCard({ data }: { data: ContactCardData }) {
+  const { contact, primary, sectors, sizes, companies, titles, companyOverviews, facetDetails, initials } = data
 
   return (
     <article className="contact-card">
       <div className="contact-card-top">
         <div className="avatar" aria-hidden="true">
-          {contact.name.split(' ').filter(Boolean).slice(0, 2).map(part => part[0]).join('').toLocaleUpperCase()}
+          {initials}
         </div>
         <div>
           <h2>{contact.name}</h2>
@@ -249,10 +273,6 @@ export function ContactDirectory() {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const facets = useMemo(() => buildContactFacets(contacts), [])
   const results = useMemo(() => filterContacts(contacts, query, selections), [query, selections])
-  const companies = useMemo(
-    () => new Set(contacts.flatMap(contact => contact.positions.map(position => position.company).filter(Boolean))).size,
-    [],
-  )
   const selectedCount = activeContactFilterCount(selections)
   const visibleContacts = results.slice(0, visibleCount)
 
@@ -281,7 +301,7 @@ export function ContactDirectory() {
           </div>
           <div className="contact-stats">
             <strong>{contacts.length.toLocaleString()}</strong><span>unique contacts</span>
-            <strong>{companies.toLocaleString()}</strong><span>companies</span>
+            <strong>{CONTACT_COMPANY_COUNT.toLocaleString()}</strong><span>companies</span>
           </div>
         </div>
 
@@ -326,7 +346,9 @@ export function ContactDirectory() {
             </p>
             {results.length ? (
               <>
-                <div className="contacts-grid">{visibleContacts.map(contact => <ContactCard contact={contact} key={contact.id} />)}</div>
+                <div className="contacts-grid">{visibleContacts.map(contact => (
+                  <ContactCard data={CONTACT_CARD_DATA.get(contact.id)!} key={contact.id} />
+                ))}</div>
                 {visibleCount < results.length && (
                   <button type="button" className="btn contact-load-more" onClick={() => setVisibleCount(count => count + PAGE_SIZE)}>
                     Load {Math.min(PAGE_SIZE, results.length - visibleCount).toLocaleString()} more
