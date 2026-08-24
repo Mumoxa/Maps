@@ -1,6 +1,6 @@
 import { useMemo, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Map as MapIcon, Users, Building2, Layers, ListOrdered, ContactRound } from 'lucide-react'
+import { Map as MapIcon, Users, Building2, Layers, ListOrdered } from 'lucide-react'
 import { useData } from '../context/DataContext'
 import { StatCard } from '../components/ui/StatCard'
 import { ProfileCard } from '../components/ui/ProfileCard'
@@ -182,11 +182,6 @@ export function CreditRiskPage() {
                 <Users size={32} className="quick-link-icon" style={{ color: 'var(--color-purple)' }} />
                 <div className="quick-link-title">Candidates</div>
                 <div className="text-sm text-secondary">{data.profiles.length} candidate profiles</div>
-              </Link>
-              <Link to="/contacts" className="card card-hover quick-link-card">
-                <ContactRound size={32} className="quick-link-icon" style={{ color: 'var(--color-success)' }} />
-                <div className="quick-link-title">Client Contacts</div>
-                <div className="text-sm text-secondary">Browse decision-makers and relationships</div>
               </Link>
               <Link to="/shortlist" className="card card-hover quick-link-card">
                 <ListOrdered size={32} className="quick-link-icon" style={{ color: 'var(--color-error)' }} />

@@ -31,7 +31,7 @@ export function ContactDirectory() {
   const industries = [...new Set(directory.map(c => c.industry))].sort()
   return <div className="page"><div className="container">
     <div className="contact-hero">
-      <div><p className="eyebrow">Client relationships</p><h1>Contact directory</h1><p>Decision-makers and client-side data, AI and technology contacts. Candidate profiles remain available separately.</p></div>
+      <div><p className="eyebrow">Contacts</p><h1>Contact directory</h1><p>Client-side decision-makers and relationship records, deliberately separate from the candidate directory.</p></div>
       <div className="contact-stats"><strong>{directory.length}</strong><span>client contacts</span><strong>{new Set(directory.map(c=>c.company)).size}</strong><span>companies</span></div>
     </div>
     <div className="contact-toolbar"><div className="contact-search"><Search size={17}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search name, title, company, industry or location" aria-label="Search contacts"/></div><select className="filter-select" value={industry} onChange={e=>setIndustry(e.target.value)}><option value="">All industries</option>{industries.map(i=><option key={i}>{i}</option>)}</select></div>

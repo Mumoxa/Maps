@@ -8,7 +8,8 @@ import { buildSlugSets } from '../../data'
 const trackNavLinks = [
   { to: '/', label: 'Home' },
   { to: '/talent-search', label: 'Talent Search' },
-  { to: '/contacts', label: 'Client Contacts' },
+  { to: '/profiles', label: 'Candidates' },
+  { to: '/contacts', label: 'Contacts' },
   ...talentTracks.map((track) => ({ to: `/${track.slug}`, label: track.name })),
 ]
 
@@ -17,7 +18,6 @@ const creditRiskNavLinks = [
   { to: '/segments', label: 'Segments' },
   { to: '/companies', label: 'Companies' },
   { to: '/profiles', label: 'Candidates' },
-  { to: '/contacts', label: 'Contacts' },
   { to: '/shortlist', label: 'Shortlist' },
   { to: '/markets/salesforce', label: 'Salesforce' },
 ]
@@ -30,7 +30,7 @@ export function Header() {
   const location = useLocation()
   const { data } = useData()
   const searchRef = useRef<HTMLDivElement>(null)
-  const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/contacts', '/shortlist']
+  const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/shortlist']
     .some((path) => location.pathname === path || location.pathname.startsWith(`${path}/`))
 
   useEffect(() => {
