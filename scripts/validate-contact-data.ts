@@ -65,6 +65,30 @@ for (const [file, expected] of Object.entries(EXPECTED_SOURCE_PERSON_ROWS)) {
   if (actual !== expected) errors.push(`${file} has ${actual ?? 'no'} audited rows; expected ${expected}`)
 }
 
+const metadataResetRegressions = [
+  {
+    name: 'Leonard Mundida', company: 'TRAFICC GLOBAL', website: '', sector: '', companySize: '',
+    companyLinkedin: 'https://www.linkedin.com/company/traficc-global/',
+  },
+  {
+    name: 'Naresh Maharaj', company: 'MAHLE Behr South Africa', website: 'https://www.mahle.com/',
+    sector: '', companySize: '', companyLinkedin: '',
+  },
+]
+for (const expected of metadataResetRegressions) {
+  const contact = contacts.find(candidate => candidate.name === expected.name)
+  const position = contact?.positions.find(candidate => candidate.company === expected.company)
+  if (!position) {
+    errors.push(`missing metadata reset regression contact ${expected.name}`)
+    continue
+  }
+  for (const field of ['website', 'sector', 'companySize', 'companyLinkedin'] as const) {
+    if (position[field] !== expected[field]) {
+      errors.push(`${expected.name}.${field} is ${position[field] || 'blank'}; expected ${expected[field] || 'blank'}`)
+    }
+  }
+}
+
 if (errors.length) {
   throw new Error(`Contact data validation failed:\n${errors.slice(0, 50).join('\n')}`)
 }

@@ -315,13 +315,27 @@ def extract_workbook(path: Path) -> tuple[list[dict[str, Any]], list[dict[str, A
 
         for row_number, row in enumerate(rows, start=2):
             if company_index is not None:
-                context["company"] = value_at(row, company_index) or context["company"]
-            elif sheet not in {"PWC", "The Coca-Cola Company"}:
-                context["company"] = sheet
-            context["website"] = value_at(row, website_index) or context["website"]
-            context["companyLinkedin"] = value_at(row, company_linkedin_index) or context["companyLinkedin"]
-            context["sector"] = value_at(row, sector_index) or context["sector"]
-            context["companySize"] = value_at(row, size_index) or context["companySize"]
+                explicit_company = value_at(row, company_index)
+                if explicit_company:
+                    context = {
+                        "company": explicit_company,
+                        "website": value_at(row, website_index),
+                        "companyLinkedin": value_at(row, company_linkedin_index),
+                        "sector": value_at(row, sector_index),
+                        "companySize": value_at(row, size_index),
+                    }
+                else:
+                    context["website"] = value_at(row, website_index) or context["website"]
+                    context["companyLinkedin"] = value_at(row, company_linkedin_index) or context["companyLinkedin"]
+                    context["sector"] = value_at(row, sector_index) or context["sector"]
+                    context["companySize"] = value_at(row, size_index) or context["companySize"]
+            else:
+                if sheet not in {"PWC", "The Coca-Cola Company"}:
+                    context["company"] = sheet
+                context["website"] = value_at(row, website_index) or context["website"]
+                context["companyLinkedin"] = value_at(row, company_linkedin_index) or context["companyLinkedin"]
+                context["sector"] = value_at(row, sector_index) or context["sector"]
+                context["companySize"] = value_at(row, size_index) or context["companySize"]
 
             if full_name_index is not None and first_name_index is None:
                 name = value_at(row, full_name_index)
