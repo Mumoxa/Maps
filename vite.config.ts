@@ -7,6 +7,8 @@ export default defineConfig({
   // compiled assets from /assets/... instead of /Maps/assets/...
   base: '/',
   plugins: [react()],
+  server: { host: '0.0.0.0', allowedHosts: true },
+  preview: { host: '0.0.0.0', allowedHosts: true },
   build: {
     rollupOptions: {
       output: {

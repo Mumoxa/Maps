@@ -180,8 +180,8 @@ export function CreditRiskPage() {
               </Link>
               <Link to="/profiles" className="card card-hover quick-link-card">
                 <Users size={32} className="quick-link-icon" style={{ color: 'var(--color-purple)' }} />
-                <div className="quick-link-title">Profiles</div>
-                <div className="text-sm text-secondary">{data.profiles.length} professionals</div>
+                <div className="quick-link-title">Candidates</div>
+                <div className="text-sm text-secondary">{data.profiles.length} candidate profiles</div>
               </Link>
               <Link to="/shortlist" className="card card-hover quick-link-card">
                 <ListOrdered size={32} className="quick-link-icon" style={{ color: 'var(--color-error)' }} />

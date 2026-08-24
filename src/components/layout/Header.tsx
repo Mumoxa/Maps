@@ -8,6 +8,8 @@ import { buildSlugSets } from '../../data'
 const trackNavLinks = [
   { to: '/', label: 'Home' },
   { to: '/talent-search', label: 'Talent Search' },
+  { to: '/profiles', label: 'Candidates' },
+  { to: '/contacts', label: 'Contacts' },
   ...talentTracks.map((track) => ({ to: `/${track.slug}`, label: track.name })),
 ]
 
@@ -15,7 +17,7 @@ const creditRiskNavLinks = [
   { to: '/map', label: 'Map' },
   { to: '/segments', label: 'Segments' },
   { to: '/companies', label: 'Companies' },
-  { to: '/profiles', label: 'Profiles' },
+  { to: '/profiles', label: 'Candidates' },
   { to: '/shortlist', label: 'Shortlist' },
   { to: '/markets/salesforce', label: 'Salesforce' },
 ]
