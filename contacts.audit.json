@@ -1,0 +1,73 @@
+{
+  "rawPersonRows": 10289,
+  "uniqueContacts": 5070,
+  "mergedDuplicateRows": 5219,
+  "sourceRecordCount": 10289,
+  "sourceRowsReconciled": true,
+  "duplicateIds": 0,
+  "contactsWithoutCompany": 0,
+  "contactsWithoutTitle": 35,
+  "contactsWithoutLocation": 4996,
+  "companies": 1395,
+  "titles": 3012,
+  "sectors": 148,
+  "locations": 18,
+  "sourcePersonRows": {
+    "Copy of Lead Gen _ Pitch List - SA MASTER SHEET [Majesty _ Joanna].xlsx": 5724,
+    "01-Lead-Gen-_-Pitch-List-SA-MASTER-SHEET-Majesty-_-Joanna-3-.xlsx": 4540,
+    "02-Delivery-Master-Sheet-2026-2-.xlsx": 0,
+    "03-Export_Contacts_2026-06-23.csv": 25
+  },
+  "ignoredSheets": [
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "September 2025",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "October 2025",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "November 2025",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "December 2025",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "January 2026",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "February 2026",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "March 2026",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "April 2026",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "May 2026",
+      "reason": "no person-name columns"
+    },
+    {
+      "file": "02-Delivery-Master-Sheet-2026-2-.xlsx",
+      "sheet": "June 2026",
+      "reason": "no person-name columns"
+    }
+  ]
+}

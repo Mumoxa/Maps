@@ -4,7 +4,7 @@ interface LoadingSpinnerProps {
 
 export function LoadingSpinner({ size = 'md' }: LoadingSpinnerProps) {
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '3rem' }}>
+    <div className="loading-spinner-container">
       <div className={`spinner spinner-${size}`} role="status" aria-label="Loading" />
     </div>
   )

@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { DataProvider } from './context/DataContext'
 import { Layout } from './components/layout/Layout'
@@ -19,7 +20,11 @@ import { TalentSearchPage } from './pages/TalentSearchPage'
 import { ShortlistPage } from './pages/ShortlistPage'
 import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
 import { NotFound } from './pages/NotFound'
-import { ContactDirectory } from './pages/ContactDirectory'
+import { LoadingSpinner } from './components/ui/LoadingSpinner'
+
+const ContactDirectory = lazy(() =>
+  import('./pages/ContactDirectory').then(module => ({ default: module.ContactDirectory })),
+)
 
 function AppRoutes() {
   const element = useRoutes([
@@ -36,7 +41,10 @@ function AppRoutes() {
     { path: '/companies', element: <CompanyDirectory /> },
     { path: '/companies/:slug', element: <CompanyPage /> },
     { path: '/profiles', element: <ProfileDirectory /> },
-    { path: '/contacts', element: <ContactDirectory /> },
+    {
+      path: '/contacts',
+      element: <Suspense fallback={<LoadingSpinner size="lg" />}><ContactDirectory /></Suspense>,
+    },
     { path: '/profiles/:slug', element: <ProfilePage /> },
     { path: '/shortlist', element: <ShortlistPage /> },
     { path: '/markets/salesforce', element: <SalesforceEcosystemPage /> },
