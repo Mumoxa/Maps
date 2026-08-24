@@ -8,6 +8,7 @@ import { buildSlugSets } from '../../data'
 const trackNavLinks = [
   { to: '/', label: 'Home' },
   { to: '/talent-search', label: 'Talent Search' },
+  { to: '/contacts', label: 'Client Contacts' },
   ...talentTracks.map((track) => ({ to: `/${track.slug}`, label: track.name })),
 ]
 
