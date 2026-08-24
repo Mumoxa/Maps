@@ -15,7 +15,8 @@ const creditRiskNavLinks = [
   { to: '/map', label: 'Map' },
   { to: '/segments', label: 'Segments' },
   { to: '/companies', label: 'Companies' },
-  { to: '/profiles', label: 'Profiles' },
+  { to: '/profiles', label: 'Candidates' },
+  { to: '/contacts', label: 'Contacts' },
   { to: '/shortlist', label: 'Shortlist' },
   { to: '/markets/salesforce', label: 'Salesforce' },
 ]
@@ -28,7 +29,7 @@ export function Header() {
   const location = useLocation()
   const { data } = useData()
   const searchRef = useRef<HTMLDivElement>(null)
-  const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/shortlist']
+  const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/contacts', '/shortlist']
     .some((path) => location.pathname === path || location.pathname.startsWith(`${path}/`))
 
   useEffect(() => {

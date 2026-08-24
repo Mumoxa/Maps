@@ -17,7 +17,7 @@ export function ProfileDirectory() {
   const [searchParams, setSearchParams] = useSearchParams()
   const fuseRef = useRef<ReturnType<typeof createSearchIndex> | null>(null)
 
-  useEffect(() => { document.title = 'All Profiles'; }, [])
+  useEffect(() => { document.title = 'Candidates'; }, [])
 
   const slugSets = useMemo(() => {
     if (!data) return null
@@ -90,10 +90,10 @@ export function ProfileDirectory() {
     <ErrorBoundary>
       <div className="page">
         <div className="container">
-          <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Profiles' }]} />
+          <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Candidates' }]} />
 
           <div className="flex items-center justify-between mb-2">
-            <h1>Profiles ({filteredProfiles.length})</h1>
+            <h1>Candidates ({filteredProfiles.length})</h1>
           </div>
 
           <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -107,7 +107,7 @@ export function ProfileDirectory() {
                   return next
                 })
               }}
-              placeholder="Search profiles..."
+              placeholder="Search candidates..."
             />
             <select
               value={segmentFilter}
@@ -195,7 +195,7 @@ export function ProfileDirectory() {
 
           {paginated.length === 0 ? (
             <EmptyState
-              title="No profiles found"
+              title="No candidates found"
               description={query ? `No profiles matching "${query}"` : 'No profiles match your filters'}
               action={query ? { label: 'Clear search', to: '/profiles' } : undefined}
             />

@@ -19,6 +19,7 @@ import { TalentSearchPage } from './pages/TalentSearchPage'
 import { ShortlistPage } from './pages/ShortlistPage'
 import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
 import { NotFound } from './pages/NotFound'
+import { ContactDirectory } from './pages/ContactDirectory'
 
 function AppRoutes() {
   const element = useRoutes([
@@ -35,6 +36,7 @@ function AppRoutes() {
     { path: '/companies', element: <CompanyDirectory /> },
     { path: '/companies/:slug', element: <CompanyPage /> },
     { path: '/profiles', element: <ProfileDirectory /> },
+    { path: '/contacts', element: <ContactDirectory /> },
     { path: '/profiles/:slug', element: <ProfilePage /> },
     { path: '/shortlist', element: <ShortlistPage /> },
     { path: '/markets/salesforce', element: <SalesforceEcosystemPage /> },
