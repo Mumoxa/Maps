@@ -14,6 +14,20 @@ Future markets must be registered in `src/data/tracks.ts` with a South African g
 
 Production deploys run automatically after the `CI` workflow succeeds on `main`. The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised redeploy is required.
 
+## Private Contact Directory
+
+The `/contacts` route loads the generated `src/data/contact-parts/` dataset, a source-retained private directory generated from the supplied lead-generation workbooks and contact export. Blank company cells inherit only the nearest preceding company value in the same sheet; person fields are never forward-filled. Every retained row keeps its source file, sheet and row number in `sourceRecords`.
+
+Install the pinned importer dependency and regenerate the directory by passing the output files followed by every source file:
+
+```bash
+python -m pip install -r requirements-contact-import.txt
+npm run contacts:import -- src/data/contact-parts contacts.audit.json SOURCE_1.xlsx SOURCE_2.xlsx SOURCE_3.xlsx SOURCE_4.csv
+npm run validate:contacts
+```
+
+The checked-in validator reconciles the expected source counts and rejects shifted spreadsheet values such as email addresses in person names or dates in telephone fields. The directory contains personal contact details and relationship notes and must remain behind the project's private access boundary.
+
 ## Credit Risk Data Files
 
 | File | Description |

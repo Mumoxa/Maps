@@ -9,6 +9,7 @@ dist/
 
 # TypeScript build info
 *.tsbuildinfo
+__pycache__/
 
 # Editor
 .vscode/

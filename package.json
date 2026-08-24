@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate:data && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "build": "npm run validate:data && npm run validate:contacts && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
     "deploy": "npx wrangler deploy",
     "test": "node --import tsx --test",
     "validate:data": "node --import tsx scripts/validate-market-data.ts",
+    "validate:contacts": "node --import tsx scripts/validate-contact-data.ts",
+    "contacts:import": "python scripts/build_contact_directory.py",
     "market:import": "node --import tsx scripts/import-market-batch.ts",
     "import:salesforce": "node scripts/import-salesforce-html.mjs",
     "preview": "vite preview"
