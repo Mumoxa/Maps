@@ -5,13 +5,13 @@ import { useData } from '../../context/DataContext'
 import { globalSearch, talentTracks } from '../../data'
 import { buildSlugSets } from '../../data'
 
-const trackNavLinks = [
-  { to: '/', label: 'Home' },
-  { to: '/talent-search', label: 'Talent Search' },
-  { to: '/profiles', label: 'Candidates' },
-  { to: '/contacts', label: 'Contacts' },
+// Two top-level headings only: Candidates (skills pools) and Contacts (clients).
+const candidatePoolLinks = [
+  { to: '/talent-search', label: 'All candidates — search' },
   ...talentTracks.map((track) => ({ to: `/${track.slug}`, label: track.name })),
 ]
+
+const candidatePaths = ['/talent-search', ...talentTracks.map((track) => `/${track.slug}`)]
 
 const creditRiskNavLinks = [
   { to: '/map', label: 'Map' },
@@ -32,6 +32,7 @@ export function Header() {
   const searchRef = useRef<HTMLDivElement>(null)
   const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/shortlist']
     .some((path) => location.pathname === path || location.pathname.startsWith(`${path}/`))
+  const candidatesActive = candidatePaths.some((path) => location.pathname === path || location.pathname.startsWith(`${path}/`))
 
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
@@ -82,16 +83,31 @@ export function Header() {
         </Link>
 
         <nav className="header-nav">
-          {trackNavLinks.map(link => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className={location.pathname === link.to ? 'active' : ''}
-              onClick={() => setMenuOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
+          <div className={`nav-item ${candidatesActive ? 'active' : ''}`}>
+            <button type="button" className="nav-heading" aria-haspopup="true">
+              Candidates
+            </button>
+            <div className="nav-dropdown">
+              {candidatePoolLinks.map(link => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={location.pathname === link.to ? 'active' : ''}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <Link
+            to="/contacts"
+            className={`nav-heading nav-heading-link ${location.pathname.startsWith('/contacts') ? 'active' : ''}`}
+            title="Clients"
+            onClick={() => setMenuOpen(false)}
+          >
+            Contacts
+          </Link>
         </nav>
 
         {showCreditRiskNav && (
@@ -142,7 +158,8 @@ export function Header() {
       )}
 
       <div className={`mobile-nav ${menuOpen ? 'open' : ''}`}>
-        {trackNavLinks.map(link => (
+        <div className="mobile-nav-heading">Candidates</div>
+        {candidatePoolLinks.map(link => (
           <Link
             key={link.to}
             to={link.to}
@@ -152,6 +169,14 @@ export function Header() {
             {link.label}
           </Link>
         ))}
+        <div className="mobile-nav-heading">Contacts</div>
+        <Link
+          to="/contacts"
+          className={location.pathname === '/contacts' ? 'active' : ''}
+          onClick={() => setMenuOpen(false)}
+        >
+          Contacts
+        </Link>
         {showCreditRiskNav && creditRiskNavLinks.map(link => (
           <Link
             key={link.to}
