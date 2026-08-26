@@ -5,10 +5,10 @@ export interface TalentTrack {
   shortLabel: string
   summary: string
   detail: string
-  accent: 'salesforce' | 'credit' | 'sap' | 'murex' | 'calypso'
+  accent: 'salesforce' | 'credit' | 'sap' | 'murex' | 'calypso' | 'hackathon'
   scope: {
     geography: 'South Africa'
-    category: 'business-platform' | 'risk-discipline' | 'capital-markets-platform'
+    category: 'business-platform' | 'risk-discipline' | 'capital-markets-platform' | 'talent-pool'
   }
   actions: {
     primaryLabel: string
@@ -20,6 +20,27 @@ export interface TalentTrack {
 }
 
 export const talentTracks: TalentTrack[] = [
+  {
+    id: 'hackathons',
+    slug: 'hackathons',
+    name: 'Hackathon Talent',
+    shortLabel: 'Track 06',
+    summary: 'Search the SA hackathon contestant pool: verified winners, top-3 and top-10 placements with event, year, university, organisation and province.',
+    detail: 'Candidates are source-retained from the SA Hackathon Census — a public-source, evidence-linked census of South African hackathon participants. Every record keeps its participation history and evidence URL; nothing is inferred.',
+    accent: 'hackathon',
+    scope: { geography: 'South Africa', category: 'talent-pool' },
+    actions: {
+      primaryLabel: 'Open Hackathon Talent',
+      primaryHref: '/hackathons',
+      secondaryLabel: 'Back to SA Talent home',
+      secondaryHref: '/',
+    },
+    nextSteps: [
+      'Grow the pool through the census continuation passes (profile discovery, recursion, series archives).',
+      'Keep candidate records append-only and evidence-linked; never attach profiles on name similarity alone.',
+      'Link standout candidates to market tracks once employers or ventures are publicly confirmed.',
+    ],
+  },
   {
     id: 'salesforce',
     slug: 'salesforce',

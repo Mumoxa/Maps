@@ -1,6 +1,6 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { ArrowRight, BriefcaseBusiness, Database, Search, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { ArrowRight, BriefcaseBusiness, Database, Search, ShieldCheck, Sparkles, Trophy, Workflow } from 'lucide-react'
 import { useData } from '../context/DataContext'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { deriveMarketSummary, getTalentProfiles, talentTracks, type TalentTrack } from '../data'
@@ -11,6 +11,7 @@ const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
   sap: Database,
   murex: Workflow,
   calypso: Sparkles,
+  hackathon: Trophy,
 }
 
 const suggestedSearches = ['Salesforce Architect', 'SAP ERP', 'Credit Risk', 'Murex', 'Calypso', 'Johannesburg']

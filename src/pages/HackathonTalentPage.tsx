@@ -1,0 +1,239 @@
+import { useMemo, useState } from 'react'
+import { ExternalLink, Filter, GraduationCap, MapPin, Search, Trophy } from 'lucide-react'
+import { Breadcrumb } from '../components/ui/Breadcrumb'
+import { EmptyState } from '../components/ui/EmptyState'
+import {
+  filterHackathonCandidates,
+  hackathonCandidates,
+  hackathonEventNames,
+  hackathonProvinces,
+  hackathonUniverse,
+  hackathonYears,
+  type HackathonCandidate,
+} from '../data/hackathonPeople'
+
+const PAGE_SIZE = 20
+
+const TIER_OPTIONS = ['Winner', 'Top 3', 'Top 10', 'Special award', 'Finalist', 'Qualified', 'Participant']
+
+function tierBadgeClass(tier: string): string {
+  if (tier === 'Winner') return 'hack-badge hack-badge-gold'
+  if (tier === 'Top 3') return 'hack-badge hack-badge-silver'
+  if (tier === 'Top 10') return 'hack-badge hack-badge-bronze'
+  return 'hack-badge'
+}
+
+function ConfidenceBadge({ confidence }: { confidence: string }) {
+  const cls =
+    confidence === 'High' ? 'hack-confidence-high' : confidence === 'Medium' ? 'hack-confidence-medium' : 'hack-confidence-low'
+  return <span className={`hack-badge ${cls}`} title="Identity confidence from the SA Hackathon Census">Confidence: {confidence}</span>
+}
+
+function CandidateCard({ candidate }: { candidate: HackathonCandidate }) {
+  const visibleEvents = candidate.events.slice(0, 3)
+  const hidden = candidate.events.length - visibleEvents.length
+  return (
+    <article className="hack-candidate-card">
+      <header className="hack-candidate-head">
+        <div>
+          <h3 className="hack-candidate-name">{candidate.fullName}</h3>
+          <p className="hack-candidate-sub">
+            <span className="hack-badge">Candidate</span>
+            <span className="hack-badge hack-badge-segment">{candidate.segment}</span>
+            <span className={tierBadgeClass(candidate.bestTier)}>{candidate.bestResultLabel}</span>
+          </p>
+        </div>
+        <ConfidenceBadge confidence={candidate.confidence} />
+      </header>
+
+      <div className="hack-candidate-meta">
+        {candidate.universityAtTime && (
+          <span>
+            <GraduationCap size={14} aria-hidden /> {candidate.universityAtTime}
+          </span>
+        )}
+        {candidate.organisationAtTime && (
+          <span>
+            <Trophy size={14} aria-hidden /> {candidate.organisationAtTime}
+          </span>
+        )}
+        {candidate.province && (
+          <span>
+            <MapPin size={14} aria-hidden /> Event province: {candidate.province}
+          </span>
+        )}
+      </div>
+
+      <ul className="hack-event-list">
+        {visibleEvents.map((event, index) => (
+          <li key={`${candidate.id}-${index}`}>
+            <div className="hack-event-line">
+              <strong>{event.event}</strong>
+              <span className="hack-event-when">{[event.edition, event.year].filter(Boolean).join(' · ')}</span>
+              <span className={tierBadgeClass(event.tier)}>{event.placement}</span>
+              {event.winner && <span className="hack-badge hack-badge-gold">Winner</span>}
+            </div>
+            <p className="hack-event-detail">
+              {[event.team && `Team: ${event.team}`, event.project, event.award, event.city && `Venue city: ${event.city}`]
+                .filter(Boolean)
+                .join(' · ')}
+            </p>
+            <a className="hack-evidence-link" href={event.evidenceUrl} target="_blank" rel="noreferrer">
+              Evidence <ExternalLink size={12} aria-hidden />
+            </a>
+          </li>
+        ))}
+        {hidden > 0 && <li className="hack-event-more">+ {hidden} more participation record{hidden === 1 ? '' : 's'} in the census</li>}
+      </ul>
+
+      <footer className="hack-candidate-foot">
+        <a className="hack-evidence-link" href={candidate.evidenceUrl} target="_blank" rel="noreferrer">
+          Primary evidence <ExternalLink size={12} aria-hidden />
+        </a>
+        <span className="hack-source-note">{candidate.source}</span>
+      </footer>
+    </article>
+  )
+}
+
+export function HackathonTalentPage() {
+  const [query, setQuery] = useState('')
+  const [tier, setTier] = useState('')
+  const [province, setProvince] = useState('')
+  const [year, setYear] = useState('')
+  const [event, setEvent] = useState('')
+  const [affiliation, setAffiliation] = useState('')
+  const [page, setPage] = useState(0)
+
+  const universe = useMemo(() => hackathonUniverse(), [])
+  const provinces = useMemo(() => hackathonProvinces(), [])
+  const years = useMemo(() => hackathonYears(), [])
+  const eventNames = useMemo(() => hackathonEventNames(), [])
+  const tiers = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const candidate of hackathonCandidates) counts.set(candidate.bestTier, (counts.get(candidate.bestTier) ?? 0) + 1)
+    return TIER_OPTIONS.filter((option) => counts.has(option)).map((option) => ({ value: option, count: counts.get(option) ?? 0 }))
+  }, [])
+
+  const results = useMemo(
+    () => filterHackathonCandidates({ query, tier, province, year, event, affiliation }),
+    [query, tier, province, year, event, affiliation],
+  )
+  const pageCount = Math.max(1, Math.ceil(results.length / PAGE_SIZE))
+  const safePage = Math.min(page, pageCount - 1)
+  const pageItems = results.slice(safePage * PAGE_SIZE, safePage * PAGE_SIZE + PAGE_SIZE)
+
+  const resetPage = () => setPage(0)
+
+  return (
+    <main className="page">
+      <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Hackathon Talent' }]} />
+      <header className="hack-hero">
+        <p className="hack-kicker">SA Talent Pool · Candidates</p>
+        <h1>Hackathon contestants</h1>
+        <p className="hack-lede">
+          Evidence-linked candidates from the SA Hackathon Census — South Africans who competed, placed or won
+          hackathons and sprint-format technology competitions. Every record keeps its participation history and a
+          source URL; nothing is inferred.
+        </p>
+        <div className="hack-kpis">
+          <div className="hack-kpi"><strong>{universe.candidates}</strong><span>Candidates</span></div>
+          <div className="hack-kpi"><strong>{universe.winners}</strong><span>Winners</span></div>
+          <div className="hack-kpi"><strong>{universe.top3}</strong><span>Top-3 placements</span></div>
+          <div className="hack-kpi"><strong>{universe.editions}</strong><span>Event editions tracked</span></div>
+          <div className="hack-kpi"><strong>{universe.provinces}</strong><span>Provinces</span></div>
+        </div>
+      </header>
+
+      <section className="hack-controls" aria-label="Filters">
+        <div className="hack-control hack-control-search">
+          <Search size={15} aria-hidden />
+          <input
+            value={query}
+            onChange={(change) => { setQuery(change.target.value); resetPage() }}
+            placeholder="Search name, team, project, event…"
+            aria-label="Search candidates"
+          />
+        </div>
+        <div className="hack-control">
+          <Filter size={15} aria-hidden />
+          <select value={tier} onChange={(change) => { setTier(change.target.value); resetPage() }} aria-label="Best result">
+            <option value="">Any result</option>
+            {tiers.map((option) => (
+              <option key={option.value} value={option.value}>{option.value} ({option.count})</option>
+            ))}
+          </select>
+        </div>
+        <div className="hack-control">
+          <select value={province} onChange={(change) => { setProvince(change.target.value); resetPage() }} aria-label="Province">
+            <option value="">All provinces</option>
+            {provinces.map((option) => (
+              <option key={option.value} value={option.value}>{option.label} ({option.count})</option>
+            ))}
+          </select>
+        </div>
+        <div className="hack-control">
+          <select value={year} onChange={(change) => { setYear(change.target.value); resetPage() }} aria-label="Year">
+            <option value="">Any year</option>
+            {years.map((option) => (
+              <option key={option.value} value={option.value}>{option.label} ({option.count})</option>
+            ))}
+          </select>
+        </div>
+        <div className="hack-control">
+          <select value={event} onChange={(change) => { setEvent(change.target.value); resetPage() }} aria-label="Event">
+            <option value="">All events</option>
+            {eventNames.map((name) => (
+              <option key={name} value={name}>{name}</option>
+            ))}
+          </select>
+        </div>
+        <div className="hack-control hack-control-search">
+          <GraduationCap size={15} aria-hidden />
+          <input
+            value={affiliation}
+            onChange={(change) => { setAffiliation(change.target.value); resetPage() }}
+            placeholder="University or organisation…"
+            aria-label="University or organisation"
+          />
+        </div>
+      </section>
+
+      <p className="hack-results-count">
+        {results.length} candidate{results.length === 1 ? '' : 's'} match
+        {(query || tier || province || year || event || affiliation) ? ' the current filters' : 'ing the pool'}
+        {tier || province || year || event || affiliation || query ? (
+          <button className="hack-clear" onClick={() => { setQuery(''); setTier(''); setProvince(''); setYear(''); setEvent(''); setAffiliation(''); resetPage() }}>
+            Clear filters
+          </button>
+        ) : null}
+      </p>
+
+      {pageItems.length === 0 ? (
+        <EmptyState title="No candidates match" description="Try clearing a filter or searching a different event, university or name." />
+      ) : (
+        <div className="hack-candidate-grid">
+          {pageItems.map((candidate) => (
+            <CandidateCard key={candidate.id} candidate={candidate} />
+          ))}
+        </div>
+      )}
+
+      {pageCount > 1 && (
+        <nav className="hack-pagination" aria-label="Pagination">
+          <button disabled={safePage === 0} onClick={() => setPage(safePage - 1)}>Previous</button>
+          <span>Page {safePage + 1} of {pageCount}</span>
+          <button disabled={safePage >= pageCount - 1} onClick={() => setPage(safePage + 1)}>Next</button>
+        </nav>
+      )}
+
+      <footer className="hack-page-foot">
+        <p>
+          Source: SA Hackathon Census (markets/hackathons + hackathon-census/). Public professional information only;
+          pseudonymous and single-name-only census records are excluded from the pool. Event province reflects where
+          the person competed, not their residence.
+        </p>
+      </footer>
+    </main>
+  )
+}

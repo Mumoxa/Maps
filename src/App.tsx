@@ -19,6 +19,7 @@ import { CalypsoPage } from './pages/CalypsoPage'
 import { TalentSearchPage } from './pages/TalentSearchPage'
 import { ShortlistPage } from './pages/ShortlistPage'
 import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
+import { HackathonTalentPage } from './pages/HackathonTalentPage'
 import { NotFound } from './pages/NotFound'
 import { LoadingSpinner } from './components/ui/LoadingSpinner'
 
@@ -31,6 +32,7 @@ function AppRoutes() {
     { path: '/', element: <HomePage /> },
     { path: '/credit-risk', element: <CreditRiskPage /> },
     { path: '/salesforce', element: <SalesforcePage /> },
+    { path: '/hackathons', element: <HackathonTalentPage /> },
     { path: '/sap-erp', element: <SapErpPage /> },
     { path: '/murex', element: <MurexPage /> },
     { path: '/calypso', element: <CalypsoPage /> },

@@ -998,6 +998,54 @@ h3 { font-size: 1.125rem; }
   background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 70%);
   border-color: #bbf7d0;
 }
+.talent-track-card-hackathon {
+  background: linear-gradient(180deg, #fefce8 0%, #ffffff 70%);
+  border-color: #fde68a;
+}
+/* Hackathon Talent pool (candidates — hackathon contestants) */
+.hack-hero { margin: 0 0 1.25rem; }
+.hack-kicker { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.75rem; font-weight: 600; color: #a16207; margin: 0 0 0.25rem; }
+.hack-hero h1 { margin: 0 0 0.5rem; }
+.hack-lede { max-width: 62ch; color: var(--color-text-muted, #4b5563); margin: 0 0 1rem; }
+.hack-kpis { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.hack-kpi { border: 1px solid #e5e7eb; border-radius: 0.75rem; padding: 0.5rem 0.9rem; background: #fff; }
+.hack-kpi strong { display: block; font-size: 1.15rem; }
+.hack-kpi span { font-size: 0.75rem; color: #6b7280; }
+.hack-controls { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 0.75rem; }
+.hack-control { display: inline-flex; align-items: center; gap: 0.4rem; border: 1px solid #e5e7eb; border-radius: 0.6rem; padding: 0.35rem 0.55rem; background: #fff; }
+.hack-control select, .hack-control input { border: none; outline: none; font: inherit; background: transparent; min-width: 8rem; }
+.hack-control-search input { min-width: 14rem; }
+.hack-results-count { color: #6b7280; font-size: 0.85rem; margin: 0 0 0.75rem; }
+.hack-clear { margin-left: 0.6rem; border: none; background: none; color: #2563eb; cursor: pointer; font: inherit; text-decoration: underline; }
+.hack-candidate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); gap: 0.9rem; }
+.hack-candidate-card { border: 1px solid #e5e7eb; border-radius: 0.9rem; padding: 0.9rem 1rem; background: #fff; display: flex; flex-direction: column; gap: 0.6rem; }
+.hack-candidate-head { display: flex; justify-content: space-between; gap: 0.5rem; align-items: flex-start; }
+.hack-candidate-name { margin: 0 0 0.35rem; font-size: 1.02rem; }
+.hack-candidate-sub { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0; }
+.hack-badge { display: inline-block; border: 1px solid #e5e7eb; border-radius: 999px; padding: 0.06rem 0.55rem; font-size: 0.72rem; background: #f9fafb; color: #374151; }
+.hack-badge-gold { background: #fef3c7; border-color: #fcd34d; color: #92400e; font-weight: 600; }
+.hack-badge-silver { background: #f1f5f9; border-color: #cbd5e1; color: #334155; }
+.hack-badge-bronze { background: #fff7ed; border-color: #fdba74; color: #9a3412; }
+.hack-badge-segment { background: #eef2ff; border-color: #c7d2fe; color: #3730a3; }
+.hack-confidence-high { background: #ecfdf5; border-color: #a7f3d0; color: #065f46; }
+.hack-confidence-medium { background: #fffbeb; border-color: #fde68a; color: #92400e; }
+.hack-confidence-low { background: #fef2f2; border-color: #fecaca; color: #991b1b; }
+.hack-candidate-meta { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; font-size: 0.8rem; color: #4b5563; }
+.hack-candidate-meta span { display: inline-flex; align-items: center; gap: 0.3rem; }
+.hack-event-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.45rem; border-top: 1px dashed #e5e7eb; padding-top: 0.55rem; }
+.hack-event-line { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; font-size: 0.86rem; }
+.hack-event-when { color: #6b7280; font-size: 0.78rem; }
+.hack-event-detail { margin: 0.1rem 0 0; color: #4b5563; font-size: 0.8rem; }
+.hack-event-more { color: #6b7280; font-size: 0.8rem; font-style: italic; }
+.hack-evidence-link { display: inline-flex; align-items: center; gap: 0.25rem; color: #2563eb; font-size: 0.78rem; text-decoration: none; }
+.hack-evidence-link:hover { text-decoration: underline; }
+.hack-candidate-foot { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; border-top: 1px dashed #e5e7eb; padding-top: 0.5rem; margin-top: auto; }
+.hack-source-note { color: #9ca3af; font-size: 0.7rem; text-align: right; }
+.hack-pagination { display: flex; align-items: center; gap: 0.9rem; justify-content: center; margin: 1.1rem 0; }
+.hack-pagination button { border: 1px solid #e5e7eb; background: #fff; border-radius: 0.6rem; padding: 0.35rem 0.9rem; cursor: pointer; font: inherit; }
+.hack-pagination button:disabled { opacity: 0.45; cursor: not-allowed; }
+.hack-pagination span { color: #6b7280; font-size: 0.85rem; }
+.hack-page-foot { margin-top: 1.5rem; color: #9ca3af; font-size: 0.78rem; max-width: 70ch; }
 .talent-track-card-credit {
   background: linear-gradient(180deg, #eff6ff 0%, #ffffff 70%);
   border-color: #bfdbfe;

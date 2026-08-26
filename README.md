@@ -9,6 +9,7 @@ A React/Vite market-intelligence map site for South African talent ecosystems.
 | SA Credit Risk Market Map | `/` | Live existing map | Credit risk profiles, companies, segments, org chart and shortlist |
 | SA Salesforce Ecosystem Map | `/markets/salesforce` | Live | 88 legacy source-retained profiles plus append-only source-verified batches, vendor/partner/customer segmentation, customer technographics, partner tiers and market intelligence summary |
 | SA SAP ERP Market | `/sap-erp` | Added | Verified South African SAP ERP market track, aligned to the shared specialist-talent structure |
+| SA Hackathon Contestants Talent Pool | `/hackathons` | Live | 342 evidence-linked candidates (segment: Hackathon contestants) from the SA Hackathon Census — 115 event editions, 2012–2026 |
 
 Future markets must be registered in `src/data/tracks.ts` with a South African geography, supported product category, and explicit evidence status. Routes and navigation should consume that registry so additions remain within the SA Talent Map product scope.
 
@@ -87,3 +88,7 @@ npm run build
 ```
 
 The build script runs TypeScript and Vite, then copies `dist/index.html` to `dist/404.html` for SPA routing.
+
+## Hackathon Contestants Talent Pool
+
+Generated from the SA Hackathon Census (`hackathon-census/`) via `python3 scripts/generate_hackathon_candidates.py` → `markets/hackathons/people.json` → `/hackathons`. See `markets/hackathons/README.md` for provenance, exclusions and the privacy boundary.
