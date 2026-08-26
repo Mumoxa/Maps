@@ -10,6 +10,7 @@ from census_data_phase3 import (SOURCES3, E3, P3, UPD3, PERSON_UPD, UNRESOLVED3,
                                  UNRESOLVED_RESOLVED, GAP_UPD3, GAPS3)
 from census_data_phase4 import (SOURCES4, E4, P4, UPD4, PERSON_UPD4, P_NOTE_FIXES,
                                  UNRESOLVED4, UNRESOLVED_RESOLVED4, GAP_UPD4, GAPS4)
+from census_data_phase5 import (SOURCES5, E5, P5, UPD5, UNRESOLVED5, GAP_UPD5, GAPS5)
 
 # --- Phase 2 merge ---
 SOURCES.update(SOURCES2)
@@ -34,6 +35,14 @@ P.extend(P4)
 for _e in E:
     if _e["id"] in UPD4:
         _e.update(UPD4[_e["id"]])
+
+# --- Phase 5 merge ---
+SOURCES.update(SOURCES5)
+E.extend(E5)
+P.extend(P5)
+for _e in E:
+    if _e["id"] in UPD5:
+        _e.update(UPD5[_e["id"]])
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "data")
 os.makedirs(OUT, exist_ok=True)
@@ -295,10 +304,11 @@ SOURCES_SEARCHED = [
  ("SS07","News media (mybroadband.co.za, htxt.co.za, disrupt-africa.com, techcabal.com, engineeringnews.co.za, iol.co.za, citizen.co.za, mercury/star syndication, ewn.co.za, dailymaverick.co.za, bloemfonteincourant.co.za, krugersdorpnews/citizen, businessstech/africa, techfinancials, techpoint.africa, iafrica.com, innovation-village.com, brandsouthafrica.com, iafrikan.com, matiemedia.org, smfnews.org, mediaupdate.co.za, techreviewafrica, africabusiness.com, pctechmag, briefly.co.za, northcliffmelvilletimes)","Tier-2 media","Event results and named winners","High"),
  ("SS08","Encyclopedia / reference (en.wikipedia.org — RHoK, Space Apps)","Context/verification","Series city lists and dates","Medium"),
  ("SS09","Event platforms (quicket.co.za)","Event listings","GBV hackathon 2020","Medium"),
- ("SS10","LinkedIn / X / Facebook platform search","NOT systematically used this pass","Public posts are a required source class (§16); organiser social accounts only surfaced indirectly via search results","Pending"),
- ("SS11","Devpost / HackerEarth / Kaggle / ChallengeRocket","NOT used this pass","No platform pages harvested","Pending"),
- ("SS12","Wayback Machine / web.archive.org","NOT used this pass","Broken-link recovery (§26) and historical passes (§14) pending","Pending"),
+ ("SS10","LinkedIn / X / Facebook platform search","Public professional posts (§16)","Used opportunistically via search-indexed public posts (T. Nghonyama SS-series/SS24HACK post; K. Pillay TVH 2022 post; IDEMIA SS23 post; T. Mabula GradHack/FinChatBot self-reports) — systematic organiser-page crawl still pending","Medium-High where surfaced"),
+ ("SS11","Devpost (per-competition/per-project pages)","Competition platform","#IgniteHack 2018 (event + gallery + DeepHealth project page); Digital ID Hackathon Southern Africa. HackerEarth/Kaggle/ChallengeRocket not yet harvested","Medium"),
+ ("SS12","Wayback Machine / web.archive.org","Web archive","Hack4Water page RECOVERED via identity render (Phase 4, C07/G025 closed); hackjozi.com confirmed unarchived; availability API used for snapshot discovery","High"),
  ("SS13","PDF repositories (services.nwu.ac.za IT News 2016)","Institutional PDFs","NWU hackday 2016 winners (snippet-level; full document read pending)","Medium"),
+ ("SS14","Zindi platform (zindi.world / zindi.africa / umojahack.africa / zindi.medium)","Competition platform (data science / AI hackathons)","Phase 5 user-requested scan: landing + competitions index (JS-loaded, no static enumeration); per-competition extraction: UmojaHack Africa 2020 (#3 Hotspots winner Geoffrey Frost), 2022 (winner interview), 2023 (username winners + SA country winner), ZindiWeekendz sample editions (non-SA top-3). Non-hackathon ML competitions out of scope","High for scanned pages"),
 ]
 
 # ---------- Write CSVs ----------
@@ -325,7 +335,7 @@ for key in sorted(people, key=lambda k: people[k]["person_id"]):
         "Date_Verified": TODAY,
     })
 
-_unres_all = UNRESOLVED + UNRESOLVED2 + UNRESOLVED3
+_unres_all = UNRESOLVED + UNRESOLVED2 + UNRESOLVED3 + UNRESOLVED4 + UNRESOLVED5
 _UNRESOLVED_RESOLVED_ALL = {}
 _UNRESOLVED_RESOLVED_ALL.update(UNRESOLVED_RESOLVED)
 _UNRESOLVED_RESOLVED_ALL.update(UNRESOLVED_RESOLVED4)
@@ -344,13 +354,16 @@ gap_rows += [{"Gap_ID": g[0], "Scope": g[1], "Description": g[2], "Records_Missi
               "Priority": g[5], "Status": "Open (Phase 2)", "Date_Noted": TODAY} for g in GAPS2]
 gap_rows += [{"Gap_ID": g[0], "Scope": g[1], "Description": g[2], "Records_Missing": g[3], "Planned_Search_Avenues": g[4],
               "Priority": g[5], "Status": "Open (Phase 3)", "Date_Noted": TODAY} for g in GAPS3]
+gap_rows += [{"Gap_ID": g[0], "Scope": g[1], "Description": g[2], "Records_Missing": g[3], "Planned_Search_Avenues": g[4],
+              "Priority": g[5], "Status": "Open (Phase 5)", "Date_Noted": TODAY} for g in GAPS5]
 _GAP3_KEYMAP = {"description": "Description", "records_missing": "Records_Missing", "status": "Status", "priority": "Priority"}
 for _gr in gap_rows:
-    if _gr["Gap_ID"] in GAP_UPD3:
-        for _k, _v in GAP_UPD3[_gr["Gap_ID"]].items():
-            _col = _GAP3_KEYMAP.get(_k)
-            if _col:
-                _gr[_col] = _v
+    for _upd_map in (GAP_UPD3, GAP_UPD4, GAP_UPD5):
+        if _gr["Gap_ID"] in _upd_map:
+            for _k, _v in _upd_map[_gr["Gap_ID"]].items():
+                _col = _GAP3_KEYMAP.get(_k)
+                if _col:
+                    _gr[_col] = _v
 ss_rows = [{"Source_ID": s[0], "Platform_or_Domain": s[1], "Type": s[2], "Purpose_Queries": s[3], "Material_Yield": s[4]} for s in SOURCES_SEARCHED]
 
 p1 = write("01_people_master.csv",

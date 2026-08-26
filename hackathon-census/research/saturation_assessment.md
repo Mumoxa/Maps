@@ -19,5 +19,14 @@ Declare saturation only when a full pass yields no new editions and negligible p
 - MICT SETA finals + Telkom 10X finals results when published.
 - 10%-sample re-verification: 44 records re-fetched (Phase 2) + targeted winner second pass (Phase 3, 4 claims) — continue to full winner sweep.
 
+
+| Pass 7-8 (Ph5) | Zindi platform scan (user-requested), UmojaHack/ZindiWeekendz extraction, IgniteHack project pages, confirmation checks | 2 | 2 | **Marginal — practical saturation boundary reached** |
+
+Pass-5-to-8 yield trend: 9 → 18 → 11 → 2 editions. Passes 7–8 surfaced only platform-username records and
+one named winner; remaining gaps are **structural** (JS-only Zindi enumeration, unarchived domains such as
+hackjozi.com, privacy-bound username resolution) rather than searchable. **At the practical saturation boundary
+of public-source research.** Outstanding (non-discovery) work: full §8 profile pass (1/347), §18 recursion,
+complete winner/Top-3 second sweep, GirlCodeHack 2024 finishing order, SS/Entelect pre-2017 archives if they ever surface.
+
 **Statement for the record:** Web research cannot mathematically prove that every historical participant has been found.
 Cite as **"Best achievable public-source coverage as of 2026-08-26 (Phase 4 of an ongoing census — approaching saturation; one confirmation pass outstanding)."**
