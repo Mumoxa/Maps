@@ -1,4 +1,5 @@
 import type { DataBundle, Profile } from '../types'
+import type { HackathonCandidate } from '../hackathonPeople'
 import type { MarketLocation, MarketProfile, MarketSource } from './types'
 
 export interface SalesforcePerson {
@@ -158,4 +159,69 @@ export function adaptSalesforceProfiles(rows: SalesforcePerson[]): MarketProfile
       },
     }
   })
+}
+
+export function adaptHackathonCandidate(candidate: HackathonCandidate): MarketProfile {
+  const best = candidate.events[0]
+  const city = best?.city ?? ''
+  const province = candidate.province ?? best?.province ?? ''
+  const summaryParts = [
+    candidate.bestResultLabel,
+    candidate.universityAtTime ? `University at the time: ${candidate.universityAtTime}` : '',
+    candidate.organisationAtTime ? `Organisation at the time: ${candidate.organisationAtTime}` : '',
+    `${candidate.eventCount} census-verified participation record${candidate.eventCount === 1 ? '' : 's'}`,
+  ].filter(Boolean)
+  const skills = unique([
+    ...candidate.events.map((event) => event.event),
+    ...candidate.events.map((event) => event.team ?? ''),
+    ...candidate.events.map((event) => event.project ?? ''),
+    'Hackathon contestants',
+  ])
+  const sources = [] as MarketSource[]
+  for (const event of candidate.events.slice(0, 4)) {
+    if (event.evidenceUrl && !sources.some((existing) => existing.url === event.evidenceUrl)) {
+      sources.push({ url: event.evidenceUrl, type: 'census', evidence: `${event.placement} — ${event.event}`, checkedOn: null })
+    }
+  }
+  if (!sources.length && candidate.evidenceUrl) {
+    sources.push({ url: candidate.evidenceUrl, type: 'census', evidence: candidate.bestResultLabel, checkedOn: null })
+  }
+
+  return {
+    id: `hackathons-${candidate.id}`,
+    track: 'Hackathon Talent',
+    trackSlug: 'hackathons',
+    name: candidate.fullName,
+    title: candidate.bestResultLabel,
+    company: candidate.organisationAtTime ?? '',
+    location: { city, province, country: 'South Africa' },
+    locationLabel: [city, province, 'South Africa'].filter(Boolean).join(', '),
+    seniority: '',
+    skills,
+    sectors: ['Hackathon contestants', ...(candidate.province ? [`${candidate.province} events`] : [])],
+    specialisms: skills.slice(0, 6),
+    summary: summaryParts.join('. '),
+    linkedinUrl: '',
+    sources,
+    suppliedAsVerified: true,
+    supersedesId: null,
+    attributes: {
+      segment: candidate.segment,
+      confidence: candidate.confidence,
+      universityAtTime: candidate.universityAtTime,
+      organisationAtTime: candidate.organisationAtTime,
+      censusPersonId: candidate.censusPersonId,
+      eventCount: candidate.eventCount,
+      events: candidate.events.map((event) => ({ event: event.event, year: event.year, placement: event.placement, team: event.team, project: event.project })),
+    },
+    provenance: {
+      kind: 'legacy',
+      batchId: null,
+      sourceProfileId: candidate.censusPersonId,
+    },
+  }
+}
+
+export function adaptHackathonCandidates(candidates: HackathonCandidate[]): MarketProfile[] {
+  return candidates.map(adaptHackathonCandidate)
 }

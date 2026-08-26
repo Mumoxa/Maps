@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
 import { ExternalLink, Filter, GraduationCap, MapPin, Search, Trophy } from 'lucide-react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
@@ -29,7 +30,7 @@ function ConfidenceBadge({ confidence }: { confidence: string }) {
   return <span className={`hack-badge ${cls}`} title="Identity confidence from the SA Hackathon Census">Confidence: {confidence}</span>
 }
 
-function CandidateCard({ candidate }: { candidate: HackathonCandidate }) {
+function CandidateCard({ candidate, onFilter }: { candidate: HackathonCandidate; onFilter: (key: string, value: string) => void }) {
   const visibleEvents = candidate.events.slice(0, 3)
   const hidden = candidate.events.length - visibleEvents.length
   return (
@@ -48,35 +49,67 @@ function CandidateCard({ candidate }: { candidate: HackathonCandidate }) {
 
       <div className="hack-candidate-meta">
         {candidate.universityAtTime && (
-          <span>
+          <button type="button" className="hack-meta-link" title="Show all candidates from this university" onClick={() => onFilter('affiliation', candidate.universityAtTime!)}>
             <GraduationCap size={14} aria-hidden /> {candidate.universityAtTime}
-          </span>
+          </button>
         )}
         {candidate.organisationAtTime && (
-          <span>
+          <button type="button" className="hack-meta-link" title="Show all candidates with this organisation" onClick={() => onFilter('affiliation', candidate.organisationAtTime!)}>
             <Trophy size={14} aria-hidden /> {candidate.organisationAtTime}
-          </span>
+          </button>
         )}
         {candidate.province && (
-          <span>
+          <button type="button" className="hack-meta-link" title="Show all candidates in this province" onClick={() => onFilter('province', candidate.province!)}>
             <MapPin size={14} aria-hidden /> Event province: {candidate.province}
-          </span>
+          </button>
         )}
       </div>
+      {(candidate.organisationAtTime || candidate.universityAtTime) && (
+        <div className="hack-crosslinks">
+          {candidate.organisationAtTime && (
+            <>
+              <Link to={`/talent-search?q=${encodeURIComponent(candidate.organisationAtTime)}`} title="Search this organisation across every pool">
+                {candidate.organisationAtTime} across all pools
+              </Link>
+              <Link to={`/contacts?company=${encodeURIComponent(candidate.organisationAtTime)}`} title="Open the contacts directory at this company">
+                Contacts at {candidate.organisationAtTime}
+              </Link>
+            </>
+          )}
+          {candidate.universityAtTime && (
+            <Link to={`/talent-search?q=${encodeURIComponent(candidate.universityAtTime)}`} title="Search this university across every pool">
+              {candidate.universityAtTime} across all pools
+            </Link>
+          )}
+        </div>
+      )}
 
       <ul className="hack-event-list">
         {visibleEvents.map((event, index) => (
           <li key={`${candidate.id}-${index}`}>
             <div className="hack-event-line">
-              <strong>{event.event}</strong>
+              <button type="button" className="hack-meta-link hack-event-name" title="Show all candidates in this event" onClick={() => onFilter('event', event.event)}>
+                {event.event}
+              </button>
               <span className="hack-event-when">{[event.edition, event.year].filter(Boolean).join(' · ')}</span>
               <span className={tierBadgeClass(event.tier)}>{event.placement}</span>
               {event.winner && <span className="hack-badge hack-badge-gold">Winner</span>}
             </div>
             <p className="hack-event-detail">
-              {[event.team && `Team: ${event.team}`, event.project, event.award, event.city && `Venue city: ${event.city}`]
-                .filter(Boolean)
-                .join(' · ')}
+              {[
+                event.team && `Team: ${event.team}`,
+                event.project,
+                event.award,
+                event.city && `Venue city: ${event.city}`,
+              ].filter(Boolean).join(' · ') || null}
+              {event.team && (
+                <button type="button" className="hack-meta-link" title="Show all candidates from this team" onClick={() => onFilter('q', event.team!)}>
+                  Team: {event.team}
+                </button>
+              )}
+              {event.project ? <span> {event.project}</span> : null}
+              {event.award ? <span> · {event.award}</span> : null}
+              {event.city ? <span> · Venue city: {event.city}</span> : null}
             </p>
             <a className="hack-evidence-link" href={event.evidenceUrl} target="_blank" rel="noreferrer">
               Evidence <ExternalLink size={12} aria-hidden />
@@ -97,13 +130,24 @@ function CandidateCard({ candidate }: { candidate: HackathonCandidate }) {
 }
 
 export function HackathonTalentPage() {
-  const [query, setQuery] = useState('')
-  const [tier, setTier] = useState('')
-  const [province, setProvince] = useState('')
-  const [year, setYear] = useState('')
-  const [event, setEvent] = useState('')
-  const [affiliation, setAffiliation] = useState('')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const param = (key: string) => searchParams.get(key) ?? ''
+  const query = param('q')
+  const tier = param('tier')
+  const province = param('province')
+  const year = param('year')
+  const event = param('event')
+  const affiliation = param('affiliation')
   const [page, setPage] = useState(0)
+  const setParam = (key: string, value: string) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev)
+      if (value) next.set(key, value)
+      else next.delete(key)
+      next.delete('page')
+      return next
+    }, { replace: true })
+  }
 
   const universe = useMemo(() => hackathonUniverse(), [])
   const provinces = useMemo(() => hackathonProvinces(), [])
@@ -123,7 +167,6 @@ export function HackathonTalentPage() {
   const safePage = Math.min(page, pageCount - 1)
   const pageItems = results.slice(safePage * PAGE_SIZE, safePage * PAGE_SIZE + PAGE_SIZE)
 
-  const resetPage = () => setPage(0)
 
   return (
     <main className="page">
@@ -150,14 +193,14 @@ export function HackathonTalentPage() {
           <Search size={15} aria-hidden />
           <input
             value={query}
-            onChange={(change) => { setQuery(change.target.value); resetPage() }}
+            onChange={(change) => { setParam('q', change.target.value); setPage(0) }}
             placeholder="Search name, team, project, event…"
             aria-label="Search candidates"
           />
         </div>
         <div className="hack-control">
           <Filter size={15} aria-hidden />
-          <select value={tier} onChange={(change) => { setTier(change.target.value); resetPage() }} aria-label="Best result">
+          <select value={tier} onChange={(change) => { setParam('tier', change.target.value); setPage(0) }} aria-label="Best result">
             <option value="">Any result</option>
             {tiers.map((option) => (
               <option key={option.value} value={option.value}>{option.value} ({option.count})</option>
@@ -165,7 +208,7 @@ export function HackathonTalentPage() {
           </select>
         </div>
         <div className="hack-control">
-          <select value={province} onChange={(change) => { setProvince(change.target.value); resetPage() }} aria-label="Province">
+          <select value={province} onChange={(change) => { setParam('province', change.target.value); setPage(0) }} aria-label="Province">
             <option value="">All provinces</option>
             {provinces.map((option) => (
               <option key={option.value} value={option.value}>{option.label} ({option.count})</option>
@@ -173,7 +216,7 @@ export function HackathonTalentPage() {
           </select>
         </div>
         <div className="hack-control">
-          <select value={year} onChange={(change) => { setYear(change.target.value); resetPage() }} aria-label="Year">
+          <select value={year} onChange={(change) => { setParam('year', change.target.value); setPage(0) }} aria-label="Year">
             <option value="">Any year</option>
             {years.map((option) => (
               <option key={option.value} value={option.value}>{option.label} ({option.count})</option>
@@ -181,7 +224,7 @@ export function HackathonTalentPage() {
           </select>
         </div>
         <div className="hack-control">
-          <select value={event} onChange={(change) => { setEvent(change.target.value); resetPage() }} aria-label="Event">
+          <select value={event} onChange={(change) => { setParam('event', change.target.value); setPage(0) }} aria-label="Event">
             <option value="">All events</option>
             {eventNames.map((name) => (
               <option key={name} value={name}>{name}</option>
@@ -192,7 +235,7 @@ export function HackathonTalentPage() {
           <GraduationCap size={15} aria-hidden />
           <input
             value={affiliation}
-            onChange={(change) => { setAffiliation(change.target.value); resetPage() }}
+            onChange={(change) => { setParam('affiliation', change.target.value); setPage(0) }}
             placeholder="University or organisation…"
             aria-label="University or organisation"
           />
@@ -203,7 +246,7 @@ export function HackathonTalentPage() {
         {results.length} candidate{results.length === 1 ? '' : 's'} match
         {(query || tier || province || year || event || affiliation) ? ' the current filters' : 'ing the pool'}
         {tier || province || year || event || affiliation || query ? (
-          <button className="hack-clear" onClick={() => { setQuery(''); setTier(''); setProvince(''); setYear(''); setEvent(''); setAffiliation(''); resetPage() }}>
+          <button className="hack-clear" onClick={() => setSearchParams({}, { replace: true })}>
             Clear filters
           </button>
         ) : null}
@@ -214,7 +257,7 @@ export function HackathonTalentPage() {
       ) : (
         <div className="hack-candidate-grid">
           {pageItems.map((candidate) => (
-            <CandidateCard key={candidate.id} candidate={candidate} />
+            <CandidateCard key={candidate.id} candidate={candidate} onFilter={setParam} />
           ))}
         </div>
       )}

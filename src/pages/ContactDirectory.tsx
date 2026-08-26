@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import {
   Building2,
   ExternalLink,
@@ -134,7 +135,20 @@ for (const contact of contacts) {
 }
 const CONTACT_COMPANY_COUNT = CONTACT_COMPANIES.size
 
-function ContactCard({ data }: { data: ContactCardData }) {
+function contactFacetKeyFor(contact: Contact, value: string): ContactFacetKey | null {
+  if (contact.technologies.includes(value)) return 'technologies'
+  if (contact.software.includes(value)) return 'software'
+  if (contact.tags.includes(value)) return 'tags'
+  if (contact.seniorities.includes(value)) return 'seniorities'
+  if (contact.departments.includes(value)) return 'departments'
+  if (contact.positions.some(position => position.sector === value)) return 'sectors'
+  if (contact.positions.some(position => position.companySize === value)) return 'companySizes'
+  if (contact.locations.includes(value)) return 'locations'
+  if (contact.positions.some(position => position.company === value)) return 'companies'
+  return null
+}
+
+function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleFacet: (key: ContactFacetKey, value: string) => void }) {
   const { contact, primary, sectors, sizes, companies, titles, companyOverviews, facetDetails, initials } = data
 
   return (
@@ -151,7 +165,18 @@ function ContactCard({ data }: { data: ContactCardData }) {
 
       <div className="contact-company">
         <Building2 size={15} aria-hidden="true" />
-        <span>{primary?.company || 'Company not provided'}</span>
+        {primary?.company ? (
+          <button
+            type="button"
+            className="contact-company-link"
+            title="Show all contacts at this company"
+            onClick={() => onToggleFacet('companies', primary.company)}
+          >
+            {primary.company}
+          </button>
+        ) : (
+          <span>Company not provided</span>
+        )}
         {primary?.website && (
           <a href={primary.website} target="_blank" rel="noreferrer" aria-label={`Open ${primary.company} website`}>
             <ExternalLink size={14} />
@@ -160,10 +185,23 @@ function ContactCard({ data }: { data: ContactCardData }) {
       </div>
 
       <div className="contact-tags">
-        {sectors.map(value => <span key={`sector-${value}`}>{value}</span>)}
-        {sizes.map(value => <span key={`size-${value}`}><Users size={13} aria-hidden="true" />{value}</span>)}
-        {contact.locations.map(value => <span key={`location-${value}`}><MapPin size={13} aria-hidden="true" />{value}</span>)}
-        {facetDetails.slice(0, 5).map(value => <span key={`detail-${value}`}>{value}</span>)}
+        {sectors.map(value => (
+          <button key={`sector-${value}`} type="button" title="Filter contacts by sector" onClick={() => onToggleFacet('sectors', value)}>{value}</button>
+        ))}
+        {sizes.map(value => (
+          <button key={`size-${value}`} type="button" title="Filter contacts by company size" onClick={() => onToggleFacet('companySizes', value)}><Users size={13} aria-hidden="true" />{value}</button>
+        ))}
+        {contact.locations.map(value => (
+          <button key={`location-${value}`} type="button" title="Filter contacts by location" onClick={() => onToggleFacet('locations', value)}><MapPin size={13} aria-hidden="true" />{value}</button>
+        ))}
+        {facetDetails.slice(0, 5).map(value => {
+          const key = contactFacetKeyFor(contact, value)
+          return key ? (
+            <button key={`detail-${value}`} type="button" title="Filter contacts by this skill/tag" onClick={() => onToggleFacet(key, value)}>{value}</button>
+          ) : (
+            <span key={`detail-${value}`}>{value}</span>
+          )
+        })}
       </div>
 
       <div className="contact-details">
@@ -292,8 +330,12 @@ function ContactCard({ data }: { data: ContactCardData }) {
 }
 
 export function ContactDirectory() {
-  const [query, setQuery] = useState('')
-  const [selections, setSelections] = useState<ContactSelections>({})
+  const [searchParams, setSearchParams] = useSearchParams()
+  const [query, setQuery] = useState(() => searchParams.get('q') ?? '')
+  const [selections, setSelections] = useState<ContactSelections>(() => {
+    const company = searchParams.get('company')
+    return company ? { companies: [company] } : {}
+  })
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const facets = useMemo(() => buildContactFacets(contacts), [])
   const results = useMemo(() => filterContacts(contacts, query, selections), [query, selections])
@@ -301,6 +343,15 @@ export function ContactDirectory() {
   const visibleContacts = results.slice(0, visibleCount)
 
   useEffect(() => setVisibleCount(PAGE_SIZE), [query, selections])
+
+  useEffect(() => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev)
+      if (query.trim()) next.set('q', query)
+      else next.delete('q')
+      return next
+    }, { replace: true })
+  }, [query, setSearchParams])
 
   function toggleSelection(key: ContactFacetKey, value: string) {
     setSelections(current => {
@@ -310,8 +361,17 @@ export function ContactDirectory() {
     })
   }
 
+  function setQueryWithUrl(value: string) {
+    setQuery(value)
+  }
+
   function clearFilters() {
     setSelections({})
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev)
+      next.delete('company')
+      return next
+    }, { replace: true })
   }
 
   return (
@@ -334,7 +394,7 @@ export function ContactDirectory() {
             <Search size={17} aria-hidden="true" />
             <input
               value={query}
-              onChange={event => setQuery(event.target.value)}
+              onChange={event => setQueryWithUrl(event.target.value)}
               placeholder="Search any available contact field"
               aria-label="Search all contact information"
             />
@@ -371,7 +431,7 @@ export function ContactDirectory() {
             {results.length ? (
               <>
                 <div className="contacts-grid">{visibleContacts.map(contact => (
-                  <ContactCard data={CONTACT_CARD_DATA.get(contact.id)!} key={contact.id} />
+                  <ContactCard data={CONTACT_CARD_DATA.get(contact.id)!} key={contact.id} onToggleFacet={toggleSelection} />
                 ))}</div>
                 {visibleCount < results.length && (
                   <button type="button" className="btn contact-load-more" onClick={() => setVisibleCount(count => count + PAGE_SIZE)}>

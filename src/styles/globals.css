@@ -1927,3 +1927,60 @@ input[type="checkbox"]:focus-visible { outline: 2px solid var(--color-primary); 
   .contact-stats { align-self: flex-start; }
   .contacts-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Wiring pass: clickable entity chips */
+.talent-meta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: var(--color-text-secondary, #4b5563);
+  cursor: pointer;
+  text-align: left;
+}
+.talent-meta-link:hover { color: var(--color-primary, #2563eb); text-decoration: underline; }
+.contact-tags button {
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  font-size: 0.75rem;
+  color: #374151;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.contact-tags button:hover { background: var(--color-primary-light, #eff6ff); color: var(--color-primary, #2563eb); border-color: #bfdbfe; }
+.contact-company .contact-company-link {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 600;
+  color: var(--color-text, #111827);
+  cursor: pointer;
+}
+.contact-company .contact-company-link:hover { color: var(--color-primary, #2563eb); text-decoration: underline; }
+
+.hack-meta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 0.8rem;
+  color: #4b5563;
+  cursor: pointer;
+  text-align: left;
+}
+.hack-meta-link:hover { color: #2563eb; text-decoration: underline; }
+.hack-event-name { font-weight: 600; font-size: 0.86rem; color: #111827; }
+.hack-crosslinks { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; }
+.hack-crosslinks a { font-size: 0.75rem; color: #2563eb; text-decoration: none; }
+.hack-crosslinks a:hover { text-decoration: underline; }

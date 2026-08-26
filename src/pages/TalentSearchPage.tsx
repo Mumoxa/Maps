@@ -214,7 +214,7 @@ export function TalentSearchPage() {
                   {paginatedResults.map((profile) => {
                     const sourceProfileId = profile.provenance.sourceProfileId
                     const creditRiskSlug = sourceProfileId ? slugSets?.profileIdToSlug.get(sourceProfileId) : undefined
-                    return <TalentSearchCard key={profile.id} profile={profile} creditRiskSlug={creditRiskSlug} />
+                    return <TalentSearchCard key={profile.id} profile={profile} creditRiskSlug={creditRiskSlug} updateParam={updateParam} />
                   })}
                 </div>
               )}
@@ -314,8 +314,12 @@ function FacetGroup({
   )
 }
 
-function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile; creditRiskSlug?: string }) {
-  const profileLink = profile.trackSlug === 'credit-risk' && creditRiskSlug ? `/profiles/${creditRiskSlug}` : undefined
+function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: TalentProfile; creditRiskSlug?: string; updateParam: (key: string, value: string) => void }) {
+  const profileLink = profile.trackSlug === 'credit-risk' && creditRiskSlug
+    ? `/profiles/${creditRiskSlug}`
+    : profile.trackSlug === 'hackathons'
+      ? `/hackathons?q=${encodeURIComponent(profile.name)}`
+      : undefined
   const skills = profile.skills.slice(0, 5)
   const source = profile.sources[0]
 
@@ -346,8 +350,20 @@ function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile;
         </div>
 
         <div className="talent-result-meta">
-          <span><Building2 size={15} /> {profile.company || 'Company not added'}</span>
-          <span><MapPin size={15} /> {profile.locationLabel || 'Location not added'}</span>
+          {profile.company ? (
+            <button type="button" className="talent-meta-link" title="Show all candidates at this company" onClick={() => updateParam('company', profile.company)}>
+              <Building2 size={15} /> {profile.company}
+            </button>
+          ) : (
+            <span><Building2 size={15} /> Company not added</span>
+          )}
+          {profile.locationLabel ? (
+            <button type="button" className="talent-meta-link" title="Show all candidates in this location" onClick={() => updateParam('location', profile.locationLabel)}>
+              <MapPin size={15} /> {profile.locationLabel}
+            </button>
+          ) : (
+            <span><MapPin size={15} /> Location not added</span>
+          )}
           <span><BriefcaseBusiness size={15} /> {profile.seniority || 'Seniority not added'}</span>
         </div>
 
@@ -361,7 +377,7 @@ function TalentSearchCard({ profile, creditRiskSlug }: { profile: TalentProfile;
 
         <div className="talent-result-skill-group">
           {skills.map((skill) => (
-            <button key={skill} type="button" className="talent-result-chip">
+            <button key={skill} type="button" className="talent-result-chip" title="Show all candidates with this skill" onClick={() => updateParam('skill', skill)}>
               {skill}
             </button>
           ))}
