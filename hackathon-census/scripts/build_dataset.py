@@ -8,6 +8,8 @@ from census_data_people import P
 from census_data_phase2 import (SOURCES2, E2, P2, UPD, UNRESOLVED2, GAP_UPD, GAPS2)
 from census_data_phase3 import (SOURCES3, E3, P3, UPD3, PERSON_UPD, UNRESOLVED3,
                                  UNRESOLVED_RESOLVED, GAP_UPD3, GAPS3)
+from census_data_phase4 import (SOURCES4, E4, P4, UPD4, PERSON_UPD4, P_NOTE_FIXES,
+                                 UNRESOLVED4, UNRESOLVED_RESOLVED4, GAP_UPD4, GAPS4)
 
 # --- Phase 2 merge ---
 SOURCES.update(SOURCES2)
@@ -24,6 +26,14 @@ P.extend(P3)
 for _e in E:
     if _e["id"] in UPD3:
         _e.update(UPD3[_e["id"]])
+
+# --- Phase 4 merge ---
+SOURCES.update(SOURCES4)
+E.extend(E4)
+P.extend(P4)
+for _e in E:
+    if _e["id"] in UPD4:
+        _e.update(UPD4[_e["id"]])
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "data")
 os.makedirs(OUT, exist_ok=True)
@@ -66,6 +76,8 @@ pid_counter = 0
 pid_for_key = {}
 for (eid, full, first, middle, surname, pl, team, project, extra) in P:
     x = extra_parse(extra)
+    if full in P_NOTE_FIXES:
+        x["note"] = (x.get("note", "") + " ; " + P_NOTE_FIXES[full]).strip(" ;") if x.get("note") else P_NOTE_FIXES[full]
     key = re.sub(r"\s+", " ", full.strip().lower())
     if key not in pid_for_key:
         pid_counter += 1
@@ -110,8 +122,11 @@ for (eid, full, first, middle, surname, pl, team, project, extra) in P:
         "Date_Verified": TODAY,
     })
 
-# ---------- Phase 3 person-level overrides (profile corroboration via 2+ signals) ----------
-for _key, _upd in PERSON_UPD.items():
+# ---------- Phase 3/4 person-level overrides (profile corroboration via 2+ signals) ----------
+_ALL_PERSON_UPD = {}
+_ALL_PERSON_UPD.update(PERSON_UPD)
+_ALL_PERSON_UPD.update(PERSON_UPD4)
+for _key, _upd in _ALL_PERSON_UPD.items():
     _pid = pid_for_key.get(_key)
     if not _pid:
         continue
@@ -311,10 +326,13 @@ for key in sorted(people, key=lambda k: people[k]["person_id"]):
     })
 
 _unres_all = UNRESOLVED + UNRESOLVED2 + UNRESOLVED3
+_UNRESOLVED_RESOLVED_ALL = {}
+_UNRESOLVED_RESOLVED_ALL.update(UNRESOLVED_RESOLVED)
+_UNRESOLVED_RESOLVED_ALL.update(UNRESOLVED_RESOLVED4)
 unres_rows = [{"Unresolved_ID": u[0], "Name_As_Published": u[1], "Hackathon": u[2], "Context_What_Is_Missing": u[3],
                "Suggested_Next_Avenues": u[4], "Evidence_Source_IDs": u[5],
-               "Status": UNRESOLVED_RESOLVED.get(u[0], "Unresolved — not publicly verified"),
-               "Date_Noted": "2026-08-26" if u[0] < "U073" else ("2026-08-26 (Phase 2)" if u[0] < "U093" else "2026-08-26 (Phase 3)")} for u in _unres_all]
+               "Status": _UNRESOLVED_RESOLVED_ALL.get(u[0], "Unresolved — not publicly verified"),
+               "Date_Noted": "2026-08-26" if u[0] < "U073" else ("2026-08-26 (Phase 2)" if u[0] < "U093" else "2026-08-26 (Phase 3+)")} for u in _unres_all]
 _gap_all = [dict(id=g[0], scope=g[1], desc=g[2], missing=g[3], avenues=g[4], prio=g[5], status="Open") for g in GAPS]
 for g in _gap_all:
     if g["id"] in GAP_UPD:

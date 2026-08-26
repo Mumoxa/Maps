@@ -20,4 +20,4 @@ Declare saturation only when a full pass yields no new editions and negligible p
 - 10%-sample re-verification: 44 records re-fetched (Phase 2) + targeted winner second pass (Phase 3, 4 claims) — continue to full winner sweep.
 
 **Statement for the record:** Web research cannot mathematically prove that every historical participant has been found.
-Cite as **"Best achievable public-source coverage as of 2026-08-26 (Phase 3 of an ongoing census — approaching, but not at, saturation)."**
+Cite as **"Best achievable public-source coverage as of 2026-08-26 (Phase 4 of an ongoing census — approaching saturation; one confirmation pass outstanding)."**
