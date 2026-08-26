@@ -4,8 +4,8 @@ Forensic-quality open-source research database of people who participated in, pl
 hackathons and sprint-format technology competitions connected to South Africa — built strictly from
 publicly accessible sources, with every claim traceable to a URL.
 
-**Status: Phase 2 (2026-08-26). NOT saturated — see `research/saturation_assessment.md`.**
-Citation form: *"Best achievable public-source coverage as of 2026-08-26 (Phase 2)"* — never "complete".
+**Status: Phase 3 (2026-08-26). Approaching, but not at, saturation — see `research/saturation_assessment.md`.**
+Citation form: *"Best achievable public-source coverage as of 2026-08-26 (Phase 3)"* — never "complete".
 
 ## Contents
 

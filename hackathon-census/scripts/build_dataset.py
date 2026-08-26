@@ -6,6 +6,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from census_data_sources import SOURCES, E, U
 from census_data_people import P
 from census_data_phase2 import (SOURCES2, E2, P2, UPD, UNRESOLVED2, GAP_UPD, GAPS2)
+from census_data_phase3 import (SOURCES3, E3, P3, UPD3, PERSON_UPD, UNRESOLVED3,
+                                 UNRESOLVED_RESOLVED, GAP_UPD3, GAPS3)
 
 # --- Phase 2 merge ---
 SOURCES.update(SOURCES2)
@@ -14,6 +16,14 @@ P.extend(P2)
 for _e in E:
     if _e["id"] in UPD:
         _e.update(UPD[_e["id"]])
+
+# --- Phase 3 merge ---
+SOURCES.update(SOURCES3)
+E.extend(E3)
+P.extend(P3)
+for _e in E:
+    if _e["id"] in UPD3:
+        _e.update(UPD3[_e["id"]])
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "data")
 os.makedirs(OUT, exist_ok=True)
@@ -99,6 +109,29 @@ for (eid, full, first, middle, surname, pl, team, project, extra) in P:
         "Research_Notes": x.get("note", ""),
         "Date_Verified": TODAY,
     })
+
+# ---------- Phase 3 person-level overrides (profile corroboration via 2+ signals) ----------
+for _key, _upd in PERSON_UPD.items():
+    _pid = pid_for_key.get(_key)
+    if not _pid:
+        continue
+    for _r in part_rows:
+        if _r["Person_ID"] == _pid:
+            if "Personal_Website" in _upd:
+                _r["Personal_Website"] = _upd["Personal_Website"]
+            if "Profile_Match_Confidence" in _upd:
+                _r["Profile_Match_Confidence"] = _upd["Profile_Match_Confidence"]
+            if "Other_Profile_Note" in _upd:
+                _r["Research_Notes"] = (_r["Research_Notes"] + " ; " + _upd["Other_Profile_Note"]).strip(" ;")
+            if "Alternative_Name_Spelling" in _upd:
+                _r["Alternative_Name_Spelling"] = _upd["Alternative_Name_Spelling"]
+    _p = people[_key]
+    if "Personal_Website" in _upd:
+        _p["profile_url"] = _upd["Personal_Website"]
+    if "Other_Profile_Note" in _upd:
+        _p["note"].append(_upd["Other_Profile_Note"])
+    if "Alternative_Name_Spelling" in _upd:
+        _p["note"].append("Name variant/alias: " + _upd["Alternative_Name_Spelling"])
 
 # ---------- Hackathon master ----------
 ev_rows = []
@@ -229,7 +262,7 @@ GAPS = [
  ("G013","Province","Mpumalanga: no hackathon events verified as hosted in-province this pass","DIRISA awards ceremony held in Skukuza (Mpumalanga) but competition itself provincial-neutral; expect university (UMP) and TVET events to exist","UMP newsroom, Mbombela community media","High"),
  ("G014","Province","Northern Cape: no events verified as hosted in-province this pass","Kimberley-based team participated in #SS19Hack (JHB); Sol Plaatje University events expected","SPU newsroom, Northern Cape media","High"),
  ("G015","Profile","Public professional profile discovery (LinkedIn/GitHub/Devpost etc.) not yet performed at scale","All profile columns currently 'Unknown'; requires per-person verification searches per §8 identity rules (2+ corroborating signals)","LinkedIn (public), GitHub, Devpost, personal sites","High"),
- ("G16","Platform","Devpost/HackerEarth/ChallengeRocket platform extraction not performed","No SA-platform pages harvested this pass","site-scoped platform searches","High"),
+ ("G016","Platform","Devpost/HackerEarth/ChallengeRocket platform extraction not performed","No SA-platform pages harvested this pass","site-scoped platform searches","High"),
  ("G017","Platform","Global Game Jam SA participant extraction not performed","GGJ sites per year (multiple SA cities, multiple years) have public participant lists; series row only added for 2020","globalgamejam.org site pages per year","Medium"),
  ("G018","Archive","Wayback Machine passes not yet executed","Several key organiser sites (hack4water, tshimologong, Geekulcha galleries) likely have archived winner pages","web.archive.org","High"),
  ("G019","Sector","Corporate internal hackathons under-covered by design (employee-only events)","Vodacom Hack-alympics, Kuunda Disrupt, Absa Technology Hackathons documented at event level only","Corporate newsrooms","Low"),
@@ -270,17 +303,18 @@ for key in sorted(people, key=lambda k: people[k]["person_id"]):
         "Person_ID": p["person_id"], "First_Name": p["first"] or U, "Middle_Name": p["middle"],
         "Surname": p["surname"], "Full_Name_As_Published": p["full"], "Alternative_Name_Spelling": U,
         "Organisation_At_Time_Most_Recent_Verified": p["org"], "University_At_Time_Most_Recent_Verified": p["uni"],
-        "LinkedIn_URL": U, "GitHub_URL": U, "Devpost_URL": U, "Other_Public_Profile_URLs": U,
+        "LinkedIn_URL": U, "GitHub_URL": U, "Devpost_URL": U, "Other_Public_Profile_URLs": p.get("profile_url", U),
         "Events_Participated_Count": p["count"], "First_Event_Year": U, "Last_Event_Year": U,
         "Identity_Confidence": person["min_conf"] if p["first"] not in ("", "Unknown") else "Low",
         "Primary_Evidence_URL": src_urls(sorted(p["srcs"])), "Research_Notes": " ; ".join(p["note"]),
         "Date_Verified": TODAY,
     })
 
-_unres_all = UNRESOLVED + UNRESOLVED2
+_unres_all = UNRESOLVED + UNRESOLVED2 + UNRESOLVED3
 unres_rows = [{"Unresolved_ID": u[0], "Name_As_Published": u[1], "Hackathon": u[2], "Context_What_Is_Missing": u[3],
-               "Suggested_Next_Avenues": u[4], "Evidence_Source_IDs": u[5], "Status": "Unresolved — not publicly verified",
-               "Date_Noted": "2026-08-26" if u[0] < "U073" else "2026-08-26 (Phase 2)"} for u in _unres_all]
+               "Suggested_Next_Avenues": u[4], "Evidence_Source_IDs": u[5],
+               "Status": UNRESOLVED_RESOLVED.get(u[0], "Unresolved — not publicly verified"),
+               "Date_Noted": "2026-08-26" if u[0] < "U073" else ("2026-08-26 (Phase 2)" if u[0] < "U093" else "2026-08-26 (Phase 3)")} for u in _unres_all]
 _gap_all = [dict(id=g[0], scope=g[1], desc=g[2], missing=g[3], avenues=g[4], prio=g[5], status="Open") for g in GAPS]
 for g in _gap_all:
     if g["id"] in GAP_UPD:
@@ -290,6 +324,15 @@ gap_rows = [{"Gap_ID": g["id"], "Scope": g["scope"], "Description": g["desc"], "
             for g in _gap_all]
 gap_rows += [{"Gap_ID": g[0], "Scope": g[1], "Description": g[2], "Records_Missing": g[3], "Planned_Search_Avenues": g[4],
               "Priority": g[5], "Status": "Open (Phase 2)", "Date_Noted": TODAY} for g in GAPS2]
+gap_rows += [{"Gap_ID": g[0], "Scope": g[1], "Description": g[2], "Records_Missing": g[3], "Planned_Search_Avenues": g[4],
+              "Priority": g[5], "Status": "Open (Phase 3)", "Date_Noted": TODAY} for g in GAPS3]
+_GAP3_KEYMAP = {"description": "Description", "records_missing": "Records_Missing", "status": "Status", "priority": "Priority"}
+for _gr in gap_rows:
+    if _gr["Gap_ID"] in GAP_UPD3:
+        for _k, _v in GAP_UPD3[_gr["Gap_ID"]].items():
+            _col = _GAP3_KEYMAP.get(_k)
+            if _col:
+                _gr[_col] = _v
 ss_rows = [{"Source_ID": s[0], "Platform_or_Domain": s[1], "Type": s[2], "Purpose_Queries": s[3], "Material_Yield": s[4]} for s in SOURCES_SEARCHED]
 
 p1 = write("01_people_master.csv",
@@ -345,7 +388,7 @@ print(f"Winner placements (1st): {len(winners)} records / {len(set(r['Person_ID'
 print(f"Top-3 placements: {len(top3)} records")
 print(f"Top-10 placements: {len(top10)} records")
 print(f"Winner records supported by Tier-1 primary sources: {len(win_primary)}/{len(winners)} = {round(100*len(win_primary)/max(1,len(winners)))}%")
-print(f"Profiles with verified URLs: 0 (profile discovery pass pending)")
+print(f"Profiles with evidence-linked URLs: 1 of {n_pe} (Kobus van Schoor personal CV; §8 discovery pass pending for the rest)")
 print(f"Evidence register rows: {len(evid_rows)}")
 print(f"Unresolved identity records: {len(unres_rows)}")
 print(f"Gap records: {len(gap_rows)}")
