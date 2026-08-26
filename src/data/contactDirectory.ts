@@ -1,4 +1,5 @@
 import type { Contact } from './contacts'
+import { canonicalCompanyName } from './companyNormalization'
 
 export const UNSPECIFIED_FACET_VALUE = '__not_provided__'
 
@@ -97,7 +98,7 @@ function comparable(value: string): string {
 
 function valuesFor(contact: Contact, facet: ContactFacetKey): string[] {
   switch (facet) {
-    case 'companies': return unique(contact.positions.map(position => position.company))
+    case 'companies': return unique(contact.positions.map(position => canonicalCompanyName(position.company)))
     case 'titles': return unique(contact.positions.map(position => position.title))
     case 'sectors': return unique(contact.positions.map(position => position.sector))
     case 'locations': return unique(contact.locations)

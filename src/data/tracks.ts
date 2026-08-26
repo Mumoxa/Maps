@@ -5,10 +5,10 @@ export interface TalentTrack {
   shortLabel: string
   summary: string
   detail: string
-  accent: 'salesforce' | 'credit' | 'sap' | 'murex' | 'calypso'
+  accent: 'salesforce' | 'credit' | 'sap' | 'murex' | 'calypso' | 'hackathon'
   scope: {
     geography: 'South Africa'
-    category: 'business-platform' | 'risk-discipline' | 'capital-markets-platform'
+    category: 'business-platform' | 'risk-discipline' | 'capital-markets-platform' | 'talent-pool'
   }
   actions: {
     primaryLabel: string
@@ -21,10 +21,31 @@ export interface TalentTrack {
 
 export const talentTracks: TalentTrack[] = [
   {
+    id: 'credit-risk',
+    slug: 'credit-risk',
+    name: 'Credit Risk',
+    shortLabel: 'Track 01',
+    summary: 'Continue into the current South African Credit Risk market map with profiles, companies, segments, shortlist, and the interactive map.',
+    detail: 'The first skills pool built in the SA Talent Map and its live reference implementation, with the full bundled dataset and interactive exploration experience.',
+    accent: 'credit',
+    scope: { geography: 'South Africa', category: 'risk-discipline' },
+    actions: {
+      primaryLabel: 'Open Credit Risk',
+      primaryHref: '/credit-risk',
+      secondaryLabel: 'Back to SA Talent home',
+      secondaryHref: '/',
+    },
+    nextSteps: [
+      'Keep expanding the current dataset through verified append-only batches.',
+      'Use this branch as the reference architecture for future market tracks.',
+      'Share reusable components and lookup utilities with new track pages as they come online.',
+    ],
+  },
+  {
     id: 'salesforce',
     slug: 'salesforce',
     name: 'Salesforce',
-    shortLabel: 'Track 01',
+    shortLabel: 'Track 02',
     summary: 'Search South African Salesforce professionals by cloud, certification signal, employer, location, and ecosystem segment.',
     detail: 'The Salesforce branch combines the retained legacy dataset with append-only source-verified batches and the ecosystem intelligence page.',
     accent: 'salesforce',
@@ -42,31 +63,31 @@ export const talentTracks: TalentTrack[] = [
     ],
   },
   {
-    id: 'credit-risk',
-    slug: 'credit-risk',
-    name: 'Credit Risk',
-    shortLabel: 'Track 02',
-    summary: 'Continue into the current South African Credit Risk market map with profiles, companies, segments, shortlist, and the interactive map.',
-    detail: 'The Credit Risk branch is the live reference implementation with the full bundled dataset and interactive exploration experience.',
-    accent: 'credit',
-    scope: { geography: 'South Africa', category: 'risk-discipline' },
+    id: 'hackathons',
+    slug: 'hackathons',
+    name: 'Hackathon Talent',
+    shortLabel: 'Track 03',
+    summary: 'Search the SA hackathon contestant pool: verified winners, top-3 and top-10 placements with event, year, university, organisation and province.',
+    detail: 'Candidates are source-retained from the SA Hackathon Census — a public-source, evidence-linked census of South African hackathon participants. Every record keeps its participation history and evidence URL; nothing is inferred.',
+    accent: 'hackathon',
+    scope: { geography: 'South Africa', category: 'talent-pool' },
     actions: {
-      primaryLabel: 'Open Credit Risk',
-      primaryHref: '/credit-risk',
+      primaryLabel: 'Open Hackathon Talent',
+      primaryHref: '/hackathons',
       secondaryLabel: 'Back to SA Talent home',
       secondaryHref: '/',
     },
     nextSteps: [
-      'Keep expanding the current dataset through verified append-only batches.',
-      'Use this branch as the reference architecture for future market tracks.',
-      'Share reusable components and lookup utilities with new track pages as they come online.',
+      'Grow the pool through the census continuation passes (profile discovery, recursion, series archives).',
+      'Keep candidate records append-only and evidence-linked; never attach profiles on name similarity alone.',
+      'Link standout candidates to market tracks once employers or ventures are publicly confirmed.',
     ],
   },
   {
     id: 'sap-erp',
     slug: 'sap-erp',
     name: 'SAP ERP',
-    shortLabel: 'Track 03',
+    shortLabel: 'Track 04',
     summary: 'Explore the verified South African SAP ERP market information within the same specialist-talent product structure.',
     detail: 'The SAP ERP market is now part of SA Talent Map as a verified specialist business-platform track, ready for structured people, company, skill, and ecosystem additions.',
     accent: 'sap',
@@ -87,7 +108,7 @@ export const talentTracks: TalentTrack[] = [
     id: 'murex',
     slug: 'murex',
     name: 'Murex',
-    shortLabel: 'Track 04',
+    shortLabel: 'Track 05',
     summary: 'Prepare a dedicated route for South African Murex talent, platform specialists, and adjacent market intelligence.',
     detail: 'The Murex branch is now reserved in the app structure so incoming additions can plug straight into a dedicated page and future data model.',
     accent: 'murex',
@@ -108,7 +129,7 @@ export const talentTracks: TalentTrack[] = [
     id: 'calypso',
     slug: 'calypso',
     name: 'Calypso',
-    shortLabel: 'Track 05',
+    shortLabel: 'Track 06',
     summary: 'Create space for South African Calypso talent mapping, market coverage, and future recruiting workflows.',
     detail: 'The Calypso branch gives the interactive site a clear place for the next wave of platform-specific additions without crowding the home page.',
     accent: 'calypso',

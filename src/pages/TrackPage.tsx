@@ -1,13 +1,14 @@
 import { useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import type { ReactNode } from 'react'
-import { ArrowRight, BriefcaseBusiness, Database, LayoutTemplate, ShieldCheck, Sparkles, Workflow } from 'lucide-react'
+import { ArrowRight, BriefcaseBusiness, Database, LayoutTemplate, ShieldCheck, Sparkles, Workflow, Trophy } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { deriveMarketSummary, getTalentProfiles, getTalentTrackBySlug, type TalentTrack } from '../data'
 import { useData } from '../context/DataContext'
 import { NotFound } from './NotFound'
 
 const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
+  hackathon: Trophy,
   salesforce: BriefcaseBusiness,
   credit: ShieldCheck,
   sap: Database,
