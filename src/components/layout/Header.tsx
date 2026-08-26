@@ -5,7 +5,7 @@ import { useData } from '../../context/DataContext'
 import { globalSearch, talentTracks } from '../../data'
 import { buildSlugSets } from '../../data'
 
-// Two top-level headings only: Candidates (skills pools) and Contacts (clients).
+// Two top-level headings only: Candidates (skills pools) and Contacts.
 const candidatePoolLinks = [
   { to: '/talent-search', label: 'All candidates — search' },
   ...talentTracks.map((track) => ({ to: `/${track.slug}`, label: track.name })),
@@ -103,7 +103,6 @@ export function Header() {
           <Link
             to="/contacts"
             className={`nav-heading nav-heading-link ${location.pathname.startsWith('/contacts') ? 'active' : ''}`}
-            title="Clients"
             onClick={() => setMenuOpen(false)}
           >
             Contacts
