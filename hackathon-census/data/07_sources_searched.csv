@@ -1,0 +1,14 @@
+﻿Source_ID,Platform_or_Domain,Type,Purpose_Queries,Material_Yield
+SS01,Web search engine (Arena web_search),Search platform,"Discovery passes 1-3 (~40 structured queries: event-first, year, province, city, university, organiser, project, person-backwards)",High — nearly all records
+SS02,itweb.co.za,SA tech news,"Winner announcements (GirlCode, SS19Hack, UniHack, Absa, Kuunda, township hackathons)",High
+SS03,"University domains (uj.ac.za, news.uct.ac.za, sit.uct.ac.za, su.ac.za, news.nwu.ac.za, wsu.ac.za, news.mandela.ac.za, tut.ac.za, ufs.ac.za, univen.ac.za, science.unizulu.ac.za, vut.ac.za, wits.ac.za)",Tier-1 institutional,"GradHack series, SU/NWU/UFS/UNIVEN/UNIZULU/WSU/NMU/TUT/VUT events",High
+SS04,"Corporate newsrooms (standardbank.co.za, absa.africa, absa.co.za, miway.co.za, vodacom.co.za)",Tier-1 corporate,"UniHack, Absa hackathons, MiWay actuarial hackathon",High (for covered events)
+SS05,"Organiser/community sites (mlab.co.za, codebridge.co.za, code4sa.org, dirisa.ac.za, sdc.dirisa.ac.za, csir.co.za, geekulcha (via coverage), makegamessa.com, frenchinstitute.org.za, tshimologong.wordpress.com)",Tier-1 organisers,"RHoK, GovHackSA, Hack4Water, DIRISA datathons, GGJ, Girls Game Jam",High
+SS06,"Competition platforms/archives (2013.spaceappschallenge.org, entelect.co.za, culture.entelect.co.za, challenge.entelect.co.za [not fetched])",Tier-1 platforms,Space Apps 2013 SA; Entelect Challenge results,High
+SS07,"News media (mybroadband.co.za, htxt.co.za, disrupt-africa.com, techcabal.com, engineeringnews.co.za, iol.co.za, citizen.co.za, mercury/star syndication, ewn.co.za, dailymaverick.co.za, bloemfonteincourant.co.za, krugersdorpnews/citizen, businessstech/africa, techfinancials, techpoint.africa, iafrica.com, innovation-village.com, brandsouthafrica.com, iafrikan.com, matiemedia.org, smfnews.org, mediaupdate.co.za, techreviewafrica, africabusiness.com, pctechmag, briefly.co.za, northcliffmelvilletimes)",Tier-2 media,Event results and named winners,High
+SS08,"Encyclopedia / reference (en.wikipedia.org — RHoK, Space Apps)",Context/verification,Series city lists and dates,Medium
+SS09,Event platforms (quicket.co.za),Event listings,GBV hackathon 2020,Medium
+SS10,LinkedIn / X / Facebook platform search,NOT systematically used this pass,Public posts are a required source class (§16); organiser social accounts only surfaced indirectly via search results,Pending
+SS11,Devpost / HackerEarth / Kaggle / ChallengeRocket,NOT used this pass,No platform pages harvested,Pending
+SS12,Wayback Machine / web.archive.org,NOT used this pass,Broken-link recovery (§26) and historical passes (§14) pending,Pending
+SS13,PDF repositories (services.nwu.ac.za IT News 2016),Institutional PDFs,NWU hackday 2016 winners (snippet-level; full document read pending),Medium
