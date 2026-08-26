@@ -5,6 +5,15 @@ import csv, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from census_data_sources import SOURCES, E, U
 from census_data_people import P
+from census_data_phase2 import (SOURCES2, E2, P2, UPD, UNRESOLVED2, GAP_UPD, GAPS2)
+
+# --- Phase 2 merge ---
+SOURCES.update(SOURCES2)
+E.extend(E2)
+P.extend(P2)
+for _e in E:
+    if _e["id"] in UPD:
+        _e.update(UPD[_e["id"]])
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "data")
 os.makedirs(OUT, exist_ok=True)
@@ -268,11 +277,19 @@ for key in sorted(people, key=lambda k: people[k]["person_id"]):
         "Date_Verified": TODAY,
     })
 
+_unres_all = UNRESOLVED + UNRESOLVED2
 unres_rows = [{"Unresolved_ID": u[0], "Name_As_Published": u[1], "Hackathon": u[2], "Context_What_Is_Missing": u[3],
                "Suggested_Next_Avenues": u[4], "Evidence_Source_IDs": u[5], "Status": "Unresolved — not publicly verified",
-               "Date_Noted": TODAY} for u in UNRESOLVED]
-gap_rows = [{"Gap_ID": g[0], "Scope": g[1], "Description": g[2], "Records_Missing": g[3], "Planned_Search_Avenues": g[4],
-             "Priority": g[5], "Status": "Open", "Date_Noted": TODAY} for g in GAPS]
+               "Date_Noted": "2026-08-26" if u[0] < "U073" else "2026-08-26 (Phase 2)"} for u in _unres_all]
+_gap_all = [dict(id=g[0], scope=g[1], desc=g[2], missing=g[3], avenues=g[4], prio=g[5], status="Open") for g in GAPS]
+for g in _gap_all:
+    if g["id"] in GAP_UPD:
+        g.update({k: v for k, v in GAP_UPD[g["id"]].items() if k in g})
+gap_rows = [{"Gap_ID": g["id"], "Scope": g["scope"], "Description": g["desc"], "Records_Missing": g["missing"],
+             "Planned_Search_Avenues": g["avenues"], "Priority": g["prio"], "Status": g["status"], "Date_Noted": TODAY}
+            for g in _gap_all]
+gap_rows += [{"Gap_ID": g[0], "Scope": g[1], "Description": g[2], "Records_Missing": g[3], "Planned_Search_Avenues": g[4],
+              "Priority": g[5], "Status": "Open (Phase 2)", "Date_Noted": TODAY} for g in GAPS2]
 ss_rows = [{"Source_ID": s[0], "Platform_or_Domain": s[1], "Type": s[2], "Purpose_Queries": s[3], "Material_Yield": s[4]} for s in SOURCES_SEARCHED]
 
 p1 = write("01_people_master.csv",

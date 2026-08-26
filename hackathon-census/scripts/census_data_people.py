@@ -232,7 +232,7 @@ P = [
 ("E055","Ivy Mutodi","Ivy","","Mutodi","Winner(special)","","","uni=University of the Free State|award=BBD Prize for Most Professional GitHub Repository|src=S55"),
 ("E055","Darrell Nkosi","Darrell","","Nkosi","Winner(special)","","","uni=University of the Free State|award=BBD Prize for Most Professional GitHub Repository|src=S55"),
 ("E055","Sindiswa Baloyi","Sindiswa","","Baloyi","Winner(special)","","","uni=University of the Free State|award=BBD Prize for Most Professional GitHub Repository|src=S55"),
-("E055","Sizwe Nkuna","Sizwe","","Nkuna","Participant","","","uni=University of the Free State|note=Completed project solo after teammates withdrew|src=S55"),
+("E055","Sizwe Nkuna","Sizwe","","Nkuna","Winner(special)","","","uni=University of the Free State|award=Special additional prize from judging panel (completed project solo after teammates withdrew)|src=S55"),
 # ---- E056 Telkom 10X Free State 2025 ----
 ("E056","Delight Chetter","Delight","","Chetter","1","DeTech","Fire-Link Lite (fire alert system for vulnerable communities)","uni=Central University of Technology|award=R15,000|src=S56"),
 ("E056","Kabelo Makhetha","Kabelo","","Makhetha","1","DeTech","Fire-Link Lite","uni=Central University of Technology|award=R15,000|src=S56"),

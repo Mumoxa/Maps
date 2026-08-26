@@ -1,81 +1,63 @@
 # Final Research Report — South African Hackathon Participant & Winner Census
-**Phase 1 • Research conducted 2026-08-26 • Status: not saturated (see §12)**
+**Phase 2 • Research conducted 2026-08-26 • Status: not saturated (see §12 and `research/saturation_assessment.md`)**
 
 ---
 
-## 1. Headline statistics
+## 1. Headline statistics (updated in Phase 2)
 
-| Metric | Value |
-|---|---|
-| Earliest verifiable SA hackathon located | **RHoK Johannesburg — 30 Nov–1 Dec 2013**, ThoughtWorks, Braamfontein (venue+date verified). RHoK Cape Town 2012 confirmed at series level only (existence, no local detail) |
-| Hackathon editions in master table | **82** (60 evidence-backed editions + 22 consolidated/probable edition rows, each labelled) |
-| Unique named contestants identified | **255** |
-| Participation records (person × event) | **267** |
-| Winner placements (1st place / winning-team members) | **146 records** |
-| Top-3 placements | **166 records** |
-| Top-10 placements (ranked 4th–10th, top-8 finals etc.) | **190 records** |
-| Verified LinkedIn profiles attached | **0 — profile discovery pass not yet executed (§8 discipline: no name-similarity attachments)** |
-| Verified GitHub profiles attached | **0 — as above** |
-| Evidence register | **83 source-claim rows** |
-| Unresolved identities (named teams / ambiguous members) | **72** |
-| Research gaps logged | **20** |
-| Winner records supported by Tier-1 primary sources | **95/146 (65%)** — remainder supported by Tier-2 reputable media |
-| Winner/Top-3 second verification pass | **Not yet performed (§27 requirement — scheduled)** |
+| Metric | Phase 1 | Phase 2 (current) |
+|---|---|---|
+| Hackathon editions in master table | 82 | **100** (evidence-backed + labelled consolidated/probable rows) |
+| Unique named contestants | 255 | **309** |
+| Participation records (person × event) | 267 | **322** |
+| Winner placements (1st place / winning-team members) | 146 | **196** |
+| Top-3 placements | 166 | **213** |
+| Top-10 placements | 190 | **239** |
+| Evidence register rows | 83 | **109** |
+| Unresolved identities | 72 | **92** |
+| Research gaps logged | 20 | **25** (4 earlier gaps partially resolved) |
+| Winner records on Tier-1 primary sources | 65% | **68% (134/196)** |
+| Records re-verified by direct page fetch (§27 sample) | — | **44 records (≈14%) — zero discrepancies** |
+| Multi-event individuals identified | 10 | **11** (incl. Thabang Mabula: GradHack 2019 ↔ FinChatBot 2019 via §18 recursion) |
+| Verified LinkedIn/GitHub profiles attached | 0 | **0 — §8 profile-discovery pass still pending (by design, no name-match attachments)** |
 
-## 2. Date range covered
-2012 (RHoK Cape Town, existence-level) → 2026-08 (SA Space Design Competition, HackAtom SA, Gauteng e-Gov youth challenge, UFS Beat the Banker, VUT Hackathon). Pre-2013 activity remains an open hunt (gap G001).
+## 2. Earliest verifiable activity
+Unchanged: **RHoK Johannesburg, 30 Nov–1 Dec 2013** (ThoughtWorks, Braamfontein) is the earliest SA hackathon verified with venue and date. RHoK Cape Town 2012 exists at series level; Phase 2 confirmed RHoK's Dec-2010 global city list did **not** include SA, sharpening the 2012-boundary claim. Tech4Africa's hackathon track is verified for 2015 (2011–2014 hack days still unverified).
 
-## 3. Province distribution (event editions)
-Gauteng 32 • Western Cape 15 • KwaZulu-Natal 5 • Limpopo 4 • Eastern Cape 2 • Free State 2 • North West 1 • Mpumalanga 1 (awards ceremony only) • Northern Cape 0.
-**Mpumalanga and Northern Cape venue-level absence is a research gap, not evidence of absence.**
+## 3. Phase-2 discoveries (highlights)
+- **ITWeb Security Summit Hackathon series** (#SS19Hack → #SSHACK26): five editions recorded, incl. a **Northern Cape venue edition (#SS25HACK, Kimberley, 2025)**; named CTF winners Jabu Mahlangu (2022), Lesoko Monyepao & Katlego Tsebe (2026).
+- **Province gaps broken:** Mpumalanga venues (Maish @ University of Mpumalanga 2023; Telkom 10X eMalahleni 2025) and Northern Cape venue (#SS25HACK Kimberley). All nine provinces now have venue-level coverage.
+- **Series completion:** GirlCodeHack 2018 podium; Discovery GradHack 2019, 2022, 2023 winners (full names for 2022/2023); Tshwane Varsity Hackathon 2022 (4th annual, 110 hackers).
+- **New events with full rosters:** G20 Tourism Hackathon 2025 (inaugural, Department of Tourism — complete 7-member winning team across 7 institutions); PAICTA × UJ Virtual Hackathon Challenge 2020 (full podium + 3 individual awardees); FinChatBot Hackathon 2019 (winning team Aurora with employers); HackCorruption SA 2022 (17 named winners); UmojaHack Africa 2021 (Zindi); SA Game Jam 2018; Tech4Africa Hackathon 2015.
+- **Re-verification:** 6 primary sources re-fetched in full; every re-checked record matched; bonus data captured (Entelect 2017 extends to 8th place; UFS event dates/host; Absa 2021 top-5 team names; SU project name InsureShield).
 
-## 4. City distribution (selected, verified venues)
-Johannesburg (incl. Braamfontein, Sandton), Pretoria/Tshwane, Cape Town (incl. Woodstock, Groote Schuur), Durban, Gqeberha, Bloemfontein, Botshabelo, Stellenbosch, Thohoyandou, Vanderbijlpark, Mankweng/Polokwane, Kimberley (participants only, event external).
+## 4. Province distribution (event editions)
+Gauteng 41 • Western Cape 15 • KwaZulu-Natal 5 • Limpopo 4 • Mpumalanga 3 • Eastern Cape 2 • Free State 2 • North West 1 • Northern Cape 1 • National/multi-province 1 (+1 awards-ceremony-only Mpumalanga row). Per-year depth still varies by province.
 
-## 5. University distribution (named contestants, verified at time of event)
-UJ 9 • UCT 21 • Stellenbosch 18 • NWU 24 • CUT 4 • DUT 11 • Nelson Mandela University 5 • UFS 17 • UNIZULU 2 • WSU 4 • TUT 1 (+ team-level) • Wits 11 (+ team-level) • UWC 2 • Phateng Secondary 1 • Saulridge Secondary 1 • school teams (names pending) 8+.
+## 5. Yearly edition counts (master table)
+2012:1 · 2013:2 · 2014:4 · 2015:5 · 2016:5 · 2017:3 · 2018:6 · 2019:7 · 2020:3 · 2021:6 · 2022:8 · 2023:9 · 2024:9 · 2025:19 · 2026:12 · undated:1.
 
-## 6. Organiser distribution (verified programmes)
-Discovery (GradHack 2014–2025), City of Joburg + JCSE/Wits (Hack.Jozi 2015–2016), GirlCode (11 editions to 2025), Entelect (coding competition, ≥2017–2024 verified), Standard Bank (UniHack, Kuunda Disrupt incl. schools), Absa (Design 2021; Technology 2024–2025), MTN (MoMo API 2023), Geekulcha (annual hackathons; RHoK partner), mLab (RHoK, #GovHackSA, Space Apps 2013 local host), DIRISA/CSIR (datathons since 2019), MICT SETA (2026 regionals+finals), CiTi & AB4IR (township tech 2021), Telkom 10X (2025), TUT-led varsity hackathons (Tshwane, Limpopo), UCT FIH × Interledger (2025–2026), UCT Surgical Society × Harvard HSIL (2025), French Institute SA (Girls Game Jam 2025), IEB/TechWays (2026).
+## 6. Quality status (§25/§27)
+- Contradiction log now holds **11 entries**; new in Phase 2: SS24 dual CTF-winner claims (C08), Haffejee spelling consolidation (C09), 46-vs-48 participant count (C10), Mabula self-report confidence handling (C11).
+- §27 sample: 44 records re-verified by independent direct fetch — **0 discrepancies** (above the 10% floor). Full winner/Top-3 second pass still scheduled.
+- Team-membership discipline maintained: 17 HackCorruption winners and all SS-series teams recorded without nationality/roster inference; 92 unresolved-identity records carried openly.
 
-## 7. Yearly edition counts (master table)
-2012:1 · 2013:2 · 2014:4 · 2015:4 · 2016:5 · 2017:3 · 2018:4 · 2019:5 · 2020:2 · 2021:5 · 2022:5 · 2023:6 · 2024:8 · 2025:16 · 2026:11 · undated:1.
-(Counts are of *documented or consolidated-probable* editions; true historical counts are certainly higher — see gaps.)
+## 7. What this database does NOT claim
+- Not complete and not saturated: Pass 4 still yielded 18 editions + ~54 people, so Pass 5 is mandatory.
+- No authoritative national registry exists against which completeness could be proven.
+- Profile columns intentionally empty pending a per-person §8 verification pass (two corroborating signals required).
+- Wayback Machine: snapshot located for the failed Hack4Water source but fetch failed (C07/G025 open).
 
-## 8. Quality checks performed (§27)
-- Every participation row carries ≥1 evidence URL; every event row carries ≥1 source.
-- Team membership treated strictly: members recorded only when individually named; winning teams without named members logged as unresolved identities (72 records).
-- Judges/mentors/organisers excluded from contestant records (one organiser-turned-participant case noted on its own evidence).
-- Same-name persons **not** merged without corroboration: e.g. "Anesu/Aneso Jairosi" kept as two canonical records with alias cross-reference; "Kobus van Schoor"/"Willie Theron" merged only on identical-name + same-series + consistent-placement evidence (noted per row).
-- Nationality never inferred (e.g. Purpose Katakwa — Entelect 2023 champion — nationality Unknown).
-- Conflicting claims logged, never silently resolved (7 contradiction records).
-- **Outstanding (scheduled):** 10% random re-verification sample; second verification pass on all winners/Top-3; contradiction C01/C05 independent arbitration.
+## 8. Major remaining gaps (top items; full list in `06_research_gaps.csv`)
+1. Devpost/HackerEarth/Kaggle platform extraction (never executed).
+2. Systematic LinkedIn/social pass (§16) — organiser pages, winner posts, teammate tags.
+3. Full Wayback passes (Hack4Water snapshot retry; hackjozi.com; girlcode archives; Tech4Africa 2011-2014).
+4. SS-series pre-2022 editions; GirlCode 2014-16/19/21/23/24; Entelect pre-2017 results; GradHack 2020; TVH 2019-21/23-24; LVH 2022/23.
+5. Full winner/Top-3 second verification pass (§27).
+6. Person-backward recursion for all 309 people (§18 — only one chain executed).
+7. Per-year participant-list extraction (GGJ site pages, DIRISA rosters, Space Apps project pages).
 
-## 9. Evidence quality
-- Tier-1 (organiser/university/corporate/platform) sources: 38 of 83 evidence rows.
-- Tier-2 (reputable media): 36 rows. Participant-generated: 4. Reference/other: 5.
-- 1 evidence row (Hack4Water participant lists) flagged "re-verify URL" after page-fetch failure (C07).
-- 0 AI-generated biographies, people-search aggregators, or unverified scrapers used.
+## 9. Citation
+> **"Best achievable public-source coverage as of 2026-08-26 (Phase 2 of an ongoing census; not saturated)."**
 
-## 10. Completeness scoring (§28)
-A ×3 (MICT KZN 2026; GradHack 2024; Beat the Banker 2026) • B ×27 • C ×26 • D ×14 • E ×12 (event existence confirmed, people unresolved).
-Poorly documented events are retained deliberately — their existence matters for the audit.
-
-## 11. What this database does NOT claim
-- It does not contain every hackathon, participant or winner. It cannot: no authoritative national registry of hackathon participation exists.
-- It is not saturated: Pass 3 still yielded 9 new events, so further adversarial passes are mandatory.
-- Public-profile columns are empty by design until a per-person §8 verification pass is run (attaching profiles on name-match alone is prohibited).
-
-## 12. Major remaining research gaps (top items; full list in `06_research_gaps.csv`)
-1. Pre-2013 era (Tech4Africa hackday 2011, early AngelHack, RHoK 2010–2011).
-2. Unverified series years: GradHack 2019/20/22/23; GirlCodeHack 2014–16, 18, 19, 21, 23, 24; Entelect 2012/13–16, 18, 20, 21, 25; TVH 2019–24; LVH 2022/23.
-3. Profile discovery pass (LinkedIn/GitHub/Devpost) for all 255 people.
-4. Devpost/platform extraction; Wayback Machine passes; LinkedIn/social result posts.
-5. Mpumalanga and Northern Cape venue-level coverage.
-6. MICT SETA National Finals 2026 results; Telkom 10X national finals results.
-7. Remaining event-level categories from §23 not yet hunted: cyber CTF circuit, NGO hackathons, additional game jams, high-school robotics events, additional corporate internal hackathons.
-
-## 13. Deliverables
-`README.md` (method + regeneration) · 7 CSV datasets (`data/`) · research log, contradiction log, scope decisions, saturation assessment (`research/`) · build scripts (`scripts/`).
-
-> **Citation:** "Best achievable public-source coverage as of 2026-08-26 (Phase 1 of an ongoing census; not saturated)."
+Accuracy and auditability take priority over filled cells: every empty field reads `Unknown` (= "Not publicly verified"), and every substantive claim traces to a URL in `04_evidence_register.csv`.
