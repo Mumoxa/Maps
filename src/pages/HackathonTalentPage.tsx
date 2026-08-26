@@ -12,6 +12,7 @@ import {
   hackathonYears,
   type HackathonCandidate,
 } from '../data/hackathonPeople'
+import { canonicalCompanyName } from '../data/companyNormalization'
 
 const PAGE_SIZE = 20
 
@@ -49,13 +50,23 @@ function CandidateCard({ candidate, onFilter }: { candidate: HackathonCandidate;
 
       <div className="hack-candidate-meta">
         {candidate.universityAtTime && (
-          <button type="button" className="hack-meta-link" title="Show all candidates from this university" onClick={() => onFilter('affiliation', candidate.universityAtTime!)}>
-            <GraduationCap size={14} aria-hidden /> {candidate.universityAtTime}
+          <button
+            type="button"
+            className="hack-meta-link"
+            title={canonicalCompanyName(candidate.universityAtTime) === candidate.universityAtTime ? 'Show all candidates from this university' : `Show all candidates from ${canonicalCompanyName(candidate.universityAtTime)} (listed as ${candidate.universityAtTime})`}
+            onClick={() => onFilter('affiliation', canonicalCompanyName(candidate.universityAtTime!))}
+          >
+            <GraduationCap size={14} aria-hidden /> {canonicalCompanyName(candidate.universityAtTime!)}
           </button>
         )}
         {candidate.organisationAtTime && (
-          <button type="button" className="hack-meta-link" title="Show all candidates with this organisation" onClick={() => onFilter('affiliation', candidate.organisationAtTime!)}>
-            <Trophy size={14} aria-hidden /> {candidate.organisationAtTime}
+          <button
+            type="button"
+            className="hack-meta-link"
+            title={canonicalCompanyName(candidate.organisationAtTime) === candidate.organisationAtTime ? 'Show all candidates with this organisation' : `Show all candidates with ${canonicalCompanyName(candidate.organisationAtTime)} (listed as ${candidate.organisationAtTime})`}
+            onClick={() => onFilter('affiliation', canonicalCompanyName(candidate.organisationAtTime!))}
+          >
+            <Trophy size={14} aria-hidden /> {canonicalCompanyName(candidate.organisationAtTime!)}
           </button>
         )}
         {candidate.province && (
@@ -68,16 +79,16 @@ function CandidateCard({ candidate, onFilter }: { candidate: HackathonCandidate;
         <div className="hack-crosslinks">
           {candidate.organisationAtTime && (
             <>
-              <Link to={`/talent-search?q=${encodeURIComponent(candidate.organisationAtTime)}`} title="Search this organisation across every pool">
+              <Link to={`/talent-search?q=${encodeURIComponent(canonicalCompanyName(candidate.organisationAtTime!))}`} title="Search this organisation across every pool">
                 {candidate.organisationAtTime} across all pools
               </Link>
-              <Link to={`/contacts?company=${encodeURIComponent(candidate.organisationAtTime)}`} title="Open the contacts directory at this company">
+              <Link to={`/contacts?company=${encodeURIComponent(canonicalCompanyName(candidate.organisationAtTime!))}`} title="Open the contacts directory at this company">
                 Contacts at {candidate.organisationAtTime}
               </Link>
             </>
           )}
           {candidate.universityAtTime && (
-            <Link to={`/talent-search?q=${encodeURIComponent(candidate.universityAtTime)}`} title="Search this university across every pool">
+            <Link to={`/talent-search?q=${encodeURIComponent(canonicalCompanyName(candidate.universityAtTime!))}`} title="Search this university across every pool">
               {candidate.universityAtTime} across all pools
             </Link>
           )}

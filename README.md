@@ -92,3 +92,7 @@ The build script runs TypeScript and Vite, then copies `dist/index.html` to `dis
 ## Hackathon Contestants Talent Pool
 
 Generated from the SA Hackathon Census (`hackathon-census/`) via `python3 scripts/generate_hackathon_candidates.py` → `markets/hackathons/people.json` → `/hackathons`. See `markets/hackathons/README.md` for provenance, exclusions and the privacy boundary.
+
+## Company-name normalisation
+
+Company and organisation strings resolve to canonical entities via `src/data/companyNormalization.ts` (95-entry auditable alias table built from a 2026-08-26 frequency scan of every data source, plus a conservative legal-suffix stripper). Applied in talent search (company facet, filters, cards), the contacts directory (Companies facet + card chips) and the hackathon pool (affiliation filters and chips). Unknown names pass through unchanged — nothing is merged on guesswork.

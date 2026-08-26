@@ -20,6 +20,7 @@ import {
 } from '../data/contactDirectory'
 import type { ContactFacetKey, ContactSelections } from '../data/contactDirectory'
 import { contacts } from '../data/contacts'
+import { canonicalCompanyName } from '../data/companyNormalization'
 import type { Contact, ContactPosition } from '../data/contacts'
 
 const PAGE_SIZE = 48
@@ -169,10 +170,10 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
           <button
             type="button"
             className="contact-company-link"
-            title="Show all contacts at this company"
-            onClick={() => onToggleFacet('companies', primary.company)}
+            onClick={() => onToggleFacet('companies', canonicalCompanyName(primary.company))}
+            title={canonicalCompanyName(primary.company) === primary.company ? 'Show all contacts at this company' : `Show all contacts at ${canonicalCompanyName(primary.company)} (listed as ${primary.company})`}
           >
-            {primary.company}
+            {canonicalCompanyName(primary.company)}
           </button>
         ) : (
           <span>Company not provided</span>

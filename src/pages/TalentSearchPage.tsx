@@ -14,6 +14,7 @@ import {
   X,
 } from 'lucide-react'
 import { useData } from '../context/DataContext'
+import { canonicalCompanyName, sameCompany } from '../data/companyNormalization'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
@@ -87,7 +88,7 @@ export function TalentSearchPage() {
   const filteredResults = useMemo(() => {
     const filtered = queryMatchedProfiles.filter((profile) => {
       if (params.track && profile.trackSlug !== params.track) return false
-      if (params.company && profile.company !== params.company) return false
+      if (params.company && !sameCompany(profile.company, params.company)) return false
       if (params.location && profile.locationLabel !== params.location) return false
       if (params.seniority && profile.seniority !== params.seniority) return false
       if (params.skill && !profile.skills.includes(params.skill)) return false
@@ -351,8 +352,13 @@ function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: T
 
         <div className="talent-result-meta">
           {profile.company ? (
-            <button type="button" className="talent-meta-link" title="Show all candidates at this company" onClick={() => updateParam('company', profile.company)}>
-              <Building2 size={15} /> {profile.company}
+            <button
+              type="button"
+              className="talent-meta-link"
+              title={canonicalCompanyName(profile.company) === profile.company ? 'Show all candidates at this company' : `Show all candidates at ${canonicalCompanyName(profile.company)} (listed as ${profile.company})`}
+              onClick={() => updateParam('company', canonicalCompanyName(profile.company))}
+            >
+              <Building2 size={15} /> {canonicalCompanyName(profile.company)}
             </button>
           ) : (
             <span><Building2 size={15} /> Company not added</span>
@@ -392,7 +398,7 @@ function createFacets(profiles: TalentProfile[]): Record<FacetKey, Facet[]> {
 
   return {
     track: countFacet(profiles, (profile) => [profile.trackSlug], (value) => trackLabels.get(value) ?? value),
-    company: countFacet(profiles, (profile) => [profile.company]),
+    company: countFacet(profiles, (profile) => [canonicalCompanyName(profile.company)]),
     location: countFacet(profiles, (profile) => [profile.locationLabel]),
     seniority: countFacet(profiles, (profile) => [profile.seniority]),
     skill: countFacet(profiles, (profile) => profile.skills),

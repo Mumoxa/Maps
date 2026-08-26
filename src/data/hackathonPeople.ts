@@ -1,4 +1,5 @@
 import peopleRaw from '../../markets/hackathons/people.json'
+import { canonicalCompanyName } from './companyNormalization'
 
 export interface HackathonEventRecord {
   event: string
@@ -124,12 +125,18 @@ export function filterHackathonCandidates(query: HackathonQuery): HackathonCandi
       if (query.year && !candidate.events.some((event) => event.year === query.year)) return false
       if (query.event && !candidate.events.some((event) => event.event === query.event)) return false
       if (query.affiliation) {
-        const affiliationNeedle = query.affiliation.trim().toLowerCase()
-        const affiliationText = [candidate.universityAtTime, candidate.organisationAtTime]
+        const needleCanonical = canonicalCompanyName(query.affiliation).toLowerCase()
+        const needleRaw = query.affiliation.trim().toLowerCase()
+        const university = canonicalCompanyName(candidate.universityAtTime ?? '').toLowerCase()
+        const organisation = canonicalCompanyName(candidate.organisationAtTime ?? '').toLowerCase()
+        const rawText = [candidate.universityAtTime, candidate.organisationAtTime]
           .filter(Boolean)
           .join(' ')
           .toLowerCase()
-        if (!affiliationNeedle || !affiliationText.includes(affiliationNeedle)) return false
+        const matched = university.includes(needleCanonical)
+          || organisation.includes(needleCanonical)
+          || rawText.includes(needleRaw)
+        if (!matched) return false
       }
       if (needle) {
         const haystack = [
