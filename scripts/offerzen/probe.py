@@ -6,12 +6,10 @@ profile pages + listing pages and dumps:
   * probe-out/*.html       raw HTML samples
   * probe-out/*.outline    compact DOM outline (tags, classes, short text)
   * probe-out/*.csv        sitemap urls / listing page samples
-All compact findings are ALSO printed to the log between markers so they can
-be recovered via `gh run view --log` even if the push-back fails.
+Every stage is pushed back to the source branch (probe-out/) so results can
+be pulled after the run even though CI logs are not reachable.
 """
-import base64
 import csv
-import json
 import os
 import re
 import subprocess
@@ -19,21 +17,30 @@ import sys
 import time
 from pathlib import Path
 
-import subprocess
-import sys as _sys
 
-# CI runners don't ship these; bootstrap quietly.
-REQS = {"requests", "bs4", "lxml"}
-try:
-    import requests
-    from bs4 import BeautifulSoup, Comment
-except ImportError:
-    subprocess.run(
-        [_sys.executable, "-m", "pip", "install", "--quiet", "--user", "requests", "beautifulsoup4", "lxml"],
-        check=True,
-    )
-    import requests
-    from bs4 import BeautifulSoup, Comment
+def bootstrap():
+    try:
+        import requests  # noqa: F401
+        from bs4 import BeautifulSoup  # noqa: F401
+
+        return
+    except ImportError:
+        pass
+    base = [sys.executable, "-m", "pip", "install", "--quiet"]
+    for extra in ([], ["--user"], ["--user", "--break-system-packages"], ["--break-system-packages"]):
+        try:
+            subprocess.run(base + extra + ["requests", "beautifulsoup4", "lxml"], check=True, timeout=300)
+            return
+        except subprocess.CalledProcessError:
+            continue
+    # Last resort: apt packages (runner has sudo).
+    subprocess.run(["sudo", "apt-get", "update", "-qq"], check=False)
+    subprocess.run(["sudo", "apt-get", "install", "-y", "-qq", "python3-requests", "python3-bs4", "python3-lxml"], check=True)
+
+
+bootstrap()
+import requests  # noqa: E402
+from bs4 import BeautifulSoup, Comment  # noqa: E402
 
 BASE = "https://www.offerzen.com"
 HEADERS = {
@@ -43,9 +50,6 @@ HEADERS = {
 }
 OUT = Path("probe-out")
 OUT.mkdir(exist_ok=True)
-
-MARK_START = "===OZ_PROBE_START==="
-MARK_END = "===OZ_PROBE_END==="
 
 
 def get(url, retries=4, timeout=60):
@@ -80,14 +84,11 @@ def outline(el, depth=0, max_depth=9, out=None, chars=90):
         outline(child, depth + 1, max_depth, out)
 
 
-def save_and_log(name, content: str, binary=False):
-    mode = "wb" if binary else "w"
-    kwargs = {"encoding": None} if binary else {"encoding": "utf-8"}
-    (OUT / name).write_text(content, **kwargs) if not binary else (OUT / name).write_bytes(content)
-    print(f"[saved] {name} ({len(content)} bytes)")
+def save_text(name, content: str):
+    (OUT / name).write_text(content, encoding="utf-8")
 
 
-def try_push_branch():
+def push_branch(stage):
     """Attempt to commit probe-out back to the PR source branch."""
     head_ref = os.environ.get("GITHUB_HEAD_REF") or os.environ.get("GITHUB_REF_NAME")
     token = os.environ.get("GITHUB_TOKEN")
@@ -100,79 +101,85 @@ def try_push_branch():
         subprocess.run(["git", "fetch", "--depth=1", "origin", head_ref], check=True, capture_output=True)
         subprocess.run(["git", "reset", "--hard", "FETCH_HEAD"], check=True, capture_output=True)
         subprocess.run(["git", "add", "probe-out"], check=True)
-        subprocess.run(["git", "commit", "-m", "OfferZen probe output"], check=True)
+        subprocess.run(["git", "commit", "-m", f"OfferZen probe output [{stage}]"], check=True)
         url = f"https://x-access-token:{token}@github.com/Mumoxa/Maps.git"
-        r = subprocess.run(["git", "push", url, f"HEAD:refs/heads/{head_ref}"], capture_output=True, text=True, timeout=120)
-        print(f"[push] exit={r.returncode} {r.stdout[-500:]}{r.stderr[-500:]}")
+        r = subprocess.run(["git", "push", url, f"HEAD:refs/heads/{head_ref}"], capture_output=True, text=True, timeout=180)
+        print(f"[push:{stage}] exit={r.returncode} out={r.stdout[-300:]} err={r.stderr[-300:]}")
         return r.returncode == 0
     except Exception as e:  # noqa: BLE001
-        print(f"[push] failed: {e}")
+        print(f"[push:{stage}] failed: {e}")
         return False
 
 
 def main():
-    print(MARK_START)
-    sitemap = get(BASE + "/sitemap.xml")
-    text = sitemap.text
-    urls = re.findall(r"https://www\.offerzen\.com/companies/[a-z0-9\-]+/?", text)
-    unique = sorted(set(u.rstrip("/") for u in urls))
-    print(f"SITEMAP status={sitemap.status_code} size={len(text)} company_urls={len(unique)}")
+    # Stage 1: sitemap
+    try:
+        sm = get(BASE + "/sitemap.xml")
+        text = sm.text
+        urls = re.findall(r"https://www\.offerzen\.com/companies/[a-z0-9\-]+/?", text)
+        unique = sorted(set(u.rstrip("/") for u in urls))
+        print(f"SITEMAP status={sm.status_code} size={len(text)} company_urls={len(unique)}")
+        rows = []
+        for m in re.finditer(r"https://www\.offerzen\.com/companies/[a-z0-9\-]+/?" r"\s*([0-9T:\-.Z]+)?", text):
+            rows.append([m.group(0).rstrip("/"), m.group(1) or ""])
+        with (OUT / "companies_sitemap.csv").open("w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["url", "lastmod"])
+            w.writerows(rows)
+        save_text("probe_summary.txt", f"company_urls={len(unique)}\n")
+        (OUT / "sitemap.xml").write_text(text, encoding="utf-8")
+        push_branch("sitemap")
+    except Exception as e:  # noqa: BLE001
+        print(f"sitemap stage failed: {e}")
 
-    rows = []
-    for m in re.finditer(r"https://www\.offerzen\.com/companies/[a-z0-9\-]+/?" r"\s*([0-9T:\-.Z]+)?", text):
-        rows.append([m.group(0).rstrip("/"), m.group(1) or ""])
-    with (OUT / "companies_sitemap.csv").open("w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["url", "lastmod"])
-        w.writerows(rows)
-    print(f"SITEMAP_ROWS={len(rows)}")
-
-    # Listing pages: count cards / profile links per page
+    # Stage 2: listing pages
     for page in (1, 2, 3):
-        r = get(BASE + f"/companies?page={page}")
-        html = r.text
-        links = set(re.findall(r'/companies/([a-z0-9\-]+)"', html))
-        print(f"LISTING page={page} status={r.status_code} size={len(html)} slugs={len(links)}")
-        if page == 2:
-            (OUT / "listing_page2.html").write_text(html, encoding="utf-8")
-            soup = BeautifulSoup(html, "lxml")
-            with (OUT / "listing_page2.outline").open("w", encoding="utf-8") as fh:
-                outline(soup.body, max_depth=8, out=fh)
+        try:
+            r = get(BASE + f"/companies?page={page}")
+            html = r.text
+            links = set(re.findall(r'/companies/([a-z0-9\-]+)"', html))
+            print(f"LISTING page={page} status={r.status_code} size={len(html)} slugs={len(links)}")
+            if page == 2:
+                (OUT / "listing_page2.html").write_text(html, encoding="utf-8")
+                soup = BeautifulSoup(html, "lxml")
+                with (OUT / "listing_page2.outline").open("w", encoding="utf-8") as fh:
+                    outline(soup.body, max_depth=8, out=fh)
+                push_branch("listing")
+        except Exception as e:  # noqa: BLE001
+            print(f"listing page={page} failed: {e}")
 
-    # Profile samples
-    samples = ["investec", "digital-kiss", "nihka-technology-group", "forward"]
+    # Stage 3: profile samples
+    samples = ["investec", "digital-kiss", "nihka-technology-group", "forward", "offerzen"]
     for slug in samples:
-        r = get(f"{BASE}/companies/{slug}")
-        (OUT / f"{slug}.html").write_text(r.text, encoding="utf-8")
-        soup = BeautifulSoup(r.text, "lxml")
-        title = soup.title.get_text(strip=True) if soup.title else "?"
-        print(f"SAMPLE {slug} status={r.status_code} html={len(r.text)} title={title!r}")
-        with (OUT / f"{slug}.outline").open("w", encoding="utf-8") as fh:
-            fh.write(f"URL: {r.url}\nTITLE: {title}\n\n")
-            outline(soup.body, max_depth=9, out=fh)
-        with (OUT / f"{slug}_techpaths.txt").open("w", encoding="utf-8") as fh:
-            for el in soup.find_all(string=re.compile(r"tech stack", re.I)):
-                node = el.parent
-                for _ in range(5):
-                    if node is None:
-                        break
-                    fh.write(f"ancestor {node.name} cls={node.get('class')}\n")
-                    node = node.parent
-                fh.write("---\n")
-
-    # Print compact outlines to log (recoverable if push fails)
-    for p in sorted(OUT.glob("*.outline")):
-        print(f"---- OUTLINE {p.name} ----")
-        print(p.read_text(encoding="utf-8")[:40000])
-    print("---- SITEMAP HEAD ----")
-    with (OUT / "companies_sitemap.csv").open(encoding="utf-8") as f:
-        for line in f.readlines()[:20]:
-            print(line.rstrip())
-    print(MARK_END)
-
-    pushed = try_push_branch()
-    print(f"PUSH_OK={pushed}")
+        try:
+            r = get(f"{BASE}/companies/{slug}")
+            (OUT / f"{slug}.html").write_text(r.text, encoding="utf-8")
+            soup = BeautifulSoup(r.text, "lxml")
+            title = soup.title.get_text(strip=True) if soup.title else "?"
+            print(f"SAMPLE {slug} status={r.status_code} html={len(r.text)} title={title!r}")
+            with (OUT / f"{slug}.outline").open("w", encoding="utf-8") as fh:
+                fh.write(f"URL: {r.url}\nTITLE: {title}\n\n")
+                outline(soup.body, max_depth=9, out=fh)
+            with (OUT / f"{slug}_techpaths.txt").open("w", encoding="utf-8") as fh:
+                for el in soup.find_all(string=re.compile(r"tech stack", re.I)):
+                    node = el.parent
+                    for _ in range(5):
+                        if node is None:
+                            break
+                        fh.write(f"ancestor {node.name} cls={node.get('class')}\n")
+                        node = node.parent
+                    fh.write("---\n")
+        except Exception as e:  # noqa: BLE001
+            print(f"sample {slug} failed: {e}")
+    push_branch("samples")
+    print("PROBE DONE")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        sys.exit(main())
+    except Exception as e:  # noqa: BLE001
+        print(f"FATAL {e}", file=sys.stderr)
+        push_branch("fatal")
+        sys.exit(1)
