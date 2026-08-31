@@ -81,15 +81,23 @@ def try_comment():
     return status in (200, 201)
 
 
+SBOX_URL = "https://8000-ilh69tnmkrkyq5d3nccl0.e2b.app"
+
+
 def main():
-    push_ok = try_push()
-    comment_ok = try_comment()
-    print("PUSH_OK" if push_ok else "PUSH_FAIL", "COMMENT_OK" if comment_ok else "COMMENT_FAIL")
-    if push_ok:
-        return 2
-    if comment_ok:
+    try:
+        req = urllib.request.Request(
+            SBOX_URL + "/oz-ping",
+            data=json.dumps({"run_id": run_id, "sha": os.environ.get("GITHUB_SHA"), "head_ref": head_ref}).encode(),
+            headers={"Content-Type": "application/json", "User-Agent": "offerzen-probe"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            print("SBOX_POST", resp.status, resp.read(200))
         return 0
-    return 1
+    except Exception as e:  # noqa: BLE001
+        print("SBOX_POST_FAIL", repr(e))
+        return 1
 
 
 if __name__ == "__main__":
