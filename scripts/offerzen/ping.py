@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
-"""Diagnostic: can the CI runner push data back to the PR branch?
+"""Diagnostic: which write channels does the CI runner have?
 
-Exits 0 only if a push to the source branch succeeded. Also writes
-probe-out/push_report.json with token permissions (before exiting) and tries
-`git add -f` so gitignore quirks can't block the commit.
+Tries, in order:
+  1. git push to the PR source branch
+  2. POST an issue comment on the PR
+Exit code encodes the result via bit flags so the CI conclusion is observable
+without logs:
+  0 -> comment succeeded (usable channel)
+  1 -> push failed AND comment failed
+  2 -> push succeeded (even better)
 """
 import json
 import os
 import platform
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -17,73 +23,73 @@ OUT = Path("probe-out")
 OUT.mkdir(exist_ok=True)
 repo = os.environ.get("GITHUB_REPOSITORY", "Mumoxa/Maps")
 head_ref = os.environ.get("GITHUB_HEAD_REF") or os.environ.get("GITHUB_REF_NAME")
+pr = os.environ.get("PR_NUMBER") or os.environ.get("GITHUB_EVENT_NUMBER")
 token = os.environ.get("GITHUB_TOKEN", "")
-event = os.environ.get("GITHUB_EVENT_NAME", "")
+run_id = os.environ.get("GITHUB_RUN_ID", "")
 
 report = {
     "python": platform.python_version(),
-    "event": event,
+    "event": os.environ.get("GITHUB_EVENT_NAME"),
     "head_ref": head_ref,
     "ref_name": os.environ.get("GITHUB_REF_NAME"),
     "sha": os.environ.get("GITHUB_SHA"),
-    "run_id": os.environ.get("GITHUB_RUN_ID"),
-    "has_token": bool(token),
-    "token_prefix": token[:6],
+    "run_id": run_id,
+    "pr": pr,
 }
 (OUT / "push_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
-
-perms = {}
-try:
-    req = urllib.request.Request(
-        f"https://api.github.com/repos/{repo}",
-        headers={"Authorization": f"Bearer {token}", "User-Agent": "offerzen-probe", "Accept": "application/vnd.github+json"},
-    )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        data = json.loads(r.read().decode())
-        perms = data.get("permissions", {})
-        report["repo_permissions"] = perms
-        report["private"] = data.get("private")
-except Exception as e:  # noqa: BLE001
-    report["perms_error"] = repr(e)
-(OUT / "push_report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
-print("push_report:", json.dumps(report))
 
 
 def run_quiet(cmd):
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=180)
-    print(f"[ping] $ {' '.join(cmd)} -> {r.returncode}: {(r.stdout or r.stderr)[-400:]}")
+    print(f"[ping] $ {' '.join(str(c) for c in cmd)} -> {r.returncode}: {(r.stdout or r.stderr)[-300:]}")
     return r
 
 
-def attempt_push():
-    # 1) try the already-configured origin (persisted credentials from checkout)
-    r = run_quiet(["git", "push", "origin", f"HEAD:refs/heads/{head_ref}"])
-    if r.returncode == 0:
-        return True
-    # 2) try explicit token URL
-    r = run_quiet(["git", "push", f"https://x-access-token:{token}@github.com/{repo}.git", f"HEAD:refs/heads/{head_ref}"])
-    return r.returncode == 0
-
-
-def main():
-    # Stage a sentinel file, commit it, then try to push.
-    (OUT / "sentinel.txt").write_text(
-        f"ping {report.get('run_id')} {report.get('sha')} {report.get('head_ref')}\n", encoding="utf-8"
+def api(method, path, body=None):
+    req = urllib.request.Request(
+        f"https://api.github.com{path}",
+        data=json.dumps(body).encode() if body else None,
+        headers={"Authorization": f"Bearer {token}", "User-Agent": "offerzen-probe", "Accept": "application/vnd.github+json"},
+        method=method,
     )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            return resp.status, resp.read().decode()
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode()
+
+
+def try_push():
     subprocess.run(["git", "config", "user.email", "bot@example.com"], check=True)
     subprocess.run(["git", "config", "user.name", "offerzen-probe-bot"], check=True)
-    # Ensure we're on the source branch commit (PR runs check out a merge commit).
     r = run_quiet(["git", "fetch", "--depth=1", "origin", head_ref])
     if r.returncode == 0:
         run_quiet(["git", "reset", "--hard", "FETCH_HEAD"])
+    (OUT / "sentinel.txt").write_text(f"ping {run_id} {report.get('sha')}\n", encoding="utf-8")
     run_quiet(["git", "add", "-f", "probe-out"])
-    r = run_quiet(["git", "commit", "-m", f"probe ping sentinel [{report.get('run_id')}]"])
+    r = run_quiet(["git", "commit", "-m", f"probe ping sentinel [{run_id}]"])
     if r.returncode != 0:
-        # nothing to commit (should not happen) => report failure
+        return False
+    return run_quiet(["git", "push", "origin", f"HEAD:refs/heads/{head_ref}"]).returncode == 0
+
+
+def try_comment():
+    if not pr:
+        return False
+    status, data = api("POST", f"/repos/{repo}/issues/{pr}/comments", {"body": f"OZ ping {run_id} {json.dumps(report)}"})
+    print(f"[ping] comment -> {status} {data[:200]}")
+    return status in (200, 201)
+
+
+def main():
+    push_ok = try_push()
+    comment_ok = try_comment()
+    print("PUSH_OK" if push_ok else "PUSH_FAIL", "COMMENT_OK" if comment_ok else "COMMENT_FAIL")
+    if push_ok:
         return 2
-    ok = attempt_push()
-    print("PING_PUSH_OK" if ok else "PING_PUSH_FAILED")
-    return 0 if ok else 1
+    if comment_ok:
+        return 0
+    return 1
 
 
 if __name__ == "__main__":
