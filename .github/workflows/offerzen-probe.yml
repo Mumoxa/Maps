@@ -1,0 +1,23 @@
+name: Probe OfferZen
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet requests beautifulsoup4 lxml
+      - run: python scripts/offerzen/probe.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offerzen-probe
+          path: probe-out/
+          if-no-files-found: error
