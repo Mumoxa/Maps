@@ -38,6 +38,30 @@ def clean_list(values):
     return seen
 
 
+def professional_routes(row):
+    """Completed practical-training routes, derived from confirmed booleans.
+
+    Kept DISTINCT from professional_designations: completing SAICA articles is
+    not the same as holding CA(SA); completing SAIPA articles is not the same as
+    PA(SA). Only routes with individual-level confirmation are emitted.
+    """
+    booleans = row.get("booleans") or {}
+
+    def confirmed(key):
+        return str(booleans.get(key)).lower() == "true"
+
+    routes = []
+    if confirmed("saica_articles_confirmed"):
+        routes.append("SAICA Articles")
+    if confirmed("saipa_articles_confirmed"):
+        routes.append("SAIPA Articles")
+    if confirmed("acca_per_confirmed"):
+        routes.append("ACCA PER")
+    if confirmed("cima_per_confirmed"):
+        routes.append("CIMA PER")
+    return routes
+
+
 def career_history(rows):
     history = []
     for row in rows or []:
@@ -58,6 +82,7 @@ def to_record(row):
         "status": row.get("status") or "",
         "confidence": row.get("confidence") or "",
         "designations": clean_list(row.get("professional_designations")),
+        "professionalRoutes": professional_routes(row),
         "bodies": clean_list(row.get("professional_bodies")),
         "title": row.get("current_title") or "",
         "employer": row.get("current_employer") or "",
