@@ -8,7 +8,7 @@ test('loads every registered track without track-specific importer code', async 
 
   assert.deepEqual(
     repository.registeredTrackSlugs,
-    ['calypso', 'credit-risk', 'murex', 'salesforce', 'sap-erp'],
+    ['accounting-finance', 'calypso', 'credit-risk', 'hackathons', 'murex', 'salesforce', 'sap-erp'],
   )
 })
 

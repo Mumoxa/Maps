@@ -1,5 +1,6 @@
 import type { DataBundle, Profile } from '../types'
 import type { HackathonCandidate } from '../hackathonPeople'
+import type { AccountantCandidate } from '../accountantsPeople'
 import type { MarketLocation, MarketProfile, MarketSource } from './types'
 
 export interface SalesforcePerson {
@@ -224,4 +225,92 @@ export function adaptHackathonCandidate(candidate: HackathonCandidate): MarketPr
 
 export function adaptHackathonCandidates(candidates: HackathonCandidate[]): MarketProfile[] {
   return candidates.map(adaptHackathonCandidate)
+}
+
+function inferAccountantSeniority(candidate: AccountantCandidate) {
+  const role = `${candidate.title} ${candidate.roleFamily}`.toLowerCase()
+  if (role.includes('chief') || role.includes('cfo') || role.includes(' ceo') || role.includes('executive finance')) return 'C-Suite'
+  if (role.includes('director') || role.includes('head of') || role.includes('partner') || role.includes('vice president')) return 'Executive'
+  if (role.includes('principal') || role.includes('associate director')) return 'Principal / Director'
+  if (role.includes('manager') || role.includes('lead') || role.includes('financial controller') || role.includes('group')) return 'Lead / Manager'
+  if (role.includes('senior')) return 'Senior'
+  if (role.includes('accountant') || role.includes('analyst') || role.includes('consultant') || role.includes('specialist')) {
+    return 'Professional / Specialist'
+  }
+  return 'Professional'
+}
+
+export function adaptAccountantCandidate(candidate: AccountantCandidate): MarketProfile {
+  const location: MarketLocation = {
+    city: candidate.city,
+    province: candidate.province,
+    country: candidate.country || 'South Africa',
+  }
+  const summary = [
+    candidate.title && candidate.employer ? `${candidate.title} at ${candidate.employer}` : candidate.title || candidate.employer,
+    candidate.designations.length ? candidate.designations.join(', ') : '',
+    candidate.industry ? `${candidate.industry} sector` : '',
+    candidate.qualificationEvidence,
+  ].filter(Boolean).join('. ')
+
+  const sources: MarketSource[] = []
+  for (const url of candidate.sourceUrls.slice(0, 4)) {
+    if (!sources.some((existing) => existing.url === url)) {
+      sources.push({ url, type: 'public-source', evidence: candidate.qualificationEvidence || summary, checkedOn: null })
+    }
+  }
+  if (!sources.length && candidate.primarySource) {
+    sources.push({ url: candidate.primarySource, type: 'public-source', evidence: candidate.qualificationEvidence || summary, checkedOn: null })
+  }
+
+  return {
+    id: `accounting-finance-${candidate.id}`,
+    track: 'Accounting & Finance',
+    trackSlug: 'accounting-finance',
+    name: candidate.fullName,
+    title: candidate.title,
+    company: candidate.employer,
+    location,
+    locationLabel: [candidate.city, candidate.province, candidate.country || 'South Africa'].filter(Boolean).join(', '),
+    seniority: inferAccountantSeniority(candidate),
+    skills: unique([
+      ...candidate.designations,
+      ...candidate.skills,
+      ...candidate.accountingSystems,
+      ...candidate.erpSystems,
+      ...candidate.analyticsTools,
+      candidate.roleFamily,
+      'Accounting & Finance',
+    ]),
+    sectors: unique([candidate.industry, candidate.subIndustry, 'Accounting & Finance']),
+    specialisms: unique([...candidate.designations, candidate.roleFamily, candidate.function]),
+    summary,
+    linkedinUrl: candidate.linkedinUrl,
+    sources,
+    suppliedAsVerified: true,
+    supersedesId: null,
+    attributes: {
+      status: candidate.status,
+      confidence: candidate.confidence,
+      designations: candidate.designations,
+      bodies: candidate.bodies,
+      roleFamily: candidate.roleFamily,
+      function: candidate.function,
+      industry: candidate.industry,
+      subIndustry: candidate.subIndustry,
+      articlesStatus: candidate.articlesStatus,
+      yearsExperience: candidate.yearsExperience,
+      accountingSystems: candidate.accountingSystems,
+      erpSystems: candidate.erpSystems,
+    },
+    provenance: {
+      kind: 'legacy',
+      batchId: null,
+      sourceProfileId: candidate.id,
+    },
+  }
+}
+
+export function adaptAccountantCandidates(candidates: AccountantCandidate[]): MarketProfile[] {
+  return candidates.map(adaptAccountantCandidate)
 }

@@ -5,7 +5,7 @@ export interface TalentTrack {
   shortLabel: string
   summary: string
   detail: string
-  accent: 'salesforce' | 'credit' | 'sap' | 'murex' | 'calypso' | 'hackathon'
+  accent: 'salesforce' | 'credit' | 'sap' | 'murex' | 'calypso' | 'hackathon' | 'accounting'
   scope: {
     geography: 'South Africa'
     category: 'business-platform' | 'risk-discipline' | 'capital-markets-platform' | 'talent-pool'
@@ -144,6 +144,27 @@ export const talentTracks: TalentTrack[] = [
       'Prepare a verified Calypso CSV batch using the shared import template.',
       'Decide which Credit Risk components transfer directly and which need Calypso-specific adaptation.',
       'Layer in track-specific summaries and views as soon as the first Calypso data lands.',
+    ],
+  },
+  {
+    id: 'accounting-finance',
+    slug: 'accounting-finance',
+    name: 'Accounting & Finance',
+    shortLabel: 'Track 07',
+    summary: 'Search professionally qualified South African accountants and finance professionals by designation, province, industry, role family, and employer.',
+    detail: 'Evidence-backed candidates from the SA Qualified Accountant & Finance Skills Intelligence Map — CA(SA), AGA(SA), PA(SA), CIMA (ACMA/FCMA/CGMA) and ACCA/FCCA professionals. Every record carries its qualification evidence and source URLs; nothing is inferred.',
+    accent: 'accounting',
+    scope: { geography: 'South Africa', category: 'talent-pool' },
+    actions: {
+      primaryLabel: 'Open Accounting & Finance',
+      primaryHref: '/accounting-finance',
+      secondaryLabel: 'Back to SA Talent home',
+      secondaryHref: '/',
+    },
+    nextSteps: [
+      'Grow the pool through the append-only research batches under markets/accountants/.',
+      'Keep candidate records evidence-linked; consult people_index.md before adding anyone and never attach on name similarity alone.',
+      'Expand systems-linked and under-covered-province coverage as verified sources are found.',
     ],
   },
 ]

@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import type { ReactNode } from 'react'
-import { ArrowRight, BriefcaseBusiness, Database, LayoutTemplate, ShieldCheck, Sparkles, Workflow, Trophy } from 'lucide-react'
+import { ArrowRight, BriefcaseBusiness, Calculator, Database, LayoutTemplate, ShieldCheck, Sparkles, Workflow, Trophy } from 'lucide-react'
 import { Button } from '../components/ui/Button'
 import { deriveMarketSummary, getTalentProfiles, getTalentTrackBySlug, type TalentTrack } from '../data'
 import { useData } from '../context/DataContext'
@@ -14,6 +14,7 @@ const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
   sap: Database,
   murex: Workflow,
   calypso: Sparkles,
+  accounting: Calculator,
 }
 
 interface MarketTrackPageProps {
