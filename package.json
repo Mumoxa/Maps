@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run validate:data && npm run validate:contacts && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
-    "deploy": "npx wrangler deploy",
+    "deploy": "npx wrangler pages deploy dist --project-name maps",
     "test": "node --import tsx --test",
     "validate:data": "node --import tsx scripts/validate-market-data.ts",
     "validate:contacts": "node --import tsx scripts/validate-contact-data.ts",
