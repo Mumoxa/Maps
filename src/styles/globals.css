@@ -1156,6 +1156,10 @@ h3 { font-size: 1.125rem; }
 .facet-drawer-apply:focus-visible,
 .hack-pagination button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 4px; }
 
+.facet-sidebar-head { display: flex; align-items: center; justify-content: space-between; margin: 0 0 0.75rem; }
+.talent-results-count { flex: 1; }
+.talent-track-chip { cursor: pointer; border: none; }
+
 @media (max-width: 860px) {
   .facet-layout { grid-template-columns: 1fr; }
   .facet-sidebar { display: none; }
