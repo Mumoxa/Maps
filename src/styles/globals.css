@@ -1093,6 +1093,21 @@ h3 { font-size: 1.125rem; }
 .hack-pagination button:disabled { opacity: 0.45; cursor: not-allowed; }
 .hack-pagination span { color: #6b7280; font-size: 0.85rem; }
 .hack-page-foot { margin-top: 1.5rem; color: #9ca3af; font-size: 0.78rem; max-width: 70ch; }
+/* Accounting & Finance pool (candidates — qualified accountants) — reuses the shared hack-* layout */
+.acc-candidate-title { margin: 0; font-size: 0.9rem; font-weight: 600; color: #1f2937; }
+.acc-systems { display: flex; flex-wrap: wrap; gap: 0.3rem; margin: 0; }
+.acc-evidence-text { margin: 0; font-size: 0.8rem; color: #4b5563; }
+.acc-badge-designation { cursor: pointer; background: #ecfeff; border-color: #a5f3fc; color: #155e75; font-weight: 600; }
+.acc-badge-designation:hover { background: #cffafe; }
+.acc-badge-system { background: #f5f3ff; border-color: #ddd6fe; color: #5b21b6; }
+.acc-badge-confirmed { background: #ecfdf5; border-color: #a7f3d0; color: #065f46; }
+.acc-badge-high { background: #fffbeb; border-color: #fde68a; color: #92400e; }
+.acc-badge-articles { background: #eff6ff; border-color: #bfdbfe; color: #1e40af; }
+.acc-badge-conflicting { background: #fef2f2; border-color: #fecaca; color: #991b1b; }
+.hack-meta-link:focus-visible,
+.hack-clear:focus-visible,
+.acc-badge-designation:focus-visible,
+.hack-pagination button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 4px; }
 .talent-track-card-credit {
   background: linear-gradient(180deg, #eff6ff 0%, #ffffff 70%);
   border-color: #bfdbfe;
@@ -1152,6 +1167,10 @@ h3 { font-size: 1.125rem; }
 .talent-track-card-calypso {
   background: linear-gradient(180deg, #f5f3ff 0%, #ffffff 70%);
   border-color: #ddd6fe;
+}
+.talent-track-card-accounting {
+  background: linear-gradient(180deg, #ecfeff 0%, #ffffff 70%);
+  border-color: #a5f3fc;
 }
 
 .salesforce-hero,

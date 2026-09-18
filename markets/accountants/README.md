@@ -50,8 +50,21 @@ export yet.
 Public professional information only. No contact details, ID numbers, home addresses or private
 accounts. Records are attached to identities only on evidence, never on name similarity alone.
 
-## Website layer (not yet built)
+## Website layer (built)
 
-Registering an `accountants` talent track (`src/data/tracks.ts` + a route + `people.json` adapter)
-is a future step once the research database reaches a publishable size. The research JSONL files are
-the source of truth and must not be overwritten by any future export step.
+This research database now powers the **Accounting & Finance** talent track in the web UI
+(route `/accounting-finance`, registered in `src/data/tracks.ts`). The pipeline is:
+
+```text
+people.jsonl  →  python3 gen_people_json.py  →  people.json  →  src/data/accountantsPeople.ts
+              →  adaptAccountantCandidates (src/data/marketData/adapters.ts)
+              →  talentSearch.ts (global /talent-search)  +  src/pages/AccountantsPage.tsx
+```
+
+The append-only JSONL files remain the **source of truth** and must never be overwritten by the
+export step. `gen_people_json.py` only derives the read-only `people.json` the UI imports; rerun it
+after every batch. Records with `status = REJECTED` are excluded from the export; every other
+retained status is published with its status carried through so the UI can label it.
+
+For the full end-to-end contributor workflow (adding people here, or adding a brand-new track), see
+[`docs/adding-to-the-talent-map.md`](../../docs/adding-to-the-talent-map.md).
