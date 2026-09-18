@@ -23,6 +23,8 @@ export interface FacetDef<T> {
   order?: string[]
   /** Show an in-facet search box once options exceed this many (default: no search). */
   searchThreshold?: number
+  /** Optional display label for a value when it differs from the stored value (e.g. slug -> name). */
+  labelFor?: (value: string) => string
 }
 
 /** Multi-select selection state: facet key -> chosen values. */
@@ -108,7 +110,8 @@ export function buildFacetOptions<T>(
     if (!counts.has(value)) counts.set(value, 0)
   }
 
-  const options = [...counts.entries()].map(([value, count]) => ({ value, label: value, count }))
+  const label = target.labelFor ?? ((value: string) => value)
+  const options = [...counts.entries()].map(([value, count]) => ({ value, label: label(value), count }))
   return sortOptions(options, target.order)
 }
 

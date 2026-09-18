@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import {
   BriefcaseBusiness,
@@ -6,23 +6,30 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
-  Filter,
   Layers,
   MapPin,
   Search,
+  SlidersHorizontal,
   UserRound,
   X,
 } from 'lucide-react'
 import { useData } from '../context/DataContext'
-import { canonicalCompanyName, sameCompany } from '../data/companyNormalization'
+import { canonicalCompanyName } from '../data/companyNormalization'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
+import { FacetPanel } from '../components/ui/FacetPanel'
 import { LoadingSpinner } from '../components/ui/LoadingSpinner'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { buildSlugSets, createTalentSearchIndex, getTalentProfiles, searchTalentProfiles, type TalentProfile } from '../data'
-
-type Facet = { value: string; label: string; count: number }
-type FacetKey = 'track' | 'company' | 'location' | 'seniority' | 'skill' | 'sector'
+import {
+  activeFilterCount,
+  buildFacetOptions,
+  filterByFacets,
+  readSelections,
+  toggleValue,
+  writeSelections,
+  type FacetDef,
+} from '../data/facets'
 
 const PAGE_SIZE = 15
 const SORTS = [
@@ -32,30 +39,32 @@ const SORTS = [
   { key: 'seniority', label: 'Seniority' },
 ] as const
 
-const SENIORITY_ORDER = new Map([
-  ['Executive', 0],
-  ['C-Suite', 1],
-  ['Principal / Architect', 2],
-  ['Lead / Manager', 3],
-  ['Senior', 4],
-  ['Mid-Senior', 5],
-  ['Consultant / Specialist', 6],
-  ['Professional', 7],
-])
+const SENIORITY_ORDER_LIST = [
+  'C-Suite',
+  'Executive',
+  'Principal / Architect',
+  'Principal / Director',
+  'Lead / Manager',
+  'Senior',
+  'Mid-Senior',
+  'Consultant / Specialist',
+  'Professional / Specialist',
+  'Professional',
+]
+const SENIORITY_ORDER = new Map(SENIORITY_ORDER_LIST.map((value, index) => [value, index]))
 
 export function TalentSearchPage() {
   const { data, loading, error } = useData()
   const [searchParams, setSearchParams] = useSearchParams()
+  const [drawerOpen, setDrawerOpen] = useState(false)
+  const drawerCloseRef = useRef<HTMLButtonElement>(null)
   const talentSearchRef = useRef<ReturnType<typeof createTalentSearchIndex> | null>(null)
 
   useEffect(() => {
     document.title = 'SA Talent Map | Talent Search'
   }, [])
 
-  const talentProfiles = useMemo(() => {
-    if (!data) return []
-    return getTalentProfiles(data)
-  }, [data])
+  const talentProfiles = useMemo(() => (data ? getTalentProfiles(data) : []), [data])
 
   useEffect(() => {
     if (!talentSearchRef.current && talentProfiles.length > 0) {
@@ -63,53 +72,46 @@ export function TalentSearchPage() {
     }
   }, [talentProfiles])
 
-  const params = useMemo(() => ({
-    q: searchParams.get('q') || '',
-    track: searchParams.get('track') || '',
-    company: searchParams.get('company') || '',
-    location: searchParams.get('location') || '',
-    seniority: searchParams.get('seniority') || '',
-    skill: searchParams.get('skill') || '',
-    sector: searchParams.get('sector') || '',
-    sort: searchParams.get('sort') || 'relevance',
-    page: Math.max(1, Number(searchParams.get('page') || '1')),
-  }), [searchParams])
+  const trackLabels = useMemo(() => {
+    const labels = new Map<string, string>()
+    for (const profile of talentProfiles) {
+      if (!labels.has(profile.trackSlug)) labels.set(profile.trackSlug, profile.track)
+    }
+    return labels
+  }, [talentProfiles])
 
-  const slugSets = useMemo(() => {
-    if (!data) return null
-    return buildSlugSets(data)
-  }, [data])
+  const facetDefs = useMemo<FacetDef<TalentProfile>[]>(() => [
+    { key: 'track', label: 'Track', accessor: (p) => [p.trackSlug], labelFor: (value) => trackLabels.get(value) ?? value },
+    { key: 'seniority', label: 'Seniority', accessor: (p) => (p.seniority ? [p.seniority] : []), order: SENIORITY_ORDER_LIST },
+    { key: 'company', label: 'Company', accessor: (p) => (p.company ? [canonicalCompanyName(p.company)] : []), searchThreshold: 8 },
+    { key: 'location', label: 'Location', accessor: (p) => (p.locationLabel ? [p.locationLabel] : []), searchThreshold: 8 },
+    { key: 'skill', label: 'Skills', accessor: (p) => p.skills, searchThreshold: 10 },
+    { key: 'sector', label: 'Sector', accessor: (p) => p.sectors, searchThreshold: 10 },
+  ], [trackLabels])
+
+  const q = searchParams.get('q') || ''
+  const sort = searchParams.get('sort') || 'relevance'
+  const page = Math.max(1, Number(searchParams.get('page') || '1'))
+  const selections = useMemo(() => readSelections(searchParams, facetDefs), [searchParams, facetDefs])
+
+  const slugSets = useMemo(() => (data ? buildSlugSets(data) : null), [data])
 
   const queryMatchedProfiles = useMemo(() => {
     if (!talentSearchRef.current) return talentProfiles
-    return searchTalentProfiles(talentSearchRef.current, talentProfiles, params.q, {})
-  }, [params.q, talentProfiles])
+    return searchTalentProfiles(talentSearchRef.current, talentProfiles, q, {})
+  }, [q, talentProfiles])
 
-  const filteredResults = useMemo(() => {
-    const filtered = queryMatchedProfiles.filter((profile) => {
-      if (params.track && profile.trackSlug !== params.track) return false
-      if (params.company && !sameCompany(profile.company, params.company)) return false
-      if (params.location && profile.locationLabel !== params.location) return false
-      if (params.seniority && profile.seniority !== params.seniority) return false
-      if (params.skill && !profile.skills.includes(params.skill)) return false
-      if (params.sector && !profile.sectors.includes(params.sector)) return false
-      return true
-    })
+  const facetInput = useMemo(
+    () => ({ records: queryMatchedProfiles, defs: facetDefs, selections }),
+    [queryMatchedProfiles, facetDefs, selections],
+  )
+  const filteredResults = useMemo(
+    () => sortTalentProfiles(filterByFacets(facetInput), sort),
+    [facetInput, sort],
+  )
+  const optionsFor = useCallback((def: FacetDef<TalentProfile>) => buildFacetOptions(facetInput, def), [facetInput])
 
-    return sortTalentProfiles(filtered, params.sort)
-  }, [params.company, params.location, params.sector, params.seniority, params.skill, params.sort, params.track, queryMatchedProfiles])
-
-  const facets = useMemo(() => createFacets(queryMatchedProfiles), [queryMatchedProfiles])
-  const totalPages = Math.max(1, Math.ceil(filteredResults.length / PAGE_SIZE))
-  const currentPage = Math.min(params.page, totalPages)
-  const paginatedResults = filteredResults.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
-  const activeFilters = getActiveFilters(params)
-
-  if (loading) return <LoadingSpinner size="lg" />
-  if (error) return <div className="page container"><p>Error: {error}</p></div>
-  if (!data) return null
-
-  const updateParam = (key: string, value: string) => {
+  const setParam = useCallback((key: string, value: string) => {
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev)
       if (value.trim()) next.set(key, value)
@@ -117,10 +119,48 @@ export function TalentSearchPage() {
       if (key !== 'page') next.delete('page')
       return next
     })
-  }
+  }, [setSearchParams])
 
-  const clearParam = (key: string) => updateParam(key, '')
-  const clearAll = () => setSearchParams({})
+  const onToggle = useCallback((key: string, value: string) => {
+    setSearchParams((prev) => writeSelections(prev, toggleValue(selections, key, value)))
+  }, [setSearchParams, selections])
+
+  const clearAll = () => setSearchParams((prev) => {
+    const next = new URLSearchParams()
+    const query = prev.get('q')
+    if (query) next.set('q', query)
+    return next
+  })
+
+  const activeCount = activeFilterCount(selections)
+  const activeChips = facetDefs.flatMap((def) =>
+    (selections[def.key] ?? []).map((value) => ({
+      key: def.key,
+      value,
+      group: def.label,
+      label: def.labelFor ? def.labelFor(value) : value,
+    })),
+  )
+
+  const totalPages = Math.max(1, Math.ceil(filteredResults.length / PAGE_SIZE))
+  const currentPage = Math.min(page, totalPages)
+  const paginatedResults = filteredResults.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
+
+  useEffect(() => {
+    if (!drawerOpen) return
+    drawerCloseRef.current?.focus()
+    const onKey = (event: KeyboardEvent) => { if (event.key === 'Escape') setDrawerOpen(false) }
+    document.addEventListener('keydown', onKey)
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = ''
+    }
+  }, [drawerOpen])
+
+  if (loading) return <LoadingSpinner size="lg" />
+  if (error) return <div className="page container"><p>Error: {error}</p></div>
+  if (!data) return null
 
   return (
     <ErrorBoundary>
@@ -131,9 +171,7 @@ export function TalentSearchPage() {
           <section className="talent-search-header">
             <div>
               <h1>Talent Search</h1>
-              <p>
-                Search people by role, skill, company, location, sector, and platform track.
-              </p>
+              <p>Search people by role, skill, company, location, sector, and platform track — combine filters to narrow the market.</p>
             </div>
             <Link to="/credit-risk" className="btn btn-ghost">
               <Layers size={18} />
@@ -147,180 +185,131 @@ export function TalentSearchPage() {
               <input
                 className="talent-search-input"
                 type="text"
-                value={params.q}
-                onChange={(event) => updateParam('q', event.target.value)}
+                value={q}
+                onChange={(event) => setParam('q', event.target.value)}
                 placeholder="Search names, skills, titles, companies, locations..."
                 aria-label="Search talent"
               />
             </div>
             <div className="talent-search-quick-links" aria-label="Suggested searches">
-              {['Salesforce', 'Murex', 'Calypso', 'Credit Risk', 'Johannesburg', 'Market Risk'].map((value) => (
-                <button key={value} type="button" onClick={() => updateParam('q', value)}>
-                  {value}
-                </button>
+              {['Salesforce', 'Murex', 'Calypso', 'Credit Risk', 'CA(SA)', 'Johannesburg'].map((value) => (
+                <button key={value} type="button" onClick={() => setParam('q', value)}>{value}</button>
               ))}
             </div>
           </section>
 
-          <div className="talent-search-layout">
-            <TalentFilterSidebar
-              facets={facets}
-              params={params}
-              updateParam={updateParam}
-              clearParam={clearParam}
-              clearAll={clearAll}
-            />
+          <div className="facet-layout">
+            <aside className="facet-sidebar" aria-label="Filters">
+              <div className="facet-sidebar-head">
+                <strong>Filters</strong>
+                {activeCount > 0 && <button type="button" className="facet-clear" onClick={clearAll}>Clear all</button>}
+              </div>
+              <FacetPanel defs={facetDefs} selections={selections} optionsFor={optionsFor} onToggle={onToggle} idPrefix="ts-side" />
+            </aside>
 
-            <main>
+            <main className="facet-results">
               <div className="talent-results-toolbar">
-                <div>
+                <button type="button" className="facet-filter-trigger" onClick={() => setDrawerOpen(true)} aria-expanded={drawerOpen} aria-haspopup="dialog">
+                  <SlidersHorizontal size={15} aria-hidden /> Filters{activeCount ? ` (${activeCount})` : ''}
+                </button>
+                <div className="talent-results-count">
                   <strong>{filteredResults.length.toLocaleString()}</strong> professional{filteredResults.length === 1 ? '' : 's'}
-                  {params.q && <span> for <strong>{params.q}</strong></span>}
+                  {q && <span> for <strong>{q}</strong></span>}
                 </div>
                 <div className="talent-sort-controls" aria-label="Sort results">
                   <span>Sort</span>
-                  {SORTS.map((sort) => (
-                    <button
-                      key={sort.key}
-                      type="button"
-                      className={params.sort === sort.key ? 'active' : ''}
-                      onClick={() => updateParam('sort', sort.key)}
-                    >
-                      {sort.label}
+                  {SORTS.map((option) => (
+                    <button key={option.key} type="button" className={sort === option.key ? 'active' : ''} onClick={() => setParam('sort', option.key)}>
+                      {option.label}
                     </button>
                   ))}
                 </div>
               </div>
 
-              {activeFilters.length > 0 && (
-                <div className="talent-active-filters" aria-label="Active filters">
-                  {activeFilters.map((filter) => (
-                    <button key={filter.key} type="button" onClick={() => clearParam(filter.key)}>
-                      {filter.label}
-                      <X size={14} />
+              {(activeChips.length > 0 || q) && (
+                <div className="facet-active" aria-label="Active filters">
+                  {q && (
+                    <button type="button" className="facet-chip" onClick={() => setParam('q', '')} aria-label={`Remove search: ${q}`}>
+                      <span>“{q}”</span> <X size={13} aria-hidden />
+                    </button>
+                  )}
+                  {activeChips.map((chip) => (
+                    <button key={`${chip.key}:${chip.value}`} type="button" className="facet-chip" onClick={() => onToggle(chip.key, chip.value)} aria-label={`Remove ${chip.group} filter: ${chip.label}`}>
+                      <span className="facet-chip-group">{chip.group}:</span> <span>{chip.label}</span> <X size={13} aria-hidden />
                     </button>
                   ))}
-                  <button type="button" className="clear-all" onClick={clearAll}>Clear all</button>
+                  <button type="button" className="facet-clear" onClick={clearAll}>Clear all</button>
                 </div>
               )}
 
               {paginatedResults.length === 0 ? (
-                <EmptyState
-                  title="No matching professionals found"
-                  description="Try a broader search term or remove one of the filters."
-                  action={{ label: 'Clear search', to: '/talent-search' }}
-                />
+                <div className="facet-zero">
+                  <EmptyState
+                    title="No matching professionals found"
+                    description={activeChips.length || q ? 'Try a broader search term or remove one of the filters.' : 'Start typing to search the talent pool.'}
+                  />
+                  {(activeCount > 0 || q) && <button type="button" className="facet-drawer-apply" onClick={clearAll}>Clear all filters</button>}
+                </div>
               ) : (
                 <div className="talent-results-list">
                   {paginatedResults.map((profile) => {
                     const sourceProfileId = profile.provenance.sourceProfileId
                     const creditRiskSlug = sourceProfileId ? slugSets?.profileIdToSlug.get(sourceProfileId) : undefined
-                    return <TalentSearchCard key={profile.id} profile={profile} creditRiskSlug={creditRiskSlug} updateParam={updateParam} />
+                    return <TalentSearchCard key={profile.id} profile={profile} creditRiskSlug={creditRiskSlug} onToggle={onToggle} />
                   })}
                 </div>
               )}
 
               {totalPages > 1 && (
                 <nav className="talent-pagination" aria-label="Talent search pagination">
-                  <button type="button" onClick={() => updateParam('page', String(currentPage - 1))} disabled={currentPage <= 1}>
-                    <ChevronLeft size={16} />
-                    Prev
+                  <button type="button" onClick={() => setParam('page', String(currentPage - 1))} disabled={currentPage <= 1}>
+                    <ChevronLeft size={16} /> Prev
                   </button>
                   <span>Page {currentPage} of {totalPages}</span>
-                  <button type="button" onClick={() => updateParam('page', String(currentPage + 1))} disabled={currentPage >= totalPages}>
-                    Next
-                    <ChevronRight size={16} />
+                  <button type="button" onClick={() => setParam('page', String(currentPage + 1))} disabled={currentPage >= totalPages}>
+                    Next <ChevronRight size={16} />
                   </button>
                 </nav>
               )}
             </main>
           </div>
         </div>
+
+        {drawerOpen && (
+          <div className="facet-drawer-root">
+            <div className="facet-drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-hidden />
+            <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters">
+              <div className="facet-drawer-head">
+                <strong>Filters{activeCount ? ` (${activeCount})` : ''}</strong>
+                <button ref={drawerCloseRef} type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
+                  <X size={18} aria-hidden />
+                </button>
+              </div>
+              <div className="facet-drawer-body">
+                <FacetPanel defs={facetDefs} selections={selections} optionsFor={optionsFor} onToggle={onToggle} idPrefix="ts-drawer" />
+              </div>
+              <div className="facet-drawer-foot">
+                {activeCount > 0 && <button type="button" className="facet-clear" onClick={clearAll}>Clear all</button>}
+                <button type="button" className="facet-drawer-apply" onClick={() => setDrawerOpen(false)}>
+                  Show {filteredResults.length.toLocaleString()} result{filteredResults.length === 1 ? '' : 's'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </ErrorBoundary>
   )
 }
 
-function TalentFilterSidebar({
-  facets,
-  params,
-  updateParam,
-  clearParam,
-  clearAll,
-}: {
-  facets: Record<FacetKey, Facet[]>
-  params: Record<string, string | number>
-  updateParam: (key: string, value: string) => void
-  clearParam: (key: string) => void
-  clearAll: () => void
-}) {
-  return (
-    <aside className="talent-filter-sidebar">
-      <div className="talent-filter-heading">
-        <div>
-          <Filter size={16} />
-          <h2>Filters</h2>
-        </div>
-        <button type="button" onClick={clearAll}>Clear</button>
-      </div>
-
-      <FacetGroup title="Track" paramKey="track" options={facets.track} current={String(params.track)} updateParam={updateParam} clearParam={clearParam} />
-      <FacetGroup title="Company" paramKey="company" options={facets.company} current={String(params.company)} updateParam={updateParam} clearParam={clearParam} />
-      <FacetGroup title="Location" paramKey="location" options={facets.location} current={String(params.location)} updateParam={updateParam} clearParam={clearParam} />
-      <FacetGroup title="Seniority" paramKey="seniority" options={facets.seniority} current={String(params.seniority)} updateParam={updateParam} clearParam={clearParam} />
-      <FacetGroup title="Skills" paramKey="skill" options={facets.skill} current={String(params.skill)} updateParam={updateParam} clearParam={clearParam} />
-      <FacetGroup title="Sector" paramKey="sector" options={facets.sector} current={String(params.sector)} updateParam={updateParam} clearParam={clearParam} />
-    </aside>
-  )
-}
-
-function FacetGroup({
-  title,
-  paramKey,
-  options,
-  current,
-  updateParam,
-  clearParam,
-}: {
-  title: string
-  paramKey: FacetKey
-  options: Facet[]
-  current: string
-  updateParam: (key: string, value: string) => void
-  clearParam: (key: string) => void
-}) {
-  if (options.length === 0) return null
-
-  return (
-    <section className="talent-facet-group">
-      <h3>{title}</h3>
-      <div className="talent-facet-options">
-        {options.slice(0, 8).map((option) => {
-          const active = current === option.value
-          return (
-            <button
-              key={option.value}
-              type="button"
-              className={active ? 'active' : ''}
-              onClick={() => active ? clearParam(paramKey) : updateParam(paramKey, option.value)}
-            >
-              <span className="talent-checkbox">{active && <Check size={12} />}</span>
-              <span className="talent-facet-label">{option.label}</span>
-              <span className="talent-facet-count">{option.count}</span>
-            </button>
-          )
-        })}
-      </div>
-    </section>
-  )
-}
-
-function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: TalentProfile; creditRiskSlug?: string; updateParam: (key: string, value: string) => void }) {
+function TalentSearchCard({ profile, creditRiskSlug, onToggle }: { profile: TalentProfile; creditRiskSlug?: string; onToggle: (key: string, value: string) => void }) {
   const profileLink = profile.trackSlug === 'credit-risk' && creditRiskSlug
     ? `/profiles/${creditRiskSlug}`
     : profile.trackSlug === 'hackathons'
       ? `/hackathons?q=${encodeURIComponent(profile.name)}`
-      : undefined
+      : profile.trackSlug === 'accounting-finance'
+        ? `/accounting-finance?q=${encodeURIComponent(profile.name)}`
+        : undefined
   const skills = profile.skills.slice(0, 5)
   const source = profile.sources[0]
 
@@ -334,18 +323,16 @@ function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: T
             <div className="talent-result-name-row">
               <h2>{profile.name}</h2>
               <span className="verified-dot" title="Profile supplied with source evidence"><Check size={12} /></span>
-              <span className="track-status-badge track-status-live">
+              <button type="button" className="track-status-badge track-status-live talent-track-chip" title="Filter by this track" onClick={() => onToggle('track', profile.trackSlug)}>
                 {profile.track}
-              </span>
+              </button>
             </div>
             <p className="talent-result-role">{profile.title}</p>
           </div>
           <div className="talent-result-actions">
             {profileLink && <Link to={profileLink} className="btn btn-primary btn-sm"><UserRound size={15} /> Profile</Link>}
             {profile.linkedinUrl && (
-              <a href={profile.linkedinUrl} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">
-                LinkedIn
-              </a>
+              <a href={profile.linkedinUrl} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">LinkedIn</a>
             )}
           </div>
         </div>
@@ -355,8 +342,8 @@ function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: T
             <button
               type="button"
               className="talent-meta-link"
-              title={canonicalCompanyName(profile.company) === profile.company ? 'Show all candidates at this company' : `Show all candidates at ${canonicalCompanyName(profile.company)} (listed as ${profile.company})`}
-              onClick={() => updateParam('company', canonicalCompanyName(profile.company))}
+              title={canonicalCompanyName(profile.company) === profile.company ? 'Filter by this company' : `Filter by ${canonicalCompanyName(profile.company)} (listed as ${profile.company})`}
+              onClick={() => onToggle('company', canonicalCompanyName(profile.company))}
             >
               <Building2 size={15} /> {canonicalCompanyName(profile.company)}
             </button>
@@ -364,13 +351,19 @@ function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: T
             <span><Building2 size={15} /> Company not added</span>
           )}
           {profile.locationLabel ? (
-            <button type="button" className="talent-meta-link" title="Show all candidates in this location" onClick={() => updateParam('location', profile.locationLabel)}>
+            <button type="button" className="talent-meta-link" title="Filter by this location" onClick={() => onToggle('location', profile.locationLabel)}>
               <MapPin size={15} /> {profile.locationLabel}
             </button>
           ) : (
             <span><MapPin size={15} /> Location not added</span>
           )}
-          <span><BriefcaseBusiness size={15} /> {profile.seniority || 'Seniority not added'}</span>
+          {profile.seniority ? (
+            <button type="button" className="talent-meta-link" title="Filter by this seniority" onClick={() => onToggle('seniority', profile.seniority)}>
+              <BriefcaseBusiness size={15} /> {profile.seniority}
+            </button>
+          ) : (
+            <span><BriefcaseBusiness size={15} /> Seniority not added</span>
+          )}
         </div>
 
         <p className="talent-result-summary">{profile.summary}</p>
@@ -383,7 +376,7 @@ function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: T
 
         <div className="talent-result-skill-group">
           {skills.map((skill) => (
-            <button key={skill} type="button" className="talent-result-chip" title="Show all candidates with this skill" onClick={() => updateParam('skill', skill)}>
+            <button key={skill} type="button" className="talent-result-chip" title="Filter by this skill" onClick={() => onToggle('skill', skill)}>
               {skill}
             </button>
           ))}
@@ -391,47 +384,6 @@ function TalentSearchCard({ profile, creditRiskSlug, updateParam }: { profile: T
       </div>
     </article>
   )
-}
-
-function createFacets(profiles: TalentProfile[]): Record<FacetKey, Facet[]> {
-  const trackLabels = profilesByTrack(profiles)
-
-  return {
-    track: countFacet(profiles, (profile) => [profile.trackSlug], (value) => trackLabels.get(value) ?? value),
-    company: countFacet(profiles, (profile) => [canonicalCompanyName(profile.company)]),
-    location: countFacet(profiles, (profile) => [profile.locationLabel]),
-    seniority: countFacet(profiles, (profile) => [profile.seniority]),
-    skill: countFacet(profiles, (profile) => profile.skills),
-    sector: countFacet(profiles, (profile) => profile.sectors),
-  }
-}
-
-function countFacet(
-  profiles: TalentProfile[],
-  getValues: (profile: TalentProfile) => string[],
-  getLabel: (value: string) => string = (value) => value,
-): Facet[] {
-  const counts = new Map<string, number>()
-  for (const profile of profiles) {
-    for (const value of getValues(profile)) {
-      if (!value) continue
-      counts.set(value, (counts.get(value) ?? 0) + 1)
-    }
-  }
-
-  return [...counts.entries()]
-    .map(([value, count]) => ({ value, label: getLabel(value), count }))
-    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
-}
-
-function profilesByTrack(profiles: TalentProfile[]) {
-  const labels = new Map<string, string>()
-  for (const profile of profiles) {
-    if (!labels.has(profile.trackSlug)) {
-      labels.set(profile.trackSlug, profile.track)
-    }
-  }
-  return labels
 }
 
 function sortTalentProfiles(profiles: TalentProfile[], sort: string) {
@@ -446,20 +398,6 @@ function sortTalentProfiles(profiles: TalentProfile[], sort: string) {
     })
   }
   return sorted
-}
-
-function getActiveFilters(params: Record<string, string | number>) {
-  return ([
-    ['track', params.track],
-    ['company', params.company],
-    ['location', params.location],
-    ['seniority', params.seniority],
-    ['skill', params.skill],
-    ['sector', params.sector],
-  ] as [string, string | number][]).filter(([, value]) => Boolean(value)).map(([key, value]) => ({
-    key,
-    label: String(value),
-  }))
 }
 
 function initials(name: string) {
