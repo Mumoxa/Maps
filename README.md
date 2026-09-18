@@ -18,6 +18,12 @@ Future markets must be registered in `src/data/tracks.ts` with a South African g
 
 Production deploys run automatically after the `CI` workflow succeeds on `main`. The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised redeploy is required.
 
+### Known non-blocking check: `Workers Builds: maps`
+
+The live site deploys to **Cloudflare Pages** (`.github/workflows/deploy-cloudflare.yml` → `npx wrangler pages deploy dist --project-name maps`). A separate **Cloudflare "Workers Builds"** integration, configured in the Cloudflare dashboard (not in this repo), also runs on every push and reports the failing `Workers Builds: maps` commit check. It is a leftover Workers build for a project that ships as Pages, is **not a required check**, and does **not** affect CI, the Pages deploy, or the live site.
+
+No repository change fixes it — the stray `wrangler.jsonc` Workers config was already removed and the failure persists, because the integration is defined server-side in Cloudflare. To clear the red check, an account owner must **disconnect (or delete) the Git-connected "Workers Builds" integration for the `maps` Workers service in the Cloudflare dashboard** (under that Workers service's build settings; Cloudflare's exact menu labels change over time). Until then the check can be safely ignored, or made non-required in the branch protection rules.
+
 ## Private Contact Directory
 
 The `/contacts` route loads the generated `src/data/contact-parts/` dataset, a source-retained private directory generated from the supplied lead-generation workbooks and contact export. Blank company cells inherit only the nearest preceding company value in the same sheet; person fields are never forward-filled. Every retained row keeps its source file, sheet and row number in `sourceRecords`.
