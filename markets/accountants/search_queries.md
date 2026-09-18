@@ -2,6 +2,9 @@
 
 One row per meaningful executed search. New queries are generated from gaps below.
 
+> **Check `people_index.md` first** before acting on any new search result — it is the master
+> name registry. A hit for a person already listed there is enrichment, not a new record.
+
 Legend — Quality: HIGH / MEDIUM / LOW / NONE (yield). Exhausted?: yes when near-duplicate searches
 stop adding new people.
 

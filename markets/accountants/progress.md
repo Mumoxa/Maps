@@ -2,6 +2,10 @@
 
 Live research log. Updated after every ~2–5 verified people or completed research path.
 
+> **Before any new batch: check `people_index.md` (the master name registry) first.** It lists
+> every person already captured plus a watchlist of excluded/investigated names, so nothing
+> is duplicated. Regenerate it after each batch with `python3 gen_people_index.py`.
+
 ## Session log
 
 ### 2026-09-18 (session 1) — infrastructure + 4 batches (72 people)
