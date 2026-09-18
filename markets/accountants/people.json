@@ -7,6 +7,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -45,6 +46,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -84,6 +86,9 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
     "bodies": [
       "CIMA"
     ],
@@ -120,6 +125,7 @@
     "status": "ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED",
     "confidence": "ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED",
     "designations": [],
+    "professionalRoutes": [],
     "bodies": [],
     "title": "Accounting Director",
     "employer": "Sable International",
@@ -172,6 +178,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -210,6 +217,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -246,6 +254,9 @@
     "status": "CONFLICTING",
     "confidence": "CONFLICTING",
     "designations": [],
+    "professionalRoutes": [
+      "SAICA Articles"
+    ],
     "bodies": [],
     "title": "Associate Director (IT)",
     "employer": "LDP Chartered Accountants and Auditors Inc.",
@@ -293,6 +304,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -331,6 +343,7 @@
     "designations": [
       "AGA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -369,6 +382,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -408,6 +422,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -448,6 +463,9 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
     "bodies": [
       "CIMA"
     ],
@@ -486,6 +504,7 @@
     "designations": [
       "AGA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -535,6 +554,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -573,6 +593,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -611,6 +632,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -650,6 +672,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -712,6 +735,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -750,6 +774,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -789,6 +814,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -827,6 +853,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -865,6 +892,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -921,6 +951,9 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
     "bodies": [
       "CIMA"
     ],
@@ -959,6 +992,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -997,6 +1031,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -1037,6 +1074,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1091,6 +1129,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1130,6 +1169,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1167,6 +1207,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -1217,6 +1260,7 @@
     "designations": [
       "AGA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1258,6 +1302,7 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "CIMA"
     ],
@@ -1296,6 +1341,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1345,6 +1391,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1382,6 +1429,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -1432,6 +1482,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1471,6 +1522,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1510,6 +1562,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1549,6 +1602,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1587,6 +1641,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1624,6 +1679,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -1663,6 +1721,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1702,6 +1761,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -1740,6 +1800,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1778,6 +1839,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1834,6 +1896,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1883,6 +1946,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -1921,6 +1985,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1960,6 +2025,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -1998,6 +2064,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2036,6 +2103,9 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [
+      "SAICA Articles"
+    ],
     "bodies": [
       "SAICA"
     ],
@@ -2073,6 +2143,9 @@
     "confidence": "HIGH",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -2129,6 +2202,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2167,6 +2241,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2217,6 +2292,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2255,6 +2331,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2293,6 +2370,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -2331,6 +2409,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2370,6 +2449,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2409,6 +2489,7 @@
     "designations": [
       "AGA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2458,6 +2539,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2528,6 +2610,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2568,6 +2651,9 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
     "bodies": [
       "CIMA"
     ],
@@ -2606,6 +2692,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -2644,6 +2731,7 @@
     "designations": [
       "AGA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2681,6 +2769,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -2746,6 +2837,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -2784,6 +2876,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2822,6 +2915,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2867,6 +2961,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2905,6 +3000,7 @@
     "designations": [
       "AGA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2943,6 +3039,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -2982,6 +3079,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -3019,6 +3117,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "FCCA"
+    ],
+    "professionalRoutes": [
+      "ACCA PER"
     ],
     "bodies": [
       "ACCA"
@@ -3059,6 +3160,9 @@
       "FCMA",
       "CGMA"
     ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
     "bodies": [
       "CIMA"
     ],
@@ -3097,6 +3201,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -3135,6 +3240,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -3173,6 +3279,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3211,6 +3318,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3250,6 +3358,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3289,6 +3398,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3334,6 +3444,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3373,6 +3484,7 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "CIMA"
     ],
@@ -3411,6 +3523,9 @@
     "designations": [
       "FCMA",
       "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
     ],
     "bodies": [
       "CIMA"
@@ -3455,6 +3570,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -3510,6 +3628,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3549,6 +3668,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3593,6 +3713,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3631,6 +3752,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -3686,6 +3810,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3735,6 +3860,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3774,6 +3900,7 @@
     "designations": [
       "AGA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3822,6 +3949,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "AGA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -3877,6 +4007,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3915,6 +4046,9 @@
     "designations": [
       "ACMA",
       "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
     ],
     "bodies": [
       "CIMA"
@@ -3960,6 +4094,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -3999,6 +4134,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4049,6 +4185,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4088,6 +4225,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4127,6 +4265,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4165,6 +4304,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4203,6 +4343,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -4249,6 +4392,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4287,6 +4431,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -4325,6 +4470,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4364,6 +4510,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4418,6 +4565,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -4456,6 +4604,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4495,6 +4644,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -4532,6 +4682,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -4584,6 +4737,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4624,6 +4778,9 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
     "bodies": [
       "CIMA"
     ],
@@ -4662,6 +4819,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -4707,6 +4867,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4746,6 +4907,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4785,6 +4947,9 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [
+      "SAICA Articles"
+    ],
     "bodies": [
       "SAICA"
     ],
@@ -4823,6 +4988,7 @@
     "designations": [
       "PA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAIPA"
     ],
@@ -4861,6 +5027,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4899,6 +5066,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -4939,6 +5107,7 @@
       "ACMA",
       "CGMA"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA",
       "CIMA"
@@ -4978,6 +5147,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5015,6 +5185,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "FCCA"
+    ],
+    "professionalRoutes": [
+      "ACCA PER"
     ],
     "bodies": [
       "ACCA"
@@ -5080,6 +5253,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5118,6 +5292,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5156,6 +5331,9 @@
     "confidence": "CONFIRMED",
     "designations": [
       "AGA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
     ],
     "bodies": [
       "SAICA"
@@ -5207,6 +5385,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5256,6 +5435,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5294,6 +5474,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5333,6 +5514,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5372,6 +5554,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5422,6 +5605,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5486,6 +5670,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5526,6 +5711,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5565,6 +5751,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],
@@ -5604,6 +5791,7 @@
     "designations": [
       "CA(SA)"
     ],
+    "professionalRoutes": [],
     "bodies": [
       "SAICA"
     ],

@@ -275,6 +275,7 @@ export function adaptAccountantCandidate(candidate: AccountantCandidate): Market
     seniority: inferAccountantSeniority(candidate),
     skills: unique([
       ...candidate.designations,
+      ...candidate.professionalRoutes,
       ...candidate.skills,
       ...candidate.accountingSystems,
       ...candidate.erpSystems,
