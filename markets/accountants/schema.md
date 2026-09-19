@@ -11,7 +11,8 @@ each store: `acc-0001`, `cmp-0001`, `src-0001`.
   "id": "acc-0001",
   "date_first_found": "2026-09-18",
   "date_last_verified": "2026-09-18",
-  "status": "CONFIRMED | HIGH_CONFIDENCE | PROBABLE | RESEARCH_HOLD | ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED | REJECTED",
+  "status": "CONFIRMED | FINANCE_ROLE_CONFIRMED | HIGH_CONFIDENCE | PROBABLE | RESEARCH_HOLD | ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED | CONFLICTING | REJECTED",
+  "role_scope_status": "IN_SCOPE | BELOW_BOOKKEEPER_FLOOR | NON_FINANCE | UNKNOWN",
   "first_name": "…",
   "surname": "…",
   "full_name": "…",
@@ -19,8 +20,8 @@ each store: `acc-0001`, `cmp-0001`, `src-0001`.
   "professionally_qualified": "true|false|unknown",
   "professional_designations": ["CA(SA)"],
   "professional_bodies": ["SAICA"],
-  "designation_status": "CONFIRMED|HIGH_CONFIDENCE|PROBABLE|UNCONFIRMED|INCOMPLETE|CONFLICTING",
-  "qualification_confidence": "CONFIRMED|HIGH|PROBABLE|RESEARCH_HOLD|REJECTED",
+  "designation_status": "CONFIRMED|HIGH_CONFIDENCE|PROBABLE|UNCONFIRMED|INCOMPLETE|CONFLICTING|NOT_APPLICABLE",
+  "qualification_confidence": "CONFIRMED|HIGH|PROBABLE|RESEARCH_HOLD|NOT_APPLICABLE|REJECTED",
   "qualification_evidence": "…",
   "academic_qualifications": [],
   "articles_completion_status": "CONFIRMED_EXPLICIT|TRAINING_CONTRACT_CONFIRMED|PROFESSIONAL_PER_CONFIRMED|QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED|RPL_ROUTE|RECIPROCITY_ROUTE|IN_PROGRESS|NOT_ESTABLISHED|NOT_APPLICABLE|CONFLICTING",
@@ -35,6 +36,7 @@ each store: `acc-0001`, `cmp-0001`, `src-0001`.
   "current_role_family": "…",
   "current_function": "…",
   "current_role_start_date": null,
+  "seniority": "Bookkeeper|Assistant / Junior|Accountant|Senior / Specialist|Manager|Head / Director|Executive|Unknown",
   "country": "South Africa",
   "province": "…",
   "city": "…",
@@ -59,14 +61,38 @@ each store: `acc-0001`, `cmp-0001`, `src-0001`.
   "confidence": "CONFIRMED|HIGH|PROBABLE|RESEARCH_HOLD|REJECTED",
   "notes": "…",
   "booleans": {
+    "bookkeeping": "true|false|unknown",
+    "financial_accounting": "true|false|unknown",
     "ca_sa": "true|false|unknown",
-    "pa_sa": "…", "aga_sa": "…", "acca": "…", "fcca": "…", "acma": "…",
-    "fcma": "…", "cgma": "…", "saica_articles_confirmed": "…",
-    "saipa_articles_confirmed": "…", "acca_per_confirmed": "…",
-    "cima_per_confirmed": "…", "group_accounting": "…", "consolidations": "…",
-    "management_accounting": "…", "cost_accounting": "…", "fpa": "…",
-    "commercial_finance": "…", "sage300_accpac": "…", "sap": "…",
-    "oracle": "…", "syspro": "…", "dynamics": "…"
+    "pa_sa": "…",
+    "aga_sa": "…",
+    "acca": "…",
+    "fcca": "…",
+    "acma": "…",
+    "fcma": "…",
+    "cgma": "…",
+    "saica_articles_confirmed": "…",
+    "saipa_articles_confirmed": "…",
+    "acca_per_confirmed": "…",
+    "cima_per_confirmed": "…",
+    "group_accounting": "…",
+    "consolidations": "…",
+    "management_accounting": "…",
+    "cost_accounting": "…",
+    "fpa": "…",
+    "commercial_finance": "…",
+    "finance_business_partnering": "…",
+    "financial_control": "…",
+    "treasury": "…",
+    "tax": "…",
+    "ap_leadership": "…",
+    "ar_leadership": "…",
+    "payroll_leadership": "…",
+    "sage300_accpac": "…",
+    "sap": "…",
+    "oracle": "…",
+    "syspro": "…",
+    "dynamics": "…"
   }
 }
 ```
@@ -86,6 +112,9 @@ each store: `acc-0001`, `cmp-0001`, `src-0001`.
   "company_size_if_public": null,
   "listed_or_private": "listed|private|unknown",
   "parent_company": null,
+  "finance_team_research_status": "NEEDS_RESEARCH|RESEARCHED_WITH_PEOPLE|RESEARCHED_ZERO_PUBLIC_RESULTS|IDENTIFIER_AMBIGUOUS",
+  "finance_people_verified_count": 0,
+  "finance_team_research_notes": "",
   "source_urls": [],
   "date_verified": "2026-09-18"
 }
@@ -111,3 +140,7 @@ each store: `acc-0001`, `cmp-0001`, `src-0001`.
   "status": "USED|REVIEWING|REJECTED"
 }
 ```
+
+## Closed-company-universe coverage rule
+
+For a defined employer sweep, every target company must exist in `companies.jsonl` and carry an explicit `finance_team_research_status`. This is the completeness control that prevents zero-result companies from being silently omitted.
