@@ -29,9 +29,24 @@ export yet.
 | `search_queries.md` | Executed search log (engine, date, target, yield, exhaustion). |
 | `people_index.md` | **Master name registry (dedup source of truth) — consult FIRST before adding anyone.** |
 | `gen_people_index.py` | Regenerates `people_index.md` from the JSONL stores after every batch. |
+| `sweep_coverage.md` | **Western Cape company-sweep completeness ledger** — every company in `inputs/2026-09-19-wc-industrial-companies.tsv` listed once with COVERED / PENDING status. |
+| `gen_sweep_coverage.py` | Regenerates `sweep_coverage.md` from the JSONL stores after every batch. |
+| `inputs/` | Source lists supplied for a sweep, transcribed verbatim (append-only provenance). |
 
 > **Dedup rule:** every future batch must consult `people_index.md` first. If a name/company/
 > source is already listed there, enrich the existing record instead of adding a new one.
+
+## Western Cape company sweep (open)
+
+A supplied list of 176 Western Cape construction-materials, mining, energy, construction, steel,
+packaging, food/dairy/fishing, agri, cold-chain, retail, renewables, waste and manufacturing
+employers is the fixed scope of the current sweep. It is transcribed verbatim at
+`inputs/2026-09-19-wc-industrial-companies.tsv` and every row is registered as a company record.
+
+The completeness contract is `sweep_coverage.md`: **no company in that list may be omitted.** A
+company moves from `PENDING` to `COVERED` only when at least one person holding a recognised
+SAIPA / SAICA / CIMA / ACCA designation is recorded against it with evidence. Regenerate the
+ledger after every batch with `python3 gen_sweep_coverage.py`.
 
 ## Evidence standard (non-negotiable)
 

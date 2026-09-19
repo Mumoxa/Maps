@@ -44,24 +44,46 @@ Live research log. Updated after every ~2–5 verified people or completed resea
   AGA(SA) (HIGH). Companies 73–74.
 - Batch 12 (+3): WC CIMA — Dzvova (CA(SA)+ACMA+CGMA), Hoffman & Kuni (ACMA/CGMA). Companies 75–77.
 
-## Running totals (session 2 close)
+### 2026-09-19 (session 3) — Western Cape industrial/manufacturing sweep opened (176 companies)
+
+- Received a user-supplied company list (`Companies.csv`, 176 rows) covering Western Cape
+  construction materials, mining, energy, construction, steel, packaging, food/dairy/fishing,
+  agri, cold chain, retail, renewables, waste and manufacturing employers. It is transcribed
+  verbatim to `inputs/2026-09-19-wc-industrial-companies.tsv` and is the fixed scope of the
+  sweep — **no company may be omitted**.
+- Registered all 176 as company records `cmp-0076`–`cmp-0250`. One row (`Woolworths Holdings`)
+  matched the existing `cmp-0062 Woolworths Holdings Ltd` and was **not** duplicated.
+- Added `sweep_coverage.md` + `gen_sweep_coverage.py`: an exhaustive completeness ledger listing
+  every company in scope with COVERED / PENDING status. Regenerate it after every batch; a
+  company may only move to COVERED on evidence of a SAIPA/SAICA/CIMA/ACCA designation.
+- Batch 13 (+3 people): **Pieter de Wit** CA(SA), Afrimat CFO (JSE SENS FY24/25/26);
+  **Muhammad Brey** CA(SA), Sea Harvest Group CFO (articles CONFLICTING: KPMG vs Mazars);
+  **Andisa Zinja** CA(SA), TCTA CFO with explicit PwC articles 2007–2010 — she closes the first
+  zero-coverage gap in the pre-existing registry (cmp-0016 TCTA).
+- Sweep status at close: **2 / 176 COVERED, 174 PENDING.** The sweep is open and continues;
+  `sweep_coverage.md` is the authoritative to-do list.
+- Pre-existing registry zero-coverage companies still open: Grant Thornton (SA), Bayer (SA),
+  PwC (SA), ASL. (PwC now has a person-linked articles record via Andisa Zinja, but no person
+  is yet recorded *employed at* PwC.)
+
+## Running totals (session 3 close)
 
 | Metric | Count |
 |---|---|
-| Confirmed qualified people | **108** |
-| High-confidence people | 24 |
+| Confirmed qualified people | **110** |
+| High-confidence people | 25 |
 | Articles-confirmed / designation-unverified | 1 (Alan Robbins, Sable Intl) |
 | Conflicting-designation records | 1 (Alicia Haasbroek, LDP) |
-| Total people records | 134 |
-| Companies mapped | 75 (cmp-0001–0075; cmp-0025 intentionally absent) |
-| Unique sources | 69 |
-| Searches executed (cumulative) | 108 |
+| Total people records | 137 |
+| Companies mapped | 250 (cmp-0001–0250; cmp-0025 intentionally absent) |
+| Unique sources | 82 |
+| Searches executed (cumulative) | 114 |
 | Provinces covered | 7 (Western Cape, Gauteng, KwaZulu-Natal, Free State, Limpopo, Mpumalanga-origin, Eastern Cape) |
 | Cities covered | ~33 |
 
 ## Qualification breakdown (CONFIRMED unless noted)
 
-CA(SA): 88 · AGA(SA): 8 · ACMA: 9 · CGMA: 11 · FCMA: 2 · FCCA: 2 ·
+CA(SA): 90 · AGA(SA): 8 · ACMA: 9 · CGMA: 11 · FCMA: 2 · FCCA: 2 ·
 PA(SA): 0 CONFIRMED, 15 HIGH_CONFIDENCE · multi-designation (CONFIRMED): 11 —
 ACMA+CGMA ×8 (Dlamini, Mutizwa, Visser, Danster, van Niekerk, Smith, Hoffman, Kuni),
 FCMA+CGMA ×2 (Tshetshe, Mithi), CA(SA)+ACMA+CGMA ×1 (Dzvova; also holds CIA + Cert.Dir®)
@@ -75,8 +97,8 @@ explicit SAICA articles: 7 — Vusi Mpofu (KPMG), Taryn Raju (Grant Thornton), S
 session 2: Louis de Wet (PwC Cape Town 2011–2013), Morgan Gregory (ASL Somerset West 2016–2018),
 Neil Fourie (PwC 2016–2021, AGA(SA) route), Nastassja Nel (2017, AGA(SA) route), Graham Davin
 (Arthur Andersen JHB), Emile de Villiers (Cape Town medium firm), Jana van Zyl (LDP), Nadia Van
-Der Westhuizen (LDP), Thinus Le Roux (LDP, from 2017), Alicia Haasbroek (LDP 2014–2016) ·
-SAICA training contract: 1 — Polani Sokombela (AGSA trainee accountant) ·
+Der Westhuizen (LDP), Thinus Le Roux (LDP, from 2017), Alicia Haasbroek (LDP 2014–2016) · session 3: Andisa Zinja (PwC 2007–2010, TCTA CFO) ·
+SAICA training contract: 1 — Polani Sokombela (AGSA trainee accountant) · conflicting articles route: 1 — Muhammad Brey (KPMG per employer bio vs Mazars per CFO SA) ·
 explicit SAIPA articles: 0 · SAIPA learnership: 0 · ACCA PER: 2 · CIMA PER: 9 ·
 RPL: 0 · reciprocity: 0 · other route: 0 · route unknown: 0
 
@@ -146,6 +168,10 @@ Engineering, Pharmaceuticals (Bayer — historic).
   wording — only CONFIRMED when a designation appears next to the individual's name.
 
 ## Outstanding avenues (next sessions)
+
+- **Western Cape industrial/manufacturing sweep — 174 companies PENDING.** Work the ledger in
+  `sweep_coverage.md`; prioritise JSE-listed groups (annual-report director bios carry both
+  designation and articles route), then mid-caps, then private plants via LinkedIn/firm sites.
 
 - ACCA (non-fellow) full-member discovery — currently only FCCA records exists in-database.
 - PA(SA) in commerce/industry and SAIPA-articles-explicit records — PA(SA) currently all HIGH.

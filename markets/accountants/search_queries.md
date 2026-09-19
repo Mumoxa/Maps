@@ -124,6 +124,12 @@ stop adding new people.
 | 106 | `linkedin.com/in "CA(SA)" "Western Cape" FA/FM -jobs -vacancies` | web | 2026-09-18 | W.Cape | CA(SA) | FA/FM | LOW | (ads) | — | — | low |
 | 107 | `linkedin.com/in "AGA(SA)" "Cape Town"/"Paarl"/"Stellenbosch" finance` | web | 2026-09-18 | W.Cape | AGA(SA) | finance | LOW | (job ads) | — | — | low |
 | 108 | `linkedin.com/in "ACMA"/"CGMA" "Cape Town" finance manager group` | web | 2026-09-18 | W.Cape | CIMA | FM | HIGH | Dzvova (CA+CIMA), Hoffman, Kuni | AYO, The Fieldbar Co., M+C Saatchi | — | partial |
+| 109 | `"Andisa Zinja" TCTA CFO CA(SA) chartered accountant articles` | web | 2026-09-19 | Gauteng/EC | CA(SA) | CFO | HIGH | Andisa Zinja | TCTA | fetch PSM + CFO SA profiles | yes |
+| 110 | fetch Public Sector Manager TCTA CFO profile (June 2026) | fetch | 2026-09-19 | Gauteng | CA(SA) | CFO | HIGH | (articles: PwC 2007-2010 explicit) | TCTA, PwC, AGSA, ECSECC, CMS | — | yes |
+| 111 | `Afrimat Limited annual financial statements 2025 directors report "CA(SA)"` | web | 2026-09-19 | W.Cape | CA(SA) | CFO | HIGH | Pieter de Wit | Afrimat | per-company SENS sweeps | partial |
+| 112 | `Sea Harvest Group chief financial officer "CA(SA)" Vredenburg chartered accountant` | web | 2026-09-19 | W.Cape | CA(SA) | CFO | HIGH | Muhammad Brey | Sea Harvest Group, Ladismith Cheese | conflicting-articles resolution | partial |
+| 113 | `"Muhammad Brey" Sea Harvest CFO CA(SA) articles` | web | 2026-09-19 | W.Cape | CA(SA) | CFO | HIGH | (KPMG vs Mazars conflict) | Sea Harvest, KPMG, Mazars, Brimstone | — | yes |
+| 114 | `Oceana Group / Grant Thornton SA / Bayer SA "CA(SA)" CFO` (generic + report-led) | web | 2026-09-19 | W.Cape | CA(SA) | CFO | LOW | none (job-ad dominated) | Oceana (Zafar Mahomed lead, unverified) | report-led queries only | not exhausted |
 
 ## Format reference
 
