@@ -91,6 +91,7 @@ def to_record(row):
         "bodies": clean_list(row.get("professional_bodies")),
         "title": row.get("current_title") or "",
         "employer": row.get("current_employer") or "",
+        "currentCompanyAffiliations": clean_list(row.get("current_company_affiliations")),
         "seniority": row.get("seniority") or "",
         "roleFamily": row.get("current_role_family") or "",
         "function": row.get("current_function") or "",
