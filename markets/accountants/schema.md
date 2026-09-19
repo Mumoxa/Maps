@@ -33,6 +33,13 @@ each store: `acc-0001`, `cmp-0001`, `src-0001`.
   "qualification_route": "…",
   "current_title": "…",
   "current_employer": "…",
+  "current_company_affiliations": [
+    {
+      "company": "…",
+      "relationship": "operating subsidiary|division|brand|group company|other",
+      "evidence_url": "…"
+    }
+  ],
   "current_role_family": "…",
   "current_function": "…",
   "current_role_start_date": null,
