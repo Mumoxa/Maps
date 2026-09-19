@@ -8,6 +8,12 @@ export interface AccountantCareerRole {
   notes: string
 }
 
+export interface AccountantCompanyAffiliation {
+  company: string
+  relationship: string
+  evidence_url: string
+}
+
 export interface AccountantCandidate {
   id: string
   fullName: string
@@ -23,6 +29,7 @@ export interface AccountantCandidate {
   bodies: string[]
   title: string
   employer: string
+  currentCompanyAffiliations: AccountantCompanyAffiliation[]
   seniority: string
   roleFamily: string
   function: string
@@ -134,7 +141,13 @@ export const accountantFacetDefs: FacetDef<AccountantCandidate>[] = [
   {
     key: 'employer',
     label: 'Employer',
-    accessor: (candidate) => (candidate.employer ? [canonicalCompanyName(candidate.employer)] : []),
+    accessor: (candidate) => {
+      const employers = candidate.employer ? [canonicalCompanyName(candidate.employer)] : []
+      for (const affiliation of candidate.currentCompanyAffiliations ?? []) {
+        if (affiliation.company) employers.push(canonicalCompanyName(affiliation.company))
+      }
+      return [...new Set(employers)]
+    },
     searchThreshold: 8,
   },
 ]
@@ -145,6 +158,7 @@ export const accountantTextMatcher: TextMatcher<AccountantCandidate> = (candidat
     candidate.fullName,
     candidate.title,
     candidate.employer,
+    ...(candidate.currentCompanyAffiliations ?? []).flatMap((affiliation) => [affiliation.company, affiliation.relationship]),
     candidate.roleFamily,
     candidate.function,
     candidate.industry,
