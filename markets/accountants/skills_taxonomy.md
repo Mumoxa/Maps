@@ -4,12 +4,12 @@ Use these normalised values in records. Preserve the source's raw wording in `no
 
 ## Finance function families (for `current_role_family` / `current_function`)
 
-Financial Accounting · Group Accounting · Management Accounting · Cost Accounting ·
-Financial Control · Group Reporting · Consolidations · FP&A · Commercial Finance ·
+Bookkeeping · Financial Accounting · Group Accounting · Management Accounting · Cost Accounting ·
+Financial Analysis · Financial Control · Group Reporting · Consolidations · FP&A · Commercial Finance ·
 Finance Business Partnering · Operational Finance · Manufacturing Finance · Treasury · Tax ·
 Internal Audit · External Audit · Risk · Shared Services · Accounts Payable Leadership ·
 Accounts Receivable Leadership · Revenue · Finance Transformation · Systems Finance ·
-Project Finance · Executive Finance · Other
+Project Finance · Executive Finance · Accounts Payable Leadership · Accounts Receivable Leadership · Payroll Leadership · Other
 
 A role family may be derived from an explicit title. Detailed technical skills are **not**
 inferred from a broad title (e.g. `Group Financial Accountant` → `Group Accounting`, but not
@@ -17,6 +17,7 @@ automatically `consolidations`).
 
 ## Verified skill categories
 
+- Bookkeeping: cashbook, bank reconciliations, general ledger support, journals, trial balance, bookkeeping controls
 - Financial accounting: month-end, journals, general ledger, balance-sheet reconciliations,
   management accounts, annual financial statements, IFRS, IFRS for SMEs, audit preparation,
   statutory reporting
@@ -71,7 +72,7 @@ Employer industry ≠ the person's specialisation. Career history drives `histor
 
 ## Boolean filter fields (values `true` / `false` / `unknown` — never silently false when unknown)
 
-ca_sa · pa_sa · aga_sa · acca · fcca · acma · fcma · cgma · saica_articles_confirmed ·
+bookkeeping · financial_accounting · ca_sa · pa_sa · aga_sa · acca · fcca · acma · fcma · cgma · saica_articles_confirmed ·
 saipa_articles_confirmed · acca_per_confirmed · cima_per_confirmed · group_accounting ·
-consolidations · management_accounting · cost_accounting · fpa · commercial_finance ·
+consolidations · management_accounting · cost_accounting · fpa · commercial_finance · finance_business_partnering · financial_control · treasury · tax · ap_leadership · ar_leadership · payroll_leadership ·
 sage300_accpac · sap · oracle · syspro · dynamics
