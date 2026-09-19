@@ -13,11 +13,17 @@ export interface AccountantCandidate {
   fullName: string
   status: string
   confidence: string
+  roleScopeStatus: string
+  professionallyQualified: string
+  designationStatus: string
+  qualificationConfidence: string
+  academicQualifications: string[]
   designations: string[]
   professionalRoutes: string[]
   bodies: string[]
   title: string
   employer: string
+  seniority: string
   roleFamily: string
   function: string
   industry: string
@@ -35,10 +41,15 @@ export interface AccountantCandidate {
   articlesStatus: string
   articlesEmployer: string
   articlesBody: string
+  articlesPeriod: string
+  articlesLocation: string
+  practicalExperienceFramework: string
+  qualificationRoute: string
   careerHistory: AccountantCareerRole[]
   linkedinUrl: string
   primarySource: string
   sourceUrls: string[]
+  dateLastVerified: string
   notes: string
 }
 
@@ -64,12 +75,24 @@ function candidateSystems(candidate: AccountantCandidate): string[] {
   return [...candidate.accountingSystems, ...candidate.erpSystems, ...candidate.analyticsTools]
 }
 
+function professionalStatus(candidate: AccountantCandidate): string {
+  if (candidate.professionallyQualified === 'true') return 'Professionally qualified'
+  if (candidate.professionalRoutes.length > 0) return 'Professional route confirmed'
+  return 'Finance professional — designation not confirmed'
+}
+
 /**
  * The track's filterable dimensions, derived from the actual data. Designation
  * and professional route are deliberately separate facets: holding CA(SA) is
  * not the same as having completed SAICA articles.
  */
 export const accountantFacetDefs: FacetDef<AccountantCandidate>[] = [
+  {
+    key: 'professionalStatus',
+    label: 'Professional status',
+    accessor: (candidate) => [professionalStatus(candidate)],
+    order: ['Professionally qualified', 'Professional route confirmed', 'Finance professional — designation not confirmed'],
+  },
   {
     key: 'qualification',
     label: 'Qualification (designation)',
@@ -129,7 +152,15 @@ export const accountantTextMatcher: TextMatcher<AccountantCandidate> = (candidat
     candidate.province,
     candidate.city,
     candidate.qualificationEvidence,
+    candidate.qualificationRoute,
+    candidate.articlesStatus,
+    candidate.articlesEmployer,
+    candidate.articlesBody,
+    candidate.articlesPeriod,
+    candidate.articlesLocation,
+    candidate.seniority,
     candidate.notes,
+    ...candidate.academicQualifications,
     ...candidate.designations,
     ...candidate.professionalRoutes,
     ...candidate.bodies,
@@ -166,7 +197,8 @@ export function accountantUniverse() {
   }
   return {
     candidates: accountantCandidates.length,
-    confirmed: accountantCandidates.filter((candidate) => candidate.status === 'CONFIRMED').length,
+    confirmed: accountantCandidates.filter((candidate) => candidate.status === 'CONFIRMED' || candidate.status === 'FINANCE_ROLE_CONFIRMED').length,
+    professionallyQualified: accountantCandidates.filter((candidate) => candidate.professionallyQualified === 'true').length,
     caSa: accountantCandidates.filter((candidate) => candidate.designations.includes('CA(SA)')).length,
     employers: employers.size,
     provinces: new Set(accountantCandidates.map((candidate) => candidate.province).filter(Boolean)).size,
