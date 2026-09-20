@@ -17,10 +17,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit, accounting and tax practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -36,7 +36,7 @@
     "sourceUrls": [
       "https://www.tc-inc.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0032",
@@ -305,10 +305,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and advisory practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -324,7 +324,7 @@
     "sourceUrls": [
       "https://ratiogroup.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0125",
@@ -463,10 +463,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit, accounting and tax practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -482,7 +482,7 @@
     "sourceUrls": [
       "https://www.tc-inc.co.za/"
     ],
-    "notes": "Founded the practice in Durbanville in 2006 as Turner Conradie; the firm was later renamed TC inc."
+    "notes": "Founded the practice in Durbanville in 2006 as Turner Conradie; the firm was later renamed TC inc.  Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0114",
@@ -660,10 +660,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and advisory practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -679,7 +679,7 @@
     "sourceUrls": [
       "https://ratiogroup.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0100",
@@ -850,6 +850,51 @@
       "https://www.linkedin.com/in/ashlin-healy-ca-sa-130238103/"
     ],
     "notes": "Deloitte, Cape Town; 9+ years audit & accounting."
+  },
+  {
+    "id": "acc-0160",
+    "fullName": "Bhavna Gounder",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Banking finance professional (Investec Bank)",
+    "employer": "Investec Bank",
+    "roleFamily": "Financial Control",
+    "function": "Corporate banking",
+    "industry": "Banking",
+    "subIndustry": "Corporate and investment banking",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "20",
+    "qualificationEvidence": "Accountancy SA profile \"Bhavna Gounder – Juggling a thriving career and motherhood\": her career \"has flourished since she qualified as a CA(SA) in the mid-2000s\"; \"Bhavna Gounder started her career at Investec Bank as debt transactor for corporate clients.\"",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [
+      {
+        "employer": "Investec Bank",
+        "title": "Debt transactor, corporate clients (career start)",
+        "notes": "Period not stated in source"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.accountancysa.org.za/casa-profiles/",
+    "sourceUrls": [
+      "https://www.accountancysa.org.za/profile-bhavna-gounder-juggling-a-thriving-career-and-motherhood/"
+    ],
+    "notes": "Investec Bank is the stated career-start employer; her current employer and role are not stated in the profile, so employment currency is UNCONFIRMED. Co-authored a published book with her daughter. No location evidence."
   },
   {
     "id": "acc-0052",
@@ -1090,10 +1135,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit practice",
-    "province": "",
-    "city": "",
+    "province": "Gauteng",
+    "city": "Pretoria",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -1109,7 +1154,7 @@
     "sourceUrls": [
       "https://www.vanwykauditors.com/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0019",
@@ -1169,10 +1214,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and advisory practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -1188,7 +1233,7 @@
     "sourceUrls": [
       "https://ratiogroup.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0069",
@@ -1523,10 +1568,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Accounting, tax and audit practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -1542,7 +1587,7 @@
     "sourceUrls": [
       "https://www.schoemans.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0071",
@@ -1745,10 +1790,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit, accounting and tax practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -1764,7 +1809,7 @@
     "sourceUrls": [
       "https://www.tc-inc.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0103",
@@ -2034,10 +2079,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and advisory practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -2053,7 +2098,7 @@
     "sourceUrls": [
       "https://ratiogroup.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0116",
@@ -2193,10 +2238,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and assurance practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -2212,7 +2257,7 @@
     "sourceUrls": [
       "https://scaudit.co.za/"
     ],
-    "notes": "CA(SA) since 2021 and Registered Auditor since 2024 per the SC Audit team page."
+    "notes": "CA(SA) since 2021 and Registered Auditor since 2024 per the SC Audit team page.  Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0037",
@@ -2880,10 +2925,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit practice",
-    "province": "",
-    "city": "",
+    "province": "Gauteng",
+    "city": "Pretoria",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -2899,7 +2944,7 @@
     "sourceUrls": [
       "https://www.vanwykauditors.com/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0058",
@@ -3976,6 +4021,47 @@
     "notes": "Also founder of and mentor at Isikhuthazi (programme for CTA students and ITC/APC candidates). Internal vs external audit not established from source."
   },
   {
+    "id": "acc-0158",
+    "fullName": "Mbeko Mbebe",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAICA Articles"
+    ],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Chartered Accountant",
+    "employer": "",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Accountancy SA profile \"Mbeko Mbebe – Delay and perseverance: An inspiring journey to CA(SA)\": \"With the release of the December 2022 Assessment of Professional Competence (APC) results in February 2023, Mbeko Mbebe became a chartered accountant.\" Passing the APC is the final SAICA qualification step, which requires a completed training contract.",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "",
+    "articlesBody": "SAICA",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.accountancysa.org.za/casa-profiles/",
+    "sourceUrls": [
+      "https://www.accountancysa.org.za/profile-mbeko-mbebe-delay-and-perseverance-an-inspiring-journey-to-casa/"
+    ],
+    "notes": "Qualified February 2023 (APC results). Employer not stated in the profile. No location evidence."
+  },
+  {
     "id": "acc-0133",
     "fullName": "Mieke Hoffman",
     "status": "CONFIRMED",
@@ -4574,6 +4660,45 @@
     "notes": "Brenn-O-Kem: wine-spirits/ethanol producer (Stellenbosch/Worcester region); 'Senior Accountant at group of companies' per profile."
   },
   {
+    "id": "acc-0159",
+    "fullName": "Neil Morris",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Global Head of Assurance and ESG Methodology",
+    "employer": "KPMG (South Africa)",
+    "roleFamily": "External Audit",
+    "function": "Assurance and ESG methodology",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit network",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Accountancy SA profile \"Neil Morris – The rise of ESG Reporting\": interview with \"Neil Morris, Global Head of Assurance and ESG Methodology at KPMG\", published in the CA(SA) Profiles series.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.accountancysa.org.za/casa-profiles/",
+    "sourceUrls": [
+      "https://www.accountancysa.org.za/profile-neil-morris-the-rise-of-esg-reporting/"
+    ],
+    "notes": "Global (not SA-specific) role, so no South African location is asserted even though KPMG South Africa is the employer of record. Location unverified."
+  },
+  {
     "id": "acc-0095",
     "fullName": "Nethin Karamchand",
     "status": "CONFIRMED",
@@ -4630,10 +4755,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and assurance practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -4649,7 +4774,7 @@
     "sourceUrls": [
       "https://scaudit.co.za/"
     ],
-    "notes": "Also operates Schoemans (Tygervalley and Malmesbury) and Acredo (Paarl, Centurion). CA(SA) and Registered Auditor since 2001 per the SC Audit team page."
+    "notes": "Also operates Schoemans (Tygervalley and Malmesbury) and Acredo (Paarl, Centurion). CA(SA) and Registered Auditor since 2001 per the SC Audit team page.  Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0039",
@@ -5031,10 +5156,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit practice",
-    "province": "",
-    "city": "",
+    "province": "Gauteng",
+    "city": "Roodepoort",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -5050,7 +5175,7 @@
     "sourceUrls": [
       "https://www.zeelie.com/"
     ],
-    "notes": "Established Zeelie Auditors in 1991; the firm's About page names him as Pieter Zeelie CA (SA)."
+    "notes": "Established Zeelie Auditors in 1991; the firm's About page names him as Pieter Zeelie CA (SA).  Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0045",
@@ -5463,10 +5588,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Accounting, tax and audit practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -5482,7 +5607,7 @@
     "sourceUrls": [
       "https://www.schoemans.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0144",
@@ -5502,10 +5627,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and assurance practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -5521,7 +5646,7 @@
     "sourceUrls": [
       "https://scaudit.co.za/"
     ],
-    "notes": "CA(SA) and Registered Auditor since 2017 per the SC Audit team page. Co-founder with Niel Schoeman."
+    "notes": "CA(SA) and Registered Auditor since 2017 per the SC Audit team page. Co-founder with Niel Schoeman.  Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0061",
@@ -5581,10 +5706,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit practice",
-    "province": "",
-    "city": "",
+    "province": "Gauteng",
+    "city": "Roodepoort",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -5600,7 +5725,7 @@
     "sourceUrls": [
       "https://www.zeelie.com/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0152",
@@ -5620,10 +5745,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit practice",
-    "province": "",
-    "city": "",
+    "province": "Gauteng",
+    "city": "Pretoria",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -5639,7 +5764,7 @@
     "sourceUrls": [
       "https://www.vanwykauditors.com/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0068",
@@ -5870,10 +5995,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit and advisory practice",
-    "province": "",
-    "city": "",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -5889,7 +6014,7 @@
     "sourceUrls": [
       "https://ratiogroup.co.za/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0080",
@@ -5948,10 +6073,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit practice",
-    "province": "",
-    "city": "",
+    "province": "Gauteng",
+    "city": "Roodepoort",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -5967,7 +6092,7 @@
     "sourceUrls": [
       "https://www.zeelie.com/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0005",
@@ -6345,10 +6470,10 @@
     "function": "",
     "industry": "Accounting / Audit",
     "subIndustry": "Audit practice",
-    "province": "",
-    "city": "",
+    "province": "Gauteng",
+    "city": "Pretoria",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
@@ -6364,7 +6489,7 @@
     "sourceUrls": [
       "https://www.vanwykauditors.com/"
     ],
-    "notes": ""
+    "notes": "Location is the firm's registered office, recorded as the WORK location per the project's work-location convention — NOT a verified residence."
   },
   {
     "id": "acc-0113",
