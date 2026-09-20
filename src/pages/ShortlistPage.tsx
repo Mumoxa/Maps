@@ -53,7 +53,7 @@ export function ShortlistPage() {
     }
     result.sort((a, b) => {
       let cmp = 0
-      if (sort === 'rank') cmp = parseInt(a.Rank) - parseInt(b.Rank)
+      if (sort === 'rank') cmp = parseInt(a.Rank, 10) - parseInt(b.Rank, 10)
       else if (sort === 'fit_score') {
         cmp = (nameToFitScore.get(a['Full Name']) || 0) - (nameToFitScore.get(b['Full Name']) || 0)
       }
@@ -81,13 +81,17 @@ export function ShortlistPage() {
     return counts
   }, [data])
 
+  const profileNameToId = useMemo(() => {
+    const map = new Map<string, string>()
+    if (!data) return map
+    for (const p of data.profiles) {
+      if (!map.has(p.name)) map.set(p.name, p.id)
+    }
+    return map
+  }, [data])
+
   if (loading) return <LoadingSpinner size="lg" />
   if (!data) return null
-
-  const profileNameToId = new Map<string, string>()
-  for (const p of data.profiles) {
-    if (!profileNameToId.has(p.name)) profileNameToId.set(p.name, p.id)
-  }
 
   const getProfileSlug = (name: string): string | undefined => {
     if (!slugSets) return undefined
@@ -162,8 +166,8 @@ export function ShortlistPage() {
               aria-label="Sort"
               className="filter-select"
             >
-              <option value="rank-asc">Rank 1-50</option>
-              <option value="rank-desc">Rank 50-1</option>
+              <option value="rank-asc">Rank (top first)</option>
+              <option value="rank-desc">Rank (bottom first)</option>
               <option value="fit_score-desc">Fit Score (high)</option>
               <option value="fit_score-asc">Fit Score (low)</option>
             </select>

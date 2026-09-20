@@ -17,6 +17,8 @@ import {
   activeContactFilterCount,
   buildContactFacets,
   filterContacts,
+  readContactSelections,
+  writeContactSelections,
 } from '../data/contactDirectory'
 import type { ContactFacetKey, ContactSelections } from '../data/contactDirectory'
 import { contacts } from '../data/contacts'
@@ -334,6 +336,8 @@ export function ContactDirectory() {
   const [searchParams, setSearchParams] = useSearchParams()
   const [query, setQuery] = useState(() => searchParams.get('q') ?? '')
   const [selections, setSelections] = useState<ContactSelections>(() => {
+    const fromUrl = readContactSelections(searchParams)
+    if (Object.keys(fromUrl).length) return fromUrl
     const company = searchParams.get('company')
     return company ? { companies: [company] } : {}
   })
@@ -346,13 +350,10 @@ export function ContactDirectory() {
   useEffect(() => setVisibleCount(PAGE_SIZE), [query, selections])
 
   useEffect(() => {
-    setSearchParams(prev => {
-      const next = new URLSearchParams(prev)
-      if (query.trim()) next.set('q', query)
-      else next.delete('q')
-      return next
-    }, { replace: true })
-  }, [query, setSearchParams])
+    const next = writeContactSelections(new URLSearchParams(), selections)
+    if (query.trim()) next.set('q', query)
+    setSearchParams(next, { replace: true })
+  }, [query, selections, setSearchParams])
 
   function toggleSelection(key: ContactFacetKey, value: string) {
     setSelections(current => {
@@ -362,17 +363,8 @@ export function ContactDirectory() {
     })
   }
 
-  function setQueryWithUrl(value: string) {
-    setQuery(value)
-  }
-
   function clearFilters() {
     setSelections({})
-    setSearchParams(prev => {
-      const next = new URLSearchParams(prev)
-      next.delete('company')
-      return next
-    }, { replace: true })
   }
 
   return (
@@ -395,7 +387,7 @@ export function ContactDirectory() {
             <Search size={17} aria-hidden="true" />
             <input
               value={query}
-              onChange={event => setQueryWithUrl(event.target.value)}
+              onChange={event => setQuery(event.target.value)}
               placeholder="Search any available contact field"
               aria-label="Search all contact information"
             />
