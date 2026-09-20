@@ -1,7 +1,7 @@
 import { useMemo, useState, useCallback, useEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useData } from '../context/DataContext'
-import { buildCompleteOrgChart, buildTree, buildSlugSets } from '../data'
+import { buildCompleteOrgChart, buildTree, buildSlugSets, getDuplicateProfileNames } from '../data'
 import { OrgChartCanvas } from '../components/map/OrgChartCanvas'
 import { MapSearch } from '../components/map/MapSearch'
 import { MapLegend } from '../components/map/MapLegend'
@@ -27,6 +27,21 @@ export function MapPage() {
   }, [data])
 
   const tree = useMemo(() => buildTree(orgChart), [orgChart])
+
+  const duplicateNames = useMemo(() => {
+    if (!data) return new Set<string>()
+    return getDuplicateProfileNames(data.profiles)
+  }, [data])
+
+  const mapCounts = useMemo(() => {
+    let companies = 0
+    let profiles = 0
+    for (const entry of orgChart) {
+      companies += entry.companies.length
+      for (const comp of entry.companies) profiles += comp.profiles.length
+    }
+    return { companies, profiles }
+  }, [orgChart])
 
   const slugSets = useMemo(() => {
     if (!data) return null
@@ -78,17 +93,20 @@ export function MapPage() {
             tree={tree}
             searchQuery={searchVal}
             filterSegment={segmentFilter}
+            duplicateNames={duplicateNames}
             onProfileClick={handleProfileClick}
           />
-          <div style={{ position: 'absolute', top: '1rem', left: '50%', transform: 'translateX(-50%)', zIndex: 10 }}>
-            <MapFilter
-              segmentOptions={segmentOptions}
-              activeSegment={segmentFilter}
-              onChange={handleSegmentFilter}
-            />
-          </div>
+          <MapFilter
+            segmentOptions={segmentOptions}
+            activeSegment={segmentFilter}
+            onChange={handleSegmentFilter}
+          />
           <MapSearch value={searchVal} onChange={handleSearchChange} />
-          <MapLegend segmentCount={data.segments.length} />
+          <MapLegend
+            segmentCount={data.segments.length}
+            companyCount={mapCounts.companies}
+            profileCount={mapCounts.profiles}
+          />
         </div>
       </div>
 

@@ -19,6 +19,8 @@ interface NodeData extends Record<string, unknown> {
   label: string
   subtitle?: string
   profile?: Profile
+  segment?: string
+  isDuplicate?: boolean
 }
 
 function SegmentNode({ data }: NodeProps) {
@@ -27,7 +29,7 @@ function SegmentNode({ data }: NodeProps) {
     <div className="segment-node">
       <Handle type="source" position={Position.Bottom} />
       <div>{d.label}</div>
-      <div style={{ fontSize: '0.7rem', color: '#6b7280' }}>Segment</div>
+      <div className="map-node-sub">Segment</div>
     </div>
   )
 }
@@ -38,8 +40,8 @@ function CompanyNode({ data }: NodeProps) {
     <div className="company-node">
       <Handle type="target" position={Position.Top} />
       <Handle type="source" position={Position.Bottom} />
-      <div style={{ fontWeight: 500 }}>{d.label}</div>
-      <div style={{ fontSize: '0.7rem', color: '#6b7280' }}>{d.subtitle || 'Company'}</div>
+      <div className="map-node-title">{d.label}</div>
+      <div className="map-node-sub">{d.subtitle || 'Company'}</div>
     </div>
   )
 }
@@ -48,16 +50,15 @@ function ProfileNode({ data }: NodeProps) {
   const d = data as NodeData
   const profile = d.profile
   const isVerification = profile?.company === 'Needs verification'
-  const isDup = profile?.name === 'David Coleman'
   return (
     <div className={`profile-node ${isVerification ? 'verification' : ''}`}>
       <Handle type="target" position={Position.Top} />
-      <div style={{ fontWeight: 500, fontSize: '0.75rem' }}>
+      <div className="map-node-title">
         {profile?.name || d.label}
-        {isDup && <span style={{ color: '#6b7280', fontSize: '0.65rem' }}> (dup)</span>}
+        {d.isDuplicate && <span className="map-node-dup"> (dup)</span>}
       </div>
       {profile && (
-        <div style={{ fontSize: '0.65rem', color: '#6b7280' }}>
+        <div className="map-node-fit">
           Fit: {profile.fit_score}/10
         </div>
       )}
@@ -77,13 +78,14 @@ interface OrgChartCanvasProps {
   onProfileClick?: (profile: Profile) => void
   onNodeHover?: (node: { label: string; data: Record<string, unknown> } | null) => void
   filterSegment?: string
+  duplicateNames?: Set<string>
 }
 
 const NODE_WIDTH = 160
 const LEVEL_SPACING = 80
 const SIBLING_SPACING = 20
 
-function layoutTree(tree: TreeNode[]): { nodes: Node[]; edges: Edge[] } {
+function layoutTree(tree: TreeNode[], duplicateNames: Set<string>): { nodes: Node[]; edges: Edge[] } {
   const nodes: Node[] = []
   const edges: Edge[] = []
 
@@ -94,7 +96,7 @@ function layoutTree(tree: TreeNode[]): { nodes: Node[]; edges: Edge[] } {
       id: segId,
       type: 'segment',
       position: { x: 0, y: yOffset },
-      data: { label: seg.label },
+      data: { label: seg.label, segment: seg.label },
     })
 
     if (seg.children.length > 0) {
@@ -107,7 +109,7 @@ function layoutTree(tree: TreeNode[]): { nodes: Node[]; edges: Edge[] } {
           id: compId,
           type: 'company',
           position: { x: xOffset, y: companyStartY },
-          data: { label: company.label, subtitle: `${company.children.length} profiles` },
+          data: { label: company.label, subtitle: `${company.children.length} profiles`, segment: seg.label },
         })
         edges.push({
           id: `e-${segId}-${compId}`,
@@ -122,11 +124,17 @@ function layoutTree(tree: TreeNode[]): { nodes: Node[]; edges: Edge[] } {
 
           for (const profile of company.children) {
             const profId = `${compId}-prof-${profile.id}`
+            const p = profile.data as Profile | null
             nodes.push({
               id: profId,
               type: 'profile',
               position: { x: pxOffset, y: profileStartY },
-              data: { label: profile.label, profile: profile.data },
+              data: {
+                label: profile.label,
+                profile: profile.data,
+                segment: seg.label,
+                isDuplicate: p ? duplicateNames.has(p.name) : false,
+              },
             })
             edges.push({
               id: `e-${compId}-${profId}`,
@@ -146,8 +154,10 @@ function layoutTree(tree: TreeNode[]): { nodes: Node[]; edges: Edge[] } {
   return { nodes, edges }
 }
 
-export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover, filterSegment }: OrgChartCanvasProps) {
-  const layout = useMemo(() => layoutTree(tree), [tree])
+const EMPTY_NAMES: Set<string> = new Set()
+
+export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover, filterSegment, duplicateNames = EMPTY_NAMES }: OrgChartCanvasProps) {
+  const layout = useMemo(() => layoutTree(tree, duplicateNames), [tree, duplicateNames])
   const [nodes, , onNodesChange] = useNodesState(layout.nodes)
   const [edges, , onEdgesChange] = useEdgesState(layout.edges)
   const [hoveredNode, setHoveredNode] = useState<{ label: string; data: NodeData } | null>(null)
@@ -178,10 +188,12 @@ export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover,
 
   const filteredNodes = useMemo(() => {
     if (!searchQuery && !filterSegment) return nodes
-    const q = searchQuery?.toLowerCase()
+    const q = searchQuery?.trim().toLowerCase()
     return nodes.map(n => {
-      const match = !q || (n.data?.label as string)?.toLowerCase().includes(q)
-      return { ...n, className: match ? '' : 'node-dim' }
+      const d = n.data as NodeData
+      const matchesSearch = !q || d.label?.toLowerCase().includes(q)
+      const matchesSegment = !filterSegment || d.segment === filterSegment
+      return { ...n, className: matchesSearch && matchesSegment ? '' : 'node-dim' }
     })
   }, [nodes, searchQuery, filterSegment])
 
@@ -220,7 +232,7 @@ export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover,
             </div>
           )}
           {hoveredNode.data.subtitle && (
-            <div style={{ fontSize: '0.75rem', color: '#6b7280' }}>{hoveredNode.data.subtitle}</div>
+            <div className="map-tooltip-sub">{hoveredNode.data.subtitle}</div>
           )}
         </div>
       )}
