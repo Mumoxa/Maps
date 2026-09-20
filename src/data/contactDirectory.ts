@@ -215,3 +215,28 @@ export function buildContactFacets(contacts: Contact[]): ContactFacets {
 export function activeContactFilterCount(selections: ContactSelections): number {
   return Object.values(selections).reduce((total, values) => total + (values?.length ?? 0), 0)
 }
+
+// URL (de)serialisation. Contact facet values (company names, titles) routinely
+// contain commas, so this uses one repeated query param per selected value
+// (append/getAll) rather than comma-joining, which the shared facets.ts helper
+// does for its comma-free values.
+export function readContactSelections(params: URLSearchParams): ContactSelections {
+  const selections: ContactSelections = {}
+  for (const key of FACET_KEYS) {
+    const values = params.getAll(key).map(value => value.trim()).filter(Boolean)
+    if (values.length) selections[key] = values
+  }
+  return selections
+}
+
+export function writeContactSelections(params: URLSearchParams, selections: ContactSelections): URLSearchParams {
+  const next = new URLSearchParams(params)
+  for (const key of FACET_KEYS) {
+    next.delete(key)
+    const values = selections[key]
+    if (values && values.length) {
+      for (const value of values) next.append(key, value)
+    }
+  }
+  return next
+}
