@@ -2,6 +2,18 @@ import type { DataBundle, OrgChartEntry, OrgChartCompany, TreeNode, Profile, Com
 import { normalizeCompanyName } from './normalization'
 import { slugify } from './slug'
 
+export function getDuplicateProfileNames(profiles: Profile[]): Set<string> {
+  const counts = new Map<string, number>()
+  for (const p of profiles) {
+    counts.set(p.name, (counts.get(p.name) ?? 0) + 1)
+  }
+  const dups = new Set<string>()
+  for (const [name, count] of counts) {
+    if (count > 1) dups.add(name)
+  }
+  return dups
+}
+
 export function buildCompleteOrgChart(data: DataBundle): OrgChartEntry[] {
   const profileMap = new Map<string, Profile[]>()
   const unverifiedMap = new Map<string, Profile[]>()
