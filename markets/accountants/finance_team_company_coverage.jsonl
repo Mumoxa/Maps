@@ -13,3 +13,5 @@
 {"target_id":"ftc-0041","company":"WBHO Construction - Cape Division","status":"DISCOVERY_WITH_PEOPLE","verified_people_count":26,"last_checked":"2026-09-20","notes":"Structured current-finance discovery and profile enrichment staged."}
 {"target_id":"ftc-0042","company":"Haw & Inglis","status":"DISCOVERY_ZERO_NEEDS_SECOND_CHECK","verified_people_count":0,"last_checked":"2026-09-20","notes":"Structured search returned zero in-scope profiles; second-source check required."}
 {"target_id":"ftc-0043","company":"Martin & East","status":"DISCOVERY_ZERO_NEEDS_SECOND_CHECK","verified_people_count":0,"last_checked":"2026-09-20","notes":"Structured search returned zero in-scope profiles; second-source check required."}
+{"target_id":"ftc-0044","company":"ASLA","status":"DISCOVERY_WITH_PEOPLE","verified_people_count":1,"last_checked":"2026-09-20","notes":"Structured current-finance discovery and profile enrichment staged."}
+{"target_id":"ftc-0045","company":"Concor","status":"DISCOVERY_WITH_PEOPLE","verified_people_count":14,"last_checked":"2026-09-20","notes":"Structured current-finance discovery and profile enrichment staged."}
