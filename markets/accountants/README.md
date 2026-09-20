@@ -60,6 +60,21 @@ ledger after every batch with `python3 gen_sweep_coverage.py`.
 - Employer ERP systems are captured as `employer_systems_observed`, never as `person_systems_confirmed`
   without individual-level evidence.
 
+## Location policy (work location vs residence)
+
+A person's own location is recorded only where a source states it. Where it does not:
+
+- **Practice partner/director captured from a firm team page** — record the firm's registered
+  office city/province as the **work** location with `location_confidence = PROBABLE`, and a
+  `notes` entry saying the value is the firm office, not a verified residence. A partner
+  demonstrably works at the office the page advertises.
+- **Anyone captured from any other source** — leave `city`/`province` null with
+  `location_confidence = UNCONFIRMED`. An employer's head office is **not** evidence of where a
+  particular individual works or lives (a "Global Head" role, a remote role, or a national
+  employer with many sites all break that inference).
+
+A residence or suburb is never inferred from an employer address under any circumstances.
+
 ## Privacy boundary
 
 Public professional information only. No contact details, ID numbers, home addresses or private

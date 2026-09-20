@@ -135,6 +135,10 @@ stop adding new people.
 | 117 | `"our team" chartered accountants Cape Town directors "CA(SA)" partners` | web | 2026-09-19 | W.Cape | CA(SA) | practice | HIGH | Ratio Group, SC Audit, Zeelie, Van Wyk, TC inc., Schoemans | 6 firms | per-firm fetches | partial |
 | 118 | fetch ratiogroup.co.za / scaudit.co.za / zeelie.com / vanwykauditors.com / tc-inc.co.za / schoemans.co.za | fetch | 2026-09-19 | W.Cape | CA(SA) | partner/director | HIGH | 20 named CA(SA) | 6 firms | more WC firm pages | no |
 | 119 | fetch accountancysa.org.za/casa-profiles/ | fetch | 2026-09-19 | national | CA(SA) | any | HIGH (index, 13 chunks) | index mapped, per-profile fetches outstanding | — | per-profile fetch queue | no |
+| 120 | `Ratio Group Ratio Auditors office location` | web | 2026-09-19 | W.Cape | — | — | HIGH (correction) | 0 (location fix) | Ratio Group (Stellenbosch) | — | yes |
+| 121 | `"Van Wyk Auditors" OR "TC inc" Durbanville OR Bellville OR Cape Town auditors address` | web | 2026-09-19 | national | — | — | HIGH (correction) | 0 (location fix) | Van Wyk Auditors (PRETORIA, not WC) | — | yes |
+| 122 | `Zeelie Auditors address city "Pieter Zeelie"` | web | 2026-09-19 | national | — | — | HIGH (correction) | 0 (location fix) | Zeelie Auditors (ROODEPOORT, not WC) | — | yes |
+| 123 | fetch accountancysa.org.za/casa-profiles/ chunk 1 | fetch | 2026-09-19 | national | CA(SA) | any | MEDIUM (3 net after dedup) | Mbebe, Morris, Gounder | Investec Bank | chunks 2-15 | no |
 
 ## Format reference
 

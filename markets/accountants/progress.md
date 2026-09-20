@@ -88,24 +88,53 @@ individual's name*.
 - No person-level location was invented: a firm states an office, not a residence, so these
   records carry `location_confidence = UNCONFIRMED` with city/province null.
 
+### 2026-09-19 (session 3, continued 2) — work-location policy + Accountancy SA index (+3)
+
+- **Location policy adopted and written into README.md.** A person's own location is recorded
+  only where a source states it. Two permitted fallbacks: (1) practice partners/directors
+  captured from a firm team page take the firm's registered office as a **work** location at
+  `PROBABLE`, with a note that it is not a residence; (2) everyone else stays null/`UNCONFIRMED`.
+  An employer head office is never used to infer an individual's location, and a residence or
+  suburb is never inferred from an address.
+- Applied it to the batch-14 twenty: location coverage rose **87/157 → 107/160 (67%)**.
+- **Three corrections found while sourcing office addresses** — the firms are not all Western
+  Cape, and two are not WC at all:
+  - Ratio Group — Stellenbosch (Techno Park), not Cape Town.
+  - Zeelie Auditors — Roodepoort, Gauteng (381 Ontdekkers Rd, Florida Park).
+  - Van Wyk Auditors — Pretoria, Gauteng (462 Grysbok St, Waterkloof Ridge); the firm's
+    LinkedIn confirms "Mr. J van Wyk CA (SA), founding member".
+  Company records for Zeelie and Van Wyk were corrected to Gauteng with a note that they are
+  out-of-region but retained for the designations.
+- **Rejected `procompare.co.za` as evidence**: it displays the identical telephone number
+  (021 286 6892) for four unrelated firms (Ratio Group, Ratio Accounting, Van Wyk Auditors,
+  Van Wyk Willem Accountants) — the aggregator is recycling contact data.
+- Batch 15 (+3 CA(SA), +1 company, +4 sources) from the Accountancy SA CA(SA) Profiles index:
+  Mbeko Mbebe (qualified Feb 2023 via APC), Neil Morris (Global Head of Assurance & ESG
+  Methodology, KPMG), Bhavna Gounder (Investec Bank). Kerry Cassel (Motus) was already
+  acc-0046; Polani Sokombela and Jody Baumgarten already present; Bernard Rolfe Whitaker
+  (BR Whitaker & Co, est. 1933) excluded as a historical/deceased founder.
+- **Throughput re-measured and it is worse than estimated**: after dedup the index yields
+  ~1.5 net new people per chunk (3 net from 2 chunks; 16 chunks total). Firm team pages yield
+  ~4 per page. The ~10x target therefore needs roughly 300-700 sourced pages.
+
 ## Running totals (session 3 close)
 
 | Metric | Count |
 |---|---|
-| Confirmed qualified people | **128** |
+| Confirmed qualified people | **131** |
 | High-confidence people | 27 |
 | Articles-confirmed / designation-unverified | 1 (Alan Robbins, Sable Intl) |
 | Conflicting-designation records | 1 (Alicia Haasbroek, LDP) |
-| Total people records | 157 |
-| Companies mapped | 256 (cmp-0001–0256; cmp-0025 intentionally absent) |
-| Unique sources | 88 |
-| Searches executed (cumulative) | 119 |
+| Total people records | 160 |
+| Companies mapped | 257 (cmp-0001–0257; cmp-0025 intentionally absent) |
+| Unique sources | 92 |
+| Searches executed (cumulative) | 123 |
 | Provinces covered | 7 (Western Cape, Gauteng, KwaZulu-Natal, Free State, Limpopo, Mpumalanga-origin, Eastern Cape) |
 | Cities covered | ~33 |
 
 ## Qualification breakdown (CONFIRMED unless noted)
 
-CA(SA): 108 · AGA(SA): 8 · ACMA: 9 · CGMA: 11 · FCMA: 2 · FCCA: 2 ·
+CA(SA): 111 · AGA(SA): 8 · ACMA: 9 · CGMA: 11 · FCMA: 2 · FCCA: 2 ·
 PA(SA): 0 CONFIRMED, 15 HIGH_CONFIDENCE · multi-designation (CONFIRMED): 11 —
 ACMA+CGMA ×8 (Dlamini, Mutizwa, Visser, Danster, van Niekerk, Smith, Hoffman, Kuni),
 FCMA+CGMA ×2 (Tshetshe, Mithi), CA(SA)+ACMA+CGMA ×1 (Dzvova; also holds CIA + Cert.Dir®)
@@ -137,7 +166,7 @@ RPL: 0 · reciprocity: 0 · other route: 0 · route unknown: 0
 | Mpumalanga | 0 | 0 |
 | North West | 0 | 0 |
 | Northern Cape | 0 | 0 |
-| (no location evidence) | 44 | 47 |
+| (no location evidence) | 53 | 53 |
 
 ## Industry coverage
 
@@ -194,8 +223,8 @@ Engineering, Pharmaceuticals (Bayer — historic).
 - **SCALE IS THE OPEN ITEM.** Target is ~10x the current pool (≈1,400 people); the store holds
   157. Bulk sourcing is the only viable route — see below.
 - **Bulk veins identified but not yet mined:**
-  - `https://www.accountancysa.org.za/casa-profiles/` — CA(SA) Profiles index, 13 chunks of
-    profile articles, each naming CA(SA) holders. Highest-yield CA(SA) source found so far.
+  - `https://www.accountancysa.org.za/casa-profiles/` — CA(SA) Profiles index, **16 chunks**
+    of profile articles. Chunks 0-1 mined in batch 15: 3 net new after dedup. ~14 chunks remain.
   - `accountancysa.org.za` "Meet our members" (SAICA) — previously yielded ~35 names.
   - Western Cape practice team pages (the batch-14 pattern): ~4 designation-bearing people per
     page. Hundreds of WC firms remain.
