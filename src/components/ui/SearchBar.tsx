@@ -71,10 +71,10 @@ export function SearchBar({ value, onChange, onSearch, placeholder = 'Search...'
       {showResults && results.length > 0 && currentValue.trim() && (
         <div className="search-results">
           {results.map((r, i) => (
-            <div key={i} className="search-result-item" onClick={() => handleSelect(r)}>
-              <div style={{ fontWeight: 500 }}>{r.label}</div>
-              <div style={{ fontSize: '0.75rem', color: '#6b7280' }}>{r.type}</div>
-            </div>
+            <button type="button" key={i} className="search-result-item" onClick={() => handleSelect(r)}>
+              <div className="search-result-name">{r.label}</div>
+              <div className="search-result-type">{r.type}</div>
+            </button>
           ))}
         </div>
       )}

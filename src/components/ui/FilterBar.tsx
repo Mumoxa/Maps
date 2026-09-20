@@ -33,10 +33,10 @@ export function FilterBar({ filters, activeFilters, onChange, onClear }: FilterB
       ))}
       {Object.entries(activeFilters).map(([key, val]) =>
         val ? (
-          <span key={key} className="filter-chip" onClick={() => onChange(key, null)}>
+          <button type="button" key={key} className="filter-chip" onClick={() => onChange(key, null)} aria-label={`Remove ${key} filter`}>
             {key}: {val}
-            <X size={12} />
-          </span>
+            <X size={12} aria-hidden="true" />
+          </button>
         ) : null
       )}
       {hasActive && (
