@@ -66,24 +66,46 @@ Live research log. Updated after every ~2–5 verified people or completed resea
   PwC (SA), ASL. (PwC now has a person-linked articles record via Andisa Zinja, but no person
   is yet recorded *employed at* PwC.)
 
+### 2026-09-19 (session 3, continued) — bulk sourcing: firm team pages (+20 people)
+
+Scale target set: multiply the candidate pool ~10x. One-search-per-person cannot reach it, so
+the method changed to **bulk primary sources** — pages that state a designation *against each
+individual's name*.
+
+- Added `bulk_lib.py`: expands a compact `(name, designations, title, overrides)` tuple row into
+  a full `db_lib` spec for dozens of people sharing one employer/source. Includes
+  `split_name()` (surname particles) and `resolve_name()` (the store's own split wins for
+  compound surnames) plus `tests_bulk_lib.py` (16 split cases + 2 store-lookup cases, all pass).
+- Batch 14 (+20 CA(SA), +6 companies, +6 sources) from six Western Cape practice team pages:
+  Ratio Group (5 directors), SC Audit (3 partners), Zeelie Auditors (3), Van Wyk Auditors (4),
+  TC inc. (3), Schoemans (2 partners, HIGH_CONFIDENCE).
+- Dedup caught a real collision: **Nadia van der Westhuizen** appears on the Ratio Group team
+  page but is already acc-0123 (LDP) — not re-added. Milton Kirsten (Ratio Group, "B Com
+  Financial Accounting") excluded: no target designation.
+- Bug found and fixed: `split_name()` split "Tian van der Merwe" as `Tian van / der Merwe`
+  (acc-0139 corrected in place). The particle rule now splits at the **first** particle;
+  `tests_bulk_lib.py` guards it.
+- No person-level location was invented: a firm states an office, not a residence, so these
+  records carry `location_confidence = UNCONFIRMED` with city/province null.
+
 ## Running totals (session 3 close)
 
 | Metric | Count |
 |---|---|
-| Confirmed qualified people | **110** |
-| High-confidence people | 25 |
+| Confirmed qualified people | **128** |
+| High-confidence people | 27 |
 | Articles-confirmed / designation-unverified | 1 (Alan Robbins, Sable Intl) |
 | Conflicting-designation records | 1 (Alicia Haasbroek, LDP) |
-| Total people records | 137 |
-| Companies mapped | 250 (cmp-0001–0250; cmp-0025 intentionally absent) |
-| Unique sources | 82 |
-| Searches executed (cumulative) | 114 |
+| Total people records | 157 |
+| Companies mapped | 256 (cmp-0001–0256; cmp-0025 intentionally absent) |
+| Unique sources | 88 |
+| Searches executed (cumulative) | 119 |
 | Provinces covered | 7 (Western Cape, Gauteng, KwaZulu-Natal, Free State, Limpopo, Mpumalanga-origin, Eastern Cape) |
 | Cities covered | ~33 |
 
 ## Qualification breakdown (CONFIRMED unless noted)
 
-CA(SA): 90 · AGA(SA): 8 · ACMA: 9 · CGMA: 11 · FCMA: 2 · FCCA: 2 ·
+CA(SA): 108 · AGA(SA): 8 · ACMA: 9 · CGMA: 11 · FCMA: 2 · FCCA: 2 ·
 PA(SA): 0 CONFIRMED, 15 HIGH_CONFIDENCE · multi-designation (CONFIRMED): 11 —
 ACMA+CGMA ×8 (Dlamini, Mutizwa, Visser, Danster, van Niekerk, Smith, Hoffman, Kuni),
 FCMA+CGMA ×2 (Tshetshe, Mithi), CA(SA)+ACMA+CGMA ×1 (Dzvova; also holds CIA + Cert.Dir®)
@@ -169,6 +191,18 @@ Engineering, Pharmaceuticals (Bayer — historic).
 
 ## Outstanding avenues (next sessions)
 
+- **SCALE IS THE OPEN ITEM.** Target is ~10x the current pool (≈1,400 people); the store holds
+  157. Bulk sourcing is the only viable route — see below.
+- **Bulk veins identified but not yet mined:**
+  - `https://www.accountancysa.org.za/casa-profiles/` — CA(SA) Profiles index, 13 chunks of
+    profile articles, each naming CA(SA) holders. Highest-yield CA(SA) source found so far.
+  - `accountancysa.org.za` "Meet our members" (SAICA) — previously yielded ~35 names.
+  - Western Cape practice team pages (the batch-14 pattern): ~4 designation-bearing people per
+    page. Hundreds of WC firms remain.
+  - JSE-listed integrated annual reports: director bios carry designation AND articles route in
+    one primary source.
+- **Rejected as evidence:** `pkf.co.za` office pages list ~80 partners/directors **without**
+  per-person designations — qualification_rules.md forbids CONFIRMED capture on that basis.
 - **Western Cape industrial/manufacturing sweep — 174 companies PENDING.** Work the ledger in
   `sweep_coverage.md`; prioritise JSE-listed groups (annual-report director bios carry both
   designation and articles route), then mid-caps, then private plants via LinkedIn/firm sites.

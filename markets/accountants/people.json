@@ -1,5 +1,44 @@
 [
   {
+    "id": "acc-0155",
+    "fullName": "Abré van Wyk",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, TC inc. (chartered accountant and tax practitioner)",
+    "employer": "TC inc.",
+    "roleFamily": "Tax & Advisory",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit, accounting and tax practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "TC inc. site: \"Both André Conradie and Eddie Turner are chartered accountants, registered auditors and tax practitioners, whereas Abré van Wyk is a chartered accountant and tax practitioners.\" Leadership pages are titled \"YOUR SUCCESS COUNTS – André Conradie CA(SA)\" and \"A VIEW FROM THE TOP – Abré van Wyk CA(SA)\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.tc-inc.co.za/",
+    "sourceUrls": [
+      "https://www.tc-inc.co.za/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0032",
     "fullName": "Adre Daniel",
     "status": "HIGH_CONFIDENCE",
@@ -249,6 +288,45 @@
     "notes": "Joint MD of Streets' Cape Town office (formerly MD Accountants & Auditors, rebranded MD Streets Jan 2026)."
   },
   {
+    "id": "acc-0142",
+    "fullName": "Alice le Roux",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Director, Ratio Auditors Incorporated",
+    "employer": "Ratio Group",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and advisory practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Ratio Group \"Meet the Team\" page lists each director with the designation against their name — e.g. \"Tian van der Merwe — B Compt (Hons), CA (SA), RA\"; \"Annebelle Malan — B Acc (Hons), CA (SA), RA\". The page also records that the firm runs \"a team of SAICA trainees\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://ratiogroup.co.za/",
+    "sourceUrls": [
+      "https://ratiogroup.co.za/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0125",
     "fullName": "Alicia Haasbroek",
     "status": "CONFLICTING",
@@ -366,6 +444,45 @@
       "https://nationalgovernment.co.za/units/management/290/trans-caledon-tunnel-authority-tcta"
     ],
     "notes": "Named 2025 Public Sector CFO of the Year. CA(SA) designation rests on a public LinkedIn announcement plus two independent media profiles describing her as a chartered accountant — strong multi-source but no SAICA register/profile confirmation, hence HIGH_CONFIDENCE rather than CONFIRMED. Articles route IS explicit (PwC, 2007-2010). Location: works at the TCTA offices in Centurion, Tshwane; origin Gqeberha (Eastern Cape) — residence not stated, so recorded as PROBABLE work location only."
+  },
+  {
+    "id": "acc-0153",
+    "fullName": "André Conradie",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Founder, TC inc. (chartered accountant, registered auditor and tax practitioner)",
+    "employer": "TC inc.",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit, accounting and tax practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "TC inc. site: \"Both André Conradie and Eddie Turner are chartered accountants, registered auditors and tax practitioners, whereas Abré van Wyk is a chartered accountant and tax practitioners.\" Leadership pages are titled \"YOUR SUCCESS COUNTS – André Conradie CA(SA)\" and \"A VIEW FROM THE TOP – Abré van Wyk CA(SA)\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.tc-inc.co.za/",
+    "sourceUrls": [
+      "https://www.tc-inc.co.za/"
+    ],
+    "notes": "Founded the practice in Durbanville in 2006 as Turner Conradie; the firm was later renamed TC inc."
   },
   {
     "id": "acc-0114",
@@ -524,6 +641,45 @@
       "https://www.saica.org.za/news/microlearnings-from-cassa-over-40"
     ],
     "notes": "Started CA(SA) journey at age 29. Practice located Vereeniging, Gauteng."
+  },
+  {
+    "id": "acc-0140",
+    "fullName": "Annebelle Malan",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Director, Ratio Auditors Incorporated",
+    "employer": "Ratio Group",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and advisory practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Ratio Group \"Meet the Team\" page lists each director with the designation against their name — e.g. \"Tian van der Merwe — B Compt (Hons), CA (SA), RA\"; \"Annebelle Malan — B Acc (Hons), CA (SA), RA\". The page also records that the firm runs \"a team of SAICA trainees\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://ratiogroup.co.za/",
+    "sourceUrls": [
+      "https://ratiogroup.co.za/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0100",
@@ -917,6 +1073,45 @@
     "notes": "Roodepoort, Gauteng."
   },
   {
+    "id": "acc-0151",
+    "fullName": "Carmen Coetzee",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Van Wyk Auditors",
+    "employer": "Van Wyk Auditors",
+    "roleFamily": "Accounting practice",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Van Wyk Auditors contact page lists each partner with \"Hons B Compt. GR(SA) / CA(SA)\" against their name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.vanwykauditors.com/",
+    "sourceUrls": [
+      "https://www.vanwykauditors.com/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0019",
     "fullName": "Cecelia Swartz",
     "status": "CONFIRMED",
@@ -955,6 +1150,45 @@
       "https://www.saica.org.za/news/defining-your-destiny-cecelia-swartz-casa"
     ],
     "notes": "Profile concerns a handbag/exec-creator venture; accounting employer/title not stated."
+  },
+  {
+    "id": "acc-0141",
+    "fullName": "Christiaan Laubscher",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Director, Ratio Advisory (Pty) Ltd",
+    "employer": "Ratio Group",
+    "roleFamily": "Tax & Advisory",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and advisory practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Ratio Group \"Meet the Team\" page lists each director with the designation against their name — e.g. \"Tian van der Merwe — B Compt (Hons), CA (SA), RA\"; \"Annebelle Malan — B Acc (Hons), CA (SA), RA\". The page also records that the firm runs \"a team of SAICA trainees\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://ratiogroup.co.za/",
+    "sourceUrls": [
+      "https://ratiogroup.co.za/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0069",
@@ -1272,6 +1506,45 @@
     "notes": "Joint MD of Streets' Cape Town office."
   },
   {
+    "id": "acc-0156",
+    "fullName": "Dirk Visser",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Schoemans Accountants",
+    "employer": "Schoemans Registered Auditors and Chartered Accountants",
+    "roleFamily": "Tax & Advisory",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting, tax and audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Schoemans site: \"Owner and operator Niel Schoeman have been a practising CA (SA) and registered auditor since 2001 and, alongside Partners Dirk Visser and Severus Smith, manages offices in both Tygervalley and Malmesbury.\" The firm describes \"a team of SAICA-, SAIPA- and IRBA-registered professionals\". Recorded as HIGH_CONFIDENCE: the partners are named within a sentence anchored on CA (SA) rather than having the designation repeated against each individual name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.schoemans.co.za/",
+    "sourceUrls": [
+      "https://www.schoemans.co.za/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0071",
     "fullName": "Div Lamprecht",
     "status": "CONFIRMED",
@@ -1453,6 +1726,45 @@
       "https://www.linkedin.com/in/edburg-strauss/"
     ],
     "notes": "netCFO uses Xero for client accounting (employer-level system observation); CA(SA) registration completion announced on LinkedIn."
+  },
+  {
+    "id": "acc-0154",
+    "fullName": "Eddie Turner",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, TC inc. (chartered accountant, registered auditor and tax practitioner)",
+    "employer": "TC inc.",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit, accounting and tax practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "TC inc. site: \"Both André Conradie and Eddie Turner are chartered accountants, registered auditors and tax practitioners, whereas Abré van Wyk is a chartered accountant and tax practitioners.\" Leadership pages are titled \"YOUR SUCCESS COUNTS – André Conradie CA(SA)\" and \"A VIEW FROM THE TOP – Abré van Wyk CA(SA)\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.tc-inc.co.za/",
+    "sourceUrls": [
+      "https://www.tc-inc.co.za/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0103",
@@ -1705,6 +2017,45 @@
     "notes": "Director; tax specialisation per PG Dip (Tax)."
   },
   {
+    "id": "acc-0138",
+    "fullName": "Francois Geldenhuys",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Director, Ratio Advisory (Pty) Ltd",
+    "employer": "Ratio Group",
+    "roleFamily": "Tax & Advisory",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and advisory practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Ratio Group \"Meet the Team\" page lists each director with the designation against their name — e.g. \"Tian van der Merwe — B Compt (Hons), CA (SA), RA\"; \"Annebelle Malan — B Acc (Hons), CA (SA), RA\". The page also records that the firm runs \"a team of SAICA trainees\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://ratiogroup.co.za/",
+    "sourceUrls": [
+      "https://ratiogroup.co.za/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0116",
     "fullName": "Francois Joubert",
     "status": "CONFIRMED",
@@ -1823,6 +2174,45 @@
       "https://www.saica.org.za/news/when-passion-and-talent-collide-grant-greeff"
     ],
     "notes": "Aged 30 at time of profile (2021). Drones/technology sector."
+  },
+  {
+    "id": "acc-0145",
+    "fullName": "Hennie Meyer",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Registered Auditor, SC Audit",
+    "employer": "SC Audit (Schoeman Coetzee Audit)",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and assurance practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "SC Audit \"MEET THE TEAM\" section states the designation and registration year for each partner: \"NIEL SCHOEMAN — CA(SA) and Registered Auditor since 2001\"; \"SIMONE COETZEE — CA(SA) and Registered Auditor since 2017\"; \"HENNIE MEYER — CA(SA) since 2021 and Registered Auditor since 2024\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://scaudit.co.za/",
+    "sourceUrls": [
+      "https://scaudit.co.za/"
+    ],
+    "notes": "CA(SA) since 2021 and Registered Auditor since 2024 per the SC Audit team page."
   },
   {
     "id": "acc-0037",
@@ -2471,6 +2861,45 @@
       "https://mca-acc.co.za/"
     ],
     "notes": "SAIPA-designate director; PA(SA) inferred from 'SAIPA' credential (firm team page, not a membership register)."
+  },
+  {
+    "id": "acc-0150",
+    "fullName": "Justus van Wyk",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Van Wyk Auditors",
+    "employer": "Van Wyk Auditors",
+    "roleFamily": "Accounting practice",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Van Wyk Auditors contact page lists each partner with \"Hons B Compt. GR(SA) / CA(SA)\" against their name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.vanwykauditors.com/",
+    "sourceUrls": [
+      "https://www.vanwykauditors.com/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0058",
@@ -4184,6 +4613,45 @@
     "notes": "Deloitte, Cape Town; prior London (UK) Big Four / financial-services roles."
   },
   {
+    "id": "acc-0143",
+    "fullName": "Niel Schoeman",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, SC Audit (Registered Auditor since 2001)",
+    "employer": "SC Audit (Schoeman Coetzee Audit)",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and assurance practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "SC Audit \"MEET THE TEAM\" section states the designation and registration year for each partner: \"NIEL SCHOEMAN — CA(SA) and Registered Auditor since 2001\"; \"SIMONE COETZEE — CA(SA) and Registered Auditor since 2017\"; \"HENNIE MEYER — CA(SA) since 2021 and Registered Auditor since 2024\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://scaudit.co.za/",
+    "sourceUrls": [
+      "https://scaudit.co.za/"
+    ],
+    "notes": "Also operates Schoemans (Tygervalley and Malmesbury) and Acredo (Paarl, Centurion). CA(SA) and Registered Auditor since 2001 per the SC Audit team page."
+  },
+  {
     "id": "acc-0039",
     "fullName": "Nkosana Dlamini",
     "status": "CONFIRMED",
@@ -4544,6 +5012,45 @@
       "https://www.globaldata.com/company-profile/afrimat-ltd/executives/"
     ],
     "notes": "Articles route NOT recorded as confirmed: no source states the training office explicitly. GlobalData's biography records 16 years at PricewaterhouseCoopers, which strongly implies a SAICA training contract there, but per qualification_rules.md a designation plus employer history is not sufficient to assert an articles route — needs a primary bio before CONFIRMED_EXPLICIT."
+  },
+  {
+    "id": "acc-0146",
+    "fullName": "Pieter Zeelie",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Founder and partner, Zeelie Auditors",
+    "employer": "Zeelie Auditors",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Zeelie Auditors About page: \"established in 1991 by Pieter Zeelie CA (SA) ... grown into a dynamic small/medium sized practise which allowed for the appointment of two more partners, Suzel Breytenbach CA (SA) and Trudie Botha CA (SA).\" Designation stated against each name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.zeelie.com/",
+    "sourceUrls": [
+      "https://www.zeelie.com/"
+    ],
+    "notes": "Established Zeelie Auditors in 1991; the firm's About page names him as Pieter Zeelie CA (SA)."
   },
   {
     "id": "acc-0045",
@@ -4939,6 +5446,84 @@
     "notes": "Explicit: \"Sandi completed her articles at Deloitte before joining SAP.\" SAP is her employer (software vendor) — recorded as employer_systems_observed, not claimed personal hands-on SAP module usage beyond her SAP leadership roles."
   },
   {
+    "id": "acc-0157",
+    "fullName": "Severus Smith",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Schoemans Accountants",
+    "employer": "Schoemans Registered Auditors and Chartered Accountants",
+    "roleFamily": "Tax & Advisory",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting, tax and audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Schoemans site: \"Owner and operator Niel Schoeman have been a practising CA (SA) and registered auditor since 2001 and, alongside Partners Dirk Visser and Severus Smith, manages offices in both Tygervalley and Malmesbury.\" The firm describes \"a team of SAICA-, SAIPA- and IRBA-registered professionals\". Recorded as HIGH_CONFIDENCE: the partners are named within a sentence anchored on CA (SA) rather than having the designation repeated against each individual name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.schoemans.co.za/",
+    "sourceUrls": [
+      "https://www.schoemans.co.za/"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "acc-0144",
+    "fullName": "Simone Coetzee",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, SC Audit (Registered Auditor since 2017)",
+    "employer": "SC Audit (Schoeman Coetzee Audit)",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and assurance practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "SC Audit \"MEET THE TEAM\" section states the designation and registration year for each partner: \"NIEL SCHOEMAN — CA(SA) and Registered Auditor since 2001\"; \"SIMONE COETZEE — CA(SA) and Registered Auditor since 2017\"; \"HENNIE MEYER — CA(SA) since 2021 and Registered Auditor since 2024\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://scaudit.co.za/",
+    "sourceUrls": [
+      "https://scaudit.co.za/"
+    ],
+    "notes": "CA(SA) and Registered Auditor since 2017 per the SC Audit team page. Co-founder with Niel Schoeman."
+  },
+  {
     "id": "acc-0061",
     "fullName": "Siphesihle Mlangeni",
     "status": "CONFIRMED",
@@ -4977,6 +5562,84 @@
       "https://www.accountancysa.org.za/casa-profiles/"
     ],
     "notes": "Coupled profile. Employer not stated in snippet."
+  },
+  {
+    "id": "acc-0147",
+    "fullName": "Suzel Breytenbach",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Zeelie Auditors",
+    "employer": "Zeelie Auditors",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Zeelie Auditors About page: \"established in 1991 by Pieter Zeelie CA (SA) ... grown into a dynamic small/medium sized practise which allowed for the appointment of two more partners, Suzel Breytenbach CA (SA) and Trudie Botha CA (SA).\" Designation stated against each name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.zeelie.com/",
+    "sourceUrls": [
+      "https://www.zeelie.com/"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "acc-0152",
+    "fullName": "Tanya Oberholzer",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Van Wyk Auditors",
+    "employer": "Van Wyk Auditors",
+    "roleFamily": "Accounting practice",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Van Wyk Auditors contact page lists each partner with \"Hons B Compt. GR(SA) / CA(SA)\" against their name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.vanwykauditors.com/",
+    "sourceUrls": [
+      "https://www.vanwykauditors.com/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0068",
@@ -5190,6 +5853,45 @@
     "notes": "Exposure across agriculture, financial services, retail, manufacturing, energy, mining; plus tax consulting."
   },
   {
+    "id": "acc-0139",
+    "fullName": "Tian van der Merwe",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Director, Ratio Auditors Incorporated",
+    "employer": "Ratio Group",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit and advisory practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Ratio Group \"Meet the Team\" page lists each director with the designation against their name — e.g. \"Tian van der Merwe — B Compt (Hons), CA (SA), RA\"; \"Annebelle Malan — B Acc (Hons), CA (SA), RA\". The page also records that the firm runs \"a team of SAICA trainees\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://ratiogroup.co.za/",
+    "sourceUrls": [
+      "https://ratiogroup.co.za/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0080",
     "fullName": "Trevor McLachlan",
     "status": "HIGH_CONFIDENCE",
@@ -5227,6 +5929,45 @@
       "https://mca-acc.co.za/"
     ],
     "notes": "Founder of McA Inc. (est. 1994, Cape Town); PA(SA) inferred from 'SAIPA' credential."
+  },
+  {
+    "id": "acc-0148",
+    "fullName": "Trudie Botha",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Zeelie Auditors",
+    "employer": "Zeelie Auditors",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Zeelie Auditors About page: \"established in 1991 by Pieter Zeelie CA (SA) ... grown into a dynamic small/medium sized practise which allowed for the appointment of two more partners, Suzel Breytenbach CA (SA) and Trudie Botha CA (SA).\" Designation stated against each name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.zeelie.com/",
+    "sourceUrls": [
+      "https://www.zeelie.com/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0005",
@@ -5585,6 +6326,45 @@
       "https://www.saica.org.za/members/member-info/meet-our-members/"
     ],
     "notes": "Signed \"contract of articles\" in June 1997 and served articles with KPMG; undergraduate degree from National University of Lesotho. MBA (Wits 2010). Practitioner member of ACTSA. Started at Nedbank in structured finance; now heads the Mining and Chemicals sector banking team."
+  },
+  {
+    "id": "acc-0149",
+    "fullName": "Willem Schoeman",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Partner, Van Wyk Auditors",
+    "employer": "Van Wyk Auditors",
+    "roleFamily": "Accounting practice",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit practice",
+    "province": "",
+    "city": "",
+    "country": "South Africa",
+    "locationConfidence": "UNCONFIRMED",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Van Wyk Auditors contact page lists each partner with \"Hons B Compt. GR(SA) / CA(SA)\" against their name.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.vanwykauditors.com/",
+    "sourceUrls": [
+      "https://www.vanwykauditors.com/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0113",

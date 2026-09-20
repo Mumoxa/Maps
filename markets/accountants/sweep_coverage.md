@@ -2,7 +2,7 @@
 
 **This ledger is the completeness contract for the sweep.** Every company in
 `inputs/2026-09-19-wc-industrial-companies.tsv` (transcribed from the supplied
-`Companies.csv`, 2026-09-19) appears below exactly once. **No company may be dropped.**
+`Companies.csv`, 2026-09-20) appears below exactly once. **No company may be dropped.**
 
 A company is only `COVERED` once at least one person holding a recognised SAIPA / SAICA /
 CIMA / ACCA designation is recorded against it in `people.jsonl` **with evidence**.

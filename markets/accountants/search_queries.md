@@ -130,6 +130,11 @@ stop adding new people.
 | 112 | `Sea Harvest Group chief financial officer "CA(SA)" Vredenburg chartered accountant` | web | 2026-09-19 | W.Cape | CA(SA) | CFO | HIGH | Muhammad Brey | Sea Harvest Group, Ladismith Cheese | conflicting-articles resolution | partial |
 | 113 | `"Muhammad Brey" Sea Harvest CFO CA(SA) articles` | web | 2026-09-19 | W.Cape | CA(SA) | CFO | HIGH | (KPMG vs Mazars conflict) | Sea Harvest, KPMG, Mazars, Brimstone | — | yes |
 | 114 | `Oceana Group / Grant Thornton SA / Bayer SA "CA(SA)" CFO` (generic + report-led) | web | 2026-09-19 | W.Cape | CA(SA) | CFO | LOW | none (job-ad dominated) | Oceana (Zafar Mahomed lead, unverified) | report-led queries only | not exhausted |
+| 115 | `SAIPA registered professional accountants directory Western Cape "PA(SA)"` | web | 2026-09-19 | W.Cape | PA(SA) | any | LOW | none (IFAC/pnet only) | — | body register targeting | not exhausted |
+| 116 | fetch mca-acc.co.za team page | fetch | 2026-09-19 | W.Cape | CA(SA)/AGA(SA)/SAIPA | practice | MEDIUM | 0 new (5 already in store) | McA Inc. | — | yes |
+| 117 | `"our team" chartered accountants Cape Town directors "CA(SA)" partners` | web | 2026-09-19 | W.Cape | CA(SA) | practice | HIGH | Ratio Group, SC Audit, Zeelie, Van Wyk, TC inc., Schoemans | 6 firms | per-firm fetches | partial |
+| 118 | fetch ratiogroup.co.za / scaudit.co.za / zeelie.com / vanwykauditors.com / tc-inc.co.za / schoemans.co.za | fetch | 2026-09-19 | W.Cape | CA(SA) | partner/director | HIGH | 20 named CA(SA) | 6 firms | more WC firm pages | no |
+| 119 | fetch accountancysa.org.za/casa-profiles/ | fetch | 2026-09-19 | national | CA(SA) | any | HIGH (index, 13 chunks) | index mapped, per-profile fetches outstanding | — | per-profile fetch queue | no |
 
 ## Format reference
 
