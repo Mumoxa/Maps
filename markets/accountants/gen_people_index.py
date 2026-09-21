@@ -107,6 +107,20 @@ def build():
         ("PKF WC partner/director names", "Bellville/Stellenbosch (~13), Constantia Valley (~5), George (5) — names in snippets only, designations unverified; verify per person before capture."),
         ("Crowe CT/Winelands team", "Gorgulho, Karro, Jonkers, Hamman, Bestbier, Marais et al — roster names without per-person designation wording; verify before capture."),
         ("Fenns Mossel Bay team", "Jaco Vollgraaff pictured; Greg/San-Marie/Wilma/Jenna/Rochelle/Zinzan named in reviews without designations — verify before capture."),
+        # --- session 3 (2026-09-21), Western Cape non-CA sweep ---
+        ("Candice Galant", "Cape Town — LinkedIn card 'Senior Financial Accountant / Eligible to register as AGA(SA)' — PIPELINE (eligible, not registered). Re-check for AGA(SA) registration."),
+        ("Anelisiwe Mdoyi", "Cape Town — LinkedIn card 'Eligible to register as a AGA(SA) — Senior Auditor' — PIPELINE (eligible, not registered)."),
+        ("Chamu Makaranga", "Maersk, Cape Town — CIMA appears only under Education; no ACMA/CGMA wording → RESEARCH_HOLD."),
+        ("Deon Poolman", "Deon Poolman Professional Accountants (Durbanville) — bio lists degrees only, no SAIPA designation wording → RESEARCH_HOLD (verify SAIPA membership)."),
+        ("Wynand Le Roux", "findanaccountant.co.za listing (Durbanville) — 'SAIPA' only, no personal designation wording → RESEARCH_HOLD."),
+        ("Kobus Muller", "Somerset West — LinkedIn card 'Tax specialist and accountant' — no designation wording."),
+        ("Maike Reiner ACMA, CGMA / Rachel Cowan FCCA", "Tagged/author in Ozow LinkedIn posts — designation in name field but LOCATION and profile URL unverified → watchlist (likely Ozow Cape Town team)."),
+        ("Mohamed Banderker / Enid Strydom", "SAIPA 'Professional Accountant' magazine (Dec 2019) lists both under 'Western Cape' — context (award/new member) unverified → watchlist."),
+        ("Travis Wessels ACMA, CGMA", "PepsiCo — Zaventem, Belgium (career history Tygervalley/Paarl; announced CFO Southern Africa role) — out of SA location today; inbound watchlist."),
+        ("Kelsey Good AGA(SA)", "Corbion — Gorinchem, Netherlands (ex East London). Out of SA scope."),
+        ("Nkateko Maloox AGA(SA)", "Sci-Bono Discovery Centre — Gauteng. Outside this session's Western Cape scope; candidate for Gauteng expansion."),
+        ("Derick Wesson CA(SA), RA (PKF CT); Johan Loubser & Selna de Jongh (APBCO Paarl, CA + RA)", "CA(SA)/RA — outside the non-CA designation scope of the WC sweep; not captured (CA-track candidates)."),
+        ("Moore South Africa partner directory (people pages 1–4)", "Names/titles/locations only — no designation wording on the directory; verify per person on bio pages before capture."),
     ]
     L.append("| Name(s) | Reason excluded |")
     L.append("|---|---|")
@@ -121,7 +135,12 @@ def build():
     L.append("| **Ashley Du Plessis AGA(SA)** (Paarl) vs **Lian du Plessis AGA(SA)** (Cape Chamber) vs **Lézanne Dirkse van Schalkwyk AGA(SA)** (McA) | Three distinct people — do not conflate by surname 'du Plessis'. |")
     L.append("| **Bonga Mokoena** | Duplicate `acc-0126` merged into `acc-0051` (single record since session 2). |")
     L.append("| **BDO South Africa** | Duplicate `cmp-0031` merged into `cmp-0071` (single record). |")
-    L.append("| **Streets Chartered Accountants** vs **Streets (UK)** | One MD Streets Cape Town record (`cmp-0042`); UK parent not a separate SA employer. |")
+    L.append("| **Streets Chartered Accountants** vs **Streets (UK)** | One MD Streets Cape Town record (`cmp-0040`); UK parent not a separate SA employer. |")
+    L.append("| **Louwtjie van Zyl PA(SA)** (APBCO Somerset West) vs **Louwtjie Venter ACMA CGMA** (Six33 Group, CT) vs **Rudi van Zyl** (Technical Systems) vs **Jana van Zyl CA(SA)** (LDP) | Four distinct people — do not merge on first name or surname. |")
+    L.append("| **Nicol Smit ACMA, CGMA** (Capitec) vs **Magdalena Smit PA(SA)** (SAIPA board 2019) | Distinct people. |")
+    L.append("| **Lukas Swart ACMA, CGMA** (Astral Foods) vs **Tanya Swart AGA(SA)** (Stellenbosch) | Distinct people. |")
+    L.append("| **Fatima Bapukee** | Single record `acc-0075` now carries BOTH PA(SA) (2012) and CA(SA) (2024) per MD Streets Honour's Roll — do not create a second record. |")
+    L.append("| **MD Streets Honour's Roll PA(SA)s** (Lotters, Musindo, Saunders, Adams, Jacobs, Daniels, Haumann, Nyamutumbu, van Reenen, Harris, Petersen, Abrahamse) | Designation + year verified; CURRENT employer NOT verified — enrich these records rather than re-adding when a LinkedIn profile is found. |")
     L.append("")
 
     L.append("## 5. Companies already mapped (do not duplicate)\n")

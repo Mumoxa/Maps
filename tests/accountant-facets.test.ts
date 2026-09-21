@@ -49,13 +49,16 @@ test('designation and professional route are distinct facets', () => {
 })
 
 test('OR within a facet widens results', () => {
-  const caSaOnly = run({ ...emptySelections(), qualification: ['CA(SA)'] }).length
+  const caSa = run({ ...emptySelections(), qualification: ['CA(SA)'] })
   const both = run({ ...emptySelections(), qualification: ['CA(SA)', 'PA(SA)'] }).length
-  const paSaOnly = run({ ...emptySelections(), qualification: ['PA(SA)'] }).length
-  assert.ok(both >= caSaOnly)
-  assert.ok(both >= paSaOnly)
-  // No candidate holds both CA(SA) and PA(SA) in this dataset, so OR is the exact union.
-  assert.equal(both, caSaOnly + paSaOnly)
+  const paSa = run({ ...emptySelections(), qualification: ['PA(SA)'] })
+  assert.ok(both >= caSa.length)
+  assert.ok(both >= paSa.length)
+  // OR is the exact set union. Dual-designation holders (e.g. a PA(SA) who later qualified
+  // as CA(SA)) exist in the data, so derive the overlap rather than assuming disjoint sets.
+  const caSaIds = new Set(caSa.map((c) => c.id))
+  const overlap = paSa.filter((c) => caSaIds.has(c.id)).length
+  assert.equal(both, caSa.length + paSa.length - overlap)
 })
 
 test('AND across facets narrows results', () => {

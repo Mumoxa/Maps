@@ -44,6 +44,62 @@ Live research log. Updated after every ~2–5 verified people or completed resea
   AGA(SA) (HIGH). Companies 73–74.
 - Batch 12 (+3): WC CIMA — Dzvova (CA(SA)+ACMA+CGMA), Hoffman & Kuni (ACMA/CGMA). Companies 75–77.
 
+### 2026-09-21 (session 3) — Western Cape core, NON-CA designations (45 more people)
+
+Brief: recruitment-resourcer request for PA(SA) / AGA(SA) / ACCA-FCCA / ACMA-FCMA-CGMA holders in
+the Western Cape core (Cape Town metro + Winelands + Helderberg; Garden Route, Langebaan/Saldanha and
+Worcester excluded). Sage 300 / ACCPAC mapped as a bonus attribute only. Full method review, gap
+analysis and ready-to-paste search strings: `wc_sourcing_brief.md`. Recruiter export:
+`exports/wc_non_ca_shortlist_2026-09-21.csv` (+ `.md`).
+
+- Batch 13 (+26): LinkedIn-evidenced. CONFIRMED own-page: Toüa PA(SA) (TnT Pro Services; SAIPA
+  training contract SDK CA 2018–20), Williams PA(SA) (Galbraith Rushby / Go Tourism — employer
+  conflict flagged), Jamneck PA(SA) (VJ Professional Accountants; 3-yr SAIPA articles), van
+  Schalkwyk ACMA/CGMA+PA(SA) (Green Create), Hand ACMA/CGMA (Ozow, admitted 2025), McQueen ACMA/CGMA
+  (Linkqage), L. Swart ACMA/CGMA (Astral Foods), R. van Zyl PA(SA)+ACMA/CGMA (Technical Systems),
+  Rupert CGMA+PA(SA) (AgrigateOne co-founder; SAIPA articles Moore Stephens 2014–16), Vorster
+  ACMA/CGMA+PA(SA) (Moore Management Services), Kiln ACMA/CGMA (Tripco), Miles AGA(SA) (PnP franchise).
+  ARTICLES-only: Fakude (JTC Group, completed SAIPA articles, no designation). HIGH_CONFIDENCE
+  people-card tier (own name field seen on other public profiles; URL not retrieved): Nel PA(SA) (JTC),
+  Gaxela, Jama, Shangase, Biyela (Rain; URL via ZoomInfo), Mayekiso, Stegen — PA(SA); Warren, T. Swart,
+  Dennis-Jacobs (Red Carnation) — AGA(SA); N. Smit (Capitec), Venter (Six33), van Rensburg (Moore
+  Belgium) — ACMA/CGMA. Companies cmp-0076–0093.
+- Batch 14 (+19): firm/body pages. APBCO Auditors & Accountants (Paarl/Somerset West/Hermanus):
+  Clark PA(SA) 2011, Engelbrecht AGA(SA) 2023, Smal PA(SA) 2010 (Director), Hansen PA(SA) — CONFIRMED;
+  van Zyl, Davids "Professional Accountant" (no "(SA)") — HIGH. MD Streets "SAICA and SAIPA Honour's
+  Roll" (Kenilworth): 12 PA(SA) with year qualified (2017–2025; current employer NOT established) +
+  ENRICHED acc-0075 Fatima Bapukee (PA(SA) 2012 + CA(SA) 2024 — first dual PA/CA record). SAIPA AIR
+  2019: Magdalena Smit PA(SA) (board, Western Region). Company cmp-0094.
+- Test change: `tests/accountant-facets.test.ts` "OR within a facet" now derives the CA(SA)∩PA(SA)
+  overlap from data instead of assuming the sets are disjoint (a dual-designation holder now exists).
+- Excluded/pipeline names added to `gen_people_index.py` (Galant, Mdoyi — eligible-not-registered
+  AGA; Poolman, Le Roux, Makaranga — RESEARCH_HOLD; Reiner/Cowan, Banderker/Strydom — watchlist;
+  Wessels, Good — offshore; Maloox — Gauteng expansion).
+
+## Running totals (session 3 close)
+
+| Metric | Count |
+|---|---|
+| Confirmed qualified people | **137** |
+| High-confidence people | 39 |
+| Articles-confirmed / designation-unverified | 2 (Alan Robbins, Sable Intl; Sifiso Fakude, JTC Group) |
+| Conflicting-designation records | 1 (Alicia Haasbroek, LDP) |
+| Total people records | 179 |
+| Companies mapped | 94 (cmp-0001–0094; cmp-0025 intentionally absent) |
+| Unique sources | 95 |
+| Searches executed (cumulative) | 137 |
+| Records with a LinkedIn profile URL | 48 of 179 |
+| Western Cape records | 105 (76 CONFIRMED) |
+| Western Cape NON-CA target pool (PA/AGA/ACCA/CIMA, incl. dual) | 68 (41 CONFIRMED · 24 HIGH · 2 articles-only · 1 conflicting) |
+
+## Qualification breakdown (session 3 close; CONFIRMED unless noted)
+
+CA(SA): 88 · AGA(SA): 10 (+4 HIGH) · PA(SA): 24 (+24 HIGH) · ACMA: 16 (+3 HIGH) · CGMA: 19 (+3 HIGH) ·
+FCMA: 2 · FCCA: 2 · ACCA (non-fellow): 0 — still the biggest designation gap.
+Multi-designation (CONFIRMED): 20 — incl. new duals van Schalkwyk, R. van Zyl, Rupert, Vorster
+(CIMA + SAIPA) and Bapukee (PA(SA) 2012 → CA(SA) 2024).
+Explicit SAIPA articles / training contracts: 16 (was 0) · CIMA PER: 19 (was 9).
+
 ## Running totals (session 2 close)
 
 | Metric | Count |
@@ -147,6 +203,13 @@ Engineering, Pharmaceuticals (Bayer — historic).
 
 ## Outstanding avenues (next sessions)
 
+- **Session-3 carry-overs (WC non-CA):** resolve profile URLs for the 13 people-card records
+  (Nel, Gaxela, Jama, Shangase, Mayekiso, Stegen, Warren, T. Swart, Dennis-Jacobs, N. Smit, Venter,
+  van Rensburg, Biyela-verify); establish CURRENT employers for the 12 MD Streets honour-roll PA(SA)s;
+  Moore SA bio pages (`/about/people/<slug>/`) for Stellenbosch/CT designations; Schoemans, Exceed,
+  Zuydam Konsult, C2M, Theron du Plessis Helderberg, Lintvelt & Co, IGrow Wealth (SAIPA hirer),
+  SDK Chartered Accountants (SAIPA/ACCA trainer, Durbanville) team pages; ACCA members in Cape Town
+  (zero non-fellow ACCA records — use LinkedIn native search strings in `wc_sourcing_brief.md`).
 - ACCA (non-fellow) full-member discovery — currently only FCCA records exists in-database.
 - PA(SA) in commerce/industry and SAIPA-articles-explicit records — PA(SA) currently all HIGH.
 - More ACMA (non-CGMA) and FCMA records.

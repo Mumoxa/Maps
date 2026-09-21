@@ -29,6 +29,8 @@ export yet.
 | `search_queries.md` | Executed search log (engine, date, target, yield, exhaustion). |
 | `people_index.md` | **Master name registry (dedup source of truth) — consult FIRST before adding anyone.** |
 | `gen_people_index.py` | Regenerates `people_index.md` from the JSONL stores after every batch. |
+| `wc_sourcing_brief.md` | Western Cape non-CA (PA(SA)/AGA(SA)/ACCA/CIMA) sourcing brief: Boolean gap review, ready-to-paste LinkedIn/X-ray strings, source map, next sweeps. |
+| `exports/` | Dated recruiter-facing shortlists derived from `people.jsonl` (e.g. `wc_non_ca_shortlist_2026-09-21.csv/.md`). Regenerate rather than hand-edit. |
 
 > **Dedup rule:** every future batch must consult `people_index.md` first. If a name/company/
 > source is already listed there, enrich the existing record instead of adding a new one.

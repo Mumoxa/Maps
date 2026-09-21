@@ -125,6 +125,57 @@ stop adding new people.
 | 107 | `linkedin.com/in "AGA(SA)" "Cape Town"/"Paarl"/"Stellenbosch" finance` | web | 2026-09-18 | W.Cape | AGA(SA) | finance | LOW | (job ads) | — | — | low |
 | 108 | `linkedin.com/in "ACMA"/"CGMA" "Cape Town" finance manager group` | web | 2026-09-18 | W.Cape | CIMA | FM | HIGH | Dzvova (CA+CIMA), Hoffman, Kuni | AYO, The Fieldbar Co., M+C Saatchi | — | partial |
 
+## Executed — session 3 (2026-09-21, Western Cape core: non-CA designations)
+
+Scope for this session: PA(SA) / AGA(SA) / ACCA-FCCA / ACMA-FCMA-CGMA only, Western Cape core
+(Cape Town metro, Winelands, Helderberg). Garden Route, Langebaan/Saldanha and Worcester excluded.
+
+| # | Query | Engine | Date | Geo | Designation | Role | Quality | People found | Companies | Follow-ups | Exhausted? |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 109 | `site:linkedin.com/in "Professional Accountant (SA)" "City of Cape Town"` | web | 2026-09-21 | W.Cape | PA(SA) | any | HIGH | Toüa, Williams (own pages) + people-cards Stegen, Galant/Mdoyi (eligible only) | TnT Pro Services, Galbraith Rushby | resolve card URLs | partial |
+| 110 | `site:za.linkedin.com/in "Professional Accountant (SA)" Cape Town` | web | 2026-09-21 | W.Cape | PA(SA) | any | MEDIUM | Jamneck (Licences) | VJ Professional Accountants | — | partial |
+| 111 | `site:linkedin.com/in "SAIPA articles" OR "completed SAIPA" "Cape Town"` | web | 2026-09-21 | W.Cape | PA(SA)/articles | accountant | HIGH | Fakude (articles only) + cards Jama, Shangase, Gaxela, Biyela | JTC Group | Fakude designation check | partial |
+| 112 | `site:linkedin.com/in "AGA(SA)" "City of Cape Town"` | web | 2026-09-21 | W.Cape | AGA(SA) | any | MEDIUM | card: Wynand Nel (PA(SA), JTC); card Ryan Warren AGA | JTC Group | — | partial |
+| 113 | `site:linkedin.com/in "ACMA, CGMA" "City of Cape Town"` | web | 2026-09-21 | W.Cape | CIMA | any | HIGH | van Schalkwyk (dual), Hand (Ozow), McQueen (Linkqage); cards Nicol Smit (Capitec), Venter (Six33) | Green Create, Ozow, Linkqage, Capitec, Six33 | — | partial |
+| 114 | `site:linkedin.com/in "ACMA, CGMA" ("Western Cape" OR Stellenbosch OR Paarl)` | web | 2026-09-21 | W.Cape | CIMA | any | HIGH | L. Swart (Astral), R. van Zyl (dual, Technical Systems) | Astral Foods, Technical Systems | — | partial |
+| 115 | `site:linkedin.com/in "FCCA" OR "ACCA member" "Cape Town"` | web | 2026-09-21 | W.Cape | ACCA | any | LOW | (Rachel Cowan FCCA — Ozow, location unverified) | Ozow | resolve Cowan | low |
+| 116 | `site:linkedin.com/in "Professional Accountant (SA)" Stellenbosch OR "Somerset West"` | web | 2026-09-21 | Winelands | PA(SA)/CIMA | any | HIGH | Irene Rupert (CGMA+PA(SA)), Lize Vorster (dual), Matthew Kiln (ACMA) | AgrigateOne, Moore Stellenbosch, Tripco | — | partial |
+| 117 | `"Moore Management Services" Stellenbosch CIMA trainee` | web+fetch | 2026-09-21 | Stellenbosch | CIMA | trainee/manager | MEDIUM | (context: CIMA-accredited training practice) | Moore Stellenbosch | Moore alumni sweep | no |
+| 118 | fetch `moore-southafrica.com/locations/stellenbosch/` + `/about-us/people/` (p1 of 4) | fetch | 2026-09-21 | Stellenbosch/CT | any | partners | LOW | names/titles only, no designations | Moore SA | bios `/about/people/<slug>/` | no |
+| 119 | fetch `apbcoauditors.com/our-team/` (2025 + 2026 versions) | fetch | 2026-09-21 | Paarl/Somerset West/Hermanus | PA(SA)/AGA(SA) | practice | HIGH | Clark, Engelbrecht, van Zyl, Davids, Smal, Hansen | APBCO | branch check Smal/Hansen | yes |
+| 120 | fetch `mdacc.co.za/about-us/honours-roll/` | fetch | 2026-09-21 | Cape Town | PA(SA) | trainees→qualified | HIGH | 12 PA(SA) honour-roll names + Bapukee enrichment | MD Streets | current employers via LinkedIn | yes |
+| 121 | `"Deon Poolman Professional Accountants" Durbanville SAIPA` | web | 2026-09-21 | Durbanville | PA(SA) | owner | LOW | Poolman — no designation wording → RESEARCH_HOLD | — | verify SAIPA membership | no |
+| 122 | `findanaccountant.co.za Durbanville SAIPA` | web | 2026-09-21 | Durbanville | PA(SA) | practice | LOW | Wynand Le Roux — "SAIPA" only → RESEARCH_HOLD | — | verify | no |
+| 123 | `site:linkedin.com/in "PA (SA)" "Cape Town" accountant OR "financial manager"` | web | 2026-09-21 | W.Cape | PA(SA) | FM | NONE | (recruiter profiles) | — | — | yes |
+| 124 | `site:linkedin.com/in "Associate General Accountant" "Cape Town"` | web | 2026-09-21 | W.Cape | AGA(SA) | any | MEDIUM | Andrew Miles (PnP franchise) | Pick n Pay franchise | — | partial |
+| 125 | `SAIPA Western Cape regional committee "Professional Accountant (SA)" Cape Town` | web | 2026-09-21 | W.Cape | PA(SA) | any | NONE | — | — | — | yes |
+| 126 | `site:saipa.co.za "Western Cape" member OR "Professional Accountant (SA)" Cape Town` | web | 2026-09-21 | W.Cape | PA(SA) | any | MEDIUM | Magdalena Smit (board, W. Region); Banderker, Strydom (2019 magazine — watchlist) | SAIPA | fetch magazine PDF | partial |
+| 127 | `site:linkedin.com/in "ACMA CGMA" "City of Cape Town"` (no comma) | web | 2026-09-21 | W.Cape | CIMA | any | LOW | Hand (dup), Wessels (Belgium — watchlist) | — | — | yes |
+| 128 | `theorg.com "Cape Town" finance manager org chart South Africa` + fetch theorg.com/org/woolworths-holdings-limited | web+fetch | 2026-09-21 | W.Cape | any | FM | NONE | reCAPTCHA-blocked; job ads only | — | manual TheOrg browsing | yes |
+| 129 | `site:linkedin.com/in ("Sage 300" OR Accpac OR "Sage Evolution") (ACMA OR CGMA OR "Professional Accountant (SA)" OR "AGA(SA)" OR ACCA) "Cape Town"` | web | 2026-09-21 | W.Cape | any | any | NONE | (AU/UK profiles) | — | Sage 300 partner client lists | yes |
+| 130 | `"Nicol Smit" ACMA CGMA Capitec linkedin` | web | 2026-09-21 | W.Cape | CIMA/AGA | any | MEDIUM | card only (no URL); new card: Melanie Dennis-Jacobs AGA(SA) (Red Carnation) | Capitec, Red Carnation | resolve URLs | no |
+| 131 | `"Nobungcwele Gaxela" OR "Nomthandazo Biyela" OR "Samkelo Shangase" OR "Mzwandile Jama" Professional Accountant (SA) Cape Town` | web | 2026-09-21 | W.Cape | PA(SA) | any | MEDIUM | Biyela — ZoomInfo (Rain; LinkedIn sameAs URL) | Rain | verify URL | partial |
+| 132 | `site:linkedin.com/in "CIMA qualified" OR "ACCA qualified" "Cape Town" finance manager OR "financial controller" OR "head of finance"` | web | 2026-09-21 | W.Cape | CIMA/ACCA | FM/FC | NONE | (UK recruiters) | — | — | yes |
+| 133 | `site:linkedin.com/in "ACMA, CGMA" (Woolworths OR Shoprite OR TFG OR Pepkor OR Mediclinic OR Sanlam OR "Old Mutual" OR Distell OR Clicks OR "Pick n Pay") "Cape Town"` | web | 2026-09-21 | W.Cape | CIMA | corporate | NONE | — | — | use LinkedIn native search (see brief) | yes |
+| 134 | `site:linkedin.com/in "Professional Accountant (SA)" ("Somerset West" OR Durbanville OR Bellville OR Paarl OR "Kuils River" OR Brackenfell)` | web | 2026-09-21 | Northern suburbs | PA(SA) | any | NONE | (CA(SA) profiles; IGrow ad wants PA(SA)) | IGrow Wealth | IGrow finance team | yes |
+| 135 | `Zeelie Professional Accountants SA Kraaifontein team "Professional Accountant (SA)"` + fetch zeelie.co.za | web+fetch | 2026-09-21 | Kraaifontein | PA(SA) | practice | LOW | (Toüa dup; site is an empty index) | Zeelie | LinkedIn company page | yes |
+| 136 | `site:linkedin.com/in "Professional Accountant (SA)" "Tax Practitioner" "City of Cape Town"` | web | 2026-09-21 | W.Cape | PA(SA) | tax | NONE | (SATPU page; Kobus Muller Somerset West — no designation) | — | — | yes |
+| 137 | `"Melanie Dennis-Jacobs" AGA(SA) Red Carnation Hotel linkedin` | web | 2026-09-21 | W.Cape | AGA(SA) | any | MEDIUM | card confirmed on 3 pages (URL still unresolved) | Red Carnation | resolve URL | no |
+
+### Pattern learnings (session 3)
+
+- **Works:** `site:linkedin.com/in "<exact designation string>" "City of Cape Town"` — the LinkedIn
+  location token "City of Cape Town" is far more selective than "Cape Town". Each hit page also
+  exposes 2–10 "Other similar profiles" people-cards (name field incl. designation + employer +
+  location) — the single richest discovery surface this session.
+- **Fails:** bracket/space variants (`"PA (SA)"`), bare tokens (`ACMA`, `CIMA`, `ACCA`) and OR-groups of
+  employers — the engine drops precision and returns recruiters/job ads/UK profiles.
+- **Name → URL resolution** via web search rarely returns the profile URL for card-only names; hand
+  the recruiter a LinkedIn people-search link instead (never a guessed slug).
+- **Firm honour rolls / team pages** (APBCO, MD Streets) are the best CONFIRMED-tier source for
+  PA(SA) — the designation is printed per person with year qualified.
+- **TheOrg** is reCAPTCHA-gated for automated access; usable manually only.
+
 ## Format reference
 
 - **Engine**: web (Arena web search) / fetch (page extraction).

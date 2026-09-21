@@ -10,7 +10,7 @@ A React/Vite market-intelligence map site for South African talent ecosystems.
 | SA Salesforce Ecosystem Map | `/markets/salesforce` | Live | 88 legacy source-retained profiles plus append-only source-verified batches, vendor/partner/customer segmentation, customer technographics, partner tiers and market intelligence summary |
 | SA SAP ERP Market | `/sap-erp` | Added | Verified South African SAP ERP market track, aligned to the shared specialist-talent structure |
 | SA Hackathon Contestants Talent Pool | `/hackathons` | Live | 342 evidence-linked candidates (segment: Hackathon contestants) from the SA Hackathon Census — 115 event editions, 2012–2026 |
-| SA Accounting & Finance Talent Pool | `/accounting-finance` | Live | 134 evidence-backed qualified accountants and finance professionals (CA(SA), AGA(SA), PA(SA), CIMA and ACCA routes) from the SA Qualified Accountant & Finance Skills Intelligence Map |
+| SA Accounting & Finance Talent Pool | `/accounting-finance` | Live | 179 evidence-backed qualified accountants and finance professionals (CA(SA), AGA(SA), PA(SA), CIMA and ACCA routes) from the SA Qualified Accountant & Finance Skills Intelligence Map |
 
 Future markets must be registered in `src/data/tracks.ts` with a South African geography, supported product category, and explicit evidence status. Routes and navigation should consume that registry so additions remain within the SA Talent Map product scope.
 

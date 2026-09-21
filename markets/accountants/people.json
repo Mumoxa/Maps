@@ -297,6 +297,45 @@
     "notes": "CONFLICTING CA(SA): firm heading shows CA(SA) but bio says 'eligible to register'. Pursuing CISA (ISACA). IT audit & systems specialisation."
   },
   {
+    "id": "acc-0146",
+    "fullName": "Andrew Miles",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "AGA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Financial role (headline truncated: 'accomplished Financial…')",
+    "employer": "Pick n Pay franchise (Rondebosch & Observatory)",
+    "roleFamily": "Financial Control",
+    "function": "",
+    "industry": "Retail",
+    "subIndustry": "Grocery retail franchise",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn About: \"Andrew is a qualified Associate General Accountant (AGA SA) and accomplished Financial…\"; Experience: \"Pnp Franchise | Rondebosch and Observatory\"; Education: University of the Free State.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/andrew-miles-595690249/",
+    "primarySource": "https://www.linkedin.com/in/andrew-miles-595690249/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/andrew-miles-595690249/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0114",
     "fullName": "André Du Plessis",
     "status": "CONFIRMED",
@@ -728,6 +767,45 @@
     "notes": "Merged duplicate record. Deputy Chair of SAICA Senior Partners' Forum; non-executive member of SAICA National Council; BLSA board member. Session-1 provenance: Accountancy SA CA(SA) profile."
   },
   {
+    "id": "acc-0153",
+    "fullName": "Bongiwe Mayekiso",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Financial Accountant",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Bongiwe Mayekiso — Financial Accountant PA (SA) — Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/nonkosi-xaba-467920100/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/nonkosi-xaba-467920100/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search."
+  },
+  {
     "id": "acc-0096",
     "fullName": "Bronvin Heuvel",
     "status": "CONFIRMED",
@@ -884,6 +962,100 @@
       "https://www.saica.org.za/news/defining-your-destiny-cecelia-swartz-casa"
     ],
     "notes": "Profile concerns a handbag/exec-creator venture; accounting employer/title not stated."
+  },
+  {
+    "id": "acc-0169",
+    "fullName": "Celine Saunders",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Celine Saunders\" (2024).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2024)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
+  },
+  {
+    "id": "acc-0167",
+    "fullName": "Chadwin Lotters",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Chadwin Lotters\" (2025).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2025)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
   },
   {
     "id": "acc-0069",
@@ -1120,6 +1292,53 @@
       "https://ldp.co.za/our-team/"
     ],
     "notes": "Audit experience across wine & fruit farms, estate agents, sectional title, attorneys, hotels, manufacturing, engineering, wholesale."
+  },
+  {
+    "id": "acc-0173",
+    "fullName": "Danie Haumann",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Accounting Associate (at MD Streets, per roll) — left MD Streets 2026",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Danie Haumann\" (2019).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2019)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn. Roll annotates '(Accounting Associate)'. MD Streets LinkedIn 'final farewell after 23 years' post (2026) → no longer at the firm; may be retired."
   },
   {
     "id": "acc-0053",
@@ -1515,6 +1734,53 @@
     "notes": "Registered Auditor (RA) + CA(SA); firm established 2000. Principal/namesake."
   },
   {
+    "id": "acc-0174",
+    "fullName": "Emmanuel Nyamutumbu",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Emmanuel Nyamutumbu\" (2019).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2019)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
+  },
+  {
     "id": "acc-0021",
     "fullName": "Enrico Kleinbooi",
     "status": "CONFIRMED",
@@ -1600,11 +1866,13 @@
     "status": "CONFIRMED",
     "confidence": "CONFIRMED",
     "designations": [
-      "CA(SA)"
+      "CA(SA)",
+      "PA(SA)"
     ],
     "professionalRoutes": [],
     "bodies": [
-      "SAICA"
+      "SAICA",
+      "SAIPA"
     ],
     "title": "Director",
     "employer": "Streets Chartered Accountants (Cape Town)",
@@ -1621,7 +1889,7 @@
     "erpSystems": [],
     "analyticsTools": [],
     "yearsExperience": "unknown",
-    "qualificationEvidence": "Firm website team card: \"Fatima Bapukee — Director, Chartered Accountant (SA) PG DIP (Tax)\".",
+    "qualificationEvidence": "Firm website team card: \"Fatima Bapukee — Director, Chartered Accountant (SA) PG DIP (Tax)\". MD Streets Honour's Roll: \"Professional Accountants — Fatima Bapukee 2012 (Director)\" and \"Chartered Accountants — Fatima Bapukee 2024 (Director)\".",
     "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
     "articlesEmployer": "",
     "articlesBody": "",
@@ -1629,9 +1897,10 @@
     "linkedinUrl": "",
     "primarySource": "https://www.streets.uk/our-offices/cape-town-south-africa/",
     "sourceUrls": [
-      "https://www.streets.uk/our-offices/cape-town-south-africa/"
+      "https://www.streets.uk/our-offices/cape-town-south-africa/",
+      "https://www.mdacc.co.za/about-us/honours-roll/"
     ],
-    "notes": "Director; tax specialisation per PG Dip (Tax)."
+    "notes": "Director; tax specialisation per PG Dip (Tax). DUAL PA(SA) 2012 + CA(SA) 2024 per MD Streets Honour's Roll."
   },
   {
     "id": "acc-0116",
@@ -1939,6 +2208,97 @@
     "notes": "Member of SAICA large/medium practices committee (WC); ABASA Western Cape board member."
   },
   {
+    "id": "acc-0143",
+    "fullName": "Irene Rupert",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CGMA",
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles",
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA",
+      "SAIPA"
+    ],
+    "title": "Co-Founder",
+    "employer": "AgrigateOne",
+    "roleFamily": "Executive Finance",
+    "function": "Founder / finance",
+    "industry": "Technology",
+    "subIndustry": "Agri-tech (fresh-produce export platform)",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn About: \"Chartered Global Management Accountant with a CIMA and Professional Accountant (SA)…\"; Organizations: \"My CIMA membership was approved in March 2017\"; \"South African Institute for Professional Accountants — Trainee Jan 2014… complete our SAIPA articles as well during our 3 year contract at Moore Stephens\".",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "Moore Stephens (Stellenbosch)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [],
+    "linkedinUrl": "https://za.linkedin.com/in/irene-lovell-rupert",
+    "primarySource": "https://za.linkedin.com/in/irene-lovell-rupert",
+    "sourceUrls": [
+      "https://za.linkedin.com/in/irene-lovell-rupert"
+    ],
+    "notes": "DUAL CIMA (CGMA) + SAIPA (PA(SA)). ACMA not written verbatim in snippet — recorded as CGMA (CIMA body confirmed)."
+  },
+  {
+    "id": "acc-0168",
+    "fullName": "Ivy Musindo",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Ivy Musindo\" (2025).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2025)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
+  },
+  {
     "id": "acc-0029",
     "fullName": "J A 'Driaan' Beyers",
     "status": "HIGH_CONFIDENCE",
@@ -2137,6 +2497,53 @@
     "notes": "Expertise in construction, property, retail, transport."
   },
   {
+    "id": "acc-0176",
+    "fullName": "Jenine Harris",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Jenine Harris\" (2019).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2019)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
+  },
+  {
     "id": "acc-0047",
     "fullName": "Jody Baumgarten",
     "status": "HIGH_CONFIDENCE",
@@ -2283,6 +2690,50 @@
       "https://www.findanaccountant.co.za/content_interview-johan-le-roux"
     ],
     "notes": "Past Chairman of the Road Freight Association (Western Cape). Registered tax practitioner (SARS); CIPC registered."
+  },
+  {
+    "id": "acc-0138",
+    "fullName": "Johan van Schalkwyk",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "ACMA",
+      "CGMA",
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA",
+      "SAIPA"
+    ],
+    "title": "Finance role (title not visible in public snippet)",
+    "employer": "Green Create (Green Create Africa)",
+    "roleFamily": "Financial Control",
+    "function": "",
+    "industry": "Engineering",
+    "subIndustry": "Clean-tech / industrial waste-to-value",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn name \"Johan van Schalkwyk ACMA, CGMA\"; Licences & Certifications: \"ACMA, CGMA — Chartered Institute of Management Accountants (CIMA)\"; \"Professional Accountant (SA) — South African Institute of Professional Accountants (SAIPA)\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/johan-van-schalkwyk-acma-cgma-19068110b/",
+    "primarySource": "https://www.linkedin.com/in/johan-van-schalkwyk-acma-cgma-19068110b/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/johan-van-schalkwyk-acma-cgma-19068110b/"
+    ],
+    "notes": "DUAL CIMA + SAIPA. Green Create Africa — onsite industrial organic-waste infrastructure (Cape Town)."
   },
   {
     "id": "acc-0117",
@@ -2440,6 +2891,53 @@
       "https://www.accountancysa.org.za/casa-profiles/"
     ],
     "notes": "Education role. Designation not literal in snippet — HIGH."
+  },
+  {
+    "id": "acc-0171",
+    "fullName": "Kelly Jacobs",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Kelly Jacobs\" (2023).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2023)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
   },
   {
     "id": "acc-0046",
@@ -2685,6 +3183,100 @@
     "notes": "Reporting & forecasting role at Curro Holdings; CIMA A* programme member."
   },
   {
+    "id": "acc-0172",
+    "fullName": "Lauren Daniels",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Lauren Daniels\" (2022).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2022)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
+  },
+  {
+    "id": "acc-0178",
+    "fullName": "Lee-Ann Abrahamse",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Lee-Ann Abrahamse\" (year not printed).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (year not printed)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
+  },
+  {
     "id": "acc-0072",
     "fullName": "Lesetja Kwetepane",
     "status": "HIGH_CONFIDENCE",
@@ -2761,6 +3353,95 @@
       "https://www.linkedin.com/in/lian-du-plessis-aga-sa-177375149/"
     ],
     "notes": "Finance & Group Services manager at the Cape Chamber."
+  },
+  {
+    "id": "acc-0144",
+    "fullName": "Lize Vorster",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "ACMA",
+      "CGMA",
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA",
+      "SAIPA"
+    ],
+    "title": "Senior Manager",
+    "employer": "Moore Management Services (Moore Stellenbosch)",
+    "roleFamily": "Management Accounting",
+    "function": "Outsourced accounting / management reporting",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Outsourced finance & management accounting",
+    "province": "Western Cape",
+    "city": "Somerset West",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "9-11",
+    "qualificationEvidence": "LinkedIn headline \"ACMA, CGMA Professional Accountant (SA) Senior Manager at Moore Management Services\"; Experience: Moore Stellenbosch; Education: Stellenbosch University BCom Management Accounting 2012–2014, Hons BCom 2015.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/lize-vorster-0627ba9b/",
+    "primarySource": "https://www.linkedin.com/in/lize-vorster-0627ba9b/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/lize-vorster-0627ba9b/"
+    ],
+    "notes": "DUAL CIMA + SAIPA. Moore Stellenbosch Management Services = CIMA-accredited training practice (Techno Park)."
+  },
+  {
+    "id": "acc-0139",
+    "fullName": "Lorraine Sarah Hand",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA"
+    ],
+    "title": "Strategic finance leader (exact title not visible in public snippet)",
+    "employer": "Ozow",
+    "roleFamily": "Executive Finance",
+    "function": "FP&A / financial modelling / due diligence",
+    "industry": "Fintech",
+    "subIndustry": "Payments",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [
+      "financial modelling",
+      "financial due diligence"
+    ],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn name \"Lorraine Sarah Hand, ACMA CGMA\"; CIMA education entry: \"Completed CIMA Diploma (2023) → Advanced Diploma (2024); Passed Strategic Case Study (Oct 2025); PER approved; Admitted as ACMA, CGMA (2025)\"; headline \"Strategic finance leader skilled in financial modelling and rigorous financial due…\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/lorraine-sarah-hand-acma-cgma/",
+    "primarySource": "https://www.linkedin.com/in/lorraine-sarah-hand-acma-cgma/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/lorraine-sarah-hand-acma-cgma/"
+    ],
+    "notes": "Newly admitted ACMA, CGMA (2025) with prior long finance career (education history back to 1995). Ozow hosts Payments Club events in Cape Town."
   },
   {
     "id": "acc-0092",
@@ -2867,6 +3548,129 @@
       "https://fmjfinancial.co.za/guides/saipa-tax-practitioners/"
     ],
     "notes": "Somerset West; serves clients remotely across South Africa. SARS-registered tax practitioner."
+  },
+  {
+    "id": "acc-0163",
+    "fullName": "Louwtjie van Zyl",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Professional Accountant",
+    "employer": "APBCO Accountants (Somerset West)",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit & accounting practice (SAIPA/SAICA)",
+    "province": "Western Cape",
+    "city": "Somerset West",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "15+",
+    "qualificationEvidence": "Firm team page heading \"Professional Accountant\"; bio: \"qualified as a professional accountant during 2009\" — \"(SA)\" suffix NOT printed, hence HIGH not CONFIRMED.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://apbcoauditors.com/our-team/",
+    "sourceUrls": [
+      "https://apbcoauditors.com/our-team/"
+    ],
+    "notes": "Payroll, accounting, AFS, tax per bio. Do not confuse with Louwtjie Venter ACMA CGMA (Six33) — different person."
+  },
+  {
+    "id": "acc-0157",
+    "fullName": "Louwtjie Venter",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "Six33 Group",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card (own name field): \"Louwtjie Venter ACMA CGMA — Six33 Group — 2K followers — City of Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/mangalisomithi/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/mangalisomithi/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search."
+  },
+  {
+    "id": "acc-0141",
+    "fullName": "Lukas Swart",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA"
+    ],
+    "title": "Finance role (title not visible in public snippet)",
+    "employer": "Astral Foods Ltd",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "FMCG",
+    "subIndustry": "Poultry / food production",
+    "province": "Western Cape",
+    "city": "Western Cape (city not stated)",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn name \"Lukas Swart ACMA, CGMA\"; Licences: \"ACMA, CGMA — CIMA, Issued May 2021, Credential ID 1-29XPLIX\"; \"IFRS Certificate — AICPA, May 2021\"; \"Advanced Diploma in Management Accounting — CIMA, Jan 2019\"; \"Independent Reviewer — SAIPA, Oct 2018\"; CIMA Strategic Level 2019–2020.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/lukas-swart-acma-cgma-761180117/",
+    "primarySource": "https://www.linkedin.com/in/lukas-swart-acma-cgma-761180117/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/lukas-swart-acma-cgma-761180117/"
+    ],
+    "notes": "Holds a SAIPA 'Independent Reviewer' credential (2018) — implies SAIPA membership but PA(SA) NOT explicitly stated; not recorded as PA(SA). Earlier career Pretoria/Johannesburg; current location Western Cape (Astral has WC poultry operations)."
   },
   {
     "id": "acc-0102",
@@ -3072,6 +3876,84 @@
     "notes": "AGSA association per profile imagery (AGSA-00048.jpg). Limpopo origin. Designation not literal in snippet — HIGH."
   },
   {
+    "id": "acc-0179",
+    "fullName": "Magdalena Smit",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "SAIPA Board member — Western Region representative (2019)",
+    "employer": "",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Western Region (city not stated)",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "SAIPA Annual Integrated Report 2019, board biographies: \"Mrs Magdalena Smit — Appointed as a casual vacancy on 12 June 2019 as the western region representative. She is a Professional Accountant (SA) whose understanding of member needs…\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.saipa.co.za/wp-content/uploads/2020/06/SAIPA-Annual-Integrated-Report-2019.pdf",
+    "sourceUrls": [
+      "https://www.saipa.co.za/wp-content/uploads/2020/06/SAIPA-Annual-Integrated-Report-2019.pdf"
+    ],
+    "notes": "Professional-body source (PRIMARY) but dated 2019; SAIPA 'Western Region' spans Cape Town–Springbok–Plettenberg Bay–Ceres, so province is PROBABLE. Current employer/role not established."
+  },
+  {
+    "id": "acc-0161",
+    "fullName": "Maggie Clark",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Audit & Accounting Manager",
+    "employer": "APBCO Auditors & Accountants (Paarl)",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit & accounting practice (SAIPA/SAICA)",
+    "province": "Western Cape",
+    "city": "Paarl",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "15+",
+    "qualificationEvidence": "Firm team page heading \"MAGGIE CLARK — Professional Accountant (SA)\"; bio: \"qualified as a professional accountant during 2011\"; Audit/Accounting Manager.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://apbcoauditors.com/our-team/",
+    "sourceUrls": [
+      "https://apbcoauditors.com/our-team/"
+    ],
+    "notes": "Bio highlights accounting-systems / IT aptitude (system not named — NOT Sage 300 evidence)."
+  },
+  {
     "id": "acc-0030",
     "fullName": "Malcolm Cecil Coates",
     "status": "HIGH_CONFIDENCE",
@@ -3109,6 +3991,53 @@
       "https://fmjfinancial.co.za/guides/saipa-tax-practitioners/"
     ],
     "notes": "Muizenberg, Cape Town. Certified Independent Reviewer (SAIPA)."
+  },
+  {
+    "id": "acc-0175",
+    "fullName": "Malikah van Reenen",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Malikah van Reenen\" (2019).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2019)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
   },
   {
     "id": "acc-0066",
@@ -3437,6 +4366,48 @@
     "notes": "SAICA Top 35-under-35 overall winner 2022 (aged 32). Also Chairperson of Investment Committee, Mineworkers Provident Fund. Location not explicitly stated (Harmony Gold HQ Randfontein, Gauteng — not asserted as her workplace)."
   },
   {
+    "id": "acc-0145",
+    "fullName": "Matthew Kiln",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA"
+    ],
+    "title": "Finance role (title not visible in public snippet)",
+    "employer": "Tripco",
+    "roleFamily": "Management Accounting",
+    "function": "",
+    "industry": "Other",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn About: \"I'm a qualified Chartered Management Accountant (ACMA, CGMA) with a BCom (Hons) from…\"; Education: Stellenbosch University.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/matthew-kiln-a19746253/",
+    "primarySource": "https://www.linkedin.com/in/matthew-kiln-a19746253/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/matthew-kiln-a19746253/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0003",
     "fullName": "Mbali Precious Mabaso",
     "status": "CONFIRMED",
@@ -3474,6 +4445,125 @@
       "https://www.saica.org.za/members/member-info/meet-our-members/"
     ],
     "notes": "Also founder of and mentor at Isikhuthazi (programme for CTA students and ITC/APC candidates). Internal vs external audit not established from source."
+  },
+  {
+    "id": "acc-0159",
+    "fullName": "Melanie Dennis-Jacobs",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "AGA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "The Red Carnation Hotel Collection",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "Hospitality",
+    "subIndustry": "Luxury hotels",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card (own name field): \"Melanie Dennis-Jacobs AGA(SA) — The Red Carnation Hotel Collection (Red Carnation Hotels) — 2K followers — City of Cape Town\" (seen on 3 pages).",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/elizabeth-turner-6b15b7a6/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/elizabeth-turner-6b15b7a6/",
+      "https://www.linkedin.com/in/lovemore-chimbadzwa-bsc-81069745/",
+      "https://www.linkedin.com/in/melody-johnson-03995336/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search."
+  },
+  {
+    "id": "acc-0136",
+    "fullName": "Melissa Lee Williams",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Accountant (title not visible in public snippet)",
+    "employer": "Galbraith Rushby (per About) / Go Tourism (per Experience header) — employer CONFLICTING",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "4-6",
+    "qualificationEvidence": "LinkedIn About: \"I'm a qualified Professional Accountant (SA) currently working at Galbraith Rushby…\"; Experience header lists Go Tourism; Education: Stellenbosch University (2015–2019).",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/melissa-lee-williams-123663171/",
+    "primarySource": "https://www.linkedin.com/in/melissa-lee-williams-123663171/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/melissa-lee-williams-123663171/"
+    ],
+    "notes": "Employer conflict between About text (Galbraith Rushby, Cape Town accounting firm) and Experience header (Go Tourism) — verify which is current."
+  },
+  {
+    "id": "acc-0164",
+    "fullName": "Micaela Davids",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Accounting Manager",
+    "employer": "APBCO Accountants (Somerset West)",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit & accounting practice (SAIPA/SAICA)",
+    "province": "Western Cape",
+    "city": "Somerset West",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Firm team page: \"Accounting Manager & Professional Accountant\" — \"(SA)\" suffix NOT printed, hence HIGH not CONFIRMED.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://apbcoauditors.com/our-team/",
+    "sourceUrls": [
+      "https://apbcoauditors.com/our-team/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0133",
@@ -3744,6 +4834,46 @@
       "https://www.saica.org.za/news/soaring-to-success-mpolaheng-mohlopi-casa"
     ],
     "notes": "Led the airport's financial response to Covid-19; ~5 years into recovery at time of profile (2025). Employer location Lanseria, Gauteng."
+  },
+  {
+    "id": "acc-0150",
+    "fullName": "Mzwandile Jama",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Mzwandile Jama — Professional Accountant (SA), Tax Practitioner (SA) — City of Cape Town\" (seen on 2 pages).",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+      "https://www.linkedin.com/in/sanele-masondo-620a66105/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search. Also Tax Practitioner (SA)."
   },
   {
     "id": "acc-0123",
@@ -4039,6 +5169,95 @@
     "notes": "Deloitte, Cape Town; prior London (UK) Big Four / financial-services roles."
   },
   {
+    "id": "acc-0156",
+    "fullName": "Nicol Smit",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "Capitec Bank",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "Banking",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card (own name field): \"Nicol Smit ACMA, CGMA — Capitec Bank — 442 followers — City of Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/elizabeth-turner-6b15b7a6/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/elizabeth-turner-6b15b7a6/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search."
+  },
+  {
+    "id": "acc-0170",
+    "fullName": "Nicole Adams",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Nicole Adams\" (2023).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2023)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
+  },
+  {
     "id": "acc-0039",
     "fullName": "Nkosana Dlamini",
     "status": "CONFIRMED",
@@ -4087,6 +5306,96 @@
     "notes": "Studied CIMA after a postgraduate financial-management degree (2012). Explicit ACMA, CGMA. CIMA practical experience via Absa graduate programme — recorded as CIMA_PER, not articles."
   },
   {
+    "id": "acc-0149",
+    "fullName": "Nobungcwele Gaxela",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Senior Fund Accountant",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "Fund accounting",
+    "industry": "Financial Services",
+    "subIndustry": "Fund administration",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Nobungcwele Gaxela — Professional Accountant (SA) | Senior Fund Accountant | Member of the South African Institute of Professional Accountants (SA) — Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/sifiso-fakude-66475a86/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search. Employer not shown on card."
+  },
+  {
+    "id": "acc-0152",
+    "fullName": "Nomthandazo Biyela",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Senior Financial Accountant",
+    "employer": "Rain",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Technology",
+    "subIndustry": "Telecommunications",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Nomthandazo Biyela — Professional Accountant (SA) I Professional Tax Practitioner (SA) — Cape Town\"; ZoomInfo: Senior Financial Accountant at Rain (2023–present), ex Mazars (Accountant → Senior Accountant), Wanda Reed Partners.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [
+      {
+        "employer": "Mazars",
+        "title": "Accountant → Senior Accountant",
+        "notes": "per ZoomInfo"
+      },
+      {
+        "employer": "Wanda Reed Partners",
+        "title": "Year End Accountant",
+        "notes": "real estate; per ZoomInfo"
+      }
+    ],
+    "linkedinUrl": "https://www.linkedin.com/in/nomthandazo-biyela-842340146",
+    "primarySource": "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+      "https://www.zoominfo.com/p/Nomthandazo-Biyela/5454638247"
+    ],
+    "notes": "LinkedIn URL taken from ZoomInfo 'sameAs' field (third-party) — verify. Rain HQ is Bryanston; LinkedIn location shows Cape Town."
+  },
+  {
     "id": "acc-0013",
     "fullName": "Nonkululeko Gobodo",
     "status": "CONFIRMED",
@@ -4125,6 +5434,87 @@
       "https://www.saica.org.za/news/nonkululeko-gobodo-so-awakened-to-her-true-self"
     ],
     "notes": "Historically founder of auditing firm Gobodo Incorporated (first black female CA(SA) in SA); current employer/title not stated in the index snippet. Current employer recorded as null."
+  },
+  {
+    "id": "acc-0160",
+    "fullName": "Nora van Rensburg",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "Moore Belgium",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card (own name field): \"Nora van Rensburg (ACMA, CGMA) — Moore Belgium — 277 followers — City of Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/maxdeclippel/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/maxdeclippel/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search. Appears to work for a Belgian Moore member firm while located in Cape Town (remote) — verify."
+  },
+  {
+    "id": "acc-0162",
+    "fullName": "Ovelia Engelbrecht",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "AGA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Assurance engagement lead / quality management",
+    "employer": "APBCO Auditors & Accountants (Paarl)",
+    "roleFamily": "External Audit",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit & accounting practice (SAIPA/SAICA)",
+    "province": "Western Cape",
+    "city": "Paarl",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "5-7",
+    "qualificationEvidence": "Firm team page heading \"Associate General Accountant (SA)\"; bio: \"registered as an Associate General Accountant (SA) during 2023 … bachelor's degree in accounting from Stellenbosch University … 5+ years audit\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://apbcoauditors.com/our-team/",
+    "sourceUrls": [
+      "https://apbcoauditors.com/our-team/"
+    ],
+    "notes": ""
   },
   {
     "id": "acc-0107",
@@ -4558,6 +5948,48 @@
     "notes": "TFG CFO; member of Risk and Finance Committees."
   },
   {
+    "id": "acc-0140",
+    "fullName": "Richard McQueen",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "CIMA"
+    ],
+    "title": "Finance role (title not visible in public snippet)",
+    "employer": "Linkqage",
+    "roleFamily": "Management Accounting",
+    "function": "",
+    "industry": "Technology",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn name \"Richard McQueen ACMA, CGMA\"; About: \"A qualified Chartered Management Accountant (CIMA) with diverse experience gained in the…\"; Education: CIMA.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/richard-mcqueen-acma-cgma-7b3b7b2a/",
+    "primarySource": "https://www.linkedin.com/in/richard-mcqueen-acma-cgma-7b3b7b2a/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/richard-mcqueen-acma-cgma-7b3b7b2a/"
+    ],
+    "notes": ""
+  },
+  {
     "id": "acc-0033",
     "fullName": "Roelof Jansen van Vuuren",
     "status": "HIGH_CONFIDENCE",
@@ -4676,6 +6108,128 @@
     "notes": "Winston Park, KwaZulu-Natal; country-wide tax compliance/advisory service."
   },
   {
+    "id": "acc-0142",
+    "fullName": "Rudi van Zyl",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)",
+      "ACMA",
+      "CGMA"
+    ],
+    "professionalRoutes": [
+      "CIMA PER"
+    ],
+    "bodies": [
+      "SAIPA",
+      "CIMA"
+    ],
+    "title": "Finance role (title not visible in public snippet)",
+    "employer": "Technical Systems",
+    "roleFamily": "Financial Control",
+    "function": "",
+    "industry": "Engineering",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "15+",
+    "qualificationEvidence": "LinkedIn name \"Rudi van Zyl ACMA, CGMA\"; About: \"I am a Qualified Professional Accountant (S.A.) with 15+ years of experience across…\"; Licences: \"Chartered Global Management Accountant — CIMA, Issued Aug 2025 (402522666)\"; \"Independent Reviewer (S.A.) — SAIPA, Apr 2021 (34136)\"; \"Commissioner of Oaths — SAIPA, Jan 2015\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/rudi-van-zyl-7b5561143/",
+    "primarySource": "https://www.linkedin.com/in/rudi-van-zyl-7b5561143/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/rudi-van-zyl-7b5561143/"
+    ],
+    "notes": "DUAL SAIPA + CIMA; 15+ years; SAIPA Independent Reviewer."
+  },
+  {
+    "id": "acc-0155",
+    "fullName": "Ryan Warren",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "AGA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Ryan Warren AGA (SA) — Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/nastassja-nel-71a15364/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/nastassja-nel-71a15364/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search."
+  },
+  {
+    "id": "acc-0151",
+    "fullName": "Samkelo Shangase",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Samkelo Shangase — Professional Accountant (S.A.); Professional Tax Practitioner (S.A) || Think twice, action once — City of Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/sifiso-fakude-66475a86/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search. Also Professional Tax Practitioner (SA)."
+  },
+  {
     "id": "acc-0043",
     "fullName": "Sandi De Souza",
     "status": "CONFIRMED",
@@ -4730,6 +6284,61 @@
     "notes": "Explicit: \"Sandi completed her articles at Deloitte before joining SAP.\" SAP is her employer (software vendor) — recorded as employer_systems_observed, not claimed personal hands-on SAP module usage beyond her SAP leadership roles."
   },
   {
+    "id": "acc-0147",
+    "fullName": "Sifiso Fakude",
+    "status": "ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED",
+    "confidence": "ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED",
+    "designations": [],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [],
+    "title": "Senior Fund Accountant",
+    "employer": "JTC Group",
+    "roleFamily": "Financial Accounting",
+    "function": "Fund accounting",
+    "industry": "Financial Services",
+    "subIndustry": "Fund administration",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [
+      "Pastel Payroll"
+    ],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn headline/About: \"Accountant · Completed SAIPA articles and ready to make a career move.\"; \"Accountant (with completed SAIPA Articles)\"; no PA(SA) designation stated → designation unverified.",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "JTC Group",
+        "title": "Fund Accountant → Senior Fund Accountant",
+        "notes": "Oct 2022–present, Cape Town"
+      },
+      {
+        "employer": "Fives Futbol",
+        "title": "Accounts Manager",
+        "notes": "Feb 2021–Sep 2022, Cape Town"
+      },
+      {
+        "employer": "The Confiance Group",
+        "title": "(accounting)",
+        "notes": "Jan–Feb 2021, Tygervalley"
+      }
+    ],
+    "linkedinUrl": "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+    "primarySource": "https://www.linkedin.com/in/sifiso-fakude-66475a86/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/sifiso-fakude-66475a86/"
+    ],
+    "notes": "Completed SAIPA articles; PA(SA) membership not stated. IFRS for SMEs AFS, VAT/EMP returns, provisional tax, management accounts. Signals openness to a move ('ready to make a career move')."
+  },
+  {
     "id": "acc-0061",
     "fullName": "Siphesihle Mlangeni",
     "status": "CONFIRMED",
@@ -4768,6 +6377,84 @@
       "https://www.accountancysa.org.za/casa-profiles/"
     ],
     "notes": "Coupled profile. Employer not stated in snippet."
+  },
+  {
+    "id": "acc-0166",
+    "fullName": "Stephen Hansen",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Professional Accountant",
+    "employer": "APBCO Auditors & Accountants",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit & accounting practice (SAIPA/SAICA)",
+    "province": "Western Cape",
+    "city": "Somerset West (2025 page) / Hermanus (2026 grouping)",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "30+",
+    "qualificationEvidence": "Firm team page: \"Honours degrees in Accounting and Agricultural Economics … registered Professional Accountant (SA) and registered Professional Tax Practitioner (SA). 30+ years\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://apbcoauditors.com/our-team/",
+    "sourceUrls": [
+      "https://apbcoauditors.com/our-team/"
+    ],
+    "notes": "Agri-economics background — relevant to Winelands/agri clients. Branch ambiguous (see Vaughn Smal)."
+  },
+  {
+    "id": "acc-0158",
+    "fullName": "Tanya Swart",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "AGA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Stellenbosch",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Tanya Swart - AGA (SA) — Stellenbosch\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/arishka-maharaj-3b819310b/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/arishka-maharaj-3b819310b/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search."
   },
   {
     "id": "acc-0068",
@@ -4981,6 +6668,104 @@
     "notes": "Exposure across agriculture, financial services, retail, manufacturing, energy, mining; plus tax consulting."
   },
   {
+    "id": "acc-0154",
+    "fullName": "Timothy Stegen",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(not shown on card)",
+    "employer": "",
+    "roleFamily": "Other",
+    "function": "",
+    "industry": "",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card: \"Timothy Stegen — Professional Accountant (SA) — City of Cape Town\".",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/christa-pretorius-8632345/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/christa-pretorius-8632345/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search."
+  },
+  {
+    "id": "acc-0135",
+    "fullName": "TJ Toüa",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Managing Director",
+    "employer": "TnT Pro Services (Pty) Ltd",
+    "roleFamily": "Executive Finance",
+    "function": "Owner-managed accounting practice",
+    "industry": "Accounting / Audit",
+    "subIndustry": "SAIPA accounting practice",
+    "province": "Western Cape",
+    "city": "Kraaifontein (Cape Town)",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [
+      "Sage (edition not stated; credential May 2019)"
+    ],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "7-9",
+    "qualificationEvidence": "LinkedIn headline \"Professional Accountant (SA)\"; Experience: Managing Director, TnT Pro Services (Jan 2025–); Financial Accountant Manager, Zeelie Professional Accountants SA (Mar 2022–Mar 2025, Kraaifontein); \"SAIPA Trainee Accountant — SDK Chartered Accountants (SA), Jan 2018–Dec 2020, Cape Town\".",
+    "articlesStatus": "TRAINING_CONTRACT_CONFIRMED",
+    "articlesEmployer": "SDK Chartered Accountants (SA)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "Zeelie Professional Accountants SA",
+        "title": "Financial Accountant Manager",
+        "notes": "Mar 2022–Mar 2025, Kraaifontein"
+      },
+      {
+        "employer": "Propinvest | Residential Property Investments Company",
+        "title": "Property Management Accountant",
+        "notes": "Jan 2021–Mar 2022, Paarl"
+      },
+      {
+        "employer": "SDK Chartered Accountants (SA)",
+        "title": "SAIPA Trainee Accountant",
+        "notes": "Jan 2018–Dec 2020, Cape Town"
+      }
+    ],
+    "linkedinUrl": "https://www.linkedin.com/in/tj-to%C3%BCa-a7569b125/",
+    "primarySource": "https://www.linkedin.com/in/tj-to%C3%BCa-a7569b125/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/tj-to%C3%BCa-a7569b125/"
+    ],
+    "notes": "Sage credential issued May 2019 (product edition not stated — NOT Sage 300 evidence). Own practice since 2025."
+  },
+  {
     "id": "acc-0080",
     "fullName": "Trevor McLachlan",
     "status": "HIGH_CONFIDENCE",
@@ -5179,6 +6964,45 @@
     "notes": "Fractional CFO for founder-led and growth-stage businesses (The Modern CFO)."
   },
   {
+    "id": "acc-0165",
+    "fullName": "Vaughn Smal",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Director",
+    "employer": "APBCO Auditors & Accountants",
+    "roleFamily": "Executive Finance",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Audit & accounting practice (SAIPA/SAICA)",
+    "province": "Western Cape",
+    "city": "Somerset West (2025 page) / Hermanus (2026 grouping)",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "15+",
+    "qualificationEvidence": "Firm team page: \"Director … Honours degree in Management Accounting … certification in Independent Reviews. He qualified as a Professional Accountant (SA) in 2010 and is also a registered Professional Tax Practitioner (SA). 10+ years\".",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://apbcoauditors.com/our-team/",
+    "sourceUrls": [
+      "https://apbcoauditors.com/our-team/"
+    ],
+    "notes": "Branch ambiguous between Somerset West (core scope) and Hermanus (Overberg — not excluded by brief but outside metro)."
+  },
+  {
     "id": "acc-0067",
     "fullName": "Vijedharsan Vijendranath",
     "status": "CONFIRMED",
@@ -5283,6 +7107,49 @@
       "https://www.linkedin.com/in/vincent-motholo-ca-sa-842b7613/"
     ],
     "notes": "CFO of UCT and SAICA Board Chairman."
+  },
+  {
+    "id": "acc-0137",
+    "fullName": "Vohan Jamneck",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Owner / Professional Accountant (SA)",
+    "employer": "VJ Professional Accountants",
+    "roleFamily": "Executive Finance",
+    "function": "Owner-managed accounting & tax practice",
+    "industry": "Accounting / Audit",
+    "subIndustry": "SAIPA accounting practice",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [
+      "Sage (edition not stated; credential May 2019)"
+    ],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "7-10",
+    "qualificationEvidence": "LinkedIn Licences & Certifications: \"Professional Accountant (S.A) — SAIPA\"; \"Professional Tax Practitioner (S.A) — SAIPA\"; activity: \"Finally qualified as a Professional Accountant (SA) after 3 years of articles!\"; Education: SAIPA.",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "",
+    "articlesBody": "SAIPA",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/vohanjamneck/",
+    "primarySource": "https://www.linkedin.com/in/vohanjamneck/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/vohanjamneck/"
+    ],
+    "notes": "Sage credential 2019 (edition not stated — NOT Sage 300 evidence). English/Afrikaans."
   },
   {
     "id": "acc-0055",
@@ -5465,6 +7332,47 @@
       "https://ldp.co.za/our-team/"
     ],
     "notes": "Specialises in property and agricultural sectors."
+  },
+  {
+    "id": "acc-0148",
+    "fullName": "Wynand Nel",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "Supervisor",
+    "employer": "JTC Group",
+    "roleFamily": "Financial Accounting",
+    "function": "Fund accounting / administration",
+    "industry": "Financial Services",
+    "subIndustry": "Fund administration",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "LinkedIn people-card (own name field): \"Wynand Nel Professional Accountant (SA) — Supervisor - JTC Group — City of Cape Town\" (seen on 3 separate public pages).",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a/",
+    "sourceUrls": [
+      "https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a/",
+      "https://www.linkedin.com/in/zozo-mdakane-36b6a21b/",
+      "https://www.linkedin.com/in/waynewatsonca/"
+    ],
+    "notes": "Profile URL not retrieved (seen as the person's own LinkedIn people-card on another public profile page — see source_urls). Do not fabricate a URL; resolve via LinkedIn people search. 1K followers."
   },
   {
     "id": "acc-0016",
@@ -5821,5 +7729,52 @@
       "https://www.accountancysa.org.za/casa-profiles/"
     ],
     "notes": "Hails from Mthatha, Eastern Cape (origin). Appointed CEO of Old Mutual's Masisizane Fund (Oct 2016 per snippet)."
+  },
+  {
+    "id": "acc-0177",
+    "fullName": "Zulpha Petersen",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "PA(SA)"
+    ],
+    "professionalRoutes": [
+      "SAIPA Articles"
+    ],
+    "bodies": [
+      "SAIPA"
+    ],
+    "title": "(current title not established)",
+    "employer": "",
+    "roleFamily": "Financial Accounting",
+    "function": "",
+    "industry": "Accounting / Audit",
+    "subIndustry": "Accounting & audit practice (SAIPA/SAICA training office)",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "MD Streets \"SAICA and SAIPA Honour's Roll\" — column \"Professional Accountants.\" lists \"Zulpha Petersen\" (2017).",
+    "articlesStatus": "CONFIRMED_EXPLICIT",
+    "articlesEmployer": "MD Streets Accountants (Kenilworth, Cape Town)",
+    "articlesBody": "SAIPA",
+    "careerHistory": [
+      {
+        "employer": "MD Streets Accountants (Kenilworth, Cape Town)",
+        "title": "SAIPA trainee → Professional Accountant (SA)",
+        "notes": "qualified (2017)"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://www.mdacc.co.za/about-us/honours-roll/",
+    "sourceUrls": [
+      "https://www.mdacc.co.za/about-us/honours-roll/"
+    ],
+    "notes": "Source is the firm's SAIPA Honour's Roll (designation + year qualified at MD Streets, Kenilworth). CURRENT employer/title NOT established — treat as 'qualified at MD Streets'; verify current role on LinkedIn."
   }
 ]
