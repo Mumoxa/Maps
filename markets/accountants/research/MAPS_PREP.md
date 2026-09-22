@@ -101,3 +101,19 @@
 
 **Definition of Done for this session:** 28/38 IB mapped, 10 hard gaps documented with evidence URLs, QA passed, people.json 400 camelCase, datasets refreshed, progress.md updated, branch pushed.
 
+
+## Merge with main 75394e8 — No duplication, no loss (2026-09-22)
+
+**Before merge:** Branch 169 people (134+35 IB) IDs 0135-0169 colliding with main 363 people (134+229 Western Cape) — same IDs different persons. Sources 131 vs 308 colliding 62 IDs diff URLs.
+
+**Actions:**
+- Remapped 35 IB people to acc-0364–0398 beyond main max 0363
+- Deduped Cheslin Klaasen Advania UK (acc-0151 CONFIRMED vs acc-0343 HIGH) and Saadiqa Dangor duplicate (acc-0337 RESEARCH_HOLD vs acc-0381) — merged alternate_names, other_profile_urls, notes, kept higher status
+- Merged sources by URL dedup: 308 main + 62 new IB = 370 (69 overlapping URLs kept main version)
+- Companies 113 unchanged
+- Regenerated people.json: 396 verified camelCase + 29 remaining SATURC (231-202 now in verified) = 425 total (274 CONFIRMED, 72 RESEARCH_HOLD, 45 HIGH, 29 RECORDED, 4 ARTICLES, 1 CONFLICTING)
+- Enriched Saadiqa Dangor verified with SATURC LinkedIn and tenderflow Sage 300+BPM renewal May 2026 evidence
+- Final checks: 0 dup IDs, 0 dup name+employer, 0 dup URLs, 0 orphaned sources, people_index 396/113/370, interim 396, build 50/50 tests pass
+
+**Final totals:** people.jsonl 396, people.json 425, sources 370, companies 113, IB coverage still 28/38 (73.7%) with remapped IDs, Western Cape 229 preserved, baseline 134 preserved, no information loss.
+

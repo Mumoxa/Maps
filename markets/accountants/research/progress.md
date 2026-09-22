@@ -141,3 +141,20 @@ Method: Pattern B — people.jsonl SoT, research CSVs intermediate, batch loader
 - Designation confidence: Sabelo Mavundla CA path via KPMG articles 2010-2013 but not explicit CA(SA) string → UNCONFIRMED; Faraimose Kutadzaushe CA(SA) 2008 + CA(Zimbabwe) + CFA confirmed via TheOrg bio
 - Maps prep: 28/38 mapped sufficient for Maps; remaining 10 documented as private SME with no public finance leader — acceptable gap for Discovery phase
 
+
+## Merge with main 75394e8 — No information loss, no duplication (2026-09-22)
+
+**Context:** Branch `arena/01a0c946-maps` had 169 people (134 baseline + 35 IB) with IDs acc-0135–0169 colliding with main's Western Cape reconciliation (363 people, acc-0135–0363 = 229 Western Cape, different persons for same IDs). Also sources colliding src-0070–0131.
+
+**Resolution:**
+- people.jsonl: main 363 + head 169, overlap IDs 169, diff person for 35 IDs (0135–0169). Remapped head's 35 IB people to new IDs acc-0364–0398 (beyond main max 0363) preserving both populations. Deduped 2 additional duplicates found in merged set: Cheslin Klaasen @ Advania UK acc-0151 CONFIRMED vs acc-0343 HIGH (merged, kept CONFIRMED, merged alternate_names, other_profile_urls, notes), and Saadiqa Dangor duplicate acc-0337 RESEARCH_HOLD vs acc-0381 (merged). Final people.jsonl **396** (134 baseline + 229 Western Cape + 35 IB -2 deduped = 396) — 274 CONFIRMED, 45 HIGH, 72 RESEARCH_HOLD, 4 ARTICLES_CONFIRMED, 1 CONFLICTING.
+- sources.jsonl: main 308 + head 131, overlap URLs 69, only main 239, only head 62. Merged by URL dedup, remapped head's 62 new URLs to new IDs src-0309–0370. Final **370** sources, 0 orphaned, 0 dup URLs.
+- companies.jsonl: both 113, overlap 113, kept main (same).
+- people.json: regenerated camelCase from merged 396 verified + remaining SATURC 29 not yet canonicalized (231 SATURC - 202 now in verified = 29). Final **425** (396 verified + 29 RECORDED) — status CONFIRMED 274, RESEARCH_HOLD 72, HIGH 45, RECORDED 29, ARTICLES 4, CONFLICTING 1. Enriched Saadiqa Dangor verified with SATURC LinkedIn https://www.linkedin.com/in/saadiqa-dangor/ and tenderflow Sage 300+BPM renewal May 2026.
+- Duplicate check: only 1 name with multiple entries after first merge (Cheslin Klaasen) resolved, now 0 dup name+employer, 0 dup IDs, 0 dup URLs.
+- people_index.md regenerated: **396 people, 113 companies, 370 sources**
+- interim.csv 396 rows
+- Research datasets regenerated: companies_master 38 IB still 28 MAPPED (IDs remapped but names same), coverage_matrix updated, people_master 38 IB entries with new IDs (0364–0398), people_qualifications 294, professional_routes 459, people_sources 370, title_variants 23
+
+**No information loss:** All 35 IB people preserved with new IDs, all 229 Western Cape preserved, baseline 134 preserved, SATURC 29 remaining preserved, sources 62 new IB preserved, Saadiqa LinkedIn + tenderflow preserved in verified notes.
+
