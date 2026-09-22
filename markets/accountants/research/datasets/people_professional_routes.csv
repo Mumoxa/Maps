@@ -1,0 +1,461 @@
+person_id,full_name,professional_body,professional_designation,articles_route,articles_status,articles_employer,articles_period,evidence_url,verification_status
+acc-0001,Taryn Woodbridge,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0002,Mathabo Makhaya,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0003,Mbali Precious Mabaso,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0004,Marta Gerbach,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0005,Tumi Mokgoko,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0006,Pumla Molope,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0007,Patricia Malahlela,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0008,Ciara Reintjes,SAICA,CA(SA),SAICA articles at KPMG Windhoek (Namibia); CA(SA),CONFIRMED_EXPLICIT,"KPMG (Windhoek, Namibia)",,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0009,Aneshree Naidoo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0010,Romy Maree,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0011,Mpolaheng Mohlopi,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0012,Patricia Stock,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0013,Nonkululeko Gobodo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0014,Buhle Hanise Nomabunga,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0015,Zanele Maduna,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0016,Zahid Fakey,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0017,Zahida Fakey,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0018,Esther Pieterse,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0019,Cecelia Swartz,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0020,Anisah Patel,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0021,Enrico Kleinbooi,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0022,Grant Greeff,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0023,Mpho Makoko-Hottie,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0024,Lynette Badenhorst,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0025,Phumelela Mbande,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0026,Vusi Mpofu,SAICA,AGA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,KPMG,1997 (contract signed June 1997),https://www.saica.org.za/news/in-a-better-shape-than-you-found-it-vusi-mpofu,CONFIRMED
+acc-0027,Kgabiso Mahlangu,SAICA,AGA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a,CONFIRMED
+acc-0028,Dumisani Zulu,SAICA,AGA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.linkedin.com/in/dumisani-zulu-aga-sa-aimfo-a5a62622,CONFIRMED
+acc-0029,J A 'Driaan' Beyers,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0030,Malcolm Cecil Coates,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0031,Louwrens da Silva,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0032,Adre Daniel,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0033,Roelof Jansen van Vuuren,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0034,Carla Kilian,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0035,Ross Thomson,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0036,Quintin Venter,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0037,Hlayisani Terrent Mboweni,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0038,Marco Wagener,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0039,Nkosana Dlamini,CIMA,ACMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/absas-nkosana-dlamini-explains-the-value-of-cgma-credentials/,CONFIRMED
+acc-0039,Nkosana Dlamini,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/absas-nkosana-dlamini-explains-the-value-of-cgma-credentials/,CONFIRMED
+acc-0040,Mikateko Tshetshe,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/you-need-the-right-combination-of-qualifications-experience-and-ambition-to-become-a-cfo/,CONFIRMED
+acc-0040,Mikateko Tshetshe,CIMA,FCMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/you-need-the-right-combination-of-qualifications-experience-and-ambition-to-become-a-cfo/,CONFIRMED
+acc-0041,Mangaliso Mithi,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.linkedin.com/in/mangalisomithi/,CONFIRMED
+acc-0041,Mangaliso Mithi,CIMA,FCMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.linkedin.com/in/mangalisomithi/,CONFIRMED
+acc-0042,Taryn Raju,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,Grant Thornton,≈2009–2013 (5-year part-time contract; signed-off after 4 years),https://thefinancestory.com/success-journey-becoming-ca-saica,CONFIRMED
+acc-0043,Sandi De Souza,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,Deloitte,,https://www.sap.com/africa/about/management-team.html,CONFIRMED
+acc-0044,Illana Helman,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/illana-helman-ca-sa-1279b117/,CONFIRMED
+acc-0045,Polani Sokombela,SAICA,CA(SA),TRAINING_CONTRACT_CONFIRMED,TRAINING_CONTRACT_CONFIRMED,Auditor-General of South Africa (AGSA),from 2007,https://www.accountancysa.org.za/profile-public-sector-polani-sokombela/,CONFIRMED
+acc-0046,Kerry Cassel,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-women-in-motoring-it-is-not-a-mans-world-after-all/,CONFIRMED
+acc-0047,Jody Baumgarten,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,PwC,,https://www.accountancysa.org.za/profile-jody-baumgarten/,HIGH_CONFIDENCE
+acc-0048,Masechaba Sesing,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-masechaba-sesing-doing-her-best-to-enhance-strong-ethics-and-morals/,CONFIRMED
+acc-0049,Zinhle Simamane,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-zinhle-simaman-stay-focused-and-you-can-achieve-anything/,CONFIRMED
+acc-0050,Zine Mshengu,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-zine-mshengu-taking-the-technical-route-less-travelled/,CONFIRMED
+acc-0051,Bonga Mokoena,SAICA,CA(SA),"CA(SA); internal audit (Nedcor, Metrorail, Transnet) → Old Mutual → BDO CEO",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.bdo.co.za/en-za/our-people/bonga-mokoena,CONFIRMED
+acc-0052,Bianca Roos,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-bianca-roos-determined-to-live-her-best-life/,CONFIRMED
+acc-0053,Darren Isaacs,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-darren-isaacs-makosi-disrupting-the-industry-to-change-the-world/,CONFIRMED
+acc-0054,Koko Khumalo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-koko-khumalo-paving-the-way-to-new-heights/,CONFIRMED
+acc-0055,Vukosi Fungeni,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-vukosi-fungeni-using-connected-data-analytics-to-drive-stakeholder-value/,CONFIRMED
+acc-0056,Mabatho Sedikela,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-mabatho-sedikela-a-transformational-public-sector-leader/,HIGH_CONFIDENCE
+acc-0057,Rachelle Best,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-rachelle-best-when-purpose-and-love-collide-great-things-happen/,CONFIRMED
+acc-0058,Katlego Matshego,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-katlego-matshego-pursuing-a-passion-for-teaching/,HIGH_CONFIDENCE
+acc-0059,Naledi Liphapang,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-naledi-liphapang-unlocking-the-value-of-digitalisation-in-the-public-sector/,HIGH_CONFIDENCE
+acc-0060,Thenashree Naidoo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-dynamic-duo/,HIGH_CONFIDENCE
+acc-0061,Siphesihle Mlangeni,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-figuring-it-out-together/,CONFIRMED
+acc-0062,Jabulile Nyathi,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-figuring-it-out-together/,CONFIRMED
+acc-0063,Mpho Mookapele,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://charteredaccountantsworldwide.com/institute/the-south-african-institute-of-chartered-accountants/,CONFIRMED
+acc-0064,Chwayita Mtebele,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/casa-profiles/,CONFIRMED
+acc-0065,Zizipho Nyanga,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/casa-profiles/,CONFIRMED
+acc-0066,Manenzhe Manenzhe,ACCA,FCCA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.linkedin.com/in/manenzhe-manenzhe-fcca-a80079150/,CONFIRMED
+acc-0067,Vijedharsan Vijendranath,ACCA,FCCA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.postjobfree.com/resume/aeheo9/experienced-internal-with-johannesburg,CONFIRMED
+acc-0068,Tariro Mutizwa,CIMA,ACMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.aicpa-cima.com/news/article/new-generation-of-south-african-accounting-and-finance-professionals-receive,CONFIRMED
+acc-0068,Tariro Mutizwa,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.aicpa-cima.com/news/article/new-generation-of-south-african-accounting-and-finance-professionals-receive,CONFIRMED
+acc-0069,Christiaan Vorster,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,Deloitte (Pretoria),,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0070,Naeem Asvat,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0071,Div Lamprecht,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,PwC Bloemfontein,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0072,Lesetja Kwetepane,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://lkwetepane.findanaccountant.co.za/,HIGH_CONFIDENCE
+acc-0073,Alexis Sacks,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0074,Dave Rich,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0075,Fatima Bapukee,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0076,Uwe Birkenstock,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://mca-acc.co.za/,CONFIRMED
+acc-0077,Juan Spies,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://mca-acc.co.za/,CONFIRMED
+acc-0078,Lézanne Dirkse van Schalkwyk,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://mca-acc.co.za/,CONFIRMED
+acc-0079,Justin Stohr,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://mca-acc.co.za/,HIGH_CONFIDENCE
+acc-0080,Trevor McLachlan,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://mca-acc.co.za/,HIGH_CONFIDENCE
+acc-0081,Ashley Hanekom,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/ashleyhanekom/,CONFIRMED
+acc-0082,Neil Fourie,SAICA,AGA(SA),"SAICA articles at PwC (2016–2021), then AGA(SA)",CONFIRMED_EXPLICIT,PwC,Jan 2016 – Jan 2021,https://www.linkedin.com/in/neil-fourie-aga-sa-2a125b204/,CONFIRMED
+acc-0083,Lian du Plessis,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/lian-du-plessis-aga-sa-177375149/,CONFIRMED
+acc-0084,Nastassja Nel,SAICA,AGA(SA),Articles (2017) + honours + AGA(SA) registration at SAICA,CONFIRMED_EXPLICIT,,completed 2017,https://www.linkedin.com/in/nastassja-nel-71a15364/,CONFIRMED
+acc-0085,Ashley Du Plessis,SAICA,AGA(SA),"AGA(SA) (SAICA), Feb 2023",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/ashley-du-plessis-ba99a716b/,CONFIRMED
+acc-0086,Mark Augustine,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://mtn.sageone.co.za/find-an-accountant,HIGH_CONFIDENCE
+acc-0087,Alana Johns,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://vox.sageone.co.za/find-an-accountant,HIGH_CONFIDENCE
+acc-0088,Alan Robbins,,,Articles completed in Cape Town (firm/body not named); audit manager; UK secondment; returned to Cape Town,CONFIRMED_EXPLICIT,,before 2003,https://www.sableinternational.com/about-us/meet-the-team/accounting-team,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0089,Peet van der Merwe,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/peet-van-der-merwe-ca-sa-ra-8320b7a6/,CONFIRMED
+acc-0090,Lynette Roeloffze,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/lynette-roeloffze-ca-sa-ra-0637aa13/,CONFIRMED
+acc-0091,Vincent Motholo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/vincent-motholo-ca-sa-842b7613/,CONFIRMED
+acc-0092,Louis de Wet,SAICA,CA(SA),SAICA articles at PwC Cape Town (2011–2013) → CA(SA) → CFO,CONFIRMED_EXPLICIT,PwC South Africa,Jan 2011 – Dec 2013,https://www.linkedin.com/in/louisdewetza/,CONFIRMED
+acc-0093,Adriaan de Lange,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/a3aandl/,CONFIRMED
+acc-0094,Vanessa Rheeder,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/vanessa-rheeder-ca-sa/,CONFIRMED
+acc-0095,Nethin Karamchand,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/nethin/,CONFIRMED
+acc-0096,Bronvin Heuvel,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/bronvin-heuvel-ca-sa-ra-7b2475a9/,CONFIRMED
+acc-0097,Morgan Gregory,SAICA,CA(SA),"SAICA articles at ASL (Somerset West, 2016–2018) → CA(SA) → CFO",CONFIRMED_EXPLICIT,ASL,Feb 2016 – Dec 2018,https://www.linkedin.com/in/morgan-gregory-ca-sa-64046117b/,CONFIRMED
+acc-0098,Chrizelda Visser,CIMA,ACMA,"CIMA qualification + practical experience → ACMA/CGMA (registered with CIMA, Oct 2015)",NOT_APPLICABLE,,,https://www.linkedin.com/in/chrizelda-visser-acma-cgma-3671b454/,CONFIRMED
+acc-0098,Chrizelda Visser,CIMA,CGMA,"CIMA qualification + practical experience → ACMA/CGMA (registered with CIMA, Oct 2015)",NOT_APPLICABLE,,,https://www.linkedin.com/in/chrizelda-visser-acma-cgma-3671b454/,CONFIRMED
+acc-0099,Kyle Danster,CIMA,ACMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/kyle-danster/,CONFIRMED
+acc-0099,Kyle Danster,CIMA,CGMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/kyle-danster/,CONFIRMED
+acc-0100,Anton van Niekerk,CIMA,ACMA,CIMA qualification → ACMA (CGMA designation accompanies CIMA membership),NOT_APPLICABLE,,,https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/,CONFIRMED
+acc-0100,Anton van Niekerk,CIMA,CGMA,CIMA qualification → ACMA (CGMA designation accompanies CIMA membership),NOT_APPLICABLE,,,https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/,CONFIRMED
+acc-0101,Adrian Smith,CIMA,ACMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/,CONFIRMED
+acc-0101,Adrian Smith,CIMA,CGMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/,CONFIRMED
+acc-0102,Luke Woodhouse,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/luke-woodhouse-ca-sa-b31a0149/,CONFIRMED
+acc-0103,Elmarie Swanepoel,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.researchgate.net/profile/Elmarie-Swanepoel,HIGH_CONFIDENCE
+acc-0104,Ralph Buddle,SAICA,CA(SA),"CA(SA); joined TFG Sep 2023, CFO from Apr 2024",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0105,Graham Davin,SAICA,CA(SA),CA(SA) — articled/trained at Arthur Andersen (Johannesburg),CONFIRMED_EXPLICIT,Arthur Andersen,pre-1990s,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0106,Jan Potgieter,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://tfglimited.co.za/our-brands/,HIGH_CONFIDENCE
+acc-0107,Owen van Tonder,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/owen-van-tonder-ca-sa-a8482131/,CONFIRMED
+acc-0108,Zaid Manjra,SAICA,CA(SA),CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.businessday.co.za/bd/companies/retail-and-consumer/2023-11-21-woolworths-names-zaid-manjra-as-cfo/,CONFIRMED
+acc-0109,Edburg Strauss,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/edburg-strauss/,CONFIRMED
+acc-0110,Kobus Boshoff,SAICA,CA(SA),CA(SA) issued Jun 1982,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/kobus-boshoff-0a510888/,CONFIRMED
+acc-0111,Emma Pardoe,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.facebook.com/EmmaPardoeCA/,CONFIRMED
+acc-0112,Johan Coetzee,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://shopbiz.co.za/western-cape/somerset-west/accountants/,HIGH_CONFIDENCE
+acc-0113,Willem Theron,SAICA,CA(SA),"BCompt (Hons), CA(SA); founded Theron du Plessis (Middelburg, 1976); co-founded PSG 1998",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,http://download.psg.co.za/files/investor-relations/financial-information/PSG-Konsult-Ltd-Integrated-Report-FY-2015.pdf,CONFIRMED
+acc-0114,André Du Plessis,SAICA,CA(SA),CA(SA) (1987); co-founder Loubser du Plessis (1991) → senior director LDP,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0115,Iaan Marx,SAICA,CA(SA),CA(SA) (1999); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0116,Francois Joubert,SAICA,CA(SA),CA(SA) (1998); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0117,Johann van Rensburg,SAICA,CA(SA),CA(SA) (2008); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0118,Jana Goosen,SAICA,CA(SA),CA(SA) (2008); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0119,Willene van Zyl,SAICA,CA(SA),CA(SA) (2012); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0120,Emile de Villiers,SAICA,CA(SA),BAcc(Hons) → articles (Cape Town) → CA(SA) 2014 → RA 2025,CONFIRMED_EXPLICIT,Medium-sized audit firm (Cape Town),before 2014,https://ldp.co.za/our-team/,CONFIRMED
+acc-0121,Cornell van Eeden,SAICA,CA(SA),CA(SA) 2018; RA 2021; Registered Assessor 2023,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0122,Jana van Zyl,SAICA,CA(SA),Audit trainee at LDP → UNISA Honours → CA(SA) 2022 → RA 2025,CONFIRMED_EXPLICIT,LDP,2017–c.2020,https://ldp.co.za/our-team/,CONFIRMED
+acc-0123,Nadia Van Der Westhuizen,SAICA,CA(SA),Traineeship at LDP → CA(SA) + RA (IRBA),CONFIRMED_EXPLICIT,LDP,3 years,https://ldp.co.za/our-team/,CONFIRMED
+acc-0124,Thinus Le Roux,SAICA,CA(SA),Articles from 2017 (top trainee) → CA(SA) 2019 → RA 2023 → Associate Director 2022,CONFIRMED_EXPLICIT,LDP (implied),began 2017,https://ldp.co.za/our-team/,CONFIRMED
+acc-0125,Alicia Haasbroek,,,Traineeship at LDP 2014–2016 → Audit Senior 2018 → Head of IT 2019 → Associate Director of IT 2026; CA(SA) eligibility (heading)/not yet registered (bio),CONFIRMED_EXPLICIT,LDP,2014–2016,https://ldp.co.za/our-team/,CONFLICTING
+acc-0126,Imtiaaz Hashim,SAICA,CA(SA),CA; audited trainee at BDO from 1997 → partner 2005 → Cape Town Managing Partner,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.bdo.co.za/en-za/our-people/imtiaaz-hashim,CONFIRMED
+acc-0127,Mark Willimott,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.bdo.co.za/en-za/our-people/mark-willimott,CONFIRMED
+acc-0128,Johan le Roux,SAICA,CA(SA),CA(SA); SAICA-registered; former MD of BFL Carriers; self-employed public accountant from 2019,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://jleroux03.findanaccountant.co.za/,CONFIRMED
+acc-0129,Zandrea Gerber,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/zandrea-gerber-ca-sa-99a5a475/,CONFIRMED
+acc-0130,Ashlin Healy,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/ashlin-healy-ca-sa-130238103/,CONFIRMED
+acc-0131,André Huysamer,SAICA,AGA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.linkedin.com/in/matthew-lindsay-ca-sa-0ba022100/,HIGH_CONFIDENCE
+acc-0132,Valentine Dzvova,CIMA,ACMA,CA(SA) + ACMA/CGMA (multi-designation); also CIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED
+acc-0132,Valentine Dzvova,SAICA,CA(SA),CA(SA) + ACMA/CGMA (multi-designation); also CIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED
+acc-0132,Valentine Dzvova,CIMA,CGMA,CA(SA) + ACMA/CGMA (multi-designation); also CIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED
+acc-0133,Mieke Hoffman,CIMA,ACMA,CIMA → ACMA/CGMA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/mieke-hoffman,CONFIRMED
+acc-0133,Mieke Hoffman,CIMA,CGMA,CIMA → ACMA/CGMA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/mieke-hoffman,CONFIRMED
+acc-0134,Dylin Kuni,CIMA,ACMA,"CIMA → ACMA, CGMA",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/dylinkuni/,CONFIRMED
+acc-0134,Dylin Kuni,CIMA,CGMA,"CIMA → ACMA, CGMA",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/dylinkuni/,CONFIRMED
+acc-0135,Charl Smit,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/charl-smit-aga-sa,CONFIRMED
+acc-0136,Lindi Swart,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lindi-swart-aga-sa-a19b05166,CONFIRMED
+acc-0137,Anela Kumnandi Dumalisile,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/anela-kumnandi-dumalisile-acma-cgma-1a483910b,CONFIRMED
+acc-0137,Anela Kumnandi Dumalisile,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/anela-kumnandi-dumalisile-acma-cgma-1a483910b,CONFIRMED
+acc-0138,Giancarlo Sassoli,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/giancarlo-sassoli-aga-sa-a051b9254,CONFIRMED
+acc-0139,Leandre Schoeman,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/leandre-schoeman-acma-cgma-bb451b23,CONFIRMED
+acc-0139,Leandre Schoeman,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/leandre-schoeman-acma-cgma-bb451b23,CONFIRMED
+acc-0140,Christine Haasbroek,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/christine-haasbroek-professional-accountant-sa-911057b2,CONFIRMED
+acc-0141,Hannes Nortman,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/hannes-nortman-aga-sa-683b202b,CONFIRMED
+acc-0142,Constant Loubser,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/constant-loubser-acma-cgma-39960176,CONFIRMED
+acc-0142,Constant Loubser,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/constant-loubser-acma-cgma-39960176,CONFIRMED
+acc-0143,Carla Mostert,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/carla-mostert-acma-cgma-8695a9156,CONFIRMED
+acc-0143,Carla Mostert,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/carla-mostert-acma-cgma-8695a9156,CONFIRMED
+acc-0144,Etienne Bekker,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/etienne-bekker-aga-sa-92929013,CONFIRMED
+acc-0145,Melanie Dennis-Jacobs,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/melanie-dennis-jacobs-aga-sa-7034aa66,CONFIRMED
+acc-0146,Fahdwa Hendricks,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/fahdwa-hendricks-aga-sa-b0a37238,CONFIRMED
+acc-0147,Joani Venter,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/joani-venter-aga-sa-763703236,CONFIRMED
+acc-0148,Adrian Kandan,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/adrian-kandan-aga-sa-acma-cgma-92749591,CONFIRMED
+acc-0148,Adrian Kandan,SAICA,AGA(SA),PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/adrian-kandan-aga-sa-acma-cgma-92749591,CONFIRMED
+acc-0148,Adrian Kandan,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/adrian-kandan-aga-sa-acma-cgma-92749591,CONFIRMED
+acc-0149,Niel Van Zyl,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/niel-van-zyl-02462a182,CONFIRMED
+acc-0149,Niel Van Zyl,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/niel-van-zyl-02462a182,CONFIRMED
+acc-0150,Francois Knoetze,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/francois-knoetze,CONFIRMED
+acc-0150,Francois Knoetze,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/francois-knoetze,CONFIRMED
+acc-0151,Cheslin Klaasen,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/cheslin-klaasen-professional-accountant-sa-45840451,CONFIRMED
+acc-0152,Stephanus Lombard,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/stephanus-lombard-acma-cgma-b74b4096,CONFIRMED
+acc-0152,Stephanus Lombard,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/stephanus-lombard-acma-cgma-b74b4096,CONFIRMED
+acc-0153,Jason King,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/jason-king-48871b12,CONFIRMED
+acc-0154,Rensche-Mari Hurter (Jansen),CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/rensche-mari-hurter-jansen-cgma%C2%AE-2aab466b,CONFIRMED
+acc-0155,Romona Harisunker,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/romona-harisunker-aga-sa-7a495a108,CONFIRMED
+acc-0156,Christanet Grewar,ACCA,ACCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/christanet-grewar-acca-saipa-27a9195a,CONFIRMED
+acc-0157,Byron Adriaanse,ACCA,ACCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/byron-adriaanse-acca-842545155,CONFIRMED
+acc-0158,Rynauw Adriaan,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/rynauw-adriaan-04607011a,CONFIRMED
+acc-0159,Caryn Jacobs,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/caryn-jacobs-cfm-aga-sa-a9223383,CONFIRMED
+acc-0160,Craig West,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/craig-west-aga-sa-562a81a2,CONFIRMED
+acc-0161,Ethan September,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/ethan-september-acma-cgma-2363a0143,CONFIRMED
+acc-0161,Ethan September,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/ethan-september-acma-cgma-2363a0143,CONFIRMED
+acc-0162,Jabavu Nare,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/jabavu-nare-acma-cgma-52544850,CONFIRMED
+acc-0162,Jabavu Nare,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/jabavu-nare-acma-cgma-52544850,CONFIRMED
+acc-0163,Bronwyn Von Maltitz,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/bronwyn-von-maltitz-aga-sa-78b17910b,CONFIRMED
+acc-0164,Joshua Hendricks,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/joshua-hendricks-aga-sa-60790192,CONFIRMED
+acc-0165,Mimosa Mputa,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/mimosa-mputa-aga-sa-50489a211,CONFIRMED
+acc-0166,Tim Horak,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/tim-horak-acma-cgma-54272ab0,CONFIRMED
+acc-0166,Tim Horak,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/tim-horak-acma-cgma-54272ab0,CONFIRMED
+acc-0167,An-ri Truter Roodt,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/an-ri-truter-roodt,CONFIRMED
+acc-0168,Denovan Coetzee,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/denovan-coetzee-acma-cgma-652581197,CONFIRMED
+acc-0168,Denovan Coetzee,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/denovan-coetzee-acma-cgma-652581197,CONFIRMED
+acc-0169,Anel Bekker,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://www.signalhire.com/overview/freshworld-pty-ltd/email-format,HIGH_CONFIDENCE
+acc-0169,Anel Bekker,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://www.signalhire.com/overview/freshworld-pty-ltd/email-format,HIGH_CONFIDENCE
+acc-0170,Robert Rossouw,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/pub/dir/Robert/Sa/za-0-South-Africa,RESEARCH_HOLD
+acc-0171,Charneé Arendse,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/charnee-arendse%27s-email/169008261,HIGH_CONFIDENCE
+acc-0172,Christo de Witt,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/christo-de-witt%27s-email/186599946,HIGH_CONFIDENCE
+acc-0173,Anathi Kamkam,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/anathi-bawuti-aga%27s-email/187067615,HIGH_CONFIDENCE
+acc-0174,Tiisetso Matsobane,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/tiisetso-matsobane-acma-cgma-54b16890,CONFIRMED
+acc-0174,Tiisetso Matsobane,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/tiisetso-matsobane-acma-cgma-54b16890,CONFIRMED
+acc-0175,Xolile Mkuhlana,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/xolile-mkuhlana-acma-cgma-9306a334,CONFIRMED
+acc-0175,Xolile Mkuhlana,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/xolile-mkuhlana-acma-cgma-9306a334,CONFIRMED
+acc-0176,Tawanda Sigauke,ACCA,ACCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/tawanda-sigauke-acca-369a7060,CONFIRMED
+acc-0177,Hiten Taylor,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/hiten-taylor-acma-cgma-a3b3b2206,CONFIRMED
+acc-0177,Hiten Taylor,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/hiten-taylor-acma-cgma-a3b3b2206,CONFIRMED
+acc-0178,Johanna Taylor,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/johanna-taylor-acma-cgma-b1219198,CONFIRMED
+acc-0178,Johanna Taylor,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/johanna-taylor-acma-cgma-b1219198,CONFIRMED
+acc-0179,Vimbai Benza,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/vimbai-benza-acma-cgma-880a8630,CONFIRMED
+acc-0179,Vimbai Benza,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/vimbai-benza-acma-cgma-880a8630,CONFIRMED
+acc-0180,Frikkie Venter,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/frikkie-venter-professional-accountant-sa-8891b510a,CONFIRMED
+acc-0181,Marco Bekker,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/marco-bekker-aga-sa-mba-sbs-3230a8b,CONFIRMED
+acc-0182,Justin Williams,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/justin-williams-acma-cgma-06ab1a1a0,CONFIRMED
+acc-0182,Justin Williams,SAICA,AGA(SA),PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/justin-williams-acma-cgma-06ab1a1a0,CONFIRMED
+acc-0182,Justin Williams,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/justin-williams-acma-cgma-06ab1a1a0,CONFIRMED
+acc-0183,Tracey Klopper,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/tracey-klopper-aga-sa-663471144,CONFIRMED
+acc-0184,Chantelle Fenwick,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/chantelle-fenwick-bb789493,CONFIRMED
+acc-0185,Zine Gengana,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/zine-gengana-professional-accountant-sa-319526a1,CONFIRMED
+acc-0186,Ruan Ferreira,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ruan-ferreira-aga-sa-37157a196,CONFIRMED
+acc-0187,Byron Fortuin,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/byron-fortuin-aga-sa-637905192,CONFIRMED
+acc-0188,Alicia Jamneck,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/alicia-jamneck-aga-sa-73b03a128,CONFIRMED
+acc-0189,Charles Swart,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/charles-swart-aga-sa-6a2266280,CONFIRMED
+acc-0190,Danielle O'Brien,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/danielle-o-brien-pa-sa-897227123,CONFIRMED
+acc-0191,Bulali Pepeteka,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/bulalipepeteka,CONFIRMED
+acc-0192,Zahn-Mari van Eeden,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/zahn-mari-van-eeden-a10414127,CONFIRMED
+acc-0193,Anje Bothma,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/anje-bothma-professional-accountant-sa-53b693168,CONFIRMED
+acc-0194,Willie Viljoen,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/willie-viljoen-aga-sa-475733218,CONFIRMED
+acc-0195,Martli Truter,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/martli-truter-pa-sa-4830352ab,CONFIRMED
+acc-0196,DeWalt Van Der Merwe,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0197,Brent Edward Williams,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0198,Jason Cloete,SAIPA,CIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0198,Jason Cloete,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0199,Berenice Vilander,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0200,Andre Davids,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0201,Carmen Gribble,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0201,Carmen Gribble,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0202,Abigail Matuku,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0202,Abigail Matuku,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0203,Magdel Le Grange,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0204,Jay Rosser,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0204,Jay Rosser,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/pub/dir,RESEARCH_HOLD
+acc-0205,Thokozani Motloung,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/thokozani-motloung-64147923,CONFIRMED
+acc-0206,Ameena Davids,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ameena-davids-professional-accountant-sa-78735763,CONFIRMED
+acc-0207,Carlynn-Jade Coetzee,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/carlynn-jadecoetzee,CONFIRMED
+acc-0208,Eugene Olivier,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/eugene-olivier-21a42b276,CONFIRMED
+acc-0209,Charl Andre Arndt,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/charl-andre-arndt,CONFIRMED
+acc-0210,Wynand Bezuidenhout,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/wynandbez99,CONFIRMED
+acc-0211,Anthony Renda,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/anthony-renda-030ab9151,CONFIRMED
+acc-0212,Franciscus Blignault,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/franciscus-blignault,CONFIRMED
+acc-0213,Wico Basson,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/wicobasson,CONFIRMED
+acc-0213,Wico Basson,SAICA,AGA(SA),PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/wicobasson,CONFIRMED
+acc-0213,Wico Basson,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/wicobasson,CONFIRMED
+acc-0214,Inga Venter,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/inga-venter-professional-accountant-sa-5aa62ba6,CONFIRMED
+acc-0215,Misheck P Jena,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/misheck-p-jena-pa-sa-47278a150,CONFIRMED
+acc-0216,Kristen Nel,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/kristen-nel-professional-accountant-saipa-407058118,CONFIRMED
+acc-0217,Pieter Booyens,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/pabooyens,CONFIRMED
+acc-0218,Jochelle Oosthuizen,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/jochelle-oosthuizen-a408a59a,CONFIRMED
+acc-0218,Jochelle Oosthuizen,SAIPA,TP(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/jochelle-oosthuizen-a408a59a,CONFIRMED
+acc-0219,Jo-Anne van der Walt,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/jo-anne-van-der-walt-0016b7128,CONFIRMED
+acc-0220,Francois Meyer,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/francois-meyer-75919a261,CONFIRMED
+acc-0221,Zandile Mtandeki,SAIPA,CAIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/zandilemtandeki,CONFIRMED
+acc-0221,Zandile Mtandeki,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/zandilemtandeki,CONFIRMED
+acc-0222,Miguel Pieterse,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/miguelpieterse,CONFIRMED
+acc-0223,Catherine Brennan,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/catherine-brennan-b2b6156a,CONFIRMED
+acc-0224,Melanie Jordaan,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/melanie-jordaan-11b2a21a0,CONFIRMED
+acc-0225,Lara Odendaal,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lara-odendaal-4053b21a4,CONFIRMED
+acc-0226,Sipumeze Tyali,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/sipumeze-tyali-professional-accountant-sa-saipa-295a14140,CONFIRMED
+acc-0227,Harry Durrell,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/harrydurrell,CONFIRMED
+acc-0228,Maricia Botha,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/maricia-botha-aga-sa-4209a415,CONFIRMED
+acc-0229,Nothando Muziki,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/nothando-muziki-aga-sa-b85538153,CONFIRMED
+acc-0230,Ridwana Parker,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ridwana-parker-aga-sa,CONFIRMED
+acc-0231,Maurice Trichardt,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/supremeaccountant,CONFIRMED
+acc-0232,Deon de Jongh,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/deondejongh,CONFIRMED
+acc-0233,Petrus Frick,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/petrus-frick-223543262,CONFIRMED
+acc-0233,Petrus Frick,CFA Institute,CFA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/petrus-frick-223543262,CONFIRMED
+acc-0234,André Olivier,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/andr%C3%A9-olivier-aga-sa-b5a573131,CONFIRMED
+acc-0235,Brendan Venter,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/brendan-venter-aga-sa-7864827a,CONFIRMED
+acc-0236,Sonja Van Zyl,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/sonja-van-zyl-saica-associate-general-accountant-96a9362a,CONFIRMED
+acc-0237,Lavinia Louw,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lavinia-louw-aga-sa-9a2a2915b,CONFIRMED
+acc-0238,Fanie Schoeman,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/fanie-schoeman-aga-sa-758938a2,CONFIRMED
+acc-0239,Ian Strydom,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ian-strydom,CONFIRMED
+acc-0240,Hein Burger,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/hein-burger-aga-sa-b56163135,CONFIRMED
+acc-0241,Ashleigh Waite,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ashleigh-waite-aga-sa-bb1b8a169,CONFIRMED
+acc-0242,Malvin Lancelot Makanda,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/malvin-lancelot-makanda-aga-sa-69517716a,CONFIRMED
+acc-0243,Monique van Niekerk,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/monique-van-niekerk-aga-sa-497898125,CONFIRMED
+acc-0244,Ashton Pillay,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ashton-pillay-aga-sa-aa777332,CONFIRMED
+acc-0245,Matthew Kiln,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/matthew-kiln-a19746253,CONFIRMED
+acc-0245,Matthew Kiln,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/matthew-kiln-a19746253,CONFIRMED
+acc-0246,Jaques Davids,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/jaques-davids-acma-cgma-a4179b129,CONFIRMED
+acc-0246,Jaques Davids,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/jaques-davids-acma-cgma-a4179b129,CONFIRMED
+acc-0247,Vhugala Nelwamondo,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/vhugala-nelwamondo-acma-cgma-2b2bb7ba,CONFIRMED
+acc-0247,Vhugala Nelwamondo,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/vhugala-nelwamondo-acma-cgma-2b2bb7ba,CONFIRMED
+acc-0248,Stuart Izatt,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/stuart-izatt-cgma-acma-47535815,CONFIRMED
+acc-0248,Stuart Izatt,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/stuart-izatt-cgma-acma-47535815,CONFIRMED
+acc-0249,Ntsikelelo Maduneni,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/ntsikelelo,CONFIRMED
+acc-0249,Ntsikelelo Maduneni,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/ntsikelelo,CONFIRMED
+acc-0250,Christel van Greunen,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/christelvangreunen,CONFIRMED
+acc-0250,Christel van Greunen,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/christelvangreunen,CONFIRMED
+acc-0251,Jaco Botha,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/jaco-botha-cgma,CONFIRMED
+acc-0251,Jaco Botha,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/jaco-botha-cgma,CONFIRMED
+acc-0252,Sean Meredith,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/sean-meredith-acma-cgma-029ab46,CONFIRMED
+acc-0252,Sean Meredith,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/sean-meredith-acma-cgma-029ab46,CONFIRMED
+acc-0253,Willem Kasselman,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/willem-kasselman,CONFIRMED
+acc-0253,Willem Kasselman,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/willem-kasselman,CONFIRMED
+acc-0254,Cornelius Hanekom,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/cornelius-hanekom,CONFIRMED
+acc-0254,Cornelius Hanekom,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/cornelius-hanekom,CONFIRMED
+acc-0255,Marzanne de Wet,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/marzanne-de-wet-acma-cgma-50b83531,CONFIRMED
+acc-0255,Marzanne de Wet,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/marzanne-de-wet-acma-cgma-50b83531,CONFIRMED
+acc-0256,Moses Manyeruke,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/moses-manyeruke-acma-cgma-ab216521,CONFIRMED
+acc-0256,Moses Manyeruke,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/moses-manyeruke-acma-cgma-ab216521,CONFIRMED
+acc-0257,Cormé de Bruyn,CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/corm%C3%A9-de-bruyn-acma-cgma-6b98a015b,CONFIRMED
+acc-0257,Cormé de Bruyn,CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/corm%C3%A9-de-bruyn-acma-cgma-6b98a015b,CONFIRMED
+acc-0258,Lerato Hillman,ACCA,ACCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/lerato-hillman-acca-4b482663,CONFIRMED
+acc-0259,Christopher Stanley,ACCA,FCCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/christopher-stanley-fcca,CONFIRMED
+acc-0260,Ross Pennell,ACCA,FCCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/rosspennell,CONFIRMED
+acc-0261,Rayhaan Osman,ACCA,FCCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/rayhaan-osman-172a07101,CONFIRMED
+acc-0262,Sampras Noel Kaweesi,ACCA,FCCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/sampras-noel-kaweesi-msci-fcca-a13a6b35,CONFIRMED
+acc-0263,Mulalo Peaceman Mashamba,ACCA,ACCA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/mulalo-peaceman-mashamba-acca-17015142,CONFIRMED
+acc-0264,Tharien Rambalie,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/tharien-rambalie-a46a7666,CONFIRMED
+acc-0265,Firdows Du Toit,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/firdows-du-toit-472882150,CONFIRMED
+acc-0266,Jaco Pieters,,,CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,,,https://www.signalhire.com/profiles/jaco-pieters/236157751,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0267,Anika Nel,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/anika-nel-20b364134,CONFIRMED
+acc-0268,Craig Samuel,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/craig-samuel-070500a3,CONFIRMED
+acc-0269,Christo Botha,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/christo-botha-5877666a,CONFIRMED
+acc-0270,Lyle Haas,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lyle-haas-439118136,CONFIRMED
+acc-0271,Ben Van Der Linde,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ben-van-der-linde,CONFIRMED
+acc-0272,Lerenzo Greeff,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lerenzo-greeff-pa-sa-339064146,CONFIRMED
+acc-0273,Wallace Disi,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/wallace-disi-74a3921a,CONFIRMED
+acc-0274,Anntoinique Holtzhauzen,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/anntoinique-holtzhauzen-b1830052,CONFIRMED
+acc-0275,Siseko Mapongwana,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/siseko-mapongwana-192818145,CONFIRMED
+acc-0276,Brandon Manuel,SAIPA,PA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,,,https://za.linkedin.com/in/brandon-manuel-a7261919,CONFIRMED
+acc-0277,"Alrich Coetzee ACMA, CGMA",CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/alrich-coetzee,CONFIRMED
+acc-0277,"Alrich Coetzee ACMA, CGMA",CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/alrich-coetzee,CONFIRMED
+acc-0278,Taryn Hamid,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/taryn-hamid-professional-accountant-s-a-616a5751,CONFIRMED
+acc-0279,"Bruce Canham ACMA, CGMA",CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/bruce-canham-acma-cgma-0a218a220,CONFIRMED
+acc-0279,"Bruce Canham ACMA, CGMA",CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/bruce-canham-acma-cgma-0a218a220,CONFIRMED
+acc-0280,"Servaas Hofmeyr ACMA, CGMA, MBA",CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/servaas-hofmeyr-021b071b,CONFIRMED
+acc-0280,"Servaas Hofmeyr ACMA, CGMA, MBA",CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/servaas-hofmeyr-021b071b,CONFIRMED
+acc-0281,Pieter Andre Schumyn,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/pieter-andre-schumyn-5b8008126,RESEARCH_HOLD
+acc-0282,Ettienne du Preez,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/ettiennedupreez,CONFIRMED
+acc-0283,Lesley Brown,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lesley-brown-1a93aa68,CONFIRMED
+acc-0284,Zaiba Khan,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/zaiba-khan-2396a865,CONFIRMED
+acc-0285,Wynand Nel,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/wynand-nel%27s-email/165337049,HIGH_CONFIDENCE
+acc-0286,Jeanie Wiese,,,CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,,,https://za.linkedin.com/in/jeanie-wiese-3907343a,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0287,"Monique Venter ACMA, CGMA",CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/monique-venter-742057b3,CONFIRMED
+acc-0287,"Monique Venter ACMA, CGMA",CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/monique-venter-742057b3,CONFIRMED
+acc-0288,Sandhya Ramjee (Chavda),,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/sandhya-chavda%27s-email/186780417,RESEARCH_HOLD
+acc-0289,Yvette Hanekom,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/yvette-hanekom%27s-email/165295108,RESEARCH_HOLD
+acc-0290,Frederick Bester,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/bester-chris-frederick,RESEARCH_HOLD
+acc-0291,Lindsay Karools,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lindsay-karools-48581816b,CONFIRMED
+acc-0292,Elana Beukes,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/elana-beukes-cima-adv-dip-ma-b7764461,RESEARCH_HOLD
+acc-0293,Arjan Van der Lugt,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/arjan-van-der-lugt-2b991384,RESEARCH_HOLD
+acc-0294,Elizabeth Steyn,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/elizabeth-steyn-54b3911ba,RESEARCH_HOLD
+acc-0295,Barnus Vermeulen,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/barnus-vermeulen-865a2589,CONFIRMED
+acc-0296,Bulelani M.,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/bulelani-m-94b4513a,RESEARCH_HOLD
+acc-0297,Andrea Haasbroek,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/andrea-haasbroek-83b44985,CONFIRMED
+acc-0298,Khanya Butshingi,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/khanya-butshingi-2284b922a,RESEARCH_HOLD
+acc-0299,Beverley Samuels,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/beverley-samuels-19041230,RESEARCH_HOLD
+acc-0300,Zhané Gorridon,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/zhane-gorridon-aga/239926269,HIGH_CONFIDENCE
+acc-0301,Lizel Roelofse,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/lizel-roelofse-29ab3553,RESEARCH_HOLD
+acc-0302,Barry Griffin,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://uk.linkedin.com/in/barry-griffin-5b4b691ab,RESEARCH_HOLD
+acc-0303,Tony Isaacs,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/tony-isaacs-ab079a36,RESEARCH_HOLD
+acc-0304,Michelle Kleynhans,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/michelle-kleynhans-9ab9a12aa,RESEARCH_HOLD
+acc-0305,Carlo Van Zyl,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/carlo-van-zyl-7805baa2,RESEARCH_HOLD
+acc-0306,Linda Mazibuko,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/linda-mazibuko-44346227,RESEARCH_HOLD
+acc-0307,"Cecil Wehmeyer ACMA, CGMA",CIMA,ACMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/cecilwehmeyer,CONFIRMED
+acc-0307,"Cecil Wehmeyer ACMA, CGMA",CIMA,CGMA,PROFESSIONAL_PER_CONFIRMED,PROFESSIONAL_PER_CONFIRMED,,,https://za.linkedin.com/in/cecilwehmeyer,CONFIRMED
+acc-0308,Sintu Maguga,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/sintu-maguga-3392b53a,RESEARCH_HOLD
+acc-0309,Lubabalo Mxhasa,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/lubabalo-mxhasa-39694163,CONFIRMED
+acc-0310,Breyton Groenewald,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/breyton-groenewald-50803258,RESEARCH_HOLD
+acc-0311,Bea Jansen van Rensburg,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/bea-jansen-van-rensburg-a9697432,RESEARCH_HOLD
+acc-0312,Vernon Morgan,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/vernon-morgan-financial-coach,RESEARCH_HOLD
+acc-0313,Shandré Whittles,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/shandr%C3%A9-whittles-aga-sa-9a14a4143,CONFIRMED
+acc-0314,Magda Marin Jonck,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.bold.pro/my/magdamarin-jonck-240925205448,RESEARCH_HOLD
+acc-0315,Elizabeth Lindeque,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/elizabeth-lindeque-bb1ba11b,RESEARCH_HOLD
+acc-0316,Lizelle Smith,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/lizelle-smith-6b3a7a65,RESEARCH_HOLD
+acc-0317,Dennis Tembo,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/dennis-tembo-3554016,RESEARCH_HOLD
+acc-0318,Tammy Coetzee,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/tammy-coetzee-a992952b,RESEARCH_HOLD
+acc-0319,Ranchell Thomas,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/ranchell-thomas-0a4080149,RESEARCH_HOLD
+acc-0320,Cindy-Lee Wilson,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.accountingweekly.com/reader-profiles/cindy-leewilson,RESEARCH_HOLD
+acc-0321,Maresa Pretorius,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/maresa-pretorius-0a139918,RESEARCH_HOLD
+acc-0322,Prudence Adams,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/prudence-adams-6ba5b939,RESEARCH_HOLD
+acc-0323,Nontsingiselo Notununu,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/nontsingiselo-notununu-cima-dip-ma-b74528b9,RESEARCH_HOLD
+acc-0324,David Malan,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/david-malan-32aa861b,RESEARCH_HOLD
+acc-0325,Ina Leroux,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/ina-leroux-31864170,RESEARCH_HOLD
+acc-0326,Nkhensani Mahlangu,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/nkhensani-mahlangu-716576119,RESEARCH_HOLD
+acc-0327,Chantal Viljoen,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/chantal-viljoen-5552aa99,RESEARCH_HOLD
+acc-0328,Kgaogelo Montjane,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/kgaogelo-montjane-373050186,RESEARCH_HOLD
+acc-0329,Kim Isaacs,SAIPA,PA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,,,https://za.linkedin.com/in/kimnikitaisaacs,CONFIRMED
+acc-0330,Chulumanco Beja,SAIPA,PA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,,,https://za.linkedin.com/in/chulumanco-beja-25bb421bb,CONFIRMED
+acc-0331,Liso Mtshambela,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/liso-mtshambela-80446b121,RESEARCH_HOLD
+acc-0332,Rabia Samuels,SAIPA,PA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,,,https://za.linkedin.com/in/rabia-samuels-3527a823b,CONFIRMED
+acc-0333,Maritza Dalton,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/maritza-dalton-professional-accountant-sa-91128611a,CONFIRMED
+acc-0334,Kieran Herbert,,,CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,,,https://za.linkedin.com/in/kieran-herbert-671b64149,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0335,Charmaine Nago,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/charmaine-nago-b077113b,RESEARCH_HOLD
+acc-0336,Jessica Arendse,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.signalhire.com/profiles/jessica-arendse%27s-email/187097430,RESEARCH_HOLD
+acc-0338,Peet Diedericks,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.sgrow.biz/docs/Peet_Resume.pdf,RESEARCH_HOLD
+acc-0339,Kgomotso Moipolai,SAIPA,PA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/kgomotso-moipolai-014726207,CONFIRMED
+acc-0340,Deon Titus,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/deon-titus-065660a5,RESEARCH_HOLD
+acc-0341,Danie Grobbelaar,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/danie-grobbelaar-a1318b118,RESEARCH_HOLD
+acc-0342,Annette van der Vyver,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/annette-van-der-vyver-85711734,RESEARCH_HOLD
+acc-0344,Bukeka Nohashe,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/bukeka-nohashe-5950866b,RESEARCH_HOLD
+acc-0345,Grant Crighton,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/grant-crighton-60348598,RESEARCH_HOLD
+acc-0346,Robert Gillman,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://uk.linkedin.com/in/robert-gillman-9281b59a,RESEARCH_HOLD
+acc-0347,Theo Naude,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/theo-naude-b36b847a,RESEARCH_HOLD
+acc-0348,Marilize Muller,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/marilize-muller-59b0a66a,RESEARCH_HOLD
+acc-0349,Philip Wapenaar,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/philipwapenaar,RESEARCH_HOLD
+acc-0350,CLAVER BONDA,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/claver-bonda-72421535,RESEARCH_HOLD
+acc-0351,Antonio Roberts,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/antonio-roberts,RESEARCH_HOLD
+acc-0352,Michele Nieuwoudt,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/michele-nieuwoudt-96074259,RESEARCH_HOLD
+acc-0353,Natasha Abrahams,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/natasha-abrahams-3146aa45,RESEARCH_HOLD
+acc-0354,Monique Harrison,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/monique-harrison-50409aa7,RESEARCH_HOLD
+acc-0355,Cornel Maartens,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/cornel-maartens-a7a83655,RESEARCH_HOLD
+acc-0356,Jeroen Herweijer,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/jeroen-herweijer-73b70316,RESEARCH_HOLD
+acc-0357,Shaun Mzuvukile Gxekwa,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/shaun-mzuvukile-gxekwa-538bb213a,RESEARCH_HOLD
+acc-0358,Crystelle Peense,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/crystelle-peense,RESEARCH_HOLD
+acc-0359,John Vertue,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/john-vertue-99721264,RESEARCH_HOLD
+acc-0360,Karen Dannhauser (Prinsloo),,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/karen-dannhauser-prinsloo-a96740aa,RESEARCH_HOLD
+acc-0361,Nombulelo Geya,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/nombulelo-geya-36a2a12b,RESEARCH_HOLD
+acc-0362,Samantha Carr,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/samantha-carr-2644466a,RESEARCH_HOLD
+acc-0363,Mieshka Morris,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://za.linkedin.com/in/mieshka-morris-55527055,RESEARCH_HOLD
+acc-0364,André Hugo Muller,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://quantumfoods.co.za/governance/,CONFIRMED
+acc-0365,Kim Julies,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,PricewaterhouseCoopers Inc.,,https://novus.holdings/about/board-members/,CONFIRMED
+acc-0366,Craig Wright,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://novus.holdings/wp-content/uploads/2024/06/IAR24-Annual-Financial-Statements-v_Final.pdf,CONFIRMED
+acc-0367,Keshree Alwar,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://novus.holdings/about/board-members/,CONFIRMED
+acc-0368,Yolanda Louw,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://theorg.com/org/food-lovers-market-holdings/org-chart/yolanda-louw,CONFIRMED
+acc-0369,JP du Toit,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/jp-du-toit-ca-sa-012989a4/,CONFIRMED
+acc-0370,MC Stoman,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://theorg.com/org/food-lovers-market-holdings,HIGH_CONFIDENCE
+acc-0371,Andisa Zinja,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.tcta.co.za/wp-content/uploads/2026/01/TCTA-CFO-Wins-Award.pdf,CONFIRMED
+acc-0372,Wendy Nkambule,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/290/trans-caledon-tunnel-authority-tcta,HIGH_CONFIDENCE
+acc-0373,Wayne de Wet,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://cfo.co.za/articles/cticc-appoints-wayne-de-wet-as-new-cfo/,CONFIRMED
+acc-0374,Fazel Ismail,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/194/water-research-commission-wrc,HIGH_CONFIDENCE
+acc-0375,Fritz Grobbelaar,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/fritzgrobbelaar/,CONFIRMED
+acc-0376,Saleh Coovadia,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://rocketreach.co/saleh-coovadia-email_240579142,CONFIRMED
+acc-0377,Phakama Mgole,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.datanyze.com/companies/hisense/371690770,HIGH_CONFIDENCE
+acc-0378,Duane Moore,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.ecowize.co.za/about-ecowize-global-hygiene-and-sanitation-solutions/,HIGH_CONFIDENCE
+acc-0379,Andre Tancred,CIMA,ACMA,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
+acc-0379,Andre Tancred,CIMA,CGMA,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
+acc-0380,Waheeda Saib,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,Big Four (per annual report); Auditor-General of South Africa,,https://provincialgovernment.co.za/units/management/254/western-cape/atlantis-special-economic-zone-company-asezco,CONFIRMED
+acc-0381,Saadiqa Dangor,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://atlantissez.com/wp-content/uploads/2024/12/Atlantis-Special-Economic-Zone-2022_2023-Annual-Report-Final.pdf,HIGH_CONFIDENCE
+acc-0382,Ryan Coldman,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.itweb.co.za/article/awcape-deploys-sage-300-erp-and-service-manager-for-refsols/nG98YdqLP8pqX2PD,HIGH_CONFIDENCE
+acc-0383,Innocent Gumbochuma,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/178/south-african-qualifications-authority-saqa,CONFIRMED
+acc-0384,Sherylee Moonsamy,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://cfo.co.za/profiles/sherylee-moonsamy/,CONFIRMED
+acc-0385,Lebogang Dire,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/122/national-agricultural-marketing-council-namc,HIGH_CONFIDENCE
+acc-0386,Willie van Wyk,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,Deloitte & Touche,1996,http://workforce.co.za/directors/,CONFIRMED
+acc-0387,Donovan Humphreys,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/donovan-humphreys-a13b52a9/,CONFIRMED
+acc-0388,Anneline Smit,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.inalabroadcast.co.za/about-us/,HIGH_CONFIDENCE
+acc-0389,Willie Robbertse,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/geiger-klotzbucher-pty-ltd-management_b4447554fa932288,HIGH_CONFIDENCE
+acc-0390,Anene Engelbrecht,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://eturbonews.com/radisson-blu-hotel-waterfront-capetown-two-new-appointments/,CONFIRMED
+acc-0391,Carel Smit,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/fidelity-adt-management_b4473681faecf2e4,HIGH_CONFIDENCE
+acc-0392,Alex Appleby,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/retail-capital-sa-profile_b5e440dcf42e6530,HIGH_CONFIDENCE
+acc-0393,Sabelo Mavundla,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/sabelo-mavundla-369a01105/,CONFIRMED
+acc-0394,Vicky Ntsodo,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.zoominfo.com/c/buffalo-city-metropolitan-development-agency/482691773,HIGH_CONFIDENCE
+acc-0395,Busisiwe Lubelwana,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.news24.com/southafrica/news/buffalo-city-metros-agency-cfo-resigns-to-preserve-mental-health-reputation-20241104,HIGH_CONFIDENCE
+acc-0396,Mokete Mokono,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/427/department-of-agriculture-land-reform-and-rural-development-dalrrd,HIGH_CONFIDENCE
+acc-0397,Talifhani Khubana,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/61/south-african-human-rights-commission-sahrc,CONFIRMED
+acc-0398,Faraimose Kutadzaushe,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0398,Faraimose Kutadzaushe,ICAZ,CA(Zimbabwe),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0398,Faraimose Kutadzaushe,CFA Institute,CFA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0428,Pitsi Mnisi,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://novus.holdings/about/board-members/,CONFIRMED
