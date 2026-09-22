@@ -14304,6 +14304,79 @@
     "notes": "SATURC Master Pool; Status: Qualified - enrich Sage 300/ACCPAC evidence classification: No public Sage 300/ACCPAC evidence found Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
+    "id": "acc-0428",
+    "fullName": "Pitsi Mnisi",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Independent Non-Executive Director & Member of Audit and Risk Committee",
+    "employer": "Novus Holdings Ltd",
+    "roleFamily": "Executive Finance",
+    "function": "",
+    "industry": "Manufacturing",
+    "subIndustry": "Commercial printing, labels, flexible packaging, tissue — board / audit committee",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Novus Holdings board page: Pitsi Mnisi CA(SA) appointed to Board in 2025, holds BCom and BCom Honours Accounting University of Natal, BCom Honours Taxation UCT, MBA Heriot-Watt, advanced certificate Emerging Markets Fordham USA. Novus AFS 2025: Audit and Risk Committee composition — Ms P Mnisi appointed 01 April 2025. MarketScreener: Ms Pitsi J. Mnisi Independent Non-Executive Director Novus Holdings Ltd (2025-03-31), also Nampak, Super Group, African Rainbow Minerals; previously Finance Manager De Beers Consolidated Mines. InsidEntity: Qualification BCom, BCom (Hons) Acc, BCom (Hons) Tax, CA(SA), MBA; Board Member Novus Holdings 31/03/2025; Audit Member.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [
+      {
+        "employer": "De Beers Consolidated Mines (Pty) Ltd",
+        "title": "Finance Manager",
+        "notes": "former per MarketScreener"
+      },
+      {
+        "employer": "Lynshpin Cedar",
+        "title": "Managing Director / Founder",
+        "notes": "wholly black owned consulting and corporate finance advisory"
+      },
+      {
+        "employer": "Mcorp Investments Pty Ltd",
+        "title": "Founder / Director",
+        "notes": "investment holding"
+      },
+      {
+        "employer": "African Rainbow Minerals Ltd",
+        "title": "Independent Non-Executive Director",
+        "notes": "Board 2020-09-29, Audit Member"
+      },
+      {
+        "employer": "Super Group Ltd",
+        "title": "Independent Non-Executive Director",
+        "notes": "Board 2020-09-30, Audit/Risk/Nominations/Social & Ethics"
+      },
+      {
+        "employer": "Nampak Ltd",
+        "title": "Independent Non-Executive Director",
+        "notes": "Board 2023-09-30, Audit/Risk"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://novus.holdings/about/board-members/",
+    "sourceUrls": [
+      "https://novus.holdings/about/board-members/",
+      "https://novus.holdings/wp-content/uploads/2025/06/IAR25-Annual-Financial-Statements-v_Final.pdf",
+      "https://www.marketscreener.com/insider/PITSI-MNISI-A236N6/",
+      "https://www.insidentity.com/director/pitsi-mnisi/"
+    ],
+    "notes": "Board-level CA(SA) for Novus Holdings Ltd cmp-0077 — expands IB title family coverage to Audit Committee / INED finance. Appointed 31 Mar 2025 / 01 Apr 2025. Also relevant to Nampak, Super Group, ARM boards. [Remapped from acc-0399 to acc-0428 due to SATURC ID collision]"
+  },
+  {
     "id": "acc-0045",
     "fullName": "Polani Sokombela",
     "status": "CONFIRMED",
