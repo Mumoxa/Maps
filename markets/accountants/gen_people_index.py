@@ -40,7 +40,7 @@ def build():
     L.append("# People Index — Master Name Registry (dedup source of truth)\n")
     L.append("> **CHECK THIS FILE FIRST** before adding any person, company or source.\n")
     L.append("This is the authoritative list of every name already captured in the")
-    L.append("SA Qualified Accountant & Finance Skills database. Future batches must")
+    L.append("SA Accounting & Finance Skills database. Future batches must")
     L.append("consult it **before** writing records so nothing is duplicated — a new")
     L.append("source for an existing person only *enriches* that record; it never adds a second one.\n")
     L.append("**Regenerate after every batch:** `python3 gen_people_index.py`\n")
@@ -50,10 +50,11 @@ def build():
     L.append("| Metric | Count |")
     L.append("|---|---|")
     L.append(f"| People (total records) | {len(people)} |")
-    L.append(f"| CONFIRMED qualified | {n_conf} |")
+    L.append(f"| CONFIRMED | {n_conf} |")
+    L.append(f"| FINANCE_ROLE_CONFIRMED | {st.get('FINANCE_ROLE_CONFIRMED', 0)} |")
     L.append(f"| HIGH_CONFIDENCE | {n_high} |")
     for k, v in sorted(st.items()):
-        if k not in ("CONFIRMED", "HIGH_CONFIDENCE"):
+        if k not in ("CONFIRMED", "FINANCE_ROLE_CONFIRMED", "HIGH_CONFIDENCE"):
             L.append(f"| {k} | {v} |")
     L.append(f"| Companies | {len(companies)} |")
     L.append(f"| Sources | {len(sources)} |")
