@@ -62,6 +62,24 @@ def professional_routes(row):
     return routes
 
 
+def company_affiliations(rows):
+    affiliations = []
+    for row in rows or []:
+        if not isinstance(row, dict):
+            continue
+        company = (row.get("company") or "").strip()
+        if not company:
+            continue
+        item = {
+            "company": company,
+            "relationship": (row.get("relationship") or "").strip(),
+            "evidence_url": (row.get("evidence_url") or "").strip(),
+        }
+        if item not in affiliations:
+            affiliations.append(item)
+    return affiliations
+
+
 def career_history(rows):
     history = []
     for row in rows or []:
@@ -81,11 +99,18 @@ def to_record(row):
         "fullName": row["full_name"],
         "status": row.get("status") or "",
         "confidence": row.get("confidence") or "",
+        "roleScopeStatus": row.get("role_scope_status") or "",
+        "professionallyQualified": row.get("professionally_qualified") or "unknown",
+        "designationStatus": row.get("designation_status") or "",
+        "qualificationConfidence": row.get("qualification_confidence") or "",
+        "academicQualifications": clean_list(row.get("academic_qualifications")),
         "designations": clean_list(row.get("professional_designations")),
         "professionalRoutes": professional_routes(row),
         "bodies": clean_list(row.get("professional_bodies")),
         "title": row.get("current_title") or "",
         "employer": row.get("current_employer") or "",
+        "currentCompanyAffiliations": company_affiliations(row.get("current_company_affiliations")),
+        "seniority": row.get("seniority") or "",
         "roleFamily": row.get("current_role_family") or "",
         "function": row.get("current_function") or "",
         "industry": row.get("current_industry") or "",
@@ -103,10 +128,15 @@ def to_record(row):
         "articlesStatus": row.get("articles_completion_status") or "",
         "articlesEmployer": row.get("articles_employer") or "",
         "articlesBody": row.get("articles_body") or "",
+        "articlesPeriod": row.get("articles_period") or "",
+        "articlesLocation": row.get("articles_location") or "",
+        "practicalExperienceFramework": row.get("practical_experience_framework") or "",
+        "qualificationRoute": row.get("qualification_route") or "",
         "careerHistory": career_history(row.get("career_history")),
         "linkedinUrl": row.get("linkedin_url") or "",
         "primarySource": row.get("primary_source") or "",
         "sourceUrls": clean_list(row.get("source_urls")),
+        "dateLastVerified": row.get("date_last_verified") or "",
         "notes": row.get("notes") or "",
     }
 
