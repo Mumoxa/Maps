@@ -98,3 +98,12 @@ Method: Pattern B — people.jsonl SoT, research CSVs intermediate, batch loader
 - Verify title variants discovered and populate title_variants_discovered.csv
 - Run gen_people_index.py to refresh people_index.md
 - Protect SATURC on people.json regen — merge pipeline needed before UI regen
+
+
+## Update after Batch 16 (2026-09-22)
+- people.jsonl: 163 total (baseline 134 + 29 new)
+- IB-matched people (incl group expansion for FVC): 32
+- Companies mapped: 24/38
+- New people: Anene Engelbrecht FC Radisson Blu Waterfront (cmp-0089), Carel Smit GM Finance Fidelity ADT (cmp-0090), Alex Appleby Head Treasury Retail Capital (cmp-0112)
+- Fruit & Veg City (cmp-0081) now marked as group-covered via Food Lover's Market Holdings CFO Yolanda Louw + team
+- Remaining hard gaps: Anchor Industries, Mason's Clothing, Helderberg Village, Isilumko ATT, Kentz, Roymec, Electron, Educor current, ENRC Africa, Swift L4, BCMDA/NDA/SAHRC Excluded, M-KOPA out-of-geo

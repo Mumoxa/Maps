@@ -312,6 +312,42 @@
     "notes": "Sage One 'find an accountant' directory — Western Cape; SAIPA + SARS registered."
   },
   {
+    "id": "acc-0163",
+    "fullName": "Alex Appleby",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [],
+    "professionalRoutes": [],
+    "bodies": [],
+    "title": "Head of Treasury",
+    "employer": "Retail Capital (Pty) Ltd",
+    "roleFamily": "Treasury/Tax",
+    "function": "",
+    "industry": "Financial Services",
+    "subIndustry": "SME funding, merchant cash advance",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "RocketReach Retail Capital SA: Alex Ca Head of Treasury at Retail Capital SA, Cape Town; ZoomInfo: Alex Appleby Head of Treasury at Retail Capital, Cape Town, 2017–present; Address 155 Campground Rd, Cape Town.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [],
+    "linkedinUrl": "",
+    "primarySource": "https://rocketreach.co/retail-capital-sa-profile_b5e440dcf42e6530",
+    "sourceUrls": [
+      "https://rocketreach.co/retail-capital-sa-profile_b5e440dcf42e6530",
+      "https://www.zoominfo.com/p/Alex-Appleby/-1182960593"
+    ],
+    "notes": "Covers cmp-0112 Retail Capital. Display name 'Alex Ca' may indicate CA pathway but insufficient for CA(SA) confirmation. Treasury function relevant to finance talent map."
+  },
+  {
     "id": "acc-0073",
     "fullName": "Alexis Sacks",
     "status": "CONFIRMED",
@@ -1114,6 +1150,64 @@
       "https://za.linkedin.com/in/anela-kumnandi-dumalisile-acma-cgma-1a483910b"
     ],
     "notes": "[Original ID acc-0137 remapped due to collision with verified JSONL] SATURC Master Pool; Status: Priority - verified/current"
+  },
+  {
+    "id": "acc-0161",
+    "fullName": "Anene Engelbrecht",
+    "status": "CONFIRMED",
+    "confidence": "CONFIRMED",
+    "designations": [],
+    "professionalRoutes": [],
+    "bodies": [],
+    "title": "Financial Controller",
+    "employer": "Radisson Blu Hotel Waterfront, Cape Town (Radisson Hotel Group)",
+    "roleFamily": "Financial Control",
+    "function": "",
+    "industry": "Hospitality",
+    "subIndustry": "Hotel — flagship property Middle East & Africa",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "eTurboNews 15 Aug 2018: 'Anene Engelbrecht has been appointed Financial Controller at the iconic Radisson Blu Hotel Waterfront'. MyPressportal same date: appointment announcement; background Bay Hotel 2002, Westin, Mount Nelson, BON Hotels, Radisson Blu Le Vendome, Park Inn Newlands prior to Waterfront FC. CFO South Africa 16 May 2021: 'first deaf financial controller in the global Radisson Hotel Group and the only deaf financial controller in South Africa’s hospitality sector'; Cluster Financial Controller for Radisson (two hotels), joined Radisson May 2016 at Le Vendome.",
+    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [
+      {
+        "employer": "Radisson Blu Le Vendome",
+        "title": "Cluster Financial Controller",
+        "notes": "May 2016– prior to Waterfront; managed two hotels"
+      },
+      {
+        "employer": "BON Hotels",
+        "title": "Group Financial Manager",
+        "notes": "prior"
+      },
+      {
+        "employer": "The Westin",
+        "title": "Hotel Accountant",
+        "notes": "prior"
+      },
+      {
+        "employer": "Bay Hotel",
+        "title": "Office Admin",
+        "notes": "2002 start"
+      }
+    ],
+    "linkedinUrl": "",
+    "primarySource": "https://eturbonews.com/radisson-blu-hotel-waterfront-capetown-two-new-appointments/",
+    "sourceUrls": [
+      "https://eturbonews.com/radisson-blu-hotel-waterfront-capetown-two-new-appointments/",
+      "https://pressportal.co.za/leisure-and-entertainment/story/two-senior-appointments-at-the-radisson-blu-hotel-waterfront.html",
+      "https://cfo.co.za/articles/anene-engelbrecht-redefining-transformation/"
+    ],
+    "notes": "Relevant to cmp-0089 Radisson Hotel Group Africa managed portfolio — SA property-level financial controller verified. Regional Area Director Finance Middle East Africa & SEAP is Neil Reddington (Dubai-based, not SA)."
   },
   {
     "id": "acc-0009",
@@ -2416,7 +2510,7 @@
     "notes": "CA(SA) + Registered Auditor (RA), KPMG Cape Town."
   },
   {
-    "id": "acc-0163",
+    "id": "acc-0392",
     "fullName": "Bronwyn Von Maltitz",
     "status": "RECORDED",
     "confidence": "High",
@@ -2463,7 +2557,7 @@
       "https://za.linkedin.com/in/bronwyn-von-maltitz-aga-sa-78b17910b",
       "https://crossboundary.com/our-team/"
     ],
-    "notes": "SATURC Master Pool; Status: Priority - verified/current"
+    "notes": "[Original ID acc-0163 remapped again] SATURC Master Pool; Status: Priority - verified/current"
   },
   {
     "id": "acc-0279",
@@ -2775,6 +2869,59 @@
       "https://za.linkedin.com/in/byron-fortuin-aga-sa-637905192"
     ],
     "notes": "SATURC Master Pool; Status: Qualified - enrich"
+  },
+  {
+    "id": "acc-0162",
+    "fullName": "Carel Smit",
+    "status": "HIGH_CONFIDENCE",
+    "confidence": "HIGH_CONFIDENCE",
+    "designations": [],
+    "professionalRoutes": [],
+    "bodies": [],
+    "title": "General Manager Finance",
+    "employer": "Fidelity ADT (Pty) Ltd / ADT Security Services (Pty) Ltd",
+    "roleFamily": "Financial Management",
+    "function": "",
+    "industry": "Security Services",
+    "subIndustry": "Electronic security, armed response, monitoring",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "HIGH",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "RocketReach Fidelity ADT Management: Carel Smit General Manager Finance at Fidelity ADT, Cape Town. LinkedIn: Experienced Senior Finance Manager, Fidelity ADT, Cape Town; UNISA education; ZoomInfo: General Manager Finance at Fidelity ADT, previously Senior Manager Finance Coastal Fidelity Services Group, Empact Group Regional GM, Alexforbes multiple finance roles from Accounting Trainee at Pyper Turner.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "careerHistory": [
+      {
+        "employer": "Fidelity Services Group",
+        "title": "Senior Manager, Finance Coastal",
+        "notes": "prior"
+      },
+      {
+        "employer": "Empact Group",
+        "title": "Regional General Manager / Regional Manager Financial",
+        "notes": "prior"
+      },
+      {
+        "employer": "Alexforbes",
+        "title": "Project Accountant → Group Manager Financial → Financial Executive",
+        "notes": "early career"
+      }
+    ],
+    "linkedinUrl": "https://www.linkedin.com/in/carel-smit-1b278820b/",
+    "primarySource": "https://rocketreach.co/fidelity-adt-management_b4473681faecf2e4",
+    "sourceUrls": [
+      "https://rocketreach.co/fidelity-adt-management_b4473681faecf2e4",
+      "https://www.linkedin.com/in/carel-smit-1b278820b/",
+      "https://www.zoominfo.com/p/Carel-Smit/2324534466"
+    ],
+    "notes": "Covers cmp-0090 ADT South Africa (now Fidelity ADT). Employer systems: Sage 300 per IB register. Location Cape Town per RocketReach, HQ Midrand."
   },
   {
     "id": "acc-0034",
@@ -5716,7 +5863,7 @@
     "notes": "Technical-accounting specialist profile. Employer/title not stated in index snippet."
   },
   {
-    "id": "acc-0161",
+    "id": "acc-0393",
     "fullName": "Ethan September",
     "status": "RECORDED",
     "confidence": "High",
@@ -5764,7 +5911,7 @@
       "https://za.linkedin.com/in/ethan-september-acma-cgma-2363a0143",
       "https://getprospect.com/business-directory/rfg"
     ],
-    "notes": "SATURC Master Pool; Status: Priority - verified/current"
+    "notes": "[Original ID acc-0161 remapped again] SATURC Master Pool; Status: Priority - verified/current"
   },
   {
     "id": "acc-0375",
@@ -7221,7 +7368,7 @@
     "notes": "Also Professional Tax Practitioner (SA)."
   },
   {
-    "id": "acc-0162",
+    "id": "acc-0394",
     "fullName": "Jabavu Nare",
     "status": "RECORDED",
     "confidence": "High",
@@ -7269,7 +7416,7 @@
       "https://za.linkedin.com/in/jabavu-nare-acma-cgma-52544850",
       "https://www.signalhire.com/profiles/jabavu-nare-acma%27s-email/169553171"
     ],
-    "notes": "SATURC Master Pool; Status: Priority - verified/current"
+    "notes": "[Original ID acc-0162 remapped again] SATURC Master Pool; Status: Priority - verified/current"
   },
   {
     "id": "acc-0062",
