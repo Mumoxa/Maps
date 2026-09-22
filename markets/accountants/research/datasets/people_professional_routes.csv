@@ -1,18 +1,185 @@
 person_id,full_name,professional_body,professional_designation,articles_route,articles_status,articles_employer,articles_period,evidence_url,verification_status
-acc-0135,André Hugo Muller,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://quantumfoods.co.za/governance/,CONFIRMED
-acc-0136,Kim Julies,SAICA,CA(SA),SAICA,CONFIRMED_EXPLICIT,PricewaterhouseCoopers Inc.,,https://novus.holdings/about/board-members/,CONFIRMED
-acc-0137,Craig Wright,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://novus.holdings/wp-content/uploads/2024/06/IAR24-Annual-Financial-Statements-v_Final.pdf,CONFIRMED
-acc-0138,Keshree Alwar,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://novus.holdings/about/board-members/,CONFIRMED
-acc-0139,Yolanda Louw,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://theorg.com/org/food-lovers-market-holdings/org-chart/yolanda-louw,CONFIRMED
-acc-0140,JP du Toit,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/jp-du-toit-ca-sa-012989a4/,CONFIRMED
-acc-0141,MC Stoman,SAICA,CA(SA),,NOT_ESTABLISHED,,,https://theorg.com/org/food-lovers-market-holdings,HIGH_CONFIDENCE
-acc-0142,Andisa Zinja,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.tcta.co.za/wp-content/uploads/2026/01/TCTA-CFO-Wins-Award.pdf,CONFIRMED
-acc-0144,Wayne de Wet,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://cfo.co.za/articles/cticc-appoints-wayne-de-wet-as-new-cfo/,CONFIRMED
-acc-0146,Fritz Grobbelaar,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/fritzgrobbelaar/,CONFIRMED
-acc-0147,Saleh Coovadia,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://rocketreach.co/saleh-coovadia-email_240579142,CONFIRMED
-acc-0150,Andre Tancred,CIMA,ACMA,,NOT_ESTABLISHED,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
-acc-0150,Andre Tancred,CIMA,CGMA,,NOT_ESTABLISHED,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
-acc-0151,Waheeda Saib,SAICA,CA(SA),SAICA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,Big Four (per annual report); Auditor-General of South Africa,,https://provincialgovernment.co.za/units/management/254/western-cape/atlantis-special-economic-zone-company-asezco,CONFIRMED
-acc-0156,Lebogang Dire,SAICA,CA(SA),,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/122/national-agricultural-marketing-council-namc,HIGH_CONFIDENCE
-acc-0157,Willie van Wyk,SAICA,CA(SA),SAICA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,Deloitte & Touche,1996,http://workforce.co.za/directors/,CONFIRMED
-acc-0158,Donovan Humphreys,SAICA,CA(SA),,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/donovan-humphreys-a13b52a9/,CONFIRMED
+acc-0001,Taryn Woodbridge,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0002,Mathabo Makhaya,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0003,Mbali Precious Mabaso,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0004,Marta Gerbach,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0005,Tumi Mokgoko,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0006,Pumla Molope,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0007,Patricia Malahlela,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0008,Ciara Reintjes,SAICA,CA(SA),SAICA articles at KPMG Windhoek (Namibia); CA(SA),CONFIRMED_EXPLICIT,"KPMG (Windhoek, Namibia)",,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0009,Aneshree Naidoo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0010,Romy Maree,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0011,Mpolaheng Mohlopi,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0012,Patricia Stock,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0013,Nonkululeko Gobodo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0014,Buhle Hanise Nomabunga,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0015,Zanele Maduna,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0016,Zahid Fakey,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0017,Zahida Fakey,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0018,Esther Pieterse,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0019,Cecelia Swartz,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0020,Anisah Patel,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0021,Enrico Kleinbooi,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0022,Grant Greeff,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0023,Mpho Makoko-Hottie,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0024,Lynette Badenhorst,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0025,Phumelela Mbande,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0026,Vusi Mpofu,SAICA,AGA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,KPMG,1997 (contract signed June 1997),https://www.saica.org.za/news/in-a-better-shape-than-you-found-it-vusi-mpofu,CONFIRMED
+acc-0027,Kgabiso Mahlangu,SAICA,AGA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a,CONFIRMED
+acc-0028,Dumisani Zulu,SAICA,AGA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.linkedin.com/in/dumisani-zulu-aga-sa-aimfo-a5a62622,CONFIRMED
+acc-0029,J A 'Driaan' Beyers,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0030,Malcolm Cecil Coates,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0031,Louwrens da Silva,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0032,Adre Daniel,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0033,Roelof Jansen van Vuuren,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0034,Carla Kilian,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0035,Ross Thomson,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0036,Quintin Venter,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0037,Hlayisani Terrent Mboweni,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0038,Marco Wagener,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0039,Nkosana Dlamini,CIMA,ACMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/absas-nkosana-dlamini-explains-the-value-of-cgma-credentials/,CONFIRMED
+acc-0039,Nkosana Dlamini,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/absas-nkosana-dlamini-explains-the-value-of-cgma-credentials/,CONFIRMED
+acc-0040,Mikateko Tshetshe,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/you-need-the-right-combination-of-qualifications-experience-and-ambition-to-become-a-cfo/,CONFIRMED
+acc-0040,Mikateko Tshetshe,CIMA,FCMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://cfo.co.za/articles/you-need-the-right-combination-of-qualifications-experience-and-ambition-to-become-a-cfo/,CONFIRMED
+acc-0041,Mangaliso Mithi,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.linkedin.com/in/mangalisomithi/,CONFIRMED
+acc-0041,Mangaliso Mithi,CIMA,FCMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.linkedin.com/in/mangalisomithi/,CONFIRMED
+acc-0042,Taryn Raju,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,Grant Thornton,≈2009–2013 (5-year part-time contract; signed-off after 4 years),https://thefinancestory.com/success-journey-becoming-ca-saica,CONFIRMED
+acc-0043,Sandi De Souza,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,Deloitte,,https://www.sap.com/africa/about/management-team.html,CONFIRMED
+acc-0044,Illana Helman,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/illana-helman-ca-sa-1279b117/,CONFIRMED
+acc-0045,Polani Sokombela,SAICA,CA(SA),TRAINING_CONTRACT_CONFIRMED,TRAINING_CONTRACT_CONFIRMED,Auditor-General of South Africa (AGSA),from 2007,https://www.accountancysa.org.za/profile-public-sector-polani-sokombela/,CONFIRMED
+acc-0046,Kerry Cassel,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-women-in-motoring-it-is-not-a-mans-world-after-all/,CONFIRMED
+acc-0047,Jody Baumgarten,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,PwC,,https://www.accountancysa.org.za/profile-jody-baumgarten/,HIGH_CONFIDENCE
+acc-0048,Masechaba Sesing,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-masechaba-sesing-doing-her-best-to-enhance-strong-ethics-and-morals/,CONFIRMED
+acc-0049,Zinhle Simamane,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-zinhle-simaman-stay-focused-and-you-can-achieve-anything/,CONFIRMED
+acc-0050,Zine Mshengu,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-zine-mshengu-taking-the-technical-route-less-travelled/,CONFIRMED
+acc-0051,Bonga Mokoena,SAICA,CA(SA),"CA(SA); internal audit (Nedcor, Metrorail, Transnet) → Old Mutual → BDO CEO",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.bdo.co.za/en-za/our-people/bonga-mokoena,CONFIRMED
+acc-0052,Bianca Roos,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-bianca-roos-determined-to-live-her-best-life/,CONFIRMED
+acc-0053,Darren Isaacs,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-darren-isaacs-makosi-disrupting-the-industry-to-change-the-world/,CONFIRMED
+acc-0054,Koko Khumalo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-koko-khumalo-paving-the-way-to-new-heights/,CONFIRMED
+acc-0055,Vukosi Fungeni,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-vukosi-fungeni-using-connected-data-analytics-to-drive-stakeholder-value/,CONFIRMED
+acc-0056,Mabatho Sedikela,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-mabatho-sedikela-a-transformational-public-sector-leader/,HIGH_CONFIDENCE
+acc-0057,Rachelle Best,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-rachelle-best-when-purpose-and-love-collide-great-things-happen/,CONFIRMED
+acc-0058,Katlego Matshego,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-katlego-matshego-pursuing-a-passion-for-teaching/,HIGH_CONFIDENCE
+acc-0059,Naledi Liphapang,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-naledi-liphapang-unlocking-the-value-of-digitalisation-in-the-public-sector/,HIGH_CONFIDENCE
+acc-0060,Thenashree Naidoo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-dynamic-duo/,HIGH_CONFIDENCE
+acc-0061,Siphesihle Mlangeni,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-figuring-it-out-together/,CONFIRMED
+acc-0062,Jabulile Nyathi,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/profile-figuring-it-out-together/,CONFIRMED
+acc-0063,Mpho Mookapele,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://charteredaccountantsworldwide.com/institute/the-south-african-institute-of-chartered-accountants/,CONFIRMED
+acc-0064,Chwayita Mtebele,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/casa-profiles/,CONFIRMED
+acc-0065,Zizipho Nyanga,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.accountancysa.org.za/casa-profiles/,CONFIRMED
+acc-0066,Manenzhe Manenzhe,ACCA,FCCA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.linkedin.com/in/manenzhe-manenzhe-fcca-a80079150/,CONFIRMED
+acc-0067,Vijedharsan Vijendranath,ACCA,FCCA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.postjobfree.com/resume/aeheo9/experienced-internal-with-johannesburg,CONFIRMED
+acc-0068,Tariro Mutizwa,CIMA,ACMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.aicpa-cima.com/news/article/new-generation-of-south-african-accounting-and-finance-professionals-receive,CONFIRMED
+acc-0068,Tariro Mutizwa,CIMA,CGMA,NOT_APPLICABLE,NOT_APPLICABLE,,,https://www.aicpa-cima.com/news/article/new-generation-of-south-african-accounting-and-finance-professionals-receive,CONFIRMED
+acc-0069,Christiaan Vorster,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,Deloitte (Pretoria),,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0070,Naeem Asvat,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0071,Div Lamprecht,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,PwC Bloemfontein,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0072,Lesetja Kwetepane,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://lkwetepane.findanaccountant.co.za/,HIGH_CONFIDENCE
+acc-0073,Alexis Sacks,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0074,Dave Rich,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0075,Fatima Bapukee,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0076,Uwe Birkenstock,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://mca-acc.co.za/,CONFIRMED
+acc-0077,Juan Spies,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://mca-acc.co.za/,CONFIRMED
+acc-0078,Lézanne Dirkse van Schalkwyk,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://mca-acc.co.za/,CONFIRMED
+acc-0079,Justin Stohr,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://mca-acc.co.za/,HIGH_CONFIDENCE
+acc-0080,Trevor McLachlan,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://mca-acc.co.za/,HIGH_CONFIDENCE
+acc-0081,Ashley Hanekom,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/ashleyhanekom/,CONFIRMED
+acc-0082,Neil Fourie,SAICA,AGA(SA),"SAICA articles at PwC (2016–2021), then AGA(SA)",CONFIRMED_EXPLICIT,PwC,Jan 2016 – Jan 2021,https://www.linkedin.com/in/neil-fourie-aga-sa-2a125b204/,CONFIRMED
+acc-0083,Lian du Plessis,SAICA,AGA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/lian-du-plessis-aga-sa-177375149/,CONFIRMED
+acc-0084,Nastassja Nel,SAICA,AGA(SA),Articles (2017) + honours + AGA(SA) registration at SAICA,CONFIRMED_EXPLICIT,,completed 2017,https://www.linkedin.com/in/nastassja-nel-71a15364/,CONFIRMED
+acc-0085,Ashley Du Plessis,SAICA,AGA(SA),"AGA(SA) (SAICA), Feb 2023",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/ashley-du-plessis-ba99a716b/,CONFIRMED
+acc-0086,Mark Augustine,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://mtn.sageone.co.za/find-an-accountant,HIGH_CONFIDENCE
+acc-0087,Alana Johns,SAIPA,PA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://vox.sageone.co.za/find-an-accountant,HIGH_CONFIDENCE
+acc-0088,Alan Robbins,,,Articles completed in Cape Town (firm/body not named); audit manager; UK secondment; returned to Cape Town,CONFIRMED_EXPLICIT,,before 2003,https://www.sableinternational.com/about-us/meet-the-team/accounting-team,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0089,Peet van der Merwe,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/peet-van-der-merwe-ca-sa-ra-8320b7a6/,CONFIRMED
+acc-0090,Lynette Roeloffze,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/lynette-roeloffze-ca-sa-ra-0637aa13/,CONFIRMED
+acc-0091,Vincent Motholo,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/vincent-motholo-ca-sa-842b7613/,CONFIRMED
+acc-0092,Louis de Wet,SAICA,CA(SA),SAICA articles at PwC Cape Town (2011–2013) → CA(SA) → CFO,CONFIRMED_EXPLICIT,PwC South Africa,Jan 2011 – Dec 2013,https://www.linkedin.com/in/louisdewetza/,CONFIRMED
+acc-0093,Adriaan de Lange,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/a3aandl/,CONFIRMED
+acc-0094,Vanessa Rheeder,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/vanessa-rheeder-ca-sa/,CONFIRMED
+acc-0095,Nethin Karamchand,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/nethin/,CONFIRMED
+acc-0096,Bronvin Heuvel,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/bronvin-heuvel-ca-sa-ra-7b2475a9/,CONFIRMED
+acc-0097,Morgan Gregory,SAICA,CA(SA),"SAICA articles at ASL (Somerset West, 2016–2018) → CA(SA) → CFO",CONFIRMED_EXPLICIT,ASL,Feb 2016 – Dec 2018,https://www.linkedin.com/in/morgan-gregory-ca-sa-64046117b/,CONFIRMED
+acc-0098,Chrizelda Visser,CIMA,ACMA,"CIMA qualification + practical experience → ACMA/CGMA (registered with CIMA, Oct 2015)",NOT_APPLICABLE,,,https://www.linkedin.com/in/chrizelda-visser-acma-cgma-3671b454/,CONFIRMED
+acc-0098,Chrizelda Visser,CIMA,CGMA,"CIMA qualification + practical experience → ACMA/CGMA (registered with CIMA, Oct 2015)",NOT_APPLICABLE,,,https://www.linkedin.com/in/chrizelda-visser-acma-cgma-3671b454/,CONFIRMED
+acc-0099,Kyle Danster,CIMA,ACMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/kyle-danster/,CONFIRMED
+acc-0099,Kyle Danster,CIMA,CGMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/kyle-danster/,CONFIRMED
+acc-0100,Anton van Niekerk,CIMA,ACMA,CIMA qualification → ACMA (CGMA designation accompanies CIMA membership),NOT_APPLICABLE,,,https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/,CONFIRMED
+acc-0100,Anton van Niekerk,CIMA,CGMA,CIMA qualification → ACMA (CGMA designation accompanies CIMA membership),NOT_APPLICABLE,,,https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/,CONFIRMED
+acc-0101,Adrian Smith,CIMA,ACMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/,CONFIRMED
+acc-0101,Adrian Smith,CIMA,CGMA,CIMA qualification → ACMA/CGMA,NOT_APPLICABLE,,,https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/,CONFIRMED
+acc-0102,Luke Woodhouse,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/luke-woodhouse-ca-sa-b31a0149/,CONFIRMED
+acc-0103,Elmarie Swanepoel,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.researchgate.net/profile/Elmarie-Swanepoel,HIGH_CONFIDENCE
+acc-0104,Ralph Buddle,SAICA,CA(SA),"CA(SA); joined TFG Sep 2023, CFO from Apr 2024",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0105,Graham Davin,SAICA,CA(SA),CA(SA) — articled/trained at Arthur Andersen (Johannesburg),CONFIRMED_EXPLICIT,Arthur Andersen,pre-1990s,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0106,Jan Potgieter,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://tfglimited.co.za/our-brands/,HIGH_CONFIDENCE
+acc-0107,Owen van Tonder,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/owen-van-tonder-ca-sa-a8482131/,CONFIRMED
+acc-0108,Zaid Manjra,SAICA,CA(SA),CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.businessday.co.za/bd/companies/retail-and-consumer/2023-11-21-woolworths-names-zaid-manjra-as-cfo/,CONFIRMED
+acc-0109,Edburg Strauss,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/edburg-strauss/,CONFIRMED
+acc-0110,Kobus Boshoff,SAICA,CA(SA),CA(SA) issued Jun 1982,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/kobus-boshoff-0a510888/,CONFIRMED
+acc-0111,Emma Pardoe,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.facebook.com/EmmaPardoeCA/,CONFIRMED
+acc-0112,Johan Coetzee,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://shopbiz.co.za/western-cape/somerset-west/accountants/,HIGH_CONFIDENCE
+acc-0113,Willem Theron,SAICA,CA(SA),"BCompt (Hons), CA(SA); founded Theron du Plessis (Middelburg, 1976); co-founded PSG 1998",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,http://download.psg.co.za/files/investor-relations/financial-information/PSG-Konsult-Ltd-Integrated-Report-FY-2015.pdf,CONFIRMED
+acc-0114,André Du Plessis,SAICA,CA(SA),CA(SA) (1987); co-founder Loubser du Plessis (1991) → senior director LDP,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0115,Iaan Marx,SAICA,CA(SA),CA(SA) (1999); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0116,Francois Joubert,SAICA,CA(SA),CA(SA) (1998); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0117,Johann van Rensburg,SAICA,CA(SA),CA(SA) (2008); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0118,Jana Goosen,SAICA,CA(SA),CA(SA) (2008); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0119,Willene van Zyl,SAICA,CA(SA),CA(SA) (2012); Registered Auditor,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0120,Emile de Villiers,SAICA,CA(SA),BAcc(Hons) → articles (Cape Town) → CA(SA) 2014 → RA 2025,CONFIRMED_EXPLICIT,Medium-sized audit firm (Cape Town),before 2014,https://ldp.co.za/our-team/,CONFIRMED
+acc-0121,Cornell van Eeden,SAICA,CA(SA),CA(SA) 2018; RA 2021; Registered Assessor 2023,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0122,Jana van Zyl,SAICA,CA(SA),Audit trainee at LDP → UNISA Honours → CA(SA) 2022 → RA 2025,CONFIRMED_EXPLICIT,LDP,2017–c.2020,https://ldp.co.za/our-team/,CONFIRMED
+acc-0123,Nadia Van Der Westhuizen,SAICA,CA(SA),Traineeship at LDP → CA(SA) + RA (IRBA),CONFIRMED_EXPLICIT,LDP,3 years,https://ldp.co.za/our-team/,CONFIRMED
+acc-0124,Thinus Le Roux,SAICA,CA(SA),Articles from 2017 (top trainee) → CA(SA) 2019 → RA 2023 → Associate Director 2022,CONFIRMED_EXPLICIT,LDP (implied),began 2017,https://ldp.co.za/our-team/,CONFIRMED
+acc-0125,Alicia Haasbroek,,,Traineeship at LDP 2014–2016 → Audit Senior 2018 → Head of IT 2019 → Associate Director of IT 2026; CA(SA) eligibility (heading)/not yet registered (bio),CONFIRMED_EXPLICIT,LDP,2014–2016,https://ldp.co.za/our-team/,CONFLICTING
+acc-0126,Imtiaaz Hashim,SAICA,CA(SA),CA; audited trainee at BDO from 1997 → partner 2005 → Cape Town Managing Partner,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.bdo.co.za/en-za/our-people/imtiaaz-hashim,CONFIRMED
+acc-0127,Mark Willimott,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.bdo.co.za/en-za/our-people/mark-willimott,CONFIRMED
+acc-0128,Johan le Roux,SAICA,CA(SA),CA(SA); SAICA-registered; former MD of BFL Carriers; self-employed public accountant from 2019,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://jleroux03.findanaccountant.co.za/,CONFIRMED
+acc-0129,Zandrea Gerber,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/zandrea-gerber-ca-sa-99a5a475/,CONFIRMED
+acc-0130,Ashlin Healy,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/ashlin-healy-ca-sa-130238103/,CONFIRMED
+acc-0131,André Huysamer,SAICA,AGA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.linkedin.com/in/matthew-lindsay-ca-sa-0ba022100/,HIGH_CONFIDENCE
+acc-0132,Valentine Dzvova,CIMA,ACMA,CA(SA) + ACMA/CGMA (multi-designation); also CIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED
+acc-0132,Valentine Dzvova,SAICA,CA(SA),CA(SA) + ACMA/CGMA (multi-designation); also CIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED
+acc-0132,Valentine Dzvova,CIMA,CGMA,CA(SA) + ACMA/CGMA (multi-designation); also CIA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED
+acc-0133,Mieke Hoffman,CIMA,ACMA,CIMA → ACMA/CGMA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/mieke-hoffman,CONFIRMED
+acc-0133,Mieke Hoffman,CIMA,CGMA,CIMA → ACMA/CGMA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/mieke-hoffman,CONFIRMED
+acc-0134,Dylin Kuni,CIMA,ACMA,"CIMA → ACMA, CGMA",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/dylinkuni/,CONFIRMED
+acc-0134,Dylin Kuni,CIMA,CGMA,"CIMA → ACMA, CGMA",QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/dylinkuni/,CONFIRMED
+acc-0135,André Hugo Muller,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://quantumfoods.co.za/governance/,CONFIRMED
+acc-0136,Kim Julies,SAICA,CA(SA),CONFIRMED_EXPLICIT,CONFIRMED_EXPLICIT,PricewaterhouseCoopers Inc.,,https://novus.holdings/about/board-members/,CONFIRMED
+acc-0137,Craig Wright,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://novus.holdings/wp-content/uploads/2024/06/IAR24-Annual-Financial-Statements-v_Final.pdf,CONFIRMED
+acc-0138,Keshree Alwar,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://novus.holdings/about/board-members/,CONFIRMED
+acc-0139,Yolanda Louw,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://theorg.com/org/food-lovers-market-holdings/org-chart/yolanda-louw,CONFIRMED
+acc-0140,JP du Toit,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/jp-du-toit-ca-sa-012989a4/,CONFIRMED
+acc-0141,MC Stoman,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://theorg.com/org/food-lovers-market-holdings,HIGH_CONFIDENCE
+acc-0142,Andisa Zinja,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.tcta.co.za/wp-content/uploads/2026/01/TCTA-CFO-Wins-Award.pdf,CONFIRMED
+acc-0143,Wendy Nkambule,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/290/trans-caledon-tunnel-authority-tcta,HIGH_CONFIDENCE
+acc-0144,Wayne de Wet,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://cfo.co.za/articles/cticc-appoints-wayne-de-wet-as-new-cfo/,CONFIRMED
+acc-0145,Fazel Ismail,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/194/water-research-commission-wrc,HIGH_CONFIDENCE
+acc-0146,Fritz Grobbelaar,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/fritzgrobbelaar/,CONFIRMED
+acc-0147,Saleh Coovadia,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://rocketreach.co/saleh-coovadia-email_240579142,CONFIRMED
+acc-0148,Phakama Mgole,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.datanyze.com/companies/hisense/371690770,HIGH_CONFIDENCE
+acc-0149,Duane Moore,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.ecowize.co.za/about-ecowize-global-hygiene-and-sanitation-solutions/,HIGH_CONFIDENCE
+acc-0150,Andre Tancred,CIMA,ACMA,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
+acc-0150,Andre Tancred,CIMA,CGMA,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
+acc-0151,Waheeda Saib,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,Big Four (per annual report); Auditor-General of South Africa,,https://provincialgovernment.co.za/units/management/254/western-cape/atlantis-special-economic-zone-company-asezco,CONFIRMED
+acc-0152,Saadiqa Dangor,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://atlantissez.com/wp-content/uploads/2024/12/Atlantis-Special-Economic-Zone-2022_2023-Annual-Report-Final.pdf,HIGH_CONFIDENCE
+acc-0153,Ryan Coldman,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.itweb.co.za/article/awcape-deploys-sage-300-erp-and-service-manager-for-refsols/nG98YdqLP8pqX2PD,HIGH_CONFIDENCE
+acc-0154,Innocent Gumbochuma,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/178/south-african-qualifications-authority-saqa,CONFIRMED
+acc-0155,Sherylee Moonsamy,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://cfo.co.za/profiles/sherylee-moonsamy/,CONFIRMED
+acc-0156,Lebogang Dire,SAICA,CA(SA),NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/122/national-agricultural-marketing-council-namc,HIGH_CONFIDENCE
+acc-0157,Willie van Wyk,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,Deloitte & Touche,1996,http://workforce.co.za/directors/,CONFIRMED
+acc-0158,Donovan Humphreys,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://za.linkedin.com/in/donovan-humphreys-a13b52a9/,CONFIRMED
+acc-0159,Anneline Smit,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.inalabroadcast.co.za/about-us/,HIGH_CONFIDENCE
+acc-0160,Willie Robbertse,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/geiger-klotzbucher-pty-ltd-management_b4447554fa932288,HIGH_CONFIDENCE
+acc-0161,Anene Engelbrecht,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://eturbonews.com/radisson-blu-hotel-waterfront-capetown-two-new-appointments/,CONFIRMED
+acc-0162,Carel Smit,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/fidelity-adt-management_b4473681faecf2e4,HIGH_CONFIDENCE
+acc-0163,Alex Appleby,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://rocketreach.co/retail-capital-sa-profile_b5e440dcf42e6530,HIGH_CONFIDENCE
+acc-0164,Sabelo Mavundla,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.linkedin.com/in/sabelo-mavundla-369a01105/,CONFIRMED
+acc-0165,Vicky Ntsodo,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.zoominfo.com/c/buffalo-city-metropolitan-development-agency/482691773,HIGH_CONFIDENCE
+acc-0166,Busisiwe Lubelwana,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://www.news24.com/southafrica/news/buffalo-city-metros-agency-cfo-resigns-to-preserve-mental-health-reputation-20241104,HIGH_CONFIDENCE
+acc-0167,Mokete Mokono,,,NOT_ESTABLISHED,NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/427/department-of-agriculture-land-reform-and-rural-development-dalrrd,HIGH_CONFIDENCE
+acc-0168,Talifhani Khubana,,,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://nationalgovernment.co.za/units/management/61/south-african-human-rights-commission-sahrc,CONFIRMED
+acc-0169,Faraimose Kutadzaushe,SAICA,CA(SA),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0169,Faraimose Kutadzaushe,ICAZ,CA(Zimbabwe),QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0169,Faraimose Kutadzaushe,CFA Institute,CFA,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,https://www.m-kopa.com/about,CONFIRMED

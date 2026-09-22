@@ -1,19 +1,166 @@
 person_id,full_name,qualification_name,qualification_level,institution,graduation_year_if_public,evidence_url,verification_status
+acc-0001,Taryn Woodbridge,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0002,Mathabo Makhaya,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0003,Mbali Precious Mabaso,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0004,Marta Gerbach,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0005,Tumi Mokgoko,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0006,Pumla Molope,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0007,Patricia Malahlela,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0008,Ciara Reintjes,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0009,Aneshree Naidoo,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0010,Romy Maree,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0011,Mpolaheng Mohlopi,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0012,Patricia Stock,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0013,Nonkululeko Gobodo,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0014,Buhle Hanise Nomabunga,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0015,Zanele Maduna,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0016,Zahid Fakey,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0017,Zahida Fakey,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0018,Esther Pieterse,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0019,Cecelia Swartz,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0020,Anisah Patel,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0021,Enrico Kleinbooi,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0022,Grant Greeff,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0023,Mpho Makoko-Hottie,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0024,Lynette Badenhorst,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0025,Phumelela Mbande,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-info/meet-our-members/,CONFIRMED
+acc-0026,Vusi Mpofu,BCom — National University of Lesotho (1997),,,,https://www.saica.org.za/news/in-a-better-shape-than-you-found-it-vusi-mpofu,CONFIRMED
+acc-0026,Vusi Mpofu,Diploma in Advanced Banking — University of Johannesburg,,,,https://www.saica.org.za/news/in-a-better-shape-than-you-found-it-vusi-mpofu,CONFIRMED
+acc-0026,Vusi Mpofu,MBA — Wits (2010),,,,https://www.saica.org.za/news/in-a-better-shape-than-you-found-it-vusi-mpofu,CONFIRMED
+acc-0026,Vusi Mpofu,Executive development programmes — Duke University,,,,https://www.saica.org.za/news/in-a-better-shape-than-you-found-it-vusi-mpofu,CONFIRMED
+acc-0027,Kgabiso Mahlangu,BCom Accounting — University of Johannesburg (2006–2009),,,,https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a,CONFIRMED
+acc-0027,Kgabiso Mahlangu,Hons BCompt (CTA) — UNISA (2011),,,,https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a,CONFIRMED
+acc-0028,Dumisani Zulu,Stellenbosch University/Universiteit Stellenbosch (education listed),,,,https://www.linkedin.com/in/dumisani-zulu-aga-sa-aimfo-a5a62622,CONFIRMED
+acc-0032,Adre Daniel,BCompt,,,,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,HIGH_CONFIDENCE
+acc-0039,Nkosana Dlamini,Undergraduate degree in Accounting,,,,https://cfo.co.za/articles/absas-nkosana-dlamini-explains-the-value-of-cgma-credentials/,CONFIRMED
+acc-0039,Nkosana Dlamini,Postgraduate degree in financial management (2012),,,,https://cfo.co.za/articles/absas-nkosana-dlamini-explains-the-value-of-cgma-credentials/,CONFIRMED
+acc-0040,Mikateko Tshetshe,BCom Accounting — University of South Africa (UNISA),,,,https://cfo.co.za/articles/you-need-the-right-combination-of-qualifications-experience-and-ambition-to-become-a-cfo/,CONFIRMED
+acc-0041,Mangaliso Mithi,MBA,,,,https://www.linkedin.com/in/mangalisomithi/,CONFIRMED
+acc-0042,Taryn Raju,Bachelor of Accounting — University of Fort Hare,,,,https://thefinancestory.com/success-journey-becoming-ca-saica,CONFIRMED
+acc-0042,Taryn Raju,"Honours in Accounting (CTA 1, CTA 2)",,,,https://thefinancestory.com/success-journey-becoming-ca-saica,CONFIRMED
+acc-0043,Sandi De Souza,MBA — Henley Business School,,,,https://www.sap.com/africa/about/management-team.html,CONFIRMED
+acc-0044,Illana Helman,CA(SA) — SAICA,,,,https://www.linkedin.com/in/illana-helman-ca-sa-1279b117/,CONFIRMED
+acc-0045,Polani Sokombela,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-public-sector-polani-sokombela/,CONFIRMED
+acc-0046,Kerry Cassel,BCom (Accountancy),,,,https://www.accountancysa.org.za/profile-women-in-motoring-it-is-not-a-mans-world-after-all/,CONFIRMED
+acc-0047,Jody Baumgarten,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-jody-baumgarten/,HIGH_CONFIDENCE
+acc-0048,Masechaba Sesing,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-masechaba-sesing-doing-her-best-to-enhance-strong-ethics-and-morals/,CONFIRMED
+acc-0049,Zinhle Simamane,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-zinhle-simaman-stay-focused-and-you-can-achieve-anything/,CONFIRMED
+acc-0050,Zine Mshengu,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-zine-mshengu-taking-the-technical-route-less-travelled/,CONFIRMED
+acc-0051,Bonga Mokoena,BCom — University of the Witwatersrand,,,,https://www.bdo.co.za/en-za/our-people/bonga-mokoena,CONFIRMED
+acc-0051,Bonga Mokoena,Hons BCompt / CTA — UNISA,,,,https://www.bdo.co.za/en-za/our-people/bonga-mokoena,CONFIRMED
+acc-0051,Bonga Mokoena,Master's of Business Leadership — UNISA SBL,,,,https://www.bdo.co.za/en-za/our-people/bonga-mokoena,CONFIRMED
+acc-0051,Bonga Mokoena,LLB — UNISA,,,,https://www.bdo.co.za/en-za/our-people/bonga-mokoena,CONFIRMED
+acc-0052,Bianca Roos,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-bianca-roos-determined-to-live-her-best-life/,CONFIRMED
+acc-0053,Darren Isaacs,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-darren-isaacs-makosi-disrupting-the-industry-to-change-the-world/,CONFIRMED
+acc-0054,Koko Khumalo,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-koko-khumalo-paving-the-way-to-new-heights/,CONFIRMED
+acc-0055,Vukosi Fungeni,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-vukosi-fungeni-using-connected-data-analytics-to-drive-stakeholder-value/,CONFIRMED
+acc-0056,Mabatho Sedikela,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-mabatho-sedikela-a-transformational-public-sector-leader/,HIGH_CONFIDENCE
+acc-0057,Rachelle Best,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-rachelle-best-when-purpose-and-love-collide-great-things-happen/,CONFIRMED
+acc-0058,Katlego Matshego,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-katlego-matshego-pursuing-a-passion-for-teaching/,HIGH_CONFIDENCE
+acc-0059,Naledi Liphapang,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-naledi-liphapang-unlocking-the-value-of-digitalisation-in-the-public-sector/,HIGH_CONFIDENCE
+acc-0060,Thenashree Naidoo,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-dynamic-duo/,HIGH_CONFIDENCE
+acc-0061,Siphesihle Mlangeni,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-figuring-it-out-together/,CONFIRMED
+acc-0062,Jabulile Nyathi,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/profile-figuring-it-out-together/,CONFIRMED
+acc-0063,Mpho Mookapele,CA(SA) — SAICA,,,,https://charteredaccountantsworldwide.com/institute/the-south-african-institute-of-chartered-accountants/,CONFIRMED
+acc-0064,Chwayita Mtebele,BCom Accounting — University of Fort Hare,,,,https://www.accountancysa.org.za/casa-profiles/,CONFIRMED
+acc-0064,Chwayita Mtebele,CTA — UNISA,,,,https://www.accountancysa.org.za/casa-profiles/,CONFIRMED
+acc-0065,Zizipho Nyanga,CA(SA) — SAICA,,,,https://www.accountancysa.org.za/casa-profiles/,CONFIRMED
+acc-0067,Vijedharsan Vijendranath,BCompt Hons Accounting Sciences — UNISA (2011),,,,https://www.postjobfree.com/resume/aeheo9/experienced-internal-with-johannesburg,CONFIRMED
+acc-0067,Vijedharsan Vijendranath,BCom (Accounting) — University of Pretoria (2006),,,,https://www.postjobfree.com/resume/aeheo9/experienced-internal-with-johannesburg,CONFIRMED
+acc-0069,Christiaan Vorster,Stellenbosch University (undergraduate),,,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0069,Christiaan Vorster,UJ (CTA),,,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0070,Naeem Asvat,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0071,Div Lamprecht,CA(SA) — SAICA,,,,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,CONFIRMED
+acc-0072,Lesetja Kwetepane,National Diploma: Accounting,,,,https://lkwetepane.findanaccountant.co.za/,HIGH_CONFIDENCE
+acc-0072,Lesetja Kwetepane,B Tech: Corporate Administration,,,,https://lkwetepane.findanaccountant.co.za/,HIGH_CONFIDENCE
+acc-0072,Lesetja Kwetepane,MBA,,,,https://lkwetepane.findanaccountant.co.za/,HIGH_CONFIDENCE
+acc-0072,Lesetja Kwetepane,Chartered Company Secretary – ACIS (CSSA),,,,https://lkwetepane.findanaccountant.co.za/,HIGH_CONFIDENCE
+acc-0073,Alexis Sacks,BCom,,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0074,Dave Rich,BCom,,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0075,Fatima Bapukee,PG Dip (Tax),,,,https://www.streets.uk/our-offices/cape-town-south-africa/,CONFIRMED
+acc-0076,Uwe Birkenstock,CA(SA) — SAICA,,,,https://mca-acc.co.za/,CONFIRMED
+acc-0077,Juan Spies,CA(SA) — SAICA,,,,https://mca-acc.co.za/,CONFIRMED
+acc-0081,Ashley Hanekom,University of Cape Town,,,,https://www.linkedin.com/in/ashleyhanekom/,CONFIRMED
+acc-0082,Neil Fourie,Stellenbosch University (BAcc/BCom; inferred — profile lists SAICA academic route),,,,https://www.linkedin.com/in/neil-fourie-aga-sa-2a125b204/,CONFIRMED
+acc-0084,Nastassja Nel,BCom Accounting — UNISA (2014–2015),,,,https://www.linkedin.com/in/nastassja-nel-71a15364/,CONFIRMED
+acc-0084,Nastassja Nel,Postgraduate Accounting — UNISA (2016–2018),,,,https://www.linkedin.com/in/nastassja-nel-71a15364/,CONFIRMED
+acc-0085,Ashley Du Plessis,BCompt (Financial Accounting),,,,https://www.linkedin.com/in/ashley-du-plessis-ba99a716b/,CONFIRMED
+acc-0086,Mark Augustine,BCom (Accounting),,,,https://mtn.sageone.co.za/find-an-accountant,HIGH_CONFIDENCE
+acc-0089,Peet van der Merwe,University of the Free State,,,,https://www.linkedin.com/in/peet-van-der-merwe-ca-sa-ra-8320b7a6/,CONFIRMED
+acc-0090,Lynette Roeloffze,North-West University,,,,https://www.linkedin.com/in/lynette-roeloffze-ca-sa-ra-0637aa13/,CONFIRMED
+acc-0091,Vincent Motholo,Stanford University Graduate School of Business (executive education),,,,https://www.linkedin.com/in/vincent-motholo-ca-sa-842b7613/,CONFIRMED
+acc-0092,Louis de Wet,Stellenbosch University (2006–2010),,,,https://www.linkedin.com/in/louisdewetza/,CONFIRMED
+acc-0093,Adriaan de Lange,South African Institute of Chartered Accountants (SAICA),,,,https://www.linkedin.com/in/a3aandl/,CONFIRMED
+acc-0094,Vanessa Rheeder,Wharton Online,,,,https://www.linkedin.com/in/vanessa-rheeder-ca-sa/,CONFIRMED
+acc-0095,Nethin Karamchand,University of Cape Town,,,,https://www.linkedin.com/in/nethin/,CONFIRMED
+acc-0096,Bronvin Heuvel,University of the Western Cape,,,,https://www.linkedin.com/in/bronvin-heuvel-ca-sa-ra-7b2475a9/,CONFIRMED
+acc-0097,Morgan Gregory,Stellenbosch University — Bachelor's (Accounting & Finance) 2010–2015,,,,https://www.linkedin.com/in/morgan-gregory-ca-sa-64046117b/,CONFIRMED
+acc-0097,Morgan Gregory,UNISA — Postgraduate Diploma in Advanced Accounting Sciences 2016–2017,,,,https://www.linkedin.com/in/morgan-gregory-ca-sa-64046117b/,CONFIRMED
+acc-0099,Kyle Danster,CIMA (Chartered Institute of Management Accountants),,,,https://www.linkedin.com/in/kyle-danster/,CONFIRMED
+acc-0100,Anton van Niekerk,CIMA (to 2008),,,,https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/,CONFIRMED
+acc-0101,Adrian Smith,The Chartered Institute of Management Accountants (CIMA),,,,https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/,CONFIRMED
+acc-0102,Luke Woodhouse,The South African Institute of Chartered Accountants (SAICA),,,,https://www.linkedin.com/in/luke-woodhouse-ca-sa-b31a0149/,CONFIRMED
+acc-0103,Elmarie Swanepoel,CA(SA) — SAICA,,,,https://www.researchgate.net/profile/Elmarie-Swanepoel,HIGH_CONFIDENCE
+acc-0104,Ralph Buddle,CA(SA) — SAICA,,,,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0105,Graham Davin,BCom,,,,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0105,Graham Davin,BAcc,,,,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0105,Graham Davin,MBA (UCT),,,,https://tfglimited.co.za/our-brands/,CONFIRMED
+acc-0106,Jan Potgieter,CA(SA) — SAICA,,,,https://tfglimited.co.za/our-brands/,HIGH_CONFIDENCE
+acc-0107,Owen van Tonder,Babson Executive Education (Boston),,,,https://www.linkedin.com/in/owen-van-tonder-ca-sa-a8482131/,CONFIRMED
+acc-0108,Zaid Manjra,CA(SA) — SAICA,,,,https://www.businessday.co.za/bd/companies/retail-and-consumer/2023-11-21-woolworths-names-zaid-manjra-as-cfo/,CONFIRMED
+acc-0109,Edburg Strauss,University of Pretoria,,,,https://www.linkedin.com/in/edburg-strauss/,CONFIRMED
+acc-0110,Kobus Boshoff,Stellenbosch University,,,,https://www.linkedin.com/in/kobus-boshoff-0a510888/,CONFIRMED
+acc-0110,Kobus Boshoff,University of South Africa (UNISA),,,,https://www.linkedin.com/in/kobus-boshoff-0a510888/,CONFIRMED
+acc-0111,Emma Pardoe,CA(SA) — SAICA,,,,https://www.facebook.com/EmmaPardoeCA/,CONFIRMED
+acc-0112,Johan Coetzee,"Rand Afrikaans University (RAU), 1988",,,,https://shopbiz.co.za/western-cape/somerset-west/accountants/,HIGH_CONFIDENCE
+acc-0113,Willem Theron,BCompt (Hons),,,,http://download.psg.co.za/files/investor-relations/financial-information/PSG-Konsult-Ltd-Integrated-Report-FY-2015.pdf,CONFIRMED
+acc-0114,André Du Plessis,University of the Free State (1984),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0115,Iaan Marx,University of Stellenbosch (1996),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0115,Iaan Marx,UNISA (1998),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0116,Francois Joubert,University of Stellenbosch (1995),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0117,Johann van Rensburg,University of Stellenbosch (2005),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0118,Jana Goosen,University of Stellenbosch (2001),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0119,Willene van Zyl,University of Stellenbosch (2007),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0120,Emile de Villiers,"Stellenbosch University — BAcc (Hons), 2011",,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0121,Cornell van Eeden,"University of the Free State (Bloemfontein), 2015",,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0122,Jana van Zyl,Stellenbosch University (2017),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0122,Jana van Zyl,UNISA — Honours (2019),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0123,Nadia Van Der Westhuizen,University of Pretoria — BCom (Accounting Sciences),,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0123,Nadia Van Der Westhuizen,University of Johannesburg — BCom Hons,,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0124,Thinus Le Roux,"North-West University — undergraduate (2015), Honours (2016)",,,,https://ldp.co.za/our-team/,CONFIRMED
+acc-0126,Imtiaaz Hashim,CA(SA) — SAICA,,,,https://www.bdo.co.za/en-za/our-people/imtiaaz-hashim,CONFIRMED
+acc-0127,Mark Willimott,BAcc + Honours — University of Port Elizabeth,,,,https://www.bdo.co.za/en-za/our-people/mark-willimott,CONFIRMED
+acc-0128,Johan le Roux,Graduate Diploma in Accounting — UCT,,,,https://jleroux03.findanaccountant.co.za/,CONFIRMED
+acc-0128,Johan le Roux,Graduate Diploma in Company Direction — Institute of Directors (Inst. of Management & Technology),,,,https://jleroux03.findanaccountant.co.za/,CONFIRMED
+acc-0129,Zandrea Gerber,Stellenbosch University — BAcc (2009–2011),,,,https://www.linkedin.com/in/zandrea-gerber-ca-sa-99a5a475/,CONFIRMED
+acc-0129,Zandrea Gerber,Stellenbosch University — Honours Accounting (2012),,,,https://www.linkedin.com/in/zandrea-gerber-ca-sa-99a5a475/,CONFIRMED
+acc-0130,Ashlin Healy,Stellenbosch University,,,,https://www.linkedin.com/in/ashlin-healy-ca-sa-130238103/,CONFIRMED
+acc-0132,Valentine Dzvova,University of Cape Town,,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED
+acc-0133,Mieke Hoffman,Stellenbosch University,,,,https://za.linkedin.com/in/mieke-hoffman,CONFIRMED
+acc-0134,Dylin Kuni,ACMA — Chartered Management Accountant (CIMA),,,,https://www.linkedin.com/in/dylinkuni/,CONFIRMED
 acc-0135,André Hugo Muller,B.Acc Honours — University of Stellenbosch,,,,https://quantumfoods.co.za/governance/,CONFIRMED
 acc-0136,Kim Julies,Bachelor of Accounting (Hons) — University of Stellenbosch (2012),,,,https://novus.holdings/about/board-members/,CONFIRMED
+acc-0137,Craig Wright,CA(SA) — SAICA,,,,https://novus.holdings/wp-content/uploads/2024/06/IAR24-Annual-Financial-Statements-v_Final.pdf,CONFIRMED
 acc-0138,Keshree Alwar,BCom Financial Accounting — University of Cape Town (2003–2005),,,,https://novus.holdings/about/board-members/,CONFIRMED
 acc-0138,Keshree Alwar,BCom Honours Financial Accounting — University of KwaZulu-Natal (2006),,,,https://novus.holdings/about/board-members/,CONFIRMED
 acc-0139,Yolanda Louw,Bachelor's Degree in Accounting and Finance — Nelson Mandela University,,,,https://theorg.com/org/food-lovers-market-holdings/org-chart/yolanda-louw,CONFIRMED
 acc-0140,JP du Toit,Bachelor of Accounting Honours (BAccHons) — Stellenbosch University (2011),,,,https://za.linkedin.com/in/jp-du-toit-ca-sa-012989a4/,CONFIRMED
-acc-0141,MC Stoman,BCom Chartered Accountancy CTA (Hons) — North-West University,,,,https://theorg.com/org/food-lovers-market-holdings,HIGH
+acc-0141,MC Stoman,BCom Chartered Accountancy CTA (Hons) — North-West University,,,,https://theorg.com/org/food-lovers-market-holdings,HIGH_CONFIDENCE
 acc-0142,Andisa Zinja,MPhil (Strategy),,,,https://www.tcta.co.za/wp-content/uploads/2026/01/TCTA-CFO-Wins-Award.pdf,CONFIRMED
 acc-0144,Wayne de Wet,Bachelor of Accounting Science,,,,https://cfo.co.za/articles/cticc-appoints-wayne-de-wet-as-new-cfo/,CONFIRMED
 acc-0144,Wayne de Wet,Honours in Accounting Science,,,,https://cfo.co.za/articles/cticc-appoints-wayne-de-wet-as-new-cfo/,CONFIRMED
+acc-0146,Fritz Grobbelaar,CA(SA) — SAICA,,,,https://za.linkedin.com/in/fritzgrobbelaar/,CONFIRMED
 acc-0147,Saleh Coovadia,BCompt Hons / CTA — University of South Africa,,,,https://rocketreach.co/saleh-coovadia-email_240579142,CONFIRMED
 acc-0150,Andre Tancred,BComm (Hons) Management Accounting — Stellenbosch University,,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
 acc-0150,Andre Tancred,H Cert Tax — UNISA,,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
 acc-0150,Andre Tancred,"ACMA, CGMA — CIMA",,,,https://rocketreach.co/rms-shopfitting-management_b44d3107fd2e4825,CONFIRMED
 acc-0151,Waheeda Saib,Chartered Accountant — Big Four articles,,,,https://provincialgovernment.co.za/units/management/254/western-cape/atlantis-special-economic-zone-company-asezco,CONFIRMED
+acc-0156,Lebogang Dire,CA(SA) — SAICA,,,,https://nationalgovernment.co.za/units/management/122/national-agricultural-marketing-council-namc,HIGH_CONFIDENCE
 acc-0157,Willie van Wyk,BCompt (Hons),,,,http://workforce.co.za/directors/,CONFIRMED
 acc-0158,Donovan Humphreys,CA(SA) — SAICA,,,,https://za.linkedin.com/in/donovan-humphreys-a13b52a9/,CONFIRMED
-acc-0160,Willie Robbertse,BCom Accounting — NorthWest University Potchefstroom (1992–1995),,,,https://rocketreach.co/geiger-klotzbucher-pty-ltd-management_b4447554fa932288,RESEARCH_HOLD
+acc-0160,Willie Robbertse,BCom Accounting — NorthWest University Potchefstroom (1992–1995),,,,https://rocketreach.co/geiger-klotzbucher-pty-ltd-management_b4447554fa932288,HIGH_CONFIDENCE
+acc-0169,Faraimose Kutadzaushe,Bachelor of Accounting (Honours) — University of South Africa (2003–2005),,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0169,Faraimose Kutadzaushe,MBA — Stanford Graduate School of Business (2011–2013),,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0169,Faraimose Kutadzaushe,Chartered Accountant (South Africa) — SAICA (2008),,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0169,Faraimose Kutadzaushe,Chartered Accountant (Zimbabwe) — ICAZ (2006–2007),,,,https://www.m-kopa.com/about,CONFIRMED
+acc-0169,Faraimose Kutadzaushe,CFA Charterholder — CFA Institute (2009–2011),,,,https://www.m-kopa.com/about,CONFIRMED

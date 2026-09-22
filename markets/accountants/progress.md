@@ -165,3 +165,40 @@ Engineering, Pharmaceuticals (Bayer — historic).
   Alicia Haasbroek CA(SA) registration outcome.
 - CBAC (Chartered Business Accountant) and SAIBA-designated practitioners are out of the current
   designation scope but noted as adjacent populations.
+
+## IB Discovery — Batches 13-17 (2026-09-22)
+
+### Batch 13-15 (20 companies mapped)
+- Added 26 people acc-0135–0160 covering Quantum, Novus (3), FLM (3), TCTA (2), CTICC, WRC, Premier, Tshikululu, Hisense, Ecowize, RMS, Atlantis SEZ (2), REFSOLS, SAQA, CompTrib, NAMC, Workforce, Samsonite, Inala, Geiger
+- Companies mapped 20/38
+
+### Batch 16 (24/38)
+- people.jsonl 163, IB-matched 32 incl FVC group-covered
+- Added: Anene Engelbrecht FC Radisson Blu Waterfront (eTurboNews 15 Aug 2018 + CFO.co.za first deaf FC), Carel Smit GM Finance Fidelity ADT (RocketReach + LinkedIn), Alex Appleby Head Treasury Retail Capital (RocketReach Alex Ca)
+- FVC (cmp-0081) group-covered via Yolanda Louw CFO FLM Holdings
+- Remaining gaps 14 including 10 NO_VERIFIED + Swift L4 + BCMDA/NDA/SAHRC Excluded + M-KOPA out-of-geo
+- Merge-safe people.json regen: 163 verified + 231 SATURC = 394 (colliding 0161-0163 → 0392-0394), no dup, interim.csv 163, people_index.md 163 people 113 companies 121 sources
+
+### Batch 17 (28/38) — Final gap-fill for Excluded/out-of-geo
+- people.jsonl 169 (128 CONFIRMED, 39 HIGH, 2 other), people.json 400 (169+231, remapped 0164-0169 → 0395-0400), sources 131, interim 169, people_index 169/113/131
+- Added 6:
+  - acc-0164 Sabelo Mavundla CFO BCMDA Aug 2025–present (LinkedIn) — KPMG articles 2010-13, AGSA
+  - acc-0165 Vicky Ntsodo CFO BCMDA prior (ZoomInfo org chart, CEO Ayanda Gqoboka)
+  - acc-0166 Busisiwe Lubelwana CFO BCMDA former resigned Nov 2024 per News24
+  - acc-0167 Mokete Mokono Acting CFO DALRRD (nationalgovernment + PMG 39961 Q2 2024/25 underspend 17%)
+  - acc-0168 Talifhani Khubana CFO SAHRC (nationalgovernment + PMG 39653 + SAHRC APP 2024/25)
+  - acc-0169 Faraimose Kutadzaushe CFO & ED M-KOPA — CA(SA) 2008, CA(Zimbabwe) 2006-07, BAcc Hons UNISA 2003-05, MBA Stanford 2011-13, CFA 2009-11, ex Supreme Brands Co-Founder, Investec AM, Goldman Sachs IB, Deloitte Consulting (m-kopa.com/about + theorg.com)
+- Companies_master: 28 MAPPED, 10 gaps
+- Coverage_matrix: Executive Finance now covers BCMDA (3), DALRRD, SAHRC, M-KOPA
+- People_master: 38 entries incl group expansion (FVC 3 + BCMDA 3)
+- Title_variants: 23 incl 4 new (prior, former resigned, Acting, & Executive Director)
+- Final 10 gaps documented as no public finance leader (private SME, only Peter Minnaar contact for Anchor, job ads only for Educor 2020 Durban FM, Lorge Sage 300 evidence only for Kentz/Roymec/Electron, etc.)
+- QA: dedupe via people_index.md first, ID collision protection, primary sources for all 6 new, designation confidence conservative (Sabelo UNCONFIRMED, Faraimose CONFIRMED CA(SA)/CA(Zimbabwe)/CFA)
+
+### Totals after Batch 17
+- people.jsonl 169 (baseline 134 + 35 new this session)
+- IB-matched 38 entries (35 distinct people incl group expansion) — wait distinct: 29 previous + 6 new = 35 distinct, 38 with FVC duplicates
+- Companies mapped 28/38 (73.7%) — 24 direct + 4 newly mapped Excluded/out-of-geo
+- Remaining hard gaps 10 private companies with no public finance leader evidence — acceptable for Discovery → Maps prep
+- people.json 400, sources 131, interim 169
+

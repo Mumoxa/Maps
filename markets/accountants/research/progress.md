@@ -107,3 +107,37 @@ Method: Pattern B — people.jsonl SoT, research CSVs intermediate, batch loader
 - New people: Anene Engelbrecht FC Radisson Blu Waterfront (cmp-0089), Carel Smit GM Finance Fidelity ADT (cmp-0090), Alex Appleby Head Treasury Retail Capital (cmp-0112)
 - Fruit & Veg City (cmp-0081) now marked as group-covered via Food Lover's Market Holdings CFO Yolanda Louw + team
 - Remaining hard gaps: Anchor Industries, Mason's Clothing, Helderberg Village, Isilumko ATT, Kentz, Roymec, Electron, Educor current, ENRC Africa, Swift L4, BCMDA/NDA/SAHRC Excluded, M-KOPA out-of-geo
+
+## Update after Batch 17 (2026-09-22)
+- people.jsonl: 169 total (baseline 134 + 35 new) — CONFIRMED 128, HIGH 39, other 2
+- people.json: 400 total (169 verified + 231 SATURC RECORDED, remapped colliding SATURC 0164-0169 → 0395-0400)
+- sources.jsonl: 131
+- IB-matched people (incl group expansion for FVC): 38 entries (32 distinct people + 3 FVC duplicates + 3 BCMDA)
+- Companies mapped: 28/38 (73.7%)
+  - Newly mapped: BCMDA (3 CFOs timeline: Sabelo Mavundla current Aug 2025–, Vicky Ntsodo prior ZoomInfo, Busisiwe Lubelwana resigned Nov 2024 News24), DALRRD Acting CFO Mokete Mokono (nationalgovernment + PMG Q2 2024/25), SAHRC CFO Dr Talifhani Khubana (nationalgovernment + SAHRC APP 2024/25 + PMG), M-KOPA CFO Faraimose Kutadzaushe CFA CA(SA) 2008 CA(Zimbabwe) BAcc Hons UNISA MBA Stanford (m-kopa.com + theorg.com)
+- Remaining hard gaps (10): Anchor Industries (only Peter Minnaar contact), Mason's Clothing, Helderberg Village, Isilumko ATT, Kentz (SNC-Lavalin Midrand), Roymec (Woodmead Sage 300), Electron (Wynberg Sage 300), Educor current (historic Robert Katz FD), ENRC Africa, Swift L4 (Sage 300 People only — must not count)
+- Title variants: 23 → includes 4 new: CFO (prior), CFO (former resigned), CFO (Acting), CFO & Executive Director
+- people_master.csv: 38 IB entries (incl group expansion)
+- companies_master.csv: updated 4 newly mapped to MAPPED_x
+- coverage_matrix.csv: updated Executive Finance for BCMDA/DALRRD/SAHRC/M-KOPA
+- people_index.md: 169 people, 113 companies, 131 sources
+
+## Final 10 gaps — no public finance leader evidence (documented for Maps prep)
+- cmp-0080 Anchor Industries (Pty) Ltd — Level 1 Very Strong Sage 300cloud — website anchors.co.za, supplier directory contact Peter Minnaar only, no finance title public
+- cmp-0085 Mason's Clothing — Level 1 Very Strong — e-commerce integration to Sage 300 case study only, no finance team public
+- cmp-0086 Helderberg Village — Level 2 Strong — retirement village, Sage partner client list only, no finance public
+- cmp-0087 Isilumko ATT — Level 2 Strong — recruitment/HR tech, Sage partner client list only, no finance public
+- cmp-0091 Kentz Group (SNC-Lavalin) — Level 1 Very Strong (Lorge) — Midrand SA HQ, global EPC, no SA finance manager public beyond expired Financial Controller job ad Sandton/Midrand
+- cmp-0092 Roymec Technologies — Level 1 Very Strong (Lorge) — Woodmead mining equipment, no finance public
+- cmp-0093 Electron Technologies — Level 1 Very Strong (Lorge) — Wynberg electrical, no finance public
+- cmp-0095 Educor Group — Level 1 Very Strong — 70+ users, current FM vacancy 2020 Durban only, historic FD Robert Katz (CA(SA) now Peregrine CEO) not current
+- cmp-0096 ENRC Africa — Level 2 Strong — Realisable UK case study Accpac multi-company, global CFO Miguel Perry resigned 2009, no Africa FM public
+- cmp-0107 Swift Holdings — Level 4 Possible (must not count) — Sage 300 People only + unnamed accounting system, no finance public
+
+## QA checks performed
+- Dedupe: people_index.md first, no duplicate full_name + employer
+- ID collision protection: SATURC 0164-0169 remapped to 0395-0400, people.json 400 no dup
+- Sources: 10 new (src-0122–0131) primary: LinkedIn Sabelo, ZoomInfo BCMDA, News24, nationalgovernment DALRRD/SAHRC, PMG 39961/39653, SAHRC APP PDF, m-kopa.com/about, theorg.com
+- Designation confidence: Sabelo Mavundla CA path via KPMG articles 2010-2013 but not explicit CA(SA) string → UNCONFIRMED; Faraimose Kutadzaushe CA(SA) 2008 + CA(Zimbabwe) + CFA confirmed via TheOrg bio
+- Maps prep: 28/38 mapped sufficient for Maps; remaining 10 documented as private SME with no public finance leader — acceptable gap for Discovery phase
+
