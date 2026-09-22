@@ -3,7 +3,7 @@
 > **CHECK THIS FILE FIRST** before adding any person, company or source.
 
 This is the authoritative list of every name already captured in the
-SA Qualified Accountant & Finance Skills database. Future batches must
+SA Accounting & Finance Skills database. Future batches must
 consult it **before** writing records so nothing is duplicated — a new
 source for an existing person only *enriches* that record; it never adds a second one.
 
@@ -14,203 +14,35 @@ source for an existing person only *enriches* that record; it never adds a secon
 
 | Metric | Count |
 |---|---|
-| People (total records) | 134 |
-| CONFIRMED qualified | 108 |
-| HIGH_CONFIDENCE | 24 |
-| ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED | 1 |
-| CONFLICTING | 1 |
-| Companies | 75 |
-| Sources | 69 |
+| People (total records) | 0 |
+| CONFIRMED | 0 |
+| FINANCE_ROLE_CONFIRMED | 0 |
+| HIGH_CONFIDENCE | 0 |
+| Companies | 146 |
+| Sources | 642 |
 
 ## 2. How to use this index (dedup workflow)
 
-1. Normalise the candidate name (lowercase; strip titles, accents, initials —
-   compare surname + given name).
-2. Search the **People** table below (sorted by surname). Also try name variants
-   (`du Plessis`/`Du Plessis`, `van der Merwe`/`van der Merwe`, accented é→e).
-3. If the person is already listed → **do not add**. Enrich the existing record
-   (new designation evidence, articles, employer, system, or source URL) instead.
-4. If the person appears under **3c. Investigated but excluded** → do not re-capture
-   unless new evidence contradicts the exclusion reason.
-5. Check the **Companies** table before adding an employer record; extend existing
-   `company_aliases` rather than duplicating a firm.
+1. Normalise the candidate name (lowercase; strip titles, accents, initials — compare surname + given name).
+2. Search the **People** table below (sorted by surname). Also try name variants.
+3. If the person is already listed → **do not add**. Enrich the existing record rather than adding a second person.
+4. Check the Companies table before adding an employer; extend aliases rather than duplicating a firm.
+5. Professional designation, body registration, articles and practical-experience routes remain separate evidence fields.
 
-> IDs are renumbered after merges — **dedup by name/LinkedIn, never by id alone.**
+> IDs are stable research identifiers — **dedup by name/LinkedIn, never by id alone.**
 
 ## 3a. All people (sorted by surname)
 
 | # | Full name | Surname / Given | Status | Designation(s) | Body | Employer | Province / City | LinkedIn |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **Naeem Asvat** | Asvat / Naeem | CONFIRMED | CA(SA) | SAICA | SAICA | KwaZulu-Natal/Durban | — |
-| 2 | **Mark Augustine** | Augustine / Mark | HIGH_CONFIDENCE | PA(SA) | SAIPA | Pinnacle Accounting | Western Cape | — |
-| 3 | **Lynette Badenhorst** | Badenhorst / Lynette | CONFIRMED | CA(SA) | SAICA | Probeta Training (Pty) Ltd | — | — |
-| 4 | **Fatima Bapukee** | Bapukee / Fatima | CONFIRMED | CA(SA) | SAICA | Streets Chartered Accountants (Cape Town) | Western Cape/Cape Town | — |
-| 5 | **Jody Baumgarten** | Baumgarten / Jody | HIGH_CONFIDENCE | CA(SA) | SAICA | Wonga (South Africa) | — | — |
-| 6 | **Rachelle Best** | Best / Rachelle | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 7 | **J A 'Driaan' Beyers** | Beyers / Driaan | HIGH_CONFIDENCE | PA(SA) | SAIPA | Finkor Accounting | Gauteng/Rayton | — |
-| 8 | **Uwe Birkenstock** | Birkenstock / Uwe | CONFIRMED | CA(SA) | SAICA | McA Durbanville Inc. | Western Cape/Durbanville | — |
-| 9 | **Kobus Boshoff** | Boshoff / Kobus | CONFIRMED | CA(SA) | SAICA | Boshoff Knoetze Chartered Accountants | Western Cape/Somerset West | https://www.linkedin.com/in/kobus-boshoff-0a510888/ |
-| 10 | **Ralph Buddle** | Buddle / Ralph | CONFIRMED | CA(SA) | SAICA | TFG Limited (The Foschini Group) | Western Cape/Cape Town | — |
-| 11 | **Kerry Cassel** | Cassel / Kerry | CONFIRMED | CA(SA) | SAICA | Motus Mobility Solutions | — | — |
-| 12 | **Malcolm Cecil Coates** | Coates / Malcolm | HIGH_CONFIDENCE | PA(SA) | SAIPA | Alma Casa | Western Cape/Muizenberg (Cape Town) | — |
-| 13 | **Johan Coetzee** | Coetzee / Johan | HIGH_CONFIDENCE | CA(SA) | SAICA | Callidus Accountants | Western Cape/Somerset West | — |
-| 14 | **Louwrens da Silva** | da Silva / Louwrens | HIGH_CONFIDENCE | PA(SA) | SAIPA | Petrichor Consulting | Western Cape/Somerset West | — |
-| 15 | **Adre Daniel** | Daniel / Adre | HIGH_CONFIDENCE | PA(SA) | SAIPA | Accu-fin Accounting | Western Cape/Milnerton (Cape Town) | — |
-| 16 | **Kyle Danster** | Danster / Kyle | CONFIRMED | ACMA, CGMA | CIMA | Curro Holdings Ltd | Western Cape/Cape Town | https://www.linkedin.com/in/kyle-danster/ |
-| 17 | **Graham Davin** | Davin / Graham | CONFIRMED | CA(SA) | SAICA | TFG Limited (The Foschini Group) | — | — |
-| 18 | **Adriaan de Lange** | de Lange / Adriaan | CONFIRMED | CA(SA) | SAICA | Adriaan de Lange Advisory (Private Capacity) | Western Cape/Cape Town | https://www.linkedin.com/in/a3aandl/ |
-| 19 | **Sandi De Souza** | De Souza / Sandi | CONFIRMED | CA(SA) | SAICA | SAP Africa | — | — |
-| 20 | **Emile de Villiers** | de Villiers / Emile | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 21 | **Louis de Wet** | de Wet / Louis | CONFIRMED | CA(SA) | SAICA | TradeOn SA | Western Cape/Stellenbosch | https://www.linkedin.com/in/louisdewetza/ |
-| 22 | **Lézanne Dirkse van Schalkwyk** | Dirkse van Schalkwyk / Lézanne | CONFIRMED | AGA(SA) | SAICA | McA Inc. | Western Cape/Durbanville | — |
-| 23 | **Nkosana Dlamini** | Dlamini / Nkosana | CONFIRMED | ACMA, CGMA | CIMA | Absa Group | Gauteng/Johannesburg | — |
-| 24 | **André Du Plessis** | Du Plessis / André | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 25 | **Ashley Du Plessis** | Du Plessis / Ashley | CONFIRMED | AGA(SA) | SAICA | — | Western Cape/Paarl | https://www.linkedin.com/in/ashley-du-plessis-ba99a716b/ |
-| 26 | **Lian du Plessis** | du Plessis / Lian | CONFIRMED | AGA(SA) | SAICA | Cape Chamber of Commerce & Industry | Western Cape/Cape Town | https://www.linkedin.com/in/lian-du-plessis-aga-sa-177375149/ |
-| 27 | **Valentine Dzvova** | Dzvova / Valentine | CONFIRMED | CA(SA), ACMA, CGMA | SAICA, CIMA | AYO Technology Solutions Limited | Western Cape/Cape Town | https://za.linkedin.com/in/valentine-dzvova |
-| 28 | **Zahid Fakey** | Fakey / Zahid | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 29 | **Zahida Fakey** | Fakey / Zahida | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 30 | **Neil Fourie** | Fourie / Neil | CONFIRMED | AGA(SA) | SAICA | Brenn-O-Kem | Western Cape/Stellenbosch | https://www.linkedin.com/in/neil-fourie-aga-sa-2a125b204/ |
-| 31 | **Vukosi Fungeni** | Fungeni / Vukosi | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 32 | **Marta Gerbach** | Gerbach / Marta | CONFIRMED | CA(SA) | SAICA | Fourways Airconditioning | — | — |
-| 33 | **Zandrea Gerber** | Gerber / Zandrea | CONFIRMED | CA(SA) | SAICA | Pay@ | Western Cape/Paarl | https://www.linkedin.com/in/zandrea-gerber-ca-sa-99a5a475/ |
-| 34 | **Nonkululeko Gobodo** | Gobodo / Nonkululeko | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 35 | **Jana Goosen** | Goosen / Jana | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 36 | **Grant Greeff** | Greeff / Grant | CONFIRMED | CA(SA) | SAICA | Drone Ops Group | — | — |
-| 37 | **Morgan Gregory** | Gregory / Morgan | CONFIRMED | CA(SA) | SAICA | MK Aerospace SA | Western Cape/Cape Town | https://www.linkedin.com/in/morgan-gregory-ca-sa-64046117b/ |
-| 38 | **Alicia Haasbroek** | Haasbroek / Alicia | CONFLICTING | — | — | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 39 | **Ashley Hanekom** | Hanekom / Ashley | CONFIRMED | CA(SA) | SAICA | Superside | Western Cape/Cape Town | https://www.linkedin.com/in/ashleyhanekom/ |
-| 40 | **Imtiaaz Hashim** | Hashim / Imtiaaz | CONFIRMED | CA(SA) | SAICA | BDO South Africa | Western Cape/Cape Town | — |
-| 41 | **Ashlin Healy** | Healy / Ashlin | CONFIRMED | CA(SA) | SAICA | Deloitte (South Africa) | Western Cape/Cape Town | https://www.linkedin.com/in/ashlin-healy-ca-sa-130238103/ |
-| 42 | **Illana Helman** | Helman / Illana | CONFIRMED | CA(SA) | SAICA | Massmart | Gauteng/Johannesburg | https://www.linkedin.com/in/illana-helman-ca-sa-1279b117/ |
-| 43 | **Bronvin Heuvel** | Heuvel / Bronvin | CONFIRMED | CA(SA) | SAICA | KPMG (South Africa) | Western Cape/Cape Town | https://www.linkedin.com/in/bronvin-heuvel-ca-sa-ra-7b2475a9/ |
-| 44 | **Mieke Hoffman** | Hoffman / Mieke | CONFIRMED | ACMA, CGMA | CIMA | The Fieldbar Co. | Western Cape/Cape Town | https://za.linkedin.com/in/mieke-hoffman |
-| 45 | **André Huysamer** | Huysamer / André | HIGH_CONFIDENCE | AGA(SA) | SAICA | Kula | Western Cape/Worcester | — |
-| 46 | **Darren Isaacs** | Isaacs / Darren | CONFIRMED | CA(SA) | SAICA | Makosi | — | — |
-| 47 | **Roelof Jansen van Vuuren** | Jansen van Vuuren / Roelof | HIGH_CONFIDENCE | PA(SA) | SAIPA | The Tax Shop Pretoria North East | Gauteng/Pretoria | — |
-| 48 | **Alana Johns** | Johns / Alana | HIGH_CONFIDENCE | PA(SA) | SAIPA | — | Western Cape | — |
-| 49 | **Francois Joubert** | Joubert / Francois | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 50 | **Nethin Karamchand** | Karamchand / Nethin | CONFIRMED | CA(SA) | SAICA | Deloitte (South Africa) | Western Cape/Cape Town | https://www.linkedin.com/in/nethin/ |
-| 51 | **Koko Khumalo** | Khumalo / Koko | CONFIRMED | CA(SA) | SAICA | Motlanalo Chartered Accountants and Auditors Inc | — | — |
-| 52 | **Carla Kilian** | Kilian / Carla | HIGH_CONFIDENCE | PA(SA) | SAIPA | AETOS Financial Services | Gauteng/Roodepoort | — |
-| 53 | **Enrico Kleinbooi** | Kleinbooi / Enrico | CONFIRMED | CA(SA) | SAICA | Kannaland Municipality | Western Cape/Ladismith | — |
-| 54 | **Dylin Kuni** | Kuni / Dylin | CONFIRMED | ACMA, CGMA | CIMA | M+C Saatchi Group | Western Cape/Cape Town | https://www.linkedin.com/in/dylinkuni/ |
-| 55 | **Lesetja Kwetepane** | Kwetepane / Lesetja | HIGH_CONFIDENCE | PA(SA) | SAIPA | LA Financial Services (Pty) Ltd | Limpopo/Polokwane | — |
-| 56 | **Div Lamprecht** | Lamprecht / Div | CONFIRMED | CA(SA) | SAICA | SAICA | Free State/Bloemfontein | — |
-| 57 | **Johan le Roux** | le Roux / Johan | CONFIRMED | CA(SA) | SAICA | Johan le Roux CA(SA) | Western Cape/Milnerton (Cape Town) | — |
-| 58 | **Thinus Le Roux** | Le Roux / Thinus | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 59 | **Naledi Liphapang** | Liphapang / Naledi | HIGH_CONFIDENCE | CA(SA) | SAICA | — | — | — |
-| 60 | **Mbali Precious Mabaso** | Mabaso / Mbali | CONFIRMED | CA(SA) | SAICA | Nedbank Group Limited | — | — |
-| 61 | **Zanele Maduna** | Maduna / Zanele | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 62 | **Kgabiso Mahlangu** | Mahlangu / Kgabiso | CONFIRMED | AGA(SA) | SAICA | South African State Theatre | Gauteng/Pretoria | https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a |
-| 63 | **Mathabo Makhaya** | Makhaya / Mathabo | CONFIRMED | CA(SA) | SAICA | Harmony Gold Mining | — | — |
-| 64 | **Mpho Makoko-Hottie** | Makoko-Hottie / Mpho | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 65 | **Patricia Malahlela** | Malahlela / Patricia | CONFIRMED | CA(SA) | SAICA | Mckenzie & Associates | — | — |
-| 66 | **Manenzhe Manenzhe** | Manenzhe / Manenzhe | CONFIRMED | FCCA | ACCA | ACCA (South Africa) | Gauteng | https://www.linkedin.com/in/manenzhe-manenzhe-fcca-a80079150/ |
-| 67 | **Zaid Manjra** | Manjra / Zaid | CONFIRMED | CA(SA) | SAICA | Woolworths Holdings Ltd | Western Cape/Cape Town | — |
-| 68 | **Romy Maree** | Maree / Romy | CONFIRMED | CA(SA) | SAICA | Burstone (Real Estate partners) | — | — |
-| 69 | **Iaan Marx** | Marx / Iaan | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 70 | **Katlego Matshego** | Matshego / Katlego | HIGH_CONFIDENCE | CA(SA) | SAICA | Independent Institute of Education (IIE) Varsity College / MSA | — | — |
-| 71 | **Phumelela Mbande** | Mbande / Phumelela | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 72 | **Hlayisani Terrent Mboweni** | Mboweni / Hlayisani | HIGH_CONFIDENCE | PA(SA) | SAIPA | Mboweni Accountants | — | — |
-| 73 | **Trevor McLachlan** | McLachlan / Trevor | HIGH_CONFIDENCE | PA(SA) | SAIPA | McA Inc. | Western Cape/Cape Town | — |
-| 74 | **Mangaliso Mithi** | Mithi / Mangaliso | CONFIRMED | FCMA, CGMA | CIMA | — | Gauteng/Johannesburg | https://www.linkedin.com/in/mangalisomithi/ |
-| 75 | **Siphesihle Mlangeni** | Mlangeni / Siphesihle | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 76 | **Mpolaheng Mohlopi** | Mohlopi / Mpolaheng | CONFIRMED | CA(SA) | SAICA | Lanseria International Airport | Gauteng/Lanseria | — |
-| 77 | **Tumi Mokgoko** | Mokgoko / Tumi | CONFIRMED | CA(SA) | SAICA | KPMG | — | — |
-| 78 | **Bonga Mokoena** | Mokoena / Bonga | CONFIRMED | CA(SA) | SAICA | BDO South Africa | Gauteng/Johannesburg | — |
-| 79 | **Pumla Molope** | Molope / Pumla | CONFIRMED | CA(SA) | SAICA | African Women Chartered Accountants (AWCA) | — | — |
-| 80 | **Mpho Mookapele** | Mookapele / Mpho | CONFIRMED | CA(SA) | SAICA | Energy and Water Sector Education and Training Authority (EWSETA) | — | — |
-| 81 | **Vincent Motholo** | Motholo / Vincent | CONFIRMED | CA(SA) | SAICA | University of Cape Town | Western Cape/Cape Town | https://www.linkedin.com/in/vincent-motholo-ca-sa-842b7613/ |
-| 82 | **Vusi Mpofu** | Mpofu / Vusi | CONFIRMED | AGA(SA) | SAICA | Nedbank | — | — |
-| 83 | **Zine Mshengu** | Mshengu / Zine | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 84 | **Chwayita Mtebele** | Mtebele / Chwayita | CONFIRMED | CA(SA) | SAICA | Financial Sector Conduct Authority (FSCA) | — | — |
-| 85 | **Tariro Mutizwa** | Mutizwa / Tariro | CONFIRMED | ACMA, CGMA | CIMA | AICPA & CIMA (CIMA Africa) | — | — |
-| 86 | **Aneshree Naidoo** | Naidoo / Aneshree | CONFIRMED | CA(SA) | SAICA | Webber Wentzel | — | — |
-| 87 | **Thenashree Naidoo** | Naidoo / Thenashree | HIGH_CONFIDENCE | CA(SA) | SAICA | Durban ICC | KwaZulu-Natal/Durban | — |
-| 88 | **Nastassja Nel** | Nel / Nastassja | CONFIRMED | AGA(SA) | SAICA | Schoemans Registered Auditors and Chartered Accountants | Western Cape/Cape Town | https://www.linkedin.com/in/nastassja-nel-71a15364/ |
-| 89 | **Buhle Hanise Nomabunga** | Nomabunga / Buhle | CONFIRMED | CA(SA) | SAICA | BAIC (South Africa) | — | — |
-| 90 | **Zizipho Nyanga** | Nyanga / Zizipho | CONFIRMED | CA(SA) | SAICA | Masisizane Fund (Old Mutual) | — | — |
-| 91 | **Jabulile Nyathi** | Nyathi / Jabulile | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 92 | **Emma Pardoe** | Pardoe / Emma | CONFIRMED | CA(SA) | SAICA | Emma Pardoe Chartered Accountants (SA) | Western Cape/Somerset West | https://www.linkedin.com/in/emmapardoe/ |
-| 93 | **Anisah Patel** | Patel / Anisah | CONFIRMED | CA(SA) | SAICA | Own practice (Vereeniging) | Gauteng/Vereeniging | — |
-| 94 | **Esther Pieterse** | Pieterse / Esther | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 95 | **Jan Potgieter** | Potgieter / Jan | HIGH_CONFIDENCE | CA(SA) | SAICA | TFG Limited (The Foschini Group) | — | — |
-| 96 | **Taryn Raju** | Raju / Taryn | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 97 | **Ciara Reintjes** | Reintjes / Ciara | CONFIRMED | CA(SA) | SAICA | SAICA | — | — |
-| 98 | **Vanessa Rheeder** | Rheeder / Vanessa | CONFIRMED | CA(SA) | SAICA | The Modern CFO | Western Cape/Cape Town | https://www.linkedin.com/in/vanessa-rheeder-ca-sa/ |
-| 99 | **Dave Rich** | Rich / Dave | CONFIRMED | CA(SA) | SAICA | Streets Chartered Accountants (Cape Town) | Western Cape/Cape Town | — |
-| 100 | **Alan Robbins** | Robbins / Alan | ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED | — | — | Sable International | Western Cape/Cape Town | — |
-| 101 | **Lynette Roeloffze** | Roeloffze / Lynette | CONFIRMED | CA(SA) | SAICA | Forvis Mazars Group | Gauteng/Johannesburg | https://www.linkedin.com/in/lynette-roeloffze-ca-sa-ra-0637aa13/ |
-| 102 | **Bianca Roos** | Roos / Bianca | CONFIRMED | CA(SA) | SAICA | PKF Octagon | — | — |
-| 103 | **Alexis Sacks** | Sacks / Alexis | CONFIRMED | CA(SA) | SAICA | Streets Chartered Accountants (Cape Town) | Western Cape/Cape Town | — |
-| 104 | **Mabatho Sedikela** | Sedikela / Mabatho | HIGH_CONFIDENCE | CA(SA) | SAICA | Auditor-General of South Africa (AGSA) | — | — |
-| 105 | **Masechaba Sesing** | Sesing / Masechaba | CONFIRMED | CA(SA) | SAICA | Free State Provincial Treasury | Free State/Bloemfontein | — |
-| 106 | **Zinhle Simamane** | Simamane / Zinhle | CONFIRMED | CA(SA) | SAICA | Traxtion | — | — |
-| 107 | **Adrian Smith** | Smith / Adrian | CONFIRMED | ACMA, CGMA | CIMA | Bounty Apparel | Western Cape/Cape Town | https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/ |
-| 108 | **Polani Sokombela** | Sokombela / Polani | CONFIRMED | CA(SA) | SAICA | Auditor-General of South Africa (AGSA) | — | — |
-| 109 | **Juan Spies** | Spies / Juan | CONFIRMED | CA(SA) | SAICA | McA Durbanville Inc. | Western Cape/Durbanville | — |
-| 110 | **Patricia Stock** | Stock / Patricia | CONFIRMED | CA(SA) | SAICA | SAICA | — | — |
-| 111 | **Justin Stohr** | Stohr / Justin | HIGH_CONFIDENCE | PA(SA) | SAIPA | McA Accounting & Tax Services Inc. | Western Cape/Cape Town | — |
-| 112 | **Edburg Strauss** | Strauss / Edburg | CONFIRMED | CA(SA) | SAICA | netCFO | Gauteng/Pretoria | https://www.linkedin.com/in/edburg-strauss/ |
-| 113 | **Elmarie Swanepoel** | Swanepoel / Elmarie | HIGH_CONFIDENCE | CA(SA) | SAICA | Stellenbosch University | Western Cape/Stellenbosch | — |
-| 114 | **Cecelia Swartz** | Swartz / Cecelia | CONFIRMED | CA(SA) | SAICA | — | — | — |
-| 115 | **Willem Theron** | Theron / Willem | CONFIRMED | CA(SA) | SAICA | PSG Konsult Ltd (PSG Financial Services) | — | — |
-| 116 | **Ross Thomson** | Thomson / Ross | HIGH_CONFIDENCE | PA(SA) | SAIPA | Collective Accounting | KwaZulu-Natal/Winston Park | — |
-| 117 | **Mikateko Tshetshe** | Tshetshe / Mikateko | CONFIRMED | FCMA, CGMA | CIMA | Unilever | — | — |
-| 118 | **Peet van der Merwe** | van der Merwe / Peet | CONFIRMED | CA(SA) | SAICA | Forvis Mazars in South Africa | Free State/Bloemfontein | https://www.linkedin.com/in/peet-van-der-merwe-ca-sa-ra-8320b7a6/ |
-| 119 | **Nadia Van Der Westhuizen** | Van Der Westhuizen / Nadia | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 120 | **Cornell van Eeden** | van Eeden / Cornell | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 121 | **Anton van Niekerk** | van Niekerk / Anton | CONFIRMED | ACMA, CGMA | CIMA | Snapplify | Western Cape/Cape Town | https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/ |
-| 122 | **Johann van Rensburg** | van Rensburg / Johann | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 123 | **Owen van Tonder** | van Tonder / Owen | CONFIRMED | CA(SA) | SAICA | Woolworths Holdings Ltd | Western Cape/Cape Town | https://www.linkedin.com/in/owen-van-tonder-ca-sa-a8482131/ |
-| 124 | **Jana van Zyl** | van Zyl / Jana | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 125 | **Willene van Zyl** | van Zyl / Willene | CONFIRMED | CA(SA) | SAICA | LDP Chartered Accountants and Auditors Inc. | Western Cape/Stellenbosch | — |
-| 126 | **Quintin Venter** | Venter / Quintin | HIGH_CONFIDENCE | PA(SA) | SAIPA | Sempre Financial Group | Western Cape/Bellville (Cape Town) | — |
-| 127 | **Vijedharsan Vijendranath** | Vijendranath / Vijedharsan | CONFIRMED | FCCA | ACCA | — | Gauteng/Johannesburg | https://www.linkedin.com/in/vijedharsan-vijendranath-fcca-uk-6118b1103/ |
-| 128 | **Chrizelda Visser** | Visser / Chrizelda | CONFIRMED | ACMA, CGMA | CIMA | Curated Beverages Ltd | Western Cape/Cape Town | https://www.linkedin.com/in/chrizelda-visser-acma-cgma-3671b454/ |
-| 129 | **Christiaan Vorster** | Vorster / Christiaan | CONFIRMED | CA(SA) | SAICA | SAICA | Western Cape/Cape Town | — |
-| 130 | **Marco Wagener** | Wagener / Marco | HIGH_CONFIDENCE | PA(SA) | SAIPA | Excellentia Accounting and Tax Solutions | — | — |
-| 131 | **Mark Willimott** | Willimott / Mark | CONFIRMED | CA(SA) | SAICA | BDO South Africa | Eastern Cape/Gqeberha (Port Elizabeth) | — |
-| 132 | **Taryn Woodbridge** | Woodbridge / Taryn | CONFIRMED | CA(SA) | SAICA | Mercedes-Benz South Africa Ltd | — | — |
-| 133 | **Luke Woodhouse** | Woodhouse / Luke | CONFIRMED | CA(SA) | SAICA | GUUD GLOBAL | Gauteng/Johannesburg | https://www.linkedin.com/in/luke-woodhouse-ca-sa-b31a0149/ |
-| 134 | **Dumisani Zulu** | Zulu / Dumisani | CONFIRMED | AGA(SA) | SAICA | Bonakude Consulting (Pty) Ltd | KwaZulu-Natal/Port Shepstone | https://www.linkedin.com/in/dumisani-zulu-aga-sa-aimfo-a5a62622 |
 
-## 3b. Secondary-population notes (do not re-add)
+## 3b. Status notes
 
-- `ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED`: captured; excluded from the main qualified count.
-- `CONFLICTING`: captured; designation wording conflicts within the source — verify, don't re-add.
+- `CONFIRMED`: professional designation and current identity/employment evidence are confirmed.
+- `FINANCE_ROLE_CONFIRMED`: current in-scope finance role is confirmed; professional designation is absent or not established.
+- `HIGH_CONFIDENCE`, `CONFLICTING`, and other research statuses retain their explicit uncertainty.
 
-## 3c. Investigated but EXCLUDED (do not capture unless evidence changes)
-
-| Name(s) | Reason excluded |
-|---|---|
-| Brandon Christie CA(SA) | Deloitte — Amsterdam, Netherlands. Out of SA scope. |
-| Lungelwa Ndlebe CPA, CA(SA) | Deloitte — New York area, USA. Out of SA scope. |
-| Makhotso Moope CA(SA) | PwC UK — United Kingdom. Out of SA scope. |
-| Siliziwe Tukani CA(SA), CPA | Deloitte — Hamilton (offshore). Out of SA scope. |
-| Lyle Weber CA(SA), MCom | FXF — Greater Monroe / Texas, USA. Out of SA scope. |
-| Nguquko Nyathi FCCA, ACMA, CGMA, MBA | Skipton International — Guernsey. Out of SA scope. |
-| Kimberly Mitton | Atlantic Accounting (Table View) — ACCA 'in progress' (not a member). Not qualified yet. |
-| Marco Barbera | emagine (Denmark) — surfaced via similar-profiles; not an SA CA(SA). |
-| Juanita Roman | Streets Cape Town director — 'PG DIP (Tax)' only; NO designation on page → correctly NOT captured. |
-| Reeza Isaacs | Woolworths ex-FD (resigned 2023) — lead only; no designation wording captured. |
-| Francois Gouws / Mike Smith | PSG Konsult CEO/CFO — surfaced in annual report; no designation wording captured. |
-| PKF WC partner/director names | Bellville/Stellenbosch (~13), Constantia Valley (~5), George (5) — names in snippets only, designations unverified; verify per person before capture. |
-| Crowe CT/Winelands team | Gorgulho, Karro, Jonkers, Hamman, Bestbier, Marais et al — roster names without per-person designation wording; verify before capture. |
-| Fenns Mossel Bay team | Jaco Vollgraaff pictured; Greg/San-Marie/Wilma/Jenna/Rochelle/Zinzan named in reviews without designations — verify before capture. |
-
-## 4. Disambiguation watchlist (near-duplicate risk)
-
-| Names | Status |
-|---|---|
-| **André Huysamer AGA(SA)** (Kula, Worcester) vs **Andre Huysamer** (Principal Accountant, City of Cape Town) | Possibly distinct individuals — NOT merged; verify employer before treating as one person. |
-| **Ashley Du Plessis AGA(SA)** (Paarl) vs **Lian du Plessis AGA(SA)** (Cape Chamber) vs **Lézanne Dirkse van Schalkwyk AGA(SA)** (McA) | Three distinct people — do not conflate by surname 'du Plessis'. |
-| **Bonga Mokoena** | Duplicate `acc-0126` merged into `acc-0051` (single record since session 2). |
-| **BDO South Africa** | Duplicate `cmp-0031` merged into `cmp-0071` (single record). |
-| **Streets Chartered Accountants** vs **Streets (UK)** | One MD Streets Cape Town record (`cmp-0042`); UK parent not a separate SA employer. |
-
-## 5. Companies already mapped (do not duplicate)
+## 4. Companies already mapped (do not duplicate)
 
 | ID | Company | Industry | SA locations |
 |---|---|---|---|
@@ -218,65 +50,132 @@ source for an existing person only *enriches* that record; it never adds a secon
 | cmp-0018 | Absa Group | Banking | — |
 | cmp-0036 | ACCA (South Africa) | Professional Services | — |
 | cmp-0057 | Adriaan de Lange Advisory | Professional Services | Cape Town |
+| cmp-0076 | Afrimat | Building Materials | Western Cape, South Africa |
+| cmp-0077 | AfriSam | Building Materials | Western Cape, South Africa |
+| cmp-0111 | Ardagh Glass Packaging SA | — | — |
 | cmp-0059 | ASL | Professional Services | Somerset West |
+| cmp-0096 | ASLA | — | — |
+| cmp-0088 | Astron Energy | — | — |
 | cmp-0007 | Auditor-General of South Africa | Government | — |
 | cmp-0073 | AYO Technology Solutions Limited | Technology | Cape Town |
 | cmp-0010 | BAIC South Africa | Automotive | — |
 | cmp-0021 | Bayer (South Africa) | Pharmaceuticals | — |
 | cmp-0069 | BDO South Africa | Accounting / Audit | Johannesburg (Parktown), Cape Town, Stellenbosch, Gqeberha (Port Elizabeth), Durban, Pretoria |
+| cmp-0140 | Betko Fresh Produce | — | — |
 | cmp-0017 | Bonakude Consulting (Pty) Ltd | Professional Services | — |
 | cmp-0064 | Boshoff Knoetze Chartered Accountants | Accounting / Audit | Somerset West (Helderberg) |
 | cmp-0054 | Bounty Apparel | Manufacturing | Cape Town |
+| cmp-0108 | Bowler Metcalf / Bowler Plastics | — | — |
 | cmp-0043 | Brenn-O-Kem | Manufacturing | Stellenbosch / Worcester region (Western Cape) |
 | cmp-0006 | Burstone | Property | — |
 | cmp-0066 | Callidus Accountants | Accounting / Audit | Somerset West |
 | cmp-0044 | Cape Chamber of Commerce & Industry | Non-Profit | Cape Town |
+| cmp-0145 | Cape Fruit Coolers | — | — |
+| cmp-0137 | Capespan South Africa | — | — |
+| cmp-0134 | Ceres Fruit Growers | — | — |
+| cmp-0082 | Chryso Southern Africa | — | — |
 | cmp-0037 | CIMA Africa | Professional Services | — |
+| cmp-0080 | Ciolli Bros | Quarrying / Aggregates | Durbanville, Cape Town, Western Cape |
+| cmp-0092 | Civils 2000 | — | — |
+| cmp-0143 | Commercial Cold Holdings | — | — |
+| cmp-0097 | Concor | — | — |
+| cmp-0141 | Core Fruit | — | — |
 | cmp-0053 | Curated Beverages Ltd | FMCG | Cape Town (Tyger Valley) |
 | cmp-0051 | Curro Holdings Ltd | Education | Cape Town (Durbanville) |
 | cmp-0023 | Deloitte (South Africa) | Accounting / Audit | — |
+| cmp-0126 | DGB | — | — |
 | cmp-0014 | Drone Ops Group | Technology | — |
+| cmp-0146 | DSV | — | — |
+| cmp-0136 | Dutoit Agri | — | — |
 | cmp-0065 | Emma Pardoe Chartered Accountants (SA) | Accounting / Audit | Somerset West |
 | cmp-0033 | Energy and Water Sector Education and Training Authority | Government | — |
+| cmp-0106 | Fabrinox | — | — |
+| cmp-0116 | Fair Cape Dairies | — | — |
 | cmp-0034 | Financial Sector Conduct Authority | Government | — |
+| cmp-0107 | Foct Engineering | — | — |
 | cmp-0047 | Forvis Mazars in South Africa | Accounting / Audit | Cape Town (Century City), Johannesburg, Bloemfontein, Pretoria |
 | cmp-0011 | Fourways Airconditioning | Engineering | — |
 | cmp-0028 | Free State Provincial Treasury | Government | — |
+| cmp-0139 | Fruitways | — | — |
 | cmp-0020 | Grant Thornton (South Africa) | Accounting / Audit | — |
 | cmp-0058 | GUUD GLOBAL | Technology | Cape Town |
+| cmp-0099 | GVK-Siya Zama | — | — |
 | cmp-0002 | Harmony Gold Mining | Mining | — |
+| cmp-0094 | Haw & Inglis | — | — |
+| cmp-0125 | HEINEKEN Beverages | — | — |
+| cmp-0120 | I&J | — | — |
+| cmp-0100 | Isipani Construction | — | — |
 | cmp-0070 | Johan le Roux CA(SA) | Accounting / Audit | Milnerton, Cape Town |
+| cmp-0130 | Kaap Agri / Agrimark | — | — |
 | cmp-0004 | KPMG (South Africa) | Accounting / Audit | — |
+| cmp-0135 | Kromco | — | — |
+| cmp-0086 | Kropz Elandsfontein | — | — |
 | cmp-0072 | Kula | — | Worcester |
+| cmp-0127 | KWV | — | — |
 | cmp-0038 | LA Financial Services (Pty) Ltd | Accounting / Audit | — |
+| cmp-0115 | Lactalis South Africa | — | — |
+| cmp-0123 | Ladismith Cheese / Woodlands Dairy Group | — | — |
+| cmp-0122 | LANCEWOOD | — | — |
 | cmp-0008 | Lanseria International Airport | Aviation | — |
 | cmp-0068 | LDP Chartered Accountants and Auditors Inc. | Accounting / Audit | Stellenbosch (HQ), Pretoria |
+| cmp-0138 | Lona Group | — | — |
 | cmp-0075 | M+C Saatchi Group | Professional Services | Cape Town |
+| cmp-0102 | Macsteel | — | — |
 | cmp-0031 | Makosi | Professional Services | — |
+| cmp-0095 | Martin & East | — | — |
 | cmp-0035 | Masisizane Fund | Financial Services | — |
 | cmp-0024 | Massmart | Retail | — |
 | cmp-0041 | McA Inc. | Accounting / Audit | Durbanville (Cape Town) |
 | cmp-0012 | Mckenzie & Associates | Accounting / Audit | — |
 | cmp-0001 | Mercedes-Benz South Africa Ltd | Automotive | — |
+| cmp-0104 | Meshco | — | — |
+| cmp-0087 | Mineral Sands Resources / Tormin | — | — |
 | cmp-0056 | MK Aerospace SA | Technology | Cape Town (Somerset West area) |
 | cmp-0032 | Motlanalo Chartered Accountants and Auditors Inc | Accounting / Audit | — |
 | cmp-0025 | Motus Mobility Solutions | Automotive | — |
+| cmp-0109 | Mpact | — | — |
+| cmp-0112 | Nampak | — | — |
 | cmp-0003 | Nedbank Group Limited | Banking | — |
 | cmp-0063 | netCFO | Accounting / Audit | Pretoria |
+| cmp-0103 | NJR Steel | — | — |
+| cmp-0119 | Oceana Group | — | — |
+| cmp-0129 | Overberg Agri | — | — |
 | cmp-0071 | Pay@ | Fintech | Stellenbosch |
+| cmp-0117 | Peninsula Beverages | — | — |
+| cmp-0114 | PepsiCo South Africa / Pioneer Foods | — | — |
+| cmp-0089 | PetroSA | — | — |
 | cmp-0048 | Pinnacle Accounting | Accounting / Audit | Western Cape |
 | cmp-0030 | PKF Octagon | Accounting / Audit | — |
+| cmp-0110 | Polyoak Packaging | — | — |
+| cmp-0079 | Portland Group | Building Materials | Durbanville, Malmesbury, Western Cape |
+| cmp-0091 | Power Group | — | — |
+| cmp-0078 | PPC | Building Materials | Western Cape, South Africa |
+| cmp-0121 | Premier Fishing & Brands | — | — |
 | cmp-0013 | Probeta Training (Pty) Ltd | Education | — |
 | cmp-0067 | PSG Konsult Ltd | Financial Services | Stellenbosch (group HQ) |
 | cmp-0027 | PwC (South Africa) | Accounting / Audit | — |
+| cmp-0101 | R+N Master Builders | — | — |
+| cmp-0098 | Raubex / Roadmac Surfacing Cape | — | — |
+| cmp-0113 | RFG Foods | — | — |
+| cmp-0105 | SA Metal Group | — | — |
+| cmp-0128 | SAB / AB InBev - Newlands Brewery | — | — |
 | cmp-0046 | Sable International | Professional Services | Cape Town |
+| cmp-0084 | Safintra South Africa | — | — |
 | cmp-0009 | SAICA | Professional Services | — |
+| cmp-0083 | Saint-Gobain Gyproc | — | — |
 | cmp-0022 | SAP Africa | Technology | — |
 | cmp-0045 | Schoemans Registered Auditors and Chartered Accountants | Accounting / Audit | Cape Town |
+| cmp-0118 | Sea Harvest Group | — | — |
+| cmp-0131 | Sentraal-Suid Co-operative (SSK) | — | — |
+| cmp-0081 | Sika South Africa | — | — |
 | cmp-0052 | Snapplify | Technology | Cape Town |
+| cmp-0144 | Snolink | — | — |
 | cmp-0015 | South African State Theatre | Other | — |
+| cmp-0142 | Southern African Fruit Terminals (SAFT) | — | — |
+| cmp-0124 | Southern Oil (SOILL) | — | — |
 | cmp-0060 | Stellenbosch University | Education | Stellenbosch |
 | cmp-0040 | Streets Chartered Accountants | Accounting / Audit | Cape Town (Kenilworth) |
+| cmp-0090 | Sunrise Energy | — | — |
 | cmp-0042 | Superside | Technology | Cape Town (SA finance base) |
 | cmp-0016 | TCTA (Trans-Caledon Tunnel Authority) | Government | — |
 | cmp-0061 | TFG Limited | Retail | Cape Town (Parow) |
@@ -284,14 +183,16 @@ source for an existing person only *enriches* that record; it never adds a secon
 | cmp-0055 | The Modern CFO | Professional Services | Cape Town |
 | cmp-0050 | TradeOn SA | Retail | Cape Town |
 | cmp-0029 | Traxtion | Logistics | — |
+| cmp-0085 | Tronox Namakwa Sands | — | — |
+| cmp-0133 | Tru-Cape Fruit Marketing | — | — |
+| cmp-0132 | Two-a-Day Group | — | — |
 | cmp-0019 | Unilever | FMCG | — |
 | cmp-0049 | University of Cape Town | Education | Cape Town (Rondebosch Area) |
+| cmp-0093 | WBHO Construction - Cape Division | — | — |
 | cmp-0005 | Webber Wentzel | Professional Services | — |
 | cmp-0026 | Wonga South Africa | Fintech | — |
 | cmp-0062 | Woolworths Holdings Ltd | Retail | Cape Town |
 
-## 6. Sources (dedup by URL)
+## 5. Sources
 
-69 unique source records in `sources.jsonl`. Before adding a source,
-check the URL is absent from that file; reuse an existing `src-####` record instead of
-duplicating the URL.
+642 person/company source records are stored in `sources.jsonl`. Reuse an existing URL/person evidence relationship where appropriate instead of creating duplicate evidence rows.
