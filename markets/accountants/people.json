@@ -1317,7 +1317,7 @@
   {
     "id": "acc-0726",
     "fullName": "Amanda Fairley",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -2196,7 +2196,7 @@
   {
     "id": "acc-0715",
     "fullName": "Andrew Scrase",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -3383,7 +3383,7 @@
   {
     "id": "acc-0708",
     "fullName": "Aphiwe Mgaleli",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -3479,7 +3479,7 @@
   {
     "id": "acc-0756",
     "fullName": "Armand Horst",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -4470,7 +4470,7 @@
   {
     "id": "acc-0696",
     "fullName": "Bevill Arendse",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -5406,7 +5406,7 @@
   {
     "id": "acc-0697",
     "fullName": "Brink van Niekerk",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -7015,7 +7015,7 @@
   {
     "id": "acc-0731",
     "fullName": "Charne Putter",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -7178,7 +7178,7 @@
   {
     "id": "acc-0716",
     "fullName": "Cheryl Somers Vine",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -7399,7 +7399,7 @@
   {
     "id": "acc-0749",
     "fullName": "Christie Kruger",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -7670,7 +7670,7 @@
   {
     "id": "acc-0709",
     "fullName": "Claire Lofthouse",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -8047,7 +8047,7 @@
   {
     "id": "acc-0704",
     "fullName": "Craig Stipp",
-    "status": "Verified current employer/title",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -8545,7 +8545,7 @@
   {
     "id": "acc-0710",
     "fullName": "Dean Teuchert",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -11141,7 +11141,7 @@
   {
     "id": "acc-0705",
     "fullName": "Eugene Stoumann",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -11641,7 +11641,7 @@
   {
     "id": "acc-0732",
     "fullName": "Flavian Du Plessis",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -11849,7 +11849,7 @@
   {
     "id": "acc-0717",
     "fullName": "Francois Du Plessis",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -12104,7 +12104,7 @@
   {
     "id": "acc-0757",
     "fullName": "Frikkie G.",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -12716,7 +12716,7 @@
   {
     "id": "acc-0740",
     "fullName": "GJ Richter",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -13389,7 +13389,7 @@
   {
     "id": "acc-0724",
     "fullName": "Hayley Africa",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -13642,7 +13642,7 @@
   {
     "id": "acc-0733",
     "fullName": "Henko Kleynhans",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -13850,7 +13850,7 @@
   {
     "id": "acc-0754",
     "fullName": "Hiten Taylor",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -14063,7 +14063,7 @@
   {
     "id": "acc-0703",
     "fullName": "Iliscke Cilliers",
-    "status": "Verified by current wine-industry directory",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -16260,7 +16260,7 @@
   {
     "id": "acc-0725",
     "fullName": "Juan Pierre van der Westhuizen",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -16951,7 +16951,7 @@
   {
     "id": "acc-0718",
     "fullName": "Karabo Neluheni",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -17000,7 +17000,7 @@
   {
     "id": "acc-0750",
     "fullName": "Karin Smidt",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -17666,7 +17666,7 @@
   {
     "id": "acc-0698",
     "fullName": "Kelebogile Mokhine",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -17721,7 +17721,7 @@
   {
     "id": "acc-0734",
     "fullName": "Kelly (Weidemann) Estment",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -18150,7 +18150,7 @@
   {
     "id": "acc-0719",
     "fullName": "khomotso kgapane",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -18490,7 +18490,7 @@
   {
     "id": "acc-0751",
     "fullName": "Kruger Christie",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -19212,7 +19212,7 @@
   {
     "id": "acc-0735",
     "fullName": "Lené Goosen",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -19974,7 +19974,7 @@
   {
     "id": "acc-0720",
     "fullName": "Linda Van Deemter",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -20076,7 +20076,7 @@
   {
     "id": "acc-0702",
     "fullName": "Lindi le Roux",
-    "status": "Verified current employer/title from public profile",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -20131,7 +20131,7 @@
   {
     "id": "acc-0755",
     "fullName": "Lindi Louw",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -20537,7 +20537,7 @@
   {
     "id": "acc-0721",
     "fullName": "Lizelle De Klerk",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -20869,7 +20869,7 @@
   {
     "id": "acc-0722",
     "fullName": "Louis Grant",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -21742,7 +21742,7 @@
   {
     "id": "acc-0706",
     "fullName": "Madele Van Heerden",
-    "status": "Verified through public profile research",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -22354,7 +22354,7 @@
   {
     "id": "acc-0723",
     "fullName": "Margot Baird",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -22915,7 +22915,7 @@
   {
     "id": "acc-0707",
     "fullName": "Mart-Marie Visagie",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -23785,7 +23785,7 @@
   {
     "id": "acc-0711",
     "fullName": "Mellissa Pearce (née Ryder)",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -24034,7 +24034,7 @@
   {
     "id": "acc-0727",
     "fullName": "Michael McAllister (CIMA Adv Dip MA)",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -24189,7 +24189,7 @@
   {
     "id": "acc-0752",
     "fullName": "Michelle Carstens",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -24523,7 +24523,7 @@
   {
     "id": "acc-0738",
     "fullName": "Minnie D.",
-    "status": "Verified after correcting company domain to metiersa.co.za",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -24573,7 +24573,7 @@
   {
     "id": "acc-0699",
     "fullName": "Mitterand Ngoy",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -24875,7 +24875,7 @@
   {
     "id": "acc-0741",
     "fullName": "Monique Ellis",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -26664,7 +26664,7 @@
   {
     "id": "acc-0758",
     "fullName": "Nicolene Burger",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -26876,7 +26876,7 @@
   {
     "id": "acc-0712",
     "fullName": "Nikita Candy Engelbrecht",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -28302,7 +28302,7 @@
   {
     "id": "acc-0739",
     "fullName": "Patricia Becker",
-    "status": "Verified current finance role",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -29260,7 +29260,7 @@
   {
     "id": "acc-0728",
     "fullName": "Pilot Mzimba",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -29528,7 +29528,7 @@
   {
     "id": "acc-0729",
     "fullName": "Pranesh Narshi",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -30361,7 +30361,7 @@
   {
     "id": "acc-0753",
     "fullName": "Rameck Gadziso",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -31786,7 +31786,7 @@
   {
     "id": "acc-0713",
     "fullName": "Saadiqa Abrahams",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -31982,7 +31982,7 @@
   {
     "id": "acc-0730",
     "fullName": "Samantha Olifant",
-    "status": "Verified title",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -32407,7 +32407,7 @@
   {
     "id": "acc-0700",
     "fullName": "Sazile Manzini",
-    "status": "Verified title/location",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -32964,7 +32964,7 @@
   {
     "id": "acc-0714",
     "fullName": "Shaun Peypers",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -34471,7 +34471,7 @@
   {
     "id": "acc-0759",
     "fullName": "SP Jansen van Vuuren",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -35401,7 +35401,7 @@
   {
     "id": "acc-0701",
     "fullName": "Taku Chimedza",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -35937,7 +35937,7 @@
   {
     "id": "acc-0736",
     "fullName": "Terri Ladbrooke",
-    "status": "Verified on current company leadership page",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
@@ -36918,7 +36918,7 @@
   {
     "id": "acc-0737",
     "fullName": "Tiisetso Matsobane",
-    "status": "Verified",
+    "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
     "professionallyQualified": "unknown",
