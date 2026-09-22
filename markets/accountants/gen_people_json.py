@@ -62,6 +62,24 @@ def professional_routes(row):
     return routes
 
 
+def company_affiliations(rows):
+    affiliations = []
+    for row in rows or []:
+        if not isinstance(row, dict):
+            continue
+        company = (row.get("company") or "").strip()
+        if not company:
+            continue
+        item = {
+            "company": company,
+            "relationship": (row.get("relationship") or "").strip(),
+            "evidence_url": (row.get("evidence_url") or "").strip(),
+        }
+        if item not in affiliations:
+            affiliations.append(item)
+    return affiliations
+
+
 def career_history(rows):
     history = []
     for row in rows or []:
@@ -91,7 +109,7 @@ def to_record(row):
         "bodies": clean_list(row.get("professional_bodies")),
         "title": row.get("current_title") or "",
         "employer": row.get("current_employer") or "",
-        "currentCompanyAffiliations": clean_list(row.get("current_company_affiliations")),
+        "currentCompanyAffiliations": company_affiliations(row.get("current_company_affiliations")),
         "seniority": row.get("seniority") or "",
         "roleFamily": row.get("current_role_family") or "",
         "function": row.get("current_function") or "",
