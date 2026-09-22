@@ -1947,47 +1947,6 @@
     "notes": "SATURC Top 100 rank 32, score 86, tier B — Investigate / contact; Status: Not Contacted Sage 300/ACCPAC evidence classification: Sage 300 exposure suggested by indexed search Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1037",
-    "fullName": "Andrea Haasbroek PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Public-profile inference",
-    "designations": [
-      "Professional Accountant (SA) / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Financial Manager",
-    "employer": "",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Sage 300 exposure suggested by indexed search; verify; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/andrea-haasbroek-83b44985",
-    "primarySource": "https://za.linkedin.com/in/andrea-haasbroek-83b44985",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/andrea-haasbroek-83b44985"
-    ],
-    "notes": "SATURC Top 100 rank 32, score 86, tier B — Investigate / contact; Status: Not Contacted"
-  },
-  {
     "id": "acc-0441",
     "fullName": "Andrew Logan",
     "status": "FINANCE_ROLE_CONFIRMED",
@@ -2730,53 +2689,6 @@
     "notes": "SATURC Top 100 rank 2, score 100, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: Accpac assistance across group companies Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1038",
-    "fullName": "Anika Nel PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Professional Accountant / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Commercial Accountant — Kallos Global",
-    "employer": "Kallos Global",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: Accpac assistance across group companies; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Kallos Global",
-        "title": "Commercial Accountant — Kallos Global",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/anika-nel-20b364134",
-    "primarySource": "https://za.linkedin.com/in/anika-nel-20b364134",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/anika-nel-20b364134"
-    ],
-    "notes": "SATURC Top 100 rank 2, score 100, tier A — Priority outreach; Status: Not Contacted"
-  },
-  {
     "id": "acc-0546",
     "fullName": "Anilynne Jacobs",
     "status": "FINANCE_ROLE_CONFIRMED",
@@ -3208,47 +3120,6 @@
       "https://za.linkedin.com/in/anntoinique-holtzhauzen-b1830052"
     ],
     "notes": "SATURC Top 100 rank 9, score 96, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: Sage 300, Sage Intelligence Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1039",
-    "fullName": "Anntoinique Holtzhauzen PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "SAIPA Professional Accountant"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Financial Manager",
-    "employer": "",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: Sage 300, Sage Intelligence; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/anntoinique-holtzhauzen-b1830052",
-    "primarySource": "https://za.linkedin.com/in/anntoinique-holtzhauzen-b1830052",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/anntoinique-holtzhauzen-b1830052"
-    ],
-    "notes": "SATURC Top 100 rank 9, score 96, tier A — Priority outreach; Status: Not Contacted"
   },
   {
     "id": "acc-0876",
@@ -4365,54 +4236,6 @@
     "notes": "SATURC Top 100 rank 30, score 87, tier B — Investigate / contact; Status: Not Contacted Sage 300/ACCPAC evidence classification: Strong employer-level CURRENT: PSG Bellville finance roles in 2026 explicitly require Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1040",
-    "fullName": "Barnus Vermeulen PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Current employer inference",
-    "designations": [
-      "Professional Accountant (SA) — SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Finance professional — PSG Konsult / PSG Financial Services",
-    "employer": "PSG Konsult / PSG Financial Services",
-    "roleFamily": "Finance Professional",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "PSG Cape Town ecosystem",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Strong employer-level CURRENT: PSG Bellville finance roles in 2026 explicitly require Accpac; Multi-entity financial operations; sector less operational than SATURC",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "PSG Konsult / PSG Financial Services",
-        "title": "Finance professional — PSG Konsult / PSG Financial Services",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/barnus-vermeulen-865a2589",
-    "primarySource": "https://za.linkedin.com/in/barnus-vermeulen-865a2589",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/barnus-vermeulen-865a2589",
-      "https://za.linkedin.com/in/mike-smith-49903236"
-    ],
-    "notes": "SATURC Top 100 rank 30, score 87, tier B — Investigate / contact; Status: Not Contacted"
-  },
-  {
     "id": "acc-0302",
     "fullName": "Barry Griffin",
     "status": "RESEARCH_HOLD",
@@ -4655,47 +4478,6 @@
       "https://za.linkedin.com/in/ben-van-der-linde"
     ],
     "notes": "SATURC Top 100 rank 6, score 96, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: Accpac used during multi-year programme Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1041",
-    "fullName": "Ben Van Der Linde PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Registered Professional Accountant (SAIPA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Group Financial Accountant / UK service-charge accounting",
-    "employer": "",
-    "roleFamily": "Financial Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: Accpac used during multi-year programme; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/ben-van-der-linde",
-    "primarySource": "https://za.linkedin.com/in/ben-van-der-linde",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/ben-van-der-linde"
-    ],
-    "notes": "SATURC Top 100 rank 6, score 96, tier A — Priority outreach; Status: Not Contacted"
   },
   {
     "id": "acc-0199",
@@ -5335,53 +5117,6 @@
       "https://za.linkedin.com/in/brandon-manuel-a7261919"
     ],
     "notes": "SATURC Top 100 rank 11, score 96, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: importing/exporting and key-account work in Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1042",
-    "fullName": "Brandon Manuel PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Professional Accountant (SA); completed SAIPA articles"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Professional Accountant — MUA Insurance",
-    "employer": "MUA Insurance",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: importing/exporting and key-account work in Accpac; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "MUA Insurance",
-        "title": "Professional Accountant — MUA Insurance",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/brandon-manuel-a7261919",
-    "primarySource": "https://za.linkedin.com/in/brandon-manuel-a7261919",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/brandon-manuel-a7261919"
-    ],
-    "notes": "SATURC Top 100 rank 11, score 96, tier A — Priority outreach; Status: Not Contacted"
   },
   {
     "id": "acc-0547",
@@ -8095,98 +7830,6 @@
     "notes": "SATURC Master Pool; Status: Priority - verified/current Sage 300/ACCPAC evidence classification: No public Sage 300/ACCPAC evidence found Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-0343",
-    "fullName": "Cheslin Klaasen",
-    "status": "HIGH_CONFIDENCE",
-    "confidence": "HIGH",
-    "designations": [
-      "PA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAIPA"
-    ],
-    "title": "Head of Finance Shared Services",
-    "employer": "Advania UK",
-    "roleFamily": "Finance Professional",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "",
-    "country": "South Africa",
-    "locationConfidence": "HIGH",
-    "skills": [],
-    "accountingSystems": [],
-    "erpSystems": [],
-    "analyticsTools": [],
-    "yearsExperience": "unknown",
-    "qualificationEvidence": "Confirmed / strong",
-    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Advania UK",
-        "title": "Head of Finance Shared Services",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "",
-    "primarySource": "https://www.signalhire.com/profiles/cheslin-klaasen-professional-accountant%27s-email/190764199",
-    "sourceUrls": [
-      "https://www.signalhire.com/profiles/cheslin-klaasen-professional-accountant%27s-email/190764199"
-    ],
-    "notes": "SATURC Top 100 rank 80, score 69, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1043",
-    "fullName": "Cheslin Klaasen PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Professional Accountant (SA) — SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Head of Finance Shared Services — Advania UK",
-    "employer": "Advania UK",
-    "roleFamily": "Finance Professional",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Shared services, high-volume finance and process leadership",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Advania UK",
-        "title": "Head of Finance Shared Services — Advania UK",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://www.signalhire.com/profiles/cheslin-klaasen-professional-accountant%27s-email/190764199",
-    "primarySource": "https://www.signalhire.com/profiles/cheslin-klaasen-professional-accountant%27s-email/190764199",
-    "sourceUrls": [
-      "https://www.signalhire.com/profiles/cheslin-klaasen-professional-accountant%27s-email/190764199"
-    ],
-    "notes": "SATURC Top 100 rank 80, score 69, tier C — Sourcing lead / verify; Status: Not Contacted"
-  },
-  {
     "id": "acc-0970",
     "fullName": "Chrissie Moloseni",
     "status": "CONFIRMED",
@@ -8542,47 +8185,6 @@
     "notes": "SATURC Top 100 rank 4, score 99, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: full control over Accpac setup and maintenance Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1044",
-    "fullName": "Christo Botha PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "SAIPA Professional Accountant"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Senior finance / accounting professional",
-    "employer": "",
-    "roleFamily": "Finance Professional",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape candidate pool",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: full control over Accpac setup and maintenance; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/christo-botha-5877666a",
-    "primarySource": "https://za.linkedin.com/in/christo-botha-5877666a",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/christo-botha-5877666a"
-    ],
-    "notes": "SATURC Top 100 rank 4, score 99, tier A — Priority outreach; Status: Not Contacted"
-  },
-  {
     "id": "acc-0172",
     "fullName": "Christo de Witt",
     "status": "HIGH_CONFIDENCE",
@@ -8762,53 +8364,6 @@
       "https://za.linkedin.com/in/chulumanco-beja-25bb421bb"
     ],
     "notes": "SATURC Top 100 rank 66, score 75, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1045",
-    "fullName": "Chulumanco Beja PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Completed SAIPA articles; Professional Accountant (SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Professional Accountant — Galbraith Rushby",
-    "employer": "Galbraith Rushby",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Practice-trained; broad SME/client accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Galbraith Rushby",
-        "title": "Professional Accountant — Galbraith Rushby",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/chulumanco-beja-25bb421bb",
-    "primarySource": "https://za.linkedin.com/in/chulumanco-beja-25bb421bb",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/chulumanco-beja-25bb421bb"
-    ],
-    "notes": "SATURC Top 100 rank 66, score 75, tier C — Sourcing lead / verify; Status: Not Contacted"
   },
   {
     "id": "acc-0064",
@@ -9289,47 +8844,6 @@
     "notes": "SATURC Top 100 rank 92, score 60, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: Sage 300/Accpac to verify Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1046",
-    "fullName": "Cornel Maartens PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Qualified Professional Financial Accountant / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Senior Accountant / Account Manager",
-    "employer": "",
-    "roleFamily": "Senior Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape candidate pool",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Unverified; Sage 300: Sage 300/Accpac to verify; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/cornel-maartens-a7a83655",
-    "primarySource": "https://za.linkedin.com/in/cornel-maartens-a7a83655",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/cornel-maartens-a7a83655"
-    ],
-    "notes": "SATURC Top 100 rank 92, score 60, tier C — Sourcing lead / verify; Status: Not Contacted"
-  },
-  {
     "id": "acc-0254",
     "fullName": "Cornelius Hanekom",
     "status": "CONFIRMED",
@@ -9550,47 +9064,6 @@
       "https://za.linkedin.com/in/craig-samuel-070500a3"
     ],
     "notes": "SATURC Top 100 rank 3, score 99, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: month-end Accpac reports / consolidations Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1047",
-    "fullName": "Craig Samuel PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Professional Accountant (SA) / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Senior Accountant",
-    "employer": "",
-    "roleFamily": "Senior Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: month-end Accpac reports / consolidations; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/craig-samuel-070500a3",
-    "primarySource": "https://za.linkedin.com/in/craig-samuel-070500a3",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/craig-samuel-070500a3"
-    ],
-    "notes": "SATURC Top 100 rank 3, score 99, tier A — Priority outreach; Status: Not Contacted"
   },
   {
     "id": "acc-0931",
@@ -12548,47 +12021,6 @@
       "https://za.linkedin.com/in/ettiennedupreez"
     ],
     "notes": "SATURC Top 100 rank 17, score 94, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1048",
-    "fullName": "Ettienne du Preez PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "SAIPA Professional Accountant / tax practitioner"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Financial Accountant / Financial Manager",
-    "employer": "",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: Accpac; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/ettiennedupreez",
-    "primarySource": "https://za.linkedin.com/in/ettiennedupreez",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/ettiennedupreez"
-    ],
-    "notes": "SATURC Top 100 rank 17, score 94, tier A — Priority outreach; Status: Not Contacted"
   },
   {
     "id": "acc-0814",
@@ -19497,47 +18929,6 @@
     "notes": "SATURC Top 100 rank 76, score 70, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: Sage 300/Accpac to verify Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1049",
-    "fullName": "Kgomotso Moipolai PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Professional Accountant (SA) / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Professional Accountant",
-    "employer": "",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Sage 300/Accpac to verify; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/kgomotso-moipolai-014726207",
-    "primarySource": "https://za.linkedin.com/in/kgomotso-moipolai-014726207",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/kgomotso-moipolai-014726207"
-    ],
-    "notes": "SATURC Top 100 rank 76, score 70, tier C — Sourcing lead / verify; Status: Not Contacted"
-  },
-  {
     "id": "acc-0298",
     "fullName": "Khanya Butshingi",
     "status": "RESEARCH_HOLD",
@@ -19742,54 +19133,6 @@
       "https://za.linkedin.com/company/cado-chartered-accountants-incorporated"
     ],
     "notes": "SATURC Top 100 rank 64, score 75, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1050",
-    "fullName": "Kim Isaacs PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Professional Accountant (SA); completed three years SAIPA articles"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Finance professional — Providence Hotels",
-    "employer": "Providence Hotels",
-    "roleFamily": "Finance Professional",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "South Africa",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Hospitality operational finance",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Providence Hotels",
-        "title": "Finance professional — Providence Hotels",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/kimnikitaisaacs",
-    "primarySource": "https://za.linkedin.com/in/kimnikitaisaacs",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/kimnikitaisaacs",
-      "https://za.linkedin.com/company/cado-chartered-accountants-incorporated"
-    ],
-    "notes": "SATURC Top 100 rank 64, score 75, tier C — Sourcing lead / verify; Status: Not Contacted"
   },
   {
     "id": "acc-1003",
@@ -21025,53 +20368,6 @@
     "notes": "SATURC Top 100 rank 7, score 96, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: profile states Sage 300 Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1051",
-    "fullName": "Lerenzo Greeff PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Professional Accountant (SA) / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Finance Manager — African Unity Life",
-    "employer": "African Unity Life",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: profile states Sage 300; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "African Unity Life",
-        "title": "Finance Manager — African Unity Life",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/lerenzo-greeff-pa-sa-339064146",
-    "primarySource": "https://za.linkedin.com/in/lerenzo-greeff-pa-sa-339064146",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/lerenzo-greeff-pa-sa-339064146"
-    ],
-    "notes": "SATURC Top 100 rank 7, score 96, tier A — Priority outreach; Status: Not Contacted"
-  },
-  {
     "id": "acc-0072",
     "fullName": "Lesetja Kwetepane",
     "status": "HIGH_CONFIDENCE",
@@ -21791,53 +21087,6 @@
       "https://za.linkedin.com/in/lindsay-karools-48581816b"
     ],
     "notes": "SATURC Top 100 rank 26, score 90, tier B — Investigate / contact; Status: Not Contacted Sage 300/ACCPAC evidence classification: Sage 300/Accpac likely company exposure Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1052",
-    "fullName": "Lindsay Karools PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Public-profile inference",
-    "designations": [
-      "Professional Accountant (SA) / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Professional Accountant — The Building Company",
-    "employer": "The Building Company",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Sage 300/Accpac likely company exposure; not explicit; Strong operational / commercial",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "The Building Company",
-        "title": "Professional Accountant — The Building Company",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/lindsay-karools-48581816b",
-    "primarySource": "https://za.linkedin.com/in/lindsay-karools-48581816b",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/lindsay-karools-48581816b"
-    ],
-    "notes": "SATURC Top 100 rank 26, score 90, tier B — Investigate / contact; Status: Not Contacted"
   },
   {
     "id": "acc-0728",
@@ -22685,53 +21934,6 @@
     "notes": "SATURC Top 100 rank 44, score 78, tier B — Investigate / contact; Status: Not Contacted Sage 300/ACCPAC evidence classification: Needs verification: system not explicit in current public profile Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1053",
-    "fullName": "Lubabalo Mxhasa PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Professional Accountant (SA) / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Senior Accountant — Apex/Maitland background",
-    "employer": "Apex/Maitland background",
-    "roleFamily": "Senior Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Needs verification: system not explicit in current public profile; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Apex/Maitland background",
-        "title": "Senior Accountant — Apex/Maitland background",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/lubabalo-mxhasa-39694163",
-    "primarySource": "https://za.linkedin.com/in/lubabalo-mxhasa-39694163",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/lubabalo-mxhasa-39694163"
-    ],
-    "notes": "SATURC Top 100 rank 44, score 78, tier B — Investigate / contact; Status: Not Contacted"
-  },
-  {
     "id": "acc-0397",
     "fullName": "Lucinda Smidt",
     "status": "FINANCE_ROLE_CONFIRMED",
@@ -22997,49 +22199,6 @@
       "https://za.linkedin.com/in/lyle-haas-439118136"
     ],
     "notes": "SATURC Top 100 rank 5, score 96, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: monthly processing and transition onto Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1054",
-    "fullName": "Lyle Haas AGA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "AGA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Senior Financial Accountant",
-    "employer": "",
-    "roleFamily": "Financial Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: monthly processing and transition onto Accpac; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/lyle-haas-439118136",
-    "primarySource": "https://za.linkedin.com/in/lyle-haas-439118136",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/lyle-haas-439118136"
-    ],
-    "notes": "SATURC Top 100 rank 5, score 96, tier A — Priority outreach; Status: Not Contacted"
   },
   {
     "id": "acc-0781",
@@ -23657,55 +22816,6 @@
       "https://za.linkedin.com/in/malvin-lancelot-makanda-aga-sa-69517716a"
     ],
     "notes": "SATURC Master Pool; Status: Qualified - enrich | SATURC Top 100 rank 65, score 75, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: No public Sage 300/ACCPAC evidence found | No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1055",
-    "fullName": "Malvin Lancelot Makanda AGA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "AGA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Auditor / accounting professional — Cecil Kilpin & Co.",
-    "employer": "Cecil Kilpin & Co.",
-    "roleFamily": "Auditor",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Cape Town",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Practice-trained across clients",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Cecil Kilpin & Co.",
-        "title": "Auditor / accounting professional — Cecil Kilpin & Co.",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/malvin-lancelot-makanda-aga-sa-69517716a",
-    "primarySource": "https://za.linkedin.com/in/malvin-lancelot-makanda-aga-sa-69517716a",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/malvin-lancelot-makanda-aga-sa-69517716a"
-    ],
-    "notes": "SATURC Top 100 rank 65, score 75, tier C — Sourcing lead / verify; Status: Not Contacted"
   },
   {
     "id": "acc-0434",
@@ -24333,53 +23443,6 @@
       "https://za.linkedin.com/in/maritza-dalton-professional-accountant-sa-91128611a"
     ],
     "notes": "SATURC Top 100 rank 69, score 74, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1056",
-    "fullName": "Maritza Dalton PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Professional Accountant (SA); SAICA articles certification visible"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Professional Accountant — Cecil Kilpin & Co.",
-    "employer": "Cecil Kilpin & Co.",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Practice-trained across clients",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Cecil Kilpin & Co.",
-        "title": "Professional Accountant — Cecil Kilpin & Co.",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/maritza-dalton-professional-accountant-sa-91128611a",
-    "primarySource": "https://za.linkedin.com/in/maritza-dalton-professional-accountant-sa-91128611a",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/maritza-dalton-professional-accountant-sa-91128611a"
-    ],
-    "notes": "SATURC Top 100 rank 69, score 74, tier C — Sourcing lead / verify; Status: Not Contacted"
   },
   {
     "id": "acc-0086",
@@ -31236,54 +30299,6 @@
     "notes": "SATURC Top 100 rank 68, score 74, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1057",
-    "fullName": "Rabia Samuels PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Professional Accountant (SA); completed three years SAIPA articles; passed SAIPA qualifying exam"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Professional Accountant — CADO Chartered Accountants Inc.",
-    "employer": "CADO Chartered Accountants Inc.",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Practice-trained; commercial/operational exposure to establish",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "CADO Chartered Accountants Inc.",
-        "title": "Professional Accountant — CADO Chartered Accountants Inc.",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/rabia-samuels-3527a823b",
-    "primarySource": "https://za.linkedin.com/in/rabia-samuels-3527a823b",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/rabia-samuels-3527a823b",
-      "https://za.linkedin.com/company/cado-chartered-accountants-incorporated"
-    ],
-    "notes": "SATURC Top 100 rank 68, score 74, tier C — Sourcing lead / verify; Status: Not Contacted"
-  },
-  {
     "id": "acc-0057",
     "fullName": "Rachelle Best",
     "status": "CONFIRMED",
@@ -34160,55 +33175,6 @@
     "notes": "SATURC Top 100 rank 48, score 78, tier B — Investigate / contact; Status: Not Contacted Sage 300/ACCPAC evidence classification: System exposure to verify Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1058",
-    "fullName": "Shandré Whittles AGA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "AGA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Junior Financial Manager — RPF Africa",
-    "employer": "RPF Africa",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: System exposure to verify; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "RPF Africa",
-        "title": "Junior Financial Manager — RPF Africa",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/shandr%C3%A9-whittles-aga-sa-9a14a4143",
-    "primarySource": "https://za.linkedin.com/in/shandr%C3%A9-whittles-aga-sa-9a14a4143",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/shandr%C3%A9-whittles-aga-sa-9a14a4143"
-    ],
-    "notes": "SATURC Top 100 rank 48, score 78, tier B — Investigate / contact; Status: Not Contacted"
-  },
-  {
     "id": "acc-0603",
     "fullName": "Sharmila Soobramoney",
     "status": "FINANCE_ROLE_CONFIRMED",
@@ -35217,53 +34183,6 @@
       "https://za.linkedin.com/in/siseko-mapongwana-192818145"
     ],
     "notes": "SATURC Top 100 rank 10, score 96, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: Great Plains and Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1059",
-    "fullName": "Siseko Mapongwana PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Professional Accountant (SA) / SAIPA"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Finance Manager — G4S",
-    "employer": "G4S",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: Great Plains and Accpac; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "G4S",
-        "title": "Finance Manager — G4S",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/siseko-mapongwana-192818145",
-    "primarySource": "https://za.linkedin.com/in/siseko-mapongwana-192818145",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/siseko-mapongwana-192818145"
-    ],
-    "notes": "SATURC Top 100 rank 10, score 96, tier A — Priority outreach; Status: Not Contacted"
   },
   {
     "id": "acc-0538",
@@ -36715,53 +35634,6 @@
     "notes": "SATURC Top 100 rank 13, score 95, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: Accpac referenced in profile Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1060",
-    "fullName": "Taryn Hamid PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Professional Accountant (SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Financial Manager — Bateleur Capital",
-    "employer": "Bateleur Capital",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: Accpac referenced in profile; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Bateleur Capital",
-        "title": "Financial Manager — Bateleur Capital",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/taryn-hamid-professional-accountant-s-a-616a5751",
-    "primarySource": "https://za.linkedin.com/in/taryn-hamid-professional-accountant-s-a-616a5751",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/taryn-hamid-professional-accountant-s-a-616a5751"
-    ],
-    "notes": "SATURC Top 100 rank 13, score 95, tier A — Priority outreach; Status: Not Contacted"
-  },
-  {
     "id": "acc-0042",
     "fullName": "Taryn Raju",
     "status": "CONFIRMED",
@@ -36964,41 +35836,6 @@
       "https://www.linkedin.com/in/temoso-shazi-034ba76/"
     ],
     "notes": "Qualification/articles enrichment pending."
-  },
-  {
-    "id": "acc-0963",
-    "fullName": "Terri Ladbrooke",
-    "status": "FINANCE_ROLE_CONFIRMED",
-    "confidence": "CONFIRMED",
-    "designations": [],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Chief Financial Officer",
-    "employer": "Libstar",
-    "roleFamily": "CFO",
-    "function": "CFO",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Cape Town",
-    "country": "South Africa",
-    "locationConfidence": "CONFIRMED",
-    "skills": [],
-    "accountingSystems": [],
-    "erpSystems": [],
-    "analyticsTools": [],
-    "yearsExperience": "unknown",
-    "qualificationEvidence": "Academic qualifications: BBusSc Finance (UCT); BAccSc Hons (UNISA); CA(SA). Articles/training: NOT ESTABLISHED IN THIS PASS",
-    "articlesStatus": "NOT ESTABLISHED IN THIS PASS",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "",
-    "primarySource": "https://www.libstar.co.za/about-us/leadership/",
-    "sourceUrls": [
-      "https://www.libstar.co.za/about-us/leadership/"
-    ],
-    "notes": ""
   },
   {
     "id": "acc-1001",
@@ -39377,47 +38214,6 @@
     "notes": "SATURC Top 100 rank 8, score 96, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1061",
-    "fullName": "Wallace Disi PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "SAIPA Professional Accountant"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Financial Manager",
-    "employer": "",
-    "roleFamily": "Financial Manager",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: Accpac; prior Group Financial Accountant; Commercial finance; sector transferability to verify",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [],
-    "linkedinUrl": "https://za.linkedin.com/in/wallace-disi-74a3921a",
-    "primarySource": "https://za.linkedin.com/in/wallace-disi-74a3921a",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/wallace-disi-74a3921a"
-    ],
-    "notes": "SATURC Top 100 rank 8, score 96, tier A — Priority outreach; Status: Not Contacted"
-  },
-  {
     "id": "acc-0371",
     "fullName": "Walter Chigwada",
     "status": "FINANCE_ROLE_CONFIRMED",
@@ -40457,53 +39253,6 @@
     "notes": "SATURC Top 100 rank 20, score 93, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Strong inference: prior PSG Financial Services accounting environment uses Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1062",
-    "fullName": "Wynand Nel PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Strong inference",
-    "designations": [
-      "Professional Accountant (SA); SAIPA clerk/training history"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Assistant Manager — JTC Group",
-    "employer": "JTC Group",
-    "roleFamily": "Finance Professional",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Strong inference: prior PSG Financial Services accounting environment uses Accpac; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "JTC Group",
-        "title": "Assistant Manager — JTC Group",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://www.signalhire.com/profiles/wynand-nel%27s-email/165337049",
-    "primarySource": "https://www.signalhire.com/profiles/wynand-nel%27s-email/165337049",
-    "sourceUrls": [
-      "https://www.signalhire.com/profiles/wynand-nel%27s-email/165337049"
-    ],
-    "notes": "SATURC Top 100 rank 20, score 93, tier A — Priority outreach; Status: Not Contacted"
-  },
-  {
     "id": "acc-0433",
     "fullName": "Xelani Vathiwe",
     "status": "FINANCE_ROLE_CONFIRMED",
@@ -41105,53 +39854,6 @@
     "notes": "SATURC Top 100 rank 19, score 93, tier A — Priority outreach; Status: Not Contacted Sage 300/ACCPAC evidence classification: Direct: reviews AP transactions and bank activity in Accpac Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1063",
-    "fullName": "Zaiba Khan PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Direct individual",
-    "designations": [
-      "Professional Accountant (SA); SAIPA trainee 2013–2016"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Professional Accountant — PSG Konsult",
-    "employer": "PSG Konsult",
-    "roleFamily": "Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: Direct: reviews AP transactions and bank activity in Accpac; General commercial accounting",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "PSG Konsult",
-        "title": "Professional Accountant — PSG Konsult",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/zaiba-khan-2396a865",
-    "primarySource": "https://za.linkedin.com/in/zaiba-khan-2396a865",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/zaiba-khan-2396a865"
-    ],
-    "notes": "SATURC Top 100 rank 19, score 93, tier A — Priority outreach; Status: Not Contacted"
-  },
-  {
     "id": "acc-0108",
     "fullName": "Zaid Manjra",
     "status": "CONFIRMED",
@@ -41470,55 +40172,6 @@
     "notes": "SATURC Top 100 rank 35, score 81, tier B — Investigate / contact; Status: Not Contacted Sage 300/ACCPAC evidence classification: No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
   },
   {
-    "id": "acc-1064",
-    "fullName": "Zhané Gorridon AGA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "AGA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Group Accountant — Fraxion",
-    "employer": "Fraxion",
-    "roleFamily": "Group Accountant",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Group structures, reconciliations, audits and complex workflows",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "Fraxion",
-        "title": "Group Accountant — Fraxion",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://www.signalhire.com/profiles/zhane-gorridon-aga/239926269",
-    "primarySource": "https://www.signalhire.com/profiles/zhane-gorridon-aga/239926269",
-    "sourceUrls": [
-      "https://www.signalhire.com/profiles/zhane-gorridon-aga/239926269"
-    ],
-    "notes": "SATURC Top 100 rank 35, score 81, tier B — Investigate / contact; Status: Not Contacted"
-  },
-  {
     "id": "acc-0612",
     "fullName": "Zinathi Melamane",
     "status": "FINANCE_ROLE_CONFIRMED",
@@ -41597,53 +40250,6 @@
       "https://za.linkedin.com/in/zine-gengana-professional-accountant-sa-319526a1"
     ],
     "notes": "SATURC Master Pool; Status: Qualified - enrich | SATURC Top 100 rank 74, score 72, tier C — Sourcing lead / verify; Status: Not Contacted Sage 300/ACCPAC evidence classification: No public Sage 300/ACCPAC evidence found | No direct Sage 300 evidence found yet Canonicalised from merged PR #33 data; person-level Sage 300/ACCPAC is confirmed only where the source research explicitly labels the evidence as direct."
-  },
-  {
-    "id": "acc-1065",
-    "fullName": "Zine Gengana PA(SA)",
-    "status": "RECORDED",
-    "confidence": "Needs verification",
-    "designations": [
-      "Professional Accountant (SA); SAIPA member since 2012"
-    ],
-    "professionalRoutes": [],
-    "bodies": [],
-    "title": "Finance professional — HIGHVERN",
-    "employer": "HIGHVERN",
-    "roleFamily": "Finance Professional",
-    "function": "Finance",
-    "industry": "",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "high",
-    "skills": [],
-    "accountingSystems": [
-      "Sage 300"
-    ],
-    "erpSystems": [
-      "Sage 300 / ACCPAC"
-    ],
-    "analyticsTools": [],
-    "yearsExperience": "",
-    "qualificationEvidence": "Confirmed / strong; Sage 300: No direct Sage 300 evidence found yet; Financial services / fiduciary environment",
-    "articlesStatus": "",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "careerHistory": [
-      {
-        "employer": "HIGHVERN",
-        "title": "Finance professional — HIGHVERN",
-        "notes": ""
-      }
-    ],
-    "linkedinUrl": "https://za.linkedin.com/in/zine-gengana-professional-accountant-sa-319526a1",
-    "primarySource": "https://za.linkedin.com/in/zine-gengana-professional-accountant-sa-319526a1",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/zine-gengana-professional-accountant-sa-319526a1"
-    ],
-    "notes": "SATURC Top 100 rank 74, score 72, tier C — Sourcing lead / verify; Status: Not Contacted"
   },
   {
     "id": "acc-0050",
