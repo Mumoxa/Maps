@@ -1,135 +1,1035 @@
-First Name,Surname,Full Name,Province,City,Current Title,Current Employer,Current Role Family,Current Industry,Sub-Industry,Professionally Qualified,Professional Designation(s),Professional Body/Bodies,CA(SA),PA(SA),AGA(SA),ACCA,FCCA,ACMA,FCMA,CGMA,Articles Status,Articles Body,Articles Employer,Articles Period,Practical Experience Framework,Qualification Route,Academic Qualifications,Years Experience,Group Accounting,Consolidations,Management Accounting,Costing,FP&A,Commercial Finance,Financial Control,Finance Business Partnering,Leadership,Accounting Systems,ERP Systems,Analytics Tools,Sage 300 / ACCPAC,SAP,Oracle,Syspro,Microsoft Dynamics,Current Skills,Historic Industries,Previous Employers,LinkedIn Profile,Qualification Confidence,Overall Confidence,Primary Source,Additional Sources,Date Verified,Notes
-Taryn,Woodbridge,Taryn Woodbridge,,,Chief Financial Officer,Mercedes-Benz South Africa Ltd,Executive Finance,Automotive,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/meet-the-first-south-african-cfo-of-mercedes-benz-sa-taryn-woodbridge-casa,2026-09-18,First South African CFO of MBSA (role previously held by expatriates from Germany). Appointed ~2022. Location not stated in source.
-Mathabo,Makhaya,Mathabo Makhaya,,,Group Financial Manager (Health),Harmony Gold Mining,Group Accounting,Mining,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Mineworkers Provident Fund (MWPF) (Chairperson of Investment Committee),,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/top-35-under-35-overall-winner-2022,2026-09-18,"SAICA Top 35-under-35 overall winner 2022 (aged 32). Also Chairperson of Investment Committee, Mineworkers Provident Fund. Location not explicitly stated (Harmony Gold HQ Randfontein, Gauteng — not asserted as her workplace)."
-Mbali,Mabaso,Mbali Precious Mabaso,,,Audit portfolio manager,Nedbank Group Limited,Audit,Banking,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,,2026-09-18,Also founder of and mentor at Isikhuthazi (programme for CTA students and ITC/APC candidates). Internal vs external audit not established from source.
-Marta,Gerbach,Marta Gerbach,,,Group Chief Financial Officer,Fourways Airconditioning,Executive Finance,Engineering,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/from-portugal-with-love-marta-gerbach-casa,2026-09-18,"SAICA member profile indicates she is based in Porto, Portugal while serving as Group CFO of the SA company Fourways Airconditioning."
-Tumi,Mokgoko,Tumi Mokgoko,,,Not stated in index (current role at KPMG),KPMG,Audit,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,Government; Financial Services,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,,2026-09-18,Career span includes public sector and the JSE; current role at KPMG (title not specified in index).
-Pumla,Molope,Pumla Molope,,,President,African Women Chartered Accountants (AWCA),Executive Finance,Non-Profit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,,2026-09-18,Her mother Nosipho also studied CA(SA) after a science degree.
-Patricia,Malahlela,Patricia Malahlela,,,Senior Accountant,Mckenzie & Associates,Financial Accounting,Accounting / Audit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/the-power-of-starting-over-patricia-malahlela-casa,2026-09-18,"Accounting/audit firm (Mckenzie & Associates). SAICA member feature ""The power of starting over""."
-Ciara,Reintjes,Ciara Reintjes,,,Regional Lead: Northern Region (Strategic Affairs Division),SAICA,Other,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,"KPMG (Windhoek, Namibia)",,,SAICA articles at KPMG Windhoek (Namibia); CA(SA),,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/an-invitation-to-openness-ciara-reintjes-casa,2026-09-18,"Employer is SAICA (professional body). Northern Region covers Gauteng and neighbouring provinces; city not stated. Articles served at KPMG in Windhoek, Namibia (per SAICA regional-executives page). Previously 12 years at IRBA; 4 years at Alexander Forbes (Retirement Funds); joined SAICA 2019, Johannesburg."
-Aneshree,Naidoo,Aneshree Naidoo,,,Chief Financial Officer,Webber Wentzel,Executive Finance,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/you-dont-have-to-be-defined-by-your-circumstances-aneshree-naidoo-casa,2026-09-18,Law firm CFO. Childhood memories near sugar-cane fields (KwaZulu-Natal) — not asserted as current location.
-Romy,Maree,Romy Maree,,,Group Head of Finance,Burstone (Real Estate partners),Group Accounting,Property,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/tribute-to-womens-strength-romy-maree-casa,2026-09-18,Burstone is a JSE-listed real estate (REIT) group. Group Head of Finance.
-Mpolaheng,Mohlopi,Mpolaheng Mohlopi,Gauteng,Lanseria,Chief Financial Officer,Lanseria International Airport,Executive Finance,Aviation,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/soaring-to-success-mpolaheng-mohlopi-casa,2026-09-18,"Led the airport's financial response to Covid-19; ~5 years into recovery at time of profile (2025). Employer location Lanseria, Gauteng."
-Patricia,Stock,Patricia Stock,,,Chief Executive Officer,SAICA,Executive Finance,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/the-power-of-choices-patricia-stock-casa,2026-09-18,First female CEO of SAICA.
-Nonkululeko,Gobodo,Nonkululeko Gobodo,,,Not stated in index (founder / public figure),,Executive Finance,Accounting / Audit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/nonkululeko-gobodo-so-awakened-to-her-true-self,2026-09-18,Historically founder of auditing firm Gobodo Incorporated (first black female CA(SA) in SA); current employer/title not stated in the index snippet. Current employer recorded as null.
-Buhle,Nomabunga,Buhle Hanise Nomabunga,,,Chief Financial Officer,BAIC (South Africa),Executive Finance,Automotive,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/living-her-life-authentically,2026-09-18,President of African Women Chartered Accountants (AWCA) at time of profile (2022). BAIC CFO.
-Zanele,Maduna,Zanele Maduna,,,Not stated in index,,Executive Finance,Non-Profit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/from-profit-to-purpose-zanele-maduna-casa; https://www.saica.org.za/news/how-thuthuka-changed-my-life-zanele-maduna,2026-09-18,Profile focuses on B2B social enterprises / purpose-driven business. Beneficiary of SAICA Thuthuka programme. Employer/title not stated in index.
-Zahid,Fakey,Zahid Fakey,,,Not stated in index,,Other,Non-Profit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/wefeedsa-zahid-and-zahida-fakey,2026-09-18,Coupled profile (#weFEEDsa food-security initiative); specific employer/title not given for each individual.
-Zahida,Fakey,Zahida Fakey,,,Not stated in index,,Other,Non-Profit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/wefeedsa-zahid-and-zahida-fakey,2026-09-18,Coupled profile (#weFEEDsa food-security initiative).
-Esther,Pieterse,Esther Pieterse,,,Not stated in index (technical accounting),,Financial Accounting,,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/at-the-sharp-end-of-technical-accounting-esther-pieterse-casa,2026-09-18,Technical-accounting specialist profile. Employer/title not stated in index snippet.
-Cecelia,Swartz,Cecelia Swartz,,,Not stated in index,,Other,,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/defining-your-destiny-cecelia-swartz-casa,2026-09-18,Profile concerns a handbag/exec-creator venture; accounting employer/title not stated.
-Anisah,Patel,Anisah Patel,Gauteng,Vereeniging,Owner (practice in Vereeniging),Own practice (Vereeniging),Financial Accounting,Accounting / Audit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/microlearnings-from-cassa-over-40,2026-09-18,"Started CA(SA) journey at age 29. Practice located Vereeniging, Gauteng."
-Enrico,Kleinbooi,Enrico Kleinbooi,Western Cape,Ladismith,Head of Internal Audit,Kannaland Municipality,Internal Audit,Government,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/inspiration-hard-work-and-someone-to-believe-in-him-the-secret-to-his-casas-success,2026-09-18,"Thuthuka Bursary beneficiary. Kannaland Municipality is in Ladismith, Western Cape."
-Grant,Greeff,Grant Greeff,,,Chief Financial Officer,Drone Ops Group,Executive Finance,Technology,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/when-passion-and-talent-collide-grant-greeff,2026-09-18,Aged 30 at time of profile (2021). Drones/technology sector.
-Mpho,Makoko-Hottie,Mpho Makoko-Hottie,,,B-BBEE business analyst,,Other,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/my-journey-as-a-trainee-mpho-makoko-hottie,2026-09-18,Employer not named in index snippet.
-Lynette,Badenhorst,Lynette Badenhorst,,,Managing Director,Probeta Training (Pty) Ltd,Executive Finance,Education,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Akhanani Online Training Solutions (Founder),,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/a-microlearning-session-with-entrepreneur-lynette-badenhorst,2026-09-18,Born 1967. Also the brain behind online learning platform Akhanani Online Training Solutions.
-Phumelela,Mbande,Phumelela Mbande,,,Not stated in index,,Financial Accounting,,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-info/meet-our-members/,https://www.saica.org.za/news/south-african-hockey-captain-what-changed-my-game,2026-09-18,SA women's field-hockey goalkeeper/captain; competed at Tokyo 2020 Olympics. Employer not stated in index.
-Vusi,Mpofu,Vusi Mpofu,,,Sector Lead: Mining and Chemicals (Corporate & Investment Banking),Nedbank,Financial Control,Banking,,true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,KPMG,1997 (contract signed June 1997),,,BCom — National University of Lesotho (1997); Diploma in Advanced Banking — University of Johannesburg; MBA — Wits (2010); Executive development programmes — Duke University,25+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,Financial Services,"KPMG (Trainee accountant / articles); Nedbank (Structured finance, then Sector Lead: Mining & Chemicals)",,CONFIRMED,CONFIRMED,https://www.saica.org.za/news/in-a-better-shape-than-you-found-it-vusi-mpofu,https://www.saica.org.za/members/member-info/meet-our-members/,2026-09-18,"Signed ""contract of articles"" in June 1997 and served articles with KPMG; undergraduate degree from National University of Lesotho. MBA (Wits 2010). Practitioner member of ACTSA. Started at Nedbank in structured finance; now heads the Mining and Chemicals sector banking team."
-Kgabiso,Mahlangu,Kgabiso Mahlangu,Gauteng,Pretoria,Financial Accountant,South African State Theatre,Financial Accounting,Other,Arts & culture (public entity),true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,NOT_ESTABLISHED,,,,,,BCom Accounting — University of Johannesburg (2006–2009); Hons BCompt (CTA) — UNISA (2011),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,TCTA (Trans-Caledon Tunnel Authority) (Financial Reporting Accountant); South African State Theatre (Financial Accountant),https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a,https://www.linkedin.com/in/kgabiso-mahlangu-aga-sa-b53a951a/,2026-09-18,"Explicit AGA(SA) designation in LinkedIn headline. Financial accountant at the State Theatre, Pretoria."
-Dumisani,Zulu,Dumisani Zulu,KwaZulu-Natal,Port Shepstone,Financial Manager,Bonakude Consulting (Pty) Ltd,Financial Accounting,Professional Services,,true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,NOT_ESTABLISHED,,,,,,Stellenbosch University/Universiteit Stellenbosch (education listed),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,GRAP / public-sector financial reporting,,,https://www.linkedin.com/in/dumisani-zulu-aga-sa-aimfo-a5a62622,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/dumisani-zulu-aga-sa-aimfo-a5a62622,https://www.linkedin.com/in/dumisani-zulu-aga-sa-aimfo-a5a62622/,2026-09-18,"Self-describes as seasoned Financial Manager, CaseWare, GRAP and financial reporting specialist. AGA(SA) issued Sep 2015 (SAICA) per LinkedIn licenses section. AIMFO = Associate Member, Institute of Municipal Finance Officers."
-Driaan,Beyers,J A 'Driaan' Beyers,Gauteng,Rayton,Professional Accountant (SA) / Tax Practitioner,Finkor Accounting,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,Also Professional Tax Practitioner (SA).
-Malcolm,Coates,Malcolm Cecil Coates,Western Cape,Muizenberg (Cape Town),Professional Accountant (SA) / Tax Practitioner,Alma Casa,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,"Muizenberg, Cape Town. Certified Independent Reviewer (SAIPA)."
-Louwrens,da Silva,Louwrens da Silva,Western Cape,Somerset West,Professional Accountant (SA) / Tax Practitioner,Petrichor Consulting,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,Somerset West; serves clients remotely across South Africa. SARS-registered tax practitioner.
-Adre,Daniel,Adre Daniel,Western Cape,Milnerton (Cape Town),Professional Accountant (SA) / Tax Practitioner,Accu-fin Accounting,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,BCompt,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,"Milnerton, Cape Town practice founded 2005."
-Roelof,Jansen van Vuuren,Roelof Jansen van Vuuren,Gauteng,Pretoria,Professional Accountant (SA) / Tax Practitioner,The Tax Shop Pretoria North East,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,"Pretoria practice; personal/business tax, payroll, statutory submissions. Remote nationwide service."
-Carla,Kilian,Carla Kilian,Gauteng,Roodepoort,Professional Accountant (SA) / Tax Practitioner,AETOS Financial Services,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,"Roodepoort, Gauteng."
-Ross,Thomson,Ross Thomson,KwaZulu-Natal,Winston Park,Professional Accountant (SA) / Tax Practitioner,Collective Accounting,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,"Winston Park, KwaZulu-Natal; country-wide tax compliance/advisory service."
-Quintin,Venter,Quintin Venter,Western Cape,Bellville (Cape Town),Professional Accountant (SA) / Tax Practitioner,Sempre Financial Group,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,"Bellville, Cape Town."
-Hlayisani,Mboweni,Hlayisani Terrent Mboweni,,,Professional Accountant (SA) / Tax Practitioner,Mboweni Accountants,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,Location not stated in directory summary.
-Marco,Wagener,Marco Wagener,,,Professional Accountant (SA) / Tax Practitioner,Excellentia Accounting and Tax Solutions,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://fmjfinancial.co.za/guides/saipa-tax-practitioners/,,2026-09-18,"Founder of Excellentia. Also Professional Tax Practitioner (SA). Serves individuals, businesses, trusts, NPOs (payroll, CIPC)."
-Nkosana,Dlamini,Nkosana Dlamini,Gauteng,Johannesburg,Head of Risk Reporting & Risk Regulatory Advisory,Absa Group,Risk,Banking,,true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,NOT_APPLICABLE,,,,CIMA_PER,,Undergraduate degree in Accounting; Postgraduate degree in financial management (2012),11+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Absa Group (CIMA graduate programme → retail banking → group finance → senior management),,CONFIRMED,CONFIRMED,https://cfo.co.za/articles/absas-nkosana-dlamini-explains-the-value-of-cgma-credentials/,,2026-09-18,"Studied CIMA after a postgraduate financial-management degree (2012). Explicit ACMA, CGMA. CIMA practical experience via Absa graduate programme — recorded as CIMA_PER, not articles."
-Mikateko,Tshetshe,Mikateko Tshetshe,,,Vice President: Finance (Africa),Unilever,Executive Finance,FMCG,,true,FCMA; CGMA,CIMA,false,false,false,false,false,false,true,true,NOT_APPLICABLE,,,,CIMA_PER,,BCom Accounting — University of South Africa (UNISA),20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,Pharmaceuticals,Bayer (Two-year apprenticeship; then six years in accounting roles),,CONFIRMED,CONFIRMED,https://cfo.co.za/articles/you-need-the-right-combination-of-qualifications-experience-and-ambition-to-become-a-cfo/,,2026-09-18,Fellow of CIMA (FCMA). Chose CIMA for recognition of work experience. Location not stated in source.
-Mangaliso,Mithi,Mangaliso Mithi,Gauteng,Johannesburg,Chief Financial Officer (employer not stated in snippet),,Executive Finance,,,true,FCMA; CGMA,CIMA,false,false,false,false,false,false,true,true,NOT_APPLICABLE,,,,CIMA_PER,,MBA,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/mangalisomithi/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/mangalisomithi/,,2026-09-18,"Explicit FCMA, CGMA in LinkedIn headline. Current employer not captured from snippet — requires follow-up."
-Taryn,Raju,Taryn Raju,,,"Not stated (works at ""a very well-known organization"")",,Unknown,,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,Grant Thornton,≈2009–2013 (5-year part-time contract; signed-off after 4 years),,,"Bachelor of Accounting — University of Fort Hare; Honours in Accounting (CTA 1, CTA 2)",10+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Grant Thornton (Trainee accountant (articles) → retained as Audit Supervisor),,CONFIRMED,CONFIRMED,https://thefinancestory.com/success-journey-becoming-ca-saica,,2026-09-18,"Explicit articles: ""I could get my 4 years of articles signed off"" and ""I had completed my articles"" while retained as Audit Supervisor at Grant Thornton. Studied part-time (articles ran 5 years on paper; signed off after 4). Current employer not named beyond ""a very well-known organization""."
-Sandi,De Souza,Sandi De Souza,,,Chief Financial Officer,SAP Africa,Executive Finance,Technology,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,Deloitte,,,,MBA — Henley Business School,20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,SAP,,unknown,true,unknown,unknown,unknown,,Accounting / Audit,Deloitte (Articles); SAP (May 2005: Finance team → Head of License Management → Commercial Director Africa → CFO (May 2022)),,CONFIRMED,CONFIRMED,https://www.sap.com/africa/about/management-team.html,,2026-09-18,"Explicit: ""Sandi completed her articles at Deloitte before joining SAP."" SAP is her employer (software vendor) — recorded as employer_systems_observed, not claimed personal hands-on SAP module usage beyond her SAP leadership roles."
-Illana,Helman,Illana Helman,Gauteng,Johannesburg,Senior Finance Business Partner - Group Information Technology,Massmart,Finance Business Partnering,Retail,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,19+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,SAP,,unknown,true,unknown,unknown,unknown,SAP ERP finance operations; operational / shared-services finance; process transformation & automation; team management,Banking; Financial Services; FMCG,Audit (firm not named) (Audit); One of the largest consumer goods businesses in Africa (Commercial finance),https://www.linkedin.com/in/illana-helman-ca-sa-1279b117/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/illana-helman-ca-sa-1279b117/,,2026-09-18,"SAP evidence is person-level: LinkedIn describes managing backoffice/POS interfaces into SAP ERP and SAP-posted sales. Retail, banking, financial services, card acquiring background."
-Polani,Sokombela,Polani Sokombela,,,Chief Financial Officer,Auditor-General of South Africa (AGSA),Executive Finance,Government,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,TRAINING_CONTRACT_CONFIRMED,SAICA,Auditor-General of South Africa (AGSA),from 2007,,,,15+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Auditor-General of South Africa (Trainee accountant (2007) → CFO (March 2022)),,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-public-sector-polani-sokombela/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,"Grew up in Tsolo, Eastern Cape (origin, not current location). Source states ""trainee accountant"" at AGSA (a registered SAICA training office) — recorded as SAICA training contract; the word ""articles"" is not used verbatim."
-Kerry,Cassel,Kerry Cassel,,,Chief Executive Officer,Motus Mobility Solutions,Executive Finance,Automotive,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,BCom (Accountancy),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-women-in-motoring-it-is-not-a-mans-world-after-all/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,CEO of Motus automotive group; accounting was a favourite school subject.
-Jody,Baumgarten,Jody Baumgarten,,,Chief Financial Officer,Wonga (South Africa),Executive Finance,Fintech,,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,CONFIRMED_EXPLICIT,SAICA,PwC,,,,,20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,PwC (Articles); Dubai World Holdings (Not stated); Wonga South Africa (CFO (co-owner from 2019)),,HIGH,HIGH,https://www.accountancysa.org.za/profile-jody-baumgarten/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Explicit PwC articles. In 2019 bought Wonga South Africa with two colleagues.
-Masechaba,Sesing,Masechaba Sesing,Free State,Bloemfontein,Head of Department,Free State Provincial Treasury,Financial Control,Government,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-masechaba-sesing-doing-her-best-to-enhance-strong-ethics-and-morals/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Free State Provincial Treasury is based in Bloemfontein. Public-sector provincial treasury.
-Zinhle,Simamane,Zinhle Simamane,,,Chief Financial Officer – International Business,Traxtion,Executive Finance,Logistics,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-zinhle-simaman-stay-focused-and-you-can-achieve-anything/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Freight and rail (Traxtion). No prior rail experience before the role (per profile).
-Zine,Mshengu,Zine Mshengu,,,Not stated in snippet (regulatory),,Other,Government,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-zine-mshengu-taking-the-technical-route-less-travelled/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Articles route referenced (firm not named in snippet). Works in regulatory space; employer not named in snippet.
-Bonga,Mokoena,Bonga Mokoena,Gauteng,Johannesburg,Chief Executive Officer,BDO South Africa,Executive Finance,Accounting / Audit,"Audit, tax & advisory network",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,"CA(SA); internal audit (Nedcor, Metrorail, Transnet) → Old Mutual → BDO CEO",BCom — University of the Witwatersrand; Hons BCompt / CTA — UNISA; Master's of Business Leadership — UNISA SBL; LLB — UNISA,20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,Financial Services,Nedcor Bank Limited (Internal auditor); Metrorail / Transnet (Internal auditor); Old Mutual (Corporate Division) (Industry leader / senior roles); BDO South Africa (Chief Executive Officer),,CONFIRMED,CONFIRMED,https://www.bdo.co.za/en-za/our-people/bonga-mokoena,https://www.accountancysa.org.za/profile-bonga-mokoena-an-unconventional-approach/; https://www.accountancysa.org.za/casa-profiles/; https://corporatenetwork.glueup.com/event/60747/,2026-09-18,Merged duplicate record. Deputy Chair of SAICA Senior Partners' Forum; non-executive member of SAICA National Council; BLSA board member. Session-1 provenance: Accountancy SA CA(SA) profile.
-Bianca,Roos,Bianca Roos,,,Partner,PKF Octagon,External Audit,Accounting / Audit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-bianca-roos-determined-to-live-her-best-life/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Help-establish-a-firm route: joined/helped establish PKF Octagon.
-Darren,Isaacs,Darren Isaacs,,,Founder & CEO,Makosi,Executive Finance,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-darren-isaacs-makosi-disrupting-the-industry-to-change-the-world/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,"Makosi provides resourcing to accounting firms; SA origin, US/UK operations from 2005."
-Koko,Khumalo,Koko Khumalo,,,CEO & Founding Partner,Motlanalo Chartered Accountants and Auditors Inc,External Audit,Accounting / Audit,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-koko-khumalo-paving-the-way-to-new-heights/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Black-women-owned audit firm (Motlanalo Inc).
-Vukosi,Fungeni,Vukosi Fungeni,,,Not stated in snippet,,Analytics / Systems Finance,Technology,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-vukosi-fungeni-using-connected-data-analytics-to-drive-stakeholder-value/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,"Grew up in Malamulele, Limpopo (origin). Profile title: connected data analytics to drive stakeholder value."
-Mabatho,Sedikela,Mabatho Sedikela,,,Public-sector leader (AGSA),Auditor-General of South Africa (AGSA),External Audit,Government,,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://www.accountancysa.org.za/profile-mabatho-sedikela-a-transformational-public-sector-leader/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,AGSA association per profile imagery (AGSA-00048.jpg). Limpopo origin. Designation not literal in snippet — HIGH.
-Rachelle,Best,Rachelle Best,,,Founder (FYI play app),,Other,Technology,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-rachelle-best-when-purpose-and-love-collide-great-things-happen/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Former business consultant; founder of FYI play app.
-Katlego,Matshego,Katlego Matshego,,,"Deputy Head, School of Finance and Accounting",Independent Institute of Education (IIE) Varsity College / MSA,Other,Education,,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://www.accountancysa.org.za/profile-katlego-matshego-pursuing-a-passion-for-teaching/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Education role. Designation not literal in snippet — HIGH.
-Naledi,Liphapang,Naledi Liphapang,,,Not stated in snippet,,Other,Government,,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://www.accountancysa.org.za/profile-naledi-liphapang-unlocking-the-value-of-digitalisation-in-the-public-sector/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Public-sector digitalisation advocate. SAICA-affiliated imagery (SAICA-2.jpg). Designation not literal in snippet — HIGH.
-Thenashree,Naidoo,Thenashree Naidoo,KwaZulu-Natal,Durban,Finance leader (Durban ICC),Durban ICC,Executive Finance,Hospitality,,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://www.accountancysa.org.za/profile-dynamic-duo/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Durban International Convention Centre financial recovery. Second CA(SA) name not captured from snippet — follow-up needed.
-Siphesihle,Mlangeni,Siphesihle Mlangeni,,,Not stated in snippet,,Financial Accounting,,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-figuring-it-out-together/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Coupled profile. Employer not stated in snippet.
-Jabulile,Nyathi,Jabulile Nyathi,,,Not stated in snippet,,Financial Accounting,,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/profile-figuring-it-out-together/,https://www.accountancysa.org.za/casa-profiles/,2026-09-18,Coupled profile. Employer not stated in snippet.
-Mpho,Mookapele,Mpho Mookapele,,,Chief Executive Officer,Energy and Water Sector Education and Training Authority (EWSETA),Executive Finance,Government,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,14+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,Government,Energy and Water SETA (EWSETA) (CFO (2017) → Acting CEO (2018) → CEO (2020)),,CONFIRMED,CONFIRMED,https://charteredaccountantsworldwide.com/institute/the-south-african-institute-of-chartered-accountants/,,2026-09-18,SAICA Top-35-under-35 2019 overall winner. SETA = Sector Education and Training Authority.
-Chwayita,Mtebele,Chwayita Mtebele,,,Head of Department: Investment Providers,Financial Sector Conduct Authority (FSCA),Financial Control,Government,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,BCom Accounting — University of Fort Hare; CTA — UNISA,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/casa-profiles/,https://www.accountancysa.org.za/profile-chanelle-nandlal-a-second-stint-in-london/,2026-09-18,Market-conduct regulator (FSCA). From search snippet of ASA CA(SA) profiles page.
-Zizipho,Nyanga,Zizipho Nyanga,,,Chief Executive Officer,Masisizane Fund (Old Mutual),Executive Finance,Financial Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,Financial Services,,,CONFIRMED,CONFIRMED,https://www.accountancysa.org.za/casa-profiles/,,2026-09-18,"Hails from Mthatha, Eastern Cape (origin). Appointed CEO of Old Mutual's Masisizane Fund (Oct 2016 per snippet)."
-Manenzhe,Manenzhe,Manenzhe Manenzhe,Gauteng,,ACCA South Africa council member (role/employer inferred),ACCA (South Africa),Professional body,Professional Services,,true,FCCA,ACCA,false,false,false,false,true,false,false,false,NOT_APPLICABLE,,,,ACCA_PER,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/manenzhe-manenzhe-fcca-a80079150/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/manenzhe-manenzhe-fcca-a80079150/,,2026-09-18,"FCCA credential (ID 0661296). Activity text indicates leadership of ACCA accreditation in SA and IRBA/ACCA engagement; current employer recorded as ACCA (South Africa) — INFERRED from LinkedIn activity, flag for verification. ACCA_PER assumed per full FCCA membership."
-Vijedharsan,Vijendranath,Vijedharsan Vijendranath,Gauteng,Johannesburg,SOX Internal Auditor (Manager level),,Internal Audit,Financial Services,,true,FCCA,ACCA,false,false,false,false,true,false,false,false,NOT_APPLICABLE,,,,ACCA_PER,,BCompt Hons Accounting Sciences — UNISA (2011); BCom (Accounting) — University of Pretoria (2006),10+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,Automotive; Transport; Professional Services,Calculus Chartered Accountants and Registered Auditors (Consulting Manager); Lonrho Africa Holdings (Internal Audit); Car Track / Hudaco (divisions) (Senior Internal Auditor); Audit Jet (Pty) Ltd (Manager: SOX Internal Audit (contract)); Not named in CV (SOX Internal Auditor),https://www.linkedin.com/in/vijedharsan-vijendranath-fcca-uk-6118b1103/,CONFIRMED,CONFIRMED,https://www.postjobfree.com/resume/aeheo9/experienced-internal-with-johannesburg,,2026-09-18,10+ years internal audit. FCCA (UK) per LinkedIn slug; ACCA membership (UK) 2015 per CV. Studying CIA challenge exam (2025/26). Current employer not named for the April 2025 appointment.
-Tariro,Mutizwa,Tariro Mutizwa,,,Vice President – Africa,AICPA & CIMA (CIMA Africa),Executive Finance,Professional Services,,true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,NOT_APPLICABLE,,,,CIMA_PER,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.aicpa-cima.com/news/article/new-generation-of-south-african-accounting-and-finance-professionals-receive,https://pressportal.co.za/business-and-economy/story/sxcx4y2oot3gbjnyvj1a-20250624.html,2026-09-18,"CIMA VP Africa; spoke at the Johannesburg CGMA convocation (June 2025). Explicit ACMA, CGMA."
-Christiaan,Vorster,Christiaan Vorster,Western Cape,Cape Town,SAICA Regional Executive: Southern Region (Western Cape & Eastern Cape),SAICA,Other,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,Deloitte (Pretoria),,,,Stellenbosch University (undergraduate); UJ (CTA),20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,"Business Growth Africa / Galileo Capital / SCMB (Corporate financial management (valuations, advisory)); UCT / UP (Lecturer (strategy, planning, investment appraisal)); Deloitte (Pretoria) (Articles)",,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,,2026-09-18,"Explicit: ""did his articles at Deloitte Pretoria."" Stellenbosch (undergraduate), UJ (CTA). Joined SAICA 2014."
-Naeem,Asvat,Naeem Asvat,KwaZulu-Natal,Durban,SAICA Regional Executive: Eastern Region (KwaZulu-Natal),SAICA,Other,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,KPMG (Senior Manager: Accounting Advisory Services (Durban) + Manchester secondment); listed cellular associate (CFO (appointed)),,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,,2026-09-18,"Prior roles: senior manager, KPMG Accounting Advisory Services (Durban); KPMG Manchester secondment. No explicit articles statement on page."
-Div,Lamprecht,Div Lamprecht,Free State,Bloemfontein,"SAICA Regional Executive: Central Region (Free State, Northern Cape & North West)",SAICA,Other,Professional Services,,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,PwC Bloemfontein,,,,,20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,PwC Bloemfontein (Articles); Absa Consultants & Actuaries (Manager of the Year 2002),,CONFIRMED,CONFIRMED,https://www.saica.org.za/members/member-networks/regional-representation/regional-executives/,,2026-09-18,"Explicit: ""he completed his articles at PwC Bloemfontein"" (agricultural, financial services, retail clients). Signed: region office based in Bloemfontein. Joined SAICA 2005; prior Absa Consultants & Actuaries (4 years)."
-Lesetja,Kwetepane,Lesetja Kwetepane,Limpopo,Polokwane,Professional Accountant (SA),LA Financial Services (Pty) Ltd,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,National Diploma: Accounting; B Tech: Corporate Administration; MBA; Chartered Company Secretary – ACIS (CSSA),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH,https://lkwetepane.findanaccountant.co.za/,,2026-09-18,SAIPA 35510. Polokwane (Limpopo). Third-party directory listing (findanaccountant.co.za). RPL/learnership route not stated.
-Alexis,Sacks,Alexis Sacks,Western Cape,Cape Town,Joint Managing Director,Streets Chartered Accountants (Cape Town),Executive Finance,Accounting / Audit,Chartered accountants & auditors,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,BCom,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.streets.uk/our-offices/cape-town-south-africa/,,2026-09-18,"Joint MD of Streets' Cape Town office (formerly MD Accountants & Auditors, rebranded MD Streets Jan 2026)."
-Dave,Rich,Dave Rich,Western Cape,Cape Town,Joint Managing Director,Streets Chartered Accountants (Cape Town),Executive Finance,Accounting / Audit,Chartered accountants & auditors,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,BCom,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.streets.uk/our-offices/cape-town-south-africa/,,2026-09-18,Joint MD of Streets' Cape Town office.
-Fatima,Bapukee,Fatima Bapukee,Western Cape,Cape Town,Director,Streets Chartered Accountants (Cape Town),Financial Accounting,Accounting / Audit,Chartered accountants & auditors,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,PG Dip (Tax),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.streets.uk/our-offices/cape-town-south-africa/,,2026-09-18,Director; tax specialisation per PG Dip (Tax).
-Uwe,Birkenstock,Uwe Birkenstock,Western Cape,Durbanville,Director,McA Durbanville Inc.,External Audit,Accounting / Audit,Auditing & tax practice,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://mca-acc.co.za/,,2026-09-18,McA Durbanville Inc. auditing & tax director.
-Juan,Spies,Juan Spies,Western Cape,Durbanville,Director,McA Durbanville Inc.,External Audit,Accounting / Audit,Auditing & tax practice,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://mca-acc.co.za/,,2026-09-18,McA Durbanville Inc. auditing & tax director.
-Lézanne,Dirkse van Schalkwyk,Lézanne Dirkse van Schalkwyk,Western Cape,Durbanville,Accounting Manager,McA Inc.,Financial Accounting,Accounting / Audit,Accounting & tax practice,true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://mca-acc.co.za/,,2026-09-18,McA Inc. (Durbanville) accounting manager.
-Justin,Stohr,Justin Stohr,Western Cape,Cape Town,Director,McA Accounting & Tax Services Inc.,Financial Accounting,Accounting / Audit,Accounting & tax practice,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://mca-acc.co.za/,,2026-09-18,"SAIPA-designate director; PA(SA) inferred from 'SAIPA' credential (firm team page, not a membership register)."
-Trevor,McLachlan,Trevor McLachlan,Western Cape,Cape Town,Founder and Executive Consultant,McA Inc.,Financial Accounting,Accounting / Audit,Accounting & tax practice,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://mca-acc.co.za/,,2026-09-18,"Founder of McA Inc. (est. 1994, Cape Town); PA(SA) inferred from 'SAIPA' credential."
-Ashley,Hanekom,Ashley Hanekom,Western Cape,Cape Town,Finance leader,Superside,Other,Technology,Design subscription / creative services,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,University of Cape Town,10+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/ashleyhanekom/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/ashleyhanekom/,,2026-09-18,CA(SA) issued Dec 2015. Superside: remote-first design-subscription company with SA (Cape Town) finance base.
-Neil,Fourie,Neil Fourie,Western Cape,Stellenbosch,Senior Accountant,Brenn-O-Kem,Financial Accounting,Manufacturing,Wine spirits & ethanol producer,true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,PwC,Jan 2016 – Jan 2021,,"SAICA articles at PwC (2016–2021), then AGA(SA)",Stellenbosch University (BAcc/BCom; inferred — profile lists SAICA academic route),8+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,PwC (Trainee Accountant (SAICA articles)); LCL Logistics (Senior Accountant); Brenn-O-Kem (Senior Accountant (group of companies)),https://www.linkedin.com/in/neil-fourie-aga-sa-2a125b204/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/neil-fourie-aga-sa-2a125b204/,,2026-09-18,Brenn-O-Kem: wine-spirits/ethanol producer (Stellenbosch/Worcester region); 'Senior Accountant at group of companies' per profile.
-Lian,du Plessis,Lian du Plessis,Western Cape,Cape Town,Manager: Finance and Group Services,Cape Chamber of Commerce & Industry,Financial Control,Non-Profit,Business chamber,true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/lian-du-plessis-aga-sa-177375149/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/lian-du-plessis-aga-sa-177375149/,,2026-09-18,Finance & Group Services manager at the Cape Chamber.
-Nastassja,Nel,Nastassja Nel,Western Cape,Cape Town,Accountant,Schoemans Registered Auditors and Chartered Accountants,Financial Accounting,Accounting / Audit,Registered auditors,true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,CONFIRMED_EXPLICIT,UNKNOWN (articles employer not named),,completed 2017,,Articles (2017) + honours + AGA(SA) registration at SAICA,BCom Accounting — UNISA (2014–2015); Postgraduate Accounting — UNISA (2016–2018),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,One Percent Accounting and Auditing (Director); Schoemans Registered Auditors and Chartered Accountants (Accountant),https://www.linkedin.com/in/nastassja-nel-71a15364/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/nastassja-nel-71a15364/,,2026-09-18,Explicit articles completion (2017) per profile; articles firm not named. AGA(SA) registered at SAICA.
-Ashley,Du Plessis,Ashley Du Plessis,Western Cape,Paarl,Accountant,,Financial Accounting,,,true,AGA(SA),SAICA,false,false,true,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,"AGA(SA) (SAICA), Feb 2023",BCompt (Financial Accounting),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,"Not disclosed (masked employer, Paarl) (Finance role); Not disclosed (masked employer, Polokwane) (Finance role)",https://www.linkedin.com/in/ashley-du-plessis-ba99a716b/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/ashley-du-plessis-ba99a716b/,,2026-09-18,Current employer masked in public snippet; prior roles in Paarl (Western Cape) and Polokwane (Limpopo).
-Mark,Augustine,Mark Augustine,Western Cape,,Professional Accountant (SA),Pinnacle Accounting,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,BCom (Accounting),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://mtn.sageone.co.za/find-an-accountant,,2026-09-18,Sage One 'find an accountant' directory — Western Cape practice; SARS tax practitioner.
-Alana,Johns,Alana Johns,Western Cape,,Professional Accountant and Tax Practitioner,,Financial Accounting,Accounting / Audit,,true,PA(SA),SAIPA,unknown,true,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://vox.sageone.co.za/find-an-accountant,,2026-09-18,Sage One 'find an accountant' directory — Western Cape; SAIPA + SARS registered.
-Alan,Robbins,Alan Robbins,Western Cape,Cape Town,Accounting Director,Sable International,Financial Accounting,Professional Services,"FX, migration & accounting",false,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,CONFIRMED_EXPLICIT,UNKNOWN (body not stated),,before 2003,,Articles completed in Cape Town (firm/body not named); audit manager; UK secondment; returned to Cape Town,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Quotient Financial (UK) (Client accountant); Interserve PLC (UK) (Internal auditor); Quotient / Sable International (Cape Town) (Client manager → Accounting Director),,UNVERIFIED,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED,https://www.sableinternational.com/about-us/meet-the-team/accounting-team,,2026-09-18,"Designation NOT stated in source — retained in articles-confirmed/designation-unverified population, NOT the main qualified count."
-Peet,van der Merwe,Peet van der Merwe,Free State,Bloemfontein,Partner / Director,Forvis Mazars in South Africa,External Audit,Accounting / Audit,International audit network,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,University of the Free State,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/peet-van-der-merwe-ca-sa-ra-8320b7a6/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/peet-van-der-merwe-ca-sa-ra-8320b7a6/,,2026-09-18,CA(SA) + Registered Auditor (RA).
-Lynette,Roeloffze,Lynette Roeloffze,Gauteng,Johannesburg,Senior Manager — Audit,Forvis Mazars Group,External Audit,Accounting / Audit,International audit network,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,North-West University,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/lynette-roeloffze-ca-sa-ra-0637aa13/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/lynette-roeloffze-ca-sa-ra-0637aa13/,,2026-09-18,CA(SA) + Registered Auditor (RA); member of SAICA and IRBA.
-Vincent,Motholo,Vincent Motholo,Western Cape,Cape Town,Chief Financial Officer,University of Cape Town,Executive Finance,Education,Tertiary education,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,Stanford University Graduate School of Business (executive education),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/vincent-motholo-ca-sa-842b7613/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/vincent-motholo-ca-sa-842b7613/,,2026-09-18,CFO of UCT and SAICA Board Chairman.
-Louis,de Wet,Louis de Wet,Western Cape,Stellenbosch,Chief Financial Officer,TradeOn SA,Executive Finance,Retail,KFC franchisee (QSR),true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,PwC South Africa,Jan 2011 – Dec 2013,,SAICA articles at PwC Cape Town (2011–2013) → CA(SA) → CFO,Stellenbosch University (2006–2010),10+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,PwC South Africa (Chartered Accountant Trainee (SAICA articles)); Niveus Investments Limited (Financial Manager / Business Head / Operations Manager); Stonehage Fleming (Relationship Manager — Family Office); Private (family-office consulting) (Financial Consultant); TradeOn SA (Chief Financial Officer (CFO)),https://www.linkedin.com/in/louisdewetza/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/louisdewetza/,,2026-09-18,TradeOn SA: KFC franchisee with footprint in four provinces.
-Adriaan,de Lange,Adriaan de Lange,Western Cape,Cape Town,Executive Leader (CEO / COO / CFO roles),Adriaan de Lange Advisory (Private Capacity),Executive Finance,Manufacturing,"Manufacturing, agri-tech & industrial",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,South African Institute of Chartered Accountants (SAICA),20+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/a3aandl/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/a3aandl/,,2026-09-18,"Executive leader across agribusiness, chemicals, fertiliser, industrial sectors; multi-country Africa exposure."
-Vanessa,Rheeder,Vanessa Rheeder,Western Cape,Cape Town,Fractional CFO,The Modern CFO,Executive Finance,Professional Services,Fractional CFO / advisory,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,Wharton Online,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/vanessa-rheeder-ca-sa/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/vanessa-rheeder-ca-sa/,,2026-09-18,Fractional CFO for founder-led and growth-stage businesses (The Modern CFO).
-Nethin,Karamchand,Nethin Karamchand,Western Cape,Cape Town,Finance leader,Deloitte (South Africa),Other,Professional Services,Audit & advisory (Big Four),true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,University of Cape Town,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/nethin/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/nethin/,,2026-09-18,"Deloitte, Cape Town; prior London (UK) Big Four / financial-services roles."
-Bronvin,Heuvel,Bronvin Heuvel,Western Cape,Cape Town,(KPMG professional) — role not stated,KPMG (South Africa),External Audit,Accounting / Audit,Big Four audit,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,University of the Western Cape,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/bronvin-heuvel-ca-sa-ra-7b2475a9/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/bronvin-heuvel-ca-sa-ra-7b2475a9/,,2026-09-18,"CA(SA) + Registered Auditor (RA), KPMG Cape Town."
-Morgan,Gregory,Morgan Gregory,Western Cape,Cape Town,Chief Financial Officer,MK Aerospace SA,Executive Finance,Technology,Aerospace / engineering,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,ASL,Feb 2016 – Dec 2018,,"SAICA articles at ASL (Somerset West, 2016–2018) → CA(SA) → CFO",Stellenbosch University — Bachelor's (Accounting & Finance) 2010–2015; UNISA — Postgraduate Diploma in Advanced Accounting Sciences 2016–2017,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,ASL (Trainee Accountant (SAICA articles)); ASL Advisory (Accounting Consultant); MK Aerospace SA (Chief Financial Officer),https://www.linkedin.com/in/morgan-gregory-ca-sa-64046117b/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/morgan-gregory-ca-sa-64046117b/,,2026-09-18,CFO of MK Aerospace SA.
-Chrizelda,Visser,Chrizelda Visser,Western Cape,Cape Town,Group Financial Manager,Curated Beverages Ltd,Financial Control,FMCG,Beverages,true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,NOT_APPLICABLE,,,,CIMA_PER,"CIMA qualification + practical experience → ACMA/CGMA (registered with CIMA, Oct 2015)",,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/chrizelda-visser-acma-cgma-3671b454/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/chrizelda-visser-acma-cgma-3671b454/,,2026-09-18,ACMA/CGMA; CIMA PER framework (no training contract).
-Kyle,Danster,Kyle Danster,Western Cape,Cape Town,Finance (reporting & forecasting),Curro Holdings Ltd,Financial Control,Education,Private education,true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,NOT_APPLICABLE,,,,CIMA_PER,CIMA qualification → ACMA/CGMA,CIMA (Chartered Institute of Management Accountants),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/kyle-danster/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/kyle-danster/,,2026-09-18,Reporting & forecasting role at Curro Holdings; CIMA A* programme member.
-Anton,van Niekerk,Anton van Niekerk,Western Cape,Cape Town,Finance Director,Snapplify,Executive Finance,Technology,EdTech,true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,NOT_APPLICABLE,,,,CIMA_PER,CIMA qualification → ACMA (CGMA designation accompanies CIMA membership),CIMA (to 2008),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/anton-van-niekerk-acma-b7503b87/,,2026-09-18,"Finance Director, Snapplify (EdTech, Cape Town)."
-Adrian,Smith,Adrian Smith,Western Cape,Cape Town,Head of Finance,Bounty Apparel,Financial Control,Manufacturing,Apparel / FMCG (Bounty Brands),true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,NOT_APPLICABLE,,,,CIMA_PER,CIMA qualification → ACMA/CGMA,The Chartered Institute of Management Accountants (CIMA),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/adrian-smith-acma-cgma-30942b59/,,2026-09-18,"Head of Finance, Bounty Apparel (Bounty Brands), Cape Town."
-Luke,Woodhouse,Luke Woodhouse,Gauteng,Johannesburg,Chief Financial Officer,GUUD GLOBAL,Executive Finance,Technology,Trade-tech / digital trade platforms,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,The South African Institute of Chartered Accountants (SAICA),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/luke-woodhouse-ca-sa-b31a0149/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/luke-woodhouse-ca-sa-b31a0149/,,2026-09-18,Profile location Johannesburg; employer GUUD GLOBAL is based City of Cape Town.
-Elmarie,Swanepoel,Elmarie Swanepoel,Western Cape,Stellenbosch,Faculty Member (Department of Accountancy),Stellenbosch University,Other,Education,Tertiary education,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://www.researchgate.net/profile/Elmarie-Swanepoel,,2026-09-18,Stellenbosch University Accountancy faculty. CA(SA) designation per LinkedIn headline (full profile not captured).
-Ralph,Buddle,Ralph Buddle,Western Cape,Cape Town,Executive Director | Chief Financial Officer,TFG Limited (The Foschini Group),Executive Finance,Retail,Clothing/footwear/omnichannel retail,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,"CA(SA); joined TFG Sep 2023, CFO from Apr 2024",,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Woolworths Holdings Limited (Director of Strategy & Business Development); Oceana Group Limited (Interim CFO); TFG Limited (Executive Director & CFO),,CONFIRMED,CONFIRMED,https://tfglimited.co.za/our-brands/,,2026-09-18,TFG CFO; member of Risk and Finance Committees.
-Graham,Davin,Graham Davin,,,Lead Independent Director,TFG Limited (The Foschini Group),Other,Retail,Clothing/footwear/omnichannel retail,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,Arthur Andersen,pre-1990s,,CA(SA) — articled/trained at Arthur Andersen (Johannesburg),BCom; BAcc; MBA (UCT),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://tfglimited.co.za/our-brands/,,2026-09-18,Career banker; Deputy Chair of United Trust Bank (UK). Residence not disclosed — location left UNCONFIRMED (TFG HQ is Cape Town).
-Jan,Potgieter,Jan Potgieter,,,Non-executive Director,TFG Limited (The Foschini Group),Other,Retail,Clothing/footwear/omnichannel retail,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://tfglimited.co.za/our-brands/,,2026-09-18,"Source states ""chartered accountant"" (designation letters ""CA(SA)"" not literally quoted) — HIGH_CONFIDENCE. Ex-CEO Italtile; former SABMiller senior financial roles."
-Owen,van Tonder,Owen van Tonder,Western Cape,Cape Town,"Chief Financial Officer — Fashion, Beauty and Home",Woolworths Holdings Ltd,Executive Finance,Retail,Premium food & apparel retail,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,Babson Executive Education (Boston),18+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,"Woolworths (Head of Finance — Africa; Planning & Performance Analyst (Supply Chain/Global Sourcing); Franchise Billing Manager); Woolworths (CFO Fashion, Beauty and Home)",https://www.linkedin.com/in/owen-van-tonder-ca-sa-a8482131/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/owen-van-tonder-ca-sa-a8482131/,https://theorg.com/org/woolworths/org-chart/owen-van-tonder-ca,2026-09-18,"18+ years at Woolworths; CFO of Fashion, Beauty & Home since Sep 2015."
-Zaid,Manjra,Zaid Manjra,Western Cape,Cape Town,Group Chief Financial Officer / Finance Director,Woolworths Holdings Ltd,Executive Finance,Retail,Premium food & apparel retail,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA),,30+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Woolworths Holdings Ltd (Senior finance leadership roles (15 years)); Woolworths Holdings Ltd (Group CFO / Finance Director),,CONFIRMED,CONFIRMED,https://www.businessday.co.za/bd/companies/retail-and-consumer/2023-11-21-woolworths-names-zaid-manjra-as-cfo/,https://cfo.co.za/articles/fd-zaid-manjra-proud-to-be-part-of-woolworths-new-leadership-team/,2026-09-18,"Interim FD from July 2023; permanent CFO from 1 Dec 2023; member of Woolworths treasury, risk/IT committees."
-Edburg,Strauss,Edburg Strauss,Gauteng,Pretoria,Managing Director,netCFO,Executive Finance,Accounting / Audit,Outsourced / virtual CFO services,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,University of Pretoria,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,JTC Chartered Accountants (Chartered accountant); netCFO (Managing Director),https://www.linkedin.com/in/edburg-strauss/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/edburg-strauss/,,2026-09-18,netCFO uses Xero for client accounting (employer-level system observation); CA(SA) registration completion announced on LinkedIn.
-Kobus,Boshoff,Kobus Boshoff,Western Cape,Somerset West,Managing Director (founder),Boshoff Knoetze Chartered Accountants,Executive Finance,Accounting / Audit,Chartered accountants (family firm),true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) issued Jun 1982,Stellenbosch University; University of South Africa (UNISA),35+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Intercontinental Breweries (Johannesburg) (Group accountant); Trust Bank (Management information division (Head Office)); Searles Industrials Ltd (Group accountant); Great Brak Sawmills / Outiniqua Creosote Poles / Southern Volkswagen (Managing director); Kobus Boshoff and Associates (Mossel Bay) (Founder (accounting & auditing firm)); Boshoff Knoetze (Somerset West) (Managing Director),https://www.linkedin.com/in/kobus-boshoff-0a510888/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/kobus-boshoff-0a510888/,https://www.kbgen.co.za/about-accounting,2026-09-18,Founded Kobus Boshoff and Associates (Mossel Bay) 1985; sold share of Boshoff Visser Inc; founded Boshoff Knoetze 2017 with his children.
-Emma,Pardoe,Emma Pardoe,Western Cape,Somerset West,Chartered Accountant & Registered Auditor (principal),Emma Pardoe Chartered Accountants (SA),External Audit,Accounting / Audit,Chartered accountants & registered auditors,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/emmapardoe/,CONFIRMED,CONFIRMED,https://www.facebook.com/EmmaPardoeCA/,https://brabys.com/south-africa/somerset-west/verified-business/emma-pardoe-chartered-accountants-sa/connect,2026-09-18,Registered Auditor (RA) + CA(SA); firm established 2000. Principal/namesake.
-Johan,Coetzee,Johan Coetzee,Western Cape,Somerset West,Principal,Callidus Accountants,External Audit,Accounting / Audit,Accounting firm,true,CA(SA),SAICA,true,unknown,unknown,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,"Rand Afrikaans University (RAU), 1988",unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://shopbiz.co.za/western-cape/somerset-west/accountants/,,2026-09-18,"IRBA Registered Auditor (RA) status implies CA(SA); source is a third-party directory, so designation held at HIGH_CONFIDENCE."
-Willem,Theron,Willem Theron,,,Non-executive Chairman,PSG Konsult Ltd (PSG Financial Services),Other,Financial Services,"Wealth, asset management & insurance",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,"BCompt (Hons), CA(SA); founded Theron du Plessis (Middelburg, 1976); co-founded PSG 1998",BCompt (Hons),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Theron du Plessis (Founder (chartered accountancy firm)); PSG Financial Services / PSG Konsult Ltd (CEO (1998–2013) → Non-executive Chairman),,CONFIRMED,CONFIRMED,http://download.psg.co.za/files/investor-relations/financial-information/PSG-Konsult-Ltd-Integrated-Report-FY-2015.pdf,,2026-09-18,Founder of PSG Financial Services and Theron du Plessis; personal location not stated (PSG group HQ Stellenbosch) — province left unconfirmed.
-André,Du Plessis,André Du Plessis,Western Cape,Stellenbosch,Senior Director,LDP Chartered Accountants and Auditors Inc.,Executive Finance,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) (1987); co-founder Loubser du Plessis (1991) → senior director LDP,University of the Free State (1984),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,"Co-founder of Loubser du Plessis Auditors (1991); senior director of multi-disciplinary LDP group; specialises in management advice, wealth management, taxation."
-Iaan,Marx,Iaan Marx,Western Cape,Stellenbosch,Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) (1999); Registered Auditor,University of Stellenbosch (1996); UNISA (1998),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,"Specialises in audit & business advisory: manufacturing, construction, property development, retail, transport, private equity, professional services."
-Francois,Joubert,Francois Joubert,Western Cape,Stellenbosch,Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) (1998); Registered Auditor,University of Stellenbosch (1995),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,"Specialises in auditing/accounting/consulting for wine farms, construction and retail companies."
-Johann,van Rensburg,Johann van Rensburg,Western Cape,Stellenbosch,Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) (2008); Registered Auditor,University of Stellenbosch (2005),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,"Specialises in audit, accounting, valuations and corporate finance for SMMEs."
-Jana,Goosen,Jana Goosen,Western Cape,Stellenbosch,Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) (2008); Registered Auditor,University of Stellenbosch (2001),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,Specialises in audits of large private groups; advanced B-BBEE consulting experience.
-Willene,van Zyl,Willene van Zyl,Western Cape,Stellenbosch,Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) (2012); Registered Auditor,University of Stellenbosch (2007),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,Specialises in property and agricultural sectors.
-Emile,de Villiers,Emile de Villiers,Western Cape,Stellenbosch,Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,Medium-sized audit firm (Cape Town),before 2014,,BAcc(Hons) → articles (Cape Town) → CA(SA) 2014 → RA 2025,"Stellenbosch University — BAcc (Hons), 2011",unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,"Group (EMEA) (Financial Reporter, Group Financial Controller, CFO); LDP (Director)",,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,Prior EMEA financial reporting / group financial controller / CFO experience; IFRS & IFRS for SMEs focus.
-Cornell,van Eeden,Cornell van Eeden,Western Cape,Stellenbosch,Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) 2018; RA 2021; Registered Assessor 2023,"University of the Free State (Bloemfontein), 2015",unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,LDP (Manager (3 years)); Cape Town firm (Manager / Associate (2 years)); LDP (Director),,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,"Audit experience across wine & fruit farms, estate agents, sectional title, attorneys, hotels, manufacturing, engineering, wholesale."
-Jana,van Zyl,Jana van Zyl,Western Cape,Stellenbosch,Associate Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,LDP,2017–c.2020,,Audit trainee at LDP → UNISA Honours → CA(SA) 2022 → RA 2025,Stellenbosch University (2017); UNISA — Honours (2019),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,"Expertise in construction, property, retail, transport."
-Nadia,Van Der Westhuizen,Nadia Van Der Westhuizen,Western Cape,Stellenbosch,Associate Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,LDP,3 years,,Traineeship at LDP → CA(SA) + RA (IRBA),University of Pretoria — BCom (Accounting Sciences); University of Johannesburg — BCom Hons,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,(international secondment) (Financial management role); Another firm (Audit Director (2 years)); LDP (Associate Director),,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,Registered Auditor and qualified CA(SA).
-Thinus,Le Roux,Thinus Le Roux,Western Cape,Stellenbosch,Associate Director,LDP Chartered Accountants and Auditors Inc.,External Audit,Accounting / Audit,"Audit, advisory & tax",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,CONFIRMED_EXPLICIT,SAICA,LDP (implied),began 2017,,Articles from 2017 (top trainee) → CA(SA) 2019 → RA 2023 → Associate Director 2022,"North-West University — undergraduate (2015), Honours (2016)",unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://ldp.co.za/our-team/,,2026-09-18,"Exposure across agriculture, financial services, retail, manufacturing, energy, mining; plus tax consulting."
-Alicia,Haasbroek,Alicia Haasbroek,Western Cape,Stellenbosch,Associate Director (IT),LDP Chartered Accountants and Auditors Inc.,Other,Accounting / Audit,"Audit, advisory & tax",unknown,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,CONFIRMED_EXPLICIT,SAICA,LDP,2014–2016,,Traineeship at LDP 2014–2016 → Audit Senior 2018 → Head of IT 2019 → Associate Director of IT 2026; CA(SA) eligibility (heading)/not yet registered (bio),,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,Equity investment firm (Trader (investment research & advisory)); LDP (Audit Senior → Head of IT → Associate Director of IT),,CONFLICTING,CONFLICTING,https://ldp.co.za/our-team/,,2026-09-18,CONFLICTING CA(SA): firm heading shows CA(SA) but bio says 'eligible to register'. Pursuing CISA (ISACA). IT audit & systems specialisation.
-Imtiaaz,Hashim,Imtiaaz Hashim,Western Cape,Cape Town,Cape Town Managing Partner,BDO South Africa,External Audit,Accounting / Audit,"Audit, tax & advisory network",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA; audited trainee at BDO from 1997 → partner 2005 → Cape Town Managing Partner,,15+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,BDO (South Africa) (Audit trainee → manager → partner); BDO (Cayman Islands) (Hedge-fund audits (under 2 years)),,CONFIRMED,CONFIRMED,https://www.bdo.co.za/en-za/our-people/imtiaaz-hashim,,2026-09-18,Member of SAICA large/medium practices committee (WC); ABASA Western Cape board member.
-Mark,Willimott,Mark Willimott,Eastern Cape,Gqeberha (Port Elizabeth),Head of International Offshore Solutions,BDO South Africa,External Audit,Accounting / Audit,"Audit, tax & advisory network",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,BAcc + Honours — University of Port Elizabeth,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,CONFIRMED,CONFIRMED,https://www.bdo.co.za/en-za/our-people/mark-willimott,,2026-09-18,"Lead assurance & corporate finance assignments; renewable energy, hospitality, sports sectors. Based Eastern Cape (Gqeberha)."
-Johan,le Roux,Johan le Roux,Western Cape,Milnerton (Cape Town),Sole Practitioner / Self-employed Accountant,Johan le Roux CA(SA),Financial Accounting,Accounting / Audit,"Sole practice (independent reviews, tax)",true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA); SAICA-registered; former MD of BFL Carriers; self-employed public accountant from 2019,Graduate Diploma in Accounting — UCT; Graduate Diploma in Company Direction — Institute of Directors (Inst. of Management & Technology),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,BFL Carriers group of companies (Managing Director / owner); Self-employed (Registered Public Accountant / sole practitioner),,CONFIRMED,CONFIRMED,https://jleroux03.findanaccountant.co.za/,https://www.findanaccountant.co.za/content_interview-johan-le-roux,2026-09-18,Past Chairman of the Road Freight Association (Western Cape). Registered tax practitioner (SARS); CIPC registered.
-Zandrea,Gerber,Zandrea Gerber,Western Cape,Paarl,Finance Manager,Pay@,Financial Control,Fintech,Payments / transaction processing,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,Stellenbosch University — BAcc (2009–2011); Stellenbosch University — Honours Accounting (2012),10+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,(audit firm) (Audit Supervisor); ATKV Goudini Spa (Financial Manager); CampusKey Student Living (Financial Property Manager); IGrow Wealth Investments (Group Finance Manager / Finance Manager: Developments); Pay@ (Finance Manager),https://www.linkedin.com/in/zandrea-gerber-ca-sa-99a5a475/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/zandrea-gerber-ca-sa-99a5a475/,,2026-09-18,SAICA member since Mar 2013. Pay@ is a Stellenbosch-based B2B payments platform.
-Ashlin,Healy,Ashlin Healy,Western Cape,Cape Town,(Deloitte) — audit & accounting professional,Deloitte (South Africa),External Audit,Accounting / Audit,Big Four audit,true,CA(SA),SAICA,true,false,false,false,false,false,false,false,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,,Stellenbosch University,9+,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/ashlin-healy-ca-sa-130238103/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/ashlin-healy-ca-sa-130238103/,,2026-09-18,"Deloitte, Cape Town; 9+ years audit & accounting."
-André,Huysamer,André Huysamer,Western Cape,Worcester,(finance/accounting role at Kula),Kula,Financial Accounting,,,true,AGA(SA),SAICA,unknown,unknown,true,unknown,unknown,unknown,unknown,unknown,NOT_ESTABLISHED,,,,,,,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,,HIGH,HIGH_CONFIDENCE,https://www.linkedin.com/in/matthew-lindsay-ca-sa-0ba022100/,,2026-09-18,"AGA(SA) per LinkedIn display name; employer 'Kula' (Worcester). Full profile not captured — HIGH_CONFIDENCE. NOTE: a separate ZoomInfo record shows an 'Andre Huysamer, Principal Accountant, City of Cape Town' — possibly distinct; not merged without confirmation."
-Valentine,Dzvova,Valentine Dzvova,Western Cape,Cape Town,Group Financial Manager / business leader,AYO Technology Solutions Limited,Executive Finance,Technology,ICT investment group,true,CA(SA); ACMA; CGMA,SAICA; CIMA,true,false,false,false,false,true,false,true,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CA(SA) + ACMA/CGMA (multi-designation); also CIA,University of Cape Town,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://za.linkedin.com/in/valentine-dzvova,CONFIRMED,CONFIRMED,https://za.linkedin.com/in/valentine-dzvova,,2026-09-18,Also holds CIA and Cert.Dir®. AYO Technology Solutions (Cape Town).
-Mieke,Hoffman,Mieke Hoffman,Western Cape,Cape Town,Finance role (The Fieldbar Co.),The Fieldbar Co.,Financial Control,Manufacturing,Consumer goods,true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,CIMA → ACMA/CGMA,Stellenbosch University,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://za.linkedin.com/in/mieke-hoffman,CONFIRMED,CONFIRMED,https://za.linkedin.com/in/mieke-hoffman,,2026-09-18,
-Dylin,Kuni,Dylin Kuni,Western Cape,Cape Town,Chartered Management Accountant / Project Manager,M+C Saatchi Group,Other,Professional Services,Marketing services,true,ACMA; CGMA,CIMA,false,false,false,false,false,true,false,true,QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED,,,,,"CIMA → ACMA, CGMA",ACMA — Chartered Management Accountant (CIMA),unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,unknown,,,,unknown,unknown,unknown,unknown,unknown,,,,https://www.linkedin.com/in/dylinkuni/,CONFIRMED,CONFIRMED,https://www.linkedin.com/in/dylinkuni/,,2026-09-18,"ACMA, CGMA through CIMA."
+id,full_name,employer,title,status
+acc-0001,Taryn Woodbridge,Mercedes-Benz South Africa Ltd,Chief Financial Officer,CONFIRMED
+acc-0002,Mathabo Makhaya,Harmony Gold Mining,Group Financial Manager (Health),CONFIRMED
+acc-0003,Mbali Precious Mabaso,Nedbank Group Limited,Audit portfolio manager,CONFIRMED
+acc-0004,Marta Gerbach,Fourways Airconditioning,Group Chief Financial Officer,CONFIRMED
+acc-0005,Tumi Mokgoko,KPMG,Not stated in index (current role at KPMG),CONFIRMED
+acc-0006,Pumla Molope,African Women Chartered Accountants (AWCA),President,CONFIRMED
+acc-0007,Patricia Malahlela,Mckenzie & Associates,Senior Accountant,CONFIRMED
+acc-0008,Ciara Reintjes,SAICA,Regional Lead: Northern Region (Strategic Affairs Division),CONFIRMED
+acc-0009,Aneshree Naidoo,Webber Wentzel,Chief Financial Officer,CONFIRMED
+acc-0010,Romy Maree,Burstone (Real Estate partners),Group Head of Finance,CONFIRMED
+acc-0011,Mpolaheng Mohlopi,Lanseria International Airport,Chief Financial Officer,CONFIRMED
+acc-0012,Patricia Stock,SAICA,Chief Executive Officer,CONFIRMED
+acc-0013,Nonkululeko Gobodo,,Not stated in index (founder / public figure),CONFIRMED
+acc-0014,Buhle Hanise Nomabunga,BAIC (South Africa),Chief Financial Officer,CONFIRMED
+acc-0015,Zanele Maduna,,Not stated in index,CONFIRMED
+acc-0016,Zahid Fakey,,Not stated in index,CONFIRMED
+acc-0017,Zahida Fakey,,Not stated in index,CONFIRMED
+acc-0018,Esther Pieterse,,Not stated in index (technical accounting),CONFIRMED
+acc-0019,Cecelia Swartz,,Not stated in index,CONFIRMED
+acc-0020,Anisah Patel,Own practice (Vereeniging),Owner (practice in Vereeniging),CONFIRMED
+acc-0021,Enrico Kleinbooi,Kannaland Municipality,Head of Internal Audit,CONFIRMED
+acc-0022,Grant Greeff,Drone Ops Group,Chief Financial Officer,CONFIRMED
+acc-0023,Mpho Makoko-Hottie,,B-BBEE business analyst,CONFIRMED
+acc-0024,Lynette Badenhorst,Probeta Training (Pty) Ltd,Managing Director,CONFIRMED
+acc-0025,Phumelela Mbande,,Not stated in index,CONFIRMED
+acc-0026,Vusi Mpofu,Nedbank,Sector Lead: Mining and Chemicals (Corporate & Investment Banking),CONFIRMED
+acc-0027,Kgabiso Mahlangu,South African State Theatre,Financial Accountant,CONFIRMED
+acc-0028,Dumisani Zulu,Bonakude Consulting (Pty) Ltd,Financial Manager,CONFIRMED
+acc-0029,J A 'Driaan' Beyers,Finkor Accounting,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0030,Malcolm Cecil Coates,Alma Casa,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0031,Louwrens da Silva,Petrichor Consulting,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0032,Adre Daniel,Accu-fin Accounting,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0033,Roelof Jansen van Vuuren,The Tax Shop Pretoria North East,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0034,Carla Kilian,AETOS Financial Services,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0035,Ross Thomson,Collective Accounting,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0036,Quintin Venter,Sempre Financial Group,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0037,Hlayisani Terrent Mboweni,Mboweni Accountants,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0038,Marco Wagener,Excellentia Accounting and Tax Solutions,Professional Accountant (SA) / Tax Practitioner,HIGH_CONFIDENCE
+acc-0039,Nkosana Dlamini,Absa Group,Head of Risk Reporting & Risk Regulatory Advisory,CONFIRMED
+acc-0040,Mikateko Tshetshe,Unilever,Vice President: Finance (Africa),CONFIRMED
+acc-0041,Mangaliso Mithi,,Chief Financial Officer (employer not stated in snippet),CONFIRMED
+acc-0042,Taryn Raju,,"Not stated (works at ""a very well-known organization"")",CONFIRMED
+acc-0043,Sandi De Souza,SAP Africa,Chief Financial Officer,CONFIRMED
+acc-0044,Illana Helman,Massmart,Senior Finance Business Partner - Group Information Technology,CONFIRMED
+acc-0045,Polani Sokombela,Auditor-General of South Africa (AGSA),Chief Financial Officer,CONFIRMED
+acc-0046,Kerry Cassel,Motus Mobility Solutions,Chief Executive Officer,CONFIRMED
+acc-0047,Jody Baumgarten,Wonga (South Africa),Chief Financial Officer,HIGH_CONFIDENCE
+acc-0048,Masechaba Sesing,Free State Provincial Treasury,Head of Department,CONFIRMED
+acc-0049,Zinhle Simamane,Traxtion,Chief Financial Officer – International Business,CONFIRMED
+acc-0050,Zine Mshengu,,Not stated in snippet (regulatory),CONFIRMED
+acc-0051,Bonga Mokoena,BDO South Africa,Chief Executive Officer,CONFIRMED
+acc-0052,Bianca Roos,PKF Octagon,Partner,CONFIRMED
+acc-0053,Darren Isaacs,Makosi,Founder & CEO,CONFIRMED
+acc-0054,Koko Khumalo,Motlanalo Chartered Accountants and Auditors Inc,CEO & Founding Partner,CONFIRMED
+acc-0055,Vukosi Fungeni,,Not stated in snippet,CONFIRMED
+acc-0056,Mabatho Sedikela,Auditor-General of South Africa (AGSA),Public-sector leader (AGSA),HIGH_CONFIDENCE
+acc-0057,Rachelle Best,,Founder (FYI play app),CONFIRMED
+acc-0058,Katlego Matshego,Independent Institute of Education (IIE) Varsity College / MSA,"Deputy Head, School of Finance and Accounting",HIGH_CONFIDENCE
+acc-0059,Naledi Liphapang,,Not stated in snippet,HIGH_CONFIDENCE
+acc-0060,Thenashree Naidoo,Durban ICC,Finance leader (Durban ICC),HIGH_CONFIDENCE
+acc-0061,Siphesihle Mlangeni,,Not stated in snippet,CONFIRMED
+acc-0062,Jabulile Nyathi,,Not stated in snippet,CONFIRMED
+acc-0063,Mpho Mookapele,Energy and Water Sector Education and Training Authority (EWSETA),Chief Executive Officer,CONFIRMED
+acc-0064,Chwayita Mtebele,Financial Sector Conduct Authority (FSCA),Head of Department: Investment Providers,CONFIRMED
+acc-0065,Zizipho Nyanga,Masisizane Fund (Old Mutual),Chief Executive Officer,CONFIRMED
+acc-0066,Manenzhe Manenzhe,ACCA (South Africa),ACCA South Africa council member (role/employer inferred),CONFIRMED
+acc-0067,Vijedharsan Vijendranath,,SOX Internal Auditor (Manager level),CONFIRMED
+acc-0068,Tariro Mutizwa,AICPA & CIMA (CIMA Africa),Vice President – Africa,CONFIRMED
+acc-0069,Christiaan Vorster,SAICA,SAICA Regional Executive: Southern Region (Western Cape & Eastern Cape),CONFIRMED
+acc-0070,Naeem Asvat,SAICA,SAICA Regional Executive: Eastern Region (KwaZulu-Natal),CONFIRMED
+acc-0071,Div Lamprecht,SAICA,"SAICA Regional Executive: Central Region (Free State, Northern Cape & North West)",CONFIRMED
+acc-0072,Lesetja Kwetepane,LA Financial Services (Pty) Ltd,Professional Accountant (SA),HIGH_CONFIDENCE
+acc-0073,Alexis Sacks,Streets Chartered Accountants (Cape Town),Joint Managing Director,CONFIRMED
+acc-0074,Dave Rich,Streets Chartered Accountants (Cape Town),Joint Managing Director,CONFIRMED
+acc-0075,Fatima Bapukee,Streets Chartered Accountants (Cape Town),Director,CONFIRMED
+acc-0076,Uwe Birkenstock,McA Durbanville Inc.,Director,CONFIRMED
+acc-0077,Juan Spies,McA Durbanville Inc.,Director,CONFIRMED
+acc-0078,Lézanne Dirkse van Schalkwyk,McA Inc.,Accounting Manager,CONFIRMED
+acc-0079,Justin Stohr,McA Accounting & Tax Services Inc.,Director,HIGH_CONFIDENCE
+acc-0080,Trevor McLachlan,McA Inc.,Founder and Executive Consultant,HIGH_CONFIDENCE
+acc-0081,Ashley Hanekom,Superside,Finance leader,CONFIRMED
+acc-0082,Neil Fourie,Brenn-O-Kem,Senior Accountant,CONFIRMED
+acc-0083,Lian du Plessis,Cape Chamber of Commerce & Industry,Manager: Finance and Group Services,CONFIRMED
+acc-0084,Nastassja Nel,Schoemans Registered Auditors and Chartered Accountants,Accountant,CONFIRMED
+acc-0085,Ashley Du Plessis,,Accountant,CONFIRMED
+acc-0086,Mark Augustine,Pinnacle Accounting,Professional Accountant (SA),HIGH_CONFIDENCE
+acc-0087,Alana Johns,,Professional Accountant and Tax Practitioner,HIGH_CONFIDENCE
+acc-0088,Alan Robbins,Sable International,Accounting Director,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0089,Peet van der Merwe,Forvis Mazars in South Africa,Partner / Director,CONFIRMED
+acc-0090,Lynette Roeloffze,Forvis Mazars Group,Senior Manager — Audit,CONFIRMED
+acc-0091,Vincent Motholo,University of Cape Town,Chief Financial Officer,CONFIRMED
+acc-0092,Louis de Wet,TradeOn SA,Chief Financial Officer,CONFIRMED
+acc-0093,Adriaan de Lange,Adriaan de Lange Advisory (Private Capacity),Executive Leader (CEO / COO / CFO roles),CONFIRMED
+acc-0094,Vanessa Rheeder,The Modern CFO,Fractional CFO,CONFIRMED
+acc-0095,Nethin Karamchand,Deloitte (South Africa),Finance leader,CONFIRMED
+acc-0096,Bronvin Heuvel,KPMG (South Africa),(KPMG professional) — role not stated,CONFIRMED
+acc-0097,Morgan Gregory,MK Aerospace SA,Chief Financial Officer,CONFIRMED
+acc-0098,Chrizelda Visser,Curated Beverages Ltd,Group Financial Manager,CONFIRMED
+acc-0099,Kyle Danster,Curro Holdings Ltd,Finance (reporting & forecasting),CONFIRMED
+acc-0100,Anton van Niekerk,Snapplify,Finance Director,CONFIRMED
+acc-0101,Adrian Smith,Bounty Apparel,Head of Finance,CONFIRMED
+acc-0102,Luke Woodhouse,GUUD GLOBAL,Chief Financial Officer,CONFIRMED
+acc-0103,Elmarie Swanepoel,Stellenbosch University,Faculty Member (Department of Accountancy),HIGH_CONFIDENCE
+acc-0104,Ralph Buddle,TFG Limited (The Foschini Group),Executive Director | Chief Financial Officer,CONFIRMED
+acc-0105,Graham Davin,TFG Limited (The Foschini Group),Lead Independent Director,CONFIRMED
+acc-0106,Jan Potgieter,TFG Limited (The Foschini Group),Non-executive Director,HIGH_CONFIDENCE
+acc-0107,Owen van Tonder,Woolworths Holdings Ltd,"Chief Financial Officer — Fashion, Beauty and Home",CONFIRMED
+acc-0108,Zaid Manjra,Woolworths Holdings Ltd,Group Chief Financial Officer / Finance Director,CONFIRMED
+acc-0109,Edburg Strauss,netCFO,Managing Director,CONFIRMED
+acc-0110,Kobus Boshoff,Boshoff Knoetze Chartered Accountants,Managing Director (founder),CONFIRMED
+acc-0111,Emma Pardoe,Emma Pardoe Chartered Accountants (SA),Chartered Accountant & Registered Auditor (principal),CONFIRMED
+acc-0112,Johan Coetzee,Callidus Accountants,Principal,HIGH_CONFIDENCE
+acc-0113,Willem Theron,PSG Konsult Ltd (PSG Financial Services),Non-executive Chairman,CONFIRMED
+acc-0114,André Du Plessis,LDP Chartered Accountants and Auditors Inc.,Senior Director,CONFIRMED
+acc-0115,Iaan Marx,LDP Chartered Accountants and Auditors Inc.,Director,CONFIRMED
+acc-0116,Francois Joubert,LDP Chartered Accountants and Auditors Inc.,Director,CONFIRMED
+acc-0117,Johann van Rensburg,LDP Chartered Accountants and Auditors Inc.,Director,CONFIRMED
+acc-0118,Jana Goosen,LDP Chartered Accountants and Auditors Inc.,Director,CONFIRMED
+acc-0119,Willene van Zyl,LDP Chartered Accountants and Auditors Inc.,Director,CONFIRMED
+acc-0120,Emile de Villiers,LDP Chartered Accountants and Auditors Inc.,Director,CONFIRMED
+acc-0121,Cornell van Eeden,LDP Chartered Accountants and Auditors Inc.,Director,CONFIRMED
+acc-0122,Jana van Zyl,LDP Chartered Accountants and Auditors Inc.,Associate Director,CONFIRMED
+acc-0123,Nadia Van Der Westhuizen,LDP Chartered Accountants and Auditors Inc.,Associate Director,CONFIRMED
+acc-0124,Thinus Le Roux,LDP Chartered Accountants and Auditors Inc.,Associate Director,CONFIRMED
+acc-0125,Alicia Haasbroek,LDP Chartered Accountants and Auditors Inc.,Associate Director (IT),CONFLICTING
+acc-0126,Imtiaaz Hashim,BDO South Africa,Cape Town Managing Partner,CONFIRMED
+acc-0127,Mark Willimott,BDO South Africa,Head of International Offshore Solutions,CONFIRMED
+acc-0128,Johan le Roux,Johan le Roux CA(SA),Sole Practitioner / Self-employed Accountant,CONFIRMED
+acc-0129,Zandrea Gerber,Pay@,Finance Manager,CONFIRMED
+acc-0130,Ashlin Healy,Deloitte (South Africa),(Deloitte) — audit & accounting professional,CONFIRMED
+acc-0131,André Huysamer,Kula,(finance/accounting role at Kula),HIGH_CONFIDENCE
+acc-0132,Valentine Dzvova,AYO Technology Solutions Limited,Group Financial Manager / business leader,CONFIRMED
+acc-0133,Mieke Hoffman,The Fieldbar Co.,Finance role (The Fieldbar Co.),CONFIRMED
+acc-0134,Dylin Kuni,M+C Saatchi Group,Chartered Management Accountant / Project Manager,CONFIRMED
+acc-0135,Charl Smit,Thornlands Group,Head of Finance / CFO,CONFIRMED
+acc-0136,Lindi Swart,Thornlands Group,Financial Accountant,CONFIRMED
+acc-0137,Anela Kumnandi Dumalisile,Blue Seas Products (Pty) Ltd,Group Finance Manager,CONFIRMED
+acc-0138,Giancarlo Sassoli,3C Metal,Accounting Manager,CONFIRMED
+acc-0139,Leandre Schoeman,IBCO,Finance Manager,CONFIRMED
+acc-0140,Christine Haasbroek,Bryce Monitoring (Pty) Ltd,Finance Manager,CONFIRMED
+acc-0141,Hannes Nortman,Golden Hour Experiences,Group Financial Accountant,CONFIRMED
+acc-0142,Constant Loubser,Freshworld (Pty) Ltd,Financial Accountant,CONFIRMED
+acc-0143,Carla Mostert,Atlantis Foods Group,Financial Accountant & Business Partner,CONFIRMED
+acc-0144,Etienne Bekker,ACCIONA Energía,Financial Accountant,CONFIRMED
+acc-0145,Melanie Dennis-Jacobs,Red Carnation Hotel Collection,Financial Controller,CONFIRMED
+acc-0146,Fahdwa Hendricks,Global Load Control,Financial Controller,CONFIRMED
+acc-0147,Joani Venter,Fingri Chartered Accountants,Outsourced Financial Manager,CONFIRMED
+acc-0148,Adrian Kandan,ooba Home Loans,Group Financial Accountant,CONFIRMED
+acc-0149,Niel Van Zyl,Pepkor Payments and Lending,Management Accountant,CONFIRMED
+acc-0150,Francois Knoetze,iBanqSA,Head of Finance,CONFIRMED
+acc-0151,Cheslin Klaasen,Advania UK,Head of Finance Shared Services,CONFIRMED
+acc-0152,Stephanus Lombard,George Whitefield College,Management Accountant,CONFIRMED
+acc-0153,Jason King,Tintswalo Collection,Head of Finance,CONFIRMED
+acc-0154,Rensche-Mari Hurter (Jansen),Corpag,Senior Financial Accountant,CONFIRMED
+acc-0155,Romona Harisunker,Turn Capital - Single Family Office,Financial Manager,CONFIRMED
+acc-0156,Christanet Grewar,PKF Cape Town,,CONFIRMED
+acc-0157,Byron Adriaanse,Red Badger,Finance Manager,CONFIRMED
+acc-0158,Rynauw Adriaan,DigiOutsource,Finance Manager,CONFIRMED
+acc-0159,Caryn Jacobs,Betway SA20,Finance Manager,CONFIRMED
+acc-0160,Craig West,WCB Property Development,Financial Director,CONFIRMED
+acc-0161,Ethan September,RFG Foods,Commercial Management Accountant,CONFIRMED
+acc-0162,Jabavu Nare,Pie in the Sky / Coimbra Bakery,Cost and Management Accountant,CONFIRMED
+acc-0163,Bronwyn Von Maltitz,CrossBoundary Energy,Commercial Asset Manager,CONFIRMED
+acc-0164,Joshua Hendricks,Anthem,Accountant,CONFIRMED
+acc-0165,Mimosa Mputa,Mukuru,Financial Accountant,CONFIRMED
+acc-0166,Tim Horak,Parmalat South Africa / Africa,Financial Manager - Commercial,CONFIRMED
+acc-0167,An-ri Truter Roodt,CTBA Tax and Business Advisory,Senior Accounting Manager,CONFIRMED
+acc-0168,Denovan Coetzee,Lactalis South Africa,Management Accountant,CONFIRMED
+acc-0169,Anel Bekker,Freshworld (Pty) Ltd,Financial Manager,HIGH_CONFIDENCE
+acc-0170,Robert Rossouw,AMC Cookware South Africa,Finance Manager,RESEARCH_HOLD
+acc-0171,Charneé Arendse,Capitec,Team Leader: Finance Business Partnering,HIGH_CONFIDENCE
+acc-0172,Christo de Witt,Origin Financial Group of Companies,Group Financial Manager,HIGH_CONFIDENCE
+acc-0173,Anathi Kamkam,Old Mutual Investment Group,Management Accountant - Investments,HIGH_CONFIDENCE
+acc-0174,Tiisetso Matsobane,Libstar,Cost and Management Accountant,CONFIRMED
+acc-0175,Xolile Mkuhlana,SASSA,Assistant Manager - Management Accounting (title truncated publicly),CONFIRMED
+acc-0176,Tawanda Sigauke,Red Rocket South Africa (Pty) Ltd,Project Finance / Tax / Finance Specialist,CONFIRMED
+acc-0177,Hiten Taylor,Stellenbosch Vineyards,Cost Accountant,CONFIRMED
+acc-0178,Johanna Taylor,TFG (The Foschini Group),,CONFIRMED
+acc-0179,Vimbai Benza,Akacia Medical and Healthcare Group,Finance leader; exact current title not exposed,CONFIRMED
+acc-0180,Frikkie Venter,Southern African Fruit Terminals,,CONFIRMED
+acc-0181,Marco Bekker,N1 Restaurant Suppliers,,CONFIRMED
+acc-0182,Justin Williams,Ares Holdings,,CONFIRMED
+acc-0183,Tracey Klopper,JTC Group,Manager,CONFIRMED
+acc-0184,Chantelle Fenwick,DigiOutsource,Financial Accountant (public career data); senior finance background,CONFIRMED
+acc-0185,Zine Gengana,HIGHVERN,Finance professional,CONFIRMED
+acc-0186,Ruan Ferreira,LiebenGroup,,CONFIRMED
+acc-0187,Byron Fortuin,Boschendal Farm,,CONFIRMED
+acc-0188,Alicia Jamneck,Hero Holdings,,CONFIRMED
+acc-0189,Charles Swart,Phelan Green Group,,CONFIRMED
+acc-0190,Danielle O'Brien,SS&C Technologies,,CONFIRMED
+acc-0191,Bulali Pepeteka,Klearium,,CONFIRMED
+acc-0192,Zahn-Mari van Eeden,KEE Property Investments,,CONFIRMED
+acc-0193,Anje Bothma,Eezibooks Consulting,Management-accounting background; current title not exposed,CONFIRMED
+acc-0194,Willie Viljoen,IJ Smith & Co Inc,,CONFIRMED
+acc-0195,Martli Truter,Mohr Foods,,CONFIRMED
+acc-0196,DeWalt Van Der Merwe,CASADOBE PROPS 60 / MNK Projects Group,,RESEARCH_HOLD
+acc-0197,Brent Edward Williams,The Free Range Chicken Company,,RESEARCH_HOLD
+acc-0198,Jason Cloete,Western Cape Government,,RESEARCH_HOLD
+acc-0199,Berenice Vilander,Western Cape Government / Sanlam background,,RESEARCH_HOLD
+acc-0200,Andre Davids,Exceed Group,,RESEARCH_HOLD
+acc-0201,Carmen Gribble,Super Group / SGHC,,RESEARCH_HOLD
+acc-0202,Abigail Matuku,Pegasys Consulting,Senior Accountant,RESEARCH_HOLD
+acc-0203,Magdel Le Grange,Rolls-Royce Power Systems AG,,RESEARCH_HOLD
+acc-0204,Jay Rosser,Empire Finance Partners,Fractional CFO / finance advisory,RESEARCH_HOLD
+acc-0205,Thokozani Motloung,Unitrans,Finance Manager,CONFIRMED
+acc-0206,Ameena Davids,The SOLA Group,,CONFIRMED
+acc-0207,Carlynn-Jade Coetzee,Ubuntu Quantum,,CONFIRMED
+acc-0208,Eugene Olivier,Icon Oncology,Accountant,CONFIRMED
+acc-0209,Charl Andre Arndt,EMS Tax,Senior Audit & Accounting Consultant,CONFIRMED
+acc-0210,Wynand Bezuidenhout,SDK | CA Group,,CONFIRMED
+acc-0211,Anthony Renda,North Star Guidance (Pty) Ltd,Financial accounting / advisory professional,CONFIRMED
+acc-0212,Franciscus Blignault,Cape Five Export SA,Finance professional; exact title hidden,CONFIRMED
+acc-0213,Wico Basson,FUL Foods,,CONFIRMED
+acc-0214,Inga Venter,FTTx And Energy Warehouse,,CONFIRMED
+acc-0215,Misheck P Jena,Not publicly confirmed,,CONFIRMED
+acc-0216,Kristen Nel,Fynbos Accounting,Financial accounting professional,CONFIRMED
+acc-0217,Pieter Booyens,Wilson Partners,,CONFIRMED
+acc-0218,Jochelle Oosthuizen,LPH Chartered Accountants,,CONFIRMED
+acc-0219,Jo-Anne van der Walt,Wauko,,CONFIRMED
+acc-0220,Francois Meyer,The Tax Shop Stellenbosch,,CONFIRMED
+acc-0221,Zandile Mtandeki,RealFin Fund Services,,CONFIRMED
+acc-0222,Miguel Pieterse,Infinity Power,Finance professional; exact title hidden,CONFIRMED
+acc-0223,Catherine Brennan,G7 Renewable Energies,Accounting professional; exact title hidden,CONFIRMED
+acc-0224,Melanie Jordaan,Macrel Petroleum / Cale group,,CONFIRMED
+acc-0225,Lara Odendaal,Creatori Health,,CONFIRMED
+acc-0226,Sipumeze Tyali,DigiOutsource,,CONFIRMED
+acc-0227,Harry Durrell,Herold Gie Attorneys,Experienced accountant; exact title hidden,CONFIRMED
+acc-0228,Maricia Botha,A van der Lingen Group,Experienced accountant; exact title hidden,CONFIRMED
+acc-0229,Nothando Muziki,Integral Accountants,,CONFIRMED
+acc-0230,Ridwana Parker,Raft Consulting,,CONFIRMED
+acc-0231,Maurice Trichardt,Panorama Consulting,Qualified professional accountant; exact title hidden,CONFIRMED
+acc-0232,Deon de Jongh,Luno,,CONFIRMED
+acc-0233,Petrus Frick,Frick & Co Advisory,Financial reporting / investment specialist,CONFIRMED
+acc-0234,André Olivier,Lekkewaan,Experienced accountant; exact title hidden,CONFIRMED
+acc-0235,Brendan Venter,EVOLABS,,CONFIRMED
+acc-0236,Sonja Van Zyl,Acredo Accounting,Accounting professional; exact title hidden,CONFIRMED
+acc-0237,Lavinia Louw,Standish Management,,CONFIRMED
+acc-0238,Fanie Schoeman,Houst,Financial reporting / accounting professional,CONFIRMED
+acc-0239,Ian Strydom,IW Tax Advisory,,CONFIRMED
+acc-0240,Hein Burger,Public sector / Western Cape context,Deputy Director: Accounting,CONFIRMED
+acc-0241,Ashleigh Waite,JTC Group,Supervisor,CONFIRMED
+acc-0242,Malvin Lancelot Makanda,Cecil Kilpin & Co,Auditor / accounting professional,CONFIRMED
+acc-0243,Monique van Niekerk,Creative CFO,,CONFIRMED
+acc-0244,Ashton Pillay,Integrity360 South Africa,,CONFIRMED
+acc-0245,Matthew Kiln,Tripco,,CONFIRMED
+acc-0246,Jaques Davids,Stellenbosch University,,CONFIRMED
+acc-0247,Vhugala Nelwamondo,Auditor-General of South Africa,,CONFIRMED
+acc-0248,Stuart Izatt,Commercial Cold Holdings,,CONFIRMED
+acc-0249,Ntsikelelo Maduneni,takealot.com,FP&A / Supply Chain & Procurement finance professional,CONFIRMED
+acc-0250,Christel van Greunen,fibertime,,CONFIRMED
+acc-0251,Jaco Botha,Ares Holdings,,CONFIRMED
+acc-0252,Sean Meredith,City of Cape Town,Finance / financial oversight professional,CONFIRMED
+acc-0253,Willem Kasselman,Biosylx,,CONFIRMED
+acc-0254,Cornelius Hanekom,amplify5,,CONFIRMED
+acc-0255,Marzanne de Wet,Rainmaker Media,,CONFIRMED
+acc-0256,Moses Manyeruke,Enernet Global,,CONFIRMED
+acc-0257,Cormé de Bruyn,Trueprop,,CONFIRMED
+acc-0258,Lerato Hillman,Not publicly confirmed,,CONFIRMED
+acc-0259,Christopher Stanley,AIML Score,Finance / fintech professional; exact title hidden,CONFIRMED
+acc-0260,Ross Pennell,Advent Wealth,,CONFIRMED
+acc-0261,Rayhaan Osman,Old Mutual Wealth,,CONFIRMED
+acc-0262,Sampras Noel Kaweesi,Sexual & Reproductive Justice Coalition,,CONFIRMED
+acc-0263,Mulalo Peaceman Mashamba,Infra Impact Investment Managers,Finance professional; exact title hidden,CONFIRMED
+acc-0264,Tharien Rambalie,Xcede Group,,CONFIRMED
+acc-0265,Firdows Du Toit,MRI Software (recent/current profile employer),,CONFIRMED
+acc-0266,Jaco Pieters,Footgear,Financial Management Accountant,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0267,Anika Nel,Kallos Global,Commercial Accountant,CONFIRMED
+acc-0268,Craig Samuel,,Senior Accountant,CONFIRMED
+acc-0269,Christo Botha,,Senior finance / accounting professional,CONFIRMED
+acc-0270,Lyle Haas,,Senior Financial Accountant,CONFIRMED
+acc-0271,Ben Van Der Linde,,Group Financial Accountant / UK service-charge accounting,CONFIRMED
+acc-0272,Lerenzo Greeff,African Unity Life,Finance Manager,CONFIRMED
+acc-0273,Wallace Disi,,Financial Manager,CONFIRMED
+acc-0274,Anntoinique Holtzhauzen,,Financial Manager,CONFIRMED
+acc-0275,Siseko Mapongwana,G4S,Finance Manager,CONFIRMED
+acc-0276,Brandon Manuel,MUA Insurance,Professional Accountant,CONFIRMED
+acc-0277,"Alrich Coetzee ACMA, CGMA",,Finance Business Partner,CONFIRMED
+acc-0278,Taryn Hamid,Bateleur Capital,Financial Manager,CONFIRMED
+acc-0279,"Bruce Canham ACMA, CGMA",,Management Consultant,CONFIRMED
+acc-0280,"Servaas Hofmeyr ACMA, CGMA, MBA",Cape Mohair,Finance Manager,CONFIRMED
+acc-0281,Pieter Andre Schumyn,,Senior accounting professional,RESEARCH_HOLD
+acc-0282,Ettienne du Preez,,Financial Accountant / Financial Manager,CONFIRMED
+acc-0283,Lesley Brown,Pangolin Photo Safaris,Financial Accountant,CONFIRMED
+acc-0284,Zaiba Khan,PSG Konsult,Professional Accountant,CONFIRMED
+acc-0285,Wynand Nel,JTC Group,Assistant Manager,HIGH_CONFIDENCE
+acc-0286,Jeanie Wiese,Le Roux Fruit Exporters,Accountant,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0287,"Monique Venter ACMA, CGMA",,Senior Accountant,CONFIRMED
+acc-0288,Sandhya Ramjee (Chavda),Nimble Group (public directory); LinkedIn also shows Payment24,Group Accountant,RESEARCH_HOLD
+acc-0289,Yvette Hanekom,"Products, Supply Chain & Functional Finance, Ecowize",Operations Finance Manager,RESEARCH_HOLD
+acc-0290,Frederick Bester,,Project / finance professional,RESEARCH_HOLD
+acc-0291,Lindsay Karools,The Building Company,Professional Accountant,CONFIRMED
+acc-0292,Elana Beukes,,Management Accountant,RESEARCH_HOLD
+acc-0293,Arjan Van der Lugt,The Fruit Farm Group South Africa,CFO,RESEARCH_HOLD
+acc-0294,Elizabeth Steyn,,Finance / Sage support background,RESEARCH_HOLD
+acc-0295,Barnus Vermeulen,PSG Konsult / PSG Financial Services,Finance professional,CONFIRMED
+acc-0296,Bulelani M.,,Financial Manager / Strategic Finance Partner,RESEARCH_HOLD
+acc-0297,Andrea Haasbroek,,Financial Manager,CONFIRMED
+acc-0298,Khanya Butshingi,Collinson Group,Financial Accountant,RESEARCH_HOLD
+acc-0299,Beverley Samuels,,CIMA finance professional,RESEARCH_HOLD
+acc-0300,Zhané Gorridon,Fraxion,Group Accountant,HIGH_CONFIDENCE
+acc-0301,Lizel Roelofse,,Financial Accountant / Manager,RESEARCH_HOLD
+acc-0302,Barry Griffin,,Management Accountant,RESEARCH_HOLD
+acc-0303,Tony Isaacs,Educor,Operations & Management Accountant,RESEARCH_HOLD
+acc-0304,Michelle Kleynhans,,Business Systems Administrator; former Management Accountant,RESEARCH_HOLD
+acc-0305,Carlo Van Zyl,Shoprite Group,Divisional Financial Manager,RESEARCH_HOLD
+acc-0306,Linda Mazibuko,,Finance Manager / Inventory Costing,RESEARCH_HOLD
+acc-0307,"Cecil Wehmeyer ACMA, CGMA",DataEQ,Chief Financial Officer,CONFIRMED
+acc-0308,Sintu Maguga,,National Financial Manager,RESEARCH_HOLD
+acc-0309,Lubabalo Mxhasa,Apex/Maitland background,Senior Accountant,CONFIRMED
+acc-0310,Breyton Groenewald,,Business Accountant-In-Practice,RESEARCH_HOLD
+acc-0311,Bea Jansen van Rensburg,,BI / Finance systems professional,RESEARCH_HOLD
+acc-0312,Vernon Morgan,,Consulting Accountant,RESEARCH_HOLD
+acc-0313,Shandré Whittles,RPF Africa,Junior Financial Manager,CONFIRMED
+acc-0314,Magda Marin Jonck,,Accounting Manager / former Assistant Financial Manager,RESEARCH_HOLD
+acc-0315,Elizabeth Lindeque,,Financial Analyst / Management Accountant / Sage consultant,RESEARCH_HOLD
+acc-0316,Lizelle Smith,"Inventory, Insurance & Fixed Assets",Finance Manager,RESEARCH_HOLD
+acc-0317,Dennis Tembo,,Accounting Professional,RESEARCH_HOLD
+acc-0318,Tammy Coetzee,Aqunion,Accountant,RESEARCH_HOLD
+acc-0319,Ranchell Thomas,Tapestry Home Brands,Accountant,RESEARCH_HOLD
+acc-0320,Cindy-Lee Wilson,PSG Financial Services,Accountant,RESEARCH_HOLD
+acc-0321,Maresa Pretorius,Hotel Verde Cape Town,Finance Manager,RESEARCH_HOLD
+acc-0322,Prudence Adams,,Financial Controller,RESEARCH_HOLD
+acc-0323,Nontsingiselo Notununu,,Finance professional,RESEARCH_HOLD
+acc-0324,David Malan,Watcher Surveillance Solutions,Finance Manager,RESEARCH_HOLD
+acc-0325,Ina Leroux,ABS Genetics South Africa,Financial Controller,RESEARCH_HOLD
+acc-0326,Nkhensani Mahlangu,,Cluster Financial Controller,RESEARCH_HOLD
+acc-0327,Chantal Viljoen,TEKCOPAC,Finance Manager,RESEARCH_HOLD
+acc-0328,Kgaogelo Montjane,,Associate / CIMA management track,RESEARCH_HOLD
+acc-0329,Kim Isaacs,Providence Hotels,Finance professional,CONFIRMED
+acc-0330,Chulumanco Beja,Galbraith Rushby,Professional Accountant,CONFIRMED
+acc-0331,Liso Mtshambela,Novus Holdings,Group Financial Accountant,RESEARCH_HOLD
+acc-0332,Rabia Samuels,CADO Chartered Accountants Inc.,Professional Accountant,CONFIRMED
+acc-0333,Maritza Dalton,Cecil Kilpin & Co.,Professional Accountant,CONFIRMED
+acc-0334,Kieran Herbert,BGC,Finance professional,ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED
+acc-0335,Charmaine Nago,,Financial Accountant,RESEARCH_HOLD
+acc-0336,Jessica Arendse,Food Lover's Market Holdings,Production and Buying Accountant,RESEARCH_HOLD
+acc-0337,Saadiqa Dangor,Atlantis Special Economic Zone,Financial Controller,RESEARCH_HOLD
+acc-0338,Peet Diedericks,,Boutique Business Consultant / former Financial Director & Financial Manager,RESEARCH_HOLD
+acc-0339,Kgomotso Moipolai,,Professional Accountant,CONFIRMED
+acc-0340,Deon Titus,USB Executive Development,Management Accountant,RESEARCH_HOLD
+acc-0341,Danie Grobbelaar,123CONSULTING,Head of Accounting,RESEARCH_HOLD
+acc-0342,Annette van der Vyver,,Accountant / Payroll Manager,RESEARCH_HOLD
+acc-0344,Bukeka Nohashe,,Financial Accounting professional,RESEARCH_HOLD
+acc-0345,Grant Crighton,,Experienced Financial Manager,RESEARCH_HOLD
+acc-0346,Robert Gillman,,Experienced Finance Professional / Financial Controller,RESEARCH_HOLD
+acc-0347,Theo Naude,,Senior Finance Professional / Finance Manager,RESEARCH_HOLD
+acc-0348,Marilize Muller,,Senior Financial Manager background,RESEARCH_HOLD
+acc-0349,Philip Wapenaar,,Finance Partner / former Finance Manager,RESEARCH_HOLD
+acc-0350,CLAVER BONDA,,Finance/Accounting & ERP professional,RESEARCH_HOLD
+acc-0351,Antonio Roberts,KWV,Commercial Finance Manager,RESEARCH_HOLD
+acc-0352,Michele Nieuwoudt,PNA / former Management Accountant,Accountant,RESEARCH_HOLD
+acc-0353,Natasha Abrahams,Cancercare SA,Senior Accountant,RESEARCH_HOLD
+acc-0354,Monique Harrison,,Senior Accountant,RESEARCH_HOLD
+acc-0355,Cornel Maartens,,Senior Accountant / Account Manager,RESEARCH_HOLD
+acc-0356,Jeroen Herweijer,,Director of Finance,RESEARCH_HOLD
+acc-0357,Shaun Mzuvukile Gxekwa,,Accountant; former Senior Accountant,RESEARCH_HOLD
+acc-0358,Crystelle Peense,Commissions,Accountant / former Senior Accountant,RESEARCH_HOLD
+acc-0359,John Vertue,,Commercial Manager; former Finance Manager,RESEARCH_HOLD
+acc-0360,Karen Dannhauser (Prinsloo),,Financial Manager,RESEARCH_HOLD
+acc-0361,Nombulelo Geya,Simeka Consultants & Actuaries,Financial Controller,RESEARCH_HOLD
+acc-0362,Samantha Carr,University of the Western Cape,Assistant Financial Accountant,RESEARCH_HOLD
+acc-0363,Mieshka Morris,Momentum Corporate,Financial Accountant,RESEARCH_HOLD
+acc-0364,Brett Penney,Sika South Africa,Financial Controller,CONFIRMED
+acc-0365,Karmen Koch,Chryso Southern Africa,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0366,Kathie Naidoo,Chryso Southern Africa,CREDIT CONTROLLER,FINANCE_ROLE_CONFIRMED
+acc-0367,Lenica Reddy,Chryso Southern Africa,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0368,Velashnie Padayachee,Chryso Southern Africa,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0369,Quintin Oosthuizen,Haw & Inglis,Chief Financial Officer / Company Secretary,CONFIRMED
+acc-0370,Sisandile Thambo,Saint-Gobain Gyproc,"Head of Finance, SBM Business Unit",CONFIRMED
+acc-0371,Walter Chigwada,Safintra South Africa,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0372,Caroline Narrainsamy(Pillay),Tronox Namakwa Sands,Fixed Asset Accountant,FINANCE_ROLE_CONFIRMED
+acc-0373,Elize Laubscher,Tronox Namakwa Sands,Head Management Accountant / Manager Information Systems (Finance),FINANCE_ROLE_CONFIRMED
+acc-0374,Elza Bester,Tronox Namakwa Sands,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0375,Linda Harris,Tronox Namakwa Sands,Senior Application Manager Finance,FINANCE_ROLE_CONFIRMED
+acc-0376,Mindre Stofberg,Tronox Namakwa Sands,"Manager, Financial Accounting",CONFIRMED
+acc-0377,"Seragi Mogano,",Tronox Namakwa Sands,Management Accountant Specialist,FINANCE_ROLE_CONFIRMED
+acc-0378,Siyabonga Mthethwa,Tronox Namakwa Sands,"Specialist, Management Accountant",CONFIRMED
+acc-0379,Susan Homann,Tronox Namakwa Sands,Snr Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0380,Victor Madziwa,Tronox Namakwa Sands,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0381,Victor Motsamai Madziwa,Tronox Namakwa Sands,Management Accounting Specialist,FINANCE_ROLE_CONFIRMED
+acc-0382,"William Tlou. BComm, Bcompt (Hons), Mcomm,",Tronox Namakwa Sands,Finance Director: South Africa,CONFIRMED
+acc-0383,Ilke du Plessis,Kropz Elandsfontein,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0384,Kyle Jacobs,Kropz Elandsfontein,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0385,Ayaduma Qonono,Astron Energy,Fixed Assets Accountant,FINANCE_ROLE_CONFIRMED
+acc-0386,Chantelle Goosen,Astron Energy,"Senior Manager, Financial Accounting & Tax",FINANCE_ROLE_CONFIRMED
+acc-0387,Craig Felaar,Astron Energy,Refinery Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0388,Craig Isler,Astron Energy,Financial Credit Analyst,FINANCE_ROLE_CONFIRMED
+acc-0389,Ebrahiem Abrahams,Astron Energy,Senior Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0390,Ebrahim Daniels,Astron Energy,Purchases Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0391,Ellendhren Govender,Astron Energy,Chief Financial Officer & Director,FINANCE_ROLE_CONFIRMED
+acc-0392,Heinrich Smit,Astron Energy,Senior Financial Analyst at Astron Energy (Pty) Ltd,FINANCE_ROLE_CONFIRMED
+acc-0393,Johanita Louw,Astron Energy,Financial Analyst - Refinery Operations,FINANCE_ROLE_CONFIRMED
+acc-0394,Kamohelo Chauke,Astron Energy,Tax Accountant,FINANCE_ROLE_CONFIRMED
+acc-0395,Lindokuhle Ngqobane,Astron Energy,Indirect Tax Analyst,FINANCE_ROLE_CONFIRMED
+acc-0396,Liyema Tweni,Astron Energy,Treasury Banking Coordinator,FINANCE_ROLE_CONFIRMED
+acc-0397,Lucinda Smidt,Astron Energy,Project Accountant,FINANCE_ROLE_CONFIRMED
+acc-0398,Lumka Unathi Kappel,Astron Energy,General Accounting Lead,CONFIRMED
+acc-0399,Melissa Frantz,Astron Energy,IT Finance Business analyst,FINANCE_ROLE_CONFIRMED
+acc-0400,Mfundo Maso,Astron Energy,Treasury Officer,FINANCE_ROLE_CONFIRMED
+acc-0401,Msutwana NOLUVO,Astron Energy,Stock Accountant,FINANCE_ROLE_CONFIRMED
+acc-0402,Nickeel maharaj,Astron Energy,Refines Accountant,FINANCE_ROLE_CONFIRMED
+acc-0403,Nicole Grendeling,Astron Energy,Corporate Tax Specialist,CONFIRMED
+acc-0404,Ofentse Matloha,Astron Energy,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0405,Palesa Mokoena,Astron Energy,Financial Control Specialist (SOX),FINANCE_ROLE_CONFIRMED
+acc-0406,Phillip Schreuder,Astron Energy,finance contractor,FINANCE_ROLE_CONFIRMED
+acc-0407,Qaqamba Ngcawuzele,Astron Energy,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0408,Ralton van Reenen,Astron Energy,AP Accountant,FINANCE_ROLE_CONFIRMED
+acc-0409,Rixongile Mabunda,Astron Energy,Bunker accountant,FINANCE_ROLE_CONFIRMED
+acc-0410,Rodrique Thomas,Astron Energy,Corporate Tax Specialist,CONFIRMED
+acc-0411,Sanele Nodume,Astron Energy,General Accountant,CONFIRMED
+acc-0412,Sikelela Mkungeki,Astron Energy,Finance Team Lead,FINANCE_ROLE_CONFIRMED
+acc-0413,Steven Holmes,Astron Energy,Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0414,Anthea F.,PetroSA,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0415,Bronwyn Behm,PetroSA,Senior Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0416,Busi Ndlovu,PetroSA,Financial Accounting,FINANCE_ROLE_CONFIRMED
+acc-0417,Ferose dawood,PetroSA,indirect tax manager,FINANCE_ROLE_CONFIRMED
+acc-0418,Freeman-Garnatt Ronell,PetroSA,Tax Advisor,FINANCE_ROLE_CONFIRMED
+acc-0419,Kotze Tania,PetroSA,Project Accountant,FINANCE_ROLE_CONFIRMED
+acc-0420,Leevas Moyana,PetroSA,Tax Advisor,FINANCE_ROLE_CONFIRMED
+acc-0421,"Linda Nene (FIIASA,CRMA,CCSA,CPrac(SA))",PetroSA,Group Chief Financial Officer (Acting),FINANCE_ROLE_CONFIRMED
+acc-0422,Maria Bookkeeper,PetroSA,Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0423,Nontobeko Mehlomakhulu,PetroSA,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0424,Phuti Mokoka,PetroSA,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0425,Rafeeq Erasmus,PetroSA,Group Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0426,Ramon Padayachi,PetroSA,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0427,Shelley Wessels,PetroSA,Financial Manager,CONFIRMED
+acc-0428,Sithole Nonsikelelo,PetroSA,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0429,Sokhuthu Mziwoluntu,PetroSA,Yield Accountant,FINANCE_ROLE_CONFIRMED
+acc-0430,Tracey Cosgrove,PetroSA,Treasury Manager Risk & Compliance,FINANCE_ROLE_CONFIRMED
+acc-0431,Wayne Marriday,PetroSA,Group Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0432,willie mahlangu,PetroSA,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0433,Xelani Vathiwe,PetroSA,Junior Accountant,FINANCE_ROLE_CONFIRMED
+acc-0434,Mamogoto Jan Mokoala,Sunrise Energy,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0435,Eben Barnard,Power Group,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0436,Ernst van Vondel,Power Group,Head Of Finance Department,CONFIRMED
+acc-0437,Jackie Furter,Power Group,Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0438,Magda Kotze,Power Group,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0439,Neil Struthers,Power Group,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0440,Amanda Punt,WBHO Construction - Cape Division,PA to Chief Executive Officer and Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0441,Andrew Logan,WBHO Construction - Cape Division,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0442,Anele Ntsinde,WBHO Construction - Cape Division,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0443,Annelize Boshoff,WBHO Construction - Cape Division,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0444,Bantu Skaap,WBHO Construction - Cape Division,Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0445,Bianca Christian,WBHO Construction - Cape Division,Group Accountant,CONFIRMED
+acc-0446,Calvin Bassa,WBHO Construction - Cape Division,Group Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0447,Celeste McLeroth,WBHO Construction - Cape Division,Finance Manager  - Building North Division,FINANCE_ROLE_CONFIRMED
+acc-0448,Charmaine van Niekerk,WBHO Construction - Cape Division,Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0449,Kabelo Kuduntwane,WBHO Construction - Cape Division,Group Accountant - Group Reporting,CONFIRMED
+acc-0450,"Markus NIEUWOUDT CMILT, MCTP(SA), Compliance Practitioner",WBHO Construction - Cape Division,"Legal Compliance Officer | International Trade, Customs, Indirect Tax & Immigration",FINANCE_ROLE_CONFIRMED
+acc-0451,Marnus Roothman,WBHO Construction - Cape Division,Finance Manager - Plant,FINANCE_ROLE_CONFIRMED
+acc-0452,Michael Besson,WBHO Construction - Cape Division,Head of Financial Services - Projects Division,FINANCE_ROLE_CONFIRMED
+acc-0453,Mr Lee Xaba,WBHO Construction - Cape Division,Finance Accounts Payable Supervisor,FINANCE_ROLE_CONFIRMED
+acc-0454,Nicole Harris,WBHO Construction - Cape Division,Senior Accountant,CONFIRMED
+acc-0455,Nkosinathi Nicholus Mabuza,WBHO Construction - Cape Division,Crossborder Accountant,FINANCE_ROLE_CONFIRMED
+acc-0456,Rendani Mdluli,WBHO Construction - Cape Division,Finance Admin Supervisor,FINANCE_ROLE_CONFIRMED
+acc-0457,Ritesh Nagar,WBHO Construction - Cape Division,Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0458,Sibusiso Zikalala,WBHO Construction - Cape Division,Cashbook Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0459,Tabisa Liborie Singenile Nkomo,WBHO Construction - Cape Division,Senior Accountant & Financial Manager (PPP) (seconded in Tshala Bese Uyavuna Consortium),CONFIRMED
+acc-0460,Tabisa Singenile,WBHO Construction - Cape Division,Financial Manager (seconded in Tshala Bese Uyavuna Consortium),CONFIRMED
+acc-0461,Thapelo Mashashane,WBHO Construction - Cape Division,Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0462,Werner Coetzee,WBHO Construction - Cape Division,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0463,wilhelmina badenhorst,WBHO Construction - Cape Division,bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0464,Yolandi de Jonge,WBHO Construction - Cape Division,Junior Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0465,Pieter Toerien,ASLA,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0466,Absay Nkosi,Concor,Senior Finance and Admin clerk,FINANCE_ROLE_CONFIRMED
+acc-0467,Angelina de Gouveia,Concor,senior finance and admin administrator,FINANCE_ROLE_CONFIRMED
+acc-0468,Ayanda Msomi,Concor,Senior Accountant,CONFIRMED
+acc-0469,"Debra Hlophe, nèe Modiba",Concor,Senior Finance Manager - Infrastructure,FINANCE_ROLE_CONFIRMED
+acc-0470,Geraldine Van Der Merwe,Concor,Snr Finance & Admin Manager,FINANCE_ROLE_CONFIRMED
+acc-0471,Gugu Ncala,Concor,Finance  and Admin Administrator,FINANCE_ROLE_CONFIRMED
+acc-0472,Jennifer Brisley,Concor,Finance and Admin Supervisor,FINANCE_ROLE_CONFIRMED
+acc-0473,Mohammed A. Mahomeddi,Concor,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0474,Sandi Bothma,Concor,Group Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0475,Sonwabile Makhesethi,Concor,Snr Clerk (Finance and Admin) 1,FINANCE_ROLE_CONFIRMED
+acc-0476,susan hodgkinson,Concor,Senior Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0477,Tlhologelo Radebe,Concor,Group Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0478,Unathi Magwentshu,Concor,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0479,Werner Buys,Concor,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0480,Charl Van Schalkwyk,Raubex / Roadmac Surfacing Cape,Roads Division Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0481,Chelsea Geldenhuys,Raubex / Roadmac Surfacing Cape,Finance Manager,CONFIRMED
+acc-0482,Devani Singh,Raubex / Roadmac Surfacing Cape,Assistant Divisional Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0483,Franselle de Villiers,Raubex / Roadmac Surfacing Cape,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0484,IR Van der Merwe,Raubex / Roadmac Surfacing Cape,Divisional Financial Manager: Materials Division of the Raubex Group of companies,CONFIRMED
+acc-0485,Matthew Hall,Raubex / Roadmac Surfacing Cape,Divisional Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0486,Monika Vorster,Raubex / Roadmac Surfacing Cape,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0487,Niel Bisschoff,Raubex / Roadmac Surfacing Cape,Divisional Financial Manager - Mining,CONFIRMED
+acc-0488,Nils Kotze,Raubex / Roadmac Surfacing Cape,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0489,Saneesa Ward,Raubex / Roadmac Surfacing Cape,Group Consolidation Accountant,CONFIRMED
+acc-0490,thobile mkhabela,Raubex / Roadmac Surfacing Cape,CFO,FINANCE_ROLE_CONFIRMED
+acc-0491,Emmaculate Shezi,GVK-Siya Zama,Project Accountant,FINANCE_ROLE_CONFIRMED
+acc-0492,John De Sousa,GVK-Siya Zama,Financial Director / Group CFO,CONFIRMED
+acc-0493,Gerrit van Niekerk,Isipani Construction,Financial Director,CONFIRMED
+acc-0494,Cala Bester,R+N Master Builders,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0495,Alwyn Bezuidenhout,Macsteel,Treasury Officer,FINANCE_ROLE_CONFIRMED
+acc-0496,Busisiwe Ntombifikile Mkhize,Macsteel,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0497,Francisca Lloyd,Macsteel,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0498,Kathleen Gouws,Macsteel,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0499,Khanyisile Mumakwe,Macsteel,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0500,Michelle Bernice Du Preez,Macsteel,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0501,Noloyiso Mahlakahlaka-Mhlubulwana,Macsteel,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0502,Trevineth Masindi,Macsteel,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0503,Tshepiso Mavimbela,Macsteel,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0504,Anneke van Tonder,NJR Steel,Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0505,Raymond Ramokgaba,NJR Steel,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0506,Victoria Fryer,NJR Steel,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0507,Johan Boshoff,Meshco,Junior Accountant,FINANCE_ROLE_CONFIRMED
+acc-0508,Celeste Maclons,SA Metal Group,Shipping Financial Co-ordinator,FINANCE_ROLE_CONFIRMED
+acc-0509,Daniele Venter,SA Metal Group,Regional Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0510,Edgar Meyers,SA Metal Group,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0511,Jo-Lee Keefe,SA Metal Group,Regional Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0512,Richard Martin,SA Metal Group,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0513,Andre C.,Fabrinox,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0514,Michelle Brook,Fabrinox,Head of Finance,FINANCE_ROLE_CONFIRMED
+acc-0515,Aldrin Jacobs,Bowler Metcalf / Bowler Plastics,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0516,Andisiwe Manzana,Mpact,Finance Systems Analyst,FINANCE_ROLE_CONFIRMED
+acc-0517,Athenkosi Mboniswa,Mpact,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0518,Bhaviska Singh,Mpact,Assistant Accountant at Mpact Paper,FINANCE_ROLE_CONFIRMED
+acc-0519,Bianka Zietsman,Mpact,Finance Service Manager,CONFIRMED
+acc-0520,Deshnee Govender,Mpact,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0521,Ebrahim Ally,Mpact,Financial Controller,CONFIRMED
+acc-0522,Hannes Snyman,Mpact,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0523,James Liston,Mpact,Financial Consultant,CONFIRMED
+acc-0524,Kulani Ngobeni,Mpact,Group Corporate Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0525,Liantie Pitchers,Mpact,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0526,Louise Moodley,Mpact,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0527,Luyanda Nkonyane,Mpact,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0528,Madhuri Brijlal,Mpact,Group consolidation and reporting analyst,FINANCE_ROLE_CONFIRMED
+acc-0529,Mihlali Kosi,Mpact,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0530,Nadine Robus Littleford,Mpact,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0531,Nelia Oosthuizen,Mpact,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0532,Nompumelelo Zama-Ngcongo,Mpact,Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0533,Noxolo Mbutho,Mpact,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0534,Rene Greeff,Mpact,Assistant Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0535,Roland Killian,Mpact,Divisional Financial Manager: Paper Converting,FINANCE_ROLE_CONFIRMED
+acc-0536,Shalin P.,Mpact,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0537,Sinazo Mpama,Mpact,Payroll Accounting Manager,FINANCE_ROLE_CONFIRMED
+acc-0538,Sithembiso Khumalo,Mpact,Financial Systems Analyst,FINANCE_ROLE_CONFIRMED
+acc-0539,Thandolwenkosi Shabangu,Mpact,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0540,Themba Collen,Mpact,Treasury Agent,FINANCE_ROLE_CONFIRMED
+acc-0541,Tikeyah Goodman,Mpact,Group Tax Analyst,FINANCE_ROLE_CONFIRMED
+acc-0542,Werner van Zyl,Mpact,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0543,Zach Wiid,Mpact,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0544,Zama-o-kuhle Dingaan,Mpact,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0545,Alice Polinyane,Polyoak Packaging,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0546,Anilynne Jacobs,Polyoak Packaging,Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0547,BRENDA PHASHA,Polyoak Packaging,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0548,Chantell Ajam,Polyoak Packaging,Regional Finance Executive,CONFIRMED
+acc-0549,Erica Felix,Polyoak Packaging,Bookkeeper,FINANCE_ROLE_CONFIRMED
+acc-0550,Garron Boshoff,Polyoak Packaging,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0551,Grant Bowler,Polyoak Packaging,Finance Executive,FINANCE_ROLE_CONFIRMED
+acc-0552,Jeanette Jonker,Polyoak Packaging,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0553,Justine Spreeth,Polyoak Packaging,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0554,Kyle Sparg,Polyoak Packaging,Commercial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0555,Lunga Phewa,Polyoak Packaging,Fixed Asset Accountant,FINANCE_ROLE_CONFIRMED
+acc-0556,Marilé Van der Westhuizen,Polyoak Packaging,Regional Executive : Finance,FINANCE_ROLE_CONFIRMED
+acc-0557,Melisa Nel,Polyoak Packaging,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0558,Mer-Lynn Griego,Polyoak Packaging,Group Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0559,Michael Ansermino,Polyoak Packaging,Commercial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0560,MOEGAMAT ZUBAIR ABDURAHMAN,Polyoak Packaging,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0561,nasrin amin,Polyoak Packaging,payroll manager,FINANCE_ROLE_CONFIRMED
+acc-0562,Nqobile Shabane (CA)SA,Polyoak Packaging,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0563,Puleng Litsibane,Polyoak Packaging,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0564,Reece Gordon,Polyoak Packaging,Tax and Secretarial Compliance Officer,FINANCE_ROLE_CONFIRMED
+acc-0565,Safiyah Patel,Polyoak Packaging,Commercial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0566,Vedet Stevens,Polyoak Packaging,Group Finance Executive,FINANCE_ROLE_CONFIRMED
+acc-0567,Aishwarya Rajkoomar,Ardagh Glass Packaging SA,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0568,Chernel Govender,Ardagh Glass Packaging SA,Tax Manager-Africa,FINANCE_ROLE_CONFIRMED
+acc-0569,Desray Hamilton,Ardagh Glass Packaging SA,Financial Analyst: Commercial,FINANCE_ROLE_CONFIRMED
+acc-0570,Junaid Samad,Ardagh Glass Packaging SA,Business Controller: Systems & Finance,FINANCE_ROLE_CONFIRMED
+acc-0571,Nthabeleng Machesa,Ardagh Glass Packaging SA,Manager: FP&A,FINANCE_ROLE_CONFIRMED
+acc-0572,Owethu Msabane,Ardagh Glass Packaging SA,Retail Finance Operations Lead,FINANCE_ROLE_CONFIRMED
+acc-0573,Thabang Mothuki,Ardagh Glass Packaging SA,Accounting Assistant,FINANCE_ROLE_CONFIRMED
+acc-0574,Thomas Bufton,Ardagh Glass Packaging SA,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0575,Alka Singh,Nampak,Financial Business Consultant- Automations,CONFIRMED
+acc-0576,Andrew Mahlaku,Nampak,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0577,Angeline Aldridge,Nampak,Head of Operations Finance Metals,CONFIRMED
+acc-0578,Anja Jordaan,Nampak,Finance Sahred Services manager,FINANCE_ROLE_CONFIRMED
+acc-0579,Chantel Sliep-Viljoen,Nampak,Operational Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0580,Delani Nkosi,Nampak,Senior Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0581,Dineo Ledwaba,Nampak,Group Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0582,Dorman-Kade (D),Nampak,Credit controller,FINANCE_ROLE_CONFIRMED
+acc-0583,fani puthini,Nampak,Financial Advisor,FINANCE_ROLE_CONFIRMED
+acc-0584,Gillian Magolie,Nampak,Operations Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0585,Glacia Matadin,Nampak,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0586,Graham Saunders,Nampak,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0587,Jacqui Celliers,Nampak,Divisional Financial Manager,CONFIRMED
+acc-0588,Kevin Cammay,Nampak,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0589,Liziwe Maseloane,Nampak,Cost and Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0590,Lois Spies,Nampak,Tax Manager RSA,FINANCE_ROLE_CONFIRMED
+acc-0591,Manoj Desai,Nampak,Financial Manger,FINANCE_ROLE_CONFIRMED
+acc-0592,Mark Jolliffe,Nampak,Group Finance,FINANCE_ROLE_CONFIRMED
+acc-0593,Matselane Motaung,Nampak,Business Systems Manager: Finance and Security,FINANCE_ROLE_CONFIRMED
+acc-0594,More (Ml),Nampak,Payroll Accountant,FINANCE_ROLE_CONFIRMED
+acc-0595,navin mahabeer,Nampak,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0596,Phineas Manana,Nampak,Assistant Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0597,Raeesah Tar,Nampak,Group Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0598,Ronnie Chetty,Nampak,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0599,Roz Roseline,Nampak,Finance,FINANCE_ROLE_CONFIRMED
+acc-0600,Samantha Maharaj,Nampak,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0601,Sandra Baisch,Nampak,Treasury Analyst,FINANCE_ROLE_CONFIRMED
+acc-0602,Shamila Soobramoney,Nampak,Treasury Operations Manager,FINANCE_ROLE_CONFIRMED
+acc-0603,Sharmila Soobramoney,Nampak,Manager Treasury Operations,FINANCE_ROLE_CONFIRMED
+acc-0604,Sibongile Sibongile.Kubeka,Nampak,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0605,steven pillay,Nampak,FINANCE MANAGER,FINANCE_ROLE_CONFIRMED
+acc-0606,Susan Prinsloo,Nampak,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0607,Syed (Rb),Nampak,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0608,Thamsanqa Thwala,Nampak,Special Projects - Financial | Transformation,FINANCE_ROLE_CONFIRMED
+acc-0609,Thembela Mafu,Nampak,Payroll Accountant,FINANCE_ROLE_CONFIRMED
+acc-0610,Thiru Naicker,Nampak,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0611,virginia mouton,Nampak,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0612,Zinathi Melamane,Nampak,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0613,Richard Allen,Lactalis South Africa,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0614,Ben Kutlwano Motsweni,Lactalis South Africa,Graduate Trainee Accountant (Accounts Payable),FINANCE_ROLE_CONFIRMED
+acc-0615,Vincent Radebe GTP(SA),Lactalis South Africa,Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0616,Rutger Koeman,PepsiCo South Africa / Pioneer Foods,VP S&T and CFO Southern Africa,FINANCE_ROLE_CONFIRMED
+acc-0617,Amahle Ndindi,Lactalis South Africa,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0618,Joe van der Walt,PepsiCo South Africa / Pioneer Foods,FP&A Senior Manager,FINANCE_ROLE_CONFIRMED
+acc-0619,Temoso Shazi,PepsiCo South Africa / Pioneer Foods,Finance Analytics Manager (Supply Chain),FINANCE_ROLE_CONFIRMED
+acc-0620,Caron Hol,PepsiCo South Africa / Pioneer Foods,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0621,Lizaan van der Walt,Lactalis South Africa,Tax and Treasury Accountant,FINANCE_ROLE_CONFIRMED
+acc-0622,Barry Heyns,Lactalis South Africa,Finance Manager - Industrial and Milk Collection,FINANCE_ROLE_CONFIRMED
+acc-0623,Andre Grobler,Lactalis South Africa,Business Systems Manager - Finance,FINANCE_ROLE_CONFIRMED
+acc-0624,AJ Julies,RFG Foods,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0625,Relebohile Nkojoana,PepsiCo South Africa / Pioneer Foods,Franchise Finance Business Partner - Africa,FINANCE_ROLE_CONFIRMED
+acc-0626,Kalnisha Naidoo,Lactalis South Africa,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0627,Emanuel Govender,Lactalis South Africa,Management Control Graduate / Acting Admin Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0628,Russell Weyer,Lactalis South Africa,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0629,Rieduwaan Meniers,Lactalis South Africa,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0630,Philip Botha,RFG Foods,Divisional Finance,FINANCE_ROLE_CONFIRMED
+acc-0631,Sergio September,PepsiCo South Africa / Pioneer Foods,Finance Analyst,FINANCE_ROLE_CONFIRMED
+acc-0632,Ampie Calitz,RFG Foods,Head of Group Financial services,FINANCE_ROLE_CONFIRMED
+acc-0633,Nerasha Bahaw-Louw,Lactalis South Africa,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0634,Matheus Schreuder,Fair Cape Dairies,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0635,Wilhelm Nell,Fair Cape Dairies,Cost & Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0636,Eduard Loubser,Fair Cape Dairies,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0637,Kyrlene Goliath,PepsiCo South Africa / Pioneer Foods,Bakeries FP&A Planner- FS &EC Finance Cluster Lead,FINANCE_ROLE_CONFIRMED
+acc-0638,Lynn Radcliffe,Lactalis South Africa,Group Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0639,Ayanda Geza,PepsiCo South Africa / Pioneer Foods,Financial Planning Analyst,FINANCE_ROLE_CONFIRMED
+acc-0640,Bianca Krishna,PepsiCo South Africa / Pioneer Foods,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0641,Arline Luiters,Lactalis South Africa,Management Accountant - Milk Collection,FINANCE_ROLE_CONFIRMED
+acc-0642,Sunell Humphris,Lactalis South Africa,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0643,Tebogo Tuba,PepsiCo South Africa / Pioneer Foods,FP&A,FINANCE_ROLE_CONFIRMED
+acc-0644,Mmakgotso Mopeli,Lactalis South Africa,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0645,Rethabile Pindani,Lactalis South Africa,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0646,Katlego Molopyane,PepsiCo South Africa / Pioneer Foods,Category Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0647,Amanda Vakalisa,Lactalis South Africa,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0648,Victoria Swanson,Lactalis South Africa,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0649,Zené de Laan,PepsiCo South Africa / Pioneer Foods,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0650,Heleen Botha,Fair Cape Dairies,Executive PA & Finance Debtors Controller,FINANCE_ROLE_CONFIRMED
+acc-0651,Louis Veldsman,PepsiCo South Africa / Pioneer Foods,Financial Shared Service Center: Manager Administration Sales,FINANCE_ROLE_CONFIRMED
+acc-0652,Nina Valentine (nee. Coetzee),PepsiCo South Africa / Pioneer Foods,Account Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0653,Gretchen Wrigley,PepsiCo South Africa / Pioneer Foods,FP&A Director,FINANCE_ROLE_CONFIRMED
+acc-0654,Aadila Shaikh,Lactalis South Africa,Head of Finance - Cremora,FINANCE_ROLE_CONFIRMED
+acc-0655,Youlanda Pillay,Lactalis South Africa,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0656,Nathaly Mouton,Lactalis South Africa,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0657,Bianca Greyling,Lactalis South Africa,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0658,Asanda Gwiliza,Lactalis South Africa,Finance Trainee,FINANCE_ROLE_CONFIRMED
+acc-0659,Charlton Simpson,PepsiCo South Africa / Pioneer Foods,Procurement Finance Business Partner,FINANCE_ROLE_CONFIRMED
+acc-0660,Gaylin Jonkers,Lactalis South Africa,Sales Accountant,FINANCE_ROLE_CONFIRMED
+acc-0661,Claudia Adriaanse,Lactalis South Africa,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0662,Zaakirah Davids,Lactalis South Africa,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0663,Sinawo Madlingozi,PepsiCo South Africa / Pioneer Foods,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0664,Ewaldi Luus,Fair Cape Dairies,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0665,Kefiloe Petunia Mashinini,PepsiCo South Africa / Pioneer Foods,Reporting Accountant,FINANCE_ROLE_CONFIRMED
+acc-0666,Firaz Rahman,RFG Foods,Head of Group Finance,FINANCE_ROLE_CONFIRMED
+acc-0667,Jacobie Hendricks,Lactalis South Africa,Senior Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0668,Robyn Bartlett,RFG Foods,Divisional Management Accountant at Rhodes Food Group,FINANCE_ROLE_CONFIRMED
+acc-0669,Veronica Steenveld,Lactalis South Africa,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0670,Brumilda Farmer,Lactalis South Africa,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0671,Tarryn Scholtz,PepsiCo South Africa / Pioneer Foods,Assistant Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0672,Phila Nyoka,PepsiCo South Africa / Pioneer Foods,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0673,Nomfundo Thusini,PepsiCo South Africa / Pioneer Foods,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0674,Dean Jordaan,Lactalis South Africa,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0675,Tanya Govender,RFG Foods,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0676,Danzil September,Lactalis South Africa,Financial Accountant: Fixed Assets and Insurance,FINANCE_ROLE_CONFIRMED
+acc-0677,Tsireledzo Manabela,Lactalis South Africa,Finance,FINANCE_ROLE_CONFIRMED
+acc-0678,Warnick Hartzenberg,PepsiCo South Africa / Pioneer Foods,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0679,Thyron Arumugam,Lactalis South Africa,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0680,Lungelwa Sogiba,Lactalis South Africa,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0681,Egbert Van Romburgh,PepsiCo South Africa / Pioneer Foods,Supply Chain Finance Lead - Move,FINANCE_ROLE_CONFIRMED
+acc-0682,Portia Harrison,PepsiCo South Africa / Pioneer Foods,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0683,charlotte Mawela,PepsiCo South Africa / Pioneer Foods,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0684,Nicole Genade,Lactalis South Africa,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0685,Samoray Jooste,Lactalis South Africa,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0686,Crystal Okkers,Lactalis South Africa,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0687,Juanita Isaacs,PepsiCo South Africa / Pioneer Foods,Accounts Payable Manager,FINANCE_ROLE_CONFIRMED
+acc-0688,Zaf Mahomed,Oceana Group,Group CFO,FINANCE_ROLE_CONFIRMED
+acc-0689,Sydney Rudzani,Sea Harvest Group,Corporate Finance and Treasury Executive,FINANCE_ROLE_CONFIRMED
+acc-0690,Ipfi Gavhi,I&J,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0691,Imran Bapoo,Oceana Group,Manager: Group Reporting,FINANCE_ROLE_CONFIRMED
+acc-0692,Anne-Lize Lochner,Sea Harvest Group,Finance Executive,FINANCE_ROLE_CONFIRMED
+acc-0693,Muhammad Brey,Sea Harvest Group,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0694,Talisa Naidoo,Sea Harvest Group,Head of Group Consolidation and Tax Reporting,FINANCE_ROLE_CONFIRMED
+acc-0695,Ewan van Rensburg,Oceana Group,Senior Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0696,Ahmed Dalvie,Oceana Group,Executive: Finance Shared Services,FINANCE_ROLE_CONFIRMED
+acc-0697,Qayiya Siphosethu Kobese,Peninsula Beverages,Finance and Shared Services Lead:Designate,FINANCE_ROLE_CONFIRMED
+acc-0698,Angus Cornelius,Peninsula Beverages,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0699,Shikhaar Ravidas,Sea Harvest Group,Group Consolidation and Tax Accountant,FINANCE_ROLE_CONFIRMED
+acc-0700,Odwa Zamatyala,Oceana Group,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0701,Gadija Samaai,Sea Harvest Group,Financial Manager: SA Fishing,FINANCE_ROLE_CONFIRMED
+acc-0702,Siphamandla Fennie,I&J,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0703,Nikita Braaf,I&J,Group Financial Reporting,FINANCE_ROLE_CONFIRMED
+acc-0704,Dawn Fortune,Oceana Group,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0705,Lizo Manyana,Peninsula Beverages,Assistant Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0706,Aadam Wei,Oceana Group,Corporate Finance & Investor Relations Analyst,FINANCE_ROLE_CONFIRMED
+acc-0707,Tinu van der Westhuizen,Sea Harvest Group,Management Accounting,FINANCE_ROLE_CONFIRMED
+acc-0708,Sumaya Kader,Oceana Group,Group Treasury Manager,FINANCE_ROLE_CONFIRMED
+acc-0709,Keenen Witbooi,Peninsula Beverages,Regional Plant Accountant /Operational Accountant,FINANCE_ROLE_CONFIRMED
+acc-0710,Suzaan Batista,Sea Harvest Group,Consolidation Accountant,FINANCE_ROLE_CONFIRMED
+acc-0711,Yolandi Adam,Peninsula Beverages,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0712,Wardah Botha,Oceana Group,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0713,Sivuyisiwe Mtshaka,I&J,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0714,Anthea Jacobs,Oceana Group,Executive: PA CEO and CFO,FINANCE_ROLE_CONFIRMED
+acc-0715,Shereen Hartnick,Peninsula Beverages,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0716,Gwuineth Benting,Peninsula Beverages,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0717,Jody Munnik,Oceana Group,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0718,Marinelle de Klerk Kilian,Sea Harvest Group,Assistant Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0719,Hishaam Salie,Oceana Group,Assistant Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0720,Lindi Dempers,Oceana Group,Senior Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0721,Andisiwe Baliso,Oceana Group,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0722,Wilhelm Von Westernhagen,Oceana Group,Group Treasury Manager,FINANCE_ROLE_CONFIRMED
+acc-0723,Kaylene Meintjies,Sea Harvest Group,Assistant Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0724,Belinda David,I&J,Treasury Accountant & Fund Officer,FINANCE_ROLE_CONFIRMED
+acc-0725,Suzaan Louw,Sea Harvest Group,Payroll Compliance and Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0726,Angelic Bezuidenhoudt,Peninsula Beverages,Manufacturing management accountant,FINANCE_ROLE_CONFIRMED
+acc-0727,Desire October,Sea Harvest Group,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0728,Lisa Jainundh,Sea Harvest Group,HOD: Financial Management,FINANCE_ROLE_CONFIRMED
+acc-0729,Carmen Karsten,Sea Harvest Group,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0730,Parveen Ismail,I&J,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0731,Leandra van der Merwe,Peninsula Beverages,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0732,Bonga Majozi,Peninsula Beverages,Departmental Accountant,FINANCE_ROLE_CONFIRMED
+acc-0733,Aviwe Ngcawuzele,I&J,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0734,Geyrieya Hendricks,Oceana Group,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0735,Keneuwe Khati,Oceana Group,Assitant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0736,Wilbur Engelbrecht,Oceana Group,Assistant Accountant: Finance,FINANCE_ROLE_CONFIRMED
+acc-0737,Junaid Parker,Oceana Group,Financial Shared Services Manager,FINANCE_ROLE_CONFIRMED
+acc-0738,Welgemoed Valerie,Oceana Group,Treasury Manager,FINANCE_ROLE_CONFIRMED
+acc-0739,Monique Dippenaar,Oceana Group,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0740,Horstmann Natasha,Oceana Group,PA to Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0741,Suzanne Fourie,LANCEWOOD,Group Cost Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0742,Déhan Nel,LANCEWOOD,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0743,Herman Vermeulen,Southern Oil (SOILL),Accountant,FINANCE_ROLE_CONFIRMED
+acc-0744,Melissa Beck,Southern Oil (SOILL),Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0745,Zuko Maboma,Premier Fishing & Brands,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0746,Mariska Vermeulen,Southern Oil (SOILL),Operational Accountant,FINANCE_ROLE_CONFIRMED
+acc-0747,Leonie Nell,LANCEWOOD,Finance,FINANCE_ROLE_CONFIRMED
+acc-0748,Sandisiwe Myekwa nee Booi,Premier Fishing & Brands,Group Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0749,Jesca M.,Premier Fishing & Brands,Group Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0750,Sinethemba Zulu,Premier Fishing & Brands,Lead: Finance Portfolio,FINANCE_ROLE_CONFIRMED
+acc-0751,Pieter-Christiaan Coetzer,Southern Oil (SOILL),Analytical Accountant,FINANCE_ROLE_CONFIRMED
+acc-0752,Siseko Maninjwa,Ladismith Cheese / Woodlands Dairy Group,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0753,Abdulmu-izz Fortune,Premier Fishing & Brands,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0754,Owen Gush,Ladismith Cheese / Woodlands Dairy Group,CFO,FINANCE_ROLE_CONFIRMED
+acc-0755,Jody Marthinus,LANCEWOOD,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0756,Siziphiwe Qayiso,Southern Oil (SOILL),Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0757,Lex Adendorff,Ladismith Cheese / Woodlands Dairy Group,FINANCIAL MANAGER,FINANCE_ROLE_CONFIRMED
+acc-0758,Yolandi Burger,Southern Oil (SOILL),Accountant,FINANCE_ROLE_CONFIRMED
+acc-0759,Phumulani Menzi Mabena,SAB / AB InBev - Newlands Brewery,BU South Tax Manager | Africa Zone,FINANCE_ROLE_CONFIRMED
+acc-0760,Justin Liebenberg,SAB / AB InBev - Newlands Brewery,Africa Tax Director,FINANCE_ROLE_CONFIRMED
+acc-0761,Claudia Vega Barandiarán,SAB / AB InBev - Newlands Brewery,Africa Tax Director,FINANCE_ROLE_CONFIRMED
+acc-0762,Megan N.,SAB / AB InBev - Newlands Brewery,"NoCC ZBB Analyst, FP&A",FINANCE_ROLE_CONFIRMED
+acc-0763,Portia Mathebula,SAB / AB InBev - Newlands Brewery,Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0764,Elisha Dhenanath,SAB / AB InBev - Newlands Brewery,Treasury Director Africa Zone (12 countries),FINANCE_ROLE_CONFIRMED
+acc-0765,Bradley Kent,SAB / AB InBev - Newlands Brewery,Economic & Tax Policy Manager,FINANCE_ROLE_CONFIRMED
+acc-0766,Itumeleng Sealetsa,SAB / AB InBev - Newlands Brewery,Transformation lead: Treasury and Banking,FINANCE_ROLE_CONFIRMED
+acc-0767,Kirsten Wentzel,SAB / AB InBev - Newlands Brewery,Financial Planning and Performance Manager: Innovation,FINANCE_ROLE_CONFIRMED
+acc-0768,Andiswa Ndwalane,SAB / AB InBev - Newlands Brewery,Financial Analyst Trainee,FINANCE_ROLE_CONFIRMED
+acc-0769,Nhlakanipho Vusi Mpungose (CFE),SAB / AB InBev - Newlands Brewery,JNR Data & Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0770,Jani van Zyl,KWV,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0771,Njabulo Ngcobo,SAB / AB InBev - Newlands Brewery,Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0772,Rose Leduma,SAB / AB InBev - Newlands Brewery,Mozambique Tax Stamp Supervisor,FINANCE_ROLE_CONFIRMED
+acc-0773,Anthea Jacobs (Hendricks),KWV,Finance Manager : Funding and Treasury,FINANCE_ROLE_CONFIRMED
+acc-0774,Linda Nyirenda (ACMA,SAB / AB InBev - Newlands Brewery,FP&A Manager: BU South East,FINANCE_ROLE_CONFIRMED
+acc-0775,Pia Steyn,KWV,Financial Manager: Risk and Reporting,FINANCE_ROLE_CONFIRMED
+acc-0776,Chanelle Makhanya,HEINEKEN Beverages,Regional Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0777,Melissa Klopper,DGB,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0778,Ashley Julius,KWV,Financial Manager Operations,FINANCE_ROLE_CONFIRMED
+acc-0779,shudufhadzo mutshutshu,SAB / AB InBev - Newlands Brewery,Treasury Specialist,FINANCE_ROLE_CONFIRMED
+acc-0780,Hanna Robertson,DGB,Group Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0781,Lyle September,KWV,Finance SA Sales,FINANCE_ROLE_CONFIRMED
+acc-0782,Thabang Ngwenya,SAB / AB InBev - Newlands Brewery,Financial Planning and Analysis Manager,FINANCE_ROLE_CONFIRMED
+acc-0783,Lavanya Govender,SAB / AB InBev - Newlands Brewery,FP&A Monthly Cycle Specialist,FINANCE_ROLE_CONFIRMED
+acc-0784,Thobile Mbangeni,SAB / AB InBev - Newlands Brewery,Financial Analyst,FINANCE_ROLE_CONFIRMED
+acc-0785,Anwer Louw,KWV,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0786,Goitsemang Mokaila,HEINEKEN Beverages,"Digital & Technology Lead - Support (Finance, HR, Procurement)",FINANCE_ROLE_CONFIRMED
+acc-0787,Johan Van den Elst,KWV,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0788,Christelle Germishuys,KWV,Admin Finance Debtors,FINANCE_ROLE_CONFIRMED
+acc-0789,Nolwazi Nokuthula Nkabinde,DGB,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0790,Daniël Smit,KWV,Financial executive,FINANCE_ROLE_CONFIRMED
+acc-0791,faith ntshingila,DGB,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0792,Maurice Meyer,KWV,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0793,Stephan van Rensburg,Kaap Agri / Agrimark,Operations Accountant,FINANCE_ROLE_CONFIRMED
+acc-0794,Philip Slabber,Overberg Agri,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0795,Graeme Sim,Kaap Agri / Agrimark,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0796,Ger-Mari Van Niekerk (CA)(SA),Kaap Agri / Agrimark,Operations Accountant,FINANCE_ROLE_CONFIRMED
+acc-0797,Ell-Mae Lawrence,Kaap Agri / Agrimark,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0798,Villiers van Veen,Sentraal-Suid Co-operative (SSK),Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0799,Elané Beukes (Botha),Overberg Agri,Senior Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0800,JD Pienaar,Kaap Agri / Agrimark,Senior Manager Financial Services,FINANCE_ROLE_CONFIRMED
+acc-0801,Lee-Roy Middleton,Kaap Agri / Agrimark,Operations Accountant,FINANCE_ROLE_CONFIRMED
+acc-0802,Lizaan Draper,Sentraal-Suid Co-operative (SSK),Manager: Finance,FINANCE_ROLE_CONFIRMED
+acc-0803,Garthan Lakay,Kaap Agri / Agrimark,Manager Financial Services Admin & Manager Financial Services,FINANCE_ROLE_CONFIRMED
+acc-0804,Lizane Lubbe,Sentraal-Suid Co-operative (SSK),Senior Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0805,Sunette Botes,Kaap Agri / Agrimark,Group Manager: Finance (designate),FINANCE_ROLE_CONFIRMED
+acc-0806,Monique Pienaar (neé du Toit),Overberg Agri,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0807,Henlie Viola,Kaap Agri / Agrimark,Assistant Manager: Finance,FINANCE_ROLE_CONFIRMED
+acc-0808,Leandré Louw,Kaap Agri / Agrimark,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0809,Emmie Germishuys,Sentraal-Suid Co-operative (SSK),Senior Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0810,Louise Gouws Du Toit,Kaap Agri / Agrimark,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0811,Eric le Roux,Kaap Agri / Agrimark,Operations Accountant,FINANCE_ROLE_CONFIRMED
+acc-0812,Albert Goosen,Ceres Fruit Growers,Group Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0813,Chantelle Reyerse,Dutoit Agri,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0814,Eugene Louw,Kromco,Financial manager,FINANCE_ROLE_CONFIRMED
+acc-0815,Louis Nel,Tru-Cape Fruit Marketing,Cost Accountant and Financial Assistant,FINANCE_ROLE_CONFIRMED
+acc-0816,Albert Steyn,Capespan South Africa,Joint CFO,FINANCE_ROLE_CONFIRMED
+acc-0817,Fia Karstens,Capespan South Africa,Head Of Finance,FINANCE_ROLE_CONFIRMED
+acc-0818,Bianca Treiber,Fruitways,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0819,Henk Odendaal,Fruitways,Group Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0820,Johan Snyman,Fruitways,Finance Operations Manager,FINANCE_ROLE_CONFIRMED
+acc-0821,Deon van Schalkwyk,Capespan South Africa,Accounts Payable Manager,FINANCE_ROLE_CONFIRMED
+acc-0822,Jonathan Petley,Betko Fresh Produce,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0823,Kelly Turck,Capespan South Africa,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0824,Ziyaad Nakidien,Capespan South Africa,Finance Officer,FINANCE_ROLE_CONFIRMED
+acc-0825,Michelle Govender,Capespan South Africa,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0826,Lameez Cupido,Capespan South Africa,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0827,Ronel Botha,Fruitways,Sales Accountant,FINANCE_ROLE_CONFIRMED
+acc-0828,Charne Johnston,Capespan South Africa,Finance Officer,FINANCE_ROLE_CONFIRMED
+acc-0829,Leticia August,Fruitways,Accounting Administrator,FINANCE_ROLE_CONFIRMED
+acc-0830,Jayvant Vassen,Capespan South Africa,Group Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0831,Shaheeda Gafieldien,Fruitways,Financial Assistant,FINANCE_ROLE_CONFIRMED
+acc-0832,Carli Mills,Fruitways,Sales Accountant,FINANCE_ROLE_CONFIRMED
+acc-0833,Brendon Lucke,Commercial Cold Holdings,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0834,Adeelah Adams,Commercial Cold Holdings,Group Reporting Accountant,FINANCE_ROLE_CONFIRMED
+acc-0835,Anel Laubscher,Commercial Cold Holdings,Group Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0836,Ande Nkontso,DSV,Operational Accounting Controller,FINANCE_ROLE_CONFIRMED
+acc-0837,Magda Harmse,DSV,Senior Director: RSSC Finance MEA Region,FINANCE_ROLE_CONFIRMED
+acc-0838,Akani Fungheni (BCOMPT),DSV,Controller: Finance Business Partner & Controlling - General & Specialized Contract Logistics Sol,FINANCE_ROLE_CONFIRMED
+acc-0839,Freda Venter,DSV,Regional CFO,FINANCE_ROLE_CONFIRMED
+acc-0840,Delwen Fortune,DSV,Regional Manager-Business Change Management-Finance for the Middle East & Africa,FINANCE_ROLE_CONFIRMED
+acc-0841,Diana Quintero Ruiz    (MBA),DSV,"Manager, Senior Operational Finance Lead, Air & Sea",FINANCE_ROLE_CONFIRMED
+acc-0842,Rescha Kok,DSV,Accounts Receivable Manager,FINANCE_ROLE_CONFIRMED
+acc-0843,Sylwia Parzuchowski,DSV,Assistant Accounting Manager,FINANCE_ROLE_CONFIRMED
+acc-0844,Augustine Sithole,DSV,Accounts Payable Manager Africa,FINANCE_ROLE_CONFIRMED
+acc-0845,Thapelo K. Matlawe,DSV,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0846,Rene Geneve Boros,DSV,Operational Accounting Coordinator,FINANCE_ROLE_CONFIRMED
+acc-0847,Jeanne Fourie,DSV,Assistant Accounting Manager,FINANCE_ROLE_CONFIRMED
+acc-0848,Fortunate Malaza,DSV,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0849,Vinita van der Walt,DSV,Business Controller,FINANCE_ROLE_CONFIRMED
+acc-0850,Ellaine Mundie - Michael,DSV,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0851,Thobile Mgenge Otobor,DSV,"Business Controller, Finance",FINANCE_ROLE_CONFIRMED
+acc-0852,Chantelle Boucher,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0853,Sindisiwe Mahlangu,DSV,"Credit Controller, Accounts Receivable",FINANCE_ROLE_CONFIRMED
+acc-0854,Shailen Gokaldass,DSV,Accountant - Finance,FINANCE_ROLE_CONFIRMED
+acc-0855,Tanya Churchill,DSV,Finance Business Partner,FINANCE_ROLE_CONFIRMED
+acc-0856,Cindy Beukes,DSV,Payroll Manager,FINANCE_ROLE_CONFIRMED
+acc-0857,Kosie Menzangani,DSV,Financial Reporting Specialist,FINANCE_ROLE_CONFIRMED
+acc-0858,Bernadette V.,DSV,Tax Manager,FINANCE_ROLE_CONFIRMED
+acc-0859,Mduduzi Hlubi,DSV,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0860,Liezel Odendaal,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0861,Shahied Griffin,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0862,Nicolene De Klerk,DSV,Compliance and tax manager,FINANCE_ROLE_CONFIRMED
+acc-0863,Jeanette Croukamp,DSV,Finance,FINANCE_ROLE_CONFIRMED
+acc-0864,Dianne Noake,DSV,Systems Assistant Queries Finance,FINANCE_ROLE_CONFIRMED
+acc-0865,Portia Sihlahla,DSV,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0866,nomsa mashabela,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0867,Florence Ramabina,DSV,Tax Assistant,FINANCE_ROLE_CONFIRMED
+acc-0868,Naazeneen Sayed,DSV,Treasury and Cash Manager,FINANCE_ROLE_CONFIRMED
+acc-0869,Qinisela Vincent Rasmeni,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0870,precious mulaudzi,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0871,Amanda Groenewald,DSV,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0872,Alisha Coetzer,DSV,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0873,Maruping Alina,DSV,Operational Finance Assistant,FINANCE_ROLE_CONFIRMED
+acc-0874,Bridgete Kgopane,DSV,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0875,Phindile Mcunu,DSV,Full Function Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0876,Ansie van der Westhuizen,DSV,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0877,Elna Kruger,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0878,Justyna Bruwer,DSV,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0879,Corne Du Plooy,DSV,Tax Consultant,FINANCE_ROLE_CONFIRMED
+acc-0880,Tierney Paul,DSV,Director Finance,FINANCE_ROLE_CONFIRMED
+acc-0881,Anneline Govender,DSV,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0882,Andre Smith,Afrimat,Deputy CFO,FINANCE_ROLE_CONFIRMED
+acc-0883,Brendelene Solomons,Afrimat,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0884,Brent Ferreira,Afrimat,Financial Reporting Accountant,CONFIRMED
+acc-0885,Catharine Burger,Afrimat,Corporate Financial Manager,CONFIRMED
+acc-0886,Celecia Van Wyk,Afrimat,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0887,Daniel Koegelenberg,Afrimat,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0888,Deon Uys,Afrimat,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0889,Dirk Kotze,Afrimat,Head of Finance: Mining,CONFIRMED
+acc-0890,Emeal Winston (Emeal) van der Westhuizen,Afrimat,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0891,Gail Hatting,Afrimat,Assistant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0892,Heinrich Maartens,Afrimat,Regional Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0893,Karli Moore,Afrimat,Financial Accountant,CONFIRMED
+acc-0894,Karlien Panter,Afrimat,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0895,Karonien Pretorius,Afrimat,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0896,Keitumetse Tito,Afrimat,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0897,Lehlohonolo Tsotetsi,Afrimat,Junior Accountant,FINANCE_ROLE_CONFIRMED
+acc-0898,Lizanne Buitendag,Afrimat,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0899,Mariette Swart,Afrimat,Head of Finance - Construction Materials,CONFIRMED
+acc-0900,Netshia Nduvho,Afrimat,Junior Accountant,FINANCE_ROLE_CONFIRMED
+acc-0901,Nkalipho Koenane,Afrimat,Finance Officer,FINANCE_ROLE_CONFIRMED
+acc-0902,Patience Hlongwane,Afrimat,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0903,Pieter De Wit,Afrimat,Financial Director/CFO,CONFIRMED
+acc-0904,Reosha Premduth,Afrimat,Accountant,CONFIRMED
+acc-0905,Samantha Hanke,Afrimat,Group Financial Manager,CONFIRMED
+acc-0906,Siyanda Rayi Nameka,Afrimat,Debtors Controller,FINANCE_ROLE_CONFIRMED
+acc-0907,Veronique MARCOUX,Afrimat,Corporate Finance Consultant,FINANCE_ROLE_CONFIRMED
+acc-0908,Adri Van Der Westhuizen,AfriSam,Payroll Manager/Accountant,FINANCE_ROLE_CONFIRMED
+acc-0909,Leon Serfontein,AfriSam,Chief Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0910,Liezl Barnard,AfriSam,Financial Controller Financial Accounting and Reporting,CONFIRMED
+acc-0911,Maganathan (Vincin) Naidu,AfriSam,Senior Accountant,FINANCE_ROLE_CONFIRMED
+acc-0912,Mahosi Mashao,AfriSam,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0913,Ndivhuwo Thomoli,AfriSam,Consolidation Accountant,CONFIRMED
+acc-0914,Orapeleng Maragelo,AfriSam,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0915,Phillip Mashao,AfriSam,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0916,Pieter Botha,AfriSam,Financial Controller - Operations,CONFIRMED
+acc-0917,Precious Moagi,AfriSam,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0918,Prudence Radebe,AfriSam,Key Accounts Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0919,Shamima Ranchod,AfriSam,Accounts Payable Manager,FINANCE_ROLE_CONFIRMED
+acc-0920,Sharon King,AfriSam,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0921,Siddiqa Enous,AfriSam,Financial Controller : Cementitious and S&M,FINANCE_ROLE_CONFIRMED
+acc-0922,Sophy Finger,AfriSam,Senior Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0923,Bevill Arendse,Averda South Africa,Financial Administrator,FINANCE_ROLE_CONFIRMED
+acc-0924,Brink van Niekerk,Averda South Africa,Senior Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0925,Kelebogile Mokhine,Averda South Africa,Finance Operations,FINANCE_ROLE_CONFIRMED
+acc-0926,Mitterand Ngoy,Averda South Africa,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0927,Sazile Manzini,Averda South Africa,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0928,Taku Chimedza,Averda South Africa,Senior Group Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0929,Lindi le Roux,Blaauwberg Cold Storage,Group Accountant,FINANCE_ROLE_CONFIRMED
+acc-0930,Iliscke Cilliers,Boland Cellar,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0931,Craig Stipp,Brito's Group,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0932,Eugene Stoumann,Brito's Group,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0933,Madele Van Heerden,Brito's Group,Group Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0934,Mart-Marie Visagie,Brito's Group,Finance Admin Clerk,FINANCE_ROLE_CONFIRMED
+acc-0935,Aphiwe Mgaleli,Cape Herb & Spice,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0936,Claire Lofthouse,Cape Herb & Spice,Finance Manager - Reporting,FINANCE_ROLE_CONFIRMED
+acc-0937,Dean Teuchert,Cape Herb & Spice,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0938,Mellissa Pearce (née Ryder),Cape Herb & Spice,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0939,Nikita Candy Engelbrecht,Cape Herb & Spice,Junior Commercial Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0940,Saadiqa Abrahams,Cape Herb & Spice,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0941,Shaun Peypers,Cape Herb & Spice,Senior Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0942,Andrew Scrase,EnviroServ,Head Finance Business Support,FINANCE_ROLE_CONFIRMED
+acc-0943,Cheryl Somers Vine,EnviroServ,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0944,Francois Du Plessis,EnviroServ,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0945,Karabo Neluheni,EnviroServ,Group Financial & Tax Controller,FINANCE_ROLE_CONFIRMED
+acc-0946,khomotso kgapane,EnviroServ,Cost Accountant,FINANCE_ROLE_CONFIRMED
+acc-0947,Linda Van Deemter,EnviroServ,Financial Reporting Manager,FINANCE_ROLE_CONFIRMED
+acc-0948,Lizelle De Klerk,EnviroServ,Group Treasury Manager,FINANCE_ROLE_CONFIRMED
+acc-0949,Louis Grant,EnviroServ,Finance Project Manager,FINANCE_ROLE_CONFIRMED
+acc-0950,Margot Baird,EnviroServ,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0951,Hayley Africa,Excellent Meat Group,Junior Accountant,FINANCE_ROLE_CONFIRMED
+acc-0952,Juan Pierre van der Westhuizen,Excellent Meat Group,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0953,Amanda Fairley,Interwaste,CFO: Interwaste Holdings,FINANCE_ROLE_CONFIRMED
+acc-0954,Michael McAllister (CIMA Adv Dip MA),Interwaste,Financial Accounting Manager,FINANCE_ROLE_CONFIRMED
+acc-0955,Pilot Mzimba,Interwaste,Divisional Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0956,Pranesh Narshi,Interwaste,Regional Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-0957,Samantha Olifant,Interwaste,Plant Accountant,FINANCE_ROLE_CONFIRMED
+acc-0958,Charne Putter,Libstar,Senior Group Accountant,FINANCE_ROLE_CONFIRMED
+acc-0959,Flavian Du Plessis,Libstar,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0960,Henko Kleynhans,Libstar,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0961,Kelly (Weidemann) Estment,Libstar,Group Reporting Manager,FINANCE_ROLE_CONFIRMED
+acc-0962,Lené Goosen,Libstar,Senior Group Accountant,FINANCE_ROLE_CONFIRMED
+acc-0964,Minnie D.,Métier Mixed Concrete,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0965,Patricia Becker,Métier Mixed Concrete,Finance,FINANCE_ROLE_CONFIRMED
+acc-0966,GJ Richter,Namaqua Wines,General Manager: Finance & Operations,FINANCE_ROLE_CONFIRMED
+acc-0967,Monique Ellis,Namaqua Wines,Junior Accountant,FINANCE_ROLE_CONFIRMED
+acc-0968,Aulene De Vries,Portland Group,Accountant,CONFIRMED
+acc-0969,Beryl Ownhouse,PPC,Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0970,Chrissie Moloseni,PPC,CFO - PPC INTERNATIONAL,CONFIRMED
+acc-0971,Gcina Mlambo,PPC,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0972,Kershnee Pillay Reddy,PPC,"Head Group Treasury, Risk and Assurance",CONFIRMED
+acc-0973,Nompi Morajane,PPC,Finance Manager - Cement SA and Botswana,CONFIRMED
+acc-0974,Sifiso Mthethwa,PPC,Direct Tax Specialist,FINANCE_ROLE_CONFIRMED
+acc-0975,Christie Kruger,Spier,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0976,Karin Smidt,Spier,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0977,Kruger Christie,Spier,Finance Director - Riverbank Operations,FINANCE_ROLE_CONFIRMED
+acc-0978,Michelle Carstens,Spier,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0979,Rameck Gadziso,Spier,Cost and Cash Accountant,FINANCE_ROLE_CONFIRMED
+acc-0980,Lindi Louw,Stellenbosch Vineyards / Advini South Africa,Finance Manager,FINANCE_ROLE_CONFIRMED
+acc-0981,Armand Horst,WastePlan,Head of Finance,FINANCE_ROLE_CONFIRMED
+acc-0982,Frikkie G.,WastePlan,Group CFO,FINANCE_ROLE_CONFIRMED
+acc-0983,Nicolene Burger,WastePlan,Finance Manager Gauteng,FINANCE_ROLE_CONFIRMED
+acc-0984,SP Jansen van Vuuren,WastePlan,Group Financial Accountant,FINANCE_ROLE_CONFIRMED
+acc-0985,Fanie Esterhuizen,SPH Kundalila,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0986,Neil Coetzer,SPH Kundalila,Senior Accountant,RESEARCH_HOLD
+acc-0987,Tommie Koeries,Much Asphalt,Financial Director,CONFIRMED
+acc-0988,Nicky Mametja,Much Asphalt,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0989,Willem Greeff,Much Asphalt,Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0990,Shelton Stanley,Much Asphalt,Regional Accountant,FINANCE_ROLE_CONFIRMED
+acc-0991,Melese Cronje,Much Asphalt,Regional Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-0992,Joshua Tilney,Klay,Accountant,CONFIRMED
+acc-0993,Callum de la Hunt,Klay,Financial Officer,FINANCE_ROLE_CONFIRMED
+acc-0994,Juliet Alexander (Neethling),Klay,Financial Manager,FINANCE_ROLE_CONFIRMED
+acc-0995,Sias Blignaut,Apollo Brick (Atlantis),Accountant,FINANCE_ROLE_CONFIRMED
+acc-0996,Joshua Thessal,Corobrik Lansdowne,Financial Director,FINANCE_ROLE_CONFIRMED
+acc-0997,Amith Prithipaul,Corobrik Lansdowne,Financial Management Accountant,FINANCE_ROLE_CONFIRMED
+acc-0998,Anthea Thaver,Corobrik Lansdowne,Accountant,FINANCE_ROLE_CONFIRMED
+acc-0999,Lorraine Anwar,Corobrik Lansdowne,Credit Controller,FINANCE_ROLE_CONFIRMED
+acc-1000,Kyle Ringquest,De Hoop Steenwerwe,Financial Controller,FINANCE_ROLE_CONFIRMED
+acc-1001,Terri Ladbrooke,Libstar,Chief Financial Officer,CONFIRMED
+acc-1002,André Hugo Muller,Quantum Foods Holdings Ltd,Chief Financial Officer / Financial Director & Executive Director,CONFIRMED
+acc-1003,Kim Julies,Novus Holdings Ltd,Group Chief Financial Officer & Executive Director,CONFIRMED
+acc-1004,Craig Wright,Novus Holdings Ltd,CEO of Print & Packaging and Executive Director (former Group CFO),CONFIRMED
+acc-1005,Keshree Alwar,Novus Holdings Ltd,CEO: Maskew Miller Learning & Executive Director (former Group CFO),CONFIRMED
+acc-1006,Yolanda Louw,Food Lover's Market Holdings,Chief Financial Officer,CONFIRMED
+acc-1007,JP du Toit,Food Lover's Market Holdings,Group Finance Manager,CONFIRMED
+acc-1008,MC Stoman,Food Lover's Market Holdings,Financial Controller,HIGH_CONFIDENCE
+acc-1009,Andisa Zinja,Trans-Caledon Tunnel Authority (TCTA),Chief Financial Officer,CONFIRMED
+acc-1010,Wendy Nkambule,Trans-Caledon Tunnel Authority (TCTA),Financial Controller,HIGH_CONFIDENCE
+acc-1011,Wayne de Wet,Cape Town International Convention Centre (CTICC),Chief Financial Officer,CONFIRMED
+acc-1012,Fazel Ismail,Water Research Commission (WRC),Chief Financial Officer,HIGH_CONFIDENCE
+acc-1013,Fritz Grobbelaar,Premier FMCG (Pty) Ltd,Chief Financial Officer,CONFIRMED
+acc-1014,Saleh Coovadia,Tshikululu Social Investments (Pty) Ltd,Finance Manager,CONFIRMED
+acc-1015,Phakama Mgole,Hisense South Africa,Head of Finance,HIGH_CONFIDENCE
+acc-1016,Duane Moore,Ecowize Group,Chief Financial Officer,HIGH_CONFIDENCE
+acc-1017,Andre Tancred,RMS Shopfitting (Pty) Ltd,"Finance Director / Director, Finance",CONFIRMED
+acc-1018,Waheeda Saib,Atlantis Special Economic Zone Company (ASEZCo),Chief Financial Officer,CONFIRMED
+acc-1019,Ryan Coldman,REFSOLS - Refrigeration Solutions & Fridgetec Services,Financial Manager,HIGH_CONFIDENCE
+acc-1020,Innocent Gumbochuma,South African Qualifications Authority (SAQA),Chief Financial Officer,CONFIRMED
+acc-1021,Sherylee Moonsamy,Competition Tribunal,Chief Financial Officer,CONFIRMED
+acc-1022,Lebogang Dire,National Agricultural Marketing Council (NAMC),Chief Financial Officer,HIGH_CONFIDENCE
+acc-1023,Willie van Wyk,Workforce Holdings Ltd,Group Financial Director,CONFIRMED
+acc-1024,Donovan Humphreys,Samsonite Southern Africa,Finance Controller,CONFIRMED
+acc-1025,Anneline Smit,Inala Broadcast (Pty) Ltd,Financial Operations Manager / Financial Controller,HIGH_CONFIDENCE
+acc-1026,Willie Robbertse,Geiger & Klotzbucher (Pty) Ltd,"Financial and Logistics Manager / Manager, Financial & Logistics",HIGH_CONFIDENCE
+acc-1027,Anene Engelbrecht,"Radisson Blu Hotel Waterfront, Cape Town (Radisson Hotel Group)",Financial Controller,CONFIRMED
+acc-1028,Carel Smit,Fidelity ADT (Pty) Ltd / ADT Security Services (Pty) Ltd,General Manager Finance,HIGH_CONFIDENCE
+acc-1029,Alex Appleby,Retail Capital (Pty) Ltd,Head of Treasury,HIGH_CONFIDENCE
+acc-1030,Sabelo Mavundla,Buffalo City Metropolitan Development Agency (BCMDA),Chief Financial Officer,CONFIRMED
+acc-1031,Vicky Ntsodo,Buffalo City Metropolitan Development Agency (BCMDA),Chief Financial Officer (prior),HIGH_CONFIDENCE
+acc-1032,Busisiwe Lubelwana,Buffalo City Metropolitan Development Agency (BCMDA),"Chief Financial Officer (former, resigned Nov 2024)",HIGH_CONFIDENCE
+acc-1033,Mokete Mokono,"Department of Agriculture, Land Reform and Rural Development (DALRRD)",Chief Financial Officer (Acting),HIGH_CONFIDENCE
+acc-1034,Talifhani Khubana,South African Human Rights Commission (SAHRC),Chief Financial Officer,CONFIRMED
+acc-1035,Faraimose Kutadzaushe,M-KOPA,Chief Financial Officer & Executive Director,CONFIRMED
+acc-1036,Pitsi Mnisi,Novus Holdings Ltd,Independent Non-Executive Director & Member of Audit and Risk Committee,CONFIRMED
