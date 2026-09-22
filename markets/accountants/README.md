@@ -1,7 +1,6 @@
-# South Africa Qualified Accountant & Finance Skills Intelligence Map
+# South Africa Accounting & Finance Skills Intelligence Map
 
-Persistent, evidence-backed national talent-mapping project for **professionally qualified
-accountants and finance professionals across South Africa**.
+Persistent, evidence-backed national talent-mapping project for **finance professionals from bookkeeper-equivalent level through Finance Director / CFO across South Africa, with professional qualifications and training routes recorded where publicly verified**.
 
 This folder is the primary persistent research database for the project. It follows the
 `markets/<slug>/` data-pack convention used elsewhere in `Mumoxa/Maps`, but the authoritative
@@ -32,6 +31,12 @@ export yet.
 
 > **Dedup rule:** every future batch must consult `people_index.md` first. If a name/company/
 > source is already listed there, enrich the existing record instead of adding a new one.
+
+## Population and evidence standard (non-negotiable)
+
+- The wider population includes source-verified finance professionals from bookkeeper-equivalent level upward, whether professionally designated or not.
+- Professional qualification, body registration and articles/training route are independent evidence fields, not inclusion assumptions.
+- Closed company sweeps must record an explicit outcome for every target employer; zero-result companies are not omitted.
 
 ## Evidence standard (non-negotiable)
 
