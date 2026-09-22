@@ -33,8 +33,10 @@ function statusBadge(status: string): { cls: string; label: string; title: strin
   switch (status) {
     case 'CONFIRMED':
       return { cls: 'acc-badge-confirmed', label: 'Confirmed', title: 'Designation confirmed by evidence' }
+    case 'FINANCE_ROLE_CONFIRMED':
+      return { cls: 'acc-badge-high', label: 'Finance role confirmed', title: 'Current in-scope finance role confirmed; professional designation may be absent or unverified' }
     case 'HIGH_CONFIDENCE':
-      return { cls: 'acc-badge-high', label: 'High confidence', title: 'Strong evidence, designation not fully confirmed' }
+      return { cls: 'acc-badge-high', label: 'High confidence', title: 'Strong evidence, one or more material fields remain incomplete' }
     case 'ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED':
       return { cls: 'acc-badge-articles', label: 'Articles confirmed', title: 'Training/articles confirmed; designation unverified' }
     case 'CONFLICTING':
@@ -133,6 +135,14 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
         </p>
       )}
 
+      {candidate.academicQualifications.length > 0 && (
+        <p className="acc-evidence-text"><strong>Academic:</strong> {candidate.academicQualifications.join('; ')}</p>
+      )}
+      {(candidate.articlesStatus || candidate.articlesEmployer || candidate.articlesBody) && (
+        <p className="acc-evidence-text">
+          <strong>Articles / training:</strong> {[candidate.articlesStatus, candidate.articlesBody, candidate.articlesEmployer, candidate.articlesPeriod, candidate.articlesLocation].filter(Boolean).join(' · ')}
+        </p>
+      )}
       {candidate.qualificationEvidence && <p className="acc-evidence-text">{candidate.qualificationEvidence}</p>}
 
       <footer className="hack-candidate-foot">
@@ -222,13 +232,14 @@ export function AccountantsPage() {
         <p className="hack-kicker">SA Talent Pool · Candidates</p>
         <h1>Accounting &amp; Finance professionals</h1>
         <p className="hack-lede">
-          Evidence-backed candidates from the SA Qualified Accountant &amp; Finance Skills Intelligence Map. Filter by
-          professional designation and by completed training route (SAICA / SAIPA articles, CIMA / ACCA practical
-          experience) — these are tracked separately, because holding CA(SA) is not the same as having completed SAICA articles.
+          Evidence-backed South African finance professionals from bookkeeper-equivalent level through CFO / Finance Director.
+          Filter by role, employer, location, professional designation and completed training route. Academic qualifications,
+          professional registration and articles / practical experience are recorded separately and never inferred from title alone.
         </p>
         <div className="hack-kpis">
           <div className="hack-kpi"><strong>{universe.candidates}</strong><span>Candidates</span></div>
-          <div className="hack-kpi"><strong>{universe.confirmed}</strong><span>Confirmed qualified</span></div>
+          <div className="hack-kpi"><strong>{universe.confirmed}</strong><span>Confirmed finance roles</span></div>
+          <div className="hack-kpi"><strong>{universe.professionallyQualified}</strong><span>Professionally qualified</span></div>
           <div className="hack-kpi"><strong>{universe.caSa}</strong><span>CA(SA)</span></div>
           <div className="hack-kpi"><strong>{universe.employers}</strong><span>Employers mapped</span></div>
           <div className="hack-kpi"><strong>{universe.provinces}</strong><span>Provinces</span></div>
@@ -339,9 +350,10 @@ export function AccountantsPage() {
 
       <footer className="hack-page-foot">
         <p>
-          Source: SA Qualified Accountant &amp; Finance Skills Intelligence Map (markets/accountants/). Public professional
-          information only. Records are attached to identities on evidence, never on name similarity alone; a professional
-          designation does not by itself prove a specific articles/training route.
+          Source: SA Accounting &amp; Finance Skills Intelligence Map (markets/accountants/). Public professional information only.
+          The published population covers source-verified finance professionals from bookkeeper-equivalent level upward. Records are
+          attached to identities on evidence, never on name similarity alone; professional designation, body registration and
+          articles / practical-training routes are tracked separately.
         </p>
       </footer>
     </main>

@@ -151,8 +151,8 @@ export const talentTracks: TalentTrack[] = [
     slug: 'accounting-finance',
     name: 'Accounting & Finance',
     shortLabel: 'Track 07',
-    summary: 'Search professionally qualified South African accountants and finance professionals by designation, province, industry, role family, and employer.',
-    detail: 'Evidence-backed candidates from the SA Qualified Accountant & Finance Skills Intelligence Map — CA(SA), AGA(SA), PA(SA), CIMA (ACMA/FCMA/CGMA) and ACCA/FCCA professionals. Every record carries its qualification evidence and source URLs; nothing is inferred.',
+    summary: 'Search source-verified South African finance professionals from bookkeeper-equivalent level through Finance Director / CFO by role, employer, location, qualification and professional route.',
+    detail: 'Evidence-backed finance professionals from the SA Accounting & Finance Skills Intelligence Map. Professional designations such as CA(SA), AGA(SA), PA(SA), CIMA and ACCA are recorded where verified, but are not required for inclusion. Academic qualifications, body registration and articles / practical-training routes remain separate evidence fields.',
     accent: 'accounting',
     scope: { geography: 'South Africa', category: 'talent-pool' },
     actions: {
