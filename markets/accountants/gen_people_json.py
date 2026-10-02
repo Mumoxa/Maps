@@ -10,6 +10,8 @@ Run after every batch:  python3 gen_people_json.py
 import json
 import os
 
+import taxonomy
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(HERE, "people.jsonl")
 OUT = os.path.join(HERE, "people.json")
@@ -94,6 +96,7 @@ def career_history(rows):
 
 
 def to_record(row):
+    derived = taxonomy.classify(row)
     return {
         "id": row["id"],
         "fullName": row["full_name"],
@@ -111,10 +114,20 @@ def to_record(row):
         "employer": row.get("current_employer") or "",
         "currentCompanyAffiliations": company_affiliations(row.get("current_company_affiliations")),
         "seniority": row.get("seniority") or "",
+        "seniorityBand": row.get("seniority_band") or (derived["seniority_band"] if derived["seniority_band"] != taxonomy.UNKNOWN else ""),
+        "normalizedJobTitle": row.get("normalized_job_title") or derived["normalized_job_title"],
         "roleFamily": row.get("current_role_family") or "",
         "function": row.get("current_function") or "",
         "industry": row.get("current_industry") or "",
         "subIndustry": row.get("current_sub_industry") or "",
+        "groupedIndustry": row.get("grouped_industry") or (derived["grouped_industry"] if derived["grouped_industry"] != taxonomy.UNKNOWN else ""),
+        "associatedIndustryGroups": clean_list(row.get("associated_industry_groups")) or derived["associated_industry_groups"],
+        "businessModelTags": clean_list(row.get("business_model_tags")),
+        "financeEnvironmentTags": clean_list(row.get("finance_environment_tags")),
+        "careerIndustryPath": row.get("career_industry_path") or (derived["career_industry_path"] if derived["career_industry_path"] != taxonomy.UNKNOWN else ""),
+        "employerGroup": row.get("employer_group") or derived["employer_group"],
+        "employerScale": row.get("employer_scale") or "",
+        "jseListed": row.get("jse_listed") or "unknown",
         "province": row.get("province") or "",
         "city": row.get("city") or "",
         "country": row.get("country") or "South Africa",

@@ -125,6 +125,43 @@ stop adding new people.
 | 107 | `linkedin.com/in "AGA(SA)" "Cape Town"/"Paarl"/"Stellenbosch" finance` | web | 2026-09-18 | W.Cape | AGA(SA) | finance | LOW | (job ads) | — | — | low |
 | 108 | `linkedin.com/in "ACMA"/"CGMA" "Cape Town" finance manager group` | web | 2026-09-18 | W.Cape | CIMA | FM | HIGH | Dzvova (CA+CIMA), Hoffman, Kuni | AYO, The Fieldbar Co., M+C Saatchi | — | partial |
 
+
+## Session 2026-10-01 — CA(SA) master-mapping batch (phase4)
+
+| # | Query | Engine | Geo | Qual | Role | Quality | People found | Companies found | New queries generated | Exhausted? |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 109 | `"CA(SA)" "Chief Financial Officer" appointed 2025 South Africa food FMCG` | web | national | CA(SA) | CFO | LOW (salary/job content) | — | — | employer-page targeting | yes |
+| 110 | `Tiger Brands RCL Foods Premier "CA(SA)" finance director CFO leadership` | web | national | CA(SA) | CEO/CFO/MD | HIGH | 4 (Kruger, Govender, Mfini, Pereira) | Tiger Brands | IR-page fetches; Premier, Astral, RCL | partial |
+| 111 | fetch Tiger Brands IAR 2024 executive committee | fetch | Gauteng | CA(SA) | exec | HIGH | 4 named | Tiger Brands | RCL/Astral/Premier leadership pages | yes |
+| 112 | `RCL Foods executive committee "CA(SA)" CFO integrated report` | web | KZN | CA(SA) | CFO | HIGH | 1 (Field) | RCL Foods | CFO.co.za profile cross-check | yes |
+| 113 | `Premier Group PMR "CA(SA)" chief financial officer executive director` | web | Gauteng | CA(SA) | CFO/CEO | HIGH | 2 (Gertenbach, Grobbelaar) | Premier Group | Premier IR page | partial |
+| 114 | `Astral Foods executive committee "CA(SA)" financial director` | web | Gauteng | CA(SA) | CFO/exec | HIGH | 3 (Schoeman, Geel, Enslin) | Astral Foods, AFGRI, Albany Bakeries | AFGRI finance team | partial |
+| 115 | `Crookes Brothers CFO Melani De Castro CA(SA) sugar macadamia` | web | KZN | CA(SA) | CFO | HIGH | 1 (De Castro) | Crookes Brothers | other JSE agri CFOs | partial |
+| 116 | `Exxaro OR Thungela OR Seriti OR Sibanye "CA(SA)" chief financial officer` | web | national | CA(SA) | FD/CFO | HIGH | 2 (Koppeschaar, Smith) | Exxaro, Thungela, Seriti (lead) | Kumba CFO succession | partial |
+| 117 | `Grindrod Limited chief executive officer 2026` | web | KZN | CA(SA) | CEO/CFO | HIGH | 2 (Mbambo, Ally) | Grindrod, Kumba Iron Ore | mine/logistics CFO sweeps | yes |
+| 118 | `RCL Foods chief financial officer 2025 2026 Robert Field` | web | KZN | CA(SA) | CFO | HIGH | 1 (Field) | RCL Foods | — | yes |
+| 119 | `DP World South Africa OR Grindrod OR "Super Group" "CA(SA)" CFO logistics` | web | national | CA(SA) | CEO/CFO | HIGH | 3 (Akoojee, Mountford, Brown) | DP World/Imperial, Super Group | logistics finance teams | partial |
+| 120 | `Shoprite OR Pick n Pay OR Woolworths "CA(SA)" chief financial officer` | web | national | CA(SA) | CFO | MEDIUM | 0 new (duplicates: Manjra) | Shoprite, Woolworths | retail finance teams | not exhausted |
+| 121 | `Clicks OR Dis-Chem OR "Mr Price" "CA(SA)" chief financial officer` | web | national | CA(SA) | CFO | HIGH | 2 (Traill, Nundkumar) | Clicks Group, Mr Price Group | retail finance teams | partial |
+| 122 | `Momentum OR Sanlam OR Discovery "CA(SA)" chief financial officer appointed 2025` | web | national | CA(SA) | CFO | HIGH | 2 (Mukhuba, Ismail-high) | Sanlam, Sanlam Investments, AfroCentric | insurance/health finance teams | partial |
+| 123 | `Abigail Mukhuba Sanlam CFO "CA(SA)" profile qualification` | web | W.Cape | CA(SA) | FD | HIGH | 1 (Mukhuba) | Sanlam | — | yes |
+| 124 | `"CA(SA)" CFO logistics warehousing South Africa 2024 2025 appointed` | web | national | CA(SA) | CFO | LOW | — | — | targeted employer queries | yes |
+| 125 | `PPC OR Afrimat OR Sephaku OR "Building materials" "CA(SA)" financial manager` | web | national | CA(SA) | FM/FD | HIGH | 2 (Berlin, Crafford-Lazarus) | PPC, Sephaku | cement/aggregate finance teams | partial |
+| 126 | `SAICA "Top 35 under 35" winners 2024 2025 CA(SA) names` | web | national | CA(SA) | pipeline | HIGH | 2 (Moyo, Nkosi) | Nala Renewables, Unilever SA | 2024 list + finalist profiles | no |
+| 127 | `"CA(SA)" appointed CFO 2025 Gqeberha/Bloemfontein/Polokwane announcement` | web | non-GP/WC | CA(SA) | CFO | LOW | — | — | municipal/SOE CFO sweeps | not exhausted |
+| 128 | `"CA(SA)" "Financial Manager" Mpumalanga/North West/Free State/Northern Cape` | web | peripheral | CA(SA) | FM | LOW (job ads) | — | — | employer-first sweeps in those provinces | not exhausted |
+| 129 | CFO South Africa people moves / profiles / CFO100 review | fetch | national | CA(SA) | CFO | MEDIUM | leads: Gribble, Ngake, Da Silva, Woodford, Naick (flagged unverified) | Frontier, Tlou Coal, Flight Centre SA, FirstRand, Mandini | per-lead designation checks | partial |
+| 130 | `Growthpoint OR Redefine OR Fortress OR Attacq OR Equites REIT "chief financial officer" 2025 2026` | web | national | CA(SA) | CFO/FD/FM | HIGH | 8 (Nana, Kok, Razack, Kuhn, Snyders, Völkel, Nyawo, Vorster; + Ellinor-Dreyer lead) | Attacq, Redefine, Equites, Growthpoint | REIT finance-team depth; Vukile/Resilient | partial |
+| 131 | `Tsogo Sun OR "Sun International" OR "City Lodge" OR "Southern Sun" CFO CA(SA)` | web | national | CA(SA) | CFO/CEO | HIGH | 2 (McDonald, von Aulock) | Southern Sun, Sun International | gaming/hospitality finance; City Lodge | partial |
+| 132 | `MultiChoice OR Naspers OR Primedia OR "Arena Holdings" CFO CA(SA)` | web | national | CA(SA) | CFO | HIGH | 2 (Jacobs, Marais-probable) | MultiChoice Group, Naspers/Prosus | broadcaster finance teams | partial |
+| 133 | `Capitec OR Absa OR Nedbank OR "Standard Bank" CFO CA(SA) appointed` | web | national | CA(SA) | CFO/FD | HIGH | 2 (Raju, Davis) + Hardy (no designation) | Absa Group, Nedbank Group, Capitec | bank finance-team sweeps | partial |
+| 134 | `Impala Platinum OR "Anglo American Platinum" OR Sasol OR Glencore CFO CA(SA)` | web | national | CA(SA) | CFO/FD | HIGH | 3 (Kerber, Naidoo, Bruns) | Implats, Anglo American Platinum, Sasol, Zimplats | platinum/energy finance teams | partial |
+| 135 | `Senwes OR VKB OR NWK OR OVK OR "Overberg Agri" CFO CA(SA) grain co-operative` | web | national | CA(SA) | CEO/CFO | HIGH | 2 (Bester, Edwards) | Senwes, SSK (van Veen lead) | NW/FS agri co-op finance; VKB, OVK, Overberg | partial |
+| 136 | `Yoco OR "Peach Payments" OR Stitch OR TymeBank OR Ozow CFO CA(SA)` | web | national | CA(SA) | CFO | LOW | 0 designation-evidenced (Wattrus, Anderson flagged) | Yoco, Peach Payments | fintech designation verification | not exhausted |
+| 137 | `"Mike Davis" Nedbank CFO CA(SA) qualification articles Deloitte` | web | Gauteng | CA(SA) | CFO | HIGH | 1 (Davis CONFIRMED) | Nedbank | CFO Awards 2024 winner checks | yes |
+| 138 | `"Vector Logistics" OR "CCS Logistics" OR "Imperial" cold chain CFO CA(SA)` | web | national | CA(SA) | CFO/FD | HIGH | 2 (Lucke CONFIRMED, Kula HIGH) | Commercial Cold Holdings, CCS Logistics | cold-chain platform finance depth | partial |
+| 139 | fetch SAICA 2024 Top 35 Under 35 finalists (both chunks) | fetch | national | CA(SA) | pipeline | HIGH | 35 finalists listed (13 loaded, 20 carried forward) | Simply Compliant, Accounting 4 Associates, Audit Toolbar, Amazon SSA, Halo Dot, Edge Growth, Aalto Capital, EY, BDO x4, PKF Octagon, ProcessLab, Moore Blockchain | 2025 cohort + finalist profiles | no |
+
 ## Format reference
 
 - **Engine**: web (Arena web search) / fetch (page extraction).

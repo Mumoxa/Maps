@@ -31,10 +31,20 @@ export interface AccountantCandidate {
   employer: string
   currentCompanyAffiliations: AccountantCompanyAffiliation[]
   seniority: string
+  seniorityBand?: string
+  normalizedJobTitle?: string
   roleFamily: string
   function: string
   industry: string
   subIndustry: string
+  groupedIndustry?: string
+  associatedIndustryGroups?: string[]
+  businessModelTags?: string[]
+  financeEnvironmentTags?: string[]
+  careerIndustryPath?: string
+  employerGroup?: string
+  employerScale?: string
+  jseListed?: string
   province: string
   city: string
   country: string
@@ -129,6 +139,18 @@ export const accountantFacetDefs: FacetDef<AccountantCandidate>[] = [
     searchThreshold: 12,
   },
   {
+    key: 'groupedIndustry',
+    label: 'Grouped industry',
+    accessor: (candidate) => (candidate.groupedIndustry ? [candidate.groupedIndustry] : []),
+    searchThreshold: 12,
+  },
+  {
+    key: 'seniorityBand',
+    label: 'Seniority band (S1–S8)',
+    accessor: (candidate) => (candidate.seniorityBand ? [candidate.seniorityBand] : []),
+    order: ['S1', 'S2', 'S3', 'S4', 'S5', 'S6', 'S7', 'S8'],
+  },
+  {
     key: 'province',
     label: 'Province',
     accessor: (candidate) => [candidate.province || ACCOUNTANT_UNKNOWN_PROVINCE],
@@ -163,6 +185,9 @@ export const accountantTextMatcher: TextMatcher<AccountantCandidate> = (candidat
     candidate.function,
     candidate.industry,
     candidate.subIndustry,
+    candidate.groupedIndustry,
+    candidate.employerGroup,
+    candidate.careerIndustryPath,
     candidate.province,
     candidate.city,
     candidate.qualificationEvidence,
@@ -178,6 +203,9 @@ export const accountantTextMatcher: TextMatcher<AccountantCandidate> = (candidat
     ...candidate.designations,
     ...candidate.professionalRoutes,
     ...candidate.bodies,
+    ...(candidate.businessModelTags ?? []),
+    ...(candidate.financeEnvironmentTags ?? []),
+    ...(candidate.associatedIndustryGroups ?? []),
     ...candidate.skills,
     ...candidateSystems(candidate),
     ...candidate.careerHistory.flatMap((role) => [role.employer, role.title, role.notes]),

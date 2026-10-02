@@ -1,0 +1,982 @@
+{
+  "version": "2026-10-01",
+  "purpose": "Machine-readable controlled vocabulary for the SA CA(SA) talent map: seniority bands, employer normalisation, industry classification, industry adjacency, business-model tags and finance-environment tags. Loaded by taxonomy.py. Every value here is a classification tool, never evidence about a person.",
+  "seniority_bands": {
+    "S1": {
+      "label": "Accounting / Specialist",
+      "title_keywords": [
+        "accountant",
+        "financial accountant",
+        "reporting accountant",
+        "bookkeeper",
+        "assistant accountant",
+        "accounts clerk"
+      ]
+    },
+    "S2": {
+      "label": "Senior Individual Contributor",
+      "title_keywords": [
+        "senior financial accountant",
+        "senior management accountant",
+        "senior accountant",
+        "senior reporting accountant",
+        "senior finance business partner",
+        "specialist"
+      ]
+    },
+    "S3": {
+      "label": "Manager",
+      "title_keywords": [
+        "financial manager",
+        "finance manager",
+        "commercial finance manager",
+        "financial controller",
+        "management accountant",
+        "finance business partner",
+        "cost accountant",
+        "reporting manager",
+        "finance manager:"
+      ]
+    },
+    "S4": {
+      "label": "Senior Manager / Group",
+      "title_keywords": [
+        "senior financial manager",
+        "senior finance manager",
+        "group financial manager",
+        "group finance manager",
+        "group financial controller",
+        "divisional finance manager",
+        "divisional financial manager",
+        "head of fp&a",
+        "finance operations manager"
+      ]
+    },
+    "S5": {
+      "label": "Head",
+      "title_keywords": [
+        "head of finance",
+        "head of commercial finance",
+        "head of financial",
+        "head of fp&a",
+        "head of finance operations",
+        "head of group finance",
+        "head of retail finance"
+      ]
+    },
+    "S6": {
+      "label": "Director",
+      "title_keywords": [
+        "finance director",
+        "financial director",
+        "director of finance",
+        "executive director: finance",
+        "group finance director",
+        "chief finance officer"
+      ]
+    },
+    "S7": {
+      "label": "CFO",
+      "title_keywords": [
+        "cfo",
+        "chief financial officer",
+        "group cfo",
+        "divisional cfo",
+        "finance director/cfo",
+        "chief finance officer"
+      ]
+    },
+    "S8": {
+      "label": "Broader Executive",
+      "title_keywords": [
+        "ceo",
+        "chief executive",
+        "coo",
+        "chief operating officer",
+        "managing director",
+        "executive director",
+        "group executive",
+        "chief commercial officer",
+        "chief strategy",
+        "executive: "
+      ]
+    }
+  },
+  "seniority_precedence": [
+    "S8",
+    "S7",
+    "S6",
+    "S5",
+    "S4",
+    "S3",
+    "S2",
+    "S1"
+  ],
+  "grouped_industries": {
+    "Consumer & FMCG": {
+      "definition": "Food, beverage, consumer-goods and personal-care manufacture and food distribution.",
+      "primary_industries": [
+        "FMCG",
+        "Food Manufacturing",
+        "Beverage Manufacturing",
+        "Food & Beverage",
+        "Consumer Goods",
+        "Personal Care",
+        "Household Products",
+        "Food Distribution",
+        "Poultry",
+        "Meat Processing",
+        "Dairy",
+        "Confectionery",
+        "Agri-processing",
+        "Food Processing",
+        "Sugar",
+        "Fishing",
+        "Fish Processing"
+      ]
+    },
+    "Retail & Wholesale": {
+      "definition": "Consumer-facing and B2B resale of goods: grocery, apparel, general merchandise, specialty retail, wholesale.",
+      "primary_industries": [
+        "Retail",
+        "Fashion Retail",
+        "Apparel Retail",
+        "Grocery Retail",
+        "General Merchandise Retail",
+        "Consumer Electronics Retail",
+        "Automotive Retail",
+        "Specialty Retail",
+        "Wholesale",
+        "Pharmaceutical Retail",
+        "Health & Beauty Retail",
+        "Wholesale & Distribution"
+      ]
+    },
+    "Industrial & Manufacturing": {
+      "definition": "Industrial production, packaging, machinery, chemicals, engineering and automotive manufacture.",
+      "primary_industries": [
+        "Manufacturing",
+        "Industrial Manufacturing",
+        "Packaging",
+        "Machinery",
+        "Chemicals",
+        "Engineering",
+        "Automotive Manufacturing",
+        "Automotive",
+        "Industrial Services",
+        "Steel",
+        "Paper & Packaging",
+        "Building Products",
+        "Electronics Manufacturing"
+      ]
+    },
+    "Construction & Building Materials": {
+      "definition": "Construction, cement, aggregates, quarrying, ready-mix and infrastructure materials.",
+      "primary_industries": [
+        "Construction",
+        "Construction Materials",
+        "Cement",
+        "Aggregates",
+        "Quarrying / Aggregates",
+        "Ready-mix Concrete",
+        "Infrastructure",
+        "Building Materials",
+        "Property Development",
+        "Civil Engineering"
+      ]
+    },
+    "Agriculture & Agri-processing": {
+      "definition": "Farming, fruit, wine, grain, agri-services and agricultural trading.",
+      "primary_industries": [
+        "Agriculture",
+        "Agribusiness",
+        "Agri-processing",
+        "Agricultural Services",
+        "Grain Trading",
+        "Grain Handling",
+        "Wine",
+        "Fruit",
+        "Forestry",
+        "Sugar Cane",
+        "Macadamia",
+        "Agricultural Finance",
+        "Agri-tech"
+      ]
+    },
+    "Mining & Resources": {
+      "definition": "Mining, minerals, metals, mining services and beneficiation.",
+      "primary_industries": [
+        "Mining",
+        "Mining Services",
+        "Coal Mining",
+        "Gold Mining",
+        "Platinum Mining",
+        "Diamond Mining",
+        "Iron Ore",
+        "Industrial Minerals",
+        "Minerals",
+        "Metals",
+        "Quarrying",
+        "Beneficiation"
+      ]
+    },
+    "Energy & Utilities": {
+      "definition": "Oil, gas, renewable energy, electricity and utilities.",
+      "primary_industries": [
+        "Energy",
+        "Renewable Energy",
+        "Oil & Gas",
+        "Electricity",
+        "Utilities",
+        "Power Generation",
+        "Solar",
+        "Wind Energy",
+        "Petroleum",
+        "Fuel Distribution"
+      ]
+    },
+    "Logistics & Supply Chain": {
+      "definition": "Freight, warehousing, shipping, distribution, cold storage, courier and transportation.",
+      "primary_industries": [
+        "Logistics",
+        "Transport",
+        "Freight Forwarding",
+        "Shipping",
+        "Warehousing",
+        "Distribution",
+        "Cold-Chain Logistics",
+        "Cold Storage",
+        "Courier",
+        "Supply Chain",
+        "Ports & Terminals",
+        "Rail",
+        "Aviation Logistics",
+        "Aviation"
+      ]
+    },
+    "Banking & Lending": {
+      "definition": "Banks, credit, consumer lending, vehicle finance and corporate lending.",
+      "primary_industries": [
+        "Banking",
+        "Retail Banking",
+        "Corporate Banking",
+        "Credit",
+        "Consumer Lending",
+        "Vehicle Finance",
+        "Asset Finance",
+        "Development Finance",
+        "Microfinance"
+      ]
+    },
+    "Insurance": {
+      "definition": "Life insurance, short-term insurance, reinsurance and employee benefits.",
+      "primary_industries": [
+        "Insurance",
+        "Life Insurance",
+        "Short-Term Insurance",
+        "Reinsurance",
+        "Employee Benefits",
+        "Medical Schemes",
+        "Health Insurance"
+      ]
+    },
+    "Investments & Capital Markets": {
+      "definition": "Asset management, investment management, private equity, venture capital, stockbroking and corporate finance.",
+      "primary_industries": [
+        "Asset Management",
+        "Investment Management",
+        "Private Equity",
+        "Venture Capital",
+        "Stockbroking",
+        "Corporate Finance",
+        "Financial Services",
+        "Wealth Management",
+        "Family Office",
+        "Infrastructure Investment"
+      ]
+    },
+    "Fintech & Payments": {
+      "definition": "Payments, digital banking, payment platforms and financial software.",
+      "primary_industries": [
+        "Fintech",
+        "Payments",
+        "Digital Banking",
+        "Financial Software",
+        "Lending Technology",
+        "Insurtech"
+      ]
+    },
+    "Technology & Software": {
+      "definition": "SaaS, software, IT, cloud, cybersecurity and technology services.",
+      "primary_industries": [
+        "Technology",
+        "Software",
+        "SaaS",
+        "IT Services",
+        "Cloud",
+        "Cybersecurity",
+        "Technology Services",
+        "Information Technology",
+        "Data & Analytics"
+      ]
+    },
+    "Telecommunications": {
+      "definition": "Telecom operators, network providers and communications infrastructure.",
+      "primary_industries": [
+        "Telecommunications",
+        "Telecoms",
+        "Mobile Network Operator",
+        "Communications Infrastructure",
+        "ICT"
+      ]
+    },
+    "Healthcare & Life Sciences": {
+      "definition": "Hospitals, healthcare groups, pharmaceutical companies, medical devices and laboratories.",
+      "primary_industries": [
+        "Healthcare",
+        "Hospitals",
+        "Pharmaceuticals",
+        "Medical Devices",
+        "Laboratories",
+        "Health Services",
+        "Medical Schemes",
+        "Veterinary"
+      ]
+    },
+    "Property & Real Estate": {
+      "definition": "REITs, property development, property management and real-estate investment.",
+      "primary_industries": [
+        "Property",
+        "Real Estate",
+        "REIT",
+        "Property Development",
+        "Property Management",
+        "Real Estate Investment"
+      ]
+    },
+    "Hospitality, Leisure & Tourism": {
+      "definition": "Hotels, tourism, travel, restaurants and leisure groups.",
+      "primary_industries": [
+        "Hospitality",
+        "Tourism",
+        "Travel",
+        "Restaurants",
+        "Leisure",
+        "Gaming & Betting",
+        "Events & Conferencing"
+      ]
+    },
+    "Professional Services": {
+      "definition": "Audit, accounting, consulting, advisory and legal services.",
+      "primary_industries": [
+        "Professional Services",
+        "Accounting / Audit",
+        "Audit",
+        "Consulting",
+        "Advisory",
+        "Legal Services",
+        "Corporate Advisory",
+        "Recruitment Services",
+        "Engineering Consulting"
+      ]
+    },
+    "Media & Communications": {
+      "definition": "Publishing, advertising, media and digital media.",
+      "primary_industries": [
+        "Media",
+        "Publishing",
+        "Advertising",
+        "Digital Media",
+        "Broadcasting",
+        "Marketing Services"
+      ]
+    },
+    "Government & Public Sector": {
+      "definition": "SOEs, government entities, municipalities and regulatory bodies.",
+      "primary_industries": [
+        "Government",
+        "State-Owned Enterprise",
+        "Municipal",
+        "Public Sector",
+        "Regulator",
+        "Public Entity"
+      ]
+    },
+    "Education": {
+      "definition": "Schools, universities, training organisations and education groups.",
+      "primary_industries": [
+        "Education",
+        "Higher Education",
+        "Schools",
+        "Training",
+        "EdTech"
+      ]
+    },
+    "NGO / Non-Profit": {
+      "definition": "Non-profit organisations, charities, foundations and industry associations.",
+      "primary_industries": [
+        "Non-Profit",
+        "NGO",
+        "Foundation",
+        "Industry Association",
+        "Professional Body",
+        "Charity"
+      ]
+    }
+  },
+  "industry_adjacency": {
+    "Food Manufacturing": {
+      "strong": [
+        "Agriculture & Agri-processing",
+        "Retail & Wholesale",
+        "Logistics & Supply Chain",
+        "Industrial & Manufacturing"
+      ],
+      "moderate": [
+        "Hospitality, Leisure & Tourism"
+      ]
+    },
+    "FMCG": {
+      "strong": [
+        "Retail & Wholesale",
+        "Logistics & Supply Chain",
+        "Industrial & Manufacturing"
+      ],
+      "moderate": [
+        "Healthcare & Life Sciences",
+        "Hospitality, Leisure & Tourism",
+        "Agriculture & Agri-processing"
+      ]
+    },
+    "Retail": {
+      "strong": [
+        "Consumer & FMCG",
+        "Logistics & Supply Chain",
+        "Property & Real Estate"
+      ],
+      "moderate": [
+        "Banking & Lending",
+        "Fintech & Payments",
+        "Industrial & Manufacturing"
+      ]
+    },
+    "Agriculture": {
+      "strong": [
+        "Consumer & FMCG",
+        "Logistics & Supply Chain"
+      ],
+      "moderate": [
+        "Banking & Lending",
+        "Industrial & Manufacturing",
+        "Energy & Utilities"
+      ]
+    },
+    "Mining": {
+      "strong": [
+        "Industrial & Manufacturing",
+        "Energy & Utilities",
+        "Construction & Building Materials",
+        "Logistics & Supply Chain"
+      ],
+      "moderate": [
+        "Banking & Lending",
+        "Investments & Capital Markets",
+        "Professional Services"
+      ]
+    },
+    "Construction Materials": {
+      "strong": [
+        "Mining & Resources",
+        "Industrial & Manufacturing",
+        "Logistics & Supply Chain"
+      ],
+      "moderate": [
+        "Property & Real Estate"
+      ]
+    },
+    "Cement": {
+      "strong": [
+        "Industrial & Manufacturing",
+        "Mining & Resources",
+        "Logistics & Supply Chain"
+      ],
+      "moderate": [
+        "Property & Real Estate",
+        "Energy & Utilities"
+      ]
+    },
+    "Logistics": {
+      "strong": [
+        "Retail & Wholesale",
+        "Consumer & FMCG",
+        "Industrial & Manufacturing",
+        "Agriculture & Agri-processing"
+      ],
+      "moderate": [
+        "Mining & Resources"
+      ]
+    },
+    "Banking": {
+      "strong": [
+        "Insurance",
+        "Investments & Capital Markets",
+        "Fintech & Payments"
+      ],
+      "moderate": [
+        "Professional Services",
+        "Property & Real Estate",
+        "Technology & Software"
+      ]
+    },
+    "Insurance": {
+      "strong": [
+        "Banking & Lending",
+        "Investments & Capital Markets",
+        "Healthcare & Life Sciences"
+      ],
+      "moderate": [
+        "Fintech & Payments",
+        "Professional Services",
+        "Property & Real Estate"
+      ]
+    },
+    "Asset Management": {
+      "strong": [
+        "Insurance",
+        "Banking & Lending"
+      ],
+      "moderate": [
+        "Fintech & Payments",
+        "Professional Services",
+        "Property & Real Estate"
+      ]
+    },
+    "Private Equity": {
+      "strong": [
+        "Professional Services",
+        "Industrial & Manufacturing",
+        "Healthcare & Life Sciences"
+      ],
+      "moderate": [
+        "Retail & Wholesale",
+        "Consumer & FMCG",
+        "Technology & Software"
+      ]
+    },
+    "Telecommunications": {
+      "strong": [
+        "Technology & Software",
+        "Media & Communications",
+        "Fintech & Payments"
+      ],
+      "moderate": [
+        "Energy & Utilities",
+        "Government & Public Sector"
+      ]
+    },
+    "Healthcare": {
+      "strong": [
+        "Insurance",
+        "Professional Services"
+      ],
+      "moderate": [
+        "Retail & Wholesale",
+        "Government & Public Sector",
+        "Property & Real Estate"
+      ]
+    },
+    "Pharmaceuticals": {
+      "strong": [
+        "Consumer & FMCG",
+        "Industrial & Manufacturing",
+        "Retail & Wholesale"
+      ],
+      "moderate": [
+        "Logistics & Supply Chain",
+        "Government & Public Sector"
+      ]
+    },
+    "Property": {
+      "strong": [
+        "Construction & Building Materials",
+        "Investments & Capital Markets",
+        "Banking & Lending"
+      ],
+      "moderate": [
+        "Retail & Wholesale",
+        "Hospitality, Leisure & Tourism",
+        "Logistics & Supply Chain"
+      ]
+    },
+    "Hospitality": {
+      "strong": [
+        "Retail & Wholesale",
+        "Consumer & FMCG",
+        "Property & Real Estate"
+      ],
+      "moderate": [
+        "Logistics & Supply Chain",
+        "Media & Communications"
+      ]
+    },
+    "Energy": {
+      "strong": [
+        "Industrial & Manufacturing",
+        "Mining & Resources",
+        "Construction & Building Materials"
+      ],
+      "moderate": [
+        "Investments & Capital Markets",
+        "Government & Public Sector"
+      ]
+    },
+    "Renewable Energy": {
+      "strong": [
+        "Construction & Building Materials",
+        "Investments & Capital Markets"
+      ],
+      "moderate": [
+        "Mining & Resources",
+        "Industrial & Manufacturing",
+        "Government & Public Sector"
+      ]
+    },
+    "Technology": {
+      "strong": [
+        "Fintech & Payments",
+        "Telecommunications",
+        "Professional Services"
+      ],
+      "moderate": [
+        "Retail & Wholesale",
+        "Banking & Lending",
+        "Media & Communications"
+      ]
+    },
+    "Professional Services": {
+      "strong": [
+        "Investments & Capital Markets",
+        "Banking & Lending"
+      ],
+      "moderate": [
+        "Technology & Software",
+        "Government & Public Sector",
+        "Healthcare & Life Sciences"
+      ]
+    },
+    "Accounting / Audit": {
+      "strong": [
+        "Investments & Capital Markets",
+        "Banking & Lending"
+      ],
+      "moderate": [
+        "Government & Public Sector",
+        "Technology & Software",
+        "Retail & Wholesale"
+      ]
+    },
+    "Automotive": {
+      "strong": [
+        "Retail & Wholesale",
+        "Logistics & Supply Chain"
+      ],
+      "moderate": [
+        "Banking & Lending",
+        "Mining & Resources"
+      ]
+    },
+    "Government": {
+      "strong": [
+        "Professional Services",
+        "Construction & Building Materials",
+        "Energy & Utilities"
+      ],
+      "moderate": [
+        "Healthcare & Life Sciences",
+        "Education",
+        "Logistics & Supply Chain"
+      ]
+    },
+    "Education": {
+      "strong": [
+        "Professional Services",
+        "Government & Public Sector"
+      ],
+      "moderate": [
+        "Technology & Software",
+        "NGO / Non-Profit"
+      ]
+    },
+    "Non-Profit": {
+      "strong": [
+        "Government & Public Sector",
+        "Education",
+        "Healthcare & Life Sciences"
+      ],
+      "moderate": [
+        "Professional Services",
+        "Investments & Capital Markets"
+      ]
+    }
+  },
+  "business_model_tags": [
+    "JSE Listed",
+    "Listed Company",
+    "A2X Listed",
+    "Private Company",
+    "State-Owned",
+    "Private Equity Backed",
+    "Family Owned",
+    "Multinational",
+    "South African Group",
+    "Subsidiary",
+    "Division",
+    "Franchise",
+    "Co-operative",
+    "High Growth",
+    "Start-up",
+    "Scale-up",
+    "Conglomerate",
+    "Manufacturing",
+    "Distribution",
+    "Import / Export",
+    "Retail Network",
+    "Branch Network",
+    "Multi-site",
+    "Multi-entity",
+    "Project Based",
+    "Asset Intensive",
+    "High Inventory",
+    "High Working Capital",
+    "Transaction Intensive",
+    "Regulated",
+    "Subscription",
+    "B2B",
+    "B2C",
+    "B2B2C",
+    "Tender / Contract Driven",
+    "FMCG Route-to-Market",
+    "Fleet Intensive",
+    "Vertically Integrated"
+  ],
+  "finance_environment_tags": [
+    "Group Reporting",
+    "Consolidations",
+    "Listed Reporting",
+    "IFRS",
+    "Management Reporting",
+    "Commercial Finance",
+    "FP&A",
+    "Treasury",
+    "Corporate Finance",
+    "M&A",
+    "Working Capital",
+    "Inventory",
+    "Cost Accounting",
+    "Manufacturing Finance",
+    "Operational Finance",
+    "Retail Finance",
+    "Supply Chain Finance",
+    "Revenue Management",
+    "Financial Control",
+    "Audit",
+    "Tax",
+    "Risk",
+    "Governance",
+    "Shared Services",
+    "Project Finance",
+    "Regulatory Reporting",
+    "Internal Audit",
+    "Business Partnering",
+    "Capital Management",
+    "Investor Relations",
+    "Debt Funding",
+    "Statutory Reporting"
+  ],
+  "employer_ownership_types": [
+    "JSE Listed",
+    "Multinational Listed",
+    "Multinational Private",
+    "State-Owned",
+    "Private Company",
+    "Private Equity Backed",
+    "Family Owned",
+    "Partnership",
+    "Co-operative",
+    "Non-Profit",
+    "Public Entity",
+    "Unknown"
+  ],
+  "employer_scales": [
+    "Micro",
+    "Small",
+    "Mid-Market",
+    "Large Private",
+    "Major Corporate",
+    "JSE Listed",
+    "Multinational",
+    "Major Financial Institution",
+    "Unknown"
+  ],
+  "employer_normalization": {
+    "Tiger Brands Limited": {
+      "canonical": "Tiger Brands",
+      "group": "Tiger Brands"
+    },
+    "Tiger Brands Ltd": {
+      "canonical": "Tiger Brands",
+      "group": "Tiger Brands"
+    },
+    "RCL Foods Limited": {
+      "canonical": "RCL Foods",
+      "group": "RCL Foods (Remgro)"
+    },
+    "RCL FOODS": {
+      "canonical": "RCL Foods",
+      "group": "RCL Foods (Remgro)"
+    },
+    "Premier Group Limited": {
+      "canonical": "Premier Group",
+      "group": "Premier Group"
+    },
+    "Premier Foods": {
+      "canonical": "Premier Group",
+      "group": "Premier Group"
+    },
+    "Astral Foods Limited": {
+      "canonical": "Astral Foods",
+      "group": "Astral Foods"
+    },
+    "Astral Operations Ltd": {
+      "canonical": "Astral Foods",
+      "group": "Astral Foods"
+    },
+    "Albany Bakeries": {
+      "canonical": "Albany Bakeries",
+      "group": "Tiger Brands"
+    },
+    "Exxaro Resources Limited": {
+      "canonical": "Exxaro Resources",
+      "group": "Exxaro Resources"
+    },
+    "Thungela Resources Limited": {
+      "canonical": "Thungela Resources",
+      "group": "Thungela Resources"
+    },
+    "Clicks Group Limited": {
+      "canonical": "Clicks Group",
+      "group": "Clicks Group"
+    },
+    "Super Group Limited": {
+      "canonical": "Super Group",
+      "group": "Super Group"
+    },
+    "Grindrod Limited": {
+      "canonical": "Grindrod",
+      "group": "Grindrod"
+    },
+    "Crookes Brothers Limited": {
+      "canonical": "Crookes Brothers",
+      "group": "Crookes Brothers"
+    },
+    "Oceana Group Limited": {
+      "canonical": "Oceana Group",
+      "group": "Oceana Group"
+    },
+    "Libstar Holdings Limited": {
+      "canonical": "Libstar",
+      "group": "Libstar"
+    },
+    "AfroCentric Group": {
+      "canonical": "AfroCentric Group",
+      "group": "AfroCentric Group"
+    },
+    "Mr Price Group Limited": {
+      "canonical": "Mr Price Group",
+      "group": "Mr Price Group"
+    },
+    "MTN Group Limited": {
+      "canonical": "MTN Group",
+      "group": "MTN Group"
+    },
+    "Sanlam Limited": {
+      "canonical": "Sanlam",
+      "group": "Sanlam"
+    },
+    "Sanlam Investments": {
+      "canonical": "Sanlam Investments",
+      "group": "Sanlam"
+    },
+    "Sephaku Holdings Limited": {
+      "canonical": "Sephaku Holdings",
+      "group": "Sephaku Holdings"
+    },
+    "PPC Ltd": {
+      "canonical": "PPC",
+      "group": "PPC"
+    },
+    "Afrimat Limited": {
+      "canonical": "Afrimat",
+      "group": "Afrimat"
+    },
+    "DP World": {
+      "canonical": "DP World",
+      "group": "DP World"
+    },
+    "Imperial Logistics": {
+      "canonical": "Imperial Logistics",
+      "group": "DP World"
+    },
+    "Unilever South Africa": {
+      "canonical": "Unilever South Africa",
+      "group": "Unilever"
+    },
+    "Nala Renewables": {
+      "canonical": "Nala Renewables",
+      "group": "Nala Renewables"
+    },
+    "Mandini Group": {
+      "canonical": "Mandini Group",
+      "group": "Mandini Group"
+    },
+    "AFGRI Limited": {
+      "canonical": "AFGRI",
+      "group": "AFGRI"
+    },
+    "Discovery Limited": {
+      "canonical": "Discovery",
+      "group": "Discovery"
+    },
+    "Momentum Group Limited": {
+      "canonical": "Momentum Group",
+      "group": "Momentum Group"
+    }
+  },
+  "metro_map": {
+    "cape town": "City of Cape Town Metro",
+    "bellville": "City of Cape Town Metro",
+    "stellenbosch": "Cape Winelands",
+    "paarl": "Cape Winelands",
+    "somerset west": "Cape Winelands",
+    "sandton": "City of Johannesburg Metro",
+    "johannesburg": "City of Johannesburg Metro",
+    "rosebank": "City of Johannesburg Metro",
+    "waterfall": "City of Johannesburg Metro",
+    "midrand": "City of Johannesburg Metro",
+    "roodepoort": "City of Johannesburg Metro",
+    "centurion": "City of Tshwane Metro",
+    "pretoria": "City of Tshwane Metro",
+    "durban": "eThekwini Metro",
+    "westville": "eThekwini Metro",
+    "umhlanga": "eThekwini Metro",
+    "pinetown": "eThekwini Metro",
+    "richards bay": "uMhlathuze (King Cetshwayo)",
+    "gqeberha": "Nelson Mandela Bay Metro",
+    "port elizabeth": "Nelson Mandela Bay Metro",
+    "bloemfontein": "Mangaung Metro",
+    "polokwane": "Polokwane Local Municipality",
+    "emalahleni": "Emalahleni Local Municipality",
+    "witbank": "Emalahleni Local Municipality",
+    "kimberley": "Sol Plaatje Local Municipality"
+  }
+}

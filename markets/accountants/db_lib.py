@@ -13,11 +13,12 @@ from collections import Counter
 BASE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE)
 import regen_csv  # noqa: E402
+import taxonomy  # noqa: E402
 
 PEOPLE_PATH = os.path.join(BASE, "people.jsonl")
 COMPANIES_PATH = os.path.join(BASE, "companies.jsonl")
 SOURCES_PATH = os.path.join(BASE, "sources.jsonl")
-TODAY = "2026-09-18"
+TODAY = "2026-10-01"
 
 QUAL_NOT_EST = "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED"
 NOT_EST = "NOT_ESTABLISHED"
@@ -106,7 +107,40 @@ def build(spec):
         "confidence": status,
         "notes": spec.get("notes", ""),
         "booleans": {},
+        # --- CA(SA) master-mapping layer (Section 14-24 of the master instruction) ---
+        "normalized_job_title": spec.get("normalized_title"),
+        "seniority_band": spec.get("seniority_band"),
+        "employer_group": spec.get("employer_group"),
+        "division_subsidiary": spec.get("division"),
+        "employer_ownership_type": spec.get("ownership"),
+        "employer_scale": spec.get("scale"),
+        "jse_listed": spec.get("jse_listed", "unknown"),
+        "multinational": spec.get("multinational", "unknown"),
+        "grouped_industry": spec.get("grouped_industry"),
+        "business_model_tags": spec.get("business_model_tags", []),
+        "finance_environment_tags": spec.get("finance_environment_tags", []),
+        "work_history": spec.get("work_history", []),
+        "previous_roles": spec.get("previous_roles", []),
+        "career_industry_path": spec.get("career_industry_path"),
+        "current_employer_confidence": spec.get("employer_confidence", "UNKNOWN"),
+        "profile_confidence": spec.get("profile_confidence", "UNKNOWN"),
+        "primary_evidence_url": spec.get("primary_evidence_url"),
+        "secondary_evidence_url": spec.get("secondary_evidence_url"),
     }
+    derived = taxonomy.classify(rec)
+    for key in ("normalized_job_title", "seniority_band", "grouped_industry", "career_industry_path"):
+        if not rec.get(key) or rec.get(key) == taxonomy.UNKNOWN:
+            rec[key] = derived[key]
+    if rec.get("seniority_band") == taxonomy.UNKNOWN:
+        rec["seniority_band"] = derived["seniority_band"]
+    rec["industry_subsector"] = rec.get("current_sub_industry") or derived["industry_subsector"]
+    if not spec.get("associated_industry_groups"):
+        rec["associated_industry_groups"] = derived["associated_industry_groups"]
+    else:
+        rec["associated_industry_groups"] = spec["associated_industry_groups"]
+    if not rec.get("employer_group"):
+        rec["employer_group"] = derived["employer_group"]
+    rec["employer_canonical"] = derived["employer_canonical"]
     confirmed = status == "CONFIRMED"
     for key, boolkey in DESIGNATION_BOOLS.items():
         rec["booleans"][boolkey] = "true" if key in des else ("false" if confirmed else "unknown")

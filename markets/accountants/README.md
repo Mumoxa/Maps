@@ -15,6 +15,8 @@ export yet.
 | `companies.jsonl` | One JSON object per line per employer / training office. |
 | `sources.jsonl` | One JSON object per line per evidence source. |
 | `interim.csv` | Filterable one-row-per-person export, regenerated at checkpoints. |
+| `master_ca_sa.jsonl` / `master_ca_sa.csv` | **CA(SA) master output schema** (Section 32 of the CA(SA) master instruction) — one row per evidenced CA(SA) with seniority band, grouped industry, adjacencies, tags, career path and evidence URLs. Derived by `gen_master_export.py`; never edited by hand. |
+| `coverage_matrix.json` | Section 39 coverage indicators (geography, seniority band, grouped industry, CA(SA) confidence), regenerated with the master export. |
 
 ## Working / governance documents
 
@@ -23,11 +25,14 @@ export yet.
 | `scope.md` | Project scope, target population, geographic scope, data-version decisions. |
 | `qualification_rules.md` | The qualification truth model, safe-assumption matrix, rejection rules. |
 | `skills_taxonomy.md` | Controlled vocabularies for functions, skills, systems, industries. |
+| `industry_taxonomy.md` + `industry_taxonomy.json` | Seniority bands S1–S8, employer normalisation, grouped-industry taxonomy (22 values), industry adjacency, business-model tags, finance-environment tags, metro mapping. Loaded by `taxonomy.py`. |
+| `gen_master_export.py` | Projects `people.jsonl` into the master CA(SA) schema + coverage matrix. |
 | `schema.md` | Exact JSONL field schemas for people / companies / sources. |
 | `progress.md` | Running totals, coverage matrix, blockers, outstanding avenues. |
 | `search_queries.md` | Executed search log (engine, date, target, yield, exhaustion). |
 | `people_index.md` | **Master name registry (dedup source of truth) — consult FIRST before adding anyone.** |
 | `gen_people_index.py` | Regenerates `people_index.md` from the JSONL stores after every batch. |
+| `research_runs/phase4_casa_master_2026-10-01/` | Run reports for the CA(SA) master-mapping phase, structured per Section 41 (A newly identified / B updated / C duplicates rejected / D unverified leads / E new employers / F new industry associations / G talent-flow patterns / H coverage gaps): `run_report.md` (batch 13) and `batch_14_run_report.md` (batch 14). |
 
 > **Dedup rule:** every future batch must consult `people_index.md` first. If a name/company/
 > source is already listed there, enrich the existing record instead of adding a new one.
