@@ -1,9 +1,16 @@
 import { useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { BarChart3, Building2, Cloud, Layers, ShieldCheck } from 'lucide-react'
+import {
+  ChartBar,
+  Buildings,
+  Cloud,
+  Stack,
+  ShieldCheck,
+} from '@phosphor-icons/react'
 import { StatCard } from '../components/ui/StatCard'
+import type { StatTone } from '../components/ui/StatCard'
 import { useData } from '../context/DataContext'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { deriveMarketSummary, getTalentProfiles } from '../data'
 
 const customerClouds = [
@@ -37,12 +44,12 @@ const topIndustries = [
 ] as const
 
 const leadershipSignals = [
-  'Linda Saunders — Country Manager & Sr Director Solution Engineering Africa — Salesforce — Cape Town — promoted Feb 2025, ex-Barloworld Equipment EPMO',
-  'Neil Green — Regional Vice President, Africa — Johannesburg — Agentforce World Tour Johannesburg keynote signal',
-  'Zuko Mdwaba — ex-Area VP SA 2020–Jan 2025 — cited in v2 map against Africa and South Africa customer footprint',
-  'Salesforce SA legal entity noted as 2022 — Johannesburg — support numbers captured in source map',
+  'Linda Saunders · Country Manager & Sr Director Solution Engineering Africa · Salesforce · Cape Town · promoted Feb 2025, ex-Barloworld Equipment EPMO',
+  'Neil Green · Regional Vice President, Africa · Johannesburg · Agentforce World Tour Johannesburg keynote signal',
+  'Zuko Mdwaba · ex-Area VP SA 2020–Jan 2025 · cited in v2 map against Africa and South Africa customer footprint',
+  'Salesforce SA legal entity noted as 2022 · Johannesburg · support numbers captured in source map',
   'Partner ecosystem note: 1,000+ certified individuals SA, +55% certification growth FY23, +46% certified headcount',
-  'Agentforce World Tour Johannesburg — 3 Jun 2026 — AWS Marketplace SA, Agentforce + Data Cloud 360, The Courier Guy live agentic demo',
+  'Agentforce World Tour Johannesburg · 3 Jun 2026 · AWS Marketplace SA, Agentforce + Data Cloud 360, The Courier Guy live agentic demo',
 ] as const
 
 const cloudFootprintBadges = [
@@ -204,22 +211,22 @@ export function SalesforceEcosystemPage() {
     [summary],
   )
   const primaryStats = [
-    { value: 295, label: 'Salesforce Customers SA — v2 market source', color: 'var(--color-primary)' },
-    { value: 266, label: 'BuiltWith .za Domains — v2 market source', color: 'var(--color-success)' },
-    { value: 23, label: 'SI / ISV Partners — v2 market source', color: 'var(--color-accent)' },
-    { value: summary.totalProfiles, label: 'Searchable Practitioners', color: 'var(--color-purple)' },
-  ] as const
+    { value: 295, label: 'Salesforce Customers SA · v2 market source', tone: 'primary' },
+    { value: 266, label: 'BuiltWith .za Domains · v2 market source', tone: 'success' },
+    { value: 23, label: 'SI / ISV Partners · v2 market source', tone: 'accent' },
+    { value: summary.totalProfiles, label: 'Searchable Practitioners', tone: 'purple' },
+  ] as const satisfies readonly { value: number | string; label: string; tone: StatTone }[]
   const secondaryStats = [
     { value: summary.byProvenance.get('legacy') ?? 0, label: 'Legacy profiles retained' },
-    { value: '$5.1B', label: 'IDC SA ecosystem 2020–26 — source note' },
-    { value: '31,800', label: 'IDC jobs impact — source note' },
-    { value: 'Agentforce', label: 'SA GA signal — June 2026 source map' },
+    { value: '$5.1B', label: 'IDC SA ecosystem 2020–26 · source note' },
+    { value: '31,800', label: 'IDC jobs impact · source note' },
+    { value: 'Agentforce', label: 'SA GA signal · June 2026 source map' },
   ] as const
   const maxProvinceCount = provinceDistribution[0]?.count ?? 1
   const maxCustomerCloudCount = customerClouds[0]?.count ?? 1
   const maxIndustryCount = topIndustries[0]?.count ?? 1
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="detail" />
 
   return (
     <div className="page">
@@ -229,16 +236,23 @@ export function SalesforceEcosystemPage() {
           <span>Salesforce Ecosystem</span>
         </div>
 
-        <div className="hero">
-          <h1>SA Salesforce Ecosystem Map</h1>
-          <p>South African Salesforce market layer covering customers, implementation partners, cloud footprint, surrounding technology, Agentforce signals and data-quality boundaries.</p>
+        <div className="page-head">
+          <div>
+            <h1>Salesforce ecosystem map</h1>
+            <p>
+              The South African Salesforce market layer: customers, implementation partners, cloud footprint,
+              surrounding technology, 2026 signals and the data-quality boundary around all of it.
+            </p>
+          </div>
+          <div className="page-head-aside">
+            <span className="page-head-meta"><b>{summary.totalProfiles.toLocaleString()}</b> searchable profiles</span>
+          </div>
         </div>
 
-        <section className="card mb-3" style={{ borderLeft: '4px solid var(--color-danger, #dc2626)' }}>
-          <div className="flex items-center gap-1 mb-1">
-            <ShieldCheck size={20} />
-            <h2>Provenance Audit — July 2026</h2>
-          </div>
+        <section className="callout callout-warning">
+          <ShieldCheck size={20} aria-hidden />
+          <div>
+          <h2>Provenance audit, July 2026</h2>
           <p className="text-sm">
             959 of the 1,047 imported practitioner records were removed after a provenance audit found they were
             machine-generated rather than sourced from real people. The generated rows carried sequential LinkedIn
@@ -252,11 +266,12 @@ export function SalesforceEcosystemPage() {
             Practitioner-derived statistics on this page are calculated from the shared registry. Customer, partner and
             market-intelligence figures are separate editorial data from the v2 market-map source and are labelled as such.
           </p>
+          </div>
         </section>
 
         <div className="stats-bar">
           {primaryStats.map(stat => (
-            <StatCard key={stat.label} value={stat.value} label={stat.label} color={stat.color} />
+            <StatCard key={stat.label} value={stat.value} label={stat.label} tone={stat.tone} />
           ))}
         </div>
 
@@ -276,7 +291,7 @@ export function SalesforceEcosystemPage() {
           </div>
           <div className="grid grid-2">
             {leadershipSignals.map(signal => (
-              <div className="card" key={signal} style={{ padding: '0.875rem' }}>
+              <div className="card" key={signal}>
                 <div className="text-sm">{signal}</div>
               </div>
             ))}
@@ -288,7 +303,7 @@ export function SalesforceEcosystemPage() {
           {employerTypes.map(segment => (
             <div className="card" key={segment.name}>
               <div className="flex items-center gap-1 mb-1">
-                <Layers size={18} />
+                <Stack size={18} />
                 <h3>{segment.name}</h3>
               </div>
               <div className="text-xl font-bold">{segment.count}</div>
@@ -299,7 +314,7 @@ export function SalesforceEcosystemPage() {
 
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
-            <BarChart3 size={20} />
+            <ChartBar size={20} />
             <h2>Customer Cloud Footprint</h2>
           </div>
           <MetricBars items={customerClouds} max={maxCustomerCloudCount} />
@@ -313,7 +328,7 @@ export function SalesforceEcosystemPage() {
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
             <Cloud size={20} />
-            <h2>Cloud Map — SA Footprint Notes</h2>
+            <h2>Cloud Map · SA Footprint Notes</h2>
           </div>
           <div>
             {cloudFootprintBadges.map(item => <span className="badge badge-Medium" key={item}>{item}</span>)}
@@ -323,7 +338,7 @@ export function SalesforceEcosystemPage() {
         <div className="grid grid-2 mb-3">
           <section className="card">
             <div className="flex items-center gap-1 mb-2">
-              <BarChart3 size={20} />
+              <ChartBar size={20} />
               <h2>Customer Industries</h2>
             </div>
             <MetricBars items={topIndustries} max={maxIndustryCount} />
@@ -331,7 +346,7 @@ export function SalesforceEcosystemPage() {
 
           <section className="card">
             <div className="flex items-center gap-1 mb-2">
-              <BarChart3 size={20} />
+              <ChartBar size={20} />
               <h2>Geographic Concentration</h2>
             </div>
             <MetricBars items={provinceDistribution} max={maxProvinceCount} />
@@ -340,8 +355,8 @@ export function SalesforceEcosystemPage() {
 
         <section className="mb-3">
           <div className="flex items-center gap-1 mb-2">
-            <Building2 size={20} />
-            <h2>Salesforce Ecosystem Companies — Cloud Focus</h2>
+            <Buildings size={20} />
+            <h2>Salesforce Ecosystem Companies · Cloud Focus</h2>
           </div>
           <div className="grid grid-3">
             {topCompanies.map(company => (
@@ -366,25 +381,25 @@ export function SalesforceEcosystemPage() {
             This historical correction is not included in public search or practitioner totals. A future verified
             correction must be supplied through a traceable batch.
           </p>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
+          <div className="data-table-wrap">
+            <table className="data-table">
               <thead>
-                <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Name</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Location</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>LinkedIn</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Status</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Note</th>
+                <tr>
+                  <th>Name</th>
+                  <th>Location</th>
+                  <th>LinkedIn</th>
+                  <th>Status</th>
+                  <th>Note</th>
                 </tr>
               </thead>
               <tbody>
                 {manualPractitionerCorrections.map(person => (
-                  <tr key={person.linkedIn} style={{ borderBottom: '1px solid var(--color-border-light)' }}>
-                    <td style={{ padding: '0.75rem', fontWeight: 700 }}>{person.name}</td>
-                    <td style={{ padding: '0.75rem' }}>{person.location}</td>
-                    <td style={{ padding: '0.75rem' }}><a href={person.linkedIn} target="_blank" rel="noreferrer">LinkedIn profile</a></td>
-                    <td style={{ padding: '0.75rem' }}>{person.status}</td>
-                    <td style={{ padding: '0.75rem' }}>{person.note}</td>
+                  <tr key={person.linkedIn}>
+                    <td className="cell-strong">{person.name}</td>
+                    <td>{person.location}</td>
+                    <td><a href={person.linkedIn} target="_blank" rel="noreferrer">LinkedIn profile</a></td>
+                    <td>{person.status}</td>
+                    <td>{person.note}</td>
                   </tr>
                 ))}
               </tbody>
@@ -394,30 +409,30 @@ export function SalesforceEcosystemPage() {
 
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
-            <Building2 size={20} />
+            <Buildings size={20} />
             <h2>Top 24 Verified Salesforce Users</h2>
           </div>
-          <div style={{ overflowX: 'auto' }}>
-            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.875rem' }}>
+          <div className="data-table-wrap">
+            <table className="data-table">
               <thead>
-                <tr style={{ borderBottom: '1px solid var(--color-border)' }}>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Company</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Industry</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Clouds</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Build</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>Use Case</th>
-                  <th style={{ textAlign: 'left', padding: '0.75rem' }}>SI</th>
+                <tr>
+                  <th>Company</th>
+                  <th>Industry</th>
+                  <th>Clouds</th>
+                  <th>Build</th>
+                  <th>Use Case</th>
+                  <th>SI</th>
                 </tr>
               </thead>
               <tbody>
                 {verifiedCustomers.map(customer => (
-                  <tr key={customer.company} style={{ borderBottom: '1px solid var(--color-border-light)' }}>
-                    <td style={{ padding: '0.75rem', fontWeight: 700 }}>{customer.company}</td>
-                    <td style={{ padding: '0.75rem' }}>{customer.industry}</td>
-                    <td style={{ padding: '0.75rem' }}>{customer.clouds}</td>
-                    <td style={{ padding: '0.75rem' }}>{customer.build}</td>
-                    <td style={{ padding: '0.75rem' }}>{truncate(customer.useCase, 140)}</td>
-                    <td style={{ padding: '0.75rem' }}>{customer.si}</td>
+                  <tr key={customer.company}>
+                    <td className="cell-strong">{customer.company}</td>
+                    <td>{customer.industry}</td>
+                    <td>{customer.clouds}</td>
+                    <td>{customer.build}</td>
+                    <td>{truncate(customer.useCase, 140)}</td>
+                    <td>{customer.si}</td>
                   </tr>
                 ))}
               </tbody>
@@ -427,12 +442,12 @@ export function SalesforceEcosystemPage() {
 
         <section className="card mb-3">
           <div className="flex items-center gap-1 mb-2">
-            <Building2 size={20} />
-            <h2>Implementation Partners — SA 23</h2>
+            <Buildings size={20} />
+            <h2>Implementation Partners · SA 23</h2>
           </div>
           <div className="grid grid-3">
             {implementationPartners.map(partner => (
-              <div className="card" key={partner.partner} style={{ padding: '0.875rem' }}>
+              <div className="card" key={partner.partner}>
                 <h3>{partner.partner}</h3>
                 <div className="text-sm text-secondary">{partner.tier}</div>
                 <div className="text-sm"><strong>HC:</strong> {partner.hc} | <strong>Certs:</strong> {partner.certs}</div>
@@ -445,7 +460,7 @@ export function SalesforceEcosystemPage() {
         <div className="grid grid-2 mb-3">
           <section className="card">
             <div className="flex items-center gap-1 mb-2">
-              <BarChart3 size={20} />
+              <ChartBar size={20} />
               <h2>Seniority Distribution</h2>
             </div>
             <div className="grid">
@@ -487,7 +502,7 @@ export function SalesforceEcosystemPage() {
           </div>
           <div className="grid grid-3">
             {surroundingTechStack.map(row => (
-              <div className="card" key={row.layer} style={{ padding: '0.875rem' }}>
+              <div className="card" key={row.layer}>
                 <h3>{row.layer}</h3>
                 <p className="text-sm"><strong>SA standard:</strong> {row.standard}</p>
                 <p className="text-sm text-secondary">{row.example}</p>

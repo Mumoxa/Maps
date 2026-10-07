@@ -1,6 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { Building2, ExternalLink, MapPin, Search, SlidersHorizontal, X } from 'lucide-react'
+import {
+  Buildings,
+  ArrowSquareOut,
+  MapPin,
+  MagnifyingGlass,
+  SlidersHorizontal,
+  X,
+} from '@phosphor-icons/react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { FacetPanel } from '../components/ui/FacetPanel'
@@ -40,7 +47,7 @@ function statusBadge(status: string): { cls: string; label: string; title: strin
     case 'ARTICLES_CONFIRMED_DESIGNATION_UNVERIFIED':
       return { cls: 'acc-badge-articles', label: 'Articles confirmed', title: 'Training/articles confirmed; designation unverified' }
     case 'CONFLICTING':
-      return { cls: 'acc-badge-conflicting', label: 'Conflicting', title: 'Conflicting evidence on designation — under review' }
+      return { cls: 'acc-badge-conflicting', label: 'Conflicting', title: 'Conflicting evidence on designation, under review' }
     default:
       return { cls: '', label: status || 'Recorded', title: 'Record status' }
   }
@@ -94,7 +101,7 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
             title={canonicalEmployer === candidate.employer ? 'Filter by this employer' : `Filter by ${canonicalEmployer} (listed as ${candidate.employer})`}
             onClick={() => onToggle('employer', canonicalEmployer)}
           >
-            <Building2 size={14} aria-hidden /> {canonicalEmployer}
+            <Buildings size={14} aria-hidden /> {canonicalEmployer}
           </button>
         )}
         {candidate.roleFamily && (
@@ -148,7 +155,7 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
       <footer className="hack-candidate-foot">
         {evidenceUrl ? (
           <a className="hack-evidence-link" href={evidenceUrl} target="_blank" rel="noreferrer">
-            Evidence <ExternalLink size={12} aria-hidden />
+            Evidence <ArrowSquareOut size={12} aria-hidden />
           </a>
         ) : (
           <span className="hack-source-note">Evidence recorded in the research database</span>
@@ -227,6 +234,7 @@ export function AccountantsPage() {
 
   return (
     <main className="page">
+      <div className="container">
       <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Accounting & Finance' }]} />
       <header className="hack-hero">
         <p className="hack-kicker">SA Talent Pool · Candidates</p>
@@ -248,7 +256,7 @@ export function AccountantsPage() {
 
       <div className="facet-searchbar">
         <div className="hack-control hack-control-search facet-searchbar-input">
-          <Search size={15} aria-hidden />
+          <MagnifyingGlass size={15} aria-hidden />
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
@@ -285,6 +293,9 @@ export function AccountantsPage() {
 
       <div className="facet-layout">
         <aside className="facet-sidebar" aria-label="Filters">
+          <div className="facet-sidebar-head">
+            <h2 className="facet-heading">Filters{activeCount ? ` (${activeCount})` : ''}</h2>
+          </div>
           <FacetPanel defs={accountantFacetDefs} selections={selections} optionsFor={optionsFor} onToggle={onToggle} idPrefix="acc-side" />
         </aside>
 
@@ -299,7 +310,7 @@ export function AccountantsPage() {
                 title="No candidates match these filters"
                 description={
                   activeChips.length
-                    ? `Active filters — ${activeChips.map((chip) => `${chip.group}: ${chip.value}`).join('; ')}${query ? `; search “${query}”` : ''}. Remove a filter to widen the results.`
+                    ? `Active filters: ${activeChips.map((chip) => `${chip.group}: ${chip.value}`).join('; ')}${query ? `; search “${query}”` : ''}. Remove a filter to widen the results.`
                     : 'Try a different search term.'
                 }
               />
@@ -330,7 +341,7 @@ export function AccountantsPage() {
           <div className="facet-drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-hidden />
           <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters">
             <div className="facet-drawer-head">
-              <strong>Filters{activeCount ? ` (${activeCount})` : ''}</strong>
+              <h2 className="facet-heading">Filters{activeCount ? ` (${activeCount})` : ''}</h2>
               <button ref={drawerCloseRef} type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
                 <X size={18} aria-hidden />
               </button>
@@ -356,6 +367,7 @@ export function AccountantsPage() {
           articles / practical-training routes are tracked separately.
         </p>
       </footer>
+          </div>
     </main>
   )
 }

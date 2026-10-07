@@ -6,7 +6,7 @@ import { Badge } from '../components/ui/Badge'
 import { SearchBar } from '../components/ui/SearchBar'
 import { Pagination } from '../components/ui/Pagination'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 
@@ -90,7 +90,7 @@ export function ShortlistPage() {
     return map
   }, [data])
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="list" cards={6} />
   if (!data) return null
 
   const getProfileSlug = (name: string): string | undefined => {
@@ -106,11 +106,17 @@ export function ShortlistPage() {
         <div className="container">
           <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Shortlist' }]} />
 
-          <div className="flex items-center justify-between mb-2">
-            <h1>Priority Shortlist ({entries.length})</h1>
+          <div className="page-head">
+            <div>
+              <h1>Priority shortlist</h1>
+              <p>Ranked candidates for active mandates, each with the reason it was ranked and the profile behind it.</p>
+            </div>
+            <div className="page-head-aside">
+              <span className="page-head-meta"><b>{entries.length.toLocaleString()}</b> ranked</span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <div className="page-toolbar">
             <SearchBar
               value={query}
               onChange={(val) => {
@@ -123,54 +129,56 @@ export function ShortlistPage() {
               }}
               placeholder="Search shortlist..."
             />
-            <select
-              value={priorityFilter}
-              onChange={e => {
-                setSearchParams(prev => {
-                  const next = new URLSearchParams(prev)
-                  if (e.target.value) next.set('priority', e.target.value); else next.delete('priority')
-                  next.delete('page')
-                  return next
-                })
-              }}
-              aria-label="Filter by priority"
-              className="filter-select"
-            >
-              <option value="">All Priority</option>
-              <option value="P1">P1 ({priorityCounts.P1})</option>
-              <option value="P2">P2 ({priorityCounts.P2})</option>
-              <option value="P3">P3 ({priorityCounts.P3})</option>
-            </select>
-            <select
-              value={seniorityFilter}
-              onChange={e => {
-                setSearchParams(prev => {
-                  const next = new URLSearchParams(prev)
-                  if (e.target.value) next.set('seniority', e.target.value); else next.delete('seniority')
-                  next.delete('page')
-                  return next
-                })
-              }}
-              aria-label="Filter by seniority"
-              className="filter-select"
-            >
-              <option value="">All Seniority</option>
-              {seniorityOptions.map(s => <option key={s} value={s}>{s}</option>)}
-            </select>
-            <select
-              value={`${sort}-${order}`}
-              onChange={e => {
-                const [s, o] = e.target.value.split('-')
-                setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
-              }}
-              aria-label="Sort"
-              className="filter-select"
-            >
-              <option value="rank-asc">Rank (top first)</option>
-              <option value="rank-desc">Rank (bottom first)</option>
-              <option value="fit_score-desc">Fit Score (high)</option>
-              <option value="fit_score-asc">Fit Score (low)</option>
-            </select>
+            <div className="select-group">
+              <select
+                value={priorityFilter}
+                onChange={e => {
+                  setSearchParams(prev => {
+                    const next = new URLSearchParams(prev)
+                    if (e.target.value) next.set('priority', e.target.value); else next.delete('priority')
+                    next.delete('page')
+                    return next
+                  })
+                }}
+                aria-label="Filter by priority"
+                className="filter-select"
+              >
+                <option value="">All Priority</option>
+                <option value="P1">P1 ({priorityCounts.P1})</option>
+                <option value="P2">P2 ({priorityCounts.P2})</option>
+                <option value="P3">P3 ({priorityCounts.P3})</option>
+              </select>
+              <select
+                value={seniorityFilter}
+                onChange={e => {
+                  setSearchParams(prev => {
+                    const next = new URLSearchParams(prev)
+                    if (e.target.value) next.set('seniority', e.target.value); else next.delete('seniority')
+                    next.delete('page')
+                    return next
+                  })
+                }}
+                aria-label="Filter by seniority"
+                className="filter-select"
+              >
+                <option value="">All Seniority</option>
+                {seniorityOptions.map(s => <option key={s} value={s}>{s}</option>)}
+              </select>
+              <select
+                value={`${sort}-${order}`}
+                onChange={e => {
+                  const [s, o] = e.target.value.split('-')
+                  setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
+                }}
+                aria-label="Sort"
+                className="filter-select"
+              >
+                <option value="rank-asc">Rank (top first)</option>
+                <option value="rank-desc">Rank (bottom first)</option>
+                <option value="fit_score-desc">Fit Score (high)</option>
+                <option value="fit_score-asc">Fit Score (low)</option>
+              </select>
+            </div>
           </div>
 
           {paginated.length === 0 ? (

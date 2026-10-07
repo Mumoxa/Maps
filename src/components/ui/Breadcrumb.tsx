@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import { ChevronRight } from 'lucide-react'
+import {
+  CaretRight,
+} from '@phosphor-icons/react'
 
 interface Crumb {
   label: string
@@ -15,7 +17,7 @@ export function Breadcrumb({ crumbs }: BreadcrumbProps) {
     <nav className="breadcrumb" aria-label="Breadcrumb">
       {crumbs.map((c, i) => (
         <span key={i}>
-          {i > 0 && <ChevronRight size={14} style={{ verticalAlign: 'middle', margin: '0 0.125rem' }} />}
+          {i > 0 && <CaretRight size={14} aria-hidden />}
           {c.to ? <Link to={c.to}>{c.label}</Link> : <span>{c.label}</span>}
         </span>
       ))}

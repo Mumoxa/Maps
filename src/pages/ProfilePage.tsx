@@ -1,12 +1,15 @@
 import { useMemo, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { ExternalLink, ArrowLeft } from 'lucide-react'
+import {
+  ArrowSquareOut,
+  ArrowLeft,
+} from '@phosphor-icons/react'
 import { useData } from '../context/DataContext'
 import { buildSlugSets, getCompanyByProfile, getSegmentByProfile, getShortlistByProfile } from '../data'
 import { Badge } from '../components/ui/Badge'
 import { Button } from '../components/ui/Button'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 
@@ -62,10 +65,10 @@ export function ProfilePage() {
   }, [segment, slugSets])
 
   useEffect(() => {
-    if (profile) document.title = `${profile.name} — Profile`
+    if (profile) document.title = `${profile.name} · Profile`
   }, [profile])
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="detail" />
   if (!data || !profile) return (
     <div className="page container">
       <EmptyState title="Profile not found" description="The profile you're looking for doesn't exist." action={{ label: 'Browse profiles', to: '/profiles' }} />
@@ -97,104 +100,111 @@ export function ProfilePage() {
             </div>
           )}
 
-          <div className="card mb-3">
-            <div className="flex items-center gap-2 mb-1">
-              <h1>{profile.name}</h1>
-              <Badge text={profile.confidence} variant="confidence" confidence={profile.confidence} />
+          <div className="detail-layout">
+            <div>
+              <header className="card mb-2">
+                <div className="flex items-center gap-2 mb-1 flex-wrap">
+                  <h1>{profile.name}</h1>
+                  <Badge text={profile.confidence} variant="confidence" confidence={profile.confidence} />
+                  {shortlistEntry && (
+                    <Badge text={`Rank #${shortlistEntry.Rank}`} variant="priority" priority="P1" />
+                  )}
+                </div>
+                <p className="text-secondary">
+                  {profile.title}
+                  {profile.company && !needsVerification ? ` at ${profile.company}` : ''}
+                  {profile.location ? ` · ${profile.location}` : ''}
+                </p>
+                <div className="detail-inline-links mt-2">
+                  {profile.linkedin_url && profile.linkedin_url !== '#' && (
+                    <a href={profile.linkedin_url} target="_blank" rel="noopener noreferrer" className="btn btn-sm">
+                      <ArrowSquareOut size={15} aria-hidden /> LinkedIn profile
+                    </a>
+                  )}
+                  {profile.source_url && profile.source_url !== '#' && profile.source_url !== profile.linkedin_url && (
+                    <a href={profile.source_url} target="_blank" rel="noopener noreferrer" className="btn btn-sm">
+                      <ArrowSquareOut size={15} aria-hidden /> Source
+                    </a>
+                  )}
+                </div>
+              </header>
+
+              {profile.evidence && (
+                <section className="card mb-2">
+                  <h3 className="mb-1">Evidence</h3>
+                  <p className="text-sm">{profile.evidence}</p>
+                </section>
+              )}
+
+              {profile.notes && profile.notes.trim() && (
+                <section className="card mb-2">
+                  <h3 className="mb-1">Notes</h3>
+                  <p className="text-sm">{profile.notes}</p>
+                </section>
+              )}
+
               {shortlistEntry && (
-                <Badge text={`#${shortlistEntry.Rank}`} variant="priority" priority="P1" />
+                <section className="card mb-2 shortlist-highlight-card">
+                  <h3 className="mb-1">Priority shortlist, rank #{shortlistEntry.Rank}</h3>
+                  <p className="text-sm"><strong>Why strong fit:</strong> {shortlistEntry['Why Strong Fit']}</p>
+                  <p className="text-sm mt-1"><strong>Recruitment priority:</strong> {shortlistEntry['Recruitment Priority']}</p>
+                </section>
               )}
             </div>
 
-            <div className="grid grid-2 mt-2">
-              <div>
-                <div className="detail-label">Company</div>
-                <div>
-                  {needsVerification ? (
-                    <Link to="/profiles?needs_verification=true">
-                      <Badge text="Needs verification" variant="verification" />
-                    </Link>
-                  ) : companySlug ? (
-                    <Link to={`/companies/${companySlug}`}>{profile.company}</Link>
-                  ) : (
-                    profile.company
-                  )}
+            <aside className="detail-aside">
+              <div className="panel">
+                <div className="panel-head">
+                  <h2 className="text-sm">Record</h2>
                 </div>
-              </div>
-              <div>
-                <div className="detail-label">Title</div>
-                <div>{profile.title}</div>
-              </div>
-              <div>
-                <div className="detail-label">Location</div>
-                <div>{profile.location}</div>
-              </div>
-              <div>
-                <div className="detail-label">Segment</div>
-                <div>{segmentSlug ? <Link to={`/segments/${segmentSlug}`}>{profile.segment}</Link> : profile.segment}</div>
-              </div>
-              <div>
-                <div className="detail-label">Function</div>
-                <div>{profile.function}</div>
-              </div>
-              <div>
-                <div className="detail-label">Specialism</div>
-                <div>{profile.specialism}</div>
-              </div>
-              <div>
-                <div className="detail-label">Category</div>
-                <div>{profile.category}</div>
-              </div>
-              <div>
-                <div className="detail-label">Seniority</div>
-                <div>{profile.seniority}</div>
-              </div>
-              <div>
-                <div className="detail-label">Fit Score</div>
-                <div className="fit-score">
-                  <span className="fit-score-value">{profile.fit_score}/10</span>
-                  <div className="fit-score-track">
-                    <div className="fit-score-fill" style={{ width: `${profile.fit_score * 10}%` }} />
+                <div className="panel-body detail-facts">
+                  <div className="detail-fact">
+                    <span className="detail-label">Company</span>
+                    <span>
+                      {needsVerification ? (
+                        <Link to="/profiles?needs_verification=true">
+                          <Badge text="Needs verification" variant="verification" />
+                        </Link>
+                      ) : companySlug ? (
+                        <Link to={`/companies/${companySlug}`}>{profile.company}</Link>
+                      ) : (
+                        profile.company
+                      )}
+                    </span>
+                  </div>
+                  <div className="detail-fact">
+                    <span className="detail-label">Segment</span>
+                    <span>{segmentSlug ? <Link to={`/segments/${segmentSlug}`}>{profile.segment}</Link> : profile.segment}</span>
+                  </div>
+                  <div className="detail-fact">
+                    <span className="detail-label">Seniority</span>
+                    <span>{profile.seniority}</span>
+                  </div>
+                  <div className="detail-fact">
+                    <span className="detail-label">Function</span>
+                    <span>{profile.function}</span>
+                  </div>
+                  <div className="detail-fact">
+                    <span className="detail-label">Specialism</span>
+                    <span>{profile.specialism}</span>
+                  </div>
+                  <div className="detail-fact">
+                    <span className="detail-label">Category</span>
+                    <span>{profile.category}</span>
+                  </div>
+                  <div className="detail-fact">
+                    <span className="detail-label">Fit score</span>
+                    <span className="fit-score">
+                      <span className="fit-score-value">{profile.fit_score}/10</span>
+                      <span className="fit-score-track">
+                        <span className="fit-score-fill" style={{ width: `${profile.fit_score * 10}%` }} />
+                      </span>
+                    </span>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-2 flex gap-2 flex-wrap">
-              {profile.linkedin_url && profile.linkedin_url !== '#' && (
-                <a href={profile.linkedin_url} target="_blank" rel="noopener noreferrer" className="btn">
-                  <ExternalLink size={16} /> LinkedIn Profile
-                </a>
-              )}
-              {profile.source_url && profile.source_url !== '#' && profile.source_url !== profile.linkedin_url && (
-                <a href={profile.source_url} target="_blank" rel="noopener noreferrer" className="btn">
-                  <ExternalLink size={16} /> Source
-                </a>
-              )}
-            </div>
+            </aside>
           </div>
-
-          {profile.evidence && (
-            <div className="card mb-2">
-              <h3 className="mb-1">Evidence</h3>
-              <p className="text-sm">{profile.evidence}</p>
-            </div>
-          )}
-
-          {profile.notes && profile.notes.trim() && (
-            <div className="card mb-2">
-              <h3 className="mb-1">Notes</h3>
-              <p className="text-sm">{profile.notes}</p>
-            </div>
-          )}
-
-          {shortlistEntry && (
-            <div className="card mb-2 shortlist-highlight-card">
-              <h3 className="mb-1">Priority Shortlist — Rank #{shortlistEntry.Rank}</h3>
-              <p className="text-sm"><strong>Why Strong Fit:</strong> {shortlistEntry['Why Strong Fit']}</p>
-              <p className="text-sm mt-1"><strong>Recruitment Priority:</strong> {shortlistEntry['Recruitment Priority']}</p>
-            </div>
-          )}
 
           {otherDavidColeman && otherColemanSlug && (
             <div className="mt-2">

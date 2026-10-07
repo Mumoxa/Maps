@@ -1,25 +1,33 @@
-import React, { useEffect } from 'react'
-import { X } from 'lucide-react'
+import React, { useEffect, useRef } from 'react'
+import { X } from '@phosphor-icons/react'
 
 interface DrawerProps {
   isOpen: boolean
   onClose: () => void
   title: string
+  subtitle?: string
   children: React.ReactNode
 }
 
-export function Drawer({ isOpen, onClose, title, children }: DrawerProps) {
+/**
+ * Detail drawer: slides in from the trailing edge, traps nothing it should not,
+ * and always offers Escape plus a visible close control.
+ */
+export function Drawer({ isOpen, onClose, title, subtitle, children }: DrawerProps) {
+  const panelRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
+    if (!isOpen) return undefined
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose()
     }
-    if (isOpen) {
-      document.addEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'hidden'
-    }
+    document.addEventListener('keydown', handleEsc)
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    panelRef.current?.focus()
     return () => {
       document.removeEventListener('keydown', handleEsc)
-      document.body.style.overflow = ''
+      document.body.style.overflow = previousOverflow
     }
   }, [isOpen, onClose])
 
@@ -28,15 +36,25 @@ export function Drawer({ isOpen, onClose, title, children }: DrawerProps) {
   return (
     <>
       <div className="drawer-overlay" onClick={onClose} />
-      <div className="drawer-content" role="dialog" aria-modal="true" aria-label={title}>
-        <div className="modal-header">
-          <h2>{title}</h2>
-          <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close">
-            <X size={18} />
+      <aside
+        className="drawer-content"
+        role="dialog"
+        aria-modal="true"
+        aria-label={title}
+        tabIndex={-1}
+        ref={panelRef}
+      >
+        <div className="drawer-head">
+          <div>
+            <h2>{title}</h2>
+            {subtitle && <p className="text-secondary text-sm">{subtitle}</p>}
+          </div>
+          <button type="button" className="icon-button" onClick={onClose} aria-label="Close panel">
+            <X size={16} aria-hidden />
           </button>
         </div>
         {children}
-      </div>
+      </aside>
     </>
   )
 }

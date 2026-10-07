@@ -1,6 +1,13 @@
 import { useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
-import { ExternalLink, Filter, GraduationCap, MapPin, Search, Trophy } from 'lucide-react'
+import {
+  ArrowSquareOut,
+  Funnel,
+  GraduationCap,
+  MapPin,
+  MagnifyingGlass,
+  Trophy,
+} from '@phosphor-icons/react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import {
@@ -123,7 +130,7 @@ function CandidateCard({ candidate, onFilter }: { candidate: HackathonCandidate;
               {event.city ? <span> · Venue city: {event.city}</span> : null}
             </p>
             <a className="hack-evidence-link" href={event.evidenceUrl} target="_blank" rel="noreferrer">
-              Evidence <ExternalLink size={12} aria-hidden />
+              Evidence <ArrowSquareOut size={12} aria-hidden />
             </a>
           </li>
         ))}
@@ -132,7 +139,7 @@ function CandidateCard({ candidate, onFilter }: { candidate: HackathonCandidate;
 
       <footer className="hack-candidate-foot">
         <a className="hack-evidence-link" href={candidate.evidenceUrl} target="_blank" rel="noreferrer">
-          Primary evidence <ExternalLink size={12} aria-hidden />
+          Primary evidence <ArrowSquareOut size={12} aria-hidden />
         </a>
         <span className="hack-source-note">{candidate.source}</span>
       </footer>
@@ -181,12 +188,13 @@ export function HackathonTalentPage() {
 
   return (
     <main className="page">
+      <div className="container">
       <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Hackathon Talent' }]} />
       <header className="hack-hero">
         <p className="hack-kicker">SA Talent Pool · Candidates</p>
         <h1>Hackathon contestants</h1>
         <p className="hack-lede">
-          Evidence-linked candidates from the SA Hackathon Census — South Africans who competed, placed or won
+          Evidence-linked candidates from the SA Hackathon Census: South Africans who competed, placed or won
           hackathons and sprint-format technology competitions. Every record keeps its participation history and a
           source URL; nothing is inferred.
         </p>
@@ -201,7 +209,7 @@ export function HackathonTalentPage() {
 
       <section className="hack-controls" aria-label="Filters">
         <div className="hack-control hack-control-search">
-          <Search size={15} aria-hidden />
+          <MagnifyingGlass size={15} aria-hidden />
           <input
             value={query}
             onChange={(change) => { setParam('q', change.target.value); setPage(0) }}
@@ -210,7 +218,7 @@ export function HackathonTalentPage() {
           />
         </div>
         <div className="hack-control">
-          <Filter size={15} aria-hidden />
+          <Funnel size={15} aria-hidden />
           <select value={tier} onChange={(change) => { setParam('tier', change.target.value); setPage(0) }} aria-label="Best result">
             <option value="">Any result</option>
             {tiers.map((option) => (
@@ -266,11 +274,14 @@ export function HackathonTalentPage() {
       {pageItems.length === 0 ? (
         <EmptyState title="No candidates match" description="Try clearing a filter or searching a different event, university or name." />
       ) : (
+        <>
+        <h2 className="sr-only">Candidates</h2>
         <div className="hack-candidate-grid">
           {pageItems.map((candidate) => (
             <CandidateCard key={candidate.id} candidate={candidate} onFilter={setParam} />
           ))}
         </div>
+        </>
       )}
 
       {pageCount > 1 && (
@@ -288,6 +299,7 @@ export function HackathonTalentPage() {
           the person competed, not their residence.
         </p>
       </footer>
+          </div>
     </main>
   )
 }

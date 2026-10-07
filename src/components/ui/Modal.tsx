@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { X } from 'lucide-react'
+import React, { useEffect, useRef } from 'react'
+import { X } from '@phosphor-icons/react'
 
 interface ModalProps {
   isOpen: boolean
@@ -9,17 +9,20 @@ interface ModalProps {
 }
 
 export function Modal({ isOpen, onClose, title, children }: ModalProps) {
+  const panelRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose()
+    if (!isOpen) return undefined
+    const handleEsc = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose()
     }
-    if (isOpen) {
-      document.addEventListener('keydown', handleEsc)
-      document.body.style.overflow = 'hidden'
-    }
+    document.addEventListener('keydown', handleEsc)
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    panelRef.current?.focus()
     return () => {
       document.removeEventListener('keydown', handleEsc)
-      document.body.style.overflow = ''
+      document.body.style.overflow = previousOverflow
     }
   }, [isOpen, onClose])
 
@@ -27,11 +30,19 @@ export function Modal({ isOpen, onClose, title, children }: ModalProps) {
 
   return (
     <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-content" onClick={e => e.stopPropagation()} role="dialog" aria-modal="true" aria-label={title}>
+      <div
+        className="modal-content"
+        onClick={(event) => event.stopPropagation()}
+        role="dialog"
+        aria-modal="true"
+        aria-label={title}
+        tabIndex={-1}
+        ref={panelRef}
+      >
         <div className="modal-header">
           <h2>{title}</h2>
-          <button className="btn btn-ghost btn-sm" onClick={onClose} aria-label="Close">
-            <X size={18} />
+          <button type="button" className="icon-button" onClick={onClose} aria-label="Close dialog">
+            <X size={16} aria-hidden />
           </button>
         </div>
         {children}

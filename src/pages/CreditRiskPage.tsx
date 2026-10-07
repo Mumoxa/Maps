@@ -1,12 +1,18 @@
 import { useMemo, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Map as MapIcon, Users, Building2, Layers, ListOrdered } from 'lucide-react'
+import {
+  MapTrifold as MapIcon,
+  Users,
+  Buildings,
+  Stack,
+  ListNumbers,
+} from '@phosphor-icons/react'
 import { useData } from '../context/DataContext'
 import { StatCard } from '../components/ui/StatCard'
 import { ProfileCard } from '../components/ui/ProfileCard'
 import { SearchBar } from '../components/ui/SearchBar'
 import { Button } from '../components/ui/Button'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { buildSlugSets } from '../data'
 
@@ -58,7 +64,7 @@ export function CreditRiskPage() {
     return data.shortlist.slice(0, 5)
   }, [data])
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="grid" cards={4} />
   if (error) return <div className="page container"><p>Error: {error}</p></div>
   if (!data) return null
 
@@ -70,33 +76,41 @@ export function CreditRiskPage() {
     <ErrorBoundary>
       <div className="page">
         <div className="container">
-          <div className="hero">
-            <h1>Credit Risk Track</h1>
-            <p>The SA Talent Map view for credit risk talent, companies, segments, and shortlist intelligence.</p>
-            <Button variant="primary" to="/map">
-              <MapIcon size={18} /> Explore the Credit Risk Map
-            </Button>
+          <div className="page-head">
+            <div>
+              <h1>Credit risk market map</h1>
+              <p>
+                The reference track in SA Talent Map: {data.summary.total_profiles.toLocaleString()} mapped
+                professionals, {data.companies.length.toLocaleString()} companies and{' '}
+                {data.segments.length.toLocaleString()} segments, with a ranked shortlist.
+              </p>
+            </div>
+            <div className="page-head-aside">
+              <Button variant="primary" to="/map">
+                <MapIcon size={17} aria-hidden /> Open the map
+              </Button>
+            </div>
           </div>
 
           <div className="stats-bar">
-            <StatCard value={data.summary.total_profiles} label="Profiles" color="var(--color-primary)" />
-            <StatCard value={data.companies.length} label="Companies" color="var(--color-success)" />
-            <StatCard value={data.segments.length} label="Segments" color="var(--color-accent)" />
-            <StatCard value={data.summary.avg_fit_score} label="Avg Fit Score" color="var(--color-purple)" />
+            <StatCard value={data.summary.total_profiles} label="Mapped profiles" />
+            <StatCard value={data.companies.length} label="Companies" />
+            <StatCard value={data.segments.length} label="Segments" />
+            <StatCard value={data.summary.avg_fit_score} label="Average fit score" />
           </div>
 
-          <div className="mb-3">
-            <h2 className="mb-2">Search</h2>
+          <section className="section-block">
+            <h2 className="mb-2">Search the track</h2>
             <SearchBar
               placeholder="Search profiles, companies, segments..."
               onSearch={handleSearch}
               value=""
               global
             />
-          </div>
+          </section>
 
-          <div className="mb-3">
-            <h2 className="mb-2">Top Segments by Profile Count</h2>
+          <section className="section-block">
+            <h2 className="mb-2">Largest segments by profile count</h2>
             <div className="bar-chart">
               {topSegments.map((segment) => {
                 const maxCount = topSegments[0]?.count || 1
@@ -119,12 +133,12 @@ export function CreditRiskPage() {
                 )
               })}
             </div>
-          </div>
+          </section>
 
-          <div className="mb-3">
-            <div className="flex items-center justify-between mb-2">
-              <h2>Priority Shortlist - Top 5</h2>
-              <Button variant="ghost" to="/shortlist">View all 50 -&gt;</Button>
+          <section className="section-block">
+            <div className="section-head">
+              <h2>Priority shortlist</h2>
+              <Button variant="ghost" to="/shortlist">View the full shortlist</Button>
             </div>
             <div className="grid grid-2">
               {topShortlist.map((entry, index) => {
@@ -158,38 +172,38 @@ export function CreditRiskPage() {
                 )
               })}
             </div>
-          </div>
+          </section>
 
-          <div>
-            <h2 className="mb-2">Quick Links</h2>
+          <section>
+            <h2 className="mb-2">Where to go next</h2>
             <div className="grid grid-4">
               <Link to="/map" className="card card-hover quick-link-card">
-                <MapIcon size={32} className="quick-link-icon" style={{ color: 'var(--color-primary)' }} />
-                <div className="quick-link-title">Interactive Map</div>
-                <div className="text-sm text-secondary">Explore the ecosystem</div>
+                <MapIcon size={24} weight="duotone" className="quick-link-icon" aria-hidden />
+                <span className="quick-link-title">Interactive map</span>
+                <span className="text-sm text-secondary">Explore the ecosystem by segment and company</span>
               </Link>
               <Link to="/segments" className="card card-hover quick-link-card">
-                <Layers size={32} className="quick-link-icon" style={{ color: 'var(--color-success)' }} />
-                <div className="quick-link-title">Segments</div>
-                <div className="text-sm text-secondary">{data.segments.length} industry segments</div>
+                <Stack size={24} weight="duotone" className="quick-link-icon" aria-hidden />
+                <span className="quick-link-title">Segments</span>
+                <span className="text-sm text-secondary">{data.segments.length} industry segments</span>
               </Link>
               <Link to="/companies" className="card card-hover quick-link-card">
-                <Building2 size={32} className="quick-link-icon" style={{ color: 'var(--color-accent)' }} />
-                <div className="quick-link-title">Companies</div>
-                <div className="text-sm text-secondary">{data.companies.length} companies</div>
+                <Buildings size={24} weight="duotone" className="quick-link-icon" aria-hidden />
+                <span className="quick-link-title">Companies</span>
+                <span className="text-sm text-secondary">{data.companies.length} mapped employers</span>
               </Link>
               <Link to="/profiles" className="card card-hover quick-link-card">
-                <Users size={32} className="quick-link-icon" style={{ color: 'var(--color-purple)' }} />
-                <div className="quick-link-title">Candidates</div>
-                <div className="text-sm text-secondary">{data.profiles.length} candidate profiles</div>
+                <Users size={24} weight="duotone" className="quick-link-icon" aria-hidden />
+                <span className="quick-link-title">Candidates</span>
+                <span className="text-sm text-secondary">{data.profiles.length} candidate profiles</span>
               </Link>
               <Link to="/shortlist" className="card card-hover quick-link-card">
-                <ListOrdered size={32} className="quick-link-icon" style={{ color: 'var(--color-error)' }} />
-                <div className="quick-link-title">Shortlist</div>
-                <div className="text-sm text-secondary">Top 50 priority candidates</div>
+                <ListNumbers size={24} weight="duotone" className="quick-link-icon" aria-hidden />
+                <span className="quick-link-title">Shortlist</span>
+                <span className="text-sm text-secondary">Ranked priority candidates</span>
               </Link>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </ErrorBoundary>

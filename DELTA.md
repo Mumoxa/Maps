@@ -10,13 +10,33 @@ I have reviewed the TS and confirm the implementation matches the specification 
 
 2. **CompanyDirectory normalizeCompanyName**: The file imports `normalizeCompanyName` from the data layer, as expected. A duplicate local function that was accidentally included during the initial implementation pass has been removed.
 
-3. **OrgChartCanvas unused variable**: `ReactFlow as any` appears as a no-op expression in `OrgChartCanvas.tsx` — this is a leftover from initial development and has no runtime effect. It could be removed in a cleanup pass.
+3. **OrgChartCanvas unused variable**: the `ReactFlow as any` no-op expression was removed in the UI redesign; `OrgChartCanvas.tsx` now renders `<ReactFlow>` directly and the map canvas and tooltip are styled by classes (`.map-canvas-root`, `.map-tooltip-title`, `.map-tooltip-body`).
 
 4. **Segment normalization map**: A few additional entries beyond the TS-specified 29 were added in the map (e.g., "Retail Credit" → "Retail credit", "Vehicle Finance" → "Vehicle finance", "Digital Bank" → "Digital bank", "Credit Bureau" → "Credit bureau", "Regulator" → "Regulator"). These are identity mappings where the company.segment string already matches a segment name case-sensitively, ensuring no unnecessary `UNMAPPED` entries. These are documented in `normalization.ts`.
 
 5. **Company alias map**: The alias map covers all 114 unique profile.company strings → resolves to 79 canonical names. Self-identity entries for non-canonical companies (e.g., "JUMO", "Independent") are omitted — `normalizeCompanyName()` falls back to the raw string, displayed as non-linked text in the UI.
 
-6. **Sitemap**: A static sitemap.xml is included listing the 6 core routes. Dynamic segment/company/profile pages are not individually listed (a full sitemap would contain ~490 URLs and is omitted for brevity; the static one covers the navigation entry points).
+6. **Sitemap**: A static sitemap.xml lists the 14 live navigation routes. Dynamic segment/company/profile pages are not individually listed (a full sitemap would contain ~490 URLs and is omitted for brevity; the static one covers the navigation entry points).
+
+## Interface Redesign (design pass)
+
+The UI was rebuilt against the repo design standards and the system is documented in
+[`docs/design-system.md`](docs/design-system.md). Summary of what changed:
+
+1. **Design tokens**: one ink-navy accent, one amber signal colour, off-white/off-black surfaces,
+   one radius scale, tinted shadows and a named layer scale, each fully redeclared for
+   `prefers-color-scheme: dark` and for the explicit light/dark switch.
+2. **Type and icons**: Geist Variable + Geist Mono self-hosted via `@fontsource-variable/*`;
+   `lucide-react` replaced by `@phosphor-icons/react` and removed from `package.json`.
+3. **Primitives**: `Button`, `Modal`, `Drawer`, `Tooltip`, `ThemeToggle`, `CommandPalette`
+   (⌘K / Ctrl K), `SkeletonPage` (shaped loading states) and the rewritten `Header`/`Layout`/`Footer`.
+4. **Page anatomy**: `.page-head`, `.page-toolbar`, `.section-block`, `.callout`, `.chip`,
+   `.data-table`, `.detail-layout` + `.detail-facts`, applied across the credit-risk, track,
+   Salesforce, hackathon, accounting, search-bank and contact routes.
+5. **Map**: the profile drawer and map chrome were rebuilt on the shared detail classes; matched
+   map nodes now ring with `.node-highlight` while the rest dim.
+6. **Removed**: dead CSS rules from the previous visual language, all hand-set inline styles
+   except computed widths and the canvas tooltip position, and every em dash in UI copy.
 
 ## Defect Fixes (Review Round)
 

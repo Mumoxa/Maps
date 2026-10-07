@@ -17,8 +17,13 @@ Future markets must be registered in `src/data/tracks.ts` with a South African g
 **Adding to the map — start here:** [`docs/adding-to-the-talent-map.md`](docs/adding-to-the-talent-map.md) is the master guide for adding people to an existing track or registering a brand-new track, covering both supported ingestion patterns (verified-batch pipeline and research-DB pool) and the guardrails that keep additions from breaking the build.
 
 Production deploys run automatically after the `CI` workflow succeeds on `main`. Before pushing, `npm test`,
-`npm run build` and `npm run smoke:routes` (renders every route, including `/search-bank`, in jsdom) are the
-local gate. The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised redeploy is required.
+`npm run build`, `npm run smoke:routes` (renders every route, including `/search-bank`, in jsdom) and
+`npm run audit:ui` (one `h1` per route, heading order, control names, duplicate ids, image alt text and stray
+inline styles) are the local gate. The interface itself is specified in
+[`docs/design-system.md`](docs/design-system.md): tokens, type, page anatomy, interaction rules.
+
+The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised
+redeploy is required.
 
 ### Known non-blocking check: `Workers Builds: maps`
 

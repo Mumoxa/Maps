@@ -6,7 +6,7 @@ import { CompanyCard } from '../components/ui/CompanyCard'
 import { SearchBar } from '../components/ui/SearchBar'
 import { Pagination } from '../components/ui/Pagination'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 
@@ -54,7 +54,7 @@ export function CompanyDirectory() {
   const totalPages = Math.max(1, Math.ceil(companies.length / pageSize))
   const paginated = companies.slice((page - 1) * pageSize, page * pageSize)
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="grid" cards={6} />
   if (!data) return null
 
   return (
@@ -63,11 +63,17 @@ export function CompanyDirectory() {
         <div className="container">
           <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Companies' }]} />
 
-          <div className="flex items-center justify-between mb-2">
-            <h1>Companies ({companies.length})</h1>
+          <div className="page-head">
+            <div>
+              <h1>Companies</h1>
+              <p>Every employer mapped in the credit risk dataset, with its priority tier and segment.</p>
+            </div>
+            <div className="page-head-aside">
+              <span className="page-head-meta"><b>{companies.length.toLocaleString()}</b> in view</span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <div className="page-toolbar">
             <SearchBar
               value={query}
               onChange={(val) => {
@@ -80,42 +86,44 @@ export function CompanyDirectory() {
               }}
               placeholder="Search companies..."
             />
-            <select
-              value={priorityFilter}
-              onChange={e => {
-                setSearchParams(prev => {
-                  const next = new URLSearchParams(prev)
-                  if (e.target.value) next.set('priority', e.target.value); else next.delete('priority')
-                  next.delete('page')
-                  return next
-                })
-              }}
-              aria-label="Filter by priority"
-              className="filter-select"
-            >
-              <option value="">All Priorities</option>
-              <option value="P1">P1</option>
-              <option value="P2">P2</option>
-              <option value="P3">P3</option>
-            </select>
-            <select
-              value={segmentFilter}
-              onChange={e => {
-                setSearchParams(prev => {
-                  const next = new URLSearchParams(prev)
-                  if (e.target.value) next.set('segment', e.target.value); else next.delete('segment')
-                  next.delete('page')
-                  return next
-                })
-              }}
-              aria-label="Filter by segment"
-              className="filter-select"
-            >
-              <option value="">All Segments</option>
-              {[...new Set(data.companies.map(c => c.segment))].sort().map(s => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </select>
+            <div className="select-group">
+              <select
+                value={priorityFilter}
+                onChange={e => {
+                  setSearchParams(prev => {
+                    const next = new URLSearchParams(prev)
+                    if (e.target.value) next.set('priority', e.target.value); else next.delete('priority')
+                    next.delete('page')
+                    return next
+                  })
+                }}
+                aria-label="Filter by priority"
+                className="filter-select"
+              >
+                <option value="">All Priorities</option>
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+              </select>
+              <select
+                value={segmentFilter}
+                onChange={e => {
+                  setSearchParams(prev => {
+                    const next = new URLSearchParams(prev)
+                    if (e.target.value) next.set('segment', e.target.value); else next.delete('segment')
+                    next.delete('page')
+                    return next
+                  })
+                }}
+                aria-label="Filter by segment"
+                className="filter-select"
+              >
+                <option value="">All Segments</option>
+                {[...new Set(data.companies.map(c => c.segment))].sort().map(s => (
+                  <option key={s} value={s}>{s}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {paginated.length === 0 ? (

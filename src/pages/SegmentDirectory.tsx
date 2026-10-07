@@ -6,7 +6,7 @@ import { SegmentCard } from '../components/ui/SegmentCard'
 import { SearchBar } from '../components/ui/SearchBar'
 import { Pagination } from '../components/ui/Pagination'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 
@@ -49,7 +49,7 @@ export function SegmentDirectory() {
   const totalPages = Math.max(1, Math.ceil(segments.length / pageSize))
   const paginated = segments.slice((page - 1) * pageSize, page * pageSize)
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="grid" cards={6} />
   if (!data) return null
 
   return (
@@ -58,11 +58,17 @@ export function SegmentDirectory() {
         <div className="container">
           <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Segments' }]} />
 
-          <div className="flex items-center justify-between mb-2">
-            <h1>Industry Segments ({segments.length})</h1>
+          <div className="page-head">
+            <div>
+              <h1>Industry segments</h1>
+              <p>The credit risk market split into the segments used across the map, directory and shortlist.</p>
+            </div>
+            <div className="page-head-aside">
+              <span className="page-head-meta"><b>{segments.length.toLocaleString()}</b> in view</span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-2">
+          <div className="page-toolbar">
             <SearchBar
               value={query}
               onChange={(val) => {
@@ -75,20 +81,22 @@ export function SegmentDirectory() {
               }}
               placeholder="Search segments..."
             />
-            <select
-              value={`${sort}-${order}`}
-              onChange={e => {
-                const [s, o] = e.target.value.split('-')
-                setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
-              }}
-              aria-label="Sort"
-              style={{ padding: '0.375rem 0.75rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}
-            >
-              <option value="name-asc">Name A-Z</option>
-              <option value="name-desc">Name Z-A</option>
-              <option value="count-desc">Most profiles</option>
-              <option value="count-asc">Least profiles</option>
-            </select>
+            <div className="select-group">
+              <select
+                value={`${sort}-${order}`}
+                onChange={e => {
+                  const [s, o] = e.target.value.split('-')
+                  setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
+                }}
+                aria-label="Sort"
+                className="filter-select"
+              >
+                <option value="name-asc">Name A-Z</option>
+                <option value="name-desc">Name Z-A</option>
+                <option value="count-desc">Most profiles</option>
+                <option value="count-asc">Least profiles</option>
+              </select>
+            </div>
           </div>
 
           {paginated.length === 0 ? (

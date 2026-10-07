@@ -1,17 +1,18 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import {
-  Building2,
-  ExternalLink,
-  Filter,
-  Linkedin,
-  Mail,
+  Buildings,
+  ArrowSquareOut,
+  Funnel,
+  LinkedinLogo,
+  EnvelopeSimple,
   MapPin,
   Phone,
-  Search,
+  MagnifyingGlass,
+  SlidersHorizontal,
   Users,
   X,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
 import { ContactFacetGroup } from '../components/ui/ContactFacetGroup'
 import {
   activeContactFilterCount,
@@ -167,7 +168,7 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
       </div>
 
       <div className="contact-company">
-        <Building2 size={15} aria-hidden="true" />
+        <Buildings size={15} aria-hidden="true" />
         {primary?.company ? (
           <button
             type="button"
@@ -182,7 +183,7 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
         )}
         {primary?.website && (
           <a href={primary.website} target="_blank" rel="noreferrer" aria-label={`Open ${primary.company} website`}>
-            <ExternalLink size={14} />
+            <ArrowSquareOut size={14} />
           </a>
         )}
       </div>
@@ -210,11 +211,11 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
       <div className="contact-details">
         {contact.emails.slice(0, 3).map(email => email.masked ? (
           <span className="contact-detail-row" key={`${email.address}-${email.type}`}>
-            <Mail size={15} aria-hidden="true" />{email.address}<em>{email.status || email.type}</em>
+            <EnvelopeSimple size={15} aria-hidden="true" />{email.address}<em>{email.status || email.type}</em>
           </span>
         ) : (
           <a href={`mailto:${email.address}`} key={`${email.address}-${email.type}`}>
-            <Mail size={15} aria-hidden="true" />{email.address}<em>{email.status || email.type}</em>
+            <EnvelopeSimple size={15} aria-hidden="true" />{email.address}<em>{email.status || email.type}</em>
           </a>
         ))}
         {contact.phones.slice(0, 3).map(phone => (
@@ -224,7 +225,7 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
         ))}
         {contact.linkedinUrls.map(linkedin => (
           <a href={linkedin} target="_blank" rel="noreferrer" key={linkedin}>
-            <Linkedin size={15} aria-hidden="true" />LinkedIn profile
+            <LinkedinLogo size={15} aria-hidden="true" />LinkedIn profile
           </a>
         ))}
       </div>
@@ -342,6 +343,8 @@ export function ContactDirectory() {
     return company ? { companies: [company] } : {}
   })
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
+  const [filtersOpen, setFiltersOpen] = useState(false)
+  const drawerCloseRef = useRef<HTMLButtonElement>(null)
   const facets = useMemo(() => buildContactFacets(contacts), [])
   const results = useMemo(() => filterContacts(contacts, query, selections), [query, selections])
   const selectedCount = activeContactFilterCount(selections)
@@ -367,24 +370,43 @@ export function ContactDirectory() {
     setSelections({})
   }
 
+  // Mobile filter drawer: same behaviour as the other faceted workspaces.
+  useEffect(() => {
+    if (!filtersOpen) return undefined
+    drawerCloseRef.current?.focus()
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') setFiltersOpen(false)
+    }
+    document.addEventListener('keydown', onKey)
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.body.style.overflow = ''
+    }
+  }, [filtersOpen])
+
   return (
     <div className="page">
       <div className="container">
-        <div className="contact-hero">
+        <div className="page-head">
           <div>
-            <p className="eyebrow">Contacts</p>
             <h1>Contact directory</h1>
-            <p>Every sourced person is retained with their available company, title, sector, location, contact details and source trail. Missing information stays explicitly unfilled.</p>
+            <p>
+              Every sourced person is retained with their available company, title, sector, location, contact
+              details and source trail. Missing information stays explicitly unfilled.
+            </p>
           </div>
-          <div className="contact-stats">
-            <strong>{contacts.length.toLocaleString()}</strong><span>unique contacts</span>
-            <strong>{CONTACT_COMPANY_COUNT.toLocaleString()}</strong><span>companies</span>
+          <div className="page-head-aside">
+            <div className="contact-stats">
+              <div><strong>{contacts.length.toLocaleString()}</strong><span>unique contacts</span></div>
+              <div><strong>{CONTACT_COMPANY_COUNT.toLocaleString()}</strong><span>companies</span></div>
+            </div>
           </div>
         </div>
 
         <div className="contact-toolbar">
           <div className="contact-search">
-            <Search size={17} aria-hidden="true" />
+            <MagnifyingGlass size={17} aria-hidden="true" />
             <input
               value={query}
               onChange={event => setQuery(event.target.value)}
@@ -395,14 +417,28 @@ export function ContactDirectory() {
               <button type="button" onClick={() => setQuery('')} aria-label="Clear contact search"><X size={15} /></button>
             )}
           </div>
-          <div className="contact-active-filter-count"><Filter size={15} />{selectedCount.toLocaleString()} selected</div>
+          <button
+            type="button"
+            className="facet-filter-trigger"
+            onClick={() => setFiltersOpen(true)}
+            aria-expanded={filtersOpen}
+            aria-haspopup="dialog"
+          >
+            <SlidersHorizontal size={15} aria-hidden />
+            Filters{selectedCount > 0 ? ` (${selectedCount})` : ''}
+          </button>
+          {selectedCount > 0 && (
+            <span className="contact-active-filter-count">
+              <Funnel size={14} aria-hidden /> {selectedCount.toLocaleString()} filters
+            </span>
+          )}
           {selectedCount > 0 && <button type="button" className="btn btn-ghost btn-sm" onClick={clearFilters}>Clear filters</button>}
         </div>
 
         <div className="contact-directory-layout">
           <aside className="contact-filter-panel" aria-label="Contact filters">
             <div className="contact-filter-heading">
-              <div><Filter size={16} /><strong>Filter contacts</strong></div>
+              <div><Funnel size={16} /><strong>Filter contacts</strong></div>
               <span>Choose more than one checkbox in any group</span>
             </div>
             {FACET_GROUPS.map(group => (
@@ -416,6 +452,46 @@ export function ContactDirectory() {
               />
             ))}
           </aside>
+
+          {filtersOpen && (
+            <div className="facet-drawer-root">
+              <div className="facet-drawer-backdrop" onClick={() => setFiltersOpen(false)} aria-hidden />
+              <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Contact filters">
+                <div className="facet-drawer-head">
+                  <h2 className="facet-heading">Filters{selectedCount > 0 ? ` (${selectedCount})` : ''}</h2>
+                  <button
+                    ref={drawerCloseRef}
+                    type="button"
+                    className="facet-drawer-close"
+                    onClick={() => setFiltersOpen(false)}
+                    aria-label="Close filters"
+                  >
+                    <X size={18} aria-hidden />
+                  </button>
+                </div>
+                <div className="facet-drawer-body">
+                  {FACET_GROUPS.map(group => (
+                    <ContactFacetGroup
+                      key={group.key}
+                      label={group.label}
+                      options={facets[group.key]}
+                      selected={selections[group.key] ?? []}
+                      onToggle={value => toggleSelection(group.key, value)}
+                      defaultOpen={group.defaultOpen}
+                    />
+                  ))}
+                </div>
+                <div className="facet-drawer-foot">
+                  {selectedCount > 0 && (
+                    <button type="button" className="btn btn-ghost btn-sm" onClick={clearFilters}>Clear all</button>
+                  )}
+                  <button type="button" className="facet-drawer-apply" onClick={() => setFiltersOpen(false)}>
+                    Show {results.length.toLocaleString()} matching
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
 
           <section className="contact-results" aria-label="Contact results">
             <p className="contact-count" aria-live="polite" aria-atomic="true">

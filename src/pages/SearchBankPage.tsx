@@ -2,20 +2,20 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import {
   Briefcase,
-  Building2,
-  ClipboardCheck,
-  ClipboardCopy,
-  Download,
-  FileDown,
+  Buildings,
+  ClipboardText,
+  Copy,
+  DownloadSimple,
+  FileArrowDown,
   GraduationCap,
   MapPin,
-  Search,
+  MagnifyingGlass,
   SlidersHorizontal,
-  Sparkles,
+  Sparkle,
   Star,
-  Tags,
+  Tag,
   X,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { FacetPanel } from '../components/ui/FacetPanel'
@@ -62,8 +62,8 @@ const STATUS_BADGE_CLASS: Record<string, string> = {
 
 const EXAMPLE_DROP = [
   'search,client,name,title,company,location,skills,qualifications,experience,availability,rating,status,tags',
-  'Credit Risk Manager — FirstRand,FirstRand,Example Candidate,Credit Risk Manager,Example Bank,"Sandton, Gauteng",Credit risk; PD modelling,"BCom (Hons); CA(SA)",8 years,1 month,4,shortlisted,priority',
-  'Credit Risk Manager — FirstRand,FirstRand,Example Candidate Two,Senior Credit Analyst,Example Insurer,"Cape Town, Western Cape",IFRS 9,BSc,5,immediately,3,,',
+  'Credit Risk Manager, FirstRand,FirstRand,Example Candidate,Credit Risk Manager,Example Bank,"Sandton, Gauteng",Credit risk; PD modelling,"BCom (Hons); CA(SA)",8 years,1 month,4,shortlisted,priority',
+  'Credit Risk Manager, FirstRand,FirstRand,Example Candidate Two,Senior Credit Analyst,Example Insurer,"Cape Town, Western Cape",IFRS 9,BSc,5,immediately,3,,',
 ].join('\n')
 
 function Rating({ value }: { value: number | null }) {
@@ -112,7 +112,7 @@ function CandidateCard({
                 title={`Filter by the ${tag} tag`}
                 onClick={() => onToggle('tag', tag)}
               >
-                <Tags size={11} aria-hidden /> {tag}
+                <Tag size={11} aria-hidden /> {tag}
               </button>
             ))}
           </p>
@@ -130,7 +130,7 @@ function CandidateCard({
             title="Filter by this employer"
             onClick={() => onToggle('employer', candidate.employer)}
           >
-            <Building2 size={14} aria-hidden /> {candidate.employer}
+            <Buildings size={14} aria-hidden /> {candidate.employer}
           </button>
         )}
         {candidate.locationLabel && (
@@ -148,7 +148,7 @@ function CandidateCard({
         )}
         {candidate.availability && (
           <span className="bank-availability" title="Availability recorded on the drop">
-            <ClipboardCheck size={13} aria-hidden /> {candidate.availability}
+            <ClipboardText size={13} aria-hidden /> {candidate.availability}
           </span>
         )}
       </div>
@@ -307,7 +307,7 @@ function DropPanel({ searches, candidates }: { searches: SearchBrief[]; candidat
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
       >
-        <Sparkles size={15} aria-hidden />
+        <Sparkle size={15} aria-hidden />
         Drop candidates in
         <span className="bank-drop-trigger-hint">paste, or choose a file</span>
       </button>
@@ -315,7 +315,7 @@ function DropPanel({ searches, candidates }: { searches: SearchBrief[]; candidat
       {open && (
         <div className="bank-drop-body">
           <p className="bank-drop-lede">
-            Paste anything you have — a CSV, a JSON list, or plain <code>Key: value</code> text copied out of a CV
+            Paste anything you have: a CSV, a JSON list, or plain <code>Key: value</code> text copied out of a CV
             or an email. Every row is normalised onto the same record shape the bank stores, so what you see here is
             exactly what the bank will hold.
           </p>
@@ -329,7 +329,7 @@ function DropPanel({ searches, candidates }: { searches: SearchBrief[]; candidat
                   setSearchName(event.target.value)
                   normalise(text, event.target.value)
                 }}
-                placeholder="e.g. Credit Risk Manager — FirstRand"
+                placeholder="e.g. Credit Risk Manager, FirstRand"
               />
             </label>
             <label className="bank-drop-field bank-drop-file">
@@ -356,7 +356,7 @@ function DropPanel({ searches, candidates }: { searches: SearchBrief[]; candidat
                 normalise(event.target.value, searchName)
               }}
               rows={8}
-              placeholder={'search,name,title,company,location,skills,qualifications\nCredit Risk Manager — FirstRand,Example Candidate,Credit Risk Manager,Example Bank,"Sandton, Gauteng",Credit risk; PD modelling,"BCom (Hons); CA(SA)"'}
+              placeholder={'search,name,title,company,location,skills,qualifications\nCredit Risk Manager, FirstRand,Example Candidate,Credit Risk Manager,Example Bank,"Sandton, Gauteng",Credit risk; PD modelling,"BCom (Hons); CA(SA)"'}
               aria-label="Candidate text to normalise"
             />
           </label>
@@ -377,7 +377,7 @@ function DropPanel({ searches, candidates }: { searches: SearchBrief[]; candidat
               disabled={!preview || preview.drafts.length === 0}
               onClick={() => download(candidatesToCsv(preview?.drafts ?? [], searchNameLookup(searches)), 'search-bank-drop.csv')}
             >
-              <FileDown size={14} aria-hidden /> Download normalised CSV
+              <FileArrowDown size={14} aria-hidden /> Download normalised CSV
             </button>
             <button
               type="button"
@@ -385,7 +385,7 @@ function DropPanel({ searches, candidates }: { searches: SearchBrief[]; candidat
               disabled={!preview || preview.drafts.length === 0}
               onClick={copyJson}
             >
-              <ClipboardCopy size={14} aria-hidden /> {copied ? 'Copied' : 'Copy JSON'}
+              <Copy size={14} aria-hidden /> {copied ? 'Copied' : 'Copy JSON'}
             </button>
           </div>
 
@@ -530,7 +530,7 @@ export function SearchBankPage() {
     return meta
   }, [])
 
-  /** Searches with nothing dropped into them yet — only shown on the unfiltered bank. */
+  /** Searches with nothing dropped into them yet. Only shown on the unfiltered bank. */
   const emptyGroups = useMemo(() => {
     if (hasFilters) return []
     const filled = new Set(bankCandidates.map((candidate) => candidate.searchId))
@@ -576,6 +576,7 @@ export function SearchBankPage() {
 
   return (
     <main className="page">
+      <div className="container">
       <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Search bank' }]} />
       <header className="hack-hero bank-hero">
         <p className="hack-kicker">Recruiter workspace · Private search bank</p>
@@ -607,7 +608,7 @@ export function SearchBankPage() {
         <>
           <div className="facet-searchbar">
             <div className="hack-control hack-control-search facet-searchbar-input">
-              <Search size={15} aria-hidden />
+              <MagnifyingGlass size={15} aria-hidden />
               <input
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
@@ -625,7 +626,7 @@ export function SearchBankPage() {
               <SlidersHorizontal size={15} aria-hidden /> Filters{activeCount ? ` (${activeCount})` : ''}
             </button>
             <button type="button" className="bank-export" onClick={downloadResults}>
-              <Download size={15} aria-hidden /> Export {results.length} as CSV
+              <DownloadSimple size={15} aria-hidden /> Export {results.length} as CSV
             </button>
           </div>
 
@@ -668,7 +669,7 @@ export function SearchBankPage() {
                   <EmptyState
                     title="No candidates match these filters"
                     description={activeChips.length
-                      ? `Active filters — ${activeChips.map((chip) => `${chip.group}: ${chip.value}`).join('; ')}${query ? `; search “${query}”` : ''}. Remove a filter to widen the results.`
+                      ? `Active filters: ${activeChips.map((chip) => `${chip.group}: ${chip.value}`).join('; ')}${query ? `; search “${query}”` : ''}. Remove a filter to widen the results.`
                       : 'Try a different search term.'}
                   />
                   {hasFilters && (
@@ -733,7 +734,7 @@ export function SearchBankPage() {
               <div className="facet-drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-hidden />
               <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters">
                 <div className="facet-drawer-head">
-                  <strong>Filters{activeCount ? ` (${activeCount})` : ''}</strong>
+                  <h2 className="facet-heading">Filters{activeCount ? ` (${activeCount})` : ''}</h2>
                   <button ref={drawerCloseRef} type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
                     <X size={18} aria-hidden />
                   </button>
@@ -756,11 +757,12 @@ export function SearchBankPage() {
       <footer className="hack-page-foot">
         <p>
           Stored in <code>markets/search-bank/bank.json</code> and generated by <code>npm run bank:import</code> from
-          the files you drop in — every drop is kept under <code>markets/search-bank/drops/</code> so the bank can
+          the files you drop in: every drop is kept under <code>markets/search-bank/drops/</code> so the bank can
           always be audited. The bank holds personal contact details and recruiter notes: keep it behind the project's
           private access boundary and never publish a client's search list.
         </p>
       </footer>
+          </div>
     </main>
   )
 }
