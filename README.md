@@ -27,7 +27,11 @@ redeploy is required.
 
 ### Known non-blocking check: `Workers Builds: maps`
 
-The live site deploys to **Cloudflare Pages** (`.github/workflows/deploy-cloudflare.yml` → `npx wrangler pages deploy dist --project-name maps`). A separate **Cloudflare "Workers Builds"** integration, configured in the Cloudflare dashboard (not in this repo), also runs on every push and reports the failing `Workers Builds: maps` commit check. It is a leftover Workers build for a project that ships as Pages, is **not a required check**, and does **not** affect CI, the Pages deploy, or the live site.
+The live site is **https://maps-4xq.pages.dev**, deployed to **Cloudflare Pages** by
+`.github/workflows/deploy-cloudflare.yml` (`npx wrangler pages deploy dist --project-name maps`).
+GitHub Pages is not enabled for this repository, so the old `mumoxa.github.io/Maps/` origin is gone;
+`public/robots.txt`, `public/sitemap.xml` and the social tags in `index.html` all point at the
+Pages origin and must be updated together if a custom domain is attached. A separate **Cloudflare "Workers Builds"** integration, configured in the Cloudflare dashboard (not in this repo), also runs on every push and reports the failing `Workers Builds: maps` commit check. It is a leftover Workers build for a project that ships as Pages, is **not a required check**, and does **not** affect CI, the Pages deploy, or the live site.
 
 No repository change fixes it — the stray `wrangler.jsonc` Workers config was already removed and the failure persists, because the integration is defined server-side in Cloudflare. To clear the red check, an account owner must **disconnect (or delete) the Git-connected "Workers Builds" integration for the `maps` Workers service in the Cloudflare dashboard** (under that Workers service's build settings; Cloudflare's exact menu labels change over time). Until then the check can be safely ignored, or made non-required in the branch protection rules.
 
