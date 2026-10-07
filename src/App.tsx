@@ -17,6 +17,7 @@ import { SapErpPage } from './pages/SapErpPage'
 import { MurexPage } from './pages/MurexPage'
 import { CalypsoPage } from './pages/CalypsoPage'
 import { TalentSearchPage } from './pages/TalentSearchPage'
+import { SearchBankPage } from './pages/SearchBankPage'
 import { ShortlistPage } from './pages/ShortlistPage'
 import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
 import { HackathonTalentPage } from './pages/HackathonTalentPage'
@@ -39,6 +40,7 @@ function AppRoutes() {
     { path: '/murex', element: <MurexPage /> },
     { path: '/calypso', element: <CalypsoPage /> },
     { path: '/talent-search', element: <TalentSearchPage /> },
+    { path: '/search-bank', element: <SearchBankPage /> },
     { path: '/map', element: <MapPage /> },
     { path: '/segments', element: <SegmentDirectory /> },
     { path: '/segments/:slug', element: <SegmentPage /> },

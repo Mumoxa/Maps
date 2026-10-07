@@ -101,6 +101,13 @@ export function Header() {
             </div>
           </div>
           <Link
+            to="/search-bank"
+            className={`nav-heading nav-heading-link ${location.pathname.startsWith('/search-bank') ? 'active' : ''}`}
+            onClick={() => setMenuOpen(false)}
+          >
+            Search bank
+          </Link>
+          <Link
             to="/contacts"
             className={`nav-heading nav-heading-link ${location.pathname.startsWith('/contacts') ? 'active' : ''}`}
             onClick={() => setMenuOpen(false)}
@@ -168,7 +175,14 @@ export function Header() {
             {link.label}
           </Link>
         ))}
-        <div className="mobile-nav-heading">Contacts</div>
+        <div className="mobile-nav-heading">Recruiter workspace</div>
+        <Link
+          to="/search-bank"
+          className={location.pathname === '/search-bank' ? 'active' : ''}
+          onClick={() => setMenuOpen(false)}
+        >
+          Search bank
+        </Link>
         <Link
           to="/contacts"
           className={location.pathname === '/contacts' ? 'active' : ''}

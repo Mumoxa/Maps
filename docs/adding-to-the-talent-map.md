@@ -124,8 +124,9 @@ Run all three before committing (this is the CI/deploy gate):
 
 ```bash
 npm run validate:data   # Pattern A batches + legacy registry integrity
-npm test                # 33+ tests, incl. the registered-track-slug tripwire
+npm test                # 60+ tests, incl. the registered-track-slug tripwire
 npm run build           # validate:data + validate:contacts + tsc + vite build
+npm run smoke:routes    # renders every route in jsdom and fails on a runtime error
 ```
 
 Invariants that additions must preserve:
