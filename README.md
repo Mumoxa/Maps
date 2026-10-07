@@ -16,13 +16,39 @@ Future markets must be registered in `src/data/tracks.ts` with a South African g
 
 **Adding to the map — start here:** [`docs/adding-to-the-talent-map.md`](docs/adding-to-the-talent-map.md) is the master guide for adding people to an existing track or registering a brand-new track, covering both supported ingestion patterns (verified-batch pipeline and research-DB pool) and the guardrails that keep additions from breaking the build.
 
-Production deploys run automatically after the `CI` workflow succeeds on `main`. The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised redeploy is required.
+Production deploys run automatically after the `CI` workflow succeeds on `main`. Before pushing, `npm test`,
+`npm run build` and `npm run smoke:routes` (renders every route, including `/search-bank`, in jsdom) are the
+local gate. The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised redeploy is required.
 
 ### Known non-blocking check: `Workers Builds: maps`
 
 The live site deploys to **Cloudflare Pages** (`.github/workflows/deploy-cloudflare.yml` → `npx wrangler pages deploy dist --project-name maps`). A separate **Cloudflare "Workers Builds"** integration, configured in the Cloudflare dashboard (not in this repo), also runs on every push and reports the failing `Workers Builds: maps` commit check. It is a leftover Workers build for a project that ships as Pages, is **not a required check**, and does **not** affect CI, the Pages deploy, or the live site.
 
 No repository change fixes it — the stray `wrangler.jsonc` Workers config was already removed and the failure persists, because the integration is defined server-side in Cloudflare. To clear the red check, an account owner must **disconnect (or delete) the Git-connected "Workers Builds" integration for the `maps` Workers service in the Cloudflare dashboard** (under that Workers service's build settings; Cloudflare's exact menu labels change over time). Until then the check can be safely ignored, or made non-required in the branch protection rules.
+
+## Candidate Search Bank
+
+`/search-bank` is the recruiter workspace: a private bank where every candidate dropped in during a dedicated
+client search is normalised onto one uniform record and filed under that search, so the bank stays retrievable
+instead of turning into a mess.
+
+- **Drop candidates in** — the panel at the top of `/search-bank` accepts pasted CSV / JSON / `Key: value`
+  text or a dropped file, normalises it, and previews exactly what will be stored (new vs update).
+- **Store them** — `npm run bank:import -- <file>` files every candidate under its search (creating the search
+  if the bank does not have it), updates rather than duplicates anyone already stored, and writes an audit of
+  the drop. Template: `templates/search-bank-drop.csv`.
+- **Retrieve them** — the bank renders as one group per search, and every candidate is labelled with its
+  search, pipeline status, title, seniority, employer, location, experience, availability, skills,
+  qualifications, rating, tags and the date it entered the bank. Filter by free text or by the Search, Status,
+  Seniority, Title, Skill, Qualification, Employer, Province, Availability, Rating and Tag facets; export the
+  filtered set as CSV.
+- **Data** — `markets/search-bank/bank.json` (searches + candidates) with one audit file per drop under
+  `markets/search-bank/drops/`. The bank holds personal contact details and recruiter notes and must stay
+  behind the project's private access boundary.
+
+Start here: [`docs/search-bank-guide.md`](docs/search-bank-guide.md) (drop → import → retrieve, plus what the
+normaliser canonicalises) and [`markets/search-bank/README.md`](markets/search-bank/README.md) (record
+contract, accepted drop formats, merge rules).
 
 ## Private Contact Directory
 

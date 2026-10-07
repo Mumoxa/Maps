@@ -1428,7 +1428,17 @@ h3 { font-size: 1.125rem; }
 .facet-option input:focus-visible,
 .facet-drawer-close:focus-visible,
 .facet-drawer-apply:focus-visible,
-.hack-pagination button:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 4px; }
+.hack-pagination button:focus-visible,
+.bank-badge-skill:focus-visible,
+.bank-badge-qualification:focus-visible,
+.bank-badge-tag:focus-visible,
+.bank-search-chip:focus-visible,
+.bank-export:focus-visible,
+.bank-drop-trigger:focus-visible,
+.bank-drop-secondary:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; border-radius: 4px; }
+
+.bank-drop-field input:focus-visible,
+.bank-drop-field textarea:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 1px; }
 
 .facet-sidebar-head { display: flex; align-items: center; justify-content: space-between; margin: 0 0 0.75rem; }
 .talent-results-count {
@@ -2364,3 +2374,74 @@ input[type="checkbox"]:focus-visible { outline: 2px solid var(--color-primary); 
 .hack-crosslinks { display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; }
 .hack-crosslinks a { font-size: 0.75rem; color: var(--color-primary-600); text-decoration: none; }
 .hack-crosslinks a:hover { text-decoration: underline; }
+
+/* --- Candidate search bank (recruiter workspace) — reuses the shared hack-* / facet-* layout --- */
+.bank-hero .hack-kicker { color: var(--color-primary-700); }
+.bank-badge-new { background: var(--color-surface-sunken); border-color: var(--color-border); color: var(--color-text-secondary); }
+.bank-badge-screening { background: var(--color-primary-50); border-color: var(--color-primary-200); color: var(--color-primary-800); }
+.bank-badge-shortlisted { background: var(--color-accent-50); border-color: var(--color-accent-200); color: var(--color-accent-800); font-weight: 600; }
+.bank-badge-contacted { background: var(--color-sap-light); border-color: var(--color-sap-border); color: var(--color-sap); }
+.bank-badge-submitted { background: var(--color-accounting-50); border-color: var(--color-accounting-200); color: var(--color-accounting-700); font-weight: 600; }
+.bank-badge-interviewing { background: var(--color-murex-50); border-color: var(--color-murex-200); color: var(--color-murex-800); }
+.bank-badge-placed { background: var(--color-success-light); border-color: var(--color-success-200); color: var(--color-success-800); font-weight: 600; }
+.bank-badge-archived { background: var(--color-surface-sunken); border-color: var(--color-border); color: var(--color-text-tertiary); }
+.bank-badge-skill { cursor: pointer; background: var(--color-surface); border-color: var(--color-border-strong); }
+.bank-badge-skill:hover { background: var(--color-primary-50); border-color: var(--color-primary-200); color: var(--color-primary-800); }
+.bank-badge-qualification { cursor: pointer; background: var(--color-accounting-50); border-color: var(--color-accounting-200); color: var(--color-accounting-700); font-weight: 600; }
+.bank-badge-qualification:hover { background: color-mix(in srgb, var(--color-accounting-50) 80%, var(--color-accounting-200)); }
+.bank-badge-tag { cursor: pointer; background: var(--color-accent-50); border-color: var(--color-accent-200); color: var(--color-accent-800); }
+.bank-rating { display: inline-flex; align-items: center; gap: 0.1rem; }
+.bank-star { color: var(--color-border-strong); }
+.bank-star-on { color: var(--color-accent-500); fill: var(--color-accent-500); }
+.bank-rating-value { margin-left: 0.2rem; font-size: 0.75rem; color: var(--color-text-secondary); font-variant-numeric: tabular-nums; }
+.bank-rating-none { font-size: 0.72rem; color: var(--color-text-tertiary); }
+.bank-availability { display: inline-flex; align-items: center; gap: 0.25rem; }
+.bank-search-chip { font-weight: 600; color: var(--color-primary-700); }
+
+/* Groups: every candidate sits under the search it belongs to */
+.bank-results { display: flex; flex-direction: column; gap: 1.4rem; }
+.bank-group { display: flex; flex-direction: column; gap: 0.6rem; }
+.bank-group-head { border-left: 3px solid var(--color-primary); padding-left: 0.65rem; }
+.bank-group-title { margin: 0; font-size: 1.05rem; }
+.bank-group-meta { margin: 0.15rem 0 0; font-size: 0.78rem; color: var(--color-text-muted); display: flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; }
+.bank-group-empty-note { margin: 0 0 0.75rem 0.75rem; font-size: 0.8rem; color: var(--color-text-tertiary); font-style: italic; }
+
+/* Export + drop panel */
+.bank-export { display: inline-flex; align-items: center; gap: 0.4rem; border: 1px solid var(--color-border); background: var(--color-surface); border-radius: 0.6rem; padding: 0.45rem 0.8rem; font: inherit; cursor: pointer; white-space: nowrap; }
+.bank-export:hover { border-color: var(--color-primary-300); color: var(--color-primary-700); }
+.bank-drop { margin: 0 0 1.25rem; border: 1px solid var(--color-border); border-radius: 0.9rem; background: var(--color-surface); overflow: hidden; }
+.bank-drop-trigger { display: flex; align-items: center; gap: 0.5rem; width: 100%; border: none; background: var(--color-primary-50); color: var(--color-primary-900); padding: 0.7rem 1rem; font: inherit; font-weight: 600; cursor: pointer; text-align: left; }
+.bank-drop-trigger:hover { background: var(--color-primary-100); }
+.bank-drop-trigger-hint { font-weight: 400; font-size: 0.78rem; color: var(--color-primary-700); }
+.bank-drop-body { display: flex; flex-direction: column; gap: 0.75rem; padding: 1rem; border-top: 1px solid var(--color-border); }
+.bank-drop-lede { margin: 0; font-size: 0.85rem; color: var(--color-text-secondary); max-width: 78ch; }
+.bank-drop-lede code, .bank-drop-foot code, .hack-page-foot code { background: var(--color-surface-sunken); border: 1px solid var(--color-border); border-radius: 0.3rem; padding: 0.05rem 0.3rem; font-size: 0.8em; }
+.bank-drop-controls { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.bank-drop-field { display: flex; flex-direction: column; gap: 0.25rem; flex: 1 1 16rem; min-width: 0; font-size: 0.78rem; color: var(--color-text-secondary); }
+.bank-drop-field input, .bank-drop-field textarea { border: 1px solid var(--color-border); border-radius: 0.5rem; padding: 0.45rem 0.6rem; font: inherit; color: var(--color-text); background: var(--color-surface); width: 100%; min-width: 0; }
+.bank-drop-field textarea { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.78rem; resize: vertical; }
+.bank-drop-file { flex: 0 1 auto; }
+.bank-drop-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.bank-drop-secondary { display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid var(--color-border); background: var(--color-surface); border-radius: 0.6rem; padding: 0.4rem 0.75rem; font: inherit; font-size: 0.85rem; cursor: pointer; }
+.bank-drop-secondary:hover:not(:disabled) { border-color: var(--color-primary-300); color: var(--color-primary-700); }
+.bank-drop-secondary:disabled { opacity: 0.5; cursor: not-allowed; }
+.bank-drop-preview { display: flex; flex-direction: column; gap: 0.6rem; border-top: 1px dashed var(--color-border); padding-top: 0.75rem; }
+.bank-drop-summary { margin: 0; font-size: 0.85rem; color: var(--color-text-secondary); }
+.bank-drop-new { color: var(--color-success-800); font-weight: 600; }
+.bank-drop-update { color: var(--color-accent-800); font-weight: 600; }
+.bank-drop-issues { list-style: none; margin: 0; padding: 0.5rem 0.75rem; border: 1px solid var(--color-accent-200); background: var(--color-accent-50); border-radius: 0.6rem; font-size: 0.78rem; color: var(--color-accent-900); display: flex; flex-direction: column; gap: 0.2rem; }
+.bank-drop-table-wrap { overflow-x: auto; border: 1px solid var(--color-border); border-radius: 0.6rem; }
+.bank-drop-table { border-collapse: collapse; width: 100%; font-size: 0.78rem; }
+.bank-drop-table th, .bank-drop-table td { text-align: left; padding: 0.35rem 0.6rem; border-bottom: 1px solid var(--color-border); white-space: nowrap; }
+.bank-drop-table th { background: var(--color-surface-sunken); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-text-muted); }
+.bank-drop-table tr:last-child td { border-bottom: none; }
+.bank-drop-foot { margin: 0; font-size: 0.8rem; color: var(--color-text-muted); max-width: 78ch; }
+
+@media (max-width: 860px) {
+  .bank-drop-controls { flex-direction: column; }
+  .bank-drop-file { flex: 1 1 auto; }
+}
+@media (max-width: 480px) {
+  .bank-group-head { padding-left: 0.5rem; }
+  .bank-drop-trigger { flex-wrap: wrap; }
+}
