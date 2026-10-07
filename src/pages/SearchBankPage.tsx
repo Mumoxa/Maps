@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import {
   Briefcase,
@@ -19,6 +19,8 @@ import {
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { FacetPanel } from '../components/ui/FacetPanel'
+import { useDialogLayer } from '../hooks/useDialogLayer'
+import { useNoIndex } from '../hooks/useNoIndex'
 import {
   bankCandidates,
   bankSearches,
@@ -459,7 +461,6 @@ export function SearchBankPage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const [page, setPage] = useState(0)
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const drawerCloseRef = useRef<HTMLButtonElement>(null)
 
   const query = searchParams.get('q') ?? ''
   const selections = useMemo(() => readSelections(searchParams, searchBankFacetDefs), [searchParams])
@@ -554,23 +555,16 @@ export function SearchBankPage() {
     URL.revokeObjectURL(url)
   }
 
-  useEffect(() => {
-    if (!drawerOpen) return
-    drawerCloseRef.current?.focus()
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setDrawerOpen(false)
-    }
-    document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [drawerOpen])
+  // Focus enters the panel, Tab stays inside it, Escape closes, focus returns to the trigger.
+  const closeDrawer = useCallback(() => setDrawerOpen(false), [])
+  const drawerRef = useDialogLayer<HTMLDivElement>(drawerOpen, closeDrawer)
 
   useEffect(() => {
     document.title = 'Candidate Search Bank'
   }, [])
+
+  // Private recruiter workspace: keep it out of search indexes while mounted.
+  useNoIndex()
 
   const emptyBank = universe.candidates === 0
 
@@ -731,11 +725,11 @@ export function SearchBankPage() {
 
           {drawerOpen && (
             <div className="facet-drawer-root">
-              <div className="facet-drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-hidden />
-              <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters">
+              <div className="facet-drawer-backdrop" onClick={closeDrawer} aria-hidden="true" />
+              <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters" tabIndex={-1} ref={drawerRef}>
                 <div className="facet-drawer-head">
                   <h2 className="facet-heading">Filters{activeCount ? ` (${activeCount})` : ''}</h2>
-                  <button ref={drawerCloseRef} type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
+                  <button type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
                     <X size={18} aria-hidden />
                   </button>
                 </div>

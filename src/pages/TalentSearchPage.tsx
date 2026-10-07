@@ -18,6 +18,7 @@ import { canonicalCompanyName } from '../data/companyNormalization'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { FacetPanel } from '../components/ui/FacetPanel'
+import { useDialogLayer } from '../hooks/useDialogLayer'
 import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { buildSlugSets, createTalentSearchIndex, getTalentProfiles, searchTalentProfiles, type TalentProfile } from '../data'
@@ -57,7 +58,6 @@ export function TalentSearchPage() {
   const { data, loading, error } = useData()
   const [searchParams, setSearchParams] = useSearchParams()
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const drawerCloseRef = useRef<HTMLButtonElement>(null)
   const talentSearchRef = useRef<ReturnType<typeof createTalentSearchIndex> | null>(null)
 
   useEffect(() => {
@@ -146,17 +146,9 @@ export function TalentSearchPage() {
   const currentPage = Math.min(page, totalPages)
   const paginatedResults = filteredResults.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
 
-  useEffect(() => {
-    if (!drawerOpen) return
-    drawerCloseRef.current?.focus()
-    const onKey = (event: KeyboardEvent) => { if (event.key === 'Escape') setDrawerOpen(false) }
-    document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [drawerOpen])
+  // Focus enters the panel, Tab stays inside it, Escape closes, focus returns to the trigger.
+  const closeDrawer = useCallback(() => setDrawerOpen(false), [])
+  const drawerRef = useDialogLayer<HTMLDivElement>(drawerOpen, closeDrawer)
 
   if (loading) return <SkeletonPage variant="list" cards={5} />
   if (error) return <div className="page container"><p>Error: {error}</p></div>
@@ -277,11 +269,11 @@ export function TalentSearchPage() {
 
         {drawerOpen && (
           <div className="facet-drawer-root">
-            <div className="facet-drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-hidden />
-            <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters">
+            <div className="facet-drawer-backdrop" onClick={closeDrawer} aria-hidden="true" />
+            <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters" tabIndex={-1} ref={drawerRef}>
               <div className="facet-drawer-head">
                 <h2 className="facet-heading">Filters{activeCount ? ` (${activeCount})` : ''}</h2>
-                <button ref={drawerCloseRef} type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
+                <button type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
                   <X size={18} aria-hidden />
                 </button>
               </div>

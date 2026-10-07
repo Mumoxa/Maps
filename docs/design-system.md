@@ -10,10 +10,12 @@ for anyone adding a surface. If markup needs a style that is not here, add the s
 | Concern | File |
 |---|---|
 | All styles (tokens, primitives, page blocks, responsive, motion) | `src/styles/globals.css` |
-| Shared primitives (`Button`, `Modal`, `Drawer`, `Tooltip`, `Badge`, `SearchBar`, facets, `Pagination`, `SkeletonPage`) | `src/components/ui/` |
+| Shared primitives (`Button`, `Drawer`, `Tooltip`, `Badge`, `SearchBar`, facets, `Pagination`, `SkeletonPage`) | `src/components/ui/` |
 | App chrome (header, subnav, mobile nav, ⌘K palette, footer) | `src/components/layout/` |
 | Map interface (canvas, controls, legend, filter, search, profile drawer) | `src/components/map/` + `MapPage.tsx` |
-| Theme preference (`data-theme` on `<html>`) | `src/hooks/useTheme.ts`, `src/components/ui/ThemeToggle.tsx` |
+| Layer behaviour (focus in, focus trap, Escape, focus restore, scroll lock) | `src/hooks/useDialogLayer.ts` |
+| Theme preference (`data-theme` on `<html>`) | `src/hooks/useTheme.ts`, pre-paint script in `index.html`, `src/components/ui/ThemeToggle.tsx` |
+| Private-route indexing contract | `src/hooks/useNoIndex.ts`, `public/robots.txt` |
 | Fonts | `src/main.tsx` imports `@fontsource-variable/geist/wght.css` and `geist-mono/wght.css` |
 
 ## Tokens
@@ -88,13 +90,21 @@ Every content route composes the same blocks:
 
 - Keyboard first: every control is a real `button`/`a`/`input`, focus is visible through the
   single global `:focus-visible` ring, and the ring follows each element's own radius.
-- Escape closes the innermost layer (command palette, drawer, mobile nav, dropdown); overlays
-  lock body scroll and move focus to their close control.
+- Escape closes the innermost layer (command palette, drawer, mobile nav, dropdown).
+- Every layer is built on `useDialogLayer`: focus moves to the first control inside, Tab cycles
+  within the panel, body scroll is locked for the duration, and focus returns to whatever opened it.
+- The mobile nav and the talent-pool dropdown are disclosures (`aria-expanded` + `aria-controls`),
+  not ARIA menus, so they carry no arrow-key contract they do not implement.
+- `/contacts` and `/search-bank` are private workspaces: both set a `noindex, nofollow` meta while
+  mounted, `robots.txt` disallows them, and neither appears in `sitemap.xml`. The UI audit fails the
+  build if that contract breaks.
 - ⌘K / Ctrl K and `/` open the command palette (pages, tracks, candidates, companies, segments);
   the shortcut is suppressed while typing in a field.
 - Motion respects `prefers-reduced-motion`; glass surfaces fall back to solid fills under
   `prefers-reduced-transparency`.
 - Copy contains no em dashes; separators are middots or colons.
+- Every route sets `document.title` on mount (prefixed `SA Talent Map | ` for the app's own pages),
+  so the browser tab never falls back to the static title in `index.html`.
 
 ## Verification
 
@@ -104,10 +114,19 @@ npm run build           # data validation + tsc + production build
 npm test                # 82 data/behaviour tests
 npm run smoke:routes    # every route renders in jsdom
 npm run audit:ui        # structural audit: one h1, heading order, control names,
-                        # duplicate ids, image alt, stray inline styles
+                        # duplicate ids, image alt, stray inline styles, the per-route
+                        # tab title, the private-route noindex contract, and the filter
+                        # drawers (it opens each one and re-checks inside)
 ```
 
-`npm run audit:ui` is the design-system gate. It must report `findings: 0`. The inline-style
-section it prints is grouped by shape and should only ever contain computed values (bar widths,
-the map tooltip position) and vendored `@xyflow/react` node geometry: anything else is a hand-set
-style that belongs in a class.
+`npm run audit:ui` is the design-system gate. It must report `findings: 0`, and its summary lists
+which filter drawers were opened (`filterDrawersAudited`), which private routes honoured noindex
+(`privateRoutesNoIndexed`) and the title each route set (`routeTitles`), so a drawer that fails to
+open, a private route that stops opting out or a route that forgets its title is visible rather
+than silently skipped. The inline-style section it prints is grouped by shape and should only
+ever contain computed values (bar widths, the map tooltip position) and vendored `@xyflow/react`
+node geometry: anything else is a hand-set style that belongs in a class.
+
+The canonical origin for `robots.txt`, `sitemap.xml` and the social tags in `index.html` is
+`https://maps-4xq.pages.dev` (Cloudflare Pages project `maps`). GitHub Pages is not enabled for this
+repository. If a custom domain is attached, change all three files together.

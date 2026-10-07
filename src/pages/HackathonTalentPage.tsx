@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import {
   ArrowSquareOut,
@@ -148,6 +148,8 @@ function CandidateCard({ candidate, onFilter }: { candidate: HackathonCandidate;
 }
 
 export function HackathonTalentPage() {
+  useEffect(() => { document.title = 'SA Talent Map | Hackathon Talent' }, [])
+
   const [searchParams, setSearchParams] = useSearchParams()
   const param = (key: string) => searchParams.get(key) ?? ''
   const query = param('q')

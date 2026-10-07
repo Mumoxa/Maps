@@ -12,13 +12,35 @@
       content="South African specialist talent intelligence: searchable, evidence-linked market maps for credit risk, Salesforce, SAP ERP, Murex, Calypso, hackathon and accounting talent."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SA Talent Map" />
+    <meta property="og:url" content="https://maps-4xq.pages.dev/" />
     <meta property="og:title" content="SA Talent Map" />
     <meta
       property="og:description"
       content="Searchable, evidence-linked market intelligence for South African specialist talent."
     />
+    <meta property="og:image" content="https://maps-4xq.pages.dev/media/network-ink.jpg" />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:locale" content="en_ZA" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SA Talent Map" />
+    <meta
+      name="twitter:description"
+      content="Searchable, evidence-linked market intelligence for South African specialist talent."
+    />
+    <meta name="twitter:image" content="https://maps-4xq.pages.dev/media/network-ink.jpg" />
     <title>SA Talent Map</title>
+    <script>
+      // Apply the stored theme before first paint, so a dark preference never
+      // flashes light. Mirrors the key used by src/hooks/useTheme.ts.
+      try {
+        var stored = localStorage.getItem('sa-talent-map:theme')
+        if (stored === 'light' || stored === 'dark') document.documentElement.dataset.theme = stored
+      } catch (error) {
+        /* Storage unavailable: the system preference stands. */
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -1,5 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 import { X } from '@phosphor-icons/react'
+import { useDialogLayer } from '../../hooks/useDialogLayer'
 
 interface DrawerProps {
   isOpen: boolean
@@ -10,32 +11,18 @@ interface DrawerProps {
 }
 
 /**
- * Detail drawer: slides in from the trailing edge, traps nothing it should not,
- * and always offers Escape plus a visible close control.
+ * Detail drawer: slides in from the trailing edge, keeps focus inside while it
+ * is open, closes on Escape or the close control, and hands focus back to
+ * whatever opened it.
  */
 export function Drawer({ isOpen, onClose, title, subtitle, children }: DrawerProps) {
-  const panelRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!isOpen) return undefined
-    const handleEsc = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') onClose()
-    }
-    document.addEventListener('keydown', handleEsc)
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = 'hidden'
-    panelRef.current?.focus()
-    return () => {
-      document.removeEventListener('keydown', handleEsc)
-      document.body.style.overflow = previousOverflow
-    }
-  }, [isOpen, onClose])
+  const panelRef = useDialogLayer<HTMLElement>(isOpen, onClose)
 
   if (!isOpen) return null
 
   return (
     <>
-      <div className="drawer-overlay" onClick={onClose} />
+      <div className="drawer-overlay" onClick={onClose} aria-hidden="true" />
       <aside
         className="drawer-content"
         role="dialog"

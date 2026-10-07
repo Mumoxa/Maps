@@ -107,26 +107,26 @@ export function Header() {
               <button
                 type="button"
                 className={`nav-heading ${candidatesActive ? 'active' : ''}`}
-                aria-haspopup="true"
                 aria-expanded={poolsOpen}
+                aria-controls="talent-pool-menu"
                 onClick={() => setPoolsOpen((open) => !open)}
               >
                 Talent pools
                 <CaretDown size={12} weight="bold" aria-hidden />
               </button>
-              <div className="nav-dropdown" role="menu" aria-label="Talent pools">
+              <ul className="nav-dropdown" id="talent-pool-menu" aria-label="Talent pools">
                 {candidatePoolLinks.map((link) => (
-                  <Link
-                    key={link.to}
-                    to={link.to}
-                    role="menuitem"
-                    className={isPath(location.pathname, link.to) ? 'active' : ''}
-                    onClick={closeAll}
-                  >
-                    <span>{link.label}</span>
-                  </Link>
+                  <li key={link.to}>
+                    <Link
+                      to={link.to}
+                      className={isPath(location.pathname, link.to) ? 'active' : ''}
+                      onClick={closeAll}
+                    >
+                      <span>{link.label}</span>
+                    </Link>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
 
             <Link

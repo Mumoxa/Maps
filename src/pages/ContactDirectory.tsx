@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import {
   Buildings,
@@ -14,6 +14,8 @@ import {
   X,
 } from '@phosphor-icons/react'
 import { ContactFacetGroup } from '../components/ui/ContactFacetGroup'
+import { useDialogLayer } from '../hooks/useDialogLayer'
+import { useNoIndex } from '../hooks/useNoIndex'
 import {
   activeContactFilterCount,
   buildContactFacets,
@@ -344,7 +346,9 @@ export function ContactDirectory() {
   })
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
   const [filtersOpen, setFiltersOpen] = useState(false)
-  const drawerCloseRef = useRef<HTMLButtonElement>(null)
+  // Private dataset: keep this route out of search indexes while it is mounted.
+  useNoIndex()
+  useEffect(() => { document.title = 'SA Talent Map | Contact Directory' }, [])
   const facets = useMemo(() => buildContactFacets(contacts), [])
   const results = useMemo(() => filterContacts(contacts, query, selections), [query, selections])
   const selectedCount = activeContactFilterCount(selections)
@@ -370,20 +374,9 @@ export function ContactDirectory() {
     setSelections({})
   }
 
-  // Mobile filter drawer: same behaviour as the other faceted workspaces.
-  useEffect(() => {
-    if (!filtersOpen) return undefined
-    drawerCloseRef.current?.focus()
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setFiltersOpen(false)
-    }
-    document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [filtersOpen])
+  // Focus enters the panel, Tab stays inside it, Escape closes, focus returns to the trigger.
+  const closeDrawer = useCallback(() => setFiltersOpen(false), [])
+  const drawerRef = useDialogLayer<HTMLDivElement>(filtersOpen, closeDrawer)
 
   return (
     <div className="page">
@@ -455,12 +448,11 @@ export function ContactDirectory() {
 
           {filtersOpen && (
             <div className="facet-drawer-root">
-              <div className="facet-drawer-backdrop" onClick={() => setFiltersOpen(false)} aria-hidden />
-              <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Contact filters">
+              <div className="facet-drawer-backdrop" onClick={closeDrawer} aria-hidden="true" />
+              <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Contact filters" tabIndex={-1} ref={drawerRef}>
                 <div className="facet-drawer-head">
                   <h2 className="facet-heading">Filters{selectedCount > 0 ? ` (${selectedCount})` : ''}</h2>
                   <button
-                    ref={drawerCloseRef}
                     type="button"
                     className="facet-drawer-close"
                     onClick={() => setFiltersOpen(false)}

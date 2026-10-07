@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import {
   Buildings,
@@ -11,6 +11,7 @@ import {
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { FacetPanel } from '../components/ui/FacetPanel'
+import { useDialogLayer } from '../hooks/useDialogLayer'
 import {
   accountantCandidates,
   accountantFacetDefs,
@@ -169,10 +170,11 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
 }
 
 export function AccountantsPage() {
+  useEffect(() => { document.title = 'SA Talent Map | Accounting & Finance' }, [])
+
   const [searchParams, setSearchParams] = useSearchParams()
   const [page, setPage] = useState(0)
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const drawerCloseRef = useRef<HTMLButtonElement>(null)
 
   const query = searchParams.get('q') ?? ''
   const selections = useMemo(() => readSelections(searchParams, accountantFacetDefs), [searchParams])
@@ -217,20 +219,9 @@ export function AccountantsPage() {
   const safePage = Math.min(page, pageCount - 1)
   const pageItems = results.slice(safePage * PAGE_SIZE, safePage * PAGE_SIZE + PAGE_SIZE)
 
-  // Drawer: lock scroll, focus close, close on Escape, basic focus retention.
-  useEffect(() => {
-    if (!drawerOpen) return
-    drawerCloseRef.current?.focus()
-    const onKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setDrawerOpen(false)
-    }
-    document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [drawerOpen])
+  // Focus enters the panel, Tab stays inside it, Escape closes, focus returns to the trigger.
+  const closeDrawer = useCallback(() => setDrawerOpen(false), [])
+  const drawerRef = useDialogLayer<HTMLDivElement>(drawerOpen, closeDrawer)
 
   return (
     <main className="page">
@@ -338,11 +329,11 @@ export function AccountantsPage() {
 
       {drawerOpen && (
         <div className="facet-drawer-root">
-          <div className="facet-drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-hidden />
-          <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters">
+          <div className="facet-drawer-backdrop" onClick={closeDrawer} aria-hidden="true" />
+          <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters" tabIndex={-1} ref={drawerRef}>
             <div className="facet-drawer-head">
               <h2 className="facet-heading">Filters{activeCount ? ` (${activeCount})` : ''}</h2>
-              <button ref={drawerCloseRef} type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
+              <button type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
                 <X size={18} aria-hidden />
               </button>
             </div>

@@ -3,7 +3,6 @@ import {
   ReactFlow,
   useNodesState,
   useEdgesState,
-  Controls,
   MiniMap,
   Background,
   Handle,
@@ -13,6 +12,7 @@ import {
   type NodeProps,
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
+import { MapControls } from './MapControls'
 import type { TreeNode, Profile } from '../../data'
 
 interface NodeData extends Record<string, unknown> {
@@ -213,7 +213,7 @@ export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover,
         minZoom={0.1}
         maxZoom={2}
       >
-        <Controls />
+        <MapControls />
         <MiniMap nodeStrokeWidth={3} zoomable pannable />
         <Background />
       </ReactFlow>

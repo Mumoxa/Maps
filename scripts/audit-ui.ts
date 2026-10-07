@@ -1,7 +1,9 @@
 // Dev-only UI audit: mounts every route in jsdom and checks the structural rules
 // the design system promises — one h1 per page, no skipped heading levels,
-// accessible names on every control, no duplicate ids, alt text on images and
-// no stray inline styles. Run with: node --import tsx scripts/audit-ui.ts
+// accessible names on every control, no duplicate ids, alt text on images,
+// no stray inline styles, a per-route tab title, the private-route noindex
+// contract and the contents of each filter drawer.
+// Run with: node --import tsx scripts/audit-ui.ts
 import { JSDOM } from 'jsdom'
 import type React from 'react'
 import { createServer } from 'vite'
@@ -76,6 +78,22 @@ type Finding = { route: string; rule: string; detail: string }
 const findings: Finding[] = []
 const inlineStyles: Finding[] = []
 
+/** Routes that must stay out of search indexes: they hold personal data. */
+const PRIVATE_ROUTES = ['/contacts', '/search-bank']
+
+/** Routes whose filter drawer was opened and audited during this run. */
+const drawersAudited: string[] = []
+
+/** Private routes that rendered the noindex contract during this run. */
+const noIndexVerified: string[] = []
+
+/** Tab title each route ended up with, keyed by route. */
+const routeTitles: Record<string, string> = {}
+
+/** The static title in index.html; a page that never sets one keeps this. */
+const DEFAULT_TITLE = 'SA Talent Map'
+let previousTitle = DEFAULT_TITLE
+
 function accessibleName(el: Element): string {
   const text = (el.textContent ?? '').trim()
   const aria = el.getAttribute('aria-label') ?? el.getAttribute('title') ?? ''
@@ -134,6 +152,65 @@ function auditRoute(route: string, container: HTMLElement) {
     const style = el.getAttribute('style') ?? ''
     inlineStyles.push({ route, rule: 'inline-style', detail: `<${el.tagName.toLowerCase()} class="${el.className}"> style="${style.slice(0, 90)}"` })
   }
+
+  // 6. Private workspaces must keep themselves out of search indexes.
+  if (PRIVATE_ROUTES.includes(route)) {
+    const robots = document.head.querySelector('meta[name="robots"]')
+    const content = robots?.getAttribute('content') ?? ''
+    if (!content.includes('noindex')) {
+      report('private-noindex', 'route renders without a noindex robots meta tag')
+    } else {
+      noIndexVerified.push(route)
+    }
+  }
+
+  // 7. Every route owns its tab title.
+  const title = document.title
+  routeTitles[route] = title
+  if (!title.trim()) {
+    report('document-title', 'document.title is empty')
+  } else if (title === previousTitle) {
+    report('document-title', `route kept the previous title "${title}"`)
+  }
+  previousTitle = title
+}
+
+/**
+ * The faceted workspaces hide their filter panel inside a dialog below 1024px.
+ * Open it and re-run the structural checks, so ids and labels inside the drawer
+ * are audited too.
+ */
+async function auditDrawer(route: string, container: HTMLElement) {
+  const trigger = container.querySelector<HTMLElement>('.facet-filter-trigger')
+  if (!trigger) return
+  trigger.dispatchEvent(new MouseEvent('click', { bubbles: true }))
+  await new Promise((resolve) => setTimeout(resolve, 120))
+  const drawer = container.querySelector<HTMLElement>('.facet-drawer, [role="dialog"]')
+  if (drawer) drawersAudited.push(route)
+  if (!drawer) {
+    findings.push({ route, rule: 'drawer', detail: 'filter trigger did not open a dialog' })
+    return
+  }
+  const ids = new Map<string, number>()
+  for (const el of Array.from(drawer.querySelectorAll('[id]'))) {
+    const id = el.getAttribute('id') as string
+    ids.set(id, (ids.get(id) ?? 0) + 1)
+  }
+  for (const [id, count] of ids) {
+    if (count > 1) findings.push({ route, rule: 'duplicate-id', detail: `drawer id="${id}" appears ${count} times` })
+  }
+  for (const control of Array.from(drawer.querySelectorAll('button, a[href]'))) {
+    if (!accessibleName(control)) {
+      findings.push({ route, rule: 'control-name', detail: `drawer <${control.tagName.toLowerCase()}> "${control.className}" has no accessible name` })
+    }
+  }
+  for (const input of Array.from(drawer.querySelectorAll('input, select, textarea'))) {
+    const id = input.getAttribute('id')
+    const labelled = (id ? !!drawer.querySelector(`label[for="${id}"]`) : false) || !!input.closest('label')
+    if (!labelled && !input.getAttribute('aria-label') && !input.getAttribute('aria-labelledby')) {
+      findings.push({ route, rule: 'field-name', detail: `drawer <${input.tagName.toLowerCase()}> "${input.className}" has no label` })
+    }
+  }
 }
 
 async function main() {
@@ -174,6 +251,7 @@ async function main() {
         setTimeout(resolve, 700)
       })
       auditRoute(route, container)
+      await auditDrawer(route, container)
     } catch (e) {
       findings.push({ route, rule: 'render', detail: String(e).slice(0, 200) })
     }
@@ -189,7 +267,16 @@ async function main() {
   }
 
   if (findings.length === 0) {
-    console.error(JSON.stringify({ status: 'ok', routesChecked: Object.keys(pageModules).length, findings: 0 }))
+    console.error(
+      JSON.stringify({
+        status: 'ok',
+        routesChecked: Object.keys(pageModules).length,
+        filterDrawersAudited: drawersAudited,
+        privateRoutesNoIndexed: noIndexVerified,
+        routeTitles,
+        findings: 0,
+      }),
+    )
     if (inlineStyles.length) {
       // Grouped by shape so a review can tell computed values from hand-set styles.
       const shapes = new Map<string, { count: number; routes: Set<string> }>()
