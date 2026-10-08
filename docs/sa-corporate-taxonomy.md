@@ -280,7 +280,7 @@ Two deliberate decisions:
 - **Local municipalities are free text with provenance, not a hardcoded list.** There are 205 of them and
   the Municipal Demarcation Board amends boundaries; a stale enumeration silently misassigns every
   company in the affected area. The policy is recorded in `localMunicipalityPolicy` in the vocabularies.
-- **`regionalEconomicHubs`** carries the economic-geography dimension the brief asks for — 21 hubs such
+- **`regionalEconomicHubs`** carries the economic-geography dimension separately from the sector tree — 21 hubs such
   as `fs-chem-industrial-corridor` (Sasolburg / Vaal), `ec-automotive-cluster`, `wc-tech-bpo`,
   `nw-pgm-rustenburg-belt`, `mp-coal-energy-belt`, `nc-iron-ore-kalahari`, `kzn-logistics-corridor`,
   `sr-citrus-export`. This is what makes regional economic density measurable by cluster rather than by

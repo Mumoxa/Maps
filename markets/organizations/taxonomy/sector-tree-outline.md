@@ -386,7 +386,7 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - **Supermarket & Hypermarket Chains** `RTL-GROC-HYPER`
       - Checkers, Pick n Pay, Woolworths Food, SPAR and Boxer formats.
       - **Franchise-Operated Grocery Stores** `RTL-GROC-HYPER-FRAN`
-        - Independently owned trading entities operating under a chain brand - the franchise operator layer the brief asks to map.
+        - Independently owned trading entities operating under a chain brand; the legal entity is the franchisee, not the chain.
     - **Value & Discount Grocery** `RTL-GROC-VALUE`
       - Boxer, Shoprite Usave and Jumbos-type value formats serving lower-income trade areas.
     - **Voluntary Trading Groups & Symbol Group Franchisees** `RTL-GROC-VOLUNT`
@@ -599,7 +599,7 @@ tax status carry the distinction instead of an assumption of CIPC registration.
       - **Commercial & Corporate Short-Term Cover** `FIN-INS-ST-COMMERCIAL`
     - **Health Insurance & Medical Scheme Administration** `FIN-INS-HEALTH`
     - **Funeral Services & Funeral-Cover Administration** `FIN-INS-FUNERAL` _(informal economy)_
-      - The funeral ecosystem the user must map: parlour operators are overwhelmingly micro and small enterprises, while policy administration and group schemes sit with licensed insurers and administrators.
+      - The funeral services ecosystem: parlour operators are overwhelmingly micro and small enterprises, while policy administration and group schemes sit with licensed insurers and administrators.
       - **Funeral Parlour Operator** `FIN-INS-FUNERAL-PARLOUR` _(informal economy)_
         - Family-owned parlours, typically EME or QSE, frequently also distributing funeral policies as FSPs or representatives.
       - **Funeral Policy Underwriting & Administration** `FIN-INS-FUNERAL-POLICY`
