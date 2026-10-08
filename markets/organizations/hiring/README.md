@@ -1,23 +1,53 @@
-# Hiring-observation staging area
+# Hiring intelligence: private staging, source governance, and promotion
 
-This is an offline input ledger for job advertisements. It does NOT contain a completed scan of South African companies.
+**No nationwide hiring scan has been run.** This directory contains a source registry and operating documentation, not a historical company dataset.
 
-- source-registry.json tracks potential sources. Every listed source starts unapproved and unscanned; listing it is not proof of access, permission or coverage.
-- postings.jsonl is created on the first approved import and retains the minimum job metadata only.
-- employers.json is a derived employer-candidate summary. Do not edit it as the source of truth.
-- import-audits/ is created on successful commits and records the selected dates, source distribution, rejects and review needs.
-- Employers marked provisional and proposed industry labels need human evidence checks before promotion into ../organizations.json using the existing organization importer.
-- An advertising agency is not the end employer. If client identity is not sourced, records remain unattributed.
-- Company lookup by brand/trading name does not prove legal employing entity.
+## Safety boundary
 
-Example workflow (file must be obtained with rights appropriate to the public repo):
+This is a PUBLIC GitHub repository. Never commit raw vacancy datasets, licence-restricted provider exports, applicant details, contact information, credentials, full job descriptions, or source-specific historical evidence that you are not expressly permitted to redistribute.
 
-1. Prepare a CSV, JSON array or JSONL source export, using the header template in ../../../../templates/hiring-observations.csv.
-2. Run npm run hiring:import -- /path/to/export.csv --from=2025-10-08 --to=2026-10-08
-3. Inspect all rejects and review flags, and confirm that both data reuse and this destination are authorised.
-4. Only then run the same command with --commit --rights-confirmed.
-5. Run npm test and npm run build; review new data and import-audit files before publishing.
+All raw data and generated employer-candidate lists now default to **`.local/hiring/`**, which is in `.gitignore`. Use `--data-dir=OUTSIDE_REPOSITORY` for a private volume. A path elsewhere inside this repository is rejected. The `--rights-confirmed` switch records the operator's confirmation; it does *not* magically grant provider permission. Verify licences before using it.
 
-Never import applicant names, individual phone numbers, private recruiter notes, complete copyrighted job descriptions or credentials here. Confirm POPIA obligations separately for any personal hiring-stakeholder research. This directory is in a public repository.
+`source-registry.json` is an inventory of possible providers; all sources are **unapproved and unscanned** until evidence proves otherwise. Null counts signify "never measured", not "zero jobs".
 
-The current source registry, importer and SIC sector list are infrastructure only. The 12-month historical backfill requires real approved exports or licensed APIs and an independently verified coverage report; there is no claim of a live scraper.
+## Two different evidence streams
+
+### Stream 1: Individual job-posting metadata
+
+Use only an approved CSV/JSON/JSONL export matching `templates/hiring-observations.csv`:
+
+```sh
+npm run hiring:import -- exports/approved-postings.csv --from=2025-10-08 --to=2026-10-08
+npm run hiring:import -- exports/approved-postings.csv --from=2025-10-08 --to=2026-10-08 --commit --rights-confirmed
+```
+
+The dry run reports rejects, review cases, duplicates and retained postings. On commit it writes `.local/hiring/postings.jsonl`, `.local/hiring/employers.json` and import audits. It does not modify `markets/organizations/organizations.json`.
+
+A direct company posting shows **an advertised vacancy**, not an actual hire. Agency listings require a specifically sourced, identifiable end employer; otherwise the end employer is unknown. An industry inferred from an advertised job category stays a proposal.
+
+### Stream 2: Historical aggregate company reports
+
+An authorised Adzuna Intelligence `hiring-employers` export has documented `data` entries with `company.name`, `posting_count`, optionally a provider `company.id` and industry label, and a possible `sample_size`. It does **not** contain individually dated job records. Its reporting window comes from the actual licensed query.
+
+```sh
+npm run hiring:aggregate -- exports/adzuna-hiring-employers.json --from=2025-10-08 --to=2026-10-08 --report-id=licensed-report-123 --source-reference=contract-or-provider-export-id --rights-confirmed
+npm run hiring:aggregate -- exports/adzuna-hiring-employers.json --from=2025-10-08 --to=2026-10-08 --report-id=licensed-report-123 --source-reference=contract-or-provider-export-id --rights-confirmed --commit
+```
+
+The adapter validates the documented shape and returns a distinct row for every reported employer; it does **not** impose a top-10 cap. Candidate entities are provisional until independently reviewed. The `sourceIndustryLabel` is a vendor-proposed classification, not a verified company sector. It stores each report window separately and **never sums overlapping period-wide counts**.
+
+Do not run this command on an arbitrary Adzuna search response; it requires the specific *historical employer report* JSON schema. **Whether Adzuna Intelligence actually makes a South African report available under a licence to Talent Tree is not yet established.** A working API response and commercial reuse terms must both be verified. No vendor credentials have been configured here.
+
+## Identity and controlled promotion
+
+The existing canonical registry is `markets/organizations/organizations.json`. Importing hiring evidence does not automatically add companies to it. Reviewers must establish identity, country relevance, industry, and the supporting source, then promote approved company facts via `npm run organizations:import -- FILE`, with dry-run/QA before `--commit`.
+
+A bank vacancy is not evidence that the employing bank operates in recruitment services. Source-specific posting occupation, provider-industry label, and company activity belong in three separate fields.
+
+## Coverage and QA
+
+Capture source rights and expiry, country, initial report window, query parameters, number of rows and employers, job-level versus aggregate scope, whether results are capped, pagination completeness, number of unknown employers, refresh cadence, source errors and review backlog.
+
+Zero results from a scan are not proof of no vacancies. A failed scan must not be treated as complete. A backfill for just one source does not justify claiming a national census. See `docs/national-employer-intelligence.md` and `docs/historical-hiring-source-assessment.md`.
+
+Before merge, run `npm test`, `npm run build`, `npm run smoke:routes` and `npm run audit:ui`. Do not publish a source dataset as part of ordinary CI.
