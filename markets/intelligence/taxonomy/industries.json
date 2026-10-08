@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "description": "Controlled industry taxonomy for the canonical company graph. Two levels: sector (parentId null) and subindustry. A subindustry is the unit used for industry pockets. `typicalCapabilities` are a system-inference prior only: they generate HYPOTHESIS capability rows flagged 'activity assumed from industry' and can never produce a Confirmed or Probable capability. `valueChain` lists subindustries that are commercially connected (adjacency, not operational equivalence).",
+  "industries": [
+    { "id": "agriculture", "name": "Agriculture & Agribusiness", "parentId": null, "synonyms": ["agribusiness", "agri"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "agri-commodity-trading", "name": "Agricultural Commodity Trading", "parentId": "agriculture", "synonyms": ["grain trading", "commodity merchant", "grain marketing"], "valueChain": ["grain-handling-storage", "milling-feed", "agri-merchants"], "typicalCapabilities": ["commodity-trading", "commodity-procurement", "working-capital-management"] },
+    { "id": "grain-handling-storage", "name": "Grain Handling & Storage", "parentId": "agriculture", "synonyms": ["silos", "grain storage"], "valueChain": ["agri-commodity-trading", "milling-feed", "agri-merchants"], "typicalCapabilities": ["bulk-commodity-storage", "inventory-management"] },
+    { "id": "agri-merchants", "name": "Agricultural Merchants & Co-operatives", "parentId": "agriculture", "synonyms": ["agri co-operative", "agri retail", "agricultural services"], "valueChain": ["grain-handling-storage", "agri-commodity-trading", "fresh-produce"], "typicalCapabilities": ["agri-input-retail", "multi-site-operations", "inventory-management"] },
+    { "id": "milling-feed", "name": "Milling & Animal Feed", "parentId": "agriculture", "synonyms": ["feed milling", "animal feed", "grain processing"], "valueChain": ["agri-commodity-trading", "grain-handling-storage", "poultry-meat"], "typicalCapabilities": ["feed-milling", "commodity-procurement", "inventory-accounting"] },
+    { "id": "fresh-produce", "name": "Fresh Produce Growing, Packing & Export", "parentId": "agriculture", "synonyms": ["fruit export", "fruit marketing", "pack house"], "valueChain": ["cold-chain", "ports-terminals", "food-retail"], "typicalCapabilities": ["export-operations", "cold-storage"] },
+
+    { "id": "food-beverage", "name": "Food & Beverage", "parentId": null, "synonyms": ["FMCG food"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "food-manufacturing", "name": "Food Manufacturing", "parentId": "food-beverage", "synonyms": ["food processing", "FMCG manufacturing"], "valueChain": ["cold-chain", "freight-logistics", "food-retail", "packaging"], "typicalCapabilities": ["food-processing", "inventory-accounting", "cost-accounting", "distribution"] },
+    { "id": "dairy", "name": "Dairy Processing", "parentId": "food-beverage", "synonyms": ["dairy"], "valueChain": ["cold-chain", "food-retail"], "typicalCapabilities": ["food-processing", "temperature-controlled-distribution", "inventory-accounting"] },
+    { "id": "fisheries-seafood", "name": "Fisheries & Seafood", "parentId": "food-beverage", "synonyms": ["fishing", "seafood", "fish processing"], "valueChain": ["cold-chain", "ports-terminals", "food-retail"], "typicalCapabilities": ["fishing-operations", "food-processing", "cold-storage", "export-operations"] },
+    { "id": "poultry-meat", "name": "Poultry & Meat Processing", "parentId": "food-beverage", "synonyms": ["poultry", "abattoir", "meat"], "valueChain": ["milling-feed", "cold-chain", "food-retail"], "typicalCapabilities": ["food-processing", "cold-storage", "inventory-accounting"] },
+    { "id": "beverages", "name": "Beverages", "parentId": "food-beverage", "synonyms": ["brewing", "wine", "soft drinks", "spirits"], "valueChain": ["packaging", "freight-logistics", "food-retail"], "typicalCapabilities": ["manufacturing-production", "distribution", "inventory-accounting"] },
+
+    { "id": "logistics", "name": "Transport & Logistics", "parentId": null, "synonyms": ["supply chain"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "cold-chain", "name": "Cold Chain & Temperature-Controlled Storage", "parentId": "logistics", "synonyms": ["cold storage", "refrigerated warehousing", "cold store"], "valueChain": ["fisheries-seafood", "fresh-produce", "food-manufacturing", "dairy", "poultry-meat", "food-retail", "ports-terminals"], "typicalCapabilities": ["cold-storage", "temperature-controlled-distribution", "inventory-management"] },
+    { "id": "freight-logistics", "name": "Freight, Transport & Contract Logistics", "parentId": "logistics", "synonyms": ["3PL", "road freight", "contract logistics", "freight forwarding"], "valueChain": ["food-manufacturing", "food-retail", "general-retail", "cold-chain"], "typicalCapabilities": ["distribution", "warehousing"] },
+    { "id": "ports-terminals", "name": "Port & Terminal Operations", "parentId": "logistics", "synonyms": ["terminal", "port operations"], "valueChain": ["cold-chain", "fresh-produce", "fisheries-seafood"], "typicalCapabilities": ["port-side-operations"] },
+
+    { "id": "property-construction", "name": "Property, Construction & Infrastructure", "parentId": null, "synonyms": ["built environment"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "property-development", "name": "Commercial & Mixed-use Property Development", "parentId": "property-construction", "synonyms": ["property developer", "real estate development"], "valueChain": ["construction", "property-investment", "building-materials"], "typicalCapabilities": ["property-development-delivery", "development-cost-accounting", "development-finance"] },
+    { "id": "property-investment", "name": "Property Investment & Funds", "parentId": "property-construction", "synonyms": ["REIT", "property fund", "real estate investment"], "valueChain": ["property-development", "construction"], "typicalCapabilities": ["property-portfolio-management"] },
+    { "id": "construction", "name": "Construction & Civil Engineering", "parentId": "property-construction", "synonyms": ["contractor", "civils", "roads", "EPC"], "valueChain": ["property-development", "building-materials", "renewable-energy", "mining"], "typicalCapabilities": ["construction-contracting", "project-accounting"] },
+    { "id": "building-materials", "name": "Building Materials & Quarrying", "parentId": "property-construction", "synonyms": ["cement", "aggregates", "ready-mix", "quarry"], "valueChain": ["construction", "property-development"], "typicalCapabilities": ["manufacturing-production", "multi-site-operations"] },
+
+    { "id": "energy", "name": "Energy", "parentId": null, "synonyms": [], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "renewable-energy", "name": "Renewable Energy Development & IPPs", "parentId": "energy", "synonyms": ["IPP", "solar", "wind", "battery storage"], "valueChain": ["construction"], "typicalCapabilities": ["renewable-project-development", "development-finance"] },
+    { "id": "fuels-petroleum", "name": "Fuels, Oils & Petroleum", "parentId": "energy", "synonyms": ["refinery", "oil"], "valueChain": [], "typicalCapabilities": ["manufacturing-production", "distribution"] },
+
+    { "id": "manufacturing", "name": "Industrial Manufacturing", "parentId": null, "synonyms": [], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "packaging", "name": "Packaging", "parentId": "manufacturing", "synonyms": ["packaging manufacturer", "glass", "plastics packaging", "paper packaging"], "valueChain": ["food-manufacturing", "beverages"], "typicalCapabilities": ["manufacturing-production", "inventory-accounting"] },
+    { "id": "steel-metals", "name": "Steel & Metal Products", "parentId": "manufacturing", "synonyms": ["steel", "metals", "fabrication"], "valueChain": ["construction"], "typicalCapabilities": ["manufacturing-production"] },
+    { "id": "chemicals", "name": "Chemicals & Industrial Products", "parentId": "manufacturing", "synonyms": ["construction chemicals", "admixtures"], "valueChain": ["construction", "building-materials"], "typicalCapabilities": ["manufacturing-production"] },
+    { "id": "automotive", "name": "Automotive", "parentId": "manufacturing", "synonyms": ["motor manufacturing", "automotive group"], "valueChain": [], "typicalCapabilities": ["manufacturing-production"] },
+    { "id": "general-manufacturing", "name": "Other Manufacturing", "parentId": "manufacturing", "synonyms": ["consumer goods", "apparel manufacturing", "printing", "shopfitting", "refrigeration equipment"], "valueChain": [], "typicalCapabilities": ["manufacturing-production"] },
+
+    { "id": "retail", "name": "Retail & Wholesale", "parentId": null, "synonyms": [], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "food-retail", "name": "Food Retail & Wholesale", "parentId": "retail", "synonyms": ["supermarket", "grocery", "convenience retail"], "valueChain": ["food-manufacturing", "cold-chain", "freight-logistics", "fresh-produce"], "typicalCapabilities": ["multi-site-operations", "inventory-management", "distribution"] },
+    { "id": "general-retail", "name": "General & Apparel Retail", "parentId": "retail", "synonyms": ["clothing retail", "omnichannel retail", "QSR franchise"], "valueChain": ["freight-logistics"], "typicalCapabilities": ["multi-site-operations", "inventory-management"] },
+
+    { "id": "mining", "name": "Mining & Minerals", "parentId": null, "synonyms": ["mining", "mineral sands", "gold mining"], "valueChain": ["construction"], "typicalCapabilities": [] },
+
+    { "id": "financial-services", "name": "Financial Services", "parentId": null, "synonyms": [], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "banking", "name": "Banking", "parentId": "financial-services", "synonyms": ["bank", "digital bank"], "valueChain": [], "typicalCapabilities": ["regulatory-reporting"] },
+    { "id": "insurance", "name": "Insurance & Wealth", "parentId": "financial-services", "synonyms": ["insurer", "wealth"], "valueChain": [], "typicalCapabilities": ["regulatory-reporting"] },
+    { "id": "lending-credit", "name": "Lending, Credit & Collections", "parentId": "financial-services", "synonyms": ["unsecured lender", "retail credit", "collections", "debt review", "vehicle finance", "BNPL"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "fintech", "name": "Fintech & Payments", "parentId": "financial-services", "synonyms": ["payments", "fintech lending"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "asset-management", "name": "Asset Management", "parentId": "financial-services", "synonyms": [], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "credit-data", "name": "Credit Bureaux & Risk Data", "parentId": "financial-services", "synonyms": ["credit bureau", "KYC", "risk data"], "valueChain": [], "typicalCapabilities": [] },
+
+    { "id": "professional-services", "name": "Professional Services", "parentId": null, "synonyms": [], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "audit-accounting", "name": "Audit & Accounting", "parentId": "professional-services", "synonyms": ["audit firm", "accounting practice", "Big Four"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "consulting", "name": "Consulting & Advisory", "parentId": "professional-services", "synonyms": ["consulting", "advisory"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "legal", "name": "Legal Services", "parentId": "professional-services", "synonyms": ["law firm"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "staffing-hr", "name": "Staffing, HR & Business Services", "parentId": "professional-services", "synonyms": ["staffing", "BPO", "security services", "hygiene services"], "valueChain": [], "typicalCapabilities": [] },
+
+    { "id": "public-sector", "name": "Public Sector, Regulators & SOEs", "parentId": null, "synonyms": ["government", "regulator", "state-owned entity"], "valueChain": [], "typicalCapabilities": ["regulatory-reporting"] },
+    { "id": "technology", "name": "Technology & Software", "parentId": null, "synonyms": ["software", "IT services"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "waste-environmental", "name": "Waste & Environmental Services", "parentId": null, "synonyms": ["waste management", "recycling"], "valueChain": [], "typicalCapabilities": ["multi-site-operations"] },
+    { "id": "education", "name": "Education", "parentId": null, "synonyms": ["tertiary education", "private education"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "hospitality-leisure", "name": "Hospitality, Leisure & Care", "parentId": null, "synonyms": ["hotel", "venue", "retirement village"], "valueChain": [], "typicalCapabilities": [] },
+    { "id": "non-profit", "name": "Non-profit & Membership Bodies", "parentId": null, "synonyms": ["professional body", "chamber", "NPO"], "valueChain": [], "typicalCapabilities": [] }
+  ]
+}

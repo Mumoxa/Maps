@@ -1,0 +1,733 @@
+{
+  "runDate": "2026-10-08",
+  "counts": {
+    "legacyRecords": 263,
+    "organizations": 274,
+    "mergedRecords": 8,
+    "researchCurated": 34,
+    "industryMapped": 196,
+    "industryUnmapped": 0,
+    "noLegacyIndustry": 67,
+    "coverageRecords": 74
+  },
+  "merges": [
+    {
+      "organizationId": "org-absa-group",
+      "name": "Absa Group",
+      "refs": [
+        "accountants:cmp-0018",
+        "credit-risk:COM-3"
+      ],
+      "reason": "name or alias key match"
+    },
+    {
+      "organizationId": "org-nedbank-group-limited",
+      "name": "Nedbank Group Limited",
+      "refs": [
+        "accountants:cmp-0003",
+        "credit-risk:COM-4"
+      ],
+      "reason": "name or alias key match"
+    },
+    {
+      "organizationId": "org-retail-capital",
+      "name": "Retail Capital",
+      "refs": [
+        "accountants:cmp-0112",
+        "credit-risk:COM-29"
+      ],
+      "reason": "name or alias key match"
+    },
+    {
+      "organizationId": "org-deloitte-south-africa",
+      "name": "Deloitte (South Africa)",
+      "refs": [
+        "accountants:cmp-0023",
+        "credit-risk:COM-56"
+      ],
+      "reason": "name or alias key match"
+    },
+    {
+      "organizationId": "org-pwc-south-africa",
+      "name": "PwC (South Africa)",
+      "refs": [
+        "accountants:cmp-0027",
+        "credit-risk:COM-58"
+      ],
+      "reason": "name or alias key match"
+    },
+    {
+      "organizationId": "org-kpmg-south-africa",
+      "name": "KPMG (South Africa)",
+      "refs": [
+        "accountants:cmp-0004",
+        "credit-risk:COM-59"
+      ],
+      "reason": "name or alias key match"
+    },
+    {
+      "organizationId": "org-sanlam",
+      "name": "Sanlam",
+      "refs": [
+        "credit-risk:COM-11",
+        "credit-risk:COM-68"
+      ],
+      "reason": "name or alias key match"
+    },
+    {
+      "organizationId": "org-financial-sector-conduct-authority",
+      "name": "Financial Sector Conduct Authority",
+      "refs": [
+        "accountants:cmp-0034",
+        "credit-risk:COM-71"
+      ],
+      "reason": "name or alias key match"
+    }
+  ],
+  "duplicatesWithinSource": [
+    {
+      "dataset": "credit-risk",
+      "name": "sanlam",
+      "refs": [
+        "credit-risk:COM-11",
+        "credit-risk:COM-68"
+      ]
+    }
+  ],
+  "unmappedIndustryLabels": [],
+  "unclassifiedOrganizations": [
+    {
+      "organizationId": "org-ardagh-glass-packaging-sa",
+      "name": "Ardagh Glass Packaging SA"
+    },
+    {
+      "organizationId": "org-asla",
+      "name": "ASLA"
+    },
+    {
+      "organizationId": "org-astron-energy",
+      "name": "Astron Energy"
+    },
+    {
+      "organizationId": "org-betko-fresh-produce",
+      "name": "Betko Fresh Produce"
+    },
+    {
+      "organizationId": "org-bowler-metcalf-bowler-plastics",
+      "name": "Bowler Metcalf / Bowler Plastics"
+    },
+    {
+      "organizationId": "org-brimstone",
+      "name": "Brimstone Investment Corporation"
+    },
+    {
+      "organizationId": "org-ceres-fruit-growers",
+      "name": "Ceres Fruit Growers"
+    },
+    {
+      "organizationId": "org-chryso-southern-africa",
+      "name": "Chryso Southern Africa"
+    },
+    {
+      "organizationId": "org-civils-2000",
+      "name": "Civils 2000"
+    },
+    {
+      "organizationId": "org-core-fruit",
+      "name": "Core Fruit"
+    },
+    {
+      "organizationId": "org-dgb",
+      "name": "DGB"
+    },
+    {
+      "organizationId": "org-dutoit-agri",
+      "name": "Dutoit Agri"
+    },
+    {
+      "organizationId": "org-fabrinox",
+      "name": "Fabrinox"
+    },
+    {
+      "organizationId": "org-fair-cape-dairies",
+      "name": "Fair Cape Dairies"
+    },
+    {
+      "organizationId": "org-foct-engineering",
+      "name": "Foct Engineering"
+    },
+    {
+      "organizationId": "org-fruitways",
+      "name": "Fruitways"
+    },
+    {
+      "organizationId": "org-gvk-siya-zama",
+      "name": "GVK-Siya Zama"
+    },
+    {
+      "organizationId": "org-haw-and-inglis",
+      "name": "Haw & Inglis"
+    },
+    {
+      "organizationId": "org-heineken-beverages",
+      "name": "HEINEKEN Beverages"
+    },
+    {
+      "organizationId": "org-isipani-construction",
+      "name": "Isipani Construction"
+    },
+    {
+      "organizationId": "org-kromco",
+      "name": "Kromco"
+    },
+    {
+      "organizationId": "org-kropz-elandsfontein",
+      "name": "Kropz Elandsfontein"
+    },
+    {
+      "organizationId": "org-kula",
+      "name": "Kula"
+    },
+    {
+      "organizationId": "org-kwv",
+      "name": "KWV"
+    },
+    {
+      "organizationId": "org-ladismith-cheese-woodlands-dairy-group",
+      "name": "Ladismith Cheese / Woodlands Dairy Group"
+    },
+    {
+      "organizationId": "org-lancewood",
+      "name": "LANCEWOOD"
+    },
+    {
+      "organizationId": "org-lona-group",
+      "name": "Lona Group"
+    },
+    {
+      "organizationId": "org-macsteel",
+      "name": "Macsteel"
+    },
+    {
+      "organizationId": "org-martin-and-east",
+      "name": "Martin & East"
+    },
+    {
+      "organizationId": "org-meshco",
+      "name": "Meshco"
+    },
+    {
+      "organizationId": "org-mineral-sands-resources-tormin",
+      "name": "Mineral Sands Resources / Tormin"
+    },
+    {
+      "organizationId": "org-mpact",
+      "name": "Mpact"
+    },
+    {
+      "organizationId": "org-nampak",
+      "name": "Nampak"
+    },
+    {
+      "organizationId": "org-njr-steel",
+      "name": "NJR Steel"
+    },
+    {
+      "organizationId": "org-peninsula-beverages",
+      "name": "Peninsula Beverages"
+    },
+    {
+      "organizationId": "org-pepsico-south-africa-pioneer-foods",
+      "name": "PepsiCo South Africa / Pioneer Foods"
+    },
+    {
+      "organizationId": "org-petrosa",
+      "name": "PetroSA"
+    },
+    {
+      "organizationId": "org-polyoak-packaging",
+      "name": "Polyoak Packaging"
+    },
+    {
+      "organizationId": "org-power-group",
+      "name": "Power Group"
+    },
+    {
+      "organizationId": "org-premier-fishing-and-brands",
+      "name": "Premier Fishing & Brands"
+    },
+    {
+      "organizationId": "org-r-n-master-builders",
+      "name": "R+N Master Builders"
+    },
+    {
+      "organizationId": "org-raubex-roadmac-surfacing-cape",
+      "name": "Raubex / Roadmac Surfacing Cape"
+    },
+    {
+      "organizationId": "org-sa-metal-group",
+      "name": "SA Metal Group"
+    },
+    {
+      "organizationId": "org-sab-ab-inbev-newlands-brewery",
+      "name": "SAB / AB InBev - Newlands Brewery"
+    },
+    {
+      "organizationId": "org-safintra-south-africa",
+      "name": "Safintra South Africa"
+    },
+    {
+      "organizationId": "org-saint-gobain-gyproc",
+      "name": "Saint-Gobain Gyproc"
+    },
+    {
+      "organizationId": "org-sika-south-africa",
+      "name": "Sika South Africa"
+    },
+    {
+      "organizationId": "org-southern-african-fruit-terminals-saft",
+      "name": "Southern African Fruit Terminals (SAFT)"
+    },
+    {
+      "organizationId": "org-southern-oil-soill",
+      "name": "Southern Oil (SOILL)"
+    },
+    {
+      "organizationId": "org-sunrise-energy",
+      "name": "Sunrise Energy"
+    },
+    {
+      "organizationId": "org-tronox-namakwa-sands",
+      "name": "Tronox Namakwa Sands"
+    },
+    {
+      "organizationId": "org-tru-cape-fruit-marketing",
+      "name": "Tru-Cape Fruit Marketing"
+    },
+    {
+      "organizationId": "org-two-a-day-group",
+      "name": "Two-a-Day Group"
+    }
+  ],
+  "unmatchedCoverageTargets": [
+    {
+      "targetId": "ftc-0006",
+      "name": "SPH Kundalila"
+    },
+    {
+      "targetId": "ftc-0007",
+      "name": "Megamix"
+    },
+    {
+      "targetId": "ftc-0008",
+      "name": "Métier Mixed Concrete"
+    },
+    {
+      "targetId": "ftc-0009",
+      "name": "Much Asphalt"
+    },
+    {
+      "targetId": "ftc-0010",
+      "name": "SprayPave"
+    },
+    {
+      "targetId": "ftc-0011",
+      "name": "Cape Concrete Works"
+    },
+    {
+      "targetId": "ftc-0012",
+      "name": "TopFloor"
+    },
+    {
+      "targetId": "ftc-0013",
+      "name": "Mobicast"
+    },
+    {
+      "targetId": "ftc-0014",
+      "name": "Fick Sementwerke"
+    },
+    {
+      "targetId": "ftc-0015",
+      "name": "Lategan Sementwerke"
+    },
+    {
+      "targetId": "ftc-0016",
+      "name": "CAPECAST"
+    },
+    {
+      "targetId": "ftc-0017",
+      "name": "Apollo Brick (Atlantis)"
+    },
+    {
+      "targetId": "ftc-0018",
+      "name": "Bredasdorp Steenwerke"
+    },
+    {
+      "targetId": "ftc-0019",
+      "name": "Cabrico"
+    },
+    {
+      "targetId": "ftc-0020",
+      "name": "Klay"
+    },
+    {
+      "targetId": "ftc-0021",
+      "name": "Corobrik Lansdowne"
+    },
+    {
+      "targetId": "ftc-0022",
+      "name": "De Hoop Steenwerwe"
+    },
+    {
+      "targetId": "ftc-0023",
+      "name": "Johnson's Bricks"
+    },
+    {
+      "targetId": "ftc-0024",
+      "name": "Kurlandbrik"
+    },
+    {
+      "targetId": "ftc-0025",
+      "name": "Namakwa Kleistene"
+    },
+    {
+      "targetId": "ftc-0026",
+      "name": "Naude Bakstene"
+    },
+    {
+      "targetId": "ftc-0027",
+      "name": "Spitskop Steenwerke"
+    },
+    {
+      "targetId": "ftc-0028",
+      "name": "Worcester Bakstene"
+    },
+    {
+      "targetId": "ftc-0095",
+      "name": "Bidvest International Logistics"
+    },
+    {
+      "targetId": "ftc-0096",
+      "name": "Grindrod / United Container Depots"
+    },
+    {
+      "targetId": "ftc-0097",
+      "name": "Maersk"
+    },
+    {
+      "targetId": "ftc-0098",
+      "name": "Shoprite Holdings"
+    },
+    {
+      "targetId": "ftc-0099",
+      "name": "Pick n Pay"
+    },
+    {
+      "targetId": "ftc-0101",
+      "name": "The Building Company"
+    },
+    {
+      "targetId": "ftc-0102",
+      "name": "Brights Hardware"
+    },
+    {
+      "targetId": "ftc-0103",
+      "name": "Cashbuild"
+    },
+    {
+      "targetId": "ftc-0104",
+      "name": "SOLA Group"
+    },
+    {
+      "targetId": "ftc-0105",
+      "name": "JUWI South Africa"
+    },
+    {
+      "targetId": "ftc-0106",
+      "name": "Scatec South Africa"
+    },
+    {
+      "targetId": "ftc-0108",
+      "name": "Red Rocket"
+    },
+    {
+      "targetId": "ftc-0109",
+      "name": "Mainstream Renewable Power"
+    },
+    {
+      "targetId": "ftc-0110",
+      "name": "Lesedi Nuclear Services"
+    },
+    {
+      "targetId": "ftc-0111",
+      "name": "Damen Shipyards Cape Town"
+    },
+    {
+      "targetId": "ftc-0112",
+      "name": "Cape Cement Products"
+    },
+    {
+      "targetId": "ftc-0113",
+      "name": "Blublok Cement Manufacturers"
+    },
+    {
+      "targetId": "ftc-0114",
+      "name": "Quickslab"
+    },
+    {
+      "targetId": "ftc-0115",
+      "name": "Mouton Precast"
+    },
+    {
+      "targetId": "ftc-0116",
+      "name": "Inca Concrete Products"
+    },
+    {
+      "targetId": "ftc-0117",
+      "name": "SmartStone Cape Town"
+    },
+    {
+      "targetId": "ftc-0118",
+      "name": "Cape Paving"
+    },
+    {
+      "targetId": "ftc-0119",
+      "name": "Aldera & Martina"
+    },
+    {
+      "targetId": "ftc-0120",
+      "name": "Civil Pro Precast"
+    },
+    {
+      "targetId": "ftc-0121",
+      "name": "Omega Concrete"
+    },
+    {
+      "targetId": "ftc-0122",
+      "name": "Sandberg Transport"
+    },
+    {
+      "targetId": "ftc-0123",
+      "name": "CSV Construction"
+    },
+    {
+      "targetId": "ftc-0124",
+      "name": "Stabilid Cape Construction"
+    },
+    {
+      "targetId": "ftc-0125",
+      "name": "GeoCiv Group"
+    },
+    {
+      "targetId": "ftc-0126",
+      "name": "Southey Contracting"
+    },
+    {
+      "targetId": "ftc-0127",
+      "name": "Mazor Group"
+    },
+    {
+      "targetId": "ftc-0128",
+      "name": "Duram Smart Paints"
+    },
+    {
+      "targetId": "ftc-0129",
+      "name": "Air Products South Africa"
+    },
+    {
+      "targetId": "ftc-0130",
+      "name": "Rheinmetall Denel Munition"
+    },
+    {
+      "targetId": "ftc-0131",
+      "name": "Italtile Group – Western Cape Distribution Centre"
+    },
+    {
+      "targetId": "ftc-0132",
+      "name": "Robertson & Caine"
+    },
+    {
+      "targetId": "ftc-0133",
+      "name": "Two Oceans Marine Manufacturing"
+    },
+    {
+      "targetId": "ftc-0134",
+      "name": "Balance Catamarans Cape Town"
+    },
+    {
+      "targetId": "ftc-0135",
+      "name": "Phoenix Marine Manufacturing"
+    },
+    {
+      "targetId": "ftc-0136",
+      "name": "Dormac"
+    },
+    {
+      "targetId": "ftc-0137",
+      "name": "Atlantis Foundries"
+    },
+    {
+      "targetId": "ftc-0138",
+      "name": "Quantum Foods Holdings"
+    },
+    {
+      "targetId": "ftc-0139",
+      "name": "Nova Feeds"
+    },
+    {
+      "targetId": "ftc-0141",
+      "name": "AFGRI Animal Feeds"
+    },
+    {
+      "targetId": "ftc-0142",
+      "name": "County Fair"
+    },
+    {
+      "targetId": "ftc-0143",
+      "name": "Tiger Brands"
+    },
+    {
+      "targetId": "ftc-0144",
+      "name": "Western Cape Milling"
+    },
+    {
+      "targetId": "ftc-0145",
+      "name": "Group 35 Foods"
+    },
+    {
+      "targetId": "ftc-0146",
+      "name": "Citrusdal Rollermeule"
+    },
+    {
+      "targetId": "ftc-0147",
+      "name": "Eureka Mills"
+    },
+    {
+      "targetId": "ftc-0148",
+      "name": "BKB GrainCo / GrainCo Storage"
+    },
+    {
+      "targetId": "ftc-0149",
+      "name": "MTO Group – George Sawmill"
+    },
+    {
+      "targetId": "ftc-0150",
+      "name": "PG Bison / Thesen"
+    },
+    {
+      "targetId": "ftc-0151",
+      "name": "Geelhoutvlei Timbers"
+    },
+    {
+      "targetId": "ftc-0152",
+      "name": "Fechters Sawmill"
+    },
+    {
+      "targetId": "ftc-0153",
+      "name": "CCS Logistics"
+    },
+    {
+      "targetId": "ftc-0154",
+      "name": "Sequence Logistics"
+    },
+    {
+      "targetId": "ftc-0155",
+      "name": "Table Bay Cold Storage"
+    },
+    {
+      "targetId": "ftc-0156",
+      "name": "Blaauwberg Cold Storage"
+    },
+    {
+      "targetId": "ftc-0157",
+      "name": "WastePlan"
+    },
+    {
+      "targetId": "ftc-0158",
+      "name": "EnviroServ"
+    },
+    {
+      "targetId": "ftc-0159",
+      "name": "Interwaste"
+    },
+    {
+      "targetId": "ftc-0160",
+      "name": "Averda South Africa"
+    },
+    {
+      "targetId": "ftc-0161",
+      "name": "Resource Innovations Africa"
+    },
+    {
+      "targetId": "ftc-0162",
+      "name": "WasteGo Green"
+    },
+    {
+      "targetId": "ftc-0163",
+      "name": "Brito's Group"
+    },
+    {
+      "targetId": "ftc-0164",
+      "name": "Excellent Meat Group"
+    },
+    {
+      "targetId": "ftc-0165",
+      "name": "Libstar"
+    },
+    {
+      "targetId": "ftc-0166",
+      "name": "Cape Herb & Spice"
+    },
+    {
+      "targetId": "ftc-0167",
+      "name": "Namaqua Wines"
+    },
+    {
+      "targetId": "ftc-0168",
+      "name": "Stellenbosch Vineyards / Advini South Africa"
+    },
+    {
+      "targetId": "ftc-0169",
+      "name": "Boland Cellar"
+    },
+    {
+      "targetId": "ftc-0170",
+      "name": "Spier"
+    },
+    {
+      "targetId": "ftc-0171",
+      "name": "Afresh Brands Cape / Equi-Feeds"
+    },
+    {
+      "targetId": "ftc-0172",
+      "name": "Osdam Eco Facility"
+    },
+    {
+      "targetId": "ftc-0173",
+      "name": "Reliance Compost"
+    },
+    {
+      "targetId": "ftc-0174",
+      "name": "Concretex"
+    },
+    {
+      "targetId": "ftc-0175",
+      "name": "WonderCrete Precast"
+    },
+    {
+      "targetId": "ftc-0176",
+      "name": "Profile Feeds"
+    }
+  ],
+  "unresolvedParents": [
+    {
+      "ref": "accountants:cmp-0022",
+      "parent": "SAP SE"
+    },
+    {
+      "ref": "accountants:cmp-0035",
+      "parent": "Old Mutual"
+    }
+  ],
+  "missingLineage": []
+}

@@ -5,5 +5,7 @@ Allow: /
 # from sitemap.xml as well. They also set a noindex meta when rendered.
 Disallow: /contacts
 Disallow: /search-bank
+Disallow: /target-pools
+Disallow: /intelligence
 
 Sitemap: https://maps-4xq.pages.dev/sitemap.xml

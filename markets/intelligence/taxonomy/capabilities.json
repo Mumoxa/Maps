@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "description": "Reusable operational-capability taxonomy. A capability is something a company (or one of its business units) does. `kind` separates operational process, commercial activity, financial complexity and technology. A company-level capability is NEVER evidence that a particular employee performed that work. Matching rolls up the hierarchy: evidence for a child (e.g. cold-storage) satisfies a requirement for its ancestors (e.g. inventory-management).",
+  "capabilities": [
+    { "id": "inventory-management", "name": "Inventory & stock control", "parentId": null, "kind": "operational", "synonyms": ["stock control", "inventory"] },
+    { "id": "warehousing", "name": "Warehousing operations", "parentId": "inventory-management", "kind": "operational", "synonyms": ["warehouse", "contract warehousing"] },
+    { "id": "cold-storage", "name": "Cold storage (frozen / chilled)", "parentId": "warehousing", "kind": "operational", "synonyms": ["cold store", "refrigerated warehousing", "frozen storage"] },
+    { "id": "bulk-commodity-storage", "name": "Bulk commodity storage (silos)", "parentId": "inventory-management", "kind": "operational", "synonyms": ["silo", "grain storage", "grain handling"] },
+
+    { "id": "distribution", "name": "Distribution & transport operations", "parentId": null, "kind": "operational", "synonyms": ["transport", "distribution"] },
+    { "id": "temperature-controlled-distribution", "name": "Temperature-controlled distribution", "parentId": "distribution", "kind": "operational", "synonyms": ["refrigerated transport", "reefer", "cold chain transport"] },
+    { "id": "road-freight", "name": "Road freight", "parentId": "distribution", "kind": "operational", "synonyms": ["trucking"] },
+    { "id": "freight-forwarding", "name": "Air & sea freight forwarding / customs", "parentId": "distribution", "kind": "operational", "synonyms": ["forwarding", "customs brokerage"] },
+    { "id": "port-side-operations", "name": "Port-side handling & export logistics", "parentId": "distribution", "kind": "operational", "synonyms": ["vessel offloading", "container loading", "terminal"] },
+
+    { "id": "manufacturing-production", "name": "Manufacturing / production", "parentId": null, "kind": "operational", "synonyms": ["production", "factory"] },
+    { "id": "food-processing", "name": "Food processing", "parentId": "manufacturing-production", "kind": "operational", "synonyms": ["food manufacturing", "fish processing"] },
+    { "id": "feed-milling", "name": "Feed manufacturing & milling", "parentId": "manufacturing-production", "kind": "operational", "synonyms": ["animal feed", "milling"] },
+    { "id": "fishing-operations", "name": "Fishing fleet operations", "parentId": null, "kind": "operational", "synonyms": ["trawling", "fishing fleet"] },
+    { "id": "multi-site-operations", "name": "Multi-site operations", "parentId": null, "kind": "operational", "synonyms": ["branch network", "multi-site"] },
+    { "id": "export-operations", "name": "Export operations", "parentId": null, "kind": "commercial", "synonyms": ["exports", "export markets"] },
+    { "id": "agri-input-retail", "name": "Agricultural input & agri retail", "parentId": null, "kind": "commercial", "synonyms": ["agri retail", "farm inputs"] },
+
+    { "id": "capital-projects", "name": "Capital project delivery", "parentId": null, "kind": "operational", "synonyms": ["projects", "capital projects", "project management"] },
+    { "id": "property-development-delivery", "name": "Property development", "parentId": "capital-projects", "kind": "operational", "synonyms": ["property development", "development pipeline"] },
+    { "id": "construction-contracting", "name": "Construction contracting", "parentId": "capital-projects", "kind": "operational", "synonyms": ["building construction", "civil engineering", "roads"] },
+    { "id": "renewable-project-development", "name": "Renewable energy project development", "parentId": "capital-projects", "kind": "operational", "synonyms": ["IPP development", "solar development", "wind development"] },
+    { "id": "property-portfolio-management", "name": "Property / rental portfolio management", "parentId": null, "kind": "commercial", "synonyms": ["fund management", "property portfolio"] },
+
+    { "id": "commodity-trading", "name": "Agricultural commodity trading & marketing", "parentId": null, "kind": "commercial", "synonyms": ["commodity trading", "commodity marketing", "grain marketing"] },
+    { "id": "grain-trading", "name": "Grain trading", "parentId": "commodity-trading", "kind": "commercial", "synonyms": ["grain desk"] },
+    { "id": "commodity-procurement", "name": "Commodity procurement from producers", "parentId": null, "kind": "commercial", "synonyms": ["procurement of raw materials"] },
+    { "id": "contract-management", "name": "Commercial contract management", "parentId": null, "kind": "commercial", "synonyms": ["contracts"] },
+
+    { "id": "inventory-accounting", "name": "Inventory / stock accounting", "parentId": null, "kind": "financial", "synonyms": ["stock valuation", "stock costing"] },
+    { "id": "cost-accounting", "name": "Cost & production accounting", "parentId": null, "kind": "financial", "synonyms": ["costing", "management accounting"] },
+    { "id": "project-accounting", "name": "Project & contract accounting", "parentId": null, "kind": "financial", "synonyms": ["job costing", "contract accounting"] },
+    { "id": "development-cost-accounting", "name": "Development cost accounting", "parentId": "project-accounting", "kind": "financial", "synonyms": ["development costing"] },
+    { "id": "commodity-contract-accounting", "name": "Commodity contract accounting", "parentId": null, "kind": "financial", "synonyms": ["commodity derivatives", "hedge accounting"] },
+    { "id": "working-capital-management", "name": "Working capital management", "parentId": null, "kind": "financial", "synonyms": ["working capital", "cash management"] },
+    { "id": "multi-entity-reporting", "name": "Multi-entity reporting & consolidations", "parentId": null, "kind": "financial", "synonyms": ["group consolidations", "multi-company"] },
+    { "id": "fx-exposure", "name": "Foreign currency transactions", "parentId": null, "kind": "financial", "synonyms": ["FX", "foreign exchange"] },
+    { "id": "development-finance", "name": "Development & project financing", "parentId": null, "kind": "financial", "synonyms": ["project finance", "development finance", "financial close"] },
+    { "id": "regulatory-reporting", "name": "Listed / regulatory reporting", "parentId": null, "kind": "financial", "synonyms": ["JSE reporting", "prudential reporting"] },
+    { "id": "customer-credit-provision", "name": "Credit provision to customers", "parentId": null, "kind": "financial", "synonyms": ["financial services to members", "trade credit"] },
+
+    { "id": "erp-sage-300", "name": "Sage 300 ERP", "parentId": null, "kind": "technology", "synonyms": ["Accpac", "Sage 300cloud"] },
+    { "id": "erp-sap", "name": "SAP ERP", "parentId": null, "kind": "technology", "synonyms": ["SAP S/4HANA", "SAP ECC"] }
+  ]
+}

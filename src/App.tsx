@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, type ReactNode } from 'react'
 import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { DataProvider } from './context/DataContext'
 import { Layout } from './components/layout/Layout'
@@ -29,6 +29,21 @@ const ContactDirectory = lazy(() =>
   import('./pages/ContactDirectory').then(module => ({ default: module.ContactDirectory })),
 )
 
+// Company intelligence pages carry the organization graph; load them on demand.
+const CompanyAssociationsPage = lazy(() => import('./pages/CompanyAssociationsPage').then((m) => ({ default: m.CompanyAssociationsPage })))
+const OrganizationDirectory = lazy(() => import('./pages/OrganizationDirectory').then((m) => ({ default: m.OrganizationDirectory })))
+const OrganizationPage = lazy(() => import('./pages/OrganizationPage').then((m) => ({ default: m.OrganizationPage })))
+const IndustriesPage = lazy(() => import('./pages/TaxonomyPages').then((m) => ({ default: m.IndustriesPage })))
+const CapabilitiesPage = lazy(() => import('./pages/TaxonomyPages').then((m) => ({ default: m.CapabilitiesPage })))
+const QualificationsPage = lazy(() => import('./pages/TaxonomyPages').then((m) => ({ default: m.QualificationsPage })))
+const TargetPoolsPage = lazy(() => import('./pages/TargetPoolsPage').then((m) => ({ default: m.TargetPoolsPage })))
+const AssignmentsPage = lazy(() => import('./pages/AssignmentsPage').then((m) => ({ default: m.AssignmentsPage })))
+const IntelligenceImportPage = lazy(() => import('./pages/IntelligenceImportPage').then((m) => ({ default: m.IntelligenceImportPage })))
+
+function Lazy({ children }: { children: ReactNode }) {
+  return <Suspense fallback={<LoadingSpinner />}>{children}</Suspense>
+}
+
 function AppRoutes() {
   const element = useRoutes([
     { path: '/', element: <HomePage /> },
@@ -54,6 +69,19 @@ function AppRoutes() {
     { path: '/profiles/:slug', element: <ProfilePage /> },
     { path: '/shortlist', element: <ShortlistPage /> },
     { path: '/markets/salesforce', element: <SalesforceEcosystemPage /> },
+    { path: '/company-associations', element: <Lazy><CompanyAssociationsPage /></Lazy> },
+    { path: '/organizations', element: <Lazy><OrganizationDirectory /></Lazy> },
+    { path: '/organizations/:id', element: <Lazy><OrganizationPage /></Lazy> },
+    { path: '/industries', element: <Lazy><IndustriesPage /></Lazy> },
+    { path: '/industries/:id', element: <Lazy><IndustriesPage /></Lazy> },
+    { path: '/capabilities', element: <Lazy><CapabilitiesPage /></Lazy> },
+    { path: '/capabilities/:id', element: <Lazy><CapabilitiesPage /></Lazy> },
+    { path: '/qualifications', element: <Lazy><QualificationsPage /></Lazy> },
+    { path: '/qualifications/:slug', element: <Lazy><QualificationsPage /></Lazy> },
+    { path: '/target-pools', element: <Lazy><TargetPoolsPage /></Lazy> },
+    { path: '/search-bank/assignments', element: <Lazy><AssignmentsPage /></Lazy> },
+    { path: '/search-bank/assignments/:id', element: <Lazy><AssignmentsPage /></Lazy> },
+    { path: '/intelligence/import', element: <Lazy><IntelligenceImportPage /></Lazy> },
     { path: '*', element: <NotFound /> },
   ])
   return element

@@ -59,7 +59,8 @@ if (typeof (globalThis as { ResizeObserver?: unknown }).ResizeObserver === 'unde
   })
 }
 
-const pageModules: Record<string, [string, string]> = {
+/** route -> [module, export, optional route pattern for pages that read URL params] */
+const pageModules: Record<string, [string, string, string?]> = {
   '/': ['/src/pages/HomePage.tsx', 'HomePage'],
   '/credit-risk': ['/src/pages/CreditRiskPage.tsx', 'CreditRiskPage'],
   '/salesforce': ['/src/pages/SalesforcePage.tsx', 'SalesforcePage'],
@@ -77,6 +78,20 @@ const pageModules: Record<string, [string, string]> = {
   '/shortlist': ['/src/pages/ShortlistPage.tsx', 'ShortlistPage'],
   '/markets/salesforce': ['/src/pages/SalesforceEcosystemPage.tsx', 'SalesforceEcosystemPage'],
   '/contacts': ['/src/pages/ContactDirectory.tsx', 'ContactDirectory'],
+  '/company-associations': ['/src/pages/CompanyAssociationsPage.tsx', 'CompanyAssociationsPage'],
+  '/organizations': ['/src/pages/OrganizationDirectory.tsx', 'OrganizationDirectory'],
+  '/company-associations?focus=org-commercial-cold-holdings&context=fm-temperature-controlled&view=table': ['/src/pages/CompanyAssociationsPage.tsx', 'CompanyAssociationsPage'],
+  '/organizations/org-bester-feed-grain': ['/src/pages/OrganizationPage.tsx', 'OrganizationPage', '/organizations/:id'],
+  '/company-associations?focus=org-bester-feed-grain&context=hof-agri-commodity&view=pockets&org=org-overberg-agri': ['/src/pages/CompanyAssociationsPage.tsx', 'CompanyAssociationsPage'],
+  '/organizations?tab=quality': ['/src/pages/OrganizationDirectory.tsx', 'OrganizationDirectory'],
+  '/industries': ['/src/pages/TaxonomyPages.tsx', 'IndustriesPage'],
+  '/industries/cold-chain': ['/src/pages/TaxonomyPages.tsx', 'IndustriesPage', '/industries/:id'],
+  '/capabilities': ['/src/pages/TaxonomyPages.tsx', 'CapabilitiesPage'],
+  '/capabilities/commodity-trading': ['/src/pages/TaxonomyPages.tsx', 'CapabilitiesPage', '/capabilities/:id'],
+  '/qualifications': ['/src/pages/TaxonomyPages.tsx', 'QualificationsPage'],
+  '/target-pools': ['/src/pages/TargetPoolsPage.tsx', 'TargetPoolsPage'],
+  '/search-bank/assignments': ['/src/pages/AssignmentsPage.tsx', 'AssignmentsPage'],
+  '/intelligence/import': ['/src/pages/IntelligenceImportPage.tsx', 'IntelligenceImportPage'],
 }
 
 const failures: string[] = []
@@ -91,12 +106,12 @@ async function main() {
 
   const React = (await import('react')).default
   const { createRoot } = await import('react-dom/client')
-  const { MemoryRouter } = await import('react-router-dom')
+  const { MemoryRouter, Routes, Route } = await import('react-router-dom')
   const { DataProvider } = await server.ssrLoadModule('/src/context/DataContext.tsx')
   const { Layout } = await server.ssrLoadModule('/src/components/layout/Layout.tsx')
   const { ErrorBoundary } = await server.ssrLoadModule('/src/components/ui/ErrorBoundary.tsx')
 
-  for (const [route, [modulePath, exportName]] of Object.entries(pageModules)) {
+  for (const [route, [modulePath, exportName, pattern]] of Object.entries(pageModules)) {
     const container = document.createElement('div')
     document.body.appendChild(container)
     const root = createRoot(container)
@@ -109,6 +124,9 @@ async function main() {
       const pageModule = await server.ssrLoadModule(modulePath)
       const Page = pageModule[exportName]
       if (typeof Page !== 'function') throw new Error(`missing export ${exportName}`)
+      const pageElement = pattern
+        ? React.createElement(Routes, null, React.createElement(Route, { path: pattern, element: React.createElement(Page) }))
+        : React.createElement(Page)
       await new Promise<void>(resolve => {
         root.render(
           React.createElement(
@@ -120,7 +138,7 @@ async function main() {
               React.createElement(
                 ErrorBoundary,
                 null,
-                React.createElement(Layout, null, React.createElement(Page)),
+                React.createElement(Layout, null, pageElement),
               ),
             ),
           ),

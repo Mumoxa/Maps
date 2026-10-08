@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate:data && npm run validate:contacts && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "build": "npm run validate:data && npm run validate:contacts && npm run validate:intel && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
     "deploy": "npx wrangler pages deploy dist --project-name maps",
     "test": "node --import tsx --test",
     "validate:data": "node --import tsx scripts/validate-market-data.ts",
@@ -16,7 +16,11 @@
     "import:salesforce": "node scripts/import-salesforce-html.mjs",
     "preview": "vite preview",
     "smoke:routes": "node --import tsx scripts/smoke-routes.ts",
-    "audit:ui": "node --import tsx scripts/audit-ui.ts"
+    "audit:ui": "node --import tsx scripts/audit-ui.ts",
+    "validate:intel": "node --import tsx scripts/validate-intelligence.ts",
+    "intel:reconcile": "node --import tsx scripts/reconcile-organizations.ts",
+    "intel:query": "node --import tsx scripts/intel-query.ts",
+    "intel:import": "node --import tsx scripts/intel-import.ts"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.3.0",

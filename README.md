@@ -59,6 +59,28 @@ Start here: [`docs/search-bank-guide.md`](docs/search-bank-guide.md) (drop → i
 normaliser canonicalises) and [`markets/search-bank/README.md`](markets/search-bank/README.md) (record
 contract, accepted drop formats, merge rules).
 
+## Company Association Explorer
+
+`/company-associations` explores which companies to target for a role from a focal company:
+industry pockets, an interactive network, a sortable table, role-conditional rule-based tiers with
+plain explanations, evidence and confidence on every fact, comparison, overrides with reasons and
+saved target pools. Supporting pages: `/organizations` (directory, coverage, data quality),
+`/industries`, `/capabilities`, `/qualifications`; private workspace pages:
+`/search-bank/assignments`, `/target-pools`, `/intelligence/import`.
+
+- Public company intelligence (non-confidential, evidence-backed): `markets/intelligence/`
+  (taxonomy, curated research batches, generated organization registry and reconciliation report).
+- Confidential work (assignments, client names, overrides, candidate assessments, private imports)
+  stays in the recruiter's browser only. It is not shared or backed up; use the backup export.
+- `npm run intel:query` is the machine-readable query interface; `npm run intel:import` reviews
+  research files; `npm run intel:reconcile` regenerates the registry; `npm run validate:intel` runs
+  in the build and also fails if `markets/search-bank/bank.json` contains email addresses or phone
+  numbers, because that file is bundled into the public site.
+
+Docs: [`docs/company-association-explorer.md`](docs/company-association-explorer.md),
+[`docs/intelligence-api.md`](docs/intelligence-api.md). Target database schema:
+[`db/migrations/0001_canonical_intelligence.sql`](db/migrations/0001_canonical_intelligence.sql).
+
 ## Private Contact Directory
 
 The `/contacts` route loads the generated `src/data/contact-parts/` dataset, a source-retained private directory generated from the supplied lead-generation workbooks and contact export. Blank company cells inherit only the nearest preceding company value in the same sheet; person fields are never forward-filled. Every retained row keeps its source file, sheet and row number in `sourceRecords`.

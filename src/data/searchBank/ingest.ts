@@ -158,7 +158,7 @@ const CSV_COLUMNS: (keyof BankCandidate)[] = [
   'tags', 'notes', 'source', 'addedOn', 'updatedOn',
 ]
 
-function csvCell(value: unknown): string {
+export function csvCell(value: unknown): string {
   const text = value === null || value === undefined ? '' : String(value)
   return /[",\n\r]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text
 }

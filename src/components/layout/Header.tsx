@@ -21,6 +21,8 @@ const creditRiskNavLinks = [
   { to: '/markets/salesforce', label: 'Salesforce' },
 ]
 
+const intelligencePaths = ['/company-associations', '/organizations', '/industries', '/capabilities', '/qualifications', '/target-pools', '/intelligence']
+
 const isPath = (pathname: string, path: string) =>
   pathname === path || pathname.startsWith(`${path}/`)
 
@@ -39,6 +41,7 @@ export function Header() {
   const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/shortlist']
     .some((path) => isPath(location.pathname, path))
   const candidatesActive = candidatePaths.some((path) => isPath(location.pathname, path))
+  const intelligenceActive = intelligencePaths.some((path) => isPath(location.pathname, path))
 
   // Close transient layers whenever the route changes.
   useEffect(() => {
@@ -130,6 +133,13 @@ export function Header() {
             </div>
 
             <Link
+              to="/company-associations"
+              className={`nav-heading ${intelligenceActive ? 'active' : ''}`}
+              onClick={closeAll}
+            >
+              Company associations
+            </Link>
+            <Link
               to="/search-bank"
               className={`nav-heading ${isPath(location.pathname, '/search-bank') ? 'active' : ''}`}
               onClick={closeAll}
@@ -199,6 +209,9 @@ export function Header() {
             </Link>
           ))}
           <div className="mobile-nav-heading">Recruiter workspace</div>
+          <Link to="/company-associations" className={intelligenceActive ? 'active' : ''} onClick={closeAll}>
+            Company associations
+          </Link>
           <Link to="/search-bank" className={isPath(location.pathname, '/search-bank') ? 'active' : ''} onClick={closeAll}>
             Search bank
           </Link>

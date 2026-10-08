@@ -86,6 +86,36 @@ Every content route composes the same blocks:
 - Loading uses `SkeletonPage` shaped like the layout being loaded; never a bare spinner for a
   full page.
 
+### Company intelligence surfaces
+
+The Company Association Explorer and its supporting pages (`/company-associations`,
+`/organizations`, `/industries`, `/capabilities`, `/qualifications`, `/target-pools`,
+`/search-bank/assignments`, `/intelligence/import`) use two class families, all defined in the
+"Company intelligence" block at the end of `globals.css`:
+
+- `ca-*` (explorer): `.container-wide` (uses `--max-width-wide`), `.ca-controls` with `.ca-field` /
+  `.ca-label` / `.ca-input` / `.ca-select` (`.ca-select-sm`, `.ca-input-sm`) / `.ca-textarea`
+  (`.ca-textarea-tall` for pasted data), the combobox `.ca-selector*`, `.ca-examples`,
+  `.ca-requirement-box` with `.ca-requirement-row` and `.ca-chip-list` / `.ca-chip-remove`, the view
+  tabs `.ca-view-switch` / `.ca-tab`, `.ca-bulk` (multi-select actions), `.ca-status` (live result
+  line), `.ca-layout` (filters | main | `.has-inspector`), `.ca-filters` / `.ca-filter-*`, the graph
+  `.ca-graph` / `.ca-node-*` / `.ca-fit-*` / `.ca-edge-*`, pockets `.ca-pockets` / `.ca-pocket*`
+  (`.ca-pocket-title`), the table helpers `.ca-sort` / `.ca-num` / `.ca-check-*`, `.ca-inspector*`,
+  forms `.ca-form` / `.ca-form-grid` / `.ca-form-wide`, `.ca-compare*` / `.ca-cell-*`, and the
+  inline action `.ca-link-button`.
+- `intel-*` (shared facts): `.intel-tier` / `.intel-tier-<tier>` (TierBadge), `.intel-conf-<confidence>`,
+  `.intel-origin`, `.intel-evidence`, `.intel-stale`, `.intel-private-note` (PrivateNotice: says
+  where private data is stored), `.intel-stats` / `.intel-stat`, `.intel-issues`, `.intel-columns`,
+  `.intel-tree*`, `.intel-org-list`, `.intel-people`, `.intel-target*` (assignment targets) and
+  `.intel-import-<status>` (new, duplicate, conflict, rejected) for import previews.
+- Destructive actions use the existing `.btn-danger`.
+
+Tiers and confidence are never colour-only: every badge carries its text label, and hypotheses
+and unknowns use dashed borders so they read differently from sourced facts in greyscale.
+Below 1180px the inspector drops under the results, below 1024px the filter panel stacks above
+them, below 768px form grids collapse to one column and the graph legend hides, and below 480px
+pockets are single-column.
+
 ## Interaction rules
 
 - Keyboard first: every control is a real `button`/`a`/`input`, focus is visible through the
@@ -95,7 +125,8 @@ Every content route composes the same blocks:
   within the panel, body scroll is locked for the duration, and focus returns to whatever opened it.
 - The mobile nav and the talent-pool dropdown are disclosures (`aria-expanded` + `aria-controls`),
   not ARIA menus, so they carry no arrow-key contract they do not implement.
-- `/contacts` and `/search-bank` are private workspaces: both set a `noindex, nofollow` meta while
+- `/contacts`, `/search-bank` (including `/search-bank/assignments`), `/target-pools` and
+  `/intelligence/import` are private workspaces: both set a `noindex, nofollow` meta while
   mounted, `robots.txt` disallows them, and neither appears in `sitemap.xml`. The UI audit fails the
   build if that contract breaks.
 - ⌘K / Ctrl K and `/` open the command palette (pages, tracks, candidates, companies, segments);
@@ -111,7 +142,8 @@ Every content route composes the same blocks:
 ```bash
 npx tsc -b              # strict types
 npm run build           # data validation + tsc + production build
-npm test                # 82 data/behaviour tests
+npm test                # data/behaviour tests (incl. intelligence acceptance tests)
+npm run validate:intel  # taxonomy, research evidence, generated registry, public-bundle guard
 npm run smoke:routes    # every route renders in jsdom
 npm run audit:ui        # structural audit: one h1, heading order, control names,
                         # duplicate ids, image alt, stray inline styles, the per-route

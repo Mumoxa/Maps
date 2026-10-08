@@ -1,0 +1,5695 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/reconcile-organizations.ts",
+  "organizations": [
+    {
+      "id": "org-36one-asset-management",
+      "name": "36ONE Asset Management",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://36one.co.za",
+      "domain": "36one.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-74",
+          "dataset": "credit-risk",
+          "recordId": "COM-74",
+          "sourceName": "36ONE Asset Management"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-absa-consultants-and-actuaries",
+      "name": "Absa Consultants & Actuaries",
+      "aliases": [
+        "Absa C&A"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0039",
+          "dataset": "accountants",
+          "recordId": "cmp-0039",
+          "sourceName": "Absa Consultants & Actuaries"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-absa-group",
+      "name": "Absa Group",
+      "aliases": [
+        "Absa"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.absa.africa/",
+      "domain": "absa.africa",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0018",
+          "dataset": "accountants",
+          "recordId": "cmp-0018",
+          "sourceName": "Absa Group"
+        },
+        {
+          "ref": "credit-risk:COM-3",
+          "dataset": "credit-risk",
+          "recordId": "COM-3",
+          "sourceName": "Absa Group"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-acca-south-africa",
+      "name": "ACCA (South Africa)",
+      "aliases": [
+        "ACCA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.accaglobal.com/africa/",
+      "domain": "accaglobal.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0036",
+          "dataset": "accountants",
+          "recordId": "cmp-0036",
+          "sourceName": "ACCA (South Africa)"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-accenture-south-africa",
+      "name": "Accenture South Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://accenture.com",
+      "domain": "accenture.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-60",
+          "dataset": "credit-risk",
+          "recordId": "COM-60",
+          "sourceName": "Accenture South Africa"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-accountability-credit-fix-ai",
+      "name": "Accountability / Credit Fix AI",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://accountability.co.za",
+      "domain": "accountability.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-77",
+          "dataset": "credit-risk",
+          "recordId": "COM-77",
+          "sourceName": "Accountability / Credit Fix AI"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-acies-acies-consulting",
+      "name": "Acies / Acies Consulting",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://acies.co.za",
+      "domain": "acies.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-73",
+          "dataset": "credit-risk",
+          "recordId": "COM-73",
+          "sourceName": "Acies / Acies Consulting"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-adriaan-de-lange-advisory",
+      "name": "Adriaan de Lange Advisory",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0057",
+          "dataset": "accountants",
+          "recordId": "cmp-0057",
+          "sourceName": "Adriaan de Lange Advisory"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-adt-south-africa-adt-security-services-pty-ltd",
+      "name": "ADT South Africa (ADT Security Services (Pty) Ltd)",
+      "aliases": [
+        "Subsidiary of Tyco International as described in source"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0090",
+          "dataset": "accountants",
+          "recordId": "cmp-0090",
+          "sourceName": "ADT South Africa (ADT Security Services (Pty) Ltd)"
+        }
+      ],
+      "lastVerified": "Undated (legacy Lorge press-office content)"
+    },
+    {
+      "id": "org-afgri",
+      "name": "AFGRI",
+      "aliases": [
+        "Afgri",
+        "AFGRI Grain Management Service (Pty) Ltd"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-african-bank",
+      "name": "African Bank",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://africanbank.co.za",
+      "domain": "africanbank.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-6",
+          "dataset": "credit-risk",
+          "recordId": "COM-6",
+          "sourceName": "African Bank"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-afrimat",
+      "name": "Afrimat",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.afrimat.co.za",
+      "domain": "afrimat.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0114",
+          "dataset": "accountants",
+          "recordId": "cmp-0114",
+          "sourceName": "Afrimat"
+        }
+      ],
+      "lastVerified": "2026-09-19"
+    },
+    {
+      "id": "org-afrisam",
+      "name": "AfriSam",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.afrisam.co.za",
+      "domain": "afrisam.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0115",
+          "dataset": "accountants",
+          "recordId": "cmp-0115",
+          "sourceName": "AfriSam"
+        }
+      ],
+      "lastVerified": "2026-09-19"
+    },
+    {
+      "id": "org-anchor-industries-pty-ltd",
+      "name": "Anchor Industries (Pty) Ltd",
+      "aliases": [
+        "Anchor Industries (Pty) Ltd; related Anchor Chandling"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0080",
+          "dataset": "accountants",
+          "recordId": "cmp-0080",
+          "sourceName": "Anchor Industries (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2020-04"
+    },
+    {
+      "id": "org-ardagh-glass-packaging-sa",
+      "name": "Ardagh Glass Packaging SA",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0149",
+          "dataset": "accountants",
+          "recordId": "cmp-0149",
+          "sourceName": "Ardagh Glass Packaging SA"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-asl",
+      "name": "ASL",
+      "aliases": [
+        "ASL Advisory"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0059",
+          "dataset": "accountants",
+          "recordId": "cmp-0059",
+          "sourceName": "ASL"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-asla",
+      "name": "ASLA",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0134",
+          "dataset": "accountants",
+          "recordId": "cmp-0134",
+          "sourceName": "ASLA"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-astral-foods",
+      "name": "Astral Foods",
+      "aliases": [
+        "Astral"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.astralfoods.com",
+      "domain": "astralfoods.com",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-astron-energy",
+      "name": "Astron Energy",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0126",
+          "dataset": "accountants",
+          "recordId": "cmp-0126",
+          "sourceName": "Astron Energy"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-atlantis-special-economic-zone-pty-ltd-asez-asezco",
+      "name": "Atlantis Special Economic Zone (Pty) Ltd (ASEZ / ASEZCo)",
+      "aliases": [
+        "State public entity under the SEZ programme (dtic)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0084",
+          "dataset": "accountants",
+          "recordId": "cmp-0084",
+          "sourceName": "Atlantis Special Economic Zone (Pty) Ltd (ASEZ / ASEZCo)"
+        }
+      ],
+      "lastVerified": "2026-05"
+    },
+    {
+      "id": "org-atterbury",
+      "name": "Atterbury",
+      "aliases": [
+        "Atterbury Property",
+        "Atterbury Property Group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.atterbury.co.za",
+      "domain": "atterbury.co.za",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-auditor-general-of-south-africa",
+      "name": "Auditor-General of South Africa",
+      "aliases": [
+        "AGSA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.agsa.co.za/",
+      "domain": "agsa.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0007",
+          "dataset": "accountants",
+          "recordId": "cmp-0007",
+          "sourceName": "Auditor-General of South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-avi",
+      "name": "AVI",
+      "aliases": [
+        "AVI Limited"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-ayo-technology-solutions-limited",
+      "name": "AYO Technology Solutions Limited",
+      "aliases": [
+        "AYO"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.ayotechgroup.com/",
+      "domain": "ayotechgroup.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0073",
+          "dataset": "accountants",
+          "recordId": "cmp-0073",
+          "sourceName": "AYO Technology Solutions Limited"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-baic-south-africa",
+      "name": "BAIC South Africa",
+      "aliases": [
+        "BAIC"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0010",
+          "dataset": "accountants",
+          "recordId": "cmp-0010",
+          "sourceName": "BAIC South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-bayer-south-africa",
+      "name": "Bayer (South Africa)",
+      "aliases": [
+        "Bayer"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.bayer.com/en/za/za-home",
+      "domain": "bayer.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0021",
+          "dataset": "accountants",
+          "recordId": "cmp-0021",
+          "sourceName": "Bayer (South Africa)"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-bayport-financial-services",
+      "name": "Bayport Financial Services",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://bayport.co.za",
+      "domain": "bayport.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-14",
+          "dataset": "credit-risk",
+          "recordId": "COM-14",
+          "sourceName": "Bayport Financial Services"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-bdo-south-africa",
+      "name": "BDO South Africa",
+      "aliases": [
+        "BDO",
+        "BDO SA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.bdo.co.za/",
+      "domain": "bdo.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0069",
+          "dataset": "accountants",
+          "recordId": "cmp-0069",
+          "sourceName": "BDO South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-bester-feed-grain",
+      "name": "Bester Feed & Grain",
+      "aliases": [
+        "Bester Feed & Grain (Pty) Ltd",
+        "Bester Feed and Grain"
+      ],
+      "formerNames": [],
+      "legalName": "Bester Feed & Grain (Pty) Ltd",
+      "website": "https://www.bester.co.za",
+      "domain": "bester.co.za",
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-betko-fresh-produce",
+      "name": "Betko Fresh Produce",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0178",
+          "dataset": "accountants",
+          "recordId": "cmp-0178",
+          "sourceName": "Betko Fresh Produce"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-bonakude-consulting-pty-ltd",
+      "name": "Bonakude Consulting (Pty) Ltd",
+      "aliases": [
+        "Bonakude Consulting"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0017",
+          "dataset": "accountants",
+          "recordId": "cmp-0017",
+          "sourceName": "Bonakude Consulting (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-boshoff-knoetze-chartered-accountants",
+      "name": "Boshoff Knoetze Chartered Accountants",
+      "aliases": [
+        "Boshoff Knoetze"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://boshoffknoetze.co.za/",
+      "domain": "boshoffknoetze.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0064",
+          "dataset": "accountants",
+          "recordId": "cmp-0064",
+          "sourceName": "Boshoff Knoetze Chartered Accountants"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-bounty-apparel",
+      "name": "Bounty Apparel",
+      "aliases": [
+        "Bounty Brands"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0054",
+          "dataset": "accountants",
+          "recordId": "cmp-0054",
+          "sourceName": "Bounty Apparel"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-bowler-metcalf-bowler-plastics",
+      "name": "Bowler Metcalf / Bowler Plastics",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0146",
+          "dataset": "accountants",
+          "recordId": "cmp-0146",
+          "sourceName": "Bowler Metcalf / Bowler Plastics"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-bredell-ferreira",
+      "name": "Bredell Ferreira",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://bredellferreira.co.za",
+      "domain": "bredellferreira.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-51",
+          "dataset": "credit-risk",
+          "recordId": "COM-51",
+          "sourceName": "Bredell Ferreira"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-brenn-o-kem",
+      "name": "Brenn-O-Kem",
+      "aliases": [
+        "Brenn-O-Kem (Pty) Ltd"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://brennokem.com/",
+      "domain": "brennokem.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0043",
+          "dataset": "accountants",
+          "recordId": "cmp-0043",
+          "sourceName": "Brenn-O-Kem"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-brimstone",
+      "name": "Brimstone Investment Corporation",
+      "aliases": [
+        "Brimstone",
+        "Brimstone Investment Corporation Limited"
+      ],
+      "formerNames": [],
+      "legalName": "Brimstone Investment Corporation Limited",
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-buffalo-city-metropolitan-development-agency-bcmda",
+      "name": "Buffalo City Metropolitan Development Agency (BCMDA)",
+      "aliases": [
+        "Reports to Buffalo City Metropolitan Municipality"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0108",
+          "dataset": "accountants",
+          "recordId": "cmp-0108",
+          "sourceName": "Buffalo City Metropolitan Development Agency (BCMDA)"
+        }
+      ],
+      "lastVerified": "2022"
+    },
+    {
+      "id": "org-building-credit-management-bcm",
+      "name": "Building Credit Management (BCM)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://bcmza.co.za",
+      "domain": "bcmza.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-52",
+          "dataset": "credit-risk",
+          "recordId": "COM-52",
+          "sourceName": "Building Credit Management (BCM)"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-burstone",
+      "name": "Burstone",
+      "aliases": [
+        "Burstone Group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.burstone.com/",
+      "domain": "burstone.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0006",
+          "dataset": "accountants",
+          "recordId": "cmp-0006",
+          "sourceName": "Burstone"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-callidus-accountants",
+      "name": "Callidus Accountants",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0066",
+          "dataset": "accountants",
+          "recordId": "cmp-0066",
+          "sourceName": "Callidus Accountants"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-cape-chamber-of-commerce-and-industry",
+      "name": "Cape Chamber of Commerce & Industry",
+      "aliases": [
+        "Cape Chamber"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.capechamber.co.za/",
+      "domain": "capechamber.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0044",
+          "dataset": "accountants",
+          "recordId": "cmp-0044",
+          "sourceName": "Cape Chamber of Commerce & Industry"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-cape-fruit-coolers",
+      "name": "Cape Fruit Coolers",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0183",
+          "dataset": "accountants",
+          "recordId": "cmp-0183",
+          "sourceName": "Cape Fruit Coolers"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-cape-town-international-convention-centre-cticc-cape-town-town-conventions",
+      "name": "Cape Town International Convention Centre (CTICC) / Cape Town Town Conventions",
+      "aliases": [
+        "City of Cape Town entity"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0106",
+          "dataset": "accountants",
+          "recordId": "cmp-0106",
+          "sourceName": "Cape Town International Convention Centre (CTICC) / Cape Town Town Conventions"
+        }
+      ],
+      "lastVerified": "2022-08"
+    },
+    {
+      "id": "org-capespan",
+      "name": "Capespan South Africa",
+      "aliases": [
+        "Capespan",
+        "Capespan South Africa (Pty) Ltd"
+      ],
+      "formerNames": [],
+      "legalName": "Capespan South Africa (Pty) Ltd",
+      "website": "https://www.capespan.com",
+      "domain": "capespan.com",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0175",
+          "dataset": "accountants",
+          "recordId": "cmp-0175",
+          "sourceName": "Capespan South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-capfin",
+      "name": "Capfin",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://capfin.co.za",
+      "domain": "capfin.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-16",
+          "dataset": "credit-risk",
+          "recordId": "COM-16",
+          "sourceName": "Capfin"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-capitec",
+      "name": "Capitec",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://capitecbank.co.za",
+      "domain": "capitecbank.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-5",
+          "dataset": "credit-risk",
+          "recordId": "COM-5",
+          "sourceName": "Capitec"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-ceres-fruit-growers",
+      "name": "Ceres Fruit Growers",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0172",
+          "dataset": "accountants",
+          "recordId": "cmp-0172",
+          "sourceName": "Ceres Fruit Growers"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-chryso-southern-africa",
+      "name": "Chryso Southern Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0120",
+          "dataset": "accountants",
+          "recordId": "cmp-0120",
+          "sourceName": "Chryso Southern Africa"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-cima-africa",
+      "name": "CIMA Africa",
+      "aliases": [
+        "AICPA & CIMA (Africa)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.cimaglobal.com/",
+      "domain": "cimaglobal.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0037",
+          "dataset": "accountants",
+          "recordId": "cmp-0037",
+          "sourceName": "CIMA Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-ciolli-bros",
+      "name": "Ciolli Bros",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.ciollibros.co.za",
+      "domain": "ciollibros.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0118",
+          "dataset": "accountants",
+          "recordId": "cmp-0118",
+          "sourceName": "Ciolli Bros"
+        }
+      ],
+      "lastVerified": "2026-09-19"
+    },
+    {
+      "id": "org-civils-2000",
+      "name": "Civils 2000",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0130",
+          "dataset": "accountants",
+          "recordId": "cmp-0130",
+          "sourceName": "Civils 2000"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-commercial-cold-holdings",
+      "name": "Commercial Cold Holdings",
+      "aliases": [
+        "CCH",
+        "CCH Commercial Cold Holdings"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.cchcold.com",
+      "domain": "cchcold.com",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0181",
+          "dataset": "accountants",
+          "recordId": "cmp-0181",
+          "sourceName": "Commercial Cold Holdings"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-compuscan",
+      "name": "Compuscan",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://compuscan.co.za",
+      "domain": "compuscan.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-41",
+          "dataset": "credit-risk",
+          "recordId": "COM-41",
+          "sourceName": "Compuscan"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-concor",
+      "name": "Concor",
+      "aliases": [
+        "Concor Construction",
+        "Murray & Roberts Construction"
+      ],
+      "formerNames": [
+        "Murray & Roberts Construction"
+      ],
+      "legalName": null,
+      "website": "https://concor.tech",
+      "domain": "concor.tech",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0135",
+          "dataset": "accountants",
+          "recordId": "cmp-0135",
+          "sourceName": "Concor"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-consumer-profile-bureau-cpb",
+      "name": "Consumer Profile Bureau (CPB)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://cpbonline.co.za",
+      "domain": "cpbonline.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-40",
+          "dataset": "credit-risk",
+          "recordId": "COM-40",
+          "sourceName": "Consumer Profile Bureau (CPB)"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-copenhagen-infrastructure-partners",
+      "name": "Copenhagen Infrastructure Partners",
+      "aliases": [
+        "CIP"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": false,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-core-fruit",
+      "name": "Core Fruit",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0179",
+          "dataset": "accountants",
+          "recordId": "cmp-0179",
+          "sourceName": "Core Fruit"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-cred-it-data",
+      "name": "Cred-it-data",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://cred-it-data.co.za",
+      "domain": "cred-it-data.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-45",
+          "dataset": "credit-risk",
+          "recordId": "COM-45",
+          "sourceName": "Cred-it-data"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-curated-beverages-ltd",
+      "name": "Curated Beverages Ltd",
+      "aliases": [
+        "Curated Beverages"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0053",
+          "dataset": "accountants",
+          "recordId": "cmp-0053",
+          "sourceName": "Curated Beverages Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-curro-holdings-ltd",
+      "name": "Curro Holdings Ltd",
+      "aliases": [
+        "Curro"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.curro.co.za/",
+      "domain": "curro.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0051",
+          "dataset": "accountants",
+          "recordId": "cmp-0051",
+          "sourceName": "Curro Holdings Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-debt-rescue-sa",
+      "name": "Debt Rescue SA",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://debtrescue.co.za",
+      "domain": "debtrescue.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-47",
+          "dataset": "credit-risk",
+          "recordId": "COM-47",
+          "sourceName": "Debt Rescue SA"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-debtbusters-idm",
+      "name": "DebtBusters / IDM",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://debtbusters.co.za",
+      "domain": "debtbusters.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-48",
+          "dataset": "credit-risk",
+          "recordId": "COM-48",
+          "sourceName": "DebtBusters / IDM"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-deloitte-south-africa",
+      "name": "Deloitte (South Africa)",
+      "aliases": [
+        "Deloitte",
+        "Deloitte South Africa"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.deloitte.com/za/",
+      "domain": "deloitte.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0023",
+          "dataset": "accountants",
+          "recordId": "cmp-0023",
+          "sourceName": "Deloitte (South Africa)"
+        },
+        {
+          "ref": "credit-risk:COM-56",
+          "dataset": "credit-risk",
+          "recordId": "COM-56",
+          "sourceName": "Deloitte South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-dgb",
+      "name": "DGB",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0164",
+          "dataset": "accountants",
+          "recordId": "cmp-0164",
+          "sourceName": "DGB"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-directaxis",
+      "name": "DirectAxis",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://directaxis.co.za",
+      "domain": "directaxis.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-13",
+          "dataset": "credit-risk",
+          "recordId": "COM-13",
+          "sourceName": "DirectAxis"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-discovery-bank",
+      "name": "Discovery Bank",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://discovery.co.za",
+      "domain": "discovery.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-8",
+          "dataset": "credit-risk",
+          "recordId": "COM-8",
+          "sourceName": "Discovery Bank"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-discovery-limited",
+      "name": "Discovery Limited",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://discovery.co.za",
+      "domain": "discovery.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-69",
+          "dataset": "credit-risk",
+          "recordId": "COM-69",
+          "sourceName": "Discovery Limited"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-drone-ops-group",
+      "name": "Drone Ops Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0014",
+          "dataset": "accountants",
+          "recordId": "cmp-0014",
+          "sourceName": "Drone Ops Group"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-dsv-as",
+      "name": "DSV A/S",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": "DSV A/S",
+      "website": "https://www.dsv.com",
+      "domain": "dsv.com",
+      "identityStatus": "verified",
+      "southAfrican": false,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-dsv-south-africa",
+      "name": "DSV South Africa",
+      "aliases": [
+        "DSV"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.dsv.com/en-za",
+      "domain": "dsv.com",
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0184",
+          "dataset": "accountants",
+          "recordId": "cmp-0184",
+          "sourceName": "DSV"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-dutoit-agri",
+      "name": "Dutoit Agri",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0174",
+          "dataset": "accountants",
+          "recordId": "cmp-0174",
+          "sourceName": "Dutoit Agri"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-ecowize-southern-africa-ecowize-group",
+      "name": "Ecowize (Southern Africa) / Ecowize Group",
+      "aliases": [
+        "Ecowize Group incl. EHPS (Ecowize High Performance Systems)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0079",
+          "dataset": "accountants",
+          "recordId": "cmp-0079",
+          "sourceName": "Ecowize (Southern Africa) / Ecowize Group"
+        }
+      ],
+      "lastVerified": "2026 (current vacancies); 2015-12 (original migration)"
+    },
+    {
+      "id": "org-educor-pty-ltd-educor-group",
+      "name": "Educor (Pty) Ltd - Educor Group",
+      "aliases": [
+        "Educor Group (Adler REIT structure at time of source)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0095",
+          "dataset": "accountants",
+          "recordId": "cmp-0095",
+          "sourceName": "Educor (Pty) Ltd - Educor Group"
+        }
+      ],
+      "lastVerified": "2016-10"
+    },
+    {
+      "id": "org-electron-technologies-electron-engineering-supply",
+      "name": "Electron Technologies (Electron Engineering Supply)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0093",
+          "dataset": "accountants",
+          "recordId": "cmp-0093",
+          "sourceName": "Electron Technologies (Electron Engineering Supply)"
+        }
+      ],
+      "lastVerified": "Undated (legacy Lorge press-office content)"
+    },
+    {
+      "id": "org-emma-pardoe-chartered-accountants-sa",
+      "name": "Emma Pardoe Chartered Accountants (SA)",
+      "aliases": [
+        "Emma Pardoe"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://emmapardoe.co.za/",
+      "domain": "emmapardoe.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0065",
+          "dataset": "accountants",
+          "recordId": "cmp-0065",
+          "sourceName": "Emma Pardoe Chartered Accountants (SA)"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-energy-and-water-sector-education-and-training-authority",
+      "name": "Energy and Water Sector Education and Training Authority",
+      "aliases": [
+        "Energy and Water SETA",
+        "EWSETA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.ewseta.org.za/",
+      "domain": "ewseta.org.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0033",
+          "dataset": "accountants",
+          "recordId": "cmp-0033",
+          "sourceName": "Energy and Water Sector Education and Training Authority"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-enrc-africa-african-operations-of-enrc-plc",
+      "name": "ENRC Africa (African operations of ENRC plc)",
+      "aliases": [
+        "ENRC plc (FTSE 100; later privatised)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0096",
+          "dataset": "accountants",
+          "recordId": "cmp-0096",
+          "sourceName": "ENRC Africa (African operations of ENRC plc)"
+        }
+      ],
+      "lastVerified": "2018 (page date)"
+    },
+    {
+      "id": "org-experian-south-africa",
+      "name": "Experian South Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://experian.co.za",
+      "domain": "experian.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-37",
+          "dataset": "credit-risk",
+          "recordId": "COM-37",
+          "sourceName": "Experian South Africa"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-ey-south-africa",
+      "name": "EY South Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://ey.com",
+      "domain": "ey.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-57",
+          "dataset": "credit-risk",
+          "recordId": "COM-57",
+          "sourceName": "EY South Africa"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-fabrinox",
+      "name": "Fabrinox",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0144",
+          "dataset": "accountants",
+          "recordId": "cmp-0144",
+          "sourceName": "Fabrinox"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-fair-cape-dairies",
+      "name": "Fair Cape Dairies",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0154",
+          "dataset": "accountants",
+          "recordId": "cmp-0154",
+          "sourceName": "Fair Cape Dairies"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-fasta",
+      "name": "FASTA",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://fasta.co.za",
+      "domain": "fasta.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-32",
+          "dataset": "credit-risk",
+          "recordId": "COM-32",
+          "sourceName": "FASTA"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-fico-partners",
+      "name": "FICO Partners",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://fico.com",
+      "domain": "fico.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-63",
+          "dataset": "credit-risk",
+          "recordId": "COM-63",
+          "sourceName": "FICO Partners"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-financial-sector-conduct-authority",
+      "name": "Financial Sector Conduct Authority",
+      "aliases": [
+        "FSCA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.fsca.co.za/",
+      "domain": "fsca.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0034",
+          "dataset": "accountants",
+          "recordId": "cmp-0034",
+          "sourceName": "Financial Sector Conduct Authority"
+        },
+        {
+          "ref": "credit-risk:COM-71",
+          "dataset": "credit-risk",
+          "recordId": "COM-71",
+          "sourceName": "FSCA"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-finchoice",
+      "name": "FinChoice",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://finchoice.co.za",
+      "domain": "finchoice.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-15",
+          "dataset": "credit-risk",
+          "recordId": "COM-15",
+          "sourceName": "FinChoice"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-firstrand-fnb-wesbank-rmb",
+      "name": "FirstRand / FNB / WesBank / RMB",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://firstrand.co.za",
+      "domain": "firstrand.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-2",
+          "dataset": "credit-risk",
+          "recordId": "COM-2",
+          "sourceName": "FirstRand / FNB / WesBank / RMB"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-foct-engineering",
+      "name": "Foct Engineering",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0145",
+          "dataset": "accountants",
+          "recordId": "cmp-0145",
+          "sourceName": "Foct Engineering"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-foneyam-pepkor",
+      "name": "FoneYam (Pepkor)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://pepkor.com",
+      "domain": "pepkor.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-35",
+          "dataset": "credit-risk",
+          "recordId": "COM-35",
+          "sourceName": "FoneYam (Pepkor)"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-food-lover-s-market",
+      "name": "Food Lover's Market",
+      "aliases": [
+        "The Food Lover's Market (Pty) Ltd"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0078",
+          "dataset": "accountants",
+          "recordId": "cmp-0078",
+          "sourceName": "Food Lover's Market"
+        }
+      ],
+      "lastVerified": "2018-10"
+    },
+    {
+      "id": "org-forvis-mazars-in-south-africa",
+      "name": "Forvis Mazars in South Africa",
+      "aliases": [
+        "Forvis Mazars",
+        "Forvis Mazars Group",
+        "Mazars"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.forvismazars.com/za/",
+      "domain": "forvismazars.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0047",
+          "dataset": "accountants",
+          "recordId": "cmp-0047",
+          "sourceName": "Forvis Mazars in South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-fourways-airconditioning",
+      "name": "Fourways Airconditioning",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0011",
+          "dataset": "accountants",
+          "recordId": "cmp-0011",
+          "sourceName": "Fourways Airconditioning"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-fpg-property-fund",
+      "name": "FPG Property Fund",
+      "aliases": [
+        "FPG",
+        "FPG Property Fund (Pty) Ltd",
+        "FPG Property Group"
+      ],
+      "formerNames": [],
+      "legalName": "FPG Property Fund (Pty) Ltd",
+      "website": "https://www.fpggroup.co.za",
+      "domain": "fpggroup.co.za",
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-free-state-provincial-treasury",
+      "name": "Free State Provincial Treasury",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0028",
+          "dataset": "accountants",
+          "recordId": "cmp-0028",
+          "sourceName": "Free State Provincial Treasury"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-fruit-and-veg-city-freshstop",
+      "name": "Fruit & Veg City / Freshstop",
+      "aliases": [
+        "Fruit and Veg City Freshstop (Pty) Ltd"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0081",
+          "dataset": "accountants",
+          "recordId": "cmp-0081",
+          "sourceName": "Fruit & Veg City / Freshstop"
+        }
+      ],
+      "lastVerified": "2015-04"
+    },
+    {
+      "id": "org-fruitways",
+      "name": "Fruitways",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0177",
+          "dataset": "accountants",
+          "recordId": "cmp-0177",
+          "sourceName": "Fruitways"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-futuregrowth-asset-management",
+      "name": "Futuregrowth Asset Management",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://futuregrowth.co.za",
+      "domain": "futuregrowth.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-75",
+          "dataset": "credit-risk",
+          "recordId": "COM-75",
+          "sourceName": "Futuregrowth Asset Management"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-geiger-and-klotzbucher-pty-ltd",
+      "name": "Geiger & Klotzbucher (Pty) Ltd",
+      "aliases": [
+        "Geiger and Klotzbucher (CIPC M1967005614, incorporated 26 May 1967)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0083",
+          "dataset": "accountants",
+          "recordId": "cmp-0083",
+          "sourceName": "Geiger & Klotzbucher (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2019-03"
+    },
+    {
+      "id": "org-grant-thornton-south-africa",
+      "name": "Grant Thornton (South Africa)",
+      "aliases": [
+        "Grant Thornton"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.grantthornton.co.za/",
+      "domain": "grantthornton.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0020",
+          "dataset": "accountants",
+          "recordId": "cmp-0020",
+          "sourceName": "Grant Thornton (South Africa)"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-guardrisk",
+      "name": "Guardrisk",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://guardrisk.co.za",
+      "domain": "guardrisk.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-67",
+          "dataset": "credit-risk",
+          "recordId": "COM-67",
+          "sourceName": "Guardrisk"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-guud-global",
+      "name": "GUUD GLOBAL",
+      "aliases": [
+        "GUUD"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://guud.com/",
+      "domain": "guud.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0058",
+          "dataset": "accountants",
+          "recordId": "cmp-0058",
+          "sourceName": "GUUD GLOBAL"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-gvk-siya-zama",
+      "name": "GVK-Siya Zama",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0137",
+          "dataset": "accountants",
+          "recordId": "cmp-0137",
+          "sourceName": "GVK-Siya Zama"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-harmony-gold-mining",
+      "name": "Harmony Gold Mining",
+      "aliases": [
+        "Harmony Gold"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.harmony.co.za/",
+      "domain": "harmony.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0002",
+          "dataset": "accountants",
+          "recordId": "cmp-0002",
+          "sourceName": "Harmony Gold Mining"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-haw-and-inglis",
+      "name": "Haw & Inglis",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0132",
+          "dataset": "accountants",
+          "recordId": "cmp-0132",
+          "sourceName": "Haw & Inglis"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-heineken-beverages",
+      "name": "HEINEKEN Beverages",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0163",
+          "dataset": "accountants",
+          "recordId": "cmp-0163",
+          "sourceName": "HEINEKEN Beverages"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-helderberg-village",
+      "name": "Helderberg Village",
+      "aliases": [
+        "Helderberg Village retirement lifestyle estate"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0086",
+          "dataset": "accountants",
+          "recordId": "cmp-0086",
+          "sourceName": "Helderberg Village"
+        }
+      ],
+      "lastVerified": "2026 (undated testimonial on partner site)"
+    },
+    {
+      "id": "org-hilton-baird-collection-services",
+      "name": "Hilton-Baird Collection Services",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://hilton-baird.co.za",
+      "domain": "hilton-baird.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-50",
+          "dataset": "credit-risk",
+          "recordId": "COM-50",
+          "sourceName": "Hilton-Baird Collection Services"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-hisense-operations-africa-hisense-sa",
+      "name": "Hisense Operations Africa (Hisense SA)",
+      "aliases": [
+        "Hisense"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0104",
+          "dataset": "accountants",
+          "recordId": "cmp-0104",
+          "sourceName": "Hisense Operations Africa (Hisense SA)"
+        }
+      ],
+      "lastVerified": "2026"
+    },
+    {
+      "id": "org-hollard-insurance",
+      "name": "Hollard Insurance",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://hollard.co.za",
+      "domain": "hollard.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-65",
+          "dataset": "credit-risk",
+          "recordId": "COM-65",
+          "sourceName": "Hollard Insurance"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-homechoice",
+      "name": "HomeChoice",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://homechoice.co.za",
+      "domain": "homechoice.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-22",
+          "dataset": "credit-risk",
+          "recordId": "COM-22",
+          "sourceName": "HomeChoice"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-inala-broadcast-pty-ltd",
+      "name": "Inala Broadcast (Pty) Ltd",
+      "aliases": [
+        "Inala Broadcast"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0098",
+          "dataset": "accountants",
+          "recordId": "cmp-0098",
+          "sourceName": "Inala Broadcast (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2020 (selection) / 2021 (go-live)"
+    },
+    {
+      "id": "org-intelligent-debt-management",
+      "name": "Intelligent Debt Management",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://idm.co.za",
+      "domain": "idm.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-49",
+          "dataset": "credit-risk",
+          "recordId": "COM-49",
+          "sourceName": "Intelligent Debt Management"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-investec",
+      "name": "Investec",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://investec.com",
+      "domain": "investec.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-7",
+          "dataset": "credit-risk",
+          "recordId": "COM-7",
+          "sourceName": "Investec"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-irvin-johnson",
+      "name": "I&J (Irvin & Johnson)",
+      "aliases": [
+        "I&J",
+        "Irvin & Johnson",
+        "Irvin & Johnson Limited"
+      ],
+      "formerNames": [],
+      "legalName": "Irvin & Johnson Limited",
+      "website": null,
+      "domain": null,
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0158",
+          "dataset": "accountants",
+          "recordId": "cmp-0158",
+          "sourceName": "I&J"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-isilumko-att-pty-ltd",
+      "name": "Isilumko ATT (Pty) Ltd",
+      "aliases": [
+        "Isilumko (Pty) Ltd / Isilumko ATT"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0087",
+          "dataset": "accountants",
+          "recordId": "cmp-0087",
+          "sourceName": "Isilumko ATT (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2026 (undated testimonial)"
+    },
+    {
+      "id": "org-isipani-construction",
+      "name": "Isipani Construction",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0138",
+          "dataset": "accountants",
+          "recordId": "cmp-0138",
+          "sourceName": "Isipani Construction"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-johan-le-roux-casa",
+      "name": "Johan le Roux CA(SA)",
+      "aliases": [
+        "Johan le Roux"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0070",
+          "dataset": "accountants",
+          "recordId": "cmp-0070",
+          "sourceName": "Johan le Roux CA(SA)"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-kaap-agri",
+      "name": "Kaap Agri",
+      "aliases": [
+        "Agrimark",
+        "Agrimark Operations",
+        "Kaap Agri / Agrimark"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0168",
+          "dataset": "accountants",
+          "recordId": "cmp-0168",
+          "sourceName": "Kaap Agri / Agrimark"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-kentz-group-south-african-headquarters",
+      "name": "Kentz Group (South African headquarters)",
+      "aliases": [
+        "Kentz Cundill Engineering / Kentz International (later Ascent)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0091",
+          "dataset": "accountants",
+          "recordId": "cmp-0091",
+          "sourceName": "Kentz Group (South African headquarters)"
+        }
+      ],
+      "lastVerified": "Undated (legacy Lorge press-office content)"
+    },
+    {
+      "id": "org-kpmg-south-africa",
+      "name": "KPMG (South Africa)",
+      "aliases": [
+        "KPMG",
+        "KPMG South Africa"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://kpmg.com/za/",
+      "domain": "kpmg.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0004",
+          "dataset": "accountants",
+          "recordId": "cmp-0004",
+          "sourceName": "KPMG (South Africa)"
+        },
+        {
+          "ref": "credit-risk:COM-59",
+          "dataset": "credit-risk",
+          "recordId": "COM-59",
+          "sourceName": "KPMG South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-kromco",
+      "name": "Kromco",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0173",
+          "dataset": "accountants",
+          "recordId": "cmp-0173",
+          "sourceName": "Kromco"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-kropz-elandsfontein",
+      "name": "Kropz Elandsfontein",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0124",
+          "dataset": "accountants",
+          "recordId": "cmp-0124",
+          "sourceName": "Kropz Elandsfontein"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-kula",
+      "name": "Kula",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0072",
+          "dataset": "accountants",
+          "recordId": "cmp-0072",
+          "sourceName": "Kula"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-kwv",
+      "name": "KWV",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0165",
+          "dataset": "accountants",
+          "recordId": "cmp-0165",
+          "sourceName": "KWV"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-la-financial-services-pty-ltd",
+      "name": "LA Financial Services (Pty) Ltd",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0038",
+          "dataset": "accountants",
+          "recordId": "cmp-0038",
+          "sourceName": "LA Financial Services (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-lactalis-south-africa",
+      "name": "Lactalis South Africa",
+      "aliases": [
+        "Lactalis SA",
+        "Lactalis SA (Pty) Ltd",
+        "Parmalat South Africa"
+      ],
+      "formerNames": [],
+      "legalName": "Lactalis SA (Pty) Ltd",
+      "website": "https://parmalat.co.za",
+      "domain": "parmalat.co.za",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0153",
+          "dataset": "accountants",
+          "recordId": "cmp-0153",
+          "sourceName": "Lactalis South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-ladismith-cheese-woodlands-dairy-group",
+      "name": "Ladismith Cheese / Woodlands Dairy Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0161",
+          "dataset": "accountants",
+          "recordId": "cmp-0161",
+          "sourceName": "Ladismith Cheese / Woodlands Dairy Group"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-lancewood",
+      "name": "LANCEWOOD",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0160",
+          "dataset": "accountants",
+          "recordId": "cmp-0160",
+          "sourceName": "LANCEWOOD"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-lanseria-international-airport",
+      "name": "Lanseria International Airport",
+      "aliases": [
+        "Lanseria Airport"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://lanseria.co.za/",
+      "domain": "lanseria.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0008",
+          "dataset": "accountants",
+          "recordId": "cmp-0008",
+          "sourceName": "Lanseria International Airport"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-ldp-chartered-accountants-and-auditors-inc",
+      "name": "LDP Chartered Accountants and Auditors Inc.",
+      "aliases": [
+        "LDP",
+        "LDP Inc.",
+        "Loubser du Plessis"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://ldp.co.za/",
+      "domain": "ldp.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0068",
+          "dataset": "accountants",
+          "recordId": "cmp-0068",
+          "sourceName": "LDP Chartered Accountants and Auditors Inc."
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-lexisnexis-risk-solutions",
+      "name": "LexisNexis Risk Solutions",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://lexisnexisrisk.com",
+      "domain": "lexisnexisrisk.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-43",
+          "dataset": "credit-risk",
+          "recordId": "COM-43",
+          "sourceName": "LexisNexis Risk Solutions"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-lightstone",
+      "name": "Lightstone",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://lightstone.co.za",
+      "domain": "lightstone.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-42",
+          "dataset": "credit-risk",
+          "recordId": "COM-42",
+          "sourceName": "Lightstone"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-lona-group",
+      "name": "Lona Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0176",
+          "dataset": "accountants",
+          "recordId": "cmp-0176",
+          "sourceName": "Lona Group"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-lula-lulalend",
+      "name": "Lula / Lulalend",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://lula.co.za",
+      "domain": "lula.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-28",
+          "dataset": "credit-risk",
+          "recordId": "COM-28",
+          "sourceName": "Lula / Lulalend"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-m-c-saatchi-group",
+      "name": "M+C Saatchi Group",
+      "aliases": [
+        "M&C Saatchi"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0075",
+          "dataset": "accountants",
+          "recordId": "cmp-0075",
+          "sourceName": "M+C Saatchi Group"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-m-kopa-solar",
+      "name": "M-KOPA Solar",
+      "aliases": [
+        "M-KOPA Solar Ltd"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0113",
+          "dataset": "accountants",
+          "recordId": "cmp-0113",
+          "sourceName": "M-KOPA Solar"
+        }
+      ],
+      "lastVerified": "2013 (referenced article)"
+    },
+    {
+      "id": "org-macsteel",
+      "name": "Macsteel",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0140",
+          "dataset": "accountants",
+          "recordId": "cmp-0140",
+          "sourceName": "Macsteel"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-makosi",
+      "name": "Makosi",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.makosi.com/",
+      "domain": "makosi.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0031",
+          "dataset": "accountants",
+          "recordId": "cmp-0031",
+          "sourceName": "Makosi"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-martin-and-east",
+      "name": "Martin & East",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0133",
+          "dataset": "accountants",
+          "recordId": "cmp-0133",
+          "sourceName": "Martin & East"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-masisizane-fund",
+      "name": "Masisizane Fund",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0035",
+          "dataset": "accountants",
+          "recordId": "cmp-0035",
+          "sourceName": "Masisizane Fund"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-mason-s-clothing-mason-mass-clothing",
+      "name": "Mason's Clothing (Mason / Mass Clothing)",
+      "aliases": [
+        "Mason (Clothing)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0085",
+          "dataset": "accountants",
+          "recordId": "cmp-0085",
+          "sourceName": "Mason's Clothing (Mason / Mass Clothing)"
+        }
+      ],
+      "lastVerified": "2017-02"
+    },
+    {
+      "id": "org-massmart",
+      "name": "Massmart",
+      "aliases": [
+        "Massmart Holdings"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.massmart.co.za/",
+      "domain": "massmart.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0024",
+          "dataset": "accountants",
+          "recordId": "cmp-0024",
+          "sourceName": "Massmart"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-mca-inc",
+      "name": "McA Inc.",
+      "aliases": [
+        "McA Accounting & Tax Services Inc.",
+        "McA Durbanville Inc."
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://mca-acc.co.za/",
+      "domain": "mca-acc.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0041",
+          "dataset": "accountants",
+          "recordId": "cmp-0041",
+          "sourceName": "McA Inc."
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-mckenzie-and-associates",
+      "name": "Mckenzie & Associates",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0012",
+          "dataset": "accountants",
+          "recordId": "cmp-0012",
+          "sourceName": "Mckenzie & Associates"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-mckinsey-and-company",
+      "name": "McKinsey & Company",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://mckinsey.com",
+      "domain": "mckinsey.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-61",
+          "dataset": "credit-risk",
+          "recordId": "COM-61",
+          "sourceName": "McKinsey & Company"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-meadow-feeds",
+      "name": "Meadow Feeds",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.astralfoods.com/our-brands/meadow-feeds/",
+      "domain": "astralfoods.com",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-mercedes-benz-south-africa-ltd",
+      "name": "Mercedes-Benz South Africa Ltd",
+      "aliases": [
+        "MBSA",
+        "Mercedes-Benz SA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.mercedes-benz.co.za/",
+      "domain": "mercedes-benz.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0001",
+          "dataset": "accountants",
+          "recordId": "cmp-0001",
+          "sourceName": "Mercedes-Benz South Africa Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-merchant-capital",
+      "name": "Merchant Capital",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://merchantcapital.co.za",
+      "domain": "merchantcapital.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-27",
+          "dataset": "credit-risk",
+          "recordId": "COM-27",
+          "sourceName": "Merchant Capital"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-meshco",
+      "name": "Meshco",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0142",
+          "dataset": "accountants",
+          "recordId": "cmp-0142",
+          "sourceName": "Meshco"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-mineral-sands-resources-tormin",
+      "name": "Mineral Sands Resources / Tormin",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0125",
+          "dataset": "accountants",
+          "recordId": "cmp-0125",
+          "sourceName": "Mineral Sands Resources / Tormin"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-mk-aerospace-sa",
+      "name": "MK Aerospace SA",
+      "aliases": [
+        "MK Aerospace"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0056",
+          "dataset": "accountants",
+          "recordId": "cmp-0056",
+          "sourceName": "MK Aerospace SA"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-monocle-solutions",
+      "name": "Monocle Solutions",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://monocle.solutions",
+      "domain": "monocle.solutions",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-55",
+          "dataset": "credit-risk",
+          "recordId": "COM-55",
+          "sourceName": "Monocle Solutions"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-motlanalo-chartered-accountants-and-auditors-inc",
+      "name": "Motlanalo Chartered Accountants and Auditors Inc",
+      "aliases": [
+        "Motlanalo Inc"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0032",
+          "dataset": "accountants",
+          "recordId": "cmp-0032",
+          "sourceName": "Motlanalo Chartered Accountants and Auditors Inc"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-motus-mobility-solutions",
+      "name": "Motus Mobility Solutions",
+      "aliases": [
+        "Motus"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.motus.co.za/",
+      "domain": "motus.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0025",
+          "dataset": "accountants",
+          "recordId": "cmp-0025",
+          "sourceName": "Motus Mobility Solutions"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-mpact",
+      "name": "Mpact",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0147",
+          "dataset": "accountants",
+          "recordId": "cmp-0147",
+          "sourceName": "Mpact"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-mr-price-money",
+      "name": "Mr Price Money",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://mrpricegroup.com",
+      "domain": "mrpricegroup.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-20",
+          "dataset": "credit-risk",
+          "recordId": "COM-20",
+          "sourceName": "Mr Price Money"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-mulilo",
+      "name": "Mulilo",
+      "aliases": [
+        "Mulilo Energy Holdings"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.mulilo.com",
+      "domain": "mulilo.com",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-nampak",
+      "name": "Nampak",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0150",
+          "dataset": "accountants",
+          "recordId": "cmp-0150",
+          "sourceName": "Nampak"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-national-agricultural-marketing-council-namc",
+      "name": "National Agricultural Marketing Council (NAMC)",
+      "aliases": [
+        "Public entity (DALRRD)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0103",
+          "dataset": "accountants",
+          "recordId": "cmp-0103",
+          "sourceName": "National Agricultural Marketing Council (NAMC)"
+        }
+      ],
+      "lastVerified": "2024"
+    },
+    {
+      "id": "org-national-credit-regulator-ncr",
+      "name": "National Credit Regulator (NCR)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://ncr.org.za",
+      "domain": "ncr.org.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-72",
+          "dataset": "credit-risk",
+          "recordId": "COM-72",
+          "sourceName": "National Credit Regulator (NCR)"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-national-department-of-agriculture-land-reform-and-rural-development-nda",
+      "name": "National Department of Agriculture, Land Reform and Rural Development (NDA)",
+      "aliases": [
+        "National government department"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0109",
+          "dataset": "accountants",
+          "recordId": "cmp-0109",
+          "sourceName": "National Department of Agriculture, Land Reform and Rural Development (NDA)"
+        }
+      ],
+      "lastVerified": "2025"
+    },
+    {
+      "id": "org-nedbank-group-limited",
+      "name": "Nedbank Group Limited",
+      "aliases": [
+        "Nedbank"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.nedbank.co.za/",
+      "domain": "nedbank.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0003",
+          "dataset": "accountants",
+          "recordId": "cmp-0003",
+          "sourceName": "Nedbank Group Limited"
+        },
+        {
+          "ref": "credit-risk:COM-4",
+          "dataset": "credit-risk",
+          "recordId": "COM-4",
+          "sourceName": "Nedbank"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-netcfo",
+      "name": "netCFO",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0063",
+          "dataset": "accountants",
+          "recordId": "cmp-0063",
+          "sourceName": "netCFO"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-ninety-one",
+      "name": "Ninety One",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://ninetyone.com",
+      "domain": "ninetyone.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-76",
+          "dataset": "credit-risk",
+          "recordId": "COM-76",
+          "sourceName": "Ninety One"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-njr-steel",
+      "name": "NJR Steel",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0141",
+          "dataset": "accountants",
+          "recordId": "cmp-0141",
+          "sourceName": "NJR Steel"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-novus-holdings-ltd-formerly-paarl-media-group",
+      "name": "Novus Holdings Ltd (formerly Paarl Media Group)",
+      "aliases": [
+        "Novus Holdings Ltd (JSE: NVS)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0077",
+          "dataset": "accountants",
+          "recordId": "cmp-0077",
+          "sourceName": "Novus Holdings Ltd (formerly Paarl Media Group)"
+        }
+      ],
+      "lastVerified": "2026-02"
+    },
+    {
+      "id": "org-nwk",
+      "name": "NWK",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-oceana-group",
+      "name": "Oceana Group",
+      "aliases": [
+        "Oceana",
+        "Oceana Group Limited"
+      ],
+      "formerNames": [],
+      "legalName": "Oceana Group Limited",
+      "website": null,
+      "domain": null,
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0157",
+          "dataset": "accountants",
+          "recordId": "cmp-0157",
+          "sourceName": "Oceana Group"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-old-mutual-finance-om-bank",
+      "name": "Old Mutual Finance / OM Bank",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://oldmutual.co.za",
+      "domain": "oldmutual.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-10",
+          "dataset": "credit-risk",
+          "recordId": "COM-10",
+          "sourceName": "Old Mutual Finance / OM Bank"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-old-mutual-insure",
+      "name": "Old Mutual Insure",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://oldmutual.co.za",
+      "domain": "oldmutual.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-64",
+          "dataset": "credit-risk",
+          "recordId": "COM-64",
+          "sourceName": "Old Mutual Insure"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-outsurance",
+      "name": "OUTsurance",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://outsurance.co.za",
+      "domain": "outsurance.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-66",
+          "dataset": "credit-risk",
+          "recordId": "COM-66",
+          "sourceName": "OUTsurance"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-overberg-agri",
+      "name": "Overberg Agri",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://overbergagri.co.za",
+      "domain": "overbergagri.co.za",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0167",
+          "dataset": "accountants",
+          "recordId": "cmp-0167",
+          "sourceName": "Overberg Agri"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-pay",
+      "name": "Pay@",
+      "aliases": [
+        "Pay",
+        "Pay at"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://payat.co.za/",
+      "domain": "payat.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0071",
+          "dataset": "accountants",
+          "recordId": "cmp-0071",
+          "sourceName": "Pay@"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-payfast-payshap",
+      "name": "PayFast / PayShap",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://payfast.io",
+      "domain": "payfast.io",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-78",
+          "dataset": "credit-risk",
+          "recordId": "COM-78",
+          "sourceName": "PayFast / PayShap"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-payflex",
+      "name": "Payflex",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://payflex.co.za",
+      "domain": "payflex.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-33",
+          "dataset": "credit-risk",
+          "recordId": "COM-33",
+          "sourceName": "Payflex"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-payjustnow",
+      "name": "PayJustNow",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://payjustnow.com",
+      "domain": "payjustnow.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-34",
+          "dataset": "credit-risk",
+          "recordId": "COM-34",
+          "sourceName": "PayJustNow"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-peninsula-beverages",
+      "name": "Peninsula Beverages",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0155",
+          "dataset": "accountants",
+          "recordId": "cmp-0155",
+          "sourceName": "Peninsula Beverages"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-pepkor",
+      "name": "Pepkor",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://pepkor.com",
+      "domain": "pepkor.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-24",
+          "dataset": "credit-risk",
+          "recordId": "COM-24",
+          "sourceName": "Pepkor"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-pepsico-south-africa-pioneer-foods",
+      "name": "PepsiCo South Africa / Pioneer Foods",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0152",
+          "dataset": "accountants",
+          "recordId": "cmp-0152",
+          "sourceName": "PepsiCo South Africa / Pioneer Foods"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-petrosa",
+      "name": "PetroSA",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0127",
+          "dataset": "accountants",
+          "recordId": "cmp-0127",
+          "sourceName": "PetroSA"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-pinnacle-accounting",
+      "name": "Pinnacle Accounting",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0048",
+          "dataset": "accountants",
+          "recordId": "cmp-0048",
+          "sourceName": "Pinnacle Accounting"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-pkf-octagon",
+      "name": "PKF Octagon",
+      "aliases": [
+        "PKF"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0030",
+          "dataset": "accountants",
+          "recordId": "cmp-0030",
+          "sourceName": "PKF Octagon"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-polyoak-packaging",
+      "name": "Polyoak Packaging",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0148",
+          "dataset": "accountants",
+          "recordId": "cmp-0148",
+          "sourceName": "Polyoak Packaging"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-portland-group",
+      "name": "Portland Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.portland.co.za",
+      "domain": "portland.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0117",
+          "dataset": "accountants",
+          "recordId": "cmp-0117",
+          "sourceName": "Portland Group"
+        }
+      ],
+      "lastVerified": "2026-09-19"
+    },
+    {
+      "id": "org-power-group",
+      "name": "Power Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0129",
+          "dataset": "accountants",
+          "recordId": "cmp-0129",
+          "sourceName": "Power Group"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-ppc",
+      "name": "PPC",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.ppc.africa",
+      "domain": "ppc.africa",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0116",
+          "dataset": "accountants",
+          "recordId": "cmp-0116",
+          "sourceName": "PPC"
+        }
+      ],
+      "lastVerified": "2026-09-19"
+    },
+    {
+      "id": "org-premier-fishing-and-brands",
+      "name": "Premier Fishing & Brands",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0159",
+          "dataset": "accountants",
+          "recordId": "cmp-0159",
+          "sourceName": "Premier Fishing & Brands"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-premier-foods-premier-fmcg-kerry-group-africa",
+      "name": "Premier Foods / Premier FMCG (Kerry Group Africa)",
+      "aliases": [
+        "Kerry Group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0105",
+          "dataset": "accountants",
+          "recordId": "cmp-0105",
+          "sourceName": "Premier Foods / Premier FMCG (Kerry Group Africa)"
+        }
+      ],
+      "lastVerified": "Undated"
+    },
+    {
+      "id": "org-probeta-training-pty-ltd",
+      "name": "Probeta Training (Pty) Ltd",
+      "aliases": [
+        "Probeta Training"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0013",
+          "dataset": "accountants",
+          "recordId": "cmp-0013",
+          "sourceName": "Probeta Training (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-psg-konsult-ltd",
+      "name": "PSG Konsult Ltd",
+      "aliases": [
+        "PSG",
+        "PSG Financial Services",
+        "PSG Konsult"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.psg.co.za/",
+      "domain": "psg.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0067",
+          "dataset": "accountants",
+          "recordId": "cmp-0067",
+          "sourceName": "PSG Konsult Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-pwc-south-africa",
+      "name": "PwC (South Africa)",
+      "aliases": [
+        "PricewaterhouseCoopers",
+        "PwC",
+        "PwC South Africa"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.pwc.co.za/",
+      "domain": "pwc.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0027",
+          "dataset": "accountants",
+          "recordId": "cmp-0027",
+          "sourceName": "PwC (South Africa)"
+        },
+        {
+          "ref": "credit-risk:COM-58",
+          "dataset": "credit-risk",
+          "recordId": "COM-58",
+          "sourceName": "PwC South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-quantum-foods-ltd",
+      "name": "Quantum Foods Ltd",
+      "aliases": [
+        "Quantum Foods (Pty) Ltd (JSE: QRF)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0076",
+          "dataset": "accountants",
+          "recordId": "cmp-0076",
+          "sourceName": "Quantum Foods Ltd"
+        }
+      ],
+      "lastVerified": "2017-10 (live); case study republished 2025"
+    },
+    {
+      "id": "org-r-n-master-builders",
+      "name": "R+N Master Builders",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0139",
+          "dataset": "accountants",
+          "recordId": "cmp-0139",
+          "sourceName": "R+N Master Builders"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-rabie-property-group",
+      "name": "Rabie Property Group",
+      "aliases": [
+        "Rabie",
+        "Rabie Property Developers",
+        "Rabie Property Group (Pty) Ltd"
+      ],
+      "formerNames": [],
+      "legalName": "Rabie Property Group (Pty) Ltd",
+      "website": "https://www.rabie.co.za",
+      "domain": "rabie.co.za",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-radisson-hotel-group-africa-managed-portfolio",
+      "name": "Radisson Hotel Group - Africa managed portfolio",
+      "aliases": [
+        "Radisson Hotel Group / Carlson Rezidor"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0089",
+          "dataset": "accountants",
+          "recordId": "cmp-0089",
+          "sourceName": "Radisson Hotel Group - Africa managed portfolio"
+        }
+      ],
+      "lastVerified": "2025-10 (vendor release) + 2026 (partner site)"
+    },
+    {
+      "id": "org-rainfin",
+      "name": "RainFin",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://rainfin.com",
+      "domain": "rainfin.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-31",
+          "dataset": "credit-risk",
+          "recordId": "COM-31",
+          "sourceName": "RainFin"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-raubex-group",
+      "name": "Raubex Group",
+      "aliases": [
+        "Raubex",
+        "Raubex Group Limited"
+      ],
+      "formerNames": [],
+      "legalName": "Raubex Group Limited",
+      "website": null,
+      "domain": null,
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-raubex-roadmac-surfacing-cape",
+      "name": "Raubex / Roadmac Surfacing Cape",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0136",
+          "dataset": "accountants",
+          "recordId": "cmp-0136",
+          "sourceName": "Raubex / Roadmac Surfacing Cape"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-rcs",
+      "name": "RCS",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://rcs.co.za",
+      "domain": "rcs.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-17",
+          "dataset": "credit-risk",
+          "recordId": "COM-17",
+          "sourceName": "RCS"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-redtree-capital",
+      "name": "Redtree Capital",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://redtreecapital.co.za",
+      "domain": "redtreecapital.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-53",
+          "dataset": "credit-risk",
+          "recordId": "COM-53",
+          "sourceName": "Redtree Capital"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-refsols-refrigeration-solutions-and-fridgetec-services",
+      "name": "REFSOLS - Refrigeration Solutions & Fridgetec Services",
+      "aliases": [
+        "REFSOLS group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0088",
+          "dataset": "accountants",
+          "recordId": "cmp-0088",
+          "sourceName": "REFSOLS - Refrigeration Solutions & Fridgetec Services"
+        }
+      ],
+      "lastVerified": "2013-07"
+    },
+    {
+      "id": "org-retail-capital",
+      "name": "Retail Capital",
+      "aliases": [
+        "Retail Capital Ltd"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://retailcapital.co.za",
+      "domain": "retailcapital.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0112",
+          "dataset": "accountants",
+          "recordId": "cmp-0112",
+          "sourceName": "Retail Capital"
+        },
+        {
+          "ref": "credit-risk:COM-29",
+          "dataset": "credit-risk",
+          "recordId": "COM-29",
+          "sourceName": "Retail Capital"
+        }
+      ],
+      "lastVerified": "2022-10"
+    },
+    {
+      "id": "org-revfin",
+      "name": "Revfin",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://revfin.co.za",
+      "domain": "revfin.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-54",
+          "dataset": "credit-risk",
+          "recordId": "COM-54",
+          "sourceName": "Revfin"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-rfg-foods",
+      "name": "RFG Foods",
+      "aliases": [
+        "RFG",
+        "RFG Holdings",
+        "Rhodes Food Group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://rfg.com",
+      "domain": "rfg.com",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0151",
+          "dataset": "accountants",
+          "recordId": "cmp-0151",
+          "sourceName": "RFG Foods"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-rms-shopfitting-pty-ltd",
+      "name": "RMS Shopfitting (Pty) Ltd",
+      "aliases": [
+        "RMS Shopfitting"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0082",
+          "dataset": "accountants",
+          "recordId": "cmp-0082",
+          "sourceName": "RMS Shopfitting (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2014-03"
+    },
+    {
+      "id": "org-roymec-technologies-pty-ltd",
+      "name": "Roymec Technologies (Pty) Ltd",
+      "aliases": [
+        "Roymec Technologies (Logic Group implementation)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0092",
+          "dataset": "accountants",
+          "recordId": "cmp-0092",
+          "sourceName": "Roymec Technologies (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "Undated (legacy Lorge press-office content)"
+    },
+    {
+      "id": "org-sa-metal-group",
+      "name": "SA Metal Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0143",
+          "dataset": "accountants",
+          "recordId": "cmp-0143",
+          "sourceName": "SA Metal Group"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-sa-taxi",
+      "name": "SA Taxi",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://sataxi.co.za",
+      "domain": "sataxi.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-25",
+          "dataset": "credit-risk",
+          "recordId": "COM-25",
+          "sourceName": "SA Taxi"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-sab-ab-inbev-newlands-brewery",
+      "name": "SAB / AB InBev - Newlands Brewery",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0166",
+          "dataset": "accountants",
+          "recordId": "cmp-0166",
+          "sourceName": "SAB / AB InBev - Newlands Brewery"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-sable-international",
+      "name": "Sable International",
+      "aliases": [
+        "Sable FX",
+        "Sable International Group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.sableinternational.com/",
+      "domain": "sableinternational.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0046",
+          "dataset": "accountants",
+          "recordId": "cmp-0046",
+          "sourceName": "Sable International"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-safintra-south-africa",
+      "name": "Safintra South Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0122",
+          "dataset": "accountants",
+          "recordId": "cmp-0122",
+          "sourceName": "Safintra South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-saica",
+      "name": "SAICA",
+      "aliases": [
+        "South African Institute of Chartered Accountants"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.saica.org.za/",
+      "domain": "saica.org.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0009",
+          "dataset": "accountants",
+          "recordId": "cmp-0009",
+          "sourceName": "SAICA"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-saint-gobain-gyproc",
+      "name": "Saint-Gobain Gyproc",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0121",
+          "dataset": "accountants",
+          "recordId": "cmp-0121",
+          "sourceName": "Saint-Gobain Gyproc"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-samsonite-south-africa",
+      "name": "Samsonite South Africa",
+      "aliases": [
+        "Samsonite International SA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0094",
+          "dataset": "accountants",
+          "recordId": "cmp-0094",
+          "sourceName": "Samsonite South Africa"
+        }
+      ],
+      "lastVerified": "Undated (legacy Lorge press-office content)"
+    },
+    {
+      "id": "org-sanlam",
+      "name": "Sanlam",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://sanlam.co.za",
+      "domain": "sanlam.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-11",
+          "dataset": "credit-risk",
+          "recordId": "COM-11",
+          "sourceName": "Sanlam"
+        },
+        {
+          "ref": "credit-risk:COM-68",
+          "dataset": "credit-risk",
+          "recordId": "COM-68",
+          "sourceName": "Sanlam"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-sap-africa",
+      "name": "SAP Africa",
+      "aliases": [
+        "SAP South Africa"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.sap.com/africa/",
+      "domain": "sap.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0022",
+          "dataset": "accountants",
+          "recordId": "cmp-0022",
+          "sourceName": "SAP Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-sas-south-africa",
+      "name": "SAS South Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://sas.com",
+      "domain": "sas.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-62",
+          "dataset": "credit-risk",
+          "recordId": "COM-62",
+          "sourceName": "SAS South Africa"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-schoemans-registered-auditors-and-chartered-accountants",
+      "name": "Schoemans Registered Auditors and Chartered Accountants",
+      "aliases": [
+        "Schoemans"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0045",
+          "dataset": "accountants",
+          "recordId": "cmp-0045",
+          "sourceName": "Schoemans Registered Auditors and Chartered Accountants"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-sea-harvest-group",
+      "name": "Sea Harvest Group",
+      "aliases": [
+        "Sea Harvest"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://seaharvestgroup.co.za",
+      "domain": "seaharvestgroup.co.za",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0156",
+          "dataset": "accountants",
+          "recordId": "cmp-0156",
+          "sourceName": "Sea Harvest Group"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-searchworks",
+      "name": "SearchWorks",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://searchworks.co.za",
+      "domain": "searchworks.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-79",
+          "dataset": "credit-risk",
+          "recordId": "COM-79",
+          "sourceName": "SearchWorks"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-senwes",
+      "name": "Senwes",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-shoprite-money-market",
+      "name": "Shoprite / Money Market",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://shoprite.co.za",
+      "domain": "shoprite.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-23",
+          "dataset": "credit-risk",
+          "recordId": "COM-23",
+          "sourceName": "Shoprite / Money Market"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-sika-south-africa",
+      "name": "Sika South Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0119",
+          "dataset": "accountants",
+          "recordId": "cmp-0119",
+          "sourceName": "Sika South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-slm-developments",
+      "name": "SLM Developments",
+      "aliases": [
+        "SLM",
+        "SLM Property Development"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://slmdev.co.za",
+      "domain": "slmdev.co.za",
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-snapplify",
+      "name": "Snapplify",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.snapplify.com/",
+      "domain": "snapplify.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0052",
+          "dataset": "accountants",
+          "recordId": "cmp-0052",
+          "sourceName": "Snapplify"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-snolink",
+      "name": "Snolink",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.snolink.co.za",
+      "domain": "snolink.co.za",
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0182",
+          "dataset": "accountants",
+          "recordId": "cmp-0182",
+          "sourceName": "Snolink"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-south-african-human-rights-commission-sahrc",
+      "name": "South African Human Rights Commission (SAHRC)",
+      "aliases": [
+        "Chapter 9 public institution"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0110",
+          "dataset": "accountants",
+          "recordId": "cmp-0110",
+          "sourceName": "South African Human Rights Commission (SAHRC)"
+        }
+      ],
+      "lastVerified": "2025"
+    },
+    {
+      "id": "org-south-african-qualifications-authority-saqa",
+      "name": "South African Qualifications Authority (SAQA)",
+      "aliases": [
+        "Public entity, Department of Higher Education and Training"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0099",
+          "dataset": "accountants",
+          "recordId": "cmp-0099",
+          "sourceName": "South African Qualifications Authority (SAQA)"
+        }
+      ],
+      "lastVerified": "2019 award; re-advertised 2023-03"
+    },
+    {
+      "id": "org-south-african-reserve-bank-pa",
+      "name": "South African Reserve Bank (PA)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://resbank.co.za",
+      "domain": "resbank.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-70",
+          "dataset": "credit-risk",
+          "recordId": "COM-70",
+          "sourceName": "South African Reserve Bank (PA)"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-south-african-state-theatre",
+      "name": "South African State Theatre",
+      "aliases": [
+        "SA State Theatre"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.statetheatre.co.za/",
+      "domain": "statetheatre.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0015",
+          "dataset": "accountants",
+          "recordId": "cmp-0015",
+          "sourceName": "South African State Theatre"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-southern-african-fruit-terminals-saft",
+      "name": "Southern African Fruit Terminals (SAFT)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0180",
+          "dataset": "accountants",
+          "recordId": "cmp-0180",
+          "sourceName": "Southern African Fruit Terminals (SAFT)"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-southern-oil-soill",
+      "name": "Southern Oil (SOILL)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0162",
+          "dataset": "accountants",
+          "recordId": "cmp-0162",
+          "sourceName": "Southern Oil (SOILL)"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-ssk",
+      "name": "Sentraal-Suid Koöperasie (SSK)",
+      "aliases": [
+        "Sentraal-Suid Co-operative",
+        "Sentraal-Suid Co-operative (SSK)",
+        "Sentraal-Suid Co-operative Ltd",
+        "Sentraal-Suid Koöperasie Bpk",
+        "SSK"
+      ],
+      "formerNames": [],
+      "legalName": "Sentraal-Suid Koöperasie Bpk",
+      "website": null,
+      "domain": null,
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0169",
+          "dataset": "accountants",
+          "recordId": "cmp-0169",
+          "sourceName": "Sentraal-Suid Co-operative (SSK)"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-standard-bank-group",
+      "name": "Standard Bank Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://standardbank.com",
+      "domain": "standardbank.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-1",
+          "dataset": "credit-risk",
+          "recordId": "COM-1",
+          "sourceName": "Standard Bank Group"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-stellenbosch-university",
+      "name": "Stellenbosch University",
+      "aliases": [
+        "Universiteit Stellenbosch"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.sun.ac.za/",
+      "domain": "sun.ac.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0060",
+          "dataset": "accountants",
+          "recordId": "cmp-0060",
+          "sourceName": "Stellenbosch University"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-stockhouse-capital",
+      "name": "Stockhouse Capital",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-streets-chartered-accountants",
+      "name": "Streets Chartered Accountants",
+      "aliases": [
+        "MD Accountants & Auditors",
+        "MD Streets",
+        "Streets"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.streets.uk/",
+      "domain": "streets.uk",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0040",
+          "dataset": "accountants",
+          "recordId": "cmp-0040",
+          "sourceName": "Streets Chartered Accountants"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-sunrise-energy",
+      "name": "Sunrise Energy",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0128",
+          "dataset": "accountants",
+          "recordId": "cmp-0128",
+          "sourceName": "Sunrise Energy"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-superside",
+      "name": "Superside",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.superside.com/",
+      "domain": "superside.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0042",
+          "dataset": "accountants",
+          "recordId": "cmp-0042",
+          "sourceName": "Superside"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-swift-holdings-group-swift-staffing-services",
+      "name": "Swift Holdings Group (Swift Staffing Services)",
+      "aliases": [
+        "Swift Holdings"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0107",
+          "dataset": "accountants",
+          "recordId": "cmp-0107",
+          "sourceName": "Swift Holdings Group (Swift Staffing Services)"
+        }
+      ],
+      "lastVerified": "2019-09"
+    },
+    {
+      "id": "org-tcta-trans-caledon-tunnel-authority",
+      "name": "TCTA (Trans-Caledon Tunnel Authority)",
+      "aliases": [
+        "TCTA"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.tcta.co.za/",
+      "domain": "tcta.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0016",
+          "dataset": "accountants",
+          "recordId": "cmp-0016",
+          "sourceName": "TCTA (Trans-Caledon Tunnel Authority)"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-tfg-limited",
+      "name": "TFG Limited",
+      "aliases": [
+        "TFG",
+        "The Foschini Group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://tfglimited.co.za/",
+      "domain": "tfglimited.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0061",
+          "dataset": "accountants",
+          "recordId": "cmp-0061",
+          "sourceName": "TFG Limited"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-tfg-the-foschini-group",
+      "name": "TFG (The Foschini Group)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://tfg.co.za",
+      "domain": "tfg.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-18",
+          "dataset": "credit-risk",
+          "recordId": "COM-18",
+          "sourceName": "TFG (The Foschini Group)"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-the-competition-tribunal",
+      "name": "The Competition Tribunal",
+      "aliases": [
+        "Public entity (Department of Justice and Constitutional Development)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0102",
+          "dataset": "accountants",
+          "recordId": "cmp-0102",
+          "sourceName": "The Competition Tribunal"
+        }
+      ],
+      "lastVerified": "2022"
+    },
+    {
+      "id": "org-the-fieldbar-co",
+      "name": "The Fieldbar Co.",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.fieldbar.co.za/",
+      "domain": "fieldbar.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0074",
+          "dataset": "accountants",
+          "recordId": "cmp-0074",
+          "sourceName": "The Fieldbar Co."
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-the-modern-cfo",
+      "name": "The Modern CFO",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0055",
+          "dataset": "accountants",
+          "recordId": "cmp-0055",
+          "sourceName": "The Modern CFO"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-tpn-credit-bureau",
+      "name": "TPN Credit Bureau",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://tpncreditbureau.co.za",
+      "domain": "tpncreditbureau.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-44",
+          "dataset": "credit-risk",
+          "recordId": "COM-44",
+          "sourceName": "TPN Credit Bureau"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-tradeon-sa",
+      "name": "TradeOn SA",
+      "aliases": [
+        "TradeOn"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0050",
+          "dataset": "accountants",
+          "recordId": "cmp-0050",
+          "sourceName": "TradeOn SA"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-trans-caledon-tunnel-authority-tcta",
+      "name": "Trans-Caledon Tunnel Authority (TCTA)",
+      "aliases": [
+        "National Department of Water and Sanitation (public entity)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0100",
+          "dataset": "accountants",
+          "recordId": "cmp-0100",
+          "sourceName": "Trans-Caledon Tunnel Authority (TCTA)"
+        }
+      ],
+      "lastVerified": "2026-05"
+    },
+    {
+      "id": "org-transaction-capital",
+      "name": "Transaction Capital",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://transactioncapital.co.za",
+      "domain": "transactioncapital.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-26",
+          "dataset": "credit-risk",
+          "recordId": "COM-26",
+          "sourceName": "Transaction Capital"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-transunion-africa",
+      "name": "TransUnion Africa",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://transunion.co.za",
+      "domain": "transunion.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-36",
+          "dataset": "credit-risk",
+          "recordId": "COM-36",
+          "sourceName": "TransUnion Africa"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-traxtion",
+      "name": "Traxtion",
+      "aliases": [
+        "Traxtion Group"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.traxtion.com/",
+      "domain": "traxtion.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0029",
+          "dataset": "accountants",
+          "recordId": "cmp-0029",
+          "sourceName": "Traxtion"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-tronox-namakwa-sands",
+      "name": "Tronox Namakwa Sands",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0123",
+          "dataset": "accountants",
+          "recordId": "cmp-0123",
+          "sourceName": "Tronox Namakwa Sands"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-tru-cape-fruit-marketing",
+      "name": "Tru-Cape Fruit Marketing",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0171",
+          "dataset": "accountants",
+          "recordId": "cmp-0171",
+          "sourceName": "Tru-Cape Fruit Marketing"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-truworths",
+      "name": "Truworths",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://truworths.co.za",
+      "domain": "truworths.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-19",
+          "dataset": "credit-risk",
+          "recordId": "COM-19",
+          "sourceName": "Truworths"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-tshikululu-social-investments-pty-ltd",
+      "name": "Tshikululu Social Investments (Pty) Ltd",
+      "aliases": [
+        "Tshikululu Group / Tshikululu Social Investments"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0111",
+          "dataset": "accountants",
+          "recordId": "cmp-0111",
+          "sourceName": "Tshikululu Social Investments (Pty) Ltd"
+        }
+      ],
+      "lastVerified": "2022-10"
+    },
+    {
+      "id": "org-two-a-day-group",
+      "name": "Two-a-Day Group",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0170",
+          "dataset": "accountants",
+          "recordId": "cmp-0170",
+          "sourceName": "Two-a-Day Group"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-tymebank",
+      "name": "TymeBank",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://tymebank.co.za",
+      "domain": "tymebank.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-9",
+          "dataset": "credit-risk",
+          "recordId": "COM-9",
+          "sourceName": "TymeBank"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-unilever",
+      "name": "Unilever",
+      "aliases": [
+        "Unilever South Africa"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.unilever.com/",
+      "domain": "unilever.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0019",
+          "dataset": "accountants",
+          "recordId": "cmp-0019",
+          "sourceName": "Unilever"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-university-of-cape-town",
+      "name": "University of Cape Town",
+      "aliases": [
+        "UCT"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.uct.ac.za/",
+      "domain": "uct.ac.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0049",
+          "dataset": "accountants",
+          "recordId": "cmp-0049",
+          "sourceName": "University of Cape Town"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-vericred-vccb",
+      "name": "VeriCred (VCCB)",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://vccb.co.za",
+      "domain": "vccb.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-39",
+          "dataset": "credit-risk",
+          "recordId": "COM-39",
+          "sourceName": "VeriCred (VCCB)"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-vkb",
+      "name": "VKB Group",
+      "aliases": [
+        "VKB",
+        "VKB/GWK"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-vvm",
+      "name": "VVM",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://vvm.co.za",
+      "domain": "vvm.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-46",
+          "dataset": "credit-risk",
+          "recordId": "COM-46",
+          "sourceName": "VVM"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-water-research-commission-wrc",
+      "name": "Water Research Commission (WRC)",
+      "aliases": [
+        "Public entity (DHEST)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0101",
+          "dataset": "accountants",
+          "recordId": "cmp-0101",
+          "sourceName": "Water Research Commission (WRC)"
+        }
+      ],
+      "lastVerified": "2024-06"
+    },
+    {
+      "id": "org-wbho",
+      "name": "WBHO Construction",
+      "aliases": [
+        "WBHO",
+        "WBHO Construction (Pty) Ltd",
+        "Wilson Bayly Holmes"
+      ],
+      "formerNames": [],
+      "legalName": "WBHO Construction (Pty) Ltd",
+      "website": null,
+      "domain": null,
+      "identityStatus": "verified",
+      "southAfrican": true,
+      "lineage": [],
+      "lastVerified": null
+    },
+    {
+      "id": "org-wbho-cape-division",
+      "name": "WBHO Construction · Cape Division",
+      "aliases": [
+        "WBHO Cape Division",
+        "WBHO Construction - Cape Division"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "probable",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0131",
+          "dataset": "accountants",
+          "recordId": "cmp-0131",
+          "sourceName": "WBHO Construction - Cape Division"
+        }
+      ],
+      "lastVerified": "2026-09-20"
+    },
+    {
+      "id": "org-webber-wentzel",
+      "name": "Webber Wentzel",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.webberwentzel.com/",
+      "domain": "webberwentzel.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0005",
+          "dataset": "accountants",
+          "recordId": "cmp-0005",
+          "sourceName": "Webber Wentzel"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-wesbank",
+      "name": "WesBank",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://wesbank.co.za",
+      "domain": "wesbank.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-12",
+          "dataset": "credit-risk",
+          "recordId": "COM-12",
+          "sourceName": "WesBank"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-wonga-south-africa",
+      "name": "Wonga South Africa",
+      "aliases": [
+        "Wonga"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0026",
+          "dataset": "accountants",
+          "recordId": "cmp-0026",
+          "sourceName": "Wonga South Africa"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-woolworths-financial-services",
+      "name": "Woolworths Financial Services",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://woolworths.co.za",
+      "domain": "woolworths.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-21",
+          "dataset": "credit-risk",
+          "recordId": "COM-21",
+          "sourceName": "Woolworths Financial Services"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-woolworths-holdings-ltd",
+      "name": "Woolworths Holdings Ltd",
+      "aliases": [
+        "WHL",
+        "Woolworths"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://www.woolworthsholdings.co.za/",
+      "domain": "woolworthsholdings.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0062",
+          "dataset": "accountants",
+          "recordId": "cmp-0062",
+          "sourceName": "Woolworths Holdings Ltd"
+        }
+      ],
+      "lastVerified": "2026-09-18"
+    },
+    {
+      "id": "org-workforce-holdings-ltd-subsequently-people-power-solutions",
+      "name": "Workforce Holdings Ltd (subsequently People Power Solutions)",
+      "aliases": [
+        "Workforce Holdings (JSE-listed at time of source)"
+      ],
+      "formerNames": [],
+      "legalName": null,
+      "website": null,
+      "domain": null,
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "accountants:cmp-0097",
+          "dataset": "accountants",
+          "recordId": "cmp-0097",
+          "sourceName": "Workforce Holdings Ltd (subsequently People Power Solutions)"
+        }
+      ],
+      "lastVerified": "2018 (page date)"
+    },
+    {
+      "id": "org-xds",
+      "name": "XDS",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://xds.co.za",
+      "domain": "xds.co.za",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-38",
+          "dataset": "credit-risk",
+          "recordId": "COM-38",
+          "sourceName": "XDS"
+        }
+      ],
+      "lastVerified": null
+    },
+    {
+      "id": "org-yoco-capital",
+      "name": "Yoco Capital",
+      "aliases": [],
+      "formerNames": [],
+      "legalName": null,
+      "website": "https://yoco.com",
+      "domain": "yoco.com",
+      "identityStatus": "unresolved",
+      "southAfrican": true,
+      "lineage": [
+        {
+          "ref": "credit-risk:COM-30",
+          "dataset": "credit-risk",
+          "recordId": "COM-30",
+          "sourceName": "Yoco Capital"
+        }
+      ],
+      "lastVerified": null
+    }
+  ]
+}
