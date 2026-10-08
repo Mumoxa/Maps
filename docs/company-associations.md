@@ -337,6 +337,26 @@ source is retained in the record rather than silently dropped.
   persistence was provisioned and none is claimed.
 - `/search-bank` and `/contacts` keep their `noindex` contract; `audit:ui` re-checks it
   (`privateRoutesNoIndexed: ["/search-bank","/contacts"]`).
+- **The shipped bundle is now scanned, and it found a pre-existing exposure that is not fixed.**
+  The privacy reviewer's stated scope claimed "built bundle" but nothing read `dist/`, so that claim
+  was unsupported. It now scans every `.js`/`.json`/`.html`/`.css`/`.map` file under `dist/`
+  (`no-personal-data-in-built-bundle`) and records reduced coverage as a note rather than a pass when
+  `dist/` is absent. Two results:
+  - The **Company Association Explorer bundle is clean** — no email, phone or identity-shaped
+    identifier in any chunk outside the contact directory.
+  - The **contact directory is not, and never was.** `dist/assets/ContactDirectory-*.js` (6.0 MB)
+    carries **5,202 email addresses and 8,569 phone numbers**, inlined from
+    `src/data/contact-parts/contacts-*.json`. This predates the current work and is the product's own
+    dataset, so it is reported as `contact-directory-bundle-exposure` with exact counts rather than
+    passed silently or quietly excluded. The `noindex` contract hides the *route* from crawlers; it
+    does not stop anyone fetching the chunk from the static host. Closing it needs an auth boundary
+    or a server-rendered gate this repository does not have, so it is left open and stated plainly
+    (§11 item 7) rather than papered over.
+  - An earlier draft of this check reported 137 phone numbers in `dist/assets/index-*.js`. Every one
+    was a false positive: the unguarded pattern reads the digit run in
+    `za.bold.pro/my/name-240925205448` as a phone number. The bundle scan uses a boundary-guarded
+    pattern requiring the match not to sit inside a longer digit run, which removes those while still
+    counting all 8,569 genuine numbers in the contact directory chunk.
 - No security control was disabled, bypassed or relaxed to make anything work.
 - Nothing in the model infers an individual's experience from their employer: a target record
   carries no person, and `tests/search-bank-targets.test.ts` asserts that.
@@ -377,5 +397,13 @@ that this repository does not have; that is reported plainly rather than faked.
    records and locations on the company.
 5. Bundle size: `ContactDirectory` is a 6 MB chunk (pre-existing). Splitting it is unrelated to this
    work but worth doing.
-6. `npm run qa` is not yet wired into `npm run build`. It mounts pages in jsdom and takes about
-   eight seconds, so it belongs in CI rather than in every build.
+6. `npm run qa` is not yet wired into `.github/workflows/ci.yml` — currently local-only. It mounts
+   pages in jsdom and takes about nine seconds, so it belongs in CI rather than in every build. It
+   needs `npm run build` first for the bundle scan to do more than record reduced coverage; the other
+   four reviewers do not depend on `dist/`.
+7. **Decide the contact directory exposure** (§9). `dist/assets/ContactDirectory-*.js` ships 5,202
+   email addresses and 8,569 phone numbers in a publicly fetchable chunk. Options: gate `/contacts`
+   behind authentication (needs a backend), fetch the dataset from an authenticated endpoint instead
+   of bundling it, or accept the exposure as a deliberate product decision and say so explicitly.
+   That is a product and legal call rather than an engineering one, so it is surfaced here and
+   reported by the privacy reviewer rather than resolved.
