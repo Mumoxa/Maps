@@ -183,9 +183,12 @@ export function planHiringImport(
 
     // An advertising agency is not the end employer. Only explicit, sourced,
     // confirmed attribution may attach its advertisement to a target company.
+    const attributionEvidence = get(row, 'source_employer_evidence', 'attribution_evidence')
+    const unprovenDifferentEmployer = advertiserType === 'direct'
+      && rawEmployer && rawEmployer.toLowerCase() !== advertiserName.toLowerCase() && !attributionEvidence
     const employerName = advertiserType === 'direct'
-      ? (rawEmployer || advertiserName)
-      : advertiserType === 'agency' && attribution === 'confirmed' && rawEmployer
+      ? (unprovenDifferentEmployer ? advertiserName : (rawEmployer || advertiserName))
+      : advertiserType === 'agency' && attribution === 'confirmed' && rawEmployer && attributionEvidence
         ? rawEmployer
         : ''
     const exact = employerName ? knownOrganizations.get(employerName.trim().toLocaleLowerCase('en-ZA')) : undefined
@@ -209,7 +212,7 @@ export function planHiringImport(
       employmentType: get(row, 'employment_type', 'contract_type'),
       salaryAsAdvertised: get(row, 'salary_as_advertised', 'salary'),
       proposedIndustry: get(row, 'proposed_industry_id', 'industry_id', 'industry'),
-      sourceEmployerEvidence: get(row, 'source_employer_evidence', 'attribution_evidence'),
+      sourceEmployerEvidence: attributionEvidence,
     }
 
     const previous = seenById.get(id) ?? existingById.get(id)
@@ -222,9 +225,10 @@ export function planHiringImport(
     plan.accepted.push(observation)
     if (companyStatus === 'provisional') issue('review', 'new or unverified employer identity; verify before organization promotion', sourceUrl)
     if (companyStatus === 'unattributed') issue('review', 'end employer unknown; do not credit the advertising agency as employer', sourceUrl)
-    if (advertiserType === 'agency' && attribution === 'confirmed' && rawEmployer && !observation.sourceEmployerEvidence) {
-      issue('review', 'agency end-employer attribution requires an explicit evidence statement and independent review', sourceUrl)
+    if (advertiserType === 'agency' && attribution === 'confirmed' && rawEmployer && !attributionEvidence) {
+      issue('review', 'agency end-employer attribution requires an explicit evidence statement; unattributed until reviewed', sourceUrl)
     }
+    if (unprovenDifferentEmployer) issue('review', 'direct advertiser differs from proposed employer without evidence; keep advertiser as employer until reviewed', sourceUrl)
     if (observation.proposedIndustry) issue('review', 'industry from advert is a proposal, not a verified company classification', sourceUrl)
     if (observation.companyKey) {
       const key = signature(observation)
