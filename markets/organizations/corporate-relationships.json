@@ -1,5 +1,60 @@
 [
   {
+    "id": "rel-bexgroup-bester",
+    "type": "parent-of",
+    "fromId": "org-bexgroup",
+    "toId": "org-bester-feed-grain",
+    "evidence": "Bester Feed & Grain (Pty) Ltd is described as a BexGroup company; BexGroup originated in 2002.",
+    "sourceUrl": "https://www.bester.co.za/about/",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-fpginv-fpgpf",
+    "type": "parent-of",
+    "fromId": "org-fpg-investments",
+    "toId": "org-fpg-property-fund",
+    "evidence": "FPG Investments holds an 86.4% shareholding in FPG Property Fund Proprietary Limited.",
+    "sourceUrl": "https://www.listcorp.com/jse/brn/brimstone-investment-corporation-n/news/investment-by-brimstone-in-fpg-investments-proprietary-limited-3083895.html",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-massmart-cambridge",
+    "type": "parent-of",
+    "fromId": "org-massmart",
+    "toId": "org-cambridge-food",
+    "evidence": "Cambridge Food is a business division of Massmart; eight stores were divested in 2024 under a Competition Tribunal condition.",
+    "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-nwk-opti",
+    "type": "parent-of",
+    "fromId": "org-nwk",
+    "toId": "org-opti-feeds",
+    "evidence": "Opti Feeds is NWK's animal feed operation at Lichtenburg.",
+    "sourceUrl": "https://webkiosk.globalafricanetwork.com/north-west-business-2019-edition/62261099/40",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-nwk-epko",
+    "type": "parent-of",
+    "fromId": "org-nwk",
+    "toId": "org-epko",
+    "evidence": "Epko Oil Refinery Proprietary Limited is a subsidiary of NWK in partnership with Louis Dreyfus Commodities.",
+    "sourceUrl": "http://www.infoworks.biz/nwk/profile/en/files/assets/basic-html/page10.html",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
     "id": "rel-sola-wbho",
     "type": "verified-partnership",
     "fromId": "org-sola",
