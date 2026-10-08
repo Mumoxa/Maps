@@ -110,16 +110,16 @@ bank.json now: searches: [('search-financial-manager-commercial-cold-storage', .
 From `npm run validate:organizations` (also runs inside `npm run build`):
 
 ```
-organizations 80, canonicalNames 80, industries 30, capabilities 55,
-relationships 10, curatedAssociations 4, recruiterObservations 6
-coverage: withWebsite 60, withScale 28, withLocations 55,
-          withEvidencedCapabilities 59, pendingVerification 34
+organizations 88, canonicalNames 88, industries 30, capabilities 55,
+relationships 11, curatedAssociations 4, recruiterObservations 6
+coverage: withWebsite 63, withScale 35, withLocations 62,
+          withEvidencedCapabilities 67, pendingVerification 37
 errors 0, warnings 0
 ```
 
 The discovery scan adds employers named by existing Maps datasets: 331 distinct accountant employers
 resolve to organisations that are merged with the curated register where the name matches, so each
-scenario scans 403 companies (80 curated + 323 dataset-only) and returns 402 matches across 13
+scenario scans 410 companies (88 curated + 322 dataset-only) and returns 409 matches across 13
 pockets — the focal company is not a candidate for itself. Coverage reporting always separates verified, pending verification and
 never researched; directory membership alone is never treated as capability evidence, which is why
 several large agri names sit in tier 3 with "No evidence recorded yet; this is missing research,
@@ -132,6 +132,30 @@ relationship for Pick n Pay → Boxer (65.6% retained after the November 2024 IP
 record was upgraded from a single directory mention to four sources. Where sources conflicted
 (Pick n Pay store counts, Food Lover's store counts, a London registered address for Hyprop) the
 conflict is recorded in the record's notes rather than averaged away.
+
+**Batch 3 research (completed 2026-10-08)**: Heriot REIT, Accelerate Property Fund, Dipula Income
+Fund, Scatec South Africa, Cennergi, Pele Green Energy, Mainstream Renewable Power South Africa and
+SOLA Group were added, plus a `verified-partnership` relationship for SOLA ↔ WBHO (the Naos 1 EPC
+contractor is a SOLA Build and WBHO joint venture). Three discipline decisions are worth recording:
+
+- **Exxaro Resources was deliberately not added.** Cennergi is its wholly owned subsidiary, but
+  Exxaro is a mining group and the industry taxonomy has no mining node, so recording it would have
+  meant inventing a classification. The affiliation lives in Cennergi's notes instead, and Exxaro
+  stays a gap.
+- **Mainstream is recorded as the developer, not the owner.** The sources state that on completion
+  the assets are acquired by Lekela Power and managed by MAMSA; attributing ownership to Mainstream
+  would have been a mistaken corporate affiliation. Its capacity for Loeriesfontein 2 is reported as
+  both 140 MW and 138 MW by two sources, and both figures are recorded rather than averaged.
+- **Three records carry no legal name** (Scatec South Africa, Mainstream, SOLA Group) and are
+  `needs-verification`, because the South African legal entity was not established by the sources
+  read. Pele Green Energy's legal name was withdrawn during QA: the wording sourced was
+  descriptive, and the only registered names found were the project SPVs, which are recorded in the
+  notes.
+
+Batch 3 also added a `capacity` metric to `OrganizationScale`. Cold storage is measured in pallet
+positions and property funds in sites; forcing an MW figure into a headcount field would have
+misstated what the source said. The scale filter already labels a non-headcount record as "Scale
+reported but unverified", so no interface change was needed.
 
 **A name that was researched and rejected**: `nukor.co.za` is Nukor Sawmilling, Woodworking &
 Agricultural Equipment — CPM's South African representative. It supplies pelleting and grinding
@@ -210,24 +234,35 @@ SKUs". Those rows are now `unknown`/`probable` with the proxy named in the evide
 
 ## 8. The three scenarios (`npm run scenarios`)
 
-All three scenarios now scan 403 companies (80 curated + 323 dataset-only) and return 402 matches —
+All three scenarios now scan 410 companies (88 curated + 322 dataset-only) and return 409 matches —
 the focal company is not a candidate for itself.
 
 - **A — Financial Manager, commercial cold storage** (Commercial Cold Storage (Pty) Ltd, Paarden
-  Eiland; group Commercial Cold Holdings). Tier 1 = 17, tier 2 = 11, tier 3 = 12, tier 4 = 23,
-  tier 5 = 339. Tier 1 is Vector Logistics, Commercial Cold Holdings, DHL Supply Chain South
+  Eiland; group Commercial Cold Holdings). Tier 1 = 17, tier 2 = 11, tier 3 = 16, tier 4 = 23,
+  tier 5 = 342. Tier 1 is Vector Logistics, Commercial Cold Holdings, DHL Supply Chain South
   Africa, DSV South Africa, Sequence Logistics, Chilleweni, Imperial Logistics, Kuehne+Nagel South
   Africa, Laser Logistics, Table Bay Cold Storage, iDube, Port Elizabeth Cold Storage, Reefer,
   Super Group, Value Logistics, eThekwini Cold Stores and Etlin International.
 - **B — Finance lead, property development** (SLM Developments (Pty) Ltd, reg K2019081416,
   Bellville). Tier 1 = 7: Rabie Property Group, Attacq, FPG Property Fund, Growthpoint Properties,
-  Hyprop Investments, Rebosis Property Fund, Devmark Property Group. The companies that led
-  scenario A now sit in tier 5 while their facts stay byte-identical (asserted in tests).
+  Hyprop Investments, Rebosis Property Fund, Devmark Property Group. Tier 2 = 20, tier 3 = 12,
+  tier 4 = 15, tier 5 = 355. The companies that led scenario A now sit in tier 5 while their facts
+  stay byte-identical (asserted in tests).
+
+  The batch 3 additions land in tier 2 rather than tier 1: Heriot REIT, Accelerate and Dipula are
+  property *investment* funds, so they share a financial profile and operating processes with a
+  developer (R4/R5/R6) but not the development pocket itself. The five renewable developers
+  (Scatec South Africa, Cennergi, Pele Green, Mainstream, SOLA) also sit at tier 2 on R5+R6, which
+  matches the four renewable developers already in the register — ACED, Mulilo, Red Rocket and
+  Reatile reach the same tier on the same two rules. That control comparison is the check that
+  batch 3 followed established engine behaviour instead of inflating relevance.
 - **C — Head of Finance, agri commodity trading** (Bester Feed & Grain (Pty) Ltd, Stellenbosch,
   LEI 3789BFDYDZGX0SH5BH08). Tier 1 = **1**: NWK Ltd, the only company with commodity trading
-  evidenced (R2). Astral Foods, Quantum Foods, DSV and DHL Supply Chain are tier 3, each listing
-  "Commodity trading — no evidence recorded yet" as missing research. Scale does not substitute
-  for the mandatory exposure.
+  evidenced (R2). Tier 2 = 2 (Southern Oil, Unitrans Supply Chain Solutions), tier 3 = 14,
+  tier 4 = 31, tier 5 = 361. Astral Foods, Quantum Foods, DSV and DHL Supply Chain are tier 3, each
+  listing "Commodity trading — no evidence recorded yet" as missing research. Scale does not
+  substitute for the mandatory exposure, and adding 88 researched companies did not move the
+  mandatory-exposure result at all: tier 1 was 1 before batch 3 and is 1 after.
 
 **Why scenario A has 17 tier-1 companies and none of them evidences the mandatory exposure.** Tier 1
 is reached either by evidencing a mandatory requirement (R2) or by sharing the industry/pocket *and*
@@ -267,9 +302,14 @@ that this repository does not have; that is reported plainly rather than faked.
 
 ## 11. Remaining work
 
-1. Research the remaining gap entries in §6 (17 named companies and groups) and import them through
-   `npm run organizations:import`. Batch 1 and batch 2 are done; each new record must survive the
-   `assert_capability_discipline` guard in the seed.
+1. Research the remaining gap entries in §6 and import them through
+   `npm run organizations:import`. Batches 2 and 3 are done and added 16 companies to the 72-record
+   foundational register, taking it to 88; each new record must survive the
+   `assert_capability_discipline` guard in the seed. Still outstanding,
+   confirmed absent from the register as at 2026-10-08: Opti Feeds / EPKO, Blue Turtle Energy,
+   Emira Property Fund, Balwin Properties, Resilient Property Fund, Metier, Cambridge, the
+   BexGroup parent entity and the FPG Investments parent entity. Exxaro Resources was researched
+   and deliberately left out — see §6 for why.
 2. Decide whether target pools should leave the browser. That needs a backend and an auth decision;
    until then the drop file + `bank:import --targets` is the shareable path.
 3. Attach real Searches to Search Bank briefs so role contexts derive from live assignments instead

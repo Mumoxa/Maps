@@ -93,7 +93,7 @@ describe('canonical company model', () => {
   it('never sources a scale figure or a location without saying where it came from', () => {
     for (const organization of organizations) {
       for (const scale of organization.scale) {
-        assert.ok(['employees', 'revenue', 'sites', 'pallet-positions'].includes(scale.metric))
+        assert.ok(['employees', 'revenue', 'sites', 'pallet-positions', 'capacity'].includes(scale.metric))
         assert.ok(['source-reported', 'third-party-estimate'].includes(scale.basis))
         assert.ok(scale.sourceUrl.length > 0, `${organization.name} has an unsourced scale record`)
       }
