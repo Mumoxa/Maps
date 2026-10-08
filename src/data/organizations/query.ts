@@ -15,6 +15,8 @@ import { discoverAssociations, filterMatches, organizationOrStub } from './disco
 import { coverageByIndustry, universeStats } from './analysis'
 import { runQualityChecks } from './quality'
 import { organizations, industries, capabilities, pockets } from './load'
+import { organizationTaxonomy } from './taxonomyPlacement'
+import { getTaxonomyNode } from '../taxonomy/load'
 import type {
   AssociationFilters,
   AssociationMatch,
@@ -63,6 +65,9 @@ export interface CompanyDossier {
     relationships: { type: string; counterparty: string; evidence: string; sourceUrl: string; confidence: Confidence }[]
   }
   industries: { id: string; name: string; primary: boolean; pocket: string; evidence: string; sourceUrl: string }[]
+  /** National taxonomy placement, derived through the industry crosswalk. */
+  taxonomy: { industryId: string; industryName: string; macroSector: string; path: string }[]
+  macroSectors: string[]
   capabilities: DossierCapability[]
   locations: { city: string; province: string; sourceUrl: string }[]
   scale: { metric: string; value: string; basis: string; asOf: string; sourceUrl: string }[]
@@ -144,6 +149,14 @@ export function companyDossier(index: OrganizationIndex, organizationId: string)
       evidence: link.evidence,
       sourceUrl: link.sourceUrl,
     })),
+    taxonomy: organizationTaxonomy(organization).entries.map((entry) => ({
+      industryId: entry.industryId,
+      industryName: index.industryById.get(entry.industryId)?.name ?? entry.industryId,
+      macroSector: entry.path[0]?.name ?? '',
+      path: entry.path.map((node) => node.name).join(' > '),
+    })),
+    macroSectors: organizationTaxonomy(organization).macroSectorIds
+      .map((id) => getTaxonomyNode(id)?.name ?? id),
     capabilities: organization.capabilities.map((link) => ({
       id: link.capabilityId,
       name: index.capabilityById.get(link.capabilityId)?.name ?? link.capabilityId,
@@ -211,6 +224,8 @@ export interface TargetCompanyPayload {
   tierLabel: string
   pocket: string
   industries: string[]
+  /** National macro-sector names, derived through the industry crosswalk. */
+  macroSectors: string[]
   matchedRequirements: string[]
   missingEvidence: string[]
   relationshipTypes: string[]
@@ -336,6 +351,8 @@ function toTargetPayload(index: OrganizationIndex, match: AssociationMatch): Tar
     tierLabel: match.tierLabel,
     pocket: index.pocketById.get(match.pocketId)?.name ?? match.pocketId,
     industries: organization.industries.map((link) => index.industryById.get(link.industryId)?.name ?? link.industryId),
+    macroSectors: organizationTaxonomy(organization).macroSectorIds
+      .map((id) => getTaxonomyNode(id)?.name ?? id),
     matchedRequirements: match.rules.map((rule) => rule.label),
     missingEvidence: match.gaps.map((gap) => `${gap.requirement}: ${gap.reason}`),
     relationshipTypes: match.relationshipTypes,
@@ -345,6 +362,38 @@ function toTargetPayload(index: OrganizationIndex, match: AssociationMatch): Tar
     province: organization.locations.map((location) => location.province).filter(Boolean)[0] ?? '',
     reasons: match.rules.map((rule) => `${rule.label}: ${rule.detail}`),
     sources: organization.sources.map((source) => source.url),
+  }
+}
+
+/**
+ * How much of the company universe the national taxonomy actually covers, so a
+ * gap in the crosswalk is visible instead of silently dropping companies out of
+ * the macro-sector view.
+ */
+export function nationalTaxonomySummary(index: OrganizationIndex) {
+  const macroCounts = new Map<string, number>()
+  const unplaced: string[] = []
+  const unplacedIndustries = new Set<string>()
+
+  for (const organization of index.organizations) {
+    const placement = organizationTaxonomy(organization)
+    if (placement.macroSectorIds.length === 0) {
+      unplaced.push(organization.name)
+      for (const link of organization.industries) unplacedIndustries.add(link.industryId)
+      continue
+    }
+    for (const id of placement.macroSectorIds) {
+      macroCounts.set(id, (macroCounts.get(id) ?? 0) + 1)
+    }
+  }
+
+  return {
+    macroSectors: [...macroCounts.entries()]
+      .map(([id, count]) => ({ id, name: getTaxonomyNode(id)?.name ?? id, organizations: count }))
+      .sort((left, right) => right.organizations - left.organizations || left.name.localeCompare(right.name)),
+    placed: index.organizations.length - unplaced.length,
+    unplaced,
+    unplacedIndustries: [...unplacedIndustries],
   }
 }
 
@@ -369,6 +418,7 @@ export function knowledgeBaseSummary(index: OrganizationIndex) {
       organizations: (index.orgsByPocket.get(pocket.id) ?? []).length,
     })),
     coverage: coverageByIndustry(index),
+    nationalTaxonomy: nationalTaxonomySummary(index),
     dataQuality: {
       errors: issues.filter((issue) => issue.severity === 'error').length,
       warnings: issues.filter((issue) => issue.severity === 'warning').length,
@@ -391,7 +441,7 @@ function csvCell(value: string): string {
 /** CSV for the current filtered result set, with the reasons a recruiter needs. */
 export function exportTargetsCsv(payload: TargetDiscoveryPayload): string {
   const header = [
-    'Company', 'Legal name', 'Tier', 'Tier label', 'Sourcing pocket', 'Industries',
+    'Company', 'Legal name', 'Tier', 'Tier label', 'Sourcing pocket', 'Industries', 'National macro-sector',
     'Matched requirements', 'Missing evidence', 'Relationship types', 'Confidence',
     'Evidence state', 'Mapped professionals', 'Province', 'Reason', 'Sources',
   ]
@@ -402,6 +452,7 @@ export function exportTargetsCsv(payload: TargetDiscoveryPayload): string {
     company.tierLabel,
     company.pocket,
     company.industries.join('; '),
+    company.macroSectors.join('; '),
     company.matchedRequirements.join('; '),
     company.missingEvidence.join('; '),
     company.relationshipTypes.join('; '),
@@ -418,6 +469,7 @@ export function exportTargetsCsv(payload: TargetDiscoveryPayload): string {
 export function emptyFilters(): AssociationFilters {
   return {
     industries: [],
+    macroSectors: [],
     pockets: [],
     capabilities: [],
     provinces: [],

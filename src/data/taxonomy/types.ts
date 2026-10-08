@@ -168,7 +168,7 @@ export interface CrosswalkFile {
   purpose: string
   direction: string
   pocketMappings: { pocketId: string; taxonomyNodes: string[]; note: string }[]
-  industryMappings: { industryId: string; taxonomyNode: string }[]
+  industryMappings: { industryId: string; taxonomyNode: string; note?: string }[]
 }
 
 // ---------------------------------------------------------------------------

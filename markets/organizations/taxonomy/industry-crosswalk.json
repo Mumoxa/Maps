@@ -3,49 +3,221 @@
   "purpose": "Binds the national sector taxonomy onto the Maps organization model that already exists in markets/organizations/industries.json and pockets.json. Nothing is duplicated: the existing pocket and industry ids stay as they are, and every one of them resolves into the national taxonomy so a company can carry either vocabulary without losing the other.",
   "direction": "maps-organization-model -> national-taxonomy",
   "pocketMappings": [
-    { "pocketId": "cold-chain", "taxonomyNodes": ["WHL-COLD"], "note": "Cold chain storage and handling sits in wholesale and distribution in the national taxonomy because the business model is storage capacity, not primary production." },
-    { "pocketId": "refrigerated-distribution", "taxonomyNodes": ["TRA-COLD"], "note": "" },
-    { "pocketId": "food-manufacturing", "taxonomyNodes": ["MFG-FOOD"], "note": "" },
-    { "pocketId": "fisheries", "taxonomyNodes": ["AGR-FISH", "MFG-FOOD-SEAFOOD"], "note": "The pocket spans primary production (fishing rights and fleet) and processing (seafood plants), which are separate L2 branches nationally." },
-    { "pocketId": "milling-feed", "taxonomyNodes": ["MFG-FOOD-MILL", "MFG-FOOD-FEED", "MFG-FOOD-OIL"], "note": "" },
-    { "pocketId": "agri-commodities", "taxonomyNodes": ["AGR-COMM", "WHL-COMM-AGRI"], "note": "Co-operative marketing is agricultural; independent commodity trading houses are wholesale." },
-    { "pocketId": "transport-logistics", "taxonomyNodes": ["TRA"], "note": "Maps to the L1 macro-sector directly; the pocket is broader than any single L2." },
-    { "pocketId": "fmcg-distribution", "taxonomyNodes": ["WHL-FMCG", "RTL-GROC"], "note": "The pocket deliberately spans wholesale and retail." },
-    { "pocketId": "property-development", "taxonomyNodes": ["CON-PROP-DEV"], "note": "" },
-    { "pocketId": "property-investment", "taxonomyNodes": ["CON-PROP-INV"], "note": "" },
-    { "pocketId": "construction", "taxonomyNodes": ["CON"], "note": "Maps to the L1 macro-sector directly." },
-    { "pocketId": "renewable-energy", "taxonomyNodes": ["ENR-GEN-IPP", "ENR-SOLAR", "ENR-WIND"], "note": "" }
+    {
+      "pocketId": "cold-chain",
+      "taxonomyNodes": [
+        "WHL-COLD"
+      ],
+      "note": "Cold chain storage and handling sits in wholesale and distribution in the national taxonomy because the business model is storage capacity, not primary production."
+    },
+    {
+      "pocketId": "refrigerated-distribution",
+      "taxonomyNodes": [
+        "TRA-COLD"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "food-manufacturing",
+      "taxonomyNodes": [
+        "MFG-FOOD"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "fisheries",
+      "taxonomyNodes": [
+        "AGR-FISH",
+        "MFG-FOOD-SEAFOOD"
+      ],
+      "note": "The pocket spans primary production (fishing rights and fleet) and processing (seafood plants), which are separate L2 branches nationally."
+    },
+    {
+      "pocketId": "milling-feed",
+      "taxonomyNodes": [
+        "MFG-FOOD-MILL",
+        "MFG-FOOD-FEED",
+        "MFG-FOOD-OIL"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "agri-commodities",
+      "taxonomyNodes": [
+        "AGR-COMM",
+        "WHL-COMM-AGRI"
+      ],
+      "note": "Co-operative marketing is agricultural; independent commodity trading houses are wholesale."
+    },
+    {
+      "pocketId": "transport-logistics",
+      "taxonomyNodes": [
+        "TRA"
+      ],
+      "note": "Maps to the L1 macro-sector directly; the pocket is broader than any single L2."
+    },
+    {
+      "pocketId": "fmcg-distribution",
+      "taxonomyNodes": [
+        "WHL-FMCG",
+        "RTL-GROC"
+      ],
+      "note": "The pocket deliberately spans wholesale and retail."
+    },
+    {
+      "pocketId": "property-development",
+      "taxonomyNodes": [
+        "CON-PROP-DEV"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "property-investment",
+      "taxonomyNodes": [
+        "CON-PROP-INV"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "construction",
+      "taxonomyNodes": [
+        "CON"
+      ],
+      "note": "Maps to the L1 macro-sector directly."
+    },
+    {
+      "pocketId": "renewable-energy",
+      "taxonomyNodes": [
+        "ENR-GEN-IPP",
+        "ENR-SOLAR",
+        "ENR-WIND"
+      ],
+      "note": ""
+    }
   ],
   "industryMappings": [
-    { "industryId": "cold-storage-operations", "taxonomyNode": "WHL-COLD-STORE" },
-    { "industryId": "fresh-produce-export", "taxonomyNode": "AGR-HORT-EXPORT" },
-    { "industryId": "refrigerated-transport", "taxonomyNode": "TRA-COLD-MULTI" },
-    { "industryId": "food-manufacturing", "taxonomyNode": "MFG-FOOD" },
-    { "industryId": "edible-oils-fats", "taxonomyNode": "MFG-FOOD-OIL" },
-    { "industryId": "poultry-production", "taxonomyNode": "AGR-POULTRY-BROILER" },
-    { "industryId": "seafood-processing", "taxonomyNode": "MFG-FOOD-SEAFOOD" },
-    { "industryId": "fishing-operations", "taxonomyNode": "AGR-FISH-MARINE" },
-    { "industryId": "animal-feed-manufacturing", "taxonomyNode": "MFG-FOOD-FEED" },
-    { "industryId": "flour-milling", "taxonomyNode": "MFG-FOOD-MILL" },
-    { "industryId": "oilseed-crushing", "taxonomyNode": "MFG-FOOD-OIL" },
-    { "industryId": "grain-trading", "taxonomyNode": "AGR-COMM-TRADE" },
-    { "industryId": "agri-cooperative", "taxonomyNode": "AGR-COMM-COOP" },
-    { "industryId": "grain-storage-handling", "taxonomyNode": "AGR-COMM-SILO" },
-    { "industryId": "contract-logistics", "taxonomyNode": "TRA-CONTRACT-3PL" },
-    { "industryId": "road-freight", "taxonomyNode": "TRA-ROAD-LONG" },
-    { "industryId": "freight-forwarding", "taxonomyNode": "TRA-CONTRACT-FWD" },
-    { "industryId": "foodservice-distribution", "taxonomyNode": "WHL-FMCG-FOODSERVICE" },
-    { "industryId": "grocery-retail", "taxonomyNode": "RTL-GROC-HYPER" },
-    { "industryId": "fmcg-wholesale", "taxonomyNode": "WHL-FMCG-CASH" },
-    { "industryId": "property-development", "taxonomyNode": "CON-PROP-DEV" },
-    { "industryId": "residential-development", "taxonomyNode": "CON-PROP-RES" },
-    { "industryId": "retail-property", "taxonomyNode": "CON-PROP-RETAIL" },
-    { "industryId": "property-investment", "taxonomyNode": "CON-PROP-INV" },
-    { "industryId": "logistics-property", "taxonomyNode": "CON-PROP-LOG" },
-    { "industryId": "self-storage", "taxonomyNode": "CON-PROP-SELF" },
-    { "industryId": "construction-contracting", "taxonomyNode": "CON-CONTR-BUILD" },
-    { "industryId": "infrastructure-development", "taxonomyNode": "CON-CIVIL" },
-    { "industryId": "renewable-development", "taxonomyNode": "ENR-GEN-IPP" },
-    { "industryId": "independent-power-production", "taxonomyNode": "ENR-GEN-IPP" }
+    {
+      "industryId": "cold-storage-operations",
+      "taxonomyNode": "WHL-COLD-STORE"
+    },
+    {
+      "industryId": "fresh-produce-export",
+      "taxonomyNode": "WHL-COLD-BOND-PERISH",
+      "note": "Corrected: this industry is dockside handling, pre-cooling and export preparation of perishables, held by cold chain operators rather than by horticultural export marketers. It belongs in the port cold chain branch, not under horticulture."
+    },
+    {
+      "industryId": "refrigerated-transport",
+      "taxonomyNode": "TRA-COLD-MULTI"
+    },
+    {
+      "industryId": "food-manufacturing",
+      "taxonomyNode": "MFG-FOOD"
+    },
+    {
+      "industryId": "edible-oils-fats",
+      "taxonomyNode": "MFG-FOOD-OIL"
+    },
+    {
+      "industryId": "poultry-production",
+      "taxonomyNode": "AGR-POULTRY-BROILER"
+    },
+    {
+      "industryId": "seafood-processing",
+      "taxonomyNode": "MFG-FOOD-SEAFOOD"
+    },
+    {
+      "industryId": "fishing-operations",
+      "taxonomyNode": "AGR-FISH-MARINE"
+    },
+    {
+      "industryId": "animal-feed-manufacturing",
+      "taxonomyNode": "MFG-FOOD-FEED"
+    },
+    {
+      "industryId": "flour-milling",
+      "taxonomyNode": "MFG-FOOD-MILL"
+    },
+    {
+      "industryId": "oilseed-crushing",
+      "taxonomyNode": "MFG-FOOD-OIL"
+    },
+    {
+      "industryId": "grain-trading",
+      "taxonomyNode": "AGR-COMM-TRADE"
+    },
+    {
+      "industryId": "agri-cooperative",
+      "taxonomyNode": "AGR-COMM-COOP"
+    },
+    {
+      "industryId": "grain-storage-handling",
+      "taxonomyNode": "AGR-COMM-SILO"
+    },
+    {
+      "industryId": "contract-logistics",
+      "taxonomyNode": "TRA-CONTRACT-3PL"
+    },
+    {
+      "industryId": "road-freight",
+      "taxonomyNode": "TRA-ROAD-LONG"
+    },
+    {
+      "industryId": "freight-forwarding",
+      "taxonomyNode": "TRA-CONTRACT-FWD"
+    },
+    {
+      "industryId": "foodservice-distribution",
+      "taxonomyNode": "WHL-FMCG-FOODSERVICE"
+    },
+    {
+      "industryId": "grocery-retail",
+      "taxonomyNode": "RTL-GROC-HYPER"
+    },
+    {
+      "industryId": "fmcg-wholesale",
+      "taxonomyNode": "WHL-FMCG-CASH"
+    },
+    {
+      "industryId": "property-development",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "industryId": "residential-development",
+      "taxonomyNode": "CON-PROP-RES"
+    },
+    {
+      "industryId": "retail-property",
+      "taxonomyNode": "CON-PROP-RETAIL"
+    },
+    {
+      "industryId": "property-investment",
+      "taxonomyNode": "CON-PROP-INV"
+    },
+    {
+      "industryId": "logistics-property",
+      "taxonomyNode": "CON-PROP-LOG"
+    },
+    {
+      "industryId": "self-storage",
+      "taxonomyNode": "CON-PROP-SELF"
+    },
+    {
+      "industryId": "construction-contracting",
+      "taxonomyNode": "CON-CONTR",
+      "note": "Corrected: the industry covers building AND civils contracting, so it maps to the contracting branch rather than asserting building work for civils-led contractors."
+    },
+    {
+      "industryId": "infrastructure-development",
+      "taxonomyNode": "CON-CIVIL"
+    },
+    {
+      "industryId": "renewable-development",
+      "taxonomyNode": "ENR-GEN-IPP-DEV",
+      "note": "Corrected: development, financing and construction management sits ahead of asset ownership. Mapping it to the same node as independent-power-production collapsed two distinct business models into one and hid the developer-to-owner relationship between them."
+    },
+    {
+      "industryId": "independent-power-production",
+      "taxonomyNode": "ENR-GEN-IPP"
+    }
   ]
 }

@@ -9,7 +9,7 @@ machine-usable and cannot drift away from this document:
 
 | Artifact | Path | Role |
 |---|---|---|
-| Sector tree (729 nodes) | `markets/organizations/taxonomy/sector-tree.json` | The four-tier L1→L4 hierarchy |
+| Sector tree (731 nodes) | `markets/organizations/taxonomy/sector-tree.json` | The four-tier L1→L4 hierarchy |
 | Generated outline | `markets/organizations/taxonomy/sector-tree-outline.md` | Human-readable outline, regenerated from the JSON |
 | Scale bands | `markets/organizations/taxonomy/scale-bands.json` | Segmentation thresholds and precedence rule |
 | Statutory schedule | `markets/organizations/taxonomy/statutory-schedule-1.json` | Sector-specific statutory turnover ceilings |
@@ -102,7 +102,7 @@ derived from, so a re-derivation after the 2026 table is loaded is a data operat
 | L2 Industry Sector | 129 | `CON-ENG` Engineering Services & Consulting |
 | L3 Sub-Industry | 490 | `CON-ENG-MECH` Mechanical & Plant Engineering |
 | L4 Operational / Product Niche | 94 | `CON-ENG-MECH-PETRO` Petrochemical Plant Maintenance & Shutdown Services |
-| **Total** | **729** | |
+| **Total** | **731** | |
 
 The complete nested outline, including the South African operating context recorded against each node,
 is generated at **[`markets/organizations/taxonomy/sector-tree-outline.md`](../markets/organizations/taxonomy/sector-tree-outline.md)**.
@@ -309,6 +309,32 @@ nodes, and `npm run validate:taxonomy` fails the build if any industry or pocket
 a mapping points at a node that no longer exists. Companies can therefore carry either vocabulary
 without losing the other.
 
+The **Company Association Explorer** (`/company-associations`) consumes the crosswalk at runtime
+through `src/data/organizations/taxonomyPlacement.ts`, which derives placement from the existing data
+rather than storing a second classification per company:
+
+| Surface in the explorer | What it shows |
+|---|---|
+| Rule `R16-shared-taxonomy-branch` | Two companies in *different* Maps industries that resolve to the same branch of the national taxonomy. Level 1 overlap alone never fires, and the rule returns null whenever an exact industry match exists — R1 owns that evidence, so the two never report the same pair twice. |
+| "National macro-sector" facet | Counts derived in the same pass as the existing industry and province facets, from the same match list. |
+| Inspector → "National taxonomy placement" | The full `Macro-Sector > … > Niche` path per industry, with the Maps industry it was placed through. |
+| Dossier contract (`companyDossier`) | `taxonomy[]` and `macroSectors[]`, so a machine consumer gets the same placement a recruiter sees. |
+| CSV export | `National macro-sector` column. |
+| `knowledgeBaseSummary().nationalTaxonomy` | Macro-sector counts and placement coverage (`placed`, `unplaced`, `unplacedIndustries`), so a gap in the crosswalk is visible instead of silently dropping companies. |
+
+On the current 96-company register this places **96 of 96** companies with no unmapped industries, and
+surfaces **223 unique company pairs across 6 shared branches** that the flat industry list could not
+see — for example a branded food manufacturer against a poultry and feed producer (both under
+`MFG-FOOD`), a property developer against a retail REIT (both under `CON-PROP`), and an edible-oil
+refiner against an oilseed crusher (both under `MFG-FOOD-OIL`). Details and the crosswalk corrections
+made while wiring are in `docs/company-associations.md` §3a.
+
+The explorer's existing sourced-scale facet was deliberately left alone: the statutory scale bands in
+`scale-bands.json` describe a *company profile record*, while the explorer filters on scale evidence
+that actually exists in this register. Wiring the bands in would mean asserting headcount the sources
+have not established.
+
+
 ---
 
 ## 5. Output format: JSON schema and a worked mapping
@@ -335,7 +361,7 @@ node enum equals the tree and its band enum equals the scale bands. Excerpt:
     "taxonomy":  { "$ref": "#/$defs/taxonomyPlacement" }
   },
   "$defs": {
-    "taxonomyNodeId": { "type": "string", "enum": [ /* all 729 taxonomy node ids */ ] },
+    "taxonomyNodeId": { "type": "string", "enum": [ /* all 731 taxonomy node ids */ ] },
     "scaleBandAssignment": {
       "type": "object", "additionalProperties": false,
       "description": "Derived from the scale proxies on every validation run. Never hand-entered.",

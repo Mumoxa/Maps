@@ -12,8 +12,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
 | Macro-Sector (Level 1) | 16 |
 | Industry Sector (Level 2) | 129 |
 | Sub-Industry (Level 3) | 490 |
-| Operational / Product Niche (Level 4) | 94 |
-| **Total** | **729** |
+| Operational / Product Niche (Level 4) | 96 |
+| **Total** | **731** |
 
 - **Mining, Quarrying & Extractive Industries** `MIN` — SIC 05-09
   - Bushveld Complex PGM and chrome belt, Witwatersrand and Free State gold, Mpumalanga and Waterberg coal, Northern Cape iron ore and manganese, Kimberley and West Coast marine diamonds. Junior miners and black-owned small-scale operators sit in the same tree as the JSE-listed majors.
@@ -123,6 +123,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
       - **Battery Energy Storage IPP** `ENR-GEN-IPP-BESS`
       - **Project SPV & Shareholder Structuring** `ENR-GEN-IPP-SPV`
         - Deal structuring, community trusts and B-BBEE equity participation around a generation asset.
+      - **Renewable Project Development & Financing** `ENR-GEN-IPP-DEV`
+        - Development, financing, permitting and construction management of renewable projects, ahead of asset ownership. Distinct from owning and operating the generating asset: the development company and the project company are different legal entities with different balance sheets.
     - **Thermal Generation (Coal & Gas)** `ENR-GEN-THERM`
     - **Biomass, Biogas, Landfill Gas & Cogeneration** `ENR-GEN-COGEN`
     - **Embedded & Private Generation** `ENR-GEN-EMBED`
@@ -464,6 +466,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - **Commercial Cold Storage** `WHL-COLD-STORE`
     - **Blast Freezing & Value-Added Handling** `WHL-COLD-BLAST`
     - **Bonded & Export Cold Storage** `WHL-COLD-BOND`
+      - **Perishable Export Handling & Pre-Cooling** `WHL-COLD-BOND-PERISH`
+        - Dockside handling, pre-cooling and export preparation of perishables at the port cold chain, serving packhouses and exporters rather than owning the produce.
     - **Pharmaceutical & Temperature-Critical Storage** `WHL-COLD-PHARMA`
   - **Commodity Trading** `WHL-COMM`
     - **Agricultural Commodity Trading** `WHL-COMM-AGRI`

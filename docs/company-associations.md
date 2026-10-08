@@ -73,6 +73,81 @@ suggestions (`CompanyAssociation`), role-specific targeting (`RoleContext` + `As
 Nothing is precomputed for every company pair: the 80-company register has 6,320 possible ordered
 pairs and stores exactly 4 curated associations; discovery generates the rest per request.
 
+## 3a. National taxonomy wiring
+
+`docs/sa-corporate-taxonomy.md` defines a national four-tier sector taxonomy
+(`markets/organizations/taxonomy/`, 731 nodes). The explorer now reads it, without a second
+classification and without a new per-company data file:
+
+```
+src/data/organizations/taxonomyPlacement.ts
+  taxonomyNodesForIndustry(id)   Maps industry -> national nodes (from industry-crosswalk.json)
+  organizationTaxonomy(org)      placement, cached per organization; stubs stay empty
+  sharedTaxonomyBranch(a, b)     deepest shared branch, or null
+```
+
+Everything is **derived** at load from `industries.json` + `industry-crosswalk.json` +
+`sector-tree.json`. The Maps industry list stays flat and authoritative for what a company does;
+the hierarchy lives in the taxonomy and is reached through the crosswalk, so there is one source of
+truth per fact.
+
+What this adds to the explorer:
+
+| Surface | Change |
+| --- | --- |
+| Rule `R16-shared-taxonomy-branch` | Two companies in *different* Maps industries that resolve to the same branch of the national taxonomy. Level 1 (macro-sector) overlap alone does not fire — that is weaker evidence and is left to R3/R4. |
+| Facet "National macro-sector" | Counts derived in the same pass as the industry and province facets, from the same match list. |
+| `CompanyDossier.taxonomy` / `.macroSectors` | Full `Macro-Sector > … > Niche` path per industry, shown in the inspector as "National taxonomy placement". |
+| `TargetCompanyPayload.macroSectors` + CSV column | "National macro-sector" in the export. |
+| `knowledgeBaseSummary().nationalTaxonomy` | Macro-sector counts plus placement coverage: `placed`, `unplaced`, `unplacedIndustries`. |
+| Search | Taxonomy path labels join the haystack, so "Cold Chain Storage" finds companies the industry names alone would not. |
+
+**Not duplicated, deliberately:** no scale-band facet (the existing sourced-scale buckets are
+untouched — the taxonomy's statutory bands are a per-record attribute of a company profile, not a
+filter over this register), no parallel industry tree, no new route, and no copy of the taxonomy
+into `industries.json`.
+
+**R16 never repeats R1.** If two companies share an exact industry id, R1 owns that pair and R16
+returns null; a test asserts no match in the universe reports both. R16 does not feed `tierFor`, so
+it adds explainable relationship evidence without silently re-ranking anything.
+
+### Crosswalk corrections made while wiring
+
+Auditing all 30 industry mappings against the industry descriptions and the companies that hold them
+found three that were wrong or over-claimed:
+
+| Industry | Was | Now | Why |
+| --- | --- | --- | --- |
+| `fresh-produce-export` | `AGR-HORT-EXPORT` | `WHL-COLD-BOND-PERISH` *(new L4)* | The industry is dockside handling, pre-cooling and export preparation, held by cold chain operators (CCS Logistics, Port Elizabeth Cold Storage) — not horticultural export marketing. |
+| `renewable-development` | `ENR-GEN-IPP` | `ENR-GEN-IPP-DEV` *(new L4)* | Development, financing and construction management is a different business model from owning and operating the asset. Both industries mapped to one node, which collapsed the distinction and hid the developer-to-owner relationship. |
+| `construction-contracting` | `CON-CONTR-BUILD` | `CON-CONTR` | The industry covers building *and* civils; mapping it to "Building Contractors" asserted building work for civils-led contractors. |
+
+Two level-4 nodes were added to the taxonomy for the first two rows, then the outline and JSON Schema
+were regenerated (`npm run taxonomy:outline`, `npm run taxonomy:schema`).
+
+### Measured effect on the current 96-company register
+
+```
+placement coverage   96 placed / 0 unplaced / 0 unmapped industries
+macro-sectors        Construction 28, Manufacturing 19, Transport 15, Agriculture 14,
+                     Wholesale 14, Energy 10, Retail 7
+R16 associations     223 unique company pairs across 6 distinct shared branches
+                     121 Food, Beverage & FMCG Manufacturing (L2)
+                      70 Property Development & Investment (L2)
+                      14 Contract Logistics & 3PL / 4PL (L2)
+                      12 Commodity Marketing, Storage & Co-operatives (L2)
+                       4 FMCG Wholesale & Cash and Carry (L2)
+                       2 Edible Oils & Fats (L3)
+```
+
+These are pairs the flat industry list could not see at all — for example Tiger Brands ↔ Quantum
+Foods (food manufacturing ↔ poultry and feed), SLM Developments ↔ Resilient REIT (developer ↔ REIT),
+and Willowton Group ↔ Southern Oil (edible oils ↔ oilseed crushing).
+
+Verification for this change: `npm test` **191 pass / 0 fail** (16 new), `npm run validate:taxonomy`
+0 errors / 0 warnings across 731 nodes, `npm run build` exit 0, `npm run smoke:routes`
+`{"status":"ok","routesChecked":18}`, `npm run audit:ui` `findings: 0`.
+
 ## 4. UI
 
 `src/pages/CompanyAssociationsPage.tsx` composes `Breadcrumb` → `page-head` → `.assoc-context`
@@ -368,6 +443,10 @@ that this repository does not have; that is reported plainly rather than faked.
 
    Adding any of the first two means adding an industry node and a pocket, which is a modelling
    decision about what this register is for, not a research task. That decision is still open.
+   The national taxonomy has since removed half the obstacle: `MIN-*` (mining, including PGM, coal,
+   iron ore and junior miners) and `FIN-DFI-IMPACT` (infrastructure and impact fund management)
+   already exist as targets, so either company now needs one new Maps industry plus a crosswalk
+   line, not a new branch of the national tree.
 2. Decide whether target pools should leave the browser. That needs a backend and an auth decision;
    until then the drop file + `bank:import --targets` is the shareable path.
 3. Attach real Searches to Search Bank briefs so role contexts derive from live assignments instead

@@ -1165,6 +1165,7 @@
         "ENR-GEN-IPP-WIND",
         "ENR-GEN-IPP-BESS",
         "ENR-GEN-IPP-SPV",
+        "ENR-GEN-IPP-DEV",
         "ENR-GEN-THERM",
         "ENR-GEN-COGEN",
         "ENR-GEN-EMBED",
@@ -1398,6 +1399,7 @@
         "WHL-COLD-STORE",
         "WHL-COLD-BLAST",
         "WHL-COLD-BOND",
+        "WHL-COLD-BOND-PERISH",
         "WHL-COLD-PHARMA",
         "WHL-COMM",
         "WHL-COMM-AGRI",
@@ -1827,7 +1829,7 @@
         "MFG-AUTO-OEM-EXPORT",
         "MFG-CHEM-CTL-SYNFUEL"
       ],
-      "description": "Any of the 729 nodes in the four-tier taxonomy, from macro-sector (level 1) to operational niche (level 4)."
+      "description": "Any of the 731 nodes in the four-tier taxonomy, from macro-sector (level 1) to operational niche (level 4)."
     }
   },
   "allOf": [

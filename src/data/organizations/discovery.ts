@@ -15,6 +15,7 @@
 
 import type { OrganizationIndex } from './load'
 import { datasetOrganization } from './load'
+import { organizationTaxonomy, sharedTaxonomyBranch } from './taxonomyPlacement'
 import type {
   AssociationDiscovery,
   AssociationFilters,
@@ -121,6 +122,47 @@ const RULES: RuleDefinition[] = [
         label: 'Same industry or subindustry',
         detail: `Both operate in ${shared.join(', ')}.`,
         evidence: evidence ? `${evidence.evidence} (${evidence.sourceUrl || 'no source recorded'})` : '',
+      }
+    },
+  },
+  {
+    // Two companies in different Maps industries can still sit in the same branch
+    // of the national taxonomy. R1 owns exact industry overlap; this rule covers
+    // only the case R1 cannot see, so the two never report the same thing twice.
+    rule: 'R16-shared-taxonomy-branch',
+    label: 'Same national sub-industry branch',
+    relationship: 'same-industry',
+    test: ({ focal, organization }) => {
+      const exactOverlap = organization.industries.some((link) =>
+        focal.industries.some((focalLink) => focalLink.industryId === link.industryId))
+      if (exactOverlap) return null
+
+      const focalPlacement = organizationTaxonomy(focal)
+      const organizationPlacement = organizationTaxonomy(organization)
+      const shared = sharedTaxonomyBranch(focalPlacement.nodes, organizationPlacement.nodes)
+      // Sharing only a macro-sector is weaker evidence than sharing a sub-industry,
+      // so level 1 overlap is left to the pocket and value-chain rules.
+      if (!shared || shared.level < 2) return null
+
+      const namesUnder = (entries: { node: { id: string; name: string }; path: { id: string }[] }[]) =>
+        [...new Set(
+          entries
+            .filter((entry) => entry.path.some((node) => node.id === shared.id))
+            .map((entry) => entry.node.name),
+        )]
+      const focalNames = namesUnder(focalPlacement.entries)
+      const organizationNames = namesUnder(organizationPlacement.entries)
+      const branchPath = focalPlacement.entries
+        .find((entry) => entry.path.some((node) => node.id === shared.id))?.path
+        // Truncated at the shared node: the branch is what both companies share,
+        // not the focal company's own deepest niche.
+        .slice(0, shared.level)
+        .map((node) => node.name) ?? [shared.name]
+      return {
+        rule: 'R16-shared-taxonomy-branch',
+        label: 'Same national sub-industry branch',
+        detail: `Both sit in the ${branchPath.join(' > ')} branch of the national taxonomy (level ${shared.level}), in different sub-industries: the focal company in ${focalNames.join(', ')}, this company in ${organizationNames.join(', ')}. Same branch is adjacency, not the same business.`,
+        evidence: 'Placement derived from the Maps industry crosswalk into markets/organizations/taxonomy/sector-tree.json; no company-level capability is implied.',
       }
     },
   },
@@ -599,6 +641,10 @@ export function filterMatches(
       && !match.relationshipTypes.some((type) => filters.relationshipTypes.includes(type))) return false
     if (filters.industries.length > 0
       && !organization.industries.some((link) => filters.industries.includes(link.industryId))) return false
+    if (filters.macroSectors.length > 0) {
+      const placement = organizationTaxonomy(organization)
+      if (!placement.macroSectorIds.some((id) => filters.macroSectors.includes(id))) return false
+    }
     if (filters.capabilities.length > 0) {
       const observed = new Set(organization.capabilities.filter((link) => link.status === 'observed').map((link) => link.capabilityId))
       if (!filters.capabilities.every((id) => observed.has(id))) return false
@@ -618,6 +664,7 @@ export function filterMatches(
         organization.legalName,
         ...organization.aliases,
         ...organization.industries.map((link) => index.industryById.get(link.industryId)?.name ?? ''),
+        ...organizationTaxonomy(organization).labels,
         ...organization.capabilities.map((link) => index.capabilityById.get(link.capabilityId)?.name ?? ''),
         ...organization.locations.map((location) => `${location.city} ${location.province}`),
         ...match.rules.map((rule) => rule.detail),
