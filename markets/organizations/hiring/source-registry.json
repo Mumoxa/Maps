@@ -15,8 +15,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -28,8 +28,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -41,8 +41,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -54,8 +54,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -67,8 +67,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -80,8 +80,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -93,8 +93,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -106,8 +106,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -119,8 +119,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -132,8 +132,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -145,8 +145,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -158,8 +158,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -171,8 +171,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -184,8 +184,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -197,8 +197,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -210,8 +210,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -223,8 +223,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     },
     {
@@ -236,8 +236,8 @@
       "historicCoverage": "unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
-      "recordsObserved": 0,
-      "recordsAccepted": 0,
+      "recordsObserved": null,
+      "recordsAccepted": null,
       "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
     }
   ]
