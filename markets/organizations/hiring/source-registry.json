@@ -17,7 +17,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "greenhouse",
@@ -25,12 +27,14 @@
       "kind": "employer-ats",
       "accessRoute": "official-ats-api",
       "rights": "not-approved",
-      "historicCoverage": "unverified",
+      "historicCoverage": "No general historic archive on public Job Board GET API",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "The public GET lists currently published jobs; updated_at does not prove initial posting date.",
+      "capability": "current-published-ATS-jobs",
+      "capabilityEvidence": "https://docs.greenhouse.io/job-board.html"
     },
     {
       "id": "lever",
@@ -43,7 +47,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "ashby",
@@ -56,7 +62,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "smartrecruiters",
@@ -69,7 +77,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "workday",
@@ -82,7 +92,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "adzuna-intelligence",
@@ -90,12 +102,14 @@
       "kind": "licensed-historical-data",
       "accessRoute": "licensed-api-terms-to-confirm",
       "rights": "not-approved",
-      "historicCoverage": "unverified",
+      "historicCoverage": "South Africa availability unverified",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Endpoint supports date-range company counts, not individual job-level records. Confirm ZA endpoint licence, full pagination and commercial retention before first run.",
+      "capability": "period-wide-employer-report",
+      "capabilityEvidence": "https://developer.intelligence.adzuna.com/api-8430038"
     },
     {
       "id": "adzuna-search",
@@ -103,12 +117,14 @@
       "kind": "job-aggregator",
       "accessRoute": "source-terms-to-confirm",
       "rights": "not-approved",
-      "historicCoverage": "unverified",
+      "historicCoverage": "No full archived job-level backfill demonstrated",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Public API history endpoint is salary data, not an archive of every expired vacancy; top_companies defaults to a five-company leaderboard.",
+      "capability": "current-job-search",
+      "capabilityEvidence": "https://developer.adzuna.com/docs/search"
     },
     {
       "id": "pnet",
@@ -121,7 +137,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "careerjunction",
@@ -134,7 +152,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "careers24",
@@ -147,7 +167,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "jobmail",
@@ -160,7 +182,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "indeed",
@@ -173,7 +197,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "linkedin",
@@ -181,12 +207,14 @@
       "kind": "job-board",
       "accessRoute": "explicit-authorisation-required",
       "rights": "not-approved",
-      "historicCoverage": "unverified",
+      "historicCoverage": "No authorised bulk historical feed",
       "ingestion": "not-started",
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "LinkedIn restricts automated scraping and unauthorised copying; do not automate.",
+      "capability": "restricted-unapproved-automation",
+      "capabilityEvidence": "https://www.linkedin.com/help/linkedin/answer/a1341387/prohibition-of-scraping-software"
     },
     {
       "id": "executiveplacements",
@@ -199,7 +227,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "bizcommunity",
@@ -212,7 +242,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "jobvine",
@@ -225,7 +257,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     },
     {
       "id": "itweb",
@@ -238,7 +272,9 @@
       "lastSuccessfulScan": null,
       "recordsObserved": null,
       "recordsAccepted": null,
-      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability."
+      "notes": "Do not use without verifying current provider access, rights and source-specific historical availability.",
+      "capability": "not-assessed",
+      "capabilityEvidence": null
     }
   ]
 }
