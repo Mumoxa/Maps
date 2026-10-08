@@ -73,6 +73,43 @@ npm run validate:contacts
 
 The checked-in validator reconciles each generated source audit and rejects shifted spreadsheet values such as email addresses in person names or dates in telephone fields. The directory contains personal contact details and relationship notes and must remain behind the project's private access boundary.
 
+## SA Corporate Taxonomy Framework
+
+`markets/organizations/taxonomy/` holds a national reference taxonomy for classifying any South African
+registered company: a 731-node four-tier sector tree (Macro-Sector → Industry Sector → Sub-Industry →
+Operational/Product Niche), the National Small Enterprise Act scale bands plus corporate-banking bands,
+the statutory Schedule 1 sector thresholds, and controlled vocabularies for entity type, CIPC status,
+SARS tax compliance, COIDA, B-BBEE, provinces, metros, district municipalities and regional economic hubs.
+
+| File | Description |
+|------|-------------|
+| `sector-tree.json` | The four-tier tree (16 / 129 / 490 / 96 nodes per tier) |
+| `sector-tree-outline.md` | Generated Markdown outline of the tree |
+| `scale-bands.json` | Scale bands, turnover ceilings and the higher-of-both-proxies precedence rule |
+| `statutory-schedule-1.json` | Schedule 1 sector thresholds; the 2026 replacement schedule is present but deliberately unpopulated until the gazette table is loaded |
+| `controlled-vocabularies.json` | Entity types, regulatory statuses, B-BBEE, geography, hubs |
+| `sa-company-profile.schema.json` | Generated JSON Schema (draft 2020-12) for one company record |
+| `industry-crosswalk.json` | Binds all 30 industries and 12 sourcing pockets onto the national tree |
+| `examples/` | Validated worked records at both ends of the scale |
+
+The classification and validation logic lives in `src/data/taxonomy/`. Regenerate and check:
+
+```bash
+npm run taxonomy:schema     # regenerate the JSON Schema from the data files
+npm run taxonomy:outline    # regenerate the Markdown outline from the sector tree
+npm run validate:taxonomy   # integrity, crosswalk coverage and example validation (in the build gate)
+```
+
+The Company Association Explorer reads the crosswalk at runtime:
+[`/company-associations`](https://maps-4xq.pages.dev/company-associations) derives each company's
+national placement from its existing industry links, filters by national macro-sector, and links two
+companies that sit in the same branch of the national taxonomy but in different sourcing industries
+(rule `R16`). Nothing is duplicated — placement is derived, never stored per company.
+
+Design specification: [`docs/sa-corporate-taxonomy.md`](docs/sa-corporate-taxonomy.md). It records which
+facts were verified against sources on 2026-10-08 and which are deliberately left empty rather than
+filled in plausibly — notably the sector turnover table of the schedule gazetted on 27 May 2026.
+
 ## Credit Risk Data Files
 
 | File | Description |

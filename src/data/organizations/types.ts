@@ -305,6 +305,8 @@ export interface AssociationDiscovery {
 
 export interface AssociationFilters {
   industries: string[]
+  /** National macro-sector ids, derived from the industry crosswalk. */
+  macroSectors: string[]
   pockets: string[]
   capabilities: string[]
   provinces: string[]
@@ -319,6 +321,7 @@ export interface AssociationFilters {
 
 export const EMPTY_FILTERS: AssociationFilters = {
   industries: [],
+  macroSectors: [],
   pockets: [],
   capabilities: [],
   provinces: [],

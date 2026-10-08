@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": "1.0.0",
+  "note": "Every controlled vocabulary the company profile schema draws from. Vocabularies shared with the canonical organization model (confidence, sourceType, scaleBasis) are deliberately reused rather than redefined, so one vocabulary exists per concept.",
+  "entityTypes": [
+    {
+      "id": "pty-ltd",
+      "label": "Private Company (Pty) Ltd",
+      "legalSuffix": "(Pty) Ltd",
+      "note": "The dominant registered form. CIPC registration number format YYYY/NNNNNN/07."
+    },
+    {
+      "id": "ltd-public",
+      "label": "Public Company Ltd",
+      "legalSuffix": "Ltd",
+      "note": "Registration number format YYYY/NNNNNN/06. Almost all JSE-listed companies use this form."
+    },
+    {
+      "id": "ltd-inc",
+      "label": "Personal Liability Company (Inc)",
+      "legalSuffix": "Inc",
+      "note": "Used by attorneys, doctors, accountants and other professions; directors carry joint liability."
+    },
+    {
+      "id": "npc",
+      "label": "Non-Profit Company (NPC)",
+      "legalSuffix": "NPC",
+      "note": "Registration number format YYYY/NNNNNN/08. May additionally hold NPO Act registration with the Department of Social Development."
+    },
+    {
+      "id": "cc",
+      "label": "Close Corporation (CC)",
+      "legalSuffix": "CC",
+      "note": "Legacy form. No new close corporations may be registered since the Companies Act of 2008 took effect, but thousands remain on the register and still trade. Registration number format YY/NNNNNN/23."
+    },
+    {
+      "id": "sole-proprietorship",
+      "label": "Sole Proprietorship",
+      "legalSuffix": "",
+      "note": "No separate legal personality and no CIPC registration number. Identified for tax purposes by the owner's income tax number."
+    },
+    {
+      "id": "partnership",
+      "label": "Partnership",
+      "legalSuffix": "",
+      "note": "Common in professional practices and farming operations; not separately registered with CIPC."
+    },
+    {
+      "id": "trust",
+      "label": "Trust",
+      "legalSuffix": "",
+      "note": "Registered with the Master of the High Court (IT number). Common for community trusts, family businesses and farming structures."
+    },
+    {
+      "id": "co-operative",
+      "label": "Co-operative",
+      "legalSuffix": "Ltd (Co-op)",
+      "note": "Registered under the Co-operatives Act; registration number format YYYY/NNNNNN/24. Includes primary, secondary and agricultural co-operatives."
+    },
+    {
+      "id": "soc-ltd",
+      "label": "State-Owned Company (SOC) Ltd",
+      "legalSuffix": "SOC Ltd",
+      "note": "State-owned companies defined in the Companies Act and governed by the PFMA. Registration number format YYYY/NNNNNN/30."
+    },
+    {
+      "id": "public-entity",
+      "label": "Public Entity",
+      "legalSuffix": "",
+      "note": "PFMA Schedule 2 or 3 entities, including national regulators and agencies."
+    },
+    {
+      "id": "municipal-entity",
+      "label": "Municipal Entity",
+      "legalSuffix": "",
+      "note": "Governed by the MFMA and the Municipal Systems Act; may be a private company, trust or municipal service utility."
+    },
+    {
+      "id": "provincial-department",
+      "label": "National or Provincial Department",
+      "legalSuffix": "",
+      "note": "Not a registered juristic person; identified by vote and department code."
+    },
+    {
+      "id": "npo-association",
+      "label": "Voluntary Association (NPO Act)",
+      "legalSuffix": "",
+      "note": "Registered with the Department of Social Development under the NPO Act without CIPC incorporation."
+    },
+    {
+      "id": "foreign-branch",
+      "label": "External Company / Foreign Branch",
+      "legalSuffix": "",
+      "note": "Foreign company registered as an external company with CIPC; registration number format YYYY/NNNNNN/10."
+    },
+    {
+      "id": "unregistered-informal",
+      "label": "Unregistered Informal Enterprise",
+      "legalSuffix": "",
+      "note": "No CIPC registration. Essential to the taxonomy: spaza shops, street traders, taxi operators and stokvels largely sit here. Identity is carried by trading name, location and tax status instead of a registration number."
+    }
+  ],
+  "cipcStatuses": [
+    {
+      "id": "registered",
+      "label": "Registered - active",
+      "note": "Company exists on the register and annual returns are current."
+    },
+    {
+      "id": "ar-in-arrears",
+      "label": "Registered - annual returns in arrears",
+      "note": "The single most common defect in South African company data. A company can trade perfectly well while its annual returns are years overdue; do not infer insolvency from this status."
+    },
+    {
+      "id": "deregistered",
+      "label": "Deregistered",
+      "note": "Removed from the register, usually for non-filing of annual returns. Frequently reversible on application."
+    },
+    {
+      "id": "final-deregistration",
+      "label": "Final deregistration",
+      "note": "Deregistration completed; the juristic person no longer exists."
+    },
+    {
+      "id": "provisional-liquidation",
+      "label": "Provisional liquidation",
+      "note": "Court order granted, not yet final."
+    },
+    {
+      "id": "in-liquidation",
+      "label": "In liquidation",
+      "note": "Final liquidation order granted."
+    },
+    {
+      "id": "business-rescue",
+      "label": "Business rescue",
+      "note": "Practitioner appointed under Chapter 6 of the Companies Act; the company continues to trade."
+    },
+    {
+      "id": "under-review",
+      "label": "Under review / name reserved",
+      "note": "Name reservation or incorporation in progress."
+    },
+    {
+      "id": "unknown",
+      "label": "Unknown - not yet verified",
+      "note": "Distinct from a verified absence of status. Rendered as unknown, never as a clean status."
+    }
+  ],
+  "taxComplianceStatuses": [
+    {
+      "id": "tcs-valid",
+      "label": "Tax Compliance Status - valid PIN",
+      "note": "SARS TCS PIN issued and verifiable in real time by third parties."
+    },
+    {
+      "id": "tcs-applied",
+      "label": "TCS applied, PIN not yet issued"
+    },
+    {
+      "id": "tcs-expired",
+      "label": "TCS PIN expired"
+    },
+    {
+      "id": "non-compliant",
+      "label": "Non-compliant - returns outstanding or debt owed"
+    },
+    {
+      "id": "vat-registered",
+      "label": "VAT vendor registered",
+      "note": "Recorded alongside income tax status; mandatory above the R1m compulsory threshold and voluntary below it."
+    },
+    {
+      "id": "turnover-tax",
+      "label": "Turnover tax registered",
+      "note": "Small business tax regime for qualifying micro enterprises."
+    },
+    {
+      "id": "not-registered",
+      "label": "Not registered with SARS"
+    },
+    {
+      "id": "unknown",
+      "label": "Unknown - not yet verified"
+    }
+  ],
+  "coidaStatuses": [
+    {
+      "id": "lgs-valid",
+      "label": "Compensation Fund registered - Letter of Good Standing valid"
+    },
+    {
+      "id": "lgs-expired",
+      "label": "Registered - Letter of Good Standing expired"
+    },
+    {
+      "id": "registered-not-current",
+      "label": "Registered - returns or payments not current"
+    },
+    {
+      "id": "not-registered",
+      "label": "Not registered with the Compensation Fund"
+    },
+    {
+      "id": "exempt",
+      "label": "Exempt or not applicable",
+      "note": "Certain categories of employer fall outside COIDA coverage."
+    },
+    {
+      "id": "unknown",
+      "label": "Unknown - not yet verified"
+    }
+  ],
+  "bbbee": {
+    "categories": [
+      {
+        "id": "eme",
+        "label": "Exempted Micro Enterprise (EME)",
+        "turnoverBand": "R0 - R10m",
+        "evidence": "Sworn affidavit on the dtic gazetted template before a Commissioner of Oaths, valid 12 months",
+        "defaultLevel": 4,
+        "levelUplift": "Level 2 at 51% or more black ownership; Level 1 at 100% black ownership"
+      },
+      {
+        "id": "qse",
+        "label": "Qualifying Small Enterprise (QSE)",
+        "turnoverBand": "R10m - R50m",
+        "evidence": "SANAS-accredited verification, or a sworn affidavit where the QSE is at least 51% black-owned",
+        "defaultLevel": null,
+        "levelUplift": "Level 2 / Level 1 on the affidavit path"
+      },
+      {
+        "id": "generic",
+        "label": "Generic Enterprise",
+        "turnoverBand": "Above R50m",
+        "evidence": "Full five-element scorecard verified by a SANAS-accredited agency",
+        "defaultLevel": null,
+        "levelUplift": "None - level is awarded purely on score"
+      },
+      {
+        "id": "startup",
+        "label": "Start-up Enterprise",
+        "turnoverBand": "Newly incorporated",
+        "evidence": "Sworn affidavit for the first 12 months of operation",
+        "defaultLevel": 4,
+        "levelUplift": "Treated as an EME for its first year"
+      },
+      {
+        "id": "not-verified",
+        "label": "Not verified",
+        "evidence": "No affidavit or certificate on file",
+        "defaultLevel": null
+      },
+      {
+        "id": "not-applicable",
+        "label": "Not applicable",
+        "note": "Public entities, departments and foreign entities outside the Codes' scope",
+        "defaultLevel": null
+      }
+    ],
+    "levels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "non-compliant",
+      "not-verified"
+    ],
+    "scorecardTypes": [
+      "generic",
+      "qse",
+      "eme-affidavit",
+      "startup-affidavit",
+      "sector-code",
+      "none"
+    ],
+    "sectorCodes": [
+      {
+        "id": "general",
+        "label": "General Codes of Good Practice",
+        "emeThreshold": 10000000,
+        "qseThreshold": 50000000
+      },
+      {
+        "id": "agriculture",
+        "label": "Agriculture Sector Code",
+        "emeThreshold": 10000000,
+        "qseThreshold": 50000000
+      },
+      {
+        "id": "construction",
+        "label": "Construction Sector Code",
+        "emeThreshold": 3000000,
+        "qseThreshold": 50000000,
+        "note": "Construction EME threshold is R3m, not the general R10m."
+      },
+      {
+        "id": "financial-services",
+        "label": "Financial Services Sector Code (FSCSC)",
+        "emeThreshold": 10000000,
+        "qseThreshold": 50000000
+      },
+      {
+        "id": "forestry",
+        "label": "Forestry Sector Code",
+        "emeThreshold": 10000000,
+        "qseThreshold": 50000000
+      },
+      {
+        "id": "ict",
+        "label": "ICT Sector Code",
+        "emeThreshold": 10000000,
+        "qseThreshold": 50000000
+      },
+      {
+        "id": "marketing-advertising-communications",
+        "label": "Marketing, Advertising and Communication Sector Code",
+        "emeThreshold": 5000000,
+        "qseThreshold": 50000000,
+        "note": "PR QSE band starts at R5m."
+      },
+      {
+        "id": "property",
+        "label": "Property Sector Code",
+        "emeThreshold": 10000000,
+        "qseThreshold": 50000000
+      },
+      {
+        "id": "tourism",
+        "label": "Tourism Sector Code",
+        "emeThreshold": 5000000,
+        "qseThreshold": 45000000,
+        "note": "Tourism uses R5m and R45m rather than the general bands."
+      },
+      {
+        "id": "transport",
+        "label": "Transport Sector Code",
+        "emeThreshold": 5000000,
+        "qseThreshold": 50000000
+      },
+      {
+        "id": "mining-charter",
+        "label": "Mining Charter",
+        "emeThreshold": null,
+        "qseThreshold": null,
+        "note": "Mineral and Petroleum Resources Development Act ownership and procurement obligations apply in addition to the Codes."
+      },
+      {
+        "id": "defence",
+        "label": "Defence Industry Sector Code",
+        "emeThreshold": null,
+        "qseThreshold": null
+      }
+    ],
+    "evidenceTypes": [
+      "sworn-affidavit",
+      "verification-certificate",
+      "cipc-certificate",
+      "dtic-database-record",
+      "none"
+    ],
+    "sourceNote": "EME and QSE turnover boundaries and the sector-code variations were confirmed against published dtic-aligned guidance on 2026-10-08. Sector codes are gazetted independently and change; re-verify before a procurement decision."
+  },
+  "provinces": [
+    {
+      "id": "EC",
+      "label": "Eastern Cape"
+    },
+    {
+      "id": "FS",
+      "label": "Free State"
+    },
+    {
+      "id": "GP",
+      "label": "Gauteng"
+    },
+    {
+      "id": "KZN",
+      "label": "KwaZulu-Natal"
+    },
+    {
+      "id": "LP",
+      "label": "Limpopo"
+    },
+    {
+      "id": "MP",
+      "label": "Mpumalanga"
+    },
+    {
+      "id": "NC",
+      "label": "Northern Cape"
+    },
+    {
+      "id": "NW",
+      "label": "North West"
+    },
+    {
+      "id": "WC",
+      "label": "Western Cape"
+    }
+  ],
+  "metropolitanMunicipalities": [
+    {
+      "id": "city-of-cape-town",
+      "label": "City of Cape Town",
+      "province": "WC"
+    },
+    {
+      "id": "city-of-johannesburg",
+      "label": "City of Johannesburg",
+      "province": "GP"
+    },
+    {
+      "id": "city-of-tshwane",
+      "label": "City of Tshwane",
+      "province": "GP"
+    },
+    {
+      "id": "city-of-ekurhuleni",
+      "label": "City of Ekurhuleni",
+      "province": "GP"
+    },
+    {
+      "id": "ethekwini",
+      "label": "eThekwini",
+      "province": "KZN"
+    },
+    {
+      "id": "nelson-mandela-bay",
+      "label": "Nelson Mandela Bay",
+      "province": "EC"
+    },
+    {
+      "id": "buffalo-city",
+      "label": "Buffalo City",
+      "province": "EC"
+    },
+    {
+      "id": "mangaung",
+      "label": "Mangaung",
+      "province": "FS"
+    }
+  ],
+  "districtMunicipalities": [
+    {
+      "id": "west-coast",
+      "label": "West Coast",
+      "province": "WC"
+    },
+    {
+      "id": "cape-winelands",
+      "label": "Cape Winelands",
+      "province": "WC"
+    },
+    {
+      "id": "overberg",
+      "label": "Overberg",
+      "province": "WC"
+    },
+    {
+      "id": "eden",
+      "label": "Eden",
+      "province": "WC"
+    },
+    {
+      "id": "central-karoo",
+      "label": "Central Karoo",
+      "province": "WC"
+    },
+    {
+      "id": "namakwa",
+      "label": "Namakwa",
+      "province": "NC"
+    },
+    {
+      "id": "pixley-ka-seme",
+      "label": "Pixley ka Seme",
+      "province": "NC"
+    },
+    {
+      "id": "zf-kgari-mokoena",
+      "label": "ZF Kgari Mokoena",
+      "province": "NC"
+    },
+    {
+      "id": "frances-baard",
+      "label": "Frances Baard",
+      "province": "NC"
+    },
+    {
+      "id": "john-taolo-gaetsewe",
+      "label": "John Taolo Gaetsewe",
+      "province": "NC"
+    },
+    {
+      "id": "sarah-baartman",
+      "label": "Sarah Baartman",
+      "province": "EC"
+    },
+    {
+      "id": "amathole",
+      "label": "Amathole",
+      "province": "EC"
+    },
+    {
+      "id": "chris-hani",
+      "label": "Chris Hani",
+      "province": "EC"
+    },
+    {
+      "id": "joe-gqabi",
+      "label": "Joe Gqabi",
+      "province": "EC"
+    },
+    {
+      "id": "or-tambo",
+      "label": "OR Tambo",
+      "province": "EC"
+    },
+    {
+      "id": "alfred-nzo",
+      "label": "Alfred Nzo",
+      "province": "EC"
+    },
+    {
+      "id": "ilembe",
+      "label": "iLembe",
+      "province": "KZN"
+    },
+    {
+      "id": "umgungundlovu",
+      "label": "uMgungundlovu",
+      "province": "KZN"
+    },
+    {
+      "id": "umzinyathi",
+      "label": "uMzinyathi",
+      "province": "KZN"
+    },
+    {
+      "id": "uthukela",
+      "label": "uThukela",
+      "province": "KZN"
+    },
+    {
+      "id": "zululand",
+      "label": "Zululand",
+      "province": "KZN"
+    },
+    {
+      "id": "umkhanyakude",
+      "label": "uMkhanyakude",
+      "province": "KZN"
+    },
+    {
+      "id": "king-cetshwayo",
+      "label": "King Cetshwayo",
+      "province": "KZN"
+    },
+    {
+      "id": "amajuba",
+      "label": "Amajuba",
+      "province": "KZN"
+    },
+    {
+      "id": "harry-gwala",
+      "label": "Harry Gwala",
+      "province": "KZN"
+    },
+    {
+      "id": "ugu",
+      "label": "Ugu",
+      "province": "KZN"
+    },
+    {
+      "id": "gert-sibande",
+      "label": "Gert Sibande",
+      "province": "MP"
+    },
+    {
+      "id": "nkangala",
+      "label": "Nkangala",
+      "province": "MP"
+    },
+    {
+      "id": "ehlanzeni",
+      "label": "Ehlanzeni",
+      "province": "MP"
+    },
+    {
+      "id": "fezile-dabi",
+      "label": "Fezile Dabi",
+      "province": "FS"
+    },
+    {
+      "id": "lejweleputswa",
+      "label": "Lejweleputswa",
+      "province": "FS"
+    },
+    {
+      "id": "thabo-mofutsanyane",
+      "label": "Thabo Mofutsanyane",
+      "province": "FS"
+    },
+    {
+      "id": "xhariep",
+      "label": "Xhariep",
+      "province": "FS"
+    },
+    {
+      "id": "west-rand",
+      "label": "West Rand",
+      "province": "GP"
+    },
+    {
+      "id": "sedibeng",
+      "label": "Sedibeng",
+      "province": "GP"
+    },
+    {
+      "id": "bojanala-platinum",
+      "label": "Bojanala Platinum",
+      "province": "NW"
+    },
+    {
+      "id": "ngaka-modiri-molema",
+      "label": "Ngaka Modiri Molema",
+      "province": "NW"
+    },
+    {
+      "id": "dr-ruth-segomotsi-mompati",
+      "label": "Dr Ruth Segomotsi Mompati",
+      "province": "NW"
+    },
+    {
+      "id": "dr-kenneth-kaunda",
+      "label": "Dr Kenneth Kaunda",
+      "province": "NW"
+    },
+    {
+      "id": "mopani",
+      "label": "Mopani",
+      "province": "LP"
+    },
+    {
+      "id": "vhembe",
+      "label": "Vhembe",
+      "province": "LP"
+    },
+    {
+      "id": "capricorn",
+      "label": "Capricorn",
+      "province": "LP"
+    },
+    {
+      "id": "waterberg",
+      "label": "Waterberg",
+      "province": "LP"
+    },
+    {
+      "id": "sekhukhune",
+      "label": "Sekhukhune",
+      "province": "LP"
+    }
+  ],
+  "localMunicipalityPolicy": {
+    "controlled": false,
+    "reason": "Local municipalities (205 of them) are recorded as free text with a source URL and checkedOn date rather than as a hardcoded enumeration, because municipal boundaries are amended by the Municipal Demarcation Board and a stale enumeration silently misassigns every company in the affected area. Metros and district municipalities are stable enough to enumerate; local municipalities must be loaded from the current MDB determination.",
+    "field": "geography.headOffice.localMunicipality",
+    "requiredWith": [
+      "geography.headOffice.sourceUrl",
+      "geography.headOffice.checkedOn"
+    ]
+  },
+  "regionalEconomicHubs": [
+    {
+      "id": "gp-financial-corridor",
+      "label": "Gauteng Financial Services Corridor",
+      "provinces": [
+        "GP"
+      ],
+      "note": "Sandton, Rosebank, Bryanston and Midrand: head offices of the Big Five banks, insurers, asset managers and the JSE."
+    },
+    {
+      "id": "gp-industrial-ekurhuleni",
+      "label": "East Rand Industrial Belt",
+      "provinces": [
+        "GP"
+      ],
+      "note": "Ekurhuleni and the East Rand: automotive components, engineering, packaging and distribution centres."
+    },
+    {
+      "id": "gp-vaal-steel-industrial",
+      "label": "Vaal Triangle Steel & Industrial Complex",
+      "provinces": [
+        "GP",
+        "FS"
+      ],
+      "note": "Vanderbijlpark, Vereeniging and Sasolburg: primary steel, heavy engineering and petrochemical service industries."
+    },
+    {
+      "id": "gp-tech-northern-suburbs",
+      "label": "Johannesburg Technology & Services Cluster",
+      "provinces": [
+        "GP"
+      ],
+      "note": "Software houses, systems integrators, BPO and professional services in the northern suburbs and Sandton."
+    },
+    {
+      "id": "wc-tech-bpo",
+      "label": "Cape Town Technology & BPO Cluster",
+      "provinces": [
+        "WC"
+      ],
+      "note": "Woodstock, Claremont, Century City and the northern suburbs: software studios, fintech and contact centres."
+    },
+    {
+      "id": "wc-winelands-agri",
+      "label": "Cape Winelands & Deciduous Fruit Region",
+      "provinces": [
+        "WC"
+      ],
+      "note": "Wine estates, cellars, deciduous fruit packhouses and agribusiness services."
+    },
+    {
+      "id": "ec-automotive-cluster",
+      "label": "Eastern Cape Automotive Cluster",
+      "provinces": [
+        "EC"
+      ],
+      "note": "Gqeberha, East London and the Coega / IDZ corridors: vehicle assembly plants and Tier 1 supplier parks."
+    },
+    {
+      "id": "ec-wind-corridor",
+      "label": "Eastern Cape Wind Corridor",
+      "provinces": [
+        "EC"
+      ],
+      "note": "Wind IPP concentration and associated O&M services."
+    },
+    {
+      "id": "kzn-logistics-corridor",
+      "label": "Durban Logistics & Port Corridor",
+      "provinces": [
+        "KZN"
+      ],
+      "note": "Bayhead, Isipingo, Dube TradePort and the N3 corridor: container cartage, warehousing and clearing."
+    },
+    {
+      "id": "kzn-north-coast-sugar",
+      "label": "KZN North Coast Sugar & Agro-Processing Region",
+      "provinces": [
+        "KZN"
+      ],
+      "note": "Sugarcane, mills and associated agro-processing."
+    },
+    {
+      "id": "mp-coal-energy-belt",
+      "label": "Mpumalanga Coal & Energy Belt",
+      "provinces": [
+        "MP"
+      ],
+      "note": "eMalahleni, Middelburg and Secunda: coal supply, power generation, synthetic fuels and shutdown services."
+    },
+    {
+      "id": "mp-forestry-pulp",
+      "label": "Mpumalanga Forestry & Pulp Region",
+      "provinces": [
+        "MP"
+      ],
+      "note": "Plantations, sawmills and pulp and paper operations."
+    },
+    {
+      "id": "fs-chem-industrial-corridor",
+      "label": "Free State Chemical & Industrial Corridor",
+      "provinces": [
+        "FS"
+      ],
+      "note": "Sasolburg and the northern Free State: petrochemical, chemical and engineering service firms."
+    },
+    {
+      "id": "fs-maize-triangle",
+      "label": "Maize Triangle",
+      "provinces": [
+        "FS",
+        "NW",
+        "MP"
+      ],
+      "note": "Grain production, co-operative silos and input supply around Bothaville, Lichtenburg and Bethlehem."
+    },
+    {
+      "id": "nw-pgm-rustenburg-belt",
+      "label": "Rustenburg PGM Belt",
+      "provinces": [
+        "NW"
+      ],
+      "note": "PGM and chrome mining, concentrators, smelters and mining services."
+    },
+    {
+      "id": "lp-mining-waterberg",
+      "label": "Limpopo Mining & Waterberg Complex",
+      "provinces": [
+        "LP"
+      ],
+      "note": "Platreef PGM, coal, chrome and mining infrastructure services."
+    },
+    {
+      "id": "lp-subtropical-agri",
+      "label": "Limpopo Subtropical Agriculture Region",
+      "provinces": [
+        "LP"
+      ],
+      "note": "Tzaneen and surrounding subtropical fruit, citrus and avocado production."
+    },
+    {
+      "id": "nc-iron-ore-kalahari",
+      "label": "Kalahari Iron Ore & Manganese Field",
+      "provinces": [
+        "NC"
+      ],
+      "note": "Sishen and Kolomela ore operations, ore-line rail and Saldanha export logistics."
+    },
+    {
+      "id": "nc-diamond-kimberley",
+      "label": "Kimberley & West Coast Diamond Region",
+      "provinces": [
+        "NC",
+        "WC"
+      ],
+      "note": "Kimberlite and alluvial diamond operations plus marine mining on the West Coast."
+    },
+    {
+      "id": "nc-green-hydrogen-coast",
+      "label": "Northern Cape Green Hydrogen Coast",
+      "provinces": [
+        "NC"
+      ],
+      "note": "Boegoebaai and associated renewable export infrastructure."
+    },
+    {
+      "id": "sr-citrus-export",
+      "label": "Sundays River Citrus Region",
+      "provinces": [
+        "EC"
+      ],
+      "note": "Citrus production and packhouses feeding the Port Elizabeth cold chain."
+    }
+  ],
+  "scaleBasis": [
+    "audited",
+    "reviewed",
+    "provisional-management",
+    "source-reported",
+    "third-party-estimate",
+    "unknown"
+  ],
+  "confidence": [
+    "confirmed",
+    "probable",
+    "hypothesis",
+    "unknown"
+  ],
+  "sourceType": [
+    "company-website",
+    "corporate-disclosure",
+    "business-directory",
+    "industry-directory",
+    "industry-report",
+    "news",
+    "recruiter-supplied",
+    "system-inferred",
+    "internal-dataset"
+  ],
+  "jseListingStatuses": [
+    {
+      "id": "primary-listed",
+      "label": "JSE primary listing"
+    },
+    {
+      "id": "secondary-listed",
+      "label": "JSE secondary listing"
+    },
+    {
+      "id": "delisted",
+      "label": "Previously listed, now delisted",
+      "note": "Record the delisting date and reason; delisting is not a failure state and does not remove the company from Tier 1."
+    },
+    {
+      "id": "not-listed",
+      "label": "Not listed"
+    },
+    {
+      "id": "unverified",
+      "label": "Listing status unverified",
+      "note": "Never render an unverified listing as not-listed."
+    }
+  ],
+  "registrationRegulators": [
+    {
+      "id": "cipc",
+      "label": "Companies and Intellectual Property Commission",
+      "whatItRegisters": "Company, close corporation, external company and NPC registration; annual returns; beneficial ownership"
+    },
+    {
+      "id": "sars",
+      "label": "South African Revenue Service",
+      "whatItRegisters": "Income tax, VAT, PAYE, UIF, SDL registration and the Tax Compliance Status PIN"
+    },
+    {
+      "id": "compensation-fund",
+      "label": "Compensation Fund (Department of Employment and Labour)",
+      "whatItRegisters": "COIDA employer registration and the Letter of Good Standing"
+    },
+    {
+      "id": "csd",
+      "label": "National Treasury Central Supplier Database",
+      "whatItRegisters": "Supplier registration for state procurement, linked to tax and bank verification"
+    },
+    {
+      "id": "dtic",
+      "label": "Department of Trade, Industry and Competition",
+      "whatItRegisters": "B-BBEE certificates on the national database, EME affidavits, incentives and designations"
+    },
+    {
+      "id": "sanas",
+      "label": "South African National Accreditation System",
+      "whatItRegisters": "Accreditation of B-BBEE verification agencies and testing laboratories"
+    },
+    {
+      "id": "cidb",
+      "label": "Construction Industry Development Board",
+      "whatItRegisters": "Contractor grading (grades 1-9) by works category"
+    },
+    {
+      "id": "nhbrc",
+      "label": "National Home Builders Registration Council",
+      "whatItRegisters": "Home builder and contractor enrolment for residential construction"
+    },
+    {
+      "id": "psira",
+      "label": "Private Security Industry Regulatory Authority",
+      "whatItRegisters": "Security service providers and officers"
+    },
+    {
+      "id": "ppra",
+      "label": "Property Practitioners Regulatory Authority",
+      "whatItRegisters": "Estate agencies and property practitioners"
+    },
+    {
+      "id": "fsca",
+      "label": "Financial Sector Conduct Authority",
+      "whatItRegisters": "Financial Services Providers, representatives and key individuals"
+    },
+    {
+      "id": "sarb",
+      "label": "South African Reserve Bank / Prudential Authority",
+      "whatItRegisters": "Banks, insurers and prudentially regulated institutions"
+    },
+    {
+      "id": "fica",
+      "label": "Financial Intelligence Centre",
+      "whatItRegisters": "Accountable and reporting institutions under FICA"
+    },
+    {
+      "id": "nersa",
+      "label": "National Energy Regulator of South Africa",
+      "whatItRegisters": "Generation, transmission, distribution and petroleum licences"
+    },
+    {
+      "id": "icasa",
+      "label": "Independent Communications Authority of South Africa",
+      "whatItRegisters": "Telecommunications licences, spectrum and broadcasting"
+    },
+    {
+      "id": "sahpra",
+      "label": "South African Health Products Regulatory Authority",
+      "whatItRegisters": "Medicines, medical devices and establishments"
+    },
+    {
+      "id": "ecsa",
+      "label": "Engineering Council of South Africa",
+      "whatItRegisters": "Professional engineers, technologists and technicians"
+    },
+    {
+      "id": "sacpcmp",
+      "label": "South African Council for the Project and Construction Management Professions",
+      "whatItRegisters": "Construction management professionals"
+    },
+    {
+      "id": "mdb",
+      "label": "Municipal Demarcation Board",
+      "whatItRegisters": "Municipal boundaries, wards and demarcation determinations"
+    },
+    {
+      "id": "seda",
+      "label": "Small Enterprise Development Agency",
+      "whatItRegisters": "SMME support programme registration"
+    }
+  ],
+  "municipalityCodePolicy": {
+    "controlled": false,
+    "field": "geography.headOffice.demarcationCode",
+    "reason": "Municipal demarcation codes (DC1-DC48, CPT, JHB, ...) are deliberately NOT enumerated in this file. The codes were not verifiable from within this environment and a wrong code silently misroutes every company in that district. Slug ids plus labels plus province are sufficient for the geographic anchor matrix; load codes from the current Municipal Demarcation Board determination when they are needed."
+  }
+}

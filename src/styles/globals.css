@@ -4117,6 +4117,10 @@ kbd {
 .assoc-rule-list li { display: grid; gap: 0.15rem; font-size: 0.8125rem; }
 .assoc-rule-evidence { font-size: 0.75rem; color: var(--color-text-secondary); }
 
+.assoc-taxonomy-paths { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.assoc-taxonomy-paths li { display: grid; gap: 0.1rem; font-size: 0.8125rem; }
+.assoc-taxonomy-source { font-size: 0.75rem; color: var(--color-text-secondary); }
+
 .assoc-capability-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
 .assoc-capability-list li { display: grid; gap: 0.1rem; font-size: 0.8125rem; }
 .assoc-capability-list a { font-size: 0.75rem; }

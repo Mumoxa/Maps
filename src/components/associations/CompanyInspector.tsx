@@ -91,6 +91,19 @@ export function CompanyInspector({
               : 'Not classified yet'}</dd>
           </div>
           <div className="detail-fact">
+            <dt>National taxonomy placement</dt>
+            <dd>{dossier.taxonomy.length > 0
+              ? <ul className="assoc-taxonomy-paths">
+                  {dossier.taxonomy.map((entry) => (
+                    <li key={`${entry.industryId}-${entry.path}`}>
+                      {entry.path}
+                      <span className="assoc-taxonomy-source">placed via the Maps industry “{entry.industryName}”</span>
+                    </li>
+                  ))}
+                </ul>
+              : 'No industry recorded, so no national placement can be derived'}</dd>
+          </div>
+          <div className="detail-fact">
             <dt>Website</dt>
             <dd>{dossier.identity.website
               ? <a href={dossier.identity.website} target="_blank" rel="noreferrer">{dossier.identity.website} <ArrowSquareOut size={12} aria-hidden /></a>

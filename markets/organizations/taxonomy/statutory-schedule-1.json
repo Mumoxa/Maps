@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0.0",
+  "instrument": "National Small Enterprise Act, 1996 (Act No. 102 of 1996), Schedule 1 - National Definition of Small Enterprise in South Africa",
+  "proxies": ["total-full-time-equivalent-of-paid-employees", "total-annual-turnover"],
+  "status": "superseded-and-unverified-successor",
+  "statusNote": "This file records the sector-by-sector thresholds as revised in the 2019 Schedule 1 proclamation (Government Notice 399, 15 March 2019), which is the version quoted across government tender documentation. On 27 May 2026 the Department of Small Business Development gazetted proclamations that repeal the 1996 schedule - one giving effect to section 8 of the National Small Enterprise Amendment Act of 2024, and a second inserting a replacement schedule whose criteria were published in draft for comment in September 2025. The gazetted 2026 sector table was NOT retrievable from this environment, so the numbers below must be re-read against the current proclamation before they are used for a statutory eligibility decision. The taxonomy is designed to survive that change: sector thresholds live in this file, not in code, and every band assignment on a company record carries the scheduleId it was derived from.",
+  "schedules": [
+    {
+      "id": "NSEA-S1-2019",
+      "label": "Schedule 1 as revised by Government Notice 399 of 15 March 2019",
+      "effectiveFrom": "2019-03-15",
+      "effectiveTo": "2026-05-27",
+      "verificationStatus": "source-verified",
+      "sources": [
+        {
+          "url": "https://www.gov.za/sites/default/files/gcis_document/201903/423041gon399.pdf",
+          "evidence": "Proclamation amending Schedule 1 of the National Small Enterprise Act, introducing two proxies (full-time equivalent employees and annual turnover) and removing gross asset value.",
+          "checkedOn": "2026-10-08"
+        },
+        {
+          "url": "http://www.dsbd.gov.za/sites/default/files/tenders/TORS%20Audit%20Firm%20MSMS%20Startup%20Awards.pdf",
+          "evidence": "Department of Small Business Development procurement document reproducing Schedule 1 sector thresholds with 0-10 / 11-50 / 51-250 employee bands.",
+          "checkedOn": "2026-10-08"
+        }
+      ],
+      "sectorClasses": [
+        {
+          "id": "agriculture",
+          "label": "Agriculture",
+          "micro": { "employeesMax": 10, "turnoverMax": 7000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 17000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 35000000 }
+        },
+        {
+          "id": "mining-and-quarrying",
+          "label": "Mining and quarrying",
+          "micro": { "employeesMax": 10, "turnoverMax": 15000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 50000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 210000000 }
+        },
+        {
+          "id": "manufacturing",
+          "label": "Manufacturing",
+          "micro": { "employeesMax": 10, "turnoverMax": 10000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 50000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 170000000 }
+        },
+        {
+          "id": "electricity-gas-and-water",
+          "label": "Electricity, gas and water",
+          "micro": { "employeesMax": 10, "turnoverMax": 10000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 60000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 180000000 }
+        },
+        {
+          "id": "construction",
+          "label": "Construction",
+          "micro": { "employeesMax": 10, "turnoverMax": 10000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 75000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 170000000 }
+        },
+        {
+          "id": "retail-motor-trade-and-repair-services",
+          "label": "Retail, motor trade and repair services",
+          "micro": { "employeesMax": 10, "turnoverMax": 7500000 },
+          "small": { "employeesMax": 50, "turnoverMax": 25000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 80000000 }
+        },
+        {
+          "id": "wholesale",
+          "label": "Wholesale",
+          "micro": { "employeesMax": 10, "turnoverMax": 20000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 80000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 220000000 }
+        },
+        {
+          "id": "catering-accommodation-and-other-trade",
+          "label": "Catering, accommodation and other trade",
+          "micro": { "employeesMax": 10, "turnoverMax": 5000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 15000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 40000000 }
+        },
+        {
+          "id": "transport-storage-and-communications",
+          "label": "Transport, storage and communications",
+          "micro": { "employeesMax": 10, "turnoverMax": 7500000 },
+          "small": { "employeesMax": 50, "turnoverMax": 45000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 140000000 }
+        },
+        {
+          "id": "finance-and-business-services",
+          "label": "Finance and business services",
+          "micro": { "employeesMax": 10, "turnoverMax": 7500000 },
+          "small": { "employeesMax": 50, "turnoverMax": 35000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 85000000 }
+        },
+        {
+          "id": "community-social-and-personal-services",
+          "label": "Community, social and personal services",
+          "micro": { "employeesMax": 10, "turnoverMax": 5000000 },
+          "small": { "employeesMax": 50, "turnoverMax": 22000000 },
+          "medium": { "employeesMax": 250, "turnoverMax": 70000000 }
+        }
+      ]
+    },
+    {
+      "id": "NSEA-S1-2026",
+      "label": "Replacement schedule gazetted by proclamation on 27 May 2026",
+      "effectiveFrom": "2026-05-27",
+      "effectiveTo": null,
+      "verificationStatus": "existence-verified-values-unverified",
+      "sources": [
+        {
+          "url": "https://www.acts.co.za/news/blog/2026/05/national-small-business-act-msme-classification-criteria-replaced",
+          "evidence": "Department of Small Business Development gazetted proclamations immediately replacing the schedule prescribing micro, small and medium classification criteria, following draft criteria published for comment in September 2025.",
+          "checkedOn": "2026-10-08"
+        },
+        {
+          "url": "https://legalacademy.co.za/news/read/national-small-business-act-micro-small-medium-enterprise-classification-criteria-replaced",
+          "evidence": "One proclamation gives effect to section 8 of the 2024 National Small Enterprise Amendment Act, which repeals the schedule to the 1996 principal statute; a separate proclamation inserts the replacement schedule.",
+          "checkedOn": "2026-10-08"
+        }
+      ],
+      "sectorClasses": [],
+      "sectorClassesNote": "Deliberately empty. The sector turnover table of the 2026 replacement schedule was not retrievable from this environment, and an empty list fails loudly rather than presenting an invented number as law. Populate from the Government Gazette proclamation, then set verificationStatus to source-verified and add the gazette citation."
+    }
+  ]
+}

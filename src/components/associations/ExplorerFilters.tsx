@@ -2,6 +2,8 @@ import { useMemo, useState } from 'react'
 import { MagnifyingGlass } from '@phosphor-icons/react'
 import type { OrganizationIndex } from '../../data/organizations/load'
 import { SCALE_BUCKETS, observedCapabilityCounts } from '../../data/organizations/discovery'
+import { organizationTaxonomy } from '../../data/organizations/taxonomyPlacement'
+import { getTaxonomyNode } from '../../data/taxonomy/load'
 import type { AssociationFilters, AssociationMatch } from '../../data/organizations/types'
 
 interface FilterDimension {
@@ -96,12 +98,16 @@ export function ExplorerFilters({ matches, filters, index, idPrefix, onChange }:
       }
     }
     const industryCounts = new Map<string, number>()
+    const macroSectorCounts = new Map<string, number>()
     const provinceCounts = new Map<string, number>()
     for (const match of matches) {
       const organization = index.byId.get(match.organizationId)
       if (!organization) continue
       for (const link of organization.industries) {
         industryCounts.set(link.industryId, (industryCounts.get(link.industryId) ?? 0) + 1)
+      }
+      for (const macroSectorId of organizationTaxonomy(organization).macroSectorIds) {
+        macroSectorCounts.set(macroSectorId, (macroSectorCounts.get(macroSectorId) ?? 0) + 1)
       }
       for (const location of organization.locations) {
         if (location.province) provinceCounts.set(location.province, (provinceCounts.get(location.province) ?? 0) + 1)
@@ -121,6 +127,14 @@ export function ExplorerFilters({ matches, filters, index, idPrefix, onChange }:
         label: 'Industry',
         options: [...industryCounts.entries()]
           .map(([value, count]) => ({ value, label: index.industryById.get(value)?.name ?? value, count }))
+          .sort((left, right) => right.count - left.count || left.label.localeCompare(right.label)),
+      },
+      {
+        key: 'macroSectors',
+        label: 'National macro-sector',
+        hint: 'Level 1 of the national taxonomy, reached through the industry crosswalk. Broader than a sourcing pocket and drawn from the same industries.',
+        options: [...macroSectorCounts.entries()]
+          .map(([value, count]) => ({ value, label: getTaxonomyNode(value)?.name ?? value, count }))
           .sort((left, right) => right.count - left.count || left.label.localeCompare(right.label)),
       },
       {
