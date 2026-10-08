@@ -76,6 +76,23 @@ describe('South African hiring evidence importer', () => {
       source_employer_evidence: 'The advertisement names Example Logistics as the hiring business.',
     })])
     assert.equal(confirmed.accepted[0].companyKey, 'org-example')
+    const unsourced = run([advert({
+      advertiser_name: 'External Recruiter',
+      advertiser_type: 'agency',
+      end_employer_name: 'Example Logistics',
+      attribution_confidence: 'confirmed',
+    })])
+    assert.equal(unsourced.accepted[0].companyKey, null)
+    assert.ok(unsourced.review.some((issue) => /attribution requires/.test(issue.reason)))
+  })
+
+  it('does not silently credit another firm named by a direct advertiser', () => {
+    const withoutEvidence = run([advert({
+      advertiser_name: 'Different Trading Business',
+      employer_name: 'Example Logistics',
+    })])
+    assert.match(withoutEvidence.accepted[0].companyKey ?? '', /^prospect:/)
+    assert.ok(withoutEvidence.review.some((issue) => /direct advertiser differs/.test(issue.reason)))
   })
 
   it('does not convert a new company name into verified identity', () => {
