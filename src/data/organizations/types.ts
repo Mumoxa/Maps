@@ -102,9 +102,16 @@ export interface OrganizationLocation {
   checkedOn: string
 }
 
-/** Scale is always sourced, typed and dated. Headcount and revenue are never mixed. */
+/**
+ * Scale is always sourced, typed and dated. Headcount and revenue are never mixed.
+ *
+ * The metric is deliberately sector-specific: cold storage is measured in pallet
+ * positions, property funds in sites, renewable developers in generating
+ * capacity. A single generic metric would force an MW figure into a headcount
+ * field and misstate what the source actually said.
+ */
 export interface OrganizationScale {
-  metric: 'employees' | 'revenue' | 'sites' | 'pallet-positions'
+  metric: 'employees' | 'revenue' | 'sites' | 'pallet-positions' | 'capacity'
   /** Raw value exactly as the source stated it, including ranges. */
   value: string
   basis: 'source-reported' | 'third-party-estimate'

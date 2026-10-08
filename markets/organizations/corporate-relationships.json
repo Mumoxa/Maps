@@ -1,5 +1,16 @@
 [
   {
+    "id": "rel-sola-wbho",
+    "type": "verified-partnership",
+    "fromId": "org-sola",
+    "toId": "org-wbho",
+    "evidence": "The Naos 1 EPC contractor is a SOLA Build and WBHO joint venture.",
+    "sourceUrl": "https://www.greenbuildingafrica.co.za/sola-group-reaches-financial-close-and-starts-construction-on-landmark-hybrid-solar-and-battery-project-in-south-africa/",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
     "id": "rel-pnp-boxer",
     "type": "parent-of",
     "fromId": "org-pick-n-pay",

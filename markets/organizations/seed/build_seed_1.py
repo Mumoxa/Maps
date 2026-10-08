@@ -1156,6 +1156,9 @@ org("org-spar-group", "SPAR Group",
 # ---------------------------------------------------------------------------
 
 RELATIONSHIPS = [
+    ("rel-sola-wbho", "verified-partnership", "org-sola", "org-wbho",
+     "The Naos 1 EPC contractor is a SOLA Build and WBHO joint venture.",
+     "https://www.greenbuildingafrica.co.za/sola-group-reaches-financial-close-and-starts-construction-on-landmark-hybrid-solar-and-battery-project-in-south-africa/", "confirmed"),
     ("rel-pnp-boxer", "parent-of", "org-pick-n-pay", "org-boxer",
      "Pick n Pay sold a 34.4% stake in Boxer in the November 2024 IPO and retained 65.6%.",
      "https://www.reuters.com/business/retail-consumer/south-africas-pick-n-pay-raises-471-mln-boxer-ipo-2024-11-25/", "confirmed"),
@@ -1381,6 +1384,199 @@ org("org-food-lovers", "Food Lover's Market",
     scales=[scale("employees", "22,000 employees", "third-party-estimate", "2025", FLM)],
     notes="Store counts vary between sources (120+ in 2025, 300+ in 2022); the difference reflects format and franchise counting and is left unresolved rather than averaged.")
 
+
+# --- Batch 3 (2026-10-08): property funds and renewable developers ----------
+# Researched gaps: Heriot REIT, Accelerate, Dipula, Scatec SA, Cennergi,
+# Pele Green, Mainstream SA, SOLA Group.
+#
+# Deliberately NOT added: Exxaro Resources. Cennergi is its wholly owned
+# subsidiary, but Exxaro is a mining group and the industry taxonomy has no
+# mining node, so recording it would mean inventing a classification. It stays
+# a gap and the affiliation is recorded in Cennergi's notes instead.
+
+HERIOT_HY24 = "https://senspdf.jse.co.za/documents/2024/JSE/ISSE/HETE/HY2024.pdf"
+HERIOT_FY23 = "https://senspdf.jse.co.za/documents/2023/jse/isse/HETE/FY2023.pdf"
+HERIOT_FLASH = "https://propertyflash.co.za/2025-12-19/heriot-cements-its-position-as-well-managed-reit-with-transformative-2025/"
+HERIOT_TV = "https://www.tradingview.com/symbols/JSE-HET/"
+org("org-heriot", "Heriot REIT",
+    [ind("property-investment", evidence="Approved as a REIT by the JSE; investment property across retail, industrial, office, specialised and residential sectors.", url=HERIOT_HY24)],
+    [cap("property-holding-structures", evidence="Approved as a REIT by the JSE; investment property held directly and through subsidiaries including Safari RSA Investments.", url=HERIOT_FY23),
+     cap("multi-site-operations", evidence="48 properties across all major sectors within South Africa.", url=HERIOT_HY24),
+     cap("multi-entity-consolidation", evidence="Safari RSA Investments Limited consolidated into Heriot's results as at 30 June 2023.", url=HERIOT_FY23),
+     cap("capital-expenditure", evidence="Solar plants installed across five major retail centres at a cost of R46,0 million.", url=HERIOT_FY23),
+     cap("regulatory-reporting", evidence="Reviewed condensed consolidated financial statements published to the JSE for the year ended 30 June 2023.", url=HERIOT_FY23),
+     cap("development-cost-accounting", status="unknown", confidence="probable", evidence="The group redevelops properties and disposed of Hagley, which was developing a 36 900m2 distribution centre for Ackermans, but no source describes development cost accounting."),
+     cap("foreign-currency-transactions", status="unknown", confidence="probable", evidence="Operations in Namibia are reported by a third-party profile, but no source describes currency arrangements."),
+     cap("hedging-derivative-accounting", status="unknown", evidence="No hedging policy was read.")],
+    [src(HERIOT_HY24, "corporate-disclosure", "Group interim results for the six months ended 31 December 2023: portfolio valued at R9,372 billion, vacancy 1,6%, 48 properties, sector split 71% retail / 19% industrial / 3% office / 2% specialised / 4% residential; head office of 717m2 in Melrose Arch; registration 2017/167697/06; JSE code HET."),
+     src(HERIOT_FY23, "corporate-disclosure", "Reviewed condensed consolidated financial statements for the year ended 30 June 2023: investment property R9,258 billion, Safari consolidation of R3,720 billion, R46,0 million of solar plants across five retail centres."),
+     src(HERIOT_FLASH, "news", "December 2025: completed the acquisition of 100% of Safari Investments; R13 billion in assets; distribution per share 121,91 cents, up 14,3%; NAV per share R20,59, up 17,5%."),
+     src(HERIOT_TV, "business-directory", "Company profile: founded by Steven Bernard Herring in 1998, headquartered in Johannesburg, listed on the JSE AltX in July 2017.", "probable")],
+    legal="Heriot REIT Limited", aliases=["Heriot", "HET"],
+    status="verified",
+    locations=[loc("Johannesburg", "Gauteng", HERIOT_TV)],
+    scales=[scale("sites", "48 properties", "source-reported", "2023-12-31", HERIOT_HY24)],
+    notes="Portfolio value differs by reporting date: R9,258 billion at 30 June 2023, R9,372 billion at 31 December 2023, and R13 billion in assets reported in December 2025 after Safari Investments became wholly owned. The figures are not averaged. No company website was established from the sources read.")
+
+APF_IAR = "https://www.accelerate-pf.co.za/wp-content/uploads/2026/07/APF_IAR_2026_Combined_V21.pdf"
+APF_MW = "https://www.moneyweb.co.za/tools-and-data/click-a-company/APF/"
+org("org-accelerate", "Accelerate Property Fund",
+    [ind("property-investment", evidence="JSE-listed REIT with a portfolio focused on retail and commercial assets.", url=APF_IAR)],
+    [cap("property-holding-structures", evidence="South African REIT listed on the JSE holding an investment property portfolio including assets held for sale.", url=APF_IAR),
+     cap("multi-site-operations", evidence="Key properties include Fourways Mall, Cedar Square Shopping Centre, KPMG Crescent and the Citibank Building.", url=APF_IAR),
+     cap("capital-expenditure", evidence="Sale of non-core assets to the value of R788,5 million for repayment of debt, and R126,9 million of total procurement spend.", url=APF_IAR),
+     cap("foreign-currency-transactions", evidence="Single-tenant, long-term lease investments in Austria and Slovakia complement the local portfolio.", url=APF_MW),
+     cap("regulatory-reporting", evidence="Unaudited interim consolidated condensed financial results published for the six months ended 30 September 2025.", url=APF_MW),
+     cap("multi-entity-consolidation", status="unknown", confidence="probable", evidence="Austrian and Slovakian lease investments are held, but no source describes how the foreign entities are consolidated."),
+     cap("development-cost-accounting", status="unknown", evidence="No development cost accounting was read.")],
+    [src(APF_IAR, "corporate-disclosure", "Integrated Report 2026: investment property valued at R6,6 billion (2025: R7,7 billion); NAV per share R1,81; total gross lettable area 235 922m2; vacancies 10,9%; 40 employees (2025: 49)."),
+     src(APF_MW, "business-directory", "Company profile: JSE-listed REIT; local portfolio of retail, commercial and industrial assets complemented by single-tenant long-term lease investments in Austria and Slovakia.")],
+    legal="Accelerate Property Fund Limited", aliases=["Accelerate", "APF", "ACCPROP"],
+    website="https://www.accelerate-pf.co.za",
+    status="verified",
+    scales=[scale("employees", "40 employees", "source-reported", "2026-03-31", APF_IAR)],
+    notes="The 2026 integrated report does not state a head office city in the material read, so no location is recorded. Portfolio value fell from R7,7 billion to R6,6 billion as non-core assets were sold to repay debt.")
+
+DIPULA_RF = "https://richerfin.com/markets/johannesburg-stock-exchange/DIBJ.J/"
+DIPULA_FM = "https://www.financialmail.businessday.co.za/investing/2025-11-20-how-dipula-became-the-jses-biggest-money-spinner/"
+DIPULA_RR = "https://rocketreach.co/dipula-income-fund-ltd-dib-profile_b45a983afc65f296"
+org("org-dipula", "Dipula Income Fund",
+    [ind("property-investment", evidence="JSE-listed REIT owning retail, office, industrial and residential rental assets throughout South Africa.", url=DIPULA_RF)],
+    [cap("property-holding-structures", evidence="Internally managed JSE-listed REIT holding retail, office, industrial and residential rental assets.", url=DIPULA_RF),
+     cap("multi-site-operations", evidence="80 shopping centres of roughly 10 000m2 to 20 000m2, with assets in all nine provinces.", url=DIPULA_FM),
+     cap("capital-expenditure", evidence="Acquired the 24 000m2 Protea Gardens Mall in Soweto for R480 million, one of five transactions worth about R700 million.", url=DIPULA_FM),
+     cap("regulatory-reporting", evidence="Audited annual financial statements for the year ended 31 August 2025 published to the JSE.", url=DIPULA_RF),
+     cap("multi-entity-consolidation", status="unknown", evidence="No group structure or consolidation was read."),
+     cap("development-cost-accounting", status="unknown", evidence="Refurbishment programmes are described, but no development cost accounting was read.")],
+    [src(DIPULA_RF, "business-directory", "Company profile: approximately 166 properties with 879 007m2 of gross lettable area; 86 retail, 35 office, 45 industrial and four residential properties; revenue of R1 517 431 thousand for the year ended 31 August 2025."),
+     src(DIPULA_FM, "news", "November 2025: portfolio doubled from R5,4 billion to R10,8 billion over a decade; 80 shopping centres; Protea Gardens Mall acquired for R480 million; NAV up 7,5%."),
+     src(DIPULA_RR, "business-directory", "Company profile: Johannesburg-based REIT, portfolio spanning all nine provinces, 45 employees.", "probable")],
+    legal="Dipula Income Fund Limited", aliases=["Dipula", "DIB"],
+    status="verified",
+    locations=[loc("Johannesburg", "Gauteng", DIPULA_RR)],
+    scales=[scale("employees", "45 employees", "third-party-estimate", "2025", DIPULA_RR)],
+    notes="Sources conflict and are not reconciled: property counts of 166 (Richerfin), 170 (MarketScreener, August 2023) and 80 shopping centres (Financial Mail, November 2025); portfolio values of R7,1 billion, R9,8 billion and R10,8 billion at different dates. No company website was established from the sources read.")
+
+SCATEC_TGS = "https://www.tgs.com/reliable-operations-at-scale-inside-scatecs-kenhardt-hybrid-project"
+SCATEC_MOGOBE = "https://www.engineeringnews.co.za/article/scatec-making-final-preparations-for-construction-of-r3bn-northern-cape-battery-project-2024-10-18"
+SCATEC_EN = "https://www.engineeringnews.co.za/article/south-africa-to-add-further-solar-pv-in-2024-scatec-2024-01-08"
+SCATEC_HTXT = "https://htxt.co.za/2025-12-273mw-solar-plant-fires-up-in-western-cape/"
+org("org-scatec-sa", "Scatec South Africa",
+    [ind("renewable-development", evidence="Developed the Kenhardt hybrid solar and battery project and the Grootfontein solar plants in South Africa.", url=SCATEC_EN),
+     ind("independent-power-production", primary=False, evidence="Supplies dispatchable renewable power to the national grid under a 20-year power purchase agreement with Eskom.", url=SCATEC_TGS)],
+    [cap("project-development", evidence="Developed the hybrid Kenhardt project of 540 MW solar PV with 225 MW/1 140 MWh of battery storage in the Northern Cape.", url=SCATEC_TGS),
+     cap("project-finance", evidence="Financial close reached on the R3-billion Mogobe battery project on 16 October 2024 under a 15-year power purchase agreement.", url=SCATEC_MOGOBE),
+     cap("capital-project-management", evidence="Scatec is the engineering, procurement and construction contractor for the Mogobe project and provides operations, maintenance and asset management services.", url=SCATEC_MOGOBE),
+     cap("multi-project-management", evidence="Kenhardt in the Northern Cape, the 273 MW Grootfontein plants in the Western Cape and the 103 MW/412 MWh Mogobe project near Kathu are all Scatec projects.", url=SCATEC_EN),
+     cap("multi-entity-consolidation", evidence="Scatec owns 51% of the equity in the Grootfontein project; H1 Holdings holds 46,5% and the Grootfontein Local Community Trust 2,5%.", url=SCATEC_HTXT),
+     cap("foreign-currency-transactions", evidence="Kenhardt carries capital expenditure of US$1 billion.", url=SCATEC_HTXT),
+     cap("regulatory-reporting", status="unknown", evidence="No statutory reporting for the South African entity was read.")],
+    [src(SCATEC_TGS, "industry-report", "Kenhardt hybrid project: 540 MWp solar PV with 225 MW/1 140 MWh battery storage in the Northern Cape, delivering 150 MW of dispatchable power from 05:00 to 21:30 daily."),
+     src(SCATEC_MOGOBE, "news", "October 2024: R3-billion Mogobe battery project of 103 MW/412 MWh near Kathu reached financial close; Scatec is EPC contractor and provides O&M and asset management."),
+     src(SCATEC_EN, "news", "January 2024: Kenhardt trio of 540 MW solar and 1 140 MWh storage; financial close on the 273 MW Grootfontein trio, with completion expected in 2025."),
+     src(SCATEC_HTXT, "news", "December 2025: commercial operations began at the 273 MW Grootfontein facility, the first in the Western Cape; Kenhardt capital expenditure of US$1 billion; Scatec owns 51% of the equity.")],
+    legal="", aliases=["Scatec"],
+    status="needs-verification",
+    locations=[loc("Kenhardt", "Northern Cape", SCATEC_TGS),
+               loc("Kathu", "Northern Cape", SCATEC_MOGOBE)],
+    scales=[scale("capacity", "540 MW solar PV with 225 MW/1 140 MWh battery storage at Kenhardt", "source-reported", "2026", SCATEC_TGS)],
+    notes="Scatec is a Norwegian group; the South African legal entity was not established from the sources read, so the record is flagged for verification rather than given a legal name. Project sites are recorded as locations because they are the operational footprint that was sourced.")
+
+CENNERGI_SQ = "https://solarquarter.com/2025-12-15/exxaro-expands-renewable-portfolio-in-south-africa-with-majority-stake-acquisition-in-213-mw-wind-and-solar-assets/"
+CENNERGI_ET = "https://economictimes.indiatimes.com/industry/energy/power/tata-powers-south-african-joint-venture-operationalises-134-mw-wind-farm/articleshow/53448522.cms"
+CENNERGI_BID = "https://economictimes.indiatimes.com/industry/energy/power/tata-power-exxaro-jv-cennergi-to-develop-two-wind-projects-in-south-africa/articleshow/13409497.cms"
+org("org-cennergi", "Cennergi",
+    [ind("renewable-development", evidence="Developed the Amakhala Emoyeni and Tsitsikamma wind farms under the Renewable Energy Independent Power Producer Procurement Programme.", url=CENNERGI_BID),
+     ind("independent-power-production", primary=False, evidence="Operational wind and solar assets supplying electricity to Eskom under 20-year take-or-pay power purchase agreements.", url=CENNERGI_SQ)],
+    [cap("project-development", evidence="Developed the 134 MW Amakhala Emoyeni and 95 MW Tsitsikamma wind farms, both of which reached commercial operations.", url=CENNERGI_ET),
+     cap("multi-site-operations", evidence="Operating assets in the Western Cape (Gouda Wind Farm) and the Northern Cape (Sishen Solar Facility).", url=CENNERGI_SQ),
+     cap("multi-entity-consolidation", evidence="Cennergi will acquire Acciona's 80% stake in Acciona Energy South Africa O&M; the remaining 20% is held by Soul City.", url=CENNERGI_SQ),
+     cap("capital-project-management", evidence="A further 180 MW of net capacity is under construction.", url=CENNERGI_SQ),
+     cap("project-finance", status="unknown", confidence="probable", evidence="The Gouda and Sishen acquisition is corporate rather than project finance, and no lender structure was read."),
+     cap("foreign-currency-transactions", status="unknown", evidence="No currency arrangements were read."),
+     cap("regulatory-reporting", status="unknown", evidence="No statutory reporting was read.")],
+    [src(CENNERGI_SQ, "news", "December 2025: Exxaro's wholly owned subsidiary Cennergi is acquiring majority stakes in the 138 MW Gouda Wind Farm and the 75 MW Sishen Solar Facility from Acciona Energia for R1,7 to R1,8 billion, plus Acciona's 80% of the O&M company; net operating capacity rises from 200 MW to about 317 MW."),
+     src(CENNERGI_ET, "news", "July 2016: Cennergi (Pty) Ltd achieved commercial operations for the 134 MW Amakhala Emoyeni wind farm."),
+     src(CENNERGI_BID, "news", "Cennergi was the preferred bidder for the 139 MW Amakhala and 95 MW Tsitsikamma wind projects, a total of 234 MW, under the second window of the procurement programme.")],
+    legal="Cennergi (Pty) Ltd", aliases=["Cennergi Energy"],
+    status="verified",
+    locations=[loc("Gouda", "Western Cape", CENNERGI_SQ),
+               loc("Sishen", "Northern Cape", CENNERGI_SQ)],
+    scales=[scale("capacity", "200 MW net operating, rising to about 317 MW", "source-reported", "2025-12-15", CENNERGI_SQ)],
+    notes="Wholly owned subsidiary of Exxaro Resources. Exxaro is deliberately not in this register: it is a mining group and the industry taxonomy has no mining node, so adding it would mean inventing a classification. Ownership history: originally a 50:50 joint venture between Exxaro and Khopoli Investments, a Tata Power subsidiary, which divested its stake. No company website was established from the sources read.")
+
+PELE_TR = "https://www.pelegreenenergy.com/track-record"
+PELE_NORFUND = "https://www.norfund.no/investment-in-new-south-african-energy-platform-to-avoid-1-9-million-tons-of-co2/"
+PELE_RENEWS = "https://renews.biz/97396/sa-ipp-reaches-financial-close-on-100mw-pv-plant/"
+org("org-pele-green", "Pele Green Energy",
+    [ind("renewable-development", evidence="Develops, owns, builds and operates renewable energy projects; among the first independent power producers to operate in South Africa.", url=PELE_TR),
+     ind("independent-power-production", primary=False, evidence="Feeds the national grid and supplies private energy-intensive users.", url=PELE_TR)],
+    [cap("project-development", evidence="Develops, owns, builds and operates renewable energy projects, with 980 MW in operation and 670 MW under construction.", url=PELE_NORFUND),
+     cap("project-finance", evidence="Financial close reached on the 100 MW Sonvanger Solar PV plant, the first utility-scale project closed by a sole sponsor and single IPP in South Africa.", url=PELE_RENEWS),
+     cap("multi-entity-consolidation", evidence="Projects are held through special purpose vehicles including Phofu Solar Power Plant (RF) Pty Ltd and Sonvanger Solar Power Plant (RF) (Pty) Ltd.", url=PELE_TR),
+     cap("multi-project-management", evidence="980 MW in operation, 670 MW under construction and a pipeline of more than 5 GW under development.", url=PELE_NORFUND),
+     cap("contract-management", evidence="Wheeling arrangements with Eskom supply the Sonvanger plant to a mining pooling and sharing joint venture in three provinces.", url=PELE_TR),
+     cap("foreign-currency-transactions", evidence="Norfund invested approximately 400 million NOK in the group in 2023.", url=PELE_NORFUND),
+     cap("capital-project-management", status="unknown", evidence="No contractor structure was read."),
+     cap("regulatory-reporting", status="unknown", evidence="No statutory reporting was read.")],
+    [src(PELE_TR, "company-website", "Track record: operating since 2009; Phofu Solar Power Plant (RF) Pty Ltd is a special purpose vehicle for a plant of up to 100 MW near Viljoenskroon in the Free State; Sonvanger Solar Power Plant (RF) (Pty) Ltd is a 100 MW plant near Theunissen wheeled to a mining joint venture."),
+     src(PELE_NORFUND, "news", "March 2025: South African BEE infrastructure company founded in 2009; 980 MW in operation, 670 MW under construction and a pipeline above 5 GW; Norfund invested about 400 million NOK in 2023."),
+     src(PELE_RENEWS, "news", "November 2024: financial close on the 100 MW Sonvanger Solar PV plant for the Glencore Merafe Venture, the first utility-scale project closed by a sole sponsor and single IPP in South Africa.")],
+    legal="", aliases=["PGE", "Pele Green Energy Group", "Pele Energy Group"],
+    website="https://www.pelegreenenergy.com",
+    status="verified",
+    locations=[loc("Theunissen", "Free State", PELE_TR),
+               loc("Viljoenskroon", "Free State", PELE_TR)],
+    scales=[scale("capacity", "980 MW in operation with 670 MW under construction", "source-reported", "2025-03-08", PELE_NORFUND)],
+    notes="No registered legal entity name is asserted: the sources read describe the business as Pele Green Energy Group without giving a registration. The only registered names sourced are the project special purpose vehicles, Phofu Solar Power Plant (RF) Pty Ltd and Sonvanger Solar Power Plant (RF) (Pty) Ltd. Locations are the sourced project sites rather than a head office, which the sources read do not state.")
+
+MS_MIGA = "https://miga.org/node/2989?esrsid=167&pid=3521"
+MS_AE = "https://www.africa-energy.com/live-data/article/south-africa-khobab-and-loeriesfontein-wind-plants-start-operating"
+MS_NEWS = "https://www.mainstreamrp.com/news/new-hub-helping-loeriesfontein-entrepreneurs-do-business-better/"
+org("org-mainstream-sa", "Mainstream Renewable Power South Africa",
+    [ind("renewable-development", evidence="Developed five wind farms in the Northern and Western Cape under the Renewable Energy Independent Power Producer Procurement Programme.", url=MS_MIGA)],
+    [cap("project-development", evidence="Developed five wind farms in the Northern and Western Cape: Khobab, Loeriesfontein 2, Noupoort, Kangnas and Perdekraal East.", url=MS_MIGA),
+     cap("capital-project-management", evidence="Mainstream is responsible for acquiring the required permits and developing the necessary environmental and social studies during project development.", url=MS_MIGA),
+     cap("multi-entity-consolidation", evidence="Projects are held through separate special purpose vehicles including Mainstream Renewable Power Khobab Wind (RF) Pty Ltd and Loeriesfontein 2 (RF) Pty Ltd.", url=MS_MIGA),
+     cap("multi-project-management", evidence="Five wind farms across two provinces, with construction workforces of roughly 100 to 550 people per project.", url=MS_MIGA),
+     cap("project-finance", status="unknown", evidence="MIGA support is referenced but no financing structure was read."),
+     cap("regulatory-reporting", status="unknown", evidence="No statutory reporting was read.")],
+    [src(MS_MIGA, "industry-report", "Project description: construction and operation of five wind farms — Khobab 140 MW, Loeriesfontein 2 140 MW, Noupoort 80,5 MW, Kangnas 140 MW and Perdekraal East 110 MW — developed by Mainstream Renewable Power, with assets acquired by Lekela and managed by MAMSA on completion."),
+     src(MS_AE, "news", "Khobab and Loeriesfontein, both 140 MW, began commercial operations on 11 December using 122 Siemens SWT-2.3-108 turbines across 6 653 hectares; Lekela, a joint venture between Actis and Mainstream, holds a 40% stake."),
+     src(MS_NEWS, "company-website", "Loeriesfontein 2 Wind Farm reached its commercial operations date in December 2017 under bid window 3; developed, constructed and operated by Mainstream for Lekela Power.")],
+    legal="", aliases=["Mainstream Renewable Power"],
+    website="https://www.mainstreamrp.com",
+    status="needs-verification",
+    locations=[loc("Loeriesfontein", "Northern Cape", MS_NEWS),
+               loc("Noupoort", "Northern Cape", MS_MIGA)],
+    notes="Recorded as the developer, not the owner: the sources state that on completion the assets are acquired by Lekela Power and managed by MAMSA, so attributing ownership to Mainstream would be a mistaken corporate affiliation. Capacity for Loeriesfontein 2 is reported as 140 MW by Africa Energy and 138 MW by Mainstream's own project page; both are recorded rather than averaged. The South African legal entity was not established from the sources read.")
+
+SOLA_NAOS = "https://www.greenbuildingafrica.co.za/sola-group-reaches-financial-close-and-starts-construction-on-landmark-hybrid-solar-and-battery-project-in-south-africa/"
+SOLA_INVESTEC = "https://www.investec.com/en_za/investec-for-corporates/transactions/sola-group-2026.html"
+SOLA_TRONOX = "https://www.greenbuildingafrica.co.za/the-sola-group-connects-256mw-solar-pv-wheeling-project-in-south-africa/"
+SOLA_SPRINGBOK = "https://www.engineeringnews.co.za/article/springbok-solar-photovoltaic-plant-south-africa-2024-02-16"
+org("org-sola", "SOLA Group",
+    [ind("renewable-development", evidence="South African renewable energy developer and independent power producer with utility-scale solar and battery storage projects.", url=SOLA_INVESTEC),
+     ind("independent-power-production", primary=False, evidence="More than 1 GW of projects in operation and construction, supplying private offtakers under power purchase agreements.", url=SOLA_NAOS)],
+    [cap("project-development", evidence="Since 2022 SOLA has developed, financed and constructed 748 MW of renewable capacity.", url=SOLA_INVESTEC),
+     cap("project-finance", evidence="Financial close reached on the Naos 1 hybrid solar and battery project, the largest privately contracted hybrid renewable energy project to reach financial close in South Africa.", url=SOLA_NAOS),
+     cap("capital-project-management", evidence="Expertise spans development, engineering, procurement and construction and operations and maintenance; the Naos 1 EPC contractor is a SOLA Build and WBHO joint venture.", url=SOLA_INVESTEC),
+     cap("multi-project-management", evidence="More than 1 GW of projects in operation and construction, with a further 600 MW at an advanced stage of development.", url=SOLA_NAOS),
+     cap("contract-management", evidence="Long-term power purchase agreements signed with Sasol and Air Liquide, and a wheeling agreement supplying Tronox Mineral Sands across the Eskom transmission network.", url=SOLA_TRONOX),
+     cap("multi-entity-consolidation", evidence="SOLA Group, SOLA Assets and SOLA Build are named as separate entities within the group.", url=SOLA_NAOS),
+     cap("commodity-trading", status="unknown", confidence="probable", evidence="Electricity is wheeled to private offtakers, but no source describes energy trading."),
+     cap("foreign-currency-transactions", status="unknown", evidence="No currency arrangements were read."),
+     cap("regulatory-reporting", status="unknown", evidence="No statutory reporting was read.")],
+    [src(SOLA_NAOS, "news", "February 2026: financial close and start of construction on Naos 1 near Viljoenskroon in the Free State, a 300 MW solar facility with battery storage, under long-term power purchase agreements with Sasol and Air Liquide; commercial operation targeted for 2028."),
+     src(SOLA_INVESTEC, "industry-report", "Since 2022 SOLA has developed, financed and constructed 748 MW of renewable capacity, of which 450 MW is utility-scale and about 350 MW already operational."),
+     src(SOLA_TRONOX, "news", "Connected 126 MWp and 130 MWp solar PV wheeling projects outside Lichtenburg in the North West, supplying Tronox Mineral Sands via the Eskom transmission network."),
+     src(SOLA_SPRINGBOK, "news", "Springbok solar photovoltaic plant of 195 MW in the Free State, capital expenditure R2,8 billion, first electricity scheduled for mid-2025.")],
+    legal="", aliases=["SOLA", "The SOLA Group"],
+    status="needs-verification",
+    locations=[loc("Viljoenskroon", "Free State", SOLA_NAOS),
+               loc("Lichtenburg", "North West", SOLA_TRONOX)],
+    scales=[scale("capacity", "748 MW developed, financed and constructed since 2022", "source-reported", "2026", SOLA_INVESTEC)],
+    notes="The Naos 1 battery capacity is reported as both 660 MWh and 855 MWh within the same article; the conflict is recorded rather than resolved. The South African legal entity and head office were not established from the sources read, and no website is asserted. Locations are sourced project sites.")
 
 # ---------------------------------------------------------------------------
 # Curated associations (materialized, reviewed relationships only)
