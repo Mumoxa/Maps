@@ -4,7 +4,8 @@
 // This CLI does not fetch job boards and does not write to organizations.json.
 
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs'
-import { basename, resolve, sep } from 'node:path'
+import { basename, resolve } from 'node:path'
+import { privateDataDir } from './hiring-storage'
 import { readDrop } from './organizations-import'
 import { planHiringImport, summarizeHiringEmployers } from './hiring-observations'
 import type { HiringObservation } from './hiring-observations'
@@ -12,19 +13,6 @@ import type { Organization } from '../src/data/organizations/types'
 
 const COMPANY_PATH = resolve('markets/organizations/organizations.json')
 const DEFAULT_DATA_DIR = resolve('.local/hiring')
-
-/** Licensed/raw job data must never be written into the public repository tree. */
-export function privateDataDir(input: string): string {
-  const target = resolve(input)
-  const project = resolve('.')
-  const local = resolve('.local')
-  const underLocal = target === local || target.startsWith(local + sep)
-  const outsideProject = target !== project && !target.startsWith(project + sep)
-  if (!underLocal && !outsideProject) {
-    throw new Error('Raw hiring observations must be stored in the ignored .local/ directory or outside this Git repository.')
-  }
-  return target
-}
 
 function dateYearEarlier(today: string): string {
   const date = new Date(today + 'T00:00:00.000Z')
