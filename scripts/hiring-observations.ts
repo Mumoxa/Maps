@@ -101,7 +101,7 @@ function identityKey(label: string): string {
   return canonicalCompanyName(label).toLocaleLowerCase('en-ZA').replace(/\s+/g, ' ').trim()
 }
 
-function lookupOrganizations(organizations: Organization[]): Map<string, string | null> {
+export function lookupOrganizations(organizations: Organization[]): Map<string, string | null> {
   const map = new Map<string, string | null>()
   for (const organization of organizations) {
     for (const label of [organization.name, organization.legalName, ...organization.aliases]) {
