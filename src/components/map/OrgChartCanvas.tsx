@@ -3,7 +3,6 @@ import {
   ReactFlow,
   useNodesState,
   useEdgesState,
-  Controls,
   MiniMap,
   Background,
   Handle,
@@ -13,6 +12,7 @@ import {
   type NodeProps,
 } from '@xyflow/react'
 import '@xyflow/react/dist/style.css'
+import { MapControls } from './MapControls'
 import type { TreeNode, Profile } from '../../data'
 
 interface NodeData extends Record<string, unknown> {
@@ -193,12 +193,12 @@ export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover,
       const d = n.data as NodeData
       const matchesSearch = !q || d.label?.toLowerCase().includes(q)
       const matchesSegment = !filterSegment || d.segment === filterSegment
-      return { ...n, className: matchesSearch && matchesSegment ? '' : 'node-dim' }
+      return { ...n, className: matchesSearch && matchesSegment ? 'node-highlight' : 'node-dim' }
     })
   }, [nodes, searchQuery, filterSegment])
 
   return (
-    <div style={{ width: '100%', height: '100%', position: 'relative' }} onMouseMove={onMouseMove}>
+    <div className="map-canvas-root" onMouseMove={onMouseMove}>
       <ReactFlow
         nodes={filteredNodes}
         edges={edges}
@@ -213,7 +213,7 @@ export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover,
         minZoom={0.1}
         maxZoom={2}
       >
-        <Controls />
+        <MapControls />
         <MiniMap nodeStrokeWidth={3} zoomable pannable />
         <Background />
       </ReactFlow>
@@ -223,9 +223,9 @@ export function OrgChartCanvas({ tree, searchQuery, onProfileClick, onNodeHover,
           className="map-tooltip"
           style={{ left: tooltipPos.x, top: tooltipPos.y }}
         >
-          <div style={{ fontWeight: 600 }}>{hoveredNode.label}</div>
+          <div className="map-tooltip-title">{hoveredNode.label}</div>
           {hoveredNode.data.profile && (
-            <div style={{ fontSize: '0.75rem', marginTop: '0.25rem' }}>
+            <div className="map-tooltip-body">
               Company: {hoveredNode.data.profile.company}<br />
               Title: {hoveredNode.data.profile.title}<br />
               Fit: {hoveredNode.data.profile.fit_score}/10

@@ -8,7 +8,7 @@ import { ProfileCard } from '../components/ui/ProfileCard'
 import { SearchBar } from '../components/ui/SearchBar'
 import { Pagination } from '../components/ui/Pagination'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 
@@ -83,7 +83,7 @@ export function ProfileDirectory() {
     return [...new Set(data.profiles.map(p => p.segment))].sort().map(s => ({ value: s, label: s }))
   }, [data])
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="grid" cards={6} />
   if (!data) return null
 
   return (
@@ -92,11 +92,17 @@ export function ProfileDirectory() {
         <div className="container">
           <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Candidates' }]} />
 
-          <div className="flex items-center justify-between mb-2">
-            <h1>Candidates ({filteredProfiles.length})</h1>
+          <div className="page-head">
+            <div>
+              <h1>Credit risk candidates</h1>
+              <p>The full mapped credit risk population, filtered by segment, seniority, confidence and verification state.</p>
+            </div>
+            <div className="page-head-aside">
+              <span className="page-head-meta"><b>{filteredProfiles.length.toLocaleString()}</b> matching</span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-2 mb-2 flex-wrap">
+          <div className="page-toolbar">
             <SearchBar
               value={query}
               onChange={(val) => {
@@ -109,88 +115,90 @@ export function ProfileDirectory() {
               }}
               placeholder="Search candidates..."
             />
-            <select
-              value={segmentFilter}
-              onChange={e => {
-                setSearchParams(prev => {
-                  const next = new URLSearchParams(prev)
-                  if (e.target.value) next.set('segment', e.target.value); else next.delete('segment')
-                  next.delete('page')
-                  return next
-                })
-              }}
-              aria-label="Filter by segment"
-              className="filter-select"
-            >
-              <option value="">All Segments</option>
-              {segmentOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
-            </select>
-            <select
-              value={confidenceFilter}
-              onChange={e => {
-                setSearchParams(prev => {
-                  const next = new URLSearchParams(prev)
-                  if (e.target.value) next.set('confidence', e.target.value); else next.delete('confidence')
-                  next.delete('page')
-                  return next
-                })
-              }}
-              aria-label="Filter by confidence"
-              className="filter-select"
-            >
-              <option value="">All Confidence</option>
-              <option value="High">High</option>
-              <option value="Medium">Medium</option>
-              <option value="Low">Low</option>
-            </select>
-            <select
-              value={seniorityFilter}
-              onChange={e => {
-                setSearchParams(prev => {
-                  const next = new URLSearchParams(prev)
-                  if (e.target.value) next.set('seniority', e.target.value); else next.delete('seniority')
-                  next.delete('page')
-                  return next
-                })
-              }}
-              aria-label="Filter by seniority"
-              className="filter-select"
-            >
-              <option value="">All Seniority</option>
-              {[...new Set(data.profiles.map(p => p.seniority))].sort().map(s => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </select>
-            <select
-              value={`${sort}-${order}`}
-              onChange={e => {
-                const [s, o] = e.target.value.split('-')
-                setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
-              }}
-              aria-label="Sort"
-              className="filter-select"
-            >
-              <option value="fit_score-desc">Fit Score (high)</option>
-              <option value="fit_score-asc">Fit Score (low)</option>
-              <option value="name-asc">Name A-Z</option>
-              <option value="name-desc">Name Z-A</option>
-              <option value="company-asc">Company A-Z</option>
-            </select>
-            <label className="filter-checkbox">
-              <input
-                type="checkbox"
-                checked={needsVerification}
+            <div className="select-group">
+              <select
+                value={segmentFilter}
                 onChange={e => {
                   setSearchParams(prev => {
                     const next = new URLSearchParams(prev)
-                    if (e.target.checked) next.set('needs_verification', 'true'); else next.delete('needs_verification')
+                    if (e.target.value) next.set('segment', e.target.value); else next.delete('segment')
                     next.delete('page')
                     return next
                   })
                 }}
-              />
-              Needs verification
-            </label>
+                aria-label="Filter by segment"
+                className="filter-select"
+              >
+                <option value="">All Segments</option>
+                {segmentOptions.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
+              </select>
+              <select
+                value={confidenceFilter}
+                onChange={e => {
+                  setSearchParams(prev => {
+                    const next = new URLSearchParams(prev)
+                    if (e.target.value) next.set('confidence', e.target.value); else next.delete('confidence')
+                    next.delete('page')
+                    return next
+                  })
+                }}
+                aria-label="Filter by confidence"
+                className="filter-select"
+              >
+                <option value="">All Confidence</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+              <select
+                value={seniorityFilter}
+                onChange={e => {
+                  setSearchParams(prev => {
+                    const next = new URLSearchParams(prev)
+                    if (e.target.value) next.set('seniority', e.target.value); else next.delete('seniority')
+                    next.delete('page')
+                    return next
+                  })
+                }}
+                aria-label="Filter by seniority"
+                className="filter-select"
+              >
+                <option value="">All Seniority</option>
+                {[...new Set(data.profiles.map(p => p.seniority))].sort().map(s => (
+                  <option key={s} value={s}>{s}</option>
+                ))}
+              </select>
+              <select
+                value={`${sort}-${order}`}
+                onChange={e => {
+                  const [s, o] = e.target.value.split('-')
+                  setSearchParams(prev => { const n = new URLSearchParams(prev); n.set('sort', s); n.set('order', o); return n })
+                }}
+                aria-label="Sort"
+                className="filter-select"
+              >
+                <option value="fit_score-desc">Fit Score (high)</option>
+                <option value="fit_score-asc">Fit Score (low)</option>
+                <option value="name-asc">Name A-Z</option>
+                <option value="name-desc">Name Z-A</option>
+                <option value="company-asc">Company A-Z</option>
+              </select>
+              <label className="filter-checkbox">
+                <input
+                  type="checkbox"
+                  checked={needsVerification}
+                  onChange={e => {
+                    setSearchParams(prev => {
+                      const next = new URLSearchParams(prev)
+                      if (e.target.checked) next.set('needs_verification', 'true'); else next.delete('needs_verification')
+                      next.delete('page')
+                      return next
+                    })
+                  }}
+                />
+                Needs verification
+              </label>
+            </div>
           </div>
 
           {paginated.length === 0 ? (

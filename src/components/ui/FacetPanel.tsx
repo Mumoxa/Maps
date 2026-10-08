@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import { Search } from 'lucide-react'
+import {
+  MagnifyingGlass,
+} from '@phosphor-icons/react'
 import type { FacetDef, FacetSelections, FacetValue } from '../../data/facets'
 
 interface FacetPanelProps<T> {
@@ -38,7 +40,7 @@ function FacetGroup<T>({
       <h3 className="facet-group-label" id={`${idPrefix}-${def.key}-label`}>{def.label}</h3>
       {searchable && (
         <div className="facet-search">
-          <Search size={13} aria-hidden />
+          <MagnifyingGlass size={13} aria-hidden />
           <input
             type="text"
             value={search}

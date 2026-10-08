@@ -1,5 +1,8 @@
 import { useMemo, useState } from 'react'
-import { Search, X } from 'lucide-react'
+import {
+  MagnifyingGlass,
+  X,
+} from '@phosphor-icons/react'
 import type { ContactFacetOption } from '../../data/contactDirectory'
 
 interface ContactFacetGroupProps {
@@ -44,7 +47,7 @@ export function ContactFacetGroup({
       <div className="contact-facet-body">
         {options.length > COLLAPSED_OPTION_COUNT && (
           <label className="contact-facet-search">
-            <Search size={14} aria-hidden="true" />
+            <MagnifyingGlass size={14} aria-hidden="true" />
             <span className="sr-only">Search {label.toLocaleLowerCase()}</span>
             <input
               value={query}

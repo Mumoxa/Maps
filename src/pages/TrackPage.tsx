@@ -1,19 +1,29 @@
 import { useEffect, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import type { ReactNode } from 'react'
-import { ArrowRight, BriefcaseBusiness, Calculator, Database, LayoutTemplate, ShieldCheck, Sparkles, Workflow, Trophy } from 'lucide-react'
+import {
+  ArrowRight,
+  Briefcase,
+  Calculator,
+  Database,
+  Layout,
+  ShieldCheck,
+  Sparkle,
+  TreeStructure,
+  Trophy,
+} from '@phosphor-icons/react'
 import { Button } from '../components/ui/Button'
 import { deriveMarketSummary, getTalentProfiles, getTalentTrackBySlug, type TalentTrack } from '../data'
 import { useData } from '../context/DataContext'
 import { NotFound } from './NotFound'
 
-const accentIconMap: Record<TalentTrack['accent'], typeof BriefcaseBusiness> = {
+const accentIconMap: Record<TalentTrack['accent'], typeof Briefcase> = {
   hackathon: Trophy,
-  salesforce: BriefcaseBusiness,
+  salesforce: Briefcase,
   credit: ShieldCheck,
   sap: Database,
-  murex: Workflow,
-  calypso: Sparkles,
+  murex: TreeStructure,
+  calypso: Sparkle,
   accounting: Calculator,
 }
 
@@ -69,14 +79,14 @@ export function MarketTrackPage({ trackSlug, extraContent }: MarketTrackPageProp
           </div>
           <div className="salesforce-next-grid">
             <div className="salesforce-next-item">
-              <LayoutTemplate size={22} />
+              <Layout size={22} />
               <div>
                 <h3>Dedicated structure</h3>
                 <p>{track.summary}</p>
               </div>
             </div>
             <div className="salesforce-next-item">
-              <Workflow size={22} />
+              <TreeStructure size={22} />
               <div>
                 <h3>Next implementation steps</h3>
                 <ul className="salesforce-step-list">

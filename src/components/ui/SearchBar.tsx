@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { Search } from 'lucide-react'
+import {
+  MagnifyingGlass,
+} from '@phosphor-icons/react'
 import { useNavigate } from 'react-router-dom'
 
 interface SearchResult {
@@ -58,7 +60,7 @@ export function SearchBar({ value, onChange, onSearch, placeholder = 'Search...'
 
   return (
     <div className="search-bar" ref={ref}>
-      <Search className="search-icon" size={16} />
+      <MagnifyingGlass className="search-icon" size={16} />
       <input
         type="text"
         placeholder={placeholder}

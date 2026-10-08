@@ -17,12 +17,21 @@ Future markets must be registered in `src/data/tracks.ts` with a South African g
 **Adding to the map — start here:** [`docs/adding-to-the-talent-map.md`](docs/adding-to-the-talent-map.md) is the master guide for adding people to an existing track or registering a brand-new track, covering both supported ingestion patterns (verified-batch pipeline and research-DB pool) and the guardrails that keep additions from breaking the build.
 
 Production deploys run automatically after the `CI` workflow succeeds on `main`. Before pushing, `npm test`,
-`npm run build` and `npm run smoke:routes` (renders every route, including `/search-bank`, in jsdom) are the
-local gate. The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised redeploy is required.
+`npm run build`, `npm run smoke:routes` (renders every route, including `/search-bank`, in jsdom) and
+`npm run audit:ui` (one `h1` per route, heading order, control names, duplicate ids, image alt text and stray
+inline styles) are the local gate. The interface itself is specified in
+[`docs/design-system.md`](docs/design-system.md): tokens, type, page anatomy, interaction rules.
+
+The Cloudflare Pages workflow can also be started manually with `workflow_dispatch` when an authorised
+redeploy is required.
 
 ### Known non-blocking check: `Workers Builds: maps`
 
-The live site deploys to **Cloudflare Pages** (`.github/workflows/deploy-cloudflare.yml` → `npx wrangler pages deploy dist --project-name maps`). A separate **Cloudflare "Workers Builds"** integration, configured in the Cloudflare dashboard (not in this repo), also runs on every push and reports the failing `Workers Builds: maps` commit check. It is a leftover Workers build for a project that ships as Pages, is **not a required check**, and does **not** affect CI, the Pages deploy, or the live site.
+The live site is **https://maps-4xq.pages.dev**, deployed to **Cloudflare Pages** by
+`.github/workflows/deploy-cloudflare.yml` (`npx wrangler pages deploy dist --project-name maps`).
+GitHub Pages is not enabled for this repository, so the old `mumoxa.github.io/Maps/` origin is gone;
+`public/robots.txt`, `public/sitemap.xml` and the social tags in `index.html` all point at the
+Pages origin and must be updated together if a custom domain is attached. A separate **Cloudflare "Workers Builds"** integration, configured in the Cloudflare dashboard (not in this repo), also runs on every push and reports the failing `Workers Builds: maps` commit check. It is a leftover Workers build for a project that ships as Pages, is **not a required check**, and does **not** affect CI, the Pages deploy, or the live site.
 
 No repository change fixes it — the stray `wrangler.jsonc` Workers config was already removed and the failure persists, because the integration is defined server-side in Cloudflare. To clear the red check, an account owner must **disconnect (or delete) the Git-connected "Workers Builds" integration for the `maps` Workers service in the Cloudflare dashboard** (under that Workers service's build settings; Cloudflare's exact menu labels change over time). Until then the check can be safely ignored, or made non-required in the branch protection rules.
 

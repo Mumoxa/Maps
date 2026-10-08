@@ -4,7 +4,7 @@ import { useData } from '../context/DataContext'
 import { buildSlugSets, getProfilesBySegment, normalizeCompanyName } from '../data'
 import { ProfileCard } from '../components/ui/ProfileCard'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 
@@ -50,10 +50,10 @@ export function SegmentPage() {
   }, [data, segment, profiles, slugSets])
 
   useEffect(() => {
-    if (segment) document.title = `${segment.name} — Industry Segment`
+    if (segment) document.title = `${segment.name} · Industry Segment`
   }, [segment])
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="detail" />
   if (!data || !segment) return (
     <div className="page container">
       <EmptyState title="Segment not found" description="The segment you're looking for doesn't exist." action={{ label: 'Browse segments', to: '/segments' }} />
@@ -70,16 +70,22 @@ export function SegmentPage() {
             { label: segment.name },
           ]} />
 
-          <div className="mb-3">
-            <h1>{segment.name}</h1>
-            <p className="text-secondary text-lg mt-1">
-              {profiles.length} profiles · {companyNames.length} companies
-            </p>
+          <div className="page-head">
+            <div>
+              <h1>{segment.name}</h1>
+              <p>
+                {profiles.length} {profiles.length === 1 ? 'profile' : 'profiles'} and {companyNames.length}{' '}
+                {companyNames.length === 1 ? 'company' : 'companies'} mapped in this segment.
+              </p>
+            </div>
+            <div className="page-head-aside">
+              <span className="page-head-meta"><b>{profiles.length.toLocaleString()}</b> profiles</span>
+            </div>
           </div>
 
           {companyNames.length > 0 && (
-            <div className="mb-3">
-              <h2 className="mb-2">Companies</h2>
+            <div className="section-block">
+              <h2 className="mb-2">Companies in this segment</h2>
               <div className="flex flex-wrap gap-2">
                 {companyNames.map(c => (
                   <Link key={c.slug} to={`/companies/${c.slug}`} className="btn btn-sm">
@@ -90,8 +96,8 @@ export function SegmentPage() {
             </div>
           )}
 
-          <div>
-            <h2 className="mb-2">Profiles</h2>
+          <section>
+            <h2 className="mb-2">Mapped profiles</h2>
             {profiles.length === 0 ? (
               <EmptyState title="No profiles" description="No profiles currently mapped to this segment." />
             ) : (
@@ -102,7 +108,7 @@ export function SegmentPage() {
                 })}
               </div>
             )}
-          </div>
+          </section>
         </div>
       </div>
     </ErrorBoundary>

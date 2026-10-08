@@ -1,24 +1,25 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import {
-  BriefcaseBusiness,
-  Building2,
+  Briefcase,
+  Buildings,
   Check,
-  ChevronLeft,
-  ChevronRight,
-  Layers,
+  CaretLeft,
+  CaretRight,
+  Stack,
   MapPin,
-  Search,
+  MagnifyingGlass,
   SlidersHorizontal,
-  UserRound,
+  User,
   X,
-} from 'lucide-react'
+} from '@phosphor-icons/react'
 import { useData } from '../context/DataContext'
 import { canonicalCompanyName } from '../data/companyNormalization'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { FacetPanel } from '../components/ui/FacetPanel'
-import { LoadingSpinner } from '../components/ui/LoadingSpinner'
+import { useDialogLayer } from '../hooks/useDialogLayer'
+import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { buildSlugSets, createTalentSearchIndex, getTalentProfiles, searchTalentProfiles, type TalentProfile } from '../data'
 import {
@@ -57,7 +58,6 @@ export function TalentSearchPage() {
   const { data, loading, error } = useData()
   const [searchParams, setSearchParams] = useSearchParams()
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const drawerCloseRef = useRef<HTMLButtonElement>(null)
   const talentSearchRef = useRef<ReturnType<typeof createTalentSearchIndex> | null>(null)
 
   useEffect(() => {
@@ -146,19 +146,11 @@ export function TalentSearchPage() {
   const currentPage = Math.min(page, totalPages)
   const paginatedResults = filteredResults.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE)
 
-  useEffect(() => {
-    if (!drawerOpen) return
-    drawerCloseRef.current?.focus()
-    const onKey = (event: KeyboardEvent) => { if (event.key === 'Escape') setDrawerOpen(false) }
-    document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
-    return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [drawerOpen])
+  // Focus enters the panel, Tab stays inside it, Escape closes, focus returns to the trigger.
+  const closeDrawer = useCallback(() => setDrawerOpen(false), [])
+  const drawerRef = useDialogLayer<HTMLDivElement>(drawerOpen, closeDrawer)
 
-  if (loading) return <LoadingSpinner size="lg" />
+  if (loading) return <SkeletonPage variant="list" cards={5} />
   if (error) return <div className="page container"><p>Error: {error}</p></div>
   if (!data) return null
 
@@ -166,22 +158,22 @@ export function TalentSearchPage() {
     <ErrorBoundary>
       <div className="page talent-search-page">
         <div className="container">
-          <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Talent Search' }]} />
+          <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'People search' }]} />
 
           <section className="talent-search-header">
             <div>
-              <h1>Talent Search</h1>
-              <p>Search people by role, skill, company, location, sector, and platform track — combine filters to narrow the market.</p>
+              <h1>People search</h1>
+              <p>Search every searchable professional by role, skill, company, location, sector and track, then combine filters to narrow the market.</p>
             </div>
             <Link to="/credit-risk" className="btn btn-ghost">
-              <Layers size={18} />
+              <Stack size={18} />
               Credit Risk track
             </Link>
           </section>
 
           <section className="talent-search-command">
             <div className="talent-search-input-wrap">
-              <Search size={18} className="talent-search-input-icon" />
+              <MagnifyingGlass size={18} className="talent-search-input-icon" />
               <input
                 className="talent-search-input"
                 type="text"
@@ -201,7 +193,7 @@ export function TalentSearchPage() {
           <div className="facet-layout">
             <aside className="facet-sidebar" aria-label="Filters">
               <div className="facet-sidebar-head">
-                <strong>Filters</strong>
+                <h2 className="facet-heading">Filters</h2>
                 {activeCount > 0 && <button type="button" className="facet-clear" onClick={clearAll}>Clear all</button>}
               </div>
               <FacetPanel defs={facetDefs} selections={selections} optionsFor={optionsFor} onToggle={onToggle} idPrefix="ts-side" />
@@ -263,11 +255,11 @@ export function TalentSearchPage() {
               {totalPages > 1 && (
                 <nav className="talent-pagination" aria-label="Talent search pagination">
                   <button type="button" onClick={() => setParam('page', String(currentPage - 1))} disabled={currentPage <= 1}>
-                    <ChevronLeft size={16} /> Prev
+                    <CaretLeft size={16} /> Prev
                   </button>
                   <span>Page {currentPage} of {totalPages}</span>
                   <button type="button" onClick={() => setParam('page', String(currentPage + 1))} disabled={currentPage >= totalPages}>
-                    Next <ChevronRight size={16} />
+                    Next <CaretRight size={16} />
                   </button>
                 </nav>
               )}
@@ -277,11 +269,11 @@ export function TalentSearchPage() {
 
         {drawerOpen && (
           <div className="facet-drawer-root">
-            <div className="facet-drawer-backdrop" onClick={() => setDrawerOpen(false)} aria-hidden />
-            <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters">
+            <div className="facet-drawer-backdrop" onClick={closeDrawer} aria-hidden="true" />
+            <div className="facet-drawer" role="dialog" aria-modal="true" aria-label="Filters" tabIndex={-1} ref={drawerRef}>
               <div className="facet-drawer-head">
-                <strong>Filters{activeCount ? ` (${activeCount})` : ''}</strong>
-                <button ref={drawerCloseRef} type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
+                <h2 className="facet-heading">Filters{activeCount ? ` (${activeCount})` : ''}</h2>
+                <button type="button" className="facet-drawer-close" onClick={() => setDrawerOpen(false)} aria-label="Close filters">
                   <X size={18} aria-hidden />
                 </button>
               </div>
@@ -330,7 +322,7 @@ function TalentSearchCard({ profile, creditRiskSlug, onToggle }: { profile: Tale
             <p className="talent-result-role">{profile.title}</p>
           </div>
           <div className="talent-result-actions">
-            {profileLink && <Link to={profileLink} className="btn btn-primary btn-sm"><UserRound size={15} /> Profile</Link>}
+            {profileLink && <Link to={profileLink} className="btn btn-primary btn-sm"><User size={15} /> Profile</Link>}
             {profile.linkedinUrl && (
               <a href={profile.linkedinUrl} target="_blank" rel="noreferrer" className="btn btn-ghost btn-sm">LinkedIn</a>
             )}
@@ -345,10 +337,10 @@ function TalentSearchCard({ profile, creditRiskSlug, onToggle }: { profile: Tale
               title={canonicalCompanyName(profile.company) === profile.company ? 'Filter by this company' : `Filter by ${canonicalCompanyName(profile.company)} (listed as ${profile.company})`}
               onClick={() => onToggle('company', canonicalCompanyName(profile.company))}
             >
-              <Building2 size={15} /> {canonicalCompanyName(profile.company)}
+              <Buildings size={15} /> {canonicalCompanyName(profile.company)}
             </button>
           ) : (
-            <span><Building2 size={15} /> Company not added</span>
+            <span><Buildings size={15} /> Company not added</span>
           )}
           {profile.locationLabel ? (
             <button type="button" className="talent-meta-link" title="Filter by this location" onClick={() => onToggle('location', profile.locationLabel)}>
@@ -359,10 +351,10 @@ function TalentSearchCard({ profile, creditRiskSlug, onToggle }: { profile: Tale
           )}
           {profile.seniority ? (
             <button type="button" className="talent-meta-link" title="Filter by this seniority" onClick={() => onToggle('seniority', profile.seniority)}>
-              <BriefcaseBusiness size={15} /> {profile.seniority}
+              <Briefcase size={15} /> {profile.seniority}
             </button>
           ) : (
-            <span><BriefcaseBusiness size={15} /> Seniority not added</span>
+            <span><Briefcase size={15} /> Seniority not added</span>
           )}
         </div>
 

@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
-import { ExternalLink } from 'lucide-react'
+import {
+  ArrowSquareOut,
+} from '@phosphor-icons/react'
 import { Badge } from './Badge'
 import { Tooltip } from './Tooltip'
 import type { Profile, ShortlistEntry } from '../../data'
@@ -30,7 +32,7 @@ export function ProfileCard({ profile, shortlistEntry, profileSlug }: ProfileCar
           </div>
           {isDavidColeman && (
             <Tooltip content="Two profiles share this name. Both retained for review.">
-              <Badge text="Duplicate name — review" variant="duplicate" />
+              <Badge text="Duplicate name · review" variant="duplicate" />
             </Tooltip>
           )}
         </div>
@@ -61,12 +63,12 @@ export function ProfileCard({ profile, shortlistEntry, profileSlug }: ProfileCar
       <div className="profile-card-actions">
         {profile.linkedin_url && profile.linkedin_url !== '#' && (
           <a href={profile.linkedin_url} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm">
-            <ExternalLink size={14} /> LinkedIn
+            <ArrowSquareOut size={14} /> LinkedIn
           </a>
         )}
         {profile.source_url && profile.source_url !== '#' && profile.source_url !== profile.linkedin_url && (
           <a href={profile.source_url} target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm">
-            <ExternalLink size={14} /> Source
+            <ArrowSquareOut size={14} /> Source
           </a>
         )}
       </div>
