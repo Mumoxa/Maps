@@ -8,13 +8,23 @@
 import bankRaw from '../../../markets/search-bank/bank.json'
 import type { FacetDef, TextMatcher } from '../facets'
 import { canonicalCompanyName } from '../companyNormalization'
-import { SENIORITY_LEVELS, type BankCandidate, type SearchBankFile, type SearchBrief } from './types'
+import { SENIORITY_LEVELS, type BankCandidate, type BankTargetCompany, type SearchBankFile, type SearchBrief } from './types'
 
 const bank = bankRaw as SearchBankFile
 
 export const bankSearches: SearchBrief[] = bank.searches
 
 export const bankCandidates: BankCandidate[] = bank.candidates
+
+/** Companies attached to searches as sourcing targets (may be empty). */
+export const bankTargetCompanies: BankTargetCompany[] = bank.targetCompanies ?? []
+
+/** Targets attached to one search, best relevance tier first. */
+export function targetCompaniesForSearch(searchId: string): BankTargetCompany[] {
+  return bankTargetCompanies
+    .filter((target) => target.searchId === searchId)
+    .sort((left, right) => (left.tier ?? 9) - (right.tier ?? 9) || left.name.localeCompare(right.name))
+}
 
 /** O(1) search-name lookup for any bank (exports, cross-links, tests). */
 export function searchNameLookup(searches: SearchBrief[]): (id: string) => string {

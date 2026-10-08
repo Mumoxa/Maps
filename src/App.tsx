@@ -10,6 +10,7 @@ import { SegmentDirectory } from './pages/SegmentDirectory'
 import { SegmentPage } from './pages/SegmentPage'
 import { CompanyDirectory } from './pages/CompanyDirectory'
 import { CompanyPage } from './pages/CompanyPage'
+import { CompanyAssociationsPage } from './pages/CompanyAssociationsPage'
 import { ProfileDirectory } from './pages/ProfileDirectory'
 import { ProfilePage } from './pages/ProfilePage'
 import { SalesforcePage } from './pages/SalesforcePage'
@@ -45,6 +46,7 @@ function AppRoutes() {
     { path: '/segments', element: <SegmentDirectory /> },
     { path: '/segments/:slug', element: <SegmentPage /> },
     { path: '/companies', element: <CompanyDirectory /> },
+    { path: '/company-associations', element: <CompanyAssociationsPage /> },
     { path: '/companies/:slug', element: <CompanyPage /> },
     { path: '/profiles', element: <ProfileDirectory /> },
     {

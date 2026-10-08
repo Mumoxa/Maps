@@ -1,0 +1,112 @@
+[
+  {
+    "id": "rel-pnp-boxer",
+    "type": "parent-of",
+    "fromId": "org-pick-n-pay",
+    "toId": "org-boxer",
+    "evidence": "Pick n Pay sold a 34.4% stake in Boxer in the November 2024 IPO and retained 65.6%.",
+    "sourceUrl": "https://www.reuters.com/business/retail-consumer/south-africas-pick-n-pay-raises-471-mln-boxer-ipo-2024-11-25/",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-cch-ccs",
+    "type": "parent-of",
+    "fromId": "org-commercial-cold-holdings",
+    "toId": "org-ccs-logistics",
+    "evidence": "CCS is proud to be part of the Commercial Cold Holdings (CCH) Group.",
+    "sourceUrl": "https://www.ccslogistics.co.za/home",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-cch-sequence",
+    "type": "parent-of",
+    "fromId": "org-commercial-cold-holdings",
+    "toId": "org-sequence-logistics",
+    "evidence": "Sequence Logistics listed as a Commercial Cold Holdings subsidiary acquired 2023-08-08.",
+    "sourceUrl": "https://pitchbook.com/profiles/company/510085-63",
+    "confidence": "probable",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-cch-idube",
+    "type": "parent-of",
+    "fromId": "org-commercial-cold-holdings",
+    "toId": "org-idube-cold-storage",
+    "evidence": "iDube Cold Storage listed as a Commercial Cold Holdings subsidiary acquired 2024-08-26.",
+    "sourceUrl": "https://pitchbook.com/profiles/company/510085-63",
+    "confidence": "probable",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-cch-pecs",
+    "type": "parent-of",
+    "fromId": "org-commercial-cold-holdings",
+    "toId": "org-pecs",
+    "evidence": "Port Elizabeth Cold Storage listed as a Commercial Cold Holdings investment acquired 2025-11-08.",
+    "sourceUrl": "https://pitchbook.com/profiles/company/510085-63",
+    "confidence": "probable",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-quantum-nova",
+    "type": "parent-of",
+    "fromId": "org-quantum-foods",
+    "toId": "org-nova-feeds",
+    "evidence": "Nova Feeds named as a Quantum Foods subsidiary.",
+    "sourceUrl": "https://www.foodbusinessafrica.com/top100/",
+    "confidence": "probable",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-ssk-soill",
+    "type": "parent-of",
+    "fromId": "org-ssk",
+    "toId": "org-southern-oil",
+    "evidence": "Southern Oil (SOILL) is listed in the SSK group structure.",
+    "sourceUrl": "https://www.ssk.co.za/en/about/group-structure/",
+    "confidence": "confirmed",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-aced-reatile",
+    "type": "verified-partnership",
+    "fromId": "org-aced",
+    "toId": "org-reatile-renewables",
+    "evidence": "Consortium with AIIM achieved financial close on the 89 MW Castle Wind Farm.",
+    "sourceUrl": "https://ippjournal.com/company/african-clean-energy-developments-aced",
+    "confidence": "probable",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-mulilo-edf",
+    "type": "verified-partnership",
+    "fromId": "org-mulilo",
+    "toId": "org-edf-renewables-sa",
+    "evidence": "Mulilo Energy and EDF Renewables (South Africa) selected as preferred bidders on a renewable project.",
+    "sourceUrl": "https://za.linkedin.com/company/mulilo-renewable-energy",
+    "confidence": "probable",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  },
+  {
+    "id": "rel-shoprite-massmart",
+    "type": "acquired",
+    "fromId": "org-shoprite-holdings",
+    "toId": "org-massmart",
+    "evidence": "Shoprite acquired Massmart's Rhino, Massfresh and Cash & Carry businesses (2022) and 94 stores (2023).",
+    "sourceUrl": "https://pitchbook.com/profiles/company/59352-58",
+    "confidence": "probable",
+    "checkedOn": "2026-10-08",
+    "note": ""
+  }
+]

@@ -128,6 +128,8 @@ export function mergeDrafts(drafts: BankDraft[], options: MergeOptions): MergeRe
       generatedOn: today,
       searches: searches.sort((left, right) => left.name.localeCompare(right.name)),
       candidates: orderedCandidates,
+      // A candidate drop never disturbs the companies attached to searches.
+      targetCompanies: (bank.targetCompanies ?? []).map((target) => ({ ...target })),
     },
     report,
   }
@@ -145,7 +147,7 @@ export function ingestDrop(text: string, options: MergeOptions & { fileName?: st
 
 /** A brand-new, empty bank. */
 export function emptyBank(today: string): SearchBankFile {
-  return { schemaVersion: 1, generatedOn: today, searches: [], candidates: [] }
+  return { schemaVersion: 1, generatedOn: today, searches: [], candidates: [], targetCompanies: [] }
 }
 
 // ---------------------------------------------------------------------------

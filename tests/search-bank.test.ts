@@ -18,6 +18,7 @@ import {
   splitQualifications,
 } from '../src/data/searchBank/normalise'
 import { candidatesToCsv, emptyBank, ingestDrop } from '../src/data/searchBank/ingest'
+import type { SearchBrief } from '../src/data/searchBank/types'
 import { importSearchBank } from '../scripts/import-search-bank'
 import { filterByFacets, readSelections, toggleValue, writeSelections } from '../src/data/facets'
 import {
@@ -37,7 +38,7 @@ function ingest(csv: string, bank = emptyBank(TODAY), options: Record<string, st
 }
 
 /** Resolve a search id to its name inside the bank a test just built. */
-function nameOf(bank: { searches: { id: string; name: string }[] }) {
+function nameOf(bank: { searches: SearchBrief[] }) {
   return searchNameLookup(bank.searches)
 }
 

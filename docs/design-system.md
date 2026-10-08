@@ -86,6 +86,37 @@ Every content route composes the same blocks:
 - Loading uses `SkeletonPage` shaped like the layout being loaded; never a bare spinner for a
   full page.
 
+## Company Association Explorer (`/company-associations`)
+
+Three views over one filtered result set, so the three can never disagree. The classes are in
+`globals.css` under the `Company Association Explorer` banner.
+
+```html
+<section class="assoc-context">    <!-- focal company, role context, .assoc-viewswitch, filter trigger -->
+<section class="assoc-brief">      <!-- the assignment the ranking is conditional on -->
+<div class="assoc-layout">         <!-- .facet-sidebar + .assoc-main + .assoc-inspector -->
+  <section class="assoc-main">
+    <div class="assoc-summary">    <!-- counts, .assoc-tier chips -->
+    <div class="assoc-graph">      <!-- xyflow host; .assoc-node-{focal,pocket,company} -->
+    <div class="assoc-pockets">    <!-- .assoc-pocket > head/body/controls/pager -->
+    <div class="assoc-table">      <!-- .data-table with .assoc-th-sort buttons -->
+  </section>
+  <aside class="assoc-inspector">  <!-- facts / inferences / targets for one company -->
+<section class="assoc-poolbar">    <!-- selection, pool form, Search Bank drop -->
+```
+
+- `.assoc-tier` is the one place relevance is rendered: `.assoc-tier-1` to `.assoc-tier-5` reuse
+  the accent and signal tokens, because tier is data encoding, not chrome. No percentage is ever
+  rendered, so there is no score class.
+- `.assoc-unknown` (amber, "never checked") and `.assoc-absent` (neutral, "checked and not there")
+  are separate classes on purpose: unknown and absent must never look the same.
+- `.visually-hidden` is the shared screen-reader-only utility used by the sortable table headers
+  and the pocket toggles.
+- `.bank-targets` on `/search-bank` lists the companies attached to a search; it sits below the
+  candidate grid so a company target is never mistaken for a candidate.
+- Below 1180px the inspector drops under the two columns; below 1024px the filter rail becomes the
+  `.facet-drawer`, driven by `.facet-filter-trigger` like every other faceted route.
+
 ## Interaction rules
 
 - Keyboard first: every control is a real `button`/`a`/`input`, focus is visible through the

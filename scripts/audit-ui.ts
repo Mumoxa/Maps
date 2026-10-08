@@ -68,6 +68,7 @@ const pageModules: Record<string, [string, string]> = {
   '/map': ['/src/pages/MapPage.tsx', 'MapPage'],
   '/segments': ['/src/pages/SegmentDirectory.tsx', 'SegmentDirectory'],
   '/companies': ['/src/pages/CompanyDirectory.tsx', 'CompanyDirectory'],
+  '/company-associations': ['/src/pages/CompanyAssociationsPage.tsx', 'CompanyAssociationsPage'],
   '/profiles': ['/src/pages/ProfileDirectory.tsx', 'ProfileDirectory'],
   '/shortlist': ['/src/pages/ShortlistPage.tsx', 'ShortlistPage'],
   '/markets/salesforce': ['/src/pages/SalesforceEcosystemPage.tsx', 'SalesforceEcosystemPage'],

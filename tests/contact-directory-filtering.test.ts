@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import type { Contact } from '../src/data/contacts'
+import type { Contact, ContactPosition } from '../src/data/contacts'
 import {
   buildContactFacets,
   filterContacts,
@@ -8,12 +8,36 @@ import {
 } from '../src/data/contactDirectory'
 import type { ContactFacetKey, ContactSelections } from '../src/data/contactDirectory'
 
+/**
+ * A complete ContactPosition. The directory contract has no optional fields, so
+ * a test fixture spells out every one instead of relying on a cast.
+ */
+function position(fields: Partial<ContactPosition>): ContactPosition {
+  return {
+    title: '',
+    company: '',
+    sector: '',
+    companySize: '',
+    website: '',
+    companyLinkedin: '',
+    companyDomain: '',
+    companyDescription: '',
+    companySubIndustry: '',
+    companyCountry: '',
+    companyCity: '',
+    companyRevenue: '',
+    companyYearFounded: '',
+    companySpecialties: '',
+    ...fields,
+  }
+}
+
 function contact(overrides: Partial<Contact> = {}): Contact {
   return {
     id: 'person-one',
     name: 'Person One',
     nameAliases: [],
-    positions: [{
+    positions: [position({
       title: 'Head of Data',
       company: 'Example Bank',
       sector: 'Banking',
@@ -22,7 +46,7 @@ function contact(overrides: Partial<Contact> = {}): Contact {
       companyLinkedin: '',
       companyDomain: '',
       companyDescription: '',
-    }],
+    })],
     linkedinUrls: ['https://www.linkedin.com/in/person-one'],
     emails: [{ address: 'person@example.com', status: 'Valid', type: 'work', masked: false }],
     phones: [{ number: '+27 82 000 0000', type: 'mobile' }],
@@ -49,20 +73,20 @@ test('uses OR within a checkbox group and AND across groups', () => {
     contact({
       id: 'person-two',
       name: 'Person Two',
-      positions: [{
+      positions: [position({
         title: 'Salesforce Lead', company: 'Example Consultancy', sector: 'Consulting',
         companySize: '201-500', website: '', companyLinkedin: '', companyDomain: '',
         companyDescription: '',
-      }],
+      })],
       locations: ['Cape Town, South Africa'],
     }),
     contact({
       id: 'person-three',
       name: 'Person Three',
-      positions: [{
+      positions: [position({
         title: 'CTO', company: 'Second Bank', sector: 'Banking', companySize: '1,001-5,000',
         website: '', companyLinkedin: '', companyDomain: '', companyDescription: '',
-      }],
+      })],
       locations: ['Cape Town, South Africa'],
     }),
   ]
@@ -88,13 +112,13 @@ test('searches all nested contact and company information', () => {
 
 test('wires all supplied categorical and related-role fields to checkbox facets', () => {
   const contacts = [contact({
-    positions: [{
+    positions: [position({
       title: 'Head of Data', company: 'Example Bank', sector: 'Banking', companySize: '10,001+',
       website: 'https://example.com', companyLinkedin: '', companyDomain: 'example.com',
       companyDescription: 'Example description', companySubIndustry: 'Retail Banking',
       companyCountry: 'South Africa', companyCity: 'Johannesburg', companyRevenue: 'R1bn+',
       companyYearFounded: '1999', companySpecialties: 'Analytics',
-    }],
+    })],
     tags: ['Priority'],
     triggers: ['Leadership change'],
     remarks: ['Warm relationship'],
@@ -146,10 +170,10 @@ test('normalises checkbox values without changing the sourced labels', () => {
     contact({
       id: 'person-two',
       name: 'Person Two',
-      positions: [{
+      positions: [position({
         title: 'Head of Data', company: 'EXAMPLE BANK', sector: 'Banking', companySize: '10,001+',
         website: '', companyLinkedin: '', companyDomain: '', companyDescription: '',
-      }],
+      })],
     }),
   ]
 
