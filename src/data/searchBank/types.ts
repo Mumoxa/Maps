@@ -99,12 +99,56 @@ export interface BankCandidate {
   updatedOn: string
 }
 
+/**
+ * A company attached to a search as a sourcing target — the write-back of the
+ * Company Association Explorer. It records why the company was proposed and what
+ * evidence is still missing; it never records an opinion about any person.
+ */
+export type TargetRecruiterStatus = 'proposed' | 'researching' | 'engaged' | 'sourced' | 'declined'
+
+export const TARGET_STATUSES: readonly TargetRecruiterStatus[] = [
+  'proposed', 'researching', 'engaged', 'sourced', 'declined',
+]
+
+export interface BankTargetCompany {
+  /** Stable id from search + company identity, so re-attaching never duplicates. */
+  id: string
+  /** Which search this target is attached to (SearchBrief.id). */
+  searchId: string
+  /** Canonical organisation id when the company is in the register, else empty. */
+  organizationId: string
+  name: string
+  legalName: string
+  /** Industry pocket the company sits in, as recorded in the register. */
+  pocket: string
+  /** Role-specific relevance tier at the time of attachment, 1–5, or null. */
+  tier: number | null
+  tierLabel: string
+  /** Human-readable rule hits behind the proposal. */
+  reasons: string[]
+  /** Professionals Maps already maps at this company. Never a suitability claim. */
+  mappedProfessionals: number
+  /** known-verified | recorded-stale | inferred | unknown. */
+  evidenceState: string
+  /** What still has to be researched before this target is actionable. */
+  missingEvidence: string[]
+  status: TargetRecruiterStatus
+  /** Where the attachment came from (file name, "association-explorer"). */
+  source: string
+  /** ISO date the target was first attached to this search. */
+  addedOn: string
+  /** ISO date of the last change. */
+  updatedOn: string
+}
+
 export interface SearchBankFile {
   schemaVersion: 1
   /** ISO date the bank file was last written. */
   generatedOn: string
   searches: SearchBrief[]
   candidates: BankCandidate[]
+  /** Companies attached to searches as sourcing targets. */
+  targetCompanies: BankTargetCompany[]
 }
 
 /** One normalised candidate plus the provenance of the row it came from. */
@@ -132,6 +176,22 @@ export interface DropIssue {
 export interface DropParseResult {
   format: DropFormat
   rows: Record<string, string>[]
+  issues: DropIssue[]
+}
+
+/** Result of attaching a target-company drop to the bank. */
+export interface TargetDropReport {
+  format: DropFormat
+  /** Target rows read from the drop. */
+  read: number
+  /** Targets attached for the first time. */
+  added: number
+  /** Existing targets updated in place. */
+  updated: number
+  /** Rows skipped because they named no company. */
+  skipped: number
+  /** Searches created because the drop named a search the bank did not have. */
+  searchesCreated: string[]
   issues: DropIssue[]
 }
 

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import {
   Briefcase,
   Buildings,
@@ -30,6 +30,7 @@ import {
   searchBankTextMatcher,
   searchNameLookup,
   statusLabel,
+  targetCompaniesForSearch,
   type BankUniverse,
 } from '../data/searchBank/bank'
 import {
@@ -235,6 +236,62 @@ function GroupHeader({ name, client, role, status, openedOn, count }: GroupHeade
         <span className={`hack-badge ${STATUS_BADGE_CLASS[status] ?? ''}`}>{status}</span>
       </p>
     </div>
+  )
+}
+
+/**
+ * The companies attached to a search as sourcing targets — the write-back from
+ * the Company Association Explorer. Kept visibly separate from candidates: a
+ * company being worth approaching says nothing about any individual in it.
+ */
+function TargetCompanies({ searchId }: { searchId: string }) {
+  const targets = useMemo(() => targetCompaniesForSearch(searchId), [searchId])
+
+  if (targets.length === 0) {
+    return (
+      <p className="bank-targets-none">
+        No sourcing companies attached to this search. Build a target pool in the{' '}
+        <Link to="/company-associations">Company Association Explorer</Link>, export it, then store it with{' '}
+        <code>npm run bank:import -- &lt;file&gt; --targets</code>.
+      </p>
+    )
+  }
+
+  return (
+    <section className="bank-targets" aria-label="Target companies">
+      <h3 className="bank-targets-title">
+        Target companies <span className="bank-targets-count">{targets.length}</span>
+      </h3>
+      <div className="data-table-wrap">
+        <table className="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Company</th>
+              <th scope="col">Pocket</th>
+              <th scope="col">Relevance tier</th>
+              <th scope="col">Mapped professionals</th>
+              <th scope="col">Evidence state</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            {targets.map((target) => (
+              <tr key={target.id}>
+                <td className="cell-strong" title={target.legalName || target.name}>{target.name}</td>
+                <td>{target.pocket || 'Not classified'}</td>
+                <td>{target.tier !== null ? `Tier ${target.tier}${target.tierLabel ? ` · ${target.tierLabel}` : ''}` : 'Not tiered'}</td>
+                <td>{target.mappedProfessionals}</td>
+                <td>{target.evidenceState}</td>
+                <td>{target.status}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="bank-targets-note">
+        Sourcing targets are companies, not people. Missing evidence is missing research, not a confirmed absence.
+      </p>
+    </section>
   )
 }
 
@@ -684,6 +741,7 @@ export function SearchBankPage() {
                           openedOn={meta?.openedOn ?? ''}
                           count={group.candidates.length}
                         />
+                        <TargetCompanies searchId={group.searchId} />
                         <div className="hack-candidate-grid">
                           {group.candidates.map((candidate) => (
                             <CandidateCard
@@ -707,6 +765,7 @@ export function SearchBankPage() {
                         openedOn={search.openedOn}
                         count={0}
                       />
+                      <TargetCompanies searchId={search.id} />
                       <p className="bank-group-empty-note">No candidates dropped into this search yet.</p>
                     </section>
                   ))}

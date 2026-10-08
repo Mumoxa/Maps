@@ -1,0 +1,68 @@
+[
+  {
+    "id": "ri-vector-cold-chain",
+    "organizationId": "org-vector-logistics",
+    "kind": "strong-source",
+    "scope": "financial-manager-cold-chain",
+    "observation": "Cold chain distribution business with multi-temperature DCs and published operating metrics; strong source for operational finance exposure in a cold-chain environment.",
+    "confidence": "probable",
+    "source": "Company website operating metrics reviewed 2026-10-08",
+    "reviewer": "Talent Tree",
+    "recordedOn": "2026-10-08"
+  },
+  {
+    "id": "ri-ccs-reference",
+    "organizationId": "org-ccs-logistics",
+    "kind": "client-preferred",
+    "scope": "financial-manager-cold-chain",
+    "observation": "Client entity for the commercial cold storage Financial Manager assignment; retained as the reference company rather than a sourcing target.",
+    "confidence": "confirmed",
+    "source": "Client brief",
+    "reviewer": "Talent Tree",
+    "recordedOn": "2026-10-08"
+  },
+  {
+    "id": "ri-bester-reference",
+    "organizationId": "org-bester-feed-grain",
+    "kind": "client-preferred",
+    "scope": "head-of-finance-commodity",
+    "observation": "Client entity for the Head of Finance commodity trading assignment.",
+    "confidence": "confirmed",
+    "source": "Client brief",
+    "reviewer": "Talent Tree",
+    "recordedOn": "2026-10-08"
+  },
+  {
+    "id": "ri-slm-reference",
+    "organizationId": "org-slm-developments",
+    "kind": "client-preferred",
+    "scope": "group-financial-manager-property",
+    "observation": "Client entity for the property development assignment; verified identity SLM Developments (Pty) Ltd.",
+    "confidence": "confirmed",
+    "source": "Client brief and company registration K2019081416",
+    "reviewer": "Talent Tree",
+    "recordedOn": "2026-10-08"
+  },
+  {
+    "id": "ri-nwk-trading",
+    "organizationId": "org-nwk",
+    "kind": "strong-source",
+    "scope": "head-of-finance-commodity",
+    "observation": "Publishes grain marketing, price risk management and Safex broker services; strong source for commodity trading finance exposure where evidence holds.",
+    "confidence": "probable",
+    "source": "Company grain marketing page reviewed 2026-10-08",
+    "reviewer": "Talent Tree",
+    "recordedOn": "2026-10-08"
+  },
+  {
+    "id": "ri-rabie-development",
+    "organizationId": "org-rabie-property-group",
+    "kind": "strong-source",
+    "scope": "group-financial-manager-property",
+    "observation": "Long-established Western Cape developer with a multi-project portfolio; strong source for development project finance exposure.",
+    "confidence": "probable",
+    "source": "Company page reviewed 2026-10-08",
+    "reviewer": "Talent Tree",
+    "recordedOn": "2026-10-08"
+  }
+]

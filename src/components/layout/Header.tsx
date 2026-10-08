@@ -130,6 +130,13 @@ export function Header() {
             </div>
 
             <Link
+              to="/company-associations"
+              className={`nav-heading ${isPath(location.pathname, '/company-associations') ? 'active' : ''}`}
+              onClick={closeAll}
+            >
+              Company associations
+            </Link>
+            <Link
               to="/search-bank"
               className={`nav-heading ${isPath(location.pathname, '/search-bank') ? 'active' : ''}`}
               onClick={closeAll}
@@ -198,6 +205,13 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          <div className="mobile-nav-heading">Companies</div>
+          <Link to="/companies" className={isPath(location.pathname, '/companies') ? 'active' : ''} onClick={closeAll}>
+            Company directory
+          </Link>
+          <Link to="/company-associations" className={isPath(location.pathname, '/company-associations') ? 'active' : ''} onClick={closeAll}>
+            Company associations
+          </Link>
           <div className="mobile-nav-heading">Recruiter workspace</div>
           <Link to="/search-bank" className={isPath(location.pathname, '/search-bank') ? 'active' : ''} onClick={closeAll}>
             Search bank

@@ -17,11 +17,14 @@ import { basename, dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { clean } from '../src/data/searchBank/normalise'
 import { emptyBank, ingestDrop } from '../src/data/searchBank/ingest'
+import { ingestTargetDrop } from '../src/data/searchBank/targets'
 import type { SearchBankFile } from '../src/data/searchBank/types'
 
 export interface ImportSearchBankOptions {
   rootDir: string
   filePath: string
+  /** True when the dropped file holds target companies instead of candidates. */
+  targets?: boolean
   /** Search to file candidates under when a row does not name one. */
   defaultSearch?: string
   /** Client recorded on searches created by this drop. */
@@ -38,7 +41,7 @@ export interface ImportSearchBankResult {
   status: 'imported' | 'unchanged' | 'dry-run'
   bankPath: string
   dropPath: string | null
-  report: ReturnType<typeof ingestDrop>['report']
+  report: ReturnType<typeof ingestDrop>['report'] | ReturnType<typeof ingestTargetDrop>['report']
 }
 
 function readBank(bankPath: string, today: string): SearchBankFile {
@@ -49,6 +52,7 @@ function readBank(bankPath: string, today: string): SearchBankFile {
     generatedOn: parsed.generatedOn ?? today,
     searches: parsed.searches ?? [],
     candidates: parsed.candidates ?? [],
+    targetCompanies: parsed.targetCompanies ?? [],
   }
 }
 
@@ -66,35 +70,38 @@ export async function importSearchBank(options: ImportSearchBankOptions): Promis
   const bankPath = join(rootDir, 'markets', 'search-bank', 'bank.json')
 
   const bank = readBank(bankPath, today)
-  const result = ingestDrop(text, {
+  const dropOptions = {
     bank,
     today,
     fileName: basename(filePath),
     defaultSearch: options.defaultSearch,
     defaultClient: options.defaultClient,
     source: options.source ?? basename(filePath),
-  })
+  }
+  const result = options.targets ? ingestTargetDrop(text, dropOptions) : ingestDrop(text, dropOptions)
 
   const { report } = result
+  const noun = options.targets ? 'target companies' : 'candidates'
   if (report.read === 0 || (report.added === 0 && report.updated === 0)) {
     const reasons = report.issues.map((issue) => `row ${issue.rowNumber} ${issue.field}: ${issue.reason}`).join('; ')
-    throw new Error(`no candidates could be stored from ${basename(filePath)}${reasons ? ` — ${reasons}` : ''}`)
+    throw new Error(`no ${noun} could be stored from ${basename(filePath)}${reasons ? ` — ${reasons}` : ''}`)
   }
 
   const output = `${JSON.stringify(result.bank, null, 2)}\n`
   const dropPath = dropPathFor(rootDir, filePath, today)
-  const dropRecord = {
+  const dropRecord: Record<string, unknown> = {
     droppedOn: today,
     sourceFile: basename(filePath),
     sourceLabel: options.source ?? basename(filePath),
     defaultSearch: clean(options.defaultSearch ?? '') || null,
     defaultClient: clean(options.defaultClient ?? '') || null,
+    kind: options.targets ? 'target-companies' : 'candidates',
     format: report.format,
     read: report.read,
     added: report.added,
     updated: report.updated,
     searchesCreated: report.searchesCreated,
-    crossSearchMatches: report.crossSearchMatches,
+    crossSearchMatches: 'crossSearchMatches' in report ? report.crossSearchMatches : [],
     issues: report.issues,
   }
 
@@ -127,12 +134,13 @@ async function runCli() {
   const filePath = positional()
   if (!filePath) {
     throw new Error(
-      'Usage: npm run bank:import -- <file.csv|file.json|file.txt> [--search "Search name"] [--client "Client"] [--source label] [--supplied-on YYYY-MM-DD] [--dry-run]',
+      'Usage: npm run bank:import -- <file.csv|file.json|file.txt> [--targets] [--search "Search name"] [--client "Client"] [--source label] [--supplied-on YYYY-MM-DD] [--dry-run]',
     )
   }
   const result = await importSearchBank({
     rootDir: process.cwd(),
     filePath,
+    targets: process.argv.includes('--targets'),
     defaultSearch: argument('--search'),
     defaultClient: argument('--client'),
     source: argument('--source'),
