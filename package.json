@@ -20,7 +20,8 @@
     "smoke:routes": "node --import tsx scripts/smoke-routes.ts",
     "audit:ui": "node --import tsx scripts/audit-ui.ts",
     "scenarios": "node --import tsx scripts/scenario-report.ts",
-    "qa": "node --import tsx scripts/qa/run-qa.ts"
+    "qa": "node --import tsx scripts/qa/run-qa.ts",
+    "hiring:import": "node --import tsx scripts/import-hiring-observations.ts"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.3.0",
