@@ -8074,5 +8074,1164 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "The Naos 1 battery capacity is reported as both 660 MWh and 855 MWh within the same article; the conflict is recorded rather than resolved. The South African legal entity and head office were not established from the sources read, and no website is asserted. Locations are sourced project sites."
+  },
+  {
+    "id": "org-emira",
+    "name": "Emira Property Fund",
+    "legalName": "Emira Property Fund Limited",
+    "aliases": [
+      "Emira",
+      "EMI"
+    ],
+    "website": "https://emira.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-investment",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "South African REIT holding direct commercial and residential property plus an equity interest in listed REIT SA Corporate Real Estate.",
+        "sourceUrl": "https://businessexplainer.co.za/companies/2026-06-02/emiras-global-property-strategy-delivers-bigger-payouts/",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "property-holding-structures",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "South African REIT holding a direct property portfolio and an equity interest in SA Corporate Real Estate increased to 8,7%.",
+        "sourceUrl": "https://emira.co.za/emiras-capital-recycling-supports-half-year-gains/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-site-operations",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "South African direct portfolio of 56 properties at 30 September 2025, plus 10 US investments and 39 income-generating properties in Poland.",
+        "sourceUrl": "https://emira.co.za/emiras-capital-recycling-supports-half-year-gains/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-entity-consolidation",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Transcend Residential Property Fund is a wholly owned subsidiary focused on value-oriented suburban rental units.",
+        "sourceUrl": "https://www.bizcommunity.com/article/emira-delivers-exceptional-full-year-results-817633a",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "capital-expenditure",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "R177,2 million invested in targeted upgrades, energy efficiency projects and refurbishments.",
+        "sourceUrl": "https://www.bizcommunity.com/article/emira-delivers-exceptional-full-year-results-817633a",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "foreign-currency-transactions",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "US investments valued at USD129,6 million and a Polish portfolio valued at EUR687,5 million at 30 September 2025.",
+        "sourceUrl": "https://emira.co.za/emiras-capital-recycling-supports-half-year-gains/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "regulatory-reporting",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Unaudited summarised interim financial results published for the six months ended 30 September 2025.",
+        "sourceUrl": "https://emira.co.za/wp-content/uploads/2025/11/Emira-Interim-Results-2025-Long-Form-Final.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "development-cost-accounting",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Capital recycling and refurbishment programmes are described, but no development cost accounting was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "hedging-derivative-accounting",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No hedging policy was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://emira.co.za/wp-content/uploads/2025/11/Emira-Interim-Results-2025-Long-Form-Final.pdf",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "23 employees",
+        "basis": "third-party-estimate",
+        "asOf": "2025",
+        "sourceUrl": "https://www.google.com/finance/quote/EMI:JSE?hl=en",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "metric": "sites",
+        "value": "56 properties in the South African direct portfolio",
+        "basis": "source-reported",
+        "asOf": "2025-09-30",
+        "sourceUrl": "https://emira.co.za/emiras-capital-recycling-supports-half-year-gains/",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://emira.co.za/emiras-capital-recycling-supports-half-year-gains/",
+        "type": "company-website",
+        "evidence": "November 2025 interim results: South African direct portfolio of 56 properties valued at R9,3 billion; commercial portfolio of 41 assets split 50% urban retail, 23% office and 14% industrial; US portfolio of 10 investments at R2,2 billion (USD129,6 million); Polish portfolio of 39 income-generating properties at EUR687,5 million.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://emira.co.za/wp-content/uploads/2025/11/Emira-Interim-Results-2025-Long-Form-Final.pdf",
+        "type": "corporate-disclosure",
+        "evidence": "Unaudited summarised interim results for the six months ended 30 September 2025: retail portfolio of 12 grocer-anchored neighbourhood centres with Wonderpark the largest at 91 038m2; 10 office properties; investment property of R405,7 million classified as held for sale.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.bizcommunity.com/article/emira-delivers-exceptional-full-year-results-817633a",
+        "type": "news",
+        "evidence": "Full-year results to March 2025: South African direct portfolio of 63 assets valued at R9,96 billion; residential portfolio of 3 347 units across 21 properties including Transcend Residential Property Fund, a wholly owned subsidiary; R177,2 million invested in upgrades.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://businessexplainer.co.za/companies/2026-06-02/emiras-global-property-strategy-delivers-bigger-payouts/",
+        "type": "news",
+        "evidence": "June 2026: South African direct portfolio of 48 properties valued at R8,9 billion; R128,6 million allocated to targeted upgrades, of which R20,7 million for solar PV and electrical upgrades and R107,9 million for commercial expansion projects.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "Property counts and portfolio values differ by reporting date and are not averaged: 63 assets at R9,96 billion (March 2025), 56 properties at R9,3 billion (September 2025) and 48 properties at R8,9 billion (March 2026), reflecting an active capital recycling programme. Offshore exposure is real and material, which is why foreign-currency exposure is recorded as observed rather than unknown."
+  },
+  {
+    "id": "org-balwin",
+    "name": "Balwin Properties",
+    "legalName": "",
+    "aliases": [
+      "Balwin"
+    ],
+    "website": "https://balwin.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Residential developer of sectional-title apartment lifestyle estates, typically spanning 1 000 to 3 500 apartments per development.",
+        "sourceUrl": "https://www.financialmail.businessday.co.za/investing/2025-11-06-balwin-builds-momentum/",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "project-development",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "20 active developments nationally at 28 February 2025, with a development pipeline of 35 000 apartments for sale.",
+        "sourceUrl": "https://www.financialmail.businessday.co.za/investing/2025-11-06-balwin-builds-momentum/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "development-cost-accounting",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Developments under construction comprise the value of land and infrastructure costs, development rights and construction costs, and increased to R6,9 billion from R6,7 billion.",
+        "sourceUrl": "https://africannewsagency.com/balwin-properties-reports-strong-apartment-sales-growth-amidst-economic-uncertainty/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "construction-project-costing",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Gross profit margin from the sale of apartments was 24%, with cost containment and cost engineering measures prioritised across all projects.",
+        "sourceUrl": "https://balwin.co.za/investor-relations/2025-Integrated-Annual-Report.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-project-management",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "20 active developments nationally, with four new rental developments begun and at least six further pure rental opportunities identified.",
+        "sourceUrl": "https://africannewsagency.com/balwin-properties-reports-strong-apartment-sales-growth-amidst-economic-uncertainty/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "capital-expenditure",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Investment property valued at R506,9 million and developments under construction of R6,9 billion.",
+        "sourceUrl": "https://africannewsagency.com/balwin-properties-reports-strong-apartment-sales-growth-amidst-economic-uncertainty/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-site-operations",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Developments across Gauteng, KwaZulu-Natal and the Western Cape, including Mooikloof Smart City on the eastern outskirts of Tshwane.",
+        "sourceUrl": "https://www.moneyweb.co.za/news/companies-and-deals/balwin-properties-delists-from-jse-after-r2-26bn-buyout/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "operational-management-reporting",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Gross profit from the sale of apartments and gross profit from Balwin Annuity are reported separately, with group gross margin of 27%.",
+        "sourceUrl": "https://africannewsagency.com/balwin-properties-reports-strong-apartment-sales-growth-amidst-economic-uncertainty/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "working-capital-management",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Cash generation of R198,7 million recorded a turnaround from improved profitability and disciplined working capital management.",
+        "sourceUrl": "https://africannewsagency.com/balwin-properties-reports-strong-apartment-sales-growth-amidst-economic-uncertainty/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "regulatory-reporting",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Integrated annual report published for the year ended 28 February 2025.",
+        "sourceUrl": "https://balwin.co.za/investor-relations/2025-Integrated-Annual-Report.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "inventory-accounting",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Apartments held for sale behave like inventory, but no source describes the accounting treatment.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "project-finance",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Loan-to-value ratios are reported, but no project financing structure was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Tshwane",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.financialmail.businessday.co.za/investing/2025-11-06-balwin-builds-momentum/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "city": "Somerset West",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.businessday.co.za/companies/2025-10-28-balwin-lifts-construction-activity-as-housing-market-shows-growing-confidence/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "city": "Milnerton",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.businessday.co.za/companies/2025-10-28-balwin-lifts-construction-activity-as-housing-market-shows-growing-confidence/",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "sites",
+        "value": "20 active developments",
+        "basis": "source-reported",
+        "asOf": "2025-02-28",
+        "sourceUrl": "https://balwin.co.za/investor-relations/2025-Integrated-Annual-Report.pdf",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://balwin.co.za/investor-relations/2025-Integrated-Annual-Report.pdf",
+        "type": "corporate-disclosure",
+        "evidence": "Integrated report for the year ended 28 February 2025: revenue R2,2 billion, profit R234,0 million, 1 749 apartments recognised in revenue, 20 active developments nationally, group loan-to-value 40,4%, Balwin Annuity revenue R175,8 million.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://africannewsagency.com/balwin-properties-reports-strong-apartment-sales-growth-amidst-economic-uncertainty/",
+        "type": "news",
+        "evidence": "May 2026 full-year results: group revenue up 21% to R2,7 billion, 2 053 apartments recognised in revenue, profit up 9% to R254,5 million, developments under construction of R6,9 billion, investment property R506,9 million, loan-to-value 38,1%.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.moneyweb.co.za/news/companies-and-deals/balwin-properties-delists-from-jse-after-r2-26bn-buyout/",
+        "type": "news",
+        "evidence": "September 2026: delisted from the JSE after a R2,26 billion take-private at R4,35 a share backed by the PIC and management, ending an 11-year listing; development pipeline of 26 334 build-to-sell apartments across Gauteng, KwaZulu-Natal and the Western Cape, with about 7 700 apartments being evaluated for build-to-rent.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.businessday.co.za/companies/2025-10-28-balwin-lifts-construction-activity-as-housing-market-shows-growing-confidence/",
+        "type": "news",
+        "evidence": "October 2025 half-year results: 928 apartments recognised in revenue against 640 a year earlier, revenue up 44%, gross margin 29%, with De Aan-Zicht in Milnerton and The Huntsman in Somerset West named among the strongest sellers.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.financialmail.businessday.co.za/investing/2025-11-06-balwin-builds-momentum/",
+        "type": "news",
+        "evidence": "November 2025: lifestyle estates of 1 000 to 3 500 sectional-title apartments priced R600 000 to R3 million; annuity revenue up 55% to R101,5 million; The Eastlake rental development at 97,4% occupancy with monthly rentals of R8 000 to R12 000.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "Delisted from the JSE in September 2026 following a R2,26 billion take-private backed by the PIC and management, so the entity is now privately held; no registered legal name was established from the sources read. Gross margin is reported inconsistently across periods (30% at February 2025, 29% at August 2025, 27% at February 2026) and is recorded per period rather than averaged."
+  },
+  {
+    "id": "org-resilient",
+    "name": "Resilient REIT",
+    "legalName": "Resilient REIT Limited",
+    "aliases": [
+      "Resilient",
+      "Resilient Property Fund",
+      "RES"
+    ],
+    "website": "",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-investment",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Retail-focused REIT listed on the JSE, investing in dominant retail centres with a minimum of three anchor tenants.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "New developments and the reconfiguration of existing shopping centres, including the Mahikeng Mall extension that opened in May 2024.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "property-holding-structures",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Retail-focused REIT listed on the JSE owning 28 retail centres.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-site-operations",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "28 retail centres with a gross lettable area of 1,2 million square metres in South Africa, plus interests in France and Spain.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "project-development",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "New developments and the reconfiguration of existing shopping centres, including the Mahikeng Mall extension that opened in May 2024.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-entity-consolidation",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "A 40% interest in Retail Property Investments SAS, a 50% interest in Spanish Retail Investments SAS SA and a 27,6% interest in Lighthouse Properties.",
+        "sourceUrl": "https://sashares.co.za/resilient-shares/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "capital-expenditure",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Repairs and maintenance costs increased by R8,1 million to R102,6 million, and a further 27,2 MWh of battery storage was approved for FY2026.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "foreign-currency-transactions",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Euro-denominated interests in France and Spain, with the euro net property income growth of the French portfolio at 4,3%.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "hedging-derivative-accounting",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Forward exchange contracts on the Lighthouse distribution increased the rand-equivalent distribution per share by 4,1%.",
+        "sourceUrl": "https://www.moneyweb.co.za/news/companies-and-deals/resilient-delivers-a-strong-performance/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "regulatory-reporting",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Audited financial results and declaration of final dividend published for the year ended 31 December 2025.",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "construction-project-costing",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Development and reconfiguration activity is described, but no costing process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "development-cost-accounting",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No development cost accounting was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Mahikeng",
+        "province": "North West",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "city": "Kathu",
+        "province": "Northern Cape",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "city": "Brits",
+        "province": "North West",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "city": "Mokopane",
+        "province": "Limpopo",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "sites",
+        "value": "28 retail centres",
+        "basis": "source-reported",
+        "asOf": "2025-12-31",
+        "sourceUrl": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://senspdf.jse.co.za/documents/SENS_20260312_S518372.pdf",
+        "type": "corporate-disclosure",
+        "evidence": "Audited results for the year ended 31 December 2025: 28 retail centres with 1,2 million m2 of gross lettable area; pro rata vacancies 1,9%; South African comparable net property income growth 8,1%; 40% interest in Retail Property Investments SAS and 50% in Spanish Retail Investments SAS SA; total battery storage 20,7 MWh; entire portfolio externally valued at December 2025.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.moneyweb.co.za/news/companies-and-deals/resilient-delivers-a-strong-performance/",
+        "type": "news",
+        "evidence": "March 2025 results: 27 retail centres with 1,2 million m2 of gross lettable area; pro rata vacancies 2%; forward exchange contracts raised the rand-equivalent distribution per share by 4,1% while the euro distribution from Lighthouse fell 4,9%.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://sashares.co.za/resilient-shares/",
+        "type": "business-directory",
+        "evidence": "Company profile: incorporated in 2002 and listed on the JSE in December 2002; 27,6% interest in Lighthouse Properties; total dividend of 490,42 cents per share, up 11,4%.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "The centre count moved from 27 at December 2024 to 28 at December 2025. No company website was established from the sources read; the audited results were read on the JSE SENS service."
+  },
+  {
+    "id": "org-bexgroup",
+    "name": "BexGroup",
+    "legalName": "BexGroup (Pty) Ltd",
+    "aliases": [
+      "Bex",
+      "Bex Group"
+    ],
+    "website": "",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "grain-trading",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "The group's principal subsidiary, Bester Feed & Grain, entered the grain trading market in 1998 and is described as one of the leading agricultural trading organisations in Southern Africa with a turnover of over R25 billion. The classification describes the group's sector, not activity by the holding company.",
+        "sourceUrl": "https://www.bester.co.za/about/",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "multi-entity-consolidation",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "BexGroup holds a 50% share in the Treonne soya processing plant and a 60% share in BBB Blueberries (Pty) Ltd, alongside Bester Feed & Grain, Bextrans, Bester Fruit and Nuts and Bester Clearing & Forwarding.",
+        "sourceUrl": "https://www.bester.co.za/achievements/",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "commodity-trading",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Grain trading is the activity of the subsidiary Bester Feed & Grain, which entered the grain trading market in 1998. No source describes trading conducted by the holding company itself.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "distribution-network",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Bextrans is the group's logistical division and originated in 2003. Distribution is that entity's activity, not the holding company's.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-site-operations",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Bester Feed & Grain Zambia Limited and Bester Feed & Grain Tanzania are group entities outside South Africa. Those sites belong to the subsidiaries.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "foreign-currency-transactions",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "The Zambian and Tanzanian entities are subsidiaries, so any currency exposure sits with them rather than with the holding company.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "grain-handling-storage",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Grain trading is described, but no handling or storage capacity was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "export-trading",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "International marketing is described in a directory profile, but no export activity was read in a primary source.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "regulatory-reporting",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No statutory reporting was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Stellenbosch",
+        "province": "Western Cape",
+        "sourceUrl": "https://za.linkedin.com/company/bester-animal-feeds-trading",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.bester.co.za/about/",
+        "type": "company-website",
+        "evidence": "Bester Feed & Grain (Pty) Ltd is described as a BexGroup company, established in 1994 with its head office in Stellenbosch, and one of the leading agricultural trading organisations in Southern Africa with a turnover of over R25 billion.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.bester.co.za/achievements/",
+        "type": "company-website",
+        "evidence": "Group history: Bester Voerbeurs BK originated in Riversdale in 1994; BexGroup originated in 2002; Bextrans originated in 2003; BexGroup took a 50% share in the Treonne soya processing plant in 2008 and a 60% share in BBB Blueberries in 2018; Bester Feed & Grain Zambia Limited originated in 2015 and Bester Feed & Grain Tanzania in 2021.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://za.linkedin.com/company/bester-animal-feeds-trading",
+        "type": "business-directory",
+        "evidence": "Company page: Bester is a family-owned agricultural trading business founded in 1994, headquartered in Stellenbosch; BexGroup (Pty) Ltd is listed as a related Stellenbosch company in transportation, logistics and supply chain.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "Recorded as the parent of Bester Feed & Grain. The group's structure and history are sourced from Bester's own website; no separate BexGroup website or financial statements were read, so group-level financial processes stay unresearched rather than inferred from the subsidiary. Turnover of over R25 billion is stated for Bester, not for the group."
+  },
+  {
+    "id": "org-fpg-investments",
+    "name": "FPG Investments",
+    "legalName": "FPG Investments Proprietary Limited",
+    "aliases": [
+      "FPG Investments (Pty) Ltd"
+    ],
+    "website": "",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-investment",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Investment holding company whose principal investment is an 86,4% shareholding in FPG Property Fund Proprietary Limited.",
+        "sourceUrl": "https://www.listcorp.com/jse/brn/brimstone-investment-corporation-n/news/investment-by-brimstone-in-fpg-investments-proprietary-limited-3083895.html",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "property-holding-structures",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Investment holding company whose principal investment is an 86,4% shareholding in FPG Property Fund Proprietary Limited.",
+        "sourceUrl": "https://www.listcorp.com/jse/brn/brimstone-investment-corporation-n/news/investment-by-brimstone-in-fpg-investments-proprietary-limited-3083895.html",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-entity-consolidation",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Controls FPG Property Fund, Foodprop Epping, FPG Holdings, Insight Property Developers, FPG (UK) Limited, New Line Investments 7 and FPG Foods.",
+        "sourceUrl": "https://www.comptrib.co.za/uploads/topics/CompTrib_Case_Files/Reasons_FPG%20and%20PnP%20Plattekloof%20and%20Tableview.pdf",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-site-operations",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "The national portfolio of light industrial, office, retail and residential property belongs to the controlled entities. No source describes sites operated by the holding company itself.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "project-development",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Development is carried out by controlled entities including Insight Property Developers and FPG Property Fund, which is developing and renovating residential property in the United Kingdom. It is not an activity of the holding company.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "foreign-currency-transactions",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "United Kingdom exposure sits with FPG UK Limited, a subsidiary of FPG Property Fund, rather than with the holding company.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "capital-expenditure",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Development activity is described, but no capital expenditure process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "retail-trading",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "FPG Foods owns a collection of quick service restaurants, but that activity sits in a subsidiary and no group-level process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "regulatory-reporting",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No statutory reporting was read for this private company.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://b2bhint.com/en/company/za/fpg-holdings--M1990002273",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.brimstone.co.za/investments",
+        "type": "company-website",
+        "evidence": "FPG Investments is an investment company that owns 87% of FPG Property Fund, 87% of FPG Foods and 30% of Polar Ice Cream; FPG Property Fund is a privately held property investment and development company with a 30-year history, primarily in the retail convenience sector.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.listcorp.com/jse/brn/brimstone-investment-corporation-n/news/investment-by-brimstone-in-fpg-investments-proprietary-limited-3083895.html",
+        "type": "corporate-disclosure",
+        "evidence": "Brimstone SENS: FPG Investments is an investment holding company whose principal investment is an 86,4% shareholding in FPG Property Fund Proprietary Limited, which also holds the United Kingdom through wholly-owned subsidiary FPG UK Limited; FPG Investments holds 86,9% of FPG Foods; profits attributable to net assets were R651 million for the year ended 29 February 2024.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.comptrib.co.za/uploads/topics/CompTrib_Case_Files/Reasons_FPG%20and%20PnP%20Plattekloof%20and%20Tableview.pdf",
+        "type": "industry-report",
+        "evidence": "Competition Tribunal reasons: FPG Property Fund is majority owned by FPG Investments (Pty) Ltd, whose shareholders include Southern Spirit Properties 97, the I S Abduraham Family Trust, Abarisi, Dathomir Investments and the Ilyas Allie Parker Family Trust; FPG Investments controls seven named entities; FPG Holdings is 98,40% owned by historically disadvantaged persons.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.compcom.co.za/wp-content/uploads/2024-11-Statement-on-the-latest-decisions-taken-by-the-Commission-14-November-2024.pdf",
+        "type": "industry-report",
+        "evidence": "Competition Commission media statement, November 2024: FPG Holdings is controlled by FPG Property Fund, in turn controlled by FPG Investments; the acquiring group holds a national portfolio of light industrial, office, retail and residential property.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://b2bhint.com/en/company/za/fpg-holdings--M1990002273",
+        "type": "business-directory",
+        "evidence": "Company registry extract: FPG Holdings, company number M1990002273, incorporated 25 April 1990, FPG HQ at 3 Kiepersol Close, Plattekloof 3, Cape Town.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "Recorded as the parent of FPG Property Fund. The shareholding is reported as 87% by Brimstone's investor page and 86,4% by the Brimstone SENS; both are recorded rather than averaged. FPG Investments is privately held, so no audited statements were read and its own financial processes stay unresearched."
+  },
+  {
+    "id": "org-cambridge-food",
+    "name": "Cambridge Food",
+    "legalName": "",
+    "aliases": [
+      "Cambridge Foods",
+      "Cambridge Food Stores"
+    ],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [
+      {
+        "industryId": "grocery-retail",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Grocery retail division of Massmart serving the low-income food retail consumer market.",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "retail-trading",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Grocery retail stores serving the low-income food retail consumer market, with in-store service departments for bakery, butchery, fruit and vegetables and takeaways.",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "distribution-network",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "An 18 000 m2 distribution centre in Johannesburg delivers approximately 9 000 product lines to stores in the Gauteng region.",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "wms",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "A warehouse management system was implemented at the distribution centre to handle warehousing operations, product range management, physical stock layout and store replenishment.",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "warehouse-operations",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "The distribution centre handles warehousing operations and store replenishment for the Gauteng store network.",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "inventory-management",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "The warehouse management system manages the product range and physical stock layout within the warehouse and the overall store replenishment process.",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-site-operations",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "17 stores in the Gauteng region supplied from the Johannesburg distribution centre, against a stated objective of expanding from 45 to 100 stores.",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "cold-storage-operations",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Fresh product departments including butchery and fruit and vegetables are described, but no cold storage operation was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "food-safety-compliance",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Fresh and takeaway departments are described, but no food safety process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "multi-entity-consolidation",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Recorded as a Massmart division, but no group structure was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.scjunction.com/cambridge-foods-case-study",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.scjunction.com/cambridge-foods-case-study",
+        "type": "industry-report",
+        "evidence": "Case study: Cambridge Food is a business division of Massmart serving the low-income food retail market; an 18 000 m2 Johannesburg distribution centre delivers about 9 000 product lines to 17 Gauteng stores; a Manhattan warehouse management system was selected to support growth from 45 to 100 stores.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.compcom.co.za/wp-content/uploads/2024-02-Statement-on-the-latest-decisions-taken-by-the-Commission-22-February-2024.pdf",
+        "type": "industry-report",
+        "evidence": "Competition Commission media statement, February 2024: Devland Cash & Carry acquired 10 stores ultimately owned by Massmart Holdings, comprising eight Cambridge Foods grocery retail stores and two Rhino cash and carry stores, in fulfilment of a divestiture condition from the Shoprite/Cambridge merger.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "Recorded as a Massmart division rather than a separate legal entity, and flagged for verification: eight Cambridge Foods stores were divested to Devland Cash & Carry in 2024 under a Competition Tribunal condition, so the current store footprint is not established. Store counts conflict between sources (17 Gauteng stores in the case study, eight stores divested in 2024) and are recorded per source rather than reconciled. No company website was established from the sources read."
+  },
+  {
+    "id": "org-opti-feeds",
+    "name": "Opti Feeds",
+    "legalName": "Opti Feeds (Pty) Ltd",
+    "aliases": [
+      "OPTI Feeds"
+    ],
+    "website": "",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "animal-feed-manufacturing",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Produces scientifically formulated animal feed products in bulk and in bags at Lichtenburg.",
+        "sourceUrl": "https://www.sayellow.com/view/south-africa/opti-feeds-in-lichtenburg",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "feed-milling",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Produces a comprehensive range of scientifically formulated animal feed products in bulk and in bags.",
+        "sourceUrl": "https://www.sayellow.com/view/south-africa/opti-feeds-in-lichtenburg",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "production-manufacturing",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Animal feed manufacturing at Lichtenburg is one of NWK's manufacturing operations, alongside liquid fertiliser, sunflower seed processing and three grain mills.",
+        "sourceUrl": "https://webkiosk.globalafricanetwork.com/north-west-business-2019-edition/62261099/40",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "poultry-livestock-operations",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Opti Chicks Proprietary Limited runs poultry farming and a hatchery in the Lichtenburg district, but that is a separate NWK entity and is not attributed here.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "inventory-management",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No inventory process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "distribution-network",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No distribution network was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "food-safety-compliance",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Feed manufacture is described, but no food or feed safety process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "commodity-trading",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "NWK trades grain, but no trading activity was read for the feed operation itself.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Lichtenburg",
+        "province": "North West",
+        "sourceUrl": "https://www.sayellow.com/view/south-africa/opti-feeds-in-lichtenburg",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.sayellow.com/view/south-africa/opti-feeds-in-lichtenburg",
+        "type": "business-directory",
+        "evidence": "Business listing: OPTI Feeds (Pty) Ltd, First Avenue, Lichtenburg, North West; provides a comprehensive range of scientifically formulated animal feed products.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "probable"
+      },
+      {
+        "url": "https://webkiosk.globalafricanetwork.com/north-west-business-2019-edition/62261099/40",
+        "type": "industry-report",
+        "evidence": "North West Business profile: the Lichtenburg-based NWK enterprise makes liquid fertiliser, animal feed through Opti Feeds, processes sunflower seeds through Epko, and runs three grain mills.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "http://www.infoworks.biz/nwk/profile/en/files/assets/basic-html/page10.html",
+        "type": "company-website",
+        "evidence": "NWK business profile: animal feed products supplied in bulk and in bags; Opti Chicks Proprietary Limited runs separate poultry-farming and hatchery activities in the Lichtenburg district.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "Recorded as an NWK division at Lichtenburg. Deliberately not conflated with Opti Chicks Proprietary Limited, which is a separate NWK entity running poultry farming and a hatchery in the same district. No company website or capacity figures were established from the sources read."
+  },
+  {
+    "id": "org-epko",
+    "name": "Epko Oil Refinery",
+    "legalName": "Epko Oil Refinery Proprietary Limited",
+    "aliases": [
+      "Epko",
+      "Epko Oil Seed Crushing"
+    ],
+    "website": "",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "oilseed-crushing",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Extracts vegetable oils at a sunflower seed crushing plant in Lichtenburg, processing sunflower seed into oil, cake and hulls.",
+        "sourceUrl": "http://www.infoworks.biz/nwk/profile/en/files/assets/basic-html/page10.html",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "industryId": "edible-oils-fats",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Sunflower oil is extracted and the cake by-product is sold as a protein-rich ingredient for animal feed manufacture.",
+        "sourceUrl": "https://www.africa2trust.com/B2BAfrica/south-africa/agri-business/animal-feeds/epko-oil-seed-za/Profile/AboutUs/1/8/56762/3/?l=1&c=8&glx=0&sid=56762&CatID=3",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "capabilities": [
+      {
+        "capabilityId": "oilseed-crushing-ops",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Extracts vegetable oils at a sunflower seed crushing plant in Lichtenburg, processing sunflower seed into oil, cake and hulls.",
+        "sourceUrl": "http://www.infoworks.biz/nwk/profile/en/files/assets/basic-html/page10.html",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "production-manufacturing",
+        "status": "observed",
+        "confidence": "confirmed",
+        "evidence": "Soap stock and free fatty acids removed from the oil are used in animal feed or in the manufacture of biodiesel, paint, soap and window putty.",
+        "sourceUrl": "http://www.infoworks.biz/nwk/profile/en/files/assets/basic-html/page10.html",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "commodity-trading",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "The plant is held in partnership with Louis Dreyfus Commodities, but no trading activity by the plant was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "export-trading",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No export activity was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "inventory-management",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "No inventory process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "food-safety-compliance",
+        "status": "unknown",
+        "confidence": "probable",
+        "evidence": "Edible oil extraction is described, but no food safety process was read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "locations": [
+      {
+        "city": "Lichtenburg",
+        "province": "North West",
+        "sourceUrl": "https://www.africa2trust.com/B2BAfrica/south-africa/agri-business/animal-feeds/epko-oil-seed-za/Profile/AboutUs/1/8/56762/3/?l=1&c=8&glx=0&sid=56762&CatID=3",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "http://www.infoworks.biz/nwk/profile/en/files/assets/basic-html/page10.html",
+        "type": "company-website",
+        "evidence": "NWK business profile: Epko Oil Refinery Proprietary Limited, a subsidiary of NWK in partnership with Louis Dreyfus Commodities, extracts vegetable oils at a sunflower seed crushing plant in Lichtenburg; by-products are soap stock and free fatty acids.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://webkiosk.globalafricanetwork.com/north-west-business-2019-edition/62261099/40",
+        "type": "industry-report",
+        "evidence": "North West Business profile: the Lichtenburg-based NWK enterprise processes sunflower seeds through Epko.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.africa2trust.com/B2BAfrica/south-africa/agri-business/animal-feeds/epko-oil-seed-za/Profile/AboutUs/1/8/56762/3/?l=1&c=8&glx=0&sid=56762&CatID=3",
+        "type": "business-directory",
+        "evidence": "Business listing: Epko Oil Seed Crushing, Cnr Epko and Barend Street, Lichtenburg, North West; processes sunflower seeds into oil, cake and hulls, with the cake sold as a protein-rich animal feed ingredient.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-08",
+    "notes": "Trading name differs between sources: the NWK business profile calls it Epko Oil Refinery Proprietary Limited while a business directory lists it as Epko Oil Seed Crushing. Both names are recorded as aliases rather than resolved. No capacity figures or website were established from the sources read."
   }
 ]
