@@ -42,6 +42,12 @@ export interface DatasetEmployer {
   professionals: number
   /** Extra classification the source dataset carried, kept as market-specific context. */
   classification: string
+  /** Original position company values in the contacts source. */
+  sourceNames?: string[]
+  /** Generated canonical target; checked for staleness by contact manifest gate. */
+  organizationId?: string
+  /** Unique contact ids, for accurate deduplication across company aliases. */
+  personIds?: string[]
 }
 
 /** What one employer name resolves to across every dataset Maps holds. */
@@ -52,6 +58,8 @@ export interface ResolvedEmployer {
   professionals: number
   professionalSources: { dataset: string; count: number }[]
   classifications: { dataset: string; value: string }[]
+  /** Source employer spellings, not independently verified legal aliases. */
+  contactEmployerNames: string[]
 }
 
 export interface OrganizationIndex {
@@ -152,16 +160,36 @@ export function buildOrganizationIndex(input: BuildIndexInput = {}): Organizatio
 
   // Dataset employers resolve onto curated records where identity is established.
   const employersByOrg = new Map<string, ResolvedEmployer>()
+  const seenContactsByOrg = new Map<string, Set<string>>()
   for (const employer of input.datasetEmployers ?? []) {
     const canonical = canonicalCompanyName(employer.name)
     if (!canonical) continue
     const key = canonical.toLowerCase()
-    const organizationId = idByAlias.get(key) ?? idByCanonical.get(key) ?? `org-dataset:${key}`
+    const organizationId = employer.organizationId ?? idByAlias.get(key) ?? idByCanonical.get(key) ?? `org-dataset:${key}`
+    // Two distinct employer strings can resolve to one curated organization.
+    // Count a source contact once at that organization, not once per alias.
+    let professionals = employer.professionals
+    if (employer.dataset === 'contacts' && employer.personIds) {
+      const seen = seenContactsByOrg.get(organizationId) ?? new Set<string>()
+      professionals = 0
+      for (const personId of employer.personIds) {
+        if (!seen.has(personId)) { seen.add(personId); professionals += 1 }
+      }
+      seenContactsByOrg.set(organizationId, seen)
+    }
+    const contactNames = employer.dataset === 'contacts'
+      ? (employer.sourceNames?.length ? employer.sourceNames : [employer.name])
+      : []
     const existing = employersByOrg.get(organizationId)
     if (existing) {
       if (!existing.datasets.includes(employer.dataset)) existing.datasets.push(employer.dataset)
-      existing.professionals += employer.professionals
-      existing.professionalSources.push({ dataset: employer.dataset, count: employer.professionals })
+      existing.professionals += professionals
+      const source = existing.professionalSources.find((row) => row.dataset === employer.dataset)
+      if (source) source.count += professionals
+      else existing.professionalSources.push({ dataset: employer.dataset, count: professionals })
+      for (const name of contactNames) {
+        if (!existing.contactEmployerNames.includes(name)) existing.contactEmployerNames.push(name)
+      }
       if (employer.classification) {
         existing.classifications.push({ dataset: employer.dataset, value: employer.classification })
       }
@@ -170,9 +198,10 @@ export function buildOrganizationIndex(input: BuildIndexInput = {}): Organizatio
         organizationId,
         canonicalName: canonical,
         datasets: [employer.dataset],
-        professionals: employer.professionals,
-        professionalSources: [{ dataset: employer.dataset, count: employer.professionals }],
+        professionals,
+        professionalSources: [{ dataset: employer.dataset, count: professionals }],
         classifications: employer.classification ? [{ dataset: employer.dataset, value: employer.classification }] : [],
+        contactEmployerNames: [...contactNames],
       })
     }
   }
@@ -223,6 +252,33 @@ export function buildOrganizationIndex(input: BuildIndexInput = {}): Organizatio
     associationsByAssociated,
     intelligenceByOrg,
   }
+}
+
+/**
+ * Resolve a position employer string onto the same company id used by the
+ * Companies directory and company dossier. Unverified companies remain
+ * dataset-only organisations, never guessed to be a registered entity.
+ */
+export function resolveEmployerOrganizationId(index: OrganizationIndex, rawName: string): string | null {
+  const key = normalizeKey(rawName)
+  if (!key) return null
+  const curated = index.idByAlias.get(key) ?? index.idByCanonical.get(key)
+  if (curated) return curated
+  const datasetId = `org-dataset:${key}`
+  return index.employersByOrg.has(datasetId) ? datasetId : null
+}
+
+/**
+ * Link to every contact whose sourced position names this employer, including
+ * alternate spellings that map to the same curated company. The contact-directory
+ * filter performs OR matching across repeated "companies" parameters.
+ */
+export function contactDirectoryUrlForEmployer(employer: ResolvedEmployer): string | null {
+  if (!employer.contactEmployerNames.length) return null
+  const names = [...new Set(employer.contactEmployerNames.map(canonicalCompanyName).filter(Boolean))]
+  const params = new URLSearchParams()
+  for (const name of names) params.append('companies', name)
+  return `/contacts?${params.toString()}`
 }
 
 /** Every organization the explorer can display, including dataset-only employers. */

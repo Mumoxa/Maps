@@ -8,6 +8,7 @@
 
 import { accountantCandidates } from '../accountantsPeople'
 import { bankCandidates } from '../searchBank/bank'
+import contactEmployerManifest from '../../../markets/organizations/contact-employers.json'
 import { canonicalCompanyName } from '../companyNormalization'
 import { buildOrganizationIndex, visibleOrganizations } from './load'
 import type { DatasetEmployer, OrganizationIndex } from './load'
@@ -50,9 +51,26 @@ function countByEmployer(
   }))
 }
 
+/**
+ * Generated from all 13 contact files. Ships only employer names, source
+ * spellings and unique-person counts, not any contact PII. The build gate fails
+ * if a contact is added, removed or changes employers without reconciliation.
+ */
+export function contactDatasetEmployers(): DatasetEmployer[] {
+  return contactEmployerManifest.employers.map((row) => ({
+    name: row.name,
+    organizationId: row.organizationId,
+    dataset: 'contacts',
+    professionals: row.contactCount,
+    classification: '',
+    sourceNames: row.sourceNames,
+  }))
+}
+
 /** Every employer name Maps already holds, with the people counted against it. */
 export function datasetEmployers(sources: DatasetSources = {}): DatasetEmployer[] {
   const employers: DatasetEmployer[] = [
+    ...contactDatasetEmployers(),
     ...countByEmployer(
       accountantCandidates.map((candidate) => ({ employer: candidate.employer })),
       'accounting-finance',

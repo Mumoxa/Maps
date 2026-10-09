@@ -5,6 +5,7 @@ import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
+import { contactDirectoryUrlForEmployer } from '../data/organizations/load'
 import { atlasNodeTitle } from '../data/organizations/atlas'
 import { classifyFootprint, FOOTPRINT_SHORT_LABELS } from '../data/organizations/footprint'
 import { companyDossier } from '../data/organizations/query'
@@ -34,6 +35,8 @@ export function OrganizationPage() {
 
   const organization = index.byId.get(decodedId) ?? null
   const employer = index.employersByOrg.get(decodedId)
+  const contactsUrl = employer ? contactDirectoryUrlForEmployer(employer) : null
+  const contactsCount = employer?.professionalSources.find((source) => source.dataset === 'contacts')?.count ?? 0
 
   useEffect(() => {
     document.title = organization
@@ -83,6 +86,7 @@ export function OrganizationPage() {
               <div className="page-head-aside">
                 <span className="page-head-meta"><b>{employer?.professionals ?? 0}</b> mapped professionals</span>
                 <span className="page-head-meta">{(employer?.datasets ?? []).join(', ') || 'No dataset recorded'}</span>
+                {contactsUrl && <Link className="btn btn-sm" to={contactsUrl}>View {contactsCount} directory contacts</Link>}
               </div>
             </header>
             <section className="card section-block">
@@ -331,6 +335,11 @@ export function OrganizationPage() {
               <section className="card">
                 <h2 className="text-sm mb-1">Take this company further</h2>
                 <div className="dossier-actions">
+                  {contactsUrl && (
+                    <Link className="btn btn-ghost btn-sm" to={contactsUrl}>
+                      View {contactsCount} linked directory contacts
+                    </Link>
+                  )}
                   <Link className="btn btn-ghost btn-sm" to={`/company-associations?focus=${encodeURIComponent(organization.id)}`}>
                     Association exploration
                   </Link>
