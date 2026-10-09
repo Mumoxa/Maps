@@ -24,6 +24,7 @@ import type {
   Organization,
   RoleContext,
 } from './types'
+import { EMPTY_FILTERS, FILTER_KEYS } from './types'
 
 /** How strongly a statement about a company is supported right now. */
 export type EvidenceState = 'known-verified' | 'recorded-stale' | 'inferred' | 'unknown'
@@ -466,21 +467,50 @@ export function exportTargetsCsv(payload: TargetDiscoveryPayload): string {
   return [header.join(','), ...rows].join('\n')
 }
 
+/**
+ * A complete, empty filter set.
+ *
+ * Spread over `EMPTY_FILTERS` so a new filter dimension only has to be added in
+ * one place. Several URL round-trip bugs in this repository were caused by a
+ * dimension existing in the filter panel but not in the serialised key list;
+ * this keeps the default object and the serialised keys in the same source.
+ */
 export function emptyFilters(): AssociationFilters {
+  return { ...EMPTY_FILTERS }
+}
+
+/**
+ * The URL is the filter contract, so there is exactly one reader and one writer
+ * for it. Every surface that serialises filters imports these, which is why
+ * FILTER_KEYS has to include every dimension the panels offer: a key missing
+ * here is a filter that silently vanishes on a page reload.
+ */
+export function readFilters(params: URLSearchParams): AssociationFilters {
+  const listFilters = Object.fromEntries(FILTER_KEYS.map((key) => {
+    const raw = params.get(key)
+    return [key, raw ? raw.split(',').map((value) => value.trim()).filter(Boolean) : []]
+  })) as Record<string, string[]>
+  const people = params.get('people')
   return {
-    industries: [],
-    macroSectors: [],
-    pockets: [],
-    capabilities: [],
-    provinces: [],
-    scale: [],
-    confidence: [],
-    tiers: [],
-    relationshipTypes: [],
-    status: [],
-    hasMappedProfessionals: 'any',
-    query: '',
+    ...EMPTY_FILTERS,
+    ...listFilters,
+    query: params.get('q') ?? '',
+    hasMappedProfessionals: people === 'yes' || people === 'no' ? people : 'any',
+  } as AssociationFilters
+}
+
+export function writeFilters(params: URLSearchParams, filters: AssociationFilters): URLSearchParams {
+  const next = new URLSearchParams(params)
+  for (const key of FILTER_KEYS) {
+    const values = filters[key] as string[]
+    if (values.length > 0) next.set(key, values.join(','))
+    else next.delete(key)
   }
+  if (filters.query.trim()) next.set('q', filters.query)
+  else next.delete('q')
+  if (filters.hasMappedProfessionals !== 'any') next.set('people', filters.hasMappedProfessionals)
+  else next.delete('people')
+  return next
 }
 
 export type { ResolvedEmployer }

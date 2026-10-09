@@ -118,6 +118,12 @@ export interface OrganizationScale {
   asOf: string
   sourceUrl: string
   checkedOn: string
+  /**
+   * Which entity the figure describes. Optional because most existing records do
+   * not say; absent means "not stated by the source", which is rendered as
+   * unknown rather than defaulted to the standalone entity.
+   */
+  entityScope?: ScaleEntityScope
 }
 
 export type OrganizationStatus = 'verified' | 'needs-verification'
@@ -194,6 +200,89 @@ export interface CompanyAssociation {
   status: 'curated' | 'reviewed' | 'system-inferred'
   reviewer: string
   checkedOn: string
+}
+
+// ---------------------------------------------------------------------------
+// Indicative Market Footprint
+// ---------------------------------------------------------------------------
+//
+// Footprint is an approximate classification of operating reach, not a statutory
+// size band and not a ranking. It exists so the Industry Atlas can group
+// companies into readable bands without ever asserting a headcount, a revenue
+// figure or a market position the sources do not support.
+//
+// It is deliberately kept separate from:
+//   - `OrganizationScale`        (the sourced raw measurement)
+//   - `ScaleBand`                (the statutory / banking band in the taxonomy)
+// Nothing here is ever rendered as verified revenue, headcount or statutory size.
+
+/** Display bands, widest reach first. `not-established` is a real answer. */
+export type FootprintBand =
+  | 'major-national'
+  | 'large-multi-site'
+  | 'regional-specialist'
+  | 'smaller-emerging'
+  | 'not-established'
+
+/** How the band was arrived at. Never silently mixed. */
+export type FootprintClassificationKind =
+  /** Derived from one or more sourced numeric metrics. */
+  | 'sourced-metric'
+  /** Derived from a combination of sourced metrics plus evidenced site spread. */
+  | 'derived-metric-combination'
+  /** A human reviewer classified it against an evidence note. */
+  | 'human-reviewed-indicative'
+  /** No defensible signal exists; the company stays unclassified. */
+  | 'unclassified'
+
+/**
+ * Which entity the supporting figures describe. A group-level headcount must
+ * never be silently attributed to a subsidiary, so this is carried on every
+ * classification rather than assumed.
+ */
+export type ScaleEntityScope =
+  | 'consolidated-group'
+  | 'south-african-operation'
+  | 'operating-division'
+  | 'standalone-entity'
+  /** The source did not say. Rendered as unknown, never defaulted. */
+  | 'not-stated'
+
+export type FootprintReviewStatus = 'unreviewed' | 'pending-review' | 'reviewed' | 'contested'
+
+/** The auditable footprint contract. Correctable without editing source facts. */
+export interface FootprintClassification {
+  organizationId: string
+  band: FootprintBand
+  classificationKind: FootprintClassificationKind
+  /** Plain-language account of what actually drove the band. */
+  basis: string
+  /** Stable ids into the organization's sourced scale records, e.g. `org-x:scale:0`. */
+  supportingMetricIds: string[]
+  /** Source URLs behind the supporting metrics. */
+  evidenceReferences: string[]
+  confidence: Confidence
+  reviewStatus: FootprintReviewStatus
+  /** Empty until a human has actually reviewed the classification. */
+  reviewedBy: string
+  /** ISO date, empty when never reviewed. */
+  reviewedOn: string
+  entityScope: ScaleEntityScope
+  /** Why a company was left unclassified, or what would sharpen the band. */
+  note: string
+}
+
+/** A human reviewer's correction of, or addition to, a derived classification. */
+export interface FootprintReview {
+  organizationId: string
+  band: FootprintBand
+  classificationKind: FootprintClassificationKind
+  /** The evidence note the reviewer relied on. Required: no band without a reason. */
+  basis: string
+  entityScope: ScaleEntityScope
+  confidence: Confidence
+  reviewedBy: string
+  reviewedOn: string
 }
 
 export type RecruiterIntelligenceKind =
@@ -311,10 +400,18 @@ export interface AssociationFilters {
   capabilities: string[]
   provinces: string[]
   scale: string[]
+  /** Indicative market footprint bands. Approximate reach, never a size fact. */
+  footprint: string[]
   confidence: string[]
+  /**
+   * Role-specific relevance. Only ever offered while a recruitment brief is
+   * active; the factual atlas and the company directory must not surface it.
+   */
   tiers: string[]
   relationshipTypes: string[]
   status: string[]
+  /** Corporate group (parent organization id) the company belongs to. */
+  groups: string[]
   hasMappedProfessionals: 'any' | 'yes' | 'no'
   query: string
 }
@@ -326,13 +423,41 @@ export const EMPTY_FILTERS: AssociationFilters = {
   capabilities: [],
   provinces: [],
   scale: [],
+  footprint: [],
   confidence: [],
   tiers: [],
   relationshipTypes: [],
   status: [],
+  groups: [],
   hasMappedProfessionals: 'any',
   query: '',
 }
+
+/**
+ * Every multi-select filter key, plus the two single-value keys handled
+ * separately. `macroSectors` is in this list: it was previously supported by the
+ * filter panel and the discovery engine but omitted from URL read/write, so a
+ * selected macro-sector silently vanished on the next navigation.
+ */
+export const FILTER_KEYS = [
+  'pockets',
+  'industries',
+  'macroSectors',
+  'capabilities',
+  'provinces',
+  'scale',
+  'footprint',
+  'confidence',
+  'tiers',
+  'relationshipTypes',
+  'status',
+  'groups',
+] as const satisfies readonly (keyof AssociationFilters)[]
+
+/** The subset of filters that is legitimate without a recruitment brief. */
+export const FACTUAL_FILTER_KEYS = FILTER_KEYS.filter(
+  (key) => key !== 'tiers' && key !== 'relationshipTypes',
+)
 
 // ---------------------------------------------------------------------------
 // Target pools and search targets
@@ -345,6 +470,27 @@ export interface TargetPoolEntry {
   addedOn: string
 }
 
+/**
+ * What a dynamic pool re-derives its membership from.
+ *
+ * `focalId` and `roleContextId` are nullable on purpose. A pool defined by an
+ * industry branch is a first-class saved search and must not have to invent a
+ * focal company; pools saved before the Industry Atlas keep their focal
+ * definition and are migrated unchanged.
+ */
+export type TargetPoolScope =
+  /** Membership derives from associations around one named company. */
+  | { kind: 'focal'; focalId: string; roleContextId: string }
+  /** Membership derives from a branch of the national industry taxonomy. */
+  | { kind: 'industry'; nodeId: string | null; roleContextId: string | null }
+  /** Membership derives from the whole mapped universe under filters alone. */
+  | { kind: 'universe'; roleContextId: string | null }
+
+export interface TargetPoolDefinition {
+  scope: TargetPoolScope
+  filters: AssociationFilters
+}
+
 export interface TargetPool {
   id: string
   name: string
@@ -354,12 +500,8 @@ export interface TargetPool {
   /** `snapshot` freezes the membership; `dynamic` re-derives from the filter. */
   kind: 'snapshot' | 'dynamic'
   entries: TargetPoolEntry[]
-  /** For dynamic pools: the focal + role + filter that define membership. */
-  definition: {
-    focalId: string
-    roleContextId: string
-    filters: AssociationFilters
-  } | null
+  /** For dynamic pools: what the membership re-derives from. */
+  definition: TargetPoolDefinition | null
   searchId: string | null
   createdOn: string
   lastVerified: string

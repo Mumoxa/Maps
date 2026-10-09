@@ -10,7 +10,12 @@ import { readdirSync, statSync } from 'node:fs'
 import { join, resolve } from 'node:path'
 
 const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/
-const SA_PHONE = /(?:\+27|0)\s?\d{2}\s?\d{3}\s?\d{4}/
+/**
+ * A bare ten-digit run also occurs in CIPC, VAT and tax reference numbers, so an
+ * unspaced sequence only counts as a phone number when separators or a +27
+ * prefix mark it as one, or when a contact-ish key names it.
+ */
+const SA_PHONE = /(?:\+27[\s-]?|0)(?:\d[\s-]?){9}\d|(?:"[a-z]*(?:phone|tel|mobile|cell|whatsapp|fax)[a-z]*"\s*:\s*")(?:\+27|0)\d[\d\s-]{8,}"/i
 const SA_ID = /\b\d{6}\s?\/\s?\d{3}\s?\/\s?\d{3}\b|\b[6-9]\d{12}\b/
 
 /** Files allowed to contain synthetic fixtures that look like personal data. */

@@ -1,10 +1,11 @@
 import { useMemo, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useParams } from 'react-router-dom'
 import {
   ArrowSquareOut,
 } from '@phosphor-icons/react'
 import { useData } from '../context/DataContext'
 import { buildSlugSets, getProfilesByCompany, getSegmentsByCompany, getUnverifiedProfilesByCompany } from '../data'
+import { canonicalOrganizationIdForSlug } from '../data/organizations/universeView'
 import { ProfileCard } from '../components/ui/ProfileCard'
 import { Badge } from '../components/ui/Badge'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
@@ -12,7 +13,27 @@ import { SkeletonPage } from '../components/ui/LoadingSpinner'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 
+/**
+ * `/companies/:slug` resolver.
+ *
+ * A slug that names a canonical organization resolves to that organization's one
+ * canonical dossier. Legacy credit-risk slugs that do not are still served by
+ * this page, so no existing link breaks. The decision is made before either
+ * component hooks in, which keeps hook order stable on every render.
+ */
 export function CompanyPage() {
+  const { slug } = useParams<{ slug: string }>()
+  const canonicalId = useMemo(
+    () => (slug ? canonicalOrganizationIdForSlug(slug) : null),
+    [slug],
+  )
+  if (canonicalId) {
+    return <Navigate to={`/organizations/${encodeURIComponent(canonicalId)}`} replace />
+  }
+  return <LegacyCompanyPage />
+}
+
+function LegacyCompanyPage() {
   const { slug } = useParams<{ slug: string }>()
   const { data, loading } = useData()
 

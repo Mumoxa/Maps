@@ -12,6 +12,22 @@ const candidatePoolLinks = [
 
 const candidatePaths = ['/talent-search', ...talentTracks.map((track) => `/${track.slug}`)]
 
+/**
+ * Company intelligence navigation. The Industry Atlas is first because it is the
+ * default company-intelligence experience: it opens on the South African
+ * industry universe, with no company and no recruitment brief selected.
+ */
+const companyLinks: { to: string; label: string; hint: string; extraPath?: string }[] = [
+  // The atlas is both `/` and `/industry-atlas`, so it needs both paths to
+  // register as the current page.
+  { to: '/industry-atlas', label: 'Industry Atlas', hint: 'Sectors, sub-industries and company footprint', extraPath: '/' },
+  { to: '/companies', label: 'Company universe', hint: 'Every organisation Maps holds' },
+  { to: '/company-associations', label: 'Company associations', hint: 'Evidence-backed relationships' },
+  { to: '/recruitment-targeting', label: 'Recruitment targeting', hint: 'Apply a brief to the universe' },
+]
+
+const companyPaths = ['/', '/industry-atlas', '/companies', '/organizations', '/company-associations', '/recruitment-targeting']
+
 const creditRiskNavLinks = [
   { to: '/map', label: 'Map' },
   { to: '/segments', label: 'Segments' },
@@ -33,17 +49,21 @@ export function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [paletteOpen, setPaletteOpen] = useState(false)
   const [poolsOpen, setPoolsOpen] = useState(false)
+  const [companiesOpen, setCompaniesOpen] = useState(false)
   const location = useLocation()
   const poolsRef = useRef<HTMLDivElement>(null)
+  const companiesRef = useRef<HTMLDivElement>(null)
 
-  const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/companies', '/profiles', '/shortlist']
+  const showCreditRiskNav = ['/credit-risk', '/map', '/segments', '/profiles', '/shortlist']
     .some((path) => isPath(location.pathname, path))
   const candidatesActive = candidatePaths.some((path) => isPath(location.pathname, path))
+  const companiesActive = companyPaths.some((path) => isPath(location.pathname, path))
 
   // Close transient layers whenever the route changes.
   useEffect(() => {
     setMenuOpen(false)
     setPoolsOpen(false)
+    setCompaniesOpen(false)
   }, [location.pathname])
 
   // Cmd/Ctrl+K is the single documented shortcut for search everywhere.
@@ -63,29 +83,32 @@ export function Header() {
   }, [])
 
   useEffect(() => {
-    if (!poolsOpen) return undefined
+    if (!poolsOpen && !companiesOpen) return undefined
     const handleClick = (event: MouseEvent) => {
-      if (poolsRef.current && !poolsRef.current.contains(event.target as Node)) setPoolsOpen(false)
+      if (poolsOpen && poolsRef.current && !poolsRef.current.contains(event.target as Node)) setPoolsOpen(false)
+      if (companiesOpen && companiesRef.current && !companiesRef.current.contains(event.target as Node)) setCompaniesOpen(false)
     }
     document.addEventListener('mousedown', handleClick)
     return () => document.removeEventListener('mousedown', handleClick)
-  }, [poolsOpen])
+  }, [poolsOpen, companiesOpen])
 
   // Escape closes the menu layers this component owns, innermost first.
   useEffect(() => {
-    if (!menuOpen && !poolsOpen) return undefined
+    if (!menuOpen && !poolsOpen && !companiesOpen) return undefined
     const handleEscape = (event: KeyboardEvent) => {
       if (event.key !== 'Escape') return
-      if (poolsOpen) setPoolsOpen(false)
+      if (companiesOpen) setCompaniesOpen(false)
+      else if (poolsOpen) setPoolsOpen(false)
       else setMenuOpen(false)
     }
     document.addEventListener('keydown', handleEscape)
     return () => document.removeEventListener('keydown', handleEscape)
-  }, [menuOpen, poolsOpen])
+  }, [menuOpen, poolsOpen, companiesOpen])
 
   const closeAll = useCallback(() => {
     setMenuOpen(false)
     setPoolsOpen(false)
+    setCompaniesOpen(false)
   }, [])
 
   return (
@@ -129,13 +152,32 @@ export function Header() {
               </ul>
             </div>
 
-            <Link
-              to="/company-associations"
-              className={`nav-heading ${isPath(location.pathname, '/company-associations') ? 'active' : ''}`}
-              onClick={closeAll}
-            >
-              Company associations
-            </Link>
+            <div className="nav-item" data-open={companiesOpen} ref={companiesRef}>
+              <button
+                type="button"
+                className={`nav-heading ${companiesActive ? 'active' : ''}`}
+                aria-expanded={companiesOpen}
+                aria-controls="company-menu"
+                onClick={() => setCompaniesOpen((open) => !open)}
+              >
+                Companies
+                <CaretDown size={12} weight="bold" aria-hidden />
+              </button>
+              <ul className="nav-dropdown" id="company-menu" aria-label="Company intelligence">
+                {companyLinks.map((link) => (
+                  <li key={link.to}>
+                    <Link
+                      to={link.to}
+                      className={isPath(location.pathname, link.to) || (link.extraPath ? isPath(location.pathname, link.extraPath) : false) ? 'active' : ''}
+                      onClick={closeAll}
+                    >
+                      <span>{link.label}</span>
+                      <span className="nav-dropdown-hint">{link.hint}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <Link
               to="/search-bank"
               className={`nav-heading ${isPath(location.pathname, '/search-bank') ? 'active' : ''}`}
@@ -206,12 +248,16 @@ export function Header() {
             </Link>
           ))}
           <div className="mobile-nav-heading">Companies</div>
-          <Link to="/companies" className={isPath(location.pathname, '/companies') ? 'active' : ''} onClick={closeAll}>
-            Company directory
-          </Link>
-          <Link to="/company-associations" className={isPath(location.pathname, '/company-associations') ? 'active' : ''} onClick={closeAll}>
-            Company associations
-          </Link>
+          {companyLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className={isPath(location.pathname, link.to) || (link.extraPath ? isPath(location.pathname, link.extraPath) : false) ? 'active' : ''}
+              onClick={closeAll}
+            >
+              {link.label}
+            </Link>
+          ))}
           <div className="mobile-nav-heading">Recruiter workspace</div>
           <Link to="/search-bank" className={isPath(location.pathname, '/search-bank') ? 'active' : ''} onClick={closeAll}>
             Search bank

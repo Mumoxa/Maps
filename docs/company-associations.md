@@ -1,5 +1,13 @@
 # Company Association Explorer — handoff
 
+> **Superseded in part (9 October 2026).** §2 describes the explorer as it shipped on
+> `arena/e728a500-maps`, with CCS Logistics as the default focal company and the radial network as
+> the default view. Both defaults have since been removed, and the explorer is now one optional
+> workflow beneath an industry-first hierarchy. See `docs/industry-first-architecture.md` for the
+> current architecture. Everything below that describes the **engine** — R1–R16, tiering, the
+> inspector, the compare panel, the pocket view, target pools, the import contract — is still
+> accurate and still in use.
+
 Date: 8 October 2026. Branch: `arena/e728a500-maps`. Everything below was run in this
 repository; command output is quoted rather than summarised.
 
