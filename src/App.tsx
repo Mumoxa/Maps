@@ -9,6 +9,9 @@ import { MapPage } from './pages/MapPage'
 import { SegmentDirectory } from './pages/SegmentDirectory'
 import { SegmentPage } from './pages/SegmentPage'
 import { CompanyDirectory } from './pages/CompanyDirectory'
+import { OrganizationPage } from './pages/OrganizationPage'
+import { IndustryAtlasPage } from './pages/IndustryAtlasPage'
+import { RecruitmentTargetingPage } from './pages/RecruitmentTargetingPage'
 import { CompanyPage } from './pages/CompanyPage'
 import { CompanyAssociationsPage } from './pages/CompanyAssociationsPage'
 import { ProfileDirectory } from './pages/ProfileDirectory'
@@ -32,7 +35,10 @@ const ContactDirectory = lazy(() =>
 
 function AppRoutes() {
   const element = useRoutes([
-    { path: '/', element: <HomePage /> },
+    // The Industry Atlas is the default landing: a visitor meets South African
+    // industries first, with no company selected and no recruitment brief open.
+    { path: '/', element: <IndustryAtlasPage /> },
+    { path: '/home', element: <HomePage /> },
     { path: '/credit-risk', element: <CreditRiskPage /> },
     { path: '/salesforce', element: <SalesforcePage /> },
     { path: '/hackathons', element: <HackathonTalentPage /> },
@@ -45,8 +51,12 @@ function AppRoutes() {
     { path: '/map', element: <MapPage /> },
     { path: '/segments', element: <SegmentDirectory /> },
     { path: '/segments/:slug', element: <SegmentPage /> },
+    { path: '/industry-atlas', element: <IndustryAtlasPage /> },
     { path: '/companies', element: <CompanyDirectory /> },
+    // Canonical company intelligence, addressed by the canonical organization id.
+    { path: '/organizations/:organizationId', element: <OrganizationPage /> },
     { path: '/company-associations', element: <CompanyAssociationsPage /> },
+    { path: '/recruitment-targeting', element: <RecruitmentTargetingPage /> },
     { path: '/companies/:slug', element: <CompanyPage /> },
     { path: '/profiles', element: <ProfileDirectory /> },
     {

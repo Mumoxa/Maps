@@ -589,10 +589,201 @@ export function discoverAssociations({ index, focalId, roleContext, extraOrganiz
 }
 
 // ---------------------------------------------------------------------------
+// Brief-to-universe targeting: role relevance with no focal company
+// ---------------------------------------------------------------------------
+//
+// The association engine above answers "what resembles this company under this
+// brief". Recruitment targeting also has to answer the prior question: given a
+// brief, which companies in an industry are relevant? That needs no focal
+// company, and forcing one in would make a client the centre of the universe
+// again - so this pass evaluates only the rules that are stated by the brief
+// itself.
+//
+// The rules that compare two companies (R1, R3, R5, R6, R7, R9, R10, R15, R16)
+// are deliberately absent: with no focal company there is nothing to compare
+// against, and inventing a comparison partner is exactly the defect being fixed.
+
+const ROLE_ONLY_RULE_IDS = new Set([
+  'R2-mandatory-capability',
+  'R8-talent-transferability',
+  'R11-previous-recruitment-intelligence',
+  'R12-required-system',
+])
+
+const ROLE_RULES: RuleDefinition[] = [
+  ...RULES.filter((definition) => ROLE_ONLY_RULE_IDS.has(definition.rule)),
+  {
+    rule: 'R4-role-value-chain',
+    label: 'Adjacent value-chain position for this brief',
+    relationship: 'same-value-chain',
+    test: ({ organization, role, index }) => {
+      const adjacent = new Set(role.adjacentValueChainStages)
+      if (adjacent.size === 0) return null
+      const stages = organization.industries
+        .map((link) => index.pocketById.get(index.industryById.get(link.industryId)?.pocket ?? '')?.valueChainStage)
+        .filter((stage): stage is string => Boolean(stage) && adjacent.has(stage as string))
+      if (stages.length === 0) return null
+      return {
+        rule: 'R4-role-value-chain',
+        label: 'Adjacent value-chain position for this brief',
+        detail: `Operates at ${[...new Set(stages)].join(', ')}, a value-chain stage this brief treats as adjacent. Adjacency is not operational equivalence.`,
+        evidence: 'Value-chain stage from the Maps industry taxonomy; the brief states the adjacency.',
+      }
+    },
+  },
+]
+
+export interface RoleTargetScope {
+  nodeId: string | null
+  label: string
+  organizationIds: string[]
+}
+
+export interface RoleTargetDiscovery {
+  roleContextId: string
+  scope: RoleTargetScope
+  matches: AssociationMatch[]
+  coverage: {
+    organizationsScanned: number
+    matched: number
+    tier1: number
+    /** Companies where at least one mandatory requirement has no evidence at all. */
+    withMissingEvidence: number
+  }
+}
+
+/**
+ * Score every company in a scope against one brief. No focal company, no
+ * comparison partner, no invented similarity: a company appears because the
+ * brief's stated requirements are evidenced at that company.
+ */
+export function discoverRoleTargets(input: {
+  index: OrganizationIndex
+  roleContext: RoleContext
+  organizations: Organization[]
+  scope?: { nodeId?: string | null; label?: string; organizationIds?: string[] }
+}): RoleTargetDiscovery {
+  const { index, roleContext, organizations } = input
+  const scopeIds = input.scope?.organizationIds
+  const candidates = scopeIds
+    ? organizations.filter((organization) => scopeIds.includes(organization.id))
+    : organizations
+
+  const matches: AssociationMatch[] = []
+  for (const organization of candidates) {
+    const organizationCapabilities = capabilityView(organization)
+    const missing = roleContext.mandatoryCapabilities.filter((id) => !organizationCapabilities.observed.has(id))
+    const gaps: AssociationGap[] = missing.map((id) => ({
+      requirement: capabilityName(index, id),
+      reason: organizationCapabilities.notObserved.has(id)
+        ? 'Checked and not observed in the sources read.'
+        : 'No evidence recorded yet; this is missing research, not a confirmed absence.',
+    }))
+
+    const pocket = pocketOf(index, organization)
+    const rules: AssociationRuleHit[] = []
+    for (const definition of ROLE_RULES) {
+      const hit = definition.test({
+        focal: organization,
+        organization,
+        focalCapabilities: organizationCapabilities,
+        organizationCapabilities,
+        role: roleContext,
+        index,
+        mappedProfessionals: index.employersByOrg.get(organization.id)?.professionals ?? 0,
+      })
+      if (hit) rules.push(hit)
+    }
+
+    if (roleContext.provinces.length > 0
+      && organization.locations.some((location) => roleContext.provinces.includes(location.province))) {
+      rules.push({
+        rule: 'R13-role-geography',
+        label: 'Inside the required geography',
+        detail: `Operates in ${organization.locations
+          .map((location) => location.province)
+          .filter((province) => roleContext.provinces.includes(province))
+          .join(', ')}, which the role requires.`,
+        evidence: 'Location recorded from a cited source.',
+      })
+    }
+
+    const relationshipTypes = [...new Set(
+      ROLE_RULES
+        .filter((definition) => rules.some((rule) => rule.rule === definition.rule))
+        .map((definition) => definition.relationship),
+    )]
+
+    if (rules.length === 0) {
+      rules.push({
+        rule: 'R14-no-operational-signal',
+        label: 'No operational overlap with this brief',
+        detail: organization.capabilities.length === 0 && organization.industries.length === 0
+          ? 'Maps holds no industry or capability evidence for this company yet, so it cannot be assessed against the brief.'
+          : 'No evidenced capability, industry or geography matches what this brief requires.',
+        evidence: 'Absence of evidence, not evidence of absence.',
+      })
+      relationshipTypes.length = 0
+    }
+
+    const satisfied = roleContext.mandatoryCapabilities.filter((id) => organizationCapabilities.observed.has(id))
+    const tier = tierFor(roleContext, pocket, rules, gaps, organizationCapabilities, satisfied)
+    matches.push({
+      organizationId: organization.id,
+      // Empty focal id is the honest signal that no company centred this run.
+      focalId: '',
+      roleContextId: roleContext.id,
+      tier,
+      tierLabel: TIER_LABELS[tier],
+      pocketId: pocket,
+      rules,
+      gaps,
+      sharedCapabilities: satisfied,
+      missingCapabilities: missing,
+      relationshipTypes,
+      confidence: organizationConfidence(organization),
+      override: null,
+      mappedProfessionals: index.employersByOrg.get(organization.id)?.professionals ?? 0,
+    })
+  }
+
+  matches.sort((left, right) => (
+    left.tier - right.tier
+    || right.rules.length - left.rules.length
+    || right.sharedCapabilities.length - left.sharedCapabilities.length
+    || left.organizationId.localeCompare(right.organizationId)
+  ))
+
+  return {
+    roleContextId: roleContext.id,
+    scope: {
+      nodeId: input.scope?.nodeId ?? null,
+      label: input.scope?.label ?? 'Whole mapped universe',
+      organizationIds: candidates.map((organization) => organization.id),
+    },
+    matches,
+    coverage: {
+      organizationsScanned: candidates.length,
+      matched: matches.length,
+      tier1: matches.filter((match) => match.tier === 1).length,
+      withMissingEvidence: matches.filter((match) => match.gaps.length > 0).length,
+    },
+  }
+}
+
+// ---------------------------------------------------------------------------
 // Filtering: identical results in the graph, pocket and table views
 // ---------------------------------------------------------------------------
 
-function scaleBucket(organization: Organization): string[] {
+/**
+ * Sourced-scale buckets for one organization.
+ *
+ * Only `employees` figures are bucketed here. Revenue, pallet positions and
+ * generating capacity are different units and are never folded into a headcount
+ * bucket, so a company measured only in megawatts reports `unverified` rather
+ * than being silently treated as small.
+ */
+export function scaleBucket(organization: Organization): string[] {
   const buckets: string[] = []
   if (organization.scale.length === 0) return ['unknown']
   for (const entry of organization.scale) {

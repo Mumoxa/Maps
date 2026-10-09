@@ -4243,3 +4243,549 @@ kbd {
 .bank-targets-note,
 .bank-targets-none { font-size: 0.75rem; color: var(--color-text-secondary); margin: 0; }
 .bank-targets-none code { font-family: var(--font-mono); font-size: 0.6875rem; }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Industry Atlas, universal company intelligence and footprint bands.
+
+   The atlas is a hierarchy, not a network: taxonomy on the left, industry
+   branch and company landscape in the middle, company inspector on the right.
+   Nothing is centred, no node is decorated as an origin, and vertical position
+   never implies corporate control - ownership has its own, explicitly labelled
+   view inside a company dossier.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.atlas-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.filter-search-input {
+  flex: 1 1 18rem;
+  min-width: 0;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+}
+.filter-search-input:focus-visible { border-color: var(--color-primary); outline: none; }
+
+.atlas-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 18rem) minmax(0, 1fr) minmax(17rem, 21rem);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.atlas-sidebar { display: grid; gap: var(--space-3); }
+.atlas-main { min-width: 0; display: grid; gap: var(--space-5); }
+
+.atlas-inspector {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-4));
+  max-height: calc(100vh - var(--header-height) - var(--space-8));
+  overflow-y: auto;
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-xs);
+}
+
+.atlas-inspector-body { display: grid; gap: var(--space-4); }
+.atlas-inspector-close {
+  justify-self: end;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.atlas-inspector-head h3 { margin: 0 0 0.15rem; font-size: 1.0625rem; }
+.atlas-inspector-legal { margin: 0; font-size: 0.8125rem; color: var(--color-text-secondary); }
+.atlas-inspector-status { margin: 0; font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.atlas-inspector h4 {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+.atlas-inspector-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.2rem; font-size: 0.8125rem; }
+.atlas-inspector-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.atlas-inspector-chips li {
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-micro);
+  background: var(--color-surface-sunken);
+  font-size: 0.75rem;
+}
+.atlas-inspector-note { margin: 0; font-size: 0.8125rem; color: var(--color-text-secondary); }
+.atlas-inspector-meta { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.atlas-inspector-actions { display: grid; gap: var(--space-2); }
+
+/* ─── Taxonomy tree ───────────────────────────────────────────────────────
+   A tree of industries. Depth reads left to right; nothing is radial and no
+   node is styled as an origin.                                              */
+
+.atlas-tree { display: grid; gap: var(--space-2); }
+.atlas-tree-head { display: grid; gap: var(--space-2); }
+.atlas-tree-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+}
+.atlas-tree-root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  width: 100%;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.8125rem;
+  text-align: left;
+  cursor: pointer;
+}
+.atlas-tree-root:hover { background: var(--color-surface-sunken); }
+.atlas-tree-root.selected { border-color: var(--color-primary-300); background: var(--color-primary-50); color: var(--color-primary-800); }
+
+.atlas-tree-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.05rem; }
+.atlas-tree-row { display: flex; align-items: center; gap: 0.05rem; border-radius: var(--radius-sm); }
+.atlas-tree-row:hover { background: var(--color-surface-sunken); }
+.atlas-tree-row.in-path { background: var(--color-primary-50); }
+.atlas-tree-row.selected { background: var(--color-primary-100); }
+.atlas-tree-caret {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.6rem;
+  border: none;
+  background: none;
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+.atlas-tree-caret-empty { cursor: default; }
+.atlas-tree-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.28rem 0.35rem;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 0.8125rem;
+  text-align: left;
+  cursor: pointer;
+}
+.atlas-tree-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.atlas-tree-count {
+  flex: 0 0 auto;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-tertiary);
+}
+.atlas-tree-note { margin: 0; font-size: 0.6875rem; color: var(--color-text-tertiary); }
+
+/* ─── Branch header, coverage and child branches ─────────────────────────── */
+
+.atlas-branch-head { display: grid; gap: var(--space-2); }
+.atlas-branch-head h2 { display: flex; align-items: center; gap: var(--space-2); margin: 0; font-size: 1.375rem; }
+.atlas-branch-path { margin: 0; font-size: 0.8125rem; color: var(--color-text-secondary); }
+
+.atlas-coverage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: var(--space-3);
+  margin: 0;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface-sunken);
+}
+.atlas-coverage dt {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+.atlas-coverage dd {
+  margin: 0.1rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 1.0625rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+}
+
+.atlas-children { display: grid; gap: var(--space-3); }
+.atlas-children h3 { margin: 0; font-size: 1rem; }
+.atlas-child-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: var(--space-2);
+}
+.atlas-child {
+  display: grid;
+  gap: 0.15rem;
+  width: 100%;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.atlas-child:hover { border-color: var(--color-primary-300); box-shadow: var(--shadow-xs); }
+.atlas-child-name { font-size: 0.875rem; font-weight: var(--font-weight-medium); }
+.atlas-child-count { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.atlas-child-empty { border-style: dashed; background: var(--color-surface-inset); }
+.atlas-child-empty .atlas-child-count { color: var(--color-accent-dark); }
+
+.atlas-macro-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: var(--space-3);
+}
+.atlas-macro {
+  display: grid;
+  gap: 0.25rem;
+  width: 100%;
+  height: 100%;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.atlas-macro:hover { border-color: var(--color-primary-300); box-shadow: var(--shadow-sm); }
+.atlas-macro-name { font-size: 0.9375rem; font-weight: var(--font-weight-semibold); }
+.atlas-macro-count { font-family: var(--font-mono); font-size: 0.8125rem; font-variant-numeric: tabular-nums; color: var(--color-primary-800); }
+.atlas-macro-meta { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.atlas-macro-context { font-size: 0.75rem; color: var(--color-text-secondary); }
+
+.atlas-gaps { display: grid; gap: var(--space-3); }
+.atlas-gaps h3 { margin: 0; font-size: 1rem; }
+.atlas-gap-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: var(--space-2); }
+.atlas-gap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-inset);
+  color: var(--color-text-secondary);
+  font: inherit;
+  font-size: 0.8125rem;
+  text-align: left;
+  cursor: pointer;
+}
+.atlas-gap-count { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-accent-dark); }
+
+.atlas-scope-links { display: grid; gap: var(--space-3); padding-top: var(--space-4); border-top: 1px solid var(--color-border-light); }
+.atlas-scope-links h3 { margin: 0; font-size: 1rem; }
+.atlas-scope-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
+/* ─── Indicative market footprint bands ───────────────────────────────────
+   Bands are approximate reach. The unknown band is amber-outlined so "no
+   measure" never reads as "small".                                          */
+
+.footprint-bands { display: grid; gap: var(--space-4); }
+.footprint-bands-note {
+  display: flex;
+  gap: var(--space-2);
+  margin: 0;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-sunken);
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.footprint-band {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+.footprint-band-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.footprint-band-title { margin: 0; font-size: 0.9375rem; }
+.footprint-band-count {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-tertiary);
+}
+.footprint-band-definition { margin: 0.15rem 0 var(--space-3); font-size: 0.75rem; color: var(--color-text-tertiary); }
+.footprint-band-empty { margin: 0; font-size: 0.8125rem; color: var(--color-text-tertiary); font-style: italic; }
+.footprint-band-list {
+  list-style: none;
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: var(--space-2);
+}
+.footprint-company {
+  display: grid;
+  gap: 0.1rem;
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-raised);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+.footprint-company:hover { border-color: var(--color-primary-300); background: var(--color-primary-50); }
+.footprint-company-name { font-size: 0.8125rem; font-weight: var(--font-weight-medium); }
+.footprint-company-meta { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+
+.footprint-band-major-national { border-left: 3px solid var(--color-primary-700); }
+.footprint-band-large-multi-site { border-left: 3px solid var(--color-primary-400); }
+.footprint-band-regional-specialist { border-left: 3px solid var(--color-success-200); }
+.footprint-band-smaller-emerging { border-left: 3px solid var(--color-border-strong); }
+.footprint-band-not-established { border-left: 3px dashed var(--color-accent); background: var(--color-surface-inset); }
+
+.footprint-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-micro);
+  background: var(--color-surface-sunken);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+}
+.footprint-chip.footprint-band-major-national { background: var(--color-primary-100); border-color: var(--color-primary-300); color: var(--color-primary-800); }
+.footprint-chip.footprint-band-large-multi-site { background: var(--color-primary-50); border-color: var(--color-primary-200); color: var(--color-primary-700); }
+.footprint-chip.footprint-band-regional-specialist { background: var(--color-success-light); border-color: var(--color-success-200); color: var(--color-success-800); }
+.footprint-chip.footprint-band-smaller-emerging { background: var(--color-surface-sunken); color: var(--color-text-secondary); }
+.footprint-chip.footprint-band-not-established { background: var(--color-accent-50); border-color: var(--color-accent-200); color: var(--color-accent-800); }
+
+/* ─── Footprint classification card ──────────────────────────────────────── */
+
+.footprint-card { display: grid; gap: var(--space-3); }
+.footprint-card h3 { margin: 0; font-size: 0.9375rem; }
+.footprint-card-band {
+  margin: 0;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-semibold);
+  justify-self: start;
+}
+.footprint-card-band.footprint-band-major-national { background: var(--color-primary-100); color: var(--color-primary-800); }
+.footprint-card-band.footprint-band-large-multi-site { background: var(--color-primary-50); color: var(--color-primary-700); }
+.footprint-card-band.footprint-band-regional-specialist { background: var(--color-success-light); color: var(--color-success-800); }
+.footprint-card-band.footprint-band-smaller-emerging { background: var(--color-surface-sunken); color: var(--color-text-secondary); }
+.footprint-card-band.footprint-band-not-established { background: var(--color-accent-50); color: var(--color-accent-800); }
+.footprint-card-definition { margin: 0; font-size: 0.75rem; color: var(--color-text-tertiary); }
+.footprint-card-mono { font-family: var(--font-mono); font-size: 0.6875rem; }
+.footprint-card-note,
+.footprint-card-warning {
+  display: flex;
+  gap: 0.35rem;
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+}
+.footprint-card-warning { color: var(--color-accent-dark); }
+.footprint-card-inline-warning { color: var(--color-accent-dark); }
+.footprint-card-evidence { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.15rem; font-size: 0.6875rem; word-break: break-all; }
+.footprint-card-scale { display: grid; gap: var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--color-border-light); }
+.footprint-card-scale h4 { margin: 0; font-size: 0.75rem; }
+.footprint-card-scale ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); font-size: 0.8125rem; }
+.footprint-card-scale li { display: grid; gap: 0.1rem; }
+.footprint-card-scale-meta { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.footprint-card-scale a { font-size: 0.6875rem; }
+
+/* ─── Corporate ownership view ───────────────────────────────────────────── */
+
+.ownership { display: grid; gap: var(--space-3); }
+.ownership h3 { margin: 0; font-size: 1.0625rem; }
+.ownership-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+.ownership-node {
+  display: grid;
+  gap: 0.15rem;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: 0.8125rem;
+}
+.ownership-parent { margin-left: 0; }
+.ownership-subsidiary { margin-left: var(--space-6); }
+.ownership-current {
+  margin-left: var(--space-3);
+  border-color: var(--color-primary-300);
+  background: var(--color-primary-50);
+}
+.ownership-role {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+}
+.ownership-evidence { font-size: 0.75rem; color: var(--color-text-secondary); }
+.ownership-confidence { font-family: var(--font-mono); font-size: 0.625rem; color: var(--color-text-tertiary); }
+.ownership-name { font-weight: var(--font-weight-semibold); }
+.ownership-other { display: grid; gap: var(--space-2); padding-top: var(--space-3); border-top: 1px solid var(--color-border-light); }
+.ownership-other h4 { display: flex; align-items: center; gap: 0.35rem; margin: 0; font-size: 0.8125rem; }
+.ownership-other ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); font-size: 0.8125rem; }
+.ownership-other li { display: grid; gap: 0.1rem; }
+
+/* ─── Universal company cards ────────────────────────────────────────────── */
+
+.ucompany-card { display: grid; gap: var(--space-2); align-content: start; text-decoration: none; color: inherit; }
+.ucompany-card-button { text-align: left; font: inherit; cursor: pointer; }
+.ucompany-name { font-size: 0.9375rem; font-weight: var(--font-weight-semibold); }
+.ucompany-path { margin: 0; font-size: 0.75rem; color: var(--color-text-secondary); }
+.ucompany-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-text-tertiary);
+}
+
+/* ─── Company dossier ────────────────────────────────────────────────────── */
+
+.detail-legal { margin: 0.15rem 0 0; font-size: 0.875rem; color: var(--color-text-secondary); }
+.detail-aliases { margin: 0.15rem 0 0; font-size: 0.75rem; color: var(--color-text-tertiary); }
+.detail-mono { font-family: var(--font-mono); font-size: 0.75rem; }
+
+.dossier-industries { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.dossier-industries li { display: grid; gap: 0.2rem; }
+.dossier-industry-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); }
+.dossier-industry-meta { margin: 0; font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.dossier-evidence { margin: 0; font-size: 0.8125rem; color: var(--color-text-secondary); }
+.dossier-taxonomy { margin-top: var(--space-3); display: grid; gap: var(--space-2); }
+.dossier-taxonomy h3 { margin: 0; font-size: 0.875rem; }
+.dossier-taxonomy ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.2rem; font-size: 0.8125rem; }
+.dossier-capability-group { margin-bottom: var(--space-4); }
+.dossier-capability-group h3 { margin: 0 0 var(--space-2); font-size: 0.875rem; }
+.dossier-plain-list { margin: 0; padding-left: var(--space-4); font-size: 0.875rem; }
+.dossier-associations { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.dossier-associations li { display: grid; gap: 0.2rem; justify-items: start; padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border-light); }
+.dossier-associations p { margin: 0; font-size: 0.8125rem; }
+.dossier-actions { display: grid; gap: var(--space-2); }
+
+/* ─── Association groups by evidence class ───────────────────────────────── */
+
+.assoc-groups { display: grid; gap: var(--space-4); }
+.assoc-group {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+.assoc-group-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--space-2); }
+.assoc-group-head h3 { margin: 0; font-size: 1rem; }
+.assoc-group-count { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.assoc-group-description { margin: 0; font-size: 0.8125rem; color: var(--color-text-secondary); }
+.assoc-group-empty { background: var(--color-surface-inset); }
+
+.assoc-evidence-class {
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-micro);
+  background: var(--color-surface-sunken);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.assoc-evidence-verified-factual-relationship { background: var(--color-primary-100); border-color: var(--color-primary-300); color: var(--color-primary-800); }
+.assoc-evidence-shared-sourced-attribute { background: var(--color-primary-50); border-color: var(--color-primary-200); color: var(--color-primary-700); }
+.assoc-evidence-derived-operational-association { background: var(--color-success-light); border-color: var(--color-success-200); color: var(--color-success-800); }
+.assoc-evidence-recruiter-judgement { background: var(--color-accent-50); border-color: var(--color-accent-200); color: var(--color-accent-800); }
+.assoc-evidence-unknown-relationship { background: var(--color-surface-sunken); border-style: dashed; color: var(--color-text-tertiary); }
+
+.assoc-cluster-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-3); }
+.assoc-cluster {
+  display: grid;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius);
+  background: var(--color-surface-inset);
+}
+.assoc-cluster-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-2); font-size: 0.875rem; }
+.assoc-cluster-count { font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-text-tertiary); }
+.assoc-cluster-evidence { margin: 0; font-size: 0.75rem; color: var(--color-text-secondary); }
+.assoc-cluster-members { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-3); font-size: 0.8125rem; }
+.assoc-cluster-source { font-family: var(--font-mono); font-size: 0.625rem; color: var(--color-text-tertiary); word-break: break-all; }
+
+.assoc-clear-focus { align-self: center; }
+.nav-dropdown-hint { display: block; font-size: 0.6875rem; color: var(--color-text-tertiary); }
+
+/* ─── Responsive: atlas collapses like every other faceted route ─────────── */
+
+@media (max-width: 1180px) {
+  .atlas-layout { grid-template-columns: minmax(14rem, 17rem) minmax(0, 1fr); }
+  .atlas-inspector { grid-column: 1 / -1; position: static; max-height: none; }
+}
+
+@media (max-width: 1024px) {
+  .atlas-layout { grid-template-columns: minmax(0, 1fr); }
+  .atlas-sidebar { display: none; }
+  .atlas-coverage { grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); }
+}
+
+@media (max-width: 768px) {
+  .footprint-band-list { grid-template-columns: minmax(0, 1fr); }
+  .atlas-macro-grid,
+  .atlas-child-grid,
+  .atlas-gap-list { grid-template-columns: minmax(0, 1fr); }
+  .ownership-subsidiary { margin-left: var(--space-3); }
+}

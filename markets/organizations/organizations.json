@@ -261,7 +261,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Scenario A focal company: commercial cold-storage operator recruiting a Financial Manager."
+    "notes": "Sourced for the Scenario A commercial cold-storage Financial Manager brief. Held as an ordinary organisation in the register; no Maps view treats it as a default or central company."
   },
   {
     "id": "org-sequence-logistics",
@@ -3138,7 +3138,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Scenario C focal company: Head of Finance requirement with mandatory commodity trading exposure. Part of the BexGroup; the group entity itself is not yet mapped."
+    "notes": "Sourced for the Scenario C Head of Finance brief, where commodity trading exposure is mandatory. Part of the BexGroup; the group entity itself is not yet mapped."
   },
   {
     "id": "org-nwk",
@@ -3882,7 +3882,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Scenario B focal company. Verified identity is SLM Developments (Pty) Ltd; the brief's \"SLM Property Development\" is an alias, not the registered name."
+    "notes": "Sourced for the Scenario B property development brief. Verified identity is SLM Developments (Pty) Ltd; the brief's \"SLM Property Development\" is an alias, not the registered name."
   },
   {
     "id": "org-rabie-property-group",

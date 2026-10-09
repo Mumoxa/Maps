@@ -340,7 +340,8 @@ org("org-ccs-logistics", "CCS Logistics",
     website=CCS, parent="org-commercial-cold-holdings",
     locations=[loc("Cape Town", "Western Cape", DNB_CCS), loc("Midrand", "Gauteng", CCS)],
     scales=[scale("sites", "4 South African sites (Paarden Eiland, Epping, Duncan Dock, Midrand)", "source-reported", "2026", CCS)],
-    notes="Scenario A focal company: commercial cold-storage operator recruiting a Financial Manager.")
+    notes="Sourced for the Scenario A commercial cold-storage Financial Manager brief. "
+          "Held as an ordinary organisation in the register; no Maps view treats it as a default or central company.")
 
 org("org-sequence-logistics", "Sequence Logistics",
     [ind("cold-storage-operations", evidence="Cold-store platform member providing secondary distribution and load consolidation.", url=COLDSA),
@@ -749,7 +750,8 @@ org("org-bester-feed-grain", "Bester Feed & Grain",
     locations=[loc("Stellenbosch", "Western Cape", BESTER_LEI)],
     scales=[scale("employees", "101-250 employees", "third-party-estimate", "2026", BESTER_CRUNCH),
             scale("sites", "Storage and grading capacity of 35,000 metric tons", "source-reported", "2026", BESTER_PROFILE)],
-    notes="Scenario C focal company: Head of Finance requirement with mandatory commodity trading exposure. Part of the BexGroup; the group entity itself is not yet mapped.")
+    notes="Sourced for the Scenario C Head of Finance brief, where commodity trading exposure is mandatory. "
+          "Part of the BexGroup; the group entity itself is not yet mapped.")
 
 NWK_SRC = "https://sg.linkedin.com/showcase/grain-marketing"
 org("org-nwk", "NWK Ltd",
@@ -854,7 +856,8 @@ org("org-slm-developments", "SLM Developments",
     website="https://slmdev.co.za",
     locations=[loc("Cape Town", "Western Cape", "https://b2bhint.com/en/company/za/slm-developments--K2019081416")],
     scales=[scale("employees", "1-24 employees (modelled)", "third-party-estimate", "2026", "https://www.dnb.com/business-directory/company-profiles/slm-developments-(pty)-ltd.4d1c10a01914e3d416b1c9b4d19b4ef3")],
-    notes="Scenario B focal company. Verified identity is SLM Developments (Pty) Ltd; the brief's \"SLM Property Development\" is an alias, not the registered name.")
+    notes="Sourced for the Scenario B property development brief. Verified identity is SLM Developments (Pty) Ltd; "
+          "the brief's \"SLM Property Development\" is an alias, not the registered name.")
 
 RABIE = "https://www.linkedin.com/company/rabie-property-group-pty-ltd"
 org("org-rabie-property-group", "Rabie Property Group",

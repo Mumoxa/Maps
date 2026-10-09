@@ -60,7 +60,11 @@ if (typeof (globalThis as { ResizeObserver?: unknown }).ResizeObserver === 'unde
 }
 
 const pageModules: Record<string, [string, string]> = {
-  '/': ['/src/pages/HomePage.tsx', 'HomePage'],
+  // `/` is the Industry Atlas now; the old landing stays reachable at `/home`.
+  '/': ['/src/pages/IndustryAtlasPage.tsx', 'IndustryAtlasPage'],
+  '/home': ['/src/pages/HomePage.tsx', 'HomePage'],
+  '/industry-atlas?node=TRA': ['/src/pages/IndustryAtlasPage.tsx', 'IndustryAtlasPage'],
+  '/recruitment-targeting?role=role-cold-storage-financial-manager': ['/src/pages/RecruitmentTargetingPage.tsx', 'RecruitmentTargetingPage'],
   '/credit-risk': ['/src/pages/CreditRiskPage.tsx', 'CreditRiskPage'],
   '/salesforce': ['/src/pages/SalesforcePage.tsx', 'SalesforcePage'],
   '/hackathons': ['/src/pages/HackathonTalentPage.tsx', 'HackathonTalentPage'],

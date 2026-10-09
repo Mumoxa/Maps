@@ -1,0 +1,5 @@
+{
+  "$comment": "Human-reviewed Indicative Market Footprint classifications. Empty until a reviewer has actually classified a company against an evidence note: an unpopulated list is the honest state, and no classification may be invented to make the Industry Atlas look complete. Each entry requires organizationId, band, classificationKind, basis, entityScope, confidence, reviewedBy and reviewedOn. A reviewer correction overrides the derived band without ever editing the sourced scale records.",
+  "schemaVersion": "1.0.0",
+  "reviews": []
+}

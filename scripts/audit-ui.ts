@@ -55,7 +55,13 @@ if (typeof (globalThis as { ResizeObserver?: unknown }).ResizeObserver === 'unde
 }
 
 const pageModules: Record<string, [string, string]> = {
-  '/': ['/src/pages/HomePage.tsx', 'HomePage'],
+  // `/` is the Industry Atlas now: the audit has to review the landing a
+  // visitor actually gets, not the page that used to be there.
+  '/': ['/src/pages/IndustryAtlasPage.tsx', 'IndustryAtlasPage'],
+  '/home': ['/src/pages/HomePage.tsx', 'HomePage'],
+  // Scoped to a brief, so the filter drawer and the tiered result set — the
+  // parts that only exist once a recruiter has chosen a role — are audited too.
+  '/recruitment-targeting?role=role-cold-storage-financial-manager': ['/src/pages/RecruitmentTargetingPage.tsx', 'RecruitmentTargetingPage'],
   '/credit-risk': ['/src/pages/CreditRiskPage.tsx', 'CreditRiskPage'],
   '/salesforce': ['/src/pages/SalesforcePage.tsx', 'SalesforcePage'],
   '/hackathons': ['/src/pages/HackathonTalentPage.tsx', 'HackathonTalentPage'],

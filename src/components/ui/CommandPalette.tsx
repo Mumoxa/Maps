@@ -41,12 +41,15 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
 
   const destinations = useMemo<PaletteItem[]>(() => {
     const pages: PaletteItem[] = [
-      { id: 'page-home', group: 'Pages', label: 'Home', sub: 'All talent tracks', to: '/' },
+      { id: 'page-home', group: 'Pages', label: 'Home', sub: 'All talent tracks', to: '/home' },
       { id: 'page-talent-search', group: 'Pages', label: 'People search', sub: 'Every searchable candidate', to: '/talent-search' },
       { id: 'page-credit-risk', group: 'Pages', label: 'Credit risk track', sub: 'Market map overview', to: '/credit-risk' },
       { id: 'page-map', group: 'Pages', label: 'Interactive map', sub: 'Segments, companies, people', to: '/map' },
       { id: 'page-segments', group: 'Pages', label: 'Segments', sub: 'Industry segments', to: '/segments' },
-      { id: 'page-companies', group: 'Pages', label: 'Companies', sub: 'Employers in the map', to: '/companies' },
+      { id: 'page-industry-atlas', group: 'Pages', label: 'Industry Atlas', sub: 'Sectors, sub-industries and company footprint', to: '/industry-atlas' },
+      { id: 'page-companies', group: 'Pages', label: 'Company universe', sub: 'Every organisation Maps holds', to: '/companies' },
+      { id: 'page-associations', group: 'Pages', label: 'Company associations', sub: 'Evidence-backed relationships', to: '/company-associations' },
+      { id: 'page-targeting', group: 'Pages', label: 'Recruitment targeting', sub: 'Apply a brief to the company universe', to: '/recruitment-targeting' },
       { id: 'page-profiles', group: 'Pages', label: 'Candidates', sub: 'Credit risk profiles', to: '/profiles' },
       { id: 'page-shortlist', group: 'Pages', label: 'Shortlist', sub: 'Priority candidates', to: '/shortlist' },
       { id: 'page-market-salesforce', group: 'Pages', label: 'Salesforce ecosystem', sub: 'Ecosystem intelligence', to: '/markets/salesforce' },
