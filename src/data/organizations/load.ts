@@ -44,6 +44,8 @@ export interface DatasetEmployer {
   classification: string
   /** Original position company values in the contacts source. */
   sourceNames?: string[]
+  /** Generated canonical target; checked for staleness by contact manifest gate. */
+  organizationId?: string
   /** Unique contact ids, for accurate deduplication across company aliases. */
   personIds?: string[]
 }
@@ -163,7 +165,7 @@ export function buildOrganizationIndex(input: BuildIndexInput = {}): Organizatio
     const canonical = canonicalCompanyName(employer.name)
     if (!canonical) continue
     const key = canonical.toLowerCase()
-    const organizationId = idByAlias.get(key) ?? idByCanonical.get(key) ?? `org-dataset:${key}`
+    const organizationId = employer.organizationId ?? idByAlias.get(key) ?? idByCanonical.get(key) ?? `org-dataset:${key}`
     // Two distinct employer strings can resolve to one curated organization.
     // Count a source contact once at that organization, not once per alias.
     let professionals = employer.professionals
