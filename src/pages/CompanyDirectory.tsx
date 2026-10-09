@@ -204,6 +204,7 @@ export function CompanyDirectory() {
                 <option value="credit-risk">Credit risk dataset (track entry point)</option>
                 <option value="accounting-finance">Accounting &amp; finance dataset</option>
                 <option value="search-bank">Search bank dataset</option>
+                <option value="contacts">Contact directory (5,070 contacts)</option>
               </select>
             </div>
             <button type="button" className="facet-filter-trigger" onClick={() => setFiltersOpen(true)} aria-expanded={filtersOpen} aria-haspopup="dialog">
