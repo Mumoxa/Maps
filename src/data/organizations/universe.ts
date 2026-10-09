@@ -8,6 +8,7 @@
 
 import { accountantCandidates } from '../accountantsPeople'
 import { bankCandidates } from '../searchBank/bank'
+import { contacts } from '../contacts'
 import { canonicalCompanyName } from '../companyNormalization'
 import { buildOrganizationIndex, visibleOrganizations } from './load'
 import type { DatasetEmployer, OrganizationIndex } from './load'
@@ -50,9 +51,40 @@ function countByEmployer(
   }))
 }
 
+/**
+ * The contact directory stores several positions for some people. A person
+ * counts once per normalized employer name even when source sheets repeat it.
+ * Original employer spellings are retained to support a full reverse-link from
+ * a company dossier to all of its contact records. Neither sector nor size
+ * metadata in contacts is promoted to a verified company fact.
+ */
+export function contactDatasetEmployers(): DatasetEmployer[] {
+  const groups = new Map<string, { names: Set<string>; people: Set<string> }>()
+  for (const contact of contacts) {
+    for (const position of contact.positions) {
+      const raw = position.company.trim()
+      const canonical = canonicalCompanyName(raw)
+      if (!canonical) continue
+      const group = groups.get(canonical) ?? { names: new Set<string>(), people: new Set<string>() }
+      group.names.add(raw)
+      group.people.add(contact.id)
+      groups.set(canonical, group)
+    }
+  }
+  return [...groups.entries()].map(([name, group]) => ({
+    name,
+    dataset: 'contacts',
+    professionals: group.people.size,
+    classification: '',
+    sourceNames: [...group.names],
+    personIds: [...group.people],
+  }))
+}
+
 /** Every employer name Maps already holds, with the people counted against it. */
 export function datasetEmployers(sources: DatasetSources = {}): DatasetEmployer[] {
   const employers: DatasetEmployer[] = [
+    ...contactDatasetEmployers(),
     ...countByEmployer(
       accountantCandidates.map((candidate) => ({ employer: candidate.employer })),
       'accounting-finance',
