@@ -9987,5 +9987,2487 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-mnk-projects",
+    "name": "MNK Projects",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://mnk.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "MNK Projects (Marinus Neethling Construction) publishes residential and commercial developments and construction/project delivery services, with Cape Town and Pretoria offices.",
+        "sourceUrl": "https://mnk.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "MNK Projects (Marinus Neethling Construction) publishes residential and commercial developments and construction/project delivery services, with Cape Town and Pretoria offices.",
+        "sourceUrl": "https://mnk.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "MNK Projects (Marinus Neethling Construction) publishes residential and commercial developments and construction/project delivery services, with Cape Town and Pretoria offices.",
+        "sourceUrl": "https://mnk.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Bellville",
+        "province": "Western Cape",
+        "sourceUrl": "https://mnk.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://mnk.co.za/",
+        "type": "company-website",
+        "evidence": "MNK Projects (Marinus Neethling Construction) publishes residential and commercial developments and construction/project delivery services, with Cape Town and Pretoria offices.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-orange-brick-developments",
+    "name": "Orange Brick Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://orangebrickdevelopments.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Describes itself as a boutique property developer active in Cape Town's southern suburbs, with residential projects such as Emily Place.",
+        "sourceUrl": "https://orangebrickdevelopments.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Describes itself as a boutique property developer active in Cape Town's southern suburbs, with residential projects such as Emily Place.",
+        "sourceUrl": "https://orangebrickdevelopments.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://orangebrickdevelopments.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://orangebrickdevelopments.co.za/",
+        "type": "company-website",
+        "evidence": "Describes itself as a boutique property developer active in Cape Town's southern suburbs, with residential projects such as Emily Place.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-in10city-property-group",
+    "name": "IN10CITY Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.in10city.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Identifies its Cape Town development business and separate project-delivery business; residential and mixed-use development is through IN10CITY Developments.",
+        "sourceUrl": "https://www.in10city.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Identifies its Cape Town development business and separate project-delivery business; residential and mixed-use development is through IN10CITY Developments.",
+        "sourceUrl": "https://www.in10city.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.in10city.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.in10city.co.za/",
+        "type": "company-website",
+        "evidence": "Identifies its Cape Town development business and separate project-delivery business; residential and mixed-use development is through IN10CITY Developments.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-the-urban-collective",
+    "name": "The Urban Collective",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://urbancollectivedevelopments.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Describes boutique residential property development and site acquisition in Cape Town's suburbs.",
+        "sourceUrl": "https://urbancollectivedevelopments.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Describes boutique residential property development and site acquisition in Cape Town's suburbs.",
+        "sourceUrl": "https://urbancollectivedevelopments.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://urbancollectivedevelopments.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://urbancollectivedevelopments.co.za/",
+        "type": "company-website",
+        "evidence": "Describes boutique residential property development and site acquisition in Cape Town's suburbs.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-rawson-developers",
+    "name": "Rawson Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.rawson-developers.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Identifies itself as a Cape Town property developer and lists completed and available residential apartment developments.",
+        "sourceUrl": "https://www.rawson-developers.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Identifies itself as a Cape Town property developer and lists completed and available residential apartment developments.",
+        "sourceUrl": "https://www.rawson-developers.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.rawson-developers.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.rawson-developers.co.za/",
+        "type": "company-website",
+        "evidence": "Identifies itself as a Cape Town property developer and lists completed and available residential apartment developments.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-uniqon-developers",
+    "name": "UNiQON Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://uniqon.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Pretoria developer describing residential, commercial and retail development activity in Pretoria and Johannesburg.",
+        "sourceUrl": "https://uniqon.co.za/about-us/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria developer describing residential, commercial and retail development activity in Pretoria and Johannesburg.",
+        "sourceUrl": "https://uniqon.co.za/about-us/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria developer describing residential, commercial and retail development activity in Pretoria and Johannesburg.",
+        "sourceUrl": "https://uniqon.co.za/about-us/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://uniqon.co.za/about-us/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://uniqon.co.za/about-us/",
+        "type": "company-website",
+        "evidence": "Pretoria developer describing residential, commercial and retail development activity in Pretoria and Johannesburg.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-devco-developments",
+    "name": "Devco Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://devcogroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Boutique property development group headquartered in Durbanville with advertised residential projects including Durbanville Gardens and Pinotage Villas.",
+        "sourceUrl": "https://devcogroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Boutique property development group headquartered in Durbanville with advertised residential projects including Durbanville Gardens and Pinotage Villas.",
+        "sourceUrl": "https://devcogroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Durbanville",
+        "province": "Western Cape",
+        "sourceUrl": "https://devcogroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://devcogroup.co.za/",
+        "type": "company-website",
+        "evidence": "Boutique property development group headquartered in Durbanville with advertised residential projects including Durbanville Gardens and Pinotage Villas.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-heartland-property-developers",
+    "name": "Heartland Property Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.heartland.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Markets residential development projects in Pretoria including Polaris Heart and Sanford Heart, and in Cape Town including Napier Heart.",
+        "sourceUrl": "https://www.heartland.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Markets residential development projects in Pretoria including Polaris Heart and Sanford Heart, and in Cape Town including Napier Heart.",
+        "sourceUrl": "https://www.heartland.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.heartland.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.heartland.co.za/",
+        "type": "company-website",
+        "evidence": "Markets residential development projects in Pretoria including Polaris Heart and Sanford Heart, and in Cape Town including Napier Heart.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-kingshill-group",
+    "name": "KingsHill Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://kingshillgroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Independent Western Cape residential development and construction group with named completed and planned projects.",
+        "sourceUrl": "https://kingshillgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Independent Western Cape residential development and construction group with named completed and planned projects.",
+        "sourceUrl": "https://kingshillgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Independent Western Cape residential development and construction group with named completed and planned projects.",
+        "sourceUrl": "https://kingshillgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://kingshillgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://kingshillgroup.co.za/",
+        "type": "company-website",
+        "evidence": "Independent Western Cape residential development and construction group with named completed and planned projects.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-prospekt-property-development",
+    "name": "Prospekt Property Development",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.prospekt.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Lists residential development and co-development projects in Durbanville and central Cape Town and project management services.",
+        "sourceUrl": "https://www.prospekt.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Lists residential development and co-development projects in Durbanville and central Cape Town and project management services.",
+        "sourceUrl": "https://www.prospekt.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Durbanville",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.prospekt.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.prospekt.co.za/",
+        "type": "company-website",
+        "evidence": "Lists residential development and co-development projects in Durbanville and central Cape Town and project management services.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-horizon-capital-residential",
+    "name": "Horizon Capital Residential",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://thecavendish.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Identified by its Cavendish development site as a Cape Town boutique residential property developer.",
+        "sourceUrl": "https://thecavendish.co.za/about/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Identified by its Cavendish development site as a Cape Town boutique residential property developer.",
+        "sourceUrl": "https://thecavendish.co.za/about/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://thecavendish.co.za/about/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://thecavendish.co.za/about/",
+        "type": "company-website",
+        "evidence": "Identified by its Cavendish development site as a Cape Town boutique residential property developer.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-newland-developments",
+    "name": "Newland Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.newdev.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Describes itself as a privately owned developer of residential, industrial and commercial property with a Cape Town address.",
+        "sourceUrl": "https://www.newdev.co.za/about/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Describes itself as a privately owned developer of residential, industrial and commercial property with a Cape Town address.",
+        "sourceUrl": "https://www.newdev.co.za/about/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "logistics-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Describes itself as a privately owned developer of residential, industrial and commercial property with a Cape Town address.",
+        "sourceUrl": "https://www.newdev.co.za/about/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.newdev.co.za/about/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.newdev.co.za/about/",
+        "type": "company-website",
+        "evidence": "Describes itself as a privately owned developer of residential, industrial and commercial property with a Cape Town address.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-circle-developers",
+    "name": "Circle Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.circledevelopers.com",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Garden Route property developer identifying residential and lifestyle development as its focus.",
+        "sourceUrl": "https://www.circledevelopers.com/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Garden Route property developer identifying residential and lifestyle development as its focus.",
+        "sourceUrl": "https://www.circledevelopers.com/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "George",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.circledevelopers.com/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.circledevelopers.com/",
+        "type": "company-website",
+        "evidence": "Garden Route property developer identifying residential and lifestyle development as its focus.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-lateganmuller-group",
+    "name": "LateganMuller Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://lateganmuller.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Paarl-founded developer of residential, commercial and mixed-use projects across the Garden Route and Boland.",
+        "sourceUrl": "https://lateganmuller.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Paarl-founded developer of residential, commercial and mixed-use projects across the Garden Route and Boland.",
+        "sourceUrl": "https://lateganmuller.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Paarl",
+        "province": "Western Cape",
+        "sourceUrl": "https://lateganmuller.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://lateganmuller.co.za/",
+        "type": "company-website",
+        "evidence": "Paarl-founded developer of residential, commercial and mixed-use projects across the Garden Route and Boland.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-atigo-property-group",
+    "name": "Atigo Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://atigopropertygroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "George-based residential estate and home development business working in the Garden Route.",
+        "sourceUrl": "https://atigopropertygroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "George-based residential estate and home development business working in the Garden Route.",
+        "sourceUrl": "https://atigopropertygroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "George",
+        "province": "Western Cape",
+        "sourceUrl": "https://atigopropertygroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://atigopropertygroup.co.za/",
+        "type": "company-website",
+        "evidence": "George-based residential estate and home development business working in the Garden Route.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-zemcon",
+    "name": "ZemCon",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.zemcon.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "George-based provider of investment property development services including opportunity identification, construction, sale or letting assistance.",
+        "sourceUrl": "https://www.zemcon.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "George-based provider of investment property development services including opportunity identification, construction, sale or letting assistance.",
+        "sourceUrl": "https://www.zemcon.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "George",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.zemcon.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.zemcon.co.za/",
+        "type": "company-website",
+        "evidence": "George-based provider of investment property development services including opportunity identification, construction, sale or letting assistance.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-wild-eagle-properties",
+    "name": "Wild Eagle Properties",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://wildeagle.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "construction-contracting",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Family-operated Garden Route construction and development business building residential and commercial projects.",
+        "sourceUrl": "https://wildeagle.co.za/company-profile/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Family-operated Garden Route construction and development business building residential and commercial projects.",
+        "sourceUrl": "https://wildeagle.co.za/company-profile/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "George",
+        "province": "Western Cape",
+        "sourceUrl": "https://wildeagle.co.za/company-profile/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://wildeagle.co.za/company-profile/",
+        "type": "company-website",
+        "evidence": "Family-operated Garden Route construction and development business building residential and commercial projects.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-narmis-property-developments",
+    "name": "Narmis Property Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.narmisproperties.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Property developer specialising in secure-estate designer homes in Umhlanga and La Lucia.",
+        "sourceUrl": "https://www.narmisproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Property developer specialising in secure-estate designer homes in Umhlanga and La Lucia.",
+        "sourceUrl": "https://www.narmisproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Umhlanga",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://www.narmisproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.narmisproperties.co.za/",
+        "type": "company-website",
+        "evidence": "Property developer specialising in secure-estate designer homes in Umhlanga and La Lucia.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-urban-modules",
+    "name": "Urban Modules",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://urbanmodules.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Ballito-based development and construction business delivering residential, sectional-title, commercial and industrial developments along the KZN North Coast.",
+        "sourceUrl": "https://urbanmodules.co.za/about/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Ballito-based development and construction business delivering residential, sectional-title, commercial and industrial developments along the KZN North Coast.",
+        "sourceUrl": "https://urbanmodules.co.za/about/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Ballito-based development and construction business delivering residential, sectional-title, commercial and industrial developments along the KZN North Coast.",
+        "sourceUrl": "https://urbanmodules.co.za/about/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Ballito",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://urbanmodules.co.za/about/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://urbanmodules.co.za/about/",
+        "type": "company-website",
+        "evidence": "Ballito-based development and construction business delivering residential, sectional-title, commercial and industrial developments along the KZN North Coast.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-north-global-group",
+    "name": "North Global Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://ngg.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Salt Rock property developer covering land acquisition through development and sale or letting, with residential, retail and commercial projects.",
+        "sourceUrl": "https://ngg.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Salt Rock property developer covering land acquisition through development and sale or letting, with residential, retail and commercial projects.",
+        "sourceUrl": "https://ngg.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Salt Rock property developer covering land acquisition through development and sale or letting, with residential, retail and commercial projects.",
+        "sourceUrl": "https://ngg.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Salt Rock",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://ngg.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://ngg.co.za/",
+        "type": "company-website",
+        "evidence": "Salt Rock property developer covering land acquisition through development and sale or letting, with residential, retail and commercial projects.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-exact-developers-and-property-consultants",
+    "name": "Exact Developers and Property Consultants",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.exactgroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Property development firm based in Port Elizabeth/Gqeberha constructing housing and residential estates.",
+        "sourceUrl": "https://www.exactgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Property development firm based in Port Elizabeth/Gqeberha constructing housing and residential estates.",
+        "sourceUrl": "https://www.exactgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Gqeberha",
+        "province": "Eastern Cape",
+        "sourceUrl": "https://www.exactgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.exactgroup.co.za/",
+        "type": "company-website",
+        "evidence": "Property development firm based in Port Elizabeth/Gqeberha constructing housing and residential estates.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-mega-city-group",
+    "name": "Mega City Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.megacitygrp.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Gqeberha-based group offers development and construction services with explicit residential development activity.",
+        "sourceUrl": "https://www.megacitygrp.co.za/service/property-development/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Gqeberha-based group offers development and construction services with explicit residential development activity.",
+        "sourceUrl": "https://www.megacitygrp.co.za/service/property-development/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Gqeberha-based group offers development and construction services with explicit residential development activity.",
+        "sourceUrl": "https://www.megacitygrp.co.za/service/property-development/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Gqeberha",
+        "province": "Eastern Cape",
+        "sourceUrl": "https://www.megacitygrp.co.za/service/property-development/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.megacitygrp.co.za/service/property-development/",
+        "type": "company-website",
+        "evidence": "Gqeberha-based group offers development and construction services with explicit residential development activity.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-western-gruppe-properties",
+    "name": "Western Gruppe Properties",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.wgproperties.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Port Elizabeth/Gqeberha developer and investor specialising in Eastern Cape retail property and shopping centres.",
+        "sourceUrl": "https://www.wgproperties.co.za/about-us",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Port Elizabeth/Gqeberha developer and investor specialising in Eastern Cape retail property and shopping centres.",
+        "sourceUrl": "https://www.wgproperties.co.za/about-us",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Port Elizabeth/Gqeberha developer and investor specialising in Eastern Cape retail property and shopping centres.",
+        "sourceUrl": "https://www.wgproperties.co.za/about-us",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Gqeberha",
+        "province": "Eastern Cape",
+        "sourceUrl": "https://www.wgproperties.co.za/about-us",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.wgproperties.co.za/about-us",
+        "type": "company-website",
+        "evidence": "Port Elizabeth/Gqeberha developer and investor specialising in Eastern Cape retail property and shopping centres.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-inex-developments",
+    "name": "INEX Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.inexdev.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Advertises its residential property developments in the Port Elizabeth and St Francis Bay markets.",
+        "sourceUrl": "https://www.inexdev.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Advertises its residential property developments in the Port Elizabeth and St Francis Bay markets.",
+        "sourceUrl": "https://www.inexdev.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.inexdev.co.za/",
+        "type": "company-website",
+        "evidence": "Advertises its residential property developments in the Port Elizabeth and St Francis Bay markets.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-cohen-property-developments",
+    "name": "Cohen Property Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.cohen-properties.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Port Elizabeth/Gqeberha property developer offering new upmarket residential developments.",
+        "sourceUrl": "https://www.cohen-properties.co.za/contact-us/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Port Elizabeth/Gqeberha property developer offering new upmarket residential developments.",
+        "sourceUrl": "https://www.cohen-properties.co.za/contact-us/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Gqeberha",
+        "province": "Eastern Cape",
+        "sourceUrl": "https://www.cohen-properties.co.za/contact-us/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.cohen-properties.co.za/contact-us/",
+        "type": "company-website",
+        "evidence": "Port Elizabeth/Gqeberha property developer offering new upmarket residential developments.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-property-house-group",
+    "name": "Property House Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.phg.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Family-owned Bloemfontein-origin property group investing in and developing real estate and managing commercial property.",
+        "sourceUrl": "https://www.phg.co.za/about.php",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Family-owned Bloemfontein-origin property group investing in and developing real estate and managing commercial property.",
+        "sourceUrl": "https://www.phg.co.za/about.php",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Bloemfontein",
+        "province": "Free State",
+        "sourceUrl": "https://www.phg.co.za/about.php",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.phg.co.za/about.php",
+        "type": "company-website",
+        "evidence": "Family-owned Bloemfontein-origin property group investing in and developing real estate and managing commercial property.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-peyper-group",
+    "name": "Peyper Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.peypergroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein-headquartered group identifies Peyper Developments as its townhouse, residential and estate property-development business.",
+        "sourceUrl": "https://www.peypergroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein-headquartered group identifies Peyper Developments as its townhouse, residential and estate property-development business.",
+        "sourceUrl": "https://www.peypergroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Bloemfontein",
+        "province": "Free State",
+        "sourceUrl": "https://www.peypergroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.peypergroup.co.za/",
+        "type": "company-website",
+        "evidence": "Bloemfontein-headquartered group identifies Peyper Developments as its townhouse, residential and estate property-development business.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-zatara-property-group",
+    "name": "Zatara Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://zataragroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein family property group describing commercial property acquisition, redevelopment and management.",
+        "sourceUrl": "https://zataragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein family property group describing commercial property acquisition, redevelopment and management.",
+        "sourceUrl": "https://zataragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein family property group describing commercial property acquisition, redevelopment and management.",
+        "sourceUrl": "https://zataragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Bloemfontein",
+        "province": "Free State",
+        "sourceUrl": "https://zataragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://zataragroup.co.za/",
+        "type": "company-website",
+        "evidence": "Bloemfontein family property group describing commercial property acquisition, redevelopment and management.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-propstart",
+    "name": "PropStart",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://mypropstart.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Offers structured township and rural development opportunities and showcases small development projects in Bloemfontein.",
+        "sourceUrl": "https://mypropstart.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Offers structured township and rural development opportunities and showcases small development projects in Bloemfontein.",
+        "sourceUrl": "https://mypropstart.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Bloemfontein",
+        "province": "Free State",
+        "sourceUrl": "https://mypropstart.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://mypropstart.co.za/",
+        "type": "company-website",
+        "evidence": "Offers structured township and rural development opportunities and showcases small development projects in Bloemfontein.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-lenova-construction-and-development",
+    "name": "Lenova Construction and Development",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://lenovaconstruction.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein property development and construction company with residential estate and housing projects.",
+        "sourceUrl": "https://lenovaconstruction.co.za/about-lenova-construction/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein property development and construction company with residential estate and housing projects.",
+        "sourceUrl": "https://lenovaconstruction.co.za/about-lenova-construction/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Bloemfontein property development and construction company with residential estate and housing projects.",
+        "sourceUrl": "https://lenovaconstruction.co.za/about-lenova-construction/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Bloemfontein",
+        "province": "Free State",
+        "sourceUrl": "https://lenovaconstruction.co.za/about-lenova-construction/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://lenovaconstruction.co.za/about-lenova-construction/",
+        "type": "company-website",
+        "evidence": "Bloemfontein property development and construction company with residential estate and housing projects.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-baruk-property-group",
+    "name": "Baruk Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://barukwildlife.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Identified as the residential developer behind Baruk Wildlife Estate in Bloemfontein.",
+        "sourceUrl": "https://barukwildlife.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Identified as the residential developer behind Baruk Wildlife Estate in Bloemfontein.",
+        "sourceUrl": "https://barukwildlife.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Bloemfontein",
+        "province": "Free State",
+        "sourceUrl": "https://barukwildlife.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://barukwildlife.co.za/",
+        "type": "company-website",
+        "evidence": "Identified as the residential developer behind Baruk Wildlife Estate in Bloemfontein.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-siba-holdings",
+    "name": "Siba Holdings",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://sibaholdings.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Johannesburg/Gauteng housing development business offering new residential units and associated building services.",
+        "sourceUrl": "https://sibaholdings.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Johannesburg/Gauteng housing development business offering new residential units and associated building services.",
+        "sourceUrl": "https://sibaholdings.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://sibaholdings.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://sibaholdings.co.za/",
+        "type": "company-website",
+        "evidence": "Johannesburg/Gauteng housing development business offering new residential units and associated building services.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-embark-property-developments",
+    "name": "Embark Property Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://embarkproperty.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Johannesburg-based residential property developer covering site acquisition, structuring, construction and delivery.",
+        "sourceUrl": "https://embarkproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Johannesburg-based residential property developer covering site acquisition, structuring, construction and delivery.",
+        "sourceUrl": "https://embarkproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://embarkproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://embarkproperty.co.za/",
+        "type": "company-website",
+        "evidence": "Johannesburg-based residential property developer covering site acquisition, structuring, construction and delivery.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-ssc-property-group",
+    "name": "SSC Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://sscproperty.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "logistics-property",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Western Cape industrial and commercial property developer and lessor with offices, factories and retail units around Cape Town and Worcester.",
+        "sourceUrl": "https://sscproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Western Cape industrial and commercial property developer and lessor with offices, factories and retail units around Cape Town and Worcester.",
+        "sourceUrl": "https://sscproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Western Cape industrial and commercial property developer and lessor with offices, factories and retail units around Cape Town and Worcester.",
+        "sourceUrl": "https://sscproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://sscproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://sscproperty.co.za/",
+        "type": "company-website",
+        "evidence": "Western Cape industrial and commercial property developer and lessor with offices, factories and retail units around Cape Town and Worcester.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-mardispace-property-developments",
+    "name": "Mardispace Property Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://mardispace.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Boutique residential developer with housing projects in Cape Town and Johannesburg.",
+        "sourceUrl": "https://mardispace.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Boutique residential developer with housing projects in Cape Town and Johannesburg.",
+        "sourceUrl": "https://mardispace.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://mardispace.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://mardispace.co.za/",
+        "type": "company-website",
+        "evidence": "Boutique residential developer with housing projects in Cape Town and Johannesburg.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-invicta-developments",
+    "name": "Invicta Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.invictacon.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Pretoria property developer showcasing residential estates and housing developments including Roodepark Eco City.",
+        "sourceUrl": "https://www.invictacon.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria property developer showcasing residential estates and housing developments including Roodepark Eco City.",
+        "sourceUrl": "https://www.invictacon.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.invictacon.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.invictacon.co.za/",
+        "type": "company-website",
+        "evidence": "Pretoria property developer showcasing residential estates and housing developments including Roodepark Eco City.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-elmado-property-projects",
+    "name": "Elmado Property Projects",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://elmadogroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Lists commercial office and industrial warehouse projects in Pretoria and Midrand.",
+        "sourceUrl": "https://elmadogroup.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "logistics-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Lists commercial office and industrial warehouse projects in Pretoria and Midrand.",
+        "sourceUrl": "https://elmadogroup.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://elmadogroup.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://elmadogroup.co.za/developments/",
+        "type": "company-website",
+        "evidence": "Lists commercial office and industrial warehouse projects in Pretoria and Midrand.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-mer-c-kor-property-group",
+    "name": "MER.C.KOR Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://merckor.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Residential housing developer offering full-title homes in northern Pretoria developments including Platinum Park and Orchards Park.",
+        "sourceUrl": "https://merckor.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Residential housing developer offering full-title homes in northern Pretoria developments including Platinum Park and Orchards Park.",
+        "sourceUrl": "https://merckor.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://merckor.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://merckor.co.za/",
+        "type": "company-website",
+        "evidence": "Residential housing developer offering full-title homes in northern Pretoria developments including Platinum Park and Orchards Park.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-werner-stander-development",
+    "name": "Werner Stander Development",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.wernerstander.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Pretoria North developer and housing builder advertising its residential estates and plot-and-plan developments.",
+        "sourceUrl": "https://www.wernerstander.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria North developer and housing builder advertising its residential estates and plot-and-plan developments.",
+        "sourceUrl": "https://www.wernerstander.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.wernerstander.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.wernerstander.co.za/",
+        "type": "company-website",
+        "evidence": "Pretoria North developer and housing builder advertising its residential estates and plot-and-plan developments.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-bow-arc",
+    "name": "BOW & ARC",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.bowandarc.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Pretoria developer with an identified residential and student accommodation portfolio, including the Volley and ALBA developments.",
+        "sourceUrl": "https://www.bowandarc.co.za/projects",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria developer with an identified residential and student accommodation portfolio, including the Volley and ALBA developments.",
+        "sourceUrl": "https://www.bowandarc.co.za/projects",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.bowandarc.co.za/projects",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.bowandarc.co.za/projects",
+        "type": "company-website",
+        "evidence": "Pretoria developer with an identified residential and student accommodation portfolio, including the Volley and ALBA developments.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-sana-properties",
+    "name": "Sana Properties",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://sanaproperties.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Pretoria-based property development, facilities and real estate business advertising office and commercial park developments.",
+        "sourceUrl": "https://sanaproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria-based property development, facilities and real estate business advertising office and commercial park developments.",
+        "sourceUrl": "https://sanaproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://sanaproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://sanaproperties.co.za/",
+        "type": "company-website",
+        "evidence": "Pretoria-based property development, facilities and real estate business advertising office and commercial park developments.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-aevum-developments",
+    "name": "Aevum Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.aevum.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Founder-led residential developer describing South African developments from land sourcing through sales; headquartered in Johannesburg.",
+        "sourceUrl": "https://www.aevum.co.za/about.html",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Founder-led residential developer describing South African developments from land sourcing through sales; headquartered in Johannesburg.",
+        "sourceUrl": "https://www.aevum.co.za/about.html",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.aevum.co.za/about.html",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.aevum.co.za/about.html",
+        "type": "company-website",
+        "evidence": "Founder-led residential developer describing South African developments from land sourcing through sales; headquartered in Johannesburg.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-raudev",
+    "name": "Raudev",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://raudev.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Property development company within the Raubex Group focusing on residential estates and affordable/socially integrated projects.",
+        "sourceUrl": "https://raudev.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Property development company within the Raubex Group focusing on residential estates and affordable/socially integrated projects.",
+        "sourceUrl": "https://raudev.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://raudev.co.za/",
+        "type": "company-website",
+        "evidence": "Property development company within the Raubex Group focusing on residential estates and affordable/socially integrated projects.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-true-group",
+    "name": "True Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.truegroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-investment",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Stellenbosch investment holding group identifies TrueProp Development as its residential and retirement estate developer.",
+        "sourceUrl": "https://www.truegroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Stellenbosch investment holding group identifies TrueProp Development as its residential and retirement estate developer.",
+        "sourceUrl": "https://www.truegroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Stellenbosch investment holding group identifies TrueProp Development as its residential and retirement estate developer.",
+        "sourceUrl": "https://www.truegroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Stellenbosch",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.truegroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.truegroup.co.za/",
+        "type": "company-website",
+        "evidence": "Stellenbosch investment holding group identifies TrueProp Development as its residential and retirement estate developer.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-feenstra-group",
+    "name": "Feenstra Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.feenstragroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Pretoria-based property developer and investor active in student accommodation, inner-city housing and commercial property.",
+        "sourceUrl": "https://www.feenstragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria-based property developer and investor active in student accommodation, inner-city housing and commercial property.",
+        "sourceUrl": "https://www.feenstragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "logistics-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Pretoria-based property developer and investor active in student accommodation, inner-city housing and commercial property.",
+        "sourceUrl": "https://www.feenstragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.feenstragroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.feenstragroup.co.za/",
+        "type": "company-website",
+        "evidence": "Pretoria-based property developer and investor active in student accommodation, inner-city housing and commercial property.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-westcap-properties",
+    "name": "Westcap Properties",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.westcap.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Privately owned Eastern Cape property developer and investor describing projects and portfolio around East London and Mthatha.",
+        "sourceUrl": "https://www.westcap.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Privately owned Eastern Cape property developer and investor describing projects and portfolio around East London and Mthatha.",
+        "sourceUrl": "https://www.westcap.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "East London",
+        "province": "Eastern Cape",
+        "sourceUrl": "https://www.westcap.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.westcap.co.za/",
+        "type": "company-website",
+        "evidence": "Privately owned Eastern Cape property developer and investor describing projects and portfolio around East London and Mthatha.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   }
 ]
