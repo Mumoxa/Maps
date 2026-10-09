@@ -7,8 +7,8 @@
   "claimedCompaniesInTranscript": 147,
   "actualCompanyLeads": 81,
   "projectLeadsCount": 16,
-  "matchedCanonicalRecords": 28,
-  "unresolvedLeads": 53,
+  "matchedCanonicalRecords": 29,
+  "unresolvedLeads": 52,
   "companyLeads": [
     {
       "workspaceRow": 1,
@@ -534,9 +534,9 @@
       "workspaceRow": 66,
       "workspaceName": "Feenstra Group",
       "claimedWebsite": null,
-      "canonicalOrganizationId": null,
-      "reviewStatus": "unverified-research-lead",
-      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+      "canonicalOrganizationId": "org-feenstra-group",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Matched to the source-backed canonical organization register during the independent property developer expansion. Retain transcript-only claims as unverified."
     },
     {
       "workspaceRow": 67,
@@ -756,5 +756,6 @@
       "status": "research-lead",
       "claimVerification": "not-established"
     }
-  ]
+  ],
+  "lastReconciledOn": "2026-10-09"
 }
