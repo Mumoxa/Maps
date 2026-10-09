@@ -12469,5 +12469,729 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-stan-development-group",
+    "name": "Stan Development Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.standevelopmentgroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "East London company describing property, residential, commercial and infrastructure project development and asset-management work.",
+        "sourceUrl": "https://www.standevelopmentgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "infrastructure-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "East London company describing property, residential, commercial and infrastructure project development and asset-management work.",
+        "sourceUrl": "https://www.standevelopmentgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "East London",
+        "province": "Eastern Cape",
+        "sourceUrl": "https://www.standevelopmentgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.standevelopmentgroup.co.za/",
+        "type": "company-website",
+        "evidence": "East London company describing property, residential, commercial and infrastructure project development and asset-management work.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-vicinity-group",
+    "name": "Vicinity Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://vicinitygroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Mbombela family-founded property development group with residential estates and commercial projects including Bateleur Estate.",
+        "sourceUrl": "https://vicinitygroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Mbombela family-founded property development group with residential estates and commercial projects including Bateleur Estate.",
+        "sourceUrl": "https://vicinitygroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Mbombela family-founded property development group with residential estates and commercial projects including Bateleur Estate.",
+        "sourceUrl": "https://vicinitygroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Mbombela",
+        "province": "Mpumalanga",
+        "sourceUrl": "https://vicinitygroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://vicinitygroup.co.za/",
+        "type": "company-website",
+        "evidence": "Mbombela family-founded property development group with residential estates and commercial projects including Bateleur Estate.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-nft-housing-group-property-developers",
+    "name": "NFT Housing Group Property Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://nftgroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "KwaZulu-Natal property developer offering residential and commercial development and stating Pietermaritzburg and New Germany contact addresses.",
+        "sourceUrl": "https://nftgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "KwaZulu-Natal property developer offering residential and commercial development and stating Pietermaritzburg and New Germany contact addresses.",
+        "sourceUrl": "https://nftgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pietermaritzburg",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://nftgroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://nftgroup.co.za/",
+        "type": "company-website",
+        "evidence": "KwaZulu-Natal property developer offering residential and commercial development and stating Pietermaritzburg and New Germany contact addresses.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-kamdar-group",
+    "name": "Kamdar Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.kamdargroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Family-owned property investment and developer active in student accommodation, residential, commercial and industrial property in KZN and other provinces.",
+        "sourceUrl": "https://www.kamdargroup.co.za/profile/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Family-owned property investment and developer active in student accommodation, residential, commercial and industrial property in KZN and other provinces.",
+        "sourceUrl": "https://www.kamdargroup.co.za/profile/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Family-owned property investment and developer active in student accommodation, residential, commercial and industrial property in KZN and other provinces.",
+        "sourceUrl": "https://www.kamdargroup.co.za/profile/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pietermaritzburg",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://www.kamdargroup.co.za/profile/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.kamdargroup.co.za/profile/",
+        "type": "company-website",
+        "evidence": "Family-owned property investment and developer active in student accommodation, residential, commercial and industrial property in KZN and other provinces.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-lowveld-group",
+    "name": "Lowveld Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://lowg.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Mbombela property development and management group referencing its Laeveldtrust and Visagie business origins.",
+        "sourceUrl": "https://lowg.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Mbombela property development and management group referencing its Laeveldtrust and Visagie business origins.",
+        "sourceUrl": "https://lowg.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Mbombela",
+        "province": "Mpumalanga",
+        "sourceUrl": "https://lowg.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://lowg.co.za/",
+        "type": "company-website",
+        "evidence": "Mbombela property development and management group referencing its Laeveldtrust and Visagie business origins.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-segsem-developers",
+    "name": "Segsem Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.segsem.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Polokwane construction and property development contractor offering development and residential building services.",
+        "sourceUrl": "https://www.segsem.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Polokwane construction and property development contractor offering development and residential building services.",
+        "sourceUrl": "https://www.segsem.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Polokwane",
+        "province": "Limpopo",
+        "sourceUrl": "https://www.segsem.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.segsem.co.za/",
+        "type": "company-website",
+        "evidence": "Polokwane construction and property development contractor offering development and residential building services.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-jgb-construction-properties",
+    "name": "JGB Construction & Properties",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://jgb.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Polokwane company active in land development, residential housing, townhouses, office and warehouse construction.",
+        "sourceUrl": "https://jgb.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Polokwane company active in land development, residential housing, townhouses, office and warehouse construction.",
+        "sourceUrl": "https://jgb.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Polokwane company active in land development, residential housing, townhouses, office and warehouse construction.",
+        "sourceUrl": "https://jgb.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Polokwane",
+        "province": "Limpopo",
+        "sourceUrl": "https://jgb.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://jgb.co.za/",
+        "type": "company-website",
+        "evidence": "Polokwane company active in land development, residential housing, townhouses, office and warehouse construction.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-moolman-group",
+    "name": "Moolman Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://moolmangroup.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Property developer and asset manager with Pretoria and Polokwane offices and a published commercial property development portfolio.",
+        "sourceUrl": "https://moolmangroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Property developer and asset manager with Pretoria and Polokwane offices and a published commercial property development portfolio.",
+        "sourceUrl": "https://moolmangroup.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Property developer and asset manager with Pretoria and Polokwane offices and a published commercial property development portfolio.",
+        "sourceUrl": "https://moolmangroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://moolmangroup.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://moolmangroup.co.za/",
+        "type": "company-website",
+        "evidence": "Property developer and asset manager with Pretoria and Polokwane offices and a published commercial property development portfolio.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-sihle-property-developers",
+    "name": "Sihle Property Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://sihleproperty.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Mbombela firm listing turnkey residential development and infrastructure construction projects.",
+        "sourceUrl": "https://sihleproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "infrastructure-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Mbombela firm listing turnkey residential development and infrastructure construction projects.",
+        "sourceUrl": "https://sihleproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "construction-contracting",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Mbombela firm listing turnkey residential development and infrastructure construction projects.",
+        "sourceUrl": "https://sihleproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Mbombela",
+        "province": "Mpumalanga",
+        "sourceUrl": "https://sihleproperty.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://sihleproperty.co.za/",
+        "type": "company-website",
+        "evidence": "Mbombela firm listing turnkey residential development and infrastructure construction projects.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-crown-homes",
+    "name": "Crown Homes",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://capitalhill.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Capital Hill development website explicitly identifies Crown Homes as the plot-and-plan housing developer in Pietermaritzburg and nearby communities.",
+        "sourceUrl": "https://capitalhill.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Capital Hill development website explicitly identifies Crown Homes as the plot-and-plan housing developer in Pietermaritzburg and nearby communities.",
+        "sourceUrl": "https://capitalhill.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pietermaritzburg",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://capitalhill.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://capitalhill.co.za/",
+        "type": "industry-directory",
+        "evidence": "Capital Hill development website explicitly identifies Crown Homes as the plot-and-plan housing developer in Pietermaritzburg and nearby communities.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-sign-power-investments",
+    "name": "Sign Power Investments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.intabaridge.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Intaba Ridge estate website explicitly identifies Sign Power Investments as developer of its Pietermaritzburg residential estate.",
+        "sourceUrl": "https://www.intabaridge.co.za/about-the-developer/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Intaba Ridge estate website explicitly identifies Sign Power Investments as developer of its Pietermaritzburg residential estate.",
+        "sourceUrl": "https://www.intabaridge.co.za/about-the-developer/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Pietermaritzburg",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://www.intabaridge.co.za/about-the-developer/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.intabaridge.co.za/about-the-developer/",
+        "type": "industry-directory",
+        "evidence": "Intaba Ridge estate website explicitly identifies Sign Power Investments as developer of its Pietermaritzburg residential estate.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-lumenzo-group",
+    "name": "Lumenzo Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.lumenzo.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "infrastructure-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "East London company describing infrastructure development and real-estate operations.",
+        "sourceUrl": "https://www.lumenzo.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "East London company describing infrastructure development and real-estate operations.",
+        "sourceUrl": "https://www.lumenzo.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "East London",
+        "province": "Eastern Cape",
+        "sourceUrl": "https://www.lumenzo.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.lumenzo.co.za/",
+        "type": "company-website",
+        "evidence": "East London company describing infrastructure development and real-estate operations.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-nkoni-properties",
+    "name": "Nkoni Properties",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.nkoniproperties.co.za",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-investment",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Polokwane property investment business advertising residential, retail and commercial development-related property solutions.",
+        "sourceUrl": "https://www.nkoniproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Polokwane property investment business advertising residential, retail and commercial development-related property solutions.",
+        "sourceUrl": "https://www.nkoniproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Polokwane property investment business advertising residential, retail and commercial development-related property solutions.",
+        "sourceUrl": "https://www.nkoniproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Polokwane",
+        "province": "Limpopo",
+        "sourceUrl": "https://www.nkoniproperties.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.nkoniproperties.co.za/",
+        "type": "company-website",
+        "evidence": "Polokwane property investment business advertising residential, retail and commercial development-related property solutions.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
   }
 ]
