@@ -1,0 +1,760 @@
+{
+  "datasetId": "property-workspace-transcript-leads-2026-10-09",
+  "recordType": "quarantined-research-intake",
+  "importedOn": "2026-10-09",
+  "origin": "User-provided workspace ZIP, uploads/Info.csv (prior AI session transcript)",
+  "publicationRule": "This file is a research queue only. It is intentionally not used by live Atlas company profiles or footprint classification. The original transcript lacks claim-level source URLs; its claimed 147 companies are actually 81 records. A website quoted in the transcript is a discovery hint, not proof of a company attribute.",
+  "claimedCompaniesInTranscript": 147,
+  "actualCompanyLeads": 81,
+  "projectLeadsCount": 16,
+  "matchedCanonicalRecords": 28,
+  "unresolvedLeads": 53,
+  "companyLeads": [
+    {
+      "workspaceRow": 1,
+      "workspaceName": "Growthpoint Properties",
+      "claimedWebsite": "https://www.growthpoint.co.za",
+      "canonicalOrganizationId": "org-growthpoint-properties",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 2,
+      "workspaceName": "Redefine Properties",
+      "claimedWebsite": "https://www.redefine.co.za",
+      "canonicalOrganizationId": "org-redefine-properties",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 3,
+      "workspaceName": "Attacq",
+      "claimedWebsite": "https://www.attacq.co.za",
+      "canonicalOrganizationId": "org-attacq",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 4,
+      "workspaceName": "Atterbury Property",
+      "claimedWebsite": "https://www.atterbury.co.za",
+      "canonicalOrganizationId": "org-atterbury-property",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 5,
+      "workspaceName": "Balwin Properties",
+      "claimedWebsite": "https://www.balwin.co.za",
+      "canonicalOrganizationId": "org-balwin",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 6,
+      "workspaceName": "Calgro M3",
+      "claimedWebsite": "https://www.calgrom3.com",
+      "canonicalOrganizationId": "org-calgro-m3",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 7,
+      "workspaceName": "Rabie Property Group",
+      "claimedWebsite": "https://www.rabie.co.za",
+      "canonicalOrganizationId": "org-rabie-property-group",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 8,
+      "workspaceName": "SLM Developments",
+      "claimedWebsite": "https://www.slmdevelopments.co.za",
+      "canonicalOrganizationId": "org-slm-developments",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 9,
+      "workspaceName": "Zenprop Property Holdings",
+      "claimedWebsite": "https://www.zenprop.co.za",
+      "canonicalOrganizationId": "org-zenprop",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 10,
+      "workspaceName": "Amdec Group",
+      "claimedWebsite": "https://www.amdec.co.za",
+      "canonicalOrganizationId": "org-amdec-group",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 11,
+      "workspaceName": "Nedbank Eyethu Community Property Fund",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 12,
+      "workspaceName": "Abland",
+      "claimedWebsite": "https://www.abland.co.za",
+      "canonicalOrganizationId": "org-abland",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 13,
+      "workspaceName": "Signatura",
+      "claimedWebsite": "https://www.signatura.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 14,
+      "workspaceName": "Tongaat Hulett Developments",
+      "claimedWebsite": "https://www.tongaat.com",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 15,
+      "workspaceName": "Fortress REIT",
+      "claimedWebsite": "https://www.fortressreit.co.za",
+      "canonicalOrganizationId": "org-fortress-reit",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 16,
+      "workspaceName": "Equites Property Fund",
+      "claimedWebsite": "https://www.equites.co.za",
+      "canonicalOrganizationId": "org-equites",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 17,
+      "workspaceName": "Intaprop",
+      "claimedWebsite": "https://www.intaprop.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 18,
+      "workspaceName": "Spear REIT",
+      "claimedWebsite": "https://www.spearreit.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 19,
+      "workspaceName": "SA Corporate Real Estate",
+      "claimedWebsite": "https://www.sacorporatefund.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 20,
+      "workspaceName": "Safari Investments RSA",
+      "claimedWebsite": "https://www.safari-investments.com",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 21,
+      "workspaceName": "Century Property Developments",
+      "claimedWebsite": "https://www.century.co.za",
+      "canonicalOrganizationId": "org-century-property-developments",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 22,
+      "workspaceName": "Steyn City Properties",
+      "claimedWebsite": "https://www.steyncity.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 23,
+      "workspaceName": "Val de Vie Estate",
+      "claimedWebsite": "https://www.valdevie.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 24,
+      "workspaceName": "Hyprop Investments",
+      "claimedWebsite": "https://www.hyprop.co.za",
+      "canonicalOrganizationId": "org-hyprop",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 25,
+      "workspaceName": "Vukile Property Fund",
+      "claimedWebsite": "https://www.vukile.co.za",
+      "canonicalOrganizationId": "org-vukile",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 26,
+      "workspaceName": "Resilient REIT",
+      "claimedWebsite": "https://www.resilient.co.za",
+      "canonicalOrganizationId": "org-resilient",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 27,
+      "workspaceName": "Lighthouse Capital",
+      "claimedWebsite": "https://www.lighthousecapital.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 28,
+      "workspaceName": "Cosmopolitan Projects",
+      "claimedWebsite": "https://www.cosmoprojects.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 29,
+      "workspaceName": "Raubex Building (Property Development)",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 30,
+      "workspaceName": "Craft Homes",
+      "claimedWebsite": "https://www.crafthomes.co.za",
+      "canonicalOrganizationId": "org-craft-homes",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 31,
+      "workspaceName": "Power Developments",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 32,
+      "workspaceName": "V&A Waterfront",
+      "claimedWebsite": "https://www.waterfront.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 33,
+      "workspaceName": "Osborn Lang",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 34,
+      "workspaceName": "Communitas Development Trust",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 35,
+      "workspaceName": "Safari Group",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 36,
+      "workspaceName": "Urban Lime",
+      "claimedWebsite": "https://www.urbanlime.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 37,
+      "workspaceName": "Eris Property Group",
+      "claimedWebsite": "https://www.eris.co.za",
+      "canonicalOrganizationId": "org-eris-property-group",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 38,
+      "workspaceName": "Ithemba Property",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 39,
+      "workspaceName": "Stor-Age Property REIT",
+      "claimedWebsite": "https://www.stor-age.co.za",
+      "canonicalOrganizationId": "org-stor-age",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 40,
+      "workspaceName": "Dipula Income Fund",
+      "claimedWebsite": "https://www.dipula.co.za",
+      "canonicalOrganizationId": "org-dipula",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 41,
+      "workspaceName": "Emira Property Fund",
+      "claimedWebsite": "https://www.emira.co.za",
+      "canonicalOrganizationId": "org-emira",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 42,
+      "workspaceName": "Liberty Two Degrees",
+      "claimedWebsite": "https://www.liberty2degrees.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 43,
+      "workspaceName": "Divercity Urban Property",
+      "claimedWebsite": "https://www.divercity.co.za",
+      "canonicalOrganizationId": "org-divercity-urban-property",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 44,
+      "workspaceName": "Propertuity",
+      "claimedWebsite": "https://www.propertuity.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 45,
+      "workspaceName": "AFHCO Holdings",
+      "claimedWebsite": "https://www.afhco.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 46,
+      "workspaceName": "UVEST",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 47,
+      "workspaceName": "Respublica",
+      "claimedWebsite": "https://www.respublica.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 48,
+      "workspaceName": "Acsion",
+      "claimedWebsite": "https://www.acsion.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 49,
+      "workspaceName": "Ellingham Property",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 50,
+      "workspaceName": "Nassau Property Developer",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 51,
+      "workspaceName": "Devmark Property Group",
+      "claimedWebsite": "https://www.devmark.co.za",
+      "canonicalOrganizationId": "org-devmark",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 52,
+      "workspaceName": "Blok",
+      "claimedWebsite": "https://www.blok.co.za",
+      "canonicalOrganizationId": "org-blok",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 53,
+      "workspaceName": "Dorpstraat Properties",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 54,
+      "workspaceName": "Aska Property Group",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 55,
+      "workspaceName": "Masterguard Security Estates",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 56,
+      "workspaceName": "Oasis Crescent Property Fund",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 57,
+      "workspaceName": "Social Housing Regulatory Authority",
+      "claimedWebsite": "https://www.shra.org.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 58,
+      "workspaceName": "Housing Development Agency",
+      "claimedWebsite": "https://www.thehda.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 59,
+      "workspaceName": "Cape Town Partnership / CODEVCO",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 60,
+      "workspaceName": "Johannesburg Development Agency",
+      "claimedWebsite": "https://www.jda.org.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 61,
+      "workspaceName": "Dube TradePort Corporation",
+      "claimedWebsite": "https://www.dubetradeport.co.za",
+      "canonicalOrganizationId": "org-dube-tradeport",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 62,
+      "workspaceName": "Improvon",
+      "claimedWebsite": "https://www.improvon.co.za",
+      "canonicalOrganizationId": "org-improvon",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 63,
+      "workspaceName": "Amdocs Property Development",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 64,
+      "workspaceName": "Garden Route Property Development",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 65,
+      "workspaceName": "Khulani Holdings",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 66,
+      "workspaceName": "Feenstra Group",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 67,
+      "workspaceName": "Swish Property Group",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 68,
+      "workspaceName": "Giflo Associates",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 69,
+      "workspaceName": "Collins Property Projects",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 70,
+      "workspaceName": "Indluplace Properties",
+      "claimedWebsite": "https://www.indluplace.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 71,
+      "workspaceName": "Oceans Umhlanga",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 72,
+      "workspaceName": "Sanlam Properties",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 73,
+      "workspaceName": "Grandiflora Property Development",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 74,
+      "workspaceName": "Masingita Group of Companies",
+      "claimedWebsite": "https://www.masingita.com",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 75,
+      "workspaceName": "Pam Golding Property Development",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 76,
+      "workspaceName": "Aura Property Group",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 77,
+      "workspaceName": "Madulammoho Housing Association",
+      "claimedWebsite": "https://www.madulammoho.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 78,
+      "workspaceName": "Yeast City Housing",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 79,
+      "workspaceName": "Mshengu Developments",
+      "claimedWebsite": null,
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    },
+    {
+      "workspaceRow": 80,
+      "workspaceName": "Evergreen Lifestyle",
+      "claimedWebsite": "https://www.evergreenlifestyle.co.za",
+      "canonicalOrganizationId": "org-evergreen-lifestyle",
+      "reviewStatus": "canonical-record-present",
+      "notes": "Do not overwrite existing canonical record with transcript claims."
+    },
+    {
+      "workspaceRow": 81,
+      "workspaceName": "Oasis Life",
+      "claimedWebsite": "https://www.oasislife.co.za",
+      "canonicalOrganizationId": null,
+      "reviewStatus": "unverified-research-lead",
+      "notes": "Identity, current status, sector, location and company/project distinction must be verified before publishing as factual company intelligence."
+    }
+  ],
+  "projectLeads": [
+    {
+      "name": "Waterfall City",
+      "workspaceId": "proj-waterfall-city",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Harbour Arch",
+      "workspaceId": "proj-harbour-arch",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Century City",
+      "workspaceId": "proj-century-city",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Steyn City",
+      "workspaceId": "proj-steyn-city",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "V&A Waterfront Development Programme",
+      "workspaceId": "proj-va-waterfront",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Munyaka",
+      "workspaceId": "proj-munyaka",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Jewel City",
+      "workspaceId": "proj-jewel-city",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Sibaya Coastal Precinct",
+      "workspaceId": "proj-sibaya",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Umhlanga New Town Centre",
+      "workspaceId": "proj-umhlanga-ntc",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Oxford Parks",
+      "workspaceId": "proj-oxford-parks",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Melrose Arch",
+      "workspaceId": "proj-melrose-arch",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Dube TradePort SEZ",
+      "workspaceId": "proj-dube-tradeport-sez",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Fleurhof",
+      "workspaceId": "proj-fleurhof",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Maboneng Precinct",
+      "workspaceId": "proj-maboneng",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Lynnwood Bridge",
+      "workspaceId": "proj-lynnwood-bridge",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    },
+    {
+      "name": "Val de Vie Estate",
+      "workspaceId": "proj-val-de-vie",
+      "status": "research-lead",
+      "claimVerification": "not-established"
+    }
+  ]
+}
