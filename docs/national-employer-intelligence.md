@@ -12,7 +12,7 @@ Extend the existing markets/organizations canonical universe, industry pockets, 
 ## Four separate layers
 
 1. Organization identity: trading name, legal name if independently verified, aliases, group/parent relationships, web domain, registration identifier when verified.
-2. Industry taxonomy: South African SIC classification (version identified), existing Maps industry/subindustry nodes and sourcing pockets; multiple industries with evidence and one evidenced primary. The existing 30 niche industries are not a comprehensive national industry taxonomy. Industry candidates from job-board labels remain proposed until checked.
+2. Industry taxonomy: integrate with the canonical four-tier South African sector tree in `markets/organizations/taxonomy/sector-tree.json` (731 nodes), its company-profile schema and industry crosswalk. Preserve existing Maps industry/subindustry sourcing pockets. Multiple industry memberships require separate evidence; a job-board category is merely a proposed classification.
 3. Hiring observations: time-stamped, source-linked individual advertisements, including title/function/seniority, job location, observed employer name, advertising agency, original posting date, salary when explicit, direct-versus-agency and attribution status.
 4. Recruitment intelligence: observed hiring functions, geographic patterns, recency, apparent growth signals (hypothesis only), advertising sources, agency usage, hiring stakeholder identity only when separately lawfully evidenced, and sources. Never synthesize contact names, addresses or email formats as confirmed facts.
 
@@ -58,7 +58,7 @@ The implementation must treat only records inside the selected publication windo
 
 ## Sector taxonomy expansion
 
-Use Stats SA SIC as a broad national classification anchor, recording the version. Keep existing Maps company-industry links and sourcing pockets as a role-specific layer rather than forcing all South African companies into 30 pre-existing niches. Introduce new narrower nodes only after confirming an existing SIC parent, name, synonyms and representative activity evidence. Finance, healthcare, mining, technology, professional services, education, public services, hospitality, agriculture, utilities and manufacturing must all be representable. Do not label a company "unclassified" as a definitive industry.
+Use Maps' existing canonical 731-node, four-tier national sector taxonomy (`markets/organizations/taxonomy/sector-tree.json`) and its validated crosswalk (`industry-crosswalk.json`). Do not introduce a parallel SIC sectors registry. Preserve the 30 specialist Maps sourcing industries and pockets as a distinct role-matching layer. Review each industry assignment against company operating evidence; supplier-provided industry labels are proposed and not canonical. See `docs/sa-corporate-taxonomy.md` and use `npm run validate:taxonomy`. Unknown company industry is unclassified, not a known negative finding. SIC classifications can be cross-referenced when official source/version are supported, but must not override the existing canonical taxonomy.
 
 ## Identity and evidence states
 
