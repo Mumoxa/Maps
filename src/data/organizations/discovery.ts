@@ -813,6 +813,7 @@ export function organizationOrStub(index: OrganizationIndex, organizationId: str
     professionals: 0,
     professionalSources: [],
     classifications: [],
+    contactEmployerNames: [],
   })
 }
 
