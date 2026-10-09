@@ -27,3 +27,6 @@ Thumbs.db
 
 # Local source files awaiting import
 incoming/
+
+# Licensed or unreviewed hiring source data (private staging only)
+.local/

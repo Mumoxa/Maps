@@ -177,3 +177,14 @@ Generated from the SA Hackathon Census (`hackathon-census/`) via `python3 script
 ## Company-name normalisation
 
 Company and organisation strings resolve to canonical entities via `src/data/companyNormalization.ts` (95-entry auditable alias table built from a 2026-08-26 frequency scan of every data source, plus a conservative legal-suffix stripper). Applied in talent search (company facet, filters, cards), the contacts directory (Companies facet + card chips) and the hackathon pool (affiliation filters and chips). Unknown names pass through unchanged — nothing is merged on guesswork.
+
+## National Employer Hiring Intelligence (phase-one ingest)
+
+Recruitment activity is a *discovery source*, not a register of every SA business. The repository now includes an evidence-first offline hiring-data import framework that will connect to the canonical 731-node corporate taxonomy (`markets/organizations/taxonomy/sector-tree.json`) and the existing 30 specialist sourcing industry nodes. No 12-month job-board backfill has been run or represented as complete.
+
+- Design / coverage / permissions: [docs/national-employer-intelligence.md](docs/national-employer-intelligence.md)
+- Import instructions: [markets/organizations/hiring/README.md](markets/organizations/hiring/README.md)
+- Header template: [templates/hiring-observations.csv](templates/hiring-observations.csv)
+
+Dry-run approved exports using `npm run hiring:import -- file.csv --from=2025-10-08 --to=2026-10-08`. Committing requires `--commit --rights-confirmed`. No API keys or unapproved scrapers are included.
+
