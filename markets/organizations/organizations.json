@@ -9233,5 +9233,759 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Trading name differs between sources: the NWK business profile calls it Epko Oil Refinery Proprietary Limited while a business directory lists it as Epko Oil Seed Crushing. Both names are recorded as aliases rather than resolved. No capacity figures or website were established from the sources read."
+  },
+  {
+    "id": "org-abland",
+    "name": "Abland",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://abland.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Abland lists office, retail, industrial, residential and mixed-use property developments in South Africa.",
+        "sourceUrl": "https://abland.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "retail-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Abland lists office, retail, industrial, residential and mixed-use property developments in South Africa.",
+        "sourceUrl": "https://abland.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Stellenbosch",
+        "province": "Western Cape",
+        "sourceUrl": "https://abland.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "city": "Midrand",
+        "province": "Gauteng",
+        "sourceUrl": "https://abland.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://abland.co.za/developments/",
+        "type": "company-website",
+        "evidence": "Abland lists office, retail, industrial, residential and mixed-use property developments in South Africa.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-amdec-group",
+    "name": "Amdec Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.amdec.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Amdec identifies its property development business as responsible for mixed-use and inclusionary housing projects including Harbour Arch and Melrose Arch.",
+        "sourceUrl": "https://www.amdec.co.za/our-business/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "residential-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Amdec identifies its property development business as responsible for mixed-use and inclusionary housing projects including Harbour Arch and Melrose Arch.",
+        "sourceUrl": "https://www.amdec.co.za/our-business/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.amdec.co.za/our-business/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.amdec.co.za/our-business/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.amdec.co.za/our-business/",
+        "type": "company-website",
+        "evidence": "Amdec identifies its property development business as responsible for mixed-use and inclusionary housing projects including Harbour Arch and Melrose Arch.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-atterbury-property",
+    "name": "Atterbury Property",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.atterbury.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Property development across retail, commercial, industrial and residential environments; Atterbury describes management from land acquisition to occupation.",
+        "sourceUrl": "https://www.atterbury.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.atterbury.co.za/",
+        "type": "company-website",
+        "evidence": "Property development across retail, commercial, industrial and residential environments; Atterbury describes management from land acquisition to occupation.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-blok",
+    "name": "Blok",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://blok.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Blok identifies itself as an urban precinct property developer and lists multiple apartment developments in Cape Town.",
+        "sourceUrl": "https://blok.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Blok identifies itself as an urban precinct property developer and lists multiple apartment developments in Cape Town.",
+        "sourceUrl": "https://blok.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://blok.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://blok.co.za/",
+        "type": "company-website",
+        "evidence": "Blok identifies itself as an urban precinct property developer and lists multiple apartment developments in Cape Town.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-calgro-m3",
+    "name": "Calgro M3",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.calgrom3.com",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Calgro M3 identifies integrated residential housing development as a core operation and reports progress on Bankenveld District City.",
+        "sourceUrl": "https://www.calgrom3.com/2026/05/18/calgro-m3-makes-excellent-progress-at-bankenveld-district-city-development/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Calgro M3 identifies integrated residential housing development as a core operation and reports progress on Bankenveld District City.",
+        "sourceUrl": "https://www.calgrom3.com/2026/05/18/calgro-m3-makes-excellent-progress-at-bankenveld-district-city-development/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.calgrom3.com/2026/05/18/calgro-m3-makes-excellent-progress-at-bankenveld-district-city-development/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.calgrom3.com/2026/05/18/calgro-m3-makes-excellent-progress-at-bankenveld-district-city-development/",
+        "type": "company-website",
+        "evidence": "Calgro M3 identifies integrated residential housing development as a core operation and reports progress on Bankenveld District City.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-century-property-developments",
+    "name": "Century Property Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://century.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Century Property Developments markets residential estates including Helderfontein in the Fourways area.",
+        "sourceUrl": "https://century.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Century Property Developments markets residential estates including Helderfontein in the Fourways area.",
+        "sourceUrl": "https://century.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Fourways",
+        "province": "Gauteng",
+        "sourceUrl": "https://century.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://century.co.za/",
+        "type": "company-website",
+        "evidence": "Century Property Developments markets residential estates including Helderfontein in the Fourways area.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-craft-homes",
+    "name": "Craft Homes",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://crafthomes.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Craft Homes markets newly developed residential apartments, houses and estates across several South African cities.",
+        "sourceUrl": "https://crafthomes.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Craft Homes markets newly developed residential apartments, houses and estates across several South African cities.",
+        "sourceUrl": "https://crafthomes.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://crafthomes.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "city": "Pretoria",
+        "province": "Gauteng",
+        "sourceUrl": "https://crafthomes.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "city": "Mbombela",
+        "province": "Mpumalanga",
+        "sourceUrl": "https://crafthomes.co.za/developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://crafthomes.co.za/developments/",
+        "type": "company-website",
+        "evidence": "Craft Homes markets newly developed residential apartments, houses and estates across several South African cities.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-divercity-urban-property",
+    "name": "Divercity Urban Property",
+    "legalName": "",
+    "aliases": [
+      "Divercity Urban Property Group"
+    ],
+    "website": "https://www.divercity.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Divercity describes its development of affordable rental housing and mixed-use property, including 23 Lower Long in Cape Town.",
+        "sourceUrl": "https://www.divercity.co.za/portfolio/current-developments/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Divercity describes its development of affordable rental housing and mixed-use property, including 23 Lower Long in Cape Town.",
+        "sourceUrl": "https://www.divercity.co.za/portfolio/current-developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.divercity.co.za/portfolio/current-developments/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.divercity.co.za/portfolio/current-developments/",
+        "type": "company-website",
+        "evidence": "Divercity describes its development of affordable rental housing and mixed-use property, including 23 Lower Long in Cape Town.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-dube-tradeport",
+    "name": "Dube TradePort Corporation",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.dubetradeport.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "logistics-property",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Dube TradePort provides and develops serviced industrial real estate through Dube TradeZone next to King Shaka International Airport.",
+        "sourceUrl": "https://www.dubetradeport.co.za/index.php/our-business/dube-tradezone",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Dube TradePort provides and develops serviced industrial real estate through Dube TradeZone next to King Shaka International Airport.",
+        "sourceUrl": "https://www.dubetradeport.co.za/index.php/our-business/dube-tradezone",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "La Mercy",
+        "province": "KwaZulu-Natal",
+        "sourceUrl": "https://www.dubetradeport.co.za/index.php/our-business/dube-tradezone",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.dubetradeport.co.za/index.php/our-business/dube-tradezone",
+        "type": "company-website",
+        "evidence": "Dube TradePort provides and develops serviced industrial real estate through Dube TradeZone next to King Shaka International Airport.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-eris-property-group",
+    "name": "Eris Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://eris.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Eris describes development and management of commercial, industrial, retail and residential real estate, with a published South African development portfolio.",
+        "sourceUrl": "https://eris.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Eris describes development and management of commercial, industrial, retail and residential real estate, with a published South African development portfolio.",
+        "sourceUrl": "https://eris.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Sandton",
+        "province": "Gauteng",
+        "sourceUrl": "https://eris.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://eris.co.za/",
+        "type": "company-website",
+        "evidence": "Eris describes development and management of commercial, industrial, retail and residential real estate, with a published South African development portfolio.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-evergreen-lifestyle",
+    "name": "Evergreen Lifestyle",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.evergreenlifestyle.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "residential-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Evergreen reports development and operation of retirement lifestyle villages, including expansions in the Western Cape.",
+        "sourceUrl": "https://www.evergreenlifestyle.co.za/poised-for-growth-evergreen-lifestyle-expands-across-the-western-cape/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Evergreen reports development and operation of retirement lifestyle villages, including expansions in the Western Cape.",
+        "sourceUrl": "https://www.evergreenlifestyle.co.za/poised-for-growth-evergreen-lifestyle-expands-across-the-western-cape/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.evergreenlifestyle.co.za/poised-for-growth-evergreen-lifestyle-expands-across-the-western-cape/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.evergreenlifestyle.co.za/poised-for-growth-evergreen-lifestyle-expands-across-the-western-cape/",
+        "type": "company-website",
+        "evidence": "Evergreen reports development and operation of retirement lifestyle villages, including expansions in the Western Cape.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-fortress-reit",
+    "name": "Fortress REIT",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://fortressfund.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-investment",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Fortress describes development and ownership of logistics real estate and commuter-oriented retail assets, including named logistics parks.",
+        "sourceUrl": "https://fortressfund.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "logistics-property",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Fortress describes development and ownership of logistics real estate and commuter-oriented retail assets, including named logistics parks.",
+        "sourceUrl": "https://fortressfund.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Fortress describes development and ownership of logistics real estate and commuter-oriented retail assets, including named logistics parks.",
+        "sourceUrl": "https://fortressfund.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Longlake",
+        "province": "Gauteng",
+        "sourceUrl": "https://fortressfund.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://fortressfund.co.za/",
+        "type": "company-website",
+        "evidence": "Fortress describes development and ownership of logistics real estate and commuter-oriented retail assets, including named logistics parks.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-improvon",
+    "name": "Improvon",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://improvon.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "logistics-property",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Improvon develops warehousing, distribution and logistics facilities and provides associated leasing and property management services.",
+        "sourceUrl": "https://improvon.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-development",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Improvon develops warehousing, distribution and logistics facilities and provides associated leasing and property management services.",
+        "sourceUrl": "https://improvon.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Improvon develops warehousing, distribution and logistics facilities and provides associated leasing and property management services.",
+        "sourceUrl": "https://improvon.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [
+      {
+        "city": "Germiston",
+        "province": "Gauteng",
+        "sourceUrl": "https://improvon.co.za/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://improvon.co.za/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://improvon.co.za/",
+        "type": "company-website",
+        "evidence": "Improvon develops warehousing, distribution and logistics facilities and provides associated leasing and property management services.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-zenprop",
+    "name": "Zenprop Property Holdings",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://zenprop.co.za/",
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "property-development",
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Zenprop describes its property development, investment and asset management activities across retail, office, industrial and warehousing assets.",
+        "sourceUrl": "https://zenprop.co.za/about-zenprop/",
+        "checkedOn": "2026-10-09"
+      },
+      {
+        "industryId": "property-investment",
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Zenprop describes its property development, investment and asset management activities across retail, office, industrial and warehousing assets.",
+        "sourceUrl": "https://zenprop.co.za/about-zenprop/",
+        "checkedOn": "2026-10-09"
+      }
+    ],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://zenprop.co.za/about-zenprop/",
+        "type": "company-website",
+        "evidence": "Zenprop describes its property development, investment and asset management activities across retail, office, industrial and warehousing assets.",
+        "checkedOn": "2026-10-09",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "organizations"
+    ],
+    "lastVerified": "2026-10-09",
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
   }
 ]
