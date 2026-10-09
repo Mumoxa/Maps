@@ -143,7 +143,7 @@ Company and organisation strings resolve to canonical entities via `src/data/com
 
 ## National Employer Hiring Intelligence (phase-one ingest)
 
-Recruitment activity is a *discovery source*, not a register of every SA business. The repository now includes an evidence-first, offline import framework and a broad 21-sector SIC baseline without replacing the existing 30 specialist industry nodes. No 12-month job-board backfill has been run or represented as complete.
+Recruitment activity is a *discovery source*, not a register of every SA business. The repository now includes an evidence-first offline hiring-data import framework that will connect to the canonical 731-node corporate taxonomy (`markets/organizations/taxonomy/sector-tree.json`) and the existing 30 specialist sourcing industry nodes. No 12-month job-board backfill has been run or represented as complete.
 
 - Design / coverage / permissions: [docs/national-employer-intelligence.md](docs/national-employer-intelligence.md)
 - Import instructions: [markets/organizations/hiring/README.md](markets/organizations/hiring/README.md)
