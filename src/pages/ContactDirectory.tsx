@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import {
   Buildings,
   ArrowSquareOut,
@@ -26,6 +26,9 @@ import {
 import type { ContactFacetKey, ContactSelections } from '../data/contactDirectory'
 import { contacts } from '../data/contacts'
 import { canonicalCompanyName } from '../data/companyNormalization'
+import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
+import { resolveEmployerOrganizationId } from '../data/organizations/load'
+import type { OrganizationIndex } from '../data/organizations/load'
 import type { Contact, ContactPosition } from '../data/contacts'
 
 const PAGE_SIZE = 48
@@ -154,8 +157,9 @@ function contactFacetKeyFor(contact: Contact, value: string): ContactFacetKey | 
   return null
 }
 
-function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleFacet: (key: ContactFacetKey, value: string) => void }) {
+function ContactCard({ data, onToggleFacet, companyIndex }: { data: ContactCardData; onToggleFacet: (key: ContactFacetKey, value: string) => void; companyIndex: OrganizationIndex }) {
   const { contact, primary, sectors, sizes, companies, titles, companyOverviews, facetDetails, initials } = data
+  const primaryCompanyId = primary?.company ? resolveEmployerOrganizationId(companyIndex, primary.company) : null
 
   return (
     <article className="contact-card">
@@ -182,6 +186,11 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
           </button>
         ) : (
           <span>Company not provided</span>
+        )}
+        {primaryCompanyId && (
+          <Link to={`/organizations/${encodeURIComponent(primaryCompanyId)}`} title="Open this employer in Companies">
+            Company profile
+          </Link>
         )}
         {primary?.website && (
           <a href={primary.website} target="_blank" rel="noreferrer" aria-label={`Open ${primary.company} website`}>
@@ -268,6 +277,10 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
             <li key={`${position.company}-${position.title}-${index}`}>
               <strong>{position.title || 'Title not provided'}</strong>
               <span>{position.company || 'Company not provided'}</span>
+              {position.company && (() => {
+                const id = resolveEmployerOrganizationId(companyIndex, position.company)
+                return id ? <Link to={`/organizations/${encodeURIComponent(id)}`}>Company profile</Link> : null
+              })()}
               <small>{unique([
                 position.sector,
                 position.companySubIndustry,
@@ -337,6 +350,7 @@ function ContactCard({ data, onToggleFacet }: { data: ContactCardData; onToggleF
 
 export function ContactDirectory() {
   const [searchParams, setSearchParams] = useSearchParams()
+  const { index: companyIndex } = useCompanyUniverse()
   const [query, setQuery] = useState(() => searchParams.get('q') ?? '')
   const [selections, setSelections] = useState<ContactSelections>(() => {
     const fromUrl = readContactSelections(searchParams)
@@ -392,7 +406,7 @@ export function ContactDirectory() {
           <div className="page-head-aside">
             <div className="contact-stats">
               <div><strong>{contacts.length.toLocaleString()}</strong><span>unique contacts</span></div>
-              <div><strong>{CONTACT_COMPANY_COUNT.toLocaleString()}</strong><span>companies</span></div>
+              <div><strong>{CONTACT_COMPANY_COUNT.toLocaleString()}</strong><span>employer name variants</span></div>
             </div>
           </div>
         </div>
@@ -492,7 +506,7 @@ export function ContactDirectory() {
             {results.length ? (
               <>
                 <div className="contacts-grid">{visibleContacts.map(contact => (
-                  <ContactCard data={CONTACT_CARD_DATA.get(contact.id)!} key={contact.id} onToggleFacet={toggleSelection} />
+                  <ContactCard data={CONTACT_CARD_DATA.get(contact.id)!} key={contact.id} onToggleFacet={toggleSelection} companyIndex={companyIndex} />
                 ))}</div>
                 {visibleCount < results.length && (
                   <button type="button" className="btn contact-load-more" onClick={() => setVisibleCount(count => count + PAGE_SIZE)}>
