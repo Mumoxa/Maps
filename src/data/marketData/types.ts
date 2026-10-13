@@ -44,7 +44,9 @@ export interface MarketProvenance {
   sourceProfileId: string | null
 }
 
-export interface MarketProfile extends MarketBatchRecord {
+export interface MarketProfile extends Omit<MarketBatchRecord, 'suppliedAsVerified'> {
+  /** False for explicitly unverified source-reported research; published batches remain verified-only. */
+  suppliedAsVerified: boolean
   track: string
   trackSlug: string
   locationLabel: string

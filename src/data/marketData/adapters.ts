@@ -1,6 +1,7 @@
 import type { DataBundle, Profile } from '../types'
 import type { HackathonCandidate } from '../hackathonPeople'
 import type { AccountantCandidate } from '../accountantsPeople'
+import type { DataScienceCandidate } from '../dataSciencePeople'
 import type { MarketLocation, MarketProfile, MarketSource } from './types'
 
 export interface SalesforcePerson {
@@ -314,4 +315,65 @@ export function adaptAccountantCandidate(candidate: AccountantCandidate): Market
 
 export function adaptAccountantCandidates(candidates: AccountantCandidate[]): MarketProfile[] {
   return candidates.map(adaptAccountantCandidate)
+}
+
+/** Source-reported public professional research: no client search notes or inferred tool claims. */
+export function adaptDataScienceCandidates(candidates: DataScienceCandidate[]): MarketProfile[] {
+  return candidates.map((candidate) => {
+    const title = candidate.title.toLowerCase()
+    const signals = unique([
+      /data scien|decision scien/.test(title) ? 'Data science (title signal)' : '',
+      /machine learning|ml engineer/.test(title) ? 'Machine learning (title signal)' : '',
+      /mlops/.test(title) ? 'MLOps (title signal)' : '',
+      /software engineer|developer/.test(title) ? 'Software engineering (title signal)' : '',
+      /data engineer|analytics engineer/.test(title) ? 'Data engineering (title signal)' : '',
+      /credit/.test(title) ? 'Credit analytics (title signal)' : '',
+    ])
+    const seniority = /head of|director|chief/i.test(title)
+      ? 'Executive'
+      : /lead|manager|principal|staff/i.test(title)
+        ? 'Lead / Manager'
+        : /senior|\bsr\b/i.test(title)
+          ? 'Senior'
+          : /junior|graduate|associate/i.test(title)
+            ? 'Junior'
+            : 'Professional'
+
+    return {
+      id: `data-science-ml-${candidate.id}`,
+      track: 'Data Science & Machine Learning',
+      trackSlug: 'data-science-ml',
+      name: candidate.fullName,
+      title: candidate.title,
+      company: candidate.employer,
+      location: { city: candidate.locationLabel, province: '', country: '' },
+      locationLabel: candidate.locationLabel,
+      seniority,
+      skills: signals.length ? signals : ['Data/AI research category (unverified)'],
+      sectors: [candidate.talentPool],
+      specialisms: [candidate.talentPool],
+      summary: `Source-reported, unverified professional profile: ${candidate.title} at ${candidate.employer}. Sourcing pool is an inference; production ML and tool experience have not been checked.`,
+      linkedinUrl: candidate.profileUrl,
+      sources: [{
+        url: candidate.profileUrl,
+        type: 'user-supplied-public-profile-link',
+        evidence: 'Link, employer, title and location were reported in the recruiting research; LinkedIn profile was not opened or independently authenticated during this import.',
+        checkedOn: null,
+      }],
+      suppliedAsVerified: false,
+      supersedesId: null,
+      attributes: {
+        evidenceStatus: candidate.evidenceStatus,
+        sourceCompiledOn: candidate.sourceCompiledOn,
+        researchSource: candidate.sourceDescription,
+        sourcingPool: candidate.talentPool,
+        skillsConfirmation: 'Only title signals; no individual skill verification',
+      },
+      provenance: {
+        kind: 'legacy',
+        batchId: null,
+        sourceProfileId: candidate.id,
+      },
+    }
+  })
 }

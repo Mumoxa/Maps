@@ -167,6 +167,27 @@ export const talentTracks: TalentTrack[] = [
       'Expand systems-linked and under-covered-province coverage as verified sources are found.',
     ],
   },
+  {
+    id: 'data-science-ml',
+    slug: 'data-science-ml',
+    name: 'Data Science & Machine Learning',
+    shortLabel: 'Track 08',
+    summary: 'Discover South African data-science, decision-science and ML engineering professionals from public-source recruiting research; roles and skill signals require verification.',
+    detail: 'An initial source-reported research pool of Data Scientists, Decision Scientists, Machine Learning Engineers and related professionals. Profile links, titles, employers and location labels come from public-index research provided by a recruiter. They have NOT been independently verified. Talent-pool categories are sourcing hypotheses, not evidence of individual production ML skills.',
+    accent: 'sap',
+    scope: { geography: 'South Africa', category: 'talent-pool' },
+    actions: {
+      primaryLabel: 'Browse Data Science & ML profiles',
+      primaryHref: '/talent-search?track=data-science-ml',
+      secondaryLabel: 'Back to SA Talent home',
+      secondaryHref: '/',
+    },
+    nextSteps: [
+      'Verify each supplied profile link and current employment before making factual claims.',
+      'Confirm deployment, monitoring, Python, SQL and model engineering from individual evidence.',
+      'Keep confidential employer-specific searches and screening notes in a genuinely private Search Bank, not this public track.',
+    ],
+  },
 ]
 
 const talentTrackBySlug = new Map(talentTracks.map((track) => [track.slug, track]))

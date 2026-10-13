@@ -60,7 +60,7 @@ export function HomePage() {
             </p>
             <h1>Know who is in the South African market before you start the search.</h1>
             <p className="lede">
-              Search Salesforce, SAP ERP, credit risk, Murex, Calypso, hackathon and accounting talent
+              Search Salesforce, SAP ERP, credit risk, Murex, Calypso, hackathon, accounting and data science / machine learning talent
               across South Africa.
             </p>
 

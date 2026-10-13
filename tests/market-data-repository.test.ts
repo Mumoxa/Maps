@@ -8,7 +8,7 @@ test('loads every registered track without track-specific importer code', async 
 
   assert.deepEqual(
     repository.registeredTrackSlugs,
-    ['accounting-finance', 'calypso', 'credit-risk', 'hackathons', 'murex', 'salesforce', 'sap-erp'],
+    ['accounting-finance', 'calypso', 'credit-risk', 'data-science-ml', 'hackathons', 'murex', 'salesforce', 'sap-erp'],
   )
 })
 
@@ -19,7 +19,7 @@ test('combines the complete legacy registry with every published batch', async (
     0,
   )
 
-  assert.equal(repository.legacyProfiles.length, 432)
+  assert.equal(repository.legacyProfiles.length, 643)
   assert.equal(repository.batches.length, 1)
   assert.equal(batchRecordCount, 851)
   assert.equal(

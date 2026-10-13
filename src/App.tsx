@@ -26,6 +26,7 @@ import { ShortlistPage } from './pages/ShortlistPage'
 import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
 import { HackathonTalentPage } from './pages/HackathonTalentPage'
 import { AccountantsPage } from './pages/AccountantsPage'
+import { MarketTrackPage } from './pages/TrackPage'
 import { NotFound } from './pages/NotFound'
 import { LoadingSpinner } from './components/ui/LoadingSpinner'
 
@@ -43,6 +44,7 @@ function AppRoutes() {
     { path: '/salesforce', element: <SalesforcePage /> },
     { path: '/hackathons', element: <HackathonTalentPage /> },
     { path: '/accounting-finance', element: <AccountantsPage /> },
+    { path: '/data-science-ml', element: <MarketTrackPage trackSlug="data-science-ml" /> },
     { path: '/sap-erp', element: <SapErpPage /> },
     { path: '/murex', element: <MurexPage /> },
     { path: '/calypso', element: <CalypsoPage /> },
