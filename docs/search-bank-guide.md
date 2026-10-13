@@ -1,5 +1,7 @@
 # The Candidate Search Bank — dropping candidates in
 
+> **SECURITY HOLD (October 2026):** `Mumoxa/Maps` is currently a **public GitHub repository** and `markets/search-bank/bank.json` is statically imported into the shipped browser bundle. This does **not** constitute a private access boundary. Do **not** import Lula or any other confidential client search into that file or a public branch. Candidate and target-company drops must remain in private storage until authenticated, server-side storage and authorisation are implemented and verified. The empty Search Bank is intentional.
+
 The search bank is the recruiter's workspace inside the SA Talent Map: one place where every candidate from a
 dedicated client search is stored the same way, filed under that search, and retrievable later by title, skill,
 qualification, location, status or rating.

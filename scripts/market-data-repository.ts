@@ -4,7 +4,7 @@ import {
   readdirSync,
 } from 'node:fs'
 import { join } from 'node:path'
-import { adaptCreditRiskProfiles, adaptSalesforceProfiles } from '../src/data/marketData/adapters'
+import { adaptCreditRiskProfiles, adaptDataScienceCandidates, adaptSalesforceProfiles } from '../src/data/marketData/adapters'
 import { buildMarketRegistry } from '../src/data/marketData/registry'
 import type {
   MarketBatch,
@@ -13,6 +13,7 @@ import type {
 import { talentTracks } from '../src/data/tracks'
 import type { DataBundle, Profile } from '../src/data/types'
 import type { SalesforcePerson } from '../src/data/marketData/adapters'
+import type { DataScienceCandidate } from '../src/data/dataSciencePeople'
 
 export interface RepositoryMarketData {
   registeredTrackSlugs: string[]
@@ -47,6 +48,7 @@ function loadBatches(rootDir: string) {
 function loadLegacyProfiles(rootDir: string) {
   const profilesPath = join(rootDir, 'profiles.json')
   const salesforcePath = join(rootDir, 'markets', 'salesforce', 'people.json')
+  const dataSciencePath = join(rootDir, 'markets', 'data-science-ml', 'people.json')
   const legacyProfiles: MarketProfile[] = []
 
   if (existsSync(profilesPath)) {
@@ -66,6 +68,10 @@ function loadLegacyProfiles(rootDir: string) {
     legacyProfiles.push(
       ...adaptSalesforceProfiles(readJson<SalesforcePerson[]>(salesforcePath)),
     )
+  }
+
+  if (existsSync(dataSciencePath)) {
+    legacyProfiles.push(...adaptDataScienceCandidates(readJson<DataScienceCandidate[]>(dataSciencePath)))
   }
 
   return legacyProfiles

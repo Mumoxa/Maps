@@ -1,7 +1,8 @@
 import Fuse from 'fuse.js'
 import type { DataBundle, TalentProfile } from './types'
-import { adaptAccountantCandidates, adaptCreditRiskProfiles, adaptHackathonCandidates, adaptSalesforceProfiles } from './marketData/adapters'
+import { adaptAccountantCandidates, adaptCreditRiskProfiles, adaptDataScienceCandidates, adaptHackathonCandidates, adaptSalesforceProfiles } from './marketData/adapters'
 import { accountantCandidates } from './accountantsPeople'
+import { dataScienceCandidates } from './dataSciencePeople'
 import { hackathonCandidates } from './hackathonPeople'
 import { loadPublishedMarketBatches } from './marketData/batchLoader'
 import { buildMarketRegistry } from './marketData/registry'
@@ -19,6 +20,7 @@ export function getTalentProfiles(data: DataBundle): TalentProfile[] {
     ...adaptSalesforceProfiles(salesforcePeople),
     ...adaptHackathonCandidates(hackathonCandidates),
     ...adaptAccountantCandidates(accountantCandidates),
+    ...adaptDataScienceCandidates(dataScienceCandidates),
   ]
   const trackNames = new Map(talentTracks.map((track) => [track.slug, track.name]))
   cachedTalentProfiles = buildMarketRegistry({

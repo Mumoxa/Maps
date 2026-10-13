@@ -33,6 +33,13 @@ import bankRaw from '../markets/search-bank/bank.json'
 
 const TODAY = '2026-10-07'
 
+test('public static build must not ship confidential Search Bank assignments', () => {
+  assert.deepEqual(bankRaw.searches, [])
+  assert.deepEqual(bankRaw.candidates, [])
+  assert.deepEqual(bankRaw.targetCompanies, [])
+})
+
+
 function ingest(csv: string, bank = emptyBank(TODAY), options: Record<string, string> = {}) {
   return ingestDrop(csv, { bank, today: TODAY, fileName: 'drop.csv', source: 'drop.csv', ...options })
 }
