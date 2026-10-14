@@ -27,7 +27,9 @@
     "hiring:import": "node --import tsx scripts/import-hiring-observations.ts",
     "hiring:aggregate": "node --import tsx scripts/import-hiring-aggregates.ts",
     "contacts:reconcile": "node --import tsx scripts/build-contact-employers.ts --write",
-    "validate:contact-employers": "node --import tsx scripts/build-contact-employers.ts"
+    "validate:contact-employers": "node --import tsx scripts/build-contact-employers.ts",
+    "accountants:casa-export": "node --import tsx scripts/export-casa-inventory.ts",
+    "accountants:casa-reconcile": "node --import tsx scripts/reconcile-casa-roster.ts"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.3.0",

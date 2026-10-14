@@ -161,6 +161,20 @@ The HTML importer (`scripts/import-salesforce-html.mjs`) will regenerate the rem
 re-run against the original `SA_Salesforce_Market_Map_v2_FULL.html`. Validate any new source export
 against the criteria above before committing its output.
 
+## CA(SA) research inventory
+
+The Accounting & Finance pool has a [CA(SA) inventory CSV](markets/accountants/ca_sa_inventory.csv)
+and an accompanying [coverage and gaps report](markets/accountants/ca_sa_coverage.md). These are
+reproducible exports of `markets/accountants/people.jsonl` (`npm run accountants:casa-export`),
+not a national member register. The CSV gives recorded names, titles, employers, industries,
+actual LinkedIn URLs where known, evidence links and location/qualification status. It explicitly
+marks missing fields, employer-sourced industry fallbacks and out-of-country records. A complete
+national account requires an **authorised SAICA roster**, a defined location/membership scope and
+identity-by-identity reconciliation; the repo has none of those today. An offline, rights-gated
+`npm run accountants:casa-reconcile` workflow is documented in
+[`markets/accountants/README.md`](markets/accountants/README.md) for a future authorised roster;
+it has **not** been run against a real member list.
+
 ## Build
 
 ```bash
