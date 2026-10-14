@@ -1,0 +1,17 @@
+query_id,xray_query,engine,date_run,notes
+Q1,"site:linkedin.com/in ""CA(SA)"" ""Cape Town""",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q2,"site:linkedin.com/in ""CA(SA)"" ""Stellenbosch""",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q3,"site:linkedin.com/in ""Chartered Accountant"" ""Cape Town"" finance manager",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q4,"site:linkedin.com/in ""CA(SA)"" ""Western Cape"" CFO",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q5,"site:linkedin.com/in ""CA(SA)"" ""Somerset West"" OR ""Paarl"" OR ""Bellville"" OR ""Durbanville""",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q6,"site:linkedin.com/in ""CA(SA)"" ""George"" OR ""Hermanus"" OR ""Franschhoek"" OR ""Worcester"" Western Cape",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q7,"site:linkedin.com/in ""CA(SA)"" ""Cape Town"" ""Financial Manager""",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q8,"site:linkedin.com/in ""CA (SA)"" ""Cape Town"" audit partner OR director",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q9,"site:linkedin.com/in ""CA(SA)"" ""Cape Town"" Capitec OR Shoprite OR Pick n Pay OR Woolworths OR Sanlam",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q10,"site:linkedin.com/in ""CA(SA)"" ""Cape Town"" tax OR treasury OR ""internal audit"" OR valuations",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q11,"site:linkedin.com/in ""CA(SA)"" ""Stellenbosch"" finance OR CFO OR manager",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q12,"site:linkedin.com/in ""CA(SA)"" Paarl OR Somerset West OR Bellville OR Tygervalley OR Century City",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q13,"site:linkedin.com/in ""CA(SA)"" ""Cape Town"" ""Financial Controller"" OR ""Group Financial"" OR ""Head of Finance"" (and employer variants)",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q14,"site:linkedin.com/in ""CA(SA)"" ""Cape Town"" PwC OR Deloitte OR KPMG OR EY partner manager",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q15,"site:linkedin.com/in ""CA(SA)"" ""Western Cape"" ""Financial Director"" OR CFO OR ""Head of Finance""",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
+Q16,"site:za.linkedin.com/in ""CA(SA)"" ""Cape Town""",web_search (Google-indexed public snippets),2026-10-14,No LinkedIn access-control bypass; snippets only
