@@ -112,6 +112,48 @@ test('the export fails closed on duplicate identities and unsupported evidence U
   assert.throws(() => buildCasaInventory(jsonl(person({ date_last_verified: '2026-02-30' }))), /invalid date_last_verified/)
 })
 
+test('committed CA(SA) records carry designation evidence, keep membership unclaimed and separate location from designation', () => {
+  const base = resolve('markets/accountants')
+  const people = readFileSync(resolve(base, 'people.jsonl'), 'utf8')
+    .split(/\r?\n/).filter((line) => line.trim())
+    .map((line) => JSON.parse(line) as Record<string, unknown>)
+  const casa = people.filter((row) => row.status !== 'REJECTED'
+    && Array.isArray(row.professional_designations)
+    && row.professional_designations.includes('CA(SA)'))
+  assert.ok(casa.length >= 159, 'batch 13 (acc-1002..acc-1024) must remain in the research DB')
+  for (const row of casa) {
+    assert.ok(typeof row.qualification_evidence === 'string' && row.qualification_evidence.trim(),
+      `${row.id} has a CA(SA) tag without recorded designation evidence`)
+    assert.ok(Array.isArray(row.source_urls) && row.source_urls.length > 0,
+      `${row.id} has a CA(SA) tag without a source URL`)
+  }
+  // Batch 13 identities are unique people, and its one existing-person
+  // enrichment (acc-0688) preserved the research ID instead of duplicating him.
+  const batch13 = casa.filter((row) => typeof row.id === 'string' && row.id >= 'acc-1002' && row.id <= 'acc-1024')
+  assert.equal(batch13.length, 23)
+  assert.equal(people.filter((row) => row.full_name === 'Zaf Mahomed').length, 1)
+  assert.ok(casa.some((row) => row.id === 'acc-0688'), 'enriched Zaf Mahomed record must be CA(SA)-tagged')
+
+  const inventory = buildCasaInventory(
+    readFileSync(resolve(base, 'people.jsonl'), 'utf8'),
+    readFileSync(resolve(base, 'companies.jsonl'), 'utf8'),
+  )
+  // The three counts stay separate: designation evidence is not membership,
+  // and SA-labelled is not SA-location-evidenced.
+  const confirmedLocation = inventory.rows.filter(
+    (row) => row.locationAssessment === 'CONFIRMED_SA_LOCATION').length
+  assert.ok(inventory.metrics.designationConfirmed > confirmedLocation,
+    'designation-confirmed and location-confirmed counts must not be conflated')
+  assert.ok(!casaInventoryCsv(inventory).split('\n')[0].includes('member'),
+    'the public CSV must not carry a SAICA membership field or claim')
+  for (const row of inventory.rows) {
+    assert.ok(row.industry === '' || row.industryBasis !== 'UNKNOWN',
+      `${row.researchId} has an industry with no recorded provenance`)
+    assert.ok(row.linkedinUrl === '' || /^https:\/\/(www\.|za\.)?linkedin\.com\/in\/[^/]+\/?$/.test(row.linkedinUrl),
+      `${row.researchId} has a non-person or constructed-looking LinkedIn URL`)
+  }
+})
+
 test('committed inventory mirrors the research DB and published accounting pool', () => {
   const base = resolve('markets/accountants')
   const inventory = buildCasaInventory(

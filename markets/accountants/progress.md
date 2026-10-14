@@ -8,6 +8,19 @@ Live research log. Updated after every ~2–5 verified people or completed resea
 
 ## Session log
 
+### 2026-10-14 — CA(SA) batch 13 (award cohorts, public research only)
+
+- Scope agreed: SA resident OR working in SA; current finance roles only; check date
+  2026-10-14; **no authorised SAICA roster** — designation counts only, no current-member claim.
+- Screened 85 candidates (SAICA Top-35-Under-35 2023 + 2024, CFO Awards 2024 + 2025):
+  **+23 new unique CA(SA) people** (acc-1002–acc-1024; 11 CONFIRMED with live/2025–26
+  corroboration, 12 HIGH_CONFIDENCE award-date roles) and **1 existing person enriched**
+  (acc-0688 Zaf Mahomed → CA(SA) CONFIRMED). Full audit log:
+  `research_runs/casa_batch13_2026-10-14.md`.
+- Totals after batch: 1,024 people; 159 CA(SA)-tagged (158 SA-labelled); 0 verified
+  current SAICA members (no roster). Shortfall to 1,000 designation-confirmed,
+  SA-in-scope people remains ~857+ — see batch log and `ca_sa_coverage.md`.
+
 ### 2026-09-18 (session 1) — infrastructure + 4 batches (72 people)
 
 - Created research DB stores and governance docs under `markets/accountants/`.
