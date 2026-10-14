@@ -30,6 +30,7 @@ import {
   type FacetSelections,
 } from '../data/facets'
 import { canonicalCompanyName } from '../data/companyNormalization'
+import casaInventoryUrl from '../../markets/accountants/ca_sa_inventory.csv?url'
 
 const PAGE_SIZE = 20
 
@@ -59,6 +60,7 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
   const systems = [...candidate.accountingSystems, ...candidate.erpSystems, ...candidate.analyticsTools]
   const canonicalEmployer = candidate.employer ? canonicalCompanyName(candidate.employer) : ''
   const evidenceUrl = candidate.sourceUrls[0] || candidate.primarySource
+  const isCaSa = candidate.designations.includes('CA(SA)')
   return (
     <article className="hack-candidate-card">
       <header className="hack-candidate-head">
@@ -93,6 +95,12 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
       </header>
 
       {candidate.title && <p className="acc-candidate-title">{candidate.title}</p>}
+      {isCaSa && candidate.country && candidate.country !== 'South Africa' && (
+        <p className="acc-evidence-text">Recorded location: {candidate.country} (outside South Africa)</p>
+      )}
+      {isCaSa && (!candidate.country || (candidate.country === 'South Africa' && !['CONFIRMED', 'HIGH'].includes(candidate.locationConfidence))) && (
+        <p className="acc-evidence-text">South African residence or workplace not independently evidenced.</p>
+      )}
 
       <div className="hack-candidate-meta">
         {candidate.employer && (
@@ -154,16 +162,23 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
       {candidate.qualificationEvidence && <p className="acc-evidence-text">{candidate.qualificationEvidence}</p>}
 
       <footer className="hack-candidate-foot">
-        {evidenceUrl ? (
+        {candidate.linkedinUrl && (
+          <a className="hack-evidence-link" href={candidate.linkedinUrl} target="_blank" rel="noreferrer">
+            LinkedIn <ArrowSquareOut size={12} aria-hidden />
+          </a>
+        )}
+        {evidenceUrl && evidenceUrl !== candidate.linkedinUrl ? (
           <a className="hack-evidence-link" href={evidenceUrl} target="_blank" rel="noreferrer">
             Evidence <ArrowSquareOut size={12} aria-hidden />
           </a>
-        ) : (
+        ) : null}
+        {!evidenceUrl && !candidate.linkedinUrl && (
           <span className="hack-source-note">Evidence recorded in the research database</span>
         )}
         {candidate.sourceUrls.length > 1 && (
           <span className="hack-source-note">+ {candidate.sourceUrls.length - 1} more source{candidate.sourceUrls.length - 1 === 1 ? '' : 's'}</span>
         )}
+        {candidate.dateLastVerified && <span className="hack-source-note">Source checked {candidate.dateLastVerified}</span>}
       </footer>
     </article>
   )
@@ -239,10 +254,16 @@ export function AccountantsPage() {
           <div className="hack-kpi"><strong>{universe.candidates}</strong><span>Candidates</span></div>
           <div className="hack-kpi"><strong>{universe.confirmed}</strong><span>Confirmed finance roles</span></div>
           <div className="hack-kpi"><strong>{universe.professionallyQualified}</strong><span>Professionally qualified</span></div>
-          <div className="hack-kpi"><strong>{universe.caSa}</strong><span>CA(SA)</span></div>
+          <div className="hack-kpi"><strong>{universe.caSa}</strong><span>CA(SA) recorded</span></div>
           <div className="hack-kpi"><strong>{universe.employers}</strong><span>Employers mapped</span></div>
           <div className="hack-kpi"><strong>{universe.provinces}</strong><span>Provinces</span></div>
         </div>
+        <p className="hack-lede">
+          The CA(SA) figure is a recorded subset, not a complete national membership register.
+          Some locations are unverified or outside South Africa.
+          {' '}<Link to="/accounting-finance?qualification=CA%28SA%29">Browse CA(SA) records</Link>
+          {' · '}<a href={casaInventoryUrl} download="ca_sa_inventory.csv">Download inventory CSV</a>
+        </p>
       </header>
 
       <div className="facet-searchbar">
