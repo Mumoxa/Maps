@@ -93,6 +93,137 @@
         "ENR-WIND"
       ],
       "note": ""
+    },
+    {
+      "pocketId": "banking-finance",
+      "taxonomyNodes": [
+        "FIN"
+      ],
+      "note": "Banking, insurance and diversified financial services sit inside the finance macro-sector."
+    },
+    {
+      "pocketId": "investment-capital",
+      "taxonomyNodes": [
+        "FIN-ASSET"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "mining-extractives",
+      "taxonomyNodes": [
+        "MIN"
+      ],
+      "note": "The pocket spans coal, diamonds and mine services, which are separate L2 branches."
+    },
+    {
+      "pocketId": "energy-utilities",
+      "taxonomyNodes": [
+        "ENR",
+        "PUB-SOC-ENERGY",
+        "PUB-WATER-BOARD"
+      ],
+      "note": "Private generation and fuel supply sit in energy; the state utility branches for electricity and water sit in the public sector macro-sector."
+    },
+    {
+      "pocketId": "commercial-farming",
+      "taxonomyNodes": [
+        "AGR"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "industrial-manufacturing",
+      "taxonomyNodes": [
+        "MFG"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "automotive",
+      "taxonomyNodes": [
+        "MFG-AUTO"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "consumer-retail",
+      "taxonomyNodes": [
+        "RTL",
+        "WHL"
+      ],
+      "note": "Retail and wholesale trade are separate macro-sectors, and this pocket contains both."
+    },
+    {
+      "pocketId": "technology-digital",
+      "taxonomyNodes": [
+        "ICT"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "telecommunications",
+      "taxonomyNodes": [
+        "ICT-TELCO"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "media-marketing",
+      "taxonomyNodes": [
+        "PRO-MKT"
+      ],
+      "note": "Marketing, advertising, media and market research are held in professional and business services in the national tree, not in ICT."
+    },
+    {
+      "pocketId": "professional-advisory",
+      "taxonomyNodes": [
+        "PRO"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "facilities-services",
+      "taxonomyNodes": [
+        "CON-FAC"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "health-wellness",
+      "taxonomyNodes": [
+        "HLC"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "hospitality-tourism",
+      "taxonomyNodes": [
+        "TOU"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "aviation-defence",
+      "taxonomyNodes": [
+        "TRA-AIR",
+        "MFG-DEF",
+        "PUB-SOC-TRANSPORT"
+      ],
+      "note": "Airline operations sit in transport, defence manufacturing in manufacturing and the state air transport entities in the public sector."
+    },
+    {
+      "pocketId": "public-sector",
+      "taxonomyNodes": [
+        "PUB"
+      ],
+      "note": ""
+    },
+    {
+      "pocketId": "education-skills",
+      "taxonomyNodes": [
+        "EDU"
+      ],
+      "note": ""
     }
   ],
   "industryMappings": [
@@ -218,6 +349,358 @@
     {
       "industryId": "independent-power-production",
       "taxonomyNode": "ENR-GEN-IPP"
+    },
+    {
+      "industryId": "universal-banking",
+      "taxonomyNode": "FIN-BANK-BIG5"
+    },
+    {
+      "industryId": "financial-services",
+      "taxonomyNode": "FIN"
+    },
+    {
+      "industryId": "insurance-underwriting",
+      "taxonomyNode": "FIN-INS"
+    },
+    {
+      "industryId": "asset-management",
+      "taxonomyNode": "FIN-ASSET-MANAGE"
+    },
+    {
+      "industryId": "investment-management",
+      "taxonomyNode": "FIN-ASSET-MANAGE"
+    },
+    {
+      "industryId": "investment-holding-companies",
+      "taxonomyNode": "FIN-ASSET-HOLD"
+    },
+    {
+      "industryId": "mining-operations",
+      "taxonomyNode": "MIN"
+    },
+    {
+      "industryId": "coal-mining",
+      "taxonomyNode": "MIN-COAL"
+    },
+    {
+      "industryId": "diamond-mining",
+      "taxonomyNode": "MIN-DIAM"
+    },
+    {
+      "industryId": "mining-services",
+      "taxonomyNode": "MIN-SV"
+    },
+    {
+      "industryId": "electricity-utility",
+      "taxonomyNode": "PUB-SOC-ENERGY"
+    },
+    {
+      "industryId": "bulk-water-supply",
+      "taxonomyNode": "PUB-WATER-BOARD"
+    },
+    {
+      "industryId": "petroleum-fuels",
+      "taxonomyNode": "ENR-OIL-FUEL"
+    },
+    {
+      "industryId": "commercial-fuel-retail",
+      "taxonomyNode": "RTL-FUEL"
+    },
+    {
+      "industryId": "commercial-farming",
+      "taxonomyNode": "AGR"
+    },
+    {
+      "industryId": "chemicals",
+      "taxonomyNode": "MFG-CHEM-BASE"
+    },
+    {
+      "industryId": "gases-petrochemicals",
+      "taxonomyNode": "MFG-CHEM"
+    },
+    {
+      "industryId": "steel-manufacturing",
+      "taxonomyNode": "MFG-METAL-STEEL"
+    },
+    {
+      "industryId": "packaging-manufacturing",
+      "taxonomyNode": "MFG-PLAS"
+    },
+    {
+      "industryId": "pulp-and-paper",
+      "taxonomyNode": "MFG-FORESTP-PULP"
+    },
+    {
+      "industryId": "paint-and-coatings",
+      "taxonomyNode": "MFG-CHEM-SPEC"
+    },
+    {
+      "industryId": "appliance-manufacturing",
+      "taxonomyNode": "MFG-ELEC-APP"
+    },
+    {
+      "industryId": "electronics-manufacturing",
+      "taxonomyNode": "MFG-ELEC"
+    },
+    {
+      "industryId": "electrical-equipment-manufacturing",
+      "taxonomyNode": "MFG-ELEC-TRANS"
+    },
+    {
+      "industryId": "pharmaceutical-manufacturing",
+      "taxonomyNode": "MFG-PHARM-GEN"
+    },
+    {
+      "industryId": "personal-care-manufacturing",
+      "taxonomyNode": "MFG-CHEM-HPC"
+    },
+    {
+      "industryId": "heavy-equipment",
+      "taxonomyNode": "MFG-MACH-EARTH"
+    },
+    {
+      "industryId": "industrial-equipment-supply",
+      "taxonomyNode": "MFG-MACH-IND"
+    },
+    {
+      "industryId": "cement-manufacturing",
+      "taxonomyNode": "CON-MAT-CEMENT"
+    },
+    {
+      "industryId": "building-materials",
+      "taxonomyNode": "CON-MAT"
+    },
+    {
+      "industryId": "builders-merchants",
+      "taxonomyNode": "CON-MAT-HARDWARE"
+    },
+    {
+      "industryId": "motor-vehicles",
+      "taxonomyNode": "MFG-AUTO"
+    },
+    {
+      "industryId": "automotive-components",
+      "taxonomyNode": "MFG-AUTO"
+    },
+    {
+      "industryId": "defence-and-aerospace",
+      "taxonomyNode": "MFG-DEF"
+    },
+    {
+      "industryId": "information-technology",
+      "taxonomyNode": "ICT"
+    },
+    {
+      "industryId": "software-solutions",
+      "taxonomyNode": "ICT-SW-PRODUCT"
+    },
+    {
+      "industryId": "computer-hardware",
+      "taxonomyNode": "ICT-HARD"
+    },
+    {
+      "industryId": "office-automation",
+      "taxonomyNode": "ICT-HARD"
+    },
+    {
+      "industryId": "business-process-outsourcing",
+      "taxonomyNode": "ICT-BPO"
+    },
+    {
+      "industryId": "telecommunications",
+      "taxonomyNode": "ICT-TELCO"
+    },
+    {
+      "industryId": "telecommunications-solutions",
+      "taxonomyNode": "ICT-TELCO-FIXED"
+    },
+    {
+      "industryId": "telecommunications-equipment",
+      "taxonomyNode": "ICT-HARD-DIST"
+    },
+    {
+      "industryId": "communications-networks",
+      "taxonomyNode": "ICT"
+    },
+    {
+      "industryId": "media-groups",
+      "taxonomyNode": "PRO-MKT-MEDIA"
+    },
+    {
+      "industryId": "media-agencies",
+      "taxonomyNode": "PRO-MKT-MEDIA"
+    },
+    {
+      "industryId": "marketing-media",
+      "taxonomyNode": "PRO-MKT"
+    },
+    {
+      "industryId": "marketing-services",
+      "taxonomyNode": "PRO-MKT"
+    },
+    {
+      "industryId": "branding-services",
+      "taxonomyNode": "PRO-MKT-AGENCY"
+    },
+    {
+      "industryId": "market-research",
+      "taxonomyNode": "PRO-MKT"
+    },
+    {
+      "industryId": "legal-services",
+      "taxonomyNode": "PRO-LEGAL-FIRM"
+    },
+    {
+      "industryId": "professional-services",
+      "taxonomyNode": "PRO"
+    },
+    {
+      "industryId": "business-support-services",
+      "taxonomyNode": "PRO"
+    },
+    {
+      "industryId": "recruitment-services",
+      "taxonomyNode": "PRO-HR-RECRUIT"
+    },
+    {
+      "industryId": "private-security",
+      "taxonomyNode": "PRO-SEC-GUARD"
+    },
+    {
+      "industryId": "bbb-ee-verification",
+      "taxonomyNode": "PRO-CONSULT-BBBEE"
+    },
+    {
+      "industryId": "auctioneering",
+      "taxonomyNode": "PRO-CORP-AUCT"
+    },
+    {
+      "industryId": "hygiene-and-cleaning",
+      "taxonomyNode": "CON-FAC-CLEAN"
+    },
+    {
+      "industryId": "waste-management",
+      "taxonomyNode": "CON-FAC-WASTE"
+    },
+    {
+      "industryId": "health-services",
+      "taxonomyNode": "HLC"
+    },
+    {
+      "industryId": "private-hospital-groups",
+      "taxonomyNode": "HLC-HOSP-PRIV"
+    },
+    {
+      "industryId": "medical-schemes",
+      "taxonomyNode": "HLC-SCHEME"
+    },
+    {
+      "industryId": "medical-scheme-administration",
+      "taxonomyNode": "HLC-SCHEME-ADMIN"
+    },
+    {
+      "industryId": "hotel-and-resort-groups",
+      "taxonomyNode": "TOU-ACCOM-HOTEL"
+    },
+    {
+      "industryId": "airline-catering",
+      "taxonomyNode": "TOU-FB-CATER"
+    },
+    {
+      "industryId": "event-management",
+      "taxonomyNode": "TOU-EVENT-MANAGE"
+    },
+    {
+      "industryId": "conference-centres",
+      "taxonomyNode": "TOU-EVENT-CONF"
+    },
+    {
+      "industryId": "travel-and-tourism",
+      "taxonomyNode": "TOU"
+    },
+    {
+      "industryId": "rail-passenger-transport",
+      "taxonomyNode": "TRA-PUB-RAIL"
+    },
+    {
+      "industryId": "fleet-services",
+      "taxonomyNode": "TRA-SVC"
+    },
+    {
+      "industryId": "vehicle-rental",
+      "taxonomyNode": "TRA-SVC-RENT"
+    },
+    {
+      "industryId": "airline-operations",
+      "taxonomyNode": "TRA-AIR-PAX"
+    },
+    {
+      "industryId": "state-owned-air-transport",
+      "taxonomyNode": "PUB-SOC-TRANSPORT"
+    },
+    {
+      "industryId": "home-building-regulation",
+      "taxonomyNode": "PUB-REG-REGULATOR"
+    },
+    {
+      "industryId": "shopping-centre-operations",
+      "taxonomyNode": "CON-PROP-RETAIL"
+    },
+    {
+      "industryId": "engineering-services",
+      "taxonomyNode": "CON-ENG"
+    },
+    {
+      "industryId": "consulting-engineering",
+      "taxonomyNode": "CON-ENG-CONSULT"
+    },
+    {
+      "industryId": "infrastructure-management",
+      "taxonomyNode": "CON"
+    },
+    {
+      "industryId": "general-retail",
+      "taxonomyNode": "RTL"
+    },
+    {
+      "industryId": "diversified-retail",
+      "taxonomyNode": "RTL"
+    },
+    {
+      "industryId": "furniture-retail",
+      "taxonomyNode": "RTL-HOME-FURN"
+    },
+    {
+      "industryId": "luxury-lifestyle-retail",
+      "taxonomyNode": "RTL-LUX-SPEC"
+    },
+    {
+      "industryId": "direct-response-retail",
+      "taxonomyNode": "RTL-ECOM-DTC"
+    },
+    {
+      "industryId": "brand-distribution",
+      "taxonomyNode": "WHL"
+    },
+    {
+      "industryId": "beverage-manufacturing",
+      "taxonomyNode": "MFG-FOOD-BEV"
+    },
+    {
+      "industryId": "brewing-distilling",
+      "taxonomyNode": "MFG-FOOD-BREW"
+    },
+    {
+      "industryId": "dairy-processing",
+      "taxonomyNode": "MFG-FOOD-DAIRY"
+    },
+    {
+      "industryId": "private-education",
+      "taxonomyNode": "EDU-HIGH"
+    },
+    {
+      "industryId": "business-schools",
+      "taxonomyNode": "EDU-HIGH"
     }
   ]
 }

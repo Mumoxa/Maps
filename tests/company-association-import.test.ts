@@ -168,6 +168,40 @@ describe('import review stage', () => {
     assert.equal(plan.missingRequired[0].field, 'name')
   })
 
+  it('places one row under several industries, cities and sources without duplicating the company', () => {
+    const plan = planImport([{
+      company: 'Multi Sector Holdings',
+      industries: 'cold-storage-operations; refrigerated-transport',
+      province: 'Western Cape',
+      cities: 'Cape Town; Stellenbosch',
+      source_url: 'https://example.test/one;https://example.test/two',
+      source_type: 'industry-directory',
+      evidence: 'Lists the group under storage and distribution.',
+      checked_on: TODAY,
+      confidence: 'probable',
+    }], 'companies', dataset())
+
+    assert.equal(plan.newOrganizations.length, 1, 'one company, not one per industry')
+    const organization = plan.newOrganizations[0]
+    assert.deepEqual(organization.industries.map((link) => link.industryId), ['cold-storage-operations', 'refrigerated-transport'])
+    assert.deepEqual(organization.industries.map((link) => link.primary), [true, false])
+    assert.deepEqual(organization.locations.map((location) => location.city), ['Cape Town', 'Stellenbosch'])
+    assert.deepEqual(organization.sources.map((source) => source.url), ['https://example.test/one', 'https://example.test/two'])
+    assert.equal(organization.sources[0].type, 'industry-directory')
+    assert.equal(organization.industries[0].sourceUrl, 'https://example.test/one', 'links cite the primary source')
+  })
+
+  it('falls back to the default source type when a row names one that does not exist', () => {
+    const plan = planImport([{
+      company: 'Hestony Transport',
+      source_url: 'https://example.test/hestony',
+      source_type: 'invented-source-type',
+      checked_on: TODAY,
+    }], 'companies', dataset())
+
+    assert.equal(plan.newOrganizations[0].sources[0].type, 'recruiter-supplied')
+  })
+
   it('creates a new company as needs-verification, never as verified', () => {
     const plan = planImport([{
       company: 'Hestony Transport',

@@ -1,0 +1,3447 @@
+{
+  "date": "2026-10-15",
+  "mode": "commit",
+  "organizationsBefore": 365,
+  "organizationsAfter": 365,
+  "organizationRecords": 196,
+  "datasetOnlyEmployersReplaced": 0,
+  "employerRowsResolvingToBatch": 58,
+  "mergedListings": [
+    "Barclays Africa Group Limited -> org-absa",
+    "ADCORP -> org-adcorp-holdings",
+    "ADT Security (Pty) Ltd -> org-fidelity-adt-security"
+  ],
+  "enrichments": [
+    {
+      "id": "org-aveng",
+      "urls": [
+        "https://top500.co.za/top500-companies/aveng-africa-limited/"
+      ],
+      "name": "Aveng Africa",
+      "aliases": [
+        "Aveng Africa",
+        "Aveng Africa Limited"
+      ]
+    },
+    {
+      "id": "org-bidfood",
+      "urls": [
+        "https://top500.co.za/top500-companies/bidfood-pty-ltd/"
+      ],
+      "name": "Bidfood",
+      "aliases": [
+        "Bidfood",
+        "Bidfood (Pty) Ltd"
+      ]
+    },
+    {
+      "id": "org-growthpoint-properties",
+      "urls": [
+        "https://top500.co.za/top500-companies/growthpoint-properties-limited/"
+      ],
+      "name": "Growthpoint Properties",
+      "aliases": [
+        "Growthpoint Properties",
+        "Growthpoint Properties Limited"
+      ]
+    },
+    {
+      "id": "org-hyprop",
+      "urls": [
+        "https://top500.co.za/top500-companies/hyprop-investments-limited/"
+      ],
+      "name": "Hyprop Investments",
+      "aliases": [
+        "Hyprop Investments",
+        "Hyprop Investments Limited"
+      ]
+    },
+    {
+      "id": "org-rcl-foods",
+      "urls": [
+        "https://top500.co.za/top500-companies/rcl-foods-pty-ltd/"
+      ],
+      "name": "RCL Foods",
+      "aliases": [
+        "RCL Foods",
+        "RCL Foods (Pty) Ltd"
+      ]
+    },
+    {
+      "id": "org-shoprite-holdings",
+      "urls": [
+        "https://top500.co.za/top500-companies/shoprite-holdings-limited/"
+      ],
+      "name": "Shoprite Holdings",
+      "aliases": [
+        "Shoprite",
+        "Shoprite Holdings",
+        "Shoprite Holdings Limited"
+      ]
+    },
+    {
+      "id": "org-tiger-brands",
+      "urls": [
+        "https://top500.co.za/top500-companies/tiger-brands-limited/"
+      ],
+      "name": "Tiger Brands",
+      "aliases": [
+        "Tiger Brands",
+        "Tiger Brands Limited"
+      ]
+    },
+    {
+      "id": "org-vkb",
+      "urls": [
+        "https://top500.co.za/top500-companies/vkb/"
+      ],
+      "name": "VKB",
+      "aliases": [
+        "VKB"
+      ]
+    },
+    {
+      "id": "org-wbho",
+      "urls": [
+        "https://top500.co.za/top500-companies/wbho-construction-pty-ltd/"
+      ],
+      "name": "WBHO Construction",
+      "aliases": [
+        "WBHO Construction",
+        "WBHO Construction (Pty) Ltd"
+      ]
+    }
+  ],
+  "rejectedRows": [
+    {
+      "company": "Nestlé",
+      "category": "Banks",
+      "reason": "The same source lists Nestle under Food Products and Food Services; a Banks row contradicts the source's own classification of a food and beverage manufacturer. Rejected as a directory error rather than imported."
+    }
+  ],
+  "unplacedCompanies": [
+    {
+      "company": "African Response (Pty) Ltd",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Afrox",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Allcare Administrators (Pty) Ltd",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Altech Alcom Radio Distributors (Pty) Ltd",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Altron Group",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Continuity SA",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Elite Risk Acceptances",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Empowerdex (Pty) Ltd",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Excellerate Services",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "HomeChoice (Pty) Ltd",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "National Empowerment Rating Agency",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "PPC Cement SA (Pty) Ltd",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Premier Verification",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Sasol Mining (Pty) Ltd",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Spoor and Fisher",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Trek Bicycle South Africa",
+      "reason": "the directory states no province for this company"
+    },
+    {
+      "company": "Zutari",
+      "reason": "the directory states no province for this company"
+    }
+  ],
+  "perConfidence": {
+    "probable": 106,
+    "hypothesis": 90
+  },
+  "perPocket": {
+    "banking-finance": 8,
+    "media-marketing": 14,
+    "industrial-manufacturing": 26,
+    "professional-advisory": 25,
+    "consumer-retail": 10,
+    "education-skills": 4,
+    "construction": 24,
+    "investment-capital": 12,
+    "mining-extractives": 13,
+    "hospitality-tourism": 11,
+    "aviation-defence": 7,
+    "telecommunications": 9,
+    "health-wellness": 12,
+    "technology-digital": 13,
+    "food-manufacturing": 8,
+    "transport-logistics": 15,
+    "energy-utilities": 3,
+    "facilities-services": 4,
+    "property-investment": 2,
+    "automotive": 5,
+    "fmcg-distribution": 2,
+    "public-sector": 1,
+    "fisheries": 1
+  },
+  "stubReplacements": [],
+  "stillStubbed": [
+    {
+      "id": "org-dataset:5y technology",
+      "name": "5Y Technology",
+      "contacts": 2,
+      "candidate": "bytes technology group south africa"
+    },
+    {
+      "id": "org-dataset:absa corporate and investment banking",
+      "name": "Absa Corporate and Investment Banking",
+      "contacts": 1,
+      "candidate": "absa"
+    },
+    {
+      "id": "org-dataset:absa life",
+      "name": "Absa Life",
+      "contacts": 1,
+      "candidate": "absa"
+    },
+    {
+      "id": "org-dataset:afrika tikkun",
+      "name": "Afrika Tikkun",
+      "contacts": 1,
+      "candidate": "jg afrika"
+    },
+    {
+      "id": "org-dataset:anglo american",
+      "name": "Anglo American",
+      "contacts": 6,
+      "candidate": "anglo american south africa"
+    },
+    {
+      "id": "org-dataset:arcelormittal",
+      "name": "ArcelorMittal",
+      "contacts": 2,
+      "candidate": "arcelormittal south africa"
+    },
+    {
+      "id": "org-dataset:babcock international group - africa",
+      "name": "Babcock International Group - Africa",
+      "contacts": 1,
+      "candidate": "babcock"
+    },
+    {
+      "id": "org-dataset:development bank of southern africa (dbsa)",
+      "name": "Development Bank of Southern Africa (DBSA)",
+      "contacts": 1,
+      "candidate": "bp southern africa"
+    },
+    {
+      "id": "org-dataset:eset southern africa",
+      "name": "ESET Southern Africa",
+      "contacts": 3,
+      "candidate": "bp southern africa"
+    },
+    {
+      "id": "org-dataset:excellerate property services",
+      "name": "Excellerate Property Services",
+      "contacts": 1,
+      "candidate": "excellerate services"
+    },
+    {
+      "id": "org-dataset:firstrand compliance office",
+      "name": "FirstRand Compliance Office",
+      "contacts": 1,
+      "candidate": "firstrand"
+    },
+    {
+      "id": "org-dataset:firstrand corporate centre",
+      "name": "FirstRand Corporate Centre",
+      "contacts": 3,
+      "candidate": "firstrand"
+    },
+    {
+      "id": "org-dataset:ford motor company of southern africa",
+      "name": "Ford Motor Company of Southern Africa",
+      "contacts": 2,
+      "candidate": "bp southern africa"
+    },
+    {
+      "id": "org-dataset:innovation group business services",
+      "name": "INNOVATION GROUP BUSINESS SERVICES",
+      "contacts": 1,
+      "candidate": "innovation group"
+    },
+    {
+      "id": "org-dataset:jd group",
+      "name": "JD Group",
+      "contacts": 1,
+      "candidate": "barclays africa group"
+    },
+    {
+      "id": "org-dataset:merchants it ... a division of dimension data",
+      "name": "Merchants IT ... A division of Dimension Data",
+      "contacts": 1,
+      "candidate": "dimension data"
+    },
+    {
+      "id": "org-dataset:ml&l solutions",
+      "name": "ML&L Solutions",
+      "contacts": 1,
+      "candidate": "internet solutions"
+    },
+    {
+      "id": "org-dataset:mpact paper",
+      "name": "Mpact Paper",
+      "contacts": 1,
+      "candidate": "mpact"
+    },
+    {
+      "id": "org-dataset:national department of tourism",
+      "name": "National Department of Tourism",
+      "contacts": 1,
+      "candidate": "sa tourism"
+    },
+    {
+      "id": "org-dataset:old mutual",
+      "name": "Old Mutual",
+      "contacts": 254,
+      "candidate": "old mutual investment group (south africa)"
+    },
+    {
+      "id": "org-dataset:rainbow",
+      "name": "RAINBOW",
+      "contacts": 1,
+      "candidate": "african rainbow minerals"
+    },
+    {
+      "id": "org-dataset:s&p global",
+      "name": "S&P Global",
+      "contacts": 3,
+      "candidate": "kwe global logistics partner"
+    },
+    {
+      "id": "org-dataset:sanlam private wealth",
+      "name": "Sanlam Private Wealth",
+      "contacts": 1,
+      "candidate": "sanlam"
+    },
+    {
+      "id": "org-dataset:santam corporate property",
+      "name": "Santam Corporate Property",
+      "contacts": 1,
+      "candidate": "santam"
+    },
+    {
+      "id": "org-dataset:sap fioneer",
+      "name": "SAP Fioneer",
+      "contacts": 3,
+      "candidate": "sap"
+    },
+    {
+      "id": "org-dataset:sasol technology",
+      "name": "Sasol Technology",
+      "contacts": 3,
+      "candidate": "sasol"
+    },
+    {
+      "id": "org-dataset:scania southern africa",
+      "name": "Scania Southern Africa",
+      "contacts": 1,
+      "candidate": "bp southern africa"
+    },
+    {
+      "id": "org-dataset:shoprite checkers",
+      "name": "Shoprite Checkers",
+      "contacts": 1,
+      "candidate": "shoprite"
+    },
+    {
+      "id": "org-dataset:smec (an sj group company)",
+      "name": "SMEC (An SJ Group Company)",
+      "contacts": 1,
+      "candidate": "smec"
+    },
+    {
+      "id": "org-dataset:ss&c technologies",
+      "name": "SS&C Technologies",
+      "contacts": 1,
+      "candidate": "enra technologies"
+    },
+    {
+      "id": "org-dataset:the e2 group",
+      "name": "The E2 Group",
+      "contacts": 1,
+      "candidate": "the waste group operations"
+    },
+    {
+      "id": "org-dataset:tsogo sun",
+      "name": "Tsogo Sun",
+      "contacts": 1,
+      "candidate": "tsogo sun hotels"
+    },
+    {
+      "id": "org-dataset:vodacom congo",
+      "name": "Vodacom Congo",
+      "contacts": 1,
+      "candidate": "vodacom"
+    },
+    {
+      "id": "org-dataset:yaya hospitality and tourism",
+      "name": "Yaya Hospitality and Tourism",
+      "contacts": 1,
+      "candidate": "sa tourism"
+    }
+  ],
+  "issues": [],
+  "records": [
+    {
+      "id": "org-absa",
+      "name": "Absa",
+      "aliases": [
+        "ABSA",
+        "Barclays Africa Group",
+        "Barclays Africa Group Limited"
+      ],
+      "industries": [
+        "universal-banking"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 2,
+      "mergedFrom": [
+        "Barclays Africa Group Limited"
+      ]
+    },
+    {
+      "id": "org-ac-nielsen-marketing-and-media",
+      "name": "AC Nielsen Marketing and Media",
+      "aliases": [
+        "AC Nielsen Marketing and Media (Pty) Ltd"
+      ],
+      "industries": [
+        "marketing-media"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-actom",
+      "name": "ACTOM",
+      "aliases": [],
+      "industries": [
+        "electrical-equipment-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-adams-and-adams",
+      "name": "Adams & Adams",
+      "aliases": [],
+      "industries": [
+        "legal-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-adcorp-holdings",
+      "name": "Adcorp Holdings",
+      "aliases": [
+        "Adcorp",
+        "Adcorp Group",
+        "Adcorp Holdings Limited",
+        "ADCORP"
+      ],
+      "industries": [
+        "recruitment-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 2,
+      "mergedFrom": [
+        "ADCORP"
+      ]
+    },
+    {
+      "id": "org-adidas",
+      "name": "Adidas",
+      "aliases": [],
+      "industries": [
+        "general-retail"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-advtech",
+      "name": "AdvTech",
+      "aliases": [
+        "AdvTech Ltd"
+      ],
+      "industries": [
+        "private-education"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-aeci",
+      "name": "AECI",
+      "aliases": [
+        "AECI Limited"
+      ],
+      "industries": [
+        "chemicals"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-aecom-south-africa",
+      "name": "AECOM South Africa",
+      "aliases": [
+        "AECOM South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "construction-contracting"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-aeei",
+      "name": "AEEI",
+      "aliases": [],
+      "industries": [
+        "investment-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-african-rainbow-minerals",
+      "name": "African Rainbow Minerals",
+      "aliases": [
+        "African Rainbow Minerals Limited"
+      ],
+      "industries": [
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-african-response",
+      "name": "African Response",
+      "aliases": [
+        "African Response (Pty) Ltd"
+      ],
+      "industries": [
+        "market-research"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-afrimat",
+      "name": "Afrimat",
+      "aliases": [
+        "Afrimat Limited"
+      ],
+      "industries": [
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-afrisam-south-africa",
+      "name": "AfriSam (South Africa)",
+      "aliases": [
+        "AfriSam (South Africa) (Pty) Ltd"
+      ],
+      "industries": [
+        "cement-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-afrox",
+      "name": "Afrox",
+      "aliases": [],
+      "industries": [
+        "gases-petrochemicals"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-air-chefs-soc",
+      "name": "Air Chefs SOC",
+      "aliases": [
+        "Air Chefs SOC Limited"
+      ],
+      "industries": [
+        "airline-catering"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Boksburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-air-traffic-and-navigation-services",
+      "name": "Air Traffic and Navigation Services",
+      "aliases": [
+        "Air Traffic and Navigation Services Company",
+        "Air Traffic and Navigation Services Company Limited"
+      ],
+      "industries": [
+        "state-owned-air-transport"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-airports-company-south-africa",
+      "name": "Airports Company South Africa",
+      "aliases": [
+        "ACSA",
+        "Airports Company South Africa (ACSA)"
+      ],
+      "industries": [
+        "state-owned-air-transport"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-alcatel-lucent-south-africa",
+      "name": "Alcatel-Lucent South Africa",
+      "aliases": [
+        "Alcatel-Lucent South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "communications-networks"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Centurion, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-allan-gray",
+      "name": "Allan Gray",
+      "aliases": [
+        "Allan Gray (Pty) Ltd"
+      ],
+      "industries": [
+        "investment-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-allcare-administrators",
+      "name": "Allcare Administrators",
+      "aliases": [
+        "Allcare Administrators (Pty) Ltd"
+      ],
+      "industries": [
+        "medical-scheme-administration"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-altech-alcom-radio-distributors",
+      "name": "Altech Alcom Radio Distributors",
+      "aliases": [
+        "Altech Alcom Radio Distributors (Pty) Ltd"
+      ],
+      "industries": [
+        "telecommunications",
+        "telecommunications-equipment"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-altron-group",
+      "name": "Altron Group",
+      "aliases": [],
+      "industries": [
+        "electronics-manufacturing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-alviva-holdings",
+      "name": "Alviva Holdings",
+      "aliases": [],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Midrand, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-amalgamated-beverage-industries",
+      "name": "Amalgamated Beverage Industries",
+      "aliases": [
+        "ABI",
+        "Amalgamated Beverage Industries (ABI)"
+      ],
+      "industries": [
+        "beverage-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-amasondo-fleet-service",
+      "name": "Amasondo Fleet Service",
+      "aliases": [
+        "Amasondo Fleet Service (Pty) Ltd"
+      ],
+      "industries": [
+        "fleet-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-amka-products",
+      "name": "Amka Products",
+      "aliases": [
+        "Amka Products (Pty) Ltd"
+      ],
+      "industries": [
+        "personal-care-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-anglo-american-south-africa",
+      "name": "Anglo American South Africa",
+      "aliases": [
+        "Anglo American South Africa Limited"
+      ],
+      "industries": [
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-anglogold-ashanti",
+      "name": "AngloGold Ashanti",
+      "aliases": [
+        "AngloGold Ashanti Limited"
+      ],
+      "industries": [
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-annique-health-and-beauty",
+      "name": "Annique Health and Beauty",
+      "aliases": [
+        "Annique Health and Beauty (Ptd)",
+        "Annique Health and Beauty (Ptd) Ltd"
+      ],
+      "industries": [
+        "health-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-appletiser-sa",
+      "name": "Appletiser SA",
+      "aliases": [
+        "Appletiser SA (Pty) Ltd"
+      ],
+      "industries": [
+        "beverage-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-aqrate",
+      "name": "AQRate",
+      "aliases": [
+        "AQRate (Pty) Ltd"
+      ],
+      "industries": [
+        "bbb-ee-verification"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-arcelormittal-south-africa",
+      "name": "ArcelorMittal South Africa",
+      "aliases": [
+        "ArcelorMittal South Africa Limited"
+      ],
+      "industries": [
+        "steel-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Vanderbijlpark, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-arup",
+      "name": "Arup",
+      "aliases": [
+        "Arup (Pty) Ltd"
+      ],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-aspen-pharmacare-holdings",
+      "name": "Aspen Pharmacare Holdings",
+      "aliases": [
+        "Aspen Pharmacare Holdings Limited"
+      ],
+      "industries": [
+        "pharmaceutical-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Durban, KwaZulu-Natal"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-assmang",
+      "name": "Assmang",
+      "aliases": [
+        "Assmang Limited"
+      ],
+      "industries": [
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-astrazeneca-pharmaceuticals",
+      "name": "AstraZeneca Pharmaceuticals",
+      "aliases": [
+        "AstraZeneca Pharmaceuticals (Pty) Ltd"
+      ],
+      "industries": [
+        "pharmaceutical-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-atkv-resorts",
+      "name": "ATKV Resorts",
+      "aliases": [],
+      "industries": [
+        "hotel-and-resort-groups"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Randburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-aurecon-south-africa",
+      "name": "Aurecon South Africa",
+      "aliases": [
+        "Aurecon South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-austro-group",
+      "name": "AUSTRO Group",
+      "aliases": [
+        "AUSTRO Group Limited"
+      ],
+      "industries": [
+        "industrial-equipment-supply"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-avi",
+      "name": "AVI",
+      "aliases": [
+        "AVI Limited"
+      ],
+      "industries": [
+        "food-manufacturing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-avis-fleet",
+      "name": "Avis Fleet",
+      "aliases": [],
+      "industries": [
+        "vehicle-rental",
+        "fleet-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-avis-rent-a-car-and-budget-rent-a-car",
+      "name": "Avis Rent a Car & Budget Rent a Car",
+      "aliases": [],
+      "industries": [
+        "vehicle-rental"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-avroy-shlain",
+      "name": "Avroy Shlain",
+      "aliases": [
+        "Avroy Shlain (Pty) Ltd"
+      ],
+      "industries": [
+        "personal-care-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Midrand, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-babcock",
+      "name": "Babcock",
+      "aliases": [],
+      "industries": [
+        "heavy-equipment"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Ekurhuleni, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bae-land-systems-south-africa",
+      "name": "BAE Land Systems South Africa",
+      "aliases": [
+        "BAE Land Systems South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "defence-and-aerospace"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Ekurhuleni, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-barloworld-equipment",
+      "name": "Barloworld Equipment",
+      "aliases": [],
+      "industries": [
+        "industrial-equipment-supply"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-barloworld",
+      "name": "Barloworld",
+      "aliases": [
+        "Barloworld Limited"
+      ],
+      "industries": [
+        "brand-distribution"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-basil-read",
+      "name": "Basil Read",
+      "aliases": [
+        "Basil Read (Pty) Ltd"
+      ],
+      "industries": [
+        "construction-contracting"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bell-equipment-company-sa",
+      "name": "Bell Equipment Company SA",
+      "aliases": [
+        "Bell Equipment Company SA (Pty) Ltd"
+      ],
+      "industries": [
+        "heavy-equipment"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Boksburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bell-equipment",
+      "name": "Bell Equipment",
+      "aliases": [
+        "Bell Equipment Limited"
+      ],
+      "industries": [
+        "heavy-equipment",
+        "industrial-equipment-supply"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Richards Bay, KwaZulu-Natal"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bestmed",
+      "name": "BestMed",
+      "aliases": [],
+      "industries": [
+        "health-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bigen-africa-services",
+      "name": "Bigen Africa Services",
+      "aliases": [
+        "Bigen Africa Services (Pty)"
+      ],
+      "industries": [
+        "infrastructure-management"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bonitas-medical-fund",
+      "name": "Bonitas Medical Fund",
+      "aliases": [],
+      "industries": [
+        "health-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bosch-holdings",
+      "name": "Bosch Holdings",
+      "aliases": [
+        "Bosch Holdings (Pty) Ltd"
+      ],
+      "industries": [
+        "construction-contracting",
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Durban, KwaZulu-Natal"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bowler-metcalf",
+      "name": "Bowler Metcalf",
+      "aliases": [
+        "Bowler Metcalf (Pty) Ltd"
+      ],
+      "industries": [
+        "packaging-manufacturing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bowmans",
+      "name": "Bowmans",
+      "aliases": [
+        "Bowmans (Law Firm)"
+      ],
+      "industries": [
+        "legal-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bp-southern-africa",
+      "name": "BP Southern Africa",
+      "aliases": [
+        "BP Southern Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "petroleum-fuels"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-brandhouse-beverages",
+      "name": "Brandhouse Beverages",
+      "aliases": [
+        "Brandhouse Beverages (Pty) Ltd"
+      ],
+      "industries": [
+        "beverage-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-brimstone-investment-corporation",
+      "name": "Brimstone Investment Corporation",
+      "aliases": [
+        "Brimstone Investment Corporation Limited"
+      ],
+      "industries": [
+        "investment-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-buhle-waste",
+      "name": "Buhle Waste",
+      "aliases": [
+        "Buhle Waste (Pty) Ltd"
+      ],
+      "industries": [
+        "waste-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "East Rand, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-business-connexion",
+      "name": "Business Connexion",
+      "aliases": [
+        "Business Connexion (Pty) Ltd"
+      ],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-bytes-technology-group-south-africa",
+      "name": "Bytes Technology Group South Africa",
+      "aliases": [
+        "Bytes Technology Group South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-canal-walk-shopping-centre",
+      "name": "Canal Walk Shopping Centre",
+      "aliases": [],
+      "industries": [
+        "shopping-centre-operations"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-cape-town-international-convention-centre-company",
+      "name": "Cape Town International Convention Centre Company",
+      "aliases": [
+        "Cape Town International Convention Centre Company (Pty) Ltd"
+      ],
+      "industries": [
+        "conference-centres"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-castle-of-good-hope",
+      "name": "Castle of Good Hope",
+      "aliases": [],
+      "industries": [
+        "infrastructure-management"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-claremart-auction-group",
+      "name": "ClareMart Auction Group",
+      "aliases": [],
+      "industries": [
+        "auctioneering"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Green Point, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-clinix-health-group",
+      "name": "Clinix Health Group",
+      "aliases": [
+        "Clinix Health Group (Pty) Ltd"
+      ],
+      "industries": [
+        "health-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-clover-sa",
+      "name": "Clover SA",
+      "aliases": [
+        "Clover S.A. Proprietary",
+        "Clover SA (Pty) Ltd"
+      ],
+      "industries": [
+        "dairy-processing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-comair",
+      "name": "Comair",
+      "aliases": [
+        "Comair Limited"
+      ],
+      "industries": [
+        "airline-operations"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Ekurhuleni, Kempton Park, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-continuity-sa",
+      "name": "Continuity SA",
+      "aliases": [],
+      "industries": [
+        "business-support-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-cozens-recruitment-group",
+      "name": "Cozens Recruitment Group",
+      "aliases": [],
+      "industries": [
+        "recruitment-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-ctrack",
+      "name": "Ctrack",
+      "aliases": [],
+      "industries": [
+        "automotive-components",
+        "fleet-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-defy-appliances",
+      "name": "Defy Appliances",
+      "aliases": [
+        "Defy Appliances (Pty) Ltd"
+      ],
+      "industries": [
+        "appliance-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Durban, KwaZulu-Natal"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-denel-soc",
+      "name": "Denel SOC",
+      "aliases": [
+        "Denel SOC Limited"
+      ],
+      "industries": [
+        "defence-and-aerospace"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Centurion, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-dhl-express",
+      "name": "DHL Express",
+      "aliases": [],
+      "industries": [
+        "contract-logistics"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-dimension-data",
+      "name": "Dimension Data",
+      "aliases": [
+        "Dimension Data (Pty) Ltd"
+      ],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-discovery",
+      "name": "Discovery",
+      "aliases": [
+        "Discovery Health",
+        "Discovery Health (Pty) Ltd"
+      ],
+      "industries": [
+        "health-services",
+        "medical-scheme-administration"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-discovery-health-medical-scheme",
+      "name": "Discovery Health Medical Scheme",
+      "aliases": [
+        "DHMS",
+        "Discovery Health Medical Scheme (DHMS)"
+      ],
+      "industries": [
+        "health-services",
+        "medical-schemes"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-distell-group",
+      "name": "Distell Group",
+      "aliases": [
+        "Distell Group Limited"
+      ],
+      "industries": [
+        "brewing-distilling"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Stellenbosch, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-dollar-thrifty-car-rental",
+      "name": "Dollar Thrifty Car Rental",
+      "aliases": [],
+      "industries": [
+        "vehicle-rental"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-durban-icc",
+      "name": "Durban ICC",
+      "aliases": [],
+      "industries": [
+        "conference-centres"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Durban, KwaZulu-Natal"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-elite-risk-acceptances",
+      "name": "Elite Risk Acceptances",
+      "aliases": [],
+      "industries": [
+        "financial-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-empowerdex",
+      "name": "Empowerdex",
+      "aliases": [
+        "Empowerdex (Pty) Ltd"
+      ],
+      "industries": [
+        "bbb-ee-verification"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-engen-petroleum",
+      "name": "Engen Petroleum",
+      "aliases": [
+        "Engen Petroleum Limited"
+      ],
+      "industries": [
+        "commercial-fuel-retail"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-enra-technologies",
+      "name": "ENRA Technologies",
+      "aliases": [],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-enviroserv-waste-management",
+      "name": "Enviroserv Waste Management",
+      "aliases": [
+        "Enviroserv Waste Management (Pty) Ltd"
+      ],
+      "industries": [
+        "waste-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-eoh-holdings",
+      "name": "EOH Holdings",
+      "aliases": [
+        "EOH Holdings Limited"
+      ],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-eskom",
+      "name": "Eskom",
+      "aliases": [
+        "Eskom Holdings",
+        "Eskom Holdings SOC"
+      ],
+      "industries": [
+        "electricity-utility"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-excellerate-services",
+      "name": "Excellerate Services",
+      "aliases": [],
+      "industries": [
+        "foodservice-distribution",
+        "hygiene-and-cleaning",
+        "professional-services",
+        "private-security"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-exp-agency-sa",
+      "name": "EXP Agency SA",
+      "aliases": [],
+      "industries": [
+        "marketing-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-fact-sa",
+      "name": "FACT SA",
+      "aliases": [],
+      "industries": [
+        "professional-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-fidelity-adt-security",
+      "name": "Fidelity ADT Security",
+      "aliases": [
+        "Fidelity ADT Security (Pty) Ltd",
+        "ADT Security",
+        "ADT Security (Pty) Ltd"
+      ],
+      "industries": [
+        "private-security"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Midrand, Gauteng"
+      ],
+      "sources": 2,
+      "mergedFrom": [
+        "ADT Security (Pty) Ltd"
+      ]
+    },
+    {
+      "id": "org-fidelity-security-group",
+      "name": "Fidelity Security Group",
+      "aliases": [
+        "Fidelity Security Group (Pty) Ltd"
+      ],
+      "industries": [
+        "private-security"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-firstrand",
+      "name": "FirstRand",
+      "aliases": [
+        "FirstRand Limited"
+      ],
+      "industries": [
+        "universal-banking"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-gateway-theatre-of-shopping",
+      "name": "Gateway Theatre of Shopping",
+      "aliases": [],
+      "industries": [
+        "shopping-centre-operations"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Umhlanga, KwaZulu-Natal"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-gibb",
+      "name": "GIBB",
+      "aliases": [],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Midrand, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-gl-events-sa",
+      "name": "GL Events SA",
+      "aliases": [],
+      "industries": [
+        "event-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-gordon-institute-of-business-science",
+      "name": "Gordon Institute of Business Science",
+      "aliases": [
+        "GIBS",
+        "Gordon Institute of Business Science (GIBS)"
+      ],
+      "industries": [
+        "business-schools",
+        "private-education"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-grid",
+      "name": "Grid",
+      "aliases": [],
+      "industries": [
+        "branding-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-harmony-gold",
+      "name": "Harmony Gold",
+      "aliases": [
+        "Harmony Gold Mining Company"
+      ],
+      "industries": [
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Randfontein, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-heineken-south-africa",
+      "name": "Heineken South Africa",
+      "aliases": [],
+      "industries": [
+        "brewing-distilling"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-homechoice",
+      "name": "HomeChoice",
+      "aliases": [
+        "HomeChoice (Pty) Ltd"
+      ],
+      "industries": [
+        "direct-response-retail",
+        "marketing-services"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-honeycomb-bee-ratings",
+      "name": "Honeycomb BEE Ratings",
+      "aliases": [],
+      "industries": [
+        "bbb-ee-verification"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Ekurhuleni, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-hrg-rennies-travel",
+      "name": "HRG Rennies Travel",
+      "aliases": [],
+      "industries": [
+        "travel-and-tourism"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-ibm",
+      "name": "IBM",
+      "aliases": [
+        "IBM South Africa"
+      ],
+      "industries": [
+        "computer-hardware"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-imagecorp",
+      "name": "Imagecorp",
+      "aliases": [],
+      "industries": [
+        "branding-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-imperial-retail-logistics",
+      "name": "Imperial Retail Logistics",
+      "aliases": [
+        "Imperial Retail Logistics (Pty) Ltd"
+      ],
+      "industries": [
+        "contract-logistics"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Ekurhuleni, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-innovation-group",
+      "name": "Innovation Group",
+      "aliases": [
+        "Innovation Group (Pty) Ltd"
+      ],
+      "industries": [
+        "business-process-outsourcing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-internet-solutions",
+      "name": "Internet Solutions",
+      "aliases": [],
+      "industries": [
+        "communications-networks"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-jaguar-land-rover-east-rand",
+      "name": "Jaguar Land Rover East Rand",
+      "aliases": [],
+      "industries": [
+        "motor-vehicles"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Boksburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-jg-afrika",
+      "name": "JG Afrika",
+      "aliases": [
+        "JG Afrika (Pty) Ltd"
+      ],
+      "industries": [
+        "consulting-engineering",
+        "engineering-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-kansai-plascon-africa",
+      "name": "Kansai Plascon Africa",
+      "aliases": [
+        "Kansai Plascon Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "paint-and-coatings"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-kantar-tns",
+      "name": "Kantar TNS",
+      "aliases": [],
+      "industries": [
+        "market-research"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Randburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-pg-bison",
+      "name": "PG Bison",
+      "aliases": [
+        "KAP Diversified Industrial",
+        "KAP Diversified Industrial (Pty) Ltd t/a PG Bison"
+      ],
+      "industries": [
+        "building-materials",
+        "construction-contracting"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-kwe-global-logistics-partner",
+      "name": "KWE Global Logistics Partner",
+      "aliases": [],
+      "industries": [
+        "contract-logistics"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-lesedi-nuclear-services",
+      "name": "Lesedi Nuclear Services",
+      "aliases": [],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-lewis-group",
+      "name": "Lewis Group",
+      "aliases": [
+        "Lewis Group Limited"
+      ],
+      "industries": [
+        "furniture-retail",
+        "general-retail"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-liberty-holdings",
+      "name": "Liberty Holdings",
+      "aliases": [
+        "Liberty Holdings Limited"
+      ],
+      "industries": [
+        "financial-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-mango-airlines",
+      "name": "Mango Airlines",
+      "aliases": [],
+      "industries": [
+        "state-owned-air-transport"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-manhattan-corporation",
+      "name": "Manhattan Corporation",
+      "aliases": [],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Benoni, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-massbuild",
+      "name": "Massbuild",
+      "aliases": [
+        "Massbuild (Pty) Ltd"
+      ],
+      "industries": [
+        "builders-merchants"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-medihelp-medical-scheme",
+      "name": "Medihelp Medical Scheme",
+      "aliases": [],
+      "industries": [
+        "health-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-mercedes-benz-south-africa",
+      "name": "Mercedes-Benz South Africa",
+      "aliases": [
+        "Mercedes-Benz South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "motor-vehicles"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Centurion, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-metair-investments",
+      "name": "Metair Investments",
+      "aliases": [
+        "Metair Investments Limited"
+      ],
+      "industries": [
+        "automotive-components"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-microsoft-sa",
+      "name": "Microsoft SA",
+      "aliases": [
+        "Microsoft",
+        "Microsoft SA (Pty) Ltd"
+      ],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-mix-telematics-enterprise",
+      "name": "MiX Telematics Enterprise",
+      "aliases": [],
+      "industries": [
+        "fleet-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Midrand, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-mmi-holdings",
+      "name": "MMI Holdings",
+      "aliases": [],
+      "industries": [
+        "financial-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Centurion, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-mpact",
+      "name": "Mpact",
+      "aliases": [
+        "Mpact Limited"
+      ],
+      "industries": [
+        "packaging-manufacturing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-multichoice-south-africa",
+      "name": "MultiChoice South Africa",
+      "aliases": [
+        "MultiChoice",
+        "MultiChoice South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "media-groups"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Randburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-murray-and-roberts-cementation",
+      "name": "Murray & Roberts Cementation",
+      "aliases": [
+        "Murray & Roberts Cementation (Pty) Ltd"
+      ],
+      "industries": [
+        "mining-operations",
+        "mining-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-nashua",
+      "name": "Nashua",
+      "aliases": [
+        "Nashua Limited"
+      ],
+      "industries": [
+        "telecommunications"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-naspers",
+      "name": "Naspers",
+      "aliases": [
+        "Naspers Limited"
+      ],
+      "industries": [
+        "marketing-media",
+        "media-groups"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-national-empowerment-rating-agency",
+      "name": "National Empowerment Rating Agency",
+      "aliases": [],
+      "industries": [
+        "bbb-ee-verification"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-nestle",
+      "name": "Nestlé",
+      "aliases": [],
+      "industries": [
+        "food-manufacturing",
+        "foodservice-distribution"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-netcare",
+      "name": "Netcare",
+      "aliases": [
+        "Netcare Limited"
+      ],
+      "industries": [
+        "health-services",
+        "private-hospital-groups"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-nhbrc",
+      "name": "NHBRC",
+      "aliases": [],
+      "industries": [
+        "home-building-regulation"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-oceana-group",
+      "name": "Oceana Group",
+      "aliases": [
+        "Oceana Group Limited"
+      ],
+      "industries": [
+        "fishing-operations"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-ogilvy",
+      "name": "Ogilvy",
+      "aliases": [
+        "Ogilvy South Africa"
+      ],
+      "industries": [
+        "marketing-media"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-old-mutual-investment-group-south-africa",
+      "name": "Old Mutual Investment Group (South Africa)",
+      "aliases": [
+        "Old Mutual Investment Group (South Africa) (Pty) Ltd"
+      ],
+      "industries": [
+        "asset-management",
+        "investment-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-outdoor-network",
+      "name": "Outdoor Network",
+      "aliases": [],
+      "industries": [
+        "marketing-media"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-pfizer",
+      "name": "Pfizer",
+      "aliases": [],
+      "industries": [
+        "pharmaceutical-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-ppc-cement-sa",
+      "name": "PPC Cement SA",
+      "aliases": [
+        "PPC Cement SA (Pty) Ltd"
+      ],
+      "industries": [
+        "cement-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-pragma",
+      "name": "Pragma",
+      "aliases": [],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-premier-verification",
+      "name": "Premier Verification",
+      "aliases": [],
+      "industries": [
+        "bbb-ee-verification"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-pricewaterhousecoopers-south-africa",
+      "name": "PricewaterhouseCoopers South Africa",
+      "aliases": [],
+      "industries": [
+        "financial-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-primeserve-group",
+      "name": "Primeserve Group",
+      "aliases": [
+        "Primeserve Group Limited"
+      ],
+      "industries": [
+        "investment-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-productivity-sa",
+      "name": "Productivity SA",
+      "aliases": [],
+      "industries": [
+        "business-support-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-protea-coin-group",
+      "name": "Protea Coin Group",
+      "aliases": [],
+      "industries": [
+        "private-security"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-psg-group",
+      "name": "PSG Group",
+      "aliases": [
+        "PSG Group Limited"
+      ],
+      "industries": [
+        "investment-management",
+        "investment-holding-companies"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Stellenbosch, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-quest",
+      "name": "Quest",
+      "aliases": [],
+      "industries": [
+        "business-support-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-rand-water",
+      "name": "Rand Water",
+      "aliases": [],
+      "industries": [
+        "bulk-water-supply"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-rectron",
+      "name": "Rectron",
+      "aliases": [
+        "Rectron South Africa",
+        "Rectron (Pty) Ltd"
+      ],
+      "industries": [
+        "information-technology"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-remgro",
+      "name": "Remgro",
+      "aliases": [
+        "Remgro Limited"
+      ],
+      "industries": [
+        "investment-management",
+        "investment-holding-companies"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Stellenbosch, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-ricoh-south-africa",
+      "name": "Ricoh South Africa",
+      "aliases": [],
+      "industries": [
+        "office-automation"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sa-tourism",
+      "name": "SA Tourism",
+      "aliases": [
+        "South African Tourism"
+      ],
+      "industries": [
+        "travel-and-tourism"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-samsung-nac",
+      "name": "Samsung NAC",
+      "aliases": [],
+      "industries": [
+        "electronics-manufacturing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sanlam",
+      "name": "Sanlam",
+      "aliases": [],
+      "industries": [
+        "financial-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-santam",
+      "name": "Santam",
+      "aliases": [
+        "Santam Insurance"
+      ],
+      "industries": [
+        "insurance-underwriting"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sap-africa",
+      "name": "SAP Africa",
+      "aliases": [
+        "SAP"
+      ],
+      "industries": [
+        "information-technology",
+        "software-solutions"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sappi",
+      "name": "Sappi",
+      "aliases": [
+        "Sappi Limited"
+      ],
+      "industries": [
+        "pulp-and-paper"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Braamfontein, Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sasol",
+      "name": "Sasol",
+      "aliases": [
+        "Sasol Limited"
+      ],
+      "industries": [
+        "gases-petrochemicals"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sasol-mining",
+      "name": "Sasol Mining",
+      "aliases": [
+        "Sasol Mining (Pty) Ltd"
+      ],
+      "industries": [
+        "coal-mining",
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-savino-del-bene-south-africa",
+      "name": "Savino Del Bene South Africa",
+      "aliases": [
+        "Savino Del Bene South Africa (Pty) Ltd"
+      ],
+      "industries": [
+        "contract-logistics"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sishen-iron-ore-company",
+      "name": "Sishen Iron Ore Company",
+      "aliases": [
+        "Kumba Iron Ore",
+        "Sishen Iron Ore Company (Kumba Iron Ore)"
+      ],
+      "industries": [
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Centurion, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-smec",
+      "name": "SMEC",
+      "aliases": [],
+      "industries": [
+        "consulting-engineering",
+        "engineering-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-south-african-airways",
+      "name": "South African Airways",
+      "aliases": [
+        "SAA",
+        "South African Airways (SAA)"
+      ],
+      "industries": [
+        "state-owned-air-transport"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Ekurhuleni, Kempton Park, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-spoor-and-fisher",
+      "name": "Spoor and Fisher",
+      "aliases": [
+        "Spoor & Fisher"
+      ],
+      "industries": [
+        "legal-services"
+      ],
+      "confidence": "probable",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-stephan-welz-and-co",
+      "name": "Stephan Welz & Co",
+      "aliases": [],
+      "industries": [
+        "auctioneering"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-sun-international",
+      "name": "Sun International",
+      "aliases": [
+        "Sun International Limited"
+      ],
+      "industries": [
+        "hotel-and-resort-groups"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-telkom-sa-soc",
+      "name": "Telkom SA SOC",
+      "aliases": [
+        "Telkom",
+        "Telkom SA SOC Limited"
+      ],
+      "industries": [
+        "communications-networks"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Centurion, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-the-blue-train",
+      "name": "The Blue Train",
+      "aliases": [],
+      "industries": [
+        "rail-passenger-transport",
+        "travel-and-tourism"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-the-green-company",
+      "name": "The Green Company",
+      "aliases": [],
+      "industries": [
+        "electronics-manufacturing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-the-mediashop",
+      "name": "The MediaShop",
+      "aliases": [
+        "The MediaShop (Pty) Ltd"
+      ],
+      "industries": [
+        "marketing-media",
+        "media-agencies"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-the-waste-group-operations",
+      "name": "The Waste Group Operations",
+      "aliases": [
+        "The Waste Group Operations (Pty) Ltd"
+      ],
+      "industries": [
+        "waste-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Pretoria, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-the-workforce-group",
+      "name": "The Workforce Group",
+      "aliases": [],
+      "industries": [
+        "recruitment-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-toll-global-forwarding-sa",
+      "name": "Toll Global Forwarding (SA)",
+      "aliases": [
+        "Toll Global Forwarding (SA) (Pty) Ltd"
+      ],
+      "industries": [
+        "contract-logistics"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-torre-parts-and-components",
+      "name": "Torre Parts & Components",
+      "aliases": [
+        "Torre Parts & Components Pty",
+        "Torre Parts & Components Pty Ltd"
+      ],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-trans-hex-group",
+      "name": "Trans Hex Group",
+      "aliases": [
+        "Trans Hex Group Limited"
+      ],
+      "industries": [
+        "diamond-mining",
+        "mining-operations"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-transnet-soc",
+      "name": "Transnet SOC",
+      "aliases": [
+        "Transnet SOC Limited"
+      ],
+      "industries": [
+        "contract-logistics"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Midrand, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-trek-bicycle-south-africa",
+      "name": "Trek Bicycle South Africa",
+      "aliases": [],
+      "industries": [
+        "brand-distribution"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-truworths-international",
+      "name": "Truworths International",
+      "aliases": [
+        "Truworths",
+        "Truworths International Limited"
+      ],
+      "industries": [
+        "luxury-lifestyle-retail",
+        "general-retail"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-tsogo-sun-hotels",
+      "name": "Tsogo Sun Hotels",
+      "aliases": [],
+      "industries": [
+        "hotel-and-resort-groups"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Bryanston, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-uct-graduate-school-of-business",
+      "name": "UCT Graduate School of Business",
+      "aliases": [],
+      "industries": [
+        "private-education"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Cape Town, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-unlimited-events-group",
+      "name": "Unlimited Events Group",
+      "aliases": [],
+      "industries": [
+        "event-management"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Centurion, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-vektronix",
+      "name": "Vektronix",
+      "aliases": [
+        "Vektronix (Pty) Ltd"
+      ],
+      "industries": [
+        "electronics-manufacturing"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "East London, Eastern Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-vodacom",
+      "name": "Vodacom",
+      "aliases": [
+        "Vodacom",
+        "Vodacom Group Limited"
+      ],
+      "industries": [
+        "telecommunications"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-volvo-group-southern-africa",
+      "name": "Volvo Group Southern Africa",
+      "aliases": [],
+      "industries": [
+        "motor-vehicles"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Boksburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-vox-telecommunications",
+      "name": "Vox Telecommunications",
+      "aliases": [
+        "Vox Telecom",
+        "Vox Telecommunications (Pty) Ltd"
+      ],
+      "industries": [
+        "telecommunications",
+        "telecommunications-solutions"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-wildlife-pharmaceuticals",
+      "name": "Wildlife Pharmaceuticals",
+      "aliases": [],
+      "industries": [
+        "pharmaceutical-manufacturing"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "White River, Mpumalanga"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-woodford-group",
+      "name": "Woodford Group",
+      "aliases": [],
+      "industries": [
+        "vehicle-rental"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Durban, KwaZulu-Natal"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-wrath-luxury-lifestyle",
+      "name": "Wrath Luxury Lifestyle",
+      "aliases": [],
+      "industries": [
+        "luxury-lifestyle-retail",
+        "professional-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Johannesburg, Sandton, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-wsp",
+      "name": "WSP",
+      "aliases": [
+        "WSP in Africa"
+      ],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [
+        "Johannesburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-zeder-investments",
+      "name": "Zeder Investments",
+      "aliases": [
+        "Zeder Investments Limited"
+      ],
+      "industries": [
+        "investment-management",
+        "investment-holding-companies"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Cape Town, Stellenbosch, Western Cape"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-zenzo-consulting",
+      "name": "Zenzo Consulting",
+      "aliases": [],
+      "industries": [
+        "professional-services",
+        "recruitment-services"
+      ],
+      "confidence": "probable",
+      "locations": [
+        "Randburg, Gauteng"
+      ],
+      "sources": 1,
+      "mergedFrom": []
+    },
+    {
+      "id": "org-zutari",
+      "name": "Zutari",
+      "aliases": [],
+      "industries": [
+        "engineering-services"
+      ],
+      "confidence": "hypothesis",
+      "locations": [],
+      "sources": 1,
+      "mergedFrom": []
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import { discoverAssociations, filterMatches } from '../src/data/organizations/d
 import { roleContextById } from '../src/data/organizations/roleContexts'
 import { companyDossier, discoverTargets, emptyFilters, exportTargetsCsv, nationalTaxonomySummary, knowledgeBaseSummary } from '../src/data/organizations/query'
 import { organizationTaxonomy, sharedTaxonomyBranch, taxonomyNodesForIndustry } from '../src/data/organizations/taxonomyPlacement'
-import { getTaxonomyNode, industryCrosswalk, sectorTree } from '../src/data/taxonomy/load'
+import { getMacroSectors, getTaxonomyNode, industryCrosswalk, sectorTree } from '../src/data/taxonomy/load'
 import { EMPTY_FILTERS } from '../src/data/organizations/types'
 import { industries, organizations } from '../src/data/organizations/load'
 
@@ -209,8 +209,15 @@ test('a company that both develops and owns assets keeps two distinct placements
 
 test('the macro-sector facet filters on derived placement, not a second classification', () => {
   const discovery = discoverAssociations({ index, focalId: 'org-ccs-logistics', roleContext: role, extraOrganizations })
-  const none = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['MIN'] })
-  assert.equal(none.length, 0, 'the universe holds no mining companies, so a mining facet must be empty')
+  // The universe now reaches most macro-sectors, so the empty-facet case is
+  // derived from the data: whichever macro-sector no curated company sits in
+  // must filter to nothing.
+  const emptySector = getMacroSectors()
+    .map((node) => node.id)
+    .find((id) => organizations.every((organization) => !organizationTaxonomy(organization).macroSectorIds.includes(id)))
+  assert.ok(emptySector, 'the curated universe leaves at least one macro-sector without companies')
+  const none = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: [emptySector] })
+  assert.equal(none.length, 0, `no curated company sits in ${emptySector}, so that facet must be empty`)
 
   const transport = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['TRA'] })
   assert.ok(transport.length > 0)
