@@ -10,10 +10,10 @@ tax status carry the distinction instead of an assumption of CIPC registration.
 | Tier | Nodes |
 |---|---|
 | Macro-Sector (Level 1) | 16 |
-| Industry Sector (Level 2) | 129 |
-| Sub-Industry (Level 3) | 490 |
+| Industry Sector (Level 2) | 131 |
+| Sub-Industry (Level 3) | 498 |
 | Operational / Product Niche (Level 4) | 96 |
-| **Total** | **731** |
+| **Total** | **741** |
 
 - **Mining, Quarrying & Extractive Industries** `MIN` — SIC 05-09
   - Bushveld Complex PGM and chrome belt, Witwatersrand and Free State gold, Mpumalanga and Waterberg coal, Northern Cape iron ore and manganese, Kimberley and West Coast marine diamonds. Junior miners and black-owned small-scale operators sit in the same tree as the JSE-listed majors.
@@ -381,6 +381,12 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - Small workshops, welding shops and repair services - high informal participation, usually EME or QSE for B-BBEE.
     - **Welding & Small Fabrication Shops** `MFG-LIGHT-WELD` _(informal economy)_
     - **Industrial Repair & Refurbishment** `MFG-LIGHT-REPAIR`
+  - **Machinery, Equipment & Capital Goods** `MFG-MACH`
+    - Manufacture, assembly and supply of capital equipment: earthmoving and mining machinery, industrial machinery, pumps, compressors and power transmission components, together with the aftermarket parts and rebuild economy that keeps them running. Kept separate from metals fabrication and from automotive manufacturing because the product is a machine sold into mining, construction, agriculture and industry rather than a component or a consumer vehicle.
+    - **Mining, Construction & Earthmoving Equipment** `MFG-MACH-EARTH`
+      - Articulated dump trucks, excavators, loaders, drilling rigs and crushing and screening plant, both locally manufactured and imported for distribution, with dealer service networks across the mining and construction belt.
+    - **Industrial Machinery, Pumps, Compressors & Power Transmission** `MFG-MACH-IND`
+      - Processing plant, conveyors, pumps, valves, compressors, bearings, drives and gearboxes supplied and supported into manufacturing, water, energy and mining operations.
 - **Retail, FMCG & Consumer Goods** `RTL` — SIC 45-47
   - One of the most concentrated retail markets in the world at the top (Shoprite, Pick n Pay, SPAR, Woolworths, Massmart, Mr Price, TFG) and one of the most fragmented at the bottom, where tens of thousands of spaza shops and street traders serve township and rural demand.
   - Also known as: Retail, FMCG retail, Consumer goods
@@ -514,6 +520,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
   - **Air Cargo & Aviation Services** `TRA-AIR`
     - **Air Cargo & Perishable Export** `TRA-AIR-CARGO`
     - **Aviation Maintenance & Ground Services** `TRA-AIR-SVC`
+    - **Passenger Airline Operations** `TRA-AIR-PAX`
+      - Scheduled and charter passenger airlines operating domestically and regionally, including franchise and low-cost carrier models. Separate from air cargo and from maintenance and ground services because the operating model is seat capacity, network scheduling and yield management.
   - **Pipeline & Bulk Liquid Transport** `TRA-PIPE`
     - **Fuel & Chemical Tanker Transport** `TRA-PIPE-LIQ`
     - **Pipeline Operations** `TRA-PIPE-PIPE`
@@ -545,6 +553,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - **Customs Clearing & Bonded Warehousing** `TRA-SVC-CUSTOMS`
     - **Truck Stops & Driver Facilities** `TRA-SVC-FACILITY`
     - **Transport Insurance & Cargo Claims** `TRA-SVC-INSUR`
+    - **Vehicle Rental & Fleet Leasing** `TRA-SVC-RENT`
+      - Short-term car rental, long-term full-maintenance leasing and fleet management contracts for corporate, government and rental customers, including the remarketing of de-fleeted vehicles.
 - **Financial Services, Banking & Insurance** `FIN` — SIC 64-66
   - A deep dual economy: a sophisticated formal sector led by the Big Five banks and the large insurers, sitting alongside stokvels, burial societies and informal lenders that hold most of the savings behaviour in low-income communities. FSCA, SARB and FIC regulation applies unevenly across that divide.
   - Also known as: Financial services, Banking, Insurance, Fintech
@@ -652,6 +662,12 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - **Collections, Recoveries & Legal Administration** `FIN-SVC-COLLECT`
     - **Actuarial & Quantitative Consulting** `FIN-SVC-ACTUAR`
     - **Regulatory Compliance & Licensing Services** `FIN-SVC-COMP`
+  - **Asset Management, Wealth & Investment** `FIN-ASSET`
+    - South African asset managers, collective investment schemes, wealth and stockbroking platforms, and investment holding companies. Distinct from banking and from insurance underwriting because the business model is managing third-party and proprietary capital rather than taking deposits or underwriting risk. Locally dominated by a small number of large managers plus a long tail of boutique and index managers, with JSE-listed investment holding companies and family offices at the top of the structure.
+    - **Asset Management & Collective Investment Schemes** `FIN-ASSET-MANAGE`
+      - Discretionary portfolio management, unit trusts and exchange-traded funds, institutional mandates and multi-manager platforms regulated under the Collective Investment Schemes Control Act.
+    - **Investment Holding Companies & Family Offices** `FIN-ASSET-HOLD`
+      - JSE-listed and private investment holding companies that own portfolios of operating subsidiaries across sectors, plus single-family offices. The economic activity is capital allocation and group oversight, which is why they are held here rather than against the sector of any one subsidiary.
 - **Information Technology, Telecommunications & BPO** `ICT` — SIC 58-63
   - Infrastructure giants at the top, systems integrators in the middle, and a large and fast-growing SMME layer of software studios, agencies and BPO operations clustered in Cape Town and Johannesburg. BPO is one of the biggest formal job creators for youth.
   - Also known as: IT, ICT, Technology, Telecoms
@@ -826,6 +842,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - **Public Sector & Policy Advisory** `PRO-CONSULT-PUB`
     - **Environmental & Sustainability Consulting** `PRO-CONSULT-ENV`
       - EIA practitioners, water use licensing and just-transition advisory; cross-referenced to MIN-REHAB.
+    - **B-BBEE Verification, Rating & Transformation Advisory** `PRO-CONSULT-BBBEE`
+      - SANAS-accredited B-BBEE verification agencies issuing measured-entity certificates against the sector codes and the generic scorecard, together with transformation, ownership-structuring and enterprise and supplier development advisory that prepares measured entities for verification.
   - **HR, Recruitment & Labour Services** `PRO-HR`
     - **Recruitment & Executive Search** `PRO-HR-RECRUIT`
     - **Labour Broking & Temporary Employment Services** `PRO-HR-LABOUR`
@@ -849,6 +867,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - **Valuation & Quantity Surveying** `PRO-CORP-VAL`
     - **Corporate Shared Services & Back Office** `PRO-CORP-BPO`
     - **Translation, Interpretation & Language Services** `PRO-CORP-LANG`
+    - **Auctions, Disposals & Asset Realisation** `PRO-CORP-AUCT`
+      - Auction houses and asset realisation specialists conducting timed, online and on-site sales in fine art, collectibles, industrial plant, commercial vehicles, livestock and property, together with liquidation and appraisal services.
 - **Health, Life Sciences & Wellness** `HLC` — SIC 86-88
   - A two-tier system: private hospital groups and medical schemes serving roughly a fifth of the population, and the public system with municipal and provincial facilities. NHI implementation reshapes the payer landscape.
   - Also known as: Health, Healthcare, Medical

@@ -1,0 +1,847 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "source": "source/top500_categorised.csv (Top 500 directory export)",
+  "rule": "One source sector label maps to exactly one Maps industry, and each Maps industry maps to exactly one national taxonomy node. A label that names a specific activity maps to the deepest node that represents it; a label that is generic (Information Technology, Communications, Mining, Retail, Health, Professional Services) maps to the macro-sector node, because a sector-level label does not establish a sub-branch.",
+  "confidenceRule": "Every imported classification is directory evidence, so no link is recorded as confirmed. A company whose every placement lands on a macro-sector node is recorded as hypothesis; a company with at least one placement on a deeper node is recorded as probable.",
+  "mappings": [
+    {
+      "category": "(uncategorised)",
+      "industryIds": [],
+      "note": "The source carries no sector for these rows. Left unplaced rather than guessed: they surface in the atlas 'Not yet classified' branch as a research queue."
+    },
+    {
+      "category": "Aerospace Defence",
+      "industryIds": [
+        "defence-and-aerospace"
+      ],
+      "note": "Land systems and defence manufacturing."
+    },
+    {
+      "category": "Agriculture",
+      "industryIds": [
+        "commercial-farming"
+      ],
+      "note": "Placed at the agriculture macro-sector level; the source does not name the commodity branch."
+    },
+    {
+      "category": "Air Traffic Navigation",
+      "industryIds": [
+        "state-owned-air-transport"
+      ],
+      "note": "Air traffic and navigation service provider."
+    },
+    {
+      "category": "Airline",
+      "industryIds": [
+        "airline-operations"
+      ],
+      "note": "Passenger airline operations."
+    },
+    {
+      "category": "Airline Catering",
+      "industryIds": [
+        "airline-catering"
+      ],
+      "note": "Airline catering."
+    },
+    {
+      "category": "Airport Company",
+      "industryIds": [
+        "state-owned-air-transport"
+      ],
+      "note": "Airport and state-owned air transport entities (the source also lists two state-owned airlines under this sector)."
+    },
+    {
+      "category": "Appliances",
+      "industryIds": [
+        "appliance-manufacturing"
+      ],
+      "note": "Domestic appliance manufacture and assembly."
+    },
+    {
+      "category": "Asset Management",
+      "industryIds": [
+        "asset-management"
+      ],
+      "note": "Asset management and wealth. Reviewed per company: Pragma's listing describes enterprise asset management (ISO 55000 engineering), so its row is redirected to engineering services."
+    },
+    {
+      "category": "Auction Houses",
+      "industryIds": [
+        "auctioneering"
+      ],
+      "note": "Auction house operation."
+    },
+    {
+      "category": "Auctioneers",
+      "industryIds": [
+        "auctioneering"
+      ],
+      "note": "Auctioneering."
+    },
+    {
+      "category": "Automobiles",
+      "industryIds": [
+        "motor-vehicles"
+      ],
+      "note": "Vehicle assembly and supply."
+    },
+    {
+      "category": "Automotive Components",
+      "industryIds": [
+        "automotive-components"
+      ],
+      "note": "Automotive component and in-vehicle technology supply."
+    },
+    {
+      "category": "Aviation",
+      "industryIds": [
+        "airline-operations"
+      ],
+      "note": "Airline operations."
+    },
+    {
+      "category": "Banks",
+      "industryIds": [
+        "universal-banking"
+      ],
+      "note": "Universal and retail banking. Reviewed per company: the Nestle row under Banks contradicts the same source's own Food Products and Food Services rows and is rejected."
+    },
+    {
+      "category": "Beauty Products",
+      "industryIds": [
+        "personal-care-manufacturing"
+      ],
+      "note": "Cosmetics and personal care manufacture."
+    },
+    {
+      "category": "Bee Verification",
+      "industryIds": [
+        "bbb-ee-verification"
+      ],
+      "note": "B-BBEE verification and rating agencies."
+    },
+    {
+      "category": "Beverage",
+      "industryIds": [
+        "beverage-manufacturing"
+      ],
+      "note": "Beverage manufacturing and bottling."
+    },
+    {
+      "category": "Beverages Breweries",
+      "industryIds": [
+        "brewing-distilling"
+      ],
+      "note": "Brewing."
+    },
+    {
+      "category": "Branding",
+      "industryIds": [
+        "branding-services"
+      ],
+      "note": "Brand and design services."
+    },
+    {
+      "category": "Brands Distributor",
+      "industryIds": [
+        "brand-distribution"
+      ],
+      "note": "Branded goods distribution."
+    },
+    {
+      "category": "Broadcasting Contractors",
+      "industryIds": [
+        "media-groups"
+      ],
+      "note": "Broadcasting and pay television."
+    },
+    {
+      "category": "Builders Merchants",
+      "industryIds": [
+        "builders-merchants"
+      ],
+      "note": "Builders' merchant and hardware retail."
+    },
+    {
+      "category": "Building Construction Materials",
+      "industryIds": [
+        "building-materials"
+      ],
+      "note": "Building materials and board products."
+    },
+    {
+      "category": "Business Process Outsourcing",
+      "industryIds": [
+        "business-process-outsourcing"
+      ],
+      "note": "Outsourced business processes."
+    },
+    {
+      "category": "Business Schools",
+      "industryIds": [
+        "business-schools"
+      ],
+      "note": "Business schools and executive education."
+    },
+    {
+      "category": "Business Support Services",
+      "industryIds": [
+        "business-support-services"
+      ],
+      "note": "Business support services."
+    },
+    {
+      "category": "Car Rental",
+      "industryIds": [
+        "vehicle-rental"
+      ],
+      "note": "Vehicle rental."
+    },
+    {
+      "category": "Cement",
+      "industryIds": [
+        "cement-manufacturing"
+      ],
+      "note": "Cement manufacture."
+    },
+    {
+      "category": "Chemicals",
+      "industryIds": [
+        "chemicals"
+      ],
+      "note": "Base and industrial chemicals."
+    },
+    {
+      "category": "Coal",
+      "industryIds": [
+        "coal-mining"
+      ],
+      "note": "Coal extraction and supply."
+    },
+    {
+      "category": "Commercial Vehicles",
+      "industryIds": [
+        "motor-vehicles"
+      ],
+      "note": "Commercial and heavy vehicle supply."
+    },
+    {
+      "category": "Communications",
+      "industryIds": [
+        "communications-networks"
+      ],
+      "note": "Communications networks and network equipment: placed at the ICT macro-sector level because the sector mixes network operators, internet service providers and network vendors."
+    },
+    {
+      "category": "Computer Hardware",
+      "industryIds": [
+        "computer-hardware"
+      ],
+      "note": "Computer hardware and devices."
+    },
+    {
+      "category": "Conference Facilities",
+      "industryIds": [
+        "conference-centres"
+      ],
+      "note": "Conference and exhibition centre operation."
+    },
+    {
+      "category": "Construction",
+      "industryIds": [
+        "construction-contracting"
+      ],
+      "note": "Construction contracting."
+    },
+    {
+      "category": "Consulting Engineering",
+      "industryIds": [
+        "consulting-engineering"
+      ],
+      "note": "Consulting engineering and design."
+    },
+    {
+      "category": "Dairy Products",
+      "industryIds": [
+        "dairy-processing"
+      ],
+      "note": "Dairy processing."
+    },
+    {
+      "category": "Diamond Mining",
+      "industryIds": [
+        "diamond-mining"
+      ],
+      "note": "Diamond extraction."
+    },
+    {
+      "category": "Direct Response Marketing",
+      "industryIds": [
+        "direct-response-retail"
+      ],
+      "note": "Direct response and home shopping retail."
+    },
+    {
+      "category": "Distillers Vintners",
+      "industryIds": [
+        "brewing-distilling"
+      ],
+      "note": "Distilling and wine and spirits production."
+    },
+    {
+      "category": "Diversified Retailers",
+      "industryIds": [
+        "diversified-retail"
+      ],
+      "note": "Diversified retail groups."
+    },
+    {
+      "category": "Education",
+      "industryIds": [
+        "private-education"
+      ],
+      "note": "Private education and training."
+    },
+    {
+      "category": "Electrical Equipment",
+      "industryIds": [
+        "electrical-equipment-manufacturing"
+      ],
+      "note": "Transformers and electrical equipment."
+    },
+    {
+      "category": "Electricity",
+      "industryIds": [
+        "electricity-utility"
+      ],
+      "note": "Electricity generation and transmission."
+    },
+    {
+      "category": "Electronic Products",
+      "industryIds": [
+        "electronics-manufacturing"
+      ],
+      "note": "Electronics and electrical products."
+    },
+    {
+      "category": "Engineering",
+      "industryIds": [
+        "engineering-services"
+      ],
+      "note": "Engineering services."
+    },
+    {
+      "category": "Events",
+      "industryIds": [
+        "event-management"
+      ],
+      "note": "Event management and production."
+    },
+    {
+      "category": "Farming",
+      "industryIds": [
+        "commercial-farming"
+      ],
+      "note": "Commercial farming."
+    },
+    {
+      "category": "Financial Services",
+      "industryIds": [
+        "financial-services"
+      ],
+      "note": "Diversified financial services: held at the finance macro-sector level because the source does not establish the sub-sector."
+    },
+    {
+      "category": "Fishing",
+      "industryIds": [
+        "fishing-operations"
+      ],
+      "note": "Marine fishing operations."
+    },
+    {
+      "category": "Fleet Services",
+      "industryIds": [
+        "fleet-services"
+      ],
+      "note": "Fleet management and telematics."
+    },
+    {
+      "category": "Food Processors",
+      "industryIds": [
+        "food-manufacturing"
+      ],
+      "note": "Food processing and manufacturing."
+    },
+    {
+      "category": "Food Products",
+      "industryIds": [
+        "food-manufacturing"
+      ],
+      "note": "Food and consumer goods manufacturing."
+    },
+    {
+      "category": "Food Services",
+      "industryIds": [
+        "foodservice-distribution"
+      ],
+      "note": "Foodservice distribution."
+    },
+    {
+      "category": "Furniture Retailers",
+      "industryIds": [
+        "furniture-retail"
+      ],
+      "note": "Furniture and household goods retail."
+    },
+    {
+      "category": "Gases",
+      "industryIds": [
+        "gases-petrochemicals"
+      ],
+      "note": "Industrial gases and petrochemicals."
+    },
+    {
+      "category": "Hair Care Products",
+      "industryIds": [
+        "personal-care-manufacturing"
+      ],
+      "note": "Hair care manufacture."
+    },
+    {
+      "category": "Health",
+      "industryIds": [
+        "health-services"
+      ],
+      "note": "Health services: held at the health macro-sector level because the sector mixes hospital groups, medical schemes, administrators and consumer health products."
+    },
+    {
+      "category": "Heavy Machinery",
+      "industryIds": [
+        "heavy-equipment"
+      ],
+      "note": "Heavy earthmoving and mining machinery."
+    },
+    {
+      "category": "Home Building Industry",
+      "industryIds": [
+        "home-building-regulation"
+      ],
+      "note": "Statutory home builder registration and regulation."
+    },
+    {
+      "category": "Hospital Management",
+      "industryIds": [
+        "private-hospital-groups"
+      ],
+      "note": "Private hospital groups."
+    },
+    {
+      "category": "Hotels",
+      "industryIds": [
+        "hotel-and-resort-groups"
+      ],
+      "note": "Hotel groups."
+    },
+    {
+      "category": "Hotels And Resorts",
+      "industryIds": [
+        "hotel-and-resort-groups"
+      ],
+      "note": "Hotel and resort groups."
+    },
+    {
+      "category": "Hygiene Services",
+      "industryIds": [
+        "hygiene-and-cleaning"
+      ],
+      "note": "Cleaning and hygiene services."
+    },
+    {
+      "category": "Industrial Products Equipment",
+      "industryIds": [
+        "industrial-equipment-supply"
+      ],
+      "note": "Industrial machinery and equipment supply."
+    },
+    {
+      "category": "Information Technology",
+      "industryIds": [
+        "information-technology"
+      ],
+      "note": "Information technology services: held at the ICT macro-sector level because the sector mixes services, software and hardware distribution."
+    },
+    {
+      "category": "Infrastructure Management",
+      "industryIds": [
+        "infrastructure-management"
+      ],
+      "note": "Infrastructure management: held at the built-environment macro-sector level."
+    },
+    {
+      "category": "Insurance",
+      "industryIds": [
+        "insurance-underwriting"
+      ],
+      "note": "Insurance underwriting."
+    },
+    {
+      "category": "Investment",
+      "industryIds": [
+        "investment-management"
+      ],
+      "note": "Investment management. Reviewed per company: Hyprop already carries a sourced property-investment placement in Maps, and the generic Investment label does not establish asset management, so that row is not imported."
+    },
+    {
+      "category": "Investment Holding Companies",
+      "industryIds": [
+        "investment-holding-companies"
+      ],
+      "note": "Investment holding companies."
+    },
+    {
+      "category": "Legal Services",
+      "industryIds": [
+        "legal-services"
+      ],
+      "note": "Legal services."
+    },
+    {
+      "category": "Lifestyle",
+      "industryIds": [
+        "luxury-lifestyle-retail"
+      ],
+      "note": "Lifestyle and premium retail."
+    },
+    {
+      "category": "Logistics",
+      "industryIds": [
+        "contract-logistics"
+      ],
+      "note": "Contract logistics, freight forwarding and supply chain services."
+    },
+    {
+      "category": "Luxury",
+      "industryIds": [
+        "luxury-lifestyle-retail"
+      ],
+      "note": "Luxury retail."
+    },
+    {
+      "category": "Marketing",
+      "industryIds": [
+        "marketing-services"
+      ],
+      "note": "Marketing services."
+    },
+    {
+      "category": "Marketing Media",
+      "industryIds": [
+        "marketing-media"
+      ],
+      "note": "Marketing and media services."
+    },
+    {
+      "category": "Media Agencies",
+      "industryIds": [
+        "media-agencies"
+      ],
+      "note": "Media agencies and buying."
+    },
+    {
+      "category": "Media Groups",
+      "industryIds": [
+        "media-groups"
+      ],
+      "note": "Media groups."
+    },
+    {
+      "category": "Medical Aid Administrators",
+      "industryIds": [
+        "medical-scheme-administration"
+      ],
+      "note": "Medical scheme administration."
+    },
+    {
+      "category": "Medical Aid Schemes",
+      "industryIds": [
+        "medical-schemes"
+      ],
+      "note": "Medical schemes."
+    },
+    {
+      "category": "Mining",
+      "industryIds": [
+        "mining-operations"
+      ],
+      "note": "Mining operations: held at the mining macro-sector level because the source does not name the commodity branch."
+    },
+    {
+      "category": "Mining Services",
+      "industryIds": [
+        "mining-services"
+      ],
+      "note": "Mining services and contracting."
+    },
+    {
+      "category": "Office Automation",
+      "industryIds": [
+        "office-automation"
+      ],
+      "note": "Office automation and managed print."
+    },
+    {
+      "category": "Oil Petroleum",
+      "industryIds": [
+        "petroleum-fuels"
+      ],
+      "note": "Petroleum and fuel supply."
+    },
+    {
+      "category": "Packaging",
+      "industryIds": [
+        "packaging-manufacturing"
+      ],
+      "note": "Packaging manufacture."
+    },
+    {
+      "category": "Paint Manufacturers",
+      "industryIds": [
+        "paint-and-coatings"
+      ],
+      "note": "Paint and coatings."
+    },
+    {
+      "category": "Paper Manufacturer",
+      "industryIds": [
+        "pulp-and-paper"
+      ],
+      "note": "Pulp and paper manufacture."
+    },
+    {
+      "category": "Pharmaceuticals",
+      "industryIds": [
+        "pharmaceutical-manufacturing"
+      ],
+      "note": "Pharmaceutical manufacture."
+    },
+    {
+      "category": "Private Security",
+      "industryIds": [
+        "private-security"
+      ],
+      "note": "Private security and guarding."
+    },
+    {
+      "category": "Professional Services",
+      "industryIds": [
+        "professional-services"
+      ],
+      "note": "Professional services: held at the professional services macro-sector level because the sector mixes facilities, security, recruitment and retail businesses."
+    },
+    {
+      "category": "Real Estate Holdings Development",
+      "industryIds": [
+        "property-investment"
+      ],
+      "note": "Property investment and development."
+    },
+    {
+      "category": "Recruitment Agency",
+      "industryIds": [
+        "recruitment-services"
+      ],
+      "note": "Recruitment and staffing services."
+    },
+    {
+      "category": "Recruitment Groups",
+      "industryIds": [
+        "recruitment-services"
+      ],
+      "note": "Recruitment groups."
+    },
+    {
+      "category": "Research Consultants",
+      "industryIds": [
+        "market-research"
+      ],
+      "note": "Market and consumer research."
+    },
+    {
+      "category": "Retail",
+      "industryIds": [
+        "general-retail"
+      ],
+      "note": "General merchandise and apparel retail: held at the retail macro-sector level."
+    },
+    {
+      "category": "Retail Commercial Fuels",
+      "industryIds": [
+        "commercial-fuel-retail"
+      ],
+      "note": "Commercial and retail fuel supply."
+    },
+    {
+      "category": "Security",
+      "industryIds": [
+        "private-security"
+      ],
+      "note": "Private security and guarding."
+    },
+    {
+      "category": "Shopping Centres",
+      "industryIds": [
+        "shopping-centre-operations"
+      ],
+      "note": "Shopping centre ownership and operation."
+    },
+    {
+      "category": "Software Solutions",
+      "industryIds": [
+        "software-solutions"
+      ],
+      "note": "Software products and solutions."
+    },
+    {
+      "category": "Steel Manufacturer",
+      "industryIds": [
+        "steel-manufacturing"
+      ],
+      "note": "Steel manufacture."
+    },
+    {
+      "category": "Telecommunication",
+      "industryIds": [
+        "telecommunications"
+      ],
+      "note": "Telecommunications operators and resellers."
+    },
+    {
+      "category": "Telecommunications Equipment",
+      "industryIds": [
+        "telecommunications-equipment"
+      ],
+      "note": "Telecommunications equipment distribution."
+    },
+    {
+      "category": "Telecommunications Solutions",
+      "industryIds": [
+        "telecommunications-solutions"
+      ],
+      "note": "Converged telecommunications solutions."
+    },
+    {
+      "category": "Transport",
+      "industryIds": [
+        "rail-passenger-transport"
+      ],
+      "note": "Passenger rail and luxury train travel."
+    },
+    {
+      "category": "Travel Tourism",
+      "industryIds": [
+        "travel-and-tourism"
+      ],
+      "note": "Travel and tourism services."
+    },
+    {
+      "category": "Waste Management",
+      "industryIds": [
+        "waste-management"
+      ],
+      "note": "Waste management."
+    },
+    {
+      "category": "Water",
+      "industryIds": [
+        "bulk-water-supply"
+      ],
+      "note": "Bulk water supply."
+    }
+  ],
+  "rowOverrides": [
+    {
+      "company": "Nestlé",
+      "category": "Banks",
+      "action": "reject",
+      "reason": "The same source lists Nestle under Food Products and Food Services; a Banks row contradicts the source's own classification of a food and beverage manufacturer. Rejected as a directory error rather than imported.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/nestle/"
+    },
+    {
+      "company": "Pragma",
+      "category": "Asset Management",
+      "action": "redirect",
+      "industries": [
+        "engineering-services"
+      ],
+      "reason": "Pragma's own listing describes an engineering company delivering enterprise asset management (ISO 55000) to asset-intensive industries, not financial asset management. Placed in engineering services, where its Engineering row already points.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/pragma/"
+    },
+    {
+      "company": "Hyprop Investments Limited",
+      "category": "Investment",
+      "action": "redirect",
+      "reason": "The company already carries sourced property placements (retail and investment property), so the listing is recorded as an extra source and the generic Investment label is not imported as a new taxonomy link.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/hyprop-investments-limited/",
+      "industries": [
+        "property-investment"
+      ]
+    },
+    {
+      "company": "African Response (Pty) Ltd",
+      "category": "(uncategorised)",
+      "action": "redirect",
+      "industries": [
+        "market-research"
+      ],
+      "evidence": "The company's Top 500 listing describes it as an independently owned inclusive market research company.",
+      "reason": "The export carries no sector for this company. Its own listing states the business, so it is placed on that evidence instead of being left in the not-yet-classified queue.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/african-response-pty-ltd/"
+    },
+    {
+      "company": "Allcare Administrators (Pty) Ltd",
+      "category": "(uncategorised)",
+      "action": "redirect",
+      "industries": [
+        "medical-scheme-administration"
+      ],
+      "evidence": "The company's Top 500 listing describes an accredited third-party medical scheme administrator and managed health care organisation.",
+      "reason": "The export carries no sector for this company. Its own listing states the business, so it is placed on that evidence instead of being left in the not-yet-classified queue.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/allcare-administrators-pty-ltd/"
+    },
+    {
+      "company": "Continuity SA",
+      "category": "(uncategorised)",
+      "action": "redirect",
+      "industries": [
+        "business-support-services"
+      ],
+      "evidence": "The company's Top 500 listing describes business continuity, resilience and recovery services (ICT resilience, work-area recovery, BCM advisory).",
+      "reason": "The export carries no sector for this company. The taxonomy has no business-continuity node, so it is placed at the business support services macro node on the evidence of its own listing.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/continuity-sa/"
+    },
+    {
+      "company": "Premier Verification",
+      "category": "(uncategorised)",
+      "action": "redirect",
+      "industries": [
+        "bbb-ee-verification"
+      ],
+      "evidence": "The company's Top 500 listing states its activity as B-BBEE verification agency (SANAS-accredited, founded 2009).",
+      "reason": "The export carries no sector for this company. Its own listing states the business, so it is placed on that evidence instead of being left in the not-yet-classified queue.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/premier-verification/"
+    },
+    {
+      "company": "Trek Bicycle South Africa",
+      "category": "(uncategorised)",
+      "action": "redirect",
+      "industries": [
+        "brand-distribution"
+      ],
+      "evidence": "The company's Top 500 listing states that Trek is a global designer and manufacturer of bicycles and related products, and points South African customers to its dealer network.",
+      "reason": "The export carries no sector for this company and its URL no longer resolves. The live listing is read instead and the local operation is placed at the branded goods distribution macro node: the taxonomy has no bicycle or sporting-goods node, and the South African entity supplies the brand into a dealer network.",
+      "evidenceUrl": "https://top500.co.za/top500-companies/trek-bikes/"
+    }
+  ]
+}

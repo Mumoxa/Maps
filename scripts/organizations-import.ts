@@ -19,6 +19,7 @@ import type {
   OrganizationIndustryLink,
   OrganizationRelationship,
   RecruiterIntelligence,
+  SourceType,
 } from '../src/data/organizations/types'
 
 export type ImportType =
@@ -28,6 +29,19 @@ export type ImportType =
   | 'relationships'
   | 'associations'
   | 'intelligence'
+
+/** Source types an evidence record may carry, mirroring the controlled vocabulary. */
+const SOURCE_TYPES: SourceType[] = [
+  'company-website',
+  'corporate-disclosure',
+  'business-directory',
+  'industry-directory',
+  'industry-report',
+  'news',
+  'recruiter-supplied',
+  'system-inferred',
+  'internal-dataset',
+]
 
 export interface ImportRow {
   [key: string]: string
@@ -71,13 +85,16 @@ const FIELD_ALIASES: Record<string, string[]> = {
   aliases: ['aliases', 'alias', 'trading_names', 'trading_names'],
   website: ['website', 'url', 'domain', 'homepage'],
   industry: ['industry', 'sector', 'industry_id', 'main_industry'],
+  industries: ['industries', 'industry_list', 'sectors'],
   subIndustry: ['sub_industry', 'subindustry', 'secondary_industry'],
   primary: ['primary', 'is_primary'],
   province: ['province', 'region'],
   city: ['city', 'town'],
+  cities: ['cities', 'city_list'],
   employees: ['employees', 'employee_count', 'headcount', 'staff'],
   parent: ['parent', 'parent_company', 'parent_group'],
   sourceUrl: ['source_url', 'source', 'sourceurl', 'evidence_url'],
+  sourceType: ['source_type', 'sourcetype', 'evidence_type'],
   evidence: ['evidence', 'evidence_summary', 'supports', 'note_evidence'],
   checkedOn: ['checked_on', 'date_verified', 'verified_on', 'observation_date'],
   confidence: ['confidence', 'confidence_level'],
@@ -220,14 +237,28 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
     const row = mapFields(rawRow)
     const rowNumber = index + 1
     const checkedOn = row.checkedOn || TODAY()
+    // Evidence typing and multi-source rows are useful to every table, not just
+    // companies, so they are resolved once per row.
+    const sourceUrls = splitList(row.sourceUrl)
+    const sourceType: SourceType = SOURCE_TYPES.includes(row.sourceType as SourceType)
+      ? (row.sourceType as SourceType)
+      : 'recruiter-supplied'
 
     if (type === 'companies') {
       const name = requireField(row, rowNumber, 'name')
       if (!name) return
       const { organization, canonicalName } = resolveOrganization(dataset, name)
-      const sourceUrl = row.sourceUrl ?? ''
+      // A row may cite several sources (two directory listings for one company,
+      // for example): the first is the one the industry links point at, and every
+      // one is recorded as an evidence record.
+      const sourceUrl = sourceUrls[0] ?? ''
+      // Industry links can be given one per column (industry, sub_industry) or as
+      // a list, because one company is often classified under several sectors by
+      // its source and each one is a separate placement in the atlas.
+      const industryNames = [row.industry, ...splitList(row.industries), row.subIndustry].filter(Boolean) as string[]
+      const primaryIndustryName = row.industry || splitList(row.industries)[0] || row.subIndustry
       const industries: OrganizationIndustryLink[] = []
-      for (const industryName of [row.industry, row.subIndustry].filter(Boolean) as string[]) {
+      for (const industryName of industryNames) {
         const industry = dataset.industries.find((entry) => (
           entry.id === slugify(industryName)
           || entry.name.toLowerCase() === industryName.toLowerCase()
@@ -239,7 +270,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
         }
         industries.push({
           industryId: industry.id,
-          primary: industryName === row.industry,
+          primary: industryName === primaryIndustryName,
           confidence: (row.confidence as OrganizationIndustryLink['confidence']) || 'probable',
           evidence: row.evidence ?? '',
           sourceUrl,
@@ -253,11 +284,11 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           website: row.website || organization.website,
           aliases: [...new Set([...organization.aliases, ...splitList(row.aliases)])],
           industries: mergeIndustryLinks(organization.industries, industries),
-          locations: mergeLocations(organization, row, sourceUrl, checkedOn),
+          locations: mergeLocations(organization, buildLocations(row, sourceUrl, checkedOn)),
           scale: mergeScale(organization, row, sourceUrl, checkedOn),
           notes: row.notes || organization.notes,
           lastVerified: checkedOn > organization.lastVerified ? checkedOn : organization.lastVerified,
-          sources: mergeSource(organization, sourceUrl, row.evidence, checkedOn),
+          sources: mergeSource(organization, sourceUrls, row.evidence, checkedOn, sourceType),
         }
         if (row.parent) {
           const parent = resolveOrganization(dataset, row.parent).organization
@@ -288,7 +319,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           status: 'needs-verification',
           industries,
           capabilities: [],
-          locations: row.province ? [{ city: row.city ?? '', province: row.province, sourceUrl, checkedOn }] : [],
+          locations: buildLocations(row, sourceUrl, checkedOn),
           scale: row.employees ? [{
             metric: 'employees',
             value: row.employees,
@@ -298,14 +329,14 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
             checkedOn,
           }] : [],
           parentId: null,
-          sources: sourceUrl ? [{
-            url: sourceUrl,
-            type: 'recruiter-supplied',
+          sources: sourceUrls.map((url) => ({
+            url,
+            type: sourceType,
             evidence: row.evidence ?? 'Supplied through a structured import.',
             checkedOn,
             reviewer: row.reviewer ?? '',
             confidence: (row.confidence as Organization['sources'][number]['confidence']) || 'probable',
-          }] : [],
+          })),
           datasets: ['import'],
           lastVerified: checkedOn,
           notes: row.notes ?? '',
@@ -392,7 +423,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           ? organization.capabilities.map((entry) => (entry.capabilityId === capability.id ? link : entry))
           : [...organization.capabilities, link],
         lastVerified: checkedOn > organization.lastVerified ? checkedOn : organization.lastVerified,
-        sources: mergeSource(organization, row.sourceUrl ?? '', row.evidence, checkedOn),
+        sources: mergeSource(organization, splitList(row.sourceUrl), row.evidence, checkedOn, sourceType),
       }
       plan.updatedOrganizations.push(updated)
       return
@@ -422,7 +453,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
         ...organization,
         industries: mergeIndustryLinks(organization.industries, [link]),
         lastVerified: checkedOn > organization.lastVerified ? checkedOn : organization.lastVerified,
-        sources: mergeSource(organization, row.sourceUrl ?? '', row.evidence, checkedOn),
+        sources: mergeSource(organization, splitList(row.sourceUrl), row.evidence, checkedOn, sourceType),
       }
       plan.updatedOrganizations.push(updated)
       return
@@ -499,13 +530,25 @@ function mergeIndustryLinks(existing: OrganizationIndustryLink[], incoming: Orga
   return merged
 }
 
-function mergeLocations(organization: Organization, row: ImportRow, sourceUrl: string, checkedOn: string) {
-  if (!row.province) return organization.locations
-  const exists = organization.locations.some((location) => (
-    location.province === row.province && (location.city ?? '') === (row.city ?? '')
-  ))
-  if (exists) return organization.locations
-  return [...organization.locations, { city: row.city ?? '', province: row.province, sourceUrl, checkedOn }]
+/**
+ * One location per city the row names. A single source entry can place a company
+ * in several towns of one province, so `cities` is a list and `city` stays the
+ * single-value form.
+ */
+function buildLocations(row: ImportRow, sourceUrl: string, checkedOn: string) {
+  if (!row.province) return []
+  const cities = splitList(row.cities)
+  const list = cities.length > 0 ? cities : [row.city ?? '']
+  return list.map((city) => ({ city, province: row.province, sourceUrl, checkedOn }))
+}
+
+function mergeLocations(organization: Organization, incoming: { city: string; province: string; sourceUrl: string; checkedOn: string }[]) {
+  const merged = [...organization.locations]
+  for (const location of incoming) {
+    const exists = merged.some((entry) => entry.province === location.province && (entry.city ?? '') === location.city)
+    if (!exists) merged.push(location)
+  }
+  return merged
 }
 
 function mergeScale(organization: Organization, row: ImportRow, sourceUrl: string, checkedOn: string) {
@@ -522,17 +565,26 @@ function mergeScale(organization: Organization, row: ImportRow, sourceUrl: strin
   }]
 }
 
-function mergeSource(organization: Organization, url: string, evidence: string | undefined, checkedOn: string) {
-  if (!url) return organization.sources
-  if (organization.sources.some((source) => source.url === url)) return organization.sources
-  return [...organization.sources, {
-    url,
-    type: 'recruiter-supplied' as const,
-    evidence: evidence ?? 'Added through a structured import.',
-    checkedOn,
-    reviewer: '',
-    confidence: 'probable' as const,
-  }]
+function mergeSource(
+  organization: Organization,
+  urls: string[],
+  evidence: string | undefined,
+  checkedOn: string,
+  type: SourceType = 'recruiter-supplied',
+) {
+  const merged = [...organization.sources]
+  for (const url of urls) {
+    if (!url || merged.some((source) => source.url === url)) continue
+    merged.push({
+      url,
+      type,
+      evidence: evidence ?? 'Added through a structured import.',
+      checkedOn,
+      reviewer: '',
+      confidence: 'probable',
+    })
+  }
+  return merged
 }
 
 /** Apply a plan onto a dataset copy. Deterministic, so re-applying is a no-op. */

@@ -1,0 +1,1771 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "source": "Top 500 South African companies directory import (2026-10-15)",
+  "purpose": "The national taxonomy and the Maps industry vocabulary are extended only where a whole sector present in the import could not be represented by an existing node or industry. Every addition below is paired with the sector that needed it; nothing here is added speculatively.",
+  "notes": [
+    "FIN-ASSET exists because the taxonomy had no branch for asset management, collective investment schemes or investment holding companies: banks, insurers, lenders and payments were represented, capital managers were not.",
+    "MFG-MACH exists because capital equipment (earthmoving, mining, industrial machinery) had no manufacturing branch; the closest existing nodes were metals fabrication and mining equipment rebuild.",
+    "TRA-AIR-PAX exists because TRA-AIR covered air cargo and aviation services only, so a passenger airline had no placement.",
+    "TRA-SVC-RENT exists because vehicle rental and fleet leasing are neither passenger transport nor freight.",
+    "PRO-CORP-AUCT exists because auction, disposal and asset realisation work had no professional services branch.",
+    "PRO-CONSULT-BBBEE exists because B-BBEE verification is a regulated South African service industry with no branch.",
+    "Every other industry in this import maps onto an existing node and adds no node."
+  ],
+  "nodes": [
+    {
+      "id": "FIN-ASSET",
+      "level": 2,
+      "name": "Asset Management, Wealth & Investment",
+      "parentId": "FIN",
+      "saContext": "South African asset managers, collective investment schemes, wealth and stockbroking platforms, and investment holding companies. Distinct from banking and from insurance underwriting because the business model is managing third-party and proprietary capital rather than taking deposits or underwriting risk. Locally dominated by a small number of large managers plus a long tail of boutique and index managers, with JSE-listed investment holding companies and family offices at the top of the structure."
+    },
+    {
+      "id": "FIN-ASSET-MANAGE",
+      "level": 3,
+      "name": "Asset Management & Collective Investment Schemes",
+      "parentId": "FIN-ASSET",
+      "saContext": "Discretionary portfolio management, unit trusts and exchange-traded funds, institutional mandates and multi-manager platforms regulated under the Collective Investment Schemes Control Act."
+    },
+    {
+      "id": "FIN-ASSET-HOLD",
+      "level": 3,
+      "name": "Investment Holding Companies & Family Offices",
+      "parentId": "FIN-ASSET",
+      "saContext": "JSE-listed and private investment holding companies that own portfolios of operating subsidiaries across sectors, plus single-family offices. The economic activity is capital allocation and group oversight, which is why they are held here rather than against the sector of any one subsidiary."
+    },
+    {
+      "id": "MFG-MACH",
+      "level": 2,
+      "name": "Machinery, Equipment & Capital Goods",
+      "parentId": "MFG",
+      "saContext": "Manufacture, assembly and supply of capital equipment: earthmoving and mining machinery, industrial machinery, pumps, compressors and power transmission components, together with the aftermarket parts and rebuild economy that keeps them running. Kept separate from metals fabrication and from automotive manufacturing because the product is a machine sold into mining, construction, agriculture and industry rather than a component or a consumer vehicle."
+    },
+    {
+      "id": "MFG-MACH-EARTH",
+      "level": 3,
+      "name": "Mining, Construction & Earthmoving Equipment",
+      "parentId": "MFG-MACH",
+      "saContext": "Articulated dump trucks, excavators, loaders, drilling rigs and crushing and screening plant, both locally manufactured and imported for distribution, with dealer service networks across the mining and construction belt."
+    },
+    {
+      "id": "MFG-MACH-IND",
+      "level": 3,
+      "name": "Industrial Machinery, Pumps, Compressors & Power Transmission",
+      "parentId": "MFG-MACH",
+      "saContext": "Processing plant, conveyors, pumps, valves, compressors, bearings, drives and gearboxes supplied and supported into manufacturing, water, energy and mining operations."
+    },
+    {
+      "id": "TRA-AIR-PAX",
+      "level": 3,
+      "name": "Passenger Airline Operations",
+      "parentId": "TRA-AIR",
+      "saContext": "Scheduled and charter passenger airlines operating domestically and regionally, including franchise and low-cost carrier models. Separate from air cargo and from maintenance and ground services because the operating model is seat capacity, network scheduling and yield management."
+    },
+    {
+      "id": "TRA-SVC-RENT",
+      "level": 3,
+      "name": "Vehicle Rental & Fleet Leasing",
+      "parentId": "TRA-SVC",
+      "saContext": "Short-term car rental, long-term full-maintenance leasing and fleet management contracts for corporate, government and rental customers, including the remarketing of de-fleeted vehicles."
+    },
+    {
+      "id": "PRO-CORP-AUCT",
+      "level": 3,
+      "name": "Auctions, Disposals & Asset Realisation",
+      "parentId": "PRO-CORP",
+      "saContext": "Auction houses and asset realisation specialists conducting timed, online and on-site sales in fine art, collectibles, industrial plant, commercial vehicles, livestock and property, together with liquidation and appraisal services."
+    },
+    {
+      "id": "PRO-CONSULT-BBBEE",
+      "level": 3,
+      "name": "B-BBEE Verification, Rating & Transformation Advisory",
+      "parentId": "PRO-CONSULT",
+      "saContext": "SANAS-accredited B-BBEE verification agencies issuing measured-entity certificates against the sector codes and the generic scorecard, together with transformation, ownership-structuring and enterprise and supplier development advisory that prepares measured entities for verification."
+    }
+  ],
+  "pockets": [
+    {
+      "id": "banking-finance",
+      "name": "Banking & Financial Services",
+      "valueChainStage": "Financial intermediation",
+      "description": "Retail, corporate and investment banking, insurance underwriting and diversified financial services groups."
+    },
+    {
+      "id": "investment-capital",
+      "name": "Investment & Capital Markets",
+      "valueChainStage": "Investment",
+      "description": "Asset management, collective investment schemes, wealth platforms and investment holding companies."
+    },
+    {
+      "id": "mining-extractives",
+      "name": "Mining & Extractive Operations",
+      "valueChainStage": "Extractive",
+      "description": "Coal, diamond, gold and bulk mineral mining houses, mining operations and mine contracting and services."
+    },
+    {
+      "id": "energy-utilities",
+      "name": "Energy & Utilities",
+      "valueChainStage": "Generation & supply",
+      "description": "Electricity generation, transmission and distribution, bulk water supply and state-owned utility operations."
+    },
+    {
+      "id": "commercial-farming",
+      "name": "Commercial Farming",
+      "valueChainStage": "Primary production",
+      "description": "Commercial crop, livestock and mixed farming operations and agricultural primary production."
+    },
+    {
+      "id": "industrial-manufacturing",
+      "name": "Industrial Manufacturing",
+      "valueChainStage": "Manufacturing",
+      "description": "Chemicals, petrochemicals, steel, packaging, paper, coatings, pharmaceuticals, appliances, electronics and electrical equipment manufacturing."
+    },
+    {
+      "id": "automotive",
+      "name": "Automotive & Components",
+      "valueChainStage": "Manufacturing & trade",
+      "description": "Vehicle assembly, commercial vehicle supply and automotive component and telematics hardware manufacturing."
+    },
+    {
+      "id": "consumer-retail",
+      "name": "Consumer Retail & Distribution",
+      "valueChainStage": "Retail & trade",
+      "description": "General, furniture and luxury retail, commercial fuel retail and branded goods distribution."
+    },
+    {
+      "id": "technology-digital",
+      "name": "Technology & Digital Services",
+      "valueChainStage": "Service",
+      "description": "Information technology services, software products, computer hardware, office automation and business process outsourcing."
+    },
+    {
+      "id": "telecommunications",
+      "name": "Telecommunications",
+      "valueChainStage": "Network operations",
+      "description": "Telecommunications operators, converged and fixed-line providers, resellers and telecommunications equipment distribution."
+    },
+    {
+      "id": "media-marketing",
+      "name": "Media, Marketing & Research",
+      "valueChainStage": "Service",
+      "description": "Media groups and broadcasters, media agencies, marketing and branding services and market research."
+    },
+    {
+      "id": "professional-advisory",
+      "name": "Professional & Advisory Services",
+      "valueChainStage": "Service",
+      "description": "Legal, engineering-adjacent professional services, management support, recruitment, security, B-BBEE verification and auctioneering services."
+    },
+    {
+      "id": "facilities-services",
+      "name": "Facilities, Hygiene & Waste Services",
+      "valueChainStage": "Service",
+      "description": "Integrated facilities management, cleaning and hygiene services and waste management."
+    },
+    {
+      "id": "health-wellness",
+      "name": "Health & Wellness",
+      "valueChainStage": "Care delivery",
+      "description": "Health services, private hospital groups, medical schemes, medical scheme administration and personal care products."
+    },
+    {
+      "id": "hospitality-tourism",
+      "name": "Hospitality, Tourism & Events",
+      "valueChainStage": "Service",
+      "description": "Hotel and resort groups, airline catering, conferencing, event management and travel and tourism services."
+    },
+    {
+      "id": "aviation-defence",
+      "name": "Aviation, Air Transport & Defence",
+      "valueChainStage": "Operations & manufacturing",
+      "description": "Passenger airline operations, state-owned air transport and navigation services, airline catering and defence and aerospace manufacturing."
+    },
+    {
+      "id": "public-sector",
+      "name": "Public Sector & Regulation",
+      "valueChainStage": "Public",
+      "description": "State-owned companies, statutory regulators and public institutions."
+    },
+    {
+      "id": "education-skills",
+      "name": "Education & Skills Development",
+      "valueChainStage": "Service",
+      "description": "Private higher education providers, business schools and executive education."
+    }
+  ],
+  "industries": [
+    {
+      "id": "universal-banking",
+      "name": "Universal & retail banking",
+      "parentId": null,
+      "pocket": "banking-finance",
+      "description": "Deposit-taking, transactional, credit and investment banking for retail, business and corporate clients.",
+      "synonyms": [
+        "Banks",
+        "Retail banking",
+        "Universal banking",
+        "Commercial banking"
+      ]
+    },
+    {
+      "id": "financial-services",
+      "name": "Financial services (sub-sector not established)",
+      "parentId": null,
+      "pocket": "banking-finance",
+      "description": "Diversified financial services where the source classifies the group at sector level and Maps has not established which sub-sector it operates in.",
+      "synonyms": [
+        "Financial Services",
+        "Diversified financial services"
+      ]
+    },
+    {
+      "id": "insurance-underwriting",
+      "name": "Insurance & underwriting",
+      "parentId": null,
+      "pocket": "banking-finance",
+      "description": "Life and non-life insurance underwriting and insurance groups.",
+      "synonyms": [
+        "Insurance",
+        "Short-term insurance",
+        "Life insurance",
+        "Underwriting"
+      ]
+    },
+    {
+      "id": "asset-management",
+      "name": "Asset management & wealth",
+      "parentId": null,
+      "pocket": "investment-capital",
+      "description": "Discretionary asset management, collective investment schemes and wealth management for institutional and private clients.",
+      "synonyms": [
+        "Asset Management",
+        "Wealth management",
+        "Unit trusts",
+        "Portfolio management"
+      ]
+    },
+    {
+      "id": "investment-management",
+      "name": "Investment management",
+      "parentId": null,
+      "pocket": "investment-capital",
+      "description": "Investment management and capital allocation businesses where the source classifies the company under investment.",
+      "synonyms": [
+        "Investment",
+        "Investment management"
+      ]
+    },
+    {
+      "id": "investment-holding-companies",
+      "name": "Investment holding companies",
+      "parentId": null,
+      "pocket": "investment-capital",
+      "description": "Holding companies whose principal activity is holding and allocating capital across a portfolio of operating businesses.",
+      "synonyms": [
+        "Investment Holding Companies",
+        "Holding company",
+        "Family office"
+      ]
+    },
+    {
+      "id": "mining-operations",
+      "name": "Mining & extractive operations",
+      "parentId": null,
+      "pocket": "mining-extractives",
+      "description": "Mining and extractive operations where the source classifies the company at mining sector level without naming the commodity branch.",
+      "synonyms": [
+        "Mining",
+        "Extractives",
+        "Mining houses"
+      ]
+    },
+    {
+      "id": "coal-mining",
+      "name": "Coal mining",
+      "parentId": null,
+      "pocket": "mining-extractives",
+      "description": "Thermal and coking coal extraction, washing and domestic and export supply.",
+      "synonyms": [
+        "Coal",
+        "Coal mining",
+        "Colliery"
+      ]
+    },
+    {
+      "id": "diamond-mining",
+      "name": "Diamond mining",
+      "parentId": null,
+      "pocket": "mining-extractives",
+      "description": "Kimberlite, alluvial and marine diamond extraction and rough diamond recovery.",
+      "synonyms": [
+        "Diamond Mining",
+        "Diamonds",
+        "Alluvial diamonds"
+      ]
+    },
+    {
+      "id": "mining-services",
+      "name": "Mining services & contracting",
+      "parentId": null,
+      "pocket": "mining-extractives",
+      "description": "Contract mining, shaft sinking, underground construction, drilling and specialist mine support services.",
+      "synonyms": [
+        "Mining Services",
+        "Contract mining",
+        "Mine contracting"
+      ]
+    },
+    {
+      "id": "electricity-utility",
+      "name": "Electricity generation & transmission",
+      "parentId": null,
+      "pocket": "energy-utilities",
+      "description": "Bulk electricity generation, transmission and distribution by a state-owned utility.",
+      "synonyms": [
+        "Electricity",
+        "Power utility",
+        "Generation and transmission"
+      ]
+    },
+    {
+      "id": "bulk-water-supply",
+      "name": "Bulk water supply & sanitation",
+      "parentId": null,
+      "pocket": "energy-utilities",
+      "description": "Bulk potable water abstraction, treatment and pipeline supply to municipalities and industry.",
+      "synonyms": [
+        "Water",
+        "Bulk water",
+        "Water board"
+      ]
+    },
+    {
+      "id": "petroleum-fuels",
+      "name": "Petroleum & fuel supply",
+      "parentId": null,
+      "pocket": "energy-utilities",
+      "description": "Fuel refining, wholesale and forecourt supply of petroleum products and lubricants.",
+      "synonyms": [
+        "Oil Petroleum",
+        "Petroleum",
+        "Fuel wholesale",
+        "Oil and gas downstream"
+      ]
+    },
+    {
+      "id": "commercial-fuel-retail",
+      "name": "Commercial & retail fuel supply",
+      "parentId": null,
+      "pocket": "consumer-retail",
+      "description": "Forecourt and commercial fuel retail networks, including dealer-operated service stations.",
+      "synonyms": [
+        "Retail Commercial Fuels",
+        "Forecourt retail",
+        "Fuel stations"
+      ]
+    },
+    {
+      "id": "commercial-farming",
+      "name": "Commercial farming",
+      "parentId": null,
+      "pocket": "commercial-farming",
+      "description": "Commercial crop, livestock and mixed farming operations where the source classifies the company at agricultural sector level.",
+      "synonyms": [
+        "Farming",
+        "Agriculture",
+        "Commercial farming"
+      ]
+    },
+    {
+      "id": "chemicals",
+      "name": "Base & industrial chemicals",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Manufacture of base and intermediate industrial chemicals, mining reagents and chemical specialties.",
+      "synonyms": [
+        "Chemicals",
+        "Industrial chemicals",
+        "Specialty chemicals"
+      ]
+    },
+    {
+      "id": "gases-petrochemicals",
+      "name": "Industrial gases & petrochemicals",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Industrial and medical gas supply and petrochemical and synthetic fuel production where the source classifies the company under gases.",
+      "synonyms": [
+        "Gases",
+        "Industrial gases",
+        "Petrochemicals",
+        "Synthetic fuels"
+      ]
+    },
+    {
+      "id": "steel-manufacturing",
+      "name": "Steel & long products",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Primary steel production, rolling and long and flat product supply.",
+      "synonyms": [
+        "Steel Manufacturer",
+        "Steel",
+        "Primary steel"
+      ]
+    },
+    {
+      "id": "packaging-manufacturing",
+      "name": "Packaging manufacture",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Rigid and flexible packaging manufacture in plastic, paper and board for food, beverage and industrial customers.",
+      "synonyms": [
+        "Packaging",
+        "Packaging manufacture",
+        "Containers"
+      ]
+    },
+    {
+      "id": "pulp-and-paper",
+      "name": "Pulp, paper & packaging board",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Pulp, paper and packaging board manufacture from plantation fibre.",
+      "synonyms": [
+        "Paper Manufacturer",
+        "Pulp and paper",
+        "Dissolving pulp"
+      ]
+    },
+    {
+      "id": "paint-and-coatings",
+      "name": "Paints, coatings & specialty chemicals",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Decorative and industrial paint, coatings and associated specialty chemical manufacture.",
+      "synonyms": [
+        "Paint Manufacturers",
+        "Paints",
+        "Coatings"
+      ]
+    },
+    {
+      "id": "appliance-manufacturing",
+      "name": "Appliance manufacturing & assembly",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Assembly and manufacture of domestic appliances and white goods for the South African market.",
+      "synonyms": [
+        "Appliances",
+        "White goods",
+        "Appliance manufacturing"
+      ]
+    },
+    {
+      "id": "electronics-manufacturing",
+      "name": "Electronics & electrical products",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Manufacture, assembly and supply of electronic products, electrical products and related technology hardware.",
+      "synonyms": [
+        "Electronic Products",
+        "Electronics",
+        "Electrical products"
+      ]
+    },
+    {
+      "id": "electrical-equipment-manufacturing",
+      "name": "Transformers & electrical equipment",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Manufacture of transformers, switchgear, motors, cables and electrical equipment for utility and industrial customers.",
+      "synonyms": [
+        "Electrical Equipment",
+        "Transformers",
+        "Switchgear"
+      ]
+    },
+    {
+      "id": "pharmaceutical-manufacturing",
+      "name": "Pharmaceutical & medical device manufacturing",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Manufacture of generic and branded medicines, veterinary and wildlife pharmaceuticals and medical devices.",
+      "synonyms": [
+        "Pharmaceuticals",
+        "Pharmaceutical manufacturing",
+        "Medical devices",
+        "Animal health"
+      ]
+    },
+    {
+      "id": "personal-care-manufacturing",
+      "name": "Personal care & cosmetics manufacturing",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Manufacture of cosmetics, skin and hair care products and household personal care goods.",
+      "synonyms": [
+        "Beauty Products",
+        "Hair Care Products",
+        "Cosmetics",
+        "Personal care"
+      ]
+    },
+    {
+      "id": "heavy-equipment",
+      "name": "Mining, construction & earthmoving equipment",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Manufacture, assembly and supply of heavy earthmoving, mining and construction machinery and its support network.",
+      "synonyms": [
+        "Heavy Machinery",
+        "Earthmoving equipment",
+        "Mining equipment"
+      ]
+    },
+    {
+      "id": "industrial-equipment-supply",
+      "name": "Industrial machinery & equipment supply",
+      "parentId": null,
+      "pocket": "industrial-manufacturing",
+      "description": "Supply, distribution and support of industrial machinery, equipment, components and power transmission products.",
+      "synonyms": [
+        "Industrial Products Equipment",
+        "Industrial machinery",
+        "Equipment supply"
+      ]
+    },
+    {
+      "id": "cement-manufacturing",
+      "name": "Cement & concrete products",
+      "parentId": null,
+      "pocket": "construction",
+      "description": "Cement manufacture, milling and supply of cementitious and concrete products to the construction sector.",
+      "synonyms": [
+        "Cement",
+        "Cementitious products",
+        "Ready-mix concrete"
+      ]
+    },
+    {
+      "id": "building-materials",
+      "name": "Building materials & board products",
+      "parentId": null,
+      "pocket": "construction",
+      "description": "Manufacture and supply of building materials and engineered wood and board products to the construction and furniture markets.",
+      "synonyms": [
+        "Building Construction Materials",
+        "Building materials",
+        "Board products"
+      ]
+    },
+    {
+      "id": "builders-merchants",
+      "name": "Builders' merchant & hardware retail",
+      "parentId": null,
+      "pocket": "construction",
+      "description": "Builders' merchant and hardware retail and trade supply of building materials to contractors and households.",
+      "synonyms": [
+        "Builders Merchants",
+        "Hardware retail",
+        "Trade supply"
+      ]
+    },
+    {
+      "id": "motor-vehicles",
+      "name": "Motor vehicles, assembly & supply",
+      "parentId": null,
+      "pocket": "automotive",
+      "description": "Passenger, commercial and heavy vehicle assembly, importation and supply where the source classifies the company under vehicles.",
+      "synonyms": [
+        "Automobiles",
+        "Commercial Vehicles",
+        "Vehicle assembly",
+        "Vehicle supply"
+      ]
+    },
+    {
+      "id": "automotive-components",
+      "name": "Automotive components & telematics hardware",
+      "parentId": null,
+      "pocket": "automotive",
+      "description": "Manufacture and supply of automotive components, sub-assemblies and in-vehicle technology hardware.",
+      "synonyms": [
+        "Automotive Components",
+        "Components",
+        "Vehicle telematics hardware"
+      ]
+    },
+    {
+      "id": "defence-and-aerospace",
+      "name": "Defence & aerospace manufacturing",
+      "parentId": null,
+      "pocket": "aviation-defence",
+      "description": "Manufacture and support of land systems, armoured vehicles, aerospace components and related defence equipment.",
+      "synonyms": [
+        "Aerospace Defence",
+        "Defence",
+        "Land systems",
+        "Aerospace manufacturing"
+      ]
+    },
+    {
+      "id": "information-technology",
+      "name": "Information technology services",
+      "parentId": null,
+      "pocket": "technology-digital",
+      "description": "Information technology services, integration, distribution and product supply where the source classifies the company at IT sector level.",
+      "synonyms": [
+        "Information Technology",
+        "IT services",
+        "Technology"
+      ]
+    },
+    {
+      "id": "software-solutions",
+      "name": "Software products & solutions",
+      "parentId": null,
+      "pocket": "technology-digital",
+      "description": "Enterprise software products, platforms and solution licensing and support.",
+      "synonyms": [
+        "Software Solutions",
+        "Software products",
+        "Enterprise software"
+      ]
+    },
+    {
+      "id": "computer-hardware",
+      "name": "Computer hardware & devices",
+      "parentId": null,
+      "pocket": "technology-digital",
+      "description": "Computer hardware, devices and infrastructure product supply and support.",
+      "synonyms": [
+        "Computer Hardware",
+        "Hardware",
+        "Devices"
+      ]
+    },
+    {
+      "id": "office-automation",
+      "name": "Office automation & managed print",
+      "parentId": null,
+      "pocket": "technology-digital",
+      "description": "Office automation equipment, document and print solutions and related managed services.",
+      "synonyms": [
+        "Office Automation",
+        "Managed print",
+        "Document solutions"
+      ]
+    },
+    {
+      "id": "business-process-outsourcing",
+      "name": "Business process outsourcing",
+      "parentId": null,
+      "pocket": "technology-digital",
+      "description": "Outsourced business process, claims, customer service and back-office operations.",
+      "synonyms": [
+        "Business Process Outsourcing",
+        "BPO",
+        "Outsourcing"
+      ]
+    },
+    {
+      "id": "telecommunications",
+      "name": "Telecommunications operators & resellers",
+      "parentId": null,
+      "pocket": "telecommunications",
+      "description": "Mobile and fixed network operators and telecommunications resellers and distributors.",
+      "synonyms": [
+        "Telecommunication",
+        "Telecommunications",
+        "Network operator",
+        "Telecoms reseller"
+      ]
+    },
+    {
+      "id": "telecommunications-solutions",
+      "name": "Telecommunications solutions & converged services",
+      "parentId": null,
+      "pocket": "telecommunications",
+      "description": "Converged voice, data, internet and cloud communications solutions for business and consumer customers.",
+      "synonyms": [
+        "Telecommunications Solutions",
+        "Converged communications",
+        "VoIP",
+        "ISP"
+      ]
+    },
+    {
+      "id": "telecommunications-equipment",
+      "name": "Telecommunications equipment distribution",
+      "parentId": null,
+      "pocket": "telecommunications",
+      "description": "Distribution of radio, network and telecommunications equipment and components.",
+      "synonyms": [
+        "Telecommunications Equipment",
+        "Radio distribution",
+        "Network equipment"
+      ]
+    },
+    {
+      "id": "communications-networks",
+      "name": "Communications networks & infrastructure",
+      "parentId": null,
+      "pocket": "telecommunications",
+      "description": "Communications network operators, internet service providers and network equipment vendors where the source classifies the company under communications.",
+      "synonyms": [
+        "Communications",
+        "Communications networks",
+        "Network infrastructure"
+      ]
+    },
+    {
+      "id": "media-groups",
+      "name": "Media groups & broadcasting",
+      "parentId": null,
+      "pocket": "media-marketing",
+      "description": "Media groups, publishers and broadcasters operating pay television, streaming, print and digital media assets.",
+      "synonyms": [
+        "Media Groups",
+        "Broadcasting Contractors",
+        "Broadcasting",
+        "Pay TV",
+        "Publishing"
+      ]
+    },
+    {
+      "id": "media-agencies",
+      "name": "Media agencies & buying",
+      "parentId": null,
+      "pocket": "media-marketing",
+      "description": "Media strategy, planning and buying agencies and out-of-home media operators.",
+      "synonyms": [
+        "Media Agencies",
+        "Media buying",
+        "Out of home media",
+        "Outdoor advertising"
+      ]
+    },
+    {
+      "id": "marketing-media",
+      "name": "Marketing & media services",
+      "parentId": null,
+      "pocket": "media-marketing",
+      "description": "Marketing and media services, audience measurement and media technology where the source classifies the company at marketing and media level.",
+      "synonyms": [
+        "Marketing Media",
+        "Media services",
+        "Audience measurement"
+      ]
+    },
+    {
+      "id": "marketing-services",
+      "name": "Marketing services",
+      "parentId": null,
+      "pocket": "media-marketing",
+      "description": "Marketing services and marketing-led direct trading businesses classified by the source under marketing.",
+      "synonyms": [
+        "Marketing",
+        "Marketing services"
+      ]
+    },
+    {
+      "id": "branding-services",
+      "name": "Branding & design",
+      "parentId": null,
+      "pocket": "media-marketing",
+      "description": "Brand identity, design, packaging design and brand implementation services.",
+      "synonyms": [
+        "Branding",
+        "Brand design",
+        "Design agency"
+      ]
+    },
+    {
+      "id": "market-research",
+      "name": "Market & consumer research",
+      "parentId": null,
+      "pocket": "media-marketing",
+      "description": "Market, consumer and media research and insights consulting.",
+      "synonyms": [
+        "Research Consultants",
+        "Market research",
+        "Consumer insights"
+      ]
+    },
+    {
+      "id": "legal-services",
+      "name": "Legal services",
+      "parentId": null,
+      "pocket": "professional-advisory",
+      "description": "Commercial law firms and specialist legal practices, including intellectual property and patent attorneys.",
+      "synonyms": [
+        "Legal Services",
+        "Law firm",
+        "Attorneys",
+        "Intellectual property"
+      ]
+    },
+    {
+      "id": "professional-services",
+      "name": "Professional services (sub-sector not established)",
+      "parentId": null,
+      "pocket": "professional-advisory",
+      "description": "Professional and business services where the source classifies the company at professional services level and Maps has not established the specific discipline.",
+      "synonyms": [
+        "Professional Services",
+        "Business services"
+      ]
+    },
+    {
+      "id": "business-support-services",
+      "name": "Business support services",
+      "parentId": null,
+      "pocket": "professional-advisory",
+      "description": "Business support, productivity, advisory and administrative services supplied to other organisations.",
+      "synonyms": [
+        "Business Support Services",
+        "Business support",
+        "Advisory"
+      ]
+    },
+    {
+      "id": "recruitment-services",
+      "name": "Recruitment & staffing services",
+      "parentId": null,
+      "pocket": "professional-advisory",
+      "description": "Permanent placement, executive search, temporary employment and staffing group services.",
+      "synonyms": [
+        "Recruitment Agency",
+        "Recruitment Groups",
+        "Staffing",
+        "Executive search"
+      ]
+    },
+    {
+      "id": "private-security",
+      "name": "Private security & guarding",
+      "parentId": null,
+      "pocket": "professional-advisory",
+      "description": "Manned guarding, armed response, alarm monitoring and integrated security services. Where the source classifies electronic security and monitoring, the same industry is used and the taxonomy places it under security.",
+      "synonyms": [
+        "Security",
+        "Private Security",
+        "Guarding",
+        "Armed response"
+      ]
+    },
+    {
+      "id": "bbb-ee-verification",
+      "name": "B-BBEE verification & transformation advisory",
+      "parentId": null,
+      "pocket": "professional-advisory",
+      "description": "B-BBEE verification, rating and certification against the generic and sector codes, and transformation and ownership advisory supporting measured entities.",
+      "synonyms": [
+        "Bee Verification",
+        "B-BBEE verification",
+        "BEE rating",
+        "Transformation advisory"
+      ]
+    },
+    {
+      "id": "auctioneering",
+      "name": "Auctioneering & asset realisation",
+      "parentId": null,
+      "pocket": "professional-advisory",
+      "description": "Auction houses and asset realisation and disposal services for art, collectibles, industrial assets and vehicles.",
+      "synonyms": [
+        "Auctioneers",
+        "Auction Houses",
+        "Auction",
+        "Asset realisation"
+      ]
+    },
+    {
+      "id": "hygiene-and-cleaning",
+      "name": "Cleaning & hygiene services",
+      "parentId": null,
+      "pocket": "facilities-services",
+      "description": "Contract cleaning, hygiene, pest control, washroom and integrated facilities support services.",
+      "synonyms": [
+        "Hygiene Services",
+        "Cleaning",
+        "Hygiene",
+        "Facilities support"
+      ]
+    },
+    {
+      "id": "waste-management",
+      "name": "Waste management & recycling services",
+      "parentId": null,
+      "pocket": "facilities-services",
+      "description": "Waste collection, treatment, landfill, hazardous waste handling and recycling services.",
+      "synonyms": [
+        "Waste Management",
+        "Waste",
+        "Recycling",
+        "Hazardous waste"
+      ]
+    },
+    {
+      "id": "health-services",
+      "name": "Health services (sub-sector not established)",
+      "parentId": null,
+      "pocket": "health-wellness",
+      "description": "Health and wellness services where the source classifies the company at health sector level and Maps has not established whether the business is care delivery, funding or administration.",
+      "synonyms": [
+        "Health",
+        "Healthcare",
+        "Wellness"
+      ]
+    },
+    {
+      "id": "private-hospital-groups",
+      "name": "Private hospital groups",
+      "parentId": null,
+      "pocket": "health-wellness",
+      "description": "Private hospital and day hospital groups operating acute care and specialist facilities.",
+      "synonyms": [
+        "Hospital Management",
+        "Private hospitals",
+        "Hospital group"
+      ]
+    },
+    {
+      "id": "medical-schemes",
+      "name": "Medical schemes",
+      "parentId": null,
+      "pocket": "health-wellness",
+      "description": "Restricted and open medical schemes funding members' healthcare benefits.",
+      "synonyms": [
+        "Medical Aid Schemes",
+        "Medical scheme",
+        "Health funder"
+      ]
+    },
+    {
+      "id": "medical-scheme-administration",
+      "name": "Medical scheme administration & managed care",
+      "parentId": null,
+      "pocket": "health-wellness",
+      "description": "Administration of medical schemes, benefit management, provider networks and managed care services.",
+      "synonyms": [
+        "Medical Aid Administrators",
+        "Scheme administration",
+        "Managed care"
+      ]
+    },
+    {
+      "id": "hotel-and-resort-groups",
+      "name": "Hotel & resort groups",
+      "parentId": null,
+      "pocket": "hospitality-tourism",
+      "description": "Hotel, resort and leisure accommodation groups operating branded and independent properties.",
+      "synonyms": [
+        "Hotels",
+        "Hotels And Resorts",
+        "Resorts",
+        "Hospitality group"
+      ]
+    },
+    {
+      "id": "airline-catering",
+      "name": "Airline & industrial catering",
+      "parentId": null,
+      "pocket": "hospitality-tourism",
+      "description": "Airline catering, in-flight catering and large-scale contract catering operations.",
+      "synonyms": [
+        "Airline Catering",
+        "In-flight catering",
+        "Contract catering"
+      ]
+    },
+    {
+      "id": "event-management",
+      "name": "Event management & production",
+      "parentId": null,
+      "pocket": "hospitality-tourism",
+      "description": "Event management, production, technical supply and activation services for exhibitions, conferences and public events.",
+      "synonyms": [
+        "Events",
+        "Event management",
+        "Event production"
+      ]
+    },
+    {
+      "id": "conference-centres",
+      "name": "Conference & exhibition centres",
+      "parentId": null,
+      "pocket": "hospitality-tourism",
+      "description": "Conference, convention and exhibition centre operations and venue management.",
+      "synonyms": [
+        "Conference Facilities",
+        "Convention centre",
+        "Exhibition venue"
+      ]
+    },
+    {
+      "id": "travel-and-tourism",
+      "name": "Travel & tourism services",
+      "parentId": null,
+      "pocket": "hospitality-tourism",
+      "description": "Travel agencies, business travel management, tourist rail and cruise experiences and destination marketing where the source classifies the company under travel and tourism.",
+      "synonyms": [
+        "Travel Tourism",
+        "Travel agency",
+        "Tourism",
+        "Tourism marketing"
+      ]
+    },
+    {
+      "id": "rail-passenger-transport",
+      "name": "Passenger rail & luxury train travel",
+      "parentId": null,
+      "pocket": "transport-logistics",
+      "description": "Scheduled passenger rail services and luxury tourist rail operations.",
+      "synonyms": [
+        "Transport",
+        "Passenger rail",
+        "Luxury train"
+      ]
+    },
+    {
+      "id": "fleet-services",
+      "name": "Fleet management & vehicle telematics",
+      "parentId": null,
+      "pocket": "transport-logistics",
+      "description": "Fleet management, outsourced fleet operations, vehicle tracking and telematics services for corporate and government fleets.",
+      "synonyms": [
+        "Fleet Services",
+        "Fleet management",
+        "Telematics",
+        "Vehicle tracking"
+      ]
+    },
+    {
+      "id": "vehicle-rental",
+      "name": "Vehicle rental & fleet leasing",
+      "parentId": null,
+      "pocket": "transport-logistics",
+      "description": "Short-term vehicle rental, long-term leasing and subscription vehicle access for corporate, government and leisure customers.",
+      "synonyms": [
+        "Car Rental",
+        "Car hire",
+        "Vehicle rental",
+        "Fleet leasing"
+      ]
+    },
+    {
+      "id": "airline-operations",
+      "name": "Passenger airline operations",
+      "parentId": null,
+      "pocket": "aviation-defence",
+      "description": "Scheduled and charter passenger airline operations, including franchise and low-cost carrier models.",
+      "synonyms": [
+        "Airline",
+        "Aviation",
+        "Passenger airline",
+        "Low-cost carrier"
+      ]
+    },
+    {
+      "id": "state-owned-air-transport",
+      "name": "State-owned air transport & navigation services",
+      "parentId": null,
+      "pocket": "aviation-defence",
+      "description": "State-owned airlines, airport operators and air traffic and navigation service providers.",
+      "synonyms": [
+        "Airport Company",
+        "Air Traffic Navigation",
+        "State-owned airline",
+        "Airports"
+      ]
+    },
+    {
+      "id": "home-building-regulation",
+      "name": "Home building registration & regulation",
+      "parentId": null,
+      "pocket": "public-sector",
+      "description": "Statutory registration, regulation and consumer protection for home builders and housing delivery.",
+      "synonyms": [
+        "Home Building Industry",
+        "Home builders registration",
+        "Housing regulator"
+      ]
+    },
+    {
+      "id": "shopping-centre-operations",
+      "name": "Shopping centre & retail property operations",
+      "parentId": null,
+      "pocket": "property-investment",
+      "description": "Ownership and operation of shopping centres and retail property assets, including centre management and leasing.",
+      "synonyms": [
+        "Shopping Centres",
+        "Retail property",
+        "Shopping mall"
+      ]
+    },
+    {
+      "id": "engineering-services",
+      "name": "Engineering services",
+      "parentId": null,
+      "pocket": "construction",
+      "description": "Multidisciplinary engineering, design, project delivery and asset management services where the source classifies the company under engineering.",
+      "synonyms": [
+        "Engineering",
+        "Engineering services",
+        "Enterprise asset management"
+      ]
+    },
+    {
+      "id": "consulting-engineering",
+      "name": "Consulting engineering & design",
+      "parentId": null,
+      "pocket": "construction",
+      "description": "Consulting engineering, infrastructure design, technical advisory and construction monitoring services.",
+      "synonyms": [
+        "Consulting Engineering",
+        "Consulting engineers",
+        "Design consultancy"
+      ]
+    },
+    {
+      "id": "infrastructure-management",
+      "name": "Infrastructure management",
+      "parentId": null,
+      "pocket": "construction",
+      "description": "Infrastructure development, management and asset stewardship where the source classifies the company under infrastructure management.",
+      "synonyms": [
+        "Infrastructure Management",
+        "Infrastructure",
+        "Asset stewardship"
+      ]
+    },
+    {
+      "id": "general-retail",
+      "name": "General merchandise & apparel retail",
+      "parentId": null,
+      "pocket": "consumer-retail",
+      "description": "General merchandise, apparel and consumer goods retail where the source classifies the company at retail sector level.",
+      "synonyms": [
+        "Retail",
+        "General retail",
+        "Apparel retail"
+      ]
+    },
+    {
+      "id": "diversified-retail",
+      "name": "Diversified retail groups",
+      "parentId": null,
+      "pocket": "consumer-retail",
+      "description": "Diversified retail groups operating across grocery, general merchandise and financial services.",
+      "synonyms": [
+        "Diversified Retailers",
+        "Diversified retail"
+      ]
+    },
+    {
+      "id": "furniture-retail",
+      "name": "Furniture & household goods retail",
+      "parentId": null,
+      "pocket": "consumer-retail",
+      "description": "Furniture, appliance and household goods retail, including credit and instalment-sale models.",
+      "synonyms": [
+        "Furniture Retailers",
+        "Furniture retail",
+        "Household goods"
+      ]
+    },
+    {
+      "id": "luxury-lifestyle-retail",
+      "name": "Luxury & lifestyle retail",
+      "parentId": null,
+      "pocket": "consumer-retail",
+      "description": "Luxury goods, premium fashion, jewellery and lifestyle brand retail.",
+      "synonyms": [
+        "Lifestyle",
+        "Luxury",
+        "Luxury retail",
+        "Premium brands"
+      ]
+    },
+    {
+      "id": "direct-response-retail",
+      "name": "Direct response & home shopping retail",
+      "parentId": null,
+      "pocket": "consumer-retail",
+      "description": "Catalogue, direct response and home shopping retail selling directly to consumers through credit accounts and digital channels.",
+      "synonyms": [
+        "Direct Response Marketing",
+        "Home shopping",
+        "Direct to consumer"
+      ]
+    },
+    {
+      "id": "brand-distribution",
+      "name": "Branded goods distribution",
+      "parentId": null,
+      "pocket": "consumer-retail",
+      "description": "Distribution and representation of branded consumer and industrial products where the source classifies the company as a brand distributor.",
+      "synonyms": [
+        "Brands Distributor",
+        "Brand distribution",
+        "Distributor"
+      ]
+    },
+    {
+      "id": "beverage-manufacturing",
+      "name": "Beverage manufacturing & bottling",
+      "parentId": null,
+      "pocket": "food-manufacturing",
+      "description": "Manufacture and bottling of soft drinks, juices, water and other non-alcoholic beverages.",
+      "synonyms": [
+        "Beverage",
+        "Beverages",
+        "Bottling",
+        "Soft drinks",
+        "Juices"
+      ]
+    },
+    {
+      "id": "brewing-distilling",
+      "name": "Brewing, distilling & wine",
+      "parentId": null,
+      "pocket": "food-manufacturing",
+      "description": "Brewing, distilling, wine and spirits production and brand ownership.",
+      "synonyms": [
+        "Beverages Breweries",
+        "Distillers Vintners",
+        "Breweries",
+        "Distilling",
+        "Wine and spirits"
+      ]
+    },
+    {
+      "id": "dairy-processing",
+      "name": "Dairy processing",
+      "parentId": null,
+      "pocket": "food-manufacturing",
+      "description": "Milk collection, dairy processing and dairy product manufacture.",
+      "synonyms": [
+        "Dairy Products",
+        "Dairy",
+        "Milk processing"
+      ]
+    },
+    {
+      "id": "private-education",
+      "name": "Private education & training",
+      "parentId": null,
+      "pocket": "education-skills",
+      "description": "Private higher education, business schools and training providers.",
+      "synonyms": [
+        "Education",
+        "Private education",
+        "Training providers"
+      ]
+    },
+    {
+      "id": "business-schools",
+      "name": "Business schools & executive education",
+      "parentId": null,
+      "pocket": "education-skills",
+      "description": "Business schools, graduate schools of business and executive education providers.",
+      "synonyms": [
+        "Business Schools",
+        "Business school",
+        "Executive education"
+      ]
+    }
+  ],
+  "crosswalk": {
+    "pocketMappings": [
+      {
+        "pocketId": "banking-finance",
+        "taxonomyNodes": [
+          "FIN"
+        ],
+        "note": "Banking, insurance and diversified financial services sit inside the finance macro-sector."
+      },
+      {
+        "pocketId": "investment-capital",
+        "taxonomyNodes": [
+          "FIN-ASSET"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "mining-extractives",
+        "taxonomyNodes": [
+          "MIN"
+        ],
+        "note": "The pocket spans coal, diamonds and mine services, which are separate L2 branches."
+      },
+      {
+        "pocketId": "energy-utilities",
+        "taxonomyNodes": [
+          "ENR",
+          "PUB-SOC-ENERGY",
+          "PUB-WATER-BOARD"
+        ],
+        "note": "Private generation and fuel supply sit in energy; the state utility branches for electricity and water sit in the public sector macro-sector."
+      },
+      {
+        "pocketId": "commercial-farming",
+        "taxonomyNodes": [
+          "AGR"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "industrial-manufacturing",
+        "taxonomyNodes": [
+          "MFG"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "automotive",
+        "taxonomyNodes": [
+          "MFG-AUTO"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "consumer-retail",
+        "taxonomyNodes": [
+          "RTL",
+          "WHL"
+        ],
+        "note": "Retail and wholesale trade are separate macro-sectors, and this pocket contains both."
+      },
+      {
+        "pocketId": "technology-digital",
+        "taxonomyNodes": [
+          "ICT"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "telecommunications",
+        "taxonomyNodes": [
+          "ICT-TELCO"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "media-marketing",
+        "taxonomyNodes": [
+          "PRO-MKT"
+        ],
+        "note": "Marketing, advertising, media and market research are held in professional and business services in the national tree, not in ICT."
+      },
+      {
+        "pocketId": "professional-advisory",
+        "taxonomyNodes": [
+          "PRO"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "facilities-services",
+        "taxonomyNodes": [
+          "CON-FAC"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "health-wellness",
+        "taxonomyNodes": [
+          "HLC"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "hospitality-tourism",
+        "taxonomyNodes": [
+          "TOU"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "aviation-defence",
+        "taxonomyNodes": [
+          "TRA-AIR",
+          "MFG-DEF",
+          "PUB-SOC-TRANSPORT"
+        ],
+        "note": "Airline operations sit in transport, defence manufacturing in manufacturing and the state air transport entities in the public sector."
+      },
+      {
+        "pocketId": "public-sector",
+        "taxonomyNodes": [
+          "PUB"
+        ],
+        "note": ""
+      },
+      {
+        "pocketId": "education-skills",
+        "taxonomyNodes": [
+          "EDU"
+        ],
+        "note": ""
+      }
+    ],
+    "industryMappings": [
+      {
+        "industryId": "universal-banking",
+        "taxonomyNode": "FIN-BANK-BIG5"
+      },
+      {
+        "industryId": "financial-services",
+        "taxonomyNode": "FIN"
+      },
+      {
+        "industryId": "insurance-underwriting",
+        "taxonomyNode": "FIN-INS"
+      },
+      {
+        "industryId": "asset-management",
+        "taxonomyNode": "FIN-ASSET-MANAGE"
+      },
+      {
+        "industryId": "investment-management",
+        "taxonomyNode": "FIN-ASSET-MANAGE"
+      },
+      {
+        "industryId": "investment-holding-companies",
+        "taxonomyNode": "FIN-ASSET-HOLD"
+      },
+      {
+        "industryId": "mining-operations",
+        "taxonomyNode": "MIN"
+      },
+      {
+        "industryId": "coal-mining",
+        "taxonomyNode": "MIN-COAL"
+      },
+      {
+        "industryId": "diamond-mining",
+        "taxonomyNode": "MIN-DIAM"
+      },
+      {
+        "industryId": "mining-services",
+        "taxonomyNode": "MIN-SV"
+      },
+      {
+        "industryId": "electricity-utility",
+        "taxonomyNode": "PUB-SOC-ENERGY"
+      },
+      {
+        "industryId": "bulk-water-supply",
+        "taxonomyNode": "PUB-WATER-BOARD"
+      },
+      {
+        "industryId": "petroleum-fuels",
+        "taxonomyNode": "ENR-OIL-FUEL"
+      },
+      {
+        "industryId": "commercial-fuel-retail",
+        "taxonomyNode": "RTL-FUEL"
+      },
+      {
+        "industryId": "commercial-farming",
+        "taxonomyNode": "AGR"
+      },
+      {
+        "industryId": "chemicals",
+        "taxonomyNode": "MFG-CHEM-BASE"
+      },
+      {
+        "industryId": "gases-petrochemicals",
+        "taxonomyNode": "MFG-CHEM"
+      },
+      {
+        "industryId": "steel-manufacturing",
+        "taxonomyNode": "MFG-METAL-STEEL"
+      },
+      {
+        "industryId": "packaging-manufacturing",
+        "taxonomyNode": "MFG-PLAS"
+      },
+      {
+        "industryId": "pulp-and-paper",
+        "taxonomyNode": "MFG-FORESTP-PULP"
+      },
+      {
+        "industryId": "paint-and-coatings",
+        "taxonomyNode": "MFG-CHEM-SPEC"
+      },
+      {
+        "industryId": "appliance-manufacturing",
+        "taxonomyNode": "MFG-ELEC-APP"
+      },
+      {
+        "industryId": "electronics-manufacturing",
+        "taxonomyNode": "MFG-ELEC"
+      },
+      {
+        "industryId": "electrical-equipment-manufacturing",
+        "taxonomyNode": "MFG-ELEC-TRANS"
+      },
+      {
+        "industryId": "pharmaceutical-manufacturing",
+        "taxonomyNode": "MFG-PHARM-GEN"
+      },
+      {
+        "industryId": "personal-care-manufacturing",
+        "taxonomyNode": "MFG-CHEM-HPC"
+      },
+      {
+        "industryId": "heavy-equipment",
+        "taxonomyNode": "MFG-MACH-EARTH"
+      },
+      {
+        "industryId": "industrial-equipment-supply",
+        "taxonomyNode": "MFG-MACH-IND"
+      },
+      {
+        "industryId": "cement-manufacturing",
+        "taxonomyNode": "CON-MAT-CEMENT"
+      },
+      {
+        "industryId": "building-materials",
+        "taxonomyNode": "CON-MAT"
+      },
+      {
+        "industryId": "builders-merchants",
+        "taxonomyNode": "CON-MAT-HARDWARE"
+      },
+      {
+        "industryId": "motor-vehicles",
+        "taxonomyNode": "MFG-AUTO"
+      },
+      {
+        "industryId": "automotive-components",
+        "taxonomyNode": "MFG-AUTO"
+      },
+      {
+        "industryId": "defence-and-aerospace",
+        "taxonomyNode": "MFG-DEF"
+      },
+      {
+        "industryId": "information-technology",
+        "taxonomyNode": "ICT"
+      },
+      {
+        "industryId": "software-solutions",
+        "taxonomyNode": "ICT-SW-PRODUCT"
+      },
+      {
+        "industryId": "computer-hardware",
+        "taxonomyNode": "ICT-HARD"
+      },
+      {
+        "industryId": "office-automation",
+        "taxonomyNode": "ICT-HARD"
+      },
+      {
+        "industryId": "business-process-outsourcing",
+        "taxonomyNode": "ICT-BPO"
+      },
+      {
+        "industryId": "telecommunications",
+        "taxonomyNode": "ICT-TELCO"
+      },
+      {
+        "industryId": "telecommunications-solutions",
+        "taxonomyNode": "ICT-TELCO-FIXED"
+      },
+      {
+        "industryId": "telecommunications-equipment",
+        "taxonomyNode": "ICT-HARD-DIST"
+      },
+      {
+        "industryId": "communications-networks",
+        "taxonomyNode": "ICT"
+      },
+      {
+        "industryId": "media-groups",
+        "taxonomyNode": "PRO-MKT-MEDIA"
+      },
+      {
+        "industryId": "media-agencies",
+        "taxonomyNode": "PRO-MKT-MEDIA"
+      },
+      {
+        "industryId": "marketing-media",
+        "taxonomyNode": "PRO-MKT"
+      },
+      {
+        "industryId": "marketing-services",
+        "taxonomyNode": "PRO-MKT"
+      },
+      {
+        "industryId": "branding-services",
+        "taxonomyNode": "PRO-MKT-AGENCY"
+      },
+      {
+        "industryId": "market-research",
+        "taxonomyNode": "PRO-MKT"
+      },
+      {
+        "industryId": "legal-services",
+        "taxonomyNode": "PRO-LEGAL-FIRM"
+      },
+      {
+        "industryId": "professional-services",
+        "taxonomyNode": "PRO"
+      },
+      {
+        "industryId": "business-support-services",
+        "taxonomyNode": "PRO"
+      },
+      {
+        "industryId": "recruitment-services",
+        "taxonomyNode": "PRO-HR-RECRUIT"
+      },
+      {
+        "industryId": "private-security",
+        "taxonomyNode": "PRO-SEC-GUARD"
+      },
+      {
+        "industryId": "bbb-ee-verification",
+        "taxonomyNode": "PRO-CONSULT-BBBEE"
+      },
+      {
+        "industryId": "auctioneering",
+        "taxonomyNode": "PRO-CORP-AUCT"
+      },
+      {
+        "industryId": "hygiene-and-cleaning",
+        "taxonomyNode": "CON-FAC-CLEAN"
+      },
+      {
+        "industryId": "waste-management",
+        "taxonomyNode": "CON-FAC-WASTE"
+      },
+      {
+        "industryId": "health-services",
+        "taxonomyNode": "HLC"
+      },
+      {
+        "industryId": "private-hospital-groups",
+        "taxonomyNode": "HLC-HOSP-PRIV"
+      },
+      {
+        "industryId": "medical-schemes",
+        "taxonomyNode": "HLC-SCHEME"
+      },
+      {
+        "industryId": "medical-scheme-administration",
+        "taxonomyNode": "HLC-SCHEME-ADMIN"
+      },
+      {
+        "industryId": "hotel-and-resort-groups",
+        "taxonomyNode": "TOU-ACCOM-HOTEL"
+      },
+      {
+        "industryId": "airline-catering",
+        "taxonomyNode": "TOU-FB-CATER"
+      },
+      {
+        "industryId": "event-management",
+        "taxonomyNode": "TOU-EVENT-MANAGE"
+      },
+      {
+        "industryId": "conference-centres",
+        "taxonomyNode": "TOU-EVENT-CONF"
+      },
+      {
+        "industryId": "travel-and-tourism",
+        "taxonomyNode": "TOU"
+      },
+      {
+        "industryId": "rail-passenger-transport",
+        "taxonomyNode": "TRA-PUB-RAIL"
+      },
+      {
+        "industryId": "fleet-services",
+        "taxonomyNode": "TRA-SVC"
+      },
+      {
+        "industryId": "vehicle-rental",
+        "taxonomyNode": "TRA-SVC-RENT"
+      },
+      {
+        "industryId": "airline-operations",
+        "taxonomyNode": "TRA-AIR-PAX"
+      },
+      {
+        "industryId": "state-owned-air-transport",
+        "taxonomyNode": "PUB-SOC-TRANSPORT"
+      },
+      {
+        "industryId": "home-building-regulation",
+        "taxonomyNode": "PUB-REG-REGULATOR"
+      },
+      {
+        "industryId": "shopping-centre-operations",
+        "taxonomyNode": "CON-PROP-RETAIL"
+      },
+      {
+        "industryId": "engineering-services",
+        "taxonomyNode": "CON-ENG"
+      },
+      {
+        "industryId": "consulting-engineering",
+        "taxonomyNode": "CON-ENG-CONSULT"
+      },
+      {
+        "industryId": "infrastructure-management",
+        "taxonomyNode": "CON"
+      },
+      {
+        "industryId": "general-retail",
+        "taxonomyNode": "RTL"
+      },
+      {
+        "industryId": "diversified-retail",
+        "taxonomyNode": "RTL"
+      },
+      {
+        "industryId": "furniture-retail",
+        "taxonomyNode": "RTL-HOME-FURN"
+      },
+      {
+        "industryId": "luxury-lifestyle-retail",
+        "taxonomyNode": "RTL-LUX-SPEC"
+      },
+      {
+        "industryId": "direct-response-retail",
+        "taxonomyNode": "RTL-ECOM-DTC"
+      },
+      {
+        "industryId": "brand-distribution",
+        "taxonomyNode": "WHL"
+      },
+      {
+        "industryId": "beverage-manufacturing",
+        "taxonomyNode": "MFG-FOOD-BEV"
+      },
+      {
+        "industryId": "brewing-distilling",
+        "taxonomyNode": "MFG-FOOD-BREW"
+      },
+      {
+        "industryId": "dairy-processing",
+        "taxonomyNode": "MFG-FOOD-DAIRY"
+      },
+      {
+        "industryId": "private-education",
+        "taxonomyNode": "EDU-HIGH"
+      },
+      {
+        "industryId": "business-schools",
+        "taxonomyNode": "EDU-HIGH"
+      }
+    ]
+  }
+}

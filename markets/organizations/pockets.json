@@ -70,5 +70,113 @@
     "name": "Renewable Energy",
     "valueChainStage": "Development",
     "description": "Renewable project development and independent power production."
+  },
+  {
+    "id": "banking-finance",
+    "name": "Banking & Financial Services",
+    "valueChainStage": "Financial intermediation",
+    "description": "Retail, corporate and investment banking, insurance underwriting and diversified financial services groups."
+  },
+  {
+    "id": "investment-capital",
+    "name": "Investment & Capital Markets",
+    "valueChainStage": "Investment",
+    "description": "Asset management, collective investment schemes, wealth platforms and investment holding companies."
+  },
+  {
+    "id": "mining-extractives",
+    "name": "Mining & Extractive Operations",
+    "valueChainStage": "Extractive",
+    "description": "Coal, diamond, gold and bulk mineral mining houses, mining operations and mine contracting and services."
+  },
+  {
+    "id": "energy-utilities",
+    "name": "Energy & Utilities",
+    "valueChainStage": "Generation & supply",
+    "description": "Electricity generation, transmission and distribution, bulk water supply and state-owned utility operations."
+  },
+  {
+    "id": "commercial-farming",
+    "name": "Commercial Farming",
+    "valueChainStage": "Primary production",
+    "description": "Commercial crop, livestock and mixed farming operations and agricultural primary production."
+  },
+  {
+    "id": "industrial-manufacturing",
+    "name": "Industrial Manufacturing",
+    "valueChainStage": "Manufacturing",
+    "description": "Chemicals, petrochemicals, steel, packaging, paper, coatings, pharmaceuticals, appliances, electronics and electrical equipment manufacturing."
+  },
+  {
+    "id": "automotive",
+    "name": "Automotive & Components",
+    "valueChainStage": "Manufacturing & trade",
+    "description": "Vehicle assembly, commercial vehicle supply and automotive component and telematics hardware manufacturing."
+  },
+  {
+    "id": "consumer-retail",
+    "name": "Consumer Retail & Distribution",
+    "valueChainStage": "Retail & trade",
+    "description": "General, furniture and luxury retail, commercial fuel retail and branded goods distribution."
+  },
+  {
+    "id": "technology-digital",
+    "name": "Technology & Digital Services",
+    "valueChainStage": "Service",
+    "description": "Information technology services, software products, computer hardware, office automation and business process outsourcing."
+  },
+  {
+    "id": "telecommunications",
+    "name": "Telecommunications",
+    "valueChainStage": "Network operations",
+    "description": "Telecommunications operators, converged and fixed-line providers, resellers and telecommunications equipment distribution."
+  },
+  {
+    "id": "media-marketing",
+    "name": "Media, Marketing & Research",
+    "valueChainStage": "Service",
+    "description": "Media groups and broadcasters, media agencies, marketing and branding services and market research."
+  },
+  {
+    "id": "professional-advisory",
+    "name": "Professional & Advisory Services",
+    "valueChainStage": "Service",
+    "description": "Legal, engineering-adjacent professional services, management support, recruitment, security, B-BBEE verification and auctioneering services."
+  },
+  {
+    "id": "facilities-services",
+    "name": "Facilities, Hygiene & Waste Services",
+    "valueChainStage": "Service",
+    "description": "Integrated facilities management, cleaning and hygiene services and waste management."
+  },
+  {
+    "id": "health-wellness",
+    "name": "Health & Wellness",
+    "valueChainStage": "Care delivery",
+    "description": "Health services, private hospital groups, medical schemes, medical scheme administration and personal care products."
+  },
+  {
+    "id": "hospitality-tourism",
+    "name": "Hospitality, Tourism & Events",
+    "valueChainStage": "Service",
+    "description": "Hotel and resort groups, airline catering, conferencing, event management and travel and tourism services."
+  },
+  {
+    "id": "aviation-defence",
+    "name": "Aviation, Air Transport & Defence",
+    "valueChainStage": "Operations & manufacturing",
+    "description": "Passenger airline operations, state-owned air transport and navigation services, airline catering and defence and aerospace manufacturing."
+  },
+  {
+    "id": "public-sector",
+    "name": "Public Sector & Regulation",
+    "valueChainStage": "Public",
+    "description": "State-owned companies, statutory regulators and public institutions."
+  },
+  {
+    "id": "education-skills",
+    "name": "Education & Skills Development",
+    "valueChainStage": "Service",
+    "description": "Private higher education providers, business schools and executive education."
   }
 ]

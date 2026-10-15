@@ -1346,6 +1346,9 @@
         "MFG-LIGHT",
         "MFG-LIGHT-WELD",
         "MFG-LIGHT-REPAIR",
+        "MFG-MACH",
+        "MFG-MACH-EARTH",
+        "MFG-MACH-IND",
         "RTL",
         "RTL-GROC",
         "RTL-GROC-HYPER",
@@ -1442,6 +1445,7 @@
         "TRA-AIR",
         "TRA-AIR-CARGO",
         "TRA-AIR-SVC",
+        "TRA-AIR-PAX",
         "TRA-PIPE",
         "TRA-PIPE-LIQ",
         "TRA-PIPE-PIPE",
@@ -1467,6 +1471,7 @@
         "TRA-SVC-CUSTOMS",
         "TRA-SVC-FACILITY",
         "TRA-SVC-INSUR",
+        "TRA-SVC-RENT",
         "FIN",
         "FIN-BANK",
         "FIN-BANK-BIG5",
@@ -1524,6 +1529,9 @@
         "FIN-SVC-COLLECT",
         "FIN-SVC-ACTUAR",
         "FIN-SVC-COMP",
+        "FIN-ASSET",
+        "FIN-ASSET-MANAGE",
+        "FIN-ASSET-HOLD",
         "ICT",
         "ICT-TELCO",
         "ICT-TELCO-MNO",
@@ -1647,6 +1655,7 @@
         "PRO-CONSULT-TECH",
         "PRO-CONSULT-PUB",
         "PRO-CONSULT-ENV",
+        "PRO-CONSULT-BBBEE",
         "PRO-HR",
         "PRO-HR-RECRUIT",
         "PRO-HR-LABOUR",
@@ -1666,6 +1675,7 @@
         "PRO-CORP-VAL",
         "PRO-CORP-BPO",
         "PRO-CORP-LANG",
+        "PRO-CORP-AUCT",
         "HLC",
         "HLC-HOSP",
         "HLC-HOSP-PRIV",
@@ -1829,7 +1839,7 @@
         "MFG-AUTO-OEM-EXPORT",
         "MFG-CHEM-CTL-SYNFUEL"
       ],
-      "description": "Any of the 731 nodes in the four-tier taxonomy, from macro-sector (level 1) to operational niche (level 4)."
+      "description": "Any of the 741 nodes in the four-tier taxonomy, from macro-sector (level 1) to operational niche (level 4)."
     }
   },
   "allOf": [

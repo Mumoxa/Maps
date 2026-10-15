@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "note": "Curated identity decisions for the Top 500 SA directory batch. Everything not listed here resolves from the source name itself. `mergeInto` folds a second listing into an existing listing's record because the source itself shows one legal entity; `aliases` record the name forms the same entity appears under (including the shorter names the contact directory uses), so employer resolution lands on the curated record instead of leaving a dataset-only stub beside it; `enrich` attaches the listing to a company that is already curated, without touching its sourced placements.",
+  "companies": {
+    "ABSA": {
+      "name": "Absa",
+      "aliases": [
+        "ABSA"
+      ],
+      "note": "The directory lists this bank twice: as ABSA and as Barclays Africa Group Limited, whose page carries Absa's contact block (Johannesburg, barclaysafrica.com, +27 11 350 4000). The two listings are one organisation under its current and former name."
+    },
+    "ADCORP": {
+      "mergeInto": "Adcorp Holdings Limited"
+    },
+    "Adcorp Holdings Limited": {
+      "name": "Adcorp Holdings",
+      "legalName": "Adcorp Holdings Limited",
+      "aliases": [
+        "Adcorp",
+        "Adcorp Group"
+      ],
+      "note": "The directory carries two Adcorp profiles (ADCORP and Adcorp Holdings Limited); both describe the same recruitment group, so they are one record."
+    },
+    "ADT Security (Pty) Ltd": {
+      "mergeInto": "Fidelity ADT Security (Pty) Ltd"
+    },
+    "Air Traffic and Navigation Services Company Limited": {
+      "name": "Air Traffic and Navigation Services",
+      "legalName": "Air Traffic and Navigation Services Company Limited"
+    },
+    "Airports Company South Africa (ACSA)": {
+      "name": "Airports Company South Africa",
+      "aliases": [
+        "ACSA"
+      ],
+      "note": "The listing gives the abbreviated form; the contact directory uses the unabbreviated name."
+    },
+    "Amalgamated Beverage Industries (ABI)": {
+      "name": "Amalgamated Beverage Industries",
+      "aliases": [
+        "ABI"
+      ]
+    },
+    "Annique Health and Beauty (Ptd) Ltd": {
+      "name": "Annique Health and Beauty",
+      "note": "The directory's own spelling of the company name carries a typographical error in the legal suffix; the display name is normalised and the source spelling is kept as an alias."
+    },
+    "Aveng Africa Limited": {
+      "enrich": "org-aveng",
+      "note": "The directory's 'Aveng Africa Limited' listing is the Aveng group the existing record already covers; the same source family is cited by both."
+    },
+    "Barclays Africa Group Limited": {
+      "mergeInto": "ABSA"
+    },
+    "Bidfood (Pty) Ltd": {
+      "enrich": "org-bidfood"
+    },
+    "Bowmans": {
+      "aliases": [
+        "Bowmans (Law Firm)"
+      ]
+    },
+    "Clover SA (Pty) Ltd": {
+      "aliases": [
+        "Clover S.A. Proprietary"
+      ],
+      "note": "The contact directory's 'Clover S.A. Proprietary' employer rows resolve to this record."
+    },
+    "Discovery Health (Pty) Ltd": {
+      "name": "Discovery",
+      "aliases": [
+        "Discovery Health"
+      ],
+      "note": "The contact directory's 56 'Discovery' employer rows resolve to this administration company; the medical scheme itself (Discovery Health Medical Scheme) is a separate record, as the scheme and its administrator are different organisations."
+    },
+    "Discovery Health Medical Scheme (DHMS)": {
+      "name": "Discovery Health Medical Scheme",
+      "aliases": [
+        "DHMS"
+      ],
+      "note": "The scheme is a separate organisation from its administrator, Discovery Health (Pty) Ltd, which is a separate record."
+    },
+    "Eskom": {
+      "aliases": [
+        "Eskom Holdings",
+        "Eskom Holdings SOC"
+      ],
+      "note": "The contact directory's 'Eskom Holdings SOC' employer rows resolve to this record."
+    },
+    "Fidelity ADT Security (Pty) Ltd": {
+      "name": "Fidelity ADT Security",
+      "legalName": "Fidelity ADT Security (Pty) Ltd",
+      "note": "ADT Security and Fidelity ADT Security list the same Midrand address (Ulwazi Business Park, 15th Road, Rantjespark) and the same telephone number (0860 100 911): one operating entity under a rebrand, not two companies."
+    },
+    "Gordon Institute of Business Science (GIBS)": {
+      "name": "Gordon Institute of Business Science",
+      "aliases": [
+        "GIBS"
+      ]
+    },
+    "Growthpoint Properties Limited": {
+      "enrich": "org-growthpoint-properties"
+    },
+    "Harmony Gold": {
+      "aliases": [
+        "Harmony Gold Mining Company"
+      ]
+    },
+    "Hyprop Investments Limited": {
+      "enrich": "org-hyprop"
+    },
+    "IBM": {
+      "aliases": [
+        "IBM South Africa"
+      ]
+    },
+    "KAP Diversified Industrial (Pty) Ltd t/a PG Bison": {
+      "name": "PG Bison",
+      "legalName": "KAP Diversified Industrial (Pty) Ltd",
+      "aliases": [
+        "KAP Diversified Industrial"
+      ],
+      "note": "The listing names the entity as KAP Diversified Industrial (Pty) Ltd, trading as PG Bison; the panel is the group's board and timber business."
+    },
+    "Microsoft SA (Pty) Ltd": {
+      "aliases": [
+        "Microsoft"
+      ]
+    },
+    "MultiChoice South Africa (Pty) Ltd": {
+      "aliases": [
+        "MultiChoice"
+      ]
+    },
+    "Nestlé": {
+      "id": "org-nestle",
+      "note": "The directory lists Nestlé once per sector label; this is one record."
+    },
+    "Ogilvy": {
+      "aliases": [
+        "Ogilvy South Africa"
+      ]
+    },
+    "RCL Foods (Pty) Ltd": {
+      "enrich": "org-rcl-foods"
+    },
+    "Rectron (Pty) Ltd": {
+      "aliases": [
+        "Rectron South Africa"
+      ]
+    },
+    "SA Tourism": {
+      "aliases": [
+        "South African Tourism"
+      ]
+    },
+    "Santam": {
+      "aliases": [
+        "Santam Insurance"
+      ]
+    },
+    "SAP Africa": {
+      "aliases": [
+        "SAP"
+      ]
+    },
+    "Shoprite Holdings Limited": {
+      "enrich": "org-shoprite-holdings",
+      "aliases": [
+        "Shoprite"
+      ],
+      "note": "The contact directory's 'Shoprite' employer rows resolve to this record."
+    },
+    "Sishen Iron Ore Company (Kumba Iron Ore)": {
+      "name": "Sishen Iron Ore Company",
+      "aliases": [
+        "Kumba Iron Ore"
+      ]
+    },
+    "South African Airways (SAA)": {
+      "name": "South African Airways",
+      "aliases": [
+        "SAA"
+      ]
+    },
+    "Spoor and Fisher": {
+      "aliases": [
+        "Spoor & Fisher"
+      ]
+    },
+    "Telkom SA SOC Limited": {
+      "aliases": [
+        "Telkom"
+      ]
+    },
+    "Tiger Brands Limited": {
+      "enrich": "org-tiger-brands"
+    },
+    "Torre Parts & Components Pty Ltd": {
+      "name": "Torre Parts & Components",
+      "legalName": "Torre Parts & Components Pty Ltd"
+    },
+    "Trek Bicycle South Africa": {
+      "sourceUrl": "https://top500.co.za/top500-companies/trek-bikes/",
+      "sourceUrlReason": "The URL this company's export row carries (top500.co.za/top500-companies/trek-bicycle-south-africa/) returns no content; the live listing for Trek Bicycle South Africa is cited instead.",
+      "note": "The directory states no sector for this company; its listing places it in the branded goods distribution macro node."
+    },
+    "Truworths International Limited": {
+      "aliases": [
+        "Truworths"
+      ]
+    },
+    "VKB": {
+      "enrich": "org-vkb"
+    },
+    "Vodacom Group Limited": {
+      "aliases": [
+        "Vodacom"
+      ]
+    },
+    "Vox Telecommunications (Pty) Ltd": {
+      "aliases": [
+        "Vox Telecom"
+      ]
+    },
+    "WBHO Construction (Pty) Ltd": {
+      "enrich": "org-wbho"
+    },
+    "WSP": {
+      "aliases": [
+        "WSP in Africa"
+      ]
+    }
+  }
+}

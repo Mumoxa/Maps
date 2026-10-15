@@ -8,11 +8,137 @@
     "distinctEmployerNames": 1397,
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 176,
-    "distinctOrganizationEntries": 1358,
-    "curatedCompanyMatches": 10,
-    "unverifiedDatasetOnly": 1348
+    "distinctOrganizationEntries": 1356,
+    "curatedCompanyMatches": 62,
+    "unverifiedDatasetOnly": 1294
   },
   "employers": [
+    {
+      "organizationId": "org-absa",
+      "name": "Absa",
+      "contactCount": 285,
+      "sourceNames": [
+        "Absa",
+        "Absa Bank",
+        "Absa CIB",
+        "Absa Group",
+        "Absa Group Limited",
+        "Barclays Africa Group Limited"
+      ]
+    },
+    {
+      "organizationId": "org-adcorp-holdings",
+      "name": "Adcorp Holdings",
+      "contactCount": 2,
+      "sourceNames": [
+        "Adcorp Group"
+      ]
+    },
+    {
+      "organizationId": "org-advtech",
+      "name": "AdvTech",
+      "contactCount": 5,
+      "sourceNames": [
+        "Advtech"
+      ]
+    },
+    {
+      "organizationId": "org-aeci",
+      "name": "AECI",
+      "contactCount": 5,
+      "sourceNames": [
+        "AECI",
+        "AECI Limited"
+      ]
+    },
+    {
+      "organizationId": "org-african-rainbow-minerals",
+      "name": "African Rainbow Minerals",
+      "contactCount": 1,
+      "sourceNames": [
+        "African Rainbow Minerals Limited"
+      ]
+    },
+    {
+      "organizationId": "org-afrimat",
+      "name": "Afrimat",
+      "contactCount": 1,
+      "sourceNames": [
+        "Afrimat"
+      ]
+    },
+    {
+      "organizationId": "org-airports-company-south-africa",
+      "name": "Airports Company South Africa",
+      "contactCount": 1,
+      "sourceNames": [
+        "Airports Company South Africa"
+      ]
+    },
+    {
+      "organizationId": "org-allan-gray",
+      "name": "Allan Gray",
+      "contactCount": 2,
+      "sourceNames": [
+        "Allan Gray"
+      ]
+    },
+    {
+      "organizationId": "org-anglogold-ashanti",
+      "name": "AngloGold Ashanti",
+      "contactCount": 1,
+      "sourceNames": [
+        "AngloGold Ashanti"
+      ]
+    },
+    {
+      "organizationId": "org-arcelormittal-south-africa",
+      "name": "ArcelorMittal South Africa",
+      "contactCount": 6,
+      "sourceNames": [
+        "ArcelorMittal South Africa"
+      ]
+    },
+    {
+      "organizationId": "org-avi",
+      "name": "AVI",
+      "contactCount": 1,
+      "sourceNames": [
+        "AVI Limited"
+      ]
+    },
+    {
+      "organizationId": "org-barloworld-equipment",
+      "name": "Barloworld Equipment",
+      "contactCount": 5,
+      "sourceNames": [
+        "Barloworld Equipment"
+      ]
+    },
+    {
+      "organizationId": "org-bowmans",
+      "name": "Bowmans",
+      "contactCount": 1,
+      "sourceNames": [
+        "Bowmans (Law Firm)"
+      ]
+    },
+    {
+      "organizationId": "org-clover-sa",
+      "name": "Clover SA",
+      "contactCount": 1,
+      "sourceNames": [
+        "Clover S.A. Proprietary Limited"
+      ]
+    },
+    {
+      "organizationId": "org-ctrack",
+      "name": "Ctrack",
+      "contactCount": 2,
+      "sourceNames": [
+        "Ctrack"
+      ]
+    },
     {
       "organizationId": "org-dataset:@team dynamics",
       "name": "@Team Dynamics",
@@ -115,18 +241,6 @@
       "contactCount": 1,
       "sourceNames": [
         "ABF Sugar"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:absa",
-      "name": "Absa",
-      "contactCount": 283,
-      "sourceNames": [
-        "Absa",
-        "Absa Bank",
-        "Absa CIB",
-        "Absa Group",
-        "Absa Group Limited"
       ]
     },
     {
@@ -258,14 +372,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:adcorp group",
-      "name": "Adcorp Group",
-      "contactCount": 2,
-      "sourceNames": [
-        "Adcorp Group"
-      ]
-    },
-    {
       "organizationId": "org-dataset:adept advisory",
       "name": "Adept Advisory",
       "contactCount": 1,
@@ -311,23 +417,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Adviceworx"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:advtech",
-      "name": "Advtech",
-      "contactCount": 5,
-      "sourceNames": [
-        "Advtech"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:aeci",
-      "name": "AECI",
-      "contactCount": 5,
-      "sourceNames": [
-        "AECI",
-        "AECI Limited"
       ]
     },
     {
@@ -387,14 +476,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:african rainbow minerals",
-      "name": "African Rainbow Minerals",
-      "contactCount": 1,
-      "sourceNames": [
-        "African Rainbow Minerals Limited"
-      ]
-    },
-    {
       "organizationId": "org-dataset:africawide",
       "name": "Africawide",
       "contactCount": 1,
@@ -424,14 +505,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Afrikaanse Hoër Meisieskool Pretoria"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:afrimat",
-      "name": "Afrimat",
-      "contactCount": 1,
-      "sourceNames": [
-        "Afrimat"
       ]
     },
     {
@@ -499,14 +572,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:airports company south africa",
-      "name": "Airports Company South Africa",
-      "contactCount": 1,
-      "sourceNames": [
-        "Airports Company South Africa"
-      ]
-    },
-    {
       "organizationId": "org-dataset:airtel africa",
       "name": "Airtel Africa",
       "contactCount": 2,
@@ -552,14 +617,6 @@
       "contactCount": 1,
       "sourceNames": [
         "All4Labels - Global Packaging Group"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:allan gray",
-      "name": "Allan Gray",
-      "contactCount": 2,
-      "sourceNames": [
-        "Allan Gray"
       ]
     },
     {
@@ -715,14 +772,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:anglogold ashanti",
-      "name": "AngloGold Ashanti",
-      "contactCount": 1,
-      "sourceNames": [
-        "AngloGold Ashanti"
-      ]
-    },
-    {
       "organizationId": "org-dataset:anyvan",
       "name": "AnyVan",
       "contactCount": 1,
@@ -784,14 +833,6 @@
       "contactCount": 2,
       "sourceNames": [
         "ArcelorMittal"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:arcelormittal south africa",
-      "name": "ArcelorMittal South Africa",
-      "contactCount": 6,
-      "sourceNames": [
-        "ArcelorMittal South Africa"
       ]
     },
     {
@@ -956,14 +997,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:avi",
-      "name": "AVI",
-      "contactCount": 1,
-      "sourceNames": [
-        "AVI Limited"
-      ]
-    },
-    {
       "organizationId": "org-dataset:avochoc",
       "name": "Avochoc",
       "contactCount": 2,
@@ -1100,27 +1133,11 @@
       ]
     },
     {
-      "organizationId": "org-dataset:barclays africa group",
-      "name": "Barclays Africa Group",
-      "contactCount": 2,
-      "sourceNames": [
-        "Barclays Africa Group Limited"
-      ]
-    },
-    {
       "organizationId": "org-dataset:barko financial services",
       "name": "Barko Financial Services",
       "contactCount": 2,
       "sourceNames": [
         "Barko Financial Services"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:barloworld equipment",
-      "name": "Barloworld Equipment",
-      "contactCount": 5,
-      "sourceNames": [
-        "Barloworld Equipment"
       ]
     },
     {
@@ -1449,14 +1466,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Botswana Telecommunications Corporation"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:bowmans (law firm)",
-      "name": "Bowmans (Law Firm)",
-      "contactCount": 1,
-      "sourceNames": [
-        "Bowmans (Law Firm)"
       ]
     },
     {
@@ -2012,14 +2021,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:clover s.a. proprietary",
-      "name": "Clover S.A. Proprietary",
-      "contactCount": 1,
-      "sourceNames": [
-        "Clover S.A. Proprietary Limited"
-      ]
-    },
-    {
       "organizationId": "org-dataset:co-operative computing",
       "name": "Co-Operative Computing",
       "contactCount": 2,
@@ -2276,14 +2277,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:ctrack",
-      "name": "Ctrack",
-      "contactCount": 2,
-      "sourceNames": [
-        "Ctrack"
-      ]
-    },
-    {
       "organizationId": "org-dataset:cvh spirits",
       "name": "CVH Spirits",
       "contactCount": 1,
@@ -2484,14 +2477,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:defy appliances",
-      "name": "Defy Appliances",
-      "contactCount": 1,
-      "sourceNames": [
-        "Defy Appliances"
-      ]
-    },
-    {
       "organizationId": "org-dataset:dell technologies",
       "name": "Dell Technologies",
       "contactCount": 3,
@@ -2628,14 +2613,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:dhl express",
-      "name": "DHL Express",
-      "contactCount": 5,
-      "sourceNames": [
-        "DHL Express"
-      ]
-    },
-    {
       "organizationId": "org-dataset:dice",
       "name": "DICE",
       "contactCount": 1,
@@ -2756,14 +2733,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:dimension data",
-      "name": "Dimension Data",
-      "contactCount": 11,
-      "sourceNames": [
-        "Dimension Data"
-      ]
-    },
-    {
       "organizationId": "org-dataset:diplomat distributors",
       "name": "Diplomat Distributors",
       "contactCount": 1,
@@ -2801,17 +2770,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Disa Primary School"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:discovery",
-      "name": "Discovery",
-      "contactCount": 56,
-      "sourceNames": [
-        "Discovery Bank",
-        "Discovery Health",
-        "Discovery Limited",
-        "DISCOVERY VITALITY"
       ]
     },
     {
@@ -3151,14 +3109,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:enviroserv waste management",
-      "name": "EnviroServ Waste Management",
-      "contactCount": 3,
-      "sourceNames": [
-        "EnviroServ Waste Management (Pty) Ltd"
-      ]
-    },
-    {
       "organizationId": "org-dataset:epi-use",
       "name": "EPI-USE",
       "contactCount": 1,
@@ -3236,14 +3186,6 @@
       "contactCount": 3,
       "sourceNames": [
         "ESET Southern Africa"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:eskom holdings soc",
-      "name": "Eskom Holdings SOC",
-      "contactCount": 10,
-      "sourceNames": [
-        "Eskom Holdings SOC Ltd"
       ]
     },
     {
@@ -3564,14 +3506,6 @@
       "contactCount": 1,
       "sourceNames": [
         "First Technology National (Pty) Ltd"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:firstrand",
-      "name": "FirstRand",
-      "contactCount": 11,
-      "sourceNames": [
-        "FirstRand"
       ]
     },
     {
@@ -4080,14 +4014,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:harmony gold mining company",
-      "name": "Harmony Gold Mining Company",
-      "contactCount": 2,
-      "sourceNames": [
-        "Harmony Gold Mining Company Limited"
-      ]
-    },
-    {
       "organizationId": "org-dataset:hatch",
       "name": "Hatch",
       "contactCount": 1,
@@ -4216,14 +4142,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:homechoice",
-      "name": "homechoice",
-      "contactCount": 1,
-      "sourceNames": [
-        "homechoice"
-      ]
-    },
-    {
       "organizationId": "org-dataset:homegrown network",
       "name": "Homegrown Network",
       "contactCount": 1,
@@ -4325,22 +4243,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Hyve Mobile"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:ibm",
-      "name": "IBM",
-      "contactCount": 1,
-      "sourceNames": [
-        "IBM"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:ibm south africa",
-      "name": "IBM South Africa",
-      "contactCount": 1,
-      "sourceNames": [
-        "IBM South Africa"
       ]
     },
     {
@@ -5298,14 +5200,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:lewis group",
-      "name": "Lewis Group",
-      "contactCount": 1,
-      "sourceNames": [
-        "Lewis Group Ltd"
-      ]
-    },
-    {
       "organizationId": "org-dataset:lexisnexis",
       "name": "LexisNexis",
       "contactCount": 15,
@@ -5770,14 +5664,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:medihelp medical scheme",
-      "name": "Medihelp Medical Scheme",
-      "contactCount": 2,
-      "sourceNames": [
-        "Medihelp Medical Scheme"
-      ]
-    },
-    {
       "organizationId": "org-dataset:meerkatᵀᴹ",
       "name": "Meerkatᵀᴹ",
       "contactCount": 1,
@@ -5871,14 +5757,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Micklefield"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:microsoft",
-      "name": "Microsoft",
-      "contactCount": 9,
-      "sourceNames": [
-        "Microsoft"
       ]
     },
     {
@@ -6198,14 +6076,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:multichoice",
-      "name": "MultiChoice",
-      "contactCount": 21,
-      "sourceNames": [
-        "MultiChoice Group"
-      ]
-    },
-    {
       "organizationId": "org-dataset:multisaas business systems",
       "name": "Multisaas Business Systems",
       "contactCount": 1,
@@ -6283,22 +6153,6 @@
       "contactCount": 7,
       "sourceNames": [
         "Nampak"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:nashua",
-      "name": "Nashua",
-      "contactCount": 1,
-      "sourceNames": [
-        "Nashua LTD"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:naspers",
-      "name": "Naspers",
-      "contactCount": 4,
-      "sourceNames": [
-        "Naspers Limited"
       ]
     },
     {
@@ -6380,22 +6234,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Neslo"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:nestlé",
-      "name": "Nestlé",
-      "contactCount": 2,
-      "sourceNames": [
-        "Nestlé"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:netcare",
-      "name": "Netcare",
-      "contactCount": 11,
-      "sourceNames": [
-        "Netcare"
       ]
     },
     {
@@ -6709,14 +6547,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Office of the Chief Justice"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:ogilvy south africa",
-      "name": "Ogilvy South Africa",
-      "contactCount": 1,
-      "sourceNames": [
-        "Ogilvy South Africa"
       ]
     },
     {
@@ -7749,14 +7579,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:rectron south africa",
-      "name": "Rectron South Africa",
-      "contactCount": 1,
-      "sourceNames": [
-        "Rectron South Africa"
-      ]
-    },
-    {
       "organizationId": "org-dataset:recu (pty) ltd)",
       "name": "ReCu (Pty) Ltd)",
       "contactCount": 1,
@@ -8165,18 +7987,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:sanlam",
-      "name": "Sanlam",
-      "contactCount": 47,
-      "sourceNames": [
-        "Glacier by Sanlam",
-        "Sanlam",
-        "Sanlam Corporate",
-        "Sanlam Fintech",
-        "Sanlam Investments"
-      ]
-    },
-    {
       "organizationId": "org-dataset:sanlam private wealth",
       "name": "Sanlam Private Wealth",
       "contactCount": 1,
@@ -8201,22 +8011,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:santam insurance",
-      "name": "Santam Insurance",
-      "contactCount": 16,
-      "sourceNames": [
-        "Santam Insurance"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:sap",
-      "name": "SAP",
-      "contactCount": 5,
-      "sourceNames": [
-        "SAP"
-      ]
-    },
-    {
       "organizationId": "org-dataset:sap fioneer",
       "name": "SAP Fioneer",
       "contactCount": 3,
@@ -8225,35 +8019,11 @@
       ]
     },
     {
-      "organizationId": "org-dataset:sappi",
-      "name": "Sappi",
-      "contactCount": 2,
-      "sourceNames": [
-        "Sappi"
-      ]
-    },
-    {
       "organizationId": "org-dataset:saps",
       "name": "SAPS",
       "contactCount": 1,
       "sourceNames": [
         "SAPS"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:sasol",
-      "name": "Sasol",
-      "contactCount": 32,
-      "sourceNames": [
-        "Sasol"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:sasol mining",
-      "name": "Sasol Mining",
-      "contactCount": 2,
-      "sourceNames": [
-        "Sasol Mining"
       ]
     },
     {
@@ -8470,17 +8240,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Shock EO Systems"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:shoprite",
-      "name": "Shoprite",
-      "contactCount": 64,
-      "sourceNames": [
-        "Shoprite Checkers Group",
-        "Shoprite Financial Services",
-        "ShopriteX",
-        "The Shoprite Group of Companies"
       ]
     },
     {
@@ -8820,14 +8579,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:south african tourism",
-      "name": "South African Tourism",
-      "contactCount": 1,
-      "sourceNames": [
-        "South African Tourism"
-      ]
-    },
-    {
       "organizationId": "org-dataset:southern sun",
       "name": "Southern Sun",
       "contactCount": 1,
@@ -8873,14 +8624,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Splunk"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:spoor & fisher",
-      "name": "Spoor & Fisher",
-      "contactCount": 1,
-      "sourceNames": [
-        "Spoor & Fisher"
       ]
     },
     {
@@ -9059,14 +8802,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Sulzer Pumps South Africa (Pty) Ltd"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:sun international",
-      "name": "Sun International",
-      "contactCount": 2,
-      "sourceNames": [
-        "Sun International"
       ]
     },
     {
@@ -9300,16 +9035,6 @@
       "contactCount": 14,
       "sourceNames": [
         "Telesure Investment Holdings (TIH)"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:telkom",
-      "name": "Telkom",
-      "contactCount": 7,
-      "sourceNames": [
-        "Telkom",
-        "Telkom Business",
-        "Telkom SA"
       ]
     },
     {
@@ -9729,14 +9454,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:transnet soc",
-      "name": "Transnet SOC",
-      "contactCount": 1,
-      "sourceNames": [
-        "Transnet SOC Ltd"
-      ]
-    },
-    {
       "organizationId": "org-dataset:transunion",
       "name": "TransUnion",
       "contactCount": 10,
@@ -9798,14 +9515,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Truevo"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:truworths",
-      "name": "Truworths",
-      "contactCount": 2,
-      "sourceNames": [
-        "Truworths"
       ]
     },
     {
@@ -10321,17 +10030,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:vodacom",
-      "name": "Vodacom",
-      "contactCount": 121,
-      "sourceNames": [
-        "Vodacom",
-        "Vodacom Business - South Africa",
-        "Vodacom Financial Services",
-        "Vodacom Group"
-      ]
-    },
-    {
       "organizationId": "org-dataset:vodacom congo",
       "name": "Vodacom Congo",
       "contactCount": 1,
@@ -10361,14 +10059,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Voltex SA"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:vox telecom",
-      "name": "Vox Telecom",
-      "contactCount": 4,
-      "sourceNames": [
-        "Vox Telecom"
       ]
     },
     {
@@ -10645,14 +10335,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:wsp in africa",
-      "name": "WSP in Africa",
-      "contactCount": 1,
-      "sourceNames": [
-        "WSP in Africa"
-      ]
-    },
-    {
       "organizationId": "org-dataset:wtax",
       "name": "WTax",
       "contactCount": 1,
@@ -10821,19 +10503,70 @@
       ]
     },
     {
-      "organizationId": "org-dataset:zutari",
-      "name": "Zutari",
-      "contactCount": 2,
-      "sourceNames": [
-        "Zutari"
-      ]
-    },
-    {
       "organizationId": "org-dataset:zz2",
       "name": "ZZ2",
       "contactCount": 1,
       "sourceNames": [
         "ZZ2"
+      ]
+    },
+    {
+      "organizationId": "org-defy-appliances",
+      "name": "Defy Appliances",
+      "contactCount": 1,
+      "sourceNames": [
+        "Defy Appliances"
+      ]
+    },
+    {
+      "organizationId": "org-dhl-express",
+      "name": "DHL Express",
+      "contactCount": 5,
+      "sourceNames": [
+        "DHL Express"
+      ]
+    },
+    {
+      "organizationId": "org-dimension-data",
+      "name": "Dimension Data",
+      "contactCount": 11,
+      "sourceNames": [
+        "Dimension Data"
+      ]
+    },
+    {
+      "organizationId": "org-discovery",
+      "name": "Discovery",
+      "contactCount": 56,
+      "sourceNames": [
+        "Discovery Bank",
+        "Discovery Health",
+        "Discovery Limited",
+        "DISCOVERY VITALITY"
+      ]
+    },
+    {
+      "organizationId": "org-enviroserv-waste-management",
+      "name": "Enviroserv Waste Management",
+      "contactCount": 3,
+      "sourceNames": [
+        "EnviroServ Waste Management (Pty) Ltd"
+      ]
+    },
+    {
+      "organizationId": "org-eskom",
+      "name": "Eskom",
+      "contactCount": 10,
+      "sourceNames": [
+        "Eskom Holdings SOC Ltd"
+      ]
+    },
+    {
+      "organizationId": "org-firstrand",
+      "name": "FirstRand",
+      "contactCount": 11,
+      "sourceNames": [
+        "FirstRand"
       ]
     },
     {
@@ -10845,6 +10578,22 @@
       ]
     },
     {
+      "organizationId": "org-harmony-gold",
+      "name": "Harmony Gold",
+      "contactCount": 2,
+      "sourceNames": [
+        "Harmony Gold Mining Company Limited"
+      ]
+    },
+    {
+      "organizationId": "org-homechoice",
+      "name": "HomeChoice",
+      "contactCount": 1,
+      "sourceNames": [
+        "homechoice"
+      ]
+    },
+    {
       "organizationId": "org-hyprop",
       "name": "Hyprop Investments",
       "contactCount": 1,
@@ -10853,11 +10602,92 @@
       ]
     },
     {
+      "organizationId": "org-ibm",
+      "name": "IBM",
+      "contactCount": 2,
+      "sourceNames": [
+        "IBM",
+        "IBM South Africa"
+      ]
+    },
+    {
+      "organizationId": "org-lewis-group",
+      "name": "Lewis Group",
+      "contactCount": 1,
+      "sourceNames": [
+        "Lewis Group Ltd"
+      ]
+    },
+    {
+      "organizationId": "org-medihelp-medical-scheme",
+      "name": "Medihelp Medical Scheme",
+      "contactCount": 2,
+      "sourceNames": [
+        "Medihelp Medical Scheme"
+      ]
+    },
+    {
+      "organizationId": "org-microsoft-sa",
+      "name": "Microsoft SA",
+      "contactCount": 9,
+      "sourceNames": [
+        "Microsoft"
+      ]
+    },
+    {
+      "organizationId": "org-multichoice-south-africa",
+      "name": "MultiChoice South Africa",
+      "contactCount": 21,
+      "sourceNames": [
+        "MultiChoice Group"
+      ]
+    },
+    {
+      "organizationId": "org-nashua",
+      "name": "Nashua",
+      "contactCount": 1,
+      "sourceNames": [
+        "Nashua LTD"
+      ]
+    },
+    {
+      "organizationId": "org-naspers",
+      "name": "Naspers",
+      "contactCount": 4,
+      "sourceNames": [
+        "Naspers Limited"
+      ]
+    },
+    {
+      "organizationId": "org-nestle",
+      "name": "Nestlé",
+      "contactCount": 2,
+      "sourceNames": [
+        "Nestlé"
+      ]
+    },
+    {
+      "organizationId": "org-netcare",
+      "name": "Netcare",
+      "contactCount": 11,
+      "sourceNames": [
+        "Netcare"
+      ]
+    },
+    {
       "organizationId": "org-obaro",
       "name": "Obaro",
       "contactCount": 1,
       "sourceNames": [
         "OBARO"
+      ]
+    },
+    {
+      "organizationId": "org-ogilvy",
+      "name": "Ogilvy",
+      "contactCount": 1,
+      "sourceNames": [
+        "Ogilvy South Africa"
       ]
     },
     {
@@ -10877,6 +10707,74 @@
       ]
     },
     {
+      "organizationId": "org-rectron",
+      "name": "Rectron",
+      "contactCount": 1,
+      "sourceNames": [
+        "Rectron South Africa"
+      ]
+    },
+    {
+      "organizationId": "org-sa-tourism",
+      "name": "SA Tourism",
+      "contactCount": 1,
+      "sourceNames": [
+        "South African Tourism"
+      ]
+    },
+    {
+      "organizationId": "org-sanlam",
+      "name": "Sanlam",
+      "contactCount": 47,
+      "sourceNames": [
+        "Glacier by Sanlam",
+        "Sanlam",
+        "Sanlam Corporate",
+        "Sanlam Fintech",
+        "Sanlam Investments"
+      ]
+    },
+    {
+      "organizationId": "org-santam",
+      "name": "Santam",
+      "contactCount": 16,
+      "sourceNames": [
+        "Santam Insurance"
+      ]
+    },
+    {
+      "organizationId": "org-sap-africa",
+      "name": "SAP Africa",
+      "contactCount": 5,
+      "sourceNames": [
+        "SAP"
+      ]
+    },
+    {
+      "organizationId": "org-sappi",
+      "name": "Sappi",
+      "contactCount": 2,
+      "sourceNames": [
+        "Sappi"
+      ]
+    },
+    {
+      "organizationId": "org-sasol",
+      "name": "Sasol",
+      "contactCount": 32,
+      "sourceNames": [
+        "Sasol"
+      ]
+    },
+    {
+      "organizationId": "org-sasol-mining",
+      "name": "Sasol Mining",
+      "contactCount": 2,
+      "sourceNames": [
+        "Sasol Mining"
+      ]
+    },
+    {
       "organizationId": "org-senwes",
       "name": "Senwes",
       "contactCount": 2,
@@ -10885,11 +10783,64 @@
       ]
     },
     {
+      "organizationId": "org-shoprite-holdings",
+      "name": "Shoprite Holdings",
+      "contactCount": 64,
+      "sourceNames": [
+        "Shoprite Checkers Group",
+        "Shoprite Financial Services",
+        "ShopriteX",
+        "The Shoprite Group of Companies"
+      ]
+    },
+    {
+      "organizationId": "org-spoor-and-fisher",
+      "name": "Spoor and Fisher",
+      "contactCount": 1,
+      "sourceNames": [
+        "Spoor & Fisher"
+      ]
+    },
+    {
+      "organizationId": "org-sun-international",
+      "name": "Sun International",
+      "contactCount": 2,
+      "sourceNames": [
+        "Sun International"
+      ]
+    },
+    {
+      "organizationId": "org-telkom-sa-soc",
+      "name": "Telkom SA SOC",
+      "contactCount": 7,
+      "sourceNames": [
+        "Telkom",
+        "Telkom Business",
+        "Telkom SA"
+      ]
+    },
+    {
       "organizationId": "org-tiger-brands",
       "name": "Tiger Brands",
       "contactCount": 1,
       "sourceNames": [
         "Tiger Brands"
+      ]
+    },
+    {
+      "organizationId": "org-transnet-soc",
+      "name": "Transnet SOC",
+      "contactCount": 1,
+      "sourceNames": [
+        "Transnet SOC Ltd"
+      ]
+    },
+    {
+      "organizationId": "org-truworths-international",
+      "name": "Truworths International",
+      "contactCount": 2,
+      "sourceNames": [
+        "Truworths"
       ]
     },
     {
@@ -10909,11 +10860,46 @@
       ]
     },
     {
+      "organizationId": "org-vodacom",
+      "name": "Vodacom",
+      "contactCount": 121,
+      "sourceNames": [
+        "Vodacom",
+        "Vodacom Business - South Africa",
+        "Vodacom Financial Services",
+        "Vodacom Group"
+      ]
+    },
+    {
+      "organizationId": "org-vox-telecommunications",
+      "name": "Vox Telecommunications",
+      "contactCount": 4,
+      "sourceNames": [
+        "Vox Telecom"
+      ]
+    },
+    {
       "organizationId": "org-wbho",
       "name": "WBHO Construction",
       "contactCount": 1,
       "sourceNames": [
         "WBHO Construction"
+      ]
+    },
+    {
+      "organizationId": "org-wsp",
+      "name": "WSP",
+      "contactCount": 1,
+      "sourceNames": [
+        "WSP in Africa"
+      ]
+    },
+    {
+      "organizationId": "org-zutari",
+      "name": "Zutari",
+      "contactCount": 2,
+      "sourceNames": [
+        "Zutari"
       ]
     }
   ]
