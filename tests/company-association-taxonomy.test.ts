@@ -43,11 +43,11 @@ function r16Pairs() {
 // ---------------------------------------------------------------------------
 
 test('every Maps industry resolves to a real node in the national taxonomy', () => {
-  assert.equal(industryCrosswalk.industryMappings.length, industries.length)
+  assert.equal(new Set(industryCrosswalk.industryMappings.map((mapping) => mapping.industryId)).size, industries.length)
   for (const mapping of industryCrosswalk.industryMappings) {
     const nodes = taxonomyNodesForIndustry(mapping.industryId)
     assert.ok(nodes.length > 0, `${mapping.industryId} resolves to nothing`)
-    assert.equal(nodes[0].id, mapping.taxonomyNode)
+    assert.ok(nodes.some((node) => node.id === mapping.taxonomyNode), `${mapping.industryId} does not resolve to ${mapping.taxonomyNode}`)
     assert.ok(getTaxonomyNode(mapping.taxonomyNode), `${mapping.taxonomyNode} does not exist`)
   }
 })
@@ -209,8 +209,13 @@ test('a company that both develops and owns assets keeps two distinct placements
 
 test('the macro-sector facet filters on derived placement, not a second classification', () => {
   const discovery = discoverAssociations({ index, focalId: 'org-ccs-logistics', roleContext: role, extraOrganizations })
-  const none = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['MIN'] })
-  assert.equal(none.length, 0, 'the universe holds no mining companies, so a mining facet must be empty')
+  const mining = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['MIN'] })
+  assert.ok(mining.length > 0, 'the Bizcommunity source batch adds companies to the mining macro-sector')
+  for (const match of mining) {
+    const organization = index.byId.get(match.organizationId)
+    assert.ok(organization)
+    assert.ok(organizationTaxonomy(organization).macroSectorIds.includes('MIN'))
+  }
 
   const transport = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['TRA'] })
   assert.ok(transport.length > 0)

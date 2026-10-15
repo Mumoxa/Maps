@@ -96,7 +96,8 @@ function main() {
   console.log(`  statutory schedules: ${schedules.map((schedule) => `${schedule.id} (${schedule.verificationStatus})`).join(', ')}`)
   console.log(`  municipalities: ${vocabularies.metropolitanMunicipalities.length} metros, ${vocabularies.districtMunicipalities.length} district municipalities`)
   console.log(`  regional economic hubs: ${vocabularies.regionalEconomicHubs.length}`)
-  console.log(`  crosswalk: ${industryCrosswalk.pocketMappings.length}/${pockets.length} pockets, ${industryCrosswalk.industryMappings.length}/${industries.length} industries mapped`)
+  const mappedIndustryIds = new Set(industryCrosswalk.industryMappings.map((mapping) => mapping.industryId))
+  console.log(`  crosswalk: ${industryCrosswalk.pocketMappings.length}/${pockets.length} pockets, ${mappedIndustryIds.size}/${industries.length} industries mapped (${industryCrosswalk.industryMappings.length} node links)`)
 
   console.log('\nMacro-sector branch sizes')
   for (const macro of getMacroSectors()) {

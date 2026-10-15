@@ -15,6 +15,30 @@ const GLOBAL_KEYS = [
 ]
 
 let domReady = false
+let viteServer: Awaited<ReturnType<typeof import('vite')['createServer']>> | null = null
+let viteCloseTimer: ReturnType<typeof setTimeout> | null = null
+
+async function getViteServer() {
+  if (viteCloseTimer) {
+    clearTimeout(viteCloseTimer)
+    viteCloseTimer = null
+  }
+  if (!viteServer) {
+    const { createServer } = await import('vite')
+    viteServer = await createServer({ server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' })
+  }
+  return viteServer
+}
+
+function scheduleViteServerClose(): void {
+  if (viteCloseTimer) clearTimeout(viteCloseTimer)
+  viteCloseTimer = setTimeout(() => {
+    const server = viteServer
+    viteServer = null
+    viteCloseTimer = null
+    if (server) void server.close()
+  }, 5000)
+}
 
 function installDom(): void {
   if (domReady) return
@@ -73,9 +97,7 @@ export async function mountPage(
   const React = (await import('react')).default
   const { createRoot } = await import('react-dom/client')
   const { MemoryRouter, Route, Routes } = await import('react-router-dom')
-  const { createServer } = await import('vite')
-
-  const server = await createServer({ server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' })
+  const server = await getViteServer()
   const loaded = await server.ssrLoadModule(modulePath)
   const Component = loaded[exportName] as React.ComponentType
 
@@ -97,7 +119,7 @@ export async function mountPage(
   const root = createRoot(host)
   root.render(tree)
   await new Promise((done) => setTimeout(done, 600))
-  await server.close()
+  scheduleViteServerClose()
 
   const container = host
   return {

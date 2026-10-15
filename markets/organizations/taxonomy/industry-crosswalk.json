@@ -93,6 +93,29 @@
         "ENR-WIND"
       ],
       "note": ""
+    },
+    {
+      "pocketId": "bizcommunity-directory",
+      "taxonomyNodes": [
+        "AGR",
+        "MFG-AUTO",
+        "CON",
+        "EDU",
+        "ENR",
+        "MIN",
+        "PRO",
+        "FIN",
+        "HLC",
+        "ICT",
+        "PRO-LEGAL",
+        "TRA",
+        "MFG",
+        "PRO-MKT",
+        "CON-PROP",
+        "RTL",
+        "TOU"
+      ],
+      "note": "The source pocket is a directory vocabulary. Company placement is driven by each source category industry mapping; broad categories are not pushed into an invented operational niche."
     }
   ],
   "industryMappings": [
@@ -218,6 +241,106 @@
     {
       "industryId": "independent-power-production",
       "taxonomyNode": "ENR-GEN-IPP"
+    },
+    {
+      "industryId": "bizcommunity-agriculture",
+      "taxonomyNode": "AGR",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-automotive",
+      "taxonomyNode": "MFG-AUTO",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-construction-engineering",
+      "taxonomyNode": "CON",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-education",
+      "taxonomyNode": "EDU",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-energy-mining",
+      "taxonomyNode": "ENR",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-energy-mining",
+      "taxonomyNode": "MIN",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-entrepreneurship",
+      "taxonomyNode": "PRO",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-esg-sustainability",
+      "taxonomyNode": "PRO",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-finance",
+      "taxonomyNode": "FIN",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-hr-management",
+      "taxonomyNode": "PRO",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-healthcare",
+      "taxonomyNode": "HLC",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-ict",
+      "taxonomyNode": "ICT",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-legal",
+      "taxonomyNode": "PRO-LEGAL",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-lifestyle",
+      "taxonomyNode": "PRO",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-logistics-transport",
+      "taxonomyNode": "TRA",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-manufacturing",
+      "taxonomyNode": "MFG",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-marketing-media",
+      "taxonomyNode": "PRO-MKT",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-property",
+      "taxonomyNode": "CON-PROP",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-retail",
+      "taxonomyNode": "RTL",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
+    },
+    {
+      "industryId": "bizcommunity-tourism-travel",
+      "taxonomyNode": "TOU",
+      "note": "Mapped from the supplied Bizcommunity category at the broadest taxonomy level supported by that label; no narrower activity is inferred."
     }
   ]
 }

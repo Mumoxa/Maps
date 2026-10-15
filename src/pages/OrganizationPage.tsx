@@ -1,18 +1,19 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { ArrowSquareOut } from '@phosphor-icons/react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
-import { contactDirectoryUrlForEmployer } from '../data/organizations/load'
+import { contactDirectoryUrlForEmployer, datasetOrganization } from '../data/organizations/load'
 import { atlasNodeTitle } from '../data/organizations/atlas'
 import { classifyFootprint, FOOTPRINT_SHORT_LABELS } from '../data/organizations/footprint'
 import { companyDossier } from '../data/organizations/query'
 import { EVIDENCE_CLASS_LABELS } from '../data/organizations/industryDiscovery'
 import { FootprintCard } from '../components/intelligence/FootprintCard'
 import { OwnershipTree } from '../components/intelligence/OwnershipTree'
-import type { Organization } from '../data/organizations/types'
+import { BizcommunitySourceRecord } from '../components/intelligence/BizcommunitySourceRecord'
+import type { BizcommunitySourceRecord as BizcommunitySourceRecordType, Organization } from '../data/organizations/types'
 
 /**
  * Company intelligence: the canonical dossier for one organisation.
@@ -33,8 +34,10 @@ export function OrganizationPage() {
     try { return decodeURIComponent(organizationId) } catch { return organizationId }
   }, [organizationId])
 
-  const organization = index.byId.get(decodedId) ?? null
+  const curatedOrganization = index.byId.get(decodedId) ?? null
   const employer = index.employersByOrg.get(decodedId)
+  const organization = curatedOrganization ?? (employer ? datasetOrganization(employer) : null)
+  const isDatasetOnly = !curatedOrganization && Boolean(employer)
   const contactsUrl = employer ? contactDirectoryUrlForEmployer(employer) : null
   const contactsCount = employer?.professionalSources.find((source) => source.dataset === 'contacts')?.count ?? 0
 
@@ -49,8 +52,24 @@ export function OrganizationPage() {
     () => (organization || employer ? companyDossier(index, decodedId) : null),
     [index, decodedId, organization, employer],
   )
+  const [bizcommunitySource, setBizcommunitySource] = useState<BizcommunitySourceRecordType | null>(
+    () => organization?.bizcommunity ?? null,
+  )
 
-  if (!organization && !employer) {
+  useEffect(() => {
+    const summary = organization?.bizcommunity
+    if (!summary || summary.sourceRows) {
+      setBizcommunitySource(summary ?? null)
+      return
+    }
+    let active = true
+    import('../data/organizations/bizcommunitySourceRecords').then(({ bizcommunitySourceRecordForCompany }) => {
+      if (active) setBizcommunitySource(bizcommunitySourceRecordForCompany(summary.companyName) ?? summary)
+    })
+    return () => { active = false }
+  }, [organization?.id, organization?.bizcommunity])
+
+  if (!organization) {
     return (
       <div className="page container">
         <EmptyState
@@ -59,52 +78,6 @@ export function OrganizationPage() {
           action={{ label: 'Open the company universe', to: '/companies' }}
         />
       </div>
-    )
-  }
-
-  // A dataset-only employer has no curated record: show what is known and name
-  // the gap, rather than inventing a dossier.
-  if (!organization) {
-    return (
-      <ErrorBoundary>
-        <div className="page">
-          <div className="container">
-            <Breadcrumb crumbs={[
-              { label: 'Home', to: '/' },
-              { label: 'Companies', to: '/companies' },
-              { label: employer?.canonicalName ?? decodedId },
-            ]} />
-            <header className="page-head">
-              <div>
-                <h1>{employer?.canonicalName ?? decodedId}</h1>
-                <p>
-                  Maps knows this employer from its datasets, but no curated company record exists
-                  yet. Everything below is what the datasets actually say, and every other section is
-                  a research gap rather than an assumption.
-                </p>
-              </div>
-              <div className="page-head-aside">
-                <span className="page-head-meta"><b>{employer?.professionals ?? 0}</b> mapped professionals</span>
-                <span className="page-head-meta">{(employer?.datasets ?? []).join(', ') || 'No dataset recorded'}</span>
-                {contactsUrl && <Link className="btn btn-sm" to={contactsUrl}>View {contactsCount} directory contacts</Link>}
-              </div>
-            </header>
-            <section className="card section-block">
-              <h2>Research backlog</h2>
-              <ul className="assoc-gap-list">
-                <li>No curated identity: legal name, website and aliases have not been verified.</li>
-                <li>No industry placement in the national taxonomy.</li>
-                <li>No operating capability evidenced.</li>
-                <li>No sourced scale measure, so no indicative footprint.</li>
-              </ul>
-              <p className="assoc-section-note">
-                This company stays discoverable and addressable by the id{' '}
-                <code>{decodedId}</code>, so a curated record can be added without breaking any link.
-              </p>
-            </section>
-          </div>
-        </div>
-      </ErrorBoundary>
     )
   }
 
@@ -136,6 +109,12 @@ export function OrganizationPage() {
               </p>
               {organization.aliases.length > 0 && (
                 <p className="detail-aliases">Also known as {organization.aliases.join(', ')}</p>
+              )}
+              {isDatasetOnly && (
+                <p className="assoc-section-note">
+                  Source-retained from the supplied Bizcommunity directory. The record is addressable
+                  in the same company universe, while no additional company facts are inferred.
+                </p>
               )}
             </div>
             <div className="page-head-aside">
@@ -207,6 +186,8 @@ export function OrganizationPage() {
                   </div>
                 )}
               </section>
+
+              {bizcommunitySource && <BizcommunitySourceRecord record={bizcommunitySource} />}
 
               <section className="section-block">
                 <h2>Operating capabilities and processes</h2>

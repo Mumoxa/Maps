@@ -128,6 +128,45 @@ export interface OrganizationScale {
 
 export type OrganizationStatus = 'verified' | 'needs-verification'
 
+/** One row retained from the supplied Bizcommunity company-directory export. */
+export interface BizcommunitySourceRow {
+  sourceRowNumber: number
+  companyName: string
+  industries: string
+  location: string
+  businessDescription: string
+  listingType: string
+  companySizeStaffTier: string
+  sizeTierEvidence: string
+  profileUrl: string
+  directorySourceUrl: string
+  coverageStatus: string
+  checkedDate: string
+  hasWebsiteOrLinkedInVerified: string
+  websiteStatus: string
+  websiteUrl: string
+  linkedinStatus: string
+  linkedinCompanyUrl: string
+  onlinePresenceEvidence: string
+}
+
+/**
+ * Source-retained Bizcommunity data attached to its canonical company record.
+ * The raw CSV remains checked in as well; these rows make the import auditable
+ * from the company dossier without discarding any source column or duplicate
+ * source listing.
+ */
+export interface BizcommunitySourceRecord {
+  sourceFile: string
+  companyName: string
+  sourceRowNumbers: number[]
+  /** Full rows are hydrated from the separate source-record file at runtime. */
+  sourceRows?: BizcommunitySourceRow[]
+  sourceIndustryLabels: string[]
+  /** IDs of the source-category industries used by the national crosswalk. */
+  taxonomyIndustryIds: string[]
+}
+
 export interface Organization {
   id: string
   name: string
@@ -147,6 +186,8 @@ export interface Organization {
   datasets: string[]
   lastVerified: string
   notes: string
+  /** Present when this company was included in the supplied Bizcommunity export. */
+  bizcommunity?: BizcommunitySourceRecord
 }
 
 export type CorporateRelationshipType =

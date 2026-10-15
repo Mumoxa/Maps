@@ -26,6 +26,7 @@ import type {
   RecruiterIntelligence,
 } from './types'
 
+/** Full canonical records carry the compact Bizcommunity row index; full source rows are loaded only on a dossier. */
 export const organizations = organizationsRaw as Organization[]
 export const industries = industriesRaw as Industry[]
 export const pockets = pocketsRaw as IndustryPocket[]

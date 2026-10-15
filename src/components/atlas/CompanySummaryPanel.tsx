@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowSquareOut } from '@phosphor-icons/react'
-import type { OrganizationIndex } from '../../data/organizations/load'
+import { datasetOrganization, type OrganizationIndex } from '../../data/organizations/load'
 import {
   ENTITY_SCOPE_LABELS,
   FOOTPRINT_SHORT_LABELS,
@@ -24,6 +24,9 @@ interface CompanySummaryPanelProps {
  */
 export function CompanySummaryPanel({ index, view, linkSuffix = '', onClose }: CompanySummaryPanelProps) {
   const organization = index.byId.get(view.organizationId)
+    ?? (index.employersByOrg.get(view.organizationId)
+      ? datasetOrganization(index.employersByOrg.get(view.organizationId)!)
+      : undefined)
   const footprint = view.footprintClassification
 
   return (
@@ -67,6 +70,18 @@ export function CompanySummaryPanel({ index, view, linkSuffix = '', onClose }: C
           </p>
         )}
       </section>
+
+      {organization?.bizcommunity && (
+        <section>
+          <h4>Bizcommunity source</h4>
+          <p className="atlas-inspector-note">
+            {organization.bizcommunity.sourceIndustryLabels.join('; ')} · {organization.bizcommunity.sourceRowNumbers.length} source row{organization.bizcommunity.sourceRowNumbers.length === 1 ? '' : 's'}
+          </p>
+          {organization.bizcommunity.sourceRows?.[0]?.businessDescription && (
+            <p className="atlas-inspector-note">{organization.bizcommunity.sourceRows[0].businessDescription}</p>
+          )}
+        </section>
+      )}
 
       <section>
         <h4>Evidenced capabilities</h4>

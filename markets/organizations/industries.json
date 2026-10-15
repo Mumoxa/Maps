@@ -325,5 +325,195 @@
       "IPP",
       "power producer"
     ]
+  },
+  {
+    "id": "bizcommunity-agriculture",
+    "name": "Agriculture",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Agriculture.",
+    "synonyms": [
+      "Agriculture"
+    ]
+  },
+  {
+    "id": "bizcommunity-automotive",
+    "name": "Automotive",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Automotive.",
+    "synonyms": [
+      "Automotive"
+    ]
+  },
+  {
+    "id": "bizcommunity-construction-engineering",
+    "name": "Construction & Engineering",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Construction & Engineering.",
+    "synonyms": [
+      "Construction & Engineering"
+    ]
+  },
+  {
+    "id": "bizcommunity-education",
+    "name": "Education",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Education.",
+    "synonyms": [
+      "Education"
+    ]
+  },
+  {
+    "id": "bizcommunity-energy-mining",
+    "name": "Energy & Mining",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Energy & Mining.",
+    "synonyms": [
+      "Energy & Mining"
+    ]
+  },
+  {
+    "id": "bizcommunity-entrepreneurship",
+    "name": "Entrepreneurship",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Entrepreneurship.",
+    "synonyms": [
+      "Entrepreneurship"
+    ]
+  },
+  {
+    "id": "bizcommunity-esg-sustainability",
+    "name": "ESG & Sustainability",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: ESG & Sustainability.",
+    "synonyms": [
+      "ESG & Sustainability"
+    ]
+  },
+  {
+    "id": "bizcommunity-finance",
+    "name": "Finance",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Finance.",
+    "synonyms": [
+      "Finance"
+    ]
+  },
+  {
+    "id": "bizcommunity-hr-management",
+    "name": "HR & Management",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: HR & Management.",
+    "synonyms": [
+      "HR & Management"
+    ]
+  },
+  {
+    "id": "bizcommunity-healthcare",
+    "name": "Healthcare",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Healthcare.",
+    "synonyms": [
+      "Healthcare"
+    ]
+  },
+  {
+    "id": "bizcommunity-ict",
+    "name": "ICT",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: ICT.",
+    "synonyms": [
+      "ICT"
+    ]
+  },
+  {
+    "id": "bizcommunity-legal",
+    "name": "Legal",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Legal.",
+    "synonyms": [
+      "Legal"
+    ]
+  },
+  {
+    "id": "bizcommunity-lifestyle",
+    "name": "Lifestyle",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Lifestyle.",
+    "synonyms": [
+      "Lifestyle"
+    ]
+  },
+  {
+    "id": "bizcommunity-logistics-transport",
+    "name": "Logistics & Transport",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Logistics & Transport.",
+    "synonyms": [
+      "Logistics & Transport"
+    ]
+  },
+  {
+    "id": "bizcommunity-manufacturing",
+    "name": "Manufacturing",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Manufacturing.",
+    "synonyms": [
+      "Manufacturing"
+    ]
+  },
+  {
+    "id": "bizcommunity-marketing-media",
+    "name": "Marketing & Media",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Marketing & Media.",
+    "synonyms": [
+      "Marketing & Media"
+    ]
+  },
+  {
+    "id": "bizcommunity-property",
+    "name": "Property",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Property.",
+    "synonyms": [
+      "Property"
+    ]
+  },
+  {
+    "id": "bizcommunity-retail",
+    "name": "Retail",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Retail.",
+    "synonyms": [
+      "Retail"
+    ]
+  },
+  {
+    "id": "bizcommunity-tourism-travel",
+    "name": "Tourism & Travel",
+    "parentId": null,
+    "pocket": "bizcommunity-directory",
+    "description": "Source-reported Bizcommunity directory category: Tourism & Travel.",
+    "synonyms": [
+      "Tourism & Travel"
+    ]
   }
 ]

@@ -18,6 +18,7 @@
     "market:import": "node --import tsx scripts/import-market-batch.ts",
     "bank:import": "node --import tsx scripts/import-search-bank.ts",
     "organizations:import": "node --import tsx scripts/import-organizations.ts",
+    "bizcommunity:import": "node --import tsx scripts/import-bizcommunity-companies.ts",
     "import:salesforce": "node scripts/import-salesforce-html.mjs",
     "preview": "vite preview",
     "smoke:routes": "node --import tsx scripts/smoke-routes.ts",

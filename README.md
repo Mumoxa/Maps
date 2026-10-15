@@ -110,6 +110,30 @@ Design specification: [`docs/sa-corporate-taxonomy.md`](docs/sa-corporate-taxono
 facts were verified against sources on 2026-10-08 and which are deliberately left empty rather than
 filled in plausibly — notably the sector turnover table of the schedule gazetted on 27 May 2026.
 
+## Bizcommunity company-directory import
+
+The supplied `bizcommunity_companies_verified_2026-10-15a.csv` is checked in at
+`markets/organizations/bizcommunity_companies_verified_2026-10-15a.csv` and is the source of truth for
+this batch. All 873 source rows are retained, including repeated listings, in
+`markets/organizations/bizcommunity-source-records.json`. The importer aggregates duplicate listings
+onto one canonical company record, preserves the original row values, links each source category to the
+national Industry Atlas crosswalk, and merges existing canonical identities rather than creating a
+second company. The canonical register retains the compact source-row index and category links, while
+the full source rows are loaded only for dossier presentation. It does not perform web lookups or add
+facts that are not in the file.
+
+Run the reproducible import with:
+
+```bash
+npm run bizcommunity:import
+```
+
+The imported records appear in the default `/industry-atlas`, `/companies`, and canonical
+`/organizations/:organizationId` routes. A company dossier exposes the full source row under
+**Bizcommunity source record**, alongside the derived taxonomy placement. The source file states that
+its industry landing-page coverage is not exhaustive; the Atlas therefore treats the batch as a
+source-retained map, not a claim that it is a national company register.
+
 ## Credit Risk Data Files
 
 | File | Description |

@@ -72,6 +72,19 @@ test('4 · CCS Logistics is treated like every other organisation', async () => 
   }
 })
 
+test('Bizcommunity companies open a canonical dossier with retained source rows', async () => {
+  const page = await mountPage(
+    ORGANIZATION,
+    'OrganizationPage',
+    '/organizations/org-tiger-brands',
+    { pattern: '/organizations/:organizationId' },
+  )
+  assert.match(page.lowerText, /tiger brands/)
+  assert.match(page.lowerText, /bizcommunity source record/)
+  assert.match(page.lowerText, /source row/)
+  assert.match(page.lowerText, /business description/)
+})
+
 test('5 · one company has one canonical record, reachable by the same id everywhere', async () => {
   const byId = await mountPage(
     ORGANIZATION,

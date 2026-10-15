@@ -70,5 +70,11 @@
     "name": "Renewable Energy",
     "valueChainStage": "Development",
     "description": "Renewable project development and independent power production."
+  },
+  {
+    "id": "bizcommunity-directory",
+    "name": "Bizcommunity directory categories",
+    "valueChainStage": "Source-reported category",
+    "description": "The source categories supplied in the Bizcommunity company directory. These labels are retained separately from operating-process industries."
   }
 ]

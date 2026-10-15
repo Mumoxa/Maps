@@ -63,7 +63,7 @@ test('every industry and pocket in the organization model has a taxonomy mapping
   const mappedIndustries = new Set(industryCrosswalk.industryMappings.map((mapping) => mapping.industryId))
   const mappedPockets = new Set(industryCrosswalk.pocketMappings.map((mapping) => mapping.pocketId))
 
-  assert.equal(mappedIndustries.size, industries.length, 'industry coverage')
+  assert.equal(mappedIndustries.size, industries.length, 'industry coverage (an industry may map to more than one national node)')
   assert.equal(mappedPockets.size, pockets.length, 'pocket coverage')
   for (const industry of industries) assert.ok(mappedIndustries.has(industry.id), `unmapped industry ${industry.id}`)
   for (const pocket of pockets) assert.ok(mappedPockets.has(pocket.id), `unmapped pocket ${pocket.id}`)

@@ -262,7 +262,7 @@ export function groupByFootprint(views: CompanyView[]): { band: FootprintBand; o
   return FOOTPRINT_BANDS.map((band) => ({
     band,
     organizationIds: (groups.get(band) ?? [])
-      .sort((left, right) => left.name.localeCompare(right.name))
+      .sort((left, right) => left.name.localeCompare(right.name) || left.organizationId.localeCompare(right.organizationId))
       .map((view) => view.organizationId),
   }))
 }

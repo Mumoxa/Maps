@@ -9,10 +9,178 @@
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 176,
     "distinctOrganizationEntries": 1358,
-    "curatedCompanyMatches": 10,
-    "unverifiedDatasetOnly": 1348
+    "curatedCompanyMatches": 31,
+    "unverifiedDatasetOnly": 1327
   },
   "employers": [
+    {
+      "organizationId": "org-bizcommunity-advtech",
+      "name": "Advtech",
+      "contactCount": 5,
+      "sourceNames": [
+        "Advtech"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-ctrack",
+      "name": "Ctrack",
+      "contactCount": 2,
+      "sourceNames": [
+        "Ctrack"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-dentsu",
+      "name": "Dentsu",
+      "contactCount": 2,
+      "sourceNames": [
+        "dentsu"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-dvt",
+      "name": "DVT",
+      "contactCount": 17,
+      "sourceNames": [
+        "DVT"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-edge-growth",
+      "name": "Edge Growth",
+      "contactCount": 1,
+      "sourceNames": [
+        "Edge Growth"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-eduvos",
+      "name": "Eduvos",
+      "contactCount": 4,
+      "sourceNames": [
+        "Eduvos"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-fedgroup",
+      "name": "Fedgroup",
+      "contactCount": 1,
+      "sourceNames": [
+        "Fedgroup"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-harambee-youth-employment-accelerator",
+      "name": "Harambee Youth Employment Accelerator",
+      "contactCount": 2,
+      "sourceNames": [
+        "Harambee Youth Employment Accelerator"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-heineken-beverages",
+      "name": "Heineken Beverages",
+      "contactCount": 5,
+      "sourceNames": [
+        "HEINEKEN Beverages"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-helm",
+      "name": "Helm",
+      "contactCount": 1,
+      "sourceNames": [
+        "Helm"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-incubeta",
+      "name": "Incubeta",
+      "contactCount": 2,
+      "sourceNames": [
+        "Incubeta"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-lula",
+      "name": "Lula",
+      "contactCount": 10,
+      "sourceNames": [
+        "Lula"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-media24",
+      "name": "Media24",
+      "contactCount": 2,
+      "sourceNames": [
+        "Media24 (Pty) Ltd"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-multichoice",
+      "name": "MultiChoice",
+      "contactCount": 21,
+      "sourceNames": [
+        "MultiChoice Group"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-netstar",
+      "name": "Netstar",
+      "contactCount": 3,
+      "sourceNames": [
+        "Netstar"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-nielseniq",
+      "name": "NielsenIQ",
+      "contactCount": 1,
+      "sourceNames": [
+        "NielsenIQ"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-ogilvy-south-africa",
+      "name": "Ogilvy South Africa",
+      "contactCount": 1,
+      "sourceNames": [
+        "Ogilvy South Africa"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-rainbow-chicken",
+      "name": "Rainbow Chicken",
+      "contactCount": 1,
+      "sourceNames": [
+        "Rainbow Chicken"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-realm-digital",
+      "name": "Realm Digital",
+      "contactCount": 1,
+      "sourceNames": [
+        "Realm Digital"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-stellenbosch-university",
+      "name": "Stellenbosch University",
+      "contactCount": 2,
+      "sourceNames": [
+        "Stellenbosch University"
+      ]
+    },
+    {
+      "organizationId": "org-bizcommunity-university-of-pretoria",
+      "name": "University of Pretoria",
+      "contactCount": 3,
+      "sourceNames": [
+        "University of Pretoria"
+      ]
+    },
     {
       "organizationId": "org-dataset:@team dynamics",
       "name": "@Team Dynamics",
@@ -311,14 +479,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Adviceworx"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:advtech",
-      "name": "Advtech",
-      "contactCount": 5,
-      "sourceNames": [
-        "Advtech"
       ]
     },
     {
@@ -2276,14 +2436,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:ctrack",
-      "name": "Ctrack",
-      "contactCount": 2,
-      "sourceNames": [
-        "Ctrack"
-      ]
-    },
-    {
       "organizationId": "org-dataset:cvh spirits",
       "name": "CVH Spirits",
       "contactCount": 1,
@@ -2529,14 +2681,6 @@
       "contactCount": 1,
       "sourceNames": [
         "DemandScience"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:dentsu",
-      "name": "dentsu",
-      "contactCount": 2,
-      "sourceNames": [
-        "dentsu"
       ]
     },
     {
@@ -2911,14 +3055,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:dvt",
-      "name": "DVT",
-      "contactCount": 17,
-      "sourceNames": [
-        "DVT"
-      ]
-    },
-    {
       "organizationId": "org-dataset:e& egypt",
       "name": "e& Egypt",
       "contactCount": 1,
@@ -2991,27 +3127,11 @@
       ]
     },
     {
-      "organizationId": "org-dataset:edge growth",
-      "name": "Edge Growth",
-      "contactCount": 1,
-      "sourceNames": [
-        "Edge Growth"
-      ]
-    },
-    {
       "organizationId": "org-dataset:edufern",
       "name": "Edufern",
       "contactCount": 1,
       "sourceNames": [
         "Edufern"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:eduvos",
-      "name": "Eduvos",
-      "contactCount": 4,
-      "sourceNames": [
-        "Eduvos"
       ]
     },
     {
@@ -3460,14 +3580,6 @@
       "contactCount": 1,
       "sourceNames": [
         "FedEx"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:fedgroup",
-      "name": "Fedgroup",
-      "contactCount": 1,
-      "sourceNames": [
-        "Fedgroup"
       ]
     },
     {
@@ -4072,14 +4184,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:harambee youth employment accelerator",
-      "name": "Harambee Youth Employment Accelerator",
-      "contactCount": 2,
-      "sourceNames": [
-        "Harambee Youth Employment Accelerator"
-      ]
-    },
-    {
       "organizationId": "org-dataset:harmony gold mining company",
       "name": "Harmony Gold Mining Company",
       "contactCount": 2,
@@ -4117,22 +4221,6 @@
       "contactCount": 1,
       "sourceNames": [
         "HearX Group"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:heineken beverages",
-      "name": "HEINEKEN Beverages",
-      "contactCount": 5,
-      "sourceNames": [
-        "HEINEKEN Beverages"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:helm",
-      "name": "Helm",
-      "contactCount": 1,
-      "sourceNames": [
-        "Helm"
       ]
     },
     {
@@ -4485,14 +4573,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Incomati Warehousing and Distribution"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:incubeta",
-      "name": "Incubeta",
-      "contactCount": 2,
-      "sourceNames": [
-        "Incubeta"
       ]
     },
     {
@@ -5458,14 +5538,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:lula",
-      "name": "Lula",
-      "contactCount": 10,
-      "sourceNames": [
-        "Lula"
-      ]
-    },
-    {
       "organizationId": "org-dataset:luna9",
       "name": "Luna9",
       "contactCount": 1,
@@ -5751,14 +5823,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Mecalc"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:media24",
-      "name": "Media24",
-      "contactCount": 2,
-      "sourceNames": [
-        "Media24 (Pty) Ltd"
       ]
     },
     {
@@ -6198,14 +6262,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:multichoice",
-      "name": "MultiChoice",
-      "contactCount": 21,
-      "sourceNames": [
-        "MultiChoice Group"
-      ]
-    },
-    {
       "organizationId": "org-dataset:multisaas business systems",
       "name": "Multisaas Business Systems",
       "contactCount": 1,
@@ -6399,14 +6455,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:netstar",
-      "name": "Netstar",
-      "contactCount": 3,
-      "sourceNames": [
-        "Netstar"
-      ]
-    },
-    {
       "organizationId": "org-dataset:netstock",
       "name": "Netstock",
       "contactCount": 1,
@@ -6452,14 +6500,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Nielsen Sports SA"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:nielseniq",
-      "name": "NielsenIQ",
-      "contactCount": 1,
-      "sourceNames": [
-        "NielsenIQ"
       ]
     },
     {
@@ -6709,14 +6749,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Office of the Chief Justice"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:ogilvy south africa",
-      "name": "Ogilvy South Africa",
-      "contactCount": 1,
-      "sourceNames": [
-        "Ogilvy South Africa"
       ]
     },
     {
@@ -7685,14 +7717,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:rainbow chicken",
-      "name": "Rainbow Chicken",
-      "contactCount": 1,
-      "sourceNames": [
-        "Rainbow Chicken"
-      ]
-    },
-    {
       "organizationId": "org-dataset:ram hand to hand couriers",
       "name": "RAM Hand to Hand Couriers",
       "contactCount": 1,
@@ -7738,14 +7762,6 @@
       "contactCount": 1,
       "sourceNames": [
         "RE-TECSolutions"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:realm digital",
-      "name": "Realm Digital",
-      "contactCount": 1,
-      "sourceNames": [
-        "Realm Digital"
       ]
     },
     {
@@ -8982,14 +8998,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:stellenbosch university",
-      "name": "Stellenbosch University",
-      "contactCount": 2,
-      "sourceNames": [
-        "Stellenbosch University"
-      ]
-    },
-    {
       "organizationId": "org-dataset:stepstone africa",
       "name": "StepStone Africa",
       "contactCount": 1,
@@ -9982,14 +9990,6 @@
       "contactCount": 1,
       "sourceNames": [
         "University of KwaZulu-Natal"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:university of pretoria",
-      "name": "University of Pretoria",
-      "contactCount": 3,
-      "sourceNames": [
-        "University of Pretoria"
       ]
     },
     {
