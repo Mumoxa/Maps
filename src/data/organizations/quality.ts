@@ -22,6 +22,8 @@ export interface QualityInput {
   relationships: OrganizationRelationship[]
   associations: CompanyAssociation[]
   intelligence: RecruiterIntelligence[]
+  /** Valid national taxonomy node ids, when the caller can supply the sector tree. */
+  taxonomyNodeIds?: Set<string>
   /** Verification older than this many days is flagged as stale. */
   staleAfterDays?: number
   /** Reference date, so tests stay deterministic. */
@@ -98,6 +100,36 @@ export function runQualityChecks(input: QualityInput): QualityIssue[] {
           severity: 'warning',
           organizationId: organization.id,
           detail: `${organization.name} industry "${link.industryId}" is confirmed without an evidence statement.`,
+        })
+      }
+    }
+
+    const placement = organization.taxonomy
+    if (placement) {
+      for (const nodeId of [placement.primaryNode, ...placement.secondaryNodes]) {
+        if (input.taxonomyNodeIds && !input.taxonomyNodeIds.has(nodeId)) {
+          issues.push({
+            code: 'unsupported-industry',
+            severity: 'error',
+            organizationId: organization.id,
+            detail: `${organization.name} taxonomy placement references unknown node "${nodeId}".`,
+          })
+        }
+      }
+      if (placement.secondaryNodes.includes(placement.primaryNode)) {
+        issues.push({
+          code: 'unsupported-industry',
+          severity: 'error',
+          organizationId: organization.id,
+          detail: `${organization.name} lists its primary taxonomy node "${placement.primaryNode}" in secondaryNodes; a node is placed once.`,
+        })
+      }
+      if (!placement.evidence.trim() || !placement.sourceUrl.trim()) {
+        issues.push({
+          code: 'relevance-without-evidence',
+          severity: 'warning',
+          organizationId: organization.id,
+          detail: `${organization.name} records a taxonomy placement with no evidence statement or source URL.`,
         })
       }
     }

@@ -201,8 +201,10 @@ export function OrganizationPage() {
                       ))}
                     </ul>
                     <p className="assoc-section-note">
-                      Derived through the Maps industry crosswalk. Placement in a branch is an
-                      industry statement, never a statement about ownership.
+                      Placed directly in the national taxonomy where the company has been
+                      researched, otherwise derived through the Maps industry crosswalk.
+                      Placement in a branch is an industry statement, never a statement about
+                      ownership.
                     </p>
                   </div>
                 )}

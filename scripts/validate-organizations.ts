@@ -9,6 +9,7 @@
 import { readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { runQualityChecks } from '../src/data/organizations/quality'
+import { getTaxonomyNodeIds } from '../src/data/taxonomy/load'
 import { canonicalCompanyName } from '../src/data/companyNormalization'
 import type {
   Capability,
@@ -40,6 +41,7 @@ function main() {
     relationships,
     associations,
     intelligence,
+    taxonomyNodeIds: new Set(getTaxonomyNodeIds()),
   })
 
   const errors = issues.filter((issue) => issue.severity === 'error')

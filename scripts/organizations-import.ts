@@ -18,8 +18,10 @@ import type {
   OrganizationCapabilityLink,
   OrganizationIndustryLink,
   OrganizationRelationship,
+  OrganizationTaxonomyPlacement,
   RecruiterIntelligence,
 } from '../src/data/organizations/types'
+import { getTaxonomyNode } from '../src/data/taxonomy/load'
 
 export type ImportType =
   | 'companies'
@@ -72,6 +74,8 @@ const FIELD_ALIASES: Record<string, string[]> = {
   website: ['website', 'url', 'domain', 'homepage'],
   industry: ['industry', 'sector', 'industry_id', 'main_industry'],
   subIndustry: ['sub_industry', 'subindustry', 'secondary_industry'],
+  taxonomyNode: ['taxonomy_node', 'primary_node', 'taxonomy_primary', 'node'],
+  secondaryNodes: ['secondary_nodes', 'taxonomy_nodes', 'additional_nodes'],
   primary: ['primary', 'is_primary'],
   province: ['province', 'region'],
   city: ['city', 'town'],
@@ -226,6 +230,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
       if (!name) return
       const { organization, canonicalName } = resolveOrganization(dataset, name)
       const sourceUrl = row.sourceUrl ?? ''
+      const taxonomy = buildTaxonomyPlacement(row, plan, rowNumber, checkedOn, sourceUrl)
       const industries: OrganizationIndustryLink[] = []
       for (const industryName of [row.industry, row.subIndustry].filter(Boolean) as string[]) {
         const industry = dataset.industries.find((entry) => (
@@ -249,6 +254,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
       if (organization) {
         const updated: Organization = {
           ...organization,
+          ...(taxonomy ? { taxonomy } : {}),
           legalName: row.legalName || organization.legalName,
           website: row.website || organization.website,
           aliases: [...new Set([...organization.aliases, ...splitList(row.aliases)])],
@@ -287,6 +293,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           website: row.website ?? '',
           status: 'needs-verification',
           industries,
+          taxonomy,
           capabilities: [],
           locations: row.province ? [{ city: row.city ?? '', province: row.province, sourceUrl, checkedOn }] : [],
           scale: row.employees ? [{
@@ -487,6 +494,42 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
   })
 
   return plan
+}
+
+/**
+ * Build a direct national-taxonomy placement from a row, resolving node ids
+ * against the real sector tree so an invented node never enters the dataset.
+ */
+function buildTaxonomyPlacement(
+  row: ImportRow,
+  plan: ImportPlan,
+  rowNumber: number,
+  checkedOn: string,
+  sourceUrl: string,
+): OrganizationTaxonomyPlacement | null {
+  const primary = (row.taxonomyNode ?? '').trim()
+  if (!primary) return null
+  if (!getTaxonomyNode(primary)) {
+    plan.issues.push({ rowNumber, field: 'taxonomy_node', reason: `unknown taxonomy node "${primary}"` })
+    return null
+  }
+  const secondaryNodes: string[] = []
+  for (const nodeId of splitList(row.secondaryNodes)) {
+    if (nodeId === primary) continue
+    if (!getTaxonomyNode(nodeId)) {
+      plan.issues.push({ rowNumber, field: 'secondary_nodes', reason: `unknown taxonomy node "${nodeId}"` })
+      continue
+    }
+    if (!secondaryNodes.includes(nodeId)) secondaryNodes.push(nodeId)
+  }
+  return {
+    primaryNode: primary,
+    secondaryNodes,
+    confidence: (row.confidence as OrganizationTaxonomyPlacement['confidence']) || 'probable',
+    evidence: row.evidence ?? '',
+    sourceUrl,
+    checkedOn,
+  }
 }
 
 function mergeIndustryLinks(existing: OrganizationIndustryLink[], incoming: OrganizationIndustryLink[]): OrganizationIndustryLink[] {

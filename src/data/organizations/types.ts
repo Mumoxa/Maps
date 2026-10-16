@@ -83,6 +83,28 @@ export interface OrganizationIndustryLink {
   checkedOn: string
 }
 
+/**
+ * A direct placement of a company into the national corporate taxonomy.
+ *
+ * This is the strongest classification a company can hold: it names the
+ * taxonomy node itself rather than reaching it indirectly through a Maps
+ * sourcing industry. It exists so companies whose sub-industry is known but
+ * which fall outside the 30 specialist Maps industries can still be placed at
+ * the deepest defensible node. When present it takes precedence over the
+ * industry crosswalk; the two are never blended for one company.
+ */
+export interface OrganizationTaxonomyPlacement {
+  /** Taxonomy node id (levels 1-4) the company primarily operates in. */
+  primaryNode: string
+  /** Additional taxonomy node ids the company operates in, each evidenced. */
+  secondaryNodes: string[]
+  confidence: Confidence
+  /** What the evidence supports, e.g. "operates as a registered commercial bank". */
+  evidence: string
+  sourceUrl: string
+  checkedOn: string
+}
+
 export interface OrganizationCapabilityLink {
   capabilityId: string
   status: CapabilityStatus
@@ -137,6 +159,12 @@ export interface Organization {
   website: string
   status: OrganizationStatus
   industries: OrganizationIndustryLink[]
+  /**
+   * Direct national-taxonomy placement, when the company has been researched
+   * against the sector tree. Takes precedence over the industry crosswalk.
+   * Absent on records classified only through a Maps sourcing industry.
+   */
+  taxonomy?: OrganizationTaxonomyPlacement | null
   capabilities: OrganizationCapabilityLink[]
   locations: OrganizationLocation[]
   scale: OrganizationScale[]
