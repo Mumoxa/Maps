@@ -1,5 +1,44 @@
 [
   {
+    "id": "org-4sight-holdings",
+    "name": "4Sight Holdings",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI",
+      "secondaryNodes": [
+        "ICT-DATA-AI",
+        "CON-ENG-ELEC-INSTR"
+      ],
+      "confidence": "probable",
+      "evidence": "4Sight Holdings is a JSE-listed multinational diversified technology group that designs, develops and deploys AI, big data, cloud, industrial IoT and digitised operational-technology solutions.",
+      "sourceUrl": "https://www.4sightholdings.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.4sightholdings.com/",
+        "type": "recruiter-supplied",
+        "evidence": "4Sight Holdings is a JSE-listed multinational diversified technology group that designs, develops and deploys AI, big data, cloud, industrial IoT and digitised operational-technology solutions.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-abland",
     "name": "Abland",
     "legalName": "",
@@ -344,6 +383,83 @@
     "notes": ""
   },
   {
+    "id": "org-advtech",
+    "name": "Advtech",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "EDU-HIGH-PRIV",
+      "secondaryNodes": [
+        "EDU-SCHOOL-IND"
+      ],
+      "confidence": "confirmed",
+      "evidence": "ADvTECH is Africa's largest private education provider, running private schools such as Crawford International and registered private higher education brands through the Independent Institute of Education.",
+      "sourceUrl": "https://www.groupadvtech.com/our-brands",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.groupadvtech.com/our-brands",
+        "type": "recruiter-supplied",
+        "evidence": "ADvTECH is Africa's largest private education provider, running private schools such as Crawford International and registered private higher education brands through the Independent Institute of Education.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-aeci",
+    "name": "AECI",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-CHEM",
+      "secondaryNodes": [
+        "MFG-CHEM-SPEC",
+        "MIN-SV-DRILL"
+      ],
+      "confidence": "confirmed",
+      "evidence": "AECI is a South African mining and chemicals group that manufactures explosives, initiating systems, blasting services, mining chemicals and specialty chemicals.",
+      "sourceUrl": "https://www.aeciworld.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.aeciworld.com/",
+        "type": "recruiter-supplied",
+        "evidence": "AECI is a South African mining and chemicals group that manufactures explosives, initiating systems, blasting services, mining chemicals and specialty chemicals.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-aevum-developments",
     "name": "Aevum Developments",
     "legalName": "",
@@ -522,6 +638,83 @@
     "notes": ""
   },
   {
+    "id": "org-african-development-bank",
+    "name": "African Development Bank",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-DFI",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "The African Development Bank Group is Africa's premier multilateral development finance institution, providing loans, guarantees and equity financing to its regional member countries.",
+      "sourceUrl": "https://www.afdb.org/en/about-us",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.afdb.org/en/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "The African Development Bank Group is Africa's premier multilateral development finance institution, providing loans, guarantees and equity financing to its regional member countries.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-african-rainbow-minerals",
+    "name": "African Rainbow Minerals",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MIN",
+      "secondaryNodes": [
+        "MIN-IRON",
+        "MIN-COAL",
+        "MIN-PGM",
+        "MIN-BAT-CU"
+      ],
+      "confidence": "confirmed",
+      "evidence": "ARM states it is a diversified mining and minerals company that mines and beneficiates iron ore, manganese ore, chrome ore, PGMs, nickel and coal in South Africa.",
+      "sourceUrl": "https://arm.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://arm.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "ARM states it is a diversified mining and minerals company that mines and beneficiates iron ore, manganese ore, chrome ore, PGMs, nickel and coal in South Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-afrimat",
     "name": "Afrimat",
     "legalName": "",
@@ -599,6 +792,84 @@
     "notes": ""
   },
   {
+    "id": "org-alexforbes",
+    "name": "Alexforbes",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-SVC-ADMIN",
+      "secondaryNodes": [
+        "FIN-INS-BROK",
+        "FIN-SVC-ACTUAR"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Alexforbes administration services cover the full spectrum of retirement fund structures including defined benefit, defined contribution, hybrid, stand-alone and umbrella funds.",
+      "sourceUrl": "https://www.alexforbes.com/za/en/corporate/administration.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.alexforbes.com/za/en/corporate/administration.html",
+        "type": "recruiter-supplied",
+        "evidence": "Alexforbes administration services cover the full spectrum of retirement fund structures including defined benefit, defined contribution, hybrid, stand-alone and umbrella funds.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-altron-digital-business",
+    "name": "Altron Digital Business",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI-MSP",
+      "secondaryNodes": [
+        "ICT-SI-ERP",
+        "ICT-SI-INFRA"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Altron Digital Business, launched on 1 March 2024 from the merger of Altron Karabina, Altron Systems Integration and Altron Managed Solutions, delivers enterprise-grade IT services including cloud infrastructure managed services, enterprise applications and digital infrastructure.",
+      "sourceUrl": "https://digitalbusiness.altron.com/about-us",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://digitalbusiness.altron.com/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "Altron Digital Business, launched on 1 March 2024 from the merger of Altron Karabina, Altron Systems Integration and Altron Managed Solutions, delivers enterprise-grade IT services including cloud infrastructure managed services, enterprise applications and digital infrastructure.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-amdec-group",
     "name": "Amdec Group",
     "legalName": "",
@@ -655,6 +926,83 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-anglo-american",
+    "name": "Anglo American",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MIN",
+      "secondaryNodes": [
+        "MIN-BAT-CU",
+        "MIN-IRON",
+        "MIN-DIAM",
+        "MIN-PGM"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Anglo American describes itself as a leading global mining company whose portfolio spans copper, premium iron ore, diamonds (De Beers), platinum group metals and steelmaking coal.",
+      "sourceUrl": "https://www.angloamerican.com/our-portfolio",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.angloamerican.com/our-portfolio",
+        "type": "recruiter-supplied",
+        "evidence": "Anglo American describes itself as a leading global mining company whose portfolio spans copper, premium iron ore, diamonds (De Beers), platinum group metals and steelmaking coal.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-ardagh-glass-packaging-sa",
+    "name": "Ardagh Glass Packaging SA",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-PLAS-GLASS",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Ardagh Glass Packaging - Africa, established when Ardagh acquired Consol Glass, manufactures glass packaging for the food, beverage and pharmaceutical industries in South Africa.",
+      "sourceUrl": "https://www.ardaghgroup.com/glass/africa/our-markets",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.ardaghgroup.com/glass/africa/our-markets",
+        "type": "recruiter-supplied",
+        "evidence": "Ardagh Glass Packaging - Africa, established when Ardagh acquired Consol Glass, manufactures glass packaging for the food, beverage and pharmaceutical industries in South Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-artefact-south-africa-prev-advanceguidance",
@@ -1320,6 +1668,44 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-bbd",
+    "name": "BBD",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI-CUSTOM",
+      "secondaryNodes": [
+        "ICT-SW-AGENCY-ENTERPRISE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "BBD is a global software engineering and custom (bespoke) software development partner that has built enterprise-grade systems for clients since 1984.",
+      "sourceUrl": "https://bbdsoftware.com/who-we-are/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://bbdsoftware.com/who-we-are/",
+        "type": "recruiter-supplied",
+        "evidence": "BBD is a global software engineering and custom (bespoke) software development partner that has built enterprise-grade systems for clients since 1984.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-bcx",
     "name": "BCX",
     "legalName": "",
@@ -1841,48 +2227,12 @@
     "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
   },
   {
-    "id": "org-bmw",
-    "name": "BMW",
-    "legalName": "",
-    "aliases": [],
-    "website": "",
-    "status": "needs-verification",
-    "industries": [],
-    "taxonomy": {
-      "primaryNode": "MFG-AUTO-OEM-EXPORT",
-      "secondaryNodes": [
-        "MFG-AUTO-OEM"
-      ],
-      "confidence": "confirmed",
-      "evidence": "BMW states that more than 90% of BMW X3s produced at Plant Rosslyn are destined for markets overseas, predominantly Europe.",
-      "sourceUrl": "https://www.bmw.co.za/en/topics/fascination-bmw/plant-tours.html",
-      "checkedOn": "2026-10-16"
-    },
-    "capabilities": [],
-    "locations": [],
-    "scale": [],
-    "parentId": null,
-    "sources": [
-      {
-        "url": "https://www.bmw.co.za/en/topics/fascination-bmw/plant-tours.html",
-        "type": "recruiter-supplied",
-        "evidence": "BMW states that more than 90% of BMW X3s produced at Plant Rosslyn are destined for markets overseas, predominantly Europe.",
-        "checkedOn": "2026-10-16",
-        "reviewer": "",
-        "confidence": "confirmed"
-      }
-    ],
-    "datasets": [
-      "import"
-    ],
-    "lastVerified": "2026-10-16",
-    "notes": ""
-  },
-  {
     "id": "org-bmw-group",
     "name": "BMW Group",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "BMW"
+    ],
     "website": "",
     "status": "needs-verification",
     "industries": [],
@@ -2285,6 +2635,44 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Recorded as a Massmart division rather than a separate legal entity, and flagged for verification: eight Cambridge Foods stores were divested to Devland Cash & Carry in 2024 under a Competition Tribunal condition, so the current store footprint is not established. Store counts conflict between sources (17 Gauteng stores in the case study, eight stores divested in 2024) and are recorded per source rather than reconciled. No company website was established from the sources read."
+  },
+  {
+    "id": "org-capespan-south-africa",
+    "name": "Capespan South Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "AGR-HORT-EXPORT",
+      "secondaryNodes": [
+        "WHL-IMP-EXPORT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Capespan is an integrated fruit grower, packer and global distributor and marketer that exports fresh citrus, table grapes and pome fruit from South Africa to markets worldwide.",
+      "sourceUrl": "https://www.capespan.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.capespan.com/",
+        "type": "recruiter-supplied",
+        "evidence": "Capespan is an integrated fruit grower, packer and global distributor and marketer that exports fresh citrus, table grapes and pome fruit from South Africa to markets worldwide.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-capitec",
@@ -2898,6 +3286,45 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-city-of-cape-town",
+    "name": "City of Cape Town",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PUB-MUNI-METRO",
+      "secondaryNodes": [
+        "ENR-TRAN-DIST",
+        "PUB-WATER-TREAT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "The City of Cape Town is a metropolitan municipality that distributes electricity and provides water, sanitation, refuse removal and municipal roads within its jurisdiction.",
+      "sourceUrl": "https://www.capetown.gov.za/Departments/Electricity%20Generation%20and%20Distribution%20Department",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.capetown.gov.za/Departments/Electricity%20Generation%20and%20Distribution%20Department",
+        "type": "recruiter-supplied",
+        "evidence": "The City of Cape Town is a metropolitan municipality that distributes electricity and provides water, sanitation, refuse removal and municipal roads within its jurisdiction.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-clicks-group",
     "name": "Clicks Group",
     "legalName": "",
@@ -2962,6 +3389,42 @@
         "url": "https://www.ccbagroup.com/about-us/",
         "type": "recruiter-supplied",
         "evidence": "CCBA describes itself as the eighth largest Coca-Cola authorised bottler by revenue and the largest in Africa, manufacturing and distributing more than 40 brands from 35 plants.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-coca-cola-beverages-south-africa-ccbsa",
+    "name": "Coca-Cola Beverages South Africa (CCBSA)",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD-BEV-CSD",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Coca-Cola Beverages South Africa is an authorised manufacturer and distributor of Coca-Cola products, producing sparkling soft drinks such as Coca-Cola, Sprite and Fanta at 11 manufacturing plants.",
+      "sourceUrl": "https://www.ccbsaco.com/who-we-are/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.ccbsaco.com/who-we-are/",
+        "type": "recruiter-supplied",
+        "evidence": "Coca-Cola Beverages South Africa is an authorised manufacturer and distributor of Coca-Cola products, producing sparkling soft drinks such as Coca-Cola, Sprite and Fanta at 11 manufacturing plants.",
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
@@ -3578,6 +4041,44 @@
         "url": "https://digioutsource.com/",
         "type": "recruiter-supplied",
         "evidence": "Online gaming and e-commerce operations and software services based in Cape Town.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-dimension-data",
+    "name": "Dimension Data",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI-INFRA",
+      "secondaryNodes": [
+        "ICT-SI-MSP"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Dimension Data is an African-born systems integrator and managed services provider specialising in IT infrastructure solutions and services, and a member of the NTT Group.",
+      "sourceUrl": "https://www.itweb.co.za/office/dimension_data/about",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.itweb.co.za/office/dimension_data/about",
+        "type": "recruiter-supplied",
+        "evidence": "Dimension Data is an African-born systems integrator and managed services provider specialising in IT infrastructure solutions and services, and a member of the NTT Group.",
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
@@ -4397,6 +4898,82 @@
     "notes": ""
   },
   {
+    "id": "org-entersekt",
+    "name": "Entersekt",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SEC-IDENT",
+      "secondaryNodes": [
+        "FIN-CRD-FRAUD"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Entersekt is a financial authentication company providing context-aware authentication, 3-D Secure and fraud-prevention risk intelligence to banks and payment networks.",
+      "sourceUrl": "https://www.entersekt.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.entersekt.com/",
+        "type": "recruiter-supplied",
+        "evidence": "Entersekt is a financial authentication company providing context-aware authentication, 3-D Secure and fraud-prevention risk intelligence to banks and payment networks.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-enviroserv",
+    "name": "EnviroServ",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "CON-FAC-WASTE",
+      "secondaryNodes": [
+        "WHL-SCRAP"
+      ],
+      "confidence": "confirmed",
+      "evidence": "EnviroServ is South Africa's largest waste management company, collecting, treating and disposing of general and hazardous waste and recycling around 125,000 tonnes a year.",
+      "sourceUrl": "https://www.enviroserv.co.za/about",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.enviroserv.co.za/about",
+        "type": "recruiter-supplied",
+        "evidence": "EnviroServ is South Africa's largest waste management company, collecting, treating and disposing of general and hazardous waste and recycling around 125,000 tonnes a year.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-epko",
     "name": "Epko Oil Refinery",
     "legalName": "Epko Oil Refinery Proprietary Limited",
@@ -4690,6 +5267,45 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-eskom-holdings-soc",
+    "name": "Eskom Holdings SOC",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PUB-SOC-ENERGY",
+      "secondaryNodes": [
+        "ENR-GEN-THERM",
+        "ENR-TRAN-GRID"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Eskom Holdings SOC Ltd is a South African state-owned electricity public utility that generates, transmits and distributes electricity.",
+      "sourceUrl": "https://www.eskom.co.za/about-eskom/company-information/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.eskom.co.za/about-eskom/company-information/",
+        "type": "recruiter-supplied",
+        "evidence": "Eskom Holdings SOC Ltd is a South African state-owned electricity public utility that generates, transmits and distributes electricity.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-esor",
@@ -5071,6 +5687,45 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-firstrand",
+    "name": "FirstRand",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-BANK-BIG5",
+      "secondaryNodes": [
+        "FIN-BANK-CORP",
+        "FIN-LEND-VEH"
+      ],
+      "confidence": "confirmed",
+      "evidence": "FirstRand is the holding company of a portfolio of integrated financial services businesses comprising FNB (retail and commercial banking), RMB (corporate and investment banking) and WesBank (instalment credit and fleet management).",
+      "sourceUrl": "https://www.firstrand.co.za/the-group/portfolio",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.firstrand.co.za/the-group/portfolio",
+        "type": "recruiter-supplied",
+        "evidence": "FirstRand is the holding company of a portfolio of integrated financial services businesses comprising FNB (retail and commercial banking), RMB (corporate and investment banking) and WesBank (instalment credit and fleet management).",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-fnb",
@@ -5530,6 +6185,44 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Owned 87% by FPG Investments; the holding entity is not separately mapped yet."
+  },
+  {
+    "id": "org-gijima",
+    "name": "Gijima",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI-MSP",
+      "secondaryNodes": [
+        "ICT-SI-INFRA"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Gijima is described as one of South Africa's leading ICT companies in Cloud & Outsourcing, systems integration, cybersecurity and unified communications.",
+      "sourceUrl": "https://www.gijima.com/about-us",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.gijima.com/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "Gijima is described as one of South Africa's leading ICT companies in Cloud & Outsourcing, systems integration, cybersecurity and unified communications.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-grindrod",
@@ -6261,6 +6954,44 @@
     "notes": "Registered office listed by one source as a London address; South African operating headquarters is Rosebank, Johannesburg."
   },
   {
+    "id": "org-icon",
+    "name": "ICON",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "HLC-HOSP-DAY",
+      "secondaryNodes": [
+        "HLC-PRAC-SPEC"
+      ],
+      "confidence": "hypothesis",
+      "evidence": "The name ICON is ambiguous across firms; interpreted here as Cape Town-headquartered Icon Oncology, a private healthcare company providing radiotherapy, chemotherapy and managed oncology care.",
+      "sourceUrl": "https://iconsa.co.za/about/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://iconsa.co.za/about/",
+        "type": "recruiter-supplied",
+        "evidence": "The name ICON is ambiguous across firms; interpreted here as Cape Town-headquartered Icon Oncology, a private healthcare company providing radiotherapy, chemotherapy and managed oncology care.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "hypothesis"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-idube-cold-storage",
     "name": "iDube Cold Storage",
     "legalName": "",
@@ -6874,6 +7605,45 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-ioco",
+    "name": "iOCO",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI-MSP",
+      "secondaryNodes": [
+        "ICT-SI-ERP",
+        "ICT-SI-INFRA"
+      ],
+      "confidence": "confirmed",
+      "evidence": "iOCO is one of South Africa's largest and most established technology services providers, delivering IT infrastructure and managed services, ERP and EPM applications, cloud and cybersecurity to more than 4,000 clients.",
+      "sourceUrl": "https://ioco.tech/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://ioco.tech/",
+        "type": "recruiter-supplied",
+        "evidence": "iOCO is one of South Africa's largest and most established technology services providers, delivering IT infrastructure and managed services, ERP and EPM applications, cloud and cybersecurity to more than 4,000 clients.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-jgb-construction-properties",
     "name": "JGB Construction & Properties",
     "legalName": "",
@@ -6939,7 +7709,8 @@
     "legalName": "",
     "aliases": [
       "Kaap Agri Bedryf Ltd",
-      "Agrimark"
+      "Agrimark",
+      "Kaap Agri / Agrimark"
     ],
     "website": "https://www.kaapagri.co.za",
     "status": "needs-verification",
@@ -6997,13 +7768,31 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.kalgroup.co.za/companies/agrimark",
+        "type": "recruiter-supplied",
+        "evidence": "KAL Group, trading as Agrimark, supplies agricultural inputs and mechanisation, operates grain storage and marketing through Agrimark Grain and runs the fuel and retail network of a full-service agri group across southern Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
       }
     ],
     "datasets": [
       "organizations"
     ],
-    "lastVerified": "2026-10-08",
-    "notes": "Also present in the Accounting & Finance dataset as Kaap Agri / Agrimark."
+    "lastVerified": "2026-10-16",
+    "notes": "Also present in the Accounting & Finance dataset as Kaap Agri / Agrimark.",
+    "taxonomy": {
+      "primaryNode": "AGR-COMM-COOP-FULL",
+      "secondaryNodes": [
+        "WHL-AGRI-INPUT"
+      ],
+      "confidence": "probable",
+      "evidence": "KAL Group, trading as Agrimark, supplies agricultural inputs and mechanisation, operates grain storage and marketing through Agrimark Grain and runs the fuel and retail network of a full-service agri group across southern Africa.",
+      "sourceUrl": "https://www.kalgroup.co.za/companies/agrimark",
+      "checkedOn": "2026-10-16"
+    }
   },
   {
     "id": "org-kamdar-group",
@@ -7267,6 +8056,44 @@
     "notes": "Legal entity spelling and South African service lines need primary-source confirmation."
   },
   {
+    "id": "org-kwv",
+    "name": "KWV",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "AGR-VITI-WINE",
+      "secondaryNodes": [
+        "AGR-VITI-BRANDY"
+      ],
+      "confidence": "confirmed",
+      "evidence": "KWV is a leading South African wine and spirits producer whose portfolio includes wine brands such as Roodeberg and Laborie and spirits and brandy including KWV Brandy and Cruxland Gin.",
+      "sourceUrl": "https://kwv.co.za/our-company/our-brands/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://kwv.co.za/our-company/our-brands/",
+        "type": "recruiter-supplied",
+        "evidence": "KWV is a leading South African wine and spirits producer whose portfolio includes wine brands such as Roodeberg and Laborie and spirits and brandy including KWV Brandy and Cruxland Gin.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-lactalis-south-africa",
     "name": "Lactalis South Africa",
     "legalName": "",
@@ -7494,6 +8321,44 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-lesaka-technologies",
+    "name": "Lesaka Technologies",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-PAY-MERCHANT",
+      "secondaryNodes": [
+        "FIN-PAY-SWITCH"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Lesaka is a fintech company offering services to consumers, merchants and enterprises, including merchant acquiring, cash management, bill payments and card-acceptance technologies.",
+      "sourceUrl": "https://lesakatech.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://lesakatech.com/",
+        "type": "recruiter-supplied",
+        "evidence": "Lesaka is a fintech company offering services to consumers, merchants and enterprises, including merchant acquiring, cash management, bill payments and card-acceptance technologies.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-lexisnexis",
     "name": "LexisNexis",
     "legalName": "",
@@ -7523,6 +8388,80 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-liberty-group-south-africa",
+    "name": "Liberty Group South Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-INS-LIFE",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Liberty Group Limited is a licensed life insurer, an authorised FSP (no.2409) and part of the Standard Bank Group, offering life insurance and investment solutions.",
+      "sourceUrl": "https://www.liberty.co.za/about-us",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.liberty.co.za/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "Liberty Group Limited is a licensed life insurer, an authorised FSP (no.2409) and part of the Standard Bank Group, offering life insurance and investment solutions.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-libstar",
+    "name": "Libstar",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD",
+      "secondaryNodes": [
+        "MFG-FOOD-PRIVATE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Libstar Holdings is a diversified South African food group that manufactures and distributes branded, private-label and dealer-own food products across perishable and ambient categories.",
+      "sourceUrl": "https://www.libstar.co.za/operations/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.libstar.co.za/operations/",
+        "type": "recruiter-supplied",
+        "evidence": "Libstar Holdings is a diversified South African food group that manufactures and distributes branded, private-label and dealer-own food products across perishable and ambient categories.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
@@ -7582,6 +8521,44 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-lula",
+    "name": "Lula",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-LEND-SME",
+      "secondaryNodes": [
+        "FIN-DIGIBANK-BRANCH"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Lula, formerly Lulalend, provides uncollateralised digital working-capital loans of up to R5 million to South African SMEs and a digital business banking platform.",
+      "sourceUrl": "https://lula.co.za/business-funding-south-africa/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://lula.co.za/business-funding-south-africa/",
+        "type": "recruiter-supplied",
+        "evidence": "Lula, formerly Lulalend, provides uncollateralised digital working-capital loans of up to R5 million to South African SMEs and a digital business banking platform.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-lumenzo-group",
@@ -7663,6 +8640,44 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-macsteel",
+    "name": "Macsteel",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-METAL",
+      "secondaryNodes": [
+        "MFG-METAL-TUBE"
+      ],
+      "confidence": "probable",
+      "evidence": "Macsteel describes itself as a Southern African leader in steel and value-added steel products, manufacturing tube and pipe and processing coil and flat steel as well as merchandising and distributing steel.",
+      "sourceUrl": "https://www.macsteel.co.za/about-us",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.macsteel.co.za/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "Macsteel describes itself as a Southern African leader in steel and value-added steel products, manufacturing tube and pipe and processing coil and flat steel as well as merchandising and distributing steel.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
       }
     ],
     "datasets": [
@@ -8129,6 +9144,45 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-mint-group",
+    "name": "Mint Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI-ERP",
+      "secondaryNodes": [
+        "ICT-SI-CRM",
+        "ICT-SI-INFRA"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Mint Group is a Microsoft Solutions Partner and systems integrator delivering Microsoft Dynamics 365 business applications, Azure and Microsoft 365 solutions.",
+      "sourceUrl": "https://za.mintgroup.net/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://za.mintgroup.net/",
+        "type": "recruiter-supplied",
+        "evidence": "Mint Group is a Microsoft Solutions Partner and systems integrator delivering Microsoft Dynamics 365 business applications, Azure and Microsoft 365 solutions.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-mnk-projects",
     "name": "MNK Projects",
     "legalName": "",
@@ -8194,7 +9248,8 @@
     "legalName": "",
     "aliases": [
       "Momentum Metropolitan",
-      "Momentum"
+      "Momentum",
+      "Momentum Metropolitan Holdings"
     ],
     "website": "",
     "status": "needs-verification",
@@ -8202,11 +9257,12 @@
     "taxonomy": {
       "primaryNode": "FIN-INS-LIFE",
       "secondaryNodes": [
-        "FIN-INS-ST"
+        "FIN-INS-ST",
+        "FIN-INS-HEALTH"
       ],
       "confidence": "confirmed",
-      "evidence": "Momentum Group Limited is a South African JSE-listed financial services group and one of the country's largest life insurers, operating retail and specialist brands including Momentum, Metropolitan, Guardrisk and Eris Properties. Previously named Momentum Metropolitan Holdings.",
-      "sourceUrl": "https://www.momentumgroupltd.co.za/about-us/",
+      "evidence": "Momentum Group Limited is one of South Africa's largest life insurers and integrated financial services companies, operating through brands Momentum, Metropolitan, Guardrisk and Eris.",
+      "sourceUrl": "https://www.momentummetropolitan.co.za/about-us",
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
@@ -8218,6 +9274,52 @@
         "url": "https://www.momentumgroupltd.co.za/about-us/",
         "type": "recruiter-supplied",
         "evidence": "Momentum Group Limited is a South African JSE-listed financial services group and one of the country's largest life insurers, operating retail and specialist brands including Momentum, Metropolitan, Guardrisk and Eris Properties. Previously named Momentum Metropolitan Holdings.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.momentummetropolitan.co.za/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "Momentum Group Limited is one of South Africa's largest life insurers and integrated financial services companies, operating through brands Momentum, Metropolitan, Guardrisk and Eris.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-monocle-solutions",
+    "name": "Monocle Solutions",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-CONSULT-STRAT",
+      "secondaryNodes": [
+        "PRO-CONSULT-TECH"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Monocle is an independent, results-focused management consulting firm specialising in banking and insurance, established in 2002.",
+      "sourceUrl": "https://www.monoclesolutions.com/en-za/about",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.monoclesolutions.com/en-za/about",
+        "type": "recruiter-supplied",
+        "evidence": "Monocle is an independent, results-focused management consulting firm specialising in banking and insurance, established in 2002.",
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
@@ -8736,6 +9838,42 @@
         "url": "https://group.nedbank.co.za/home/about-us.html",
         "type": "recruiter-supplied",
         "evidence": "Nedbank Group describes itself as one of the largest financial services groups in Africa, offering wholesale and retail banking plus insurance, asset and wealth management.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-netcare",
+    "name": "Netcare",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "HLC-HOSP-PRIV",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Netcare describes itself as the leading private healthcare provider in South Africa, operating acute, mental health and day hospitals across the country.",
+      "sourceUrl": "https://www.netcare.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.netcare.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Netcare describes itself as the leading private healthcare provider in South Africa, operating acute, mental health and day hospitals across the country.",
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
@@ -9380,6 +10518,42 @@
     "notes": ""
   },
   {
+    "id": "org-old-mutual-finance",
+    "name": "Old Mutual Finance",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-LEND-UNSEC",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Old Mutual loan offerings, including unsecured personal loans of up to R250 000, are made available through Old Mutual Finance (Pty) Ltd, a registered credit provider (NCRCP35).",
+      "sourceUrl": "https://www.oldmutualfinance.co.za/personal-loans",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.oldmutualfinance.co.za/personal-loans",
+        "type": "recruiter-supplied",
+        "evidence": "Old Mutual loan offerings, including unsecured personal loans of up to R250 000, are made available through Old Mutual Finance (Pty) Ltd, a registered credit provider (NCRCP35).",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-opti-feeds",
     "name": "Opti Feeds",
     "legalName": "Opti Feeds (Pty) Ltd",
@@ -9578,6 +10752,42 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-parexel",
+    "name": "Parexel",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "HLC",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Parexel is among the world's largest clinical research organizations, providing Phase I to IV clinical development services to biopharmaceutical companies.",
+      "sourceUrl": "https://www.parexel.com/about-us",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.parexel.com/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "Parexel is among the world's largest clinical research organizations, providing Phase I to IV clinical development services to biopharmaceutical companies.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
       }
     ],
     "datasets": [
@@ -9827,22 +11037,19 @@
     "notes": "No registered legal entity name is asserted: the sources read describe the business as Pele Green Energy Group without giving a registration. The only registered names sourced are the project special purpose vehicles, Phofu Solar Power Plant (RF) Pty Ltd and Sonvanger Solar Power Plant (RF) (Pty) Ltd. Locations are the sourced project sites rather than a head office, which the sources read do not state."
   },
   {
-    "id": "org-pepsico",
-    "name": "PepsiCo",
+    "id": "org-peninsula-beverages",
+    "name": "Peninsula Beverages",
     "legalName": "",
     "aliases": [],
     "website": "",
     "status": "needs-verification",
     "industries": [],
     "taxonomy": {
-      "primaryNode": "MFG-FOOD",
-      "secondaryNodes": [
-        "MFG-FOOD-SNACK",
-        "MFG-FOOD-BEV-CSD"
-      ],
-      "confidence": "probable",
-      "evidence": "PepsiCo describes itself as one of the world's largest food and drink companies; mapped to the SA food and beverage manufacturing node.",
-      "sourceUrl": "https://www.pepsico.com/newsroom/press-releases/2019/pepsico-targets-african-growth-with-offer-to-acquire-pioneer-foods",
+      "primaryNode": "MFG-FOOD-BEV-CSD",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Coca-Cola Peninsula Beverages is the independent bottling company that manufactures and distributes Coca-Cola products throughout the Western and Northern Cape.",
+      "sourceUrl": "https://cocacolapenbev.co.za/about-us",
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
@@ -9851,12 +11058,12 @@
     "parentId": null,
     "sources": [
       {
-        "url": "https://www.pepsico.com/newsroom/press-releases/2019/pepsico-targets-african-growth-with-offer-to-acquire-pioneer-foods",
+        "url": "https://cocacolapenbev.co.za/about-us",
         "type": "recruiter-supplied",
-        "evidence": "PepsiCo describes itself as one of the world's largest food and drink companies; mapped to the SA food and beverage manufacturing node.",
+        "evidence": "Coca-Cola Peninsula Beverages is the independent bottling company that manufactures and distributes Coca-Cola products throughout the Western and Northern Cape.",
         "checkedOn": "2026-10-16",
         "reviewer": "",
-        "confidence": "probable"
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
@@ -9869,7 +11076,9 @@
     "id": "org-pepsico-south-africa-pioneer-foods",
     "name": "PepsiCo South Africa / Pioneer Foods",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "PepsiCo"
+    ],
     "website": "",
     "status": "needs-verification",
     "industries": [],
@@ -10814,7 +12023,9 @@
     "id": "org-raubex",
     "name": "Raubex Group",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Raubex / Roadmac Surfacing Cape"
+    ],
     "website": "https://www.raubex.com",
     "status": "verified",
     "industries": [
@@ -10864,13 +12075,31 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://raubex.com/roads-and-earthworks/",
+        "type": "recruiter-supplied",
+        "evidence": "Raubex's Roadmac Surfacing Cape is a leading road rehabilitation contractor specialising in asphalt, chip and spray surfacing and road rehabilitation.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
       }
     ],
     "datasets": [
       "organizations"
     ],
-    "lastVerified": "2026-10-08",
-    "notes": "Also present in the Accounting & Finance dataset as Raubex / Roadmac Surfacing Cape."
+    "lastVerified": "2026-10-16",
+    "notes": "Also present in the Accounting & Finance dataset as Raubex / Roadmac Surfacing Cape.",
+    "taxonomy": {
+      "primaryNode": "CON-CIVIL-ROAD",
+      "secondaryNodes": [
+        "CON-CONTR"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Raubex's Roadmac Surfacing Cape is a leading road rehabilitation contractor specialising in asphalt, chip and spray surfacing and road rehabilitation.",
+      "sourceUrl": "https://raubex.com/roads-and-earthworks/",
+      "checkedOn": "2026-10-16"
+    }
   },
   {
     "id": "org-raudev",
@@ -11720,6 +12949,45 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-sand-technologies",
+    "name": "Sand Technologies",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-DATA-AI",
+      "secondaryNodes": [
+        "ICT-SW-PRODUCT",
+        "ICT-SI"
+      ],
+      "confidence": "probable",
+      "evidence": "Sand Technologies builds Symmetri, an AI platform for critical infrastructure, and describes itself as delivering enterprise AI, data science and software engineering services.",
+      "sourceUrl": "https://www.sandtech.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.sandtech.com/",
+        "type": "recruiter-supplied",
+        "evidence": "Sand Technologies builds Symmetri, an AI platform for critical infrastructure, and describes itself as delivering enterprise AI, data science and software engineering services.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-sanlam",
@@ -12899,6 +14167,42 @@
     "notes": "The Naos 1 battery capacity is reported as both 660 MWh and 855 MWh within the same article; the conflict is recorded rather than resolved. The South African legal entity and head office were not established from the sources read, and no website is asserted. Locations are sourced project sites."
   },
   {
+    "id": "org-south-african-reserve-bank",
+    "name": "South African Reserve Bank",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PUB-REG-REGULATOR",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "The SARB's mandate is to protect the value of the currency and enhance financial stability, and it regulates and supervises financial institutions and the national payments system.",
+      "sourceUrl": "https://www.resbank.co.za/en/home/about-us",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.resbank.co.za/en/home/about-us",
+        "type": "recruiter-supplied",
+        "evidence": "The SARB's mandate is to protect the value of the currency and enhance financial stability, and it regulates and supervises financial institutions and the national payments system.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-southern-oil",
     "name": "Southern Oil (SOILL)",
     "legalName": "",
@@ -13546,6 +14850,45 @@
     "notes": ""
   },
   {
+    "id": "org-takealot",
+    "name": "Takealot",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "RTL-ECOM-MARKET",
+      "secondaryNodes": [
+        "RTL-ECOM-OMNI",
+        "RTL-ECOM-LASTMILE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Takealot.com is South Africa's largest online retailer and its Marketplace enables thousands of third-party sellers to offer goods to consumers.",
+      "sourceUrl": "https://takealotgroup.com/takealot-com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://takealotgroup.com/takealot-com/",
+        "type": "recruiter-supplied",
+        "evidence": "Takealot.com is South Africa's largest online retailer and its Marketplace enables thousands of third-party sellers to offer goods to consumers.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-telesure-investment-holdings-tih",
     "name": "Telesure Investment Holdings (TIH)",
     "legalName": "",
@@ -13609,6 +14952,44 @@
         "url": "https://tfglimited.co.za/",
         "type": "recruiter-supplied",
         "evidence": "TFG describes itself as a diversified fashion, lifestyle and speciality retail group centred on apparel brands alongside jewellery, homeware and furniture, with credit accounts in TFG Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-the-coca-cola-company",
+    "name": "The Coca-Cola Company",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD-BEV",
+      "secondaryNodes": [
+        "MFG-FOOD-BEV-CSD"
+      ],
+      "confidence": "confirmed",
+      "evidence": "The Coca-Cola Company creates the concentrates and syrups for its beverage brands and licenses independent bottling partners to produce the finished soft drinks and other beverages.",
+      "sourceUrl": "https://www.coca-colacompany.com/about-us/coca-cola-system",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.coca-colacompany.com/about-us/coca-cola-system",
+        "type": "recruiter-supplied",
+        "evidence": "The Coca-Cola Company creates the concentrates and syrups for its beverage brands and licenses independent bottling partners to produce the finished soft drinks and other beverages.",
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
@@ -13813,6 +15194,82 @@
     "notes": ""
   },
   {
+    "id": "org-transunion",
+    "name": "TransUnion",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-CRD-BUREAU",
+      "secondaryNodes": [
+        "FIN-CRD-SCORE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "TransUnion is a registered credit bureau in South Africa and a repository of credit information on consumers and businesses.",
+      "sourceUrl": "https://www.transunion.co.za/client-support/faqs",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.transunion.co.za/client-support/faqs",
+        "type": "recruiter-supplied",
+        "evidence": "TransUnion is a registered credit bureau in South Africa and a repository of credit information on consumers and businesses.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-tronox-namakwa-sands",
+    "name": "Tronox Namakwa Sands",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MIN-BAT-VAN",
+      "secondaryNodes": [
+        "MFG-MIN-SMELT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Tronox's Namakwa Sands operations on the West Coast of South Africa mine and beneficiate heavy minerals to produce titanium dioxide feedstock, zircon, rutile and pig iron.",
+      "sourceUrl": "https://www.tronox.com/namakwa-sands-south-africa/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.tronox.com/namakwa-sands-south-africa/",
+        "type": "recruiter-supplied",
+        "evidence": "Tronox's Namakwa Sands operations on the West Coast of South Africa mine and beneficiate heavy minerals to produce titanium dioxide feedstock, zircon, rutile and pig iron.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-true-group",
     "name": "True Group",
     "legalName": "",
@@ -13871,6 +15328,44 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-truworths",
+    "name": "Truworths",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "RTL-GEN-APPAREL",
+      "secondaryNodes": [
+        "RTL-GEN-CREDIT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Truworths International's main operating company Truworths Ltd is a leading South African retailer of fashion clothing and footwear that also offers account (credit) facilities to customers.",
+      "sourceUrl": "https://www.truworths.co.za/occ-public/html/group-at-a-glance.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.truworths.co.za/occ-public/html/group-at-a-glance.html",
+        "type": "recruiter-supplied",
+        "evidence": "Truworths International's main operating company Truworths Ltd is a leading South African retailer of fashion clothing and footwear that also offers account (credit) facilities to customers.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-twk",
@@ -14940,6 +16435,42 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-westcon-comstor-sub-saharan-africa",
+    "name": "Westcon-Comstor Sub-Saharan Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-HARD-DIST",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Westcon-Comstor Sub-Saharan Africa is a value-added distributor that connects leading IT vendors of networking, security and cloud solutions with resellers across the region.",
+      "sourceUrl": "https://www.westconcomstor.com/global/en/about-us.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.westconcomstor.com/global/en/about-us.html",
+        "type": "recruiter-supplied",
+        "evidence": "Westcon-Comstor Sub-Saharan Africa is a value-added distributor that connects leading IT vendors of networking, security and cloud solutions with resellers across the region.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-western-gruppe-properties",
