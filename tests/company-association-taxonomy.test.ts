@@ -209,8 +209,16 @@ test('a company that both develops and owns assets keeps two distinct placements
 
 test('the macro-sector facet filters on derived placement, not a second classification', () => {
   const discovery = discoverAssociations({ index, focalId: 'org-ccs-logistics', roleContext: role, extraOrganizations })
-  const none = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['MIN'] })
-  assert.equal(none.length, 0, 'the universe holds no mining companies, so a mining facet must be empty')
+  const education = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['EDU'] })
+  assert.equal(education.length, 0, 'the universe holds no education companies, so an education facet must be empty')
+
+  const mining = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['MIN'] })
+  assert.ok(mining.length > 0, 'companies placed in mining must surface under the mining facet')
+  for (const match of mining) {
+    const organization = index.byId.get(match.organizationId)
+    assert.ok(organization)
+    assert.ok(organizationTaxonomy(organization).macroSectorIds.includes('MIN'))
+  }
 
   const transport = filterMatches(discovery.matches, index, { ...EMPTY_FILTERS, macroSectors: ['TRA'] })
   assert.ok(transport.length > 0)

@@ -211,6 +211,44 @@
     "notes": "The 2026 integrated report does not state a head office city in the material read, so no location is recorded. Portfolio value fell from R7,7 billion to R6,6 billion as non-core assets were sold to repay debt."
   },
   {
+    "id": "org-accenture-in-south-africa",
+    "name": "Accenture in South Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-CONSULT-STRAT",
+      "secondaryNodes": [
+        "PRO-CONSULT-TECH"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Accenture SA combines management consulting, technology and business process outsourcing capabilities for its customers.",
+      "sourceUrl": "https://www.accenture.com/za-en/about/company/south-africa",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.accenture.com/za-en/about/company/south-africa",
+        "type": "recruiter-supplied",
+        "evidence": "Accenture SA combines management consulting, technology and business process outsourcing capabilities for its customers.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-aced",
     "name": "African Clean Energy Developments",
     "legalName": "",
@@ -446,6 +484,121 @@
     "notes": "Ownership history and current structure not established from the sources read; treat capability evidence as incomplete."
   },
   {
+    "id": "org-african-bank",
+    "name": "African Bank",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-BANK-MID",
+      "secondaryNodes": [
+        "FIN-LEND-UNSEC"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Mid-tier bank offering retail banking and lending products in South Africa.",
+      "sourceUrl": "https://www.africanbank.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.africanbank.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Mid-tier bank offering retail banking and lending products in South Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-afrimat",
+    "name": "Afrimat",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MIN-QUARRY",
+      "secondaryNodes": [
+        "MIN-IRON",
+        "MIN-QUARRY-AGG"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Afrimat describes itself as a mid-tier mining and materials company supplying aggregates, cement, iron ore, anthracite and manganese.",
+      "sourceUrl": "https://www.afrimat.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.afrimat.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Afrimat describes itself as a mid-tier mining and materials company supplying aggregates, cement, iron ore, anthracite and manganese.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-afrisam",
+    "name": "AfriSam",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "CON-MAT-CEMENT",
+      "secondaryNodes": [
+        "CON-MAT-AGG"
+      ],
+      "confidence": "confirmed",
+      "evidence": "AfriSam describes itself as a leading supplier of construction materials including cement, aggregate and readymix concrete.",
+      "sourceUrl": "https://www.afrisam.co.za/about-us/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.afrisam.co.za/about-us/",
+        "type": "recruiter-supplied",
+        "evidence": "AfriSam describes itself as a leading supplier of construction materials including cement, aggregate and readymix concrete.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-amdec-group",
     "name": "Amdec Group",
     "legalName": "",
@@ -502,6 +655,44 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-artefact-south-africa-prev-advanceguidance",
+    "name": "Artefact South Africa (prev. AdvanceGuidance)",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-DATA-AI",
+      "secondaryNodes": [
+        "ICT-DATA-BI"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Data and AI consulting and analytics firm operating in South Africa.",
+      "sourceUrl": "https://www.artefact.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.artefact.com/",
+        "type": "recruiter-supplied",
+        "evidence": "Data and AI consulting and analytics firm operating in South Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-astral-foods",
@@ -604,6 +795,44 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
+    "notes": ""
+  },
+  {
+    "id": "org-astron-energy",
+    "name": "Astron Energy",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ENR-OIL-REF",
+      "secondaryNodes": [
+        "ENR-OIL-FUEL"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Astron Energy states it owns and operates South Africa's third-largest crude oil refinery in Cape Town and a network of over 850 forecourts.",
+      "sourceUrl": "https://www.astronenergy.co.za/about-us/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.astronenergy.co.za/about-us/",
+        "type": "recruiter-supplied",
+        "evidence": "Astron Energy states it owns and operates South Africa's third-largest crude oil refinery in Cape Town and a network of over 850 forecourts.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
     "notes": ""
   },
   {
@@ -1091,6 +1320,44 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-bcx",
+    "name": "BCX",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI",
+      "secondaryNodes": [
+        "ICT-INFRA-FIBRE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "ICT systems integration and connectivity/infrastructure services provider.",
+      "sourceUrl": "https://www.bcx.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.bcx.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "ICT systems integration and connectivity/infrastructure services provider.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-bester-feed-grain",
     "name": "Bester Feed & Grain",
     "legalName": "Bester Feed and Grain (Pty) Ltd",
@@ -1572,6 +1839,82 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+  },
+  {
+    "id": "org-bmw",
+    "name": "BMW",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-AUTO-OEM-EXPORT",
+      "secondaryNodes": [
+        "MFG-AUTO-OEM"
+      ],
+      "confidence": "confirmed",
+      "evidence": "BMW states that more than 90% of BMW X3s produced at Plant Rosslyn are destined for markets overseas, predominantly Europe.",
+      "sourceUrl": "https://www.bmw.co.za/en/topics/fascination-bmw/plant-tours.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.bmw.co.za/en/topics/fascination-bmw/plant-tours.html",
+        "type": "recruiter-supplied",
+        "evidence": "BMW states that more than 90% of BMW X3s produced at Plant Rosslyn are destined for markets overseas, predominantly Europe.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-bmw-group",
+    "name": "BMW Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-AUTO-OEM-EXPORT",
+      "secondaryNodes": [
+        "MFG-AUTO-OEM"
+      ],
+      "confidence": "confirmed",
+      "evidence": "BMW Group Plant Rosslyn produces BMW X3 vehicles almost entirely for global export.",
+      "sourceUrl": "https://www.bmwgroup-werke.com/rosslyn/en.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.bmwgroup-werke.com/rosslyn/en.html",
+        "type": "recruiter-supplied",
+        "evidence": "BMW Group Plant Rosslyn produces BMW X3 vehicles almost entirely for global export.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-bow-arc",
@@ -2555,6 +2898,82 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-clicks-group",
+    "name": "Clicks Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "RTL-PHAR-CHAIN",
+      "secondaryNodes": [
+        "WHL-MED-WHOLE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Clicks Group describes Clicks as South Africa's leading health, beauty and wellness retailer and the largest retail pharmacy chain, with UPD as its pharmaceutical wholesaler.",
+      "sourceUrl": "https://www.clicksgroup.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.clicksgroup.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Clicks Group describes Clicks as South Africa's leading health, beauty and wellness retailer and the largest retail pharmacy chain, with UPD as its pharmaceutical wholesaler.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-coca-cola-beverages-africa",
+    "name": "Coca-Cola Beverages Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD-BEV-CSD",
+      "secondaryNodes": [
+        "MFG-FOOD-BEV-JUICE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "CCBA describes itself as the eighth largest Coca-Cola authorised bottler by revenue and the largest in Africa, manufacturing and distributing more than 40 brands from 35 plants.",
+      "sourceUrl": "https://www.ccbagroup.com/about-us/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.ccbagroup.com/about-us/",
+        "type": "recruiter-supplied",
+        "evidence": "CCBA describes itself as the eighth largest Coca-Cola authorised bottler by revenue and the largest in Africa, manufacturing and distributing more than 40 brands from 35 plants.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-cohen-property-developments",
     "name": "Cohen Property Developments",
     "legalName": "",
@@ -2874,6 +3293,45 @@
     "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
   },
   {
+    "id": "org-deloitte",
+    "name": "Deloitte",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-ACCT-AUDIT",
+      "secondaryNodes": [
+        "PRO-ACCT-TAX",
+        "PRO-CONSULT-STRAT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Deloitte South Africa's audit page states its external audit business expresses opinions on clients' financial statements.",
+      "sourceUrl": "https://www.deloitte.com/za/en/services/audit-assurance/services/audit.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.deloitte.com/za/en/services/audit-assurance/services/audit.html",
+        "type": "recruiter-supplied",
+        "evidence": "Deloitte South Africa's audit page states its external audit business expresses opinions on clients' financial statements.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-devco-developments",
     "name": "Devco Developments",
     "legalName": "",
@@ -3094,6 +3552,42 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Registered South African entity name not established from the sources read."
+  },
+  {
+    "id": "org-digioutsource",
+    "name": "DigiOutsource",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-BPO-OMNI",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Online gaming and e-commerce operations and software services based in Cape Town.",
+      "sourceUrl": "https://digioutsource.com/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://digioutsource.com/",
+        "type": "recruiter-supplied",
+        "evidence": "Online gaming and e-commerce operations and software services based in Cape Town.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-dipula",
@@ -3526,6 +4020,42 @@
     "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
   },
   {
+    "id": "org-dvt",
+    "name": "DVT",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SW-AGENCY-ENTERPRISE",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Software development and consulting services firm.",
+      "sourceUrl": "https://www.dvt.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.dvt.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Software development and consulting services firm.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-edf-renewables-sa",
     "name": "EDF Renewables South Africa",
     "legalName": "",
@@ -3827,6 +4357,44 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Property counts and portfolio values differ by reporting date and are not averaged: 63 assets at R9,96 billion (March 2025), 56 properties at R9,3 billion (September 2025) and 48 properties at R8,9 billion (March 2026), reflecting an active capital recycling programme. Offshore exposure is real and material, which is why foreign-currency exposure is recorded as observed rather than unknown."
+  },
+  {
+    "id": "org-entelect",
+    "name": "Entelect",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SW-AGENCY-ENTERPRISE",
+      "secondaryNodes": [
+        "ICT-SI-CUSTOM"
+      ],
+      "confidence": "confirmed",
+      "evidence": "South African software development and consulting firm building custom enterprise software.",
+      "sourceUrl": "https://entelect.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://entelect.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "South African software development and consulting firm building custom enterprise software.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-epko",
@@ -4404,6 +4972,45 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-ey",
+    "name": "EY",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-ACCT-AUDIT",
+      "secondaryNodes": [
+        "PRO-ACCT-TAX",
+        "PRO-CONSULT-STRAT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "EY South Africa's assurance page describes EY Assurance as comprising audit, sustainability, forensic and technology risk services.",
+      "sourceUrl": "https://www.ey.com/en_za/services/assurance",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.ey.com/en_za/services/assurance",
+        "type": "recruiter-supplied",
+        "evidence": "EY South Africa's assurance page describes EY Assurance as comprising audit, sustainability, forensic and technology risk services.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-feenstra-group",
@@ -5426,6 +6033,44 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Website and legal identity not established from the sources read."
+  },
+  {
+    "id": "org-hollard-insurance",
+    "name": "Hollard Insurance",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-INS-ST",
+      "secondaryNodes": [
+        "FIN-INS-LIFE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Major South African insurer writing short-term and life insurance.",
+      "sourceUrl": "https://www.hollard.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.hollard.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Major South African insurer writing short-term and life insurance.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-horizon-capital-residential",
@@ -6481,6 +7126,45 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-kpmg-south-africa",
+    "name": "KPMG South Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-ACCT-AUDIT",
+      "secondaryNodes": [
+        "PRO-ACCT-TAX",
+        "PRO-CONSULT-STRAT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "KPMG South Africa describes itself as a professional services firm delivering audit and assurance, tax and advisory services.",
+      "sourceUrl": "https://assets.kpmg.com/content/dam/kpmgsites/za/pdf/2026/06/Transparency%20Report%20FY25_.pdf",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://assets.kpmg.com/content/dam/kpmgsites/za/pdf/2026/06/Transparency%20Report%20FY25_.pdf",
+        "type": "recruiter-supplied",
+        "evidence": "KPMG South Africa describes itself as a professional services firm delivering audit and assurance, tax and advisory services.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-kuehne-nagel-sa",
     "name": "Kuehne+Nagel South Africa",
     "legalName": "Kuehne + Nagel (Pty) Ltd",
@@ -6581,6 +7265,44 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Legal entity spelling and South African service lines need primary-source confirmation."
+  },
+  {
+    "id": "org-lactalis-south-africa",
+    "name": "Lactalis South Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD-DAIRY",
+      "secondaryNodes": [
+        "MFG-FOOD-BEV-JUICE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Lactalis South Africa states it manufactures dairy brands such as Parmalat, Melrose and Président across all dairy categories.",
+      "sourceUrl": "https://lactalis.co.za/our-story/at-a-glance",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://lactalis.co.za/our-story/at-a-glance",
+        "type": "recruiter-supplied",
+        "evidence": "Lactalis South Africa states it manufactures dairy brands such as Parmalat, Melrose and Président across all dairy categories.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-laser-logistics",
@@ -6772,6 +7494,44 @@
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
   },
   {
+    "id": "org-lexisnexis",
+    "name": "LexisNexis",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-LEGAL-FIRM",
+      "secondaryNodes": [
+        "ICT-DATA"
+      ],
+      "confidence": "probable",
+      "evidence": "Legal and business information and analytics provider; mapped to the legal services node as its closest fit.",
+      "sourceUrl": "https://www.lexisnexis.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.lexisnexis.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Legal and business information and analytics provider; mapped to the legal services node as its closest fit.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-lowveld-group",
     "name": "Lowveld Group",
     "legalName": "",
@@ -6874,6 +7634,42 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+  },
+  {
+    "id": "org-m-kopa",
+    "name": "M-Kopa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ENR-SOLAR-RES",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Pay-as-you-go smartphone and solar/energy access fintech operating in SA.",
+      "sourceUrl": "https://www.m-kopa.com/country/south-africa",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.m-kopa.com/country/south-africa",
+        "type": "recruiter-supplied",
+        "evidence": "Pay-as-you-go smartphone and solar/energy access fintech operating in SA.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-mainstream-sa",
@@ -7048,7 +7844,9 @@
     "id": "org-massmart",
     "name": "Massmart Holdings",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Massmart"
+    ],
     "website": "",
     "status": "needs-verification",
     "industries": [
@@ -7106,13 +7904,32 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.massmart.co.za/about-us/our-brands",
+        "type": "recruiter-supplied",
+        "evidence": "Massmart describes its retail and wholesale formats (Makro, Game, Builders, Jumbo) as holding leading shares in general merchandise, liquor, home improvement and wholesale food.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
       }
     ],
     "datasets": [
       "organizations"
     ],
-    "lastVerified": "2026-10-08",
-    "notes": "Current ownership structure after the 2022-2023 transactions is not established from the sources read. Also present in the Accounting & Finance dataset as Massmart."
+    "lastVerified": "2026-10-16",
+    "notes": "Current ownership structure after the 2022-2023 transactions is not established from the sources read. Also present in the Accounting & Finance dataset as Massmart.",
+    "taxonomy": {
+      "primaryNode": "RTL-GEN",
+      "secondaryNodes": [
+        "RTL-HOME-DIY",
+        "WHL-FMCG-CASH"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Massmart describes its retail and wholesale formats (Makro, Game, Builders, Jumbo) as holding leading shares in general merchandise, liquor, home improvement and wholesale food.",
+      "sourceUrl": "https://www.massmart.co.za/about-us/our-brands",
+      "checkedOn": "2026-10-16"
+    }
   },
   {
     "id": "org-meadow-feeds",
@@ -7519,6 +8336,45 @@
     "notes": ""
   },
   {
+    "id": "org-mpact",
+    "name": "Mpact",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FORESTP-PULP",
+      "secondaryNodes": [
+        "MFG-PLAS",
+        "MFG-PLAS-RECY"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Mpact describes itself as the largest paper and plastics packaging and recycling business in southern Africa.",
+      "sourceUrl": "https://www.mpact.co.za/about-us/corporate-profile/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.mpact.co.za/about-us/corporate-profile/",
+        "type": "recruiter-supplied",
+        "evidence": "Mpact describes itself as the largest paper and plastics packaging and recycling business in southern Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-mtn",
     "name": "MTN",
     "legalName": "",
@@ -7657,6 +8513,44 @@
     "notes": ""
   },
   {
+    "id": "org-multichoice",
+    "name": "MultiChoice",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-MKT-MEDIA",
+      "secondaryNodes": [
+        "TOU-ATTR"
+      ],
+      "confidence": "probable",
+      "evidence": "MultiChoice operates DStv pay-TV and SuperSport broadcasting across sub-Saharan Africa; mapped to the media/broadcasting node as the closest fit.",
+      "sourceUrl": "https://www.multichoice.com/companies-brands.php",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.multichoice.com/companies-brands.php",
+        "type": "recruiter-supplied",
+        "evidence": "MultiChoice operates DStv pay-TV and SuperSport broadcasting across sub-Saharan Africa; mapped to the media/broadcasting node as the closest fit.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-murray-roberts",
     "name": "Murray & Roberts",
     "legalName": "",
@@ -7725,6 +8619,42 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
+    "notes": ""
+  },
+  {
+    "id": "org-nampak",
+    "name": "Nampak",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-PLAS",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Nampak describes itself as the leading metals packaging company in South Africa, producing aluminium and tinplate beverage and food cans; the taxonomy has no dedicated metals-packaging node.",
+      "sourceUrl": "https://nampak.com/about/overview",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://nampak.com/about/overview",
+        "type": "recruiter-supplied",
+        "evidence": "Nampak describes itself as the leading metals packaging company in South Africa, producing aluminium and tinplate beverage and food cans; the taxonomy has no dedicated metals-packaging node.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
     "notes": ""
   },
   {
@@ -8111,6 +9041,44 @@
     "notes": ""
   },
   {
+    "id": "org-ntt-data",
+    "name": "NTT DATA",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "ICT-SI",
+      "secondaryNodes": [
+        "ICT-INFRA-DC"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Global systems integration and managed services firm with an SA data-centre footprint.",
+      "sourceUrl": "https://services.global.ntt/en-us/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://services.global.ntt/en-us/",
+        "type": "recruiter-supplied",
+        "evidence": "Global systems integration and managed services firm with an SA data-centre footprint.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-nutri-feeds",
     "name": "Nutri Feeds",
     "legalName": "",
@@ -8335,6 +9303,45 @@
     "notes": ""
   },
   {
+    "id": "org-oceana-group",
+    "name": "Oceana Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "AGR-FISH",
+      "secondaryNodes": [
+        "AGR-FISH-MARINE",
+        "MFG-FOOD-SEAFOOD"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Oceana describes itself as a global fishing and food processing company producing Lucky Star canned fish and fishmeal/fish oil.",
+      "sourceUrl": "https://www.oceana.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.oceana.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Oceana describes itself as a global fishing and food processing company producing Lucky Star canned fish and fishmeal/fish oil.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-old-mutual",
     "name": "Old Mutual",
     "legalName": "",
@@ -8542,6 +9549,42 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-outsurance",
+    "name": "OUTsurance",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-INS-ST",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Short-term/general insurance provider headquartered in SA.",
+      "sourceUrl": "https://www.outsurance.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.outsurance.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Short-term/general insurance provider headquartered in SA.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-pecs",
@@ -8782,6 +9825,123 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "No registered legal entity name is asserted: the sources read describe the business as Pele Green Energy Group without giving a registration. The only registered names sourced are the project special purpose vehicles, Phofu Solar Power Plant (RF) Pty Ltd and Sonvanger Solar Power Plant (RF) (Pty) Ltd. Locations are the sourced project sites rather than a head office, which the sources read do not state."
+  },
+  {
+    "id": "org-pepsico",
+    "name": "PepsiCo",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD",
+      "secondaryNodes": [
+        "MFG-FOOD-SNACK",
+        "MFG-FOOD-BEV-CSD"
+      ],
+      "confidence": "probable",
+      "evidence": "PepsiCo describes itself as one of the world's largest food and drink companies; mapped to the SA food and beverage manufacturing node.",
+      "sourceUrl": "https://www.pepsico.com/newsroom/press-releases/2019/pepsico-targets-african-growth-with-offer-to-acquire-pioneer-foods",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.pepsico.com/newsroom/press-releases/2019/pepsico-targets-african-growth-with-offer-to-acquire-pioneer-foods",
+        "type": "recruiter-supplied",
+        "evidence": "PepsiCo describes itself as one of the world's largest food and drink companies; mapped to the SA food and beverage manufacturing node.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-pepsico-south-africa-pioneer-foods",
+    "name": "PepsiCo South Africa / Pioneer Foods",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD",
+      "secondaryNodes": [
+        "MFG-FOOD-BEV-JUICE",
+        "MFG-FOOD-BAKERY"
+      ],
+      "confidence": "confirmed",
+      "evidence": "The Competition Tribunal records that PepsiCo acquired Pioneer Foods, a large South African producer of branded food and beverage products such as Sasko, Weet-Bix and Liqui-Fruit.",
+      "sourceUrl": "https://www.comptrib.co.za/info-library/press-room/competition-tribunal-sa-approves-one-of-pepsicos-largest-acquisitions-outside-us-with-wide-ranging-package-of-public-interest-conditions",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.comptrib.co.za/info-library/press-room/competition-tribunal-sa-approves-one-of-pepsicos-largest-acquisitions-outside-us-with-wide-ranging-package-of-public-interest-conditions",
+        "type": "recruiter-supplied",
+        "evidence": "The Competition Tribunal records that PepsiCo acquired Pioneer Foods, a large South African producer of branded food and beverage products such as Sasko, Weet-Bix and Liqui-Fruit.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-petrosa",
+    "name": "PetroSA",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PUB-SOC-ENERGY",
+      "secondaryNodes": [
+        "ENR-OIL-REF",
+        "ENR-OIL"
+      ],
+      "confidence": "confirmed",
+      "evidence": "PetroSA states it is the wholly state-owned national oil company of South Africa and a subsidiary of CEF.",
+      "sourceUrl": "https://www.petrosa.co.za/about.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.petrosa.co.za/about.html",
+        "type": "recruiter-supplied",
+        "evidence": "PetroSA states it is the wholly state-owned national oil company of South Africa and a subsidiary of CEF.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-peyper-group",
@@ -9083,6 +10243,42 @@
     "notes": "Also present in the Accounting & Finance dataset as PepsiCo South Africa / Pioneer Foods."
   },
   {
+    "id": "org-polyoak-packaging",
+    "name": "Polyoak Packaging",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-PLAS-RIGID",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Polyoak Packaging states it specialises in the design and manufacture of rigid plastic packaging for food, beverage and industrial applications.",
+      "sourceUrl": "https://polyoakpackaging.co.za/about-us/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://polyoakpackaging.co.za/about-us/",
+        "type": "recruiter-supplied",
+        "evidence": "Polyoak Packaging states it specialises in the design and manufacture of rigid plastic packaging for food, beverage and industrial applications.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-power-group",
     "name": "Power Group",
     "legalName": "",
@@ -9344,6 +10540,84 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-pwc",
+    "name": "PwC",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-ACCT-AUDIT",
+      "secondaryNodes": [
+        "PRO-ACCT-TAX",
+        "PRO-CONSULT-STRAT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "PwC's African footprint page describes its network delivering assurance, advisory and tax services, with PwC South Africa assurance leadership based in Johannesburg.",
+      "sourceUrl": "https://www.pwc.com/na/en/about-us/african-footprint.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.pwc.com/na/en/about-us/african-footprint.html",
+        "type": "recruiter-supplied",
+        "evidence": "PwC's African footprint page describes its network delivering assurance, advisory and tax services, with PwC South Africa assurance leadership based in Johannesburg.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-pwc-south-africa",
+    "name": "PwC South Africa",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "PRO-ACCT-AUDIT",
+      "secondaryNodes": [
+        "PRO-ACCT-TAX",
+        "PRO-CONSULT-STRAT"
+      ],
+      "confidence": "confirmed",
+      "evidence": "PwC's South Africa site lists assurance, consulting, tax and legal services among the service lines of its South African member firm.",
+      "sourceUrl": "https://www.pwc.com/za",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.pwc.com/za",
+        "type": "recruiter-supplied",
+        "evidence": "PwC's South Africa site lists assurance, consulting, tax and legal services among the service lines of its South African member firm.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-quantum-foods",
@@ -10324,6 +11598,78 @@
     "notes": "The centre count moved from 27 at December 2024 to 28 at December 2025. No company website was established from the sources read; the audited results were read on the JSE SENS service."
   },
   {
+    "id": "org-rmb-rand-merchant-bank",
+    "name": "RMB - Rand Merchant Bank",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-BANK-CORP",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Corporate and investment banking arm of FirstRand.",
+      "sourceUrl": "https://www.rmb.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.rmb.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Corporate and investment banking arm of FirstRand.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-sab-ab-inbev-newlands-brewery",
+    "name": "SAB / AB InBev - Newlands Brewery",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-FOOD-BREW",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Newlands Brewery states that it and The South African Breweries Limited brew beer using water, malt, maize and hops at the Cape Town brewery.",
+      "sourceUrl": "https://newlandsbrewery.co.za/behind-our-beers/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://newlandsbrewery.co.za/behind-our-beers/",
+        "type": "recruiter-supplied",
+        "evidence": "Newlands Brewery states that it and The South African Breweries Limited brew beer using water, malt, maize and hops at the Cape Town brewery.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-sana-properties",
     "name": "Sana Properties",
     "legalName": "",
@@ -10402,6 +11748,81 @@
         "url": "https://www.sanlam.com/sanlam-at-a-glance",
         "type": "recruiter-supplied",
         "evidence": "Sanlam describes itself as the largest insurer in Africa and an integrated financial services group, with life insurance, long-term savings, investment and (via Santam) short-term insurance.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-santam-insurance",
+    "name": "Santam Insurance",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-INS-ST",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "South Africa's largest short-term/general insurer.",
+      "sourceUrl": "https://www.santam.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.santam.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "South Africa's largest short-term/general insurer.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-sasol",
+    "name": "Sasol",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "MFG-CHEM",
+      "secondaryNodes": [
+        "MFG-CHEM-CTL-SYNFUEL",
+        "ENR-OIL-REF"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Sasol describes itself as an international integrated chemicals and energy company producing liquid fuels and chemicals.",
+      "sourceUrl": "https://www.sasol.com/overview",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.sasol.com/overview",
+        "type": "recruiter-supplied",
+        "evidence": "Sasol describes itself as an international integrated chemicals and energy company producing liquid fuels and chemicals.",
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
@@ -10835,6 +12256,44 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Acquired into the CCH platform in 2023."
+  },
+  {
+    "id": "org-shoprite",
+    "name": "Shoprite",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "RTL-GROC-HYPER",
+      "secondaryNodes": [
+        "RTL-GROC-VALUE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave.",
+      "sourceUrl": "https://www.shopriteholdings.co.za/group.html",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.shopriteholdings.co.za/group.html",
+        "type": "recruiter-supplied",
+        "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-shoprite-holdings",
@@ -12087,6 +13546,119 @@
     "notes": ""
   },
   {
+    "id": "org-telesure-investment-holdings-tih",
+    "name": "Telesure Investment Holdings (TIH)",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-INS-ST",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Short-term insurance group (Budget, Auto & General, 1st for Women).",
+      "sourceUrl": "https://www.telesure.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.telesure.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Short-term insurance group (Budget, Auto & General, 1st for Women).",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-tfg-the-foschini-group",
+    "name": "TFG (The Foschini Group)",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "RTL-GEN-APPAREL",
+      "secondaryNodes": [
+        "RTL-GEN-CREDIT",
+        "RTL-HOME-FURN"
+      ],
+      "confidence": "confirmed",
+      "evidence": "TFG describes itself as a diversified fashion, lifestyle and speciality retail group centred on apparel brands alongside jewellery, homeware and furniture, with credit accounts in TFG Africa.",
+      "sourceUrl": "https://tfglimited.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://tfglimited.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "TFG describes itself as a diversified fashion, lifestyle and speciality retail group centred on apparel brands alongside jewellery, homeware and furniture, with credit accounts in TFG Africa.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
+    "id": "org-the-spar-group",
+    "name": "The SPAR Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "RTL-GROC-VOLUNT",
+      "secondaryNodes": [
+        "WHL-FMCG"
+      ],
+      "confidence": "confirmed",
+      "evidence": "The SPAR Group describes itself as a wholesale, warehousing and distribution business serving independently owned retailers through a voluntary trading model.",
+      "sourceUrl": "https://thespargroup.com/about-us/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://thespargroup.com/about-us/",
+        "type": "recruiter-supplied",
+        "evidence": "The SPAR Group describes itself as a wholesale, warehousing and distribution business serving independently owned retailers through a voluntary trading model.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-the-urban-collective",
     "name": "The Urban Collective",
     "legalName": "",
@@ -13191,6 +14763,45 @@
     "notes": "Also present in the Accounting & Finance dataset as WBHO Construction - Cape Division."
   },
   {
+    "id": "org-wbho-construction-cape-division",
+    "name": "WBHO Construction - Cape Division",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "CON-CONTR",
+      "secondaryNodes": [
+        "CON-CONTR-BUILD",
+        "CON-CONTR-CIV"
+      ],
+      "confidence": "confirmed",
+      "evidence": "WBHO states its activities cover building construction, civil engineering and roads and earthworks, with a Cape Town office.",
+      "sourceUrl": "https://www.wbho.co.za/about-us/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.wbho.co.za/about-us/",
+        "type": "recruiter-supplied",
+        "evidence": "WBHO states its activities cover building construction, civil engineering and roads and earthworks, with a Cape Town office.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
+  },
+  {
     "id": "org-werner-stander-development",
     "name": "Werner Stander Development",
     "legalName": "",
@@ -13241,6 +14852,42 @@
     ],
     "lastVerified": "2026-10-09",
     "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+  },
+  {
+    "id": "org-wesbank",
+    "name": "WesBank",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "FIN-LEND-VEH",
+      "secondaryNodes": [],
+      "confidence": "confirmed",
+      "evidence": "Vehicle and asset finance provider (FirstRand group).",
+      "sourceUrl": "https://www.wesbank.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.wesbank.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Vehicle and asset finance provider (FirstRand group).",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
+    "notes": ""
   },
   {
     "id": "org-westcap-properties",
@@ -13489,6 +15136,44 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
+    "notes": ""
+  },
+  {
+    "id": "org-woolworths",
+    "name": "Woolworths",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "taxonomy": {
+      "primaryNode": "RTL-GROC-HYPER",
+      "secondaryNodes": [
+        "RTL-GEN-APPAREL"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Woolworths Holdings reports that the majority of group turnover comes from Food, with Apparel, Beauty and Home making up most of the remainder.",
+      "sourceUrl": "https://www.woolworthsholdings.co.za/",
+      "checkedOn": "2026-10-16"
+    },
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://www.woolworthsholdings.co.za/",
+        "type": "recruiter-supplied",
+        "evidence": "Woolworths Holdings reports that the majority of group turnover comes from Food, with Apparel, Beauty and Home making up most of the remainder.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      }
+    ],
+    "datasets": [
+      "import"
+    ],
+    "lastVerified": "2026-10-16",
     "notes": ""
   },
   {
