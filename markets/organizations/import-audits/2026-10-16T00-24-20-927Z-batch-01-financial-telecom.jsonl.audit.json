@@ -1,0 +1,23 @@
+{
+  "batch": "batch-01-financial-telecom.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-10-16T00:24:20.926Z",
+  "type": "companies",
+  "read": 12,
+  "newOrganizations": 12,
+  "updatedOrganizations": 0,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 0,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

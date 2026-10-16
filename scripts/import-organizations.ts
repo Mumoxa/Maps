@@ -103,9 +103,12 @@ function main() {
       warnings: issues.filter((issue) => issue.severity === 'warning').length,
     },
   }
-  mkdirSync(resolve(DIR, 'batches'), { recursive: true })
+  // Audits live in import-audits/, not batches/: the market-data repository scans
+  // every markets/*/batches directory for MarketBatch files, and an audit record
+  // is not a batch.
+  mkdirSync(resolve(DIR, 'import-audits'), { recursive: true })
   const stamp = new Date().toISOString().replace(/[:.]/g, '-')
-  writeFileSync(resolve(DIR, 'batches', `${stamp}-${basename(file)}.audit.json`), `${JSON.stringify(audit, null, 2)}\n`, 'utf8')
+  writeFileSync(resolve(DIR, 'import-audits', `${stamp}-${basename(file)}.audit.json`), `${JSON.stringify(audit, null, 2)}\n`, 'utf8')
 
   process.stdout.write(`${JSON.stringify({ mode: 'committed', ...summary, qualityAfterCommit: audit.qualityAfterCommit }, null, 2)}\n`)
   if (audit.qualityAfterCommit.errors > 0) {

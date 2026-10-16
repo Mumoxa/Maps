@@ -97,7 +97,11 @@ export function CompanyInspector({
                   {dossier.taxonomy.map((entry) => (
                     <li key={`${entry.industryId}-${entry.path}`}>
                       {entry.path}
-                      <span className="assoc-taxonomy-source">placed via the Maps industry “{entry.industryName}”</span>
+                      <span className="assoc-taxonomy-source">
+                        {entry.source === 'taxonomy'
+                          ? 'directly classified in the national taxonomy'
+                          : `placed via the Maps industry “${entry.industryName}”`}
+                      </span>
                     </li>
                   ))}
                 </ul>

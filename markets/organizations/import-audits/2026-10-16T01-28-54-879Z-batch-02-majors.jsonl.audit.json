@@ -1,0 +1,23 @@
+{
+  "batch": "batch-02-majors.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-10-16T01:28:54.879Z",
+  "type": "companies",
+  "read": 45,
+  "newOrganizations": 44,
+  "updatedOrganizations": 1,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 1,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

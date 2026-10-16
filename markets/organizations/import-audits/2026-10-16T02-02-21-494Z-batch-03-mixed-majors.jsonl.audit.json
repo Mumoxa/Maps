@@ -1,0 +1,23 @@
+{
+  "batch": "batch-03-mixed-majors.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-10-16T02:02:21.494Z",
+  "type": "companies",
+  "read": 44,
+  "newOrganizations": 41,
+  "updatedOrganizations": 3,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 3,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

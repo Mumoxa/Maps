@@ -233,6 +233,11 @@ function taxonomyClusters(
 }
 
 function industryLinkEvidence(organization: Organization, industryId: string): { evidence: string; sourceUrl: string } {
+  // A direct taxonomy placement has no Maps industry behind it, so its own
+  // evidenced link is the source rather than an industry link that never existed.
+  if (industryId === '' && organization.taxonomy) {
+    return { evidence: organization.taxonomy.evidence, sourceUrl: organization.taxonomy.sourceUrl }
+  }
   const link = organization.industries.find((entry) => entry.industryId === industryId)
   return { evidence: link?.evidence ?? '', sourceUrl: link?.sourceUrl ?? '' }
 }

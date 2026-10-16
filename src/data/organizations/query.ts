@@ -66,8 +66,8 @@ export interface CompanyDossier {
     relationships: { type: string; counterparty: string; evidence: string; sourceUrl: string; confidence: Confidence }[]
   }
   industries: { id: string; name: string; primary: boolean; pocket: string; evidence: string; sourceUrl: string }[]
-  /** National taxonomy placement, derived through the industry crosswalk. */
-  taxonomy: { industryId: string; industryName: string; macroSector: string; path: string }[]
+  /** National taxonomy placement: a direct link where one exists, otherwise derived through the industry crosswalk. */
+  taxonomy: { industryId: string; industryName: string; source: 'industry' | 'taxonomy'; macroSector: string; path: string }[]
   macroSectors: string[]
   capabilities: DossierCapability[]
   locations: { city: string; province: string; sourceUrl: string }[]
@@ -152,7 +152,10 @@ export function companyDossier(index: OrganizationIndex, organizationId: string)
     })),
     taxonomy: organizationTaxonomy(organization).entries.map((entry) => ({
       industryId: entry.industryId,
-      industryName: index.industryById.get(entry.industryId)?.name ?? entry.industryId,
+      industryName: entry.source === 'taxonomy'
+        ? entry.node.name
+        : index.industryById.get(entry.industryId)?.name ?? entry.industryId,
+      source: entry.source,
       macroSector: entry.path[0]?.name ?? '',
       path: entry.path.map((node) => node.name).join(' > '),
     })),

@@ -14,8 +14,11 @@ import type { TaxonomyNode } from '../taxonomy/types'
 import type { Organization } from './types'
 
 export interface TaxonomyPlacementEntry {
+  /** Maps industry that produced this placement, or '' for a direct taxonomy link. */
   industryId: string
-  /** The national node this Maps industry resolves to. */
+  /** Whether the placement came from a direct taxonomy link or the industry crosswalk. */
+  source: 'industry' | 'taxonomy'
+  /** The national node this company resolves to. */
   node: TaxonomyNode
   /** L1 macro-sector down to `node`, inclusive. */
   path: TaxonomyNode[]
@@ -55,19 +58,43 @@ function placementFor(organization: Organization): OrganizationTaxonomy {
   const macroSectorIds: string[] = []
   const seenMacros = new Set<string>()
 
+  const addNode = (node: TaxonomyNode, industryId: string, source: 'industry' | 'taxonomy') => {
+    const path = resolveSectorPath(node.id)
+    entries.push({ industryId, source, node, path })
+    if (!seenNodes.has(node.id)) {
+      seenNodes.add(node.id)
+      nodes.push(node)
+    }
+    const macro = path[0]
+    if (macro && !seenMacros.has(macro.id)) {
+      seenMacros.add(macro.id)
+      macroSectorIds.push(macro.id)
+    }
+  }
+
+  // A direct taxonomy link names the national node itself, so it is the
+  // strongest placement and is used whenever present. The industry crosswalk is
+  // only consulted when the company carries no direct placement, so the two
+  // mechanisms never blend for one company.
+  const direct = organization.taxonomy
+  if (direct && direct.primaryNode) {
+    for (const nodeId of [direct.primaryNode, ...direct.secondaryNodes]) {
+      const node = getTaxonomyNode(nodeId)
+      if (node) addNode(node, '', 'taxonomy')
+    }
+    if (entries.length > 0) {
+      return {
+        entries,
+        nodes,
+        macroSectorIds,
+        labels: entries.map((entry) => entry.path.map((node) => node.name).join(' > ')),
+      }
+    }
+  }
+
   for (const link of organization.industries) {
     for (const node of nodesByIndustry.get(link.industryId) ?? []) {
-      const path = resolveSectorPath(node.id)
-      entries.push({ industryId: link.industryId, node, path })
-      if (!seenNodes.has(node.id)) {
-        seenNodes.add(node.id)
-        nodes.push(node)
-      }
-      const macro = path[0]
-      if (macro && !seenMacros.has(macro.id)) {
-        seenMacros.add(macro.id)
-        macroSectorIds.push(macro.id)
-      }
+      addNode(node, link.industryId, 'industry')
     }
   }
 
@@ -90,7 +117,9 @@ const placementByOrganization = new Map<string, OrganizationTaxonomy>()
 export function organizationTaxonomy(organization: Organization): OrganizationTaxonomy {
   const cached = placementByOrganization.get(organization.id)
   if (cached) return cached
-  const placement = organization.industries.length === 0 ? EMPTY_TAXONOMY : placementFor(organization)
+  const placement = organization.industries.length === 0 && !organization.taxonomy
+    ? EMPTY_TAXONOMY
+    : placementFor(organization)
   placementByOrganization.set(organization.id, placement)
   return placement
 }
