@@ -8,11 +8,31 @@
     "distinctEmployerNames": 1397,
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 176,
-    "distinctOrganizationEntries": 1358,
-    "curatedCompanyMatches": 10,
-    "unverifiedDatasetOnly": 1348
+    "distinctOrganizationEntries": 1357,
+    "curatedCompanyMatches": 22,
+    "unverifiedDatasetOnly": 1335
   },
   "employers": [
+    {
+      "organizationId": "org-absa",
+      "name": "Absa",
+      "contactCount": 283,
+      "sourceNames": [
+        "Absa",
+        "Absa Bank",
+        "Absa CIB",
+        "Absa Group",
+        "Absa Group Limited"
+      ]
+    },
+    {
+      "organizationId": "org-capitec",
+      "name": "Capitec",
+      "contactCount": 174,
+      "sourceNames": [
+        "Capitec"
+      ]
+    },
     {
       "organizationId": "org-dataset:@team dynamics",
       "name": "@Team Dynamics",
@@ -115,18 +135,6 @@
       "contactCount": 1,
       "sourceNames": [
         "ABF Sugar"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:absa",
-      "name": "Absa",
-      "contactCount": 283,
-      "sourceNames": [
-        "Absa",
-        "Absa Bank",
-        "Absa CIB",
-        "Absa Group",
-        "Absa Group Limited"
       ]
     },
     {
@@ -1732,14 +1740,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:capitec",
-      "name": "Capitec",
-      "contactCount": 174,
-      "sourceNames": [
-        "Capitec"
-      ]
-    },
-    {
       "organizationId": "org-dataset:cardinal insurance management systems",
       "name": "Cardinal Insurance Management Systems",
       "contactCount": 1,
@@ -2804,17 +2804,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:discovery",
-      "name": "Discovery",
-      "contactCount": 56,
-      "sourceNames": [
-        "Discovery Bank",
-        "Discovery Health",
-        "Discovery Limited",
-        "DISCOVERY VITALITY"
-      ]
-    },
-    {
       "organizationId": "org-dataset:diverse consulting solutions",
       "name": "Diverse Consulting Solutions",
       "contactCount": 1,
@@ -3620,15 +3609,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Flume Digital Marketing"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:fnb",
-      "name": "FNB",
-      "contactCount": 262,
-      "sourceNames": [
-        "FNB",
-        "FNB South Africa"
       ]
     },
     {
@@ -4685,15 +4665,6 @@
       "contactCount": 4,
       "sourceNames": [
         "Introstat Pty Ltd"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:investec",
-      "name": "Investec",
-      "contactCount": 64,
-      "sourceNames": [
-        "Investec",
-        "Investec Asset Management"
       ]
     },
     {
@@ -5946,14 +5917,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:momentum group",
-      "name": "Momentum Group",
-      "contactCount": 42,
-      "sourceNames": [
-        "Momentum Group Limited"
-      ]
-    },
-    {
       "organizationId": "org-dataset:momentum health",
       "name": "Momentum Health",
       "contactCount": 1,
@@ -5983,14 +5946,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Momentum Investments Group"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:momentum metropolitan",
-      "name": "Momentum Metropolitan",
-      "contactCount": 34,
-      "sourceNames": [
-        "Momentum"
       ]
     },
     {
@@ -6135,18 +6090,6 @@
       "contactCount": 1,
       "sourceNames": [
         "MSD South Africa"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:mtn",
-      "name": "MTN",
-      "contactCount": 90,
-      "sourceNames": [
-        "MoMo from MTN",
-        "MTN",
-        "MTN Business South Africa",
-        "MTN Group",
-        "MTN South Africa"
       ]
     },
     {
@@ -6347,15 +6290,6 @@
       "contactCount": 5,
       "sourceNames": [
         "NEC XON"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:nedbank",
-      "name": "Nedbank",
-      "contactCount": 194,
-      "sourceNames": [
-        "Nedbank",
-        "Nedbank Corporate and Investment Banking"
       ]
     },
     {
@@ -6717,19 +6651,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Ogilvy South Africa"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:old mutual",
-      "name": "Old Mutual",
-      "contactCount": 254,
-      "sourceNames": [
-        "Old Mutual",
-        "Old Mutual Insure",
-        "Old Mutual Investment Group",
-        "Old Mutual Limited",
-        "Old Mutual South Africa",
-        "Old Mutual Wealth"
       ]
     },
     {
@@ -8165,18 +8086,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:sanlam",
-      "name": "Sanlam",
-      "contactCount": 47,
-      "sourceNames": [
-        "Glacier by Sanlam",
-        "Sanlam",
-        "Sanlam Corporate",
-        "Sanlam Fintech",
-        "Sanlam Investments"
-      ]
-    },
-    {
       "organizationId": "org-dataset:sanlam private wealth",
       "name": "Sanlam Private Wealth",
       "contactCount": 1,
@@ -8945,16 +8854,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Stanchion Payment Solutions"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:standard bank",
-      "name": "Standard Bank",
-      "contactCount": 287,
-      "sourceNames": [
-        "Standard Bank",
-        "Standard Bank Group",
-        "Standard Bank South Africa"
       ]
     },
     {
@@ -10321,17 +10220,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:vodacom",
-      "name": "Vodacom",
-      "contactCount": 121,
-      "sourceNames": [
-        "Vodacom",
-        "Vodacom Business - South Africa",
-        "Vodacom Financial Services",
-        "Vodacom Group"
-      ]
-    },
-    {
       "organizationId": "org-dataset:vodacom congo",
       "name": "Vodacom Congo",
       "contactCount": 1,
@@ -10837,6 +10725,26 @@
       ]
     },
     {
+      "organizationId": "org-discovery",
+      "name": "Discovery",
+      "contactCount": 56,
+      "sourceNames": [
+        "Discovery Bank",
+        "Discovery Health",
+        "Discovery Limited",
+        "DISCOVERY VITALITY"
+      ]
+    },
+    {
+      "organizationId": "org-fnb",
+      "name": "FNB",
+      "contactCount": 262,
+      "sourceNames": [
+        "FNB",
+        "FNB South Africa"
+      ]
+    },
+    {
       "organizationId": "org-growthpoint-properties",
       "name": "Growthpoint Properties",
       "contactCount": 1,
@@ -10853,11 +10761,63 @@
       ]
     },
     {
+      "organizationId": "org-investec",
+      "name": "Investec",
+      "contactCount": 64,
+      "sourceNames": [
+        "Investec",
+        "Investec Asset Management"
+      ]
+    },
+    {
+      "organizationId": "org-momentum-group",
+      "name": "Momentum Group",
+      "contactCount": 73,
+      "sourceNames": [
+        "Momentum",
+        "Momentum Group Limited"
+      ]
+    },
+    {
+      "organizationId": "org-mtn",
+      "name": "MTN",
+      "contactCount": 90,
+      "sourceNames": [
+        "MoMo from MTN",
+        "MTN",
+        "MTN Business South Africa",
+        "MTN Group",
+        "MTN South Africa"
+      ]
+    },
+    {
+      "organizationId": "org-nedbank",
+      "name": "Nedbank",
+      "contactCount": 194,
+      "sourceNames": [
+        "Nedbank",
+        "Nedbank Corporate and Investment Banking"
+      ]
+    },
+    {
       "organizationId": "org-obaro",
       "name": "Obaro",
       "contactCount": 1,
       "sourceNames": [
         "OBARO"
+      ]
+    },
+    {
+      "organizationId": "org-old-mutual",
+      "name": "Old Mutual",
+      "contactCount": 254,
+      "sourceNames": [
+        "Old Mutual",
+        "Old Mutual Insure",
+        "Old Mutual Investment Group",
+        "Old Mutual Limited",
+        "Old Mutual South Africa",
+        "Old Mutual Wealth"
       ]
     },
     {
@@ -10877,11 +10837,33 @@
       ]
     },
     {
+      "organizationId": "org-sanlam",
+      "name": "Sanlam",
+      "contactCount": 47,
+      "sourceNames": [
+        "Glacier by Sanlam",
+        "Sanlam",
+        "Sanlam Corporate",
+        "Sanlam Fintech",
+        "Sanlam Investments"
+      ]
+    },
+    {
       "organizationId": "org-senwes",
       "name": "Senwes",
       "contactCount": 2,
       "sourceNames": [
         "Senwes"
+      ]
+    },
+    {
+      "organizationId": "org-standard-bank",
+      "name": "Standard Bank",
+      "contactCount": 287,
+      "sourceNames": [
+        "Standard Bank",
+        "Standard Bank Group",
+        "Standard Bank South Africa"
       ]
     },
     {
@@ -10906,6 +10888,17 @@
       "contactCount": 3,
       "sourceNames": [
         "VKB Group"
+      ]
+    },
+    {
+      "organizationId": "org-vodacom",
+      "name": "Vodacom",
+      "contactCount": 121,
+      "sourceNames": [
+        "Vodacom",
+        "Vodacom Business - South Africa",
+        "Vodacom Financial Services",
+        "Vodacom Group"
       ]
     },
     {
