@@ -1,6 +1,7 @@
 import Fuse from 'fuse.js'
 import type { DataBundle, TalentProfile } from './types'
 import { adaptAccountantCandidates, adaptCreditRiskProfiles, adaptDataScienceCandidates, adaptHackathonCandidates, adaptSalesforceProfiles } from './marketData/adapters'
+import { normalizeIndustry } from './industryNormalization'
 import { accountantCandidates } from './accountantsPeople'
 import { dataScienceCandidates } from './dataSciencePeople'
 import { hackathonCandidates } from './hackathonPeople'
@@ -58,6 +59,7 @@ export interface TalentSearchFilters {
   location?: string
   seniority?: string
   skill?: string
+  industry?: string // Normalized industry (e.g., "Property Development & Investment")
   // Recruitment-sourced profile filters (from attributes)
   caConfidence?: 'CONFIRMED' | 'UNCONFIRMED' | 'HIGH' | 'MEDIUM' | 'LOW'
   projectFinanceEvidence?: boolean // Has evidence of project/development finance
@@ -86,6 +88,13 @@ export function filterTalentProfiles(profiles: TalentProfile[], filters: TalentS
 
     // Recruitment-context filters (from attributes field)
     const attrs = profile.attributes || {}
+
+    // Industry filter (normalized)
+    if (filters.industry) {
+      const rawIndustry = (attrs.current_industry || '').toString()
+      const normalized = normalizeIndustry(rawIndustry)
+      if (normalized !== filters.industry) return false
+    }
 
     if (filters.caConfidence) {
       // Map confidence field names: attributes might have 'confidence' or designation_status
@@ -145,6 +154,7 @@ export function searchTalentProfiles(
  */
 export function extractTalentFacets(profiles: TalentProfile[]) {
   const facets = {
+    industries: new Map<string, number>(),
     caConfidence: new Set<string>(),
     locationConfidence: new Set<string>(),
     researchTier: new Set<string>(),
@@ -154,6 +164,11 @@ export function extractTalentFacets(profiles: TalentProfile[]) {
 
   profiles.forEach((profile) => {
     const attrs = profile.attributes || {}
+
+    // Industry normalization
+    const rawIndustry = (attrs.current_industry || '').toString()
+    const normalized = normalizeIndustry(rawIndustry)
+    facets.industries.set(normalized, (facets.industries.get(normalized) || 0) + 1)
 
     const conf = (attrs.confidence || attrs.designation_status || '').toString().trim()
     if (conf) facets.caConfidence.add(conf)
@@ -176,6 +191,9 @@ export function extractTalentFacets(profiles: TalentProfile[]) {
   })
 
   return {
+    industries: Object.fromEntries(
+      Array.from(facets.industries.entries()).sort((a, b) => b[1] - a[1])
+    ),
     caConfidenceOptions: Array.from(facets.caConfidence).sort(),
     locationConfidenceOptions: Array.from(facets.locationConfidence).sort(),
     researchTierOptions: Array.from(facets.researchTier).sort(),
