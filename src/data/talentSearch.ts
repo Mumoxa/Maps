@@ -58,6 +58,12 @@ export interface TalentSearchFilters {
   location?: string
   seniority?: string
   skill?: string
+  // Recruitment-sourced profile filters (from attributes)
+  caConfidence?: 'CONFIRMED' | 'UNCONFIRMED' | 'HIGH' | 'MEDIUM' | 'LOW'
+  projectFinanceEvidence?: boolean // Has evidence of project/development finance
+  locationConfidence?: 'HIGH' | 'UNCONFIRMED' // Western Cape vs unknown
+  researchTier?: 'A' | 'B' | 'C' // From designation_status
+  recruitmentBatch?: string // batch_id from attributes
 }
 
 function includesIgnoreCase(value: string, query?: string) {
@@ -77,6 +83,45 @@ export function filterTalentProfiles(profiles: TalentProfile[], filters: TalentS
     if (filters.location && !includesIgnoreCase(profile.locationLabel, filters.location)) return false
     if (filters.seniority && profile.seniority !== filters.seniority) return false
     if (filters.skill && !arrayIncludesIgnoreCase(profile.skills, filters.skill) && !includesIgnoreCase(profile.summary, filters.skill)) return false
+
+    // Recruitment-context filters (from attributes field)
+    const attrs = profile.attributes || {}
+
+    if (filters.caConfidence) {
+      // Map confidence field names: attributes might have 'confidence' or designation_status
+      const confidence = (attrs.confidence || attrs.designation_status || '').toString().toUpperCase()
+      if (!confidence.includes(filters.caConfidence)) return false
+    }
+
+    if (filters.projectFinanceEvidence !== undefined) {
+      const hasEvidence = (attrs.project_finance_evidence || '')
+        .toString()
+        .toLowerCase()
+        .includes('not established') === false &&
+        (attrs.project_finance_evidence || '').toString().trim().length > 0
+      if (filters.projectFinanceEvidence !== hasEvidence) return false
+    }
+
+    if (filters.locationConfidence) {
+      const locConf = (attrs.location_confidence || '').toString().toUpperCase()
+      if (!locConf.includes(filters.locationConfidence)) return false
+    }
+
+    if (filters.researchTier) {
+      const tier = (attrs.designation_status || '').toString().toUpperCase()
+      const tierMap: Record<string, string> = {
+        'A': 'CONFIRMED',
+        'B': 'UNCONFIRMED',
+        'C': 'UNCONFIRMED',
+      }
+      if (tier !== tierMap[filters.researchTier]) return false
+    }
+
+    if (filters.recruitmentBatch) {
+      const batch = (attrs.batch_id || '').toString()
+      if (batch !== filters.recruitmentBatch) return false
+    }
+
     return true
   })
 }
@@ -92,4 +137,49 @@ export function searchTalentProfiles(
     : allProfiles
 
   return filterTalentProfiles(baseResults, filters)
+}
+
+/**
+ * Extract available facet values from talent profiles for building filter UIs.
+ * Used by /accounting-finance and /talent-search to populate dropdown/checkbox filters.
+ */
+export function extractTalentFacets(profiles: TalentProfile[]) {
+  const facets = {
+    caConfidence: new Set<string>(),
+    locationConfidence: new Set<string>(),
+    researchTier: new Set<string>(),
+    recruitmentBatches: new Set<string>(),
+    projectFinanceEvidenceCount: 0,
+  }
+
+  profiles.forEach((profile) => {
+    const attrs = profile.attributes || {}
+
+    const conf = (attrs.confidence || attrs.designation_status || '').toString().trim()
+    if (conf) facets.caConfidence.add(conf)
+
+    const locConf = (attrs.location_confidence || '').toString().trim()
+    if (locConf) facets.locationConfidence.add(locConf)
+
+    const tier = (attrs.designation_status || '').toString().trim()
+    if (tier) facets.researchTier.add(tier)
+
+    const batch = (attrs.batch_id || '').toString().trim()
+    if (batch) facets.recruitmentBatches.add(batch)
+
+    const hasEvidence = (attrs.project_finance_evidence || '')
+      .toString()
+      .toLowerCase()
+      .includes('not established') === false &&
+      (attrs.project_finance_evidence || '').toString().trim().length > 0
+    if (hasEvidence) facets.projectFinanceEvidenceCount++
+  })
+
+  return {
+    caConfidenceOptions: Array.from(facets.caConfidence).sort(),
+    locationConfidenceOptions: Array.from(facets.locationConfidence).sort(),
+    researchTierOptions: Array.from(facets.researchTier).sort(),
+    recruitmentBatchOptions: Array.from(facets.recruitmentBatches).sort(),
+    projectFinanceEvidenceCount: facets.projectFinanceEvidenceCount,
+  }
 }
