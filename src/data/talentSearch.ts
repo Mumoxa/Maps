@@ -66,6 +66,7 @@ export interface TalentSearchFilters {
   locationConfidence?: 'HIGH' | 'UNCONFIRMED' // Western Cape vs unknown
   researchTier?: 'A' | 'B' | 'C' // From designation_status
   recruitmentBatch?: string // batch_id from attributes
+  searchName?: string // Recruitment search campaign name (e.g., "SLM - Head of Finance")
 }
 
 function includesIgnoreCase(value: string, query?: string) {
@@ -131,6 +132,12 @@ export function filterTalentProfiles(profiles: TalentProfile[], filters: TalentS
       if (batch !== filters.recruitmentBatch) return false
     }
 
+    // Search campaign filter (SLM - Head of Finance, etc.)
+    if (filters.searchName) {
+      const searchName = (attrs.search_name || '').toString()
+      if (!includesIgnoreCase(searchName, filters.searchName)) return false
+    }
+
     return true
   })
 }
@@ -159,6 +166,7 @@ export function extractTalentFacets(profiles: TalentProfile[]) {
     locationConfidence: new Set<string>(),
     researchTier: new Set<string>(),
     recruitmentBatches: new Set<string>(),
+    searchNames: new Set<string>(),
     projectFinanceEvidenceCount: 0,
   }
 
@@ -182,6 +190,9 @@ export function extractTalentFacets(profiles: TalentProfile[]) {
     const batch = (attrs.batch_id || '').toString().trim()
     if (batch) facets.recruitmentBatches.add(batch)
 
+    const searchName = (attrs.search_name || '').toString().trim()
+    if (searchName) facets.searchNames.add(searchName)
+
     const hasEvidence = (attrs.project_finance_evidence || '')
       .toString()
       .toLowerCase()
@@ -198,6 +209,7 @@ export function extractTalentFacets(profiles: TalentProfile[]) {
     locationConfidenceOptions: Array.from(facets.locationConfidence).sort(),
     researchTierOptions: Array.from(facets.researchTier).sort(),
     recruitmentBatchOptions: Array.from(facets.recruitmentBatches).sort(),
+    searchNameOptions: Array.from(facets.searchNames).sort(),
     projectFinanceEvidenceCount: facets.projectFinanceEvidenceCount,
   }
 }
