@@ -138,6 +138,7 @@ def to_record(row):
         "sourceUrls": clean_list(row.get("source_urls")),
         "dateLastVerified": row.get("date_last_verified") or "",
         "notes": row.get("notes") or "",
+        "attributes": row.get("attributes") or {},
     }
 
 
