@@ -11,7 +11,8 @@ export const CORE_INDUSTRIES = {
   PROPERTY_FINANCE: 'Property Finance & Banking',
   CONSTRUCTION: 'Construction & Engineering',
   INFRASTRUCTURE: 'Infrastructure & Renewables',
-  REAL_ESTATE_SERVICES: 'Real Estate Services & Audit',
+  AUDIT_ACCOUNTING: 'Audit, Assurance & Accounting',
+  REAL_ESTATE_SERVICES: 'Real Estate Services',
   FINANCIAL_SERVICES: 'Financial Services & Capital Markets',
   PRIVATE_EQUITY: 'Private Equity & Alternative Assets',
   ADJACENT_CAPEX: 'Adjacent Capex & Operations',
@@ -76,10 +77,18 @@ export function normalizeIndustry(rawIndustry: string | null | undefined): CoreI
     return CORE_INDUSTRIES.INFRASTRUCTURE
   }
 
-  // Real Estate Services & Audit
+  // Audit, Assurance & Accounting (standalone sector)
   if (
-    /audit|assurance|advisory|valuation|valuations|tax.*real.*estate|real.*estate.*service|property.*service|cbre|broll/i.test(input) ||
-    /audit.*property|audit.*reit|audit.*real.*estate|audit.*construct|professional.*services.*valuat/i.test(input)
+    /audit|assurance.*(?!construction)|audit.*property|audit.*reit|audit.*real.*estate|audit.*construct/i.test(input) ||
+    /professional.*accounting|accounting.*practice|audit.*accounting|internal.*audit/i.test(input)
+  ) {
+    return CORE_INDUSTRIES.AUDIT_ACCOUNTING
+  }
+
+  // Real Estate Services (valuations, brokerage, property services)
+  if (
+    /valuation|valuations|tax.*real.*estate|real.*estate.*service|property.*service|cbre|broll|advisory(?!.*audit)/i.test(input) ||
+    /professional.*services.*valuat|commercial.*real.*estate|real.*estate|property.*broker/i.test(input)
   ) {
     return CORE_INDUSTRIES.REAL_ESTATE_SERVICES
   }
@@ -126,6 +135,7 @@ export function extractIndustries(
     [CORE_INDUSTRIES.PROPERTY_FINANCE]: 0,
     [CORE_INDUSTRIES.CONSTRUCTION]: 0,
     [CORE_INDUSTRIES.INFRASTRUCTURE]: 0,
+    [CORE_INDUSTRIES.AUDIT_ACCOUNTING]: 0,
     [CORE_INDUSTRIES.REAL_ESTATE_SERVICES]: 0,
     [CORE_INDUSTRIES.FINANCIAL_SERVICES]: 0,
     [CORE_INDUSTRIES.PRIVATE_EQUITY]: 0,
