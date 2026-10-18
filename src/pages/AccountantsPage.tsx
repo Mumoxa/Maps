@@ -149,11 +149,7 @@ function CandidateCard({ candidate, onToggle, index }: { candidate: AccountantCa
       </header>
 
       <div className="scan-spine">
-        <div className="scan-stat">
-          <span className="scan-stat-label">Experience</span>
-          <span className="scan-stat-value">{experienceLabel}</span>
-        </div>
-        <div className="scan-stat">
+        <div className="scan-stat scan-stat-lead">
           <span className="scan-stat-label">Qualification</span>
           <span className="scan-stat-value">
             {isCaSa ? 'CA(SA)' : candidate.designations[0] || 'Not confirmed'}
@@ -180,6 +176,10 @@ function CandidateCard({ candidate, onToggle, index }: { candidate: AccountantCa
           <span className="scan-stat-label">Industry</span>
           <span className="scan-stat-value scan-stat-text">{candidate.industry || 'Not classified'}</span>
         </button>
+        <div className={`scan-stat${experienceLabel === 'Not stated' ? ' scan-stat-muted' : ''}`}>
+          <span className="scan-stat-label">Experience</span>
+          <span className="scan-stat-value">{experienceLabel}</span>
+        </div>
       </div>
 
       <div className="scan-tags">

@@ -133,9 +133,18 @@ are built only from the shared tokens (one accent navy, one signal amber, Geist 
     <div class="scan-tags">          <!-- designation, role family, location, .scan-tag-tier, .scan-tag-verify, status -->
 ```
 
-- The **scan spine** is the at-a-glance contract: experience, qualification (with a confirmed
-  tick), employer and industry are always shown without a click. Employer and industry tiles are
+- The **scan spine** is the at-a-glance contract, ordered by how reliably the field is populated.
+  Qualification leads (`.scan-stat-lead`, 100% covered: every record carries a designation and its
+  evidence), then employer and industry (~99%), then experience last. Experience is only recorded
+  where the source states it, so where it is absent the tile reads "Not stated" and is de-emphasised
+  (`.scan-stat-muted`) rather than left as a conspicuous gap. Employer and industry tiles are
   `button.scan-stat-action` that add the matching facet filter.
+- **Non-negotiable fields on import.** The headline/identity fields are a hard contract enforced in
+  the import scripts (`scripts/import_bellville_ca_sa.py`, `scripts/import_wave3_verified.py`): a
+  shared `REQUIRED_FIELDS` + `validate_record()` aborts an upload that cannot populate full_name,
+  current_employer, current_industry, professional_designations, qualification_evidence,
+  primary_source and status (plus id where the script assigns it). A new candidate source must map
+  all of them; experience and location are allowed to be missing and are filled opportunistically.
 - `.scan-fit` encodes recruiter fit parsed from the record's `HIGH:` / `MEDIUM:` prefix: high reuses
   the success pair, medium the amber signal pair. Absent fit shows no chip rather than a neutral one.
 - `.scan-tag-tier-a` / `-b` encode research tier; `.scan-tag-verify` (amber) marks a CA(SA) that

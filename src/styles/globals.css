@@ -3584,6 +3584,9 @@ kbd {
   max-width: 100%;
 }
 .scan-stat-tick { color: var(--color-success-800); flex-shrink: 0; }
+.scan-stat-lead { background: color-mix(in srgb, var(--color-primary) 6%, var(--color-surface-sunken)); }
+.scan-stat-lead .scan-stat-value { color: var(--color-primary-700); font-weight: var(--font-weight-semibold); }
+.scan-stat-muted .scan-stat-value { color: var(--color-text-tertiary); font-weight: var(--font-weight-normal); }
 button.scan-stat-action {
   border: none;
   cursor: pointer;

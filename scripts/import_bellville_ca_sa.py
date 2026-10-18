@@ -25,6 +25,48 @@ from datetime import datetime
 from pathlib import Path
 import re
 
+# ─── NON-NEGOTIABLE FIELDS ────────────────────────────────────────────────────
+# Every candidate record MUST carry these before it can be written to
+# people.jsonl. They are the fields the /accounting-finance screening view
+# treats as always-present. An upload that cannot populate all of them is
+# rejected: the import aborts rather than land a half-blank record. "id" is
+# assigned downstream for this source, so it is validated only when present.
+# If a future source genuinely lacks one of these, fix the source or the
+# mapping — do not weaken this list.
+REQUIRED_FIELDS = (
+    "full_name",                 # who
+    "current_employer",          # where (headline scan field)
+    "current_industry",          # sector (headline scan field)
+    "professional_designations", # qualification (headline scan field) - non-empty
+    "qualification_evidence",    # why we believe the designation
+    "primary_source",            # provenance
+    "status",                    # record status
+)
+
+
+class MissingRequiredField(Exception):
+    """Raised when a record cannot populate a non-negotiable field."""
+
+
+def validate_record(record):
+    """Abort the import if any non-negotiable field is empty."""
+    missing = []
+    for field in REQUIRED_FIELDS:
+        value = record.get(field)
+        if value is None:
+            missing.append(field)
+        elif isinstance(value, str) and not value.strip():
+            missing.append(field)
+        elif isinstance(value, (list, tuple)) and len(value) == 0:
+            missing.append(field)
+    if missing:
+        raise MissingRequiredField(
+            f"Record {record.get('id') or record.get('full_name') or '<unknown>'} "
+            f"is missing non-negotiable field(s): {', '.join(missing)}. "
+            f"Import aborted; fix the source row or the column mapping."
+        )
+
+
 # Map CSV columns to people.jsonl fields
 def parse_ca_evidence(evidence_status_cell):
     """Extract CA(SA) designation and source type from the evidence status cell.
@@ -304,6 +346,7 @@ def main():
         for i, row in enumerate(reader, start=2):
             record = build_person_record(row, args.batch_id, [])
             if record:
+                validate_record(record)
                 records.append(record)
                 print(f'✓ {record["full_name"]} ({record["current_employer"]})', file=sys.stderr)
             else:
