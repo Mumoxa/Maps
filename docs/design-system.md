@@ -117,6 +117,36 @@ Three views over one filtered result set, so the three can never disagree. The c
 - Below 1180px the inspector drops under the two columns; below 1024px the filter rail becomes the
   `.facet-drawer`, driven by `.facet-filter-trigger` like every other faceted route.
 
+## Talent screening (`/accounting-finance`)
+
+The Accounting & Finance route is a candidate-scanning surface modelled on a recruiter's
+at-a-glance workflow. Its classes live in `globals.css` under the `Talent screening` banner and
+are built only from the shared tokens (one accent navy, one signal amber, Geist + Geist Mono).
+
+```html
+<header class="scan-hero">        <!-- ambient .scan-hero-glow, .scan-kicker, title, lede, .scan-kpis, note -->
+<div class="scan-toolbar">         <!-- sticky: .scan-search + live .scan-toolbar-count + .scan-filter-trigger -->
+<div class="scan-grid">            <!-- responsive card grid -->
+  <article class="scan-card reveal"><!-- per-card --reveal-delay staggers entrance -->
+    <header class="scan-card-head">  <!-- .scan-avatar initials, .scan-identity, .scan-fit signal -->
+    <div class="scan-spine">         <!-- four .scan-stat tiles: experience, qualification, employer, industry -->
+    <div class="scan-tags">          <!-- designation, role family, location, .scan-tag-tier, .scan-tag-verify, status -->
+```
+
+- The **scan spine** is the at-a-glance contract: experience, qualification (with a confirmed
+  tick), employer and industry are always shown without a click. Employer and industry tiles are
+  `button.scan-stat-action` that add the matching facet filter.
+- `.scan-fit` encodes recruiter fit parsed from the record's `HIGH:` / `MEDIUM:` prefix: high reuses
+  the success pair, medium the amber signal pair. Absent fit shows no chip rather than a neutral one.
+- `.scan-tag-tier-a` / `-b` encode research tier; `.scan-tag-verify` (amber) marks a CA(SA) that
+  needs confirmation before outreach. Tier and verification are data encoding, never chrome.
+- Everything the long-form record carried (systems, academic, articles, qualification evidence,
+  LinkedIn / evidence / source footer) still renders below the spine; the rebuild adds density, it
+  removes nothing.
+- `.scan-toolbar` is sticky under the header and uses the same glass-with-reduced-transparency
+  fallback contract as the app chrome. Cards enter with the shared `.reveal` choreography and the
+  per-card `--reveal-delay` stagger, so scanning respects `prefers-reduced-motion`.
+
 ## Interaction rules
 
 - Keyboard first: every control is a real `button`/`a`/`input`, focus is visible through the

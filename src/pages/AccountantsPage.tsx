@@ -1,11 +1,11 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import {
-  Buildings,
   ArrowSquareOut,
   MapPin,
   MagnifyingGlass,
   SlidersHorizontal,
+  CheckCircle,
   X,
 } from '@phosphor-icons/react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
@@ -55,80 +55,168 @@ function statusBadge(status: string): { cls: string; label: string; title: strin
   }
 }
 
-function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate; onToggle: (key: string, value: string) => void }) {
+type CandidateAttributes = {
+  search_name?: string
+  research_tier?: string
+  fit_assessment?: string
+  verification_required?: string
+}
+
+/** Fit strength parsed from the "HIGH: …" / "MEDIUM: …" prefix the research set carries. */
+function fitStrength(attrs: CandidateAttributes): { level: 'high' | 'medium' | 'standard'; label: string; note: string } {
+  const raw = (attrs.fit_assessment || '').trim()
+  const note = raw.replace(/^(VERY HIGH|HIGH|MEDIUM-HIGH|MEDIUM|LOW)\s*[:-]?\s*/i, '').trim()
+  const head = raw.toUpperCase()
+  if (head.startsWith('VERY HIGH') || head.startsWith('HIGH') || head.startsWith('MEDIUM-HIGH')) {
+    return { level: 'high', label: 'Strong match', note }
+  }
+  if (head.startsWith('MEDIUM')) return { level: 'medium', label: 'Possible match', note }
+  return { level: 'standard', label: raw ? 'Screen' : '', note }
+}
+
+/** Human-readable articles/training status; empty string means "do not surface". */
+function formatArticlesStatus(raw: string): string {
+  const map: Record<string, string> = {
+    CONFIRMED_EXPLICIT: 'Articles confirmed',
+    PROFESSIONAL_PER_CONFIRMED: 'Practical experience confirmed',
+    TRAINING_CONTRACT_CONFIRMED: 'Training contract confirmed',
+    TRAINING_ROLE_CONFIRMED_COMPLETION_NOT_ESTABLISHED: 'Training role confirmed; completion not established',
+    TRAINING_ROLE_EXPLICIT_COMPLETION_NOT_ESTABLISHED: 'Training role stated; completion not established',
+    QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED: 'Qualified; articles route not recorded',
+    NOT_APPLICABLE: '',
+    NOT_ESTABLISHED: '',
+    'NOT ESTABLISHED IN THIS PASS': '',
+    PENDING_ENRICHMENT: '',
+    UNKNOWN: '',
+  }
+  return raw in map ? map[raw] : raw
+}
+
+/**
+ * Experience value as the research set stored it. A bare calendar year (e.g.
+ * "2015+") is a start/qualification year, not a duration, so it renders as
+ * "Since 2015" rather than being mis-stated as a count of years. A real
+ * duration ("18+") renders as "18+ yrs". Everything else is "Not stated":
+ * experience is never inferred.
+ */
+function formatExperience(raw: string | null | undefined): string {
+  const value = (raw || '').trim()
+  if (!value || value === 'unknown') return 'Not stated'
+  const yearMatch = value.match(/^(19|20)\d{2}\+?$/)
+  if (yearMatch) return `Since ${value.replace('+', '')}`
+  if (/\d\s*\+?\s*(years|yrs)?$/i.test(value)) {
+    const num = value.replace(/\s*(years|yrs)\s*$/i, '').trim()
+    return `${num} yrs`
+  }
+  return value
+}
+
+/** Research tier letter (A / B) parsed from "A - CA evidenced" style strings. */
+function tierLetter(attrs: CandidateAttributes): string {
+  const raw = (attrs.research_tier || '').trim()
+  const match = raw.match(/^([ABC])\b/i)
+  return match ? match[1].toUpperCase() : ''
+}
+
+function CandidateCard({ candidate, onToggle, index }: { candidate: AccountantCandidate; onToggle: (key: string, value: string) => void; index: number }) {
   const badge = statusBadge(candidate.status)
   const systems = [...candidate.accountingSystems, ...candidate.erpSystems, ...candidate.analyticsTools]
   const canonicalEmployer = candidate.employer ? canonicalCompanyName(candidate.employer) : ''
   const evidenceUrl = candidate.sourceUrls[0] || candidate.primarySource
   const isCaSa = candidate.designations.includes('CA(SA)')
+  const attrs = ((candidate as unknown as { attributes?: CandidateAttributes }).attributes) || {}
+  const fit = fitStrength(attrs)
+  const tier = tierLetter(attrs)
+  const needsVerification = (attrs.verification_required || '').toLowerCase() === 'yes'
+  const experienceLabel = formatExperience(candidate.yearsExperience)
+  const locationLabel = [candidate.city, candidate.province].filter(Boolean).join(', ')
+  const initials = candidate.fullName.split(/\s+/).map((part) => part[0]).filter(Boolean).slice(0, 2).join('').toUpperCase()
+  const revealDelay = `${Math.min(index, 7) * 45}ms`
+
   return (
-    <article className="hack-candidate-card">
-      <header className="hack-candidate-head">
-        <div>
-          <h3 className="hack-candidate-name">{candidate.fullName}</h3>
-          <p className="hack-candidate-sub">
-            {candidate.designations.map((designation) => (
-              <button
-                key={designation}
-                type="button"
-                className="hack-badge acc-badge-designation"
-                title="Filter by this designation"
-                onClick={() => onToggle('qualification', designation)}
-              >
-                {designation}
-              </button>
-            ))}
-            {candidate.professionalRoutes.map((route) => (
-              <button
-                key={route}
-                type="button"
-                className="hack-badge acc-badge-route"
-                title="Filter by this professional route"
-                onClick={() => onToggle('route', route)}
-              >
-                {route}
-              </button>
-            ))}
-          </p>
+    <article className="scan-card reveal" style={{ '--reveal-delay': revealDelay } as React.CSSProperties}>
+      <header className="scan-card-head">
+        <div className="scan-avatar" aria-hidden>{initials}</div>
+        <div className="scan-identity">
+          <h3 className="scan-name">{candidate.fullName}</h3>
+          {candidate.title && <p className="scan-title">{candidate.title}</p>}
         </div>
-        <span className={`hack-badge ${badge.cls}`} title={badge.title}>{badge.label}</span>
+        {fit.level !== 'standard' && fit.label && (
+          <span className={`scan-fit scan-fit-${fit.level}`} title={fit.note || fit.label}>
+            {fit.label}
+          </span>
+        )}
       </header>
 
-      {candidate.title && <p className="acc-candidate-title">{candidate.title}</p>}
+      <div className="scan-spine">
+        <div className="scan-stat">
+          <span className="scan-stat-label">Experience</span>
+          <span className="scan-stat-value">{experienceLabel}</span>
+        </div>
+        <div className="scan-stat">
+          <span className="scan-stat-label">Qualification</span>
+          <span className="scan-stat-value">
+            {isCaSa ? 'CA(SA)' : candidate.designations[0] || 'Not confirmed'}
+            {isCaSa && candidate.designationStatus === 'CONFIRMED' && <CheckCircle size={13} weight="fill" className="scan-stat-tick" aria-label="confirmed" />}
+          </span>
+        </div>
+        <button
+          type="button"
+          className="scan-stat scan-stat-action"
+          title={`Filter by ${canonicalEmployer}`}
+          onClick={() => candidate.employer && onToggle('employer', canonicalEmployer)}
+          disabled={!candidate.employer}
+        >
+          <span className="scan-stat-label">Employer</span>
+          <span className="scan-stat-value scan-stat-text">{canonicalEmployer || 'Not stated'}</span>
+        </button>
+        <button
+          type="button"
+          className="scan-stat scan-stat-action"
+          title={candidate.industry ? `Filter by ${candidate.industry}` : undefined}
+          onClick={() => candidate.industry && onToggle('industry', candidate.industry)}
+          disabled={!candidate.industry}
+        >
+          <span className="scan-stat-label">Industry</span>
+          <span className="scan-stat-value scan-stat-text">{candidate.industry || 'Not classified'}</span>
+        </button>
+      </div>
+
+      <div className="scan-tags">
+        {candidate.designations.map((designation) => (
+          <button key={designation} type="button" className="scan-tag scan-tag-accent" title="Filter by this designation" onClick={() => onToggle('qualification', designation)}>
+            {designation}
+          </button>
+        ))}
+        {candidate.roleFamily && (
+          <button type="button" className="scan-tag" title="Filter by this role family" onClick={() => onToggle('roleFamily', candidate.roleFamily)}>
+            {candidate.roleFamily}
+          </button>
+        )}
+        {locationLabel && (
+          <button type="button" className="scan-tag" title="Filter by this province" onClick={() => candidate.province && onToggle('province', candidate.province)}>
+            <MapPin size={12} aria-hidden /> {locationLabel}
+          </button>
+        )}
+        {tier && (
+          <span className={`scan-tag scan-tag-tier scan-tag-tier-${tier.toLowerCase()}`} title={attrs.research_tier}>
+            Tier {tier}
+          </span>
+        )}
+        {needsVerification && (
+          <span className="scan-tag scan-tag-verify" title="CA(SA) designation needs confirmation before outreach">
+            Verify CA(SA)
+          </span>
+        )}
+        <span className={`scan-tag ${badge.cls}`} title={badge.title}>{badge.label}</span>
+      </div>
+
       {isCaSa && candidate.country && candidate.country !== 'South Africa' && (
         <p className="acc-evidence-text">Recorded location: {candidate.country} (outside South Africa)</p>
       )}
       {isCaSa && (!candidate.country || (candidate.country === 'South Africa' && !['CONFIRMED', 'HIGH'].includes(candidate.locationConfidence))) && (
         <p className="acc-evidence-text">South African residence or workplace not independently evidenced.</p>
       )}
-
-      <div className="hack-candidate-meta">
-        {candidate.employer && (
-          <button
-            type="button"
-            className="hack-meta-link"
-            title={canonicalEmployer === candidate.employer ? 'Filter by this employer' : `Filter by ${canonicalEmployer} (listed as ${candidate.employer})`}
-            onClick={() => onToggle('employer', canonicalEmployer)}
-          >
-            <Buildings size={14} aria-hidden /> {canonicalEmployer}
-          </button>
-        )}
-        {candidate.roleFamily && (
-          <button type="button" className="hack-meta-link" title="Filter by this role family" onClick={() => onToggle('roleFamily', candidate.roleFamily)}>
-            {candidate.roleFamily}
-          </button>
-        )}
-        {candidate.industry && (
-          <button type="button" className="hack-meta-link" title="Filter by this industry" onClick={() => onToggle('industry', candidate.industry)}>
-            {candidate.industry}
-          </button>
-        )}
-        {candidate.province && (
-          <button type="button" className="hack-meta-link" title="Filter by this province" onClick={() => onToggle('province', candidate.province)}>
-            <MapPin size={14} aria-hidden /> {candidate.province}
-          </button>
-        )}
-      </div>
 
       {candidate.employer && (
         <div className="hack-crosslinks">
@@ -154,11 +242,15 @@ function CandidateCard({ candidate, onToggle }: { candidate: AccountantCandidate
       {candidate.academicQualifications.length > 0 && (
         <p className="acc-evidence-text"><strong>Academic:</strong> {candidate.academicQualifications.join('; ')}</p>
       )}
-      {(candidate.articlesStatus || candidate.articlesEmployer || candidate.articlesBody) && (
-        <p className="acc-evidence-text">
-          <strong>Articles / training:</strong> {[candidate.articlesStatus, candidate.articlesBody, candidate.articlesEmployer, candidate.articlesPeriod, candidate.articlesLocation].filter(Boolean).join(' · ')}
-        </p>
-      )}
+      {(() => {
+        const statusLabel = formatArticlesStatus(candidate.articlesStatus)
+        const parts = [statusLabel, candidate.articlesBody, candidate.articlesEmployer, candidate.articlesPeriod, candidate.articlesLocation].filter(Boolean)
+        return parts.length > 0 ? (
+          <p className="acc-evidence-text">
+            <strong>Articles / training:</strong> {parts.join(' · ')}
+          </p>
+        ) : null
+      })()}
       {candidate.qualificationEvidence && <p className="acc-evidence-text">{candidate.qualificationEvidence}</p>}
 
       <footer className="hack-candidate-foot">
@@ -242,41 +334,52 @@ export function AccountantsPage() {
     <main className="page">
       <div className="container">
       <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Accounting & Finance' }]} />
-      <header className="hack-hero">
-        <p className="hack-kicker">SA Talent Pool · Candidates</p>
-        <h1>Accounting &amp; Finance professionals</h1>
-        <p className="hack-lede">
-          Evidence-backed South African finance professionals from bookkeeper-equivalent level through CFO / Finance Director.
-          Filter by role, employer, location, professional designation and completed training route. Academic qualifications,
-          professional registration and articles / practical experience are recorded separately and never inferred from title alone.
-        </p>
-        <div className="hack-kpis">
-          <div className="hack-kpi"><strong>{universe.candidates}</strong><span>Candidates</span></div>
-          <div className="hack-kpi"><strong>{universe.confirmed}</strong><span>Confirmed finance roles</span></div>
-          <div className="hack-kpi"><strong>{universe.professionallyQualified}</strong><span>Professionally qualified</span></div>
-          <div className="hack-kpi"><strong>{universe.caSa}</strong><span>CA(SA) recorded</span></div>
-          <div className="hack-kpi"><strong>{universe.employers}</strong><span>Employers mapped</span></div>
-          <div className="hack-kpi"><strong>{universe.provinces}</strong><span>Provinces</span></div>
+      <header className="scan-hero">
+        <div className="scan-hero-glow" aria-hidden />
+        <div className="scan-hero-body">
+          <p className="scan-kicker">SA Talent Pool · Candidate screening</p>
+          <h1 className="scan-hero-title">Accounting &amp; Finance professionals</h1>
+          <p className="scan-hero-lede">
+            Evidence-backed South African finance professionals from bookkeeper-equivalent level through CFO / Finance Director.
+            Scan years of experience, professional designation, employer and industry at a glance, then filter by role, location,
+            designation and recruitment search. Academic qualifications and articles are recorded separately, never inferred from title.
+          </p>
+          <div className="scan-kpis">
+            <div className="scan-kpi reveal"><strong>{universe.candidates}</strong><span>Candidates</span></div>
+            <div className="scan-kpi reveal" style={{ '--reveal-delay': '60ms' } as React.CSSProperties}><strong>{universe.confirmed}</strong><span>Confirmed finance roles</span></div>
+            <div className="scan-kpi reveal" style={{ '--reveal-delay': '120ms' } as React.CSSProperties}><strong>{universe.professionallyQualified}</strong><span>Professionally qualified</span></div>
+            <div className="scan-kpi reveal" style={{ '--reveal-delay': '180ms' } as React.CSSProperties}><strong>{universe.caSa}</strong><span>CA(SA) recorded</span></div>
+            <div className="scan-kpi reveal" style={{ '--reveal-delay': '240ms' } as React.CSSProperties}><strong>{universe.employers}</strong><span>Employers mapped</span></div>
+            <div className="scan-kpi reveal" style={{ '--reveal-delay': '300ms' } as React.CSSProperties}><strong>{universe.provinces}</strong><span>Provinces</span></div>
+          </div>
+          <p className="scan-hero-note">
+            The CA(SA) figure is a recorded subset, not a complete national membership register.
+            Some locations are unverified or outside South Africa.
+            {' '}<Link to="/accounting-finance?qualification=CA%28SA%29">Browse CA(SA) records</Link>
+            {' · '}<a href={casaInventoryUrl} download="ca_sa_inventory.csv">Download inventory CSV</a>
+          </p>
         </div>
-        <p className="hack-lede">
-          The CA(SA) figure is a recorded subset, not a complete national membership register.
-          Some locations are unverified or outside South Africa.
-          {' '}<Link to="/accounting-finance?qualification=CA%28SA%29">Browse CA(SA) records</Link>
-          {' · '}<a href={casaInventoryUrl} download="ca_sa_inventory.csv">Download inventory CSV</a>
-        </p>
       </header>
 
-      <div className="facet-searchbar">
-        <div className="hack-control hack-control-search facet-searchbar-input">
-          <MagnifyingGlass size={15} aria-hidden />
+      <div className="scan-toolbar">
+        <div className="scan-search">
+          <MagnifyingGlass size={16} aria-hidden />
           <input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Search name, employer, title, evidence…"
             aria-label="Search candidates"
           />
+          {query && (
+            <button type="button" className="scan-search-clear" onClick={() => setQuery('')} aria-label="Clear search">
+              <X size={14} aria-hidden />
+            </button>
+          )}
         </div>
-        <button type="button" className="facet-filter-trigger" onClick={() => setDrawerOpen(true)} aria-expanded={drawerOpen} aria-haspopup="dialog">
+        <span className="scan-toolbar-count" aria-live="polite">
+          <strong>{results.length}</strong> {results.length === 1 ? 'match' : 'matches'}
+        </span>
+        <button type="button" className="facet-filter-trigger scan-filter-trigger" onClick={() => setDrawerOpen(true)} aria-expanded={drawerOpen} aria-haspopup="dialog">
           <SlidersHorizontal size={15} aria-hidden /> Filters{activeCount ? ` (${activeCount})` : ''}
         </button>
       </div>
@@ -331,9 +434,9 @@ export function AccountantsPage() {
               )}
             </div>
           ) : (
-            <div className="hack-candidate-grid">
-              {pageItems.map((candidate) => (
-                <CandidateCard key={candidate.id} candidate={candidate} onToggle={onToggle} />
+            <div className="scan-grid">
+              {pageItems.map((candidate, index) => (
+                <CandidateCard key={candidate.id} candidate={candidate} onToggle={onToggle} index={index} />
               ))}
             </div>
           )}
