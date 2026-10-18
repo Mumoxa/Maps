@@ -150,6 +150,15 @@ export const accountantFacetDefs: FacetDef<AccountantCandidate>[] = [
     },
     searchThreshold: 8,
   },
+  {
+    key: 'searchName',
+    label: 'Recruitment search',
+    accessor: (candidate) => {
+      const attrs = (candidate as any).attributes || {}
+      const searchName = attrs.search_name || ''
+      return searchName ? [searchName] : []
+    },
+  },
 ]
 
 /** Free-text search across every meaningful string on a candidate record. */
