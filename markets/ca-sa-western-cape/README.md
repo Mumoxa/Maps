@@ -5,8 +5,8 @@ This folder documents the Chartered Accountant (CA(SA)) talent-map layer for `Mu
 ## Scope
 
 - Total named CA(SA)-track professionals in the master dataset: 230
-- LinkedIn-verified candidates published in `people.json`: 188 (every published candidate has a valid `linkedin.com/in/` profile URL)
-- Remaining 42 records are held in the enrichment backlog until a personal LinkedIn profile is verified — the pack only publishes candidates reachable via LinkedIn
+- LinkedIn-verified candidates published in `people.json`: 211 (every published candidate has a valid `linkedin.com/in/` profile URL)
+- Remaining 19 records are held in the enrichment backlog until a personal LinkedIn profile is verified — the pack only publishes candidates reachable via LinkedIn
 - Geography: Western Cape, South Africa — Cape Town metro & industry, Winelands/Boland, Overberg, Garden Route, Karoo & West Coast, Cape metro suburbs (Bellville, Durbanville, Claremont, Wynberg, Fish Hoek, Milnerton, Sunningdale etc.)
 - Segments covered: Big 4, mid-tier international networks (PKF, Moore, Baker Tilly, Nexia, BDO, Grant Thornton, RSM), independent public-practice firms, commerce & industry (retail, banking, insurance, FMCG, property), and public sector (provincial treasury, universities)
 - Website route: pending (data-pack stage, same as the initial Salesforce commit)
