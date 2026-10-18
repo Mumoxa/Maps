@@ -5,8 +5,8 @@ This folder documents the Chartered Accountant (CA(SA)) talent-map layer for `Mu
 ## Scope
 
 - Total named CA(SA)-track professionals in the master dataset: 230
-- LinkedIn-verified candidates published in `people.json`: 88 (every published candidate has a valid `linkedin.com/in/` profile URL)
-- Remaining 142 records are held in the enrichment backlog until a personal LinkedIn profile is verified — the pack only publishes candidates reachable via LinkedIn
+- LinkedIn-verified candidates published in `people.json`: 188 (every published candidate has a valid `linkedin.com/in/` profile URL)
+- Remaining 42 records are held in the enrichment backlog until a personal LinkedIn profile is verified — the pack only publishes candidates reachable via LinkedIn
 - Geography: Western Cape, South Africa — Cape Town metro & industry, Winelands/Boland, Overberg, Garden Route, Karoo & West Coast, Cape metro suburbs (Bellville, Durbanville, Claremont, Wynberg, Fish Hoek, Milnerton, Sunningdale etc.)
 - Segments covered: Big 4, mid-tier international networks (PKF, Moore, Baker Tilly, Nexia, BDO, Grant Thornton, RSM), independent public-practice firms, commerce & industry (retail, banking, insurance, FMCG, property), and public sector (provincial treasury, universities)
 - Website route: pending (data-pack stage, same as the initial Salesforce commit)
@@ -29,6 +29,7 @@ All candidates published in `people.json` must have a **valid personal LinkedIn 
 - LinkedIn URLs are normalised to `https://www.linkedin.com/in/<slug>` (company pages, post URLs and non-LinkedIn links do not qualify).
 - Records sourced from firm team pages without a confirmed personal profile are kept in the master CSV dataset but excluded from `people.json` until the profile is verified — an enrichment backlog.
 - Enrichment runs as a dedicated pass: search for the person's profile by name + firm + town, confirm the match against the profile preview, then merge the verified URL back into the master CSV and regenerate `people.json`.
+- Match provenance is recorded in `Notes` (`LinkedIn match (high|medium): <evidence>`) so uncertain matches can be re-checked before candidate-facing use.
 
 ## Field Notes
 
