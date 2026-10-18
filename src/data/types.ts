@@ -1,3 +1,5 @@
+import type { MarketProfile } from './marketData/types'
+
 export interface Profile {
   id: string;
   name: string;
@@ -85,22 +87,7 @@ export interface DataBundle {
   summary: Summary;
 }
 
-export interface TalentProfile {
-  id: string;
-  track: string;
-  trackSlug: string;
-  name: string;
-  company: string;
-  title: string;
-  location: string;
-  seniority: string;
-  skills: string[];
-  sectors: string[];
-  summary: string;
-  linkedinUrl: string;
-  sourceType: 'bundled' | 'imported' | 'manual';
-  sourceProfileId?: string;
-}
+export type TalentProfile = MarketProfile
 
 export type TreeNodeType = 'segment' | 'company' | 'profile';
 

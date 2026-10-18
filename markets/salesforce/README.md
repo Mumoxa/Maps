@@ -2,14 +2,18 @@
 
 This folder documents the Salesforce market-map layer for `Mumoxa/Maps`.
 
+> **Provenance audit, July 2026:** 959 of the original 1,047 imported practitioner records were removed
+> after they were found to be machine-generated rather than real people. See "Provenance Audit" below.
+> Legacy counts below explain that audit. Current public totals are derived from the shared registry.
+
 ## Scope
 
-- Total named Salesforce practitioners analysed: 1,048 (1,047 source records + 1 manual correction)
-- South Africa-based practitioners: 1,019
+- Public searchable Salesforce practitioners: 88 legacy source-retained records plus validated batch records
+- Excluded source history: 1 incomplete manual correction
 - Salesforce customer technographic records in the supplied v2 map: 295
 - BuiltWith live `.za` domain signal records in the supplied v2 map: 266
 - Implementation / ISV partners in the supplied v2 map: 23
-- Ecosystem segments: Vendor, Partner, Customer, Manual Correction
+- Ecosystem segments: Vendor, Partner, Customer
 - Primary geography: South Africa
 - Website route: `/markets/salesforce`
 
@@ -17,12 +21,12 @@ This folder documents the Salesforce market-map layer for `Mumoxa/Maps`.
 
 The React page exposes:
 
-- 1,047 imported source people in `people.json`, plus manual corrections through the shared talent registry
+- 88 source-retained people in `people.json`, loaded through the shared legacy adapter
+- verified additions loaded from immutable `markets/salesforce/batches/*.json` files
 - Salesforce people in the global `/talent-search` experience with skill, location, company, seniority and sector facets
 - ecosystem summary KPIs
-- Vendor / Partner / Customer segmentation plus manual corrections queue
+- data-derived Vendor / Partner / Customer segmentation
 - leadership and 2026 market signals
-- practitioner cloud expertise heat map
 - customer cloud footprint heat map
 - customer industry distribution
 - seniority and geography distribution
@@ -32,29 +36,78 @@ The React page exposes:
 - surrounding technology stack patterns
 - data-quality and privacy guardrails
 
+## Source-Verified Project Batch — 29 July 2026
+
+The project export contained 1,081 named Salesforce ecosystem records. MAPS added 851 records that
+had a direct public LinkedIn identity and passed duplicate and safety checks. The import excluded
+230 records rather than weakening the public data standard:
+
+- records without a direct public profile identity;
+- records explicitly flagged as weak, false-positive, placeholder, unresolved or do-not-approach;
+- duplicate LinkedIn identities; and
+- identities or normalised names already represented in MAPS.
+
+The batch is `batches/2026-07-29-salesforce-sa-source-verified.json`. The complete reconciliation,
+source checksum, exclusion rules and per-record reasons are in
+`import-audits/2026-07-29-salesforce-sa-source-verified.json`.
+
 ## V2 Enrichment Source
 
 The second uploaded HTML map added customer, partner, Agentforce and surrounding-stack context on top of the original people CSV. The page now uses that information as a compact market intelligence layer rather than only a people-cluster layer.
 
-The source people table is imported from `SA_Salesforce_Market_Map_v2_FULL.html` by running:
+The original source people table was imported from `SA_Salesforce_Market_Map_v2_FULL.html` by running:
 
 ```bash
 npm run import:salesforce -- "C:\Users\craff\Downloads\SA_Salesforce_Market_Map_v2_FULL.html"
 ```
 
-## Manual Corrections
+This is retained only as a historical importer. Do not use it for new additions. All new verified
+profiles use the shared CSV batch workflow in `docs/market-data-import-guide.md`.
+
+## Provenance Audit — July 2026
+
+The originally imported people table did not survive verification. 959 of 1,047 records
+(91.6%) were machine-generated. Evidence:
+
+| Signal | Finding |
+|---|---|
+| LinkedIn slugs | 959 ended in a sequential counter tracking array position (`candice-merwe-200`, `lwandile-kruger-201`, ...) |
+| Name construction | 149 first names x 116 surnames recombined, yielding 70 duplicate full names |
+| Job titles | 972 bulk rows drawn from only 13 titles, in round counts (120/120/100/82/81/76/75/74/73/67/66) |
+| Experience | `yearsSalesforceExperience` uniformly distributed 1-5 |
+| Geography | every record hardcoded to `South Africa` |
+
+**Retained:** `sf-0001` to `sf-0088` — records with bespoke job titles, natural LinkedIn slugs
+(including genuine numeric LinkedIn hashes such as `colin-samson-b4360918`) and real named employers.
+
+**Removed:** `sf-0089` to `sf-1047`, itemised in `removed_records_manifest.json`.
+
+The prior figures on the ecosystem page (1,048 practitioners; CloudSmiths 179; Accenture 137;
+Deloitte Digital 109) were inflated by these records. Real retained counts are CloudSmiths 16,
+Accenture 3, PwC 2, Deloitte Digital 1. Per-company practitioner counts have been withdrawn
+from the page rather than restated, since the surviving sample is not a reliable headcount.
+
+Re-running `npm run import:salesforce` against the original HTML **will reintroduce the removed
+records**. Validate any new export against the signals above before committing.
+
+## Excluded Source History
 
 - Katlego Magnificent Seapi - Pretoria, Gauteng - LinkedIn: `https://www.linkedin.com/in/seapi-katlego-96a955165/`
-- Status: added as a user-supplied correction; Salesforce role, current employer and profile evidence still need verification before client/candidate use.
+- Status: preserved in `manual_corrections.json`, excluded from public search and all practitioner totals because role and employer evidence is incomplete.
 
 ## Data Quality Notes
 
 - `Email_Pattern_Inferred` was present in the uploaded CSV but is intentionally excluded from the public website layer.
 - The v2 HTML is treated as enrichment / inspiration data. Customer cloud use, licence estimates, AI status, revenue and implementation-partner attribution must be verified before client-facing submission.
-- Manual corrections are displayed separately until the role, employer and Salesforce evidence have been validated.
+- The incomplete manual correction is displayed only as excluded source history and is not part of the shared registry.
 - Scores and ranking signals are market-map prioritisation indicators, not verified hiring recommendations.
-- Duplicate names are retained in generated data packs and should be flagged rather than deleted.
+- Duplicate names in a source export are a synthetic-data warning sign; investigate provenance before import.
 
 ## Next Data Expansion
 
-The Salesforce people table is now committed as structured JSON and included in global search. The remaining generated local data pack may still contain company hierarchy, cloud-expertise files, shortlist files, full org-chart structures and a parsed 295-customer technographic JSON. Those should be committed through local git/CLI or a batch upload path if the site needs full-table interactive filtering beyond the current people-search layer.
+Requirements for later datasets:
+
+1. Every record must carry a resolvable evidence URL that has been checked, not pattern-generated.
+2. Reject any export where LinkedIn slugs are sequential, names repeat across a small pool, or job titles cluster into round counts.
+3. Supply `suppliedAsVerified: true`, an evidence note and an ISO evidence-check date for every imported row.
+4. The 295-customer technographic and partner data are unaffected by the audit and can still be expanded.

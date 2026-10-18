@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { DataProvider } from './context/DataContext'
 import { Layout } from './components/layout/Layout'
@@ -8,31 +9,62 @@ import { MapPage } from './pages/MapPage'
 import { SegmentDirectory } from './pages/SegmentDirectory'
 import { SegmentPage } from './pages/SegmentPage'
 import { CompanyDirectory } from './pages/CompanyDirectory'
+import { OrganizationPage } from './pages/OrganizationPage'
+import { IndustryAtlasPage } from './pages/IndustryAtlasPage'
+import { RecruitmentTargetingPage } from './pages/RecruitmentTargetingPage'
 import { CompanyPage } from './pages/CompanyPage'
+import { CompanyAssociationsPage } from './pages/CompanyAssociationsPage'
 import { ProfileDirectory } from './pages/ProfileDirectory'
 import { ProfilePage } from './pages/ProfilePage'
 import { SalesforcePage } from './pages/SalesforcePage'
+import { SapErpPage } from './pages/SapErpPage'
 import { MurexPage } from './pages/MurexPage'
 import { CalypsoPage } from './pages/CalypsoPage'
 import { TalentSearchPage } from './pages/TalentSearchPage'
+import { SearchBankPage } from './pages/SearchBankPage'
 import { ShortlistPage } from './pages/ShortlistPage'
 import { SalesforceEcosystemPage } from './pages/SalesforceEcosystemPage'
+import { HackathonTalentPage } from './pages/HackathonTalentPage'
+import { AccountantsPage } from './pages/AccountantsPage'
+import { MarketTrackPage } from './pages/TrackPage'
 import { NotFound } from './pages/NotFound'
+import { LoadingSpinner } from './components/ui/LoadingSpinner'
+
+const ContactDirectory = lazy(() =>
+  import('./pages/ContactDirectory').then(module => ({ default: module.ContactDirectory })),
+)
 
 function AppRoutes() {
   const element = useRoutes([
-    { path: '/', element: <HomePage /> },
+    // The Industry Atlas is the default landing: a visitor meets South African
+    // industries first, with no company selected and no recruitment brief open.
+    { path: '/', element: <IndustryAtlasPage /> },
+    { path: '/home', element: <HomePage /> },
     { path: '/credit-risk', element: <CreditRiskPage /> },
     { path: '/salesforce', element: <SalesforcePage /> },
+    { path: '/hackathons', element: <HackathonTalentPage /> },
+    { path: '/accounting-finance', element: <AccountantsPage /> },
+    { path: '/data-science-ml', element: <MarketTrackPage trackSlug="data-science-ml" /> },
+    { path: '/sap-erp', element: <SapErpPage /> },
     { path: '/murex', element: <MurexPage /> },
     { path: '/calypso', element: <CalypsoPage /> },
     { path: '/talent-search', element: <TalentSearchPage /> },
+    { path: '/search-bank', element: <SearchBankPage /> },
     { path: '/map', element: <MapPage /> },
     { path: '/segments', element: <SegmentDirectory /> },
     { path: '/segments/:slug', element: <SegmentPage /> },
+    { path: '/industry-atlas', element: <IndustryAtlasPage /> },
     { path: '/companies', element: <CompanyDirectory /> },
+    // Canonical company intelligence, addressed by the canonical organization id.
+    { path: '/organizations/:organizationId', element: <OrganizationPage /> },
+    { path: '/company-associations', element: <CompanyAssociationsPage /> },
+    { path: '/recruitment-targeting', element: <RecruitmentTargetingPage /> },
     { path: '/companies/:slug', element: <CompanyPage /> },
     { path: '/profiles', element: <ProfileDirectory /> },
+    {
+      path: '/contacts',
+      element: <Suspense fallback={<LoadingSpinner size="lg" />}><ContactDirectory /></Suspense>,
+    },
     { path: '/profiles/:slug', element: <ProfilePage /> },
     { path: '/shortlist', element: <ShortlistPage /> },
     { path: '/markets/salesforce', element: <SalesforceEcosystemPage /> },

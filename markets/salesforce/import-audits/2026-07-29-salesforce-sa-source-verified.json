@@ -1,0 +1,1181 @@
+{
+  "batchId": "2026-07-29-salesforce-sa-source-verified",
+  "sourceArchive": "workspace-019fad10-fe3a-73ca-988f-c0db3fad2ea6(1).zip",
+  "sourceMember": "sfza/export/json/people.verified.json",
+  "sourceSha256": "4d54a37ce8d11afb37cc3d94fbb26f68b02d30bd6f5d4e622462c6d686220474",
+  "sourceGeneratedOn": "2026-07-28",
+  "auditedOn": "2026-07-29",
+  "sourceRecordCount": 1081,
+  "acceptedRecordCount": 851,
+  "excludedRecordCount": 230,
+  "resultingSalesforceProfileCount": 939,
+  "rules": [
+    "Require a direct canonical LinkedIn /in/ identity.",
+    "Exclude records explicitly flagged false-positive, weak, placeholder, or do-not-approach.",
+    "Keep one record per canonical LinkedIn identity.",
+    "Exclude identities or normalised names already represented in MAPS.",
+    "Do not infer missing location detail, seniority, certifications, or personal cloud skills."
+  ],
+  "exclusionReasonCounts": {
+    "already_present_linkedin_identity": 6,
+    "already_present_name_requires_reconciliation": 14,
+    "deliberate_false_positive": 1,
+    "do_not_approach_or_unresolved_identity": 4,
+    "duplicate_linkedin_identity_kept_as_sfza-0526": 1,
+    "no_direct_public_linkedin_identity": 183,
+    "placeholder_profile_identity": 4,
+    "weak_salesforce_signal": 17
+  },
+  "exclusions": [
+    {
+      "sourceProjectId": "sfza-0001",
+      "fullName": "Linda Saunders",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0002",
+      "fullName": "Nick Christodoulou",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0003",
+      "fullName": "Neil Green",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0004",
+      "fullName": "Graeme Leslie",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0006",
+      "fullName": "Ursula Fear",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0007",
+      "fullName": "Zuko Mdwaba",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0008",
+      "fullName": "Robin Fisher",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0009",
+      "fullName": "Eran Agrios",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0011",
+      "fullName": "Katharine (Kath) Janisch",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0012",
+      "fullName": "Mncedisi Mayekiso",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0013",
+      "fullName": "Rofhiwa Nevhutalu",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0014",
+      "fullName": "Themba Makela",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0015",
+      "fullName": "Rassie Engelbrecht",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0016",
+      "fullName": "Nicole Adriaans",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0017",
+      "fullName": "Martin Cheetham",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0018",
+      "fullName": "Dave Thomson",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0019",
+      "fullName": "Tashya Singh",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0020",
+      "fullName": "Tracy Surkont",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0021",
+      "fullName": "Michael Baxter",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0022",
+      "fullName": "Janet Naidoo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0023",
+      "fullName": "Nomfusi Masangwana",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0024",
+      "fullName": "Leanne Gordge",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0025",
+      "fullName": "Stuart Cloete",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0026",
+      "fullName": "Pia Dewar",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0027",
+      "fullName": "Derek Weatherall",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0028",
+      "fullName": "Jason Timm",
+      "reason": "already_present_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0029",
+      "fullName": "Thomas (Tom) Fowler",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0030",
+      "fullName": "Derek Hughes",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0031",
+      "fullName": "Lance Hamel",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0032",
+      "fullName": "Patrick Eriksen",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0033",
+      "fullName": "Chris Wilkins",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0034",
+      "fullName": "Kim Fletterman",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0035",
+      "fullName": "Ram Ramakrishnan",
+      "reason": "do_not_approach_or_unresolved_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0036",
+      "fullName": "Lochner Eksteen",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0037",
+      "fullName": "Lauren Wortmann",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0038",
+      "fullName": "Alan Turnley-Jones",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0039",
+      "fullName": "Tiaan le Roux",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0040",
+      "fullName": "Elicus Marais",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0041",
+      "fullName": "Kuven Pillay",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0043",
+      "fullName": "Isabel Papadakis",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0044",
+      "fullName": "Craig Andrew",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0045",
+      "fullName": "Alex Rummel",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0046",
+      "fullName": "Vanessa Kearney",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0047",
+      "fullName": "Hilan Berger",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0048",
+      "fullName": "Armin Wieland",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0049",
+      "fullName": "Jessica Derks",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0050",
+      "fullName": "Stephen Moore",
+      "reason": "already_present_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0051",
+      "fullName": "Rudolf Niehaus",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0053",
+      "fullName": "Kristina Gransee",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0056",
+      "fullName": "Corrie Verburg",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0058",
+      "fullName": "Rasmi P.",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0062",
+      "fullName": "Neville Hounsom",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0064",
+      "fullName": "Logan Hill",
+      "reason": "already_present_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0065",
+      "fullName": "Ravin Sanjith",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0068",
+      "fullName": "Mark Biagio",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0070",
+      "fullName": "Asokan Moodley",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0072",
+      "fullName": "Yvonne Namutosi",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0073",
+      "fullName": "Akhona Mafenuka",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0074",
+      "fullName": "Sagren Pather",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0075",
+      "fullName": "Thato Matolong",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0076",
+      "fullName": "Johnson Idesoh",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0077",
+      "fullName": "Shenin Singh",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0078",
+      "fullName": "Ryan Smith",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0079",
+      "fullName": "Grant de Waal",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0080",
+      "fullName": "Nicky Simmons",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0081",
+      "fullName": "Melanie Van Rooy",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0082",
+      "fullName": "Yaeesh Moosa",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0083",
+      "fullName": "Alex Corrin",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0084",
+      "fullName": "Henry Steyn",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0085",
+      "fullName": "Bailey Kropman",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0087",
+      "fullName": "Prashant Jain",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0088",
+      "fullName": "Poulami Banerjee",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0089",
+      "fullName": "Ian Mathenge",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0092",
+      "fullName": "Asanda Mandla",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0093",
+      "fullName": "Nomsa Sphika",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0097",
+      "fullName": "Rajni Swapnil",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0101",
+      "fullName": "Proud Mtileni",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0103",
+      "fullName": "Helna Katleo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0104",
+      "fullName": "Blaž H.",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0105",
+      "fullName": "Innocent Khoza",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0110",
+      "fullName": "Mondli Sizwe",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0114",
+      "fullName": "Samuel Forane",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0117",
+      "fullName": "Makwela Mohwidi",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0121",
+      "fullName": "Mpho M.",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0126",
+      "fullName": "Livhuwani Khabubu",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0128",
+      "fullName": "Nokuthula Mokoena",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0133",
+      "fullName": "Nontobeko C.",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0138",
+      "fullName": "Michael Grinker",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0139",
+      "fullName": "Frank Hendricks",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0141",
+      "fullName": "Ziyanda Mgengo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0143",
+      "fullName": "Esther Lucena",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0144",
+      "fullName": "Yvonne Buchhold",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0146",
+      "fullName": "Kaptein Keletso Maduma",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0147",
+      "fullName": "Ntsako Meshack Khoza",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0148",
+      "fullName": "Karen Maluleke",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0149",
+      "fullName": "Mfanelo Charles Hlengane",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0150",
+      "fullName": "Unnamed Salesforce Production Support engineer",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0151",
+      "fullName": "Unnamed Salesforce Support engineer",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0152",
+      "fullName": "Richard Fritz",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0153",
+      "fullName": "Ronald Makomba",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0154",
+      "fullName": "Simon Griffiths",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0155",
+      "fullName": "Sven de Witt",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0156",
+      "fullName": "Dan Edwards",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0157",
+      "fullName": "Adeline Cruywagen",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0158",
+      "fullName": "Erik de Wit",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0159",
+      "fullName": "Fiona Tabraham",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0160",
+      "fullName": "Nkosilathi Ncube",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0161",
+      "fullName": "Mteto Nyati",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0162",
+      "fullName": "Brian Nell",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0164",
+      "fullName": "Malissa Bageloo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0165",
+      "fullName": "Natalie Alexander",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0170",
+      "fullName": "Boitumelo Mothibeli",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0171",
+      "fullName": "Virginie Faivre",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0173",
+      "fullName": "Rita Zanchi",
+      "reason": "duplicate_linkedin_identity_kept_as_sfza-0526"
+    },
+    {
+      "sourceProjectId": "sfza-0179",
+      "fullName": "Ivan Herselman",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0180",
+      "fullName": "Dylan Nel",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0181",
+      "fullName": "Rupert Pulverman",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0182",
+      "fullName": "Claudius du Plessis",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0186",
+      "fullName": "Revashlin Iyman",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0187",
+      "fullName": "Merise Springfield",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0188",
+      "fullName": "Rasmi Panthangi",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0189",
+      "fullName": "Simoné Breytenbach",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0192",
+      "fullName": "Kelsey Glynn",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0194",
+      "fullName": "Jacob Odendaal",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0195",
+      "fullName": "Bilal Bayat",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0200",
+      "fullName": "Tintswalo Saint Mushwana",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0202",
+      "fullName": "Muhammad Moola",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0205",
+      "fullName": "Wendy Lephale",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0208",
+      "fullName": "Silas Ndlovu",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0209",
+      "fullName": "Nishka Sivnarain",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0210",
+      "fullName": "Sizwe November",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0212",
+      "fullName": "Sboniso G Mzizi",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0213",
+      "fullName": "Tarry Chikasha",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0214",
+      "fullName": "Mosimanegape Peter Phasha",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0217",
+      "fullName": "Mlungisi Ndebele",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0219",
+      "fullName": "Mbali Gasela",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0220",
+      "fullName": "Bryan Mposula",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0222",
+      "fullName": "Olebogeng Ntechane",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0223",
+      "fullName": "Makungo Ruddy",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0230",
+      "fullName": "Sean Nelwamondo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0231",
+      "fullName": "Magdalene Selokela",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0232",
+      "fullName": "Palesa Bonolo Monaheng",
+      "reason": "do_not_approach_or_unresolved_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0233",
+      "fullName": "Andile Sybil N.",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0235",
+      "fullName": "Thulasimani Ravindran",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0237",
+      "fullName": "Kopano Mosemeng",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0238",
+      "fullName": "Jared Bedessy",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0239",
+      "fullName": "Tshilidzi Mphadzha",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0241",
+      "fullName": "Amanda Ngcobo-Kwedza",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0242",
+      "fullName": "Raymond Shitlhabane",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0243",
+      "fullName": "Marlie Mangena",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0249",
+      "fullName": "Sequence Dondo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0250",
+      "fullName": "Sibonelo Mkhwanazi",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0254",
+      "fullName": "Damaris Masemola",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0255",
+      "fullName": "Simone Volmink",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0256",
+      "fullName": "Murunwa Makungo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0257",
+      "fullName": "Gugulethu Sibiya",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0258",
+      "fullName": "Bruce Masola",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0261",
+      "fullName": "Thabang Nkhabu",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0262",
+      "fullName": "Tshiedza Ndivhuwo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0263",
+      "fullName": "Dylan Boyes",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0264",
+      "fullName": "Moroetsana Serame",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0267",
+      "fullName": "Dilshaad Simjee",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0268",
+      "fullName": "Kgotso Phogole",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0269",
+      "fullName": "Lesedi Motaung",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0272",
+      "fullName": "Tshepo Makgalo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0273",
+      "fullName": "Dumisani Nodliwa",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0275",
+      "fullName": "Ezra M. Naidoo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0276",
+      "fullName": "Samuel Otuo Serebour",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0277",
+      "fullName": "Lizette Allers",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0278",
+      "fullName": "Bonita Booysen",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0280",
+      "fullName": "Lluwellyn Nuwegeld",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0281",
+      "fullName": "Vanilla Govender",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0338",
+      "fullName": "Colin Samson",
+      "reason": "already_present_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0339",
+      "fullName": "Melissa Houston",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0367",
+      "fullName": "Andre Nienaber",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0410",
+      "fullName": "Koketso Zandile Mogashwa",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0597",
+      "fullName": "Thulani Nzuza",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0614",
+      "fullName": "Marc B.",
+      "reason": "placeholder_profile_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0615",
+      "fullName": "Neha Singh",
+      "reason": "placeholder_profile_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0627",
+      "fullName": "Callmewheelers Kim",
+      "reason": "do_not_approach_or_unresolved_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0665",
+      "fullName": "Lester Segal",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-0780",
+      "fullName": "Lerato Mokoena",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-0789",
+      "fullName": "Caryn Schalit",
+      "reason": "already_present_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0803",
+      "fullName": "Uday Kumar",
+      "reason": "placeholder_profile_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0832",
+      "fullName": "Sravan S",
+      "reason": "placeholder_profile_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0941",
+      "fullName": "Sibusiso Khumalo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0942",
+      "fullName": "Suven Kander",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0943",
+      "fullName": "Siboniso Mkhabela",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0945",
+      "fullName": "Mpeteng Dichaba",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0955",
+      "fullName": "Koketso Mpshane",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0956",
+      "fullName": "Elské Wakeford",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0958",
+      "fullName": "Mduduzi Gule",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0959",
+      "fullName": "Ziyaad R.",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-0968",
+      "fullName": "Thapelo Bradley Sekhwela",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0973",
+      "fullName": "Janet Chadwick",
+      "reason": "already_present_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0975",
+      "fullName": "Loyiso Mtatambi",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0979",
+      "fullName": "Pasca F Mkansi",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0980",
+      "fullName": "Thabani Mlambo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0982",
+      "fullName": "Joshua Palmer",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0983",
+      "fullName": "Nkopeleng Lefa Masemola",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0992",
+      "fullName": "Teboho Matonta",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0993",
+      "fullName": "Will Kreuger",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0994",
+      "fullName": "Jay Slinger",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-0996",
+      "fullName": "Baber Abbas",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1004",
+      "fullName": "Kirsty Trezise",
+      "reason": "already_present_name_requires_reconciliation"
+    },
+    {
+      "sourceProjectId": "sfza-1007",
+      "fullName": "Thulisile Ngcongo",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1018",
+      "fullName": "Rejoice Moropane",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1023",
+      "fullName": "Abigail Scott",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1025",
+      "fullName": "Palesa Monaheng (Ideas Incorporated)",
+      "reason": "do_not_approach_or_unresolved_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1033",
+      "fullName": "Zeldah Katlego Madisha",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1038",
+      "fullName": "Emihle Zangqa",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1041",
+      "fullName": "Suada Islaan",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1044",
+      "fullName": "Ntokozo Felicia Busakwe",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1062",
+      "fullName": "Prosper Blessing Boterere",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1063",
+      "fullName": "Chantel Pindula",
+      "reason": "no_direct_public_linkedin_identity"
+    },
+    {
+      "sourceProjectId": "sfza-1065",
+      "fullName": "Justin Karouz",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1066",
+      "fullName": "Megan Bisset",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1068",
+      "fullName": "Keno Smith",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1069",
+      "fullName": "Pratika Chung",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1070",
+      "fullName": "Megan Murison-Johnson",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1071",
+      "fullName": "Christopher Martin",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1072",
+      "fullName": "Badirile Letloenyane",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1073",
+      "fullName": "Alicia D.",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1074",
+      "fullName": "Greg G.",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1076",
+      "fullName": "Ronel C.",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1077",
+      "fullName": "Shaberah Christians",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1078",
+      "fullName": "Ashton Paulsen",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1079",
+      "fullName": "Kagisho Motsamai",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1080",
+      "fullName": "Roseline Raulinga",
+      "reason": "weak_salesforce_signal"
+    },
+    {
+      "sourceProjectId": "sfza-1081",
+      "fullName": "Starwonder Devins",
+      "reason": "deliberate_false_positive"
+    }
+  ]
+}

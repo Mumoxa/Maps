@@ -1,0 +1,118 @@
+{
+  "id": "za-spa-0001",
+  "legal": {
+    "legalName": "Thandiwe Mini Market",
+    "tradingName": "Thandiwe Spaza",
+    "entityType": "unregistered-informal",
+    "cipcRegistrationNumber": "",
+    "cipcStatus": "unknown",
+    "cipcStatusAsOf": "2026-10-08",
+    "vatNumber": "",
+    "incomeTaxNumber": "0547739218",
+    "jseShareCode": "",
+    "jseListingStatus": "not-listed",
+    "jseListingAsOf": "2026-10-08",
+    "isin": "",
+    "leiNumber": ""
+  },
+  "scale": {
+    "employeesFte": 3,
+    "employeesAsOf": "2026-08-31",
+    "fteReported": true,
+    "annualTurnoverZar": 2750000,
+    "turnoverFyEnd": "2026-02-28",
+    "turnoverBasis": "provisional-management",
+    "assetValueZar": 145000,
+    "informal": true,
+    "reportingBasis": "standalone-entity",
+    "provenance": {
+      "sourceUrl": "",
+      "checkedOn": "2026-10-08",
+      "confidence": "unknown",
+      "sourceType": "internal-dataset"
+    }
+  },
+  "scaleBand": {
+    "band": "micro",
+    "bandLabel": "Micro / Informal",
+    "bandByEmployees": "micro",
+    "bandByTurnover": "micro",
+    "bandConflict": false,
+    "statutoryClass": "micro",
+    "scheduleId": "NSEA-S1-2019",
+    "derivedOn": "2026-10-08"
+  },
+  "bbbee": {
+    "category": "eme",
+    "level": "1",
+    "scorecardType": "eme-affidavit",
+    "sectorCode": "general",
+    "blackOwnershipPct": 100,
+    "blackFemaleOwnershipPct": 100,
+    "verificationAgency": "",
+    "sanasAccredited": false,
+    "certificateNumber": "EME-AFFIDAVIT-2026-09-14",
+    "validFrom": "2026-09-14",
+    "validTo": "2027-09-13",
+    "evidenceType": "sworn-affidavit",
+    "provenance": {
+      "sourceUrl": "",
+      "checkedOn": "2026-10-08",
+      "confidence": "unknown",
+      "sourceType": "internal-dataset"
+    }
+  },
+  "regulatory": {
+    "sarsTaxComplianceStatus": "turnover-tax",
+    "sarsTcsPin": "",
+    "sarsPinExpiry": "2026-11-30",
+    "coidaStatus": "not-registered",
+    "coidaLgsNumber": "",
+    "coidaLgsExpiry": "2026-10-08",
+    "csdRegistered": false,
+    "pfmaOrMfmaApplicable": false,
+    "sectorLicences": [
+      {
+        "regulator": "seda",
+        "licenceType": "SMME support programme participation record",
+        "licenceNumber": "SEDA-KZN-2025-4471",
+        "status": "current",
+        "validTo": "2026-12-31",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "provenance": {
+      "sourceUrl": "",
+      "checkedOn": "2026-10-08",
+      "confidence": "unknown",
+      "sourceType": "internal-dataset"
+    }
+  },
+  "geography": {
+    "province": "KZN",
+    "metropolitanMunicipality": "ethekwini",
+    "districtMunicipality": "",
+    "localMunicipality": "eThekwini (metro)",
+    "city": "Durban",
+    "suburb": "KwaMashu",
+    "streetAddress": "Stand 4412, Section F, KwaMashu, 4360",
+    "latitude": -29.7381,
+    "longitude": 30.9892,
+    "regionalEconomicHubs": ["kzn-logistics-corridor"],
+    "operatingProvinces": ["KZN"],
+    "crossBorderCountries": [],
+    "sourceUrl": "",
+    "checkedOn": "2026-10-08"
+  },
+  "taxonomy": {
+    "primaryNode": "RTL-INFORMAL-SPAZA-INDEP",
+    "secondaryNodes": ["RTL-INFORMAL-STOKVEL"],
+    "valueChainStage": "Retail",
+    "sourcingPocket": "fmcg-distribution"
+  },
+  "status": "needs-verification",
+  "lastVerified": "2026-10-08",
+  "illustrativeRecord": true,
+  "notes": "Synthetic demonstration record for the opposite end of the same taxonomy: an unregistered informal spaza shop. It has no CIPC number by definition, is classified on the micro band by both proxies, and reaches B-BBEE Level 1 through the 100% black-owned EME affidavit route rather than a scorecard. The record also shows the geographic anchor matrix at metro level, where districtMunicipality must stay empty because a metro sits outside the district tier."
+}

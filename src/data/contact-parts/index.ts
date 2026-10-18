@@ -1,0 +1,15 @@
+import part001 from './contacts-001.json'
+import part002 from './contacts-002.json'
+import part003 from './contacts-003.json'
+import part004 from './contacts-004.json'
+import part005 from './contacts-005.json'
+import part006 from './contacts-006.json'
+import part007 from './contacts-007.json'
+import part008 from './contacts-008.json'
+import part009 from './contacts-009.json'
+import part010 from './contacts-010.json'
+import part011 from './contacts-011.json'
+import part012 from './contacts-012.json'
+import part013 from './contacts-013.json'
+
+export const contactsRaw = [...part001, ...part002, ...part003, ...part004, ...part005, ...part006, ...part007, ...part008, ...part009, ...part010, ...part011, ...part012, ...part013]

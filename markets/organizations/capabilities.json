@@ -1,0 +1,577 @@
+[
+  {
+    "id": "cold-storage-operations",
+    "name": "Cold storage operations",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "cold store",
+      "refrigerated warehousing"
+    ],
+    "description": "Refrigerated and frozen warehouse operations for third-party stock."
+  },
+  {
+    "id": "multi-temperature-warehousing",
+    "name": "Multi-temperature warehousing",
+    "group": "operating",
+    "parentId": "cold-storage-operations",
+    "synonyms": [
+      "multi-temp",
+      "chilled and frozen zones"
+    ],
+    "description": "Segregated temperature zones from deep frozen to chilled."
+  },
+  {
+    "id": "blast-freezing",
+    "name": "Blast freezing",
+    "group": "operating",
+    "parentId": "cold-storage-operations",
+    "synonyms": [
+      "quick freezing"
+    ],
+    "description": "Rapid product freezing as a service."
+  },
+  {
+    "id": "bonded-warehousing",
+    "name": "Bonded warehousing",
+    "group": "operating",
+    "parentId": "cold-storage-operations",
+    "synonyms": [
+      "bonded store"
+    ],
+    "description": "Customs-bonded storage and import handling."
+  },
+  {
+    "id": "warehouse-operations",
+    "name": "Warehouse operations",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "DC operations",
+      "pallet picking"
+    ],
+    "description": "Receiving, storage, picking and dispatch at scale."
+  },
+  {
+    "id": "inventory-management",
+    "name": "Inventory management",
+    "group": "operating",
+    "parentId": "warehouse-operations",
+    "synonyms": [
+      "stock control"
+    ],
+    "description": "Stock control, cycle counting and stock integrity across sites."
+  },
+  {
+    "id": "distribution-network",
+    "name": "Distribution network operation",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "distribution centres",
+      "network distribution"
+    ],
+    "description": "Operating a multi-site distribution network to customers or stores."
+  },
+  {
+    "id": "temperature-controlled-distribution",
+    "name": "Temperature-controlled distribution",
+    "group": "operating",
+    "parentId": "distribution-network",
+    "synonyms": [
+      "reefer distribution",
+      "cold chain distribution"
+    ],
+    "description": "Refrigerated transport and cold chain delivery."
+  },
+  {
+    "id": "port-dockside-operations",
+    "name": "Port and dockside operations",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "port operations",
+      "container handling"
+    ],
+    "description": "Dockside handling, container staging, vessel loading and state vet facilitation."
+  },
+  {
+    "id": "food-safety-compliance",
+    "name": "Food safety and quality compliance",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "HACCP",
+      "BRC",
+      "PPECB"
+    ],
+    "description": "Food safety, hygiene and export certification regimes."
+  },
+  {
+    "id": "production-manufacturing",
+    "name": "Production manufacturing",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "plant operations",
+      "manufacturing"
+    ],
+    "description": "Factory-based manufacturing with production scheduling and yield management."
+  },
+  {
+    "id": "feed-milling",
+    "name": "Feed milling",
+    "group": "operating",
+    "parentId": "production-manufacturing",
+    "synonyms": [
+      "feed plant"
+    ],
+    "description": "Compound feed milling and formulation."
+  },
+  {
+    "id": "flour-milling-ops",
+    "name": "Flour milling operations",
+    "group": "operating",
+    "parentId": "production-manufacturing",
+    "synonyms": [
+      "mill operations"
+    ],
+    "description": "Wheat or maize milling operations."
+  },
+  {
+    "id": "oilseed-crushing-ops",
+    "name": "Oilseed crushing operations",
+    "group": "operating",
+    "parentId": "production-manufacturing",
+    "synonyms": [
+      "oil extraction"
+    ],
+    "description": "Oilseed crushing, extraction and refining."
+  },
+  {
+    "id": "grain-handling-storage",
+    "name": "Grain handling and storage",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "silo operations"
+    ],
+    "description": "Weighing, grading, drying, cleaning and silo storage of grain."
+  },
+  {
+    "id": "fleet-operations",
+    "name": "Fleet operations",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "transport fleet"
+    ],
+    "description": "Owned or contracted vehicle fleet management."
+  },
+  {
+    "id": "agricultural-logistics",
+    "name": "Agricultural logistics",
+    "group": "operating",
+    "parentId": "fleet-operations",
+    "synonyms": [
+      "grain transport"
+    ],
+    "description": "Bulk agricultural commodity transport and farm-gate collection."
+  },
+  {
+    "id": "poultry-livestock-operations",
+    "name": "Poultry and livestock operations",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "abattoir",
+      "broiler production"
+    ],
+    "description": "Breeder, broiler, abattoir and further processing operations."
+  },
+  {
+    "id": "fishing-fleet",
+    "name": "Fishing fleet operations",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "trawler fleet"
+    ],
+    "description": "Owned trawler or vessel fleet operations."
+  },
+  {
+    "id": "project-development",
+    "name": "Project development",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "development pipeline"
+    ],
+    "description": "Origination, permitting and development of capital projects."
+  },
+  {
+    "id": "construction-project-costing",
+    "name": "Construction project costing",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "project costing",
+      "contract costing"
+    ],
+    "description": "Project-based costing across concurrent construction contracts."
+  },
+  {
+    "id": "multi-project-management",
+    "name": "Multi-project management",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "project portfolio"
+    ],
+    "description": "Managing a portfolio of concurrent projects with separate profitability."
+  },
+  {
+    "id": "capital-project-management",
+    "name": "Capital project management",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "capex programme"
+    ],
+    "description": "Managing capital expenditure programmes and contractor structures."
+  },
+  {
+    "id": "property-holding-structures",
+    "name": "Property holding structures",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "SPV structures",
+      "property vehicles"
+    ],
+    "description": "SPV and holding structures for property assets and funds."
+  },
+  {
+    "id": "multi-site-operations",
+    "name": "Multi-site operations",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "branch network"
+    ],
+    "description": "Operating multiple sites or stores under one management structure."
+  },
+  {
+    "id": "regulatory-reporting",
+    "name": "Regulatory reporting",
+    "group": "operating",
+    "parentId": null,
+    "synonyms": [
+      "compliance reporting"
+    ],
+    "description": "Sector-specific regulatory reporting obligations."
+  },
+  {
+    "id": "commodity-trading",
+    "name": "Commodity trading",
+    "group": "commercial",
+    "parentId": null,
+    "synonyms": [
+      "commodity marketing",
+      "trading desk"
+    ],
+    "description": "Buying and selling physical agricultural or other commodities for own account or on behalf of clients."
+  },
+  {
+    "id": "commodity-contracts",
+    "name": "Commodity purchase and sales contracts",
+    "group": "commercial",
+    "parentId": "commodity-trading",
+    "synonyms": [
+      "forward contracts"
+    ],
+    "description": "Forward and physical purchase and sales contract management."
+  },
+  {
+    "id": "commodity-price-risk",
+    "name": "Commodity price risk management",
+    "group": "commercial",
+    "parentId": "commodity-trading",
+    "synonyms": [
+      "hedging",
+      "Safex",
+      "price risk"
+    ],
+    "description": "Price risk management on commodity positions, including Safex participation."
+  },
+  {
+    "id": "contract-management",
+    "name": "Contract management",
+    "group": "commercial",
+    "parentId": null,
+    "synonyms": [
+      "contracts"
+    ],
+    "description": "Managing customer and supplier contract terms and renewals."
+  },
+  {
+    "id": "supplier-management",
+    "name": "Supplier and procurement management",
+    "group": "commercial",
+    "parentId": null,
+    "synonyms": [
+      "procurement"
+    ],
+    "description": "Procurement, supplier terms and inbound supply management."
+  },
+  {
+    "id": "customer-credit",
+    "name": "Customer credit management",
+    "group": "commercial",
+    "parentId": null,
+    "synonyms": [
+      "credit control",
+      "debtor management"
+    ],
+    "description": "Customer credit granting, control and collections."
+  },
+  {
+    "id": "export-trading",
+    "name": "Export trading",
+    "group": "commercial",
+    "parentId": null,
+    "synonyms": [
+      "exports"
+    ],
+    "description": "Export documentation, terms and international customer management."
+  },
+  {
+    "id": "retail-trading",
+    "name": "Retail trading",
+    "group": "commercial",
+    "parentId": null,
+    "synonyms": [
+      "retail margin"
+    ],
+    "description": "Retail margin, promotions and store-level trading management."
+  },
+  {
+    "id": "franchise-network",
+    "name": "Franchise network management",
+    "group": "commercial",
+    "parentId": null,
+    "synonyms": [
+      "franchisee management"
+    ],
+    "description": "Franchise or dealer network commercial management."
+  },
+  {
+    "id": "cost-accounting",
+    "name": "Cost accounting",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "costing",
+      "variance analysis"
+    ],
+    "description": "Standard costing, variances and operational cost accounting."
+  },
+  {
+    "id": "inventory-accounting",
+    "name": "Inventory accounting",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "stock valuation"
+    ],
+    "description": "Stock valuation, write-downs, provisions and stock accounting controls."
+  },
+  {
+    "id": "project-accounting",
+    "name": "Project accounting",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "WIP accounting"
+    ],
+    "description": "Accounting for projects with work-in-progress, retention and stage recognition."
+  },
+  {
+    "id": "development-cost-accounting",
+    "name": "Development cost accounting",
+    "group": "financial",
+    "parentId": "project-accounting",
+    "synonyms": [
+      "development costs",
+      "capitalisation"
+    ],
+    "description": "Development cost capitalisation, borrowing costs and pipeline reporting."
+  },
+  {
+    "id": "working-capital-management",
+    "name": "Working capital management",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "cash conversion"
+    ],
+    "description": "Managing receivables, payables and inventory as working capital."
+  },
+  {
+    "id": "multi-entity-consolidation",
+    "name": "Multi-entity consolidation",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "group consolidation",
+      "multi-entity reporting"
+    ],
+    "description": "Consolidating multiple legal entities, SPVs or funds."
+  },
+  {
+    "id": "multi-site-finance",
+    "name": "Multi-site finance management",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "branch finance"
+    ],
+    "description": "Finance control across multiple operating sites or stores."
+  },
+  {
+    "id": "operational-management-reporting",
+    "name": "Operational management reporting",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "management accounts"
+    ],
+    "description": "High-volume operational transaction processing and management reporting."
+  },
+  {
+    "id": "capital-expenditure",
+    "name": "Capital expenditure management",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "capex"
+    ],
+    "description": "Capex budgeting, authorisation and post-implementation review."
+  },
+  {
+    "id": "project-finance",
+    "name": "Project finance",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "project funding",
+      "PPA finance"
+    ],
+    "description": "Non-recourse or limited-recourse project financing and lender reporting."
+  },
+  {
+    "id": "foreign-currency-transactions",
+    "name": "Foreign currency transactions",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "forex",
+      "currency exposure"
+    ],
+    "description": "Import/export currency exposure and translation."
+  },
+  {
+    "id": "hedging-derivative-accounting",
+    "name": "Hedging and derivative accounting",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "hedge accounting"
+    ],
+    "description": "Hedge accounting and derivative valuation."
+  },
+  {
+    "id": "tax-compliance",
+    "name": "Tax compliance",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "SARS compliance"
+    ],
+    "description": "Corporate tax compliance and submissions."
+  },
+  {
+    "id": "statutory-audit",
+    "name": "Statutory audit and external reporting",
+    "group": "financial",
+    "parentId": null,
+    "synonyms": [
+      "IFRS reporting"
+    ],
+    "description": "Statutory financial statements and external audit."
+  },
+  {
+    "id": "group-consolidation",
+    "name": "Group consolidation",
+    "group": "financial",
+    "parentId": "multi-entity-consolidation",
+    "synonyms": [
+      "listed reporting"
+    ],
+    "description": "Listed-group consolidation and reporting."
+  },
+  {
+    "id": "erp-sap",
+    "name": "SAP ERP",
+    "group": "technology",
+    "parentId": null,
+    "synonyms": [
+      "SAP",
+      "S/4HANA"
+    ],
+    "description": "SAP ERP in production use."
+  },
+  {
+    "id": "erp-other",
+    "name": "Non-SAP ERP",
+    "group": "technology",
+    "parentId": null,
+    "synonyms": [
+      "Syspro",
+      "Sage",
+      "Microsoft Dynamics"
+    ],
+    "description": "A non-SAP ERP in production use."
+  },
+  {
+    "id": "wms",
+    "name": "Warehouse management system",
+    "group": "technology",
+    "parentId": null,
+    "synonyms": [
+      "WMS"
+    ],
+    "description": "A warehouse management system in production use."
+  },
+  {
+    "id": "tms",
+    "name": "Transport management system",
+    "group": "technology",
+    "parentId": null,
+    "synonyms": [
+      "fleet system"
+    ],
+    "description": "A transport management system in production use."
+  },
+  {
+    "id": "trading-platform",
+    "name": "Commodity trading platform",
+    "group": "technology",
+    "parentId": null,
+    "synonyms": [
+      "CTRM",
+      "trading system"
+    ],
+    "description": "A commodity trading or risk system in production use."
+  }
+]

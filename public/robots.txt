@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
-Sitemap: https://mumoxa.github.io/Maps/sitemap.xml
+
+# Private recruiter workspaces hold personal contact details and are excluded
+# from sitemap.xml as well. They also set a noindex meta when rendered.
+Disallow: /contacts
+Disallow: /search-bank
+
+Sitemap: https://maps-4xq.pages.dev/sitemap.xml

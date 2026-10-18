@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cold-chain",
+    "name": "Cold Chain & Storage",
+    "valueChainStage": "Storage & handling",
+    "description": "Commercial refrigerated storage, blast freezing and temperature-controlled handling."
+  },
+  {
+    "id": "refrigerated-distribution",
+    "name": "Cold Chain Distribution",
+    "valueChainStage": "Distribution",
+    "description": "Temperature-controlled transport and multi-temperature distribution centres."
+  },
+  {
+    "id": "food-manufacturing",
+    "name": "Food Manufacturing & Processing",
+    "valueChainStage": "Manufacturing",
+    "description": "Food, beverage and edible-oil manufacturing and processing."
+  },
+  {
+    "id": "fisheries",
+    "name": "Fisheries & Seafood",
+    "valueChainStage": "Manufacturing",
+    "description": "Fishing, seafood processing and frozen seafood distribution."
+  },
+  {
+    "id": "milling-feed",
+    "name": "Milling & Feed",
+    "valueChainStage": "Manufacturing",
+    "description": "Flour milling, oilseed crushing and animal feed manufacturing."
+  },
+  {
+    "id": "agri-commodities",
+    "name": "Agricultural Commodities",
+    "valueChainStage": "Commodity trading",
+    "description": "Grain and oilseed marketing, storage, grading and commodity trading."
+  },
+  {
+    "id": "transport-logistics",
+    "name": "Transport & Logistics",
+    "valueChainStage": "Distribution",
+    "description": "Contract logistics, road freight, freight forwarding and supply chain management."
+  },
+  {
+    "id": "fmcg-distribution",
+    "name": "FMCG Distribution & Retail",
+    "valueChainStage": "Retail",
+    "description": "Foodservice distribution, wholesale and grocery retail."
+  },
+  {
+    "id": "property-development",
+    "name": "Property Development",
+    "valueChainStage": "Development",
+    "description": "Commercial, residential and mixed-use property development."
+  },
+  {
+    "id": "property-investment",
+    "name": "Property Investment & Funds",
+    "valueChainStage": "Investment",
+    "description": "Property holding, listed property funds and development finance structures."
+  },
+  {
+    "id": "construction",
+    "name": "Construction & Infrastructure",
+    "valueChainStage": "Project delivery",
+    "description": "Construction contracting, infrastructure delivery and construction materials."
+  },
+  {
+    "id": "renewable-energy",
+    "name": "Renewable Energy",
+    "valueChainStage": "Development",
+    "description": "Renewable project development and independent power production."
+  }
+]

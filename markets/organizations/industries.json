@@ -1,0 +1,329 @@
+[
+  {
+    "id": "cold-storage-operations",
+    "name": "Commercial cold storage",
+    "parentId": null,
+    "pocket": "cold-chain",
+    "description": "Refrigerated and frozen warehousing operated for third parties.",
+    "synonyms": [
+      "cold store",
+      "refrigerated warehousing",
+      "cold chain storage"
+    ]
+  },
+  {
+    "id": "fresh-produce-export",
+    "name": "Perishable export handling",
+    "parentId": null,
+    "pocket": "cold-chain",
+    "description": "Dockside handling, pre-cooling and export preparation of perishables.",
+    "synonyms": [
+      "fruit handling",
+      "export cold chain"
+    ]
+  },
+  {
+    "id": "refrigerated-transport",
+    "name": "Temperature-controlled distribution",
+    "parentId": null,
+    "pocket": "refrigerated-distribution",
+    "description": "Multi-temperature transport and cold chain distribution.",
+    "synonyms": [
+      "cold chain logistics",
+      "reefer transport"
+    ]
+  },
+  {
+    "id": "food-manufacturing",
+    "name": "Food manufacturing",
+    "parentId": null,
+    "pocket": "food-manufacturing",
+    "description": "Branded and private-label food manufacturing.",
+    "synonyms": [
+      "food processing",
+      "FMCG manufacturing"
+    ]
+  },
+  {
+    "id": "edible-oils-fats",
+    "name": "Edible oils and fats",
+    "parentId": null,
+    "pocket": "food-manufacturing",
+    "description": "Oil refining, extraction and edible fat production.",
+    "synonyms": [
+      "oil refinery",
+      "oilseed processing"
+    ]
+  },
+  {
+    "id": "poultry-production",
+    "name": "Poultry and protein production",
+    "parentId": null,
+    "pocket": "food-manufacturing",
+    "description": "Integrated poultry, egg and protein production with abattoir operations.",
+    "synonyms": [
+      "broiler production",
+      "egg production"
+    ]
+  },
+  {
+    "id": "seafood-processing",
+    "name": "Seafood processing",
+    "parentId": null,
+    "pocket": "fisheries",
+    "description": "Wet fish processing, freezing and value-added seafood production.",
+    "synonyms": [
+      "fish processing",
+      "hake processing"
+    ]
+  },
+  {
+    "id": "fishing-operations",
+    "name": "Fishing fleet operations",
+    "parentId": null,
+    "pocket": "fisheries",
+    "description": "Owned or chartered fishing fleet operations.",
+    "synonyms": [
+      "trawling"
+    ]
+  },
+  {
+    "id": "animal-feed-manufacturing",
+    "name": "Animal feed manufacturing",
+    "parentId": null,
+    "pocket": "milling-feed",
+    "description": "Compound feed manufacturing and feed formulation.",
+    "synonyms": [
+      "feed milling",
+      "stockfeed"
+    ]
+  },
+  {
+    "id": "flour-milling",
+    "name": "Flour milling",
+    "parentId": null,
+    "pocket": "milling-feed",
+    "description": "Wheat and maize milling.",
+    "synonyms": [
+      "maize milling",
+      "grain milling"
+    ]
+  },
+  {
+    "id": "oilseed-crushing",
+    "name": "Oilseed crushing",
+    "parentId": null,
+    "pocket": "milling-feed",
+    "description": "Oilseed crushing and oil extraction.",
+    "synonyms": [
+      "soya crushing",
+      "canola processing"
+    ]
+  },
+  {
+    "id": "grain-trading",
+    "name": "Grain and commodity trading",
+    "parentId": null,
+    "pocket": "agri-commodities",
+    "description": "Buying, marketing and trading of grain and agricultural commodities.",
+    "synonyms": [
+      "commodity marketing",
+      "grain marketing"
+    ]
+  },
+  {
+    "id": "agri-cooperative",
+    "name": "Agricultural co-operative",
+    "parentId": null,
+    "pocket": "agri-commodities",
+    "description": "Farmer-owned co-operative grain marketing, storage and input supply.",
+    "synonyms": [
+      "co-op",
+      "landbou"
+    ]
+  },
+  {
+    "id": "grain-storage-handling",
+    "name": "Grain storage and handling",
+    "parentId": null,
+    "pocket": "agri-commodities",
+    "description": "Silo storage, weighing, grading, drying and cleaning of grain.",
+    "synonyms": [
+      "silo services",
+      "grain handling"
+    ]
+  },
+  {
+    "id": "contract-logistics",
+    "name": "Contract logistics",
+    "parentId": null,
+    "pocket": "transport-logistics",
+    "description": "Warehousing and distribution operated under contract for clients.",
+    "synonyms": [
+      "3PL",
+      "warehousing and distribution"
+    ]
+  },
+  {
+    "id": "road-freight",
+    "name": "Road freight",
+    "parentId": null,
+    "pocket": "transport-logistics",
+    "description": "Bulk and line-haul road transport.",
+    "synonyms": [
+      "transport operator",
+      "haulage"
+    ]
+  },
+  {
+    "id": "freight-forwarding",
+    "name": "Freight forwarding",
+    "parentId": null,
+    "pocket": "transport-logistics",
+    "description": "Clearing, forwarding and cross-border project logistics.",
+    "synonyms": [
+      "clearing agent",
+      "customs clearing"
+    ]
+  },
+  {
+    "id": "foodservice-distribution",
+    "name": "Foodservice distribution",
+    "parentId": null,
+    "pocket": "fmcg-distribution",
+    "description": "Broadline distribution of frozen, chilled and ambient product to foodservice customers.",
+    "synonyms": [
+      "broadline distribution",
+      "food wholesale"
+    ]
+  },
+  {
+    "id": "grocery-retail",
+    "name": "Grocery retail",
+    "parentId": null,
+    "pocket": "fmcg-distribution",
+    "description": "Supermarket and grocery retail operations with own distribution.",
+    "synonyms": [
+      "food retail",
+      "supermarket"
+    ]
+  },
+  {
+    "id": "fmcg-wholesale",
+    "name": "Cash and carry wholesale",
+    "parentId": null,
+    "pocket": "fmcg-distribution",
+    "description": "Cash and carry and wholesale distribution to independent retailers.",
+    "synonyms": [
+      "cash and carry",
+      "wholesale distribution"
+    ]
+  },
+  {
+    "id": "property-development",
+    "name": "Property development",
+    "parentId": null,
+    "pocket": "property-development",
+    "description": "Development of commercial, residential and mixed-use property.",
+    "synonyms": [
+      "developer",
+      "property developer"
+    ]
+  },
+  {
+    "id": "residential-development",
+    "name": "Residential development",
+    "parentId": null,
+    "pocket": "property-development",
+    "description": "Housing estate and residential-for-rental development.",
+    "synonyms": [
+      "housing development",
+      "residential fund"
+    ]
+  },
+  {
+    "id": "retail-property",
+    "name": "Retail property",
+    "parentId": null,
+    "pocket": "property-development",
+    "description": "Convenience and neighbourhood retail property development and management.",
+    "synonyms": [
+      "retail centre development"
+    ]
+  },
+  {
+    "id": "property-investment",
+    "name": "Property investment",
+    "parentId": null,
+    "pocket": "property-investment",
+    "description": "Property holding, funds and REIT structures.",
+    "synonyms": [
+      "REIT",
+      "property fund"
+    ]
+  },
+  {
+    "id": "logistics-property",
+    "name": "Logistics and industrial property",
+    "parentId": null,
+    "pocket": "property-investment",
+    "description": "Development and letting of logistics and industrial property.",
+    "synonyms": [
+      "industrial property"
+    ]
+  },
+  {
+    "id": "self-storage",
+    "name": "Self-storage property",
+    "parentId": null,
+    "pocket": "property-investment",
+    "description": "Self-storage facility development and operation.",
+    "synonyms": [
+      "storage units"
+    ]
+  },
+  {
+    "id": "construction-contracting",
+    "name": "Construction contracting",
+    "parentId": null,
+    "pocket": "construction",
+    "description": "Building and civils construction contracting.",
+    "synonyms": [
+      "civil engineering",
+      "building contractor"
+    ]
+  },
+  {
+    "id": "infrastructure-development",
+    "name": "Infrastructure development",
+    "parentId": null,
+    "pocket": "construction",
+    "description": "Roads, water, public infrastructure and construction materials.",
+    "synonyms": [
+      "roads and earthworks",
+      "construction materials"
+    ]
+  },
+  {
+    "id": "renewable-development",
+    "name": "Renewable energy project development",
+    "parentId": null,
+    "pocket": "renewable-energy",
+    "description": "Development, financing and construction management of renewable energy projects.",
+    "synonyms": [
+      "IPP development",
+      "REIPPPP"
+    ]
+  },
+  {
+    "id": "independent-power-production",
+    "name": "Independent power production",
+    "parentId": null,
+    "pocket": "renewable-energy",
+    "description": "Ownership and operation of generating assets.",
+    "synonyms": [
+      "IPP",
+      "power producer"
+    ]
+  }
+]

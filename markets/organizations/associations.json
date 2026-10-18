@@ -1,0 +1,87 @@
+[
+  {
+    "id": "assoc-ccs-vector",
+    "focalId": "org-ccs-logistics",
+    "associatedId": "org-vector-logistics",
+    "relationshipType": "shared-operating-process",
+    "sharedProcesses": [
+      "cold-storage-operations",
+      "multi-temperature-warehousing",
+      "inventory-management"
+    ],
+    "sharedIndustries": [
+      "cold-storage-operations"
+    ],
+    "valueChainOverlap": "Storage and handling to temperature-controlled distribution",
+    "narrative": "Vector operates 114,000 pallet positions and multi-temperature distribution centres, so its operational finance team works with the same stock, temperature and site complexity as a commercial cold store.",
+    "evidence": "Vector Logistics company website operating metrics.",
+    "sourceUrl": "https://www.vectorlog.com/",
+    "confidence": "probable",
+    "status": "reviewed",
+    "reviewer": "Talent Tree",
+    "checkedOn": "2026-10-08"
+  },
+  {
+    "id": "assoc-ccs-ij",
+    "focalId": "org-ccs-logistics",
+    "associatedId": "org-ij",
+    "relationshipType": "shared-operating-process",
+    "sharedProcesses": [
+      "cold-storage-operations",
+      "inventory-management"
+    ],
+    "sharedIndustries": [
+      "cold-storage-operations"
+    ],
+    "valueChainOverlap": "Shared freezer storage and handling",
+    "narrative": "I&J owns and operates its own freezer storage and logistics facility, so it employs finance staff who deal with frozen stock valuation and site operations, but it is a captive facility rather than a third-party cold store.",
+    "evidence": "I&J presentation to Parliament describing the Paarden Eiland freezer storage and logistics facility.",
+    "sourceUrl": "https://pmg.org.za/files/201027IJ_Overview.pdf",
+    "confidence": "probable",
+    "status": "reviewed",
+    "reviewer": "Talent Tree",
+    "checkedOn": "2026-10-08"
+  },
+  {
+    "id": "assoc-bester-nwk",
+    "focalId": "org-bester-feed-grain",
+    "associatedId": "org-nwk",
+    "relationshipType": "shared-operating-process",
+    "sharedProcesses": [
+      "commodity-trading",
+      "grain-handling-storage"
+    ],
+    "sharedIndustries": [
+      "grain-trading"
+    ],
+    "valueChainOverlap": "Commodity marketing to grain storage and handling",
+    "narrative": "NWK publishes commodity marketing, price risk management and Safex broker services alongside silo handling, which matches the trading and stock complexity in the Bester Feed & Grain brief.",
+    "evidence": "NWK grain marketing page.",
+    "sourceUrl": "https://sg.linkedin.com/showcase/grain-marketing",
+    "confidence": "probable",
+    "status": "reviewed",
+    "reviewer": "Talent Tree",
+    "checkedOn": "2026-10-08"
+  },
+  {
+    "id": "assoc-slm-rabie",
+    "focalId": "org-slm-developments",
+    "associatedId": "org-rabie-property-group",
+    "relationshipType": "shared-operating-process",
+    "sharedProcesses": [
+      "project-development",
+      "multi-project-management"
+    ],
+    "sharedIndustries": [
+      "property-development"
+    ],
+    "valueChainOverlap": "Development pipeline management",
+    "narrative": "Rabie has delivered residential, commercial and mixed-use developments since 1978, including Century City, giving it development project and pipeline management exposure comparable to SLM's development programme.",
+    "evidence": "Rabie Property Group company page.",
+    "sourceUrl": "https://www.linkedin.com/company/rabie-property-group-pty-ltd",
+    "confidence": "probable",
+    "status": "reviewed",
+    "reviewer": "Talent Tree",
+    "checkedOn": "2026-10-08"
+  }
+]

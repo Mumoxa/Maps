@@ -1,11 +1,15 @@
 # Dependencies
 node_modules/
 
+# Isolated development worktrees
+.worktrees/
+
 # Build output
 dist/
 
 # TypeScript build info
 *.tsbuildinfo
+__pycache__/
 
 # Editor
 .vscode/
@@ -20,3 +24,9 @@ Thumbs.db
 # Environment
 .env
 .env.local
+
+# Local source files awaiting import
+incoming/
+
+# Licensed or unreviewed hiring source data (private staging only)
+.local/

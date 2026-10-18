@@ -1,0 +1,145 @@
+{
+  "id": "za-eng-0001",
+  "legal": {
+    "legalName": "Mohlodi Industrial Engineering (Pty) Ltd",
+    "tradingName": "Mohlodi Engineering",
+    "entityType": "pty-ltd",
+    "cipcRegistrationNumber": "2014/128764/07",
+    "cipcStatus": "registered",
+    "cipcStatusAsOf": "2026-10-08",
+    "vatNumber": "4890271865",
+    "incomeTaxNumber": "9271004563",
+    "jseShareCode": "",
+    "jseListingStatus": "not-listed",
+    "jseListingAsOf": "2026-10-08",
+    "isin": "",
+    "leiNumber": ""
+  },
+  "scale": {
+    "employeesFte": 84,
+    "employeesAsOf": "2026-06-30",
+    "fteReported": true,
+    "annualTurnoverZar": 68400000,
+    "turnoverFyEnd": "2026-02-28",
+    "turnoverBasis": "reviewed",
+    "assetValueZar": 21500000,
+    "informal": false,
+    "reportingBasis": "standalone-entity",
+    "provenance": {
+      "sourceUrl": "",
+      "checkedOn": "2026-10-08",
+      "confidence": "unknown",
+      "sourceType": "internal-dataset"
+    }
+  },
+  "scaleBand": {
+    "band": "medium",
+    "bandLabel": "Medium",
+    "bandByEmployees": "medium",
+    "bandByTurnover": "medium",
+    "bandConflict": false,
+    "statutoryClass": "medium",
+    "scheduleId": "NSEA-S1-2019",
+    "derivedOn": "2026-10-08"
+  },
+  "bbbee": {
+    "category": "generic",
+    "level": "1",
+    "scorecardType": "sector-code",
+    "sectorCode": "construction",
+    "blackOwnershipPct": 76,
+    "blackFemaleOwnershipPct": 31,
+    "verificationAgency": "Illustrative SANAS-accredited verification agency",
+    "sanasAccredited": true,
+    "certificateNumber": "BEE-2026/FS/0417",
+    "validFrom": "2026-03-01",
+    "validTo": "2027-02-28",
+    "evidenceType": "verification-certificate",
+    "provenance": {
+      "sourceUrl": "",
+      "checkedOn": "2026-10-08",
+      "confidence": "unknown",
+      "sourceType": "internal-dataset"
+    }
+  },
+  "regulatory": {
+    "sarsTaxComplianceStatus": "tcs-valid",
+    "sarsTcsPin": "9071234567",
+    "sarsPinExpiry": "2027-03-31",
+    "coidaStatus": "lgs-valid",
+    "coidaLgsNumber": "COIDA/LGS/FS/2026/08812",
+    "coidaLgsExpiry": "2027-04-30",
+    "csdRegistered": true,
+    "pfmaOrMfmaApplicable": false,
+    "sectorLicences": [
+      {
+        "regulator": "cidb",
+        "licenceType": "Contractor grading 6CE and 5ME (civil engineering and mechanical engineering)",
+        "licenceNumber": "CIDB-06874512",
+        "status": "current",
+        "validTo": "2027-06-30",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "regulator": "sacpcmp",
+        "licenceType": "Professional Mechanical Engineer (Pr Eng Mech) on staff as responsible person",
+        "licenceNumber": "20190412",
+        "status": "current",
+        "validTo": "2026-12-31",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "regulator": "sanas",
+        "licenceType": "Accredited inspection authority for pressure equipment under the OHS Act pressure equipment regulations",
+        "licenceNumber": "ATE-1188",
+        "status": "current",
+        "validTo": "2027-09-30",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "regulator": "dtic",
+        "licenceType": "Local content designated product supplier for steel and fabricated metal",
+        "licenceNumber": "DTIC-LC-2025-3391",
+        "status": "current",
+        "validTo": "2027-03-31",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
+    "provenance": {
+      "sourceUrl": "",
+      "checkedOn": "2026-10-08",
+      "confidence": "unknown",
+      "sourceType": "internal-dataset"
+    }
+  },
+  "geography": {
+    "province": "FS",
+    "metropolitanMunicipality": "",
+    "districtMunicipality": "fezile-dabi",
+    "localMunicipality": "Metsimaholo",
+    "city": "Sasolburg",
+    "suburb": "Brandwag Industrial Area",
+    "streetAddress": "12 Benzol Street, Brandwag, Sasolburg, 1947",
+    "latitude": -26.8117,
+    "longitude": 27.8263,
+    "regionalEconomicHubs": ["fs-chem-industrial-corridor"],
+    "operatingProvinces": ["FS", "MP", "GP"],
+    "crossBorderCountries": [],
+    "sourceUrl": "",
+    "checkedOn": "2026-10-08"
+  },
+  "taxonomy": {
+    "primaryNode": "CON-ENG-MECH-PETRO",
+    "secondaryNodes": ["CON-ENG-MECH-BOILER", "CON-SPEC-ELEC"],
+    "valueChainStage": "Services",
+    "sourcingPocket": "construction"
+  },
+  "status": "needs-verification",
+  "lastVerified": "2026-10-08",
+  "illustrativeRecord": true,
+  "notes": "Synthetic demonstration record used to prove the schema end to end; no real company is asserted here. It is deliberately a B-BBEE Level 1 company that is NOT a micro enterprise: 84 employees and R68.4m turnover put it in the medium statutory band, and turnover above R50m puts it on the Generic scorecard under the Construction Sector Code. B-BBEE Level 1 and SMME size class are independent axes and are frequently conflated."
+}

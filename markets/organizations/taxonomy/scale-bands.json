@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "currency": "ZAR",
+  "precedence": "highest-of-both-proxies",
+  "precedenceRule": "A company is classified into the HIGHER of the band indicated by its FTE headcount and the band indicated by its annual turnover. This is the conservative reading used for state-support eligibility, supplier-development targets and corporate-banking segmentation: a 300-employee contractor with R8m turnover is a large labour-intensive enterprise, not a micro enterprise. Any disagreement between the two proxies is recorded on the company record as bandConflict so the disagreement is visible instead of silently resolved.",
+  "statutoryCeiling": {
+    "band": "medium",
+    "note": "The National Small Enterprise Act classifies only micro, small and medium. `large` and `tier-1` are not statutory classes; they are institutional corporate-banking bands layered on top of the Act so that a single taxonomy covers the whole registered universe, from an unregistered spaza owner to a JSE-listed conglomerate."
+  },
+  "bands": [
+    {
+      "id": "micro",
+      "code": "M",
+      "label": "Micro / Informal",
+      "rank": 1,
+      "employeesMin": 1,
+      "employeesMax": 10,
+      "turnoverMin": 0,
+      "turnoverMax": 10000000,
+      "turnoverCapRule": "sector-dependent",
+      "statutoryClass": "micro",
+      "informalInclusive": true,
+      "corporateBankingEquivalent": "Entry / Business Banking - unbanked and micro-business",
+      "notes": "Absorbs the informal economy: unregistered spaza owners, street traders, artisanal diggers and subsistence farmers are recorded here with entityType sole-proprietorship or unregistered-informal. The statutory schedule counts full-time equivalents from zero, so a registered entity reporting no FTE still resolves to this band with fteReported=false."
+    },
+    {
+      "id": "small",
+      "code": "S",
+      "label": "Small",
+      "rank": 2,
+      "employeesMin": 11,
+      "employeesMax": 50,
+      "turnoverMin": 10000001,
+      "turnoverMax": 50000000,
+      "turnoverCapRule": "sector-dependent",
+      "statutoryClass": "small",
+      "informalInclusive": false,
+      "corporateBankingEquivalent": "Business Banking / Small Business - Relationship managed",
+      "notes": "The R10m and R50m turnover lines are also the B-BBEE EME and QSE boundaries, so a small enterprise normally carries either an Exempted Micro Enterprise affidavit or a Qualifying Small Enterprise scorecard."
+    },
+    {
+      "id": "medium",
+      "code": "ME",
+      "label": "Medium",
+      "rank": 3,
+      "employeesMin": 51,
+      "employeesMax": 250,
+      "turnoverMin": 50000001,
+      "turnoverMax": 250000000,
+      "turnoverCapRule": "sector-dependent",
+      "statutoryClass": "medium",
+      "informalInclusive": false,
+      "corporateBankingEquivalent": "Commercial Banking / Mid-Market",
+      "notes": "Turnover ceiling is R100m for most services and R250m for capital-intensive sectors; the binding figure is the statutory Schedule 1 line for the company's sector, resolved through statutory-schedule-1.json. Above R50m turnover the B-BBEE Generic scorecard applies regardless of headcount."
+    },
+    {
+      "id": "large",
+      "code": "L",
+      "label": "Large / Enterprise",
+      "rank": 4,
+      "employeesMin": 251,
+      "employeesMax": 999,
+      "turnoverMin": 250000001,
+      "turnoverMax": 1000000000,
+      "turnoverCapRule": "fixed",
+      "statutoryClass": null,
+      "informalInclusive": false,
+      "corporateBankingEquivalent": "Corporate Banking / Large Enterprise",
+      "notes": "Not a statutory SMME class. Typically a Generic B-BBEE scorecard holder, PFMA-listed SOE, large private group division, or a Tier 1/2 mining and construction contractor."
+    },
+    {
+      "id": "tier-1",
+      "code": "T1",
+      "label": "Tier 1 Conglomerate / JSE Listed",
+      "rank": 5,
+      "employeesMin": 1000,
+      "employeesMax": null,
+      "turnoverMin": 1000000001,
+      "turnoverMax": null,
+      "turnoverCapRule": "fixed",
+      "statutoryClass": null,
+      "informalInclusive": false,
+      "corporateBankingEquivalent": "Corporate & Investment Banking / Top-40 and Large Corporate",
+      "notes": "Not a statutory SMME class. Predominantly JSE-listed groups, state-owned companies and multinational subsidiaries. Headcount and turnover are reported at the level of the reporting entity, so the taxonomy must be applied to the legal entity, not the group, unless the record explicitly states group-consolidated basis."
+    }
+  ]
+}
