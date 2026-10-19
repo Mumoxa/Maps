@@ -22,7 +22,7 @@ Do not invent facts, requirements, architecture, build status, test results, sec
   site is served from the host root, not a subdirectory)
 - **Deployment:** the `CI` workflow must pass on `main`, then `.github/workflows/deploy-cloudflare.yml`
   runs `npx wrangler pages deploy dist --project-name maps`. GitHub Pages is **not** enabled for this
-  repository. `public/_redirects` (`/* /index.html 200`) handles SPA deep links.
+  repository. Cloudflare Pages serves SPA deep links with HTTP 200 via automatic SPA fallback when no top-level `404.html` is present; `public/_redirects` also declares the SPA rewrite. Do not generate or ship `404.html`.
 - **Canonical origin:** `https://maps-4xq.pages.dev` appears in `public/robots.txt`, `public/sitemap.xml`
   and the `og:url` / `og:image` / `twitter:image` tags in `index.html`. If a custom domain is attached
   to the Pages project, update those three files in the same change.
@@ -32,7 +32,7 @@ Do not invent facts, requirements, architecture, build status, test results, sec
 ```bash
 npm install
 npm run dev      # local dev server on 0.0.0.0:5173
-npm run build    # validate:data + validate:contacts + tsc -b + vite build (+ 404.html copy)
+npm run build    # validation + tsc -b + vite build; do not ship 404.html
 ```
 
 ## Known Architecture Decisions
