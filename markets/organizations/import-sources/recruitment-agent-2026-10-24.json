@@ -164,7 +164,6 @@
       "sourceUrls": [
         "https://dorpstraat.net/our-team/"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "None identified",
       "taxonomyNode": "CON-PROP-DEV"
@@ -180,7 +179,6 @@
       "sourceUrls": [
         "https://vdmv.co.za/management-team/"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Partial",
       "researchEvidence": "Finance-leadership role unclear for Nadia van der Merwe; our-team/ 404",
       "taxonomyNode": "CON-PROP-DEV"
@@ -197,7 +195,6 @@
         "https://www.rawson-developers.co.za/about",
         "https://linkedin.com/in/calum-wedge-b50ab536"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "None identified",
       "taxonomyNode": "CON-PROP-DEV"
@@ -214,7 +211,6 @@
         "https://originfin.com/board-of-directors/",
         "https://linkedin.com/in/francois-van-niekerk-ca-sa-757b54b9"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "None identified",
       "taxonomyNode": "CON-PROP"
@@ -231,7 +227,6 @@
         "https://asrin.co.za/about/",
         "https://linkedin.com/in/shaida-hassan-62533593"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "None identified",
       "taxonomyNode": "CON-PROP-DEV"
@@ -247,7 +242,6 @@
       "sourceUrls": [
         "https://signatura.biz/"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Finance function researched: Stefan du Toit Finance Manager (publicly claimed CA(SA)), Ruard Nel Assistant Financial Manager (CA(SA) UNKNOWN)",
       "taxonomyNode": "CON-PROP-DEV"
@@ -263,7 +257,6 @@
       "sourceUrls": [
         "https://balwin.co.za/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-PROP-DEV"
@@ -279,7 +272,6 @@
       "sourceUrls": [
         "https://calgrom3.com/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-PROP-DEV"
@@ -295,7 +287,6 @@
       "sourceUrls": [
         "https://www.wbho.co.za/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-CONTR"
@@ -311,7 +302,6 @@
       "sourceUrls": [
         "https://raubex.co.za/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-CONTR"
@@ -327,7 +317,6 @@
       "sourceUrls": [
         "https://www.stefanuttistocks.com/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-CONTR"
@@ -343,7 +332,6 @@
       "sourceUrls": [
         "https://www.aveng.co.za/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-CONTR"
@@ -359,7 +347,6 @@
       "sourceUrls": [
         "https://www.redefine.co.za/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-PROP-DEV"
@@ -375,7 +362,6 @@
       "sourceUrls": [
         "https://www.growthpoint.co.za/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-PROP"
@@ -391,7 +377,6 @@
       "sourceUrls": [
         "https://www.attacq.co.za/"
       ],
-      "researchStatus": "Excluded",
       "researchCompleteness": "Yes",
       "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
       "taxonomyNode": "CON-PROP-DEV"
@@ -407,7 +392,6 @@
       "sourceUrls": [
         "https://www.rabie.co.za/"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Chris McMaster CFO (joined 2017 from Mazars), Mariska Auret CEO, Miguel Rodrigues COO; WC-based premier developer",
       "taxonomyNode": "CON-PROP-DEV"
@@ -423,7 +407,6 @@
       "sourceUrls": [
         "https://blok.co.za/"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Nic Tromp CA(SA) Chief Financial Officer & Partner, Jacques Van Embden Founder & CEO; CA(SA) confirmed",
       "taxonomyNode": "CON-PROP-DEV"
@@ -439,7 +422,6 @@
       "sourceUrls": [
         "https://www.valdevie.co.za/"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Sarel Rossouw Financial Director, qualified CA(SA) (ex-PwC); WC-based",
       "taxonomyNode": "CON-PROP-DEV"
@@ -455,7 +437,6 @@
       "sourceUrls": [
         "https://daleglen.co.za/"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Xavier Badenhorst Financial Director; CA(SA) status to verify",
       "taxonomyNode": "CON-PROP-DEV"
@@ -471,7 +452,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/giflo-group"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Josias de Kock Group Financial Director, CA(SA); WC-based",
       "taxonomyNode": "CON-PROP-DEV"
@@ -489,7 +469,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/asla-group"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Pieter Toerien CA(SA) Financial Manager (17 yrs 7 months)",
       "taxonomyNode": "CON-CONTR"
@@ -507,7 +486,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/power-construction-pty-ltd"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Ernst van Vondel CA(SA) Head of Finance (8 yrs 3 months)",
       "taxonomyNode": "CON-CONTR"
@@ -525,7 +503,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/orcinus-properties"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Zack Humphreys CA(SA) Financial Manager (2 yrs 10 months)",
       "taxonomyNode": "CON-PROP-DEV"
@@ -541,7 +518,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/fwjkdevelopments"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Shaun Williams Group Financial Controller (7 yrs 2 months) - CA(SA) to verify",
       "taxonomyNode": "CON-PROP-DEV"
@@ -559,7 +535,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/citra-live-different"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Xola Mxhalisa CA(SA) FP&A Controller / ex-Group Financial Manager",
       "taxonomyNode": "CON-CONTR"
@@ -575,7 +550,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/the-building-company-za"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Clarinda Engelbrecht CA(SA) Financial Manager (1 yrs 5 months)",
       "taxonomyNode": "CON-MAT-HARDWARE"
@@ -591,7 +565,6 @@
       "sourceUrls": [
         "https://www.linkedin.com/company/sa-construction-group"
       ],
-      "researchStatus": "Researched",
       "researchCompleteness": "Yes",
       "researchEvidence": "Azelle Vreij Finance Manager (9 yrs 10 months) - CA(SA) to verify",
       "taxonomyNode": "CON-CONTR"
