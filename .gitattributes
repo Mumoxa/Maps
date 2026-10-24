@@ -1,0 +1,2 @@
+# Keep the reviewed source hash stable across Windows and Linux checkouts.
+markets/organizations/import-sources/recruitment-agent-2026-10-24.json text eol=lf
