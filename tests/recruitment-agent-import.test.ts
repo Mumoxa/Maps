@@ -72,7 +72,7 @@ test('every employer row resolves to a canonical company and retains attributed 
 test('public evidence snapshot omits internal contact outcomes and records source structure repairs', () => {
   const a = audit()
   const source = readFileSync(a.sourceArchive, 'utf8')
-  assert.doesNotMatch(source, /too expensive|Nico Fourie|Quintin Oosthuizen|To Contact|SLM - Head of Finance/)
+  assert.doesNotMatch(source, /too expensive|Nico Fourie|Quintin Oosthuizen|To Contact|SLM - Head of Finance|Excluded per instruction/)
   assert.equal(a.sourceCandidateRows, 11)
   assert.equal(a.sourceClaimedCandidateCount, 12)
   assert.equal(a.repairs.candidateRowsMissingScreeningColumn.length, 7)
