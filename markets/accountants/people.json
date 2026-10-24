@@ -19464,24 +19464,24 @@
     "bodies": [
       "SAICA"
     ],
-    "title": "Financial Manager / FP&A; former Financial Controller",
-    "employer": "Current employer unconfirmed; former Faircape Group",
+    "title": "Financial Manager",
+    "employer": "The Building Company",
     "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Former property group finance; current sector unconfirmed",
-    "function": "",
-    "industry": "Property Finance & Banking",
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Building Materials Wholesale",
     "subIndustry": "",
-    "province": "",
-    "city": "Cape Town, Western Cape",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "HIGH",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
     "analyticsTools": [],
     "yearsExperience": "unknown",
-    "qualificationEvidence": "See source URLs",
+    "qualificationEvidence": "See source URLs\nRecruitment Agent source-reported qualification: CONFIRMED CA(SA) - CA(SA). Claim not independently reverified during transfer; active SAICA membership not confirmed.",
     "articlesStatus": "UNKNOWN",
     "articlesEmployer": "",
     "articlesBody": "",
@@ -19490,13 +19490,15 @@
     "practicalExperienceFramework": "",
     "qualificationRoute": "",
     "careerHistory": [],
-    "linkedinUrl": "",
+    "linkedinUrl": "https://www.linkedin.com/in/clarinda-engelbrecht-5aa9b5187",
     "primarySource": "https://za.linkedin.com/in/clarinda-engelbrecht-5aa9b5187",
     "sourceUrls": [
-      "https://za.linkedin.com/in/clarinda-engelbrecht-5aa9b5187"
+      "https://za.linkedin.com/in/clarinda-engelbrecht-5aa9b5187",
+      "https://linkedin.com/in/clarinda-engelbrecht-5aa9b5187",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
     ],
     "dateLastVerified": "2026-10-17",
-    "notes": "Wave: W3 — sector / experience needs screening | Active SAICA membership and Bellville onsite availability not verified; eight-year finance career must be dated unless cited.",
+    "notes": "Wave: W3 — sector / experience needs screening | Active SAICA membership and Bellville onsite availability not verified; eight-year finance career must be dated unless cited.\nRecruitment Agent 2026-10-23. Financial Manager Apr 2025-present at The Building Company (WC wholesale building materials / construction supply); Cash and Bank Manager May 2024-Apr 2025; Accountant Faircape Group Sep 2022-May 2024; Financial Controller Faircape Group Jul 2022-Aug 2022 (1 month). 9 years 7 months exp. Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
     "attributes": {
       "recruitment_source": "Wave 2 Bellville Project Finance Search",
       "research_provenance": "Expanded sourced research 17 Oct 2026 (primary employer / indexed profile)",
@@ -19504,65 +19506,12 @@
       "project_finance_evidence": "Specific project budgets, lender facilities and feasibility modelling not independently evidenced",
       "designation_evidence_class": "Published CA(SA) designation (not live SAICA confirmation)",
       "batch_id": "wave-1-bellville-prior-2026-10-17",
-      "search_name": "SLM - Head of Finance"
-    }
-  },
-  {
-    "id": "acc-1699",
-    "fullName": "Clarinda Engelbrecht",
-    "alternateNames": [],
-    "status": "CONFIRMED",
-    "confidence": "CONFIRMED",
-    "roleScopeStatus": "",
-    "professionallyQualified": "true",
-    "designationStatus": "CONFIRMED",
-    "qualificationConfidence": "CONFIRMED",
-    "academicQualifications": [],
-    "designations": [
-      "CA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Financial Manager / FP&A; former Financial Controller",
-    "employer": "Current employer unconfirmed; former Faircape Group",
-    "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Finance",
-    "function": "",
-    "industry": "Property Finance & Banking",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Cape Town",
-    "country": "South Africa",
-    "locationConfidence": "HIGH",
-    "skills": [],
-    "accountingSystems": [],
-    "erpSystems": [],
-    "analyticsTools": [],
-    "yearsExperience": "unknown",
-    "qualificationEvidence": "Explicit CA(SA) stated in cited employer biography / professional profile",
-    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "articlesPeriod": "",
-    "articlesLocation": "",
-    "practicalExperienceFramework": "",
-    "qualificationRoute": "",
-    "careerHistory": [],
-    "linkedinUrl": "",
-    "primarySource": "https://za.linkedin.com/in/clarinda-engelbrecht-5aa9b5187",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/clarinda-engelbrecht-5aa9b5187"
-    ],
-    "dateLastVerified": "2026-10-17",
-    "notes": "CA(SA), brief Faircape controller history; further property experience unknown. Verification: Screen for 8+ dated finance career and direct project cashflow / feasibility before client submission",
-    "attributes": {
       "search_name": "SLM - Head of Finance",
-      "research_tier": "A — CA evidenced",
-      "fit_assessment": "CA(SA), brief Faircape controller history; further property experience unknown",
-      "verification_required": "no"
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
     }
   },
   {
@@ -22703,21 +22652,21 @@
     "title": "Group Finance Manager",
     "employer": "Dorpstraat Properties",
     "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Property / investment portfolios",
-    "function": "",
-    "industry": "Property Development & Investment",
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Property Development",
     "subIndustry": "",
-    "province": "",
-    "city": "Western Cape location NOT confirmed — X-ray query association only",
+    "province": "Western Cape",
+    "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
     "analyticsTools": [],
     "yearsExperience": "unknown",
-    "qualificationEvidence": "See source URLs",
+    "qualificationEvidence": "See source URLs\nRecruitment Agent source-reported qualification: CONFIRMED CA(SA) - Bachelor of Accounting Stellenbosch University; completed CA(SA) qualification. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
     "articlesStatus": "UNKNOWN",
     "articlesEmployer": "",
     "articlesBody": "",
@@ -22726,13 +22675,15 @@
     "practicalExperienceFramework": "",
     "qualificationRoute": "",
     "careerHistory": [],
-    "linkedinUrl": "",
+    "linkedinUrl": "https://www.linkedin.com/in/dawid-brink-ca-sa-aa8064128",
     "primarySource": "https://za.linkedin.com/in/dawid-brink-ca-sa-aa8064128",
     "sourceUrls": [
-      "https://za.linkedin.com/in/dawid-brink-ca-sa-aa8064128"
+      "https://za.linkedin.com/in/dawid-brink-ca-sa-aa8064128",
+      "https://linkedin.com/in/dawid-brink-ca-sa-aa8064128",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
     ],
     "dateLastVerified": "2026-10-17",
-    "notes": "Wave: W1 — direct employer / operational role | Current location and 8+ finance experience not independently verified. Sector responsibilities inferred from company and title; screen for direct development budgets/cashflow.",
+    "notes": "Wave: W1 — direct employer / operational role | Current location and 8+ finance experience not independently verified. Sector responsibilities inferred from company and title; screen for direct development budgets/cashflow.\nRecruitment Agent 2026-10-23. Group Finance Manager Jul 2021-present at Dorpstraat Properties (retail property development/investment, Stellenbosch/Cape Town WC); Finance Manager Wild Peacock Products Nov 2019-Jul 2021; Audit Manager PKF Cape Town Jan 2018-Nov 2019; Accounting Trainee PKF RademeyerWesson Jan 2015-Dec 2017 Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
     "attributes": {
       "recruitment_source": "Wave 2 Bellville Project Finance Search",
       "research_provenance": "Prior search / source in profile URL; expanded audit 17 Oct 2026",
@@ -22740,65 +22691,12 @@
       "project_finance_evidence": "Not independently established",
       "designation_evidence_class": "Published CA(SA) statement (not active membership)",
       "batch_id": "wave-1-bellville-prior-2026-10-17",
-      "search_name": "SLM - Head of Finance"
-    }
-  },
-  {
-    "id": "acc-1662",
-    "fullName": "Dawid Brink",
-    "alternateNames": [],
-    "status": "CONFIRMED",
-    "confidence": "CONFIRMED",
-    "roleScopeStatus": "",
-    "professionallyQualified": "true",
-    "designationStatus": "CONFIRMED",
-    "qualificationConfidence": "CONFIRMED",
-    "academicQualifications": [],
-    "designations": [
-      "CA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Group Finance Manager",
-    "employer": "Dorpstraat Properties",
-    "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Finance",
-    "function": "",
-    "industry": "Property Development & Investment",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "HIGH",
-    "skills": [],
-    "accountingSystems": [],
-    "erpSystems": [],
-    "analyticsTools": [],
-    "yearsExperience": "unknown",
-    "qualificationEvidence": "Published CA(SA) on profile / employer record",
-    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "articlesPeriod": "",
-    "articlesLocation": "",
-    "practicalExperienceFramework": "",
-    "qualificationRoute": "",
-    "careerHistory": [],
-    "linkedinUrl": "",
-    "primarySource": "https://za.linkedin.com/in/dawid-brink-ca-sa-aa8064128",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/dawid-brink-ca-sa-aa8064128"
-    ],
-    "dateLastVerified": "2026-10-17",
-    "notes": "Direct property / project / infrastructure fit. Verification: Confirm live SAICA, 8+ dated role history, model/project controls and Bellville onsite willingness",
-    "attributes": {
       "search_name": "SLM - Head of Finance",
-      "research_tier": "A — CA evidenced",
-      "fit_assessment": "Direct property / project / infrastructure fit",
-      "verification_required": "no"
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
     }
   },
   {
@@ -29011,9 +28909,9 @@
       }
     ],
     "seniority": "Head / Director",
-    "roleFamily": "Head of Finance",
-    "function": "Head of Finance",
-    "industry": "Property Development & Investment",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Construction/Building",
     "subIndustry": "",
     "province": "Western Cape",
     "city": "City of Cape Town",
@@ -29024,7 +28922,7 @@
     "erpSystems": [],
     "analyticsTools": [],
     "yearsExperience": "unknown",
-    "qualificationEvidence": "Professional designation(s): CA(SA) (SAICA). Articles/training: NOT_ESTABLISHED\nMBAWC workbook reports Yes — CA(SA) confirmed. CA(SA); Head of Finance at Power Construction (Pty) Ltd. Started as Internal Auditor 2003; previously BDO Spencer Steward. Completed Stanford Emerging CFO program. (LinkedIn headline 'CA(SA)', Zoominfo, RocketReach) Source-reported; live qualification/membership not independently checked.",
+    "qualificationEvidence": "Professional designation(s): CA(SA) (SAICA). Articles/training: NOT_ESTABLISHED\nMBAWC workbook reports Yes — CA(SA) confirmed. CA(SA); Head of Finance at Power Construction (Pty) Ltd. Started as Internal Auditor 2003; previously BDO Spencer Steward. Completed Stanford Emerging CFO program. (LinkedIn headline 'CA(SA)', Zoominfo, RocketReach) Source-reported; live qualification/membership not independently checked.\nRecruitment Agent source-reported qualification: CONFIRMED CA(SA) - CA(SA) Accounting and Finance SAICA 2003. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
     "articlesStatus": "NOT_ESTABLISHED",
     "articlesEmployer": "",
     "articlesBody": "",
@@ -29044,16 +28942,18 @@
         "notes": "Previous role; title/training route not supplied."
       }
     ],
-    "linkedinUrl": "https://www.linkedin.com/in/vondel/",
+    "linkedinUrl": "https://www.linkedin.com/in/vondel",
     "primarySource": "https://www.linkedin.com/in/vondel/",
     "sourceUrls": [
       "https://www.linkedin.com/in/vondel/",
       "https://za.linkedin.com/in/vondel",
       "https://za.linkedin.com/company/power-construction-pty-ltd",
-      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/mbawc-2026-10-22.xlsx"
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/mbawc-2026-10-22.xlsx",
+      "https://linkedin.com/in/vondel",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
     ],
     "dateLastVerified": "2026-09-20",
-    "notes": "Structured public professional profile used where available.\nMBAWC 2026-10-22. CA(SA); Head of Finance at Power Construction (Pty) Ltd. Started as Internal Auditor 2003; previously BDO Spencer Steward. Completed Stanford Emerging CFO program. (LinkedIn headline 'CA(SA)', Zoominfo, RocketReach) All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task. No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership. Workbook member-company location is not evidence of personal residence.",
+    "notes": "Structured public professional profile used where available.\nMBAWC 2026-10-22. CA(SA); Head of Finance at Power Construction (Pty) Ltd. Started as Internal Auditor 2003; previously BDO Spencer Steward. Completed Stanford Emerging CFO program. (LinkedIn headline 'CA(SA)', Zoominfo, RocketReach) All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task. No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership. Workbook member-company location is not evidence of personal residence.\nRecruitment Agent 2026-10-23. Head of Finance Department Jul 2018-present at Power Construction (Pty) Ltd (WC construction; civil roads building turnkey housing property development); Financial Manager Jan 2007-present (financial management of property development division). 8 years 3 months Head of Finance; 18 years 9 months FM. Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
     "attributes": {
       "recruitment_source": "Wave 2 Bellville Project Finance Search",
       "research_provenance": "Prior search / source in profile URL; expanded audit 17 Oct 2026",
@@ -29063,7 +28963,8 @@
       "batch_id": "wave-1-bellville-prior-2026-10-17",
       "search_name": "SLM - Head of Finance",
       "source_cohorts": [
-        "MBAWC 2026-10-22"
+        "MBAWC 2026-10-22",
+        "Recruitment Agent 2026-10-23"
       ],
       "source_batch": "mbawc-2026-10-22",
       "source_reported": true
@@ -51140,21 +51041,21 @@
     "title": "Financial Manager",
     "employer": "Rabie Property Developers",
     "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Property development",
-    "function": "",
-    "industry": "Property Development & Investment",
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Property Development",
     "subIndustry": "Property Development",
     "province": "Western Cape",
     "city": "Cape Town",
     "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
+    "locationConfidence": "PROBABLE",
     "skills": [],
     "accountingSystems": [],
     "erpSystems": [],
     "analyticsTools": [],
     "yearsExperience": "unknown",
-    "qualificationEvidence": "See source URLs",
+    "qualificationEvidence": "See source URLs\nRecruitment Agent source-reported qualification: CA(SA) confirmed - Honours Accounting UNISA 2020. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
     "articlesStatus": "UNKNOWN",
     "articlesEmployer": "",
     "articlesBody": "",
@@ -51163,13 +51064,15 @@
     "practicalExperienceFramework": "",
     "qualificationRoute": "",
     "careerHistory": [],
-    "linkedinUrl": "",
+    "linkedinUrl": "https://www.linkedin.com/in/lene-dippenaar-1a6618213",
     "primarySource": "https://za.linkedin.com/in/lene-dippenaar-1a6618213",
     "sourceUrls": [
-      "https://za.linkedin.com/in/lene-dippenaar-1a6618213"
+      "https://za.linkedin.com/in/lene-dippenaar-1a6618213",
+      "https://www.rabie.co.za/",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
     ],
     "dateLastVerified": "2026-10-17",
-    "notes": "Wave: W1 — direct employer / operational role | Check 8+ total finance experience; earlier search suggests possibly under threshold",
+    "notes": "Wave: W1 — direct employer / operational role | Check 8+ total finance experience; earlier search suggests possibly under threshold\nRecruitment Agent 2026-10-23. Financial Manager May 2026-present at Rabie Property Developers (WC property developer, Century City); Audit Manager Forvis Mazars Mar 2024-May 2026; Assistant Audit Manager Mar 2023-Feb 2024; Audit Senior Sep 2022-present; Auditor Feb 2020-present Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
     "attributes": {
       "recruitment_source": "Wave 2 Bellville Project Finance Search",
       "research_provenance": "Prior search / source in profile URL; expanded audit 17 Oct 2026",
@@ -51177,65 +51080,12 @@
       "project_finance_evidence": "Not independently established",
       "designation_evidence_class": "Published CA(SA) statement (not active membership)",
       "batch_id": "wave-1-bellville-prior-2026-10-17",
-      "search_name": "SLM - Head of Finance"
-    }
-  },
-  {
-    "id": "acc-1465",
-    "fullName": "Lene Dippenaar",
-    "alternateNames": [],
-    "status": "CONFIRMED",
-    "confidence": "CONFIRMED",
-    "roleScopeStatus": "",
-    "professionallyQualified": "true",
-    "designationStatus": "CONFIRMED",
-    "qualificationConfidence": "CONFIRMED",
-    "academicQualifications": [],
-    "designations": [
-      "CA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Financial Manager",
-    "employer": "Rabie Property Developers",
-    "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Project Finance",
-    "function": "",
-    "industry": "Property Development & Investment",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Cape Town",
-    "country": "South Africa",
-    "locationConfidence": "HIGH",
-    "skills": [],
-    "accountingSystems": [],
-    "erpSystems": [],
-    "analyticsTools": [],
-    "yearsExperience": "unknown",
-    "qualificationEvidence": "Profile explicitly states Financial Manager CA(SA)",
-    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "articlesPeriod": "",
-    "articlesLocation": "",
-    "practicalExperienceFramework": "",
-    "qualificationRoute": "",
-    "careerHistory": [],
-    "linkedinUrl": "",
-    "primarySource": "https://za.linkedin.com/in/lene-dippenaar-1a6618213",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/lene-dippenaar-1a6618213"
-    ],
-    "dateLastVerified": "2026-10-17",
-    "notes": "HIGH: direct property developer FM. Verification: Confirm live SAICA, 8+ dated role history, model/project controls and Bellville onsite willingness",
-    "attributes": {
       "search_name": "SLM - Head of Finance",
-      "research_tier": "A — CA evidenced",
-      "fit_assessment": "HIGH: direct property developer FM",
-      "verification_required": "no"
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
     }
   },
   {
@@ -58835,6 +58685,67 @@
     "dateLastVerified": "2026-09-20",
     "notes": "Qualification/articles enrichment pending.",
     "attributes": {}
+  },
+  {
+    "id": "acc-1718",
+    "fullName": "Marinus Prinsloo",
+    "alternateNames": [],
+    "status": "RESEARCH_HOLD",
+    "confidence": "PROBABLE",
+    "roleScopeStatus": "IN_SCOPE",
+    "professionallyQualified": "true",
+    "designationStatus": "PROBABLE",
+    "qualificationConfidence": "PROBABLE",
+    "academicQualifications": [],
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Group Finance Manager",
+    "employer": "Blok",
+    "currentCompanyAffiliations": [],
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Property Development",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Recruitment Agent source-reported qualification: CONFIRMED CA(SA) - Chartered Accountant (SA). Claim not independently reverified during transfer; active SAICA membership not confirmed.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "articlesPeriod": "",
+    "articlesLocation": "",
+    "practicalExperienceFramework": "",
+    "qualificationRoute": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/marinus-prinsloo-ca-sa-b04255160",
+    "primarySource": "https://www.linkedin.com/in/marinus-prinsloo-ca-sa-b04255160",
+    "sourceUrls": [
+      "https://linkedin.com/in/marinus-prinsloo-ca-sa-b04255160",
+      "https://blok.co.za/",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
+    ],
+    "dateLastVerified": "2026-10-23",
+    "notes": "Recruitment Agent 2026-10-23. Group Finance Manager Mar 2025-present at Blok (WC urban precinct/apartment property developer, Atlantic Seaboard & City Bowl); Finance Manager Nov 2023-Apr 2025 at Blok; Finance Manager Ivor Smith Electrical (ISE) Group Aug 2021-Oct 2023 (construction). 1 year 7 months in current GFM role. Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
+    "attributes": {
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
+    }
   },
   {
     "id": "acc-0746",
@@ -74048,20 +73959,24 @@
     "status": "FINANCE_ROLE_CONFIRMED",
     "confidence": "CONFIRMED",
     "roleScopeStatus": "IN_SCOPE",
-    "professionallyQualified": "unknown",
-    "designationStatus": "NOT_APPLICABLE",
-    "qualificationConfidence": "NOT_APPLICABLE",
+    "professionallyQualified": "true",
+    "designationStatus": "PROBABLE",
+    "qualificationConfidence": "PROBABLE",
     "academicQualifications": [],
-    "designations": [],
+    "designations": [
+      "CA(SA)"
+    ],
     "professionalRoutes": [],
-    "bodies": [],
+    "bodies": [
+      "SAICA"
+    ],
     "title": "Financial Manager",
-    "employer": "ASLA",
+    "employer": "ASLA Construction Group",
     "currentCompanyAffiliations": [],
     "seniority": "Manager",
     "roleFamily": "Financial Management",
-    "function": "Financial Management",
-    "industry": "",
+    "function": "Finance",
+    "industry": "Construction/Building",
     "subIndustry": "",
     "province": "Western Cape",
     "city": "City of Cape Town",
@@ -74072,7 +73987,7 @@
     "erpSystems": [],
     "analyticsTools": [],
     "yearsExperience": "unknown",
-    "qualificationEvidence": "Articles/training: NOT_ESTABLISHED",
+    "qualificationEvidence": "Articles/training: NOT_ESTABLISHED\nRecruitment Agent source-reported qualification: CONFIRMED CA(SA) - SAICA credential ID 08039092; B. Accounting & B. Accounting Hons Stellenbosch; articles Moores Rowland Cape Town. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
     "articlesStatus": "NOT_ESTABLISHED",
     "articlesEmployer": "",
     "articlesBody": "",
@@ -74081,66 +73996,16 @@
     "practicalExperienceFramework": "",
     "qualificationRoute": "",
     "careerHistory": [],
-    "linkedinUrl": "https://www.linkedin.com/in/pieter-toerien-14727091/",
+    "linkedinUrl": "https://www.linkedin.com/in/pieter-toerien-14727091",
     "primarySource": "https://www.linkedin.com/in/pieter-toerien-14727091/",
     "sourceUrls": [
-      "https://www.linkedin.com/in/pieter-toerien-14727091/"
+      "https://www.linkedin.com/in/pieter-toerien-14727091/",
+      "https://za.linkedin.com/in/pieter-toerien-14727091",
+      "https://linkedin.com/in/pieter-toerien-14727091",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
     ],
     "dateLastVerified": "2026-09-20",
-    "notes": "Structured public professional profile used where available.",
-    "attributes": {}
-  },
-  {
-    "id": "acc-1196",
-    "fullName": "Pieter Toerien",
-    "alternateNames": [],
-    "status": "CONFIRMED",
-    "confidence": "CONFIRMED",
-    "roleScopeStatus": "",
-    "professionallyQualified": "true",
-    "designationStatus": "CONFIRMED",
-    "qualificationConfidence": "CONFIRMED",
-    "academicQualifications": [],
-    "designations": [
-      "CA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Finance executive / Chartered Accountant",
-    "employer": "Current employer unconfirmed; formerly Aquacor Property Group",
-    "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Property development / construction",
-    "function": "",
-    "industry": "Property Development & Investment",
-    "subIndustry": "",
-    "province": "",
-    "city": "Western Cape – confirm",
-    "country": "South Africa",
-    "locationConfidence": "UNCONFIRMED",
-    "skills": [],
-    "accountingSystems": [],
-    "erpSystems": [],
-    "analyticsTools": [],
-    "yearsExperience": "2006+",
-    "qualificationEvidence": "See source URLs",
-    "articlesStatus": "UNKNOWN",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "articlesPeriod": "",
-    "articlesLocation": "",
-    "practicalExperienceFramework": "",
-    "qualificationRoute": "",
-    "careerHistory": [],
-    "linkedinUrl": "",
-    "primarySource": "https://za.linkedin.com/in/pieter-toerien-14727091",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/pieter-toerien-14727091"
-    ],
-    "dateLastVerified": "2026-10-17",
-    "notes": "Wave: W1 — direct employer / operational role | Public profile describes Aquacor and construction group in Strand",
+    "notes": "Structured public professional profile used where available.\nRecruitment Agent 2026-10-23. Financial Manager Mar 2009-present at ASLA Construction Group (Strand WC; civil and traditional building construction; turnkey project solutions). 17 years 7 months in role. Manages full financial department; project/job costing for construction sites; ERP Sage 300. Ex-Group Financial Manager Aquacor Property Developers Feb 2006-Mar 2009 (property development). Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
     "attributes": {
       "recruitment_source": "Wave 2 Bellville Project Finance Search",
       "research_provenance": "Prior search / source in profile URL; expanded audit 17 Oct 2026",
@@ -74148,65 +74013,12 @@
       "project_finance_evidence": "Not independently established",
       "designation_evidence_class": "Published CA(SA) statement (not active membership)",
       "batch_id": "wave-1-bellville-prior-2026-10-17",
-      "search_name": "SLM - Head of Finance"
-    }
-  },
-  {
-    "id": "acc-1495",
-    "fullName": "Pieter Toerien",
-    "alternateNames": [],
-    "status": "CONFIRMED",
-    "confidence": "CONFIRMED",
-    "roleScopeStatus": "",
-    "professionallyQualified": "true",
-    "designationStatus": "CONFIRMED",
-    "qualificationConfidence": "CONFIRMED",
-    "academicQualifications": [],
-    "designations": [
-      "CA(SA)"
-    ],
-    "professionalRoutes": [],
-    "bodies": [
-      "SAICA"
-    ],
-    "title": "Finance executive / Chartered Accountant",
-    "employer": "Current employer unconfirmed; formerly Aquacor Property Group",
-    "currentCompanyAffiliations": [],
-    "seniority": "",
-    "roleFamily": "Project Finance",
-    "function": "",
-    "industry": "Property Development & Investment",
-    "subIndustry": "",
-    "province": "Western Cape",
-    "city": "Western Cape",
-    "country": "South Africa",
-    "locationConfidence": "HIGH",
-    "skills": [],
-    "accountingSystems": [],
-    "erpSystems": [],
-    "analyticsTools": [],
-    "yearsExperience": "2006+",
-    "qualificationEvidence": "Profile states registered CA(SA) since 2006",
-    "articlesStatus": "QUALIFIED_BUT_ARTICLES_NOT_ESTABLISHED",
-    "articlesEmployer": "",
-    "articlesBody": "",
-    "articlesPeriod": "",
-    "articlesLocation": "",
-    "practicalExperienceFramework": "",
-    "qualificationRoute": "",
-    "careerHistory": [],
-    "linkedinUrl": "",
-    "primarySource": "https://za.linkedin.com/in/pieter-toerien-14727091",
-    "sourceUrls": [
-      "https://za.linkedin.com/in/pieter-toerien-14727091"
-    ],
-    "dateLastVerified": "2026-10-17",
-    "notes": "HIGH: property and construction finance history. Verification: Confirm live SAICA, 8+ dated role history, model/project controls and Bellville onsite willingness",
-    "attributes": {
       "search_name": "SLM - Head of Finance",
-      "research_tier": "A — CA evidenced",
-      "fit_assessment": "HIGH: property and construction finance history",
-      "verification_required": "no"
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
     }
   },
   {
@@ -79590,6 +79402,62 @@
     }
   },
   {
+    "id": "acc-1717",
+    "fullName": "Ruard Nel",
+    "alternateNames": [],
+    "status": "RESEARCH_HOLD",
+    "confidence": "PROBABLE",
+    "roleScopeStatus": "IN_SCOPE",
+    "professionallyQualified": "unknown",
+    "designationStatus": "UNCONFIRMED",
+    "qualificationConfidence": "RESEARCH_HOLD",
+    "academicQualifications": [],
+    "designations": [],
+    "professionalRoutes": [],
+    "bodies": [],
+    "title": "Assistant Financial Manager",
+    "employer": "Signatura Property Development",
+    "currentCompanyAffiliations": [],
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Property Development",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Recruitment Agent source-reported qualification: UNKNOWN - qualification not specified in visible profile snippet. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "articlesPeriod": "",
+    "articlesLocation": "",
+    "practicalExperienceFramework": "",
+    "qualificationRoute": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/ruard-nel-9b8834b1",
+    "primarySource": "https://www.linkedin.com/in/ruard-nel-9b8834b1",
+    "sourceUrls": [
+      "https://linkedin.com/in/ruard-nel-9b8834b1",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
+    ],
+    "dateLastVerified": "2026-10-23",
+    "notes": "Recruitment Agent 2026-10-23. Assistant Financial Manager Nov 2024-present; Senior Accountant Forvis Mazars Sep 2019-Oct 2024 Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
+    "attributes": {
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
+    }
+  },
+  {
     "id": "acc-1194",
     "fullName": "Russell Smith",
     "alternateNames": [],
@@ -83205,6 +83073,62 @@
     }
   },
   {
+    "id": "acc-1721",
+    "fullName": "Shaun Williams",
+    "alternateNames": [],
+    "status": "RESEARCH_HOLD",
+    "confidence": "PROBABLE",
+    "roleScopeStatus": "IN_SCOPE",
+    "professionallyQualified": "unknown",
+    "designationStatus": "UNCONFIRMED",
+    "qualificationConfidence": "RESEARCH_HOLD",
+    "academicQualifications": [],
+    "designations": [],
+    "professionalRoutes": [],
+    "bodies": [],
+    "title": "Group Financial Controller",
+    "employer": "FWJK Developments",
+    "currentCompanyAffiliations": [],
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Property Development",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Recruitment Agent source-reported qualification: UNKNOWN - CA(SA) status not confirmed in visible profile. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "articlesPeriod": "",
+    "articlesLocation": "",
+    "practicalExperienceFramework": "",
+    "qualificationRoute": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/shaun-williams-3632b037",
+    "primarySource": "https://www.linkedin.com/in/shaun-williams-3632b037",
+    "sourceUrls": [
+      "https://linkedin.com/in/shaun-williams-3632b037",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
+    ],
+    "dateLastVerified": "2026-10-23",
+    "notes": "Recruitment Agent 2026-10-23. Group Financial Controller Aug 2019-present at FWJK Developments (WC property developer, Cape Town/Johannesburg/Durban). 7 years 2 months in role. Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
+    "attributes": {
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
+    }
+  },
+  {
     "id": "acc-0427",
     "fullName": "Shelley Wessels",
     "alternateNames": [],
@@ -86035,6 +85959,67 @@
       "research_tier": "A — CA evidenced",
       "fit_assessment": "Direct property / project / infrastructure fit",
       "verification_required": "no"
+    }
+  },
+  {
+    "id": "acc-1716",
+    "fullName": "Stefan du Toit",
+    "alternateNames": [],
+    "status": "RESEARCH_HOLD",
+    "confidence": "PROBABLE",
+    "roleScopeStatus": "IN_SCOPE",
+    "professionallyQualified": "true",
+    "designationStatus": "PROBABLE",
+    "qualificationConfidence": "PROBABLE",
+    "academicQualifications": [],
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Finance Manager",
+    "employer": "Signatura Property Development",
+    "currentCompanyAffiliations": [],
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Property Development",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Recruitment Agent source-reported qualification: CA(SA) claimed on profile (qualified 2016, Mazars articles; promoted Audit Manager 2018) - not confirmed as active SAICA membership. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "articlesPeriod": "",
+    "articlesLocation": "",
+    "practicalExperienceFramework": "",
+    "qualificationRoute": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/stefan-du-toit",
+    "primarySource": "https://www.linkedin.com/in/stefan-du-toit",
+    "sourceUrls": [
+      "https://linkedin.com/in/stefan-du-toit",
+      "https://signatura.biz/",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
+    ],
+    "dateLastVerified": "2026-10-23",
+    "notes": "Recruitment Agent 2026-10-23. Finance Manager Oct 2020-present at Signatura Property Development; Audit Manager Mazars 2018-2020; Articles Mazars 2013-2016 Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
+    "attributes": {
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
     }
   },
   {
@@ -95938,6 +95923,66 @@
     "attributes": {}
   },
   {
+    "id": "acc-1720",
+    "fullName": "Xola Mxhalisa",
+    "alternateNames": [],
+    "status": "RESEARCH_HOLD",
+    "confidence": "PROBABLE",
+    "roleScopeStatus": "IN_SCOPE",
+    "professionallyQualified": "true",
+    "designationStatus": "PROBABLE",
+    "qualificationConfidence": "PROBABLE",
+    "academicQualifications": [],
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "FP&A Controller (Global Operations)",
+    "employer": "Citra - Live Different",
+    "currentCompanyAffiliations": [],
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Construction/Building",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Recruitment Agent source-reported qualification: CONFIRMED CA(SA). Claim not independently reverified during transfer; active SAICA membership not confirmed.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "articlesPeriod": "",
+    "articlesLocation": "",
+    "practicalExperienceFramework": "",
+    "qualificationRoute": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/xola-mxhalisa-ca-sa-6a6283211",
+    "primarySource": "https://www.linkedin.com/in/xola-mxhalisa-ca-sa-6a6283211",
+    "sourceUrls": [
+      "https://linkedin.com/in/xola-mxhalisa-ca-sa-6a6283211",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
+    ],
+    "dateLastVerified": "2026-10-23",
+    "notes": "Recruitment Agent 2026-10-23. FP&A Controller Oct 2025-present at Citra - Live Different (WC innovative sustainable homebuilding construction); Group Financial Manager Dec 2024-Sep 2025 (9 months). CA(SA) with audit background. Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
+    "attributes": {
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
+    }
+  },
+  {
     "id": "acc-0175",
     "fullName": "Xolile Mkuhlana",
     "alternateNames": [],
@@ -96728,6 +96773,66 @@
     "dateLastVerified": "2026-09-20",
     "notes": "Qualification/articles enrichment pending.",
     "attributes": {}
+  },
+  {
+    "id": "acc-1719",
+    "fullName": "Zack Humphreys",
+    "alternateNames": [],
+    "status": "RESEARCH_HOLD",
+    "confidence": "PROBABLE",
+    "roleScopeStatus": "IN_SCOPE",
+    "professionallyQualified": "true",
+    "designationStatus": "PROBABLE",
+    "qualificationConfidence": "PROBABLE",
+    "academicQualifications": [],
+    "designations": [
+      "CA(SA)"
+    ],
+    "professionalRoutes": [],
+    "bodies": [
+      "SAICA"
+    ],
+    "title": "Financial Manager",
+    "employer": "Orcinus Properties (Pty) Ltd",
+    "currentCompanyAffiliations": [],
+    "seniority": "Manager",
+    "roleFamily": "Financial Management",
+    "function": "Finance",
+    "industry": "Property Development",
+    "subIndustry": "",
+    "province": "Western Cape",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "locationConfidence": "PROBABLE",
+    "skills": [],
+    "accountingSystems": [],
+    "erpSystems": [],
+    "analyticsTools": [],
+    "yearsExperience": "unknown",
+    "qualificationEvidence": "Recruitment Agent source-reported qualification: CONFIRMED CA(SA) - Bachelor of Business Science Accounting & Finance UCT. Claim not independently reverified during transfer; active SAICA membership not confirmed.",
+    "articlesStatus": "NOT_ESTABLISHED",
+    "articlesEmployer": "",
+    "articlesBody": "",
+    "articlesPeriod": "",
+    "articlesLocation": "",
+    "practicalExperienceFramework": "",
+    "qualificationRoute": "",
+    "careerHistory": [],
+    "linkedinUrl": "https://www.linkedin.com/in/zack-humphreys",
+    "primarySource": "https://www.linkedin.com/in/zack-humphreys",
+    "sourceUrls": [
+      "https://linkedin.com/in/zack-humphreys",
+      "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json"
+    ],
+    "dateLastVerified": "2026-10-23",
+    "notes": "Recruitment Agent 2026-10-23. Financial Manager Aug 2023-present at Orcinus Properties (Pty) Ltd (WC property development, Cape Town). PKF audit background (Trainee auditor Feb 2019-Apr 2023; Audit Senior out-of-articles May 2023-Jul 2023). 4 years audit + 2 years 10 months FM. Source-reported role and career claims; no fresh external verification, live membership, remuneration or availability established by this transfer.",
+    "attributes": {
+      "source_cohorts": [
+        "Recruitment Agent 2026-10-23"
+      ],
+      "source_batch": "recruitment-agent-2026-10-24",
+      "source_reported": true
+    }
   },
   {
     "id": "acc-0688",

@@ -1,0 +1,263 @@
+{
+  "batch": "recruitment-agent-2026-10-24",
+  "sourceArchive": "markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+  "sourceSha256": "e33719d5767ff906f723d618895fdb9e0f97d5bb85af229ad49cf85b2bad4780",
+  "importedOn": "2026-10-24",
+  "evidenceState": "Archived research reports; cited external pages and active professional membership were not independently rechecked during this transfer.",
+  "sourceCandidateRows": 11,
+  "sourceClaimedCandidateCount": 12,
+  "repairs": {
+    "candidateRowsMissingScreeningColumn": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "companyRowsWithUnquotedCommas": [
+      7,
+      17,
+      18,
+      19,
+      21
+    ]
+  },
+  "companies": [
+    {
+      "sourceRow": 2,
+      "sourceName": "Dorpstraat Properties",
+      "organizationId": "org-dorpstraat-properties"
+    },
+    {
+      "sourceRow": 3,
+      "sourceName": "VDMV Property Group",
+      "organizationId": "org-vdmv-property-group"
+    },
+    {
+      "sourceRow": 4,
+      "sourceName": "Rawson Developers",
+      "organizationId": "org-rawson-developers"
+    },
+    {
+      "sourceRow": 5,
+      "sourceName": "Origin Property Holdings",
+      "organizationId": "org-origin-property-holdings"
+    },
+    {
+      "sourceRow": 6,
+      "sourceName": "Asrin Property Developers",
+      "organizationId": "org-asrin-property-developers"
+    },
+    {
+      "sourceRow": 7,
+      "sourceName": "Signatura Property Development",
+      "organizationId": "org-signatura-property-development"
+    },
+    {
+      "sourceRow": 8,
+      "sourceName": "Balwin Properties",
+      "organizationId": "org-balwin"
+    },
+    {
+      "sourceRow": 9,
+      "sourceName": "Calgro M3 Holdings",
+      "organizationId": "org-calgro-m3"
+    },
+    {
+      "sourceRow": 10,
+      "sourceName": "WBHO Construction",
+      "organizationId": "org-wbho"
+    },
+    {
+      "sourceRow": 11,
+      "sourceName": "Raubex Group",
+      "organizationId": "org-raubex"
+    },
+    {
+      "sourceRow": 12,
+      "sourceName": "Stefanutti Stocks",
+      "organizationId": "org-stefanutti-stocks"
+    },
+    {
+      "sourceRow": 13,
+      "sourceName": "Aveng Group",
+      "organizationId": "org-aveng"
+    },
+    {
+      "sourceRow": 14,
+      "sourceName": "Redefine Properties",
+      "organizationId": "org-redefine-properties"
+    },
+    {
+      "sourceRow": 15,
+      "sourceName": "Growthpoint Properties",
+      "organizationId": "org-growthpoint-properties"
+    },
+    {
+      "sourceRow": 16,
+      "sourceName": "Attacq Limited",
+      "organizationId": "org-attacq"
+    },
+    {
+      "sourceRow": 17,
+      "sourceName": "Rabie Property Developers",
+      "organizationId": "org-rabie-property-group"
+    },
+    {
+      "sourceRow": 18,
+      "sourceName": "Blok",
+      "organizationId": "org-blok"
+    },
+    {
+      "sourceRow": 19,
+      "sourceName": "Val de Vie Estate",
+      "organizationId": "org-val-de-vie-estate"
+    },
+    {
+      "sourceRow": 20,
+      "sourceName": "Daleglen Property Group",
+      "organizationId": "org-daleglen-property-group"
+    },
+    {
+      "sourceRow": 21,
+      "sourceName": "Giflo Property Developers",
+      "organizationId": "org-giflo-property-developers"
+    },
+    {
+      "sourceRow": 22,
+      "sourceName": "ASLA Construction Group",
+      "organizationId": "org-asla-construction-group"
+    },
+    {
+      "sourceRow": 23,
+      "sourceName": "Power Construction",
+      "organizationId": "org-mbawc-234"
+    },
+    {
+      "sourceRow": 24,
+      "sourceName": "Orcinus Properties",
+      "organizationId": "org-orcinus-properties"
+    },
+    {
+      "sourceRow": 25,
+      "sourceName": "FWJK Developments",
+      "organizationId": "org-fwjk-developments"
+    },
+    {
+      "sourceRow": 26,
+      "sourceName": "Citra Live Different",
+      "organizationId": "org-citra-live-different"
+    },
+    {
+      "sourceRow": 27,
+      "sourceName": "The Building Company",
+      "organizationId": "org-the-building-company"
+    },
+    {
+      "sourceRow": 28,
+      "sourceName": "SA Construction Group",
+      "organizationId": "org-sa-construction-group"
+    }
+  ],
+  "people": [
+    {
+      "sourceRow": 2,
+      "name": "Stefan du Toit",
+      "personId": "acc-1716",
+      "organizationId": "org-signatura-property-development",
+      "disposition": "added",
+      "mergedIds": []
+    },
+    {
+      "sourceRow": 3,
+      "name": "Ruard Nel",
+      "personId": "acc-1717",
+      "organizationId": "org-signatura-property-development",
+      "disposition": "added",
+      "mergedIds": []
+    },
+    {
+      "sourceRow": 4,
+      "name": "Dawid Brink",
+      "personId": "acc-1415",
+      "organizationId": "org-dorpstraat-properties",
+      "disposition": "enriched",
+      "mergedIds": [
+        "acc-1662"
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "name": "Lene Dippenaar",
+      "personId": "acc-1166",
+      "organizationId": "org-rabie-property-group",
+      "disposition": "enriched",
+      "mergedIds": [
+        "acc-1465"
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "name": "Marinus Prinsloo",
+      "personId": "acc-1718",
+      "organizationId": "org-blok",
+      "disposition": "added",
+      "mergedIds": []
+    },
+    {
+      "sourceRow": 7,
+      "name": "Zack Humphreys",
+      "personId": "acc-1719",
+      "organizationId": "org-orcinus-properties",
+      "disposition": "added",
+      "mergedIds": []
+    },
+    {
+      "sourceRow": 8,
+      "name": "Pieter Toerien",
+      "personId": "acc-0465",
+      "organizationId": "org-asla-construction-group",
+      "disposition": "enriched",
+      "mergedIds": [
+        "acc-1196",
+        "acc-1495"
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "name": "Ernst van Vondel",
+      "personId": "acc-0436",
+      "organizationId": "org-mbawc-234",
+      "disposition": "enriched",
+      "mergedIds": []
+    },
+    {
+      "sourceRow": 10,
+      "name": "Clarinda Engelbrecht",
+      "personId": "acc-1452",
+      "organizationId": "org-the-building-company",
+      "disposition": "enriched",
+      "mergedIds": [
+        "acc-1699"
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "name": "Xola Mxhalisa",
+      "personId": "acc-1720",
+      "organizationId": "org-citra-live-different",
+      "disposition": "added",
+      "mergedIds": []
+    },
+    {
+      "sourceRow": 12,
+      "name": "Shaun Williams",
+      "personId": "acc-1721",
+      "organizationId": "org-fwjk-developments",
+      "disposition": "added",
+      "mergedIds": []
+    }
+  ]
+}

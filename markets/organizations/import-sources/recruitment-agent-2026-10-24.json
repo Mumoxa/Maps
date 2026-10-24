@@ -1,0 +1,849 @@
+{
+  "batch": "recruitment-agent-2026-10-24",
+  "cohort": "Recruitment Agent 2026-10-23",
+  "importedOn": "2026-10-24",
+  "sourceResearchThrough": "2026-10-23",
+  "evidenceState": "Archived research reports; cited external pages and active professional membership were not independently rechecked during this transfer.",
+  "publicationScope": "Public candidate/employer evidence only. Original source files, baseline research, private screening and contact outcomes retained in the ignored local source archive.",
+  "sourceFiles": [
+    {
+      "name": "add_lower_title_candidates.py",
+      "sha256": "c6f7d84c1f27c82d325930260efc542df6f77079525ebe5fd2f307af92c947e6",
+      "bytes": 1909
+    },
+    {
+      "name": "add_lower_title_candidates2.py",
+      "sha256": "ef3fbdb5d5801a24f3dc1a65e2c70202bbbdfdfeb800d70d12f83e55aa058201",
+      "bytes": 4878
+    },
+    {
+      "name": "add_wc_construction_employers.py",
+      "sha256": "35df1ad33ed321e2a0146a8bdacbfba98ab8097c125dd4ca6a83e54314a146c0",
+      "bytes": 2104
+    },
+    {
+      "name": "add_wc_employers.py",
+      "sha256": "717b8fa0757617c01310dbefc74556a1dacdbe151a8ddc79950f4864f806cafa",
+      "bytes": 1602
+    },
+    {
+      "name": "AGENTS.md",
+      "sha256": "6bfaa8d3ceb09ec2f5396cb248bc7db50b93c9177f051b7879eb50fcb64b4cee",
+      "bytes": 6123
+    },
+    {
+      "name": "create_prod.js",
+      "sha256": "ea3c3ca7739ba40a50231b00e94d01057a7d32b1961c55cb272fcfb29903809c",
+      "bytes": 1623
+    },
+    {
+      "name": "fix_giflo.py",
+      "sha256": "5790aede11aa10d7be3d4930a05575c7927c2d5a0608e62c52f77c1413a34283",
+      "bytes": 623
+    },
+    {
+      "name": "mark_construction_researched.py",
+      "sha256": "7e951d1904aa19eb234749f177a6d11e6c81dc42867267bf41b8aa5456710503",
+      "bytes": 1659
+    },
+    {
+      "name": "mark_gauteng_excluded.py",
+      "sha256": "67b6ebf44a32ec4454d9aabfaffbba7795657cefa34c3e5007d5f7c2dc879690",
+      "bytes": 1083
+    },
+    {
+      "name": "mark_signatura_researched.py",
+      "sha256": "b6fb5c188147865205a0c96871f1c156e4a890cf5c1a76f67cdd7fa7bba2ba99",
+      "bytes": 604
+    },
+    {
+      "name": "production-01-baseline-analysis.json",
+      "sha256": "173ebc8748836b10bf6f0d83b2cf28720993cc696bcb57d2fda307635ca69774",
+      "bytes": 483
+    },
+    {
+      "name": "production-01-candidates.csv",
+      "sha256": "5aa9048cc0788771ce1bddc5cf63d53d7761b6cf09250c1f4873e444cdf1b900",
+      "bytes": 7774
+    },
+    {
+      "name": "production-01-companies.csv",
+      "sha256": "c64b7b42ad72facc4478af8bb3c115e13f2698615b27a8b98b4730078dd2f52f",
+      "bytes": 6428
+    },
+    {
+      "name": "production-01-contact-priority.csv",
+      "sha256": "31bfeaa944eda75d1e9eae46ef566d0734036557c5aa610c3977e907dd83f829",
+      "bytes": 1399
+    },
+    {
+      "name": "production-01-progress.md",
+      "sha256": "56950a5e6eabd036e84cafceaa7f1aef125e91fadc418fe64d1db2a304d7c82e",
+      "bytes": 7423
+    },
+    {
+      "name": "RESEARCH-TOOLS.md",
+      "sha256": "77dc4e656d4bbe118ec34c7f62b803843f5839914f62218fc5dc0387c7334939",
+      "bytes": 959
+    },
+    {
+      "name": "SLM_RESEARCH_DELIVERABLE.md",
+      "sha256": "22529b31213c547a2c5faea7c3d2250736aefb786727a43091ada95f414679a7",
+      "bytes": 20295
+    },
+    {
+      "name": "SLM_SEARCH_CONTEXT.md",
+      "sha256": "43da49ea4ab7a4fcf3796d1f80468fddc3069e1e79f691a04dd8547b8ddc0bf5",
+      "bytes": 2672
+    },
+    {
+      "name": "test-01-candidates.csv",
+      "sha256": "1cefd3d98d332bff84a785cb6a42b38830bb87b611c95b86cfb3233f6737a55b",
+      "bytes": 6027
+    },
+    {
+      "name": "test-01-report.md",
+      "sha256": "fd2844626f5cf98d176157c6a05e7da0750671b140713bb101c27b5c7b452c37",
+      "bytes": 4908
+    },
+    {
+      "name": "test-03-candidates.csv",
+      "sha256": "968d826146fb81dfcf7e814c551108773f3d6d2dc2a4e80ce090dc464e186cee",
+      "bytes": 2112
+    },
+    {
+      "name": "test-03-companies.csv",
+      "sha256": "276a2cd635ff7ff8329fcb2e2ed9445e10acea6d1a1a99c92d0ab8167e354c7f",
+      "bytes": 957
+    },
+    {
+      "name": "test-03-comparison.csv",
+      "sha256": "ae5d8bf3705384ba0887a1070acdbb94d64afd37f27f1ff6db21611c9a56f0e8",
+      "bytes": 592
+    },
+    {
+      "name": "test-03-report.md",
+      "sha256": "75584cbd1cfee15cef245faf0c569b97f23c840f0e6c4616f0d1bf84a5f8c37e",
+      "bytes": 2763
+    },
+    {
+      "name": "update_growthpoint.py",
+      "sha256": "752b5d6b3e1b48fd917b188c8e1d12b94989ec67ed0697425de58930359a4dab",
+      "bytes": 810
+    }
+  ],
+  "sourceCandidateRows": 11,
+  "sourceClaimedCandidateCount": 12,
+  "repairs": {
+    "candidateRowsMissingScreeningColumn": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "companyRowsWithUnquotedCommas": [
+      7,
+      17,
+      18,
+      19,
+      21
+    ]
+  },
+  "companies": [
+    {
+      "sourceRow": 2,
+      "name": "Dorpstraat Properties",
+      "organizationId": "org-dorpstraat-properties",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Mixed-use/property development/investment",
+      "sourceUrls": [
+        "https://dorpstraat.net/our-team/"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "None identified",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 3,
+      "name": "VDMV Property Group",
+      "organizationId": "org-vdmv-property-group",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Durbanville, Western Cape",
+      "activities": "Property development",
+      "sourceUrls": [
+        "https://vdmv.co.za/management-team/"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Partial",
+      "researchEvidence": "Finance-leadership role unclear for Nadia van der Merwe; our-team/ 404",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 4,
+      "name": "Rawson Developers",
+      "organizationId": "org-rawson-developers",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Residential/property development",
+      "sourceUrls": [
+        "https://www.rawson-developers.co.za/about",
+        "https://linkedin.com/in/calum-wedge-b50ab536"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "None identified",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 5,
+      "name": "Origin Property Holdings",
+      "organizationId": "org-origin-property-holdings",
+      "aliases": [],
+      "industry": "Property Development/Investment",
+      "location": "Cape Town, Western Cape",
+      "activities": "Property development/investment",
+      "sourceUrls": [
+        "https://originfin.com/board-of-directors/",
+        "https://linkedin.com/in/francois-van-niekerk-ca-sa-757b54b9"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "None identified",
+      "taxonomyNode": "CON-PROP"
+    },
+    {
+      "sourceRow": 6,
+      "name": "Asrin Property Developers",
+      "organizationId": "org-asrin-property-developers",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Property development",
+      "sourceUrls": [
+        "https://asrin.co.za/about/",
+        "https://linkedin.com/in/shaida-hassan-62533593"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "None identified",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 7,
+      "name": "Signatura Property Development",
+      "organizationId": "org-signatura-property-development",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Mixed-use/developments",
+      "sourceUrls": [
+        "https://signatura.biz/"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Finance function researched: Stefan du Toit Finance Manager (publicly claimed CA(SA)), Ruard Nel Assistant Financial Manager (CA(SA) UNKNOWN)",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 8,
+      "name": "Balwin Properties",
+      "organizationId": "org-balwin",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Johannesburg/Gauteng",
+      "activities": "Residential estates",
+      "sourceUrls": [
+        "https://balwin.co.za/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 9,
+      "name": "Calgro M3 Holdings",
+      "organizationId": "org-calgro-m3",
+      "aliases": [],
+      "industry": "Property Development/Memorial Parks",
+      "location": "Johannesburg/Gauteng",
+      "activities": "Developments/memorial parks",
+      "sourceUrls": [
+        "https://calgrom3.com/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 10,
+      "name": "WBHO Construction",
+      "organizationId": "org-wbho",
+      "aliases": [],
+      "industry": "Construction/Infrastructure",
+      "location": "Johannesburg/Gauteng",
+      "activities": "Infrastructure/capital projects",
+      "sourceUrls": [
+        "https://www.wbho.co.za/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-CONTR"
+    },
+    {
+      "sourceRow": 11,
+      "name": "Raubex Group",
+      "organizationId": "org-raubex",
+      "aliases": [],
+      "industry": "Infrastructure/Construction",
+      "location": "Centurion/Gauteng",
+      "activities": "Roads/infrastructure/capital projects",
+      "sourceUrls": [
+        "https://raubex.co.za/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-CONTR"
+    },
+    {
+      "sourceRow": 12,
+      "name": "Stefanutti Stocks",
+      "organizationId": "org-stefanutti-stocks",
+      "aliases": [],
+      "industry": "Construction/Infrastructure",
+      "location": "Johannesburg/Gauteng",
+      "activities": "Infrastructure/capital projects",
+      "sourceUrls": [
+        "https://www.stefanuttistocks.com/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-CONTR"
+    },
+    {
+      "sourceRow": 13,
+      "name": "Aveng Group",
+      "organizationId": "org-aveng",
+      "aliases": [],
+      "industry": "Construction/Engineering",
+      "location": "Johannesburg/Gauteng",
+      "activities": "Infrastructure/capital projects",
+      "sourceUrls": [
+        "https://www.aveng.co.za/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-CONTR"
+    },
+    {
+      "sourceRow": 14,
+      "name": "Redefine Properties",
+      "organizationId": "org-redefine-properties",
+      "aliases": [],
+      "industry": "Property Investment/Development",
+      "location": "Johannesburg/Gauteng",
+      "activities": "Commercial/residential",
+      "sourceUrls": [
+        "https://www.redefine.co.za/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 15,
+      "name": "Growthpoint Properties",
+      "organizationId": "org-growthpoint-properties",
+      "aliases": [],
+      "industry": "Property Investment (REIT)",
+      "location": "Cape Town/Johannesburg (HQ Sandton Gauteng)",
+      "activities": "Commercial property; 27% of SA assets in Western Cape; Cape Town office",
+      "sourceUrls": [
+        "https://www.growthpoint.co.za/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-PROP"
+    },
+    {
+      "sourceRow": 16,
+      "name": "Attacq Limited",
+      "organizationId": "org-attacq",
+      "aliases": [],
+      "industry": "Property Development/Investment",
+      "location": "Johannesburg/Gauteng",
+      "activities": "Mixed-use/developments",
+      "sourceUrls": [
+        "https://www.attacq.co.za/"
+      ],
+      "researchStatus": "Excluded",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Excluded per instruction: ignore Gauteng employers (Western Cape only)",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 17,
+      "name": "Rabie Property Developers",
+      "organizationId": "org-rabie-property-group",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Residential/commercial/retail/mixed-use (Century City, Burgundy Estate, Clara Anna Fontein)",
+      "sourceUrls": [
+        "https://www.rabie.co.za/"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Chris McMaster CFO (joined 2017 from Mazars), Mariska Auret CEO, Miguel Rodrigues COO; WC-based premier developer",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 18,
+      "name": "Blok",
+      "organizationId": "org-blok",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Urban precinct/apartment development (Atlantic Seaboard, City Bowl)",
+      "sourceUrls": [
+        "https://blok.co.za/"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Nic Tromp CA(SA) Chief Financial Officer & Partner, Jacques Van Embden Founder & CEO; CA(SA) confirmed",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 19,
+      "name": "Val de Vie Estate",
+      "organizationId": "org-val-de-vie-estate",
+      "aliases": [],
+      "industry": "Property Development (lifestyle estate)",
+      "location": "Paarl, Western Cape",
+      "activities": "Residential lifestyle estate",
+      "sourceUrls": [
+        "https://www.valdevie.co.za/"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Sarel Rossouw Financial Director, qualified CA(SA) (ex-PwC); WC-based",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 20,
+      "name": "Daleglen Property Group",
+      "organizationId": "org-daleglen-property-group",
+      "aliases": [],
+      "industry": "Property Development/Investment",
+      "location": "Cape Town, Western Cape",
+      "activities": "Commercial/industrial/residential portfolio management (Cape Peninsula)",
+      "sourceUrls": [
+        "https://daleglen.co.za/"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Xavier Badenhorst Financial Director; CA(SA) status to verify",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 21,
+      "name": "Giflo Property Developers",
+      "organizationId": "org-giflo-property-developers",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Paarl, Western Cape",
+      "activities": "Property development",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/giflo-group"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Josias de Kock Group Financial Director, CA(SA); WC-based",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 22,
+      "name": "ASLA Construction Group",
+      "organizationId": "org-asla-construction-group",
+      "aliases": [
+        "ASLA"
+      ],
+      "industry": "Construction/Building",
+      "location": "Strand, Western Cape",
+      "activities": "Civil and traditional building construction contracts; turnkey project solutions",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/asla-group"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Pieter Toerien CA(SA) Financial Manager (17 yrs 7 months)",
+      "taxonomyNode": "CON-CONTR"
+    },
+    {
+      "sourceRow": 23,
+      "name": "Power Construction",
+      "organizationId": "org-mbawc-234",
+      "aliases": [
+        "Power Construction"
+      ],
+      "industry": "Construction/Building",
+      "location": "Cape Town, Western Cape",
+      "activities": "Civil, roads, building, turnkey housing and property development",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/power-construction-pty-ltd"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Ernst van Vondel CA(SA) Head of Finance (8 yrs 3 months)",
+      "taxonomyNode": "CON-CONTR"
+    },
+    {
+      "sourceRow": 24,
+      "name": "Orcinus Properties",
+      "organizationId": "org-orcinus-properties",
+      "aliases": [
+        "Orcinus Properties (Pty) Ltd"
+      ],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Property development",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/orcinus-properties"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Zack Humphreys CA(SA) Financial Manager (2 yrs 10 months)",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 25,
+      "name": "FWJK Developments",
+      "organizationId": "org-fwjk-developments",
+      "aliases": [],
+      "industry": "Property Development",
+      "location": "Cape Town, Western Cape",
+      "activities": "Property development Cape Town Johannesburg Durban",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/fwjkdevelopments"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Shaun Williams Group Financial Controller (7 yrs 2 months) - CA(SA) to verify",
+      "taxonomyNode": "CON-PROP-DEV"
+    },
+    {
+      "sourceRow": 26,
+      "name": "Citra Live Different",
+      "organizationId": "org-citra-live-different",
+      "aliases": [
+        "Citra - Live Different"
+      ],
+      "industry": "Construction/Building",
+      "location": "Cape Town, Western Cape",
+      "activities": "Innovative sustainable homebuilding construction",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/citra-live-different"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Xola Mxhalisa CA(SA) FP&A Controller / ex-Group Financial Manager",
+      "taxonomyNode": "CON-CONTR"
+    },
+    {
+      "sourceRow": 27,
+      "name": "The Building Company",
+      "organizationId": "org-the-building-company",
+      "aliases": [],
+      "industry": "Building Materials Wholesale",
+      "location": "Cape Town, Western Cape",
+      "activities": "Retail and wholesale of building materials and hardware",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/the-building-company-za"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Clarinda Engelbrecht CA(SA) Financial Manager (1 yrs 5 months)",
+      "taxonomyNode": "CON-MAT-HARDWARE"
+    },
+    {
+      "sourceRow": 28,
+      "name": "SA Construction Group",
+      "organizationId": "org-sa-construction-group",
+      "aliases": [],
+      "industry": "Construction",
+      "location": "Cape Town, Western Cape",
+      "activities": "Construction group",
+      "sourceUrls": [
+        "https://www.linkedin.com/company/sa-construction-group"
+      ],
+      "researchStatus": "Researched",
+      "researchCompleteness": "Yes",
+      "researchEvidence": "Azelle Vreij Finance Manager (9 yrs 10 months) - CA(SA) to verify",
+      "taxonomyNode": "CON-CONTR"
+    }
+  ],
+  "people": [
+    {
+      "sourceRow": 2,
+      "name": "Stefan du Toit",
+      "employer": "Signatura Property Development",
+      "title": "Finance Manager",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/stefan-du-toit",
+      "qualificationClaim": "CA(SA) claimed on profile (qualified 2016, Mazars articles; promoted Audit Manager 2018) - not confirmed as active SAICA membership",
+      "caReported": true,
+      "careerEvidence": "Finance Manager Oct 2020-present at Signatura Property Development; Audit Manager Mazars 2018-2020; Articles Mazars 2013-2016",
+      "sourceUrls": [
+        "https://linkedin.com/in/stefan-du-toit",
+        "https://signatura.biz/"
+      ],
+      "organizationId": "org-signatura-property-development",
+      "industry": "Property Development",
+      "primaryId": null,
+      "mergeIds": []
+    },
+    {
+      "sourceRow": 3,
+      "name": "Ruard Nel",
+      "employer": "Signatura Property Development",
+      "title": "Assistant Financial Manager",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/ruard-nel-9b8834b1",
+      "qualificationClaim": "UNKNOWN - qualification not specified in visible profile snippet",
+      "caReported": false,
+      "careerEvidence": "Assistant Financial Manager Nov 2024-present; Senior Accountant Forvis Mazars Sep 2019-Oct 2024",
+      "sourceUrls": [
+        "https://linkedin.com/in/ruard-nel-9b8834b1"
+      ],
+      "organizationId": "org-signatura-property-development",
+      "industry": "Property Development",
+      "primaryId": null,
+      "mergeIds": []
+    },
+    {
+      "sourceRow": 4,
+      "name": "Dawid Brink",
+      "employer": "Dorpstraat Properties",
+      "title": "Group Finance Manager",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/dawid-brink-ca-sa-aa8064128",
+      "qualificationClaim": "CONFIRMED CA(SA) - Bachelor of Accounting Stellenbosch University; completed CA(SA) qualification",
+      "caReported": true,
+      "careerEvidence": "Group Finance Manager Jul 2021-present at Dorpstraat Properties (retail property development/investment, Stellenbosch/Cape Town WC); Finance Manager Wild Peacock Products Nov 2019-Jul 2021; Audit Manager PKF Cape Town Jan 2018-Nov 2019; Accounting Trainee PKF RademeyerWesson Jan 2015-Dec 2017",
+      "sourceUrls": [
+        "https://linkedin.com/in/dawid-brink-ca-sa-aa8064128"
+      ],
+      "organizationId": "org-dorpstraat-properties",
+      "industry": "Property Development",
+      "primaryId": "acc-1415",
+      "mergeIds": [
+        "acc-1662"
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "name": "Lene Dippenaar",
+      "employer": "Rabie Property Developers",
+      "title": "Financial Manager",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://za.linkedin.com/in/lene-dippenaar-1a6618213",
+      "qualificationClaim": "CA(SA) confirmed - Honours Accounting UNISA 2020",
+      "caReported": true,
+      "careerEvidence": "Financial Manager May 2026-present at Rabie Property Developers (WC property developer, Century City); Audit Manager Forvis Mazars Mar 2024-May 2026; Assistant Audit Manager Mar 2023-Feb 2024; Audit Senior Sep 2022-present; Auditor Feb 2020-present",
+      "sourceUrls": [
+        "https://za.linkedin.com/in/lene-dippenaar-1a6618213",
+        "https://www.rabie.co.za/"
+      ],
+      "organizationId": "org-rabie-property-group",
+      "industry": "Property Development",
+      "primaryId": "acc-1166",
+      "mergeIds": [
+        "acc-1465"
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "name": "Marinus Prinsloo",
+      "employer": "Blok",
+      "title": "Group Finance Manager",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/marinus-prinsloo-ca-sa-b04255160",
+      "qualificationClaim": "CONFIRMED CA(SA) - Chartered Accountant (SA)",
+      "caReported": true,
+      "careerEvidence": "Group Finance Manager Mar 2025-present at Blok (WC urban precinct/apartment property developer, Atlantic Seaboard & City Bowl); Finance Manager Nov 2023-Apr 2025 at Blok; Finance Manager Ivor Smith Electrical (ISE) Group Aug 2021-Oct 2023 (construction). 1 year 7 months in current GFM role.",
+      "sourceUrls": [
+        "https://linkedin.com/in/marinus-prinsloo-ca-sa-b04255160",
+        "https://blok.co.za/"
+      ],
+      "organizationId": "org-blok",
+      "industry": "Property Development",
+      "primaryId": null,
+      "mergeIds": []
+    },
+    {
+      "sourceRow": 7,
+      "name": "Zack Humphreys",
+      "employer": "Orcinus Properties (Pty) Ltd",
+      "title": "Financial Manager",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/zack-humphreys",
+      "qualificationClaim": "CONFIRMED CA(SA) - Bachelor of Business Science Accounting & Finance UCT",
+      "caReported": true,
+      "careerEvidence": "Financial Manager Aug 2023-present at Orcinus Properties (Pty) Ltd (WC property development, Cape Town). PKF audit background (Trainee auditor Feb 2019-Apr 2023; Audit Senior out-of-articles May 2023-Jul 2023). 4 years audit + 2 years 10 months FM.",
+      "sourceUrls": [
+        "https://linkedin.com/in/zack-humphreys"
+      ],
+      "organizationId": "org-orcinus-properties",
+      "industry": "Property Development",
+      "primaryId": null,
+      "mergeIds": []
+    },
+    {
+      "sourceRow": 8,
+      "name": "Pieter Toerien",
+      "employer": "ASLA Construction Group",
+      "title": "Financial Manager",
+      "location": "Strand, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/pieter-toerien-14727091",
+      "qualificationClaim": "CONFIRMED CA(SA) - SAICA credential ID 08039092; B. Accounting & B. Accounting Hons Stellenbosch; articles Moores Rowland Cape Town",
+      "caReported": true,
+      "careerEvidence": "Financial Manager Mar 2009-present at ASLA Construction Group (Strand WC; civil and traditional building construction; turnkey project solutions). 17 years 7 months in role. Manages full financial department; project/job costing for construction sites; ERP Sage 300. Ex-Group Financial Manager Aquacor Property Developers Feb 2006-Mar 2009 (property development).",
+      "sourceUrls": [
+        "https://linkedin.com/in/pieter-toerien-14727091"
+      ],
+      "organizationId": "org-asla-construction-group",
+      "industry": "Construction/Building",
+      "primaryId": "acc-0465",
+      "mergeIds": [
+        "acc-1196",
+        "acc-1495"
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "name": "Ernst van Vondel",
+      "employer": "Power Construction (Pty) Ltd",
+      "title": "Head of Finance",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/vondel",
+      "qualificationClaim": "CONFIRMED CA(SA) - CA(SA) Accounting and Finance SAICA 2003",
+      "caReported": true,
+      "careerEvidence": "Head of Finance Department Jul 2018-present at Power Construction (Pty) Ltd (WC construction; civil roads building turnkey housing property development); Financial Manager Jan 2007-present (financial management of property development division). 8 years 3 months Head of Finance; 18 years 9 months FM.",
+      "sourceUrls": [
+        "https://linkedin.com/in/vondel"
+      ],
+      "organizationId": "org-mbawc-234",
+      "industry": "Construction/Building",
+      "primaryId": "acc-0436",
+      "mergeIds": []
+    },
+    {
+      "sourceRow": 10,
+      "name": "Clarinda Engelbrecht",
+      "employer": "The Building Company",
+      "title": "Financial Manager",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/clarinda-engelbrecht-5aa9b5187",
+      "qualificationClaim": "CONFIRMED CA(SA) - CA(SA)",
+      "caReported": true,
+      "careerEvidence": "Financial Manager Apr 2025-present at The Building Company (WC wholesale building materials / construction supply); Cash and Bank Manager May 2024-Apr 2025; Accountant Faircape Group Sep 2022-May 2024; Financial Controller Faircape Group Jul 2022-Aug 2022 (1 month). 9 years 7 months exp.",
+      "sourceUrls": [
+        "https://linkedin.com/in/clarinda-engelbrecht-5aa9b5187"
+      ],
+      "organizationId": "org-the-building-company",
+      "industry": "Building Materials Wholesale",
+      "primaryId": "acc-1452",
+      "mergeIds": [
+        "acc-1699"
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "name": "Xola Mxhalisa",
+      "employer": "Citra - Live Different",
+      "title": "FP&A Controller (Global Operations)",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/xola-mxhalisa-ca-sa-6a6283211",
+      "qualificationClaim": "CONFIRMED CA(SA)",
+      "caReported": true,
+      "careerEvidence": "FP&A Controller Oct 2025-present at Citra - Live Different (WC innovative sustainable homebuilding construction); Group Financial Manager Dec 2024-Sep 2025 (9 months). CA(SA) with audit background.",
+      "sourceUrls": [
+        "https://linkedin.com/in/xola-mxhalisa-ca-sa-6a6283211"
+      ],
+      "organizationId": "org-citra-live-different",
+      "industry": "Construction/Building",
+      "primaryId": null,
+      "mergeIds": []
+    },
+    {
+      "sourceRow": 12,
+      "name": "Shaun Williams",
+      "employer": "FWJK Developments",
+      "title": "Group Financial Controller",
+      "location": "Cape Town, Western Cape",
+      "linkedinUrl": "https://linkedin.com/in/shaun-williams-3632b037",
+      "qualificationClaim": "UNKNOWN - CA(SA) status not confirmed in visible profile",
+      "caReported": false,
+      "careerEvidence": "Group Financial Controller Aug 2019-present at FWJK Developments (WC property developer, Cape Town/Johannesburg/Durban). 7 years 2 months in role.",
+      "sourceUrls": [
+        "https://linkedin.com/in/shaun-williams-3632b037"
+      ],
+      "organizationId": "org-fwjk-developments",
+      "industry": "Property Development",
+      "primaryId": null,
+      "mergeIds": []
+    }
+  ],
+  "industryOverlap": [
+    {
+      "rank": 1,
+      "taxonomyNodes": [
+        "CON-PROP-DEV",
+        "CON-PROP-RES"
+      ],
+      "industry": "Property development",
+      "relevance": "Direct development lifecycle and property accounting overlap; specific finance duties still require individual evidence."
+    },
+    {
+      "rank": 2,
+      "taxonomyNodes": [
+        "CON-CONTR",
+        "CON-CONTR-BUILD",
+        "CON-CONTR-CIV"
+      ],
+      "industry": "Construction contracting",
+      "relevance": "Adjacent project delivery and contract accounting environment; contractors and developers carry different commercial risks."
+    },
+    {
+      "rank": 3,
+      "taxonomyNodes": [
+        "CON-PROP"
+      ],
+      "industry": "Property investment",
+      "relevance": "Property asset accounting and investment reporting overlap; asset ownership does not establish development delivery."
+    },
+    {
+      "rank": 4,
+      "taxonomyNodes": [
+        "CON-MAT-HARDWARE"
+      ],
+      "industry": "Building materials supply",
+      "relevance": "Adjacent construction value chain; inventory and distribution finance do not establish development finance experience."
+    }
+  ]
+}

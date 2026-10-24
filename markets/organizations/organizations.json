@@ -1310,7 +1310,9 @@
     "id": "org-attacq",
     "name": "Attacq",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Attacq Limited"
+    ],
     "website": "https://www.attacq.co.za",
     "status": "verified",
     "industries": [
@@ -1391,13 +1393,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Mixed-use/developments; location: Johannesburg/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Recruitment Agent 2026-10-23: Property Development/Investment; Mixed-use/developments. Source-reported company context, not evidence of any employee skill. References: https://www.attacq.co.za/"
   },
   {
     "id": "org-atterbury-property",
@@ -1440,7 +1450,9 @@
     "id": "org-aveng",
     "name": "Aveng",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Aveng Group"
+    ],
     "website": "https://www.aveng.co.za",
     "status": "verified",
     "industries": [
@@ -1490,13 +1502,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Infrastructure/capital projects; location: Johannesburg/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Recruitment Agent 2026-10-23: Construction/Engineering; Infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://www.aveng.co.za/"
   },
   {
     "id": "org-balwin",
@@ -1678,13 +1698,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Residential estates; location: Johannesburg/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Delisted from the JSE in September 2026 following a R2,26 billion take-private backed by the PIC and management, so the entity is now privately held; no registered legal name was established from the sources read. Gross margin is reported inconsistently across periods (30% at February 2025, 29% at August 2025, 27% at February 2026) and is recorded per period rather than averaged."
+    "notes": "Delisted from the JSE in September 2026 following a R2,26 billion take-private backed by the PIC and management, so the entity is now privately held; no registered legal name was established from the sources read. Gross margin is reported inconsistently across periods (30% at February 2025, 29% at August 2025, 27% at February 2026) and is recorded per period rather than averaged.\nRecruitment Agent 2026-10-23: Property Development; Residential estates. Source-reported company context, not evidence of any employee skill. References: https://balwin.co.za/"
   },
   {
     "id": "org-baruk-property-group",
@@ -2289,13 +2317,21 @@
         "checkedOn": "2026-10-09",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Urban precinct/apartment development (Atlantic Seaboard, City Bowl); location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded.\nRecruitment Agent 2026-10-23: Property Development; Urban precinct/apartment development (Atlantic Seaboard, City Bowl). Source-reported company context, not evidence of any employee skill. References: https://blok.co.za/"
   },
   {
     "id": "org-bmw-group",
@@ -2531,7 +2567,9 @@
     "id": "org-calgro-m3",
     "name": "Calgro M3",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Calgro M3 Holdings"
+    ],
     "website": "https://www.calgrom3.com",
     "status": "verified",
     "industries": [
@@ -2571,13 +2609,21 @@
         "checkedOn": "2026-10-09",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Developments/memorial parks; location: Johannesburg/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded.\nRecruitment Agent 2026-10-23: Property Development/Memorial Parks; Developments/memorial parks. Source-reported company context, not evidence of any employee skill. References: https://calgrom3.com/"
   },
   {
     "id": "org-cambridge-food",
@@ -6525,13 +6571,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Commercial property; 27% of SA assets in Western Cape; Cape Town office; location: Cape Town/Johannesburg (HQ Sandton Gauteng). External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Recruitment Agent 2026-10-23: Property Investment (REIT); Commercial property; 27% of SA assets in Western Cape; Cape Town office. Source-reported company context, not evidence of any employee skill. References: https://www.growthpoint.co.za/"
   },
   {
     "id": "org-gwk",
@@ -12184,13 +12238,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Residential/commercial/retail/mixed-use (Century City, Burgundy Estate, Clara Anna Fontein); location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Residential/commercial/retail/mixed-use (Century City, Burgundy Estate, Clara Anna Fontein). Source-reported company context, not evidence of any employee skill. References: https://www.rabie.co.za/"
   },
   {
     "id": "org-raubex",
@@ -12285,6 +12347,13 @@
         "evidence": "Workbook Financial Leadership row 23 names this company/group; reported role/affiliation is distinct from verified employment or corporate ownership.",
         "checkedOn": "2026-10-23",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Roads/infrastructure/capital projects; location: Centurion/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
@@ -12293,7 +12362,7 @@
       "mbawc-financial-leadership"
     ],
     "lastVerified": "2026-10-16",
-    "notes": "Also present in the Accounting & Finance dataset as Raubex / Roadmac Surfacing Cape.",
+    "notes": "Also present in the Accounting & Finance dataset as Raubex / Roadmac Surfacing Cape.\nRecruitment Agent 2026-10-23: Infrastructure/Construction; Roads/infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://raubex.co.za/",
     "taxonomy": {
       "primaryNode": "CON-CIVIL-ROAD",
       "secondaryNodes": [
@@ -12394,13 +12463,21 @@
         "checkedOn": "2026-10-09",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Residential/property development; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services.\nRecruitment Agent 2026-10-23: Property Development; Residential/property development. Source-reported company context, not evidence of any employee skill. References: https://www.rawson-developers.co.za/about; https://linkedin.com/in/calum-wedge-b50ab536"
   },
   {
     "id": "org-rcl-foods",
@@ -12762,13 +12839,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Commercial/residential; location: Johannesburg/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
-      "organizations"
+      "organizations",
+      "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Recruitment Agent 2026-10-23: Property Investment/Development; Commercial/residential. Source-reported company context, not evidence of any employee skill. References: https://www.redefine.co.za/"
   },
   {
     "id": "org-reefer-cold-storage",
@@ -14849,6 +14934,13 @@
         "evidence": "Workbook Financial Leadership row 25 names this company/group; reported role/affiliation is distinct from verified employment or corporate ownership.",
         "checkedOn": "2026-10-23",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Infrastructure/capital projects; location: Johannesburg/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
@@ -14859,7 +14951,7 @@
       "mbawc-financial-leadership"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "MBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.",
+    "notes": "MBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.\nRecruitment Agent 2026-10-23: Construction/Infrastructure; Infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://www.stefanuttistocks.com/",
     "directoryEntries": [
       {
         "directory": "MBAWC",
@@ -16525,6 +16617,13 @@
         "evidence": "Workbook Financial Leadership row 24 names this company/group; reported role/affiliation is distinct from verified employment or corporate ownership.",
         "checkedOn": "2026-10-23",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Infrastructure/capital projects; location: Johannesburg/Gauteng. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
@@ -16533,7 +16632,7 @@
       "mbawc-financial-leadership"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Also present in the Accounting & Finance dataset as WBHO Construction - Cape Division."
+    "notes": "Also present in the Accounting & Finance dataset as WBHO Construction - Cape Division.\nRecruitment Agent 2026-10-23: Construction/Infrastructure; Infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://www.wbho.co.za/"
   },
   {
     "id": "org-wbho-construction-cape-division",
@@ -34176,7 +34275,9 @@
     "id": "org-mbawc-234",
     "name": "Power Construction (Pty) Ltd",
     "legalName": "Power Construction (Pty) Ltd",
-    "aliases": [],
+    "aliases": [
+      "Power Construction"
+    ],
     "website": "http://www.powergrp.co.za",
     "status": "needs-verification",
     "industries": [],
@@ -34205,6 +34306,13 @@
         "evidence": "Workbook Financial Leadership row 8 names this company/group; reported role/affiliation is distinct from verified employment or corporate ownership.",
         "checkedOn": "2026-10-23",
         "confidence": "probable"
+      },
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Civil, roads, building, turnkey housing and property development; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
       }
     ],
     "datasets": [
@@ -34214,7 +34322,7 @@
       "mbawc-financial-leadership"
     ],
     "lastVerified": "",
-    "notes": "MBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.",
+    "notes": "MBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.\nRecruitment Agent 2026-10-23: Construction/Building; Civil, roads, building, turnkey housing and property development. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/power-construction-pty-ltd",
     "directoryEntries": [
       {
         "directory": "MBAWC",
@@ -42711,5 +42819,501 @@
     ],
     "lastVerified": "",
     "notes": "Company/group name reported in the supplied MBAWC finance notes; exact legal identity and business activity require review. No ownership, employment, size or operating capabilities inferred."
+  },
+  {
+    "id": "org-dorpstraat-properties",
+    "name": "Dorpstraat Properties",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://dorpstraat.net/our-team/",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Mixed-use/property development/investment; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Mixed-use/property development/investment. Source-reported company context, not evidence of any employee skill. References: https://dorpstraat.net/our-team/",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Mixed-use/property development/investment; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-vdmv-property-group",
+    "name": "VDMV Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://vdmv.co.za/management-team/",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Property development; location: Durbanville, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Property development. Source-reported company context, not evidence of any employee skill. References: https://vdmv.co.za/management-team/",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Property development; location: Durbanville, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-origin-property-holdings",
+    "name": "Origin Property Holdings",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://originfin.com/board-of-directors/",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Property development/investment; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development/Investment; Property development/investment. Source-reported company context, not evidence of any employee skill. References: https://originfin.com/board-of-directors/; https://linkedin.com/in/francois-van-niekerk-ca-sa-757b54b9",
+    "taxonomy": {
+      "primaryNode": "CON-PROP",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Property development/investment; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-asrin-property-developers",
+    "name": "Asrin Property Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://asrin.co.za/about/",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Property development; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Property development. Source-reported company context, not evidence of any employee skill. References: https://asrin.co.za/about/; https://linkedin.com/in/shaida-hassan-62533593",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Property development; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-signatura-property-development",
+    "name": "Signatura Property Development",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://signatura.biz/",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Mixed-use/developments; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Mixed-use/developments. Source-reported company context, not evidence of any employee skill. References: https://signatura.biz/",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Mixed-use/developments; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-val-de-vie-estate",
+    "name": "Val de Vie Estate",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://www.valdevie.co.za/",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Residential lifestyle estate; location: Paarl, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development (lifestyle estate); Residential lifestyle estate. Source-reported company context, not evidence of any employee skill. References: https://www.valdevie.co.za/",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Residential lifestyle estate; location: Paarl, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-daleglen-property-group",
+    "name": "Daleglen Property Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "https://daleglen.co.za/",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Commercial/industrial/residential portfolio management (Cape Peninsula); location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development/Investment; Commercial/industrial/residential portfolio management (Cape Peninsula). Source-reported company context, not evidence of any employee skill. References: https://daleglen.co.za/",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Commercial/industrial/residential portfolio management (Cape Peninsula); location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-giflo-property-developers",
+    "name": "Giflo Property Developers",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Property development; location: Paarl, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Property development. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/giflo-group",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Property development; location: Paarl, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-asla-construction-group",
+    "name": "ASLA Construction Group",
+    "legalName": "",
+    "aliases": [
+      "ASLA"
+    ],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Civil and traditional building construction contracts; turnkey project solutions; location: Strand, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Construction/Building; Civil and traditional building construction contracts; turnkey project solutions. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/asla-group",
+    "taxonomy": {
+      "primaryNode": "CON-CONTR",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Civil and traditional building construction contracts; turnkey project solutions; location: Strand, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-orcinus-properties",
+    "name": "Orcinus Properties",
+    "legalName": "",
+    "aliases": [
+      "Orcinus Properties (Pty) Ltd"
+    ],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Property development; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Property development. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/orcinus-properties",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Property development; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-fwjk-developments",
+    "name": "FWJK Developments",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Property development Cape Town Johannesburg Durban; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Property development Cape Town Johannesburg Durban. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/fwjkdevelopments",
+    "taxonomy": {
+      "primaryNode": "CON-PROP-DEV",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Property development Cape Town Johannesburg Durban; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-citra-live-different",
+    "name": "Citra Live Different",
+    "legalName": "",
+    "aliases": [
+      "Citra - Live Different"
+    ],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Innovative sustainable homebuilding construction; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Construction/Building; Innovative sustainable homebuilding construction. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/citra-live-different",
+    "taxonomy": {
+      "primaryNode": "CON-CONTR",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Innovative sustainable homebuilding construction; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-the-building-company",
+    "name": "The Building Company",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Retail and wholesale of building materials and hardware; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Building Materials Wholesale; Retail and wholesale of building materials and hardware. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/the-building-company-za",
+    "taxonomy": {
+      "primaryNode": "CON-MAT-HARDWARE",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Retail and wholesale of building materials and hardware; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
+  },
+  {
+    "id": "org-sa-construction-group",
+    "name": "SA Construction Group",
+    "legalName": "",
+    "aliases": [],
+    "website": "",
+    "status": "needs-verification",
+    "industries": [],
+    "capabilities": [],
+    "locations": [],
+    "scale": [],
+    "parentId": null,
+    "sources": [
+      {
+        "url": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+        "type": "recruiter-supplied",
+        "evidence": "Archived Recruitment Agent research reports Construction group; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+        "checkedOn": "2026-10-24",
+        "confidence": "probable"
+      }
+    ],
+    "datasets": [
+      "accounting-finance"
+    ],
+    "lastVerified": "",
+    "notes": "Recruitment Agent 2026-10-23: Construction; Construction group. Source-reported company context, not evidence of any employee skill. References: https://www.linkedin.com/company/sa-construction-group",
+    "taxonomy": {
+      "primaryNode": "CON-CONTR",
+      "secondaryNodes": [],
+      "confidence": "probable",
+      "evidence": "Archived Recruitment Agent research reports Construction group; location: Cape Town, Western Cape. External sources not rechecked during transfer.",
+      "sourceUrl": "https://github.com/Mumoxa/Maps/blob/main/markets/organizations/import-sources/recruitment-agent-2026-10-24.json",
+      "checkedOn": "2026-10-24"
+    }
   }
 ]
