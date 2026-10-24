@@ -4,10 +4,10 @@
 
 - CA(SA)-tagged, non-rejected research records: **752** (including records outside South Africa).
 - Records labelled South Africa in the research DB: **745**. This is not a verified resident count: `country` may default to South Africa.
-- Of SA-labelled records, designation confirmed in the recorded public evidence: **696**; designation needs further confirmation: **49**. This does **not** establish currently active SAICA membership.
-- SA-labelled location assessments: **46** confirmed; **332** high confidence (may be employer-based); **367** not evidenced. **1** additional records are explicitly outside South Africa; **6** have no country.
+- Of SA-labelled records, designation confirmed in the recorded public evidence: **691**; designation needs further confirmation: **54**. This does **not** establish currently active SAICA membership.
+- SA-labelled location assessments: **47** confirmed; **327** high confidence (may be employer-based); **371** not evidenced. **1** additional records are explicitly outside South Africa; **6** have no country.
 - Latest recorded per-person source-check date in this subset: **2026-10-23**. Titles and employers may have changed since their individual check dates.
-- Industry supplied from an exact, uniquely named employer in the existing sourced company catalogue: **12** SA-labelled records. This is employer-sector context, **not a personally verified specialism**, and the company sources were not rechecked during export. Other industries come from the person research record.
+- Industry supplied from an exact, uniquely named employer in the existing sourced company catalogue: **13** SA-labelled records. This is employer-sector context, **not a personally verified specialism**, and the company sources were not rechecked during export. Other industries come from the person research record.
 
 ## Missing details among SA-labelled records
 
@@ -15,9 +15,9 @@
 |---|---:|
 | Title | 16 |
 | Employer | 15 |
-| Industry | 34 |
-| LinkedIn profile URL | 682 |
-| SA location evidence | 367 |
+| Industry | 33 |
+| LinkedIn profile URL | 674 |
+| SA location evidence | 371 |
 
 See [ca_sa_inventory.csv](./ca_sa_inventory.csv) for one row per recorded person, with a research ID, name, title, employer, industry (with basis and a separate employer source URL when derived), **actual** LinkedIn URL where recorded, sources, last-checked date, designation status and location assessment. Blank cells mean **unknown**, not "unemployed" or "no LinkedIn"; research titles explicitly marked "not stated" are exported as blank. The CSV also retains out-of-scope country rows, explicitly flagged, so they cannot silently inflate the SA total. It contains public professional information only; no contact details, ID numbers or inferred profile URLs.
 
