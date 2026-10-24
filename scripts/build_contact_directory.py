@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Any, Iterable
 from urllib.parse import urlparse
 
-from openpyxl import load_workbook
 
 
 PLACEHOLDERS = {
@@ -215,6 +214,7 @@ def base_record(name: str, file_name: str, sheet: str, row_number: int) -> dict[
 
 
 def extract_workbook(path: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    from openpyxl import load_workbook
     records: list[dict[str, Any]] = []
     ignored_sheets: list[dict[str, Any]] = []
     workbook = load_workbook(path, read_only=True, data_only=True)

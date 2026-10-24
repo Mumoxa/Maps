@@ -14,6 +14,7 @@ import type { OrganizationIndex, ResolvedEmployer } from './load'
 import { scaleBucket } from './discovery'
 import { classifyFootprint, FOOTPRINT_BANDS } from './footprint'
 import { organizationTaxonomy } from './taxonomyPlacement'
+import { directorySearchTerms } from './directory'
 import type { IndustryAtlas } from './atlas'
 import { companiesAtNode, isUnclassifiedBranch } from './atlas'
 import type {
@@ -174,6 +175,7 @@ function searchHaystack(index: OrganizationIndex, view: CompanyView): string {
     ...view.provinces,
   ]
   if (organization) {
+    parts.push(...directorySearchTerms(organization))
     for (const location of organization.locations) parts.push(`${location.city} ${location.province}`)
     for (const link of organization.industries) parts.push(link.evidence)
   }

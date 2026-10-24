@@ -1,22 +1,22 @@
 {
-  "rawPersonRows": 10289,
-  "uniqueContacts": 5070,
-  "mergedDuplicateRows": 5219,
-  "sourceRecordCount": 10289,
+  "rawPersonRows": 10642,
+  "uniqueContacts": 5420,
+  "mergedDuplicateRows": 5222,
+  "sourceRecordCount": 10642,
   "sourceRowsReconciled": true,
   "duplicateIds": 0,
   "contactsWithoutCompany": 0,
-  "contactsWithoutTitle": 35,
-  "contactsWithoutLocation": 4996,
-  "companies": 1395,
+  "contactsWithoutTitle": 385,
+  "contactsWithoutLocation": 5003,
+  "companies": 1741,
   "titles": 3012,
-  "sectors": 148,
-  "locations": 18,
+  "sectors": 255,
+  "locations": 362,
   "sourcePersonRows": {
+    "03-Export_Contacts_2026-06-23.csv": 25,
     "Copy of Lead Gen _ Pitch List - SA MASTER SHEET [Majesty _ Joanna].xlsx": 5724,
     "01-Lead-Gen-_-Pitch-List-SA-MASTER-SHEET-Majesty-_-Joanna-3-.xlsx": 4540,
-    "02-Delivery-Master-Sheet-2026-2-.xlsx": 0,
-    "03-Export_Contacts_2026-06-23.csv": 25
+    "MBAWC_Members (2).xlsx": 353
   },
   "ignoredSheets": [
     {

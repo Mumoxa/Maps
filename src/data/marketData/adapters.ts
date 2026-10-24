@@ -1,6 +1,6 @@
 import type { DataBundle, Profile } from '../types'
 import type { HackathonCandidate } from '../hackathonPeople'
-import type { AccountantCandidate } from '../accountantsPeople'
+import { accountantSourceCohorts, currentAccountantAffiliations, type AccountantCandidate } from '../accountantsPeople'
 import type { DataScienceCandidate } from '../dataSciencePeople'
 import type { MarketLocation, MarketProfile, MarketSource } from './types'
 
@@ -242,16 +242,23 @@ function inferAccountantSeniority(candidate: AccountantCandidate) {
 }
 
 export function adaptAccountantCandidate(candidate: AccountantCandidate): MarketProfile {
+  const sourceCohorts = accountantSourceCohorts(candidate)
+  const affiliations = currentAccountantAffiliations(candidate)
+  const sourceReported = candidate.attributes?.source_reported === true
+  const country = sourceReported ? candidate.country : candidate.country || 'South Africa'
   const location: MarketLocation = {
     city: candidate.city,
     province: candidate.province,
-    country: candidate.country || 'South Africa',
+    country,
   }
   const summary = [
     candidate.title && candidate.employer ? `${candidate.title} at ${candidate.employer}` : candidate.title || candidate.employer,
     candidate.designations.length ? candidate.designations.join(', ') : '',
     candidate.industry ? `${candidate.industry} sector` : '',
     candidate.qualificationEvidence,
+    ...(candidate.alternateNames?.length ? [`Also known as ${candidate.alternateNames.join('; ')}`] : []),
+    ...affiliations.map((affiliation) => `${affiliation.company} (${affiliation.relationship})`),
+    sourceCohorts.length ? `Source cohort: ${sourceCohorts.join(', ')}` : '',
   ].filter(Boolean).join('. ')
 
   const sources: MarketSource[] = []
@@ -272,7 +279,7 @@ export function adaptAccountantCandidate(candidate: AccountantCandidate): Market
     title: candidate.title,
     company: candidate.employer,
     location,
-    locationLabel: [candidate.city, candidate.province, candidate.country || 'South Africa'].filter(Boolean).join(', '),
+    locationLabel: [candidate.city, candidate.province, country].filter(Boolean).join(', '),
     seniority: inferAccountantSeniority(candidate),
     skills: unique([
       ...candidate.designations,
@@ -289,7 +296,7 @@ export function adaptAccountantCandidate(candidate: AccountantCandidate): Market
     summary,
     linkedinUrl: candidate.linkedinUrl,
     sources,
-    suppliedAsVerified: true,
+    suppliedAsVerified: !sourceReported,
     supersedesId: null,
     attributes: {
       status: candidate.status,
@@ -304,6 +311,13 @@ export function adaptAccountantCandidate(candidate: AccountantCandidate): Market
       yearsExperience: candidate.yearsExperience,
       accountingSystems: candidate.accountingSystems,
       erpSystems: candidate.erpSystems,
+      // Only explicitly public provenance crosses into global search. Client
+      // search names and private screening notes remain in the private context.
+      source_cohorts: sourceCohorts,
+      alternateNames: candidate.alternateNames ?? [],
+      ...(sourceReported ? { source_reported: true } : {}),
+      ...(candidate.attributes?.source_batch ? { source_batch: candidate.attributes.source_batch } : {}),
+      currentCompanyAffiliations: affiliations,
     },
     provenance: {
       kind: 'legacy',

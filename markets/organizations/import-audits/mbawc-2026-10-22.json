@@ -1,0 +1,4064 @@
+{
+  "batch": "mbawc-2026-10-22",
+  "sourceWorkbook": "markets/organizations/import-sources/mbawc-2026-10-22.xlsx",
+  "sourceArchive": "markets/organizations/import-sources/mbawc-2026-10-22.json",
+  "sourceSha256": "b1c97dfdda3e4077889b8c4e6afda9077cfdcf2cfe72c6d82123a06c432d43f3",
+  "sourceReportedDate": "2026-10-22",
+  "importedOn": "2026-10-23",
+  "evidenceState": "workbook-reported; qualification, live membership, locations and roles not independently reverified",
+  "members": [
+    {
+      "sourceRow": 2,
+      "sourceKey": "1",
+      "organizationId": "org-mbawc-001",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "shaheed-noor",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0199"
+    },
+    {
+      "sourceRow": 3,
+      "sourceKey": "2",
+      "organizationId": "org-mbawc-002",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ashley-herold",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0200"
+    },
+    {
+      "sourceRow": 4,
+      "sourceKey": "3",
+      "organizationId": "org-mbawc-003",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "rick-volker",
+      "financePersonIds": [
+        "acc-1710"
+      ],
+      "researchCompanyId": "cmp-0201"
+    },
+    {
+      "sourceRow": 5,
+      "sourceKey": "4",
+      "organizationId": "org-mbawc-004",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sadiqa-israel",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0202"
+    },
+    {
+      "sourceRow": 6,
+      "sourceKey": "5",
+      "organizationId": "org-mbawc-005",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ismail-abrahams",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0203"
+    },
+    {
+      "sourceRow": 7,
+      "sourceKey": "6",
+      "organizationId": "org-mbawc-006",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "pearl-davids",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0204"
+    },
+    {
+      "sourceRow": 8,
+      "sourceKey": "7",
+      "organizationId": "org-mbawc-007",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "alister-raine",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0205"
+    },
+    {
+      "sourceRow": 9,
+      "sourceKey": "8",
+      "organizationId": "org-afrisam",
+      "identityEvidence": "AfriSam South Africa legal entity and company site; workbook trading name retains the country qualifier.",
+      "classificationGap": "",
+      "contactId": "joseph-mofokeng",
+      "financePersonIds": [
+        "acc-0909",
+        "acc-0910"
+      ],
+      "researchCompanyId": "cmp-0115"
+    },
+    {
+      "sourceRow": 10,
+      "sourceKey": "9",
+      "organizationId": "org-mbawc-009",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "rudi-goosan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0206"
+    },
+    {
+      "sourceRow": 11,
+      "sourceKey": "10",
+      "organizationId": "org-mbawc-010",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "brenda-bodill",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0207"
+    },
+    {
+      "sourceRow": 12,
+      "sourceKey": "11",
+      "organizationId": "org-mbawc-011",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "peter-schincariol",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0208"
+    },
+    {
+      "sourceRow": 13,
+      "sourceKey": "12",
+      "organizationId": "org-mbawc-012",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "rezaune-davids",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0209"
+    },
+    {
+      "sourceRow": 14,
+      "sourceKey": "13",
+      "organizationId": "org-mbawc-013",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "deborah-magill",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0210"
+    },
+    {
+      "sourceRow": 15,
+      "sourceKey": "14",
+      "organizationId": "org-mbawc-014",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mike-gossmann",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0211"
+    },
+    {
+      "sourceRow": 16,
+      "sourceKey": "15",
+      "organizationId": "org-mbawc-015",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nielen-visser",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0212"
+    },
+    {
+      "sourceRow": 17,
+      "sourceKey": "16",
+      "organizationId": "org-mbawc-016",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "abdul-raban",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0213"
+    },
+    {
+      "sourceRow": 18,
+      "sourceKey": "17",
+      "organizationId": "org-mbawc-017",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "keith-beckitt",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0214"
+    },
+    {
+      "sourceRow": 19,
+      "sourceKey": "18",
+      "organizationId": "org-mbawc-018",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "chantal-patton",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0215"
+    },
+    {
+      "sourceRow": 20,
+      "sourceKey": "19",
+      "organizationId": "org-mbawc-019",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "naas-zaayman",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0216"
+    },
+    {
+      "sourceRow": 21,
+      "sourceKey": "20",
+      "organizationId": "org-mbawc-021",
+      "identityEvidence": "Workbook member rows 20 and 21 have the same trading name, VAT 4060284728, normalized membership code AZB01, company domain, address and telephone/cellphone. Preserve both directory source rows on one company; contact name disagreement remains a separate review question.",
+      "classificationGap": "",
+      "contactId": "m-sodieq-m-sodieq",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0217"
+    },
+    {
+      "sourceRow": 22,
+      "sourceKey": "21",
+      "organizationId": "org-mbawc-021",
+      "identityEvidence": "Workbook member rows 20 and 21 have the same trading name, VAT 4060284728, normalized membership code AZB01, company domain, address and telephone/cellphone. Preserve both directory source rows on one company; contact name disagreement remains a separate review question.",
+      "classificationGap": "",
+      "contactId": "m-sodieq-barendse",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0217"
+    },
+    {
+      "sourceRow": 23,
+      "sourceKey": "22",
+      "organizationId": "org-mbawc-022",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "darren-van-der-pool",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0218"
+    },
+    {
+      "sourceRow": 24,
+      "sourceKey": "23",
+      "organizationId": "org-mbawc-023",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "r-williams",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0219"
+    },
+    {
+      "sourceRow": 25,
+      "sourceKey": "24",
+      "organizationId": "org-mbawc-024",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mogamat-salie",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0220"
+    },
+    {
+      "sourceRow": 26,
+      "sourceKey": "25",
+      "organizationId": "org-mbawc-025",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "colleen-chaplin",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0221"
+    },
+    {
+      "sourceRow": 27,
+      "sourceKey": "26",
+      "organizationId": "org-mbawc-026",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "kishan-patel",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0222"
+    },
+    {
+      "sourceRow": 28,
+      "sourceKey": "27",
+      "organizationId": "org-mbawc-027",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jonathan-widan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0223"
+    },
+    {
+      "sourceRow": 29,
+      "sourceKey": "28",
+      "organizationId": "org-mbawc-028",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "giuseppe-d-ambrosio",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0224"
+    },
+    {
+      "sourceRow": 30,
+      "sourceKey": "29",
+      "organizationId": "org-mbawc-029",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "denise-allen",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0225"
+    },
+    {
+      "sourceRow": 31,
+      "sourceKey": "30",
+      "organizationId": "org-mbawc-030",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "esme-hendricks",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0226"
+    },
+    {
+      "sourceRow": 32,
+      "sourceKey": "31",
+      "organizationId": "org-mbawc-031",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jared-bee",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0227"
+    },
+    {
+      "sourceRow": 33,
+      "sourceKey": "32",
+      "organizationId": "org-mbawc-032",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "arthur-gabriels",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0228"
+    },
+    {
+      "sourceRow": 34,
+      "sourceKey": "33",
+      "organizationId": "org-mbawc-033",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "niyaaz-hendricks",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0229"
+    },
+    {
+      "sourceRow": 35,
+      "sourceKey": "34",
+      "organizationId": "org-mbawc-034",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "paula-de-jager",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0230"
+    },
+    {
+      "sourceRow": 36,
+      "sourceKey": "35",
+      "organizationId": "org-mbawc-035",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "colin-ridley",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0231"
+    },
+    {
+      "sourceRow": 37,
+      "sourceKey": "36",
+      "organizationId": "org-mbawc-036",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "brandon-jamieson",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0232"
+    },
+    {
+      "sourceRow": 38,
+      "sourceKey": "37",
+      "organizationId": "org-mbawc-037",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sivuyile-blou",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0233"
+    },
+    {
+      "sourceRow": 39,
+      "sourceKey": "38",
+      "organizationId": "org-mbawc-038",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "s-pearce",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0234"
+    },
+    {
+      "sourceRow": 40,
+      "sourceKey": "39",
+      "organizationId": "org-mbawc-039",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "dawid-venter",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0235"
+    },
+    {
+      "sourceRow": 41,
+      "sourceKey": "40",
+      "organizationId": "org-mbawc-040",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gail-silkstone",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0236"
+    },
+    {
+      "sourceRow": 42,
+      "sourceKey": "41",
+      "organizationId": "org-mbawc-041",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "yolandi-olivier",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0237"
+    },
+    {
+      "sourceRow": 43,
+      "sourceKey": "42",
+      "organizationId": "org-mbawc-042",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "denzil-potgieter",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0238"
+    },
+    {
+      "sourceRow": 44,
+      "sourceKey": "43",
+      "organizationId": "org-mbawc-043",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ge-van-wyk",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0239"
+    },
+    {
+      "sourceRow": 45,
+      "sourceKey": "44",
+      "organizationId": "org-mbawc-044",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "tim-watkins-baker",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0240"
+    },
+    {
+      "sourceRow": 46,
+      "sourceKey": "45",
+      "organizationId": "org-massmart",
+      "identityEvidence": "Exact canonical trading/legal name matches the existing organization.",
+      "classificationGap": "",
+      "contactId": "christoff-vlok",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0024"
+    },
+    {
+      "sourceRow": 47,
+      "sourceKey": "46",
+      "organizationId": "org-mbawc-046",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "hendrik-kruger",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0241"
+    },
+    {
+      "sourceRow": 48,
+      "sourceKey": "47",
+      "organizationId": "org-mbawc-047",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "tyrone-james",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0242"
+    },
+    {
+      "sourceRow": 49,
+      "sourceKey": "48",
+      "organizationId": "org-mbawc-048",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "schalk-van-jaarsveld",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0243"
+    },
+    {
+      "sourceRow": 50,
+      "sourceKey": "49",
+      "organizationId": "org-mbawc-049",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "paolo-corlone",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0244"
+    },
+    {
+      "sourceRow": 51,
+      "sourceKey": "50",
+      "organizationId": "org-mbawc-050",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "peter-van-outshoorn",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0245"
+    },
+    {
+      "sourceRow": 52,
+      "sourceKey": "51",
+      "organizationId": "org-mbawc-051",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "shelley-thomas",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0246"
+    },
+    {
+      "sourceRow": 53,
+      "sourceKey": "52",
+      "organizationId": "org-mbawc-052",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nicholas-johnston",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0247"
+    },
+    {
+      "sourceRow": 54,
+      "sourceKey": "53",
+      "organizationId": "org-mbawc-053",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "flippie-brandt",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0248"
+    },
+    {
+      "sourceRow": 55,
+      "sourceKey": "54",
+      "organizationId": "org-mbawc-054",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "francois-joubert",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0249"
+    },
+    {
+      "sourceRow": 56,
+      "sourceKey": "55",
+      "organizationId": "org-mbawc-055",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "evan-de-kock",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0250"
+    },
+    {
+      "sourceRow": 57,
+      "sourceKey": "56",
+      "organizationId": "org-mbawc-056",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ann-southey",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0251"
+    },
+    {
+      "sourceRow": 58,
+      "sourceKey": "57",
+      "organizationId": "org-mbawc-057",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "boshoff-muller",
+      "financePersonIds": [
+        "acc-0903"
+      ],
+      "researchCompanyId": "cmp-0252"
+    },
+    {
+      "sourceRow": 59,
+      "sourceKey": "58",
+      "organizationId": "org-mbawc-058",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gerrit-jordaan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0253"
+    },
+    {
+      "sourceRow": 60,
+      "sourceKey": "59",
+      "organizationId": "org-mbawc-059",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ashraf-shaik",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0254"
+    },
+    {
+      "sourceRow": 61,
+      "sourceKey": "60",
+      "organizationId": "org-mbawc-060",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "howard-donnelly",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0255"
+    },
+    {
+      "sourceRow": 62,
+      "sourceKey": "61",
+      "organizationId": "org-mbawc-061",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "andre-davis",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0256"
+    },
+    {
+      "sourceRow": 63,
+      "sourceKey": "62",
+      "organizationId": "org-mbawc-062",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "victor-cinamon",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0257"
+    },
+    {
+      "sourceRow": 64,
+      "sourceKey": "63",
+      "organizationId": "org-mbawc-063",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "raymond-morkel",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0258"
+    },
+    {
+      "sourceRow": 65,
+      "sourceKey": "64",
+      "organizationId": "org-mbawc-064",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ainsworth-van-rooi",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0259"
+    },
+    {
+      "sourceRow": 66,
+      "sourceKey": "65",
+      "organizationId": "org-mbawc-065",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "No categories supplied; business activity not established",
+      "contactId": "wendy-le-breton",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0260"
+    },
+    {
+      "sourceRow": 67,
+      "sourceKey": "66",
+      "organizationId": "org-concor",
+      "identityEvidence": "Workbook Concor Construction name and concor.co.za company domain corroborate existing Concor record.",
+      "classificationGap": "",
+      "contactId": "reon-govender",
+      "financePersonIds": [
+        "acc-0478"
+      ],
+      "researchCompanyId": "cmp-0135"
+    },
+    {
+      "sourceRow": 68,
+      "sourceKey": "67",
+      "organizationId": "org-mbawc-067",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "cheryl-ponto",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0261"
+    },
+    {
+      "sourceRow": 69,
+      "sourceKey": "68",
+      "organizationId": "org-mbawc-068",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "steven-tripney",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0262"
+    },
+    {
+      "sourceRow": 70,
+      "sourceKey": "69",
+      "organizationId": "org-mbawc-069",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "feizel-warley",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0263"
+    },
+    {
+      "sourceRow": 71,
+      "sourceKey": "70",
+      "organizationId": "org-mbawc-070",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "chandre-abrahams",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0264"
+    },
+    {
+      "sourceRow": 72,
+      "sourceKey": "71",
+      "organizationId": "org-mbawc-071",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "eddie-davids",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0265"
+    },
+    {
+      "sourceRow": 73,
+      "sourceKey": "72",
+      "organizationId": "org-mbawc-072",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "renier-smal",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0266"
+    },
+    {
+      "sourceRow": 74,
+      "sourceKey": "73",
+      "organizationId": "org-mbawc-073",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "miranda-baboo",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0267"
+    },
+    {
+      "sourceRow": 75,
+      "sourceKey": "74",
+      "organizationId": "org-mbawc-074",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "philip-wiese",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0268"
+    },
+    {
+      "sourceRow": 76,
+      "sourceKey": "75",
+      "organizationId": "org-mbawc-075",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jonathan-mitchell",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0269"
+    },
+    {
+      "sourceRow": 77,
+      "sourceKey": "76",
+      "organizationId": "org-mbawc-076",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marlize-nortje",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0270"
+    },
+    {
+      "sourceRow": 78,
+      "sourceKey": "77",
+      "organizationId": "org-mbawc-077",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "david-ramsay",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0271"
+    },
+    {
+      "sourceRow": 79,
+      "sourceKey": "78",
+      "organizationId": "org-mbawc-078",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gina-shepherd",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0272"
+    },
+    {
+      "sourceRow": 80,
+      "sourceKey": "79",
+      "organizationId": "org-mbawc-079",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gareth-wall",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0273"
+    },
+    {
+      "sourceRow": 81,
+      "sourceKey": "80",
+      "organizationId": "org-mbawc-080",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gregory-meaker",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0274"
+    },
+    {
+      "sourceRow": 82,
+      "sourceKey": "81",
+      "organizationId": "org-mbawc-081",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "donovan-potts",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0275"
+    },
+    {
+      "sourceRow": 83,
+      "sourceKey": "82",
+      "organizationId": "org-mbawc-082",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "david-adams",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0276"
+    },
+    {
+      "sourceRow": 84,
+      "sourceKey": "83",
+      "organizationId": "org-mbawc-083",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jason-carruthers",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0277"
+    },
+    {
+      "sourceRow": 85,
+      "sourceKey": "84",
+      "organizationId": "org-mbawc-084",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "adrian-kerr",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0278"
+    },
+    {
+      "sourceRow": 86,
+      "sourceKey": "85",
+      "organizationId": "org-mbawc-085",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sandy-beamish",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0279"
+    },
+    {
+      "sourceRow": 87,
+      "sourceKey": "86",
+      "organizationId": "org-mbawc-086",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "andrew-lottering",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0280"
+    },
+    {
+      "sourceRow": 88,
+      "sourceKey": "87",
+      "organizationId": "org-mbawc-087",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "No categories supplied; business activity not established",
+      "contactId": "clara-wasserman",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0281"
+    },
+    {
+      "sourceRow": 89,
+      "sourceKey": "88",
+      "organizationId": "org-mbawc-088",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "shaun-hill",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0282"
+    },
+    {
+      "sourceRow": 90,
+      "sourceKey": "89",
+      "organizationId": "org-mbawc-089",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "vernon-surtees",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0283"
+    },
+    {
+      "sourceRow": 91,
+      "sourceKey": "90",
+      "organizationId": "org-mbawc-090",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "fatima-mohamed",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0284"
+    },
+    {
+      "sourceRow": 92,
+      "sourceKey": "91",
+      "organizationId": "org-mbawc-091",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mogamat-moos",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0285"
+    },
+    {
+      "sourceRow": 93,
+      "sourceKey": "92",
+      "organizationId": "org-mbawc-092",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "wilhelm-stemmet",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0286"
+    },
+    {
+      "sourceRow": 94,
+      "sourceKey": "93",
+      "organizationId": "org-mbawc-093",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "natasha-cooke",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0287"
+    },
+    {
+      "sourceRow": 95,
+      "sourceKey": "94",
+      "organizationId": "org-mbawc-094",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ebrahim-davids",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0288"
+    },
+    {
+      "sourceRow": 96,
+      "sourceKey": "95",
+      "organizationId": "org-mbawc-095",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "megan-smith",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0289"
+    },
+    {
+      "sourceRow": 97,
+      "sourceKey": "96",
+      "organizationId": "org-mbawc-096",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "paul-rawsthorne",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0290"
+    },
+    {
+      "sourceRow": 98,
+      "sourceKey": "97",
+      "organizationId": "org-mbawc-097",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "vincent-den-ouden",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0291"
+    },
+    {
+      "sourceRow": 99,
+      "sourceKey": "98",
+      "organizationId": "org-mbawc-098",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "asa-sutria",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0292"
+    },
+    {
+      "sourceRow": 100,
+      "sourceKey": "99",
+      "organizationId": "org-mbawc-099",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "noel-meyer",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0293"
+    },
+    {
+      "sourceRow": 101,
+      "sourceKey": "100",
+      "organizationId": "org-mbawc-100",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "musa-conrad",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0294"
+    },
+    {
+      "sourceRow": 102,
+      "sourceKey": "101",
+      "organizationId": "org-mbawc-101",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "douglas-affleck",
+      "financePersonIds": [
+        "acc-1713"
+      ],
+      "researchCompanyId": "cmp-0295"
+    },
+    {
+      "sourceRow": 103,
+      "sourceKey": "102",
+      "organizationId": "org-mbawc-102",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nontsikelelo-sokujika",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0296"
+    },
+    {
+      "sourceRow": 104,
+      "sourceKey": "103",
+      "organizationId": "org-mbawc-103",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "michael-fairbrother",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0297"
+    },
+    {
+      "sourceRow": 105,
+      "sourceKey": "104",
+      "organizationId": "org-mbawc-104",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "thea-robertson",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0298"
+    },
+    {
+      "sourceRow": 106,
+      "sourceKey": "105",
+      "organizationId": "org-mbawc-105",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "helen-beverley",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0299"
+    },
+    {
+      "sourceRow": 107,
+      "sourceKey": "106",
+      "organizationId": "org-mbawc-106",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "charles-flanagan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0300"
+    },
+    {
+      "sourceRow": 108,
+      "sourceKey": "107",
+      "organizationId": "org-mbawc-107",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johnny-van-der-berg",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0301"
+    },
+    {
+      "sourceRow": 109,
+      "sourceKey": "108",
+      "organizationId": "org-mbawc-108",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "clinton-felix",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0302"
+    },
+    {
+      "sourceRow": 110,
+      "sourceKey": "109",
+      "organizationId": "org-mbawc-109",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johan-bezuidenhout",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0303"
+    },
+    {
+      "sourceRow": 111,
+      "sourceKey": "110",
+      "organizationId": "org-mbawc-110",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "carol-thomas",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0304"
+    },
+    {
+      "sourceRow": 112,
+      "sourceKey": "111",
+      "organizationId": "org-mbawc-111",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marieta-m-o-callaghan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0305"
+    },
+    {
+      "sourceRow": 113,
+      "sourceKey": "112",
+      "organizationId": "org-mbawc-112",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "stephan-julies",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0306"
+    },
+    {
+      "sourceRow": 114,
+      "sourceKey": "113",
+      "organizationId": "org-mbawc-113",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "avril-frost",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0307"
+    },
+    {
+      "sourceRow": 115,
+      "sourceKey": "114",
+      "organizationId": "org-mbawc-114",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mark-fugard",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0308"
+    },
+    {
+      "sourceRow": 116,
+      "sourceKey": "115",
+      "organizationId": "org-mbawc-115",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "john-matthews",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0309"
+    },
+    {
+      "sourceRow": 117,
+      "sourceKey": "116",
+      "organizationId": "org-mbawc-116",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "steven-fourie",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0310"
+    },
+    {
+      "sourceRow": 118,
+      "sourceKey": "117",
+      "organizationId": "org-mbawc-117",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "merwe-geldenhuys",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0311"
+    },
+    {
+      "sourceRow": 119,
+      "sourceKey": "118",
+      "organizationId": "org-mbawc-118",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jako-genis-0799729231",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0312"
+    },
+    {
+      "sourceRow": 120,
+      "sourceKey": "119",
+      "organizationId": "org-mbawc-119",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "estelle-nagadu-du-toit",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0313"
+    },
+    {
+      "sourceRow": 121,
+      "sourceKey": "120",
+      "organizationId": "org-mbawc-120",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "noel-meyer-mbawc-121",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0314"
+    },
+    {
+      "sourceRow": 122,
+      "sourceKey": "121",
+      "organizationId": "org-mbawc-121",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "No categories supplied; business activity not established",
+      "contactId": "mampho-sotshongaye",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0315"
+    },
+    {
+      "sourceRow": 123,
+      "sourceKey": "122",
+      "organizationId": "org-mbawc-122",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gary-james",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0316"
+    },
+    {
+      "sourceRow": 124,
+      "sourceKey": "123",
+      "organizationId": "org-mbawc-123",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gloria-josephs",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0317"
+    },
+    {
+      "sourceRow": 125,
+      "sourceKey": "124",
+      "organizationId": "org-mbawc-124",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gavin-sandeman",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0318"
+    },
+    {
+      "sourceRow": 126,
+      "sourceKey": "125",
+      "organizationId": "org-mbawc-125",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "warren-raatz",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0319"
+    },
+    {
+      "sourceRow": 127,
+      "sourceKey": "126",
+      "organizationId": "org-mbawc-126",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "cobus-maritz",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0320"
+    },
+    {
+      "sourceRow": 128,
+      "sourceKey": "127",
+      "organizationId": "org-mbawc-127",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "boebie-japie",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0321"
+    },
+    {
+      "sourceRow": 129,
+      "sourceKey": "128",
+      "organizationId": "org-mbawc-128",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "judy-leach",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0322"
+    },
+    {
+      "sourceRow": 130,
+      "sourceKey": "129",
+      "organizationId": "org-mbawc-129",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "richard-craig",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0323"
+    },
+    {
+      "sourceRow": 131,
+      "sourceKey": "130",
+      "organizationId": "org-mbawc-130",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "greg-benn",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0324"
+    },
+    {
+      "sourceRow": 132,
+      "sourceKey": "131",
+      "organizationId": "org-mbawc-131",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "brent-jones",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0325"
+    },
+    {
+      "sourceRow": 133,
+      "sourceKey": "132",
+      "organizationId": "org-mbawc-132",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mlu-manci",
+      "financePersonIds": [
+        "acc-1134"
+      ],
+      "researchCompanyId": "cmp-0326"
+    },
+    {
+      "sourceRow": 134,
+      "sourceKey": "133",
+      "organizationId": "org-mbawc-133",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "peter-wainwright",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0327"
+    },
+    {
+      "sourceRow": 135,
+      "sourceKey": "134",
+      "organizationId": "org-mbawc-134",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johan-brand",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0328"
+    },
+    {
+      "sourceRow": 136,
+      "sourceKey": "135",
+      "organizationId": "org-mbawc-135",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "naseeba-van-der-speck",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0329"
+    },
+    {
+      "sourceRow": 137,
+      "sourceKey": "136",
+      "organizationId": "org-mbawc-136",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "alex-finlay",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0330"
+    },
+    {
+      "sourceRow": 138,
+      "sourceKey": "137",
+      "organizationId": "org-mbawc-137",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jonathan-stevens",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0331"
+    },
+    {
+      "sourceRow": 139,
+      "sourceKey": "138",
+      "organizationId": "org-mbawc-138",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "alan-haefele",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0332"
+    },
+    {
+      "sourceRow": 140,
+      "sourceKey": "139",
+      "organizationId": "org-mbawc-139",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "pierre-smith",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0333"
+    },
+    {
+      "sourceRow": 141,
+      "sourceKey": "140",
+      "organizationId": "org-mbawc-140",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "henk-meyer",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0334"
+    },
+    {
+      "sourceRow": 142,
+      "sourceKey": "141",
+      "organizationId": "org-mbawc-141",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "salim-sadan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0335"
+    },
+    {
+      "sourceRow": 143,
+      "sourceKey": "142",
+      "organizationId": "org-mbawc-142",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ian-smith",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0336"
+    },
+    {
+      "sourceRow": 144,
+      "sourceKey": "143",
+      "organizationId": "org-mbawc-143",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "danelize-pienaar",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0337"
+    },
+    {
+      "sourceRow": 145,
+      "sourceKey": "144",
+      "organizationId": "org-mbawc-144",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "heinrich-kilpert",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0338"
+    },
+    {
+      "sourceRow": 146,
+      "sourceKey": "145",
+      "organizationId": "org-mbawc-145",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ivan-van-niekerk",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0339"
+    },
+    {
+      "sourceRow": 147,
+      "sourceKey": "146",
+      "organizationId": "org-mbawc-146",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ian-paul",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0340"
+    },
+    {
+      "sourceRow": 148,
+      "sourceKey": "147",
+      "organizationId": "org-mbawc-147",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "dave-garriock",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0341"
+    },
+    {
+      "sourceRow": 149,
+      "sourceKey": "148",
+      "organizationId": "org-mbawc-148",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "willie-du-preez",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0342"
+    },
+    {
+      "sourceRow": 150,
+      "sourceKey": "149",
+      "organizationId": "org-mbawc-149",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "biance-lourens",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0343"
+    },
+    {
+      "sourceRow": 151,
+      "sourceKey": "150",
+      "organizationId": "org-mbawc-150",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "biance-lourens",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0344"
+    },
+    {
+      "sourceRow": 152,
+      "sourceKey": "151",
+      "organizationId": "org-mbawc-151",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nellie-nel",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0345"
+    },
+    {
+      "sourceRow": 153,
+      "sourceKey": "152",
+      "organizationId": "org-mbawc-152",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mr-ms-kaye",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0346"
+    },
+    {
+      "sourceRow": 154,
+      "sourceKey": "153",
+      "organizationId": "org-mbawc-153",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "donovan-walker",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0347"
+    },
+    {
+      "sourceRow": 155,
+      "sourceKey": "154",
+      "organizationId": "org-mbawc-154",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "fadiel-isaacs",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0348"
+    },
+    {
+      "sourceRow": 156,
+      "sourceKey": "155",
+      "organizationId": "org-mbawc-155",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sheik-allie-rawoot",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0349"
+    },
+    {
+      "sourceRow": 157,
+      "sourceKey": "156",
+      "organizationId": "org-mbawc-156",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "human-naude",
+      "financePersonIds": [
+        "acc-0493"
+      ],
+      "researchCompanyId": "cmp-0138"
+    },
+    {
+      "sourceRow": 158,
+      "sourceKey": "157",
+      "organizationId": "org-mbawc-157",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "john-wantling",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0350"
+    },
+    {
+      "sourceRow": 159,
+      "sourceKey": "158",
+      "organizationId": "org-mbawc-158",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "bruce-smith",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0351"
+    },
+    {
+      "sourceRow": 160,
+      "sourceKey": "159",
+      "organizationId": "org-mbawc-159",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "william-clift",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0352"
+    },
+    {
+      "sourceRow": 161,
+      "sourceKey": "160",
+      "organizationId": "org-mbawc-160",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "grant-teare",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0353"
+    },
+    {
+      "sourceRow": 162,
+      "sourceKey": "161",
+      "organizationId": "org-mbawc-161",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gavin-jooste",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0354"
+    },
+    {
+      "sourceRow": 163,
+      "sourceKey": "162",
+      "organizationId": "org-mbawc-162",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nathan-paulse",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0355"
+    },
+    {
+      "sourceRow": 164,
+      "sourceKey": "163",
+      "organizationId": "org-mbawc-163",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johannes-louw",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0356"
+    },
+    {
+      "sourceRow": 165,
+      "sourceKey": "164",
+      "organizationId": "org-mbawc-164",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nico-landman",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0357"
+    },
+    {
+      "sourceRow": 166,
+      "sourceKey": "165",
+      "organizationId": "org-mbawc-165",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sean-marley",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0358"
+    },
+    {
+      "sourceRow": 167,
+      "sourceKey": "166",
+      "organizationId": "org-mbawc-166",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jonathan-mitchell-mbawc-167",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0359"
+    },
+    {
+      "sourceRow": 168,
+      "sourceKey": "167",
+      "organizationId": "org-mbawc-167",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "kurt-maritz",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0360"
+    },
+    {
+      "sourceRow": 169,
+      "sourceKey": "168",
+      "organizationId": "org-mbawc-168",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ronald-henkes",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0361"
+    },
+    {
+      "sourceRow": 170,
+      "sourceKey": "169",
+      "organizationId": "org-mbawc-169",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "rudi-van-schalkwyk",
+      "financePersonIds": [
+        "acc-1712"
+      ],
+      "researchCompanyId": "cmp-0362"
+    },
+    {
+      "sourceRow": 171,
+      "sourceKey": "170",
+      "organizationId": "org-mbawc-170",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "brandon-park",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0363"
+    },
+    {
+      "sourceRow": 172,
+      "sourceKey": "171",
+      "organizationId": "org-mbawc-171",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lucius-kriel",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0364"
+    },
+    {
+      "sourceRow": 173,
+      "sourceKey": "172",
+      "organizationId": "org-mbawc-172",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ken-newton",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0365"
+    },
+    {
+      "sourceRow": 174,
+      "sourceKey": "173",
+      "organizationId": "org-mbawc-173",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "luqmaan-adonis",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0366"
+    },
+    {
+      "sourceRow": 175,
+      "sourceKey": "174",
+      "organizationId": "org-mbawc-174",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "shaun-lamont",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0367"
+    },
+    {
+      "sourceRow": 176,
+      "sourceKey": "175",
+      "organizationId": "org-mbawc-175",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gerrie-labuscagne",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0368"
+    },
+    {
+      "sourceRow": 177,
+      "sourceKey": "176",
+      "organizationId": "org-mbawc-176",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "anton-niemand",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0369"
+    },
+    {
+      "sourceRow": 178,
+      "sourceKey": "177",
+      "organizationId": "org-mbawc-177",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "munier-noordien",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0370"
+    },
+    {
+      "sourceRow": 179,
+      "sourceKey": "178",
+      "organizationId": "org-mbawc-178",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lance-pike",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0371"
+    },
+    {
+      "sourceRow": 180,
+      "sourceKey": "179",
+      "organizationId": "org-mbawc-179",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "angie-grobbelaar",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0372"
+    },
+    {
+      "sourceRow": 181,
+      "sourceKey": "180",
+      "organizationId": "org-mbawc-180",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ravi-govender",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0373"
+    },
+    {
+      "sourceRow": 182,
+      "sourceKey": "181",
+      "organizationId": "org-mbawc-181",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "andrew-gilbey",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0374"
+    },
+    {
+      "sourceRow": 183,
+      "sourceKey": "182",
+      "organizationId": "org-mbawc-182",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "wayne-welby-solomon-mbawc-183",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0375"
+    },
+    {
+      "sourceRow": 184,
+      "sourceKey": "183",
+      "organizationId": "org-mbawc-183",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "henry-fuller",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0376"
+    },
+    {
+      "sourceRow": 185,
+      "sourceKey": "184",
+      "organizationId": "org-mbawc-184",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "adnaan-achmat",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0377"
+    },
+    {
+      "sourceRow": 186,
+      "sourceKey": "185",
+      "organizationId": "org-mbawc-185",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lawrence-fourie",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0378"
+    },
+    {
+      "sourceRow": 187,
+      "sourceKey": "186",
+      "organizationId": "org-mbawc-186",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "melanie-dornbrack",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0379"
+    },
+    {
+      "sourceRow": 188,
+      "sourceKey": "187",
+      "organizationId": "org-mbawc-187",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "leatitia-schwarte",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0380"
+    },
+    {
+      "sourceRow": 189,
+      "sourceKey": "188",
+      "organizationId": "org-mbawc-188",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johan-lund",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0381"
+    },
+    {
+      "sourceRow": 190,
+      "sourceKey": "189",
+      "organizationId": "org-mbawc-189",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "colin-drescher",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0382"
+    },
+    {
+      "sourceRow": 191,
+      "sourceKey": "190",
+      "organizationId": "org-mbawc-190",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sedick-daniels",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0383"
+    },
+    {
+      "sourceRow": 192,
+      "sourceKey": "191",
+      "organizationId": "org-mbawc-191",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "desmond-judge",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0384"
+    },
+    {
+      "sourceRow": 193,
+      "sourceKey": "192",
+      "organizationId": "org-mbawc-192",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mark-watson",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0385"
+    },
+    {
+      "sourceRow": 194,
+      "sourceKey": "193",
+      "organizationId": "org-mbawc-193",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "boebie-magiet",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0386"
+    },
+    {
+      "sourceRow": 195,
+      "sourceKey": "194",
+      "organizationId": "org-mbawc-194",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "chris-escreet",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0387"
+    },
+    {
+      "sourceRow": 196,
+      "sourceKey": "195",
+      "organizationId": "org-mbawc-195",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "masood-jardien",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0388"
+    },
+    {
+      "sourceRow": 197,
+      "sourceKey": "196",
+      "organizationId": "org-mbawc-196",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "travis-kriedemann",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0389"
+    },
+    {
+      "sourceRow": 198,
+      "sourceKey": "197",
+      "organizationId": "org-mbawc-197",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "antony-arvan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0390"
+    },
+    {
+      "sourceRow": 199,
+      "sourceKey": "198",
+      "organizationId": "org-mbawc-198",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "liat-mazor",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0391"
+    },
+    {
+      "sourceRow": 200,
+      "sourceKey": "199",
+      "organizationId": "org-mbawc-199",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "liat-mazor",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0392"
+    },
+    {
+      "sourceRow": 201,
+      "sourceKey": "200",
+      "organizationId": "org-mbawc-200",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "dwight-clarkson",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0393"
+    },
+    {
+      "sourceRow": 202,
+      "sourceKey": "201",
+      "organizationId": "org-mbawc-201",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sean-rack",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0394"
+    },
+    {
+      "sourceRow": 203,
+      "sourceKey": "202",
+      "organizationId": "org-mbawc-202",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nico-mijlof",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0395"
+    },
+    {
+      "sourceRow": 204,
+      "sourceKey": "203",
+      "organizationId": "org-mbawc-203",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "fouzah-conrad",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0396"
+    },
+    {
+      "sourceRow": 205,
+      "sourceKey": "204",
+      "organizationId": "org-mbawc-204",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "kim-keightley",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0397"
+    },
+    {
+      "sourceRow": 206,
+      "sourceKey": "205",
+      "organizationId": "org-mbawc-205",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "estelle-purdy",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0398"
+    },
+    {
+      "sourceRow": 207,
+      "sourceKey": "206",
+      "organizationId": "org-mbawc-206",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "angelique-van-noordwyk",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0399"
+    },
+    {
+      "sourceRow": 208,
+      "sourceKey": "207",
+      "organizationId": "org-mbawc-207",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "yusuf-amlay",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0400"
+    },
+    {
+      "sourceRow": 209,
+      "sourceKey": "208",
+      "organizationId": "org-mbawc-208",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mick-murphy",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0401"
+    },
+    {
+      "sourceRow": 210,
+      "sourceKey": "209",
+      "organizationId": "org-mbawc-209",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sarfraaz-ahmed",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0402"
+    },
+    {
+      "sourceRow": 211,
+      "sourceKey": "210",
+      "organizationId": "org-mbawc-210",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "yaseen-francis",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0403"
+    },
+    {
+      "sourceRow": 212,
+      "sourceKey": "211",
+      "organizationId": "org-mbawc-211",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ca-fourie",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0404"
+    },
+    {
+      "sourceRow": 213,
+      "sourceKey": "212",
+      "organizationId": "org-mbawc-212",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lianda-coetzee",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0405"
+    },
+    {
+      "sourceRow": 214,
+      "sourceKey": "213",
+      "organizationId": "org-mbawc-213",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "robin-payne",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0406"
+    },
+    {
+      "sourceRow": 215,
+      "sourceKey": "214",
+      "organizationId": "org-mbawc-214",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lisa-dibden",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0407"
+    },
+    {
+      "sourceRow": 216,
+      "sourceKey": "215",
+      "organizationId": "org-mbawc-215",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "faith-mabena",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0408"
+    },
+    {
+      "sourceRow": 217,
+      "sourceKey": "216",
+      "organizationId": "org-mbawc-216",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nokuthula-dube",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0409"
+    },
+    {
+      "sourceRow": 218,
+      "sourceKey": "217",
+      "organizationId": "org-mbawc-217",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "patrick-sylvester",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0410"
+    },
+    {
+      "sourceRow": 219,
+      "sourceKey": "218",
+      "organizationId": "org-mbawc-218",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gustavo-norambuena",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0411"
+    },
+    {
+      "sourceRow": 220,
+      "sourceKey": "219",
+      "organizationId": "org-mbawc-219",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "petrus-saal",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0412"
+    },
+    {
+      "sourceRow": 221,
+      "sourceKey": "220",
+      "organizationId": "org-mbawc-220",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "tarryn-pace",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0413"
+    },
+    {
+      "sourceRow": 222,
+      "sourceKey": "221",
+      "organizationId": "org-mbawc-221",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "cheslin-lawrence",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0414"
+    },
+    {
+      "sourceRow": 223,
+      "sourceKey": "222",
+      "organizationId": "org-mbawc-222",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "fred-steyn",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0415"
+    },
+    {
+      "sourceRow": 224,
+      "sourceKey": "223",
+      "organizationId": "org-mbawc-223",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jacques-van-greunen",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0416"
+    },
+    {
+      "sourceRow": 225,
+      "sourceKey": "224",
+      "organizationId": "org-mbawc-224",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "andre-huisamen",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0417"
+    },
+    {
+      "sourceRow": 226,
+      "sourceKey": "225",
+      "organizationId": "org-mbawc-225",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nick-cruickshank",
+      "financePersonIds": [
+        "acc-1205"
+      ],
+      "researchCompanyId": "cmp-0418"
+    },
+    {
+      "sourceRow": 227,
+      "sourceKey": "226",
+      "organizationId": "org-mbawc-226",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "dale-hendricks",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0419"
+    },
+    {
+      "sourceRow": 228,
+      "sourceKey": "227",
+      "organizationId": "org-mbawc-227",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "yoemna-hartley",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0420"
+    },
+    {
+      "sourceRow": 229,
+      "sourceKey": "228",
+      "organizationId": "org-mbawc-228",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "leon-fredericks",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0421"
+    },
+    {
+      "sourceRow": 230,
+      "sourceKey": "229",
+      "organizationId": "org-mbawc-229",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "dawie-jongh",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0422"
+    },
+    {
+      "sourceRow": 231,
+      "sourceKey": "230",
+      "organizationId": "org-mbawc-230",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "rob-williams",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0423"
+    },
+    {
+      "sourceRow": 232,
+      "sourceKey": "231",
+      "organizationId": "org-mbawc-231",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "barry-van-t-slot",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0424"
+    },
+    {
+      "sourceRow": 233,
+      "sourceKey": "232",
+      "organizationId": "org-mbawc-232",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "natasha-martin",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0425"
+    },
+    {
+      "sourceRow": 234,
+      "sourceKey": "233",
+      "organizationId": "org-mbawc-233",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jeanene-snyders",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0426"
+    },
+    {
+      "sourceRow": 235,
+      "sourceKey": "234",
+      "organizationId": "org-mbawc-234",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "cobus-snyman",
+      "financePersonIds": [
+        "acc-0436"
+      ],
+      "researchCompanyId": "cmp-0427"
+    },
+    {
+      "sourceRow": 236,
+      "sourceKey": "235",
+      "organizationId": "org-mbawc-235",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "chantel-fouche",
+      "financePersonIds": [
+        "acc-1707",
+        "acc-1708"
+      ],
+      "researchCompanyId": "cmp-0116"
+    },
+    {
+      "sourceRow": 237,
+      "sourceKey": "236",
+      "organizationId": "org-mbawc-236",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "howard-boetcher",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0428"
+    },
+    {
+      "sourceRow": 238,
+      "sourceKey": "237",
+      "organizationId": "org-mbawc-237",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "craig-bradnick",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0429"
+    },
+    {
+      "sourceRow": 239,
+      "sourceKey": "238",
+      "organizationId": "org-mbawc-238",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "louise-raciti",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0430"
+    },
+    {
+      "sourceRow": 240,
+      "sourceKey": "239",
+      "organizationId": "org-mbawc-239",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "russell-baker",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0431"
+    },
+    {
+      "sourceRow": 241,
+      "sourceKey": "240",
+      "organizationId": "org-mbawc-240",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gavin-prinsloo",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0432"
+    },
+    {
+      "sourceRow": 242,
+      "sourceKey": "241",
+      "organizationId": "org-mbawc-241",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gary-cuff",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0433"
+    },
+    {
+      "sourceRow": 243,
+      "sourceKey": "242",
+      "organizationId": "org-mbawc-242",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "karlien-bekker",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0434"
+    },
+    {
+      "sourceRow": 244,
+      "sourceKey": "243",
+      "organizationId": "org-mbawc-243",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "belinda-marais",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0435"
+    },
+    {
+      "sourceRow": 245,
+      "sourceKey": "244",
+      "organizationId": "org-mbawc-244",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "shalmi-van-staden",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0436"
+    },
+    {
+      "sourceRow": 246,
+      "sourceKey": "245",
+      "organizationId": "org-mbawc-245",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "anton-mandelstam",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0437"
+    },
+    {
+      "sourceRow": 247,
+      "sourceKey": "246",
+      "organizationId": "org-mbawc-246",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "andre-raizenberg",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0438"
+    },
+    {
+      "sourceRow": 248,
+      "sourceKey": "247",
+      "organizationId": "org-mbawc-247",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nick-rattle",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0439"
+    },
+    {
+      "sourceRow": 249,
+      "sourceKey": "248",
+      "organizationId": "org-mbawc-248",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johny-moore",
+      "financePersonIds": [
+        "acc-1145",
+        "acc-0484",
+        "acc-1375",
+        "acc-0487",
+        "acc-1714"
+      ],
+      "researchCompanyId": "cmp-0440"
+    },
+    {
+      "sourceRow": 250,
+      "sourceKey": "249",
+      "organizationId": "org-mbawc-249",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "michael-petersen",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0441"
+    },
+    {
+      "sourceRow": 251,
+      "sourceKey": "250",
+      "organizationId": "org-mbawc-250",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "simon-van-nieuwholtz",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0442"
+    },
+    {
+      "sourceRow": 252,
+      "sourceKey": "251",
+      "organizationId": "org-mbawc-251",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "pierre-jordaan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0443"
+    },
+    {
+      "sourceRow": 253,
+      "sourceKey": "252",
+      "organizationId": "org-mbawc-252",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "celeste-le-roux",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0444"
+    },
+    {
+      "sourceRow": 254,
+      "sourceKey": "253",
+      "organizationId": "org-mbawc-253",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johan-meyer",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0445"
+    },
+    {
+      "sourceRow": 255,
+      "sourceKey": "254",
+      "organizationId": "org-mbawc-254",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "johan-boshoff",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0446"
+    },
+    {
+      "sourceRow": 256,
+      "sourceKey": "255",
+      "organizationId": "org-mbawc-255",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jonathan-baker",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0447"
+    },
+    {
+      "sourceRow": 257,
+      "sourceKey": "256",
+      "organizationId": "org-mbawc-256",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "michael-ruhl",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0448"
+    },
+    {
+      "sourceRow": 258,
+      "sourceKey": "257",
+      "organizationId": "org-mbawc-257",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "muhammed-buckas",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0449"
+    },
+    {
+      "sourceRow": 259,
+      "sourceKey": "258",
+      "organizationId": "org-mbawc-258",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "brian-valentine",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0450"
+    },
+    {
+      "sourceRow": 260,
+      "sourceKey": "259",
+      "organizationId": "org-mbawc-259",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mirza-dullabh",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0451"
+    },
+    {
+      "sourceRow": 261,
+      "sourceKey": "260",
+      "organizationId": "org-mbawc-260",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "angela-evans",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0452"
+    },
+    {
+      "sourceRow": 262,
+      "sourceKey": "261",
+      "organizationId": "org-mbawc-261",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "rodger-carter",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0453"
+    },
+    {
+      "sourceRow": 263,
+      "sourceKey": "262",
+      "organizationId": "org-mbawc-262",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "hylton-malander",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0454"
+    },
+    {
+      "sourceRow": 264,
+      "sourceKey": "263",
+      "organizationId": "org-mbawc-263",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "manie-galant",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0455"
+    },
+    {
+      "sourceRow": 265,
+      "sourceKey": "264",
+      "organizationId": "org-mbawc-264",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "andrew-hishin",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0082"
+    },
+    {
+      "sourceRow": 266,
+      "sourceKey": "265",
+      "organizationId": "org-mbawc-265",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "rodney-lutchman",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0456"
+    },
+    {
+      "sourceRow": 267,
+      "sourceKey": "266",
+      "organizationId": "org-mbawc-266",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lee-ann-may",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0457"
+    },
+    {
+      "sourceRow": 268,
+      "sourceKey": "267",
+      "organizationId": "org-mbawc-267",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lesley-bull",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0458"
+    },
+    {
+      "sourceRow": 269,
+      "sourceKey": "268",
+      "organizationId": "org-mbawc-268",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ivy-ross-johl",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0459"
+    },
+    {
+      "sourceRow": 270,
+      "sourceKey": "269",
+      "organizationId": "org-mbawc-269",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "paul-ruger",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0460"
+    },
+    {
+      "sourceRow": 271,
+      "sourceKey": "270",
+      "organizationId": "org-mbawc-270",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "lizelle-abrahams",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0461"
+    },
+    {
+      "sourceRow": 272,
+      "sourceKey": "271",
+      "organizationId": "org-mbawc-271",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "grant-ambrose",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0462"
+    },
+    {
+      "sourceRow": 273,
+      "sourceKey": "272",
+      "organizationId": "org-mbawc-272",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mogamat-yusuf-allied",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0463"
+    },
+    {
+      "sourceRow": 274,
+      "sourceKey": "273",
+      "organizationId": "org-mbawc-273",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "werner-schmidt",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0464"
+    },
+    {
+      "sourceRow": 275,
+      "sourceKey": "274",
+      "organizationId": "org-mbawc-274",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "kailyn-brown",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0465"
+    },
+    {
+      "sourceRow": 276,
+      "sourceKey": "275",
+      "organizationId": "org-mbawc-275",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "martina-van-der-linde",
+      "financePersonIds": [
+        "acc-1711",
+        "acc-0370"
+      ],
+      "researchCompanyId": "cmp-0466"
+    },
+    {
+      "sourceRow": 277,
+      "sourceKey": "276",
+      "organizationId": "org-mbawc-276",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "m-valoo",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0467"
+    },
+    {
+      "sourceRow": 278,
+      "sourceKey": "277",
+      "organizationId": "org-mbawc-277",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "kerry-ould",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0468"
+    },
+    {
+      "sourceRow": 279,
+      "sourceKey": "278",
+      "organizationId": "org-mbawc-278",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "s-sasman",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0469"
+    },
+    {
+      "sourceRow": 280,
+      "sourceKey": "279",
+      "organizationId": "org-mbawc-279",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "michael-van-breda",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0470"
+    },
+    {
+      "sourceRow": 281,
+      "sourceKey": "280",
+      "organizationId": "org-mbawc-280",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mogale-moyambo",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0471"
+    },
+    {
+      "sourceRow": 282,
+      "sourceKey": "281",
+      "organizationId": "org-mbawc-281",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nazeem-dramat",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0472"
+    },
+    {
+      "sourceRow": 283,
+      "sourceKey": "282",
+      "organizationId": "org-mbawc-282",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "uwe-harms",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0473"
+    },
+    {
+      "sourceRow": 284,
+      "sourceKey": "283",
+      "organizationId": "org-mbawc-283",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "paul-adams",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0119"
+    },
+    {
+      "sourceRow": 285,
+      "sourceKey": "284",
+      "organizationId": "org-mbawc-284",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "john-slingsby",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0474"
+    },
+    {
+      "sourceRow": 286,
+      "sourceKey": "285",
+      "organizationId": "org-mbawc-285",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "wasfie-solomons",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0475"
+    },
+    {
+      "sourceRow": 287,
+      "sourceKey": "286",
+      "organizationId": "org-mbawc-286",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "barry-wickens",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0476"
+    },
+    {
+      "sourceRow": 288,
+      "sourceKey": "287",
+      "organizationId": "org-mbawc-287",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "s-rhode",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0477"
+    },
+    {
+      "sourceRow": 289,
+      "sourceKey": "288",
+      "organizationId": "org-mbawc-288",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "kf-pretorius",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0478"
+    },
+    {
+      "sourceRow": 290,
+      "sourceKey": "289",
+      "organizationId": "org-mbawc-289",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "craig-bain",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0479"
+    },
+    {
+      "sourceRow": 291,
+      "sourceKey": "290",
+      "organizationId": "org-stefanutti-stocks",
+      "identityEvidence": "Exact canonical trading/legal name matches the existing organization.",
+      "classificationGap": "",
+      "contactId": "donny-petersen",
+      "financePersonIds": [
+        "acc-1715"
+      ],
+      "researchCompanyId": "cmp-0480"
+    },
+    {
+      "sourceRow": 292,
+      "sourceKey": "291",
+      "organizationId": "org-mbawc-291",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nigel-king",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0481"
+    },
+    {
+      "sourceRow": 293,
+      "sourceKey": "292",
+      "organizationId": "org-mbawc-292",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "craig-price",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0482"
+    },
+    {
+      "sourceRow": 294,
+      "sourceKey": "293",
+      "organizationId": "org-mbawc-293",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "stefan-ellis",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0483"
+    },
+    {
+      "sourceRow": 295,
+      "sourceKey": "294",
+      "organizationId": "org-mbawc-294",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "stephen-fourie",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0484"
+    },
+    {
+      "sourceRow": 296,
+      "sourceKey": "295",
+      "organizationId": "org-mbawc-295",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "regardt-van-der-walt",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0485"
+    },
+    {
+      "sourceRow": 297,
+      "sourceKey": "296",
+      "organizationId": "org-mbawc-296",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "mr-jf-brown",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0486"
+    },
+    {
+      "sourceRow": 298,
+      "sourceKey": "297",
+      "organizationId": "org-mbawc-297",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "bonique-herbst",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0487"
+    },
+    {
+      "sourceRow": 299,
+      "sourceKey": "298",
+      "organizationId": "org-mbawc-298",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "bonique-herbst-mbawc-299",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0488"
+    },
+    {
+      "sourceRow": 300,
+      "sourceKey": "299",
+      "organizationId": "org-mbawc-299",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0489"
+    },
+    {
+      "sourceRow": 301,
+      "sourceKey": "300",
+      "organizationId": "org-mbawc-300",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-301",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0490"
+    },
+    {
+      "sourceRow": 302,
+      "sourceKey": "301",
+      "organizationId": "org-mbawc-301",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-302",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0491"
+    },
+    {
+      "sourceRow": 303,
+      "sourceKey": "302",
+      "organizationId": "org-mbawc-302",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-303",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0492"
+    },
+    {
+      "sourceRow": 304,
+      "sourceKey": "303",
+      "organizationId": "org-mbawc-303",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-304",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0493"
+    },
+    {
+      "sourceRow": 305,
+      "sourceKey": "304",
+      "organizationId": "org-mbawc-304",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-305",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0494"
+    },
+    {
+      "sourceRow": 306,
+      "sourceKey": "305",
+      "organizationId": "org-mbawc-305",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-306",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0495"
+    },
+    {
+      "sourceRow": 307,
+      "sourceKey": "306",
+      "organizationId": "org-mbawc-306",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-307",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0496"
+    },
+    {
+      "sourceRow": 308,
+      "sourceKey": "307",
+      "organizationId": "org-mbawc-307",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-308",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0497"
+    },
+    {
+      "sourceRow": 309,
+      "sourceKey": "308",
+      "organizationId": "org-mbawc-308",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-309",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0498"
+    },
+    {
+      "sourceRow": 310,
+      "sourceKey": "309",
+      "organizationId": "org-mbawc-309",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "bonique-herbst-mbawc-310",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0499"
+    },
+    {
+      "sourceRow": 311,
+      "sourceKey": "310",
+      "organizationId": "org-mbawc-310",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-311",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0500"
+    },
+    {
+      "sourceRow": 312,
+      "sourceKey": "311",
+      "organizationId": "org-mbawc-311",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "marce-van-der-merwe-mbawc-312",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0501"
+    },
+    {
+      "sourceRow": 313,
+      "sourceKey": "312",
+      "organizationId": "org-mbawc-312",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "suzette-de-jager",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0502"
+    },
+    {
+      "sourceRow": 314,
+      "sourceKey": "313",
+      "organizationId": "org-mbawc-313",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "asif-khan",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0503"
+    },
+    {
+      "sourceRow": 315,
+      "sourceKey": "314",
+      "organizationId": "org-mbawc-314",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ronel-roworth",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0504"
+    },
+    {
+      "sourceRow": 316,
+      "sourceKey": "315",
+      "organizationId": "org-mbawc-315",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sherene-forsyth",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0505"
+    },
+    {
+      "sourceRow": 317,
+      "sourceKey": "316",
+      "organizationId": "org-mbawc-316",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jenna-surgeon",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0506"
+    },
+    {
+      "sourceRow": 318,
+      "sourceKey": "317",
+      "organizationId": "org-mbawc-317",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "tj-van-zyl",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0507"
+    },
+    {
+      "sourceRow": 319,
+      "sourceKey": "318",
+      "organizationId": "org-mbawc-318",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "gawie-burger",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0508"
+    },
+    {
+      "sourceRow": 320,
+      "sourceKey": "319",
+      "organizationId": "org-mbawc-319",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "keith-thomson",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0509"
+    },
+    {
+      "sourceRow": 321,
+      "sourceKey": "320",
+      "organizationId": "org-mbawc-320",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "roy-hendricks",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0510"
+    },
+    {
+      "sourceRow": 322,
+      "sourceKey": "321",
+      "organizationId": "org-mbawc-321",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "sonika-coetzee",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0511"
+    },
+    {
+      "sourceRow": 323,
+      "sourceKey": "322",
+      "organizationId": "org-mbawc-322",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "matthew-miller",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0512"
+    },
+    {
+      "sourceRow": 324,
+      "sourceKey": "323",
+      "organizationId": "org-mbawc-323",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "theunis-van-zyl",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0513"
+    },
+    {
+      "sourceRow": 325,
+      "sourceKey": "324",
+      "organizationId": "org-mbawc-324",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "w-prinz",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0514"
+    },
+    {
+      "sourceRow": 326,
+      "sourceKey": "325",
+      "organizationId": "org-mbawc-325",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "joseph-brom",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0515"
+    },
+    {
+      "sourceRow": 327,
+      "sourceKey": "326",
+      "organizationId": "org-mbawc-326",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "warner-trimmer",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0516"
+    },
+    {
+      "sourceRow": 328,
+      "sourceKey": "327",
+      "organizationId": "org-mbawc-327",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "abel-vicente",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0517"
+    },
+    {
+      "sourceRow": 329,
+      "sourceKey": "328",
+      "organizationId": "org-mbawc-328",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "wayne-unser",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0518"
+    },
+    {
+      "sourceRow": 330,
+      "sourceKey": "329",
+      "organizationId": "org-mbawc-329",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "murray-payne",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0519"
+    },
+    {
+      "sourceRow": 331,
+      "sourceKey": "330",
+      "organizationId": "org-mbawc-330",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jacobus-pietersen",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0520"
+    },
+    {
+      "sourceRow": 332,
+      "sourceKey": "331",
+      "organizationId": "org-mbawc-331",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "kim-smith",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0521"
+    },
+    {
+      "sourceRow": 333,
+      "sourceKey": "332",
+      "organizationId": "org-mbawc-332",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nadia-miller",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0522"
+    },
+    {
+      "sourceRow": 334,
+      "sourceKey": "333",
+      "organizationId": "org-mbawc-333",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "charles-elliott",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0523"
+    },
+    {
+      "sourceRow": 335,
+      "sourceKey": "334",
+      "organizationId": "org-mbawc-334",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "charles-watt",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0524"
+    },
+    {
+      "sourceRow": 336,
+      "sourceKey": "335",
+      "organizationId": "org-wbho-construction-cape-division",
+      "identityEvidence": "Workbook explicitly identifies Cape Division; keep it distinct from group WBHO record.",
+      "classificationGap": "",
+      "contactId": "mark-brooks",
+      "financePersonIds": [
+        "acc-0441",
+        "acc-1709",
+        "acc-1157"
+      ],
+      "researchCompanyId": "cmp-0131"
+    },
+    {
+      "sourceRow": 337,
+      "sourceKey": "336",
+      "organizationId": "org-mbawc-336",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "fatima-gray",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0525"
+    },
+    {
+      "sourceRow": 338,
+      "sourceKey": "337",
+      "organizationId": "org-mbawc-337",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "colin-whitehead",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0526"
+    },
+    {
+      "sourceRow": 339,
+      "sourceKey": "338",
+      "organizationId": "org-mbawc-338",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "ian-wilkinson",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0527"
+    },
+    {
+      "sourceRow": 340,
+      "sourceKey": "339",
+      "organizationId": "org-mbawc-339",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "neil-barnard",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0528"
+    },
+    {
+      "sourceRow": 341,
+      "sourceKey": "340",
+      "organizationId": "org-mbawc-340",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "john-watson",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0529"
+    },
+    {
+      "sourceRow": 342,
+      "sourceKey": "341",
+      "organizationId": "org-mbawc-341",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "werner-ewers",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0530"
+    },
+    {
+      "sourceRow": 343,
+      "sourceKey": "342",
+      "organizationId": "org-mbawc-342",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "jassiem-burton",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0531"
+    },
+    {
+      "sourceRow": 344,
+      "sourceKey": "343",
+      "organizationId": "org-mbawc-343",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "michael-geldebloem",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0532"
+    },
+    {
+      "sourceRow": 345,
+      "sourceKey": "344",
+      "organizationId": "org-mbawc-344",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "faheem-harris",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0533"
+    },
+    {
+      "sourceRow": 346,
+      "sourceKey": "345",
+      "organizationId": "org-mbawc-345",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "nichol-carolissen",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0534"
+    },
+    {
+      "sourceRow": 347,
+      "sourceKey": "346",
+      "organizationId": "org-mbawc-346",
+      "identityEvidence": "New source-specific identity; no corroborated curated duplicate.",
+      "classificationGap": "",
+      "contactId": "willem-van-dalen",
+      "financePersonIds": [],
+      "researchCompanyId": "cmp-0535"
+    }
+  ],
+  "people": [
+    {
+      "sourceRow": 2,
+      "personId": "acc-0909",
+      "mergedIds": [],
+      "identityEvidence": "Exact full name and canonical LinkedIn URL match; same AfriSam CFO role.",
+      "caStatus": "reported",
+      "caveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-afrisam",
+        "org-afrisam"
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "personId": "acc-0910",
+      "mergedIds": [],
+      "identityEvidence": "Exact full name and canonical LinkedIn URL match; same AfriSam financial reporting/controller role.",
+      "caStatus": "reported",
+      "caveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-afrisam",
+        "org-afrisam"
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "personId": "acc-1707",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "reported",
+      "caveats": [
+        "Workbook says CFO designate effective 2026-10-01; that date has passed as of workbook 2026-10-22. Preserve the exact appointment wording/date; current appointment not independently rechecked.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-235"
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "personId": "acc-1708",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "reported",
+      "caveats": [
+        "Board appointment at PPC since March 2018 is not employment. Workbook designation/degree assertions have not been independently checked; do not treat CA(SA) as independently verified.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-235"
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "personId": "acc-0441",
+      "mergedIds": [
+        "acc-1129"
+      ],
+      "identityEvidence": "Workbook full name Andrew Christopher Logan includes existing Andrew Logan name.; Existing acc-1129 official WBHO governance biography identifies Andrew Logan as CFO with BCom, BCompt (Hons), CA(SA), matching workbook qualifications and role.; Existing acc-0441 identifies Andrew Logan in the same WBHO finance leadership and carries his LinkedIn; reviewed identity joins name, employer, role and official biography, rather than name alone.",
+      "caStatus": "reported",
+      "caveats": [
+        "Use the group employer, not the Cape member division; retain existing person-level Gauteng/Johannesburg location rather than workbook company Western Cape.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-wbho",
+        "org-wbho-construction-cape-division"
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "personId": "acc-1709",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "reported",
+      "caveats": [
+        "Chairman since November 2024 per workbook. Do not present former CFO title as current or infer employee status/SAICA articles.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-wbho-construction-cape-division"
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "personId": "acc-0436",
+      "mergedIds": [
+        "acc-1204",
+        "acc-1503"
+      ],
+      "identityEvidence": "All three research records and workbook share the canonical LinkedIn identity /in/vondel, the same name and Power finance leadership.; Research source_urls contain za.linkedin.com/in/vondel where linkedin_url is null; canonical URL normalization establishes the match.",
+      "caStatus": "reported",
+      "caveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-234",
+        "org-mbawc-234"
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "personId": "acc-1134",
+      "mergedIds": [],
+      "identityEvidence": "Workbook explicitly states former surname Mancotywa, current surname Dazana, and the same October 2021 Grinaker CFO appointment as existing Esethu Mancotywa.; Existing acc-1134 public CFO South Africa appointment source corroborates former name, company, finance role and CA(SA) assertion.",
+      "caStatus": "reported",
+      "caveats": [
+        "Retain that older research source proves a 2021 appointment; workbook reports continuation in 2026 rather than independently fetched current verification.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-132",
+        "org-mbawc-related-61a11a807830"
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "personId": "acc-0478",
+      "mergedIds": [],
+      "identityEvidence": "Exact name and canonical LinkedIn URL match; same Concor CFO role.",
+      "caStatus": "reported",
+      "caveats": [
+        "CFO since 2023 and 20+ years experience are workbook-reported. Keep existing person Gauteng/Johannesburg location; member location is Western Cape.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-concor",
+        "org-concor"
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "personId": "acc-0493",
+      "mergedIds": [],
+      "identityEvidence": "Exact name and canonical LinkedIn URL match; official Isipani directors URL already recorded in existing research.",
+      "caStatus": "reported",
+      "caveats": [
+        "Existing research independently records the same degrees and designation. Do not infer an articles employer.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-156",
+        "org-mbawc-156",
+        "org-mbawc-related-6bb0ab53d646"
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "personId": "acc-0903",
+      "mergedIds": [],
+      "identityEvidence": "Existing Pieter De Wit is Afrimat CFO and has the same unusual qualification combination and Stanford Emerging CFO programme as workbook full name Pieter Gabriel Stephanus de Wit.; Existing LinkedIn academic details corroborate MBA cum laude at Stellenbosch, ACIS, Unisa tax certificate and BCompt Hons, beyond name similarity.",
+      "caStatus": "reported",
+      "caveats": [
+        "Do not assign Cape Lime as primary employer; preserve group-to-division affiliation separately. CFO from 1 March 2016 per workbook.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-afrimat",
+        "org-mbawc-057"
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "personId": "acc-1710",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "reported",
+      "caveats": [
+        "Workbook names Abbeydale Projects, while member is Abbeydale Infrastructure. Do not assume same legal entity or direct employment in the member. Preserve the relationship as a workbook-reported group/name linkage requiring verification.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-related-6e1b9f2558aa",
+        "org-mbawc-003",
+        "org-mbawc-related-4549063188a8",
+        "org-mbawc-related-15073b2d2d96",
+        "org-mbawc-related-562740d6934b"
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "personId": "acc-1145",
+      "mergedIds": [],
+      "identityEvidence": "Existing Sam Odendaal is the Raubex Group FD appointed 1 June 2021, matching workbook Samuel Jacobus (Sam) Odendaal.; Existing CFO South Africa source states the same Havenga Rossouw Viljoen articles employer in Bloemfontein, corroborating identity beyond name.",
+      "caStatus": "reported",
+      "caveats": [
+        "Existing source says qualified CA without country-specific CA(SA); workbook explicitly says CA(SA). Retain source-specific evidence levels rather than claiming existing article proves CA(SA).",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-raubex",
+        "org-mbawc-248"
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "personId": "acc-1711",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "unconfirmed",
+      "caveats": [
+        "Workbook explicitly states CA(SA) not confirmed; retain in wider Accounting & Finance pool with designation unconfirmed, excluded from confirmed CA(SA) subset.",
+        "No individual location is established: Gauteng in member row is not independently a person residence.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-related-d13a140cf3c5",
+        "org-mbawc-275"
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "personId": "acc-0370",
+      "mergedIds": [],
+      "identityEvidence": "Existing research has the identical full name and Saint-Gobain group but a different LinkedIn /in/sisa-thambo and Head of Finance/SBM role.; Workbook /in/sisandile-thambo-9955aa92 may be an alias or another identity; no canonical redirect or shared identity token established.; Attempts to read both LinkedIn URLs were blocked by egress CONNECT 403, so identity resolution remains unverified.",
+      "caStatus": "reported",
+      "caveats": [
+        "Associate workbook claim to existing acc-0370 on full name, CA(SA) and same Saint-Gobain group; do not create a second public profile.",
+        "Do not overwrite existing Johannesburg Head of Finance role/location or attach a second verified LinkedIn URL without resolving URL/role chronology. Preserve full raw workbook row as a conflicting claim pending review.",
+        "Workbook Ghana assignment conflicts with existing Johannesburg profile, while workbook company Gauteng location is not residence evidence.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-related-08b8f6527c28",
+        "org-mbawc-275"
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "personId": "acc-1712",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "reported",
+      "caveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-related-f21d0bb9196d",
+        "org-mbawc-169"
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "personId": "acc-1713",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "reported",
+      "caveats": [
+        "Do not label Luke current Enza CFO. Parent relationship is workbook-reported and needs direct corporate-source verification before asserting legal ownership.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-related-0232259fbbbf",
+        "org-mbawc-101"
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "personId": "acc-1205",
+      "mergedIds": [
+        "acc-1504"
+      ],
+      "identityEvidence": "Existing records share full name, employer, title, the exact LinkedIn source URL and the exact PERI directors press-release URL.; Workbook identifies same PERI Financial Director appointment from 1 June 2023.",
+      "caStatus": "unconfirmed",
+      "caveats": [
+        "Workbook explicitly says CA(SA) unconfirmed; both research records label CA(SA), with weak evidence text See source URLs / Profile explicitly CA(SA). Retain designation conflict for review; do not silently convert workbook unconfirmed into confirmed or erase existing claims without source adjudication.",
+        "Current employer PERI South Africa is not inferred from Western Cape member location.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-225",
+        "org-mbawc-225"
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "personId": "acc-0484",
+      "mergedIds": [
+        "acc-1367",
+        "acc-1614"
+      ],
+      "identityEvidence": "Existing oldest profile /ir-van-der-merwe-a3a76955 and workbook/profile sources /ir-van-der-merwe-ca-sa-a3a76955 share the unique LinkedIn identity suffix a3a76955.; Same IR van der Merwe name, Raubex group and distinctive Materials Division financial management role corroborate identity.; acc-1367 and acc-1614 have the exact workbook LinkedIn source URL.",
+      "caStatus": "reported",
+      "caveats": [
+        "Preserve acc-0484 established Bloemfontein/Free State location; do not promote later records Western Cape from an X-ray association.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-raubex",
+        "org-mbawc-248",
+        "org-mbawc-related-f3c57e5312c5",
+        "org-mbawc-related-8025c490e6b2"
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "personId": "acc-1375",
+      "mergedIds": [
+        "acc-1622"
+      ],
+      "identityEvidence": "Both records have exact full name, employer/title and exact canonical LinkedIn source URL matching workbook.; Existing linkedin_url fields are null, but source_urls independently carry the person identity URL.",
+      "caStatus": "reported",
+      "caveats": [
+        "Do not assign Raubex Building as employer; preserve Raubex Construction sourced role.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-related-08d978d92ffc",
+        "org-mbawc-248"
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "personId": "acc-0487",
+      "mergedIds": [],
+      "identityEvidence": "Exact full name, Raubex group, mining division financial manager role match existing record.; Existing record already has the direct public LinkedIn identity; workbook notes the same specialist role and employer.",
+      "caStatus": "reported",
+      "caveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-raubex",
+        "org-mbawc-248"
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "personId": "acc-1714",
+      "mergedIds": [],
+      "identityEvidence": "No established existing identity found for Saneesa Williams.; Existing Saneesa Ward acc-0489 shares first name and Raubex only; no surname-change or same-profile evidence, so do not merge.",
+      "caStatus": "reported",
+      "caveats": [
+        "Person claim comes only from a People also viewed discovery snippet cited in workbook, without a direct identity URL. Retain as RESEARCH_HOLD pending primary verification; do not assert independently confirmed designation/employment.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-raubex",
+        "org-mbawc-248"
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "personId": "acc-1157",
+      "mergedIds": [],
+      "identityEvidence": "Existing Donna Msiska has the same WBHO group company secretary role and matching BCom/BCom Hons(CTA)/CA(SA) qualifications on official WBHO governance and 2025 report sources.; Workbook gives Donna (Donnafeg) Msiska name variant and 2021 appointment.",
+      "caStatus": "reported",
+      "caveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-wbho",
+        "org-wbho-construction-cape-division"
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "personId": "acc-1715",
+      "mergedIds": [],
+      "identityEvidence": "No established existing research identity found.",
+      "caStatus": "reported",
+      "caveats": [
+        "Person/CA assertion is based on multiple People also viewed snippets in workbook, without a direct public identity URL; retain RESEARCH_HOLD until primary verification.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ],
+      "companyLinks": [
+        "org-mbawc-related-e9a76f03b509",
+        "org-stefanutti-stocks"
+      ]
+    }
+  ],
+  "companyMerges": [
+    {
+      "fromId": "org-mbawc-020",
+      "toId": "org-mbawc-021",
+      "evidence": "Workbook member rows 20 and 21 have the same trading name, VAT 4060284728, normalized membership code AZB01, company domain, address and telephone/cellphone. Preserve both directory source rows on one company; contact name disagreement remains a separate review question."
+    }
+  ],
+  "linkedFinanceCompanies": [
+    "org-afrisam",
+    "org-mbawc-235",
+    "org-wbho",
+    "org-wbho-construction-cape-division",
+    "org-mbawc-234",
+    "org-mbawc-132",
+    "org-mbawc-related-61a11a807830",
+    "org-concor",
+    "org-mbawc-156",
+    "org-mbawc-related-6bb0ab53d646",
+    "org-afrimat",
+    "org-mbawc-057",
+    "org-mbawc-related-6e1b9f2558aa",
+    "org-mbawc-003",
+    "org-mbawc-related-4549063188a8",
+    "org-mbawc-related-15073b2d2d96",
+    "org-mbawc-related-562740d6934b",
+    "org-raubex",
+    "org-mbawc-248",
+    "org-mbawc-related-d13a140cf3c5",
+    "org-mbawc-275",
+    "org-mbawc-related-08b8f6527c28",
+    "org-mbawc-related-f21d0bb9196d",
+    "org-mbawc-169",
+    "org-mbawc-related-0232259fbbbf",
+    "org-mbawc-101",
+    "org-mbawc-225",
+    "org-mbawc-related-f3c57e5312c5",
+    "org-mbawc-related-8025c490e6b2",
+    "org-mbawc-related-08d978d92ffc",
+    "org-mbawc-related-e9a76f03b509",
+    "org-stefanutti-stocks"
+  ],
+  "referencePeople": [
+    {
+      "name": "Dave Lofthouse",
+      "contactId": "dave-lofthouse",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation."
+    },
+    {
+      "name": "Desmond Lange",
+      "contactId": "desmond-lange",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation."
+    },
+    {
+      "name": "Sean Marley",
+      "contactId": "sean-marley",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation."
+    },
+    {
+      "name": "Abrie du Toit",
+      "contactId": "abrie-du-toit",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation."
+    },
+    {
+      "name": "Annelien Barretti",
+      "contactId": "annelien-barretti",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation."
+    },
+    {
+      "name": "Phindile Sodawe",
+      "contactId": "phindile-sodawe",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation."
+    },
+    {
+      "name": "Clinton Froneman",
+      "contactId": "clinton-froneman",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation."
+    }
+  ],
+  "contactMerges": [
+    {
+      "sourceRow": 151,
+      "contactId": "biance-lourens",
+      "evidence": "Matching normalized name plus the same employer or shared contact channel."
+    },
+    {
+      "sourceRow": 200,
+      "contactId": "liat-mazor",
+      "evidence": "Matching normalized name plus the same employer or shared contact channel."
+    }
+  ],
+  "noteOnlyPeople": [
+    {
+      "name": "Dave Lofthouse",
+      "company": "Enza Construction",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "101"
+    },
+    {
+      "name": "Desmond Lange",
+      "company": "GeoCiv",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "119"
+    },
+    {
+      "name": "Sean Marley",
+      "company": "Johnson Crane Hire",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "165"
+    },
+    {
+      "name": "Abrie du Toit",
+      "company": "Form-Scaff",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "107"
+    },
+    {
+      "name": "Annelien Barretti",
+      "company": "Dekon",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "79"
+    },
+    {
+      "name": "Phindile Sodawe",
+      "company": "Boshard",
+      "source": "README row26",
+      "claim": "QS mentioned; not a demonstrated finance role or CA(SA).",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "38"
+    },
+    {
+      "name": "Clinton Froneman",
+      "company": "Abbeydale Group",
+      "source": "README row26; Financial Leadership row13 Source/Notes",
+      "claim": "Group CFO, CIMA rather than CA(SA), workbook-reported; no person identity/source URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": null
+    }
+  ]
+}

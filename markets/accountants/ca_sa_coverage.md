@@ -2,22 +2,22 @@
 
 **This is not a complete register of all CA(SA)s in South Africa.** It is a derived snapshot of the existing Accounting & Finance research pool (`people.jsonl`), which covers in-scope finance roles, not all members or professions. No authoritative SAICA membership roster has been supplied; the total population and coverage percentage are **unknown**. Exporting does not re-check the underlying sources.
 
-- CA(SA)-tagged, non-rejected research records: **159** (including records outside South Africa).
-- Records labelled South Africa in the research DB: **158**. This is not a verified resident count: `country` may default to South Africa.
-- Of SA-labelled records, designation confirmed in the recorded public evidence: **138**; designation needs further confirmation: **20**. This does **not** establish currently active SAICA membership.
-- SA-labelled location assessments: **43** confirmed; **52** high confidence (may be employer-based); **63** not evidenced. **1** additional records are explicitly outside South Africa; **0** have no country.
-- Latest recorded per-person source-check date in this subset: **2026-10-14**. Titles and employers may have changed since their individual check dates.
-- Industry supplied from an exact, uniquely named employer in the existing sourced company catalogue: **11** SA-labelled records. This is employer-sector context, **not a personally verified specialism**, and the company sources were not rechecked during export. Other industries come from the person research record.
+- CA(SA)-tagged, non-rejected research records: **752** (including records outside South Africa).
+- Records labelled South Africa in the research DB: **745**. This is not a verified resident count: `country` may default to South Africa.
+- Of SA-labelled records, designation confirmed in the recorded public evidence: **696**; designation needs further confirmation: **49**. This does **not** establish currently active SAICA membership.
+- SA-labelled location assessments: **46** confirmed; **332** high confidence (may be employer-based); **367** not evidenced. **1** additional records are explicitly outside South Africa; **6** have no country.
+- Latest recorded per-person source-check date in this subset: **2026-10-23**. Titles and employers may have changed since their individual check dates.
+- Industry supplied from an exact, uniquely named employer in the existing sourced company catalogue: **12** SA-labelled records. This is employer-sector context, **not a personally verified specialism**, and the company sources were not rechecked during export. Other industries come from the person research record.
 
 ## Missing details among SA-labelled records
 
 | Field not recorded / not established | Records |
 |---|---:|
-| Title | 15 |
+| Title | 16 |
 | Employer | 15 |
-| Industry | 33 |
-| LinkedIn profile URL | 100 |
-| SA location evidence | 63 |
+| Industry | 34 |
+| LinkedIn profile URL | 682 |
+| SA location evidence | 367 |
 
 See [ca_sa_inventory.csv](./ca_sa_inventory.csv) for one row per recorded person, with a research ID, name, title, employer, industry (with basis and a separate employer source URL when derived), **actual** LinkedIn URL where recorded, sources, last-checked date, designation status and location assessment. Blank cells mean **unknown**, not "unemployed" or "no LinkedIn"; research titles explicitly marked "not stated" are exported as blank. The CSV also retains out-of-scope country rows, explicitly flagged, so they cannot silently inflate the SA total. It contains public professional information only; no contact details, ID numbers or inferred profile URLs.
 

@@ -22,6 +22,7 @@ import type {
   AssociationMatch,
   Confidence,
   Organization,
+  OrganizationDirectoryEntry,
   RoleContext,
 } from './types'
 import { EMPTY_FILTERS, FILTER_KEYS } from './types'
@@ -73,6 +74,7 @@ export interface CompanyDossier {
   locations: { city: string; province: string; sourceUrl: string }[]
   scale: { metric: string; value: string; basis: string; asOf: string; sourceUrl: string }[]
   sources: { url: string; type: string; evidence: string; checkedOn: string }[]
+  directoryEntries: OrganizationDirectoryEntry[]
   talent: {
     mappedProfessionals: number
     sources: { dataset: string; count: number }[]
@@ -188,6 +190,7 @@ export function companyDossier(index: OrganizationIndex, organizationId: string)
       evidence: source.evidence,
       checkedOn: source.checkedOn,
     })),
+    directoryEntries: organization.directoryEntries ?? [],
     talent: {
       mappedProfessionals: employer?.professionals ?? 0,
       sources: employer?.professionalSources ?? [],

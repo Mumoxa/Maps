@@ -11,5 +11,6 @@ import part010 from './contacts-010.json'
 import part011 from './contacts-011.json'
 import part012 from './contacts-012.json'
 import part013 from './contacts-013.json'
+import part014 from './contacts-014.json'
 
-export const contactsRaw = [...part001, ...part002, ...part003, ...part004, ...part005, ...part006, ...part007, ...part008, ...part009, ...part010, ...part011, ...part012, ...part013]
+export const contactsRaw = [...part001, ...part002, ...part003, ...part004, ...part005, ...part006, ...part007, ...part008, ...part009, ...part010, ...part011, ...part012, ...part013, ...part014]

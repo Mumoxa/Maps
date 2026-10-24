@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import {
   Briefcase,
@@ -58,7 +58,6 @@ export function TalentSearchPage() {
   const { data, loading, error } = useData()
   const [searchParams, setSearchParams] = useSearchParams()
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const talentSearchRef = useRef<ReturnType<typeof createTalentSearchIndex> | null>(null)
 
   useEffect(() => {
     document.title = 'SA Talent Map | Talent Search'
@@ -66,11 +65,10 @@ export function TalentSearchPage() {
 
   const talentProfiles = useMemo(() => (data ? getTalentProfiles(data) : []), [data])
 
-  useEffect(() => {
-    if (!talentSearchRef.current && talentProfiles.length > 0) {
-      talentSearchRef.current = createTalentSearchIndex(talentProfiles)
-    }
-  }, [talentProfiles])
+  const talentSearchIndex = useMemo(
+    () => talentProfiles.length > 0 ? createTalentSearchIndex(talentProfiles) : null,
+    [talentProfiles],
+  )
 
   const trackLabels = useMemo(() => {
     const labels = new Map<string, string>()
@@ -97,9 +95,9 @@ export function TalentSearchPage() {
   const slugSets = useMemo(() => (data ? buildSlugSets(data) : null), [data])
 
   const queryMatchedProfiles = useMemo(() => {
-    if (!talentSearchRef.current) return talentProfiles
-    return searchTalentProfiles(talentSearchRef.current, talentProfiles, q, {})
-  }, [q, talentProfiles])
+    if (!talentSearchIndex) return talentProfiles
+    return searchTalentProfiles(talentSearchIndex, talentProfiles, q, {})
+  }, [q, talentProfiles, talentSearchIndex])
 
   const facetInput = useMemo(
     () => ({ records: queryMatchedProfiles, defs: facetDefs, selections }),
@@ -314,7 +312,7 @@ function TalentSearchCard({ profile, creditRiskSlug, onToggle }: { profile: Tale
           <div>
             <div className="talent-result-name-row">
               <h2>{profile.name}</h2>
-              <span className="verified-dot" title="Profile supplied with source evidence"><Check size={12} /></span>
+              {profile.suppliedAsVerified && <span className="verified-dot" title="Profile supplied with source evidence"><Check size={12} /></span>}
               <button type="button" className="track-status-badge track-status-live talent-track-chip" title="Filter by this track" onClick={() => onToggle('track', profile.trackSlug)}>
                 {profile.track}
               </button>

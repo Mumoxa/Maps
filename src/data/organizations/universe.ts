@@ -6,11 +6,11 @@
 // universe. Both the app and the tests call this, so the tests exercise the code
 // the recruiter actually uses.
 
-import { accountantCandidates } from '../accountantsPeople'
+import { accountantCandidates, currentAccountantAffiliations, type AccountantCandidate } from '../accountantsPeople'
 import { bankCandidates } from '../searchBank/bank'
 import contactEmployerManifest from '../../../markets/organizations/contact-employers.json'
 import { canonicalCompanyName } from '../companyNormalization'
-import { buildOrganizationIndex, visibleOrganizations } from './load'
+import { buildOrganizationIndex, resolveEmployerOrganizationId, visibleOrganizations } from './load'
 import type { DatasetEmployer, OrganizationIndex } from './load'
 import type { Organization } from './types'
 
@@ -23,6 +23,40 @@ export interface CompanyDatasetCompany {
 export interface DatasetSources {
   /** Credit Risk companies from the bundled dataset (optional, supplied by the page). */
   creditRiskCompanies?: CompanyDatasetCompany[]
+  /** Accounting records may come from the bundled pool or an import preview. */
+  accountingFinanceCandidates?: AccountantCandidate[]
+}
+
+/** Count current mapped people once at each resolved company, including board/group affiliations. */
+function accountantDatasetEmployers(candidates: AccountantCandidate[]): DatasetEmployer[] {
+  const index = buildOrganizationIndex()
+  const byOrganization = new Map<string, { name: string; people: Set<string>; relationships: Set<string> }>()
+  for (const candidate of candidates) {
+    if (candidate.status === 'REJECTED') continue
+    const affiliations = [
+      { company: candidate.employer, relationship: '' },
+      ...currentAccountantAffiliations(candidate),
+    ]
+    for (const affiliation of affiliations) {
+      const canonical = canonicalCompanyName(affiliation.company)
+      if (!canonical) continue
+      const id = resolveEmployerOrganizationId(index, canonical) ?? `org-dataset:${canonical.toLowerCase()}`
+      let row = byOrganization.get(id)
+      if (!row) {
+        row = { name: index.byId.get(id)?.name ?? canonical, people: new Set(), relationships: new Set() }
+        byOrganization.set(id, row)
+      }
+      row.people.add(candidate.id)
+      if (affiliation.relationship) row.relationships.add(affiliation.relationship)
+    }
+  }
+  return [...byOrganization.entries()].map(([organizationId, row]) => ({
+    organizationId,
+    name: row.name,
+    dataset: 'accounting-finance',
+    professionals: row.people.size,
+    classification: [...row.relationships].join('; '),
+  }))
 }
 
 function countByEmployer(
@@ -71,11 +105,7 @@ export function contactDatasetEmployers(): DatasetEmployer[] {
 export function datasetEmployers(sources: DatasetSources = {}): DatasetEmployer[] {
   const employers: DatasetEmployer[] = [
     ...contactDatasetEmployers(),
-    ...countByEmployer(
-      accountantCandidates.map((candidate) => ({ employer: candidate.employer })),
-      'accounting-finance',
-      () => '',
-    ),
+    ...accountantDatasetEmployers(sources.accountingFinanceCandidates ?? accountantCandidates),
     ...countByEmployer(
       bankCandidates.map((candidate) => ({ employer: candidate.employer })),
       'search-bank',

@@ -150,6 +150,18 @@ export interface OrganizationScale {
 
 export type OrganizationStatus = 'verified' | 'needs-verification'
 
+/** Business-directory facts retained with their own source and observation date. */
+export interface OrganizationDirectoryEntry {
+  directory: string
+  recordKey: string
+  sourceUrl: string
+  checkedOn: string
+  /** Business metadata only; personal contacts remain in the private contact directory. */
+  fields: Record<string, string>
+  /** Source caveats, including any inferred rather than stated geography. */
+  notes: string
+}
+
 export interface Organization {
   id: string
   name: string
@@ -175,6 +187,8 @@ export interface Organization {
   datasets: string[]
   lastVerified: string
   notes: string
+  /** Attributed directory metadata, separate from independently verified company facts. */
+  directoryEntries?: OrganizationDirectoryEntry[]
 }
 
 export type CorporateRelationshipType =

@@ -12,6 +12,8 @@
  * Keys are lowercase; values are the canonical display names.
  */
 const CANONICAL_ALIASES: Record<string, string> = {
+  // Existing research names CCH as Commercial Cold Holdings (acc-0833..0835).
+  'cch commercial cold holdings': 'Commercial Cold Holdings',
   // Banks
   'absa': 'Absa',
   'absa group': 'Absa',
