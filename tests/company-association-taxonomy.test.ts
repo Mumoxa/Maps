@@ -52,10 +52,16 @@ test('every Maps industry resolves to a real node in the national taxonomy', () 
   }
 })
 
-test('every curated company is placed, so nothing drops out of the macro-sector view', () => {
+test('every company is either placed or explicitly retained as unclassified, so source gaps never drop it', () => {
   const summary = nationalTaxonomySummary(index)
-  assert.equal(summary.placed, organizations.length)
-  assert.deepEqual(summary.unplaced, [])
+  assert.equal(summary.placed + summary.unplaced.length, organizations.length)
+  const unplacedNames = new Set(summary.unplaced)
+  for (const organization of organizations) {
+    if (!unplacedNames.has(organization.name)) continue
+    assert.equal(organization.status, 'needs-verification', 'unclassified source mentions must not claim verified business activity')
+    assert.ok(organization.sources.length > 0, 'unclassified companies still need source evidence')
+    assert.equal(organizationTaxonomy(organization).entries.length, 0)
+  }
   assert.deepEqual(summary.unplacedIndustries, [])
   assert.ok(summary.macroSectors.length >= 5, 'the universe spans several macro-sectors')
 }
@@ -274,7 +280,7 @@ test('the export and the knowledge-base contract expose the macro-sector axis', 
 
   const summary = knowledgeBaseSummary(index)
   assert.ok(summary.nationalTaxonomy.macroSectors.length > 0)
-  assert.equal(summary.nationalTaxonomy.placed, organizations.length)
+  assert.equal(summary.nationalTaxonomy.placed + summary.nationalTaxonomy.unplaced.length, organizations.length)
 })
 
 test('the new facet does not disturb the identity filter', () => {

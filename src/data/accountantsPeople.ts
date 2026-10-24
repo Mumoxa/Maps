@@ -12,11 +12,23 @@ export interface AccountantCompanyAffiliation {
   company: string
   relationship: string
   evidence_url: string
+  /** False for a historical-only link; current board/group links are not necessarily employment. */
+  current?: boolean
+  employment?: boolean
+}
+
+export interface AccountantAttributes {
+  source_cohorts?: string[]
+  source_batch?: string
+  source_reported?: boolean
+  search_name?: string
+  [key: string]: unknown
 }
 
 export interface AccountantCandidate {
   id: string
   fullName: string
+  alternateNames?: string[]
   status: string
   confidence: string
   roleScopeStatus: string
@@ -58,6 +70,7 @@ export interface AccountantCandidate {
   sourceUrls: string[]
   dateLastVerified: string
   notes: string
+  attributes?: AccountantAttributes
 }
 
 export const accountantCandidates = peopleRaw as AccountantCandidate[]
@@ -77,6 +90,20 @@ export const ACCOUNTANT_DESIGNATION_ORDER = [
 const ACCOUNTANT_ROUTE_ORDER = ['SAICA Articles', 'SAIPA Articles', 'CIMA PER', 'ACCA PER']
 
 export const ACCOUNTANT_UNKNOWN_PROVINCE = 'Location not evidenced'
+
+/** Public source cohorts, kept separate from private recruitment-search metadata. */
+export function accountantSourceCohorts(candidate: AccountantCandidate): string[] {
+  const values = candidate.attributes?.source_cohorts
+  if (!Array.isArray(values)) return []
+  return [...new Set(values.filter((value) => typeof value === 'string').map((value) => value.trim()).filter(Boolean))]
+}
+
+/** An affiliation is a sourced association, not a claim that a director is an employee. */
+export function currentAccountantAffiliations(candidate: AccountantCandidate): AccountantCompanyAffiliation[] {
+  return (candidate.currentCompanyAffiliations ?? []).filter((affiliation) => (
+    affiliation.current ?? !/\b(former|previous|historical|past)\b/i.test(affiliation.relationship)
+  ))
+}
 
 function candidateSystems(candidate: AccountantCandidate): string[] {
   return [...candidate.accountingSystems, ...candidate.erpSystems, ...candidate.analyticsTools]
@@ -143,7 +170,7 @@ export const accountantFacetDefs: FacetDef<AccountantCandidate>[] = [
     label: 'Employer',
     accessor: (candidate) => {
       const employers = candidate.employer ? [canonicalCompanyName(candidate.employer)] : []
-      for (const affiliation of candidate.currentCompanyAffiliations ?? []) {
+      for (const affiliation of currentAccountantAffiliations(candidate)) {
         if (affiliation.company) employers.push(canonicalCompanyName(affiliation.company))
       }
       return [...new Set(employers)]
@@ -151,11 +178,15 @@ export const accountantFacetDefs: FacetDef<AccountantCandidate>[] = [
     searchThreshold: 8,
   },
   {
+    key: 'sourceCohort',
+    label: 'Source cohort',
+    accessor: accountantSourceCohorts,
+  },
+  {
     key: 'searchName',
     label: 'Recruitment search',
     accessor: (candidate) => {
-      const attrs = (candidate as any).attributes || {}
-      const searchName = attrs.search_name || ''
+      const searchName = candidate.attributes?.search_name || ''
       return searchName ? [searchName] : []
     },
   },
@@ -165,6 +196,7 @@ export const accountantFacetDefs: FacetDef<AccountantCandidate>[] = [
 export const accountantTextMatcher: TextMatcher<AccountantCandidate> = (candidate, needle) => {
   const haystack = [
     candidate.fullName,
+    ...(candidate.alternateNames ?? []),
     candidate.title,
     candidate.employer,
     ...(candidate.currentCompanyAffiliations ?? []).flatMap((affiliation) => [affiliation.company, affiliation.relationship]),
@@ -183,6 +215,7 @@ export const accountantTextMatcher: TextMatcher<AccountantCandidate> = (candidat
     candidate.articlesLocation,
     candidate.seniority,
     candidate.notes,
+    ...accountantSourceCohorts(candidate),
     ...candidate.academicQualifications,
     ...candidate.designations,
     ...candidate.professionalRoutes,

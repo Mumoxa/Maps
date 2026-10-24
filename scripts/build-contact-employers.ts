@@ -94,7 +94,7 @@ function generate(): Manifest {
 
   return {
     schemaVersion: 1,
-    origin: 'src/data/contact-parts/contacts-001.json ... contacts-013.json',
+    origin: 'src/data/contact-parts (all generated contacts-*.json files)',
     notes: 'Generated contact-employer reconciliation; names and aggregated counts only. Contains no names, emails, phone numbers or contact IDs. This proves a contact dataset relationship, not legal identity or sourced taxonomy classification.',
     audit: {
       uniqueContacts: contacts.length,

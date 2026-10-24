@@ -103,6 +103,12 @@ test('only an exact sourced employer supplies a missing industry, never a person
   assert.equal(recorded.rows[0].industryBasis, 'PERSON_RECORD')
 })
 
+test('blank spreadsheet source cells do not discard valid evidence URLs', () => {
+  const inventory = buildCasaInventory(jsonl(person({ source_urls: ['https://example.org/biography', '', '  '] })))
+  assert.deepEqual(inventory.rows[0].sourceUrls, ['https://example.org/biography'])
+  assert.throws(() => buildCasaInventory(jsonl(person({ source_urls: ['', '  '] }))), /missing source_urls/)
+})
+
 test('the export fails closed on duplicate identities and unsupported evidence URLs', () => {
   assert.throws(() => buildCasaInventory(jsonl(person(), person({ id: 'acc-0001' }))), /duplicate research id/)
   assert.throws(() => buildCasaInventory(jsonl(person(), person({ id: 'acc-0002', linkedin_url: 'https:\/\/za.linkedin.com\/in\/a-person' }))), /duplicate LinkedIn identity/)

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { Fragment, useCallback, useEffect, useMemo, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import {
   ArrowSquareOut,
@@ -18,6 +18,7 @@ import {
   accountantTextMatcher,
   accountantUniverse,
   compareAccountants,
+  currentAccountantAffiliations,
   type AccountantCandidate,
 } from '../data/accountantsPeople'
 import {
@@ -30,6 +31,12 @@ import {
   type FacetSelections,
 } from '../data/facets'
 import { canonicalCompanyName } from '../data/companyNormalization'
+import { buildCompanyIntelligence } from '../data/organizations/universe'
+import {
+  contactDirectoryUrlForEmployer,
+  resolveEmployerOrganizationId,
+  type OrganizationIndex,
+} from '../data/organizations/load'
 import casaInventoryUrl from '../../markets/accountants/ca_sa_inventory.csv?url'
 
 const PAGE_SIZE = 20
@@ -118,7 +125,14 @@ function tierLetter(attrs: CandidateAttributes): string {
   return match ? match[1].toUpperCase() : ''
 }
 
-function CandidateCard({ candidate, onToggle, index }: { candidate: AccountantCandidate; onToggle: (key: string, value: string) => void; index: number }) {
+interface CandidateCardProps {
+  candidate: AccountantCandidate
+  onToggle: (key: string, value: string) => void
+  index: number
+  companyIndex: OrganizationIndex
+}
+
+function CandidateCard({ candidate, onToggle, index, companyIndex }: CandidateCardProps) {
   const badge = statusBadge(candidate.status)
   const systems = [...candidate.accountingSystems, ...candidate.erpSystems, ...candidate.analyticsTools]
   const canonicalEmployer = candidate.employer ? canonicalCompanyName(candidate.employer) : ''
@@ -132,6 +146,17 @@ function CandidateCard({ candidate, onToggle, index }: { candidate: AccountantCa
   const locationLabel = [candidate.city, candidate.province].filter(Boolean).join(', ')
   const initials = candidate.fullName.split(/\s+/).map((part) => part[0]).filter(Boolean).slice(0, 2).join('').toUpperCase()
   const revealDelay = `${Math.min(index, 7) * 45}ms`
+  const companyLinks = new Map<string, { id: string; name: string; contactsUrl: string | null }>()
+  for (const name of [candidate.employer, ...currentAccountantAffiliations(candidate).map((affiliation) => affiliation.company)]) {
+    const id = resolveEmployerOrganizationId(companyIndex, name)
+    if (!id || companyLinks.has(id)) continue
+    const employer = companyIndex.employersByOrg.get(id)
+    companyLinks.set(id, {
+      id,
+      name: companyIndex.byId.get(id)?.name ?? employer?.canonicalName ?? canonicalCompanyName(name),
+      contactsUrl: employer ? contactDirectoryUrlForEmployer(employer) : null,
+    })
+  }
 
   return (
     <article className="scan-card reveal" style={{ '--reveal-delay': revealDelay } as React.CSSProperties}>
@@ -218,14 +243,25 @@ function CandidateCard({ candidate, onToggle, index }: { candidate: AccountantCa
         <p className="acc-evidence-text">South African residence or workplace not independently evidenced.</p>
       )}
 
-      {candidate.employer && (
+      {(candidate.employer || companyLinks.size > 0) && (
         <div className="hack-crosslinks">
-          <Link to={`/talent-search?q=${encodeURIComponent(canonicalEmployer)}`} title="Search this employer across every pool">
-            {canonicalEmployer} across all pools
-          </Link>
-          <Link to={`/contacts?company=${encodeURIComponent(canonicalEmployer)}`} title="Open the contacts directory at this company">
-            Contacts at {canonicalEmployer}
-          </Link>
+          {candidate.employer && (
+            <Link to={`/talent-search?q=${encodeURIComponent(canonicalEmployer)}`} title="Search this employer across every pool">
+              {canonicalEmployer} across all pools
+            </Link>
+          )}
+          {[...companyLinks.values()].map((company) => (
+            <Fragment key={company.id}>
+              <Link to={`/organizations/${encodeURIComponent(company.id)}`} title="Open the linked company dossier">
+                {company.name} company dossier
+              </Link>
+              {company.contactsUrl && (
+                <Link to={company.contactsUrl} title="Open the sourced contacts at this company">
+                  Contacts at {company.name}
+                </Link>
+              )}
+            </Fragment>
+          ))}
         </div>
       )}
 
@@ -315,6 +351,7 @@ export function AccountantsPage() {
   const optionsFor = useCallback((def: typeof accountantFacetDefs[number]) => buildFacetOptions(filterInput, def), [filterInput])
 
   const universe = useMemo(() => accountantUniverse(), [])
+  const companyIndex = useMemo(() => buildCompanyIntelligence().index, [])
   const activeCount = activeFilterCount(selections)
   const hasFilters = activeCount > 0 || Boolean(query)
 
@@ -436,7 +473,7 @@ export function AccountantsPage() {
           ) : (
             <div className="scan-grid">
               {pageItems.map((candidate, index) => (
-                <CandidateCard key={candidate.id} candidate={candidate} onToggle={onToggle} index={index} />
+                <CandidateCard key={candidate.id} candidate={candidate} onToggle={onToggle} index={index} companyIndex={companyIndex} />
               ))}
             </div>
           )}

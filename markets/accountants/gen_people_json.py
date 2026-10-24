@@ -75,6 +75,9 @@ def company_affiliations(rows):
             "relationship": (row.get("relationship") or "").strip(),
             "evidence_url": (row.get("evidence_url") or "").strip(),
         }
+        for flag in ("current", "employment"):
+            if isinstance(row.get(flag), bool):
+                item[flag] = row[flag]
         if item not in affiliations:
             affiliations.append(item)
     return affiliations
@@ -97,6 +100,7 @@ def to_record(row):
     return {
         "id": row["id"],
         "fullName": row["full_name"],
+        "alternateNames": clean_list(row.get("alternate_names")),
         "status": row.get("status") or "",
         "confidence": row.get("confidence") or "",
         "roleScopeStatus": row.get("role_scope_status") or "",
@@ -117,7 +121,7 @@ def to_record(row):
         "subIndustry": row.get("current_sub_industry") or "",
         "province": row.get("province") or "",
         "city": row.get("city") or "",
-        "country": row.get("country") or "South Africa",
+        "country": (row.get("country") or "") if (row.get("attributes") or {}).get("source_reported") is True else (row.get("country") or "South Africa"),
         "locationConfidence": row.get("location_confidence") or "",
         "skills": clean_list(row.get("skills_confirmed")),
         "accountingSystems": clean_list(row.get("accounting_systems_confirmed")),

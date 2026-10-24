@@ -1,0 +1,2165 @@
+{
+  "sourceSha256": "b1c97dfdda3e4077889b8c4e6afda9077cfdcf2cfe72c6d82123a06c432d43f3",
+  "cohort": "MBAWC 2026-10-22",
+  "categoryTaxonomy": {
+    "Building & Property Inspections": "CON-ENG",
+    "Contractors (Alterations/Additions/Renovations/Structural Repairs)": "CON-CONTR-BUILD",
+    "Contractors (General Building Contractors)": "CON-CONTR-BUILD",
+    "Contractors (Home Builders)": "CON-BUILD",
+    "Contractors (Timber Framed/Light Steel/Mobile Structures/Alternative)": "CON-BUILD",
+    "Labour Only (Labour Brokers)": "PRO-HR-LABOUR",
+    "Manufacturers/Merchants/Suppliers (Access Control/CCTV Equipment)": "PRO-SEC-TECH",
+    "Manufacturers/Merchants/Suppliers (Bricks/Blocks/Pavers Manufacturers)": "CON-MAT-BRICK",
+    "Manufacturers/Merchants/Suppliers (Building Material Suppliers/Merchants /Hardware Stores)": "CON-MAT-HARDWARE",
+    "Manufacturers/Merchants/Suppliers (Construction Chemicals)": "CON-MAT",
+    "Manufacturers/Merchants/Suppliers (Doors/Windows (Timber/Steel/uPVC ))": "CON-MAT",
+    "Manufacturers/Merchants/Suppliers (Floor Covering Materials)": "CON-MAT",
+    "Manufacturers/Merchants/Suppliers (Formwork/Scaffolding Hire/Sales)": "CON-SPEC-SCAFF",
+    "Manufacturers/Merchants/Suppliers (Garage Doors/Rollershutter Doors/Automation)": "CON-MAT",
+    "Manufacturers/Merchants/Suppliers (Ironmongery)": "CON-MAT",
+    "Manufacturers/Merchants/Suppliers (Paint/Wallpaper Manufacturers/Suppliers)": "CON-MAT",
+    "Manufacturers/Merchants/Suppliers (Personal Protective Equipment)": "WHL-IND-SAFE",
+    "Manufacturers/Merchants/Suppliers (Plant/Equipment/Tool/Chemical Toilet Hire/Sales)": "WHL-IND",
+    "Manufacturers/Merchants/Suppliers (Plumbing/Drainage/Sanitaryware Suppliers)": "WHL-IND-PLUMB",
+    "Manufacturers/Merchants/Suppliers (Ready Mix Concrete/Mortar/Precast Concrete)": "CON-MAT-CEMENT",
+    "Manufacturers/Merchants/Suppliers (Roof Trusses/Roof Coverings)": "CON-SPEC-ROOF",
+    "Manufacturers/Merchants/Suppliers (Sand/Stone/Lime/Cement)": "CON-MAT",
+    "Manufacturers/Merchants/Suppliers (Site Security/Security Guards)": "CON-FAC-SEC",
+    "Manufacturers/Merchants/Suppliers (Software)": "ICT-SW",
+    "Manufacturers/Merchants/Suppliers (Waterproofing Supplies)": "CON-MAT",
+    "Professionals/Consultants (Architects/Draughtsmen)": "CON-ENG-CONSULT",
+    "Professionals/Consultants (Engineers (Structural/Civil/Mechanical/Electrical))": "CON-ENG-CONSULT",
+    "Professionals/Consultants (Health & Safety Consultants)": "PRO-SEC",
+    "Professionals/Consultants (Insurances)": "FIN-INS",
+    "Professionals/Consultants (Medical Testing/Skills Training/HR Consultants)": "PRO-HR",
+    "Professionals/Consultants (Project Managers/Property Developers)": "CON-ENG-PROJ",
+    "Professionals/Consultants (Quantity Surveyors/Cost Consultants)": "CON-ENG-CONSULT",
+    "Professionals/Consultants (Specialist Consultants/Adjudicators/Arbitrators)": "CON-ENG",
+    "Specialist Contractors (Access Control/CCTV Installations)": "PRO-SEC-TECH",
+    "Specialist Contractors (Airconditioning/Refrigeration)": "CON-CONTR-MECH",
+    "Specialist Contractors (Aluminium Windows/Doors/Shopfronts/Shower Doors)": "CON-SPEC-GLAZ",
+    "Specialist Contractors (Asphalt/Roads/Paving)": "CON-CIVIL-ROAD",
+    "Specialist Contractors (Audio/PA/Evacuation Systems)": "CON-SPEC",
+    "Specialist Contractors (Ceilings/Partitions/Access Flooring)": "CON-SPEC",
+    "Specialist Contractors (Coldrooms/Refrigeration)": "CON-CONTR-MECH",
+    "Specialist Contractors (Concrete Floors/Concrete Work/Core Drilling/Concrete Repairs)": "CON-SPEC",
+    "Specialist Contractors (Construction Cleaning/Clearing/Skips/Rubble Removal/Handover Cleaning)": "CON-FAC-WASTE",
+    "Specialist Contractors (Damp/Waterproofing/Joint Sealers)": "CON-SPEC-ROOF",
+    "Specialist Contractors (Demolition/Asbestos Removal)": "CON-SPEC-DEMOL",
+    "Specialist Contractors (Earthworks/Civil Contractors)": "CON-CONTR-CIV",
+    "Specialist Contractors (Electrical/Data/Prepaid Meters)": "CON-SPEC-ELEC",
+    "Specialist Contractors (Fencing/Electrified Fencing/Gates)": "CON-SPEC",
+    "Specialist Contractors (Fireplaces/Built-In Braais)": "CON-SPEC",
+    "Specialist Contractors (Floor Coverings/Coatings)": "CON-SPEC",
+    "Specialist Contractors (Formwork/Scaffolding/Rope Access)": "CON-SPEC-SCAFF",
+    "Specialist Contractors (Garage Doors/Rollershutters/Sliding Doors/Revolving Doors/Automation)": "CON-SPEC",
+    "Specialist Contractors (Glazing/Mirrors)": "CON-SPEC-GLAZ",
+    "Specialist Contractors (Joinery/Shelving/Racking/Shopfitting)": "CON-SPEC-GLAZ",
+    "Specialist Contractors (Painting/Decorating/Wallpapering)": "CON-SPEC-PAINT",
+    "Specialist Contractors (Piling)": "CON-SPEC",
+    "Specialist Contractors (Plastering)": "CON-SPEC",
+    "Specialist Contractors (Plumbing/Drainage/Stormwater/Water Conversion/Pumps)": "CON-SPEC-PLUMB",
+    "Specialist Contractors (Precast Concrete Walls/Floors/Stairs)": "CON-MAT-CEMENT",
+    "Specialist Contractors (Rainwater Goods)": "CON-SPEC",
+    "Specialist Contractors (Renewable Energy)": "ENR-SOLAR",
+    "Specialist Contractors (Roof Construction/Roof Coverings/Thatching/Skylights/Carports)": "CON-SPEC-ROOF",
+    "Specialist Contractors (Smoke Detection/Gas Suppression/Fire Dampers/Sprinkler Installations)": "CON-SPEC",
+    "Specialist Contractors (Stone/Marble/Monumental Masonry)": "CON-SPEC",
+    "Specialist Contractors (Structural Steel)": "CON-SPEC",
+    "Specialist Contractors (Swimming Pools/Spas)": "CON-SPEC",
+    "Specialist Contractors (Tiling/Stone/Marble/Granite/Vanities)": "CON-SPEC",
+    "Specialist Contractors (Timber Staircases/Balustrades/Loft Areas)": "CON-SPEC",
+    "Specialist Contractors (Vermiculite/Fire Retardent Coatings/Fire Proofing/Acoustic/Insulation)": "CON-SPEC"
+  },
+  "organizationResolutions": {
+    "8": {
+      "organizationId": "org-afrisam",
+      "evidence": "AfriSam South Africa legal entity and company site; workbook trading name retains the country qualifier."
+    },
+    "45": {
+      "organizationId": "org-massmart",
+      "evidence": "Exact canonical trading/legal name matches the existing organization."
+    },
+    "66": {
+      "organizationId": "org-concor",
+      "evidence": "Workbook Concor Construction name and concor.co.za company domain corroborate existing Concor record."
+    },
+    "290": {
+      "organizationId": "org-stefanutti-stocks",
+      "evidence": "Exact canonical trading/legal name matches the existing organization."
+    },
+    "335": {
+      "organizationId": "org-wbho-construction-cape-division",
+      "evidence": "Workbook explicitly identifies Cape Division; keep it distinct from group WBHO record."
+    },
+    "20": {
+      "organizationId": "org-mbawc-021",
+      "evidence": "Workbook member rows 20 and 21 have the same trading name, VAT 4060284728, normalized membership code AZB01, company domain, address and telephone/cellphone. Preserve both directory source rows on one company; contact name disagreement remains a separate review question."
+    },
+    "21": {
+      "organizationId": "org-mbawc-021",
+      "evidence": "Workbook member rows 20 and 21 have the same trading name, VAT 4060284728, normalized membership code AZB01, company domain, address and telephone/cellphone. Preserve both directory source rows on one company; contact name disagreement remains a separate review question."
+    }
+  },
+  "people": [
+    {
+      "sourceRow": 2,
+      "sourceName": "Leon Serfontein",
+      "sourceFields": {
+        "#": 1,
+        "Company Name": "Afrisam (South Africa) (Pty) Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Western Cape",
+        "Title": "Chief Financial Officer",
+        "First Name(s)": "Leon",
+        "Surname": "Serfontein",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/leon-serfontein-6559b168",
+        "Source / Notes": "CA(SA); BCom Accounting & Finance Hons (RAU). CFO since Sep 2013; with AfriSam since 2000 (Financial Manager from 2009). Articles at KPMG. (cfo.co.za profile, company website, Crunchbase)"
+      },
+      "primaryId": "acc-0909",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Exact full name and canonical LinkedIn URL match; same AfriSam CFO role."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "AfriSam",
+      "currentTitle": "Chief Financial Officer",
+      "affiliations": [
+        {
+          "company": "Afrisam (South Africa) (Pty) Ltd",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row2"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom Accounting & Finance Hons (Rand Afrikaans University), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "KPMG",
+        "period": null,
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "AfriSam",
+          "title": "Financial Manager",
+          "notes": "From 2009; joined AfriSam in 2000; CFO since September 2013, per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Gauteng",
+        "city": "City of Johannesburg",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/leon-serfontein-6559b168",
+        "https://www.linkedin.com/in/leon-serfontein-6559b168/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); BCom Accounting & Finance Hons (RAU). CFO since Sep 2013; with AfriSam since 2000 (Financial Manager from 2009). Articles at KPMG. (cfo.co.za profile, company website, Crunchbase)",
+      "confidenceCaveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 3,
+      "sourceName": "Liezl Barnard",
+      "sourceFields": {
+        "#": 2,
+        "Company Name": "Afrisam (South Africa) (Pty) Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Western Cape",
+        "Title": "Financial Accounting & Reporting Controller",
+        "First Name(s)": "Liezl",
+        "Surname": "Barnard",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/liezl-barnard-ca-sa-62448157",
+        "Source / Notes": "CA(SA); Financial Accounting & Reporting / Financial Controller at AfriSam. (LinkedIn public headline: 'CA (SA)', Zoominfo)"
+      },
+      "primaryId": "acc-0910",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Exact full name and canonical LinkedIn URL match; same AfriSam financial reporting/controller role."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "AfriSam",
+      "currentTitle": "Financial Accounting & Reporting Controller",
+      "affiliations": [
+        {
+          "company": "Afrisam (South Africa) (Pty) Ltd",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row3"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": null,
+        "city": null,
+        "location_confidence": "UNCONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/liezl-barnard-ca-sa-62448157",
+        "https://www.linkedin.com/in/liezl-barnard-ca-sa-62448157/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); Financial Accounting & Reporting / Financial Controller at AfriSam. (LinkedIn public headline: 'CA (SA)', Zoominfo)",
+      "confidenceCaveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 4,
+      "sourceName": "Veliswa Rozani",
+      "sourceFields": {
+        "#": 3,
+        "Company Name": "PPC Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Western Cape",
+        "Title": "Chief Financial Officer (designate, effective 1 Oct 2026)",
+        "First Name(s)": "Veliswa",
+        "Surname": "Rozani",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "CA(SA); MBA; appointed CFO & Executive Director of PPC Ltd effective 1 Oct 2026. Previously CFO of Barloworld Motor Retail SA, senior roles at Johnson & Johnson and Microsoft SA. Articles at PwC. (PPC SENS, CFO SA, Engineering News)"
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "PPC Ltd",
+      "currentTitle": "Chief Financial Officer & Executive Director",
+      "affiliations": [
+        {
+          "company": "PPC Ltd",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row4"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "MBA, workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "PwC",
+        "period": null,
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Barloworld Motor Retail South Africa",
+          "title": "Chief Financial Officer",
+          "notes": "Previous role per workbook."
+        },
+        {
+          "employer": "Johnson & Johnson",
+          "title": "",
+          "notes": "Previous senior role, exact title not supplied."
+        },
+        {
+          "employer": "Microsoft South Africa",
+          "title": "",
+          "notes": "Previous senior role, exact title not supplied."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "CA(SA); MBA; appointed CFO & Executive Director of PPC Ltd effective 1 Oct 2026. Previously CFO of Barloworld Motor Retail SA, senior roles at Johnson & Johnson and Microsoft SA. Articles at PwC. (PPC SENS, CFO SA, Engineering News)",
+      "confidenceCaveats": [
+        "Workbook says CFO designate effective 2026-10-01; that date has passed as of workbook 2026-10-22. Preserve the exact appointment wording/date; current appointment not independently rechecked.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 5,
+      "sourceName": "Kunyalala Maphisa",
+      "sourceFields": {
+        "#": 4,
+        "Company Name": "PPC Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Western Cape",
+        "Title": "Independent Non-Executive Director",
+        "First Name(s)": "Kunyalala",
+        "Surname": "Maphisa",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "BAcc (Wits), MBA, CA(SA); independent NED on PPC board since March 2018. (PPC leadership page, MarketScreener)"
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "",
+      "currentTitle": "Independent Non-Executive Director",
+      "affiliations": [
+        {
+          "company": "PPC Ltd",
+          "relationship": "non-executive director",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row5"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BAcc (Wits), workbook-reported",
+        "MBA, workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "BAcc (Wits), MBA, CA(SA); independent NED on PPC board since March 2018. (PPC leadership page, MarketScreener)",
+      "confidenceCaveats": [
+        "Board appointment at PPC since March 2018 is not employment. Workbook designation/degree assertions have not been independently checked; do not treat CA(SA) as independently verified.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 6,
+      "sourceName": "Andrew Christopher Logan",
+      "sourceFields": {
+        "#": 5,
+        "Company Name": "WBHO Construction (Pty) Ltd - Cape Division",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Group Chief Financial Officer",
+        "First Name(s)": "Andrew Christopher",
+        "Surname": "Logan",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "BCom, BCompt (Hons) (Unisa), CA(SA) (qualified 2005). CFO & Executive Director since 23 Nov 2023; previously Group Financial Director from 2010. With WBHO since 2003. (WBHO annual financial statements 2024/2025, SENS 10 Oct 2023)"
+      },
+      "primaryId": "acc-0441",
+      "mergeIds": [
+        "acc-1129"
+      ],
+      "identityEvidence": [
+        "Workbook full name Andrew Christopher Logan includes existing Andrew Logan name.",
+        "Existing acc-1129 official WBHO governance biography identifies Andrew Logan as CFO with BCom, BCompt (Hons), CA(SA), matching workbook qualifications and role.",
+        "Existing acc-0441 identifies Andrew Logan in the same WBHO finance leadership and carries his LinkedIn; reviewed identity joins name, employer, role and official biography, rather than name alone."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "WBHO (Wilson Bayly Holmes-Ovcon)",
+      "currentTitle": "Group Chief Financial Officer",
+      "affiliations": [
+        {
+          "company": "WBHO Construction (Pty) Ltd - Cape Division",
+          "relationship": "group finance leader; member Cape Division affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row6"
+        }
+      ],
+      "alternateNames": [
+        "Andrew Logan",
+        "Andrew Christopher Logan"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom, workbook-reported",
+        "BCompt (Hons) (Unisa), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "WBHO",
+          "title": "Group Financial Director",
+          "notes": "From 2010 per workbook; CFO and executive director since 23 November 2023; with WBHO since 2003."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Gauteng",
+        "city": "City of Johannesburg",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/andrew-logan-77011634/",
+        "https://www.wbho.co.za/governance/",
+        "https://www.wbho.co.za/investors/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "BCom, BCompt (Hons) (Unisa), CA(SA) (qualified 2005). CFO & Executive Director since 23 Nov 2023; previously Group Financial Director from 2010. With WBHO since 2003. (WBHO annual financial statements 2024/2025, SENS 10 Oct 2023)",
+      "confidenceCaveats": [
+        "Use the group employer, not the Cape member division; retain existing person-level Gauteng/Johannesburg location rather than workbook company Western Cape.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 7,
+      "sourceName": "Charles Victor Henwood",
+      "sourceFields": {
+        "#": 6,
+        "Company Name": "WBHO Construction (Pty) Ltd - Cape Division",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Chairman (former Group CFO 2011–2023)",
+        "First Name(s)": "Charles Victor",
+        "Surname": "Henwood",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "BCom, BCompt (Hons), CA(SA). Group CFO 2011-2023; Chairman since Nov 2024. Started career at Deloitte (1986). (WBHO governance page, 2023 AGM notice)"
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "",
+      "currentTitle": "Chairman",
+      "affiliations": [
+        {
+          "company": "WBHO Construction (Pty) Ltd - Cape Division",
+          "relationship": "group chairman; former group CFO",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row7"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom, workbook-reported",
+        "BCompt (Hons), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "WBHO",
+          "title": "Group Chief Financial Officer",
+          "notes": "2011–2023 per workbook."
+        },
+        {
+          "employer": "Deloitte",
+          "title": "",
+          "notes": "Career began in 1986; workbook does not explicitly establish articles."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "BCom, BCompt (Hons), CA(SA). Group CFO 2011-2023; Chairman since Nov 2024. Started career at Deloitte (1986). (WBHO governance page, 2023 AGM notice)",
+      "confidenceCaveats": [
+        "Chairman since November 2024 per workbook. Do not present former CFO title as current or infer employee status/SAICA articles.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 8,
+      "sourceName": "Ernst van Vondel",
+      "sourceFields": {
+        "#": 7,
+        "Company Name": "Power Construction (Pty) Ltd",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Head of Finance",
+        "First Name(s)": "Ernst",
+        "Surname": "van Vondel",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/vondel/",
+        "Source / Notes": "CA(SA); Head of Finance at Power Construction (Pty) Ltd. Started as Internal Auditor 2003; previously BDO Spencer Steward. Completed Stanford Emerging CFO program. (LinkedIn headline 'CA(SA)', Zoominfo, RocketReach)"
+      },
+      "primaryId": "acc-0436",
+      "mergeIds": [
+        "acc-1204",
+        "acc-1503"
+      ],
+      "identityEvidence": [
+        "All three research records and workbook share the canonical LinkedIn identity /in/vondel, the same name and Power finance leadership.",
+        "Research source_urls contain za.linkedin.com/in/vondel where linkedin_url is null; canonical URL normalization establishes the match."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Power Construction",
+      "currentTitle": "Head of Finance",
+      "affiliations": [
+        {
+          "company": "Power Construction (Pty) Ltd",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row8"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "Stanford Emerging CFO programme, workbook-reported professional development"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Power Construction",
+          "title": "Internal Auditor",
+          "notes": "Started in 2003 per workbook."
+        },
+        {
+          "employer": "BDO Spencer Steward",
+          "title": "",
+          "notes": "Previous role; title/training route not supplied."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Western Cape",
+        "city": "City of Cape Town",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/vondel/",
+        "https://za.linkedin.com/in/vondel",
+        "https://za.linkedin.com/company/power-construction-pty-ltd"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); Head of Finance at Power Construction (Pty) Ltd. Started as Internal Auditor 2003; previously BDO Spencer Steward. Completed Stanford Emerging CFO program. (LinkedIn headline 'CA(SA)', Zoominfo, RocketReach)",
+      "confidenceCaveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 9,
+      "sourceName": "Esethu Dazana (née Mancotywa)",
+      "sourceFields": {
+        "#": 8,
+        "Company Name": "Grinaker-LTA",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Group Chief Financial Officer",
+        "First Name(s)": "Esethu",
+        "Surname": "Dazana (née Mancotywa)",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/esethu-dazana-ca-sa-mba-6b868866/",
+        "Source / Notes": "CA(SA), MBA (GIBS). Group CFO since Oct 2021; previously Nedbank, Land Bank. Deputy President of Black Management Forum. Appointed as CA(SA) Mancotywa at time of 2021 appointment; now Dazana. (cfo.co.za, LinkedIn profile, Engineering News)"
+      },
+      "primaryId": "acc-1134",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Workbook explicitly states former surname Mancotywa, current surname Dazana, and the same October 2021 Grinaker CFO appointment as existing Esethu Mancotywa.",
+        "Existing acc-1134 public CFO South Africa appointment source corroborates former name, company, finance role and CA(SA) assertion."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Grinaker-LTA",
+      "currentTitle": "Group Chief Financial Officer",
+      "affiliations": [
+        {
+          "company": "Grinaker-LTA",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row9"
+        },
+        {
+          "company": "Black Management Forum",
+          "relationship": "Deputy President",
+          "employment": false
+        }
+      ],
+      "alternateNames": [
+        "Esethu Mancotywa",
+        "Esethu Dazana",
+        "Esethu Dazana (née Mancotywa)"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "MBA (GIBS), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Nedbank",
+          "title": "",
+          "notes": "Previous role; title not supplied."
+        },
+        {
+          "employer": "Land Bank",
+          "title": "",
+          "notes": "Previous role; title not supplied."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": null,
+        "city": null,
+        "location_confidence": "UNCONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/esethu-dazana-ca-sa-mba-6b868866/",
+        "https://cfo.co.za/articles/grinaker-lta-appoints-esethu-mancotywa-as-its-new-cfo/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA), MBA (GIBS). Group CFO since Oct 2021; previously Nedbank, Land Bank. Deputy President of Black Management Forum. Appointed as CA(SA) Mancotywa at time of 2021 appointment; now Dazana. (cfo.co.za, LinkedIn profile, Engineering News)",
+      "confidenceCaveats": [
+        "Retain that older research source proves a 2021 appointment; workbook reports continuation in 2026 rather than independently fetched current verification.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 10,
+      "sourceName": "Unathi Magwentshu",
+      "sourceFields": {
+        "#": 9,
+        "Company Name": "Concor Construction (Pty) Ltd",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Chief Financial Officer",
+        "First Name(s)": "Unathi",
+        "Surname": "Magwentshu",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/unathi-magwentshu-aa662834",
+        "Source / Notes": "BCom Hons (University of Natal), CA(SA) (qualified 2004). CFO of Concor since 2023. 20+ years experience in CIB, Development Finance, Energy, Petroleum. Began career at Deloitte (articles to 2004); previously CFO of a ~R11bn petroleum business; held roles at Land Bank, Nedbank Capital, Absa CIB. (concor.co.za, Zoominfo, RocketReach, Land Bank executive profiles)"
+      },
+      "primaryId": "acc-0478",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Exact name and canonical LinkedIn URL match; same Concor CFO role."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Concor Construction",
+      "currentTitle": "Chief Financial Officer",
+      "affiliations": [
+        {
+          "company": "Concor Construction (Pty) Ltd",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row10"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom Hons (University of Natal), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "Deloitte",
+        "period": "to 2004",
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Land Bank",
+          "title": "",
+          "notes": "Previous role; title not supplied."
+        },
+        {
+          "employer": "Nedbank Capital",
+          "title": "",
+          "notes": "Previous role; title not supplied."
+        },
+        {
+          "employer": "Absa CIB",
+          "title": "",
+          "notes": "Previous role; title not supplied."
+        },
+        {
+          "employer": "",
+          "title": "Chief Financial Officer",
+          "notes": "Previous approximately R11bn petroleum business; employer not supplied, do not invent it."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Gauteng",
+        "city": "City of Johannesburg",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/unathi-magwentshu-aa662834",
+        "https://www.linkedin.com/in/unathi-magwentshu-aa662834/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "BCom Hons (University of Natal), CA(SA) (qualified 2004). CFO of Concor since 2023. 20+ years experience in CIB, Development Finance, Energy, Petroleum. Began career at Deloitte (articles to 2004); previously CFO of a ~R11bn petroleum business; held roles at Land Bank, Nedbank Capital, Absa CIB. (concor.co.za, Zoominfo, RocketReach, Land Bank executive profiles)",
+      "confidenceCaveats": [
+        "CFO since 2023 and 20+ years experience are workbook-reported. Keep existing person Gauteng/Johannesburg location; member location is Western Cape.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 11,
+      "sourceName": "Gerrit van Niekerk",
+      "sourceFields": {
+        "#": 10,
+        "Company Name": "Isipani Construction (Pty) Ltd",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Financial Director",
+        "First Name(s)": "Gerrit",
+        "Surname": "van Niekerk",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/gerrit-van-niekerk-8195587",
+        "Source / Notes": "B Accounting Hons (Stellenbosch), Postgraduate Diploma in Auditing (Unisa), CA(SA). Appointed Financial Manager & Secretary 2004; Financial Director since 2011; Director of Isipani Holdings since 2015. With the company over 20 years. (isipani.co.za directors page, RocketReach, Zoominfo)"
+      },
+      "primaryId": "acc-0493",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Exact name and canonical LinkedIn URL match; official Isipani directors URL already recorded in existing research."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Isipani Construction",
+      "currentTitle": "Financial Director",
+      "affiliations": [
+        {
+          "company": "Isipani Construction (Pty) Ltd",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row11"
+        },
+        {
+          "company": "Isipani Holdings",
+          "relationship": "Director since 2015",
+          "employment": null
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "B Accounting Hons (Stellenbosch), workbook-reported",
+        "Postgraduate Diploma in Auditing (Unisa), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Isipani Construction",
+          "title": "Financial Manager & Secretary",
+          "notes": "Appointed in 2004; Financial Director since 2011 per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Western Cape",
+        "city": "City of Cape Town / Paarl",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/gerrit-van-niekerk-8195587",
+        "https://za.linkedin.com/in/gerrit-van-niekerk-8195587",
+        "https://isipani.co.za/isipani-directors/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "B Accounting Hons (Stellenbosch), Postgraduate Diploma in Auditing (Unisa), CA(SA). Appointed Financial Manager & Secretary 2004; Financial Director since 2011; Director of Isipani Holdings since 2015. With the company over 20 years. (isipani.co.za directors page, RocketReach, Zoominfo)",
+      "confidenceCaveats": [
+        "Existing research independently records the same degrees and designation. Do not infer an articles employer.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 12,
+      "sourceName": "Pieter Gabriel Stephanus de Wit",
+      "sourceFields": {
+        "#": 11,
+        "Company Name": "Cape Lime (Pty) Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Western Cape",
+        "Title": "Group Chief Financial Officer (Afrimat Ltd)",
+        "First Name(s)": "Pieter Gabriel Stephanus",
+        "Surname": "de Wit",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "B.Compt (Hons), CA(SA), ACIS, Post Grad Cert in Tax (Unisa), MBA cum laude (Stellenbosch), Stanford Emerging CFO. CFO of Afrimat since 1 Mar 2016; joined Afrimat 2008 from PwC (16 years). Cape Lime is a division of Afrimat. (afrimat.co.za directorate page, CFO SA profile)"
+      },
+      "primaryId": "acc-0903",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Existing Pieter De Wit is Afrimat CFO and has the same unusual qualification combination and Stanford Emerging CFO programme as workbook full name Pieter Gabriel Stephanus de Wit.",
+        "Existing LinkedIn academic details corroborate MBA cum laude at Stellenbosch, ACIS, Unisa tax certificate and BCompt Hons, beyond name similarity."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Afrimat",
+      "currentTitle": "Group Chief Financial Officer",
+      "affiliations": [
+        {
+          "company": "Cape Lime (Pty) Ltd",
+          "relationship": "group CFO; member Cape Lime is an Afrimat division",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row12"
+        }
+      ],
+      "alternateNames": [
+        "Pieter De Wit",
+        "Pieter Gabriel Stephanus de Wit"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCompt (Hons), workbook-reported",
+        "Postgraduate Certificate in Tax (Unisa), workbook-reported",
+        "MBA cum laude (Stellenbosch), workbook-reported",
+        "Stanford Emerging CFO programme, workbook-reported"
+      ],
+      "additionalDesignations": [
+        "ACIS"
+      ],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "PwC",
+          "title": "",
+          "notes": "16 years at PwC before joining Afrimat in 2008; do not infer articles from employer tenure."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Western Cape",
+        "city": "City of Cape Town",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/pieter-de-wit-4619b210/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "B.Compt (Hons), CA(SA), ACIS, Post Grad Cert in Tax (Unisa), MBA cum laude (Stellenbosch), Stanford Emerging CFO. CFO of Afrimat since 1 Mar 2016; joined Afrimat 2008 from PwC (16 years). Cape Lime is a division of Afrimat. (afrimat.co.za directorate page, CFO SA profile)",
+      "confidenceCaveats": [
+        "Do not assign Cape Lime as primary employer; preserve group-to-division affiliation separately. CFO from 1 March 2016 per workbook.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 13,
+      "sourceName": "Zola Nwabisa Malinga",
+      "sourceFields": {
+        "#": 12,
+        "Company Name": "Abbeydale Infrastructure (Pty) Ltd",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Director (co-founder, Abbeydale Projects)",
+        "First Name(s)": "Zola Nwabisa",
+        "Surname": "Malinga",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "CA(SA) (qualified 2003, Deloitte articles; BCom UCT, PGDA UKZN). Co-founder and Director of Abbeydale Projects. Executive Director of Jade Capital Partners; independent NED on boards of Sappi and Pepkor; previously Director in Real Estate Finance at Standard Bank. (abbeydale.co.za, jadecapital.co.za, MarketScreener, WikiMzansi). Note: Abbeydale Group CFO is Clinton Froneman (CIMA, not CA(SA))."
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Jade Capital Partners",
+      "currentTitle": "Executive Director",
+      "affiliations": [
+        {
+          "company": "Abbeydale Infrastructure (Pty) Ltd",
+          "relationship": "workbook associates member Abbeydale Infrastructure with Abbeydale Projects co-founder/director; exact legal entity tie needs review",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row13"
+        },
+        {
+          "company": "Abbeydale Projects",
+          "relationship": "Co-founder and Director",
+          "employment": null
+        },
+        {
+          "company": "Sappi",
+          "relationship": "Independent Non-Executive Director",
+          "employment": false
+        },
+        {
+          "company": "Pepkor",
+          "relationship": "Independent Non-Executive Director",
+          "employment": false
+        }
+      ],
+      "alternateNames": [
+        "Zola Nwabisa Malinga",
+        "Zola Malinga"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom (UCT), workbook-reported",
+        "PGDA (UKZN), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "Deloitte",
+        "period": "qualified 2003",
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Standard Bank",
+          "title": "Director, Real Estate Finance",
+          "notes": "Previous role per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "CA(SA) (qualified 2003, Deloitte articles; BCom UCT, PGDA UKZN). Co-founder and Director of Abbeydale Projects. Executive Director of Jade Capital Partners; independent NED on boards of Sappi and Pepkor; previously Director in Real Estate Finance at Standard Bank. (abbeydale.co.za, jadecapital.co.za, MarketScreener, WikiMzansi). Note: Abbeydale Group CFO is Clinton Froneman (CIMA, not CA(SA)).",
+      "confidenceCaveats": [
+        "Workbook names Abbeydale Projects, while member is Abbeydale Infrastructure. Do not assume same legal entity or direct employment in the member. Preserve the relationship as a workbook-reported group/name linkage requiring verification.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 14,
+      "sourceName": "Samuel Jacobus (Sam) Odendaal",
+      "sourceFields": {
+        "#": 13,
+        "Company Name": "Raubex Building (Pty) Ltd",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Financial Director",
+        "First Name(s)": "Samuel Jacobus (Sam)",
+        "Surname": "Odendaal",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "BCom Hons, CA(SA). Financial Director of Raubex effective 1 Jun 2021. With Raubex since July 2007 (Financial Manager, then Group Financial Manager March 2020). Articles at Havenga Rossouw Viljoen in Bloemfontein. (raubex.com/team page)"
+      },
+      "primaryId": "acc-1145",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Existing Sam Odendaal is the Raubex Group FD appointed 1 June 2021, matching workbook Samuel Jacobus (Sam) Odendaal.",
+        "Existing CFO South Africa source states the same Havenga Rossouw Viljoen articles employer in Bloemfontein, corroborating identity beyond name."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Raubex Group",
+      "currentTitle": "Financial Director",
+      "affiliations": [
+        {
+          "company": "Raubex Building (Pty) Ltd",
+          "relationship": "group finance leader; member Raubex Building affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row14"
+        }
+      ],
+      "alternateNames": [
+        "Sam Odendaal",
+        "Samuel Jacobus Odendaal",
+        "Samuel Jacobus (Sam) Odendaal"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom Hons, workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "Havenga Rossouw Viljoen",
+        "period": null,
+        "location": "Bloemfontein",
+        "status": "EXISTING_SOURCE_AND_WORKBOOK"
+      },
+      "careerHistory": [
+        {
+          "employer": "Raubex",
+          "title": "Financial Manager",
+          "notes": "Joined July 2007; Group Financial Manager from March 2020; Financial Director from 1 June 2021 per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": null,
+        "city": null,
+        "location_confidence": "UNCONFIRMED"
+      },
+      "sourceUrls": [
+        "https://cfo.co.za/articles/raubex-group-appoints-sam-odendaal-as-its-group-fd/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "BCom Hons, CA(SA). Financial Director of Raubex effective 1 Jun 2021. With Raubex since July 2007 (Financial Manager, then Group Financial Manager March 2020). Articles at Havenga Rossouw Viljoen in Bloemfontein. (raubex.com/team page)",
+      "confidenceCaveats": [
+        "Existing source says qualified CA without country-specific CA(SA); workbook explicitly says CA(SA). Retain source-specific evidence levels rather than claiming existing article proves CA(SA).",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 15,
+      "sourceName": "Anja Griesche",
+      "sourceFields": {
+        "#": 14,
+        "Company Name": "Saint-Gobain Construction Products (Pty) Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Gauteng",
+        "Title": "CFO Sub-Saharan Africa",
+        "First Name(s)": "Anja",
+        "Surname": "Griesche",
+        "CA(SA) Verified?": "Not confirmed — verify",
+        "LinkedIn Profile": null,
+        "Source / Notes": "CFO Sub-Saharan Africa at Saint-Gobain Africa. CA(SA) status NOT confirmed in public sources. (RocketReach, company website) — listed for reference; verification needed."
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Saint-Gobain Africa",
+      "currentTitle": "CFO Sub-Saharan Africa",
+      "affiliations": [
+        {
+          "company": "Saint-Gobain Construction Products (Pty) Ltd",
+          "relationship": "regional group finance leader; member Saint-Gobain Construction Products affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row15"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": false,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "CFO Sub-Saharan Africa at Saint-Gobain Africa. CA(SA) status NOT confirmed in public sources. (RocketReach, company website) — listed for reference; verification needed.",
+      "confidenceCaveats": [
+        "Workbook explicitly states CA(SA) not confirmed; retain in wider Accounting & Finance pool with designation unconfirmed, excluded from confirmed CA(SA) subset.",
+        "No individual location is established: Gauteng in member row is not independently a person residence.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 16,
+      "sourceName": "Sisandile Thambo",
+      "sourceFields": {
+        "#": 15,
+        "Company Name": "Saint-Gobain Construction Products (Pty) Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Gauteng",
+        "Title": "Regional Finance Manager, West Africa (Internal Audit Manager SA)",
+        "First Name(s)": "Sisandile",
+        "Surname": "Thambo",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/sisandile-thambo-9955aa92",
+        "Source / Notes": "BCom Hons Accounting, CA(SA); Regional Finance Manager (West Africa) at Saint-Gobain Africa, previously Internal Audit / Business Control Manager at Saint-Gobain Africa (Sep 2021 onwards), and Deloitte South Africa (articles 2016-2021). Currently on assignment in Ghana. (LinkedIn profile, RocketReach)"
+      },
+      "primaryId": "acc-0370",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Existing research has the identical full name and Saint-Gobain group but a different LinkedIn /in/sisa-thambo and Head of Finance/SBM role.",
+        "Workbook /in/sisandile-thambo-9955aa92 may be an alias or another identity; no canonical redirect or shared identity token established.",
+        "Attempts to read both LinkedIn URLs were blocked by egress CONNECT 403, so identity resolution remains unverified."
+      ],
+      "reviewMatches": [
+        "acc-0370"
+      ],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": true,
+      "currentEmployer": "Saint-Gobain Gyproc",
+      "currentTitle": "Head of Finance, SBM Business Unit",
+      "affiliations": [
+        {
+          "company": "Saint-Gobain Construction Products (Pty) Ltd",
+          "relationship": "group regional role; member Saint-Gobain Construction Products affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row16"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom Hons Accounting, workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "Deloitte South Africa",
+        "period": "2016–2021",
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Saint-Gobain Africa",
+          "title": "Internal Audit / Business Control Manager",
+          "notes": "From September 2021 per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "CONFLICTING_WORKBOOK_CLAIM",
+        "basis": "Workbook says Ghana assignment; existing profile says Johannesburg. Keep existing person location; store Ghana in conflicting source claim, not a confirmed replacement."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": null,
+        "city": "Johannesburg Metropolitan Area",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/sisandile-thambo-9955aa92",
+        "https://za.linkedin.com/in/sisa-thambo"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "BCom Hons Accounting, CA(SA); Regional Finance Manager (West Africa) at Saint-Gobain Africa, previously Internal Audit / Business Control Manager at Saint-Gobain Africa (Sep 2021 onwards), and Deloitte South Africa (articles 2016-2021). Currently on assignment in Ghana. (LinkedIn profile, RocketReach)",
+      "confidenceCaveats": [
+        "Associate workbook claim to existing acc-0370 on full name, CA(SA) and same Saint-Gobain group; do not create a second public profile.",
+        "Do not overwrite existing Johannesburg Head of Finance role/location or attach a second verified LinkedIn URL without resolving URL/role chronology. Preserve full raw workbook row as a conflicting claim pending review.",
+        "Workbook Ghana assignment conflicts with existing Johannesburg profile, while workbook company Gauteng location is not residence evidence.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 17,
+      "sourceName": "J (Jay) Venkanna",
+      "sourceFields": {
+        "#": 16,
+        "Company Name": "Kansai Plascon (Pty) Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Western Cape",
+        "Title": "Chief Financial Officer",
+        "First Name(s)": "J (Jay)",
+        "Surname": "Venkanna",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "B.Com Hons Accounting, CA(SA) (University of KwaZulu-Natal). CFO of Kansai Plascon Africa since 1 April 2024 (acting since April 2023). Joined Kansai Plascon March 2008; prior roles include Finance Executive, Head of Group Internal Audit, Head of Reporting/Budgeting/Treasury. Began career at Deloitte SA (Audit Manager until 2008). (plascon.co.za corporate information page, Kansai Paint Africa Strategy Briefing March 2025)"
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Kansai Plascon Africa",
+      "currentTitle": "Chief Financial Officer",
+      "affiliations": [
+        {
+          "company": "Kansai Plascon (Pty) Ltd",
+          "relationship": "Africa group CFO; member Kansai Plascon affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row17"
+        }
+      ],
+      "alternateNames": [
+        "J Venkanna",
+        "Jay Venkanna",
+        "J (Jay) Venkanna"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom Hons Accounting (University of KwaZulu-Natal), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Kansai Plascon Africa",
+          "title": "Finance Executive / Head of Group Internal Audit / Head of Reporting, Budgeting & Treasury",
+          "notes": "Joined March 2008; acting CFO from April 2023; CFO from 1 April 2024 per workbook."
+        },
+        {
+          "employer": "Deloitte South Africa",
+          "title": "Audit Manager",
+          "notes": "Until 2008; an audit manager role is not explicit articles completion evidence."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "B.Com Hons Accounting, CA(SA) (University of KwaZulu-Natal). CFO of Kansai Plascon Africa since 1 April 2024 (acting since April 2023). Joined Kansai Plascon March 2008; prior roles include Finance Executive, Head of Group Internal Audit, Head of Reporting/Budgeting/Treasury. Began career at Deloitte SA (Audit Manager until 2008). (plascon.co.za corporate information page, Kansai Paint Africa Strategy Briefing March 2025)",
+      "confidenceCaveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 18,
+      "sourceName": "Luke Kirsten",
+      "sourceFields": {
+        "#": 17,
+        "Company Name": "Enza Construction (Pty) Ltd",
+        "Membership Type": "Full Member",
+        "Location": "Western Cape",
+        "Title": "Group CFO (Crowie Holdings; Enza CFO 2018–2019)",
+        "First Name(s)": "Luke",
+        "Surname": "Kirsten",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/luke-kirsten-6a1b374b",
+        "Source / Notes": "CA(SA); articles Deloitte (qualified 2000). CFO of Enza Construction June 2018 – Jan 2019; now Group CFO of Crowie Holdings (parent). Background includes Strategic Advisor at SARS, Investec Group Credit Committee, Standard Bank Commercial Banking Credit Head. (LinkedIn, Enza management team page)"
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Crowie Holdings",
+      "currentTitle": "Group Chief Financial Officer",
+      "affiliations": [
+        {
+          "company": "Enza Construction (Pty) Ltd",
+          "relationship": "former CFO; current group CFO of workbook-reported parent Crowie Holdings",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row18"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "Deloitte",
+        "period": "qualified 2000",
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Enza Construction",
+          "title": "Chief Financial Officer",
+          "notes": "June 2018–January 2019 per workbook; former role, not current employer."
+        },
+        {
+          "employer": "SARS",
+          "title": "Strategic Advisor",
+          "notes": "Previous role per workbook."
+        },
+        {
+          "employer": "Standard Bank Commercial Banking",
+          "title": "Credit Head",
+          "notes": "Previous role per workbook."
+        },
+        {
+          "employer": "Investec",
+          "title": "",
+          "notes": "Group Credit Committee background; membership/role exact nature not supplied."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [
+        "https://www.linkedin.com/in/luke-kirsten-6a1b374b"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); articles Deloitte (qualified 2000). CFO of Enza Construction June 2018 – Jan 2019; now Group CFO of Crowie Holdings (parent). Background includes Strategic Advisor at SARS, Investec Group Credit Committee, Standard Bank Commercial Banking Credit Head. (LinkedIn, Enza management team page)",
+      "confidenceCaveats": [
+        "Do not label Luke current Enza CFO. Parent relationship is workbook-reported and needs direct corporate-source verification before asserting legal ownership.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 19,
+      "sourceName": "Jan Hugo van der Merwe",
+      "sourceFields": {
+        "#": 18,
+        "Company Name": "Peri Formwork Scaffolding Engineering (Pty) Ltd",
+        "Membership Type": "Associate Member",
+        "Location": "Western Cape",
+        "Title": "Financial Director",
+        "First Name(s)": "Jan Hugo",
+        "Surname": "van der Merwe",
+        "CA(SA) Verified?": "Not confirmed — verify",
+        "LinkedIn Profile": null,
+        "Source / Notes": "Financial Director of PERI South Africa since 1 June 2023. Background in financial operations management. CA(SA) status NOT confirmed in public sources. (PERI press release, peri.co.za management page) — verification needed."
+      },
+      "primaryId": "acc-1205",
+      "mergeIds": [
+        "acc-1504"
+      ],
+      "identityEvidence": [
+        "Existing records share full name, employer, title, the exact LinkedIn source URL and the exact PERI directors press-release URL.",
+        "Workbook identifies same PERI Financial Director appointment from 1 June 2023."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "PERI South Africa",
+      "currentTitle": "Financial Director",
+      "affiliations": [
+        {
+          "company": "Peri Formwork Scaffolding Engineering (Pty) Ltd",
+          "relationship": "workbook member company / same current employer",
+          "employment": true,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row19"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": false,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": true,
+      "academicQualifications": [],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Member Western Cape/Gauteng location alone does not establish person residence. Retain existing individually sourced location if present."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Western Cape",
+        "city": "Cape Town",
+        "location_confidence": "UNCONFIRMED"
+      },
+      "sourceUrls": [
+        "https://za.linkedin.com/in/janhugovandermerwe",
+        "https://www.peri.co.za/company/press-releases/meet-the-directors-press-release.html"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "Financial Director of PERI South Africa since 1 June 2023. Background in financial operations management. CA(SA) status NOT confirmed in public sources. (PERI press release, peri.co.za management page) — verification needed.",
+      "confidenceCaveats": [
+        "Workbook explicitly says CA(SA) unconfirmed; both research records label CA(SA), with weak evidence text See source URLs / Profile explicitly CA(SA). Retain designation conflict for review; do not silently convert workbook unconfirmed into confirmed or erase existing claims without source adjudication.",
+        "Current employer PERI South Africa is not inferred from Western Cape member location.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 20,
+      "sourceName": "I.R. (IR) Van der Merwe",
+      "sourceFields": {
+        "#": 19,
+        "Company Name": "Raubex Building (Pty) Ltd",
+        "Membership Type": "Members listed in error / Members operating outside the Western Cape",
+        "Location": "Bloemfontein (Free State)",
+        "Title": "Divisional Financial Manager: Materials Division (previously Infrastructure Div); former Head of Internal Audit",
+        "First Name(s)": "I.R. (IR)",
+        "Surname": "Van der Merwe",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://www.linkedin.com/in/ir-van-der-merwe-ca-sa-a3a76955/",
+        "Source / Notes": "CA(SA); BCom Hons (University of the Free State); PwC articles 1998-2000; at Raubex since 2008; Divisional Finance Manager for Raumix/Tosas (Materials)."
+      },
+      "primaryId": "acc-0484",
+      "mergeIds": [
+        "acc-1367",
+        "acc-1614"
+      ],
+      "identityEvidence": [
+        "Existing oldest profile /ir-van-der-merwe-a3a76955 and workbook/profile sources /ir-van-der-merwe-ca-sa-a3a76955 share the unique LinkedIn identity suffix a3a76955.",
+        "Same IR van der Merwe name, Raubex group and distinctive Materials Division financial management role corroborate identity.",
+        "acc-1367 and acc-1614 have the exact workbook LinkedIn source URL."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Raubex Group",
+      "currentTitle": "Divisional Financial Manager, Materials Division",
+      "affiliations": [
+        {
+          "company": "Raubex Building (Pty) Ltd",
+          "relationship": "group divisional finance; member Raubex Building affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row20"
+        },
+        {
+          "company": "Raumix",
+          "relationship": "Materials Division finance responsibilities",
+          "employment": null
+        },
+        {
+          "company": "Tosas",
+          "relationship": "Materials Division finance responsibilities",
+          "employment": null
+        }
+      ],
+      "alternateNames": [
+        "IR Van der Merwe",
+        "IR van der Merwe",
+        "I.R. (IR) Van der Merwe"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom Hons (University of the Free State), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "PwC",
+        "period": "1998–2000",
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Raubex Group",
+          "title": "Head of Internal Audit",
+          "notes": "Former title; at Raubex since 2008 per workbook."
+        },
+        {
+          "employer": "Raubex Group",
+          "title": "Divisional Financial Manager, Infrastructure Division",
+          "notes": "Previous division per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": "South Africa",
+        "province": "Free State",
+        "city": "Bloemfontein",
+        "confidence": "WORKBOOK_REPORTED_AND_EXISTING_SOURCE",
+        "basis": "Financial Leadership explicit Bloemfontein row; agrees with oldest authoritative profile location. Later imported Western Cape labels are weak/contradictory."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Free State",
+        "city": "Bloemfontein",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/ir-van-der-merwe-ca-sa-a3a76955/",
+        "https://www.linkedin.com/in/ir-van-der-merwe-a3a76955/",
+        "https://za.linkedin.com/in/ir-van-der-merwe-ca-sa-a3a76955"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); BCom Hons (University of the Free State); PwC articles 1998-2000; at Raubex since 2008; Divisional Finance Manager for Raumix/Tosas (Materials).",
+      "confidenceCaveats": [
+        "Preserve acc-0484 established Bloemfontein/Free State location; do not promote later records Western Cape from an X-ray association.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 21,
+      "sourceName": "Clifford Barnes",
+      "sourceFields": {
+        "#": 20,
+        "Company Name": "Raubex Building (Pty) Ltd",
+        "Membership Type": "Members listed in error / Members operating outside the Western Cape",
+        "Location": "Bloemfontein (Free State)",
+        "Title": "Financial Manager, Raubex Construction (Pty) Ltd",
+        "First Name(s)": "Clifford",
+        "Surname": "Barnes",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": "https://za.linkedin.com/in/clifford-barnes-ca-sa-14376b95",
+        "Source / Notes": "CA(SA); University of the Free State; PwC (Assistant Manager 2015-2018); Financial Manager at Raubex Construction since 2018."
+      },
+      "primaryId": "acc-1375",
+      "mergeIds": [
+        "acc-1622"
+      ],
+      "identityEvidence": [
+        "Both records have exact full name, employer/title and exact canonical LinkedIn source URL matching workbook.",
+        "Existing linkedin_url fields are null, but source_urls independently carry the person identity URL."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Raubex Construction",
+      "currentTitle": "Financial Manager",
+      "affiliations": [
+        {
+          "company": "Raubex Building (Pty) Ltd",
+          "relationship": "Raubex group colleague; member Raubex Building is a different group company",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row21"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "University of the Free State study, qualification not specified in workbook"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [
+        {
+          "employer": "PwC",
+          "title": "Assistant Manager",
+          "notes": "2015–2018 per workbook; not explicit articles completion evidence."
+        },
+        {
+          "employer": "Raubex Construction",
+          "title": "Financial Manager",
+          "notes": "Since 2018 per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": "South Africa",
+        "province": "Free State",
+        "city": "Bloemfontein",
+        "confidence": "WORKBOOK_REPORTED",
+        "basis": "Financial Leadership explicit Bloemfontein row; later research Western Cape labels conflict with unverified X-ray notes."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": null,
+        "city": "Western Cape location NOT confirmed — X-ray query association only",
+        "location_confidence": "UNCONFIRMED"
+      },
+      "sourceUrls": [
+        "https://za.linkedin.com/in/clifford-barnes-ca-sa-14376b95"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); University of the Free State; PwC (Assistant Manager 2015-2018); Financial Manager at Raubex Construction since 2018.",
+      "confidenceCaveats": [
+        "Do not assign Raubex Building as employer; preserve Raubex Construction sourced role.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 22,
+      "sourceName": "Niel Bisschoff",
+      "sourceFields": {
+        "#": 21,
+        "Company Name": "Raubex Building (Pty) Ltd",
+        "Membership Type": "Members listed in error / Members operating outside the Western Cape",
+        "Location": "Johannesburg (Gauteng)",
+        "Title": "Divisional Financial Manager – Mining Division; Group M&A Finance Manager",
+        "First Name(s)": "Niel",
+        "Surname": "Bisschoff",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "CA(SA); BCom Accounting Sciences Hons, CTA (University of Pretoria); PwC articles 2012-2015; at Raubex since 2017; currently Divisional Financial Manager – Mining. Source: baubaresources.co.za/about-us, RocketReach."
+      },
+      "primaryId": "acc-0487",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Exact full name, Raubex group, mining division financial manager role match existing record.",
+        "Existing record already has the direct public LinkedIn identity; workbook notes the same specialist role and employer."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Raubex Group",
+      "currentTitle": "Divisional Financial Manager, Mining Division; Group M&A Finance Manager",
+      "affiliations": [
+        {
+          "company": "Raubex Building (Pty) Ltd",
+          "relationship": "group mining finance; member Raubex Building affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row22"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom Accounting Sciences Hons (University of Pretoria), workbook-reported",
+        "CTA (University of Pretoria), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "PwC",
+        "period": "2012–2015",
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "Raubex Group",
+          "title": "Divisional Financial Manager, Mining Division",
+          "notes": "At Raubex since 2017 per workbook."
+        }
+      ],
+      "personLocation": {
+        "country": "South Africa",
+        "province": "Gauteng",
+        "city": "Johannesburg",
+        "confidence": "WORKBOOK_REPORTED_AND_EXISTING_SOURCE",
+        "basis": "Financial Leadership explicit Johannesburg row; agrees with existing Johannesburg profile."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": "Gauteng",
+        "city": "City of Johannesburg",
+        "location_confidence": "CONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.linkedin.com/in/niel-bisschoff-ca-sa-b3a1a253/"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); BCom Accounting Sciences Hons, CTA (University of Pretoria); PwC articles 2012-2015; at Raubex since 2017; currently Divisional Financial Manager – Mining. Source: baubaresources.co.za/about-us, RocketReach.",
+      "confidenceCaveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 23,
+      "sourceName": "Saneesa Williams",
+      "sourceFields": {
+        "#": 22,
+        "Company Name": "Raubex Building (Pty) Ltd",
+        "Membership Type": "Members listed in error / Members operating outside the Western Cape",
+        "Location": "Bloemfontein (Free State)",
+        "Title": "Executive Director of Subsidiaries – Roads Division",
+        "First Name(s)": "Saneesa",
+        "Surname": "Williams",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "CA(SA); Executive Director of Subsidiaries in Roads Division, Raubex (Pty) Ltd, Bloemfontein. Source: LinkedIn \"People also viewed\" from Celeste Johnston profile."
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing identity found for Saneesa Williams.",
+        "Existing Saneesa Ward acc-0489 shares first name and Raubex only; no surname-change or same-profile evidence, so do not merge."
+      ],
+      "reviewMatches": [
+        "acc-0489"
+      ],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Raubex",
+      "currentTitle": "Executive Director of Subsidiaries, Roads Division",
+      "affiliations": [
+        {
+          "company": "Raubex Building (Pty) Ltd",
+          "relationship": "group roads division subsidiaries director; member Raubex Building affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row23"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [],
+      "personLocation": {
+        "country": "South Africa",
+        "province": "Free State",
+        "city": "Bloemfontein",
+        "confidence": "WORKBOOK_REPORTED",
+        "basis": "Financial Leadership explicitly says Bloemfontein, also in Source/Notes."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "CA(SA); Executive Director of Subsidiaries in Roads Division, Raubex (Pty) Ltd, Bloemfontein. Source: LinkedIn \"People also viewed\" from Celeste Johnston profile.",
+      "confidenceCaveats": [
+        "Person claim comes only from a People also viewed discovery snippet cited in workbook, without a direct identity URL. Retain as RESEARCH_HOLD pending primary verification; do not assert independently confirmed designation/employment.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 24,
+      "sourceName": "Donna (Donnafeg) Msiska",
+      "sourceFields": {
+        "#": 23,
+        "Company Name": "WBHO Construction (Pty) Ltd - Cape Division",
+        "Membership Type": "Members listed in error / Members operating outside the Western Cape",
+        "Location": "Johannesburg (Gauteng) - Group head office",
+        "Title": "Group Company Secretary; previously headed finance at a WBHO subsidiary",
+        "First Name(s)": "Donna (Donnafeg)",
+        "Surname": "Msiska",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "CA(SA); BCom (Rat), BCom Hons (CTA); KPMG articles 2007; joined WBHO 2013; appointed Group Company Secretary 1 Apr 2021; served in multiple finance roles including heading finance portfolio at a subsidiary. Source: wbho.co.za/governance."
+      },
+      "primaryId": "acc-1157",
+      "mergeIds": [],
+      "identityEvidence": [
+        "Existing Donna Msiska has the same WBHO group company secretary role and matching BCom/BCom Hons(CTA)/CA(SA) qualifications on official WBHO governance and 2025 report sources.",
+        "Workbook gives Donna (Donnafeg) Msiska name variant and 2021 appointment."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "WBHO (Wilson Bayly Holmes-Ovcon)",
+      "currentTitle": "Group Company Secretary",
+      "affiliations": [
+        {
+          "company": "WBHO Construction (Pty) Ltd - Cape Division",
+          "relationship": "group company secretary; member Cape Division affiliation",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row24"
+        }
+      ],
+      "alternateNames": [
+        "Donna Msiska",
+        "Donnafeg Msiska",
+        "Donna (Donnafeg) Msiska"
+      ],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": true,
+      "designationConflict": false,
+      "academicQualifications": [
+        "BCom (Rat), workbook-reported exact wording",
+        "BCom Hons (CTA), workbook-reported"
+      ],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": "KPMG",
+        "period": "2007",
+        "status": "WORKBOOK_REPORTED"
+      },
+      "careerHistory": [
+        {
+          "employer": "WBHO subsidiary (not named)",
+          "title": "Head of finance portfolio",
+          "notes": "Earlier subsidiary role per workbook; joined WBHO 2013; Company Secretary from 1 April 2021."
+        }
+      ],
+      "personLocation": {
+        "country": null,
+        "province": null,
+        "city": null,
+        "confidence": "NOT_ESTABLISHED_BY_WORKBOOK",
+        "basis": "Financial Leadership Location explicitly labels the group head office. An office address is not independent person geography; retain existing unknown city/province."
+      },
+      "existingPersonLocation": {
+        "country": "South Africa",
+        "province": null,
+        "city": null,
+        "location_confidence": "UNCONFIRMED"
+      },
+      "sourceUrls": [
+        "https://www.wbho.co.za/governance/",
+        "https://www.wbho.co.za/wp-content/uploads/2025/10/WBHO-Integrated-Report-2025.pdf"
+      ],
+      "sourceUrlNeeded": false,
+      "sourceReferences": "CA(SA); BCom (Rat), BCom Hons (CTA); KPMG articles 2007; joined WBHO 2013; appointed Group Company Secretary 1 Apr 2021; served in multiple finance roles including heading finance portfolio at a subsidiary. Source: wbho.co.za/governance.",
+      "confidenceCaveats": [
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    },
+    {
+      "sourceRow": 25,
+      "sourceName": "Paul Visser",
+      "sourceFields": {
+        "#": 24,
+        "Company Name": "Stefanutti Stocks Western Cape",
+        "Membership Type": "Members listed in error / Members operating outside the Western Cape",
+        "Location": "Pretoria (Gauteng)",
+        "Title": "Financial Manager, Stefanutti Stocks (Civils)",
+        "First Name(s)": "Paul",
+        "Surname": "Visser",
+        "CA(SA) Verified?": "Yes — CA(SA) confirmed",
+        "LinkedIn Profile": null,
+        "Source / Notes": "CA(SA); Financial Manager at Stefanutti Stocks (Pretoria-based); listed as CA(SA) on LinkedIn \"People also viewed\" lists across multiple construction/finance profiles."
+      },
+      "primaryId": null,
+      "mergeIds": [],
+      "identityEvidence": [
+        "No established existing research identity found."
+      ],
+      "reviewMatches": [],
+      "doNotCreateUntilIdentityReview": false,
+      "preserveExistingCurrentRole": false,
+      "currentEmployer": "Stefanutti Stocks (Civils)",
+      "currentTitle": "Financial Manager",
+      "affiliations": [
+        {
+          "company": "Stefanutti Stocks Western Cape",
+          "relationship": "group Civils finance; member Western Cape business is not the person employer",
+          "employment": false,
+          "evidenceLevel": "WORKBOOK_REPORTED",
+          "evidenceSource": "Financial Leadership!row25"
+        }
+      ],
+      "alternateNames": [],
+      "designationConfirmed": true,
+      "designationConfirmationBasis": "WORKBOOK_REPORTED; this boolean records the workbook cell, not independent verification",
+      "designationAlreadyConfirmedInResearch": false,
+      "designationConflict": false,
+      "academicQualifications": [],
+      "additionalDesignations": [],
+      "articles": {
+        "employer": null,
+        "period": null,
+        "status": "NOT_ESTABLISHED"
+      },
+      "careerHistory": [],
+      "personLocation": {
+        "country": "South Africa",
+        "province": "Gauteng",
+        "city": "Pretoria",
+        "confidence": "WORKBOOK_REPORTED",
+        "basis": "Financial Leadership Location and Source/Notes explicitly say Pretoria-based."
+      },
+      "existingPersonLocation": null,
+      "sourceUrls": [],
+      "sourceUrlNeeded": true,
+      "sourceReferences": "CA(SA); Financial Manager at Stefanutti Stocks (Pretoria-based); listed as CA(SA) on LinkedIn \"People also viewed\" lists across multiple construction/finance profiles.",
+      "confidenceCaveats": [
+        "Person/CA assertion is based on multiple People also viewed snippets in workbook, without a direct public identity URL; retain RESEARCH_HOLD until primary verification.",
+        "All new workbook claims are attributed to the supplied workbook dated 2026-10-22; cited third-party sites were not independently fetched in this task.",
+        "No articles completion, skills, accounting systems, employee status or person residence inferred from designation/company membership."
+      ]
+    }
+  ],
+  "noteOnlyPeople": [
+    {
+      "name": "Dave Lofthouse",
+      "company": "Enza Construction",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "101"
+    },
+    {
+      "name": "Desmond Lange",
+      "company": "GeoCiv",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "119"
+    },
+    {
+      "name": "Sean Marley",
+      "company": "Johnson Crane Hire",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "165"
+    },
+    {
+      "name": "Abrie du Toit",
+      "company": "Form-Scaff",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "107"
+    },
+    {
+      "name": "Annelien Barretti",
+      "company": "Dekon",
+      "source": "README row26",
+      "claim": "Listed among non-CA finance leads for reference; no exact role/identity URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "79"
+    },
+    {
+      "name": "Phindile Sodawe",
+      "company": "Boshard",
+      "source": "README row26",
+      "claim": "QS mentioned; not a demonstrated finance role or CA(SA).",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": "38"
+    },
+    {
+      "name": "Clinton Froneman",
+      "company": "Abbeydale Group",
+      "source": "README row26; Financial Leadership row13 Source/Notes",
+      "claim": "Group CFO, CIMA rather than CA(SA), workbook-reported; no person identity/source URL supplied.",
+      "disposition": "Preserve source note; no new person record without identity/role evidence. Never add CA(SA) designation.",
+      "designationConfirmed": false,
+      "memberSourceKey": null
+    }
+  ],
+  "archiveSha256": "c02fbead96e3e5a3bb116c32b1e345a47276708cdf50a32ec13dc74a69f8e8a3",
+  "companyLinkResolutions": {
+    "WBHO (Wilson Bayly Holmes-Ovcon)": "org-wbho",
+    "Raubex Group": "org-raubex",
+    "Raubex": "org-raubex",
+    "AfriSam": "org-afrisam",
+    "Concor Construction": "org-concor",
+    "PERI South Africa": "org-mbawc-225"
+  },
+  "organizationMerges": [
+    {
+      "fromId": "org-mbawc-020",
+      "toId": "org-mbawc-021",
+      "evidence": "Workbook member rows 20 and 21 have the same trading name, VAT 4060284728, normalized membership code AZB01, company domain, address and telephone/cellphone. Preserve both directory source rows on one company; contact name disagreement remains a separate review question."
+    }
+  ]
+}

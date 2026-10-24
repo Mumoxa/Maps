@@ -16,6 +16,7 @@
 import type { OrganizationIndex } from './load'
 import { datasetOrganization } from './load'
 import { organizationTaxonomy, sharedTaxonomyBranch } from './taxonomyPlacement'
+import { directorySearchTerms } from './directory'
 import type {
   AssociationDiscovery,
   AssociationFilters,
@@ -855,6 +856,7 @@ export function filterMatches(
         organization.name,
         organization.legalName,
         ...organization.aliases,
+        ...directorySearchTerms(organization),
         ...organization.industries.map((link) => index.industryById.get(link.industryId)?.name ?? ''),
         ...organizationTaxonomy(organization).labels,
         ...organization.capabilities.map((link) => index.capabilityById.get(link.capabilityId)?.name ?? ''),

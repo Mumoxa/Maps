@@ -170,10 +170,13 @@ function toRow(person: ResearchPerson, lineNumber: number, industries: Map<strin
     throw new Error(`line ${lineNumber}: invalid date_last_verified`)
   }
   const primarySource = httpUrl(requiredText(person.primary_source, 'primary_source', lineNumber), 'primary_source', lineNumber)
-  if (!Array.isArray(person.source_urls) || person.source_urls.length === 0) {
+  const suppliedSourceUrls = Array.isArray(person.source_urls)
+    ? person.source_urls.filter((value) => typeof value !== 'string' || value.trim())
+    : []
+  if (suppliedSourceUrls.length === 0) {
     throw new Error(`line ${lineNumber}: missing source_urls`)
   }
-  const sourceUrls = [...new Set(person.source_urls.map((url) =>
+  const sourceUrls = [...new Set(suppliedSourceUrls.map((url) =>
     httpUrl(requiredText(url, 'source_urls item', lineNumber), 'source_urls item', lineNumber),
   ))]
   const linkedin = optionalText(person.linkedin_url, 'linkedin_url', lineNumber)

@@ -12,7 +12,7 @@ import { companyDossier } from '../data/organizations/query'
 import { EVIDENCE_CLASS_LABELS } from '../data/organizations/industryDiscovery'
 import { FootprintCard } from '../components/intelligence/FootprintCard'
 import { OwnershipTree } from '../components/intelligence/OwnershipTree'
-import type { Organization } from '../data/organizations/types'
+import type { Organization, OrganizationDirectoryEntry } from '../data/organizations/types'
 
 /**
  * Company intelligence: the canonical dossier for one organisation.
@@ -251,6 +251,8 @@ export function OrganizationPage() {
                 <AssociationList index={index} organizationId={organization.id} />
               </section>
 
+              <OrganizationDirectoryEntries entries={organization.directoryEntries ?? []} />
+
               {dossier && (
                 <section className="section-block">
                   <h2>Sources and evidence</h2>
@@ -390,6 +392,36 @@ export function OrganizationPage() {
         </div>
       </div>
     </ErrorBoundary>
+  )
+}
+
+/** Source-retained business metadata; personal contact details are kept elsewhere. */
+export function OrganizationDirectoryEntries({ entries }: { entries: OrganizationDirectoryEntry[] }) {
+  if (entries.length === 0) return null
+  return (
+    <section className="section-block">
+      <h2>Directory records</h2>
+      {entries.map((entry) => (
+        <div className="section-block" key={`${entry.directory}:${entry.recordKey}`}>
+          <h3>{entry.directory}</h3>
+          <p className="assoc-source-meta">Record {entry.recordKey} · recorded {entry.checkedOn}</p>
+          <dl className="detail-facts">
+            {Object.entries(entry.fields).filter(([, value]) => value.trim()).map(([label, value]) => (
+              <div className="detail-fact" key={label}>
+                <dt>{label}</dt>
+                <dd>{value}</dd>
+              </div>
+            ))}
+          </dl>
+          {entry.notes && <p className="assoc-section-note">{entry.notes}</p>}
+          {/^https?:\/\//i.test(entry.sourceUrl) && (
+            <a href={entry.sourceUrl} target="_blank" rel="noreferrer">
+              Directory source <ArrowSquareOut size={12} aria-hidden />
+            </a>
+          )}
+        </div>
+      ))}
+    </section>
   )
 }
 
