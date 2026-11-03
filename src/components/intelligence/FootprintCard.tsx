@@ -3,14 +3,15 @@ import {
   ENTITY_SCOPE_LABELS,
   FOOTPRINT_DEFINITIONS,
   FOOTPRINT_LABELS,
+  SCALE_METRIC_LABELS,
 } from '../../data/organizations/footprint'
-import type { FootprintClassification } from '../../data/organizations/types'
+import type { FootprintClassification, OrganizationScale } from '../../data/organizations/types'
 import { CLASSIFICATION_KIND_LABELS, REVIEW_STATUS_LABELS } from '../atlas/reviewLabels'
 
 interface FootprintCardProps {
   classification: FootprintClassification
   /** Sourced scale records, rendered verbatim beneath the classification. */
-  scale: { metric: string; value: string; basis: string; asOf: string; sourceUrl: string; entityScope?: string }[]
+  scale: OrganizationScale[]
 }
 
 /**
@@ -95,12 +96,13 @@ export function FootprintCard({ classification, scale }: FootprintCardProps) {
           </p>
         ) : (
           <ul>
-            {scale.map((entry) => (
-              <li key={`${entry.metric}-${entry.value}`}>
-                <strong>{entry.metric}</strong>: {entry.value}
+            {scale.map((entry, index) => (
+              <li key={`${entry.metric}-${entry.value}-${entry.asOf}-${index}`}>
+                <strong>{SCALE_METRIC_LABELS[entry.metric]}</strong>: {entry.value}
                 <span className="footprint-card-scale-meta">
-                  {entry.basis} · as at {entry.asOf}
-                  {entry.entityScope ? ` · ${ENTITY_SCOPE_LABELS[entry.entityScope as keyof typeof ENTITY_SCOPE_LABELS]}` : ''}
+                  {entry.basis}{entry.confidence ? ` · ${entry.confidence}` : ''} · metric date: {entry.asOf}
+                  {entry.entityScope ? ` · ${ENTITY_SCOPE_LABELS[entry.entityScope]}` : ''}
+                  {entry.checkedOn ? ` · source checked ${entry.checkedOn}` : ''}
                 </span>
                 {entry.sourceUrl && (
                   <a href={entry.sourceUrl} target="_blank" rel="noreferrer">source</a>

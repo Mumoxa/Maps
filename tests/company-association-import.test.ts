@@ -18,6 +18,7 @@ import {
   planSummary,
   readDrop,
   type Dataset,
+  type ImportRow,
 } from '../scripts/organizations-import'
 import {
   TODAY,
@@ -122,6 +123,19 @@ describe('import review stage', () => {
     assert.ok(plan.updatedOrganizations[0].aliases.includes('CCS'))
   })
 
+  it('canonicalises stored and incoming legal-suffix names before matching', () => {
+    const base = dataset({
+      organizations: [organization({
+        id: 'org-isipani',
+        name: 'Isipani Construction (Pty) Ltd',
+        legalName: 'Isipani Construction (Pty) Ltd',
+      })],
+    })
+    const plan = planImport([{ company: 'Isipani Construction (Pty) Ltd' }], 'companies', base)
+    assert.equal(plan.newOrganizations.length, 0)
+    assert.equal(plan.updatedOrganizations[0]?.id, 'org-isipani')
+  })
+
   it('reports an unknown company name rather than inventing a record for it', () => {
     const plan = planImport([{ company: 'Company Nobody Has Heard Of' }], 'capabilities', dataset())
     const summary = planSummary(plan)
@@ -205,6 +219,7 @@ describe('import commit stage', () => {
 
     assert.equal(next.organizations.length, 2, 'the untouched company is still there')
     assert.ok(next.organizations.some((entry) => entry.id === 'org-cch'))
+    assert.deepEqual(next.organizations.map((entry) => entry.id), base.organizations.map((entry) => entry.id), 'an update does not reorder the register')
   })
 
   it('appends associations and intelligence without touching companies', () => {
@@ -253,5 +268,68 @@ describe('import commit stage', () => {
     assert.equal(next.associations.length, 1)
     assert.equal(next.intelligence.length, 1)
     assert.notEqual(next.associations[0].id, next.intelligence[0].id)
+  })
+})
+
+describe('multi-metric scale enrichment', () => {
+  const rows: ImportRow[] = [
+    {
+      company: 'CCS Logistics', scale_metric: 'employees', scale_value: '1,200 employees',
+      scale_basis: 'source-reported', scale_as_of: '2026-06-30', entity_scope: 'consolidated-group',
+      source_url: 'https://example.test/annual-report', source_type: 'corporate-disclosure',
+      evidence: 'FY2026 employees.', checked_on: '2026-11-03', confidence: 'confirmed', reviewer: 'Research reviewer',
+    },
+    {
+      company: 'CCS Logistics', scale_metric: 'revenue', scale_value: 'R1.2 billion',
+      scale_basis: 'source-reported', scale_as_of: '2026-06-30', entity_scope: 'consolidated-group',
+      source_url: 'https://example.test/annual-report', source_type: 'corporate-disclosure',
+      evidence: 'FY2026 revenue.', checked_on: '2026-11-03', confidence: 'confirmed', reviewer: 'Research reviewer',
+    },
+    {
+      company: 'CCS Logistics', scale_metric: 'order-book', scale_value: 'R3.4 billion',
+      scale_basis: 'source-reported', scale_as_of: '2026-06-30', entity_scope: 'consolidated-group',
+      source_url: 'https://example.test/annual-report', source_type: 'corporate-disclosure',
+      evidence: 'FY2026 order book.', checked_on: '2026-11-03', confidence: 'confirmed', reviewer: 'Research reviewer',
+      note_append: 'All three measures describe the consolidated group.',
+    },
+  ]
+
+  it('accumulates repeated rows for one company without last-row-wins data loss', () => {
+    const plan = planImport(rows, 'companies', dataset())
+    assert.equal(plan.updatedOrganizations.length, 1)
+    assert.equal(plan.matched.length, 3)
+    assert.deepEqual(plan.issues, [])
+
+    const updated = plan.updatedOrganizations[0]
+    assert.deepEqual(updated.scale.map((entry) => entry.metric), ['employees', 'revenue', 'order-book'])
+    assert.equal(updated.scale[0].asOf, '2026-06-30')
+    assert.equal(updated.scale[0].entityScope, 'consolidated-group')
+    assert.equal(updated.scale[0].confidence, 'confirmed')
+    assert.match(updated.notes, /All three measures/)
+
+    const source = updated.sources.find((entry) => entry.url === 'https://example.test/annual-report')
+    assert.equal(source?.type, 'corporate-disclosure')
+    assert.equal(source?.reviewer, 'Research reviewer')
+    assert.match(source?.evidence ?? '', /FY2026 employees/)
+    assert.match(source?.evidence ?? '', /FY2026 revenue/)
+    assert.match(source?.evidence ?? '', /FY2026 order book/)
+  })
+
+  it('is idempotent across the complete multi-metric batch', () => {
+    const base = dataset()
+    const once = applyPlan(base, planImport(rows, 'companies', base))
+    const twice = applyPlan(once, planImport(rows, 'companies', once))
+    assert.deepEqual(twice.organizations, once.organizations)
+    assert.equal(twice.organizations.find((entry) => entry.id === 'org-ccs')?.scale.length, 3)
+  })
+
+  it('rejects unsupported metrics and unscoped source-less measures at review', () => {
+    const plan = planImport([
+      { company: 'CCS Logistics', scale_metric: 'market-share', scale_value: '40%', source_url: 'https://example.test' },
+      { company: 'CCS Logistics', scale_metric: 'employees', scale_value: '100' },
+    ], 'companies', dataset())
+    assert.equal(plan.issues.length, 2)
+    assert.match(plan.issues[0].reason, /unsupported scale metric/)
+    assert.match(plan.issues[1].reason, /requires a source URL/)
   })
 })

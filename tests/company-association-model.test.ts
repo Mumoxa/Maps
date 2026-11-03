@@ -21,6 +21,7 @@ import { discoverAssociations, filterMatches } from '../src/data/organizations/d
 import { compareOrganizations, coverageByIndustry, UNEVIDENCED_VALUES, universeStats } from '../src/data/organizations/analysis'
 import { emptyFilters, evidenceState } from '../src/data/organizations/query'
 import { roleContextById } from '../src/data/organizations/roleContexts'
+import { ORGANIZATION_SCALE_METRICS } from '../src/data/organizations/types'
 import type { CompanyAssociation, Organization } from '../src/data/organizations/types'
 import { TODAY, organization as fixtureOrganization } from './helpers/organizations'
 
@@ -93,17 +94,19 @@ describe('canonical company model', () => {
   it('never sources a scale figure or a location without saying where it came from', () => {
     for (const organization of organizations) {
       for (const scale of organization.scale) {
-        assert.ok(['employees', 'revenue', 'sites', 'pallet-positions', 'capacity'].includes(scale.metric))
+        assert.ok(ORGANIZATION_SCALE_METRICS.includes(scale.metric), `${organization.name} uses unsupported metric ${scale.metric}`)
         assert.ok(['source-reported', 'third-party-estimate'].includes(scale.basis))
         assert.ok(scale.sourceUrl.length > 0, `${organization.name} has an unsourced scale record`)
       }
     }
   })
 
-  it('keeps headcount and revenue in separate, typed records', () => {
+  it('keeps dated and scoped measures distinct without exact duplicate records', () => {
     for (const organization of organizations) {
-      const metrics = organization.scale.map((entry) => entry.metric)
-      assert.equal(new Set(metrics).size, metrics.length, `${organization.name} stores two records for one metric`)
+      const records = organization.scale.map((entry) => JSON.stringify([
+        entry.metric, entry.value, entry.asOf, entry.entityScope ?? '', entry.sourceUrl,
+      ]))
+      assert.equal(new Set(records).size, records.length, `${organization.name} stores an exact duplicate scale record`)
     }
   })
 })

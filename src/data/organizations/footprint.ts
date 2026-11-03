@@ -59,6 +59,21 @@ export const FOOTPRINT_SHORT_LABELS: Record<FootprintBand, string> = {
   'not-established': 'Not established',
 }
 
+/** Human labels keep operating measures distinct in every dossier surface. */
+export const SCALE_METRIC_LABELS: Record<OrganizationScale['metric'], string> = {
+  employees: 'Employees',
+  'total-workforce': 'Total workforce (including indirect employees)',
+  revenue: 'Revenue / contract revenue',
+  'order-book': 'Current order book',
+  'work-in-hand': 'Work in hand',
+  'completed-projects': 'Completed projects',
+  'completed-contract-value': 'Completed contract value (cumulative)',
+  'homes-delivered': 'Homes delivered (cumulative)',
+  sites: 'Operating sites / offices',
+  'pallet-positions': 'Pallet positions',
+  capacity: 'Capacity',
+}
+
 /**
  * What each band means in words. Shown wherever a band is rendered, because a
  * band that cannot explain itself is a ranking pretending to be a fact.
@@ -99,6 +114,30 @@ function parseNumbers(value: string): number[] {
 }
 
 /**
+ * Parse Rand-denominated measures with their actual order of magnitude.
+ * Revenue is deliberately restricted to R/ZAR: an A$ or US$ figure must not be
+ * silently treated as Rand and compared against the thresholds below.
+ */
+function parseRandNumbers(value: string): number[] {
+  const expression = /(?:\bZAR\s*|\bR\s*)(\d[\d,]*(?:\.\d+)?)\s*(billion|bn|million|m|thousand|k)?/gi
+  const multipliers: Record<string, number> = {
+    billion: 1_000_000_000,
+    bn: 1_000_000_000,
+    million: 1_000_000,
+    m: 1_000_000,
+    thousand: 1_000,
+    k: 1_000,
+  }
+  const numbers: number[] = []
+  for (const match of value.matchAll(expression)) {
+    const amount = Number(match[1].replace(/,/g, ''))
+    const multiplier = multipliers[(match[2] ?? '').toLowerCase()] ?? 1
+    if (Number.isFinite(amount)) numbers.push(amount * multiplier)
+  }
+  return numbers
+}
+
+/**
  * The comparable figure behind one scale record, or null.
  *
  * Ranges resolve to the LOWER bound: a source that says "51-200 employees" is
@@ -113,7 +152,7 @@ function comparableNumber(metric: OrganizationScale['metric'], value: string): n
     // is not comparable across sectors, so it cannot assign a band.
     if (metric === 'sites') return null
   }
-  const numbers = parseNumbers(value)
+  const numbers = metric === 'revenue' ? parseRandNumbers(value) : parseNumbers(value)
   if (numbers.length === 0) return null
   if (metric === 'sites' && !SITE_NOUNS.test(haystack)) return null
   if (metric === 'sites') return Math.max(...numbers)
@@ -200,8 +239,14 @@ function bandFromSites(sites: number, scope: ScaleEntityScope): { band: Footprin
   return { band: 'smaller-emerging', basis: `${sites} evidenced operating site${sites === 1 ? '' : 's'}${suffix}.` }
 }
 
-function bandFromRevenue(turnover: number): { band: FootprintBand; basis: string } {
+function bandFromRevenue(turnover: number, upperBoundOnly = false): { band: FootprintBand; basis: string } {
   const formatted = `R${turnover.toLocaleString()}`
+  // An upper-only bound is not a lower-bound turnover. It is useful only when
+  // every value below it remains in the smallest band; broader upper bounds are
+  // rejected before reaching this function.
+  if (upperBoundOnly) {
+    return { band: 'smaller-emerging', basis: `Sourced turnover below ${formatted} (upper-bound estimate).` }
+  }
   if (turnover >= 1_000_000_000) return { band: 'major-national', basis: `Sourced turnover of ${formatted}.` }
   if (turnover >= 100_000_000) return { band: 'large-multi-site', basis: `Sourced turnover of ${formatted}.` }
   if (turnover >= 10_000_000) return { band: 'regional-specialist', basis: `Sourced turnover of ${formatted}.` }
@@ -210,6 +255,60 @@ function bandFromRevenue(turnover: number): { band: FootprintBand; basis: string
 
 /** Sector-specific measures that cannot be compared across industries. */
 const SECTOR_SPECIFIC_METRICS = new Set(['pallet-positions', 'capacity'])
+/** Useful operating intelligence, but not a proxy for headcount or annual revenue. */
+const CONTEXT_ONLY_METRICS = new Set([
+  'total-workforce',
+  'order-book',
+  'work-in-hand',
+  'completed-projects',
+  'completed-contract-value',
+  'homes-delivered',
+])
+
+interface ComparableCandidate {
+  entry: OrganizationScale
+  index: number
+  value: number
+  scope: ScaleEntityScope
+  upperBoundOnly: boolean
+}
+
+function isRevenueUpperBoundOnly(metric: OrganizationScale['metric'], value: string): boolean {
+  if (metric !== 'revenue') return false
+  // Deliberately recognise only a strict upper bound at the start of the
+  // measure. Lower-bounded ranges such as "R1m but less than R10m" keep their
+  // stated R1m floor and are handled by the ordinary range parser.
+  return /^(?:less\s+than|below|under|<)\s*(?:zar|r)\s*\d/i.test(value.trim())
+}
+
+function metricDateKey(asOf: string): string {
+  // ISO dates sort lexicographically. Undated measures sort before dated ones,
+  // even when the text also records when the undated source was checked.
+  if (/not stated|undated/i.test(asOf)) return ''
+  return asOf.match(/\d{4}(?:-\d{2}(?:-\d{2})?)?/)?.[0] ?? ''
+}
+
+/**
+ * Prefer a primary measure over an estimate, then the latest metric date, then
+ * the higher lower-bound value. This prevents an old directory estimate from
+ * overriding a newer audited headcount merely because its number is larger.
+ */
+function preferCandidate(current: ComparableCandidate | null, incoming: ComparableCandidate): ComparableCandidate {
+  if (!current) return incoming
+  const currentPrimary = current.entry.basis === 'source-reported' ? 1 : 0
+  const incomingPrimary = incoming.entry.basis === 'source-reported' ? 1 : 0
+  if (incomingPrimary !== currentPrimary) return incomingPrimary > currentPrimary ? incoming : current
+  const dateOrder = metricDateKey(incoming.entry.asOf).localeCompare(metricDateKey(current.entry.asOf))
+  if (dateOrder !== 0) return dateOrder > 0 ? incoming : current
+  return incoming.value > current.value ? incoming : current
+}
+
+function evidenceFor(organization: Organization, candidates: ComparableCandidate[]) {
+  return {
+    metricIds: candidates.map((candidate) => scaleMetricId(organization.id, candidate.index)),
+    sourceUrls: [...new Set(candidates.map((candidate) => candidate.entry.sourceUrl).filter(Boolean))],
+  }
+}
 
 function deriveBand(organization: Organization): BandResult {
   const scale = organization.scale
@@ -221,111 +320,107 @@ function deriveBand(organization: Organization): BandResult {
     }
   }
 
-  let employees: number | null = null
-  let sites: number | null = null
-  let revenue: number | null = null
-  const metricIds: string[] = []
-  const sourceUrls: string[] = []
+  let employees: ComparableCandidate | null = null
+  let sites: ComparableCandidate | null = null
+  let revenue: ComparableCandidate | null = null
   const sectorSpecific: string[] = []
-  let scope: ScaleEntityScope = 'not-stated'
-  let scopeFrom: 'employees' | 'sites' | 'revenue' | null = null
+  const contextual: string[] = []
 
-  scale.forEach((entry, index) => {
-    // Sector-specific capacity is recorded for its own sake and never banded:
-    // 114,000 pallet positions and 980 MW say nothing comparable about reach
-    // next to a headcount or a store count.
+  for (const [index, entry] of scale.entries()) {
+    // Capacity and delivered-output measures are recorded for their own sake.
+    // They are never converted into an invented headcount or annual revenue.
     if (SECTOR_SPECIFIC_METRICS.has(entry.metric)) {
       sectorSpecific.push(`${entry.metric}: ${entry.value}`)
-      return
+      continue
+    }
+    if (CONTEXT_ONLY_METRICS.has(entry.metric)) {
+      contextual.push(`${entry.metric}: ${entry.value}`)
+      continue
+    }
+    if (entry.metric === 'sites' && CAPACITY_UNITS.test(entry.value.toLowerCase())) {
+      sectorSpecific.push(`${entry.metric}: ${entry.value}`)
+      continue
     }
     const value = comparableNumber(entry.metric, entry.value)
-    if (value === null) {
-      sectorSpecific.push(`${entry.metric}: ${entry.value}`)
-      return
+    if (value === null) continue
+    const upperBoundOnly = isRevenueUpperBoundOnly(entry.metric, entry.value)
+    // "Below R10m" guarantees the smallest band; "below R25m" does not,
+    // because the actual figure could fall on either side of the R10m threshold.
+    if (upperBoundOnly && value > 10_000_000) continue
+    const candidate: ComparableCandidate = {
+      entry,
+      index,
+      value,
+      scope: entityScopeOf(entry.value, entry.entityScope),
+      upperBoundOnly,
     }
-    const entryScope = entityScopeOf(entry.value, entry.entityScope)
-    if (entry.metric === 'employees' && value !== null && (employees === null || value > employees)) {
-      employees = value
-      scope = entryScope
-      scopeFrom = 'employees'
-      metricIds.push(scaleMetricId(organization.id, index))
-      if (entry.sourceUrl) sourceUrls.push(entry.sourceUrl)
-    }
-    if (entry.metric === 'sites' && value !== null && (sites === null || value > sites)) {
-      sites = value
-      if (scopeFrom === null || scopeFrom === 'sites') {
-        scope = entryScope
-        scopeFrom = 'sites'
-      }
-      metricIds.push(scaleMetricId(organization.id, index))
-      if (entry.sourceUrl) sourceUrls.push(entry.sourceUrl)
-    }
-    if (entry.metric === 'revenue' && value !== null && (revenue === null || value > revenue)) {
-      revenue = value
-      if (scopeFrom === null) {
-        scope = entryScope
-        scopeFrom = 'revenue'
-      }
-      metricIds.push(scaleMetricId(organization.id, index))
-      if (entry.sourceUrl) sourceUrls.push(entry.sourceUrl)
-    }
-  })
+    if (entry.metric === 'employees') employees = preferCandidate(employees, candidate)
+    if (entry.metric === 'sites') sites = preferCandidate(sites, candidate)
+    if (entry.metric === 'revenue') revenue = preferCandidate(revenue, candidate)
+  }
 
-  if (employees !== null) {
-    const combination = sites !== null
-    const derived = bandFromEmployees(employees, sites, scope)
+  if (employees) {
+    // Only combine figures that describe the same entity perimeter. A divisional
+    // site count must not inflate a consolidated-group headcount, or vice versa.
+    const compatibleSites = sites && sites.scope === employees.scope ? sites : null
+    const derived = bandFromEmployees(employees.value, compatibleSites?.value ?? null, employees.scope)
+    const evidence = evidenceFor(organization, [employees, ...(compatibleSites ? [compatibleSites] : [])])
+    const measureConfidence = employees.entry.confidence
+      ?? (employees.entry.basis === 'third-party-estimate' || employees.scope === 'not-stated' ? 'probable' : 'confirmed')
     return {
       band: derived.band,
-      kind: combination ? 'derived-metric-combination' : 'sourced-metric',
+      kind: compatibleSites ? 'derived-metric-combination' : 'sourced-metric',
       basis: derived.basis,
-      metricIds,
-      sourceUrls,
-      confidence: combination ? 'probable' : 'confirmed',
-      entityScope: scope,
-      note: scope === 'not-stated'
+      ...evidence,
+      confidence: compatibleSites ? 'probable' : measureConfidence,
+      entityScope: employees.scope,
+      note: employees.scope === 'not-stated'
         ? 'The source does not state whether this figure covers the entity, a division or the group.'
         : '',
     }
   }
 
-  if (sites !== null) {
-    const derived = bandFromSites(sites, scope)
+  if (sites) {
+    const derived = bandFromSites(sites.value, sites.scope)
     return {
       band: derived.band,
       kind: 'sourced-metric',
       basis: derived.basis,
-      metricIds,
-      sourceUrls,
-      confidence: 'probable',
-      entityScope: scope,
+      ...evidenceFor(organization, [sites]),
+      confidence: sites.entry.confidence ?? 'probable',
+      entityScope: sites.scope,
       note: 'Site counts indicate reach, not headcount or revenue. Reviewed before being relied on.',
     }
   }
 
-  if (revenue !== null) {
-    const derived = bandFromRevenue(revenue)
+  if (revenue) {
+    const derived = bandFromRevenue(revenue.value, revenue.upperBoundOnly)
     return {
       band: derived.band,
       kind: 'sourced-metric',
       basis: derived.basis,
-      metricIds,
-      sourceUrls,
-      confidence: 'probable',
-      entityScope: scope,
+      ...evidenceFor(organization, [revenue]),
+      confidence: revenue.entry.confidence ?? 'probable',
+      entityScope: revenue.scope,
       note: 'Turnover is one proxy for reach and is shown separately from headcount.',
     }
   }
 
+  const basis = sectorSpecific.length > 0 && contextual.length === 0
+    ? `Only sector-specific measures are sourced (${sectorSpecific.join('; ')}).`
+    : contextual.length > 0 && sectorSpecific.length === 0
+      ? `Only contextual operating measures are sourced (${contextual.join('; ')}).`
+      : sectorSpecific.length > 0 || contextual.length > 0
+        ? `Only non-comparable operating measures are sourced (${[...sectorSpecific, ...contextual].join('; ')}).`
+        : 'The recorded scale measures carry no comparable figure.'
   return {
     ...NOT_ESTABLISHED,
-    metricIds,
-    sourceUrls,
-    basis: sectorSpecific.length > 0
-      ? `Only sector-specific measures are sourced (${sectorSpecific.join('; ')}).`
-      : 'The recorded scale measures carry no comparable figure.',
-    note: sectorSpecific.length > 0
+    basis,
+    note: sectorSpecific.length > 0 && contextual.length === 0
       ? 'Sector-specific capacity cannot be compared across industries, so it does not assign a footprint band.'
-      : 'Record a sourced headcount, turnover or site count to classify this company.',
+      : contextual.length > 0
+        ? 'Order books, total workforce and delivered output remain visible as operating intelligence; they are not converted into headcount, annual revenue or a footprint band.'
+        : 'Record a sourced headcount, Rand-denominated turnover or site count to classify this company.',
   }
 }
 
