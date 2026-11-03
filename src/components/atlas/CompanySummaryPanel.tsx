@@ -4,6 +4,7 @@ import type { OrganizationIndex } from '../../data/organizations/load'
 import {
   ENTITY_SCOPE_LABELS,
   FOOTPRINT_SHORT_LABELS,
+  SCALE_METRIC_LABELS,
 } from '../../data/organizations/footprint'
 import type { CompanyView } from '../../data/organizations/universeView'
 import { REVIEW_STATUS_LABELS } from './reviewLabels'
@@ -96,13 +97,28 @@ export function CompanySummaryPanel({ index, view, linkSuffix = '', onClose }: C
         <section>
           <h4>Sourced scale</h4>
           <ul className="atlas-inspector-list">
-            {organization.scale.map((entry) => (
-              <li key={`${entry.metric}-${entry.value}`}>
-                {entry.metric}: {entry.value}
-                <span className="atlas-inspector-meta"> ({entry.basis}, {entry.asOf})</span>
+            {organization.scale.map((entry, index) => (
+              <li key={`${entry.metric}-${entry.value}-${entry.asOf}-${index}`}>
+                <strong>{SCALE_METRIC_LABELS[entry.metric]}:</strong> {entry.value}
+                <span className="atlas-inspector-meta">
+                  {' '}({entry.basis}{entry.confidence ? `, ${entry.confidence}` : ''}; metric date {entry.asOf}
+                  {entry.entityScope ? `; ${ENTITY_SCOPE_LABELS[entry.entityScope]}` : ''}; checked {entry.checkedOn})
+                </span>
+                {entry.sourceUrl && (
+                  <a href={entry.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Source for ${SCALE_METRIC_LABELS[entry.metric]}`}>
+                    {' '}<ArrowSquareOut size={11} aria-hidden />
+                  </a>
+                )}
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {organization?.notes && (
+        <section>
+          <h4>Record and research notes</h4>
+          <p className="atlas-inspector-note">{organization.notes}</p>
         </section>
       )}
 

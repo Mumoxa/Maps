@@ -5,6 +5,7 @@
 // the real router. The mounting mechanics are the same, so a page that renders
 // here renders in the QA harness.
 
+import { after } from 'node:test'
 import { JSDOM } from 'jsdom'
 
 const GLOBAL_KEYS = [
@@ -15,6 +16,22 @@ const GLOBAL_KEYS = [
 ]
 
 let domReady = false
+// Node runs each test file in its own process. Share the module graph and
+// dependency optimizer instead of creating another Vite server for every page.
+let viteServer: Promise<import('vite').ViteDevServer> | undefined
+
+async function getViteServer(): Promise<import('vite').ViteDevServer> {
+  if (!viteServer) {
+    const { createServer } = await import('vite')
+    viteServer = createServer({ server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' })
+  }
+  return viteServer
+}
+
+after(async () => {
+  const server = await viteServer?.catch(() => undefined)
+  await server?.close()
+})
 
 function installDom(): void {
   if (domReady) return
@@ -73,37 +90,45 @@ export async function mountPage(
   const React = (await import('react')).default
   const { createRoot } = await import('react-dom/client')
   const { MemoryRouter, Route, Routes } = await import('react-router-dom')
-  const { createServer } = await import('vite')
 
-  const server = await createServer({ server: { middlewareMode: true }, appType: 'custom', logLevel: 'error' })
-  const loaded = await server.ssrLoadModule(modulePath)
-  const Component = loaded[exportName] as React.ComponentType
+  const server = await getViteServer()
+  let root: ReturnType<typeof createRoot> | undefined
+  let host: HTMLElement | undefined
 
-  const element = options.pattern
-    ? React.createElement(Routes, null,
-      React.createElement(Route, { path: options.pattern, element: React.createElement(Component) }))
-    : React.createElement(Component)
+  try {
+    const loaded = await server.ssrLoadModule(modulePath)
+    const Component = loaded[exportName] as React.ComponentType
 
-  let tree: React.ReactElement = React.createElement(MemoryRouter, { initialEntries: [route] }, element)
-  if (options.withData) {
-    // Loaded through the same Vite server as the page: the data loader uses
-    // import.meta.glob, which only exists inside Vite's module graph.
-    const { DataProvider } = await server.ssrLoadModule('/src/context/DataContext.tsx')
-    tree = React.createElement(DataProvider, null, tree)
-  }
+    const element = options.pattern
+      ? React.createElement(Routes, null,
+        React.createElement(Route, { path: options.pattern, element: React.createElement(Component) }))
+      : React.createElement(Component)
 
-  const host = document.createElement('div')
-  document.body.appendChild(host)
-  const root = createRoot(host)
-  root.render(tree)
-  await new Promise((done) => setTimeout(done, 600))
-  await server.close()
+    let tree: React.ReactElement = React.createElement(MemoryRouter, { initialEntries: [route] }, element)
+    if (options.withData) {
+      // Loaded through the same Vite server as the page: the data loader uses
+      // import.meta.glob, which only exists inside Vite's module graph.
+      const { DataProvider } = await server.ssrLoadModule('/src/context/DataContext.tsx')
+      tree = React.createElement(DataProvider, null, tree)
+    }
 
-  const container = host
-  return {
-    container,
-    lowerText: (container.textContent ?? '').toLowerCase(),
-    html: container.innerHTML,
+    host = document.createElement('div')
+    document.body.appendChild(host)
+    root = createRoot(host)
+    root.render(tree)
+    await new Promise((done) => setTimeout(done, 600))
+
+    // Assertions only need the rendered result. Returning a snapshot lets the
+    // live tree be released between route mounts.
+    const container = host.cloneNode(true) as HTMLElement
+    return {
+      container,
+      lowerText: (container.textContent ?? '').toLowerCase(),
+      html: container.innerHTML,
+    }
+  } finally {
+    root?.unmount()
+    host?.remove()
   }
 }
 

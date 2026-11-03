@@ -1,0 +1,23 @@
+{
+  "batch": "batch-05-construction-footprint-100-2026-11-03.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-11-03T12:14:10.535Z",
+  "type": "companies",
+  "read": 94,
+  "newOrganizations": 0,
+  "updatedOrganizations": 94,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 94,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

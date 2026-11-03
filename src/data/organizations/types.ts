@@ -132,11 +132,41 @@ export interface OrganizationLocation {
  * capacity. A single generic metric would force an MW figure into a headcount
  * field and misstate what the source actually said.
  */
+export type OrganizationScaleMetric =
+  | 'employees'
+  | 'total-workforce'
+  | 'revenue'
+  | 'order-book'
+  | 'work-in-hand'
+  | 'completed-projects'
+  | 'completed-contract-value'
+  | 'homes-delivered'
+  | 'sites'
+  | 'pallet-positions'
+  | 'capacity'
+
+export const ORGANIZATION_SCALE_METRICS: OrganizationScaleMetric[] = [
+  'employees',
+  'total-workforce',
+  'revenue',
+  'order-book',
+  'work-in-hand',
+  'completed-projects',
+  'completed-contract-value',
+  'homes-delivered',
+  'sites',
+  'pallet-positions',
+  'capacity',
+]
+
 export interface OrganizationScale {
-  metric: 'employees' | 'revenue' | 'sites' | 'pallet-positions' | 'capacity'
+  metric: OrganizationScaleMetric
   /** Raw value exactly as the source stated it, including ranges. */
   value: string
   basis: 'source-reported' | 'third-party-estimate'
+  /** Confidence in this measure, distinct from confidence in the derived band. */
+  confidence?: Confidence
+  /** Metric date/period, or an explicit statement that the source did not date it. */
   asOf: string
   sourceUrl: string
   checkedOn: string

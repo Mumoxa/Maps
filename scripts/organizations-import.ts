@@ -10,6 +10,7 @@
 
 import { parse } from 'csv-parse/sync'
 import { canonicalCompanyName } from '../src/data/companyNormalization'
+import { ORGANIZATION_SCALE_METRICS } from '../src/data/organizations/types'
 import type {
   Capability,
   CompanyAssociation,
@@ -18,8 +19,10 @@ import type {
   OrganizationCapabilityLink,
   OrganizationIndustryLink,
   OrganizationRelationship,
+  OrganizationScale,
   OrganizationTaxonomyPlacement,
   RecruiterIntelligence,
+  ScaleEntityScope,
 } from '../src/data/organizations/types'
 import { getTaxonomyNode } from '../src/data/taxonomy/load'
 
@@ -80,12 +83,19 @@ const FIELD_ALIASES: Record<string, string[]> = {
   province: ['province', 'region'],
   city: ['city', 'town'],
   employees: ['employees', 'employee_count', 'headcount', 'staff'],
+  scaleMetric: ['scale_metric', 'metric'],
+  scaleValue: ['scale_value', 'metric_value'],
+  scaleBasis: ['scale_basis', 'metric_basis'],
+  scaleAsOf: ['scale_as_of', 'as_of', 'metric_date'],
+  entityScope: ['entity_scope', 'scale_entity_scope'],
   parent: ['parent', 'parent_company', 'parent_group'],
   sourceUrl: ['source_url', 'source', 'sourceurl', 'evidence_url'],
+  sourceType: ['source_type', 'evidence_source_type'],
   evidence: ['evidence', 'evidence_summary', 'supports', 'note_evidence'],
   checkedOn: ['checked_on', 'date_verified', 'verified_on', 'observation_date'],
   confidence: ['confidence', 'confidence_level'],
   notes: ['notes', 'note', 'comments'],
+  noteAppend: ['note_append', 'append_note', 'research_note_append'],
   capability: ['capability', 'process', 'operational_capability', 'capability_id'],
   status: ['status', 'capability_status'],
   businessUnit: ['business_unit', 'unit', 'division'],
@@ -186,9 +196,9 @@ function resolveOrganization(
   const key = canonical.toLowerCase()
   const found = dataset.organizations.find((organization) => (
     organization.id === name
-    || organization.name.toLowerCase() === key
-    || (organization.legalName && organization.legalName.toLowerCase() === key)
-    || organization.aliases.some((alias) => alias.toLowerCase() === key)
+    || canonicalCompanyName(organization.name).toLowerCase() === key
+    || (organization.legalName && canonicalCompanyName(organization.legalName).toLowerCase() === key)
+    || organization.aliases.some((alias) => canonicalCompanyName(alias).toLowerCase() === key)
   ))
   return { organization: found ?? null, canonicalName: canonical }
 }
@@ -214,6 +224,26 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
     issues: [],
   }
 
+  // Multiple rows may enrich different measures for one company. Always merge
+  // onto the latest planned version and replace that company's planned update,
+  // rather than letting the last row overwrite all earlier rows in the batch.
+  const workingOrganizations = new Map(dataset.organizations.map((entry) => [entry.id, entry]))
+  const resolveCurrent = (name: string) => {
+    const resolved = resolveOrganization(dataset, name)
+    return {
+      canonicalName: resolved.canonicalName,
+      organization: resolved.organization
+        ? workingOrganizations.get(resolved.organization.id) ?? resolved.organization
+        : null,
+    }
+  }
+  const upsertUpdatedOrganization = (updated: Organization) => {
+    workingOrganizations.set(updated.id, updated)
+    const index = plan.updatedOrganizations.findIndex((entry) => entry.id === updated.id)
+    if (index >= 0) plan.updatedOrganizations[index] = updated
+    else plan.updatedOrganizations.push(updated)
+  }
+
   const requireField = (row: ImportRow, rowNumber: number, field: string): string => {
     const value = row[field] ?? ''
     if (!value) plan.missingRequired.push({ rowNumber, field, reason: 'required value missing' })
@@ -228,7 +258,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
     if (type === 'companies') {
       const name = requireField(row, rowNumber, 'name')
       if (!name) return
-      const { organization, canonicalName } = resolveOrganization(dataset, name)
+      const { organization, canonicalName } = resolveCurrent(name)
       const sourceUrl = row.sourceUrl ?? ''
       const taxonomy = buildTaxonomyPlacement(row, plan, rowNumber, checkedOn, sourceUrl)
       const industries: OrganizationIndustryLink[] = []
@@ -260,13 +290,13 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           aliases: [...new Set([...organization.aliases, ...splitList(row.aliases)])],
           industries: mergeIndustryLinks(organization.industries, industries),
           locations: mergeLocations(organization, row, sourceUrl, checkedOn),
-          scale: mergeScale(organization, row, sourceUrl, checkedOn),
-          notes: row.notes || organization.notes,
+          scale: mergeScale(organization, row, sourceUrl, checkedOn, plan, rowNumber),
+          notes: mergeNotes(organization.notes, row.notes, row.noteAppend),
           lastVerified: checkedOn > organization.lastVerified ? checkedOn : organization.lastVerified,
-          sources: mergeSource(organization, sourceUrl, row.evidence, checkedOn),
+          sources: mergeSource(organization, sourceUrl, row.evidence, checkedOn, row),
         }
         if (row.parent) {
-          const parent = resolveOrganization(dataset, row.parent).organization
+          const parent = resolveCurrent(row.parent).organization
           if (parent) {
             if (organization.parentId && organization.parentId !== parent.id) {
               plan.conflicts.push(`row ${rowNumber}: parent for ${canonicalName} changes from ${organization.parentId} to ${parent.id}`)
@@ -277,7 +307,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           }
         }
         plan.matched.push({ rowNumber, organizationId: organization.id, canonicalName })
-        plan.updatedOrganizations.push(updated)
+        upsertUpdatedOrganization(updated)
       } else {
         const id = `org-${slugify(canonicalName)}`
         if (dataset.organizations.some((entry) => entry.id === id)
@@ -285,7 +315,8 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           plan.duplicates.push(`row ${rowNumber}: "${canonicalName}" already appears in this drop or dataset`)
           return
         }
-        plan.newOrganizations.push({
+        const scaleEntry = buildScaleEntry(row, sourceUrl, checkedOn, plan, rowNumber)
+        const created: Organization = {
           id,
           name: canonicalName,
           legalName: row.legalName ?? '',
@@ -296,27 +327,22 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           taxonomy,
           capabilities: [],
           locations: row.province ? [{ city: row.city ?? '', province: row.province, sourceUrl, checkedOn }] : [],
-          scale: row.employees ? [{
-            metric: 'employees',
-            value: row.employees,
-            basis: 'source-reported',
-            asOf: checkedOn,
-            sourceUrl,
-            checkedOn,
-          }] : [],
+          scale: scaleEntry ? [scaleEntry] : [],
           parentId: null,
           sources: sourceUrl ? [{
             url: sourceUrl,
-            type: 'recruiter-supplied',
+            type: sourceTypeFromRow(row),
             evidence: row.evidence ?? 'Supplied through a structured import.',
             checkedOn,
             reviewer: row.reviewer ?? '',
-            confidence: (row.confidence as Organization['sources'][number]['confidence']) || 'probable',
+            confidence: confidenceFromRow(row),
           }] : [],
           datasets: ['import'],
           lastVerified: checkedOn,
-          notes: row.notes ?? '',
-        })
+          notes: mergeNotes('', row.notes, row.noteAppend),
+        }
+        plan.newOrganizations.push(created)
+        workingOrganizations.set(created.id, created)
         if (row.parent) plan.unmatchedNames.push(row.parent)
       }
       return
@@ -359,7 +385,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
     // Every remaining table hangs off one focal company.
     const name = requireField(row, rowNumber, 'name')
     if (!name) return
-    const { organization, canonicalName } = resolveOrganization(dataset, name)
+    const { organization, canonicalName } = resolveCurrent(name)
     if (!organization) {
       plan.unmatchedNames.push(name)
       return
@@ -399,9 +425,9 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           ? organization.capabilities.map((entry) => (entry.capabilityId === capability.id ? link : entry))
           : [...organization.capabilities, link],
         lastVerified: checkedOn > organization.lastVerified ? checkedOn : organization.lastVerified,
-        sources: mergeSource(organization, row.sourceUrl ?? '', row.evidence, checkedOn),
+        sources: mergeSource(organization, row.sourceUrl ?? '', row.evidence, checkedOn, row),
       }
-      plan.updatedOrganizations.push(updated)
+      upsertUpdatedOrganization(updated)
       return
     }
 
@@ -429,15 +455,15 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
         ...organization,
         industries: mergeIndustryLinks(organization.industries, [link]),
         lastVerified: checkedOn > organization.lastVerified ? checkedOn : organization.lastVerified,
-        sources: mergeSource(organization, row.sourceUrl ?? '', row.evidence, checkedOn),
+        sources: mergeSource(organization, row.sourceUrl ?? '', row.evidence, checkedOn, row),
       }
-      plan.updatedOrganizations.push(updated)
+      upsertUpdatedOrganization(updated)
       return
     }
 
     if (type === 'associations') {
       const focal = organization
-      const associated = resolveOrganization(dataset, row.to ?? row.associated ?? '').organization
+      const associated = resolveCurrent(row.to ?? row.associated ?? '').organization
       if (!associated) {
         plan.unmatchedNames.push(row.to ?? row.associated ?? '')
         return
@@ -551,42 +577,166 @@ function mergeLocations(organization: Organization, row: ImportRow, sourceUrl: s
   return [...organization.locations, { city: row.city ?? '', province: row.province, sourceUrl, checkedOn }]
 }
 
-function mergeScale(organization: Organization, row: ImportRow, sourceUrl: string, checkedOn: string) {
-  if (!row.employees) return organization.scale
-  const exists = organization.scale.some((entry) => entry.metric === 'employees' && entry.value === row.employees)
-  if (exists) return organization.scale
-  return [...organization.scale, {
-    metric: 'employees' as const,
-    value: row.employees,
-    basis: 'source-reported' as const,
-    asOf: checkedOn,
-    sourceUrl,
-    checkedOn,
-  }]
+const SOURCE_TYPES = new Set([
+  'company-website', 'corporate-disclosure', 'business-directory', 'industry-directory',
+  'industry-report', 'news', 'recruiter-supplied', 'system-inferred', 'internal-dataset',
+])
+const CONFIDENCES = new Set(['confirmed', 'probable', 'hypothesis', 'unknown'])
+const SCALE_BASES = new Set(['source-reported', 'third-party-estimate'])
+const ENTITY_SCOPES = new Set([
+  'consolidated-group', 'south-african-operation', 'operating-division', 'standalone-entity', 'not-stated',
+])
+
+function sourceTypeFromRow(row: ImportRow): Organization['sources'][number]['type'] {
+  return SOURCE_TYPES.has(row.sourceType ?? '')
+    ? row.sourceType as Organization['sources'][number]['type']
+    : 'recruiter-supplied'
 }
 
-function mergeSource(organization: Organization, url: string, evidence: string | undefined, checkedOn: string) {
-  if (!url) return organization.sources
-  if (organization.sources.some((source) => source.url === url)) return organization.sources
-  return [...organization.sources, {
-    url,
-    type: 'recruiter-supplied' as const,
-    evidence: evidence ?? 'Added through a structured import.',
+function confidenceFromRow(row: ImportRow): NonNullable<OrganizationScale['confidence']> {
+  return CONFIDENCES.has(row.confidence ?? '')
+    ? row.confidence as NonNullable<OrganizationScale['confidence']>
+    : 'probable'
+}
+
+function buildScaleEntry(
+  row: ImportRow,
+  sourceUrl: string,
+  checkedOn: string,
+  plan: ImportPlan,
+  rowNumber: number,
+): OrganizationScale | null {
+  const value = row.scaleValue || row.employees || ''
+  const metric = row.scaleMetric || (row.employees ? 'employees' : '')
+  if (!value && !metric) return null
+  if (!value || !metric) {
+    plan.issues.push({ rowNumber, field: 'scale_value', reason: 'scale_metric and scale_value must be supplied together' })
+    return null
+  }
+  if (!ORGANIZATION_SCALE_METRICS.includes(metric as OrganizationScale['metric'])) {
+    plan.issues.push({ rowNumber, field: 'scale_metric', reason: `unsupported scale metric "${metric}"` })
+    return null
+  }
+  if (!sourceUrl) {
+    plan.issues.push({ rowNumber, field: 'source_url', reason: 'a scale measure requires a source URL' })
+    return null
+  }
+  const basis = row.scaleBasis || 'source-reported'
+  if (!SCALE_BASES.has(basis)) {
+    plan.issues.push({ rowNumber, field: 'scale_basis', reason: `unsupported scale basis "${basis}"` })
+    return null
+  }
+  if (row.entityScope && !ENTITY_SCOPES.has(row.entityScope)) {
+    plan.issues.push({ rowNumber, field: 'entity_scope', reason: `unsupported entity scope "${row.entityScope}"` })
+    return null
+  }
+  if (row.confidence && !CONFIDENCES.has(row.confidence)) {
+    plan.issues.push({ rowNumber, field: 'confidence', reason: `unsupported confidence "${row.confidence}"` })
+    return null
+  }
+  return {
+    metric: metric as OrganizationScale['metric'],
+    value,
+    basis: basis as OrganizationScale['basis'],
+    ...(row.confidence ? { confidence: confidenceFromRow(row) } : {}),
+    asOf: row.scaleAsOf || checkedOn,
+    sourceUrl,
     checkedOn,
-    reviewer: '',
-    confidence: 'probable' as const,
-  }]
+    ...(row.entityScope ? { entityScope: row.entityScope as ScaleEntityScope } : {}),
+  }
+}
+
+function mergeScale(
+  organization: Organization,
+  row: ImportRow,
+  sourceUrl: string,
+  checkedOn: string,
+  plan: ImportPlan,
+  rowNumber: number,
+): OrganizationScale[] {
+  const incoming = buildScaleEntry(row, sourceUrl, checkedOn, plan, rowNumber)
+  if (!incoming) return organization.scale
+  const index = organization.scale.findIndex((entry) => (
+    entry.metric === incoming.metric
+    && entry.value === incoming.value
+    && entry.asOf === incoming.asOf
+    && entry.sourceUrl === incoming.sourceUrl
+    && (entry.entityScope ?? '') === (incoming.entityScope ?? '')
+  ))
+  if (index < 0) return [...organization.scale, incoming]
+  const merged = [...organization.scale]
+  merged[index] = {
+    ...merged[index],
+    ...incoming,
+    checkedOn: incoming.checkedOn > merged[index].checkedOn ? incoming.checkedOn : merged[index].checkedOn,
+  }
+  return merged
+}
+
+function mergeNotes(existing: string, replacement: string | undefined, append: string | undefined): string {
+  let notes = replacement?.trim() || existing
+  const addition = append?.trim()
+  if (addition && !notes.includes(addition)) notes = [notes, addition].filter(Boolean).join('\n')
+  return notes
+}
+
+function mergeSource(
+  organization: Organization,
+  url: string,
+  evidence: string | undefined,
+  checkedOn: string,
+  row: ImportRow = {},
+) {
+  if (!url) return organization.sources
+  const index = organization.sources.findIndex((source) => source.url === url)
+  if (index < 0) {
+    return [...organization.sources, {
+      url,
+      type: sourceTypeFromRow(row),
+      evidence: evidence ?? 'Added through a structured import.',
+      checkedOn,
+      reviewer: row.reviewer ?? '',
+      confidence: confidenceFromRow(row),
+    }]
+  }
+  const existing = organization.sources[index]
+  const addition = evidence?.trim()
+  const mergedEvidence = addition && !existing.evidence.includes(addition)
+    ? [existing.evidence, addition].filter(Boolean).join(' | ')
+    : existing.evidence
+  const confidenceRank = { unknown: 0, hypothesis: 1, probable: 2, confirmed: 3 }
+  const existingConfidence = existing.confidence ?? 'probable'
+  const confidence = confidenceRank[confidenceFromRow(row)] > confidenceRank[existingConfidence]
+    ? confidenceFromRow(row)
+    : existingConfidence
+  const updated = {
+    ...existing,
+    ...(row.sourceType && SOURCE_TYPES.has(row.sourceType) ? { type: sourceTypeFromRow(row) } : {}),
+    evidence: mergedEvidence || 'Added through a structured import.',
+    checkedOn: checkedOn > existing.checkedOn ? checkedOn : existing.checkedOn,
+    reviewer: existing.reviewer || row.reviewer || '',
+    confidence,
+  }
+  if (JSON.stringify(updated) === JSON.stringify(existing)) return organization.sources
+  const sources = [...organization.sources]
+  sources[index] = updated
+  return sources
 }
 
 /** Apply a plan onto a dataset copy. Deterministic, so re-applying is a no-op. */
 export function applyPlan(dataset: Dataset, plan: ImportPlan): Dataset {
-  const organizationsById = new Map(dataset.organizations.map((organization) => [organization.id, organization]))
-  for (const organization of plan.newOrganizations) organizationsById.set(organization.id, organization)
-  for (const organization of plan.updatedOrganizations) organizationsById.set(organization.id, organization)
+  const updatesById = new Map(plan.updatedOrganizations.map((organization) => [organization.id, organization]))
+  // Preserve canonical register order. Sorting the entire universe on every
+  // import creates thousands of unrelated diff lines and obscures review.
+  const organizations = dataset.organizations.map((organization) => updatesById.get(organization.id) ?? organization)
+  const existingIds = new Set(organizations.map((organization) => organization.id))
+  for (const organization of plan.newOrganizations) {
+    if (!existingIds.has(organization.id)) organizations.push(organization)
+  }
   return {
     industries: dataset.industries,
     capabilities: dataset.capabilities,
-    organizations: [...organizationsById.values()].sort((left, right) => left.id.localeCompare(right.id)),
+    organizations,
     relationships: [...dataset.relationships, ...plan.newRelationships],
     associations: [...dataset.associations, ...plan.newAssociations],
     intelligence: [...dataset.intelligence, ...plan.newIntelligence],

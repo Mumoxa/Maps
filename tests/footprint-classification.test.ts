@@ -173,3 +173,90 @@ test('the same company always classifies identically (deterministic layout input
     assert.deepEqual(classifyFootprint(organization), classifyFootprint(organization))
   }
 })
+
+test('Rand revenue expands billion and million multipliers before banding', () => {
+  const billions = classifyFootprint(organizationWith([scale('revenue', 'R28.3 billion')], 'org-fp-revenue-bn'))
+  assert.equal(billions.band, 'major-national')
+  assert.match(billions.basis, /28,300,000,000|28 300 000 000/)
+
+  const millions = classifyFootprint(organizationWith([scale('revenue', 'R125m')], 'org-fp-revenue-m'))
+  assert.equal(millions.band, 'large-multi-site')
+})
+
+test('non-Rand revenue is not silently compared against Rand thresholds', () => {
+  const classification = classifyFootprint(organizationWith([scale('revenue', 'A$2.3 billion')], 'org-fp-revenue-aud'))
+  assert.equal(classification.band, 'not-established')
+  assert.equal(classification.supportingMetricIds.length, 0)
+})
+
+test('a narrow upper-only turnover bound stays smaller-emerging and is not displayed as exact turnover', () => {
+  const classification = classifyFootprint(organizationWith([
+    { ...scale('revenue', 'less than R1 million (estimated annual turnover)'), basis: 'third-party-estimate' as const },
+  ], 'org-fp-revenue-upper-bound'))
+  assert.equal(classification.band, 'smaller-emerging')
+  assert.equal(classification.confidence, 'probable')
+  assert.match(classification.basis, /below R1,000,000|below R1 000 000/)
+  assert.doesNotMatch(classification.basis, /turnover of R1/)
+  assert.equal(classification.supportingMetricIds.length, 1)
+})
+
+test('a broad upper-only turnover bound cannot choose between footprint bands', () => {
+  const classification = classifyFootprint(organizationWith([
+    scale('revenue', 'less than R25 million (estimated annual turnover)'),
+  ], 'org-fp-revenue-broad-upper-bound'))
+  assert.equal(classification.band, 'not-established')
+  assert.equal(classification.supportingMetricIds.length, 0)
+})
+
+test('a lower-bounded turnover range is not mistaken for an upper-only bound', () => {
+  const classification = classifyFootprint(organizationWith([
+    scale('revenue', 'estimated annual turnover of R1 million but less than R10 million'),
+  ], 'org-fp-revenue-lower-bounded-range'))
+  assert.equal(classification.band, 'smaller-emerging')
+  assert.match(classification.basis, /turnover of R1,000,000|turnover of R1 000 000/)
+  assert.doesNotMatch(classification.basis, /upper-bound estimate/i)
+})
+
+test('third-party headcount estimates remain probable rather than confirmed', () => {
+  const classification = classifyFootprint(organizationWith([
+    { ...scale('employees', '8,000 employees'), basis: 'third-party-estimate' as const },
+  ], 'org-fp-estimate'))
+  assert.equal(classification.band, 'major-national')
+  assert.equal(classification.confidence, 'probable')
+})
+
+test('total workforce is not substituted for the distinct employees measure', () => {
+  const workforceOnly = classifyFootprint(organizationWith([
+    scale('total-workforce', '22,042 including indirect employees'),
+  ], 'org-fp-workforce-only'))
+  assert.equal(workforceOnly.band, 'not-established')
+  assert.match(workforceOnly.note, /not converted into headcount/i)
+
+  const both = classifyFootprint(organizationWith([
+    scale('employees', '9,208 employees'),
+    scale('total-workforce', '22,042 including indirect employees'),
+  ], 'org-fp-workforce-both'))
+  assert.equal(both.band, 'major-national')
+  assert.match(both.basis, /9,208/)
+  assert.equal(both.supportingMetricIds.length, 1)
+})
+
+test('order books and delivered output stay visible without assigning a band', () => {
+  const classification = classifyFootprint(organizationWith([
+    scale('order-book', 'R37.6 billion'),
+    scale('completed-projects', '2,000+ completed projects'),
+    scale('homes-delivered', '90,000 homes and counting'),
+  ], 'org-fp-context-only'))
+  assert.equal(classification.band, 'not-established')
+  assert.match(classification.basis, /contextual operating measures/i)
+})
+
+test('a primary headcount supersedes a larger third-party estimate for classification', () => {
+  const classification = classifyFootprint(organizationWith([
+    { ...scale('employees', 'over 7,000 employees'), basis: 'third-party-estimate' as const, asOf: '2026' },
+    { ...scale('employees', '5,649 group employees'), asOf: '2026-02-28', entityScope: 'consolidated-group' as const },
+  ], 'org-fp-primary-precedence'))
+  assert.match(classification.basis, /5,649/)
+  assert.equal(classification.entityScope, 'consolidated-group')
+  assert.equal(classification.confidence, 'confirmed')
+})
