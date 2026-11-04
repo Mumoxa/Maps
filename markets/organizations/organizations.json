@@ -10505,8 +10505,10 @@
   {
     "id": "org-nampak",
     "name": "Nampak",
-    "legalName": "",
-    "aliases": [],
+    "legalName": "Nampak Limited",
+    "aliases": [
+      "Nampak Ltd"
+    ],
     "website": "https://nampak.com/",
     "status": "needs-verification",
     "industries": [],
@@ -10519,7 +10521,14 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
+    "locations": [
+      {
+        "city": "Century City",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.nampak.com/contact",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "scale": [],
     "parentId": null,
     "sources": [
@@ -10530,13 +10539,29 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.nampak.com/contact",
+        "type": "company-website",
+        "evidence": "Nampak's own contact page gives its head office as Office G6, 1 Waterhouse Place, Century City, 7441, South Africa, telephone +27 11 719 6300.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.nampak.com/about/overview",
+        "type": "company-website",
+        "evidence": "Nampak's own About page states that it is evolving into a focused metals packaging business, with manufacturing facilities in South Africa and Angola, and that it is the largest manufacturer of beverage cans in both countries.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://nampak.com/about/overview); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://nampak.com/about/overview); no field value was rewritten.\nNampak's own contact page puts its head office in Century City, Cape Town, while the same page's postal address and several of its plants are in Gauteng. The recorded location is the head office the company states, not an assumed Johannesburg one.\nNampak describes itself as now a focused metals packaging business in South Africa and Angola; the record's taxonomy placement in plastics predates that repositioning and should move to metal packaging on review."
   },
   {
     "id": "org-narmis-property-developments",
@@ -11237,10 +11262,13 @@
   {
     "id": "org-oceana-group",
     "name": "Oceana Group",
-    "legalName": "",
-    "aliases": [],
+    "legalName": "Oceana Group Limited",
+    "aliases": [
+      "Oceana",
+      "Oceana Group Ltd"
+    ],
     "website": "https://www.oceana.co.za/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "AGR-FISH",
@@ -11254,8 +11282,36 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
-    "scale": [],
+    "locations": [
+      {
+        "city": "Cape Town",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.oceana.co.za/contact-us",
+        "checkedOn": "2026-11-04"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "nearly 4 000 employees",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.oceana.co.za/about-oceana-group",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      },
+      {
+        "metric": "sites",
+        "value": "54 vessels and 8 production facilities across three countries",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.oceana.co.za/about-oceana-group",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
@@ -11265,13 +11321,29 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.oceana.co.za/contact-us",
+        "type": "company-website",
+        "evidence": "Oceana's own contact page states its Head Office address as 3rd Floor Bridgeside East, Riverlands, 12 Gogosoa Street, Observatory, Cape Town, 7925, with a switchboard on +27 21 410 1453.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.oceana.co.za/about-oceana-group",
+        "type": "company-website",
+        "evidence": "Oceana's own About page states that it has nearly 4 000 employees based across South Africa, Namibia and the United States. | Oceana's own About page states that the Group operates 54 vessels and 8 production facilities across three countries on two continents, selling products to customers in 41 countries. | Oceana's own About page describes it as Africa's largest fishing company with a history of over 105 years, listed on the JSE for over 75 years as well as on the NSX and A2X, operating across catching, processing, distributing and selling, with the Lucky Star, Wild Caught Seafood and Daybrook fishmeal and fish oil businesses.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.oceana.co.za/); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.oceana.co.za/); no field value was rewritten.\nOceana's own contact page gives its head office as Bridgeside East in Observatory, Cape Town. Every third-party profile still lists the older Oceana House address on Jan Smuts Street; that address is not used here because the company's own page supersedes it.\nOceana's own About page reports nearly 4000 employees across South Africa, Namibia and the United States, 54 vessels and 8 production facilities across three countries, and sales into 41 countries. Stock-analysis sites still carry a much smaller headcount from an earlier structure; the company's own figure is used."
   },
   {
     "id": "org-old-mutual",
