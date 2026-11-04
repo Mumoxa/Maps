@@ -60,6 +60,8 @@ export const SUBSIDIARY_QUALIFIERS: string[] = [
   'retail', 'logistics', 'energy', 'renewables', 'service centres', 'steel',
   'holdings', 'group', 'solutions', 'services', 'systems', 'manufacturing',
   'engineering', 'construction', 'projects', 'operations', 'distribution',
+  // Divisional and geographic structure inside one group.
+  'division', 'branch', 'regional', 'provincial',
   // Brand-specific sub-brands observed in the data.
   'iwyze', 'strategic solutions', 'frozen fish', 'foods', 'beverages',
 ]
@@ -178,6 +180,64 @@ export interface ResemblanceInput {
   datasetName: string
   professionals: number
   curated: { id: string; name: string }[]
+}
+
+/**
+ * One curated record that resembles another. This is a more serious finding than
+ * a dataset name resembling a company: two curated records means the register
+ * holds the same company twice, and a recruiter can see two dossiers for it.
+ */
+export interface CuratedPairCandidate {
+  /** The shorter, presumed canonical name. */
+  canonicalName: string
+  canonicalId: string
+  /** The longer name, presumed a duplicate or a division. */
+  otherName: string
+  otherId: string
+  disposition: IdentityDisposition
+  reason: string
+  qualifier: string
+  /** People mapped to each record, so the reviewer can see the impact. */
+  canonicalProfessionals: number
+  otherProfessionals: number
+}
+
+/**
+ * Curated records whose names nest. Only same-identity pairs are safe to merge;
+ * a pair where the longer name adds a division, brand or place is reported as a
+ * separate entity, because "Old Mutual" and "Old Mutual Finance" are two
+ * different employers and merging them would move real people to the wrong one.
+ */
+export function findCuratedPairs(
+  organizations: { id: string; name: string; professionals: number }[],
+): CuratedPairCandidate[] {
+  const pairs: CuratedPairCandidate[] = []
+  const seen = new Set<string>()
+  for (const canonical of organizations) {
+    for (const other of organizations) {
+      if (canonical.id === other.id) continue
+      // Only one direction: the shorter name is the presumed canonical one.
+      if (canonical.name.length >= other.name.length) continue
+      const key = `${canonical.id}|${other.id}`
+      if (seen.has(key)) continue
+      const match = classifyResemblance(other.name, canonical.name)
+      if (!match || match.disposition === 'needs-decision') continue
+      seen.add(key)
+      pairs.push({
+        canonicalName: canonical.name,
+        canonicalId: canonical.id,
+        otherName: other.name,
+        otherId: other.id,
+        ...match,
+        canonicalProfessionals: canonical.professionals,
+        otherProfessionals: other.professionals,
+      })
+    }
+  }
+  return pairs.sort((left, right) => (
+    Number(right.disposition === 'same-identity') - Number(left.disposition === 'same-identity')
+    || (right.canonicalProfessionals + right.otherProfessionals) - (left.canonicalProfessionals + left.otherProfessionals)
+  ))
 }
 
 /**

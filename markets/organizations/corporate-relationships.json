@@ -163,16 +163,5 @@
     "confidence": "probable",
     "checkedOn": "2026-10-08",
     "note": ""
-  },
-  {
-    "id": "rel-shoprite-massmart",
-    "type": "acquired",
-    "fromId": "org-shoprite-holdings",
-    "toId": "org-massmart",
-    "evidence": "Shoprite acquired Massmart's Rhino, Massfresh and Cash & Carry businesses (2022) and 94 stores (2023).",
-    "sourceUrl": "https://pitchbook.com/profiles/company/59352-58",
-    "confidence": "probable",
-    "checkedOn": "2026-10-08",
-    "note": ""
   }
 ]

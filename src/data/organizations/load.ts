@@ -14,6 +14,7 @@ import capabilitiesRaw from '../../../markets/organizations/capabilities.json'
 import relationshipsRaw from '../../../markets/organizations/corporate-relationships.json'
 import associationsRaw from '../../../markets/organizations/associations.json'
 import intelligenceRaw from '../../../markets/organizations/recruiter-intelligence.json'
+import identityRedirectsRaw from '../../../markets/organizations/identity-redirects.json'
 import { canonicalCompanyName } from '../companyNormalization'
 import type {
   AssociationMatch,
@@ -33,6 +34,28 @@ export const capabilities = capabilitiesRaw as Capability[]
 export const corporateRelationships = relationshipsRaw as OrganizationRelationship[]
 export const curatedAssociations = associationsRaw as CompanyAssociation[]
 export const recruiterIntelligence = intelligenceRaw as RecruiterIntelligence[]
+
+/**
+ * Curated ids that were merged into a surviving record. A link, an export or a
+ * saved dossier that still names the old id resolves to the surviving company
+ * instead of dead-ending.
+ */
+export const identityRedirects: Map<string, string> = new Map(
+  (identityRedirectsRaw as { redirects: { from: string; to: string }[] }).redirects
+    .map((redirect) => [redirect.from, redirect.to]),
+)
+
+/** Follow merge redirects until an id stops changing. */
+export function resolveOrganizationRedirect(organizationId: string): string {
+  let current = organizationId
+  const seen = new Set<string>()
+  for (;;) {
+    const next = identityRedirects.get(current)
+    if (!next || seen.has(current)) return current
+    seen.add(current)
+    current = next
+  }
+}
 
 /** A company name seen in a Maps dataset, before identity is established. */
 export interface DatasetEmployer {

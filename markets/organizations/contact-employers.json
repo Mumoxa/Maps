@@ -9,8 +9,8 @@
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 178,
     "distinctOrganizationEntries": 1699,
-    "curatedCompanyMatches": 439,
-    "unverifiedDatasetOnly": 1260
+    "curatedCompanyMatches": 437,
+    "unverifiedDatasetOnly": 1262
   },
   "employers": [
     {
@@ -7205,6 +7205,14 @@
       ]
     },
     {
+      "organizationId": "org-dataset:pwc",
+      "name": "PwC",
+      "contactCount": 25,
+      "sourceNames": [
+        "PwC"
+      ]
+    },
+    {
       "organizationId": "org-dataset:pwc exordia",
       "name": "PwC Exordia",
       "contactCount": 1,
@@ -8050,6 +8058,17 @@
       "contactCount": 1,
       "sourceNames": [
         "Shock EO Systems"
+      ]
+    },
+    {
+      "organizationId": "org-dataset:shoprite",
+      "name": "Shoprite",
+      "contactCount": 64,
+      "sourceNames": [
+        "Shoprite Checkers Group",
+        "Shoprite Financial Services",
+        "ShopriteX",
+        "The Shoprite Group of Companies"
       ]
     },
     {
@@ -13405,14 +13424,6 @@
     },
     {
       "organizationId": "org-pwc",
-      "name": "PwC",
-      "contactCount": 25,
-      "sourceNames": [
-        "PwC"
-      ]
-    },
-    {
-      "organizationId": "org-pwc-south-africa",
       "name": "PwC South Africa",
       "contactCount": 84,
       "sourceNames": [
@@ -13477,17 +13488,6 @@
       "contactCount": 2,
       "sourceNames": [
         "Senwes"
-      ]
-    },
-    {
-      "organizationId": "org-shoprite",
-      "name": "Shoprite",
-      "contactCount": 64,
-      "sourceNames": [
-        "Shoprite Checkers Group",
-        "Shoprite Financial Services",
-        "ShopriteX",
-        "The Shoprite Group of Companies"
       ]
     },
     {

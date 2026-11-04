@@ -12338,7 +12338,7 @@
   },
   {
     "id": "org-pwc",
-    "name": "PwC",
+    "name": "PwC South Africa",
     "legalName": "",
     "aliases": [],
     "website": "https://www.pwc.com/",
@@ -12367,38 +12367,7 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
-      }
-    ],
-    "datasets": [
-      "import"
-    ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/na/en/about-us/african-footprint.html); no field value was rewritten."
-  },
-  {
-    "id": "org-pwc-south-africa",
-    "name": "PwC South Africa",
-    "legalName": "",
-    "aliases": [],
-    "website": "https://www.pwc.com/",
-    "status": "needs-verification",
-    "industries": [],
-    "taxonomy": {
-      "primaryNode": "PRO-ACCT-AUDIT",
-      "secondaryNodes": [
-        "PRO-ACCT-TAX",
-        "PRO-CONSULT-STRAT"
-      ],
-      "confidence": "confirmed",
-      "evidence": "PwC's South Africa site lists assurance, consulting, tax and legal services among the service lines of its South African member firm.",
-      "sourceUrl": "https://www.pwc.com/za",
-      "checkedOn": "2026-10-16"
-    },
-    "capabilities": [],
-    "locations": [],
-    "scale": [],
-    "parentId": null,
-    "sources": [
+      },
       {
         "url": "https://www.pwc.com/za",
         "type": "recruiter-supplied",
@@ -12406,13 +12375,21 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.pwc.co.za/en/about-us/offices.html",
+        "type": "corporate-disclosure",
+        "evidence": "PwC South Africa's own office directory names the firm as PricewaterhouseCoopers Inc and lists its South African offices, establishing one South African practice rather than two.",
+        "checkedOn": "2026-11-04",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
     "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/za); no field value was rewritten."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/na/en/about-us/african-footprint.html); no field value was rewritten.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/za); no field value was rewritten.\nMerged duplicate record \"PwC South Africa\" (org-pwc-south-africa) on 2026-11-04: Both records are PricewaterhouseCoopers South Africa at the same taxonomy node (PRO-ACCT-AUDIT). The roster spells the firm 'PwC South Africa' and the dossier is more useful under the name people search for, so the region-qualified name survives.",
+    "directoryEntries": []
   },
   {
     "id": "org-quantum-foods",
@@ -14224,49 +14201,11 @@
   },
   {
     "id": "org-shoprite",
-    "name": "Shoprite",
+    "name": "Shoprite Holdings",
     "legalName": "",
     "aliases": [],
     "website": "https://www.shopriteholdings.co.za/",
     "status": "needs-verification",
-    "industries": [],
-    "taxonomy": {
-      "primaryNode": "RTL-GROC-HYPER",
-      "secondaryNodes": [
-        "RTL-GROC-VALUE"
-      ],
-      "confidence": "confirmed",
-      "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave.",
-      "sourceUrl": "https://www.shopriteholdings.co.za/group.html",
-      "checkedOn": "2026-10-16"
-    },
-    "capabilities": [],
-    "locations": [],
-    "scale": [],
-    "parentId": null,
-    "sources": [
-      {
-        "url": "https://www.shopriteholdings.co.za/group.html",
-        "type": "recruiter-supplied",
-        "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave.",
-        "checkedOn": "2026-10-16",
-        "reviewer": "",
-        "confidence": "confirmed"
-      }
-    ],
-    "datasets": [
-      "import"
-    ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.shopriteholdings.co.za/group.html); no field value was rewritten."
-  },
-  {
-    "id": "org-shoprite-holdings",
-    "name": "Shoprite Holdings",
-    "legalName": "",
-    "aliases": [],
-    "website": "https://www.shopriteholdings.co.za",
-    "status": "verified",
     "industries": [
       {
         "industryId": "grocery-retail",
@@ -14277,6 +14216,16 @@
         "checkedOn": "2026-10-08"
       }
     ],
+    "taxonomy": {
+      "primaryNode": "RTL-GROC-HYPER",
+      "secondaryNodes": [
+        "RTL-GROC-VALUE"
+      ],
+      "confidence": "confirmed",
+      "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave.",
+      "sourceUrl": "https://www.shopriteholdings.co.za/group.html",
+      "checkedOn": "2026-10-16"
+    },
     "capabilities": [
       {
         "capabilityId": "multi-site-operations",
@@ -14340,6 +14289,14 @@
     "parentId": null,
     "sources": [
       {
+        "url": "https://www.shopriteholdings.co.za/group.html",
+        "type": "recruiter-supplied",
+        "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave.",
+        "checkedOn": "2026-10-16",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
         "url": "https://www.moneyweb.co.za/tools-and-data/click-a-company/SHP/",
         "type": "corporate-disclosure",
         "evidence": "Company profile: investment holding company headquartered in Cape Town, 3,478 stores across eight countries, JSE Food Retailers and Wholesalers sector.",
@@ -14362,13 +14319,22 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.shopriteholdings.co.za/group.html",
+        "type": "corporate-disclosure",
+        "evidence": "Shoprite Holdings' own group page is the corporate identity behind the retail brand, so the brand record and the holding-company record are one entity.",
+        "checkedOn": "2026-11-04",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
+      "import",
       "organizations"
     ],
-    "lastVerified": "2026-10-08",
-    "notes": ""
+    "lastVerified": "2026-10-16",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.shopriteholdings.co.za/group.html); no field value was rewritten.\nMerged duplicate record \"Shoprite Holdings\" (org-shoprite-holdings) on 2026-11-04: The register held 'Shoprite' and 'Shoprite Holdings' as two companies. They are one JSE-listed group; the holding company name is the correct identity, and the surviving record gains the duplicate's people, location and headcount.",
+    "directoryEntries": []
   },
   {
     "id": "org-siba-holdings",
@@ -14997,60 +14963,6 @@
     ],
     "lastVerified": "2026-10-08",
     "notes": "Also present in the Accounting & Finance dataset as Southern Oil (SOILL)."
-  },
-  {
-    "id": "org-spar-group",
-    "name": "SPAR Group",
-    "legalName": "",
-    "aliases": [],
-    "website": "",
-    "status": "needs-verification",
-    "industries": [
-      {
-        "industryId": "grocery-retail",
-        "primary": true,
-        "confidence": "probable",
-        "evidence": "Listed South African food retailer in JSE market data.",
-        "sourceUrl": "https://www.moneyweb.co.za/tools-and-data/click-a-company/SHP/",
-        "checkedOn": "2026-10-08"
-      }
-    ],
-    "capabilities": [
-      {
-        "capabilityId": "franchise-network",
-        "status": "unknown",
-        "confidence": "confirmed",
-        "evidence": "Retail model not evidenced in the sources read.",
-        "sourceUrl": "",
-        "checkedOn": "2026-10-08"
-      },
-      {
-        "capabilityId": "distribution-network",
-        "status": "unknown",
-        "confidence": "confirmed",
-        "evidence": "Distribution centres not evidenced in the sources read.",
-        "sourceUrl": "",
-        "checkedOn": "2026-10-08"
-      }
-    ],
-    "locations": [],
-    "scale": [],
-    "parentId": null,
-    "sources": [
-      {
-        "url": "https://www.moneyweb.co.za/tools-and-data/click-a-company/SHP/",
-        "type": "corporate-disclosure",
-        "evidence": "Listed as a JSE food retail comparable.",
-        "checkedOn": "2026-10-08",
-        "reviewer": "",
-        "confidence": "probable"
-      }
-    ],
-    "datasets": [
-      "organizations"
-    ],
-    "lastVerified": "2026-10-08",
-    "notes": "Website, head office and operating model not established from the sources read."
   },
   {
     "id": "org-ssc-property-group",
@@ -15855,10 +15767,21 @@
     "id": "org-the-spar-group",
     "name": "The SPAR Group",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "SPAR Group"
+    ],
     "website": "https://thespargroup.com/",
     "status": "needs-verification",
-    "industries": [],
+    "industries": [
+      {
+        "industryId": "grocery-retail",
+        "primary": true,
+        "confidence": "probable",
+        "evidence": "Listed South African food retailer in JSE market data.",
+        "sourceUrl": "https://www.moneyweb.co.za/tools-and-data/click-a-company/SHP/",
+        "checkedOn": "2026-10-08"
+      }
+    ],
     "taxonomy": {
       "primaryNode": "RTL-GROC-VOLUNT",
       "secondaryNodes": [
@@ -15869,7 +15792,24 @@
       "sourceUrl": "https://thespargroup.com/about-us/",
       "checkedOn": "2026-10-16"
     },
-    "capabilities": [],
+    "capabilities": [
+      {
+        "capabilityId": "franchise-network",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Retail model not evidenced in the sources read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      },
+      {
+        "capabilityId": "distribution-network",
+        "status": "unknown",
+        "confidence": "confirmed",
+        "evidence": "Distribution centres not evidenced in the sources read.",
+        "sourceUrl": "",
+        "checkedOn": "2026-10-08"
+      }
+    ],
     "locations": [],
     "scale": [],
     "parentId": null,
@@ -15881,13 +15821,30 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.moneyweb.co.za/tools-and-data/click-a-company/SHP/",
+        "type": "corporate-disclosure",
+        "evidence": "Listed as a JSE food retail comparable.",
+        "checkedOn": "2026-10-08",
+        "reviewer": "",
+        "confidence": "probable"
+      },
+      {
+        "url": "https://thespargroup.com/about-us/",
+        "type": "corporate-disclosure",
+        "evidence": "The SPAR Group's own site describes the group as a wholesaler and distributor to independently owned SPAR stores, which is the same business the duplicate record described.",
+        "checkedOn": "2026-11-04",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
-      "import"
+      "import",
+      "organizations"
     ],
     "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://thespargroup.com/about-us/); no field value was rewritten."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://thespargroup.com/about-us/); no field value was rewritten.\nWebsite, head office and operating model not established from the sources read.\nMerged duplicate record \"SPAR Group\" (org-spar-group) on 2026-11-04: Both records describe the same grocery group. The surviving record carries the taxonomy placement and the company's own about page, so it is the better-evidenced record.",
+    "directoryEntries": []
   },
   {
     "id": "org-the-urban-collective",
