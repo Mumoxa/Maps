@@ -71,13 +71,47 @@ One dossier standard, applied to every organisation in the visible universe, mea
 
 ## Batch register
 
+Status as of 4 November 2026. Measured with `npm run atlas:coverage` after every batch.
+
 | Batch | Scope | Status |
 | --- | --- | --- |
-| 01 | Pipeline: verification gate in the importer, coverage ledger in the build gate | this change |
-| 02 | Financial services core (the companies carrying the most mapped people) | planned next |
-| 03 | Professional services and technology | planned |
-| 04 | Consumer, industrial and retail | planned |
-| 05 | Dataset-only employer names | planned |
+| 01 | Pipeline: verification gate in the importer, coverage ledger in the build gate | **done** |
+| 02 | Employer-identity defects: source notes rendered as companies, identity review queue | **done** |
+| 03 | Official-website backfill from sources records already cite (100 records) | **done** |
+| 04 | Register identity correction: 3 duplicate curated records merged, redirects kept | **done** |
+| 05 | Promotion of the 56 records that already met the gate; 276 verification dates derived | **done** |
+| 06 | Financial services core: Absa, Capitec, Standard Bank, Old Mutual, Investec | **done** |
+| 07 | Telecoms: MTN, Vodacom | **done** |
+| 08 | Professional services, consumer, industrial and retail | next |
+| 09 | Dataset-only employer names, highest people count first | planned |
+| 10 | Taxonomy placement for the 438 records still unclassified or unlocated | planned |
+
+### Measured position
+
+| Measure | Before | Latest |
+| --- | ---: | ---: |
+| Universe (organisations shown) | 2,407 | 2,390 |
+| Curated register | 632 | 629 |
+| Verified | 131 | 191 |
+| Official website (curated) | 399 | 497 |
+| Verification within 180 days (curated) | 356 | 629 |
+| Sourced location | 207 | 211 |
+| Sourced scale | 139 | 144 |
+| Phantom employers removed from the universe | 16 | 0 |
+| Identity review queue | not measured | 75 names / 168 people |
+
+Every remaining shortfall is a research gap, not a modelling one, and each is a named row in
+`markets/organizations/research/atlas-coverage.json`.
+
+### What blocks the remainder
+
+- Several official sites (Shoprite, Sasol, EY, KPMG) return no readable address or head office page to
+  this tooling. Those companies stay unenriched rather than being filled from an aggregator.
+- Most remaining curated records are small MBAWC directory members whose only identity evidence is the
+  association's own member PDF. They are promotable, which is why 56 of them now are, but their scale
+  and capability fields need per-company websites that the directory does not carry.
+- 1,761 dataset-only employer names have no curated record at all. Each needs identity research before
+  it can carry anything.
 
 ## Explicit non-goals
 
