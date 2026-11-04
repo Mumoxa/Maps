@@ -561,6 +561,7 @@ describe('third-party hosts never verify a company', () => {
     const { hasOfficialSource, isThirdPartyHost } = await import('../src/data/organizations/verification')
     const { organization: fixture } = await import('./helpers/organizations')
     const organization = fixture({
+      id: 'org-linked',
       name: 'Linked Record',
       website: 'https://linked.test/',
       sources: [{
@@ -581,6 +582,7 @@ describe('third-party hosts never verify a company', () => {
     const { hasOfficialSource } = await import('../src/data/organizations/verification')
     const { organization: fixture } = await import('./helpers/organizations')
     const organization = fixture({
+      id: 'org-cross-tld',
       name: 'Cross Tld',
       website: 'https://www.example.com/',
       sources: [{

@@ -30,3 +30,6 @@ incoming/
 
 # Licensed or unreviewed hiring source data (private staging only)
 .local/
+
+# Vite writes timestamped config bundles during build/dev; never commit them.
+vite.config.ts.timestamp-*.mjs
