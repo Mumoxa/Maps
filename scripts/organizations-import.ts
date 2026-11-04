@@ -25,7 +25,7 @@ import type {
   ScaleEntityScope,
 } from '../src/data/organizations/types'
 import { getTaxonomyNode } from '../src/data/taxonomy/load'
-import { verificationGate } from '../src/data/organizations/verification'
+import { listingGate, verificationGate } from '../src/data/organizations/verification'
 
 export type ImportType =
   | 'companies'
@@ -241,15 +241,41 @@ function applyVerificationDecision(
     plan.issues.push({
       rowNumber,
       field: 'verification_status',
-      reason: `unsupported verification status "${requested}"; expected verified or needs-verification`,
+      reason: `unsupported verification status "${requested}"; expected verified, listed-only or needs-verification`,
     })
     return
   }
-  if (requested !== 'verified') return
+  if (requested === 'needs-verification') {
+    organization.status = 'needs-verification'
+    return
+  }
   const gate = verificationGate({
     organization,
     hasPlacement: organization.industries.length > 0 || Boolean(organization.taxonomy),
   })
+  if (requested === 'listed-only') {
+    // A listing claim only needs the listing. It is checked against the evidence
+    // bar for what it actually asserts, not against the verified gate, so a
+    // company can never be upgraded to verified by being asked for the weaker state.
+    const listing = listingGate(organization)
+    plan.verification.push({
+      rowNumber,
+      organizationId: organization.id,
+      canonicalName,
+      eligible: listing.eligible,
+      reasons: listing.reasons,
+    })
+    if (listing.eligible) {
+      if (organization.status !== 'verified') organization.status = 'listed-only'
+      return
+    }
+    plan.issues.push({
+      rowNumber,
+      field: 'verification_status',
+      reason: `${canonicalName} cannot be marked listed-only: ${listing.reasons.join('; ')}`,
+    })
+    return
+  }
   plan.verification.push({
     rowNumber,
     organizationId: organization.id,
@@ -271,7 +297,7 @@ function applyVerificationDecision(
 }
 
 /** Row-level status values the importer understands. */
-const VERIFICATION_REQUESTS = new Set(['verified', 'needs-verification'])
+const VERIFICATION_REQUESTS = new Set(['verified', 'listed-only', 'needs-verification'])
 
 /** Build the change plan. Pure: it never writes. */
 export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset): ImportPlan {

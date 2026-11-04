@@ -233,3 +233,78 @@ export function verificationGate(input: VerificationGateInput): VerificationGate
 
   return { eligible: missing.length === 0, missing, reasons }
 }
+
+// ---------------------------------------------------------------------------
+// Listed-only: third-party vouched identity
+// ---------------------------------------------------------------------------
+
+/**
+ * What a company needs before it may be called `listed-only`.
+ *
+ * This is a weaker claim than `verified` and a stronger one than nothing: it says
+ * a third party that keeps a register of real businesses has confirmed the
+ * company exists, and that at least one of those sources is independently
+ * checkable. It never says the company has described itself.
+ *
+ * Deliberately narrow, because the whole point of the state is that a reader can
+ * tell the difference at a glance:
+ *
+ *  - a member listing, trade directory or company register (not a news article,
+ *    not a social profile);
+ *  - that source was read on a recorded date;
+ *  - it says something specific, not just the name.
+ */
+export interface ListingGateResult {
+  eligible: boolean
+  reasons: string[]
+}
+
+/**
+ * Source types that can vouch for existence.
+ *
+ * `industry-report` and `business-directory` are deliberately absent: a report is
+ * not a register, and commercial people-databases (PitchBook, ZoomInfo,
+ * RocketReach) generate profiles without anyone accountable for the claim.
+ */
+const LISTING_SOURCE_TYPES = new Set(['industry-directory', 'corporate-disclosure'])
+
+/** Hosts that publish profiles or rankings rather than keeping a register. */
+const LISTING_EXCLUDED_HOSTS = [
+  'pitchbook.', 'zoominfo.', 'rocketreach.', 'signalhire.', 'apollo.io', 'datanyze.',
+  'crunchbase.', 'globaldata.', 'comparably.', 'mergr.', 'richerfin.', 'shiftmate.',
+  'african-markets.', 'foodbusinessafrica.', 'bizcommunity.', 'linkedin.', 'facebook.',
+  'instagram.', 'twitter.', 'x.com', 'youtube.', 'tiktok.',
+]
+
+export function listingGate(organization: Organization): ListingGateResult {
+  const reasons: string[] = []
+  const usable = organization.sources.filter((source) => (
+    LISTING_SOURCE_TYPES.has(source.type)
+    && source.url.trim() !== ''
+    && source.checkedOn.trim() !== ''
+    && source.evidence.trim() !== ''
+    && !isThirdPartyProfileHost(source.url)
+    && !LISTING_EXCLUDED_HOSTS.some((entry) => source.url.toLowerCase().includes(entry))
+  ))
+  if (usable.length === 0) {
+    reasons.push('no dated directory, register or member listing that says something specific about the company')
+  }
+  return { eligible: reasons.length === 0, reasons }
+}
+
+/**
+ * Social profiles are excluded on purpose, even though they are third-party.
+ *
+ * A LinkedIn page can be created by anyone about anything, and this codebase has
+ * already found pages labelled `company-website` that were really LinkedIn. A
+ * register that admits members, or a statutory filing, carries a claim someone is
+ * accountable for; a self-published profile does not.
+ */
+export function isThirdPartyProfileHost(url: string): boolean {
+  const host = (() => {
+    try { return new URL(url).hostname.toLowerCase() } catch { return '' }
+  })()
+  if (!host) return true
+  return ['linkedin.', 'facebook.', 'instagram.', 'twitter.', 'x.com', 'youtube.', 'tiktok.']
+    .some((entry) => host === entry || host.endsWith(entry) || host.includes(`.${entry}`))
+}

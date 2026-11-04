@@ -178,7 +178,21 @@ export interface OrganizationScale {
   entityScope?: ScaleEntityScope
 }
 
-export type OrganizationStatus = 'verified' | 'needs-verification'
+/**
+ * How far a record's identity has been confirmed.
+ *
+ * - `verified`  the company's own site or a corporate disclosure states who it is.
+ * - `listed-only` a third-party listing confirms it exists and is a real company,
+ *   but nothing on its own domain has been read. It is a real state, not a
+ *   courtesy: it says the identity is third-party vouched, never self-vouched.
+ * - `needs-verification` nobody has confirmed it yet.
+ *
+ * There is deliberately no state in between `listed-only` and `verified`, because
+ * the distinction that matters to a reader is who is making the claim.
+ */
+export type OrganizationStatus = 'verified' | 'listed-only' | 'needs-verification'
+
+export const ORGANIZATION_STATUSES: OrganizationStatus[] = ['verified', 'listed-only', 'needs-verification']
 
 /** Business-directory facts retained with their own source and observation date. */
 export interface OrganizationDirectoryEntry {

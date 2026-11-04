@@ -138,7 +138,8 @@ function main() {
       curated: rows.filter((row) => row.curated).length,
       datasetOnly: rows.filter((row) => !row.curated).length,
       verified: rows.filter((row) => row.status === 'verified').length,
-      needsVerification: rows.filter((row) => row.status !== 'verified').length,
+      listedOnly: rows.filter((row) => row.status === 'listed-only').length,
+      needsVerification: rows.filter((row) => row.status === 'needs-verification').length,
       withMappedProfessionals: rows.filter((row) => row.professionals > 0).length,
       meetingEveryStandardField: fullyCovered.length,
     },
@@ -196,6 +197,7 @@ function main() {
   lines.push(`curated register             ${report.universe.curated}`)
   lines.push(`dataset-only (not curated)   ${report.universe.datasetOnly}`)
   lines.push(`status verified              ${report.universe.verified}`)
+  lines.push(`status listed-only           ${report.universe.listedOnly}  (third-party listing confirms the company; nothing on its own domain read)`)
   lines.push(`status needs-verification    ${report.universe.needsVerification}`)
   lines.push(`with mapped professionals    ${report.universe.withMappedProfessionals}`)
   lines.push(`meeting every standard field ${report.universe.meetingEveryStandardField}`)

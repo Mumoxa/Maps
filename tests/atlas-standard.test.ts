@@ -595,3 +595,118 @@ describe('third-party hosts never verify a company', () => {
     assert.equal(hasOfficialSource(organization), true)
   })
 })
+
+describe('listed-only is its own state, not a soft verified', () => {
+  const today = '2026-11-04'
+
+  it('accepts a member listing as enough to be listed-only', async () => {
+    const { listingGate } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      id: 'org-listed',
+      name: 'Listed Firm',
+      sources: [{
+        url: 'https://assoc.test/members/listed-firm.pdf',
+        type: 'industry-directory',
+        evidence: 'The association lists this firm as a member.',
+        checkedOn: today,
+      }],
+    })
+    assert.equal(listingGate(organization).eligible, true)
+  })
+
+  it('rejects a commercial people-database profile and a report', async () => {
+    const { listingGate } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const profile = fixture({
+      id: 'org-profile',
+      name: 'Profile Firm',
+      sources: [{
+        url: 'https://pitchbook.test/profiles/company/1',
+        type: 'business-directory',
+        evidence: 'A profile page.',
+        checkedOn: today,
+      }],
+    })
+    assert.equal(listingGate(profile).eligible, false, 'a generated profile is not a register')
+
+    const report = fixture({
+      id: 'org-report',
+      name: 'Report Firm',
+      sources: [{
+        url: 'https://report.test/top-100',
+        type: 'industry-report',
+        evidence: 'A ranking lists the firm.',
+        checkedOn: today,
+      }],
+    })
+    assert.equal(listingGate(report).eligible, false, 'a ranking is not a register')
+  })
+
+  it('rejects a listing with no evidence sentence or no checked date', async () => {
+    const { listingGate } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const noEvidence = fixture({
+      id: 'org-bare',
+      name: 'Bare Firm',
+      sources: [{ url: 'https://assoc.test/members/bare.pdf', type: 'industry-directory', evidence: '', checkedOn: today }],
+    })
+    assert.equal(listingGate(noEvidence).eligible, false)
+
+    const noDate = fixture({
+      id: 'org-undated',
+      name: 'Undated Firm',
+      sources: [{ url: 'https://assoc.test/members/undated.pdf', type: 'industry-directory', evidence: 'Listed as a member.', checkedOn: '' }],
+    })
+    assert.equal(listingGate(noDate).eligible, false)
+  })
+
+  it('never lets a listed-only request promote a record to verified', async () => {
+    const { planImport } = await import('../scripts/organizations-import')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      id: 'org-listed-import',
+      name: 'Listed Import',
+      status: 'needs-verification',
+      website: 'https://listed.test/',
+      sources: [{
+        url: 'https://assoc.test/members/listed-import.pdf',
+        type: 'industry-directory',
+        evidence: 'The association lists this firm as a member.',
+        checkedOn: today,
+      }],
+      locations: [{ city: 'Cape Town', province: 'Western Cape', sourceUrl: 'https://assoc.test/', checkedOn: today }],
+    })
+    const plan = planImport(
+      [{ name: 'Listed Import', verification_status: 'listed-only' }],
+      'companies',
+      { industries: [], capabilities: [], organizations: [organization], relationships: [], associations: [], intelligence: [] },
+    )
+    const updated = plan.updatedOrganizations.find((entry) => entry.id === 'org-listed-import')
+    assert.equal(updated?.status, 'listed-only', 'the weaker request must not upgrade the record')
+  })
+
+  it('does not demote a verified record when a listing claims a weaker state', async () => {
+    const { planImport } = await import('../scripts/organizations-import')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      id: 'org-stays-verified',
+      name: 'Stays Verified',
+      status: 'verified',
+      website: 'https://stays.test/',
+      sources: [
+        { url: 'https://stays.test/about', type: 'company-website', evidence: 'The company describes itself.', checkedOn: today },
+        { url: 'https://assoc.test/members/stays.pdf', type: 'industry-directory', evidence: 'The association lists it.', checkedOn: today },
+      ],
+      locations: [{ city: 'Cape Town', province: 'Western Cape', sourceUrl: 'https://stays.test/', checkedOn: today }],
+      taxonomy: { primaryNode: '', secondaryNodes: [], confidence: 'probable', evidence: '', sourceUrl: 'https://stays.test/', checkedOn: today },
+    })
+    const plan = planImport(
+      [{ name: 'Stays Verified', verification_status: 'listed-only' }],
+      'companies',
+      { industries: [], capabilities: [], organizations: [organization], relationships: [], associations: [], intelligence: [] },
+    )
+    const updated = plan.updatedOrganizations.find((entry) => entry.id === 'org-stays-verified')
+    assert.equal(updated?.status, 'verified', 'verified is stronger than listed-only and must survive')
+  })
+})

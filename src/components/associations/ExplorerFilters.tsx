@@ -201,7 +201,8 @@ export function ExplorerFilters({ matches, filters, index, idPrefix, onChange }:
         label: 'Verification status',
         options: [
           { value: 'verified', label: 'Verified', count: matches.filter((match) => index.byId.get(match.organizationId)?.status === 'verified').length },
-          { value: 'needs-verification', label: 'Pending verification', count: matches.filter((match) => index.byId.get(match.organizationId)?.status !== 'verified').length },
+          { value: 'listed-only', label: 'Listed only', count: matches.filter((match) => index.byId.get(match.organizationId)?.status === 'listed-only').length },
+          { value: 'needs-verification', label: 'Pending verification', count: matches.filter((match) => index.byId.get(match.organizationId)?.status === 'needs-verification').length },
         ],
       },
     ]

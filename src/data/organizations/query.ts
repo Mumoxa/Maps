@@ -20,6 +20,7 @@ import {
   STALE_AFTER_DAYS,
   missingStandardFields,
   standardChecks,
+  listingGate,
   verificationGate,
 } from './verification'
 import { classifyFootprint, isEstablishedBand } from './footprint'
@@ -120,7 +121,14 @@ export function companyDossier(index: OrganizationIndex, organizationId: string)
     today: new Date().toISOString().slice(0, 10),
   })
   const gaps: string[] = []
-  if (organization.status !== 'verified') {
+  if (organization.status === 'listed-only') {
+    // Say exactly who vouched for this company, so the reader is never left to
+    // assume the company described itself.
+    const listing = listingGate(organization)
+    gaps.push(listing.eligible
+      ? 'Listed only: a directory, register or member listing confirms this is a real company, but nothing published on its own domain has been read yet.'
+      : `Listed only, with weaker evidence than that state should carry: ${listing.reasons.join('; ')}.`)
+  } else if (organization.status !== 'verified') {
     const gate = verificationGate({
       organization,
       hasPlacement: organization.industries.length > 0 || Boolean(organization.taxonomy),

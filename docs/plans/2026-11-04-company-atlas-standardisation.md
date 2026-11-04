@@ -142,6 +142,28 @@ Every remaining shortfall is a research gap, not a modelling one, and each is a 
 - 1,761 dataset-only employer names have no curated record at all. Each needs identity research before
   it can carry anything.
 
+#### Why there are now three statuses, not two
+
+Making the website gate honest demoted 59 records in one commit, and it became clear the register
+was conflating two different questions: *has anyone confirmed this company exists* and *has the
+company itself said who it is*. A single `verified`/`needs-verification` flag forced a trade-off
+between claiming too much and losing real information.
+
+The register now distinguishes:
+
+| Status | What it asserts | Who vouched |
+| --- | --- | --- |
+| `verified` | identity, sector and a located operation, each with a dated source | the company, on its own domain |
+| `listed-only` | this is a real company, in this line of work | a register, member listing or statutory filing |
+| `needs-verification` | nothing confirmed yet | nobody |
+
+`listed-only` is not a soft `verified`. `listingGate()` refuses news reports, rankings, commercial
+people-databases (PitchBook, ZoomInfo, RocketReach) and social profiles, because none of them carry
+a claim anyone is accountable for; a register that admits members does. A `listed-only` request can
+never upgrade a record to `verified`, and a `verified` record is never downgraded by a weaker claim.
+342 records now sit in the state, 298 of them MBAWC members whose association membership is the
+best evidence anyone has.
+
 ## Explicit non-goals
 
 - No unsourced values, no inferred headcounts, no "approximately" figures presented as fact.

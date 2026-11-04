@@ -58,7 +58,9 @@ test('every company is either placed or explicitly retained as unclassified, so 
   const unplacedNames = new Set(summary.unplaced)
   for (const organization of organizations) {
     if (!unplacedNames.has(organization.name)) continue
-    assert.equal(organization.status, 'needs-verification', 'unclassified source mentions must not claim verified business activity')
+    // An unclassified company may be `listed-only` - a register confirms it exists -
+    // but it must never read as verified, because nothing has placed it in a sector.
+    assert.notEqual(organization.status, 'verified', 'unclassified source mentions must not claim verified business activity')
     assert.ok(organization.sources.length > 0, 'unclassified companies still need source evidence')
     assert.equal(organizationTaxonomy(organization).entries.length, 0)
   }
