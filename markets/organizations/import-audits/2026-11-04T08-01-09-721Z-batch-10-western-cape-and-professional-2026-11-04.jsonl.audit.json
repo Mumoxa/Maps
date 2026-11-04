@@ -1,0 +1,29 @@
+{
+  "batch": "batch-10-western-cape-and-professional-2026-11-04.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-11-04T08:01:09.721Z",
+  "type": "companies",
+  "read": 9,
+  "newOrganizations": 0,
+  "updatedOrganizations": 4,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 9,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "verification": {
+    "requested": 4,
+    "granted": 4,
+    "refused": 0,
+    "refusals": []
+  },
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}
