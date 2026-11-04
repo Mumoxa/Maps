@@ -25,6 +25,7 @@ import type {
   ScaleEntityScope,
 } from '../src/data/organizations/types'
 import { getTaxonomyNode } from '../src/data/taxonomy/load'
+import { verificationGate } from '../src/data/organizations/verification'
 
 export type ImportType =
   | 'companies'
@@ -68,6 +69,17 @@ export interface ImportPlan {
   conflicts: string[]
   missingRequired: ImportIssue[]
   issues: ImportIssue[]
+  /** Companies the batch asked to verify, with the gate's decision. */
+  verification: VerificationDecision[]
+}
+
+/** One batch's attempt to promote a company, and why it was refused if it was. */
+export interface VerificationDecision {
+  rowNumber: number
+  organizationId: string
+  canonicalName: string
+  eligible: boolean
+  reasons: string[]
 }
 
 const FIELD_ALIASES: Record<string, string[]> = {
@@ -95,6 +107,8 @@ const FIELD_ALIASES: Record<string, string[]> = {
   checkedOn: ['checked_on', 'date_verified', 'verified_on', 'observation_date'],
   confidence: ['confidence', 'confidence_level'],
   notes: ['notes', 'note', 'comments'],
+  // A verification decision made by a reviewer, gated below before it is written.
+  verificationStatus: ['verification_status', 'reviewed_status', 'promote_status'],
   noteAppend: ['note_append', 'append_note', 'research_note_append'],
   capability: ['capability', 'process', 'operational_capability', 'capability_id'],
   status: ['status', 'capability_status'],
@@ -205,6 +219,60 @@ function resolveOrganization(
 
 const TODAY = () => new Date().toISOString().slice(0, 10)
 
+/**
+ * Apply a batch's verification request to the record that would be written.
+ *
+ * `status` is never taken from the file. A row may only say that it is asking
+ * for verification; whether the company becomes verified is decided here by the
+ * shared gate, and a refusal is recorded with its reasons instead of being
+ * silently ignored. Without this, a batch could mark a company verified while
+ * writing none of the evidence that makes the word mean anything.
+ */
+function applyVerificationDecision(
+  organization: Organization,
+  row: ImportRow,
+  plan: ImportPlan,
+  rowNumber: number,
+  canonicalName: string,
+): void {
+  const requested = (row.verificationStatus ?? row.status ?? '').trim().toLowerCase()
+  if (!requested) return
+  if (!VERIFICATION_REQUESTS.has(requested)) {
+    plan.issues.push({
+      rowNumber,
+      field: 'verification_status',
+      reason: `unsupported verification status "${requested}"; expected verified or needs-verification`,
+    })
+    return
+  }
+  if (requested !== 'verified') return
+  const gate = verificationGate({
+    organization,
+    hasPlacement: organization.industries.length > 0 || Boolean(organization.taxonomy),
+  })
+  plan.verification.push({
+    rowNumber,
+    organizationId: organization.id,
+    canonicalName,
+    eligible: gate.eligible,
+    reasons: gate.reasons,
+  })
+  if (gate.eligible) {
+    organization.status = 'verified'
+    return
+  }
+  // Not an error: an incomplete company is the normal state of the register.
+  // It is reported so the reviewer sees exactly what is still missing.
+  plan.issues.push({
+    rowNumber,
+    field: 'verification_status',
+    reason: `${canonicalName} cannot be verified yet: ${gate.reasons.join('; ')}`,
+  })
+}
+
+/** Row-level status values the importer understands. */
+const VERIFICATION_REQUESTS = new Set(['verified', 'needs-verification'])
+
 /** Build the change plan. Pure: it never writes. */
 export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset): ImportPlan {
   const plan: ImportPlan = {
@@ -222,6 +290,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
     conflicts: [],
     missingRequired: [],
     issues: [],
+    verification: [],
   }
 
   // Multiple rows may enrich different measures for one company. Always merge
@@ -306,6 +375,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
             plan.unmatchedNames.push(row.parent)
           }
         }
+        applyVerificationDecision(updated, row, plan, rowNumber, canonicalName)
         plan.matched.push({ rowNumber, organizationId: organization.id, canonicalName })
         upsertUpdatedOrganization(updated)
       } else {
@@ -341,6 +411,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           lastVerified: checkedOn,
           notes: mergeNotes('', row.notes, row.noteAppend),
         }
+        applyVerificationDecision(created, row, plan, rowNumber, canonicalName)
         plan.newOrganizations.push(created)
         workingOrganizations.set(created.id, created)
         if (row.parent) plan.unmatchedNames.push(row.parent)
@@ -759,5 +830,13 @@ export function planSummary(plan: ImportPlan) {
     conflicts: plan.conflicts,
     missingRequired: plan.missingRequired,
     issues: plan.issues,
+    verification: {
+      requested: plan.verification.length,
+      granted: plan.verification.filter((decision) => decision.eligible).length,
+      refused: plan.verification.filter((decision) => !decision.eligible).length,
+      refusals: plan.verification
+        .filter((decision) => !decision.eligible)
+        .map((decision) => ({ company: decision.canonicalName, reasons: decision.reasons })),
+    },
   }
 }

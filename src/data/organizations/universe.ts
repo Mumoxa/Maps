@@ -9,7 +9,7 @@
 import { accountantCandidates, currentAccountantAffiliations, type AccountantCandidate } from '../accountantsPeople'
 import { bankCandidates } from '../searchBank/bank'
 import contactEmployerManifest from '../../../markets/organizations/contact-employers.json'
-import { canonicalCompanyName } from '../companyNormalization'
+import { canonicalCompanyName, isEmployerPlaceholder } from '../companyNormalization'
 import { buildOrganizationIndex, resolveEmployerOrganizationId, visibleOrganizations } from './load'
 import type { DatasetEmployer, OrganizationIndex } from './load'
 import type { Organization } from './types'
@@ -127,11 +127,64 @@ export interface CompanyIntelligence {
   extraOrganizations: Organization[]
   /** Every organization the explorer can show. */
   all: Organization[]
+  /**
+   * People whose employer the source never established, grouped by the note the
+   * source used. These are NOT companies: counting them as one would invent an
+   * employer, and hiding them would silently lose mapped people from every
+   * total. They are held here so coverage is reported honestly.
+   */
+  unestablishedEmployers: UnestablishedEmployer[]
+}
+
+/** A source note such as "Employer verify", with the people behind it. */
+export interface UnestablishedEmployer {
+  /** The source's own wording, kept verbatim so the note stays auditable. */
+  note: string
+  datasets: string[]
+  professionals: number
+}
+
+/** Split every dataset employer into resolved companies and unestablished notes. */
+export function partitionPlaceholderEmployers(employers: DatasetEmployer[]): {
+  resolved: DatasetEmployer[]
+  placeholders: DatasetEmployer[]
+} {
+  const resolved: DatasetEmployer[] = []
+  const placeholders: DatasetEmployer[] = []
+  for (const employer of employers) {
+    if (isEmployerPlaceholder(employer.name)) placeholders.push(employer)
+    else resolved.push(employer)
+  }
+  return { resolved, placeholders }
+}
+
+function summarisePlaceholders(placeholders: DatasetEmployer[]): UnestablishedEmployer[] {
+  const byNote = new Map<string, UnestablishedEmployer>()
+  for (const employer of placeholders) {
+    const existing = byNote.get(employer.name)
+    if (existing) {
+      existing.professionals += employer.professionals
+      if (!existing.datasets.includes(employer.dataset)) existing.datasets.push(employer.dataset)
+    } else {
+      byNote.set(employer.name, {
+        note: employer.name,
+        datasets: [employer.dataset],
+        professionals: employer.professionals,
+      })
+    }
+  }
+  return [...byNote.values()].sort((left, right) => right.professionals - left.professionals)
 }
 
 export function buildCompanyIntelligence(sources: DatasetSources = {}): CompanyIntelligence {
-  const index = buildOrganizationIndex({ datasetEmployers: datasetEmployers(sources) })
+  const { resolved, placeholders } = partitionPlaceholderEmployers(datasetEmployers(sources))
+  const index = buildOrganizationIndex({ datasetEmployers: resolved })
   const all = visibleOrganizations(index)
   const extra = all.filter((organization) => !index.byId.has(organization.id))
-  return { index, extraOrganizations: extra, all }
+  return {
+    index,
+    extraOrganizations: extra,
+    all,
+    unestablishedEmployers: summarisePlaceholders(placeholders),
+  }
 }

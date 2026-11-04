@@ -120,6 +120,64 @@ const CANONICAL_ALIASES: Record<string, string> = {
 const LEGAL_SUFFIX =
   /[\s,]*(\(\s*(?:pty|rf|public)\s*\)\s*)?((?:ltd|limited|incorporated|inc|plc|rf)[\s,.]*)?(\(\s*(?:pty|rf)\s*\))?$/i
 
+/**
+ * Employer strings that are notes about the data, not company names.
+ *
+ * The contact and accountant sources record uncertainty in the employer column
+ * itself ("Employer verify", "Current employer unconfirmed"). Treated as company
+ * names, each one becomes a phantom organization in the atlas with people
+ * attached to it, which then reads as a real employer with an odd name.
+ *
+ * This is a configuration table rather than a special case in business logic: it
+ * lists the phrasings the sources actually contain, so a new note-style value is
+ * added here (and covered by a test) instead of being rendered as a company.
+ *
+ * Matching happens on the whole value with punctuation flattened, so a real
+ * company whose name merely contains one of these words is never excluded.
+ */
+export const EMPLOYER_PLACEHOLDER_PATTERNS: RegExp[] = [
+  /^employer\s+(?:to\s+)?verify$/,
+  /^employer\s+unconfirmed$/,
+  /^employer\s+and\s+title\s+unconfirmed$/,
+  /^employer\s+current\s+unconfirmed$/,
+  /^current\s+employer\s+(?:to\s+)?verify$/,
+  /^current\s+employer\s+unconfirmed$/,
+  /^current\s+company\s+unconfirmed$/,
+  /^current\s+renewable\s+energy\s+employer\s+verify$/,
+  /^project\s+based\s+employer\s+unconfirmed$/,
+  /^growth\s+stage\s+business\s+employer\s+verify$/,
+  /^entrepreneurial\s+cfo\s+employer\s+verify$/,
+  /^finance\s+executive\s+employer\s+verify$/,
+  /^property\s+and\s+private\s+company\s+finance\s+employer\s+verify$/,
+  /^renewables\s+company\s+verify$/,
+  /^unconfirmed$/,
+  /^unknown$/,
+  /^not\s+applicable$/,
+  /^n\s*a$/,
+  /^-$/,
+]
+
+/** Lowercase, punctuation and spacing flattened, so matching is total. */
+function placeholderKey(raw: string): string {
+  return raw
+    .toLowerCase()
+    .replace(/[\u2013\u2014]/g, ' ')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+}
+
+/**
+ * True when an employer value is a source's uncertainty note rather than a
+ * company. Such a value must never resolve to a company record: the people
+ * behind it are reported as "employer not established" instead.
+ */
+export function isEmployerPlaceholder(raw: string | null | undefined): boolean {
+  const key = placeholderKey(raw ?? '')
+  if (!key) return true
+  return EMPLOYER_PLACEHOLDER_PATTERNS.some((pattern) => pattern.test(key))
+}
+
 function tidy(raw: string): string {
   return raw.trim().replace(/\s+/g, ' ').replace(/[.,;]+$/, '')
 }
