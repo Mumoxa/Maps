@@ -6069,7 +6069,7 @@
       "First National Bank"
     ],
     "website": "https://www.fnb.co.za/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "FIN-BANK-BIG5",
@@ -6080,15 +6080,22 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
+    "locations": [
+      {
+        "city": "Sandton",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.fnb.co.za/about-fnb/about-us.html",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "scale": [],
     "parentId": null,
     "sources": [
       {
         "url": "https://www.fnb.co.za/about-fnb/about-us.html",
-        "type": "recruiter-supplied",
-        "evidence": "First National Bank (FNB) is a division of FirstRand Bank Limited and part of the FirstRand group; it provides retail and commercial banking and financial services in South Africa.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "First National Bank (FNB) is a division of FirstRand Bank Limited and part of the FirstRand group; it provides retail and commercial banking and financial services in South Africa. | FNB's own site footer states that First National Bank is a division of FirstRand Bank Limited and gives the address as 4 Merchant Place, Corner Fredman Drive and Rivonia Road, 2196. | FNB's own site identifies it as First National Bank, a division of FirstRand Bank Limited, an authorised financial services and credit provider, and publishes its Sandton address.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -6096,8 +6103,8 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.fnb.co.za/about-fnb/about-us.html); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.fnb.co.za/about-fnb/about-us.html); no field value was rewritten.\nFNB is recorded as a division of FirstRand Bank Limited, exactly as its own footer states, with registration number 1929/001225/06 (NCRCP20). It is not a separate legal entity and must not be presented as one. The address is the Sandton registered address shared by the FirstRand group."
   },
   {
     "id": "org-food-lovers",
