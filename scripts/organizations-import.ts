@@ -717,6 +717,29 @@ function buildScaleEntry(
   }
 }
 
+/**
+ * Reduce a scale figure to what it actually asserts, so two spellings of the same
+ * fact collapse instead of stacking.
+ *
+ * "over 27000 people" and "more than 27 000 employees" are one headcount, not
+ * two, and a dossier that showed both would look better researched than it is.
+ * The comparison keeps the qualifier (over/under/about) and the first number,
+ * because those change what the figure means; it discards the wording around them.
+ */
+export function scaleFingerprint(entry: Pick<OrganizationScale, 'metric' | 'value' | 'entityScope'>): string {
+  const value = entry.value.toLowerCase()
+  const qualifier = /(under|below|fewer)/.test(value) ? 'under'
+    : /(over|more than|above|exceed)/.test(value) ? 'over'
+      : /(about|approximately|circa|around)/.test(value) ? 'about'
+        : ''
+  const numbers = value.match(/\d[\d\s.,]*/g) ?? []
+  const magnitude = numbers
+    .map((raw) => raw.replace(/[\s,]/g, '').replace(/\.$/, ''))
+    .filter((raw) => raw !== '')
+    .join('-')
+  return [entry.metric, qualifier, magnitude, entry.entityScope ?? 'not-stated'].join('|')
+}
+
 function mergeScale(
   organization: Organization,
   row: ImportRow,
@@ -727,20 +750,33 @@ function mergeScale(
 ): OrganizationScale[] {
   const incoming = buildScaleEntry(row, sourceUrl, checkedOn, plan, rowNumber)
   if (!incoming) return organization.scale
-  const index = organization.scale.findIndex((entry) => (
+  const exact = organization.scale.findIndex((entry) => (
     entry.metric === incoming.metric
     && entry.value === incoming.value
     && entry.asOf === incoming.asOf
     && entry.sourceUrl === incoming.sourceUrl
     && (entry.entityScope ?? '') === (incoming.entityScope ?? '')
   ))
+  const index = exact >= 0
+    ? exact
+    : organization.scale.findIndex((entry) => scaleFingerprint(entry) === scaleFingerprint(incoming))
+  if (exact < 0 && index >= 0) {
+    // Same fact, different wording: say so rather than silently picking one.
+    plan.issues.push({
+      rowNumber,
+      field: 'scale_value',
+      reason: `${organization.name} already records ${organization.scale[index].metric} as "${organization.scale[index].value}" from the same scope; "${incoming.value}" restates it, so the existing measure was kept`,
+    })
+  }
   if (index < 0) return [...organization.scale, incoming]
   const merged = [...organization.scale]
-  merged[index] = {
-    ...merged[index],
-    ...incoming,
-    checkedOn: incoming.checkedOn > merged[index].checkedOn ? incoming.checkedOn : merged[index].checkedOn,
-  }
+  const existing = merged[index]
+  const checkedOnLatest = incoming.checkedOn > existing.checkedOn ? incoming.checkedOn : existing.checkedOn
+  // A restatement confirms the fact again; it does not get to rewrite the figure
+  // already on record to a different wording of the same number.
+  merged[index] = exact >= 0
+    ? { ...existing, ...incoming, checkedOn: checkedOnLatest }
+    : { ...existing, checkedOn: checkedOnLatest }
   return merged
 }
 

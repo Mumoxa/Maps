@@ -100,7 +100,9 @@
     "id": "org-absa",
     "name": "Absa",
     "legalName": "Absa Group Limited",
-    "aliases": [],
+    "aliases": [
+      "Absa Group"
+    ],
     "website": "https://www.absa.africa/",
     "status": "verified",
     "industries": [],
@@ -136,8 +138,16 @@
       },
       {
         "url": "https://www.absa.africa/contact-us/",
-        "type": "corporate-disclosure",
-        "evidence": "Absa Group's contact page gives its registered business address as 7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001.",
+        "type": "company-website",
+        "evidence": "Absa Group's contact page gives its registered business address as 7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001. | Absa Group's own contact page gives its registered business address as 7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001, with registration number 1986/003934/06 and JSE share code ABG.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.absa.africa/about-us/",
+        "type": "company-website",
+        "evidence": "Absa's own About us page describes it as a diversified African financial services provider offering products and services across retail, business, corporate, investment and wealth banking, as well as investment management and insurance.",
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
@@ -147,7 +157,7 @@
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.absa.africa/who-we-are/); no field value was rewritten.\nAbsa Group's registered business address and registration number 1986/003934/06 (JSE share code ABG) are stated on its own contact page."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.absa.africa/who-we-are/); no field value was rewritten.\nAbsa Group's registered business address and registration number 1986/003934/06 (JSE share code ABG) are stated on its own contact page.\nAbsa Group's own contact page gives registration number 1986/003934/06, JSE share code ABG and issuer code ABGE, and lists the countries it operates in. Absa Bank Limited is a separate subsidiary and is not merged into this record."
   },
   {
     "id": "org-accelerate",
@@ -11118,7 +11128,7 @@
     "legalName": "Old Mutual Limited",
     "aliases": [],
     "website": "https://www.oldmutual.com/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "FIN-INS-LIFE",
@@ -11131,7 +11141,14 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
+    "locations": [
+      {
+        "city": "Pinelands",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.oldmutual.co.za/about/",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "scale": [
       {
         "metric": "employees",
@@ -11142,6 +11159,16 @@
         "sourceUrl": "https://www.oldmutual.com/about",
         "checkedOn": "2026-11-04",
         "entityScope": "consolidated-group"
+      },
+      {
+        "metric": "sites",
+        "value": "over 580 locations and ATMs in South Africa",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.oldmutual.co.za/about/",
+        "checkedOn": "2026-11-04",
+        "entityScope": "south-african-operation"
       }
     ],
     "parentId": null,
@@ -11153,13 +11180,21 @@
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.oldmutual.co.za/about/",
+        "type": "company-website",
+        "evidence": "Old Mutual's own Who we are page gives its registered address as Mutualpark, Jan Smuts Drive, Pinelands, 7405, South Africa. | Old Mutual's own Who we are page states that in South Africa alone it has over 580 locations and ATMs. | Old Mutual's own Who we are page states that it was established in Cape Town in 1845 as South Africa's first mutual life assurance society, employs over 27000 people and operates in 12 countries, and offers life assurance, short-term insurance, savings, loans and a transactional account. | Old Mutual's own Who we are page states: We now employ over 27 000 people and operate in 12 countries across two regions.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.oldmutual.com/about); no field value was rewritten.\nOld Mutual Limited is a licensed controlling company of the Designated Old Mutual Limited Insurance Group, registration number 2017/235138/06, as stated on its own site. The 27 000-plus headcount is a group figure and is not attributed to any subsidiary."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.oldmutual.com/about); no field value was rewritten.\nOld Mutual Limited is a licensed controlling company of the Designated Old Mutual Limited Insurance Group, registration number 2017/235138/06, as stated on its own site. The 27 000-plus headcount is a group figure and is not attributed to any subsidiary.\nOld Mutual's South African site publishes the registered name Old Mutual Life Assurance Company (South Africa) Limited, registration number 1999/004643/06, at Mutualpark, Pinelands. That is the licensed South African life assurer; the group is Old Mutual Limited, which is the legal name this dossier carries. The address is recorded once, for the South African operation, and never presented as a group-wide location."
   },
   {
     "id": "org-old-mutual-finance",
@@ -15280,8 +15315,11 @@
   {
     "id": "org-standard-bank",
     "name": "Standard Bank",
-    "legalName": "",
-    "aliases": [],
+    "legalName": "Standard Bank Group Limited",
+    "aliases": [
+      "SBG",
+      "Standard Bank Group"
+    ],
     "website": "https://www.standardbank.com/",
     "status": "verified",
     "industries": [],
@@ -15304,7 +15342,28 @@
         "checkedOn": "2026-11-04"
       }
     ],
-    "scale": [],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "over 54000 people",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.standardbank.com/sbg/standard-bank-group",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      },
+      {
+        "metric": "sites",
+        "value": "presence in over 21 sub-Saharan African countries, 4 global centres and 2 offshore hubs",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.standardbank.com/sbg/standard-bank-group/our-group/our-global-locations",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
@@ -15322,13 +15381,29 @@
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.standardbank.com/sbg/standard-bank-group/our-group/our-global-locations",
+        "type": "company-website",
+        "evidence": "Standard Bank's own global locations page gives its South African contact address as Standard Bank of South Africa Limited, 3 Simmonds Street, Johannesburg, 2001. | Standard Bank's global locations page states a presence in over 21 sub-Saharan African countries, four global centres and two offshore hubs.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.standardbank.com/sbg/standard-bank-group",
+        "type": "company-website",
+        "evidence": "Standard Bank Group's own careers panel on its homepage reads: Join over 54 000 people across 21 African countries, 4 global centres, and 2 offshore hubs.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.standardbank.com/sbg/standard-bank-group/our-group); no field value was rewritten."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.standardbank.com/sbg/standard-bank-group/our-group); no field value was rewritten.\nTwo entities are involved and the dossier keeps them apart. The group's own homepage lists its ordinary shares on the JSE as STANDARD BANK GROUP LTD, which is the legal name recorded here. The South African operating bank, whose 3 Simmonds Street address this record carries, is Standard Bank of South Africa Limited - a subsidiary, not the group itself."
   },
   {
     "id": "org-stefanutti-stocks",

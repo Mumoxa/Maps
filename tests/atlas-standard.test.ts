@@ -417,3 +417,72 @@ describe('promoting gate-eligible companies', () => {
     assert.deepEqual(plan.refused, [])
   })
 })
+
+describe('restated scale measures', () => {
+  it('collapses two spellings of one headcount instead of stacking them', async () => {
+    const { scaleFingerprint } = await import('../scripts/organizations-import')
+    const base = { metric: 'employees' as const, entityScope: 'consolidated-group' as const }
+    assert.equal(
+      scaleFingerprint({ ...base, value: 'more than 27 000 employees' }),
+      scaleFingerprint({ ...base, value: 'over 27000 people' }),
+      'the same headcount worded two ways is one measure',
+    )
+    assert.notEqual(
+      scaleFingerprint({ ...base, value: 'over 27000 people' }),
+      scaleFingerprint({ ...base, value: 'under 27000 people' }),
+      'a qualifier that changes the claim must change the fingerprint',
+    )
+    assert.notEqual(
+      scaleFingerprint({ ...base, value: 'over 27000 people' }),
+      scaleFingerprint({ ...base, entityScope: 'south-african-operation', value: 'over 27000 people' }),
+      'the same number for a different entity is a different measure',
+    )
+    assert.notEqual(
+      scaleFingerprint({ ...base, value: 'over 27000 people' }),
+      scaleFingerprint({ ...base, metric: 'sites', value: 'over 27000 people' }),
+      'a different metric is a different measure',
+    )
+  })
+
+  it('keeps the existing measure and reports the restatement on import', async () => {
+    const { planImport } = await import('../scripts/organizations-import')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      id: 'org-mutual',
+      name: 'Mutual Group',
+      scale: [{
+        metric: 'employees',
+        value: 'more than 27 000 employees',
+        basis: 'source-reported',
+        asOf: 'not stated (page checked 2026-11-04)',
+        sourceUrl: 'https://mutual.test/about',
+        checkedOn: TODAY,
+        entityScope: 'consolidated-group',
+      }],
+    })
+
+    const plan = planImport(
+      [{
+        name: 'Mutual Group',
+        scale_metric: 'employees',
+        scale_value: 'over 27000 people',
+        scale_basis: 'source-reported',
+        scale_as_of: 'not stated (page checked 2026-11-04)',
+        scale_entity_scope: 'consolidated-group',
+        source_url: 'https://mutual.test/about',
+        evidence: 'The company states it employs over 27000 people.',
+        checked_on: TODAY,
+      }],
+      'companies',
+      { industries: [], capabilities: [], organizations: [organization], relationships: [], associations: [], intelligence: [] },
+    )
+
+    const updated = plan.updatedOrganizations.find((entry) => entry.id === 'org-mutual')
+    assert.equal(updated?.scale.length, 1, 'a restatement must not add a second measure')
+    assert.equal(updated?.scale[0].value, 'more than 27 000 employees')
+    assert.ok(
+      plan.issues.some((issue) => issue.field === 'scale_value' && /restates it/.test(issue.reason)),
+      'the restatement must be visible in the import report',
+    )
+  })
+})
