@@ -7926,10 +7926,14 @@
   {
     "id": "org-investec",
     "name": "Investec",
-    "legalName": "",
-    "aliases": [],
+    "legalName": "Investec Limited",
+    "aliases": [
+      "Investec Group",
+      "Investec Bank Limited",
+      "Investec plc"
+    ],
     "website": "https://www.investec.com/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "FIN-BANK-CORP",
@@ -7942,11 +7946,28 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
+    "locations": [
+      {
+        "city": "Sandton",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/contact-us.html",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "scale": [
       {
         "metric": "employees",
         "value": "7,400+ staff internationally",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us.html",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      },
+      {
+        "metric": "sites",
+        "value": "40+ cities on four continents",
         "basis": "source-reported",
         "confidence": "confirmed",
         "asOf": "not stated (page checked 2026-11-04)",
@@ -7968,7 +7989,15 @@
       {
         "url": "https://www.investec.com/en_za/welcome-to-investec/about-us.html",
         "type": "company-website",
-        "evidence": "Investec's about page states it is staffed by 7,400+ employees across its core geographies of the UK and South Africa, and is publicly traded in London and Johannesburg.",
+        "evidence": "Investec's about page states it is staffed by 7,400+ employees across its core geographies of the UK and South Africa, and is publicly traded in London and Johannesburg. | Investec's own About us page states 7,400+ staff internationally and that the business is staffed by 7,400+ employees across its core geographies of the UK and South Africa. | Investec's own About us page states 40+ cities on four continents and 13 geographies over 50+ years of heritage. | Investec's own About us page describes it as an international bank and wealth manager, publicly traded in London and Johannesburg, with 7,400+ employees across the UK and South Africa and a footprint of 40+ cities on four continents.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.investec.com/en_za/welcome-to-investec/contact-us.html",
+        "type": "company-website",
+        "evidence": "Investec's own contact page is headed with its Sandton office and gives general queries on +27 (11) 286 7000, alongside its client emergency line.",
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
@@ -7978,7 +8007,7 @@
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.investec.com/en_za/investec-for-corporates/investment-banking.html); no field value was rewritten.\nInvestec's 7,400-plus headcount is an international group figure covering the UK and South Africa; it is not a South African-only headcount."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.investec.com/en_za/investec-for-corporates/investment-banking.html); no field value was rewritten.\nInvestec's 7,400-plus headcount is an international group figure covering the UK and South Africa; it is not a South African-only headcount.\nInvestec Bank Limited, registration number 1969/004763/06, is a licensed bank and a division-level entity; the South African group entity is Investec Limited, which its own disclaimer names as the party preparing its communications. Both are recorded, and Investec Private Banking, Investec for Business and Corporate and Investment Banking are divisions of Investec Bank Limited rather than separate companies."
   },
   {
     "id": "org-invicta-developments",
@@ -9328,26 +9357,27 @@
     "aliases": [
       "Massmart",
       "Builders Warehouse",
-      "Massmart Holdings Ltd"
+      "Massmart Holdings Ltd",
+      "Massmart Holdings Limited"
     ],
-    "website": "http://www.builders.co.za",
-    "status": "needs-verification",
+    "website": "https://www.massmart.co.za/",
+    "status": "verified",
     "industries": [
       {
         "industryId": "grocery-retail",
-        "primary": true,
-        "confidence": "probable",
-        "evidence": "Food retail and wholesale businesses including Rhino, Massfresh and Cash & Carry.",
-        "sourceUrl": "https://pitchbook.com/profiles/company/59352-58",
-        "checkedOn": "2026-10-08"
+        "primary": false,
+        "confidence": "confirmed",
+        "evidence": "Massmart's own site states that its formats hold leading market shares in general merchandise, liquor, home improvement and wholesale food markets, and describes Jumbo as food, liquor and general merchandise wholesalers and Shield as a voluntary buying association servicing independent traders.",
+        "sourceUrl": "https://www.massmart.co.za/",
+        "checkedOn": "2026-11-04"
       },
       {
         "industryId": "fmcg-wholesale",
-        "primary": false,
-        "confidence": "probable",
-        "evidence": "Cash & Carry wholesale operations.",
-        "sourceUrl": "https://pitchbook.com/profiles/company/59352-58",
-        "checkedOn": "2026-10-08"
+        "primary": true,
+        "confidence": "confirmed",
+        "evidence": "Massmart's own site states that its formats hold leading market shares in general merchandise, liquor, home improvement and wholesale food markets, and describes Jumbo as food, liquor and general merchandise wholesalers and Shield as a voluntary buying association servicing independent traders.",
+        "sourceUrl": "https://www.massmart.co.za/",
+        "checkedOn": "2026-11-04"
       }
     ],
     "capabilities": [
@@ -9368,8 +9398,26 @@
         "checkedOn": "2026-10-08"
       }
     ],
-    "locations": [],
-    "scale": [],
+    "locations": [
+      {
+        "city": "Sandton",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.massmart.co.za/about-us/contact",
+        "checkedOn": "2026-11-04"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "sites",
+        "value": "293 stores in 8 sub-Saharan countries",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (homepage checked 2026-11-04)",
+        "sourceUrl": "https://www.massmart.co.za/",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
@@ -9409,6 +9457,30 @@
         "evidence": "MBAWC_Members (2).xlsx, MBAWC Members row 46; complete cell archive retained.",
         "checkedOn": "2026-10-23",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.massmart.co.za/about-us/contact",
+        "type": "company-website",
+        "evidence": "Massmart's own contact page gives its address as Massmart House, 16 Peltier Drive, Sunninghill Ext. 6, Sandton 2157, Republic of South Africa, with telephone 27 (11) 517-0000.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.massmart.co.za/",
+        "type": "company-website",
+        "evidence": "Massmart's own homepage describes the group as an African retail and wholesale group represented in 293 stores in 8 sub-Saharan countries. | Massmart's own site states that its formats hold leading market shares in general merchandise, liquor, home improvement and wholesale food markets, and describes Jumbo as food, liquor and general merchandise wholesalers and Shield as a voluntary buying association servicing independent traders.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.massmart.co.za/about-us/",
+        "type": "company-website",
+        "evidence": "Massmart's own About Us page describes the group's retail and wholesale formats, its leading market shares in general merchandise, liquor, home improvement and wholesale food, and its purpose of helping customers save money and live better.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
@@ -9416,8 +9488,8 @@
       "mbawc-members",
       "contacts"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Current ownership structure after the 2022-2023 transactions is not established from the sources read. Also present in the Accounting & Finance dataset as Massmart.\nMBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.",
+    "lastVerified": "2026-11-04",
+    "notes": "Current ownership structure after the 2022-2023 transactions is not established from the sources read. Also present in the Accounting & Finance dataset as Massmart.\nMBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.\nThe recorded website was builders.co.za, which is one of Massmart's retail brands rather than the group; it is corrected to massmart.co.za and Builders is kept in the note as a brand. Massmart's own site describes the group as Massmart powered by Walmart and lists its brands as Makro, Game, Builders, Jumbo, Shield and Walmart (SA).",
     "taxonomy": {
       "primaryNode": "RTL-GEN",
       "secondaryNodes": [
