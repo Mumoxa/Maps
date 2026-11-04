@@ -2436,12 +2436,14 @@
   {
     "id": "org-bmw-group",
     "name": "BMW Group",
-    "legalName": "",
+    "legalName": "BMW Group South Africa (Pty) Ltd",
     "aliases": [
-      "BMW"
+      "BMW",
+      "BMW South Africa",
+      "BMW SA"
     ],
-    "website": "https://www.bmwgroup-werke.com/",
-    "status": "needs-verification",
+    "website": "https://www.bmw.co.za/",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "MFG-AUTO-OEM-EXPORT",
@@ -2454,15 +2456,41 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
-    "scale": [],
+    "locations": [
+      {
+        "city": "Midrand",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.bmw.co.za/en/more-bmw/customer-support.html",
+        "checkedOn": "2026-11-04"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "approximately 2800 employees at BMW Group Plant Rosslyn",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (plant page checked 2026-11-04)",
+        "sourceUrl": "https://www.bmwgroup-werke.com/rosslyn/en.html",
+        "checkedOn": "2026-11-04",
+        "entityScope": "operating-division"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
         "url": "https://www.bmwgroup-werke.com/rosslyn/en.html",
-        "type": "recruiter-supplied",
-        "evidence": "BMW Group Plant Rosslyn produces BMW X3 vehicles almost entirely for global export.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "BMW Group Plant Rosslyn produces BMW X3 vehicles almost entirely for global export. | BMW Group's own Plant Rosslyn page states approximately 2800 employees at the plant in its Facts and Figures panel. | BMW Group's own Plant Rosslyn page states that the plant became the BMW Group's first manufacturing facility outside Germany, that it is the only facility in the global network building the BMW X3 as a plug-in hybrid, and that more than 96% of third-generation X3 output was exported to over 40 global markets.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.bmw.co.za/en/more-bmw/customer-support.html",
+        "type": "company-website",
+        "evidence": "BMW South Africa's own customer support page gives its address as 1 Bavaria Avenue, Ext. 17, Randjespark, Midrand, 1685.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -2470,8 +2498,8 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.bmwgroup-werke.com/rosslyn/en.html); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.bmwgroup-werke.com/rosslyn/en.html); no field value was rewritten.\nThe record is the South African operation, not the global BMW Group: the plant page states that BMW AG acquired full shareholding in 1973 and established BMW Group South Africa (Pty) Ltd, which is the legal entity recorded here. Figures for the global group are never applied to it. BMW Financial Services (South Africa) (Pty) Ltd is a separate registered entity (FSP 4623, NCRCP2341) and is not merged into this record.\nThe 2800 figure is the Rosslyn plant workforce, not BMW Group South Africa's total and not the global group. The same page separately says over 49000 livelihoods are directly tied to BMW Group South Africa's operations, which is an impact estimate rather than a headcount and is not recorded as scale."
   },
   {
     "id": "org-bow-arc",
