@@ -345,3 +345,75 @@ describe('importer verification gate', () => {
     assert.equal(summary.verification.refusals[0].company, 'Thin Record')
   })
 })
+
+describe('promoting gate-eligible companies', () => {
+  it('derives the verification date from the newest source the record cites', async () => {
+    const { latestSourceDate } = await import('../scripts/promote-verified')
+    const record = organization({
+      sources: [
+        { url: 'https://a.test/', type: 'company-website', evidence: 'A.', checkedOn: '2026-01-05' },
+        { url: 'https://b.test/', type: 'corporate-disclosure', evidence: 'B.', checkedOn: '2026-09-30' },
+      ],
+      locations: [{ city: 'Cape Town', province: 'Western Cape', sourceUrl: 'https://b.test/', checkedOn: '2026-03-01' }],
+      lastVerified: '',
+    })
+    assert.equal(latestSourceDate(record), '2026-09-30')
+  })
+
+  it('leaves the date empty when nothing in the record is dated', async () => {
+    const { latestSourceDate } = await import('../scripts/promote-verified')
+    assert.equal(latestSourceDate(organization({ sources: [] })), '')
+  })
+
+  it('promotes only what the gate accepts, and never bypasses it', async () => {
+    const { planPromotions } = await import('../scripts/promote-verified')
+    const ready = organization({
+      id: 'org-ready',
+      name: 'Ready Co',
+      status: 'needs-verification',
+      website: 'https://ready.test/',
+      sources: [{ url: 'https://ready.test/', type: 'company-website', evidence: 'Own operations.', checkedOn: TODAY }],
+      locations: [{ city: 'Durban', province: 'KwaZulu-Natal', sourceUrl: 'https://ready.test/', checkedOn: TODAY }],
+      industries: [{
+        industryId: 'commercial-banking',
+        primary: true,
+        confidence: 'confirmed',
+        evidence: 'Registered bank.',
+        sourceUrl: 'https://ready.test/',
+        checkedOn: TODAY,
+      }],
+      lastVerified: '',
+    })
+    const thin = organization({
+      id: 'org-thin',
+      name: 'Thin Co',
+      status: 'needs-verification',
+      website: '',
+      sources: [],
+      locations: [],
+      lastVerified: '',
+    })
+
+    const plan = planPromotions([ready, thin])
+    assert.deepEqual(plan.promoted.map((entry) => entry.id), ['org-ready'])
+    assert.deepEqual(plan.refused.map((entry) => entry.organization.id), ['org-thin'])
+    assert.deepEqual(plan.dated.map((entry) => entry.organization.id), ['org-ready'])
+  })
+
+  it('does not disturb a company that is already verified', async () => {
+    const { planPromotions } = await import('../scripts/promote-verified')
+    const done = organization({
+      id: 'org-done',
+      name: 'Done Co',
+      status: 'verified',
+      website: 'https://done.test/',
+      sources: [{ url: 'https://done.test/', type: 'company-website', evidence: 'Own operations.', checkedOn: TODAY }],
+      locations: [{ city: 'Cape Town', province: 'Western Cape', sourceUrl: 'https://done.test/', checkedOn: TODAY }],
+      lastVerified: TODAY,
+    })
+    const plan = planPromotions([done])
+    assert.deepEqual(plan.promoted, [])
+    assert.deepEqual(plan.dated, [])
+    assert.deepEqual(plan.refused, [])
+  })
+})
