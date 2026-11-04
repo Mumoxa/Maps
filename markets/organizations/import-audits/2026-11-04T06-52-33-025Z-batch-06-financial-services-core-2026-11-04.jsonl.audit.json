@@ -1,0 +1,29 @@
+{
+  "batch": "batch-06-financial-services-core-2026-11-04.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-11-04T06:52:33.025Z",
+  "type": "companies",
+  "read": 10,
+  "newOrganizations": 0,
+  "updatedOrganizations": 5,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 10,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "verification": {
+    "requested": 3,
+    "granted": 3,
+    "refused": 0,
+    "refusals": []
+  },
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

@@ -102,7 +102,7 @@
     "legalName": "Absa Group Limited",
     "aliases": [],
     "website": "https://www.absa.africa/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "FIN-BANK-BIG5",
@@ -115,15 +115,30 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.absa.africa/contact-us/",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "scale": [],
     "parentId": null,
     "sources": [
       {
         "url": "https://www.absa.africa/who-we-are/",
-        "type": "recruiter-supplied",
-        "evidence": "Absa Group describes itself as a leading pan-African bank; its South African bank offers retail, business, wealth, corporate and investment banking and insurance. Listed on the JSE (ABG).",
-        "checkedOn": "2026-10-16",
+        "type": "corporate-disclosure",
+        "evidence": "Absa Group describes itself as a leading pan-African bank; its South African bank offers retail, business, wealth, corporate and investment banking and insurance. Listed on the JSE (ABG). | Absa Group describes itself as a leading pan-African bank offering retail, business, wealth, corporate and investment banking and insurance in South Africa.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.absa.africa/contact-us/",
+        "type": "corporate-disclosure",
+        "evidence": "Absa Group's contact page gives its registered business address as 7th Floor, Absa Towers West, 15 Troye Street, Johannesburg, 2001.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -131,8 +146,8 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.absa.africa/who-we-are/); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.absa.africa/who-we-are/); no field value was rewritten.\nAbsa Group's registered business address and registration number 1986/003934/06 (JSE share code ABG) are stated on its own contact page."
   },
   {
     "id": "org-accelerate",
@@ -2844,7 +2859,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.capitecbank.co.za/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "FIN-BANK-BIG5",
@@ -2855,15 +2870,43 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
-    "scale": [],
+    "locations": [
+      {
+        "city": "Stellenbosch",
+        "province": "Western Cape",
+        "sourceUrl": "https://www.capitecbank.co.za/about-us/",
+        "checkedOn": "2026-11-04"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "over 16 900 employees",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "financial results for the year ended 28 February 2025",
+        "sourceUrl": "https://www.capitecbank.co.za/about-us/",
+        "checkedOn": "2026-11-04",
+        "entityScope": "standalone-entity"
+      },
+      {
+        "metric": "sites",
+        "value": "880 branches",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "financial results for the year ended 28 February 2025",
+        "sourceUrl": "https://www.capitecbank.co.za/about-us/",
+        "checkedOn": "2026-11-04",
+        "entityScope": "standalone-entity"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
         "url": "https://www.capitecbank.co.za/about-us/",
-        "type": "recruiter-supplied",
-        "evidence": "Capitec Bank, registered with the SA Reserve Bank and listed on the JSE, provides simplified personal and business banking to over 24 million clients.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "Capitec Bank, registered with the SA Reserve Bank and listed on the JSE, provides simplified personal and business banking to over 24 million clients. | Capitec Bank's own about page lists a registered address of 5 Neutron Road, Techno Park, Stellenbosch. | Capitec Bank's key facts state over 16 900 employees, footnoted to its financial results for the year ended 28 February 2025. | Capitec Bank's key facts state 880 branches, footnoted to its financial results for the year ended 28 February 2025. | Capitec Bank's own about page states it was established on 1 March 2001, is registered with the SA Reserve Bank, was listed on the JSE on 18 February 2002 and serves over 24 million active clients.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -2871,7 +2914,7 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
+    "lastVerified": "2026-11-04",
     "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.capitecbank.co.za/about-us/); no field value was rewritten."
   },
   {
@@ -7818,7 +7861,18 @@
     },
     "capabilities": [],
     "locations": [],
-    "scale": [],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "7,400+ staff internationally",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.investec.com/en_za/welcome-to-investec/about-us.html",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
@@ -7828,13 +7882,21 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.investec.com/en_za/welcome-to-investec/about-us.html",
+        "type": "company-website",
+        "evidence": "Investec's about page states it is staffed by 7,400+ employees across its core geographies of the UK and South Africa, and is publicly traded in London and Johannesburg.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.investec.com/en_za/investec-for-corporates/investment-banking.html); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.investec.com/en_za/investec-for-corporates/investment-banking.html); no field value was rewritten.\nInvestec's 7,400-plus headcount is an international group figure covering the UK and South Africa; it is not a South African-only headcount."
   },
   {
     "id": "org-invicta-developments",
@@ -10932,7 +10994,7 @@
   {
     "id": "org-old-mutual",
     "name": "Old Mutual",
-    "legalName": "",
+    "legalName": "Old Mutual Limited",
     "aliases": [],
     "website": "https://www.oldmutual.com/",
     "status": "needs-verification",
@@ -10949,14 +11011,25 @@
     },
     "capabilities": [],
     "locations": [],
-    "scale": [],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "more than 27 000 employees",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "not stated (page checked 2026-11-04)",
+        "sourceUrl": "https://www.oldmutual.com/about",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
         "url": "https://www.oldmutual.com/about",
-        "type": "recruiter-supplied",
-        "evidence": "Old Mutual Limited is a pan-African financial services group, established as South Africa's first mutual life insurance company, offering life assurance, savings, short-term insurance, investments and asset management.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "Old Mutual Limited is a pan-African financial services group, established as South Africa's first mutual life insurance company, offering life assurance, savings, short-term insurance, investments and asset management. | Old Mutual's about page states the group employs more than 27 000 people and operates in 12 countries across Africa and Asia.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -10964,8 +11037,8 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.oldmutual.com/about); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.oldmutual.com/about); no field value was rewritten.\nOld Mutual Limited is a licensed controlling company of the Designated Old Mutual Limited Insurance Group, registration number 2017/235138/06, as stated on its own site. The 27 000-plus headcount is a group figure and is not attributed to any subsidiary."
   },
   {
     "id": "org-old-mutual-finance",
@@ -15143,7 +15216,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.standardbank.com/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "FIN-BANK-BIG5",
@@ -15156,15 +15229,30 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
+    "locations": [
+      {
+        "city": "Johannesburg",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.standardbank.com/sbg/standard-bank-group/contact-us",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "scale": [],
     "parentId": null,
     "sources": [
       {
         "url": "https://www.standardbank.com/sbg/standard-bank-group/our-group",
-        "type": "recruiter-supplied",
-        "evidence": "Standard Bank Group is an Africa-focused bank and financial services group, offering personal, business, corporate and investment banking across 21 African countries.",
-        "checkedOn": "2026-10-16",
+        "type": "corporate-disclosure",
+        "evidence": "Standard Bank Group is an Africa-focused bank and financial services group, offering personal, business, corporate and investment banking across 21 African countries. | Standard Bank Group's our-group page states current in-country operations in 21 African countries, over 19.5 million active clients and total assets of R3.8 trillion at the 2026 interim results.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.standardbank.com/sbg/standard-bank-group/contact-us",
+        "type": "corporate-disclosure",
+        "evidence": "Standard Bank Group's contact page gives its address as 5 Simmonds Street, Johannesburg, 2001, Gauteng, South Africa.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -15172,7 +15260,7 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
+    "lastVerified": "2026-11-04",
     "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.standardbank.com/sbg/standard-bank-group/our-group); no field value was rewritten."
   },
   {
