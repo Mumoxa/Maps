@@ -9975,10 +9975,10 @@
   {
     "id": "org-mtn",
     "name": "MTN",
-    "legalName": "",
+    "legalName": "MTN Group Limited",
     "aliases": [],
     "website": "https://www.mtn.com/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "ICT-TELCO-MNO",
@@ -9989,8 +9989,26 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
-    "scale": [],
+    "locations": [
+      {
+        "city": "Fairland",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.mtn.com/contact-us/",
+        "checkedOn": "2026-11-04"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "revenue",
+        "value": "service revenue of over R115.3 billion (H1 2026)",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "H1 2026",
+        "sourceUrl": "https://www.mtn.com/",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
@@ -10000,13 +10018,29 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.mtn.com/contact-us/",
+        "type": "corporate-disclosure",
+        "evidence": "MTN Group's contact page gives its registered office and physical address as MTN Group Limited, Innovation Centre, 216 14th Avenue, Fairland, Gauteng, 2195, South Africa.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.mtn.com/",
+        "type": "company-website",
+        "evidence": "MTN Group's own home page reports service revenue of over R115.3 billion in H1 2026, alongside 317.7 million active subscribers across 19 markets. | MTN Group's own home page states it operates in 19 markets with 317.7 million active subscribers, and describes its fintech, enterprise and network-as-a-service platforms.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.mtn.com/about/); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.mtn.com/about/); no field value was rewritten.\nMTN Group Limited's company registration number 1994/009584/06 and JSE share code MTN are stated on its own investor contact page.\nThe R115.3 billion figure is H1 2026 service revenue for the whole group, not an annual total and not a South African-only figure. Subscriber counts are not treated as a workforce or revenue measure."
   },
   {
     "id": "org-mulilo",
@@ -16813,10 +16847,10 @@
   {
     "id": "org-vodacom",
     "name": "Vodacom",
-    "legalName": "",
+    "legalName": "Vodacom Group Limited",
     "aliases": [],
     "website": "https://www.vodacom.com/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "ICT-TELCO-MNO",
@@ -16827,15 +16861,49 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
-    "scale": [],
+    "locations": [
+      {
+        "city": "Midrand",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.vodacom.com/contact-us.php",
+        "checkedOn": "2026-11-04"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "revenue",
+        "value": "R167 652 million group revenue",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "year ended 31 March 2026",
+        "sourceUrl": "https://www.vodacom.com/pdf/about-us/fact-sheet/2026/vodacom-group-limited-fact-sheet-FY26.pdf",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
         "url": "https://www.vodacom.com/about-us.php",
-        "type": "recruiter-supplied",
-        "evidence": "Vodacom Group describes itself as a leading African connectivity, digital and financial services company and a mobile network operator, majority-owned by Vodafone.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "Vodacom Group describes itself as a leading African connectivity, digital and financial services company and a mobile network operator, majority-owned by Vodafone. | Vodacom Group's about page describes the group, including Safaricom, serving customers across South Africa, the DRC, Egypt, Ethiopia, Kenya, Lesotho, Mozambique and Tanzania, and states that Vodafone holds a 65.1% majority stake.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.vodacom.com/contact-us.php",
+        "type": "corporate-disclosure",
+        "evidence": "Vodacom Group's contact page gives its corporate office as Vodacom Corporate Park, 082 Vodacom Boulevard, Midrand, 1685, South Africa.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.vodacom.com/pdf/about-us/fact-sheet/2026/vodacom-group-limited-fact-sheet-FY26.pdf",
+        "type": "corporate-disclosure",
+        "evidence": "Vodacom Group Limited's FY26 fact sheet (as at 31 March 2026) reports group revenue of R167 652 million for the year ended 31 March 2026, against R152 227 million in FY2025.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -16843,8 +16911,8 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.vodacom.com/about-us.php); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.vodacom.com/about-us.php); no field value was rewritten.\nVodacom's R167.652 billion is group statutory revenue for the year ended 31 March 2026, taken from its own FY26 fact sheet. The group includes Safaricom and Egypt, so it is not a South African-only revenue figure."
   },
   {
     "id": "org-voermol",
