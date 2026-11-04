@@ -71,12 +71,13 @@
     ]
   },
   "universe": {
-    "total": 2391,
-    "curated": 632,
-    "datasetOnly": 1759,
-    "verified": 134,
-    "needsVerification": 2257,
-    "withMappedProfessionals": 2260,
+    "total": 2379,
+    "curated": 629,
+    "datasetOnly": 1750,
+    "verified": 147,
+    "listedOnly": 342,
+    "needsVerification": 1890,
+    "withMappedProfessionals": 2250,
     "meetingEveryStandardField": 5
   },
   "coverage": [
@@ -84,8 +85,8 @@
       "key": "identityNamed",
       "label": "Named identity",
       "rationale": "A canonical name is the minimum a dossier can carry.",
-      "covered": 2391,
-      "total": 2391,
+      "covered": 2379,
+      "total": 2379,
       "shortfall": 0,
       "percentage": 100
     },
@@ -93,108 +94,108 @@
       "key": "website",
       "label": "Official website",
       "rationale": "The primary source for verifying what the company actually does.",
-      "covered": 499,
-      "total": 2391,
-      "shortfall": 1892,
+      "covered": 497,
+      "total": 2379,
+      "shortfall": 1882,
       "percentage": 20.9
     },
     {
       "key": "legalName",
       "label": "Legal entity name",
       "rationale": "Separates the trading brand from the registered entity.",
-      "covered": 380,
-      "total": 2391,
-      "shortfall": 2011,
-      "percentage": 15.9
+      "covered": 395,
+      "total": 2379,
+      "shortfall": 1984,
+      "percentage": 16.6
     },
     {
       "key": "aliases",
       "label": "Recorded aliases",
       "rationale": "Lets dataset spellings resolve to one company instead of several.",
-      "covered": 168,
-      "total": 2391,
-      "shortfall": 2223,
-      "percentage": 7
+      "covered": 183,
+      "total": 2379,
+      "shortfall": 2196,
+      "percentage": 7.7
     },
     {
       "key": "classified",
       "label": "Industry classification",
       "rationale": "A company with no industry cannot be found by sector.",
-      "covered": 615,
-      "total": 2391,
-      "shortfall": 1776,
+      "covered": 612,
+      "total": 2379,
+      "shortfall": 1767,
       "percentage": 25.7
     },
     {
       "key": "taxonomyPlacement",
       "label": "National taxonomy placement",
       "rationale": "Places the company in the 731-node sector tree.",
-      "covered": 615,
-      "total": 2391,
-      "shortfall": 1776,
+      "covered": 612,
+      "total": 2379,
+      "shortfall": 1767,
       "percentage": 25.7
     },
     {
       "key": "sourced",
       "label": "At least one evidence source",
       "rationale": "No claim about the company without a source and a checked date.",
-      "covered": 632,
-      "total": 2391,
-      "shortfall": 1759,
+      "covered": 629,
+      "total": 2379,
+      "shortfall": 1750,
       "percentage": 26.4
     },
     {
       "key": "fresh",
       "label": "Verification within 180 days",
       "rationale": "A stale dossier is presented as current when it is not.",
-      "covered": 356,
-      "total": 2391,
-      "shortfall": 2035,
-      "percentage": 14.9
+      "covered": 629,
+      "total": 2379,
+      "shortfall": 1750,
+      "percentage": 26.4
     },
     {
       "key": "located",
       "label": "Sourced operating location",
       "rationale": "Province is the recruiter’s first geographic filter.",
-      "covered": 209,
-      "total": 2391,
-      "shortfall": 2182,
-      "percentage": 8.7
+      "covered": 227,
+      "total": 2379,
+      "shortfall": 2152,
+      "percentage": 9.5
     },
     {
       "key": "scale",
       "label": "Sourced scale measure",
       "rationale": "Headcount, revenue or sites, verbatim and dated.",
-      "covered": 142,
-      "total": 2391,
-      "shortfall": 2249,
-      "percentage": 5.9
+      "covered": 152,
+      "total": 2379,
+      "shortfall": 2227,
+      "percentage": 6.4
     },
     {
       "key": "footprint",
       "label": "Established footprint band",
       "rationale": "Lets an industry be read by company size without inventing one.",
-      "covered": 133,
-      "total": 2391,
-      "shortfall": 2258,
-      "percentage": 5.6
+      "covered": 141,
+      "total": 2379,
+      "shortfall": 2238,
+      "percentage": 5.9
     },
     {
       "key": "capabilities",
       "label": "Evidenced capability",
       "rationale": "What the company actually operates, not just its sector.",
       "covered": 75,
-      "total": 2391,
-      "shortfall": 2316,
-      "percentage": 3.1
+      "total": 2379,
+      "shortfall": 2304,
+      "percentage": 3.2
     },
     {
       "key": "relationships",
       "label": "Corporate relationship",
       "rationale": "Group and subsidiary structure, so headcount is never double-counted.",
-      "covered": 27,
-      "total": 2391,
-      "shortfall": 2364,
+      "covered": 26,
+      "total": 2379,
+      "shortfall": 2353,
       "percentage": 1.1
     }
   ],
@@ -317,137 +318,37 @@
     ]
   },
   "identityReview": {
-    "total": 78,
-    "professionals": 171,
+    "total": 65,
+    "professionals": 106,
     "byDisposition": {
-      "same-identity": 2,
-      "parent-subsidiary": 32,
-      "needs-decision": 44
+      "same-identity": 0,
+      "parent-subsidiary": 26,
+      "needs-decision": 39
     }
   },
   "byDataset": {
     "accounting-finance": {
-      "organizations": 654,
+      "organizations": 649,
       "fullyCovered": 2,
-      "professionals": 3919
+      "professionals": 3948
     },
     "contacts": {
-      "organizations": 1699,
+      "organizations": 1694,
       "fullyCovered": 1,
-      "professionals": 5970
+      "professionals": 5976
+    },
+    "import": {
+      "organizations": 1,
+      "fullyCovered": 0,
+      "professionals": 0
     },
     "organizations": {
-      "organizations": 126,
+      "organizations": 124,
       "fullyCovered": 2,
       "professionals": 0
     }
   },
   "queue": [
-    {
-      "id": "org-deloitte",
-      "name": "Deloitte",
-      "curated": true,
-      "professionals": 71,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-m-kopa",
-      "name": "M-Kopa",
-      "curated": true,
-      "professionals": 63,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mtn",
-      "name": "MTN",
-      "curated": true,
-      "professionals": 91,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-nedbank",
-      "name": "Nedbank",
-      "curated": true,
-      "professionals": 197,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-pwc-south-africa",
-      "name": "PwC South Africa",
-      "curated": true,
-      "professionals": 84,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-shoprite",
-      "name": "Shoprite",
-      "curated": true,
-      "professionals": 68,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-vodacom",
-      "name": "Vodacom",
-      "curated": true,
-      "professionals": 121,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
     {
       "id": "org-bmw-group",
       "name": "BMW Group",
@@ -463,26 +364,11 @@
       ]
     },
     {
-      "id": "org-momentum-group",
-      "name": "Momentum Group",
+      "id": "org-nedbank",
+      "name": "Nedbank",
       "curated": true,
-      "professionals": 80,
+      "professionals": 197,
       "missing": [
-        "legalName",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-standard-bank",
-      "name": "Standard Bank",
-      "curated": true,
-      "professionals": 288,
-      "missing": [
-        "legalName",
         "aliases",
         "scale",
         "footprint",
@@ -496,7 +382,18 @@
       "curated": true,
       "professionals": 284,
       "missing": [
-        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-deloitte",
+      "name": "Deloitte",
+      "curated": true,
+      "professionals": 87,
+      "missing": [
         "scale",
         "footprint",
         "capabilities",
@@ -509,7 +406,6 @@
       "curated": true,
       "professionals": 263,
       "missing": [
-        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -517,14 +413,58 @@
       ]
     },
     {
-      "id": "org-investec",
-      "name": "Investec",
+      "id": "org-m-kopa",
+      "name": "M-Kopa",
       "curated": true,
-      "professionals": 65,
+      "professionals": 63,
       "missing": [
-        "legalName",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-pwc",
+      "name": "PwC South Africa",
+      "curated": true,
+      "professionals": 84,
+      "missing": [
         "aliases",
-        "located",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mtn",
+      "name": "MTN",
+      "curated": true,
+      "professionals": 91,
+      "missing": [
+        "aliases",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-old-mutual",
+      "name": "Old Mutual",
+      "curated": true,
+      "professionals": 256,
+      "missing": [
+        "aliases",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-vodacom",
+      "name": "Vodacom",
+      "curated": true,
+      "professionals": 121,
+      "missing": [
+        "aliases",
         "capabilities",
         "relationships"
       ]
@@ -535,32 +475,26 @@
       "curated": true,
       "professionals": 175,
       "missing": [
-        "legalName",
-        "aliases",
         "capabilities",
         "relationships"
       ]
     },
     {
-      "id": "org-massmart",
-      "name": "Massmart Holdings",
+      "id": "org-investec",
+      "name": "Investec",
       "curated": true,
-      "professionals": 60,
+      "professionals": 65,
       "missing": [
-        "located",
-        "scale",
-        "footprint",
-        "capabilities"
+        "capabilities",
+        "relationships"
       ]
     },
     {
-      "id": "org-old-mutual",
-      "name": "Old Mutual",
+      "id": "org-momentum-group",
+      "name": "Momentum Group",
       "curated": true,
-      "professionals": 256,
+      "professionals": 80,
       "missing": [
-        "aliases",
-        "located",
         "capabilities",
         "relationships"
       ]
@@ -580,6 +514,25 @@
       ]
     },
     {
+      "id": "org-standard-bank",
+      "name": "Standard Bank",
+      "curated": true,
+      "professionals": 288,
+      "missing": [
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-massmart",
+      "name": "Massmart Holdings",
+      "curated": true,
+      "professionals": 60,
+      "missing": [
+        "capabilities"
+      ]
+    },
+    {
       "id": "org-discovery",
       "name": "Discovery",
       "curated": true,
@@ -587,22 +540,6 @@
       "missing": [
         "legalName",
         "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-tfg-the-foschini-group",
-      "name": "TFG (The Foschini Group)",
-      "curated": true,
-      "professionals": 50,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -617,9 +554,18 @@
       "missing": [
         "legalName",
         "aliases",
-        "located",
         "scale",
         "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-tfg-the-foschini-group",
+      "name": "TFG (The Foschini Group)",
+      "curated": true,
+      "professionals": 50,
+      "missing": [
         "capabilities",
         "relationships"
       ]
@@ -641,9 +587,6 @@
       "curated": true,
       "professionals": 45,
       "missing": [
-        "legalName",
-        "aliases",
-        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -671,10 +614,7 @@
       "curated": true,
       "professionals": 36,
       "missing": [
-        "legalName",
         "aliases",
-        "located",
-        "scale",
         "footprint",
         "capabilities",
         "relationships"
@@ -796,13 +736,8 @@
       "id": "org-woolworths",
       "name": "Woolworths",
       "curated": true,
-      "professionals": 26,
+      "professionals": 28,
       "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -810,21 +745,6 @@
     {
       "id": "org-polyoak-packaging",
       "name": "Polyoak Packaging",
-      "curated": true,
-      "professionals": 25,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-pwc",
-      "name": "PwC",
       "curated": true,
       "professionals": 25,
       "missing": [
@@ -868,21 +788,6 @@
       ]
     },
     {
-      "id": "org-oceana-group",
-      "name": "Oceana Group",
-      "curated": true,
-      "professionals": 22,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-petrosa",
       "name": "PetroSA",
       "curated": true,
@@ -913,6 +818,16 @@
       ]
     },
     {
+      "id": "org-oceana-group",
+      "name": "Oceana Group",
+      "curated": true,
+      "professionals": 22,
+      "missing": [
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-clicks-group",
       "name": "Clicks Group",
       "curated": true,
@@ -935,6 +850,23 @@
       "missing": [
         "legalName",
         "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-562740d6934b",
+      "name": "Pepkor",
+      "curated": true,
+      "professionals": 19,
+      "missing": [
+        "website",
+        "legalName",
+        "classified",
+        "taxonomyPlacement",
         "located",
         "scale",
         "footprint",
@@ -1033,6 +965,34 @@
       ]
     },
     {
+      "id": "org-lexisnexis",
+      "name": "LexisNexis",
+      "curated": true,
+      "professionals": 16,
+      "missing": [
+        "legalName",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-peninsula-beverages",
+      "name": "Peninsula Beverages",
+      "curated": true,
+      "professionals": 16,
+      "missing": [
+        "legalName",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-afrisam",
       "name": "AfriSam",
       "curated": true,
@@ -1061,28 +1021,12 @@
       ]
     },
     {
-      "id": "org-lexisnexis",
-      "name": "LexisNexis",
-      "curated": true,
-      "professionals": 15,
-      "missing": [
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-the-spar-group",
       "name": "The SPAR Group",
       "curated": true,
       "professionals": 15,
       "missing": [
         "legalName",
-        "aliases",
         "located",
         "scale",
         "footprint",
@@ -1402,22 +1346,6 @@
       ]
     },
     {
-      "id": "org-vdmv-property-group",
-      "name": "VDMV Property Group",
-      "curated": true,
-      "professionals": 10,
-      "missing": [
-        "legalName",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-altron-digital-business",
       "name": "Altron Digital Business",
       "curated": true,
@@ -1463,17 +1391,13 @@
       ]
     },
     {
-      "id": "org-peninsula-beverages",
-      "name": "Peninsula Beverages",
+      "id": "org-scatec-sa",
+      "name": "Scatec South Africa",
       "curated": true,
-      "professionals": 10,
+      "professionals": 11,
       "missing": [
         "legalName",
-        "aliases",
-        "located",
-        "scale",
         "footprint",
-        "capabilities",
         "relationships"
       ]
     },
@@ -1495,6 +1419,21 @@
     {
       "id": "org-transunion",
       "name": "TransUnion",
+      "curated": true,
+      "professionals": 10,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-vdmv-property-group",
+      "name": "VDMV Property Group",
       "curated": true,
       "professionals": 10,
       "missing": [
@@ -1602,7 +1541,6 @@
       "professionals": 9,
       "missing": [
         "legalName",
-        "aliases",
         "located",
         "scale",
         "footprint",
@@ -1616,7 +1554,6 @@
       "curated": true,
       "professionals": 9,
       "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -1820,7 +1757,6 @@
       "professionals": 6,
       "missing": [
         "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -1873,7 +1809,6 @@
         "website",
         "legalName",
         "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -1968,7 +1903,6 @@
         "aliases",
         "classified",
         "taxonomyPlacement",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -1987,7 +1921,6 @@
         "aliases",
         "classified",
         "taxonomyPlacement",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -2001,7 +1934,6 @@
       "curated": true,
       "professionals": 4,
       "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -2015,7 +1947,6 @@
       "curated": true,
       "professionals": 4,
       "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -2055,20 +1986,6 @@
       ]
     },
     {
-      "id": "org-mbawc-275",
-      "name": "Saint-Gobain Construction Products (Pty) Ltd",
-      "curated": true,
-      "professionals": 3,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-vkb",
       "name": "VKB",
       "curated": true,
@@ -2092,6 +2009,19 @@
       ]
     },
     {
+      "id": "org-mbawc-275",
+      "name": "Saint-Gobain Construction Products (Pty) Ltd",
+      "curated": true,
+      "professionals": 3,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-101",
       "name": "Enza Construction (Pty) Ltd",
       "curated": true,
@@ -2104,57 +2034,6 @@
       ]
     },
     {
-      "id": "org-origin-property-holdings",
-      "name": "Origin Property Holdings",
-      "curated": true,
-      "professionals": 2,
-      "missing": [
-        "legalName",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-signatura-property-development",
-      "name": "Signatura Property Development",
-      "curated": true,
-      "professionals": 2,
-      "missing": [
-        "legalName",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-4549063188a8",
-      "name": "Abbeydale Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-african-development-bank",
       "name": "African Development Bank",
       "curated": true,
@@ -2162,131 +2041,6 @@
       "missing": [
         "legalName",
         "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-61a11a807830",
-      "name": "Black Management Forum",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-057",
-      "name": "Cape Lime (Pty) Ltd",
-      "curated": true,
-      "professionals": 2,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-0232259fbbbf",
-      "name": "Crowie Holdings",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-6bb0ab53d646",
-      "name": "Isipani Holdings",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-6e1b9f2558aa",
-      "name": "Jade Capital Partners",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-169",
-      "name": "Kansai Plascon (Pty) Ltd",
-      "curated": true,
-      "professionals": 2,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-f21d0bb9196d",
-      "name": "Kansai Plascon Africa",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -2310,74 +2064,13 @@
       ]
     },
     {
-      "id": "org-mbawc-related-562740d6934b",
-      "name": "Pepkor",
+      "id": "org-origin-property-holdings",
+      "name": "Origin Property Holdings",
       "curated": true,
-      "professionals": 1,
+      "professionals": 2,
       "missing": [
-        "website",
         "legalName",
         "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-08d978d92ffc",
-      "name": "Raubex Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-f3c57e5312c5",
-      "name": "Raumix",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-08b8f6527c28",
-      "name": "Saint-Gobain Gyproc",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -2401,51 +2094,13 @@
       ]
     },
     {
-      "id": "org-mbawc-283",
-      "name": "Sika South Africa (Pty) Ltd",
+      "id": "org-signatura-property-development",
+      "name": "Signatura Property Development",
       "curated": true,
       "professionals": 2,
       "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-e9a76f03b509",
-      "name": "Stefanutti Stocks (Civils)",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-related-8025c490e6b2",
-      "name": "Tosas",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -2484,13 +2139,67 @@
       ]
     },
     {
-      "id": "org-mbawc-003",
-      "name": "Abbeydale Infrastructure (Pty) Ltd",
+      "id": "org-mbawc-related-4549063188a8",
+      "name": "Abbeydale Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-61a11a807830",
+      "name": "Black Management Forum",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-057",
+      "name": "Cape Lime (Pty) Ltd",
       "curated": true,
       "professionals": 2,
       "missing": [
         "aliases",
-        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-0232259fbbbf",
+      "name": "Crowie Holdings",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -2512,13 +2221,17 @@
       ]
     },
     {
-      "id": "org-mbawc-119",
-      "name": "GeoCiv Group (Pty) Ltd",
+      "id": "org-mbawc-related-6bb0ab53d646",
+      "name": "Isipani Holdings",
       "curated": true,
-      "professionals": 2,
+      "professionals": 1,
       "missing": [
+        "website",
+        "legalName",
         "aliases",
-        "fresh",
+        "classified",
+        "taxonomyPlacement",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -2526,12 +2239,84 @@
       ]
     },
     {
-      "id": "org-mbawc-132",
-      "name": "Grinaker-LTA",
+      "id": "org-mbawc-related-6e1b9f2558aa",
+      "name": "Jade Capital Partners",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-169",
+      "name": "Kansai Plascon (Pty) Ltd",
       "curated": true,
       "professionals": 2,
       "missing": [
-        "fresh",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-f21d0bb9196d",
+      "name": "Kansai Plascon Africa",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-08d978d92ffc",
+      "name": "Raubex Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-f3c57e5312c5",
+      "name": "Raumix",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
         "located",
         "scale",
         "footprint",
@@ -2568,6 +2353,87 @@
       ]
     },
     {
+      "id": "org-mbawc-related-08b8f6527c28",
+      "name": "Saint-Gobain Gyproc",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-283",
+      "name": "Sika South Africa (Pty) Ltd",
+      "curated": true,
+      "professionals": 2,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-e9a76f03b509",
+      "name": "Stefanutti Stocks (Civils)",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-related-8025c490e6b2",
+      "name": "Tosas",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-003",
+      "name": "Abbeydale Infrastructure (Pty) Ltd",
+      "curated": true,
+      "professionals": 2,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-calgro-m3",
       "name": "Calgro M3",
       "curated": true,
@@ -2594,15 +2460,24 @@
       ]
     },
     {
-      "id": "org-fwjk-developments",
-      "name": "FWJK Developments",
+      "id": "org-mbawc-119",
+      "name": "GeoCiv Group (Pty) Ltd",
       "curated": true,
-      "professionals": 1,
+      "professionals": 2,
       "missing": [
-        "website",
-        "legalName",
         "aliases",
-        "fresh",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-132",
+      "name": "Grinaker-LTA",
+      "curated": true,
+      "professionals": 2,
+      "missing": [
         "located",
         "scale",
         "footprint",
@@ -2620,54 +2495,6 @@
       ]
     },
     {
-      "id": "org-mbawc-006",
-      "name": "Action Steel Doors CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-011",
-      "name": "Aldera & Martina CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-012",
-      "name": "Alpha Occupational Health Services",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-attacq",
       "name": "Attacq",
       "curated": true,
@@ -2680,38 +2507,6 @@
       ]
     },
     {
-      "id": "org-mbawc-024",
-      "name": "B Salie & Sons Carpenters CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-028",
-      "name": "Bambana Management Services (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-mbawc-038",
       "name": "Boshard Construction (Pty) Ltd",
       "curated": true,
@@ -2719,118 +2514,6 @@
       "missing": [
         "aliases",
         "located",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-042",
-      "name": "BRICS Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-050",
-      "name": "Cancun Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-064",
-      "name": "Communicare Roof Cleaning & Home Improvements",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-065",
-      "name": "Compass Fire",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-069",
-      "name": "Coral Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-073",
-      "name": "CP Painting & Decorators CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-074",
-      "name": "CRS Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -2848,222 +2531,14 @@
       ]
     },
     {
-      "id": "org-mbawc-081",
-      "name": "DEP Solutions (Pty) Ltd",
+      "id": "org-fwjk-developments",
+      "name": "FWJK Developments",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dorpstraat-properties",
-      "name": "Dorpstraat Properties",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
         "legalName",
         "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-087",
-      "name": "DPG Construct (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-089",
-      "name": "Eagle Roof Tiles",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-091",
-      "name": "Econo Walling & Ceilings",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-099",
-      "name": "Elliot Shopfitters CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-106",
-      "name": "Flanagan Construction CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-111",
-      "name": "Frazzo Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-114",
-      "name": "Fugard Consulting (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-121",
-      "name": "Golden Rewards 1981 cc",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-127",
-      "name": "Grassy Knoll Trading 59cc",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-129",
-      "name": "Greenfields Plumbing Design (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-133",
-      "name": "Grinstead Plumbing CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-146",
-      "name": "Ian Paul Consulting Services CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -3084,102 +2559,6 @@
       ]
     },
     {
-      "id": "org-mbawc-158",
-      "name": "J3 Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-161",
-      "name": "James Jooste Construction CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-177",
-      "name": "Lawson Tools Distributors (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-184",
-      "name": "Libra Joiners & Interiors",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-190",
-      "name": "M & T Maintenance and Asbestos Removal (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-193",
-      "name": "Magiet Builders",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-mainstream-sa",
       "name": "Mainstream Renewable Power South Africa",
       "curated": true,
@@ -3192,332 +2571,13 @@
       ]
     },
     {
-      "id": "org-mbawc-198",
-      "name": "Mazor Aluminium (Pty) Ltd",
+      "id": "org-mbawc-006",
+      "name": "Action Steel Doors CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-199",
-      "name": "Mazor Steel (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-207",
-      "name": "MSA Builders",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-211",
-      "name": "Nedsteel (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-216",
-      "name": "Nokuthula Dube & Associates CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-217",
-      "name": "Northpine Plumbing CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-orcinus-properties",
-      "name": "Orcinus Properties",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-219",
-      "name": "P & Sons Home Improvements CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-246",
-      "name": "Raizenberg's Plumbing & Building Services CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-263",
-      "name": "RMI Plumbing CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-278",
-      "name": "Sasman and Sons Roofing",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-280",
-      "name": "Semelela Enterprises",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-282",
-      "name": "Showerline Shower Doors (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-324",
-      "name": "Village Lane Investments CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-333",
-      "name": "Watermark Plumbers CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-336",
-      "name": "West Cape Joinery (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-337",
-      "name": "Whiteheads Painting (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-342",
-      "name": "YB Ceilings (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-344",
-      "name": "Zhac Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-001",
-      "name": "1st Line Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-007",
-      "name": "Affordable Ceilings & Partitions",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -3541,28 +2601,13 @@
       ]
     },
     {
-      "id": "org-mbawc-013",
-      "name": "Alpine Scaffolding (PTY) LTD",
+      "id": "org-mbawc-011",
+      "name": "Aldera & Martina CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-014",
-      "name": "Amlec",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -3571,43 +2616,13 @@
       ]
     },
     {
-      "id": "org-mbawc-017",
-      "name": "Aspect Waterproofing (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-022",
-      "name": "B and D Homebuilders (Pty) Ltd",
+      "id": "org-mbawc-012",
+      "name": "Alpha Occupational Health Services",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-025",
-      "name": "Back to Wood cc",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -3616,43 +2631,13 @@
       ]
     },
     {
-      "id": "org-mbawc-027",
-      "name": "Baltic Timber Company (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-030",
-      "name": "BB and S Building Services",
+      "id": "org-mbawc-024",
+      "name": "B Salie & Sons Carpenters CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-031",
-      "name": "Bee Painters & Waterproofing",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -3661,254 +2646,14 @@
       ]
     },
     {
-      "id": "org-mbawc-034",
-      "name": "BFH de Jager Project Managers",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-039",
-      "name": "BPT Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-040",
-      "name": "Brand Engineering SA (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-041",
-      "name": "Brick 'n Board Group (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-043",
-      "name": "Brite Pools CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-049",
-      "name": "Calore Fireplaces and Stoves (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-052",
-      "name": "Cape Dutch Construction CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-056",
-      "name": "Cape Island Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-058",
-      "name": "Cape Roof Supply & Contracting CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-060",
-      "name": "CBD Projects CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-068",
-      "name": "Construction Solution Services (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-075",
-      "name": "Damp Control (Cape) CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-077",
-      "name": "David Ramsay & Associates",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-080",
-      "name": "Dekro Paints (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-084",
-      "name": "Developing Construction Solutions",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-088",
-      "name": "Dracon National (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-093",
-      "name": "Edge Plumbing (Pty) Ltd",
+      "id": "org-mbawc-028",
+      "name": "Bambana Management Services (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -3916,28 +2661,13 @@
       ]
     },
     {
-      "id": "org-mbawc-102",
-      "name": "Exodos Cleaning and Projects",
+      "id": "org-mbawc-042",
+      "name": "BRICS Construction (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-104",
-      "name": "Fang Fences and Guards (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -3946,28 +2676,13 @@
       ]
     },
     {
-      "id": "org-mbawc-108",
-      "name": "FPD - Felix Property Developers",
+      "id": "org-mbawc-050",
+      "name": "Cancun Construction",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-110",
-      "name": "Franki Africa (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -3976,58 +2691,13 @@
       ]
     },
     {
-      "id": "org-mbawc-112",
-      "name": "Frontline Safety Health & Enviromental Consultancy",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-115",
-      "name": "Garden Cities NPC (RF)",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-116",
-      "name": "Gateway Metalworks",
+      "id": "org-mbawc-064",
+      "name": "Communicare Roof Cleaning & Home Improvements",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-123",
-      "name": "Gordian Fence SA (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -4036,149 +2706,14 @@
       ]
     },
     {
-      "id": "org-mbawc-124",
-      "name": "GP Koning (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-126",
-      "name": "Granite Connection CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-128",
-      "name": "Green Cube Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-130",
-      "name": "Greg Benn Contractors CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-134",
-      "name": "Gutter Science (Pty) Ltd.",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-136",
-      "name": "H P Plum & Co (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-147",
-      "name": "ICI Dulux (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-148",
-      "name": "IDP Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-149",
-      "name": "Indawo Cape (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-151",
-      "name": "Indusmed",
+      "id": "org-mbawc-065",
+      "name": "Compass Fire",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
-        "fresh",
-        "located",
+        "classified",
+        "taxonomyPlacement",
         "scale",
         "footprint",
         "capabilities",
@@ -4186,178 +2721,13 @@
       ]
     },
     {
-      "id": "org-mbawc-159",
-      "name": "JA Clift (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-162",
-      "name": "JD Robertson & Walton",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-163",
-      "name": "JLK Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-165",
-      "name": "Johnson Crane Hire (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-167",
-      "name": "JT Maritz Electrical CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-168",
-      "name": "Just Claire Property Development CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-170",
-      "name": "KBAC Flooring (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-171",
-      "name": "KKQS (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-172",
-      "name": "KTW",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-173",
-      "name": "LACPM (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-180",
-      "name": "Legend Plumbing & General Building Maintenance",
+      "id": "org-mbawc-069",
+      "name": "Coral Construction",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-181",
-      "name": "Leith Roofing (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -4366,88 +2736,13 @@
       ]
     },
     {
-      "id": "org-mbawc-186",
-      "name": "Lombard Contractors (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-188",
-      "name": "Lund Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-191",
-      "name": "M Judge (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-194",
-      "name": "Martin & East Building (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-196",
-      "name": "Master Craftsman Construction (Pty) Ltd",
+      "id": "org-mbawc-073",
+      "name": "CP Painting & Decorators CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-202",
-      "name": "Mijlof Tilers CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -4456,388 +2751,13 @@
       ]
     },
     {
-      "id": "org-mbawc-212",
-      "name": "Neubau Construction (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-213",
-      "name": "NEXTEC Security and Building Technologies (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-220",
-      "name": "PACE CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-222",
-      "name": "PCS Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-228",
-      "name": "Pinelands Development Company (NPC)",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-229",
-      "name": "Pinnacle Glass & Aluminium (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-230",
-      "name": "Plumb Guarantee",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-231",
-      "name": "Plumbing for Africa",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-232",
-      "name": "Plumbing Solutions Western Cape (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-233",
-      "name": "Plumblink SA (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-237",
-      "name": "PR Wiehahn (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-238",
-      "name": "Prema Raciti Construction CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-242",
-      "name": "Promac Paints (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-243",
-      "name": "PS Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-247",
-      "name": "Rattle Brothers CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-250",
-      "name": "RDA Building (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-251",
-      "name": "Re-Nu Construction and Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-255",
-      "name": "Renov8 IT (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-256",
-      "name": "Renu Painting & Waterproofing",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-259",
-      "name": "Revolution Shopfitters CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-261",
-      "name": "RICTS Holdings (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-262",
-      "name": "RLP (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-264",
-      "name": "RMS Shopfitting",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-269",
-      "name": "Ruger Projects CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-270",
-      "name": "Ruvic Construction (Pty) Ltd",
+      "id": "org-mbawc-074",
+      "name": "CRS Construction (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-271",
-      "name": "S A Paving (Cape Town)",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -4846,58 +2766,13 @@
       ]
     },
     {
-      "id": "org-mbawc-272",
-      "name": "SA Fire Watch (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-273",
-      "name": "Sabre Paints (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-274",
-      "name": "Safety Secure (Pty) Ltd",
+      "id": "org-mbawc-081",
+      "name": "DEP Solutions (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-277",
-      "name": "Sanmar Decorators CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -4906,13 +2781,13 @@
       ]
     },
     {
-      "id": "org-mbawc-279",
-      "name": "Scheltema & Co (Pty) Ltd",
+      "id": "org-dorpstraat-properties",
+      "name": "Dorpstraat Properties",
       "curated": true,
       "professionals": 1,
       "missing": [
+        "legalName",
         "aliases",
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -4921,13 +2796,463 @@
       ]
     },
     {
-      "id": "org-mbawc-286",
-      "name": "Southey Contracting",
+      "id": "org-mbawc-087",
+      "name": "DPG Construct (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
+        "classified",
+        "taxonomyPlacement",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-089",
+      "name": "Eagle Roof Tiles",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-091",
+      "name": "Econo Walling & Ceilings",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-099",
+      "name": "Elliot Shopfitters CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-106",
+      "name": "Flanagan Construction CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-111",
+      "name": "Frazzo Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-114",
+      "name": "Fugard Consulting (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-121",
+      "name": "Golden Rewards 1981 cc",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-127",
+      "name": "Grassy Knoll Trading 59cc",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-129",
+      "name": "Greenfields Plumbing Design (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-133",
+      "name": "Grinstead Plumbing CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-146",
+      "name": "Ian Paul Consulting Services CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-158",
+      "name": "J3 Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-161",
+      "name": "James Jooste Construction CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-177",
+      "name": "Lawson Tools Distributors (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-184",
+      "name": "Libra Joiners & Interiors",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-190",
+      "name": "M & T Maintenance and Asbestos Removal (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-193",
+      "name": "Magiet Builders",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-198",
+      "name": "Mazor Aluminium (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-199",
+      "name": "Mazor Steel (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-207",
+      "name": "MSA Builders",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-211",
+      "name": "Nedsteel (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-216",
+      "name": "Nokuthula Dube & Associates CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-217",
+      "name": "Northpine Plumbing CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-orcinus-properties",
+      "name": "Orcinus Properties",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "legalName",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-219",
+      "name": "P & Sons Home Improvements CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-246",
+      "name": "Raizenberg's Plumbing & Building Services CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-263",
+      "name": "RMI Plumbing CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-278",
+      "name": "Sasman and Sons Roofing",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-280",
+      "name": "Semelela Enterprises",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-282",
+      "name": "Showerline Shower Doors (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -4947,417 +3272,13 @@
       ]
     },
     {
-      "id": "org-mbawc-291",
-      "name": "Stephen Bursey Thatching",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-292",
-      "name": "Stephen Jones Roofing CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-293",
-      "name": "Supreme Formwork & Scaffolding (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-294",
-      "name": "Swartland Investments",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-299",
-      "name": "Talisman Hire - CAPE TOWN CITY",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-300",
-      "name": "Talisman Hire - CERES",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-301",
-      "name": "Talisman Hire - DURBANVILLE",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-302",
-      "name": "Talisman Hire - HERMANUS",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-303",
-      "name": "Talisman Hire - MAITLAND",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-304",
-      "name": "Talisman Hire - MALMESBURY",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-305",
-      "name": "Talisman Hire - MONTAGUE GARDENS",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-306",
-      "name": "Talisman Hire - PAARL",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-307",
-      "name": "Talisman Hire - PARKLANDS",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-308",
-      "name": "Talisman Hire - SALDANHA",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-310",
-      "name": "Talisman Hire - STRAND",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-311",
-      "name": "Talisman Hire - WORCESTER",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-312",
-      "name": "Teck Flooring (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-315",
-      "name": "The Training Academy",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-317",
-      "name": "TJ van Zyl Plant Hire CC",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-318",
-      "name": "Tjeka Training Matters",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-322",
-      "name": "Valley Electrical Contractor",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-329",
-      "name": "W Voigt (Cape) (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-334",
-      "name": "Watt’s Plumbing & Leak Location Services",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-338",
-      "name": "Wilkinson Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-339",
-      "name": "William Dau Civils",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-341",
-      "name": "Wynberg Plumbing Works (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-343",
-      "name": "Zanmig Projects (Pty) Ltd",
+      "id": "org-mbawc-324",
+      "name": "Village Lane Investments CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-002",
-      "name": "A & C Maintenance and Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -5366,27 +3287,144 @@
       ]
     },
     {
-      "id": "org-mbawc-005",
-      "name": "Abil Services and Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-010",
-      "name": "Albocon Construction Consultants",
+      "id": "org-mbawc-333",
+      "name": "Watermark Plumbers CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
-        "fresh",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-336",
+      "name": "West Cape Joinery (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-337",
+      "name": "Whiteheads Painting (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-342",
+      "name": "YB Ceilings (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-344",
+      "name": "Zhac Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-001",
+      "name": "1st Line Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-007",
+      "name": "Affordable Ceilings & Partitions",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-013",
+      "name": "Alpine Scaffolding (PTY) LTD",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-014",
+      "name": "Amlec",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-017",
+      "name": "Aspect Waterproofing (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5404,13 +3442,13 @@
       ]
     },
     {
-      "id": "org-mbawc-026",
-      "name": "Baltic Group Projects",
+      "id": "org-mbawc-022",
+      "name": "B and D Homebuilders (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
+        "website",
         "aliases",
-        "fresh",
         "scale",
         "footprint",
         "capabilities",
@@ -5418,12 +3456,68 @@
       ]
     },
     {
-      "id": "org-mbawc-036",
-      "name": "Binningtons",
+      "id": "org-mbawc-025",
+      "name": "Back to Wood cc",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-027",
+      "name": "Baltic Timber Company (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-030",
+      "name": "BB and S Building Services",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-031",
+      "name": "Bee Painters & Waterproofing",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-034",
+      "name": "BFH de Jager Project Managers",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -5446,27 +3540,13 @@
       ]
     },
     {
-      "id": "org-mbawc-046",
-      "name": "Building Enterprises",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-051",
-      "name": "Cape Additions",
+      "id": "org-mbawc-039",
+      "name": "BPT Projects",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5474,26 +3554,12 @@
       ]
     },
     {
-      "id": "org-mbawc-054",
-      "name": "Cape Formwork Contractors",
+      "id": "org-mbawc-040",
+      "name": "Brand Engineering SA (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-055",
-      "name": "Cape Gate Fence and Wire Works",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -5502,40 +3568,12 @@
       ]
     },
     {
-      "id": "org-mbawc-061",
-      "name": "CBS Group",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-067",
-      "name": "Concord Access Solutions (Pty) Ltd",
+      "id": "org-mbawc-041",
+      "name": "Brick 'n Board Group (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-072",
-      "name": "Coverland",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -5544,68 +3582,12 @@
       ]
     },
     {
-      "id": "org-mbawc-076",
-      "name": "Dash Waste",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-078",
-      "name": "De Nobrega Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-082",
-      "name": "Derbigum Manufacturing",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-083",
-      "name": "Developers Warehouse (Pty) Ltd",
+      "id": "org-mbawc-043",
+      "name": "Brite Pools CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-086",
-      "name": "DNL Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -5614,13 +3596,13 @@
       ]
     },
     {
-      "id": "org-mbawc-090",
-      "name": "Eco-Tide Building Management (Pty) Ltd",
+      "id": "org-mbawc-049",
+      "name": "Calore Fireplaces and Stoves (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5628,13 +3610,13 @@
       ]
     },
     {
-      "id": "org-mbawc-094",
-      "name": "EF Davids Construction (Pty) Ltd",
+      "id": "org-mbawc-052",
+      "name": "Cape Dutch Construction CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5642,26 +3624,12 @@
       ]
     },
     {
-      "id": "org-mbawc-095",
-      "name": "Elcarbo Industrial Supplies Cape (Pty) Ltd",
+      "id": "org-mbawc-056",
+      "name": "Cape Island Construction (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-096",
-      "name": "Electrolux SA (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -5670,12 +3638,12 @@
       ]
     },
     {
-      "id": "org-mbawc-097",
-      "name": "Elegant Roofing",
+      "id": "org-mbawc-058",
+      "name": "Cape Roof Supply & Contracting CC",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -5684,12 +3652,12 @@
       ]
     },
     {
-      "id": "org-mbawc-098",
-      "name": "Elite Decorators cc",
+      "id": "org-mbawc-060",
+      "name": "CBD Projects CC",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -5698,12 +3666,12 @@
       ]
     },
     {
-      "id": "org-mbawc-113",
-      "name": "Frost International",
+      "id": "org-mbawc-068",
+      "name": "Construction Solution Services (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -5712,12 +3680,12 @@
       ]
     },
     {
-      "id": "org-mbawc-120",
-      "name": "Glasshopper Wetton",
+      "id": "org-mbawc-075",
+      "name": "Damp Control (Cape) CC",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -5726,12 +3694,236 @@
       ]
     },
     {
-      "id": "org-mbawc-122",
-      "name": "Good Hope Plumbing",
+      "id": "org-mbawc-077",
+      "name": "David Ramsay & Associates",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-080",
+      "name": "Dekro Paints (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-084",
+      "name": "Developing Construction Solutions",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-088",
+      "name": "Dracon National (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-093",
+      "name": "Edge Plumbing (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-102",
+      "name": "Exodos Cleaning and Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-104",
+      "name": "Fang Fences and Guards (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-108",
+      "name": "FPD - Felix Property Developers",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-110",
+      "name": "Franki Africa (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-112",
+      "name": "Frontline Safety Health & Enviromental Consultancy",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-115",
+      "name": "Garden Cities NPC (RF)",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-116",
+      "name": "Gateway Metalworks",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-123",
+      "name": "Gordian Fence SA (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-124",
+      "name": "GP Koning (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-126",
+      "name": "Granite Connection CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-128",
+      "name": "Green Cube Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-130",
+      "name": "Greg Benn Contractors CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -5750,82 +3942,12 @@
       ]
     },
     {
-      "id": "org-mbawc-138",
-      "name": "Haefele Waterproofing",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-140",
-      "name": "Henk Meyer Restoration",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-141",
-      "name": "HHL Handles Hinges & Locks",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-145",
-      "name": "I van Niekerk Architectural Designs & Construction",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-157",
-      "name": "J Macdonald and Sons CC",
+      "id": "org-mbawc-134",
+      "name": "Gutter Science (Pty) Ltd.",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-166",
-      "name": "Jonathan Mitchell Independent Building Consultants",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -5834,55 +3956,13 @@
       ]
     },
     {
-      "id": "org-mbawc-174",
-      "name": "Lamont Dumaresq Projects (Pty) Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-175",
-      "name": "Lascocrete",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-176",
-      "name": "Latreuo Kitchens",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-178",
-      "name": "LC Pike Construction (Pty) Ltd",
+      "id": "org-mbawc-136",
+      "name": "H P Plum & Co (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5890,13 +3970,13 @@
       ]
     },
     {
-      "id": "org-mbawc-179",
-      "name": "LCL Construction (Pty) Ltd",
+      "id": "org-mbawc-147",
+      "name": "ICI Dulux (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5904,40 +3984,40 @@
       ]
     },
     {
-      "id": "org-mbawc-192",
-      "name": "MA & ML Projects",
+      "id": "org-mbawc-148",
+      "name": "IDP Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-149",
+      "name": "Indawo Cape (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-151",
+      "name": "Indusmed",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-197",
-      "name": "Maurice Phillips Wisenberg Attorneys",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-201",
-      "name": "Midas Earthcote Tygervalley",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -5946,12 +4026,12 @@
       ]
     },
     {
-      "id": "org-mbawc-204",
-      "name": "MLP Master Builders (Pty) Ltd",
+      "id": "org-mbawc-159",
+      "name": "JA Clift (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -5960,13 +4040,13 @@
       ]
     },
     {
-      "id": "org-mbawc-205",
-      "name": "MobileMed",
+      "id": "org-mbawc-162",
+      "name": "JD Robertson & Walton",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "aliases",
-        "fresh",
+        "website",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5974,13 +4054,13 @@
       ]
     },
     {
-      "id": "org-mbawc-210",
-      "name": "NCC Environmental Services (Pty) Ltd",
+      "id": "org-mbawc-163",
+      "name": "JLK Construction (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -5988,13 +4068,237 @@
       ]
     },
     {
-      "id": "org-mbawc-214",
-      "name": "Nexus Scaffolding (Pty) Ltd",
+      "id": "org-mbawc-165",
+      "name": "Johnson Crane Hire (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-167",
+      "name": "JT Maritz Electrical CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-168",
+      "name": "Just Claire Property Development CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-170",
+      "name": "KBAC Flooring (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-171",
+      "name": "KKQS (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-172",
+      "name": "KTW",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-173",
+      "name": "LACPM (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-180",
+      "name": "Legend Plumbing & General Building Maintenance",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-181",
+      "name": "Leith Roofing (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-186",
+      "name": "Lombard Contractors (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-188",
+      "name": "Lund Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-191",
+      "name": "M Judge (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-194",
+      "name": "Martin & East Building (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-196",
+      "name": "Master Craftsman Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-202",
+      "name": "Mijlof Tilers CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-212",
+      "name": "Neubau Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-213",
+      "name": "NEXTEC Security and Building Technologies (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -6016,110 +4320,12 @@
       ]
     },
     {
-      "id": "org-mbawc-218",
-      "name": "Otro Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-236",
-      "name": "PQR Consulting",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-239",
-      "name": "Prime Projects",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-240",
-      "name": "Prize Waterproofing & Painting (Southern Suburbs)",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-241",
-      "name": "Procord",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-249",
-      "name": "RBS Insuranace Brokers (Pty)Ltd",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-295",
-      "name": "Swift Project Services (Pty) Ltd",
+      "id": "org-mbawc-220",
+      "name": "PACE CC",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-297",
-      "name": "Talisman Hire",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -6128,41 +4334,13 @@
       ]
     },
     {
-      "id": "org-mbawc-298",
-      "name": "Talisman Hire - BLACKHEATH",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-309",
-      "name": "Talisman Hire - STELLENBOSCH",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-320",
-      "name": "Trio Construction Services",
+      "id": "org-mbawc-222",
+      "name": "PCS Projects",
       "curated": true,
       "professionals": 1,
       "missing": [
         "website",
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -6170,26 +4348,12 @@
       ]
     },
     {
-      "id": "org-mbawc-326",
-      "name": "Vortex Pipe Works (Pty) Ltd",
+      "id": "org-mbawc-228",
+      "name": "Pinelands Development Company (NPC)",
       "curated": true,
       "professionals": 1,
       "missing": [
         "aliases",
-        "fresh",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-mbawc-332",
-      "name": "Waterloo Plumbing",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "fresh",
         "located",
         "scale",
         "footprint",
@@ -6198,12 +4362,12 @@
       ]
     },
     {
-      "id": "org-mbawc-340",
-      "name": "WJC Projects",
+      "id": "org-mbawc-229",
+      "name": "Pinnacle Glass & Aluminium (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -6212,13 +4376,780 @@
       ]
     },
     {
-      "id": "org-mbawc-345",
-      "name": "Zizonke Solutions",
+      "id": "org-mbawc-230",
+      "name": "Plumb Guarantee",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-231",
+      "name": "Plumbing for Africa",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-232",
+      "name": "Plumbing Solutions Western Cape (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-233",
+      "name": "Plumblink SA (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-237",
+      "name": "PR Wiehahn (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-238",
+      "name": "Prema Raciti Construction CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-242",
+      "name": "Promac Paints (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-243",
+      "name": "PS Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-247",
+      "name": "Rattle Brothers CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-250",
+      "name": "RDA Building (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-251",
+      "name": "Re-Nu Construction and Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-255",
+      "name": "Renov8 IT (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-256",
+      "name": "Renu Painting & Waterproofing",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-259",
+      "name": "Revolution Shopfitters CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-261",
+      "name": "RICTS Holdings (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-262",
+      "name": "RLP (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-264",
+      "name": "RMS Shopfitting",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-269",
+      "name": "Ruger Projects CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-270",
+      "name": "Ruvic Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-271",
+      "name": "S A Paving (Cape Town)",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-272",
+      "name": "SA Fire Watch (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-273",
+      "name": "Sabre Paints (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-274",
+      "name": "Safety Secure (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-277",
+      "name": "Sanmar Decorators CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-279",
+      "name": "Scheltema & Co (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-286",
+      "name": "Southey Contracting",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-291",
+      "name": "Stephen Bursey Thatching",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-292",
+      "name": "Stephen Jones Roofing CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-293",
+      "name": "Supreme Formwork & Scaffolding (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-294",
+      "name": "Swartland Investments",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-299",
+      "name": "Talisman Hire - CAPE TOWN CITY",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-300",
+      "name": "Talisman Hire - CERES",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-301",
+      "name": "Talisman Hire - DURBANVILLE",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-302",
+      "name": "Talisman Hire - HERMANUS",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-303",
+      "name": "Talisman Hire - MAITLAND",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-304",
+      "name": "Talisman Hire - MALMESBURY",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-305",
+      "name": "Talisman Hire - MONTAGUE GARDENS",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-306",
+      "name": "Talisman Hire - PAARL",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-307",
+      "name": "Talisman Hire - PARKLANDS",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-308",
+      "name": "Talisman Hire - SALDANHA",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-310",
+      "name": "Talisman Hire - STRAND",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-311",
+      "name": "Talisman Hire - WORCESTER",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-312",
+      "name": "Teck Flooring (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-315",
+      "name": "The Training Academy",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-317",
+      "name": "TJ van Zyl Plant Hire CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-318",
+      "name": "Tjeka Training Matters",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-322",
+      "name": "Valley Electrical Contractor",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-329",
+      "name": "W Voigt (Cape) (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-334",
+      "name": "Watt’s Plumbing & Leak Location Services",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-338",
+      "name": "Wilkinson Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-339",
+      "name": "William Dau Civils",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-341",
+      "name": "Wynberg Plumbing Works (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-343",
+      "name": "Zanmig Projects (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-002",
+      "name": "A & C Maintenance and Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-005",
+      "name": "Abil Services and Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-010",
+      "name": "Albocon Construction Consultants",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
         "scale",
         "footprint",
         "capabilities",
@@ -6239,12 +5170,90 @@
       ]
     },
     {
-      "id": "org-mbawc-048",
-      "name": "C2C Construction",
+      "id": "org-mbawc-026",
+      "name": "Baltic Group Projects",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-036",
+      "name": "Binningtons",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-046",
+      "name": "Building Enterprises",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-051",
+      "name": "Cape Additions",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-054",
+      "name": "Cape Formwork Contractors",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-055",
+      "name": "Cape Gate Fence and Wire Works",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-061",
+      "name": "CBS Group",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -6265,12 +5274,77 @@
       ]
     },
     {
-      "id": "org-mbawc-063",
-      "name": "Colortone",
+      "id": "org-mbawc-067",
+      "name": "Concord Access Solutions (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-072",
+      "name": "Coverland",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-076",
+      "name": "Dash Waste",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-078",
+      "name": "De Nobrega Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-082",
+      "name": "Derbigum Manufacturing",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-083",
+      "name": "Developers Warehouse (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
         "scale",
         "footprint",
         "capabilities",
@@ -6291,6 +5365,97 @@
       ]
     },
     {
+      "id": "org-mbawc-086",
+      "name": "DNL Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-090",
+      "name": "Eco-Tide Building Management (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-094",
+      "name": "EF Davids Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-095",
+      "name": "Elcarbo Industrial Supplies Cape (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-096",
+      "name": "Electrolux SA (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-097",
+      "name": "Elegant Roofing",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-098",
+      "name": "Elite Decorators cc",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-103",
       "name": "Fairbrother Construction CC",
       "curated": true,
@@ -6304,15 +5469,37 @@
       ]
     },
     {
-      "id": "org-giflo-property-developers",
-      "name": "Giflo Property Developers",
+      "id": "org-mbawc-113",
+      "name": "Frost International",
       "curated": true,
-      "professionals": 0,
+      "professionals": 1,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-120",
+      "name": "Glasshopper Wetton",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-122",
+      "name": "Good Hope Plumbing",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
         "located",
         "scale",
         "footprint",
@@ -6334,12 +5521,12 @@
       ]
     },
     {
-      "id": "org-mbawc-185",
-      "name": "LMF Construction (Pty) Ltd",
+      "id": "org-mbawc-138",
+      "name": "Haefele Waterproofing",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -6347,12 +5534,12 @@
       ]
     },
     {
-      "id": "org-mbawc-200",
-      "name": "Metal Windows",
+      "id": "org-mbawc-140",
+      "name": "Henk Meyer Restoration",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -6360,12 +5547,220 @@
       ]
     },
     {
-      "id": "org-mbawc-203",
-      "name": "Milestone Construction & Civils",
+      "id": "org-mbawc-141",
+      "name": "HHL Handles Hinges & Locks",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-145",
+      "name": "I van Niekerk Architectural Designs & Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-157",
+      "name": "J Macdonald and Sons CC",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-166",
+      "name": "Jonathan Mitchell Independent Building Consultants",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-174",
+      "name": "Lamont Dumaresq Projects (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-175",
+      "name": "Lascocrete",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-176",
+      "name": "Latreuo Kitchens",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-178",
+      "name": "LC Pike Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-179",
+      "name": "LCL Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-192",
+      "name": "MA & ML Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-197",
+      "name": "Maurice Phillips Wisenberg Attorneys",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-201",
+      "name": "Midas Earthcote Tygervalley",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-204",
+      "name": "MLP Master Builders (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-205",
+      "name": "MobileMed",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-210",
+      "name": "NCC Environmental Services (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-214",
+      "name": "Nexus Scaffolding (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-218",
+      "name": "Otro Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
         "scale",
         "footprint",
         "capabilities",
@@ -6386,12 +5781,51 @@
       ]
     },
     {
-      "id": "org-mbawc-224",
-      "name": "Peninsula Plumbing & Engineering Works (Pty) Ltd",
+      "id": "org-mbawc-236",
+      "name": "PQR Consulting",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-239",
+      "name": "Prime Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-240",
+      "name": "Prize Waterproofing & Painting (Southern Suburbs)",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-241",
+      "name": "Procord",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
         "scale",
         "footprint",
         "capabilities",
@@ -6408,12 +5842,12 @@
       ]
     },
     {
-      "id": "org-mbawc-260",
-      "name": "RIB Software",
+      "id": "org-mbawc-249",
+      "name": "RBS Insuranace Brokers (Pty)Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -6429,23 +5863,6 @@
         "website",
         "aliases",
         "located",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-sa-construction-group",
-      "name": "SA Construction Group",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -6477,12 +5894,12 @@
       ]
     },
     {
-      "id": "org-mbawc-316",
-      "name": "Tiefenthaler Legal",
+      "id": "org-mbawc-295",
+      "name": "Swift Project Services (Pty) Ltd",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "aliases",
         "scale",
         "footprint",
         "capabilities",
@@ -6490,12 +5907,103 @@
       ]
     },
     {
-      "id": "org-mbawc-323",
-      "name": "Van Zyl & Associates",
+      "id": "org-mbawc-297",
+      "name": "Talisman Hire",
       "curated": true,
       "professionals": 1,
       "missing": [
-        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-298",
+      "name": "Talisman Hire - BLACKHEATH",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-309",
+      "name": "Talisman Hire - STELLENBOSCH",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-320",
+      "name": "Trio Construction Services",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "website",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-326",
+      "name": "Vortex Pipe Works (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-332",
+      "name": "Waterloo Plumbing",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-340",
+      "name": "WJC Projects",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-345",
+      "name": "Zizonke Solutions",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -6546,22 +6054,6 @@
       "missing": [
         "legalName",
         "located",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-asrin-property-developers",
-      "name": "Asrin Property Developers",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "legalName",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -6634,6 +6126,18 @@
       ]
     },
     {
+      "id": "org-mbawc-048",
+      "name": "C2C Construction",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-053",
       "name": "Cape Dutch Group CC",
       "curated": true,
@@ -6658,6 +6162,18 @@
       ]
     },
     {
+      "id": "org-mbawc-063",
+      "name": "Colortone",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-071",
       "name": "Couru Construction (Pty) Ltd",
       "curated": true,
@@ -6665,22 +6181,6 @@
       "missing": [
         "aliases",
         "located",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-daleglen-property-group",
-      "name": "Daleglen Property Group",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "legalName",
-        "aliases",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -6705,6 +6205,22 @@
       "missing": [
         "website",
         "aliases",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-giflo-property-developers",
+      "name": "Giflo Property Developers",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -6818,6 +6334,42 @@
       ]
     },
     {
+      "id": "org-mbawc-185",
+      "name": "LMF Construction (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-200",
+      "name": "Metal Windows",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-203",
+      "name": "Milestone Construction & Civils",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-208",
       "name": "Murphy Projects",
       "curated": true,
@@ -6851,6 +6403,18 @@
         "legalName",
         "aliases",
         "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-mbawc-224",
+      "name": "Peninsula Plumbing & Engineering Works (Pty) Ltd",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
         "scale",
         "footprint",
         "capabilities",
@@ -6930,6 +6494,34 @@
       ]
     },
     {
+      "id": "org-mbawc-260",
+      "name": "RIB Software",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-sa-construction-group",
+      "name": "SA Construction Group",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-284",
       "name": "Slingsby & Gaidien (Pty) Ltd",
       "curated": true,
@@ -6949,22 +6541,6 @@
       "missing": [
         "aliases",
         "located",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-spar-group",
-      "name": "SPAR Group",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -7030,6 +6606,18 @@
       ]
     },
     {
+      "id": "org-mbawc-316",
+      "name": "Tiefenthaler Legal",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-319",
       "name": "Tri Partitioning Cc",
       "curated": true,
@@ -7042,15 +6630,11 @@
       ]
     },
     {
-      "id": "org-val-de-vie-estate",
-      "name": "Val de Vie Estate",
+      "id": "org-mbawc-323",
+      "name": "Van Zyl & Associates",
       "curated": true,
-      "professionals": 0,
+      "professionals": 1,
       "missing": [
-        "legalName",
-        "aliases",
-        "fresh",
-        "located",
         "scale",
         "footprint",
         "capabilities",
@@ -7118,6 +6702,21 @@
       ]
     },
     {
+      "id": "org-asrin-property-developers",
+      "name": "Asrin Property Developers",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-mbawc-018",
       "name": "Atlantic iBuild (Pty) Ltd",
       "curated": true,
@@ -7168,6 +6767,21 @@
       "professionals": 1,
       "missing": [
         "located",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-daleglen-property-group",
+      "name": "Daleglen Property Group",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -7512,6 +7126,21 @@
       "missing": [
         "legalName",
         "aliases",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-val-de-vie-estate",
+      "name": "Val de Vie Estate",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
         "relationships"
       ]
     },
@@ -8955,13 +8584,13 @@
       ]
     },
     {
-      "id": "org-scatec-sa",
-      "name": "Scatec South Africa",
+      "id": "org-shoprite",
+      "name": "Shoprite Holdings",
       "curated": true,
       "professionals": 0,
       "missing": [
         "legalName",
-        "footprint",
+        "aliases",
         "relationships"
       ]
     },
@@ -9077,16 +8706,6 @@
       ]
     },
     {
-      "id": "org-shoprite-holdings",
-      "name": "Shoprite Holdings",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "legalName",
-        "aliases"
-      ]
-    },
-    {
       "id": "org-dhl-supply-chain-sa",
       "name": "DHL Supply Chain South Africa",
       "curated": true,
@@ -9126,6 +8745,26 @@
       "curated": true,
       "professionals": 0,
       "missing": []
+    },
+    {
+      "id": "org-dataset:shoprite",
+      "name": "Shoprite",
+      "curated": false,
+      "professionals": 68,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "sourced",
+        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
     },
     {
       "id": "org-dataset:bmw it hub",
@@ -9168,6 +8807,26 @@
       ]
     },
     {
+      "id": "org-dataset:pwc",
+      "name": "PwC",
+      "curated": false,
+      "professionals": 25,
+      "missing": [
+        "website",
+        "legalName",
+        "aliases",
+        "classified",
+        "taxonomyPlacement",
+        "sourced",
+        "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-dataset:ab inbev",
       "name": "AB InBev",
       "curated": false,
@@ -9188,48 +8847,8 @@
       ]
     },
     {
-      "id": "org-dataset:coca-cola peninsula beverages",
-      "name": "Coca-Cola Peninsula Beverages",
-      "curated": false,
-      "professionals": 16,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-dataset:bmw it hub south africa",
       "name": "BMW IT Hub South Africa",
-      "curated": false,
-      "professionals": 13,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dataset:deloitte consulting",
-      "name": "Deloitte Consulting",
       "curated": false,
       "professionals": 13,
       "missing": [
@@ -9308,26 +8927,6 @@
       ]
     },
     {
-      "id": "org-dataset:scatec asa",
-      "name": "Scatec ASA",
-      "curated": false,
-      "professionals": 11,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-dataset:much asphalt",
       "name": "Much Asphalt",
       "curated": false,
@@ -9390,26 +8989,6 @@
     {
       "id": "org-dataset:core group",
       "name": "Core Group",
-      "curated": false,
-      "professionals": 9,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dataset:macsteel service centres sa",
-      "name": "Macsteel Service Centres SA",
       "curated": false,
       "professionals": 9,
       "missing": [
@@ -10428,46 +10007,6 @@
       ]
     },
     {
-      "id": "org-dataset:pepkor holdings",
-      "name": "Pepkor Holdings",
-      "curated": false,
-      "professionals": 5,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dataset:pepkor nextech",
-      "name": "Pepkor NexTech",
-      "curated": false,
-      "professionals": 5,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-dataset:pkf cape town (bellville office)",
       "name": "PKF Cape Town (Bellville office)",
       "curated": false,
@@ -11408,46 +10947,6 @@
       ]
     },
     {
-      "id": "org-dataset:pepkor lifestyle",
-      "name": "Pepkor Lifestyle",
-      "curated": false,
-      "professionals": 4,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dataset:pepkor payments and lending",
-      "name": "Pepkor Payments and Lending",
-      "curated": false,
-      "professionals": 4,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-dataset:pps",
       "name": "PPS",
       "curated": false,
@@ -11990,26 +11489,6 @@
     {
       "id": "org-dataset:dell technologies",
       "name": "Dell Technologies",
-      "curated": false,
-      "professionals": 3,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dataset:deloitte (south africa)",
-      "name": "Deloitte (South Africa)",
       "curated": false,
       "professionals": 3,
       "missing": [
@@ -19270,26 +18749,6 @@
     {
       "id": "org-dataset:western cape government",
       "name": "Western Cape Government",
-      "curated": false,
-      "professionals": 2,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dataset:woolworths holdings",
-      "name": "Woolworths Holdings",
       "curated": false,
       "professionals": 2,
       "missing": [
@@ -31790,26 +31249,6 @@
     {
       "id": "org-dataset:lewis group",
       "name": "Lewis Group",
-      "curated": false,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "classified",
-        "taxonomyPlacement",
-        "sourced",
-        "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-dataset:lexisnexis south africa",
-      "name": "LexisNexis South Africa",
       "curated": false,
       "professionals": 1,
       "missing": [

@@ -188,7 +188,15 @@ export function buildOrganizationIndex(input: BuildIndexInput = {}): Organizatio
     const canonical = canonicalCompanyName(employer.name)
     if (!canonical) continue
     const key = canonical.toLowerCase()
-    const organizationId = employer.organizationId ?? idByAlias.get(key) ?? idByCanonical.get(key) ?? `org-dataset:${key}`
+    // A stored `org-dataset:` id is only a snapshot of an earlier resolution, not a
+    // decision. If the name resolves to a curated company today, that wins, so
+    // adding an alias actually re-homes the people instead of being ignored by a
+    // manifest written before the alias existed. An explicit curated id is kept.
+    const storedId = employer.organizationId
+    const resolvedId = idByAlias.get(key) ?? idByCanonical.get(key)
+    const organizationId = storedId && !storedId.startsWith('org-dataset:')
+      ? storedId
+      : resolvedId ?? storedId ?? `org-dataset:${key}`
     // Two distinct employer strings can resolve to one curated organization.
     // Count a source contact once at that organization, not once per alias.
     let professionals = employer.professionals

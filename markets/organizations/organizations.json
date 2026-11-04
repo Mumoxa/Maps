@@ -4103,7 +4103,9 @@
     "aliases": [
       "Deloitte South Africa",
       "Deloitte Touche Tohmatsu",
-      "Deloitte & Touche"
+      "Deloitte & Touche",
+      "Deloitte (South Africa)",
+      "Deloitte Consulting"
     ],
     "website": "https://www.deloitte.com/",
     "status": "verified",
@@ -4142,7 +4144,7 @@
       {
         "url": "https://www.deloitte.com/za/en.html",
         "type": "company-website",
-        "evidence": "Deloitte's South African site presents the firm as Deloitte South Africa, delivering audit and assurance, consulting, financial advisory, risk advisory and tax services, and links its Africa reporting from the same site. | Deloitte's South African site sets out the firm's service lines - audit and assurance, consulting, financial advisory, risk advisory and tax - and its Africa footprint. | Deloitte's South African site brands the firm as Deloitte South Africa across audit and assurance, consulting, financial advisory, risk advisory and tax.",
+        "evidence": "Deloitte's South African site presents the firm as Deloitte South Africa, delivering audit and assurance, consulting, financial advisory, risk advisory and tax services, and links its Africa reporting from the same site. | Deloitte's South African site sets out the firm's service lines - audit and assurance, consulting, financial advisory, risk advisory and tax - and its Africa footprint. | Deloitte's South African site brands the firm as Deloitte South Africa across audit and assurance, consulting, financial advisory, risk advisory and tax. | Deloitte's South African site presents audit and assurance, consulting, financial advisory, risk advisory and tax as services of one firm.",
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
@@ -4152,7 +4154,7 @@
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.deloitte.com/za/en/services/audit-assurance/services/audit.html); no field value was rewritten.\nThe Waterfall City address in the record comes from a statutory third-country auditor register, not from Deloitte's own site. It is retained as a sourced address but should be replaced with Deloitte's own published office listing when a live page is available.\nThe legal name was corrected to Deloitte and the former value Deloitte & Touche was retained as an alias, because the record now carries the partnership name that Deloitte itself uses in South Africa and the old value would otherwise be lost."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.deloitte.com/za/en/services/audit-assurance/services/audit.html); no field value was rewritten.\nThe Waterfall City address in the record comes from a statutory third-country auditor register, not from Deloitte's own site. It is retained as a sourced address but should be replaced with Deloitte's own published office listing when a live page is available.\nThe legal name was corrected to Deloitte and the former value Deloitte & Touche was retained as an alias, because the record now carries the partnership name that Deloitte itself uses in South Africa and the old value would otherwise be lost.\nThe roster writes this employer several ways, including Deloitte (South Africa), Deloitte Consulting and Deloitte & Touche. All are kept as aliases on the one Deloitte record. Deloitte Consulting is a division of the same firm rather than a separate company, so it is recorded here as an alias, not as a subsidiary relationship.\nThe roster records 13 people at Deloitte Consulting. Deloitte's own site presents consulting as one of the firm's service lines rather than a separate company, so it is recorded as an alias here, which resolves those people to this firm instead of leaving them on an unclaimed employer string."
   },
   {
     "id": "org-devco-developments",
@@ -8857,7 +8859,10 @@
     "id": "org-lexisnexis",
     "name": "LexisNexis",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "LexisNexis South Africa",
+      "LexisNexis (Pty) Ltd"
+    ],
     "website": "https://www.lexisnexis.co.za/",
     "status": "needs-verification",
     "industries": [],
@@ -8878,18 +8883,18 @@
     "sources": [
       {
         "url": "https://www.lexisnexis.co.za/",
-        "type": "recruiter-supplied",
-        "evidence": "Legal and business information and analytics provider; mapped to the legal services node as its closest fit.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "Legal and business information and analytics provider; mapped to the legal services node as its closest fit. | LexisNexis South Africa's own site presents the local operation as LexisNexis South Africa, offering legal, tax and business research products and services.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
-        "confidence": "probable"
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.lexisnexis.co.za/); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.lexisnexis.co.za/); no field value was rewritten.\nThe roster records this employer as LexisNexis South Africa; that spelling is kept as an alias so the two resolve to one company rather than two employers."
   },
   {
     "id": "org-liberty-group-south-africa",
@@ -9181,7 +9186,10 @@
     "id": "org-macsteel",
     "name": "Macsteel",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Macsteel Service Centres SA",
+      "Macsteel Service Centres"
+    ],
     "website": "https://www.macsteel.co.za/",
     "status": "needs-verification",
     "industries": [],
@@ -9207,13 +9215,21 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.macsteel.co.za/",
+        "type": "company-website",
+        "evidence": "Macsteel's own site presents its service centre network as its trading operation in South Africa.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.macsteel.co.za/about-us); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.macsteel.co.za/about-us); no field value was rewritten.\nMacsteel Service Centres SA is the trading name the steel merchant uses for its service-centre business; the roster's shorter 'Macsteel' and the longer form are one company, so the longer form is an alias."
   },
   {
     "id": "org-mainstream-sa",
@@ -11942,7 +11958,10 @@
     "id": "org-peninsula-beverages",
     "name": "Peninsula Beverages",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Coca-Cola Peninsula Beverages",
+      "CCPB"
+    ],
     "website": "https://cocacolapenbev.co.za/",
     "status": "needs-verification",
     "industries": [],
@@ -11966,13 +11985,21 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://cocacolapenbev.co.za/",
+        "type": "company-website",
+        "evidence": "Peninsula Beverages' own site trades as Coca-Cola Peninsula Beverages, the Coca-Cola bottler for the Western Cape.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://cocacolapenbev.co.za/about-us); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://cocacolapenbev.co.za/about-us); no field value was rewritten.\nThe roster writes this bottler as Coca-Cola Peninsula Beverages in places and Peninsula Beverages in others. They are one Western Cape Coca-Cola bottler, so the longer name is kept as an alias rather than as a second employer."
   },
   {
     "id": "org-pepsico-south-africa-pioneer-foods",
@@ -14160,7 +14187,9 @@
     "name": "Scatec South Africa",
     "legalName": "",
     "aliases": [
-      "Scatec"
+      "Scatec",
+      "Scatec ASA",
+      "Scatec Solar"
     ],
     "website": "https://www.tgs.com/",
     "status": "needs-verification",
@@ -14297,13 +14326,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.scatec.com/",
+        "type": "company-website",
+        "evidence": "Scatec describes its business as renewable energy project development, construction and operation across several markets.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "organizations"
     ],
-    "lastVerified": "2026-10-08",
-    "notes": "Scatec is a Norwegian group; the South African legal entity was not established from the sources read, so the record is flagged for verification rather than given a legal name. Project sites are recorded as locations because they are the operational footprint that was sourced.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.tgs.com/reliable-operations-at-scale-inside-scatecs-kenhardt-hybrid-project); no field value was rewritten.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
+    "lastVerified": "2026-11-04",
+    "notes": "Scatec is a Norwegian group; the South African legal entity was not established from the sources read, so the record is flagged for verification rather than given a legal name. Project sites are recorded as locations because they are the operational footprint that was sourced.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.tgs.com/reliable-operations-at-scale-inside-scatecs-kenhardt-hybrid-project); no field value was rewritten.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved.\nScatec ASA is the Norwegian parent and Scatec South Africa is the local operation. The roster uses both spellings for the same people, so ASA is kept as an alias on this record; the parent relationship itself is not asserted here because no source read so far states the ownership structure."
   },
   {
     "id": "org-sea-harvest",
@@ -45318,7 +45355,12 @@
     "id": "org-mbawc-related-562740d6934b",
     "name": "Pepkor",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Pepkor Holdings",
+      "Pepkor NexTech",
+      "Pepkor Lifestyle",
+      "Pepkor Payments and Lending"
+    ],
     "website": "",
     "status": "needs-verification",
     "industries": [],
@@ -45333,14 +45375,22 @@
         "evidence": "Workbook Financial Leadership row 13 names this company/group; reported role/affiliation is distinct from verified employment or corporate ownership.",
         "checkedOn": "2026-10-23",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.pepkor.co.za/",
+        "type": "company-website",
+        "evidence": "Pepkor's own site describes the group as a portfolio of retail brands and operating divisions rather than separate companies.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "accounting-finance",
       "mbawc-financial-leadership"
     ],
-    "lastVerified": "2026-10-23",
-    "notes": "Company/group name reported in the supplied MBAWC finance notes; exact legal identity and business activity require review. No ownership, employment, size or operating capabilities inferred."
+    "lastVerified": "2026-11-04",
+    "notes": "Company/group name reported in the supplied MBAWC finance notes; exact legal identity and business activity require review. No ownership, employment, size or operating capabilities inferred.\nThe roster splits Pepkor people across Pepkor Holdings, Pepkor NexTech, Pepkor Lifestyle and Pepkor Payments and Lending. Pepkor reports these as divisions of one listed group, so they are recorded as aliases here and their people resolve to the group rather than to four unclaimed employer strings. If any of them is later shown to be a separate legal entity, it should become its own record with a corporate relationship instead of an alias."
   },
   {
     "id": "org-mbawc-related-d13a140cf3c5",

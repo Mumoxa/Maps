@@ -8,9 +8,9 @@
     "distinctEmployerNames": 1743,
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 178,
-    "distinctOrganizationEntries": 1699,
-    "curatedCompanyMatches": 437,
-    "unverifiedDatasetOnly": 1262
+    "distinctOrganizationEntries": 1694,
+    "curatedCompanyMatches": 439,
+    "unverifiedDatasetOnly": 1255
   },
   "employers": [
     {
@@ -2093,14 +2093,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:coca-cola peninsula beverages",
-      "name": "Coca-Cola Peninsula Beverages",
-      "contactCount": 6,
-      "sourceNames": [
-        "Coca-Cola Peninsula Beverages (Pty) Ltd"
-      ]
-    },
-    {
       "organizationId": "org-dataset:codebow",
       "name": "codebow",
       "contactCount": 1,
@@ -2506,14 +2498,6 @@
       "contactCount": 3,
       "sourceNames": [
         "Dell Technologies"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:deloitte consulting",
-      "name": "Deloitte Consulting",
-      "contactCount": 13,
-      "sourceNames": [
-        "Deloitte Consulting"
       ]
     },
     {
@@ -5157,14 +5141,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:lexisnexis south africa",
-      "name": "LexisNexis South Africa",
-      "contactCount": 1,
-      "sourceNames": [
-        "LexisNexis South Africa"
-      ]
-    },
-    {
       "organizationId": "org-dataset:life choices academy",
       "name": "Life Choices Academy",
       "contactCount": 1,
@@ -6818,38 +6794,6 @@
       "contactCount": 2,
       "sourceNames": [
         "PEP"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:pepkor holdings",
-      "name": "Pepkor Holdings",
-      "contactCount": 3,
-      "sourceNames": [
-        "Pepkor Holdings Limited"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:pepkor lifestyle",
-      "name": "Pepkor Lifestyle",
-      "contactCount": 4,
-      "sourceNames": [
-        "Pepkor Lifestyle"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:pepkor nextech",
-      "name": "Pepkor NexTech",
-      "contactCount": 5,
-      "sourceNames": [
-        "Pepkor NexTech"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:pepkor payments and lending",
-      "name": "Pepkor Payments and Lending",
-      "contactCount": 3,
-      "sourceNames": [
-        "Pepkor Payments and Lending"
       ]
     },
     {
@@ -10316,9 +10260,10 @@
     {
       "organizationId": "org-deloitte",
       "name": "Deloitte",
-      "contactCount": 70,
+      "contactCount": 82,
       "sourceNames": [
-        "Deloitte"
+        "Deloitte",
+        "Deloitte Consulting"
       ]
     },
     {
@@ -10490,9 +10435,10 @@
     {
       "organizationId": "org-lexisnexis",
       "name": "LexisNexis",
-      "contactCount": 15,
+      "contactCount": 16,
       "sourceNames": [
-        "LexisNexis"
+        "LexisNexis",
+        "LexisNexis South Africa"
       ]
     },
     {
@@ -13258,6 +13204,17 @@
       ]
     },
     {
+      "organizationId": "org-mbawc-related-562740d6934b",
+      "name": "Pepkor",
+      "contactCount": 15,
+      "sourceNames": [
+        "Pepkor Holdings Limited",
+        "Pepkor Lifestyle",
+        "Pepkor NexTech",
+        "Pepkor Payments and Lending"
+      ]
+    },
+    {
       "organizationId": "org-mbawc-related-d13a140cf3c5",
       "name": "Saint-Gobain Africa",
       "contactCount": 1,
@@ -13388,6 +13345,14 @@
       "contactCount": 11,
       "sourceNames": [
         "Parexel"
+      ]
+    },
+    {
+      "organizationId": "org-peninsula-beverages",
+      "name": "Peninsula Beverages",
+      "contactCount": 6,
+      "sourceNames": [
+        "Coca-Cola Peninsula Beverages (Pty) Ltd"
       ]
     },
     {
