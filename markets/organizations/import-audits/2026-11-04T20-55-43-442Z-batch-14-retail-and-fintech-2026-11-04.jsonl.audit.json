@@ -1,0 +1,29 @@
+{
+  "batch": "batch-14-retail-and-fintech-2026-11-04.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-11-04T20:55:43.442Z",
+  "type": "companies",
+  "read": 7,
+  "newOrganizations": 0,
+  "updatedOrganizations": 2,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 7,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "verification": {
+    "requested": 2,
+    "granted": 2,
+    "refused": 0,
+    "refusals": []
+  },
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

@@ -9110,11 +9110,22 @@
   {
     "id": "org-m-kopa",
     "name": "M-Kopa",
-    "legalName": "",
-    "aliases": [],
+    "legalName": "M-KOPA",
+    "aliases": [
+      "M-KOPA Solar"
+    ],
     "website": "https://www.m-kopa.com/",
-    "status": "needs-verification",
-    "industries": [],
+    "status": "verified",
+    "industries": [
+      {
+        "industryId": "renewable-development",
+        "primary": false,
+        "confidence": "probable",
+        "evidence": "M-KOPA's own site presents its current business as smartphone ownership with digital loans, health cover, device protection and data bundles, with 10 million customers across Ghana, Kenya, Nigeria, South Africa and Uganda.",
+        "sourceUrl": "https://www.m-kopa.com/",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "taxonomy": {
       "primaryNode": "ENR-SOLAR-RES",
       "secondaryNodes": [],
@@ -9124,7 +9135,14 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
+    "locations": [
+      {
+        "city": "Bryanston",
+        "province": "Gauteng",
+        "sourceUrl": "https://www.m-kopa.com/contact",
+        "checkedOn": "2026-11-04"
+      }
+    ],
     "scale": [],
     "parentId": null,
     "sources": [
@@ -9135,13 +9153,29 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.m-kopa.com/contact",
+        "type": "company-website",
+        "evidence": "M-KOPA's own contact page gives its South African office address as The Campus, Twickenham Block C, corner Main and Sloane Street, Bryanston, Johannesburg, 2021.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://www.m-kopa.com/",
+        "type": "company-website",
+        "evidence": "M-KOPA's own site states that it serves over 10 million customers across five markets with smartphones, digital loans, health cover, device protection and data, and reports 35 000+ sales agents and $2 billion+ in credit unlocked. | M-KOPA's own site presents its current business as smartphone ownership with digital loans, health cover, device protection and data bundles, with 10 million customers across Ghana, Kenya, Nigeria, South Africa and Uganda.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.m-kopa.com/country/south-africa); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.m-kopa.com/country/south-africa); no field value was rewritten.\nM-KOPA now describes itself as a smartphone and digital-finance business across five markets, not only as a solar home-systems company; the taxonomy placement at residential solar understates the current business and the financing side is the larger part of it. The South African office in Bryanston is recorded; the group is headquartered in Kenya, and M-KOPA's own contact page lists offices in Ghana, Kenya, Nigeria, South Africa, Uganda and the United Kingdom without naming a group headquarters."
   },
   {
     "id": "org-macsteel",
@@ -16002,10 +16036,14 @@
   {
     "id": "org-tfg-the-foschini-group",
     "name": "TFG (The Foschini Group)",
-    "legalName": "",
-    "aliases": [],
+    "legalName": "TFG Limited",
+    "aliases": [
+      "The Foschini Group",
+      "TFG",
+      "Foschini"
+    ],
     "website": "https://tfglimited.co.za/",
-    "status": "needs-verification",
+    "status": "verified",
     "industries": [],
     "taxonomy": {
       "primaryNode": "RTL-GEN-APPAREL",
@@ -16019,8 +16057,36 @@
       "checkedOn": "2026-10-16"
     },
     "capabilities": [],
-    "locations": [],
-    "scale": [],
+    "locations": [
+      {
+        "city": "Parow East",
+        "province": "Western Cape",
+        "sourceUrl": "https://tfglimited.co.za/contact/",
+        "checkedOn": "2026-11-04"
+      }
+    ],
+    "scale": [
+      {
+        "metric": "employees",
+        "value": "50 800+ employees",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "as at March 2026",
+        "sourceUrl": "https://tfglimited.co.za/about-us/tfg-facts/",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      },
+      {
+        "metric": "sites",
+        "value": "4 900+ outlets across 40 brands",
+        "basis": "source-reported",
+        "confidence": "confirmed",
+        "asOf": "as at March 2026",
+        "sourceUrl": "https://tfglimited.co.za/about-us/tfg-facts/",
+        "checkedOn": "2026-11-04",
+        "entityScope": "consolidated-group"
+      }
+    ],
     "parentId": null,
     "sources": [
       {
@@ -16030,13 +16096,37 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://tfglimited.co.za/contact/",
+        "type": "company-website",
+        "evidence": "TFG's own contact page gives its physical address as the Stanley Lewis Centre, 340 Voortrekker Road, Parow East 7500, Cape Town, and describes it as its head office campus.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://tfglimited.co.za/about-us/tfg-facts/",
+        "type": "company-website",
+        "evidence": "TFG's own TFG Facts page states 4 900+ outlets, 40 brands and 50 800+ employees as at March 2026. | TFG's own TFG Facts page states 4 900+ outlets and 40 brands as at March 2026, and separately 24 countries across five continents.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
+      },
+      {
+        "url": "https://tfglimited.co.za/about-us/",
+        "type": "company-website",
+        "evidence": "TFG's own About us page describes the group's purpose, vision and omnichannel retail strategy, and its TFG Facts page states its outlet, brand and employee counts.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://tfglimited.co.za/); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://tfglimited.co.za/); no field value was rewritten.\nThe group's own site brands it TFG Limited, and the former The Foschini Group name is kept as an alias so older references still resolve.\nThe same page reports two different employee counts: 50 800+ for the whole group and 38 329 for TFG Africa as at March 2026. The group figure is recorded as consolidated-group scale; the 38 329 figure describes the African operation only and is never substituted for it."
   },
   {
     "id": "org-the-coca-cola-company",
