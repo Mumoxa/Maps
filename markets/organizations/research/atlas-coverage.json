@@ -74,8 +74,8 @@
     "total": 2391,
     "curated": 632,
     "datasetOnly": 1759,
-    "verified": 131,
-    "needsVerification": 2260,
+    "verified": 134,
+    "needsVerification": 2257,
     "withMappedProfessionals": 2260,
     "meetingEveryStandardField": 5
   },
@@ -93,18 +93,18 @@
       "key": "website",
       "label": "Official website",
       "rationale": "The primary source for verifying what the company actually does.",
-      "covered": 399,
+      "covered": 499,
       "total": 2391,
-      "shortfall": 1992,
-      "percentage": 16.7
+      "shortfall": 1892,
+      "percentage": 20.9
     },
     {
       "key": "legalName",
       "label": "Legal entity name",
       "rationale": "Separates the trading brand from the registered entity.",
-      "covered": 379,
+      "covered": 380,
       "total": 2391,
-      "shortfall": 2012,
+      "shortfall": 2011,
       "percentage": 15.9
     },
     {
@@ -156,28 +156,28 @@
       "key": "located",
       "label": "Sourced operating location",
       "rationale": "Province is the recruiter’s first geographic filter.",
-      "covered": 206,
+      "covered": 209,
       "total": 2391,
-      "shortfall": 2185,
-      "percentage": 8.6
+      "shortfall": 2182,
+      "percentage": 8.7
     },
     {
       "key": "scale",
       "label": "Sourced scale measure",
       "rationale": "Headcount, revenue or sites, verbatim and dated.",
-      "covered": 139,
+      "covered": 142,
       "total": 2391,
-      "shortfall": 2252,
-      "percentage": 5.8
+      "shortfall": 2249,
+      "percentage": 5.9
     },
     {
       "key": "footprint",
       "label": "Established footprint band",
       "rationale": "Lets an industry be read by company size without inventing one.",
-      "covered": 130,
+      "covered": 133,
       "total": 2391,
-      "shortfall": 2261,
-      "percentage": 5.4
+      "shortfall": 2258,
+      "percentage": 5.6
     },
     {
       "key": "capabilities",
@@ -316,6 +316,15 @@
       }
     ]
   },
+  "identityReview": {
+    "total": 78,
+    "professionals": 171,
+    "byDisposition": {
+      "same-identity": 2,
+      "parent-subsidiary": 32,
+      "needs-decision": 44
+    }
+  },
   "byDataset": {
     "accounting-finance": {
       "organizations": 654,
@@ -335,44 +344,11 @@
   },
   "queue": [
     {
-      "id": "org-capitec",
-      "name": "Capitec",
-      "curated": true,
-      "professionals": 175,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-deloitte",
       "name": "Deloitte",
       "curated": true,
       "professionals": 71,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-investec",
-      "name": "Investec",
-      "curated": true,
-      "professionals": 65,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -388,7 +364,6 @@
       "curated": true,
       "professionals": 63,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -404,7 +379,6 @@
       "curated": true,
       "professionals": 91,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -420,23 +394,6 @@
       "curated": true,
       "professionals": 197,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-old-mutual",
-      "name": "Old Mutual",
-      "curated": true,
-      "professionals": 256,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -452,7 +409,6 @@
       "curated": true,
       "professionals": 84,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -468,23 +424,6 @@
       "curated": true,
       "professionals": 68,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-standard-bank",
-      "name": "Standard Bank",
-      "curated": true,
-      "professionals": 288,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -500,23 +439,7 @@
       "curated": true,
       "professionals": 121,
       "missing": [
-        "website",
         "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-absa",
-      "name": "Absa",
-      "curated": true,
-      "professionals": 284,
-      "missing": [
-        "website",
         "aliases",
         "located",
         "scale",
@@ -531,7 +454,6 @@
       "curated": true,
       "professionals": 70,
       "missing": [
-        "website",
         "legalName",
         "located",
         "scale",
@@ -546,9 +468,35 @@
       "curated": true,
       "professionals": 80,
       "missing": [
-        "website",
         "legalName",
         "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-standard-bank",
+      "name": "Standard Bank",
+      "curated": true,
+      "professionals": 288,
+      "missing": [
+        "legalName",
+        "aliases",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-absa",
+      "name": "Absa",
+      "curated": true,
+      "professionals": 284,
+      "missing": [
+        "aliases",
         "scale",
         "footprint",
         "capabilities",
@@ -561,10 +509,34 @@
       "curated": true,
       "professionals": 263,
       "missing": [
-        "website",
         "located",
         "scale",
         "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-investec",
+      "name": "Investec",
+      "curated": true,
+      "professionals": 65,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-capitec",
+      "name": "Capitec",
+      "curated": true,
+      "professionals": 175,
+      "missing": [
+        "legalName",
+        "aliases",
         "capabilities",
         "relationships"
       ]
@@ -582,12 +554,23 @@
       ]
     },
     {
+      "id": "org-old-mutual",
+      "name": "Old Mutual",
+      "curated": true,
+      "professionals": 256,
+      "missing": [
+        "aliases",
+        "located",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-pepsico-south-africa-pioneer-foods",
       "name": "PepsiCo South Africa / Pioneer Foods",
       "curated": true,
       "professionals": 59,
       "missing": [
-        "website",
         "legalName",
         "located",
         "scale",
@@ -602,7 +585,6 @@
       "curated": true,
       "professionals": 56,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -618,7 +600,6 @@
       "curated": true,
       "professionals": 50,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -634,23 +615,6 @@
       "curated": true,
       "professionals": 49,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-nampak",
-      "name": "Nampak",
-      "curated": true,
-      "professionals": 45,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -672,12 +636,26 @@
       ]
     },
     {
+      "id": "org-nampak",
+      "name": "Nampak",
+      "curated": true,
+      "professionals": 45,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-lactalis-south-africa",
       "name": "Lactalis South Africa",
       "curated": true,
       "professionals": 41,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -693,7 +671,6 @@
       "curated": true,
       "professionals": 36,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -709,7 +686,6 @@
       "curated": true,
       "professionals": 35,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -725,7 +701,6 @@
       "curated": true,
       "professionals": 34,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -741,7 +716,6 @@
       "curated": true,
       "professionals": 31,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -757,7 +731,6 @@
       "curated": true,
       "professionals": 30,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -773,7 +746,6 @@
       "curated": true,
       "professionals": 29,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -789,7 +761,6 @@
       "curated": true,
       "professionals": 29,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -827,7 +798,6 @@
       "curated": true,
       "professionals": 26,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -843,7 +813,6 @@
       "curated": true,
       "professionals": 25,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -859,7 +828,6 @@
       "curated": true,
       "professionals": 25,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -875,7 +843,6 @@
       "curated": true,
       "professionals": 24,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -891,7 +858,6 @@
       "curated": true,
       "professionals": 23,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -907,7 +873,6 @@
       "curated": true,
       "professionals": 22,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -923,7 +888,6 @@
       "curated": true,
       "professionals": 22,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -939,7 +903,6 @@
       "curated": true,
       "professionals": 21,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -955,7 +918,6 @@
       "curated": true,
       "professionals": 20,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -971,7 +933,6 @@
       "curated": true,
       "professionals": 20,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -987,7 +948,6 @@
       "curated": true,
       "professionals": 18,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1003,7 +963,6 @@
       "curated": true,
       "professionals": 18,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1019,7 +978,6 @@
       "curated": true,
       "professionals": 17,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1035,7 +993,6 @@
       "curated": true,
       "professionals": 17,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1051,7 +1008,6 @@
       "curated": true,
       "professionals": 16,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1067,7 +1023,6 @@
       "curated": true,
       "professionals": 16,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1096,7 +1051,6 @@
       "curated": true,
       "professionals": 15,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1112,7 +1066,6 @@
       "curated": true,
       "professionals": 15,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1128,23 +1081,6 @@
       "curated": true,
       "professionals": 15,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-accenture-in-south-africa",
-      "name": "Accenture in South Africa",
-      "curated": true,
-      "professionals": 14,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1162,12 +1098,11 @@
       "missing": []
     },
     {
-      "id": "org-telesure-investment-holdings-tih",
-      "name": "Telesure Investment Holdings (TIH)",
+      "id": "org-accenture-in-south-africa",
+      "name": "Accenture in South Africa",
       "curated": true,
       "professionals": 14,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1193,6 +1128,21 @@
       ]
     },
     {
+      "id": "org-telesure-investment-holdings-tih",
+      "name": "Telesure Investment Holdings (TIH)",
+      "curated": true,
+      "professionals": 14,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-concor",
       "name": "Concor",
       "curated": true,
@@ -1208,7 +1158,6 @@
       "curated": true,
       "professionals": 13,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1224,7 +1173,6 @@
       "curated": true,
       "professionals": 13,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1240,7 +1188,6 @@
       "curated": true,
       "professionals": 13,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1256,7 +1203,6 @@
       "curated": true,
       "professionals": 12,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1272,7 +1218,6 @@
       "curated": true,
       "professionals": 12,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1288,7 +1233,6 @@
       "curated": true,
       "professionals": 12,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1304,7 +1248,6 @@
       "curated": true,
       "professionals": 12,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1343,7 +1286,6 @@
       "curated": true,
       "professionals": 11,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1359,7 +1301,6 @@
       "curated": true,
       "professionals": 11,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1375,7 +1316,6 @@
       "curated": true,
       "professionals": 11,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1391,7 +1331,6 @@
       "curated": true,
       "professionals": 11,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1407,7 +1346,6 @@
       "curated": true,
       "professionals": 11,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1423,7 +1361,6 @@
       "curated": true,
       "professionals": 11,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1439,55 +1376,6 @@
       "curated": true,
       "professionals": 11,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-altron-digital-business",
-      "name": "Altron Digital Business",
-      "curated": true,
-      "professionals": 10,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-eskom-holdings-soc",
-      "name": "Eskom Holdings SOC",
-      "curated": true,
-      "professionals": 10,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-lula",
-      "name": "Lula",
-      "curated": true,
-      "professionals": 10,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1500,54 +1388,6 @@
     {
       "id": "org-mint-group",
       "name": "Mint Group",
-      "curated": true,
-      "professionals": 10,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-peninsula-beverages",
-      "name": "Peninsula Beverages",
-      "curated": true,
-      "professionals": 10,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-takealot",
-      "name": "Takealot",
-      "curated": true,
-      "professionals": 10,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-transunion",
-      "name": "TransUnion",
       "curated": true,
       "professionals": 10,
       "missing": [
@@ -1578,12 +1418,101 @@
       ]
     },
     {
+      "id": "org-altron-digital-business",
+      "name": "Altron Digital Business",
+      "curated": true,
+      "professionals": 10,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-eskom-holdings-soc",
+      "name": "Eskom Holdings SOC",
+      "curated": true,
+      "professionals": 10,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-lula",
+      "name": "Lula",
+      "curated": true,
+      "professionals": 10,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-peninsula-beverages",
+      "name": "Peninsula Beverages",
+      "curated": true,
+      "professionals": 10,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-takealot",
+      "name": "Takealot",
+      "curated": true,
+      "professionals": 10,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-transunion",
+      "name": "TransUnion",
+      "curated": true,
+      "professionals": 10,
+      "missing": [
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-wesbank",
       "name": "WesBank",
       "curated": true,
       "professionals": 10,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1612,7 +1541,6 @@
       "curated": true,
       "professionals": 9,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1628,7 +1556,6 @@
       "curated": true,
       "professionals": 9,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1644,7 +1571,6 @@
       "curated": true,
       "professionals": 9,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1660,7 +1586,6 @@
       "curated": true,
       "professionals": 9,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1676,7 +1601,6 @@
       "curated": true,
       "professionals": 9,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1706,7 +1630,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1722,7 +1645,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1738,7 +1660,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1754,7 +1675,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1770,7 +1690,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1786,7 +1705,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1802,7 +1720,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1818,7 +1735,6 @@
       "curated": true,
       "professionals": 8,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1857,23 +1773,6 @@
       "curated": true,
       "professionals": 7,
       "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-anglo-american",
-      "name": "Anglo American",
-      "curated": true,
-      "professionals": 6,
-      "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1890,6 +1789,21 @@
       "professionals": 6,
       "missing": [
         "website",
+        "legalName",
+        "aliases",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-anglo-american",
+      "name": "Anglo American",
+      "curated": true,
+      "professionals": 6,
+      "missing": [
         "legalName",
         "aliases",
         "located",
@@ -1920,7 +1834,6 @@
       "curated": true,
       "professionals": 7,
       "missing": [
-        "website",
         "legalName",
         "footprint"
       ]
@@ -1974,7 +1887,6 @@
       "curated": true,
       "professionals": 5,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -1990,7 +1902,6 @@
       "curated": true,
       "professionals": 5,
       "missing": [
-        "website",
         "legalName",
         "aliases",
         "located",
@@ -2181,22 +2092,6 @@
       ]
     },
     {
-      "id": "org-african-development-bank",
-      "name": "African Development Bank",
-      "curated": true,
-      "professionals": 2,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-mbawc-101",
       "name": "Enza Construction (Pty) Ltd",
       "curated": true,
@@ -2204,22 +2099,6 @@
       "missing": [
         "aliases",
         "located",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-monocle-solutions",
-      "name": "Monocle Solutions",
-      "curated": true,
-      "professionals": 2,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
         "capabilities",
         "relationships"
       ]
@@ -2257,22 +2136,6 @@
       ]
     },
     {
-      "id": "org-truworths",
-      "name": "Truworths",
-      "curated": true,
-      "professionals": 2,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-mbawc-related-4549063188a8",
       "name": "Abbeydale Projects",
       "curated": true,
@@ -2284,6 +2147,21 @@
         "classified",
         "taxonomyPlacement",
         "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-african-development-bank",
+      "name": "African Development Bank",
+      "curated": true,
+      "professionals": 2,
+      "missing": [
+        "legalName",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -2409,6 +2287,21 @@
         "classified",
         "taxonomyPlacement",
         "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-monocle-solutions",
+      "name": "Monocle Solutions",
+      "curated": true,
+      "professionals": 2,
+      "missing": [
+        "legalName",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -2553,6 +2446,21 @@
         "classified",
         "taxonomyPlacement",
         "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-truworths",
+      "name": "Truworths",
+      "curated": true,
+      "professionals": 2,
+      "missing": [
+        "legalName",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -2720,22 +2628,6 @@
         "website",
         "aliases",
         "fresh",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-african-rainbow-minerals",
-      "name": "African Rainbow Minerals",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "legalName",
-        "aliases",
         "located",
         "scale",
         "footprint",
@@ -3626,6 +3518,21 @@
       "missing": [
         "aliases",
         "fresh",
+        "located",
+        "scale",
+        "footprint",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-african-rainbow-minerals",
+      "name": "African Rainbow Minerals",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "legalName",
+        "aliases",
         "located",
         "scale",
         "footprint",
@@ -7824,16 +7731,6 @@
       ]
     },
     {
-      "id": "org-dipula",
-      "name": "Dipula Income Fund",
-      "curated": true,
-      "professionals": 1,
-      "missing": [
-        "website",
-        "relationships"
-      ]
-    },
-    {
       "id": "org-dube-tradeport",
       "name": "Dube TradePort Corporation",
       "curated": true,
@@ -8655,6 +8552,15 @@
       ]
     },
     {
+      "id": "org-dipula",
+      "name": "Dipula Income Fund",
+      "curated": true,
+      "professionals": 1,
+      "missing": [
+        "relationships"
+      ]
+    },
+    {
       "id": "org-divercity-urban-property",
       "name": "Divercity Urban Property",
       "curated": true,
@@ -8781,19 +8687,6 @@
       ]
     },
     {
-      "id": "org-reatile-renewables",
-      "name": "Reatile Renewables",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "website",
-        "aliases",
-        "located",
-        "scale",
-        "footprint"
-      ]
-    },
-    {
       "id": "org-redefine-properties",
       "name": "Redefine Properties",
       "curated": true,
@@ -8854,18 +8747,6 @@
       ]
     },
     {
-      "id": "org-cambridge-food",
-      "name": "Cambridge Food",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "website",
-        "legalName",
-        "scale",
-        "footprint"
-      ]
-    },
-    {
       "id": "org-kingshill-group",
       "name": "KingsHill Group",
       "curated": true,
@@ -8914,20 +8795,20 @@
       ]
     },
     {
-      "id": "org-reefer-cold-storage",
-      "name": "Reefer Cold Storage",
+      "id": "org-reatile-renewables",
+      "name": "Reatile Renewables",
       "curated": true,
       "professionals": 0,
       "missing": [
-        "website",
-        "legalName",
-        "footprint",
-        "relationships"
+        "aliases",
+        "located",
+        "scale",
+        "footprint"
       ]
     },
     {
-      "id": "org-scatec-sa",
-      "name": "Scatec South Africa",
+      "id": "org-reefer-cold-storage",
+      "name": "Reefer Cold Storage",
       "curated": true,
       "professionals": 0,
       "missing": [
@@ -9008,34 +8889,12 @@
       ]
     },
     {
-      "id": "org-bexgroup",
-      "name": "BexGroup",
+      "id": "org-cambridge-food",
+      "name": "Cambridge Food",
       "curated": true,
       "professionals": 0,
       "missing": [
-        "website",
-        "scale",
-        "footprint"
-      ]
-    },
-    {
-      "id": "org-cennergi",
-      "name": "Cennergi",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "website",
-        "footprint",
-        "relationships"
-      ]
-    },
-    {
-      "id": "org-epko",
-      "name": "Epko Oil Refinery",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "website",
+        "legalName",
         "scale",
         "footprint"
       ]
@@ -9060,17 +8919,6 @@
         "scale",
         "footprint",
         "relationships"
-      ]
-    },
-    {
-      "id": "org-opti-feeds",
-      "name": "Opti Feeds",
-      "curated": true,
-      "professionals": 0,
-      "missing": [
-        "website",
-        "scale",
-        "footprint"
       ]
     },
     {
@@ -9107,6 +8955,17 @@
       ]
     },
     {
+      "id": "org-scatec-sa",
+      "name": "Scatec South Africa",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "legalName",
+        "footprint",
+        "relationships"
+      ]
+    },
+    {
       "id": "org-ssk",
       "name": "SSK Group",
       "curated": true,
@@ -9128,6 +8987,16 @@
       ]
     },
     {
+      "id": "org-bexgroup",
+      "name": "BexGroup",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "scale",
+        "footprint"
+      ]
+    },
+    {
       "id": "org-bidfood",
       "name": "Bidfood South Africa",
       "curated": true,
@@ -9135,6 +9004,26 @@
       "missing": [
         "legalName",
         "relationships"
+      ]
+    },
+    {
+      "id": "org-cennergi",
+      "name": "Cennergi",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "footprint",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-epko",
+      "name": "Epko Oil Refinery",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "scale",
+        "footprint"
       ]
     },
     {
@@ -9175,6 +9064,16 @@
       "missing": [
         "legalName",
         "aliases"
+      ]
+    },
+    {
+      "id": "org-opti-feeds",
+      "name": "Opti Feeds",
+      "curated": true,
+      "professionals": 0,
+      "missing": [
+        "scale",
+        "footprint"
       ]
     },
     {

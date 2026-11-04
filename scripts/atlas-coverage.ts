@@ -18,6 +18,7 @@ import { resolve } from 'node:path'
 import { buildCompanyIntelligence } from '../src/data/organizations/universe'
 import { organizationTaxonomy } from '../src/data/organizations/taxonomyPlacement'
 import { classifyFootprint, isEstablishedBand } from '../src/data/organizations/footprint'
+import { buildIdentityQueue, summariseIdentityQueue } from '../src/data/organizations/identityReview'
 import {
   STALE_AFTER_DAYS,
   STANDARD_FIELDS,
@@ -43,7 +44,11 @@ interface UnestablishedEmployer {
   professionals: number
 }
 
-function buildRows(today: string): { rows: CoverageRow[]; unestablished: UnestablishedEmployer[] } {
+function buildRows(today: string): {
+  rows: CoverageRow[]
+  unestablished: UnestablishedEmployer[]
+  identityQueue: ReturnType<typeof buildIdentityQueue>
+} {
   const intelligence = buildCompanyIntelligence()
   const relatedOrganizations = new Set<string>(intelligence.index.relationshipsByOrg.keys())
 
@@ -68,7 +73,23 @@ function buildRows(today: string): { rows: CoverageRow[]; unestablished: Unestab
     }
   })
 
-  return { rows, unestablished: intelligence.unestablishedEmployers }
+  // Dataset-only names that resemble a curated company. Reported, never merged:
+  // see src/data/organizations/identityReview.ts for why similarity is not identity.
+  const curated = intelligence.index.organizations.map((organization) => ({
+    id: organization.id,
+    name: organization.name,
+  }))
+  const identityQueue = buildIdentityQueue(
+    [...intelligence.index.employersByOrg.values()]
+      .filter((employer) => !intelligence.index.byId.has(employer.organizationId))
+      .map((employer) => ({
+        datasetName: employer.canonicalName,
+        professionals: employer.professionals,
+        curated,
+      })),
+  )
+
+  return { rows, unestablished: intelligence.unestablishedEmployers, identityQueue }
 }
 
 function summarise(rows: CoverageRow[]) {
@@ -103,7 +124,7 @@ function rank(row: CoverageRow): number {
 function main() {
   const args = process.argv.slice(2)
   const today = new Date().toISOString().slice(0, 10)
-  const { rows, unestablished } = buildRows(today)
+  const { rows, unestablished, identityQueue } = buildRows(today)
   const fields = summarise(rows)
 
   const fullyCovered = rows.filter((row) => missingOf(row).length === 0)
@@ -132,6 +153,7 @@ function main() {
       professionals: unestablishedPeople,
       detail: unestablished,
     },
+    identityReview: summariseIdentityQueue(identityQueue),
     byDataset: Object.fromEntries(
       [...new Set(rows.flatMap((row) => row.datasets))].sort().map((dataset) => {
         const inDataset = rows.filter((row) => row.datasets.includes(dataset))
@@ -180,6 +202,10 @@ function main() {
   lines.push('')
   lines.push(
     `employer not established     ${unestablishedPeople} people across ${unestablished.length} source notes (not companies; excluded from the universe, counted here so no mapped person disappears)`,
+  )
+  const identity = summariseIdentityQueue(identityQueue)
+  lines.push(
+    `identity review queue        ${identity.total} dataset names resembling a curated company, ${identity.professionals} people (${identity.byDisposition['parent-subsidiary']} separate entities, ${identity.byDisposition['same-identity']} same identity, ${identity.byDisposition['needs-decision']} need a decision)`,
   )
   lines.push('')
   lines.push('FIELD                              COVERED   TOTAL   GAP    PCT')

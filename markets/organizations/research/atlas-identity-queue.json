@@ -1,0 +1,716 @@
+{
+  "generatedOn": "2026-11-04",
+  "summary": {
+    "total": 78,
+    "professionals": 171,
+    "byDisposition": {
+      "same-identity": 2,
+      "parent-subsidiary": 32,
+      "needs-decision": 44
+    }
+  },
+  "queue": [
+    {
+      "datasetName": "Coca-Cola Peninsula Beverages",
+      "professionals": 16,
+      "curatedName": "Peninsula Beverages",
+      "curatedId": "org-peninsula-beverages",
+      "disposition": "needs-decision",
+      "reason": "\"coca cola\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "coca cola"
+    },
+    {
+      "datasetName": "Deloitte Consulting",
+      "professionals": 13,
+      "curatedName": "Deloitte",
+      "curatedId": "org-deloitte",
+      "disposition": "parent-subsidiary",
+      "reason": "\"consulting\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "consulting"
+    },
+    {
+      "datasetName": "Macsteel Service Centres SA",
+      "professionals": 9,
+      "curatedName": "Macsteel",
+      "curatedId": "org-macsteel",
+      "disposition": "parent-subsidiary",
+      "reason": "\"service centres\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "service centres"
+    },
+    {
+      "datasetName": "I&J frozen fish",
+      "professionals": 7,
+      "curatedName": "I&J",
+      "curatedId": "org-ij",
+      "disposition": "parent-subsidiary",
+      "reason": "\"frozen fish\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "frozen fish"
+    },
+    {
+      "datasetName": "Old Mutual iWYZE",
+      "professionals": 7,
+      "curatedName": "Old Mutual",
+      "curatedId": "org-old-mutual",
+      "disposition": "parent-subsidiary",
+      "reason": "\"iwyze\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "iwyze"
+    },
+    {
+      "datasetName": "NTT DATA Middle East and Africa",
+      "professionals": 5,
+      "curatedName": "NTT DATA",
+      "curatedId": "org-ntt-data",
+      "disposition": "parent-subsidiary",
+      "reason": "\"africa\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "middle east africa"
+    },
+    {
+      "datasetName": "Pepkor Holdings",
+      "professionals": 5,
+      "curatedName": "Pepkor",
+      "curatedId": "org-mbawc-related-562740d6934b",
+      "disposition": "parent-subsidiary",
+      "reason": "\"holdings\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "holdings"
+    },
+    {
+      "datasetName": "Pepkor NexTech",
+      "professionals": 5,
+      "curatedName": "Pepkor",
+      "curatedId": "org-mbawc-related-562740d6934b",
+      "disposition": "parent-subsidiary",
+      "reason": "\"nextech\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "nextech"
+    },
+    {
+      "datasetName": "Pepkor Lifestyle",
+      "professionals": 4,
+      "curatedName": "Pepkor",
+      "curatedId": "org-mbawc-related-562740d6934b",
+      "disposition": "parent-subsidiary",
+      "reason": "\"lifestyle\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "lifestyle"
+    },
+    {
+      "datasetName": "Pepkor Payments and Lending",
+      "professionals": 4,
+      "curatedName": "Pepkor",
+      "curatedId": "org-mbawc-related-562740d6934b",
+      "disposition": "parent-subsidiary",
+      "reason": "\"payments\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "payments lending"
+    },
+    {
+      "datasetName": "EnviroServ Waste Management",
+      "professionals": 3,
+      "curatedName": "EnviroServ",
+      "curatedId": "org-enviroserv",
+      "disposition": "needs-decision",
+      "reason": "\"waste management\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "waste management"
+    },
+    {
+      "datasetName": "Super Group (SGHC)",
+      "professionals": 3,
+      "curatedName": "Super Group",
+      "curatedId": "org-super-group",
+      "disposition": "needs-decision",
+      "reason": "\"sghc\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "sghc"
+    },
+    {
+      "datasetName": "FirstRand Corporate Centre",
+      "professionals": 3,
+      "curatedName": "FirstRand",
+      "curatedId": "org-firstrand",
+      "disposition": "parent-subsidiary",
+      "reason": "\"corporate centre\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "corporate centre"
+    },
+    {
+      "datasetName": "ICON Strategic Solutions",
+      "professionals": 3,
+      "curatedName": "ICON",
+      "curatedId": "org-icon",
+      "disposition": "parent-subsidiary",
+      "reason": "\"solutions\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "strategic solutions"
+    },
+    {
+      "datasetName": "Old Mutual Alternative Investments",
+      "professionals": 3,
+      "curatedName": "Old Mutual",
+      "curatedId": "org-old-mutual",
+      "disposition": "parent-subsidiary",
+      "reason": "\"alternative investments\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "alternative investments"
+    },
+    {
+      "datasetName": "Old Mutual Property",
+      "professionals": 3,
+      "curatedName": "Old Mutual",
+      "curatedId": "org-old-mutual",
+      "disposition": "parent-subsidiary",
+      "reason": "\"property\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "property"
+    },
+    {
+      "datasetName": "Sasol Technology",
+      "professionals": 3,
+      "curatedName": "Sasol",
+      "curatedId": "org-sasol",
+      "disposition": "parent-subsidiary",
+      "reason": "\"technology\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "technology"
+    },
+    {
+      "datasetName": "Deloitte (South Africa)",
+      "professionals": 3,
+      "curatedName": "Deloitte",
+      "curatedId": "org-deloitte",
+      "disposition": "same-identity",
+      "reason": "the only difference is spelling or a legal suffix, so this is the same company written differently",
+      "qualifier": "south africa"
+    },
+    {
+      "datasetName": "Amdec Group (former)",
+      "professionals": 2,
+      "curatedName": "Amdec Group",
+      "curatedId": "org-amdec-group",
+      "disposition": "needs-decision",
+      "reason": "the source string names a former employer or history, so it describes a career move rather than a current identity",
+      "qualifier": "former"
+    },
+    {
+      "datasetName": "Current employer unconfirmed; former The Building Company",
+      "professionals": 2,
+      "curatedName": "The Building Company",
+      "curatedId": "org-the-building-company",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "current employer unconfirmed former"
+    },
+    {
+      "datasetName": "Property Partners / Absa (role to verify)",
+      "professionals": 2,
+      "curatedName": "Absa",
+      "curatedId": "org-absa",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "property partners role to verify"
+    },
+    {
+      "datasetName": "SA Corporate Real Estate (previous); Concor Construction (previous)",
+      "professionals": 2,
+      "curatedName": "Concor",
+      "curatedId": "org-concor",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "sa corporate real estate previous construction previous"
+    },
+    {
+      "datasetName": "Deloitte Africa",
+      "professionals": 2,
+      "curatedName": "Deloitte",
+      "curatedId": "org-deloitte",
+      "disposition": "parent-subsidiary",
+      "reason": "\"africa\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "africa"
+    },
+    {
+      "datasetName": "Deloitte Digital",
+      "professionals": 2,
+      "curatedName": "Deloitte",
+      "curatedId": "org-deloitte",
+      "disposition": "parent-subsidiary",
+      "reason": "\"digital\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "digital"
+    },
+    {
+      "datasetName": "Food Lover's Market Holdings",
+      "professionals": 2,
+      "curatedName": "Food Lover's Market",
+      "curatedId": "org-food-lovers",
+      "disposition": "parent-subsidiary",
+      "reason": "\"holdings\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "holdings"
+    },
+    {
+      "datasetName": "MTN Eswatini",
+      "professionals": 2,
+      "curatedName": "MTN",
+      "curatedId": "org-mtn",
+      "disposition": "parent-subsidiary",
+      "reason": "\"eswatini\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "eswatini"
+    },
+    {
+      "datasetName": "Nedbank CIB",
+      "professionals": 2,
+      "curatedName": "Nedbank",
+      "curatedId": "org-nedbank",
+      "disposition": "parent-subsidiary",
+      "reason": "\"cib\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "cib"
+    },
+    {
+      "datasetName": "Sasol Mining",
+      "professionals": 2,
+      "curatedName": "Sasol",
+      "curatedId": "org-sasol",
+      "disposition": "parent-subsidiary",
+      "reason": "\"mining\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "mining"
+    },
+    {
+      "datasetName": "Standard Bank Corporate & Investment Banking",
+      "professionals": 2,
+      "curatedName": "Standard Bank",
+      "curatedId": "org-standard-bank",
+      "disposition": "parent-subsidiary",
+      "reason": "\"corporate investment banking\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "corporate investment banking"
+    },
+    {
+      "datasetName": "Woolworths Holdings",
+      "professionals": 2,
+      "curatedName": "Woolworths",
+      "curatedId": "org-woolworths",
+      "disposition": "parent-subsidiary",
+      "reason": "\"holdings\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "holdings"
+    },
+    {
+      "datasetName": "Absa Life",
+      "professionals": 1,
+      "curatedName": "Absa",
+      "curatedId": "org-absa",
+      "disposition": "needs-decision",
+      "reason": "\"life\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "life"
+    },
+    {
+      "datasetName": "AECI Much Asphalt",
+      "professionals": 1,
+      "curatedName": "AECI",
+      "curatedId": "org-aeci",
+      "disposition": "needs-decision",
+      "reason": "\"much asphalt\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "much asphalt"
+    },
+    {
+      "datasetName": "CASADOBE PROPS 60 / MNK Projects Group",
+      "professionals": 1,
+      "curatedName": "MNK Projects",
+      "curatedId": "org-mnk-projects",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "casadobe props 60 group"
+    },
+    {
+      "datasetName": "City of Cape Town (per LinkedIn experience; role and dates not shown)",
+      "professionals": 1,
+      "curatedName": "City of Cape Town",
+      "curatedId": "org-city-of-cape-town",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "per linkedin experience role and dates not shown"
+    },
+    {
+      "datasetName": "Emira Property Fund / Delta / Grit",
+      "professionals": 1,
+      "curatedName": "Emira Property Fund",
+      "curatedId": "org-emira",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "delta grit"
+    },
+    {
+      "datasetName": "Equites Property Fund (Independent NED from 1 Sep 2025); executive employer Unconfirmed",
+      "professionals": 1,
+      "curatedName": "Equites Property Fund",
+      "curatedId": "org-equites",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "independent ned from 1 sep 2025 executive employer unconfirmed"
+    },
+    {
+      "datasetName": "FirstRand Compliance Office",
+      "professionals": 1,
+      "curatedName": "FirstRand",
+      "curatedId": "org-firstrand",
+      "disposition": "needs-decision",
+      "reason": "\"compliance office\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "compliance office"
+    },
+    {
+      "datasetName": "FNB Connect (MVNO) and Service Provider",
+      "professionals": 1,
+      "curatedName": "FNB",
+      "curatedId": "org-fnb",
+      "disposition": "needs-decision",
+      "reason": "\"connect mvno service provider\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "connect mvno service provider"
+    },
+    {
+      "datasetName": "Futuregrowth Asset Management; NED Divercity Urban Property Group",
+      "professionals": 1,
+      "curatedName": "Divercity Urban Property",
+      "curatedId": "org-divercity-urban-property",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "futuregrowth asset management ned group"
+    },
+    {
+      "datasetName": "Icon Oncology",
+      "professionals": 1,
+      "curatedName": "ICON",
+      "curatedId": "org-icon",
+      "disposition": "needs-decision",
+      "reason": "\"oncology\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "oncology"
+    },
+    {
+      "datasetName": "Intaprop Investments / Equites Investments 1 (Pty) Ltd; NED Equites Property Fund",
+      "professionals": 1,
+      "curatedName": "Equites Property Fund",
+      "curatedId": "org-equites",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "intaprop investments equites investments 1 pty ltd ned"
+    },
+    {
+      "datasetName": "Masisizane Fund (Old Mutual)",
+      "professionals": 1,
+      "curatedName": "Old Mutual",
+      "curatedId": "org-old-mutual",
+      "disposition": "needs-decision",
+      "reason": "\"masisizane fund\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "masisizane fund"
+    },
+    {
+      "datasetName": "Merchants IT ... A division of Dimension Data",
+      "professionals": 1,
+      "curatedName": "Dimension Data",
+      "curatedId": "org-dimension-data",
+      "disposition": "needs-decision",
+      "reason": "\"merchants it a division\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "merchants it a division"
+    },
+    {
+      "datasetName": "Mpact Paper",
+      "professionals": 1,
+      "curatedName": "Mpact",
+      "curatedId": "org-mpact",
+      "disposition": "needs-decision",
+      "reason": "\"paper\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "paper"
+    },
+    {
+      "datasetName": "MTN - Cellect Cellular",
+      "professionals": 1,
+      "curatedName": "MTN",
+      "curatedId": "org-mtn",
+      "disposition": "needs-decision",
+      "reason": "\"cellect cellular\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "cellect cellular"
+    },
+    {
+      "datasetName": "MTN Business",
+      "professionals": 1,
+      "curatedName": "MTN",
+      "curatedId": "org-mtn",
+      "disposition": "needs-decision",
+      "reason": "\"business\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "business"
+    },
+    {
+      "datasetName": "MTN Cameroon",
+      "professionals": 1,
+      "curatedName": "MTN",
+      "curatedId": "org-mtn",
+      "disposition": "needs-decision",
+      "reason": "\"cameroon\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "cameroon"
+    },
+    {
+      "datasetName": "Nampak Liquid Cartons",
+      "professionals": 1,
+      "curatedName": "Nampak",
+      "curatedId": "org-nampak",
+      "disposition": "needs-decision",
+      "reason": "\"liquid cartons\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "liquid cartons"
+    },
+    {
+      "datasetName": "Old Mutual Corporate",
+      "professionals": 1,
+      "curatedName": "Old Mutual",
+      "curatedId": "org-old-mutual",
+      "disposition": "needs-decision",
+      "reason": "\"corporate\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "corporate"
+    },
+    {
+      "datasetName": "Old Mutual Ins",
+      "professionals": 1,
+      "curatedName": "Old Mutual",
+      "curatedId": "org-old-mutual",
+      "disposition": "needs-decision",
+      "reason": "\"ins\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "ins"
+    },
+    {
+      "datasetName": "Old Mutual Specialised Finance",
+      "professionals": 1,
+      "curatedName": "Old Mutual",
+      "curatedId": "org-old-mutual",
+      "disposition": "needs-decision",
+      "reason": "\"specialised finance\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "specialised finance"
+    },
+    {
+      "datasetName": "Pepkor Speciality",
+      "professionals": 1,
+      "curatedName": "Pepkor",
+      "curatedId": "org-mbawc-related-562740d6934b",
+      "disposition": "needs-decision",
+      "reason": "\"speciality\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "speciality"
+    },
+    {
+      "datasetName": "Public Investment Corporation (PIC); NED Divercity Urban Property Group",
+      "professionals": 1,
+      "curatedName": "Divercity Urban Property",
+      "curatedId": "org-divercity-urban-property",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "public investment corporation pic ned group"
+    },
+    {
+      "datasetName": "PwC Exordia",
+      "professionals": 1,
+      "curatedName": "PwC",
+      "curatedId": "org-pwc",
+      "disposition": "needs-decision",
+      "reason": "\"exordia\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "exordia"
+    },
+    {
+      "datasetName": "PwC UK",
+      "professionals": 1,
+      "curatedName": "PwC",
+      "curatedId": "org-pwc",
+      "disposition": "needs-decision",
+      "reason": "\"uk\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "uk"
+    },
+    {
+      "datasetName": "Rabie Property Group (as at Aug 2018; current Unconfirmed)",
+      "professionals": 1,
+      "curatedName": "Rabie Property Group",
+      "curatedId": "org-rabie-property-group",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "as at aug 2018 current unconfirmed"
+    },
+    {
+      "datasetName": "Shoprite Checkers",
+      "professionals": 1,
+      "curatedName": "Shoprite",
+      "curatedId": "org-shoprite",
+      "disposition": "needs-decision",
+      "reason": "\"checkers\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "checkers"
+    },
+    {
+      "datasetName": "Stefanutti Stocks WC",
+      "professionals": 1,
+      "curatedName": "Stefanutti Stocks",
+      "curatedId": "org-stefanutti-stocks",
+      "disposition": "needs-decision",
+      "reason": "\"wc\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "wc"
+    },
+    {
+      "datasetName": "Super Group / SGHC",
+      "professionals": 1,
+      "curatedName": "Super Group",
+      "curatedId": "org-super-group",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "sghc"
+    },
+    {
+      "datasetName": "Teraco (data centres) — CFO effective 1 Feb 2026 per CFO South Africa; formerly Attacq",
+      "professionals": 1,
+      "curatedName": "Attacq",
+      "curatedId": "org-attacq",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "teraco data centres cfo effective 1 feb 2026 per cfo south africa formerly"
+    },
+    {
+      "datasetName": "Unconfirmed (CFO Investec Property Fund from Dec 2020 per profile)",
+      "professionals": 1,
+      "curatedName": "Investec",
+      "curatedId": "org-investec",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "unconfirmed cfo property fund from dec 2020 per profile"
+    },
+    {
+      "datasetName": "Unconfirmed (Group Financial Director of Murray & Roberts from 1 April 2017)",
+      "professionals": 1,
+      "curatedName": "Murray & Roberts",
+      "curatedId": "org-murray-roberts",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "unconfirmed group financial director of from 1 april 2017"
+    },
+    {
+      "datasetName": "Unconfirmed (LinkedIn lists Sanlam Private Wealth, Cape Town; current status not dated)",
+      "professionals": 1,
+      "curatedName": "Sanlam",
+      "curatedId": "org-sanlam",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "unconfirmed linkedin lists private wealth cape town current status not dated"
+    },
+    {
+      "datasetName": "Unconfirmed (prior: FNB Commercial Property Finance per 2021 award)",
+      "professionals": 1,
+      "curatedName": "FNB",
+      "curatedId": "org-fnb",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "unconfirmed prior commercial property finance per 2021 award"
+    },
+    {
+      "datasetName": "Unconfirmed (title shows 'City of Cape Town, Western Cape')",
+      "professionals": 1,
+      "curatedName": "City of Cape Town",
+      "curatedId": "org-city-of-cape-town",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "unconfirmed title shows western cape"
+    },
+    {
+      "datasetName": "Vodacom Congo",
+      "professionals": 1,
+      "curatedName": "Vodacom",
+      "curatedId": "org-vodacom",
+      "disposition": "needs-decision",
+      "reason": "\"congo\" does not identify a different entity on its own, but nor is it only a spelling difference",
+      "qualifier": "congo"
+    },
+    {
+      "datasetName": "Western Cape Government / Sanlam background",
+      "professionals": 1,
+      "curatedName": "Sanlam",
+      "curatedId": "org-sanlam",
+      "disposition": "needs-decision",
+      "reason": "the source string packs several employers, a role or an unresolved note into one value, so it must be split against the underlying source rather than matched",
+      "qualifier": "western cape government background"
+    },
+    {
+      "datasetName": "Absa Corporate and Investment Banking",
+      "professionals": 1,
+      "curatedName": "Absa",
+      "curatedId": "org-absa",
+      "disposition": "parent-subsidiary",
+      "reason": "\"corporate investment banking\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "corporate investment banking"
+    },
+    {
+      "datasetName": "African Development Bank Group",
+      "professionals": 1,
+      "curatedName": "African Development Bank",
+      "curatedId": "org-african-development-bank",
+      "disposition": "parent-subsidiary",
+      "reason": "\"group\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "group"
+    },
+    {
+      "datasetName": "BMW Group Financial Services South Africa",
+      "professionals": 1,
+      "curatedName": "BMW Group",
+      "curatedId": "org-bmw-group",
+      "disposition": "parent-subsidiary",
+      "reason": "\"services\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "financial services"
+    },
+    {
+      "datasetName": "FNB Eswatini",
+      "professionals": 1,
+      "curatedName": "FNB",
+      "curatedId": "org-fnb",
+      "disposition": "parent-subsidiary",
+      "reason": "\"eswatini\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "eswatini"
+    },
+    {
+      "datasetName": "FNB Islamic Banking",
+      "professionals": 1,
+      "curatedName": "FNB",
+      "curatedId": "org-fnb",
+      "disposition": "parent-subsidiary",
+      "reason": "\"banking\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "islamic banking"
+    },
+    {
+      "datasetName": "NTT DATA Business Solutions",
+      "professionals": 1,
+      "curatedName": "NTT DATA",
+      "curatedId": "org-ntt-data",
+      "disposition": "parent-subsidiary",
+      "reason": "\"solutions\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "business solutions"
+    },
+    {
+      "datasetName": "Sanlam Private Wealth",
+      "professionals": 1,
+      "curatedName": "Sanlam",
+      "curatedId": "org-sanlam",
+      "disposition": "parent-subsidiary",
+      "reason": "\"wealth\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "private wealth"
+    },
+    {
+      "datasetName": "Sanlam Retail Affluent",
+      "professionals": 1,
+      "curatedName": "Sanlam",
+      "curatedId": "org-sanlam",
+      "disposition": "parent-subsidiary",
+      "reason": "\"retail\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "retail affluent"
+    },
+    {
+      "datasetName": "Takealot Group",
+      "professionals": 1,
+      "curatedName": "Takealot",
+      "curatedId": "org-takealot",
+      "disposition": "parent-subsidiary",
+      "reason": "\"group\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "group"
+    },
+    {
+      "datasetName": "TFS (Takealot Fulfilment Solutions)",
+      "professionals": 1,
+      "curatedName": "Takealot",
+      "curatedId": "org-takealot",
+      "disposition": "parent-subsidiary",
+      "reason": "\"solutions\" marks a separate operating entity or division, so it needs its own record and a corporate relationship rather than a merge",
+      "qualifier": "tfs fulfilment solutions"
+    },
+    {
+      "datasetName": "LexisNexis South Africa",
+      "professionals": 1,
+      "curatedName": "LexisNexis",
+      "curatedId": "org-lexisnexis",
+      "disposition": "same-identity",
+      "reason": "the only difference is spelling or a legal suffix, so this is the same company written differently",
+      "qualifier": "south africa"
+    }
+  ]
+}

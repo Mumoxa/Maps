@@ -30,7 +30,8 @@
     "validate:contact-employers": "node --import tsx scripts/build-contact-employers.ts",
     "accountants:casa-export": "node --import tsx scripts/export-casa-inventory.ts",
     "accountants:casa-reconcile": "node --import tsx scripts/reconcile-casa-roster.ts",
-    "atlas:coverage": "node --import tsx scripts/atlas-coverage.ts"
+    "atlas:coverage": "node --import tsx scripts/atlas-coverage.ts",
+    "atlas:identity": "node --import tsx scripts/atlas-identity-review.ts"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.3.0",
