@@ -82,23 +82,49 @@ Status as of 4 November 2026. Measured with `npm run atlas:coverage` after every
 | 05 | Promotion of the 56 records that already met the gate; 276 verification dates derived | **done** |
 | 06 | Financial services core: Absa, Capitec, Standard Bank, Old Mutual, Investec | **done** |
 | 07 | Telecoms: MTN, Vodacom | **done** |
-| 08 | Professional services, consumer, industrial and retail | next |
-| 09 | Dataset-only employer names, highest people count first | planned |
-| 10 | Taxonomy placement for the 438 records still unclassified or unlocated | planned |
+| 08 | Professional services, consumer, industrial and retail | **done** |
+| 09 | FNB, Capitec, Woolworths, Deloitte and Astron Energy | **done** |
+| 10 | Standard Bank, Old Mutual, Absa, Momentum Group | **done** |
+| 11 | Importer defect: restated scale measures stacked instead of collapsing | **done** |
+| 12 | Dataset-only employer names, highest people count first | next |
+| 13 | Taxonomy placement for the records still unclassified or unlocated | planned |
+
+Batches were numbered in delivery order rather than by the earlier thematic labels; the
+scope column is what each batch actually delivered.
 
 ### Measured position
 
 | Measure | Before | Latest |
 | --- | ---: | ---: |
-| Universe (organisations shown) | 2,407 | 2,390 |
+| Universe (organisations shown) | 2,407 | 2,389 |
 | Curated register | 632 | 629 |
-| Verified | 131 | 191 |
+| Verified | 131 | 201 |
 | Official website (curated) | 399 | 497 |
 | Verification within 180 days (curated) | 356 | 629 |
-| Sourced location | 207 | 211 |
-| Sourced scale | 139 | 144 |
+| Sourced location | 207 | 221 |
+| Sourced scale | 139 | 149 |
+| Legal entity name | not measured | 390 |
+| Industry / taxonomy placement | 612 | 612 |
 | Phantom employers removed from the universe | 16 | 0 |
-| Identity review queue | not measured | 75 names / 168 people |
+| Identity review queue | not measured | 74 names / 166 people |
+
+#### Where the verified growth came from
+
+131 → 135 was the identity review and website backfill; 135 → 191 was the promotion pass, which
+found 56 records that already met the gate and had simply never been promoted; 191 → 201 was
+eleven companies researched one at a time against their own published pages. The promotion pass
+is not repeatable — it collects a backlog once. Everything after it is per-company research,
+which is why the rate falls to roughly one batch of four companies per sitting.
+
+#### A defect the later batches exposed
+
+The importer compared scale measures by exact string, so "more than 27 000 employees" and
+"over 27000 people" from the same company and source were stored as two measures of one fact.
+A dossier doing that looks better researched than it is. `scaleFingerprint()` now reduces a
+measure to its metric, qualifier (over/under/about), first magnitude and entity scope; a
+restatement keeps the recorded figure, refreshes its checked date, and is reported in the
+import run as an issue. Two tests in `tests/atlas-standard.test.ts` cover the collapse and the
+reporting.
 
 Every remaining shortfall is a research gap, not a modelling one, and each is a named row in
 `markets/organizations/research/atlas-coverage.json`.
@@ -107,6 +133,9 @@ Every remaining shortfall is a research gap, not a modelling one, and each is a 
 
 - Several official sites (Shoprite, Sasol, EY, KPMG) return no readable address or head office page to
   this tooling. Those companies stay unenriched rather than being filled from an aggregator.
+  Site footers and `/contact` paths are the reliable fallback: FNB's footer and Absa's, Nedbank's,
+  Momentum's and Old Mutual's contact pages all state the legal entity and address that their
+  `/about-us` page does not.
 - Most remaining curated records are small MBAWC directory members whose only identity evidence is the
   association's own member PDF. They are promotable, which is why 56 of them now are, but their scale
   and capability fields need per-company websites that the directory does not carry.
