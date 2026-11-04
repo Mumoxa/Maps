@@ -486,3 +486,110 @@ describe('restated scale measures', () => {
     )
   })
 })
+
+describe('a website only counts when a source confirms it', () => {
+  const base = {
+    id: 'org-site',
+    name: 'Site Record',
+    website: 'https://company.test/',
+    locations: [{ city: 'Cape Town', province: 'Western Cape', sourceUrl: 'https://company.test/', checkedOn: TODAY }],
+  }
+
+  it('accepts a website carried by the company\'s own page on that domain', async () => {
+    const { verificationGate } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      ...base,
+      sources: [{
+        url: 'https://www.company.test/about',
+        type: 'company-website',
+        evidence: 'The company describes its own operations.',
+        checkedOn: TODAY,
+      }],
+    })
+    const gate = verificationGate({ organization, hasPlacement: true })
+    assert.equal(gate.eligible, true, gate.reasons.join('; '))
+  })
+
+  it('rejects a website whose only source is a news article elsewhere', async () => {
+    const { verificationGate } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      ...base,
+      website: 'https://news.example/',
+      sources: [{
+        url: 'https://news.example/company-expands',
+        type: 'news',
+        evidence: 'A news report describes the company.',
+        checkedOn: TODAY,
+      }],
+    })
+    const gate = verificationGate({ organization, hasPlacement: true })
+    assert.equal(gate.eligible, false, 'a news article must not verify a company')
+    assert.deepEqual(gate.missing, ['website'])
+    assert.match(gate.reasons[0], /not backed by a company-website/)
+  })
+
+  it('rejects a website nobody has checked, even if it looks official', async () => {
+    const { verificationGate } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      ...base,
+      sources: [{
+        url: 'https://company.test/',
+        type: 'recruiter-supplied',
+        evidence: 'Recruiter gave the URL.',
+        checkedOn: TODAY,
+      }],
+    })
+    const gate = verificationGate({ organization, hasPlacement: true })
+    assert.equal(gate.eligible, false, 'an unverified URL is a claim, not evidence')
+    assert.deepEqual(gate.missing, ['website'])
+  })
+
+  it('compares registrable domains, so prefixes do not defeat the check', async () => {
+    const { registrableDomain } = await import('../src/data/organizations/verification')
+    assert.equal(registrableDomain('https://group.nedbank.co.za/'), registrableDomain('https://www.nedbank.co.za/about'))
+    assert.equal(registrableDomain('https://assets.kpmg.com/x'), registrableDomain('https://kpmg.com/za'))
+    assert.notEqual(registrableDomain('https://company.co.za'), registrableDomain('https://company.com'))
+    assert.equal(registrableDomain('not a url'), '')
+  })
+})
+
+describe('third-party hosts never verify a company', () => {
+  it('rejects a source on an aggregator or news host even when labelled company-website', async () => {
+    const { hasOfficialSource, isThirdPartyHost } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      name: 'Linked Record',
+      website: 'https://linked.test/',
+      sources: [{
+        url: 'https://za.linkedin.com/company/linked-record',
+        type: 'company-website',
+        evidence: 'A LinkedIn page describes the company.',
+        checkedOn: TODAY,
+      }],
+    })
+    assert.equal(hasOfficialSource(organization), false)
+    assert.equal(isThirdPartyHost('https://za.linkedin.com/company/x'), true)
+    assert.equal(isThirdPartyHost('https://www.moneyweb.co.za/tools-and-data/x'), true)
+    assert.equal(isThirdPartyHost('https://senspdf.jse.co.za/documents/x.pdf'), true)
+    assert.equal(isThirdPartyHost('https://www.nedbank.co.za/about'), false)
+  })
+
+  it('accepts a company site served from a different TLD than the recorded website', async () => {
+    const { hasOfficialSource } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      name: 'Cross Tld',
+      website: 'https://www.example.com/',
+      sources: [{
+        url: 'https://www.example.co.za/about-us',
+        type: 'company-website',
+        evidence: 'The South African site describes the company.',
+        checkedOn: TODAY,
+      }],
+    })
+    assert.equal(hasOfficialSource(organization), true)
+  })
+})

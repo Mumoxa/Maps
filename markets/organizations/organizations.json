@@ -169,7 +169,7 @@
       "ACCPROP"
     ],
     "website": "https://www.accelerate-pf.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -272,7 +272,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "The 2026 integrated report does not state a head office city in the material read, so no location is recorded. Portfolio value fell from R7,7 billion to R6,6 billion as non-core assets were sold to repay debt."
+    "notes": "The 2026 integrated report does not state a head office city in the material read, so no location is recorded. Portfolio value fell from R7,7 billion to R6,6 billion as non-core assets were sold to repay debt.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-accenture-in-south-africa",
@@ -320,7 +320,7 @@
       "ACED"
     ],
     "website": "https://www.aced.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "renewable-development",
@@ -405,7 +405,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-advtech",
@@ -545,7 +545,7 @@
       "AFGRI Operations Limited"
     ],
     "website": "https://www.afgri.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "agri-cooperative",
@@ -622,7 +622,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Ownership history and current structure not established from the sources read; treat capability evidence as incomplete."
+    "notes": "Ownership history and current structure not established from the sources read; treat capability evidence as incomplete.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-african-bank",
@@ -1144,7 +1144,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.astralfoods.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "poultry-production",
@@ -1239,7 +1239,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain; no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-astron-energy",
@@ -1367,7 +1367,7 @@
       "Attacq Limited"
     ],
     "website": "https://www.attacq.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -1460,7 +1460,7 @@
       "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Recruitment Agent 2026-10-23: Property Development/Investment; Mixed-use/developments. Source-reported company context, not evidence of any employee skill. References: https://www.attacq.co.za/"
+    "notes": "Recruitment Agent 2026-10-23: Property Development/Investment; Mixed-use/developments. Source-reported company context, not evidence of any employee skill. References: https://www.attacq.co.za/\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-atterbury-property",
@@ -1468,7 +1468,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.atterbury.co.za/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-development",
@@ -1497,7 +1497,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-aveng",
@@ -1507,7 +1507,7 @@
       "Aveng Group"
     ],
     "website": "https://www.aveng.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "construction-contracting",
@@ -1616,7 +1616,7 @@
       "accounting-finance"
     ],
     "lastVerified": "2026-11-03",
-    "notes": "Recruitment Agent 2026-10-23: Construction/Engineering; Infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://www.aveng.co.za/\nAveng's sourced headcount is dated FY2025; FY2026 revenue and work in hand are shown with their own later metric dates and do not make the headcount a FY2026 figure."
+    "notes": "Recruitment Agent 2026-10-23: Construction/Engineering; Infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://www.aveng.co.za/\nAveng's sourced headcount is dated FY2025; FY2026 revenue and work in hand are shown with their own later metric dates and do not make the headcount a FY2026 figure.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-balwin",
@@ -1951,7 +1951,7 @@
       "Bester Feed and Grain"
     ],
     "website": "https://www.bester.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "grain-trading",
@@ -2109,7 +2109,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Sourced for the Scenario C Head of Finance brief, where commodity trading exposure is mandatory. Part of the BexGroup; the group entity itself is not yet mapped."
+    "notes": "Sourced for the Scenario C Head of Finance brief, where commodity trading exposure is mandatory. Part of the BexGroup; the group entity itself is not yet mapped.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-bexgroup",
@@ -2247,7 +2247,7 @@
       "Bidfood"
     ],
     "website": "https://www.bidfood.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "foodservice-distribution",
@@ -2371,7 +2371,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-blok",
@@ -2535,7 +2535,7 @@
       "Boxer Liquors"
     ],
     "website": "https://www.boxer.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "grocery-retail",
@@ -2661,7 +2661,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Head office city taken from a retail-sector encyclopedia table; primary confirmation outstanding."
+    "notes": "Head office city taken from a retail-sector encyclopedia table; primary confirmation outstanding.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-calgro-m3",
@@ -2734,7 +2734,7 @@
       "Cambridge Food Stores"
     ],
     "website": "https://www.scjunction.com/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "grocery-retail",
@@ -2851,7 +2851,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Recorded as a Massmart division rather than a separate legal entity, and flagged for verification: eight Cambridge Foods stores were divested to Devland Cash & Carry in 2024 under a Competition Tribunal condition, so the current store footprint is not established. Store counts conflict between sources (17 Gauteng stores in the case study, eight stores divested in 2024) and are recorded per source rather than reconciled. No company website was established from the sources read.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.scjunction.com/cambridge-foods-case-study); no field value was rewritten."
+    "notes": "Recorded as a Massmart division rather than a separate legal entity, and flagged for verification: eight Cambridge Foods stores were divested to Devland Cash & Carry in 2024 under a Competition Tribunal condition, so the current store footprint is not established. Store counts conflict between sources (17 Gauteng stores in the case study, eight stores divested in 2024) and are recorded per source rather than reconciled. No company website was established from the sources read.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.scjunction.com/cambridge-foods-case-study); no field value was rewritten.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-capespan-south-africa",
@@ -3226,7 +3226,7 @@
       "Cennergi Energy"
     ],
     "website": "https://economictimes.indiatimes.com/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "renewable-development",
@@ -3358,7 +3358,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Wholly owned subsidiary of Exxaro Resources. Exxaro is deliberately not in this register: it is a mining group and the industry taxonomy has no mining node, so adding it would mean inventing a classification. Ownership history: originally a 50:50 joint venture between Exxaro and Khopoli Investments, a Tata Power subsidiary, which divested its stake. No company website was established from the sources read.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://economictimes.indiatimes.com/industry/energy/power/tata-power-exxaro-jv-cennergi-to-develop-two-wind-projects-in-south-africa/articleshow/13409497.cms); no field value was rewritten."
+    "notes": "Wholly owned subsidiary of Exxaro Resources. Exxaro is deliberately not in this register: it is a mining group and the industry taxonomy has no mining node, so adding it would mean inventing a classification. Ownership history: originally a 50:50 joint venture between Exxaro and Khopoli Investments, a Tata Power subsidiary, which divested its stake. No company website was established from the sources read.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://economictimes.indiatimes.com/industry/energy/power/tata-power-exxaro-jv-cennergi-to-develop-two-wind-projects-in-south-africa/articleshow/13409497.cms); no field value was rewritten.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-century-property-developments",
@@ -3418,7 +3418,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.chilleweni.com/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "cold-storage-operations",
@@ -3479,7 +3479,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Family-run operator identified as one of the few facilities offering short-term flexible storage to smaller operators."
+    "notes": "Family-run operator identified as one of the few facilities offering short-term flexible storage to smaller operators.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-circle-developers",
@@ -3745,7 +3745,7 @@
       "Commercial Cold Holdings Group"
     ],
     "website": "https://www.cchcold.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "cold-storage-operations",
@@ -3823,7 +3823,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Parent group for the CCS Logistics / Sequence / iDube / PECS cold-store platform."
+    "notes": "Parent group for the CCS Logistics / Sequence / iDube / PECS cold-store platform.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-concor",
@@ -3834,7 +3834,7 @@
       "Concor Construction"
     ],
     "website": "https://www.concor.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "construction-contracting",
@@ -3950,7 +3950,7 @@
       "mbawc-financial-leadership"
     ],
     "lastVerified": "2026-11-03",
-    "notes": "Also present in the Accounting & Finance dataset as Concor. Formerly Murray & Roberts Construction.\nMBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.\nConcor's website does not date its current employee and completed-project counters; the source-checked date is not presented as the metric date.",
+    "notes": "Also present in the Accounting & Finance dataset as Concor. Formerly Murray & Roberts Construction.\nMBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.\nConcor's website does not date its current employee and completed-project counters; the source-checked date is not presented as the metric date.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved.",
     "directoryEntries": [
       {
         "directory": "MBAWC",
@@ -4050,7 +4050,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://capitalhill.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "residential-development",
@@ -4094,7 +4094,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-deloitte",
@@ -4260,7 +4260,7 @@
       "DHL Supply Chain"
     ],
     "website": "https://www.dhl.com/za-en/home/our-divisions/supply-chain.html",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "contract-logistics",
@@ -4374,7 +4374,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Registered South African entity name not established from the sources read."
+    "notes": "Registered South African entity name not established from the sources read.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-digioutsource",
@@ -4459,7 +4459,7 @@
       "DIB"
     ],
     "website": "https://richerfin.com/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -4569,7 +4569,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Sources conflict and are not reconciled: property counts of 166 (Richerfin), 170 (MarketScreener, August 2023) and 80 shopping centres (Financial Mail, November 2025); portfolio values of R7,1 billion, R9,8 billion and R10,8 billion at different dates. No company website was established from the sources read.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://richerfin.com/markets/johannesburg-stock-exchange/DIBJ.J/); no field value was rewritten."
+    "notes": "Sources conflict and are not reconciled: property counts of 166 (Richerfin), 170 (MarketScreener, August 2023) and 80 shopping centres (Financial Mail, November 2025); portfolio values of R7,1 billion, R9,8 billion and R10,8 billion at different dates. No company website was established from the sources read.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://richerfin.com/markets/johannesburg-stock-exchange/DIBJ.J/); no field value was rewritten.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-discovery",
@@ -5474,7 +5474,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://epol.co.za/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "animal-feed-manufacturing",
@@ -5512,7 +5512,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Ownership and mill locations not established from the sources read."
+    "notes": "Ownership and mill locations not established from the sources read.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain; no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-equites",
@@ -5520,7 +5520,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.equites.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "logistics-property",
@@ -5589,7 +5589,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-eris-property-group",
@@ -6176,7 +6176,7 @@
       "Fruit & Veg City"
     ],
     "website": "https://www.foodloversmarket.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "grocery-retail",
@@ -6278,7 +6278,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Store counts vary between sources (120+ in 2025, 300+ in 2022); the difference reflects format and franchise counting and is left unresolved rather than averaged."
+    "notes": "Store counts vary between sources (120+ in 2025, 300+ in 2022); the difference reflects format and franchise counting and is left unresolved rather than averaged.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-fortress-reit",
@@ -6348,7 +6348,7 @@
       "FPG Investments (Pty) Ltd"
     ],
     "website": "",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -6481,7 +6481,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Recorded as the parent of FPG Property Fund. The shareholding is reported as 87% by Brimstone's investor page and 86,4% by the Brimstone SENS; both are recorded rather than averaged. FPG Investments is privately held, so no audited statements were read and its own financial processes stay unresearched."
+    "notes": "Recorded as the parent of FPG Property Fund. The shareholding is reported as 87% by Brimstone's investor page and 86,4% by the Brimstone SENS; both are recorded rather than averaged. FPG Investments is privately held, so no audited statements were read and its own financial processes stay unresearched.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no official website recorded; identity cannot be confirmed from a primary source. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-fpg-property-fund",
@@ -6491,7 +6491,7 @@
       "FPG"
     ],
     "website": "https://www.fpggroup.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -6585,7 +6585,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Owned 87% by FPG Investments; the holding entity is not separately mapped yet."
+    "notes": "Owned 87% by FPG Investments; the holding entity is not separately mapped yet.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-gijima",
@@ -6634,7 +6634,7 @@
       "GLA"
     ],
     "website": "https://www.grindrod.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "freight-forwarding",
@@ -6720,7 +6720,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-growthpoint-properties",
@@ -6728,7 +6728,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.growthpoint.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -6813,7 +6813,7 @@
       "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Recruitment Agent 2026-10-23: Property Investment (REIT); Commercial property; 27% of SA assets in Western Cape; Cape Town office. Source-reported company context, not evidence of any employee skill. References: https://www.growthpoint.co.za/"
+    "notes": "Recruitment Agent 2026-10-23: Property Investment (REIT); Commercial property; 27% of SA assets in Western Cape; Cape Town office. Source-reported company context, not evidence of any employee skill. References: https://www.growthpoint.co.za/\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-gwk",
@@ -6922,7 +6922,7 @@
       "HET"
     ],
     "website": "",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -7056,7 +7056,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Portfolio value differs by reporting date: R9,258 billion at 30 June 2023, R9,372 billion at 31 December 2023, and R13 billion in assets reported in December 2025 after Safari Investments became wholly owned. The figures are not averaged. No company website was established from the sources read."
+    "notes": "Portfolio value differs by reporting date: R9,258 billion at 30 June 2023, R9,372 billion at 31 December 2023, and R13 billion in assets reported in December 2025 after Safari Investments became wholly owned. The figures are not averaged. No company website was established from the sources read.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no official website recorded; identity cannot be confirmed from a primary source. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-hestony-transport",
@@ -7234,7 +7234,7 @@
       "Hyprop"
     ],
     "website": "https://www.hyprop.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -7360,7 +7360,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Registered office listed by one source as a London address; South African operating headquarters is Rosebank, Johannesburg."
+    "notes": "Registered office listed by one source as a London address; South African operating headquarters is Rosebank, Johannesburg.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-icon",
@@ -7408,7 +7408,7 @@
       "iDube"
     ],
     "website": "https://www.idubecoldstorage.co.za/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "cold-storage-operations",
@@ -7486,7 +7486,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-ij",
@@ -7884,7 +7884,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.inexdev.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "residential-development",
@@ -7921,7 +7921,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-investec",
@@ -8170,7 +8170,7 @@
       "Kaap Agri / Agrimark"
     ],
     "website": "https://www.kaapagri.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "agri-cooperative",
@@ -8239,7 +8239,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-16",
-    "notes": "Also present in the Accounting & Finance dataset as Kaap Agri / Agrimark.",
+    "notes": "Also present in the Accounting & Finance dataset as Kaap Agri / Agrimark.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved.",
     "taxonomy": {
       "primaryNode": "AGR-COMM-COOP-FULL",
       "secondaryNodes": [
@@ -8438,7 +8438,7 @@
       "Kuehne + Nagel"
     ],
     "website": "https://home.kuehne-nagel.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "freight-forwarding",
@@ -8529,7 +8529,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Legal entity spelling and South African service lines need primary-source confirmation."
+    "notes": "Legal entity spelling and South African service lines need primary-source confirmation.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-kwv",
@@ -10247,7 +10247,7 @@
     "legalName": "",
     "aliases": [],
     "website": "http://www.mulilo.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "renewable-development",
@@ -10341,7 +10341,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-multichoice",
@@ -11028,7 +11028,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.nwk.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "grain-trading",
@@ -11145,7 +11145,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Opti Feeds, EPKO Oil Seed Crushing, NWK Retail and NWK Logistics are named group businesses but are not separately mapped yet."
+    "notes": "Opti Feeds, EPKO Oil Seed Crushing, NWK Retail and NWK Logistics are named group businesses but are not separately mapped yet.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-obaro",
@@ -11153,7 +11153,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.obaro.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "agri-cooperative",
@@ -11198,7 +11198,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-oceana-group",
@@ -12009,7 +12009,7 @@
       "PnP"
     ],
     "website": "https://www.picknpay.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "grocery-retail",
@@ -12159,7 +12159,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Store counts differ slightly between the investor page (2,261) and the encyclopedia summary (2,269); both are recorded with their sources."
+    "notes": "Store counts differ slightly between the investor page (2,261) and the encyclopedia summary (2,269); both are recorded with their sources.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-pioneer-foods",
@@ -12167,7 +12167,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.pioneerfoods.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "food-manufacturing",
@@ -12245,7 +12245,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Also present in the Accounting & Finance dataset as PepsiCo South Africa / Pioneer Foods."
+    "notes": "Also present in the Accounting & Finance dataset as PepsiCo South Africa / Pioneer Foods.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-polyoak-packaging",
@@ -12655,7 +12655,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.quantumfoods.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "poultry-production",
@@ -12725,7 +12725,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Also present in the Accounting & Finance dataset as Quantum Foods Ltd."
+    "notes": "Also present in the Accounting & Finance dataset as Quantum Foods Ltd.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain; no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-rabie-property-group",
@@ -12736,7 +12736,7 @@
       "Rabie Property Developers"
     ],
     "website": "https://www.rabie.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-development",
@@ -12846,7 +12846,7 @@
       "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Recruitment Agent 2026-10-23: Property Development; Residential/commercial/retail/mixed-use (Century City, Burgundy Estate, Clara Anna Fontein). Source-reported company context, not evidence of any employee skill. References: https://www.rabie.co.za/"
+    "notes": "Recruitment Agent 2026-10-23: Property Development; Residential/commercial/retail/mixed-use (Century City, Burgundy Estate, Clara Anna Fontein). Source-reported company context, not evidence of any employee skill. References: https://www.rabie.co.za/\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-raubex",
@@ -12857,7 +12857,7 @@
       "Raubex"
     ],
     "website": "https://www.raubex.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "infrastructure-development",
@@ -13005,7 +13005,7 @@
       "mbawc-financial-leadership"
     ],
     "lastVerified": "2026-11-03",
-    "notes": "Also present in the Accounting & Finance dataset as Raubex / Roadmac Surfacing Cape.\nRecruitment Agent 2026-10-23: Infrastructure/Construction; Roads/infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://raubex.co.za/\nFY2026 measures describe Raubex Group Limited. Employees and total workforce are separate source measures and are not attributed to Raubex Building or other subsidiaries.",
+    "notes": "Also present in the Accounting & Finance dataset as Raubex / Roadmac Surfacing Cape.\nRecruitment Agent 2026-10-23: Infrastructure/Construction; Roads/infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://raubex.co.za/\nFY2026 measures describe Raubex Group Limited. Employees and total workforce are separate source measures and are not attributed to Raubex Building or other subsidiaries.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain; no sourced operating location. The facts already recorded are unchanged; only the status moved.",
     "taxonomy": {
       "primaryNode": "CON-CIVIL-ROAD",
       "secondaryNodes": [
@@ -13023,7 +13023,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://raudev.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "residential-development",
@@ -13060,7 +13060,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services."
+    "notes": "Independent and smaller-market developer mapping. Source-backed company activities; SMME classification, turnover, employee size and legal ownership not established. Some firms also operate construction, investment or advisory services.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-rawson-developers",
@@ -13128,7 +13128,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.rclfoods.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "food-manufacturing",
@@ -13174,7 +13174,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Registered legal entity and head office not established from the sources read."
+    "notes": "Registered legal entity and head office not established from the sources read.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain; no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-reatile-renewables",
@@ -13301,7 +13301,7 @@
       "Red Rocket South Africa"
     ],
     "website": "http://www.redrocket.energy",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "renewable-development",
@@ -13427,7 +13427,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Upgraded from a stub on 2026-10-08: previously only a directory mention with no website or portfolio."
+    "notes": "Upgraded from a stub on 2026-10-08: previously only a directory mention with no website or portfolio.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-redefine-properties",
@@ -13435,7 +13435,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.redefine.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -13496,7 +13496,7 @@
       "accounting-finance"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Recruitment Agent 2026-10-23: Property Investment/Development; Commercial/residential. Source-reported company context, not evidence of any employee skill. References: https://www.redefine.co.za/"
+    "notes": "Recruitment Agent 2026-10-23: Property Investment/Development; Commercial/residential. Source-reported company context, not evidence of any employee skill. References: https://www.redefine.co.za/\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-reefer-cold-storage",
@@ -13588,7 +13588,7 @@
       "RES"
     ],
     "website": "",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -13756,7 +13756,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "The centre count moved from 27 at December 2024 to 28 at December 2025. No company website was established from the sources read; the audited results were read on the JSE SENS service."
+    "notes": "The centre count moved from 27 at December 2024 to 28 at December 2025. No company website was established from the sources read; the audited results were read on the JSE SENS service.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no official website recorded; identity cannot be confirmed from a primary source. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-rmb-rand-merchant-bank",
@@ -13927,7 +13927,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.sanlam.com/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [],
     "taxonomy": {
       "primaryNode": "FIN-INS-LIFE",
@@ -13972,7 +13972,7 @@
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.sanlam.com/sanlam-at-a-glance); no field value was rewritten.\nSanlam reports R218bn in new business volume for 2025 on its own site. That is new business written, not revenue or headcount, so it is recorded here as context only and is not used as a scale measure."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.sanlam.com/sanlam-at-a-glance); no field value was rewritten.\nSanlam reports R218bn in new business volume for 2025 on its own site. That is new business written, not revenue or headcount, so it is recorded here as context only and is not used as a scale measure.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-santam-insurance",
@@ -14057,7 +14057,7 @@
       "Scatec"
     ],
     "website": "https://www.tgs.com/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "renewable-development",
@@ -14197,7 +14197,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Scatec is a Norwegian group; the South African legal entity was not established from the sources read, so the record is flagged for verification rather than given a legal name. Project sites are recorded as locations because they are the operational footprint that was sourced.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.tgs.com/reliable-operations-at-scale-inside-scatecs-kenhardt-hybrid-project); no field value was rewritten."
+    "notes": "Scatec is a Norwegian group; the South African legal entity was not established from the sources read, so the record is flagged for verification rather than given a legal name. Project sites are recorded as locations because they are the operational footprint that was sourced.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.tgs.com/reliable-operations-at-scale-inside-scatecs-kenhardt-hybrid-project); no field value was rewritten.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-sea-harvest",
@@ -14393,7 +14393,7 @@
       "Sequence"
     ],
     "website": "",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "cold-storage-operations",
@@ -14470,7 +14470,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Acquired into the CCH platform in 2023."
+    "notes": "Acquired into the CCH platform in 2023.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no official website recorded; identity cannot be confirmed from a primary source. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-shoprite",
@@ -14667,7 +14667,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.intabaridge.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "residential-development",
@@ -14711,7 +14711,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established."
+    "notes": "Company identity and development involvement are supported by cited sources. Legal SMME status, turnover, staff size and group ownership not established.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-sihle-property-developers",
@@ -14963,7 +14963,7 @@
       "The SOLA Group"
     ],
     "website": "https://www.investec.com/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "renewable-development",
@@ -15119,7 +15119,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "The Naos 1 battery capacity is reported as both 660 MWh and 855 MWh within the same article; the conflict is recorded rather than resolved. The South African legal entity and head office were not established from the sources read, and no website is asserted. Locations are sourced project sites.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.investec.com/en_za/investec-for-corporates/transactions/sola-group-2026.html); no field value was rewritten."
+    "notes": "The Naos 1 battery capacity is reported as both 660 MWh and 855 MWh within the same article; the conflict is recorded rather than resolved. The South African legal entity and head office were not established from the sources read, and no website is asserted. Locations are sourced project sites.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.investec.com/en_za/investec-for-corporates/transactions/sola-group-2026.html); no field value was rewritten.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-south-african-reserve-bank",
@@ -15166,7 +15166,7 @@
       "Southern Oil"
     ],
     "website": "https://www.soill.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "oilseed-crushing",
@@ -15235,7 +15235,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Also present in the Accounting & Finance dataset as Southern Oil (SOILL)."
+    "notes": "Also present in the Accounting & Finance dataset as Southern Oil (SOILL).\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-ssc-property-group",
@@ -15531,7 +15531,7 @@
       "Stefanutti Stocks (Pty) Ltd"
     ],
     "website": "https://www.stefanuttistocks.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "construction-contracting",
@@ -15674,7 +15674,7 @@
       "mbawc-financial-leadership"
     ],
     "lastVerified": "2026-11-03",
-    "notes": "MBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.\nRecruitment Agent 2026-10-23: Construction/Infrastructure; Infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://www.stefanuttistocks.com/\nFY2026 measures describe the consolidated Stefanutti Stocks group, not separately named subsidiaries or divisions. The order-book row retains the source term 'current order book'.",
+    "notes": "MBAWC source cohort, 2026-10-22. Directory values are source-reported in the supplied workbook as of 2026-10-22; live membership and registration were not independently rechecked. The Locations sheet infers provinces from postal codes and national reach from company/category heuristics; these are not verified operating footprints, employee locations or company scale. Personal contact details are retained in Contacts and omitted from these company facts.\nRecruitment Agent 2026-10-23: Construction/Infrastructure; Infrastructure/capital projects. Source-reported company context, not evidence of any employee skill. References: https://www.stefanuttistocks.com/\nFY2026 measures describe the consolidated Stefanutti Stocks group, not separately named subsidiaries or divisions. The order-book row retains the source term 'current order book'.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved.",
     "directoryEntries": [
       {
         "directory": "MBAWC",
@@ -15710,7 +15710,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.stor-age.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "self-storage",
@@ -15763,7 +15763,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-super-group",
@@ -15837,7 +15837,7 @@
       "TBCS"
     ],
     "website": "https://www.tbcs.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "cold-storage-operations",
@@ -15922,7 +15922,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-takealot",
@@ -16217,7 +16217,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://www.tigerbrands.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "food-manufacturing",
@@ -16311,7 +16311,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-transunion",
@@ -16495,7 +16495,7 @@
       "TWK Agriculture"
     ],
     "website": "https://www.twkagri.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "agri-cooperative",
@@ -16548,7 +16548,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-uniqon-developers",
@@ -16616,7 +16616,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://upslogistics.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "road-freight",
@@ -16701,7 +16701,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Two websites appear across sources (upslogistics.co.za and unitransafrica.com); treated as needing verification."
+    "notes": "Two websites appear across sources (upslogistics.co.za and unitransafrica.com); treated as needing verification.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-urban-modules",
@@ -17238,7 +17238,7 @@
       "Vukile"
     ],
     "website": "https://www.vukile.co.za",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-investment",
@@ -17332,7 +17332,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": "Single aggregator source read on 2026-10-08; primary investor relations material not yet reviewed, hence needs-verification."
+    "notes": "Single aggregator source read on 2026-10-08; primary investor relations material not yet reviewed, hence needs-verification.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-wbho",
@@ -17885,7 +17885,7 @@
     "legalName": "Willowton Refineries (Pty) Ltd",
     "aliases": [],
     "website": "https://www.willowtongroup.com",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "edible-oils-fats",
@@ -17962,7 +17962,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-08",
-    "notes": ""
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-woolworths",
@@ -18149,7 +18149,7 @@
     "legalName": "",
     "aliases": [],
     "website": "https://zenprop.co.za/",
-    "status": "verified",
+    "status": "needs-verification",
     "industries": [
       {
         "industryId": "property-development",
@@ -18186,7 +18186,7 @@
       "organizations"
     ],
     "lastVerified": "2026-10-09",
-    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded."
+    "notes": "Imported from a workspace candidate, with this company's direct source checked on 2026-10-09. Unsupported 2025 transcript metrics, corporate relationships and speculative classifications were deliberately excluded.\nDemoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - no sourced operating location. The facts already recorded are unchanged; only the status moved."
   },
   {
     "id": "org-mbawc-001",

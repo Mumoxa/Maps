@@ -122,6 +122,74 @@ export interface VerificationGateResult {
   reasons: string[]
 }
 
+/**
+ * True when at least one source is the company's own site or a corporate
+ * disclosure served from the same registrable domain as the recorded website.
+ *
+ * `recruiter-supplied` never counts: it records that nobody has checked the URL.
+ */
+export function hasOfficialSource(organization: Organization): boolean {
+  const websiteBrand = brandLabel(organization.website)
+  if (!websiteBrand) return false
+  return organization.sources.some((source) => (
+    (source.type === 'company-website' || source.type === 'corporate-disclosure')
+    && !isThirdPartyHost(source.url)
+    && brandLabel(source.url) === websiteBrand
+  ))
+}
+
+/**
+ * Hosts that are never the company speaking about itself, whatever the source was
+ * labelled. A LinkedIn page, an aggregator profile or a news site is evidence
+ * *about* a company, not the company's own statement of its identity.
+ */
+const THIRD_PARTY_HOSTS = [
+  'linkedin.', 'facebook.', 'twitter.', 'x.com', 'instagram.', 'youtube.', 'wikipedia.',
+  'zoominfo.', 'rocketreach.', 'pitchbook.', 'crunchbase.', 'signalhire.', 'apollo.io',
+  'glassdoor.', 'indeed.', 'comparably.', 'mergr.', 'datanyze.', 'globaldata.',
+  'itweb.', 'moneyweb.', 'businesslive.', 'news24.', 'bloomberg.', 'reuters.',
+  'marketscreener.', 'jse.co.za', 'african-markets.', 'sareit.', 'mbawc.org.za',
+  'coldchainsa.', 'agbiz.', 'agribook.', 'constructionsouthafrica.', 'ippjournal.',
+  'foodbusinessafrica.', 'scjunction.', 'compcom.co.za', 'bizcommunity.', 'engineeringnews.',
+]
+
+/** True when the URL sits on a host that aggregates or reports on companies. */
+export function isThirdPartyHost(url: string): boolean {
+  const host = (() => {
+    try { return new URL(url).hostname.toLowerCase() } catch { return '' }
+  })()
+  if (!host) return true
+  return THIRD_PARTY_HOSTS.some((entry) => host === entry || host.endsWith(entry) || host.includes(`.${entry}`))
+}
+
+/**
+ * The brand inside a hostname: `group.nedbank.co.za` and `nedbank.com` are both
+ * `nedbank`, because a company may serve its South African and global sites from
+ * different TLDs (pwc.co.za vs pwc.com) and that is still its own site.
+ */
+export function brandLabel(url: string): string {
+  const domain = registrableDomain(url)
+  if (!domain) return ''
+  return domain.split('.')[0]
+}
+
+/** Second-level domain, so www./group./za. prefixes do not defeat a comparison. */
+export function registrableDomain(url: string): string {
+  let host = ''
+  try {
+    host = new URL(url).hostname.toLowerCase()
+  } catch {
+    return ''
+  }
+  const parts = host.replace(/^www\./, '').split('.')
+  if (parts.length <= 2) return parts.join('.')
+  // A two-letter country code means the registry sits under a compound suffix
+  // such as co.za, so the registrable domain is three labels, not two. Testing the
+  // label above the suffix instead gets atterbury.co.za wrong.
+  const countryCode = parts[parts.length - 1].length === 2
+  return parts.slice(countryCode ? -3 : -2).join('.')
+}
+
 export interface VerificationGateInput {
   organization: Organization
   /** True when the company has direct taxonomy placement or an industry link. */
@@ -146,6 +214,12 @@ export function verificationGate(input: VerificationGateInput): VerificationGate
 
   if (organization.website.trim() === '') {
     block('website', 'no official website recorded; identity cannot be confirmed from a primary source')
+  } else if (!hasOfficialSource(organization)) {
+    // A website field is only an identity claim if some recorded source actually
+    // comes from that site. Otherwise it is a URL someone typed, and promoting on
+    // it would make a news article or a directory listing look like a company's
+    // own statement about itself.
+    block('website', 'the recorded website is not backed by a company-website or corporate-disclosure source on that domain')
   }
   if (!organization.sources.some((source) => source.url.trim() !== '' && source.checkedOn.trim() !== '' && source.evidence.trim() !== '')) {
     block('sourced', 'no evidence source with a URL, a checked date and a statement of what it supports')
