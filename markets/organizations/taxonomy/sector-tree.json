@@ -213,6 +213,7 @@
   {"id": "MFG-METAL-ALU", "level": 3, "name": "Aluminium Smelting & Rolling", "parentId": "MFG-METAL"},
   {"id": "MFG-METAL-FOUNDRY", "level": 3, "name": "Foundries & Castings", "parentId": "MFG-METAL"},
   {"id": "MFG-METAL-FAB", "level": 3, "name": "Structural Steel Fabrication", "parentId": "MFG-METAL"},
+  {"id": "MFG-METAL-PACK", "level": 3, "name": "Metal Packaging & Cans", "parentId": "MFG-METAL", "saContext": "Beverage and food can making in aluminium and tinplate, concentrated in a handful of plants in Gauteng and the Western Cape and dominated by two producers."},
   {"id": "MFG-METAL-MACH", "level": 3, "name": "Precision Machining & CNC", "parentId": "MFG-METAL", "informalRelevant": true, "saContext": "Jobbing machine shops - a classic mid-market and SMME cluster around Gauteng and Durban industrial areas."},
   {"id": "MFG-METAL-TUBE", "level": 3, "name": "Tube, Pipe & Wire Products", "parentId": "MFG-METAL"},
   {"id": "MFG-MIN", "level": 2, "name": "Mineral Beneficiation & Smelting", "parentId": "MFG", "valueChainStage": "Manufacturing", "saContext": "Ferrochrome, ferromanganese, titanium slag and PGM refining - the beneficiation layer the state has pushed for two decades."},

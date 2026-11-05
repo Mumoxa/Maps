@@ -351,6 +351,19 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
     const rowNumber = index + 1
     const checkedOn = row.checkedOn || TODAY()
 
+    // A header the importer does not recognise is silently dropped, which is how a
+    // taxonomy change can be requested and never applied. Every key must map onto a
+    // real field, or the batch says so and carries the key verbatim for inspection.
+    for (const key of Object.keys(row)) {
+      if (row[key] && !/^[a-z]+[A-Z]/.test(key) && !(key in FIELD_ALIASES)) {
+        plan.issues.push({
+          rowNumber,
+          field: key,
+          reason: `unrecognised field "${key}"; it was not applied. Known fields: ${Object.keys(FIELD_ALIASES).join(', ')}`,
+        })
+      }
+    }
+
     if (type === 'companies') {
       const name = requireField(row, rowNumber, 'name')
       if (!name) return

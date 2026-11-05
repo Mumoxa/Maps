@@ -813,3 +813,49 @@ describe('a province alone is a complete location', () => {
     assert.equal(missingIssue?.severity, 'warning', 'a missing province is a research gap, not a failure')
   })
 })
+
+describe('a batch cannot silently request a field that does not exist', () => {
+  it('reports an unrecognised header instead of dropping it', async () => {
+    const { planImport } = await import('../scripts/organizations-import')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({ id: 'org-typo', name: 'Typo Co' })
+    const plan = planImport(
+      [{
+        name: 'Typo Co',
+        // what was actually written in a real batch, and silently ignored
+        taxonomy_primary_node: 'MFG-METAL-PACK',
+        source_url: 'https://typo.test/about',
+        source_type: 'company-website',
+        evidence: 'The company says what it does.',
+        checked_on: '2026-11-04',
+      }],
+      'companies',
+      { industries: [], capabilities: [], organizations: [organization], relationships: [], associations: [], intelligence: [] },
+    )
+    const issue = plan.issues.find((entry) => entry.field === 'taxonomy_primary_node')
+    assert.ok(issue, 'the misspelled field must be reported, not applied and not ignored')
+    assert.match(issue!.reason, /unrecognised field/)
+    assert.match(issue!.reason, /taxonomyNode/, 'the message names the field that was probably meant')
+  })
+
+  it('applies the correctly named field', async () => {
+    const { planImport } = await import('../scripts/organizations-import')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({ id: 'org-nampak-like', name: 'Nampak Like' })
+    const plan = planImport(
+      [{
+        name: 'Nampak Like',
+        taxonomy_node: 'MFG-METAL-PACK',
+        source_url: 'https://nampak.test/about',
+        source_type: 'company-website',
+        evidence: 'It makes metal cans.',
+        checked_on: '2026-11-04',
+      }],
+      'companies',
+      { industries: [], capabilities: [], organizations: [organization], relationships: [], associations: [], intelligence: [] },
+    )
+    assert.deepEqual(plan.issues, [], 'a correct batch produces no issues')
+    const updated = plan.updatedOrganizations.find((entry) => entry.id === 'org-nampak-like')
+    assert.equal(updated?.taxonomy?.primaryNode, 'MFG-METAL-PACK')
+  })
+})

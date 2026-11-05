@@ -10557,12 +10557,12 @@
     "status": "needs-verification",
     "industries": [],
     "taxonomy": {
-      "primaryNode": "MFG-PLAS",
+      "primaryNode": "MFG-METAL-PACK",
       "secondaryNodes": [],
       "confidence": "probable",
-      "evidence": "Nampak describes itself as the leading metals packaging company in South Africa, producing aluminium and tinplate beverage and food cans; the taxonomy has no dedicated metals-packaging node.",
-      "sourceUrl": "https://nampak.com/about/overview",
-      "checkedOn": "2026-10-16"
+      "evidence": "Nampak's own overview page states that Nampak is evolving into a focused metals packaging business and that it is the largest beverage-can maker in South Africa and Angola, producing aluminium and tinplate cans.",
+      "sourceUrl": "https://www.nampak.com/about/overview",
+      "checkedOn": "2026-11-04"
     },
     "capabilities": [],
     "locations": [
@@ -10595,7 +10595,7 @@
       {
         "url": "https://www.nampak.com/about/overview",
         "type": "company-website",
-        "evidence": "Nampak's own About page states that it is evolving into a focused metals packaging business, with manufacturing facilities in South Africa and Angola, and that it is the largest manufacturer of beverage cans in both countries.",
+        "evidence": "Nampak's own About page states that it is evolving into a focused metals packaging business, with manufacturing facilities in South Africa and Angola, and that it is the largest manufacturer of beverage cans in both countries. | Nampak's own overview page states that Nampak is evolving into a focused metals packaging business and that it is the largest beverage-can maker in South Africa and Angola, producing aluminium and tinplate cans.",
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
@@ -10605,7 +10605,7 @@
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://nampak.com/about/overview); no field value was rewritten.\nNampak's own contact page puts its head office in Century City, Cape Town, while the same page's postal address and several of its plants are in Gauteng. The recorded location is the head office the company states, not an assumed Johannesburg one.\nNampak describes itself as now a focused metals packaging business in South Africa and Angola; the record's taxonomy placement in plastics predates that repositioning and should move to metal packaging on review."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://nampak.com/about/overview); no field value was rewritten.\nNampak's own contact page puts its head office in Century City, Cape Town, while the same page's postal address and several of its plants are in Gauteng. The recorded location is the head office the company states, not an assumed Johannesburg one.\nNampak describes itself as now a focused metals packaging business in South Africa and Angola; the record's taxonomy placement in plastics predates that repositioning and should move to metal packaging on review.\nTaxonomy moved from MFG-PLAS (Plastics, Rubber & Packaging) to the new MFG-METAL-PACK (Metal Packaging & Cans) node on 2026-11-04. The old placement was a compromise recorded in the record's own evidence: no metals-packaging node existed when it was made, and the plastics parent no longer described the company after it repositioned onto metals. The node was added to the sector tree rather than leaving the company filed under a plastic it no longer makes in volume. Nampak remains unverified: its own pages state neither a legal entity name nor a headcount, and the verification gate is not satisfied on inference.\nTaxonomy moved from MFG-PLAS (Plastics, Rubber & Packaging) to the new MFG-METAL-PACK (Metal Packaging & Cans) node on 2026-11-04. The old placement was a compromise the record's own evidence admitted: no metals-packaging node existed when it was made, and the plastics parent stopped describing the company once it repositioned onto metals. The node was added to the sector tree rather than leaving the company filed under a material it no longer makes in volume. The head office stays as recorded from Nampak's contact page (Century City, Western Cape); the overview page describes the business and does not state a location, so no second location was added from it. Nampak remains unverified: its own pages state neither a legal entity name nor a headcount, and the gate is not satisfied on inference.\nA 'Cape Town' location briefly existed on this record, sourced to the overview page, which does not name a city. It was removed as an invented location: the overview page describes the business and the head office location comes only from the contact page (Century City)."
   },
   {
     "id": "org-narmis-property-developments",

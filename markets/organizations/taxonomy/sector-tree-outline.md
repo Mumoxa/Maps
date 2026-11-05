@@ -11,9 +11,9 @@ tax status carry the distinction instead of an assumption of CIPC registration.
 |---|---|
 | Macro-Sector (Level 1) | 16 |
 | Industry Sector (Level 2) | 129 |
-| Sub-Industry (Level 3) | 490 |
+| Sub-Industry (Level 3) | 491 |
 | Operational / Product Niche (Level 4) | 96 |
-| **Total** | **731** |
+| **Total** | **732** |
 
 - **Mining, Quarrying & Extractive Industries** `MIN` — SIC 05-09
   - Bushveld Complex PGM and chrome belt, Witwatersrand and Free State gold, Mpumalanga and Waterberg coal, Northern Cape iron ore and manganese, Kimberley and West Coast marine diamonds. Junior miners and black-owned small-scale operators sit in the same tree as the JSE-listed majors.
@@ -339,6 +339,8 @@ tax status carry the distinction instead of an assumption of CIPC registration.
     - **Aluminium Smelting & Rolling** `MFG-METAL-ALU`
     - **Foundries & Castings** `MFG-METAL-FOUNDRY`
     - **Structural Steel Fabrication** `MFG-METAL-FAB`
+    - **Metal Packaging & Cans** `MFG-METAL-PACK`
+      - Beverage and food can making in aluminium and tinplate, concentrated in a handful of plants in Gauteng and the Western Cape and dominated by two producers.
     - **Precision Machining & CNC** `MFG-METAL-MACH` _(informal economy)_
       - Jobbing machine shops - a classic mid-market and SMME cluster around Gauteng and Durban industrial areas.
     - **Tube, Pipe & Wire Products** `MFG-METAL-TUBE`

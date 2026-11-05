@@ -1311,6 +1311,7 @@
         "MFG-METAL-ALU",
         "MFG-METAL-FOUNDRY",
         "MFG-METAL-FAB",
+        "MFG-METAL-PACK",
         "MFG-METAL-MACH",
         "MFG-METAL-TUBE",
         "MFG-MIN",
@@ -1829,7 +1830,7 @@
         "MFG-AUTO-OEM-EXPORT",
         "MFG-CHEM-CTL-SYNFUEL"
       ],
-      "description": "Any of the 731 nodes in the four-tier taxonomy, from macro-sector (level 1) to operational niche (level 4)."
+      "description": "Any of the 732 nodes in the four-tier taxonomy, from macro-sector (level 1) to operational niche (level 4)."
     }
   },
   "allOf": [
