@@ -1,0 +1,29 @@
+{
+  "batch": "batch-21-bmw-it-hub-2026-11-05.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-11-05T10:45:09.551Z",
+  "type": "companies",
+  "read": 2,
+  "newOrganizations": 0,
+  "updatedOrganizations": 1,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 2,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "verification": {
+    "requested": 0,
+    "granted": 0,
+    "refused": 0,
+    "refusals": []
+  },
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 2
+  }
+}

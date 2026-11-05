@@ -2440,7 +2440,10 @@
     "aliases": [
       "BMW",
       "BMW South Africa",
-      "BMW SA"
+      "BMW SA",
+      "BMW IT Hub",
+      "BMW IT Hub South Africa",
+      "BMW IT Hub (Menlyn)"
     ],
     "website": "https://www.bmw.co.za/",
     "status": "verified",
@@ -2462,6 +2465,12 @@
         "province": "Gauteng",
         "sourceUrl": "https://www.bmw.co.za/en/more-bmw/customer-support.html",
         "checkedOn": "2026-11-04"
+      },
+      {
+        "city": "Menlyn",
+        "province": "Gauteng",
+        "sourceUrl": "https://jobs.bmwgroup.com/job/BMW-Group-SA-Graduate-Programme-2027/199689-en_US/",
+        "checkedOn": "2026-11-04"
       }
     ],
     "scale": [
@@ -2481,7 +2490,7 @@
       {
         "url": "https://www.bmwgroup-werke.com/rosslyn/en.html",
         "type": "company-website",
-        "evidence": "BMW Group Plant Rosslyn produces BMW X3 vehicles almost entirely for global export. | BMW Group's own Plant Rosslyn page states approximately 2800 employees at the plant in its Facts and Figures panel. | BMW Group's own Plant Rosslyn page states that the plant became the BMW Group's first manufacturing facility outside Germany, that it is the only facility in the global network building the BMW X3 as a plug-in hybrid, and that more than 96% of third-generation X3 output was exported to over 40 global markets.",
+        "evidence": "BMW Group Plant Rosslyn produces BMW X3 vehicles almost entirely for global export. | BMW Group's own Plant Rosslyn page states approximately 2800 employees at the plant in its Facts and Figures panel. | BMW Group's own Plant Rosslyn page states that the plant became the BMW Group's first manufacturing facility outside Germany, that it is the only facility in the global network building the BMW X3 as a plug-in hybrid, and that more than 96% of third-generation X3 output was exported to over 40 global markets. | BMW Group's own Plant Rosslyn page states in its Facts and Figures panel that BMW Group Plant Rosslyn has approximately 2 800 employees, while the narrative text on the same page describes a workforce of more than 2 500 associates.",
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
@@ -2493,13 +2502,21 @@
         "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://jobs.bmwgroup.com/job/BMW-Group-SA-Graduate-Programme-2027/199689-en_US/",
+        "type": "company-website",
+        "evidence": "BMW Group's own careers site lists the BMW IT Hub in Menlyn among the BMW Group South Africa locations where graduates are placed, alongside Plant Rosslyn, the Vehicle Distribution Centre in Rosslyn, the National Sales Company in Midrand and BMW Financial Services in Midrand.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.bmwgroup-werke.com/rosslyn/en.html); no field value was rewritten.\nThe record is the South African operation, not the global BMW Group: the plant page states that BMW AG acquired full shareholding in 1973 and established BMW Group South Africa (Pty) Ltd, which is the legal entity recorded here. Figures for the global group are never applied to it. BMW Financial Services (South Africa) (Pty) Ltd is a separate registered entity (FSP 4623, NCRCP2341) and is not merged into this record.\nThe 2800 figure is the Rosslyn plant workforce, not BMW Group South Africa's total and not the global group. The same page separately says over 49000 livelihoods are directly tied to BMW Group South Africa's operations, which is an impact estimate rather than a headcount and is not recorded as scale."
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.bmwgroup-werke.com/rosslyn/en.html); no field value was rewritten.\nThe record is the South African operation, not the global BMW Group: the plant page states that BMW AG acquired full shareholding in 1973 and established BMW Group South Africa (Pty) Ltd, which is the legal entity recorded here. Figures for the global group are never applied to it. BMW Financial Services (South Africa) (Pty) Ltd is a separate registered entity (FSP 4623, NCRCP2341) and is not merged into this record.\nThe 2800 figure is the Rosslyn plant workforce, not BMW Group South Africa's total and not the global group. The same page separately says over 49000 livelihoods are directly tied to BMW Group South Africa's operations, which is an impact estimate rather than a headcount and is not recorded as scale.\nThe roster records 68 people across two spellings, 'BMW IT Hub' and 'BMW IT Hub South Africa'. Both are aliased to this record because BMW Group's own careers site presents the IT Hub as a BMW Group South Africa location, not as a separate company: the same page lists it beside the plant, the distribution centre and the sales company as places BMW Group South Africa places people. The Menlyn location is recorded as a site of this company for the same reason. If the IT Hub is later shown to be a separately registered entity it should become its own record with a corporate relationship, and this alias removed.\nA discrepancy is recorded rather than resolved. The same BMW page gives the Rosslyn workforce as 'approximately 2 800' in its Facts and Figures panel and as 'more than 2 500 associates' in the prose. Both are on the same page and neither is dated, so they may describe different things - all employees at the site versus associates in production - but the page does not say. The 2 800 figure stays in the scale field because it is the page's own headline measure; the 2 500 figure is recorded here so the conflict is visible instead of being silently averaged away. Neither figure is the South African company's total, let alone the global group's."
   },
   {
     "id": "org-bow-arc",

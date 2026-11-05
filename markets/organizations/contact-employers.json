@@ -8,9 +8,9 @@
     "distinctEmployerNames": 1743,
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 178,
-    "distinctOrganizationEntries": 1689,
+    "distinctOrganizationEntries": 1687,
     "curatedCompanyMatches": 442,
-    "unverifiedDatasetOnly": 1247
+    "unverifiedDatasetOnly": 1245
   },
   "employers": [
     {
@@ -158,10 +158,12 @@
     {
       "organizationId": "org-bmw-group",
       "name": "BMW Group",
-      "contactCount": 70,
+      "contactCount": 133,
       "sourceNames": [
         "BMW",
-        "BMW Group"
+        "BMW Group",
+        "BMW IT Hub",
+        "BMW IT Hub South Africa"
       ]
     },
     {
@@ -1450,22 +1452,6 @@
       "contactCount": 1,
       "sourceNames": [
         "BMW Group Financial Services South Africa"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:bmw it hub",
-      "name": "BMW IT Hub",
-      "contactCount": 55,
-      "sourceNames": [
-        "BMW IT Hub"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:bmw it hub south africa",
-      "name": "BMW IT Hub South Africa",
-      "contactCount": 13,
-      "sourceNames": [
-        "BMW IT Hub South Africa"
       ]
     },
     {
