@@ -83,38 +83,67 @@ Status as of 4 November 2026. Measured with `npm run atlas:coverage` after every
 | 06 | Financial services core: Absa, Capitec, Standard Bank, Old Mutual, Investec | **done** |
 | 07 | Telecoms: MTN, Vodacom | **done** |
 | 08 | Professional services, consumer, industrial and retail | **done** |
-| 09 | FNB, Capitec, Woolworths, Deloitte and Astron Energy | **done** |
-| 10 | Standard Bank, Old Mutual, Absa, Momentum Group | **done** |
-| 11 | Importer defect: restated scale measures stacked instead of collapsing | **done** |
-| 12 | Dataset-only employer names, highest people count first | next |
-| 13 | Taxonomy placement for the records still unclassified or unlocated | planned |
+| 09 | Banking: FNB | **done** |
+| 10 | Western Cape and professional services: Capitec, Woolworths, Deloitte, Astron Energy | **done** |
+| 10b | Scale supplement for batch 10, after the restatement defect was fixed | **done** |
+| 11 | Big banks: Standard Bank, Old Mutual, Absa | **done** |
+| 12 | Insurance and telecoms: Momentum Group, Vodacom | **done** |
+| 13 | Retail and banking: Massmart Holdings, Investec | **done** |
+| 14 | Retail and fintech: TFG, M-KOPA | **done** |
+| 15 | Fishing and packaging: Oceana Group; Nampak head office | **done** |
+| 16 | Identity aliases: LexisNexis, Deloitte | **done** |
+| 17 | Alias resolution: Deloitte, Peninsula Beverages, Scatec, Macsteel, Pepkor | **done** |
+| 18 | Automotive: BMW Group South Africa | **done** |
+| 19 | Nampak taxonomy: adds `MFG-METAL-PACK` to the sector tree | **done** |
+| 20 | Dataset-only employer names, highest people count first | next |
+
+Every batch from 09 to 19 has a review document beside its JSONL drop in
+`markets/organizations/research/atlas/`, recording what changed, the source basis, and the
+decisions deliberately not taken. The batch numbers were reassigned as the work was actually
+delivered — an earlier draft of this table predicted scopes that the batches then did not have,
+and the review documents are the authoritative record of what each one did.
 
 Batches were numbered in delivery order rather than by the earlier thematic labels; the
 scope column is what each batch actually delivered.
 
 ### Measured position
 
+Latest column measured with `npm run atlas:coverage` on 5 November 2026, after batch 19.
+
 | Measure | Before | Latest |
 | --- | ---: | ---: |
-| Universe (organisations shown) | 2,407 | 2,389 |
+| Universe (organisations shown) | 2,407 | 2,379 |
 | Curated register | 632 | 629 |
-| Verified | 131 | 201 |
+| Dataset-only employers | 1,759 | 1,750 |
+| Verified | 131 | **148** |
+| Listed-only | — | 342 |
+| Needs verification | — | 1,889 |
 | Official website (curated) | 399 | 497 |
 | Verification within 180 days (curated) | 356 | 629 |
-| Sourced location | 207 | 221 |
-| Sourced scale | 139 | 149 |
-| Legal entity name | not measured | 390 |
+| Sourced location | 207 | 228 |
+| Sourced scale | 139 | 153 |
+| Legal entity name | not measured | 395 |
 | Industry / taxonomy placement | 612 | 612 |
+| Meeting every one of the 13 standard fields | not measured | 5 |
 | Phantom employers removed from the universe | 16 | 0 |
-| Identity review queue | not measured | 74 names / 166 people |
+| Identity review queue | not measured | 65 names / 106 people |
+
+The fall from 201 verified to 148 is not a loss of research. It is the website gate being tightened
+after it was found to accept profile and ranking sites as if they were the company's own domain: 59
+records whose only source was a third-party page were demoted, and their facts kept. Status follows
+evidence.
 
 #### Where the verified growth came from
 
 131 → 135 was the identity review and website backfill; 135 → 191 was the promotion pass, which
 found 56 records that already met the gate and had simply never been promoted; 191 → 201 was
-eleven companies researched one at a time against their own published pages. The promotion pass
-is not repeatable — it collects a backlog once. Everything after it is per-company research,
-which is why the rate falls to roughly one batch of four companies per sitting.
+eleven companies researched one at a time against their own published pages.
+
+Then 201 → 148, because the gate was tightened. That is the shape of the whole programme: the
+promotion pass is not repeatable, it collects a backlog once, and everything after it is
+per-company research at roughly a company per source page read. Batches 14 to 18 added one
+verified company each — M-KOPA, Oceana, BMW — against that harder standard. A rising verified
+count is not the goal; a verified count that means something is.
 
 #### A defect the later batches exposed
 
@@ -182,6 +211,37 @@ This matters for the remaining queue, because most high-people dataset names are
 spelling variants of curated companies rather than new companies. Every alias added
 from here on has to be checked with `resolveEmployerOrganizationId`, not assumed to
 have taken effect.
+
+#### A province on its own is a complete location
+
+Twelve of 254 locations have no city. That is not a defect, and the rules now say so:
+
+- **`province` alone satisfies "a located South African operation"** in the verification gate. A
+  company that publishes its province and not its town is telling you what it chooses to publish.
+- **`city` alone is also recorded**, with `province` empty. The missing province appears as a
+  research gap (`location-province-unknown`, a warning), never as a value inferred from the city name.
+  Inferring Gauteng from Pretoria is a guess dressed as geography, and every geographic filter reads
+  that field.
+- **A place in the `province` column is reported but not rewritten** (`unsupported-location`). Sources
+  routinely put a city where a province belongs — the archived MBAWC workbook files "Pretoria" as a
+  province, and its re-import test fails if the record is "corrected", because the record must keep
+  matching the source it cites. The importer normalises such rows on the way in; older records are
+  flagged for the same treatment.
+- **A city-without-province row is no longer silently dropped.** The importer used to discard it,
+  throwing away a sourced fact. Losing a fact is worse than holding an incomplete one.
+
+Three tests cover this in `tests/atlas-standard.test.ts`.
+
+#### The importer used to ignore fields it did not recognise
+
+The field list is fixed (`taxonomy_node`, `source_url`, `checked_on`, …). A header outside it — a
+plausible-looking `taxonomy_primary_node`, say — was stored verbatim and then silently dropped, so a
+batch could report "*1 organisation updated*" while the change never happened. A batch that claims to
+have worked and didn't is worse than one that fails, because nobody goes back to check.
+
+Every unrecognised field is now reported with the known field names, and two tests hold the
+behaviour. This is the same failure mode as the alias defect above: the register looking as though it
+had absorbed something it had not.
 
 ## Explicit non-goals
 
