@@ -96,3 +96,37 @@ test('the company dossier renders complete directory facts with source attributi
     await server.close()
   }
 })
+
+test('a curated alias re-homes people from a previously frozen dataset id', () => {
+  // A contact manifest records the resolution it saw when it was generated. If an
+  // alias is added later, that stored `org-dataset:` id must not keep the people
+  // pinned to a company record that no longer describes them. Deloitte Consulting
+  // is a real alias on the Deloitte record; the earlier manifest froze it as a
+  // dataset-only employer and 13 people were stranded there.
+  const rehomed = buildOrganizationIndex({
+    datasetEmployers: [{
+      name: 'Deloitte Consulting',
+      organizationId: 'org-dataset:deloitte consulting',
+      dataset: 'contacts',
+      professionals: 13,
+      classification: '',
+      sourceNames: [],
+    }],
+  })
+  const employer = [...rehomed.employersByOrg.values()].find((row) => row.canonicalName === 'Deloitte Consulting')
+  assert.equal(employer?.organizationId, 'org-deloitte', 'the alias must win over the frozen id')
+
+  // An explicit curated id is a decision, not a snapshot, and is kept as written.
+  const kept = buildOrganizationIndex({
+    datasetEmployers: [{
+      name: 'Deloitte Consulting',
+      organizationId: 'org-explicit',
+      dataset: 'contacts',
+      professionals: 13,
+      classification: '',
+      sourceNames: [],
+    }],
+  })
+  const keptEmployer = [...kept.employersByOrg.values()].find((row) => row.canonicalName === 'Deloitte Consulting')
+  assert.equal(keptEmployer?.organizationId, 'org-explicit', 'an explicit curated id is not overridden')
+})

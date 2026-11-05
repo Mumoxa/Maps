@@ -36,6 +36,7 @@ const SCALE_LABELS: Record<string, string> = {
 
 const STATUS_LABELS: Record<string, string> = {
   verified: 'Verified',
+  'listed-only': 'Listed only',
   'needs-verification': 'Pending verification',
 }
 

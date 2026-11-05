@@ -25,6 +25,8 @@ import type {
   ScaleEntityScope,
 } from '../src/data/organizations/types'
 import { getTaxonomyNode } from '../src/data/taxonomy/load'
+import { listingGate, verificationGate } from '../src/data/organizations/verification'
+import { PROVINCES } from '../src/data/organizations/quality'
 
 export type ImportType =
   | 'companies'
@@ -68,6 +70,17 @@ export interface ImportPlan {
   conflicts: string[]
   missingRequired: ImportIssue[]
   issues: ImportIssue[]
+  /** Companies the batch asked to verify, with the gate's decision. */
+  verification: VerificationDecision[]
+}
+
+/** One batch's attempt to promote a company, and why it was refused if it was. */
+export interface VerificationDecision {
+  rowNumber: number
+  organizationId: string
+  canonicalName: string
+  eligible: boolean
+  reasons: string[]
 }
 
 const FIELD_ALIASES: Record<string, string[]> = {
@@ -95,6 +108,8 @@ const FIELD_ALIASES: Record<string, string[]> = {
   checkedOn: ['checked_on', 'date_verified', 'verified_on', 'observation_date'],
   confidence: ['confidence', 'confidence_level'],
   notes: ['notes', 'note', 'comments'],
+  // A verification decision made by a reviewer, gated below before it is written.
+  verificationStatus: ['verification_status', 'reviewed_status', 'promote_status'],
   noteAppend: ['note_append', 'append_note', 'research_note_append'],
   capability: ['capability', 'process', 'operational_capability', 'capability_id'],
   status: ['status', 'capability_status'],
@@ -205,6 +220,86 @@ function resolveOrganization(
 
 const TODAY = () => new Date().toISOString().slice(0, 10)
 
+/**
+ * Apply a batch's verification request to the record that would be written.
+ *
+ * `status` is never taken from the file. A row may only say that it is asking
+ * for verification; whether the company becomes verified is decided here by the
+ * shared gate, and a refusal is recorded with its reasons instead of being
+ * silently ignored. Without this, a batch could mark a company verified while
+ * writing none of the evidence that makes the word mean anything.
+ */
+function applyVerificationDecision(
+  organization: Organization,
+  row: ImportRow,
+  plan: ImportPlan,
+  rowNumber: number,
+  canonicalName: string,
+): void {
+  const requested = (row.verificationStatus ?? row.status ?? '').trim().toLowerCase()
+  if (!requested) return
+  if (!VERIFICATION_REQUESTS.has(requested)) {
+    plan.issues.push({
+      rowNumber,
+      field: 'verification_status',
+      reason: `unsupported verification status "${requested}"; expected verified, listed-only or needs-verification`,
+    })
+    return
+  }
+  if (requested === 'needs-verification') {
+    organization.status = 'needs-verification'
+    return
+  }
+  const gate = verificationGate({
+    organization,
+    hasPlacement: organization.industries.length > 0 || Boolean(organization.taxonomy),
+  })
+  if (requested === 'listed-only') {
+    // A listing claim only needs the listing. It is checked against the evidence
+    // bar for what it actually asserts, not against the verified gate, so a
+    // company can never be upgraded to verified by being asked for the weaker state.
+    const listing = listingGate(organization)
+    plan.verification.push({
+      rowNumber,
+      organizationId: organization.id,
+      canonicalName,
+      eligible: listing.eligible,
+      reasons: listing.reasons,
+    })
+    if (listing.eligible) {
+      if (organization.status !== 'verified') organization.status = 'listed-only'
+      return
+    }
+    plan.issues.push({
+      rowNumber,
+      field: 'verification_status',
+      reason: `${canonicalName} cannot be marked listed-only: ${listing.reasons.join('; ')}`,
+    })
+    return
+  }
+  plan.verification.push({
+    rowNumber,
+    organizationId: organization.id,
+    canonicalName,
+    eligible: gate.eligible,
+    reasons: gate.reasons,
+  })
+  if (gate.eligible) {
+    organization.status = 'verified'
+    return
+  }
+  // Not an error: an incomplete company is the normal state of the register.
+  // It is reported so the reviewer sees exactly what is still missing.
+  plan.issues.push({
+    rowNumber,
+    field: 'verification_status',
+    reason: `${canonicalName} cannot be verified yet: ${gate.reasons.join('; ')}`,
+  })
+}
+
+/** Row-level status values the importer understands. */
+const VERIFICATION_REQUESTS = new Set(['verified', 'listed-only', 'needs-verification'])
+
 /** Build the change plan. Pure: it never writes. */
 export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset): ImportPlan {
   const plan: ImportPlan = {
@@ -222,6 +317,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
     conflicts: [],
     missingRequired: [],
     issues: [],
+    verification: [],
   }
 
   // Multiple rows may enrich different measures for one company. Always merge
@@ -306,6 +402,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
             plan.unmatchedNames.push(row.parent)
           }
         }
+        applyVerificationDecision(updated, row, plan, rowNumber, canonicalName)
         plan.matched.push({ rowNumber, organizationId: organization.id, canonicalName })
         upsertUpdatedOrganization(updated)
       } else {
@@ -326,7 +423,9 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           industries,
           taxonomy,
           capabilities: [],
-          locations: row.province ? [{ city: row.city ?? '', province: row.province, sourceUrl, checkedOn }] : [],
+          locations: (row.province || row.city)
+            ? [{ city: (row.city ?? '').trim(), province: (row.province ?? '').trim(), sourceUrl, checkedOn }]
+            : [],
           scale: scaleEntry ? [scaleEntry] : [],
           parentId: null,
           sources: sourceUrl ? [{
@@ -341,6 +440,7 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           lastVerified: checkedOn,
           notes: mergeNotes('', row.notes, row.noteAppend),
         }
+        applyVerificationDecision(created, row, plan, rowNumber, canonicalName)
         plan.newOrganizations.push(created)
         workingOrganizations.set(created.id, created)
         if (row.parent) plan.unmatchedNames.push(row.parent)
@@ -568,13 +668,31 @@ function mergeIndustryLinks(existing: OrganizationIndustryLink[], incoming: Orga
   return merged
 }
 
+/**
+ * Record a sourced place, at whatever precision the source actually gave.
+ *
+ * A province on its own is a complete answer and the normal case. A city on its
+ * own is also recorded, with the province left empty: the province then shows up
+ * as a research gap, which is honest, whereas inferring it from the city name
+ * would put a guess where every geographic filter reads. Neither field is ever
+ * derived from the other, and a row with neither adds nothing.
+ */
 function mergeLocations(organization: Organization, row: ImportRow, sourceUrl: string, checkedOn: string) {
-  if (!row.province) return organization.locations
+  let province = (row.province ?? '').trim()
+  let city = (row.city ?? '').trim()
+  // Sources routinely put a city in their province column. Store what the source
+  // actually said - the city - and leave the province empty, rather than copying a
+  // city into a field every geographic filter reads as a province.
+  if (province && !PROVINCES.includes(province)) {
+    if (!city) city = province
+    province = ''
+  }
+  if (!province && !city) return organization.locations
   const exists = organization.locations.some((location) => (
-    location.province === row.province && (location.city ?? '') === (row.city ?? '')
+    location.province.trim() === province && (location.city ?? '').trim() === city
   ))
   if (exists) return organization.locations
-  return [...organization.locations, { city: row.city ?? '', province: row.province, sourceUrl, checkedOn }]
+  return [...organization.locations, { city, province, sourceUrl, checkedOn }]
 }
 
 const SOURCE_TYPES = new Set([
@@ -646,6 +764,29 @@ function buildScaleEntry(
   }
 }
 
+/**
+ * Reduce a scale figure to what it actually asserts, so two spellings of the same
+ * fact collapse instead of stacking.
+ *
+ * "over 27000 people" and "more than 27 000 employees" are one headcount, not
+ * two, and a dossier that showed both would look better researched than it is.
+ * The comparison keeps the qualifier (over/under/about) and the first number,
+ * because those change what the figure means; it discards the wording around them.
+ */
+export function scaleFingerprint(entry: Pick<OrganizationScale, 'metric' | 'value' | 'entityScope'>): string {
+  const value = entry.value.toLowerCase()
+  const qualifier = /(under|below|fewer)/.test(value) ? 'under'
+    : /(over|more than|above|exceed)/.test(value) ? 'over'
+      : /(about|approximately|circa|around)/.test(value) ? 'about'
+        : ''
+  const numbers = value.match(/\d[\d\s.,]*/g) ?? []
+  const magnitude = numbers
+    .map((raw) => raw.replace(/[\s,]/g, '').replace(/\.$/, ''))
+    .filter((raw) => raw !== '')
+    .join('-')
+  return [entry.metric, qualifier, magnitude, entry.entityScope ?? 'not-stated'].join('|')
+}
+
 function mergeScale(
   organization: Organization,
   row: ImportRow,
@@ -656,20 +797,33 @@ function mergeScale(
 ): OrganizationScale[] {
   const incoming = buildScaleEntry(row, sourceUrl, checkedOn, plan, rowNumber)
   if (!incoming) return organization.scale
-  const index = organization.scale.findIndex((entry) => (
+  const exact = organization.scale.findIndex((entry) => (
     entry.metric === incoming.metric
     && entry.value === incoming.value
     && entry.asOf === incoming.asOf
     && entry.sourceUrl === incoming.sourceUrl
     && (entry.entityScope ?? '') === (incoming.entityScope ?? '')
   ))
+  const index = exact >= 0
+    ? exact
+    : organization.scale.findIndex((entry) => scaleFingerprint(entry) === scaleFingerprint(incoming))
+  if (exact < 0 && index >= 0) {
+    // Same fact, different wording: say so rather than silently picking one.
+    plan.issues.push({
+      rowNumber,
+      field: 'scale_value',
+      reason: `${organization.name} already records ${organization.scale[index].metric} as "${organization.scale[index].value}" from the same scope; "${incoming.value}" restates it, so the existing measure was kept`,
+    })
+  }
   if (index < 0) return [...organization.scale, incoming]
   const merged = [...organization.scale]
-  merged[index] = {
-    ...merged[index],
-    ...incoming,
-    checkedOn: incoming.checkedOn > merged[index].checkedOn ? incoming.checkedOn : merged[index].checkedOn,
-  }
+  const existing = merged[index]
+  const checkedOnLatest = incoming.checkedOn > existing.checkedOn ? incoming.checkedOn : existing.checkedOn
+  // A restatement confirms the fact again; it does not get to rewrite the figure
+  // already on record to a different wording of the same number.
+  merged[index] = exact >= 0
+    ? { ...existing, ...incoming, checkedOn: checkedOnLatest }
+    : { ...existing, checkedOn: checkedOnLatest }
   return merged
 }
 
@@ -759,5 +913,13 @@ export function planSummary(plan: ImportPlan) {
     conflicts: plan.conflicts,
     missingRequired: plan.missingRequired,
     issues: plan.issues,
+    verification: {
+      requested: plan.verification.length,
+      granted: plan.verification.filter((decision) => decision.eligible).length,
+      refused: plan.verification.filter((decision) => !decision.eligible).length,
+      refusals: plan.verification
+        .filter((decision) => !decision.eligible)
+        .map((decision) => ({ company: decision.canonicalName, reasons: decision.reasons })),
+    },
   }
 }

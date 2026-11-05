@@ -5,7 +5,7 @@ import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { EmptyState } from '../components/ui/EmptyState'
 import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
-import { contactDirectoryUrlForEmployer } from '../data/organizations/load'
+import { contactDirectoryUrlForEmployer, resolveOrganizationRedirect } from '../data/organizations/load'
 import { atlasNodeTitle } from '../data/organizations/atlas'
 import { classifyFootprint, FOOTPRINT_SHORT_LABELS } from '../data/organizations/footprint'
 import { companyDossier } from '../data/organizations/query'
@@ -33,8 +33,11 @@ export function OrganizationPage() {
     try { return decodeURIComponent(organizationId) } catch { return organizationId }
   }, [organizationId])
 
-  const organization = index.byId.get(decodedId) ?? null
-  const employer = index.employersByOrg.get(decodedId)
+  // A merged-away id still opens the surviving company, so an old link or a
+  // shared dossier never dead-ends on a record that moved.
+  const resolvedId = useMemo(() => resolveOrganizationRedirect(decodedId), [decodedId])
+  const organization = index.byId.get(resolvedId) ?? null
+  const employer = index.employersByOrg.get(resolvedId)
   const contactsUrl = employer ? contactDirectoryUrlForEmployer(employer) : null
   const contactsCount = employer?.professionalSources.find((source) => source.dataset === 'contacts')?.count ?? 0
 
@@ -46,7 +49,7 @@ export function OrganizationPage() {
 
   const fromNode = searchParams.get('from')
   const dossier = useMemo(
-    () => (organization || employer ? companyDossier(index, decodedId) : null),
+    () => (organization || employer ? companyDossier(index, resolvedId) : null),
     [index, decodedId, organization, employer],
   )
 

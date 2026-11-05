@@ -142,7 +142,10 @@ test('scenario C: mandatory commodity trading exposure outranks scale', () => {
   assert.equal(nwk!.tier, 1, `a grain trader with evidenced commodity trading must be tier 1, got ${nwk!.tier}`)
   assert.ok(nwk!.rules.some((rule) => rule.rule === 'R2-mandatory-capability'))
 
-  const shoprite = matchFor(discovery.matches, 'org-shoprite-holdings')
+  // The register merged the duplicate 'org-shoprite-holdings' record into
+  // 'org-shoprite'; the redirect map keeps the old id resolvable (see
+  // markets/organizations/identity-redirects.json).
+  const shoprite = matchFor(discovery.matches, 'org-shoprite')
   const tiger = matchFor(discovery.matches, 'org-tiger-brands')
   assert.ok(shoprite && tiger)
   assert.ok(shoprite!.tier > nwk!.tier,

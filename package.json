@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate:data && npm run validate:contacts && npm run validate:contact-employers && npm run validate:organizations && npm run validate:taxonomy && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "build": "npm run validate:data && npm run validate:contacts && npm run validate:contact-employers && npm run validate:organizations && npm run validate:taxonomy && npm run atlas:coverage && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
     "deploy": "npx wrangler pages deploy dist --project-name maps",
     "test": "node scripts/run-tests.mjs",
     "validate:data": "node --import tsx scripts/validate-market-data.ts",
@@ -29,7 +29,11 @@
     "contacts:reconcile": "node --import tsx scripts/build-contact-employers.ts --write",
     "validate:contact-employers": "node --import tsx scripts/build-contact-employers.ts",
     "accountants:casa-export": "node --import tsx scripts/export-casa-inventory.ts",
-    "accountants:casa-reconcile": "node --import tsx scripts/reconcile-casa-roster.ts"
+    "accountants:casa-reconcile": "node --import tsx scripts/reconcile-casa-roster.ts",
+    "atlas:coverage": "node --import tsx scripts/atlas-coverage.ts",
+    "atlas:identity": "node --import tsx scripts/atlas-identity-review.ts",
+    "atlas:merge": "node --import tsx scripts/merge-organizations.ts",
+    "atlas:promote": "node --import tsx scripts/promote-verified.ts"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.3.0",

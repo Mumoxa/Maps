@@ -1,0 +1,29 @@
+{
+  "batch": "batch-16-identity-aliases-2026-11-04.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-11-04T21:09:32.197Z",
+  "type": "companies",
+  "read": 2,
+  "newOrganizations": 0,
+  "updatedOrganizations": 2,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 2,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "verification": {
+    "requested": 0,
+    "granted": 0,
+    "refused": 0,
+    "refusals": []
+  },
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "notes": "Curated ids that were merged into another record. Kept so an old link or an exported dossier still resolves to the surviving company.",
+  "redirects": [
+    {
+      "from": "org-pwc-south-africa",
+      "to": "org-pwc"
+    },
+    {
+      "from": "org-shoprite-holdings",
+      "to": "org-shoprite"
+    },
+    {
+      "from": "org-spar-group",
+      "to": "org-the-spar-group"
+    }
+  ]
+}

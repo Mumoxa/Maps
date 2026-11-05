@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "notes": "Reviewed duplicate-identity decisions for the company register. Each entry merges one curated record into another because they are the same company. A pair that is a group and a separate operating entity must NOT be listed here: record it as a corporate relationship instead. Merges are applied by scripts/merge-organizations.ts and are listed in the review file for the batch that made the decision.",
+  "merges": [
+    {
+      "duplicateId": "org-pwc-south-africa",
+      "survivorId": "org-pwc",
+      "survivorName": "PwC South Africa",
+      "reason": "Both records are PricewaterhouseCoopers South Africa at the same taxonomy node (PRO-ACCT-AUDIT). The roster spells the firm 'PwC South Africa' and the dossier is more useful under the name people search for, so the region-qualified name survives.",
+      "sourceUrl": "https://www.pwc.co.za/en/about-us/offices.html",
+      "evidence": "PwC South Africa's own office directory names the firm as PricewaterhouseCoopers Inc and lists its South African offices, establishing one South African practice rather than two.",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "duplicateId": "org-spar-group",
+      "survivorId": "org-the-spar-group",
+      "survivorName": "The SPAR Group",
+      "reason": "Both records describe the same grocery group. The surviving record carries the taxonomy placement and the company's own about page, so it is the better-evidenced record.",
+      "sourceUrl": "https://thespargroup.com/about-us/",
+      "evidence": "The SPAR Group's own site describes the group as a wholesaler and distributor to independently owned SPAR stores, which is the same business the duplicate record described.",
+      "reviewedOn": "2026-11-04"
+    },
+    {
+      "duplicateId": "org-shoprite-holdings",
+      "survivorId": "org-shoprite",
+      "survivorName": "Shoprite Holdings",
+      "reason": "The register held 'Shoprite' and 'Shoprite Holdings' as two companies. They are one JSE-listed group; the holding company name is the correct identity, and the surviving record gains the duplicate's people, location and headcount.",
+      "sourceUrl": "https://www.shopriteholdings.co.za/group.html",
+      "evidence": "Shoprite Holdings' own group page is the corporate identity behind the retail brand, so the brand record and the holding-company record are one entity.",
+      "reviewedOn": "2026-11-04"
+    }
+  ]
+}

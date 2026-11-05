@@ -310,7 +310,7 @@ export interface CompanyProfile {
   regulatory: RegulatoryProfile
   geography: GeographicAnchor
   taxonomy: TaxonomyPlacement
-  status: 'verified' | 'needs-verification'
+  status: 'verified' | 'listed-only' | 'needs-verification'
   lastVerified: string
   /** True for records that exist to demonstrate the schema, not to assert a real company. */
   illustrativeRecord: boolean

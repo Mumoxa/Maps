@@ -16,6 +16,14 @@ import { coverageByIndustry, universeStats } from './analysis'
 import { runQualityChecks } from './quality'
 import { organizations, industries, capabilities, pockets } from './load'
 import { organizationTaxonomy } from './taxonomyPlacement'
+import {
+  STALE_AFTER_DAYS,
+  missingStandardFields,
+  standardChecks,
+  listingGate,
+  verificationGate,
+} from './verification'
+import { classifyFootprint, isEstablishedBand } from './footprint'
 import { getTaxonomyNode } from '../taxonomy/load'
 import type {
   AssociationFilters,
@@ -102,21 +110,48 @@ export function companyDossier(index: OrganizationIndex, organizationId: string)
     .map((id) => index.byId.get(id))
     .filter((entry): entry is Organization => Boolean(entry))
 
+  // Gaps are read from the shared dossier standard, not restated here: the page,
+  // the coverage ledger and the importer's verification gate must not be able to
+  // disagree about what a company is missing.
+  const checks = standardChecks({
+    organization,
+    hasPlacement: organizationTaxonomy(organization).entries.length > 0,
+    footprintEstablished: isEstablishedBand(classifyFootprint(organization).band),
+    hasRelationship: Boolean(index.relationshipsByOrg.get(organizationId)?.length),
+    today: new Date().toISOString().slice(0, 10),
+  })
   const gaps: string[] = []
-  if (organization.status !== 'verified') gaps.push('Identity pending verification.')
-  if (organization.industries.length === 0) gaps.push('No industry classification recorded.')
-  if (organization.capabilities.filter((link) => link.status === 'observed').length === 0) {
-    gaps.push('No operating capability evidenced; associations will rest on industry only.')
+  if (organization.status === 'listed-only') {
+    // Say exactly who vouched for this company, so the reader is never left to
+    // assume the company described itself.
+    const listing = listingGate(organization)
+    gaps.push(listing.eligible
+      ? 'Listed only: a directory, register or member listing confirms this is a real company, but nothing published on its own domain has been read yet.'
+      : `Listed only, with weaker evidence than that state should carry: ${listing.reasons.join('; ')}.`)
+  } else if (organization.status !== 'verified') {
+    const gate = verificationGate({
+      organization,
+      hasPlacement: organization.industries.length > 0 || Boolean(organization.taxonomy),
+    })
+    gaps.push(gate.eligible
+      ? 'Identity verified on its evidence, but the register status has not been promoted yet.'
+      : `Identity pending verification: ${gate.reasons.join('; ')}.`)
+  }
+  for (const field of missingStandardFields(checks)) {
+    // Identity and verification are reported above; the rest are dossier gaps.
+    if (field.key === 'identityNamed' || field.key === 'website' || field.key === 'located'
+      || field.key === 'classified' || field.key === 'sourced') continue
+    gaps.push(`${field.label} not established: ${field.rationale}`)
   }
   for (const link of organization.capabilities) {
     if (link.status === 'unknown') {
       gaps.push(`Capability "${index.capabilityById.get(link.capabilityId)?.name ?? link.capabilityId}" has never been checked.`)
     }
   }
-  if (organization.locations.length === 0) gaps.push('No sourced South African location.')
-  if (organization.scale.length === 0) gaps.push('No sourced scale measure (headcount, revenue, sites).')
   if (!employer || employer.professionals === 0) gaps.push('No professionals mapped at this company yet.')
-  if (organization.website === '') gaps.push('Website not established from the sources read.')
+  if (!checks.fresh) {
+    gaps.push(`Verification is older than ${STALE_AFTER_DAYS} days, so this record is presented as a record rather than as current.`)
+  }
 
   return {
     identity: {
