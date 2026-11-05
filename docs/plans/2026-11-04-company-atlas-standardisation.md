@@ -95,7 +95,9 @@ Status as of 4 November 2026. Measured with `npm run atlas:coverage` after every
 | 17 | Alias resolution: Deloitte, Peninsula Beverages, Scatec, Macsteel, Pepkor | **done** |
 | 18 | Automotive: BMW Group South Africa | **done** |
 | 19 | Nampak taxonomy: adds `MFG-METAL-PACK` to the sector tree | **done** |
-| 20 | Dataset-only employer names, highest people count first | next |
+| 20 | Employer spelling variants folded onto the companies they belong to | **done** |
+| 21 | BMW IT Hub aliases; a headcount the source gives two ways | **done** |
+| 22 | Dataset-only employer names that are genuinely uncurated companies | next |
 
 Every batch from 09 to 19 has a review document beside its JSONL drop in
 `markets/organizations/research/atlas/`, recording what changed, the source basis, and the
@@ -112,9 +114,9 @@ Latest column measured with `npm run atlas:coverage` on 5 November 2026, after b
 
 | Measure | Before | Latest |
 | --- | ---: | ---: |
-| Universe (organisations shown) | 2,407 | 2,379 |
+| Universe (organisations shown) | 2,407 | 2,368 |
 | Curated register | 632 | 629 |
-| Dataset-only employers | 1,759 | 1,750 |
+| Dataset-only employers | 1,759 | 1,739 |
 | Verified | 131 | **148** |
 | Listed-only | — | 342 |
 | Needs verification | — | 1,889 |
