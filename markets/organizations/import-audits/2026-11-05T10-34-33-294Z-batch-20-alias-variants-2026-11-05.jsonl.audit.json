@@ -1,0 +1,29 @@
+{
+  "batch": "batch-20-alias-variants-2026-11-05.jsonl",
+  "format": "jsonl",
+  "importedOn": "2026-11-05T10:34:33.294Z",
+  "type": "companies",
+  "read": 6,
+  "newOrganizations": 0,
+  "updatedOrganizations": 6,
+  "newRelationships": 0,
+  "newAssociations": 0,
+  "newIntelligence": 0,
+  "existingRelationships": 0,
+  "matchedRows": 6,
+  "unmatchedNames": [],
+  "duplicates": [],
+  "conflicts": [],
+  "missingRequired": [],
+  "issues": [],
+  "verification": {
+    "requested": 0,
+    "granted": 0,
+    "refused": 0,
+    "refusals": []
+  },
+  "qualityAfterCommit": {
+    "errors": 0,
+    "warnings": 2
+  }
+}

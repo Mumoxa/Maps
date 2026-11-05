@@ -8,9 +8,9 @@
     "distinctEmployerNames": 1743,
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 178,
-    "distinctOrganizationEntries": 1694,
-    "curatedCompanyMatches": 439,
-    "unverifiedDatasetOnly": 1255
+    "distinctOrganizationEntries": 1689,
+    "curatedCompanyMatches": 442,
+    "unverifiedDatasetOnly": 1247
   },
   "employers": [
     {
@@ -4973,14 +4973,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:kpmg",
-      "name": "KPMG",
-      "contactCount": 4,
-      "sourceNames": [
-        "KPMG"
-      ]
-    },
-    {
       "organizationId": "org-dataset:kpmg matchi",
       "name": "KPMG Matchi",
       "contactCount": 1,
@@ -5925,14 +5917,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:mulilo",
-      "name": "Mulilo",
-      "contactCount": 1,
-      "sourceNames": [
-        "Mulilo"
-      ]
-    },
-    {
       "organizationId": "org-dataset:multisaas business systems",
       "name": "Multisaas Business Systems",
       "contactCount": 1,
@@ -6293,27 +6277,11 @@
       ]
     },
     {
-      "organizationId": "org-dataset:ntt",
-      "name": "NTT",
-      "contactCount": 4,
-      "sourceNames": [
-        "NTT"
-      ]
-    },
-    {
       "organizationId": "org-dataset:ntt data business solutions",
       "name": "NTT DATA Business Solutions",
       "contactCount": 1,
       "sourceNames": [
         "NTT DATA Business Solutions"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:ntt data middle east and africa",
-      "name": "NTT DATA Middle East and Africa",
-      "contactCount": 5,
-      "sourceNames": [
-        "NTT DATA Middle East and Africa"
       ]
     },
     {
@@ -7146,14 +7114,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Push Security"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:pwc",
-      "name": "PwC",
-      "contactCount": 25,
-      "sourceNames": [
-        "PwC"
       ]
     },
     {
@@ -8002,25 +7962,6 @@
       "contactCount": 1,
       "sourceNames": [
         "Shock EO Systems"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:shoprite",
-      "name": "Shoprite",
-      "contactCount": 64,
-      "sourceNames": [
-        "Shoprite Checkers Group",
-        "Shoprite Financial Services",
-        "ShopriteX",
-        "The Shoprite Group of Companies"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:shoprite checkers",
-      "name": "Shoprite Checkers",
-      "contactCount": 1,
-      "sourceNames": [
-        "Shoprite Checkers (Pty) Ltd"
       ]
     },
     {
@@ -9226,14 +9167,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:tronox",
-      "name": "Tronox",
-      "contactCount": 2,
-      "sourceNames": [
-        "Tronox"
-      ]
-    },
-    {
       "organizationId": "org-dataset:troop",
       "name": "TROOP",
       "contactCount": 1,
@@ -10410,8 +10343,9 @@
     {
       "organizationId": "org-kpmg-south-africa",
       "name": "KPMG South Africa",
-      "contactCount": 23,
+      "contactCount": 27,
       "sourceNames": [
+        "KPMG",
         "KPMG South Africa"
       ]
     },
@@ -13261,6 +13195,14 @@
       ]
     },
     {
+      "organizationId": "org-mulilo",
+      "name": "Mulilo Energy",
+      "contactCount": 1,
+      "sourceNames": [
+        "Mulilo"
+      ]
+    },
+    {
       "organizationId": "org-multichoice",
       "name": "MultiChoice",
       "contactCount": 21,
@@ -13296,8 +13238,10 @@
     {
       "organizationId": "org-ntt-data",
       "name": "NTT DATA",
-      "contactCount": 30,
+      "contactCount": 37,
       "sourceNames": [
+        "NTT",
+        "NTT DATA Middle East and Africa",
         "NTT DATA, Inc",
         "NTT DATA, Inc."
       ]
@@ -13390,8 +13334,9 @@
     {
       "organizationId": "org-pwc",
       "name": "PwC South Africa",
-      "contactCount": 84,
+      "contactCount": 100,
       "sourceNames": [
+        "PwC",
         "PwC South Africa"
       ]
     },
@@ -13453,6 +13398,18 @@
       "contactCount": 2,
       "sourceNames": [
         "Senwes"
+      ]
+    },
+    {
+      "organizationId": "org-shoprite",
+      "name": "Shoprite Holdings",
+      "contactCount": 65,
+      "sourceNames": [
+        "Shoprite Checkers (Pty) Ltd",
+        "Shoprite Checkers Group",
+        "Shoprite Financial Services",
+        "ShopriteX",
+        "The Shoprite Group of Companies"
       ]
     },
     {
@@ -13536,6 +13493,14 @@
       "contactCount": 10,
       "sourceNames": [
         "TransUnion"
+      ]
+    },
+    {
+      "organizationId": "org-tronox-namakwa-sands",
+      "name": "Tronox Namakwa Sands",
+      "contactCount": 2,
+      "sourceNames": [
+        "Tronox"
       ]
     },
     {

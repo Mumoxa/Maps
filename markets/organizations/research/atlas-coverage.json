@@ -1,5 +1,5 @@
 {
-  "generatedOn": "2026-11-04",
+  "generatedOn": "2026-11-05",
   "standard": {
     "staleAfterDays": 180,
     "fields": [
@@ -74,9 +74,9 @@
     "total": 2379,
     "curated": 629,
     "datasetOnly": 1750,
-    "verified": 147,
+    "verified": 148,
     "listedOnly": 342,
-    "needsVerification": 1890,
+    "needsVerification": 1889,
     "withMappedProfessionals": 2250,
     "meetingEveryStandardField": 5
   },
@@ -103,9 +103,9 @@
       "key": "legalName",
       "label": "Legal entity name",
       "rationale": "Separates the trading brand from the registered entity.",
-      "covered": 395,
+      "covered": 396,
       "total": 2379,
-      "shortfall": 1984,
+      "shortfall": 1983,
       "percentage": 16.6
     },
     {
@@ -157,28 +157,28 @@
       "key": "located",
       "label": "Sourced operating location",
       "rationale": "Province is the recruiter’s first geographic filter.",
-      "covered": 227,
+      "covered": 228,
       "total": 2379,
-      "shortfall": 2152,
-      "percentage": 9.5
+      "shortfall": 2151,
+      "percentage": 9.6
     },
     {
       "key": "scale",
       "label": "Sourced scale measure",
       "rationale": "Headcount, revenue or sites, verbatim and dated.",
-      "covered": 152,
+      "covered": 153,
       "total": 2379,
-      "shortfall": 2227,
+      "shortfall": 2226,
       "percentage": 6.4
     },
     {
       "key": "footprint",
       "label": "Established footprint band",
       "rationale": "Lets an industry be read by company size without inventing one.",
-      "covered": 141,
+      "covered": 142,
       "total": 2379,
-      "shortfall": 2238,
-      "percentage": 5.9
+      "shortfall": 2237,
+      "percentage": 6
     },
     {
       "key": "capabilities",
@@ -330,12 +330,12 @@
     "accounting-finance": {
       "organizations": 649,
       "fullyCovered": 2,
-      "professionals": 3948
+      "professionals": 3947
     },
     "contacts": {
       "organizations": 1694,
       "fullyCovered": 1,
-      "professionals": 5976
+      "professionals": 5975
     },
     "import": {
       "organizations": 1,
@@ -349,20 +349,6 @@
     }
   },
   "queue": [
-    {
-      "id": "org-bmw-group",
-      "name": "BMW Group",
-      "curated": true,
-      "professionals": 70,
-      "missing": [
-        "legalName",
-        "located",
-        "scale",
-        "footprint",
-        "capabilities",
-        "relationships"
-      ]
-    },
     {
       "id": "org-nedbank",
       "name": "Nedbank",
@@ -392,7 +378,7 @@
       "id": "org-deloitte",
       "name": "Deloitte",
       "curated": true,
-      "professionals": 87,
+      "professionals": 86,
       "missing": [
         "scale",
         "footprint",
@@ -465,6 +451,16 @@
       "professionals": 121,
       "missing": [
         "aliases",
+        "capabilities",
+        "relationships"
+      ]
+    },
+    {
+      "id": "org-bmw-group",
+      "name": "BMW Group",
+      "curated": true,
+      "professionals": 70,
+      "missing": [
         "capabilities",
         "relationships"
       ]

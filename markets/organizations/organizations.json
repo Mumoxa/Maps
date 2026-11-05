@@ -8424,7 +8424,10 @@
     "id": "org-kpmg-south-africa",
     "name": "KPMG South Africa",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "KPMG",
+      "KPMG (South Africa)"
+    ],
     "website": "https://assets.kpmg.com/",
     "status": "needs-verification",
     "industries": [],
@@ -8451,13 +8454,21 @@
         "checkedOn": "2026-10-16",
         "reviewer": "",
         "confidence": "confirmed"
+      },
+      {
+        "url": "https://kpmg.com/za/en/home.html",
+        "type": "company-website",
+        "evidence": "KPMG's South African practice publishes on kpmg.com/za and names itself KPMG South Africa.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://assets.kpmg.com/content/dam/kpmgsites/za/pdf/2026/06/Transparency%20Report%20FY25_.pdf); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://assets.kpmg.com/content/dam/kpmgsites/za/pdf/2026/06/Transparency%20Report%20FY25_.pdf); no field value was rewritten.\nThe roster's bare 'KPMG' spelling is an alias of KPMG South Africa. 4 people sat on it while 23 sat on the longer spelling; they are the same practice."
   },
   {
     "id": "org-kuehne-nagel-sa",
@@ -10323,8 +10334,11 @@
     "id": "org-mulilo",
     "name": "Mulilo Energy",
     "legalName": "",
-    "aliases": [],
-    "website": "http://www.mulilo.com",
+    "aliases": [
+      "Mulilo",
+      "Mulilo Renewable Energy"
+    ],
+    "website": "https://www.mulilo.com/",
     "status": "needs-verification",
     "industries": [
       {
@@ -10413,13 +10427,21 @@
         "checkedOn": "2026-10-08",
         "reviewer": "",
         "confidence": "probable"
+      },
+      {
+        "url": "https://www.mulilo.com/",
+        "type": "company-website",
+        "evidence": "Mulilo's own site states that Mulilo is a renewable energy developer and independent power producer developing, owning and operating utility-scale solar, wind and battery energy storage in South Africa.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "organizations"
     ],
-    "lastVerified": "2026-10-08",
-    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved."
+    "lastVerified": "2026-11-04",
+    "notes": "Demoted from verified on 2026-11-04: the verification gate now requires the recorded website to be confirmed by a company-website or corporate-disclosure source on the company's own domain. This record's evidence does not meet that bar - the recorded website is not backed by a company-website or corporate-disclosure source on that domain. The facts already recorded are unchanged; only the status moved.\nThe website was corrected from a LinkedIn company page to mulilo.com, the company's own domain. The roster's bare 'Mulilo' is an alias. Mulilo's own page also states that Copenhagen Infrastructure Partners acquired a majority shareholding in 2023, which is recorded here as an ownership fact rather than as a corporate relationship entry, because no subsidiary structure is being claimed."
   },
   {
     "id": "org-multichoice",
@@ -11045,7 +11067,11 @@
     "id": "org-ntt-data",
     "name": "NTT DATA",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "NTT",
+      "NTT Data",
+      "NTT DATA Middle East and Africa"
+    ],
     "website": "https://services.global.ntt/",
     "status": "needs-verification",
     "industries": [],
@@ -11066,9 +11092,9 @@
     "sources": [
       {
         "url": "https://services.global.ntt/en-us/",
-        "type": "recruiter-supplied",
-        "evidence": "Global systems integration and managed services firm with an SA data-centre footprint.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "Global systems integration and managed services firm with an SA data-centre footprint. | NTT DATA's own group site presents the business as NTT DATA, and the roster's 'NTT' and 'NTT DATA Middle East and Africa' are its regional and abbreviated spellings.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -11076,8 +11102,8 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://services.global.ntt/en-us/); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://services.global.ntt/en-us/); no field value was rewritten.\nThe roster uses 'NTT DATA', 'NTT' and 'NTT DATA Middle East and Africa' for the same people. The Middle East and Africa region is part of the same business rather than a separately registered South African company on the evidence read so far, so it is aliased rather than given its own record. No parent relationship is asserted beyond the name."
   },
   {
     "id": "org-nutri-feeds",
@@ -12740,7 +12766,11 @@
     "id": "org-pwc",
     "name": "PwC South Africa",
     "legalName": "PricewaterhouseCoopers Inc",
-    "aliases": [],
+    "aliases": [
+      "PwC",
+      "PricewaterhouseCoopers",
+      "PwC South Africa"
+    ],
     "website": "https://www.pwc.com/",
     "status": "verified",
     "industries": [],
@@ -12801,13 +12831,21 @@
         "checkedOn": "2026-11-04",
         "confidence": "confirmed",
         "reviewer": ""
+      },
+      {
+        "url": "https://www.pwc.co.za/en.html",
+        "type": "company-website",
+        "evidence": "PwC's South African site publishes at pwc.co.za and brands the firm as PwC, and the record's legal name is PricewaterhouseCoopers Inc.",
+        "checkedOn": "2026-11-04",
+        "reviewer": "",
+        "confidence": "confirmed"
       }
     ],
     "datasets": [
       "import"
     ],
     "lastVerified": "2026-11-04",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/na/en/about-us/african-footprint.html); no field value was rewritten.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/za); no field value was rewritten.\nMerged duplicate record \"PwC South Africa\" (org-pwc-south-africa) on 2026-11-04: Both records are PricewaterhouseCoopers South Africa at the same taxonomy node (PRO-ACCT-AUDIT). The roster spells the firm 'PwC South Africa' and the dossier is more useful under the name people search for, so the region-qualified name survives.\nPwC's South African practice lists fourteen offices on its own site. Lichtenburg is marked a satellite office. This is an operating-site count for the South African practice, not a firm-wide or global figure.",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/na/en/about-us/african-footprint.html); no field value was rewritten.\nWebsite set on 2026-11-04 to the corporate URL this record already cites (https://www.pwc.com/za); no field value was rewritten.\nMerged duplicate record \"PwC South Africa\" (org-pwc-south-africa) on 2026-11-04: Both records are PricewaterhouseCoopers South Africa at the same taxonomy node (PRO-ACCT-AUDIT). The roster spells the firm 'PwC South Africa' and the dossier is more useful under the name people search for, so the region-qualified name survives.\nPwC's South African practice lists fourteen offices on its own site. Lichtenburg is marked a satellite office. This is an operating-site count for the South African practice, not a firm-wide or global figure.\nThe roster's bare 'PwC' spelling is an alias of the one South African firm, not a second employer. 25 people sat on it while 84 sat on 'PwC South Africa', which made one firm look like two. The firm's legal name is already recorded as PricewaterhouseCoopers Inc.",
     "directoryEntries": []
   },
   {
@@ -14647,7 +14685,13 @@
     "id": "org-shoprite",
     "name": "Shoprite Holdings",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Shoprite",
+      "Shoprite Checkers",
+      "Shoprite Group",
+      "The Shoprite Group of Companies",
+      "Shoprite Checkers Group"
+    ],
     "website": "https://www.shopriteholdings.co.za/",
     "status": "verified",
     "industries": [
@@ -14734,9 +14778,9 @@
     "sources": [
       {
         "url": "https://www.shopriteholdings.co.za/group.html",
-        "type": "recruiter-supplied",
-        "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "Shoprite Holdings describes the group as Africa's largest FMCG retailer, whose core business is food retailing through supermarket brands including Checkers and Usave. | Shoprite Holdings' own group page describes the group's operations, and the register's own name for the company is Shoprite Holdings.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       },
@@ -14776,8 +14820,8 @@
       "import",
       "organizations"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.shopriteholdings.co.za/group.html); no field value was rewritten.\nMerged duplicate record \"Shoprite Holdings\" (org-shoprite-holdings) on 2026-11-04: The register held 'Shoprite' and 'Shoprite Holdings' as two companies. They are one JSE-listed group; the holding company name is the correct identity, and the surviving record gains the duplicate's people, location and headcount.",
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.shopriteholdings.co.za/group.html); no field value was rewritten.\nMerged duplicate record \"Shoprite Holdings\" (org-shoprite-holdings) on 2026-11-04: The register held 'Shoprite' and 'Shoprite Holdings' as two companies. They are one JSE-listed group; the holding company name is the correct identity, and the surviving record gains the duplicate's people, location and headcount.\nThe contact roster writes this employer as Shoprite, Shoprite Checkers Group, Shoprite Financial Services, ShopriteX and The Shoprite Group of Companies. All are the one listed group and are recorded as aliases, so the 64 people on the bare 'Shoprite' spelling appear under the company instead of on an unclaimed employer string. Shoprite Financial Services and ShopriteX are divisions of the group, not separate companies, and are aliased here rather than given their own records. If either is later shown to be a separate legal entity it should become its own record with a corporate relationship.",
     "directoryEntries": []
   },
   {
@@ -16582,7 +16626,10 @@
     "id": "org-tronox-namakwa-sands",
     "name": "Tronox Namakwa Sands",
     "legalName": "",
-    "aliases": [],
+    "aliases": [
+      "Tronox",
+      "Tronox Holdings"
+    ],
     "website": "https://www.tronox.com/",
     "status": "needs-verification",
     "industries": [],
@@ -16603,9 +16650,9 @@
     "sources": [
       {
         "url": "https://www.tronox.com/namakwa-sands-south-africa/",
-        "type": "recruiter-supplied",
-        "evidence": "Tronox's Namakwa Sands operations on the West Coast of South Africa mine and beneficiate heavy minerals to produce titanium dioxide feedstock, zircon, rutile and pig iron.",
-        "checkedOn": "2026-10-16",
+        "type": "company-website",
+        "evidence": "Tronox's Namakwa Sands operations on the West Coast of South Africa mine and beneficiate heavy minerals to produce titanium dioxide feedstock, zircon, rutile and pig iron. | Tronox's own site describes its Namakwa Sands operation in South Africa, and Tronox is the group whose name the roster's bare 'Tronox' spelling carries.",
+        "checkedOn": "2026-11-04",
         "reviewer": "",
         "confidence": "confirmed"
       }
@@ -16613,8 +16660,8 @@
     "datasets": [
       "import"
     ],
-    "lastVerified": "2026-10-16",
-    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.tronox.com/namakwa-sands-south-africa/); no field value was rewritten."
+    "lastVerified": "2026-11-04",
+    "notes": "Website set on 2026-11-04 to the corporate URL this record already cites (https://www.tronox.com/namakwa-sands-south-africa/); no field value was rewritten.\nThe roster's bare 'Tronox' spelling resolves to the Namakwa Sands record rather than to a separate company, because that is the only South African Tronox operation in the register and leaving 2 people on an unclaimed string tells a recruiter nothing. This is a judgement, not a sourced fact: if a second South African Tronox operation is later recorded, the bare spelling must be split and this alias removed."
   },
   {
     "id": "org-true-group",

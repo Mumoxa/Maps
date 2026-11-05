@@ -859,3 +859,44 @@ describe('a batch cannot silently request a field that does not exist', () => {
     assert.equal(updated?.taxonomy?.primaryNode, 'MFG-METAL-PACK')
   })
 })
+
+describe('one company is not split across two employer strings', () => {
+  it('resolves a bare spelling to the curated company that already exists', async () => {
+    const { buildCompanyIntelligence } = await import('../src/data/organizations/universe')
+    const { resolveEmployerOrganizationId } = await import('../src/data/organizations/load')
+    const { index } = buildCompanyIntelligence()
+    // Each pair was a real split: people counted twice for one firm.
+    const cases: [string, string][] = [
+      ['Shoprite', 'org-shoprite'],
+      ['PwC', 'org-pwc'],
+      ['KPMG', 'org-kpmg-south-africa'],
+      ['NTT', 'org-ntt-data'],
+      ['Mulilo', 'org-mulilo'],
+    ]
+    for (const [spelling, expected] of cases) {
+      assert.equal(
+        resolveEmployerOrganizationId(index, spelling),
+        expected,
+        `"${spelling}" must resolve to ${expected}, not to a parallel dataset employer`,
+      )
+    }
+  })
+
+  it('has no employer pointing at a dataset id that has no record behind it', async () => {
+    const { buildCompanyIntelligence, contactDatasetEmployers } = await import('../src/data/organizations/universe')
+    const { index } = buildCompanyIntelligence()
+    const orphans = (contactDatasetEmployers() as { organizationId?: string; name: string; professionals: number }[])
+      .filter((employer) => {
+        const id = employer.organizationId
+        // A dataset-only employer legitimately survives when no curated record matches
+        // it. It is a defect when a curated record exists and the spelling was not
+        // folded onto it - that is one company showing up as two.
+        if (!id?.startsWith('org-dataset:')) return false
+        const key = id.slice('org-dataset:'.length)
+        const curated = index.idByCanonical.get(key) ?? index.idByAlias.get(key)
+        return Boolean(curated)
+      })
+      .map((employer) => employer.name)
+    assert.deepEqual(orphans, [], `these spellings duplicate a curated company: ${orphans.join(', ')}`)
+  })
+})
