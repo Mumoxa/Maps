@@ -9,8 +9,8 @@
     "contactsWithoutEmployer": 0,
     "contactsWithMultipleEmployerNames": 178,
     "distinctOrganizationEntries": 1694,
-    "curatedCompanyMatches": 439,
-    "unverifiedDatasetOnly": 1255
+    "curatedCompanyMatches": 442,
+    "unverifiedDatasetOnly": 1252
   },
   "employers": [
     {
@@ -6413,14 +6413,6 @@
       ]
     },
     {
-      "organizationId": "org-dataset:old mutual alternative investments",
-      "name": "Old Mutual Alternative Investments",
-      "contactCount": 1,
-      "sourceNames": [
-        "Old Mutual Alternative Investments"
-      ]
-    },
-    {
       "organizationId": "org-dataset:old mutual corporate",
       "name": "Old Mutual Corporate",
       "contactCount": 1,
@@ -6442,14 +6434,6 @@
       "contactCount": 7,
       "sourceNames": [
         "Old Mutual iWYZE"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:old mutual property",
-      "name": "Old Mutual Property",
-      "contactCount": 1,
-      "sourceNames": [
-        "Old Mutual Property"
       ]
     },
     {
@@ -9031,14 +9015,6 @@
       "contactCount": 1,
       "sourceNames": [
         "The Virtulab"
-      ]
-    },
-    {
-      "organizationId": "org-dataset:the westin cape town",
-      "name": "The Westin Cape Town",
-      "contactCount": 1,
-      "sourceNames": [
-        "The Westin Cape Town"
       ]
     },
     {
@@ -13324,11 +13300,27 @@
       ]
     },
     {
+      "organizationId": "org-old-mutual-alternative-investments",
+      "name": "Old Mutual Alternative Investments",
+      "contactCount": 1,
+      "sourceNames": [
+        "Old Mutual Alternative Investments"
+      ]
+    },
+    {
       "organizationId": "org-old-mutual-finance",
       "name": "Old Mutual Finance",
       "contactCount": 8,
       "sourceNames": [
         "OLD Mutual Finance"
+      ]
+    },
+    {
+      "organizationId": "org-old-mutual-property",
+      "name": "Old Mutual Property",
+      "contactCount": 1,
+      "sourceNames": [
+        "Old Mutual Property"
       ]
     },
     {
@@ -13520,6 +13512,14 @@
       "contactCount": 15,
       "sourceNames": [
         "The SPAR Group Ltd"
+      ]
+    },
+    {
+      "organizationId": "org-the-westin-cape-town",
+      "name": "The Westin Cape Town",
+      "contactCount": 1,
+      "sourceNames": [
+        "The Westin Cape Town"
       ]
     },
     {
