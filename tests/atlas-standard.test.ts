@@ -710,3 +710,106 @@ describe('listed-only is its own state, not a soft verified', () => {
     assert.equal(updated?.status, 'verified', 'verified is stronger than listed-only and must survive')
   })
 })
+
+describe('a province alone is a complete location', () => {
+  const today = '2026-11-04'
+
+  it('satisfies the located requirement without a city', async () => {
+    const { verificationGate, standardChecks } = await import('../src/data/organizations/verification')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({
+      id: 'org-province-only',
+      name: 'Province Only',
+      website: 'https://province.test/',
+      sources: [{
+        url: 'https://province.test/about',
+        type: 'company-website',
+        evidence: 'The company describes itself.',
+        checkedOn: today,
+      }],
+      locations: [{ city: '', province: 'Western Cape', sourceUrl: 'https://province.test/', checkedOn: today }],
+    })
+    const gate = verificationGate({ organization, hasPlacement: true })
+    assert.equal(gate.eligible, true, gate.reasons.join('; '))
+    const checks = standardChecks({ organization, hasPlacement: true, footprintEstablished: false, hasRelationship: false, today })
+    assert.equal(checks.located, true, 'a sourced province is a located operation')
+  })
+
+  it('records a city-only row without inventing the province', async () => {
+    const { planImport } = await import('../scripts/organizations-import')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({ id: 'org-city-only', name: 'City Only' })
+    const plan = planImport(
+      [{
+        name: 'City Only',
+        city: 'Pretoria',
+        source_url: 'https://directory.test/members/city-only',
+        source_type: 'industry-directory',
+        evidence: 'The listing gives Pretoria as the place of business.',
+        checked_on: today,
+      }],
+      'companies',
+      { industries: [], capabilities: [], organizations: [organization], relationships: [], associations: [], intelligence: [] },
+    )
+    const updated = plan.updatedOrganizations.find((entry) => entry.id === 'org-city-only')
+    assert.deepEqual(
+      updated?.locations.map((location) => ({ city: location.city, province: location.province })),
+      [{ city: 'Pretoria', province: '' }],
+      'the city is kept and the province stays empty rather than being inferred',
+    )
+  })
+
+  it('never stores a city as a province on import', async () => {
+    const { planImport } = await import('../scripts/organizations-import')
+    const { organization: fixture } = await import('./helpers/organizations')
+    const organization = fixture({ id: 'org-lcl-like', name: 'LCL Like' })
+    const plan = planImport(
+      [{
+        name: 'LCL Like',
+        city: 'Lombardy Estate',
+        province: 'Pretoria',
+        source_url: 'https://directory.test/members/lcl',
+        source_type: 'industry-directory',
+        evidence: 'The listing gives Pretoria.',
+        checked_on: today,
+      }],
+      'companies',
+      { industries: [], capabilities: [], organizations: [organization], relationships: [], associations: [], intelligence: [] },
+    )
+    const updated = plan.updatedOrganizations.find((entry) => entry.id === 'org-lcl-like')
+    assert.deepEqual(
+      updated?.locations.map((location) => ({ city: location.city, province: location.province })),
+      [{ city: 'Lombardy Estate', province: '' }],
+      'the district stays the city and the province is not filled from it',
+    )
+  })
+
+  it('rejects a province that is really a city, and warns when a province is missing', async () => {
+    const { runQualityChecks, PROVINCES } = await import('../src/data/organizations/quality')
+    const { organization: fixture } = await import('./helpers/organizations')
+    assert.deepEqual(PROVINCES.length, 9)
+    const wrong = fixture({
+      id: 'org-pretoria',
+      name: 'Pretoria As Province',
+      locations: [{ city: 'Lombardy Estate', province: 'Pretoria', sourceUrl: 'https://x.test/', checkedOn: today }],
+    })
+    const missing = fixture({
+      id: 'org-no-province',
+      name: 'City Without Province',
+      locations: [{ city: 'Cape Town', province: '', sourceUrl: 'https://x.test/', checkedOn: today }],
+    })
+    const issues = runQualityChecks({
+      organizations: [wrong, missing],
+      industries: [],
+      capabilities: [],
+      relationships: [],
+      associations: [],
+      intelligence: [],
+      taxonomyNodeIds: new Set<string>(),
+    })
+    const wrongIssue = issues.find((issue) => issue.organizationId === 'org-pretoria' && issue.code === 'unsupported-location')
+    assert.equal(wrongIssue?.severity, 'warning', 'a city in the province field is reported, not silently accepted')
+    const missingIssue = issues.find((issue) => issue.organizationId === 'org-no-province' && issue.code === 'location-province-unknown')
+    assert.equal(missingIssue?.severity, 'warning', 'a missing province is a research gap, not a failure')
+  })
+})

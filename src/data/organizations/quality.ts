@@ -4,6 +4,8 @@
 // They run in `npm run validate:organizations` (build gate) and in the test
 // suite, and the explorer shows the outstanding warnings next to the record.
 
+import { canonicalCompanyName } from '../companyNormalization'
+
 import type {
   Capability,
   CompanyAssociation,
@@ -13,7 +15,12 @@ import type {
   QualityIssue,
   RecruiterIntelligence,
 } from './types'
-import { canonicalCompanyName } from '../companyNormalization'
+
+/** The nine provinces, and the only values the `province` field may hold. */
+export const PROVINCES = [
+  'Western Cape', 'Gauteng', 'KwaZulu-Natal', 'Eastern Cape', 'Free State',
+  'Limpopo', 'Mpumalanga', 'North West', 'Northern Cape',
+]
 
 export interface QualityInput {
   organizations: Organization[]
@@ -198,6 +205,33 @@ export function runQualityChecks(input: QualityInput): QualityIssue[] {
           severity: 'warning',
           organizationId: organization.id,
           detail: `${organization.name} location "${location.city}, ${location.province}" has no source URL.`,
+        })
+      }
+      // Province is the field every geographic filter relies on, so it must be a
+      // real province. A city or suburb in this field is a precision claim the
+      // source never made: 'Pretoria' is not a province, and storing it here hides
+      // that the province is actually unknown.
+      // Reported rather than failed: some records quote an archived source verbatim
+      // (the MBAWC workbook puts "Pretoria" in its province column), and rewriting
+      // them would break the link back to that source. The importer normalises this
+      // on the way in, so a warning here means an older record needs the same.
+      if (location.province.trim() && !PROVINCES.includes(location.province.trim())) {
+        issues.push({
+          code: 'unsupported-location',
+          severity: 'warning',
+          organizationId: organization.id,
+          detail: `${organization.name} quotes "${location.province}" as a province, but it is a place, not one of the nine provinces; the province is unknown and must not be filtered on as if it were known.`,
+        })
+      }
+      // A city with no province is allowed and expected where the source only names
+      // one. It is reported as a gap so the province can be researched, never
+      // filled in by guessing from the city.
+      if (location.city.trim() && !location.province.trim()) {
+        issues.push({
+          code: 'location-province-unknown',
+          severity: 'warning',
+          organizationId: organization.id,
+          detail: `${organization.name} names city "${location.city}" but no province; province is a research gap, not a value to infer.`,
         })
       }
     }

@@ -635,6 +635,8 @@ export type QualityIssueCode =
   | 'stale-verification'
   | 'scale-without-source'
   | 'unsourced-location'
+  | 'unsupported-location'
+  | 'location-province-unknown'
   | 'unknown-rendered-as-absent'
 
 export interface QualityIssue {

@@ -26,6 +26,7 @@ import type {
 } from '../src/data/organizations/types'
 import { getTaxonomyNode } from '../src/data/taxonomy/load'
 import { listingGate, verificationGate } from '../src/data/organizations/verification'
+import { PROVINCES } from '../src/data/organizations/quality'
 
 export type ImportType =
   | 'companies'
@@ -422,7 +423,9 @@ export function planImport(rows: ImportRow[], type: ImportType, dataset: Dataset
           industries,
           taxonomy,
           capabilities: [],
-          locations: row.province ? [{ city: row.city ?? '', province: row.province, sourceUrl, checkedOn }] : [],
+          locations: (row.province || row.city)
+            ? [{ city: (row.city ?? '').trim(), province: (row.province ?? '').trim(), sourceUrl, checkedOn }]
+            : [],
           scale: scaleEntry ? [scaleEntry] : [],
           parentId: null,
           sources: sourceUrl ? [{
@@ -665,13 +668,31 @@ function mergeIndustryLinks(existing: OrganizationIndustryLink[], incoming: Orga
   return merged
 }
 
+/**
+ * Record a sourced place, at whatever precision the source actually gave.
+ *
+ * A province on its own is a complete answer and the normal case. A city on its
+ * own is also recorded, with the province left empty: the province then shows up
+ * as a research gap, which is honest, whereas inferring it from the city name
+ * would put a guess where every geographic filter reads. Neither field is ever
+ * derived from the other, and a row with neither adds nothing.
+ */
 function mergeLocations(organization: Organization, row: ImportRow, sourceUrl: string, checkedOn: string) {
-  if (!row.province) return organization.locations
+  let province = (row.province ?? '').trim()
+  let city = (row.city ?? '').trim()
+  // Sources routinely put a city in their province column. Store what the source
+  // actually said - the city - and leave the province empty, rather than copying a
+  // city into a field every geographic filter reads as a province.
+  if (province && !PROVINCES.includes(province)) {
+    if (!city) city = province
+    province = ''
+  }
+  if (!province && !city) return organization.locations
   const exists = organization.locations.some((location) => (
-    location.province === row.province && (location.city ?? '') === (row.city ?? '')
+    location.province.trim() === province && (location.city ?? '').trim() === city
   ))
   if (exists) return organization.locations
-  return [...organization.locations, { city: row.city ?? '', province: row.province, sourceUrl, checkedOn }]
+  return [...organization.locations, { city, province, sourceUrl, checkedOn }]
 }
 
 const SOURCE_TYPES = new Set([
