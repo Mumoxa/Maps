@@ -6,6 +6,15 @@ guide is the master reference for adding to it **without breaking the current sy
 (talent pools) and new people inside existing tracks both have a defined, repeatable path into the
 UI.
 
+**Before importing companies or candidates for any new industry/track, perform
+association-first discovery.** Identify the specialist niche, inspect official
+trade bodies, regulators and membership directories, reverse-map member companies,
+reconcile them against canonical employer IDs, record unverified leads separately,
+and add a research-coverage entry for any new track. Follow
+[Industry Body Intelligence](./industry-body-intelligence.md) and run
+`npm run validate:industry-bodies`. A new track without coverage fails CI.
+Association co-membership does not create a Tier 1 recruiting match.
+
 Read this first. It links out to the batch-specific mechanics in
 [`market-data-import-guide.md`](./market-data-import-guide.md).
 

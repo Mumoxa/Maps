@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { Download, FloppyDisk, SlidersHorizontal, Target, X } from '@phosphor-icons/react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { Drawer } from '../components/ui/Drawer'
@@ -227,6 +227,8 @@ export function RecruitmentTargetingPage() {
                 organisations are relevant, with the evidence and the missing evidence behind every
                 recommendation. This is an application of the company intelligence in the Industry
                 Atlas - the brief changes relevance, never the company facts.
+                Before compiling a target list, inspect the <Link to="/industry-bodies">industry-body
+                membership directories</Link> and their research gaps.
               </p>
             </div>
             <div className="page-head-aside">

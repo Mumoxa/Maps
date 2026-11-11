@@ -44,6 +44,34 @@ npm run build    # validate:data + validate:contacts + tsc -b + vite build (+ 40
 
 ---
 
+## Mandatory industry-body-first research gate
+
+Every industry map, executive/specialist search, company-market expansion, new
+market track and company-sourcing assignment **must begin by checking external
+industry associations and their member-company directories**:
+
+**Industry / specialist niche → trade / professional / regulatory bodies →
+source-listed companies → reconciled canonical operators → role-specific
+Tier 1/2/3 target companies → potential candidates.**
+
+Read `docs/industry-body-intelligence.md` and
+`markets/organizations/industry-body-intelligence/` before research or
+shortlisting. Research both company → body and body → every relevant corporate
+member, not only the best-known organisation. Discover related specialist
+bodies, separate operators from suppliers, and preserve source URLs and dates.
+A directory listing is not automatically a verified current membership; a
+regulator is not a trade association; membership is not proof of candidate fit.
+Never confuse curated `markets/organizations/associations.json` (company
+similarity) with membership of external bodies.
+
+Keep unresearched items visibly **Unknown**, maintain `coverage.json` for each
+registered market track, and run `npm run validate:industry-bodies` before
+commit. Every new recruitment brief needs an association-first evidence
+preflight; Tier 1/2/3 are assigned only with a concrete role brief. The repo
+is public: do not commit private recruitment or candidate information.
+
+---
+
 ## Mandatory Rules
 
 These rules apply to every change in this codebase. Violations must be fixed before merge.

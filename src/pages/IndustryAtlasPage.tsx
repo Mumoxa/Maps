@@ -167,6 +167,7 @@ export function IndustryAtlasPage() {
                 privileged here: every organisation, including every client, is an ordinary member of
                 the universe.
               </p>
+              <p><Link to={selectedNodeId ? `/industry-bodies?node=${encodeURIComponent(selectedNodeId)}` : '/industry-bodies'}>Discover trade associations and member-company directories</Link> before creating a recruitment target pool.</p>
             </div>
             <div className="page-head-aside">
               <span className="page-head-meta"><b>{atlas.totals.mappedOrganizations}</b> companies mapped</span>

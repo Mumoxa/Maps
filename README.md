@@ -2,6 +2,17 @@
 
 A React/Vite market-intelligence map site for South African talent ecosystems.
 
+> **Required research foundation:** Every new company map, industry track and
+> recruitment target search starts with specialist industry bodies and their
+> source-verified membership directories, then expands the canonical company
+> universe before role-specific target tiers and candidate identification.
+> See [Industry Body Intelligence](docs/industry-body-intelligence.md),
+> the [industry-bodies workspace](https://maps-4xq.pages.dev/industry-bodies)
+> (available once this feature merges and deploys), and run
+> `npm run validate:industry-bodies`. Existing company-similarity associations
+> are **not** evidence of external organisation membership.
+
+
 ## Current Market Areas
 
 | Market | Website Route | Status | Data Scope |

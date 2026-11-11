@@ -7,6 +7,20 @@ on:
       - main
 
 jobs:
+  industry-body-foundation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run validate:industry-bodies
+      - run: npm run build
+      - run: npm run smoke:routes
+      - run: npm run audit:ui
+
   build:
     runs-on: ubuntu-latest
     steps:

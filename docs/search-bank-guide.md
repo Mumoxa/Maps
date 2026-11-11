@@ -11,6 +11,18 @@ without a search attached.
 
 ---
 
+## Association-first research preflight
+
+Before beginning a new client search or sourcing candidate names, identify the
+specialist industry, search relevant external industry bodies and their
+published member directories, and discover direct operator/producer companies.
+See [industry-body-intelligence.md](./industry-body-intelligence.md) and the
+`/industry-bodies` workspace. Verify company identity before selecting a
+role-specific Tier 1/2/3 target pool. Directory-listed companies are research
+leads, not automatically current members or suitable target employers.
+The bank remains under its existing security hold; this preflight does not
+permit storing confidential client or candidate information in this public repo.
+
 ## 1. Drop candidates in
 
 Open **`/search-bank`** and use the **Drop candidates in** panel at the top. You can:

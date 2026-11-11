@@ -14,6 +14,7 @@ import { IndustryAtlasPage } from './pages/IndustryAtlasPage'
 import { RecruitmentTargetingPage } from './pages/RecruitmentTargetingPage'
 import { CompanyPage } from './pages/CompanyPage'
 import { CompanyAssociationsPage } from './pages/CompanyAssociationsPage'
+import { IndustryBodiesPage } from './pages/IndustryBodiesPage'
 import { ProfileDirectory } from './pages/ProfileDirectory'
 import { ProfilePage } from './pages/ProfilePage'
 import { SalesforcePage } from './pages/SalesforcePage'
@@ -58,6 +59,7 @@ function AppRoutes() {
     // Canonical company intelligence, addressed by the canonical organization id.
     { path: '/organizations/:organizationId', element: <OrganizationPage /> },
     { path: '/company-associations', element: <CompanyAssociationsPage /> },
+    { path: '/industry-bodies', element: <IndustryBodiesPage /> },
     { path: '/recruitment-targeting', element: <RecruitmentTargetingPage /> },
     { path: '/companies/:slug', element: <CompanyPage /> },
     { path: '/profiles', element: <ProfileDirectory /> },

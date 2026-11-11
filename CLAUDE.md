@@ -30,6 +30,21 @@ npm run build    # validate:data + validate:contacts + tsc -b + vite build (+ 40
 
 ---
 
+## Mandatory association-first company discovery
+
+For any market-map, executive search, company discovery, candidate sourcing,
+new track or recruitment assignment, follow the industry-body preflight in
+`docs/industry-body-intelligence.md`. The required chain is specialist niche →
+industry bodies → published member directories → canonical company universe →
+role-specific target tiers → candidates. Reverse-discover missing companies
+from member lists. Do not conflate existing `associations.json` company
+similarities with actual membership, or a regulator with a voluntary trade body.
+Keep directory leads unverified until supported; expose unknown gaps in
+`coverage.json`. Run `npm run validate:industry-bodies` as part of the build.
+This is mandatory even when the task prompt does not explicitly name associations.
+
+---
+
 ## Mandatory Rules
 
 These rules apply to every change in this codebase. Violations must be fixed before merge.

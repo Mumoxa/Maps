@@ -23,10 +23,11 @@ const companyLinks: { to: string; label: string; hint: string; extraPath?: strin
   { to: '/industry-atlas', label: 'Industry Atlas', hint: 'Sectors, sub-industries and company footprint', extraPath: '/' },
   { to: '/companies', label: 'Company universe', hint: 'Every organisation Maps holds' },
   { to: '/company-associations', label: 'Company associations', hint: 'Evidence-backed relationships' },
+  { to: '/industry-bodies', label: 'Industry bodies', hint: 'Trade associations, member directories and research gaps' },
   { to: '/recruitment-targeting', label: 'Recruitment targeting', hint: 'Apply a brief to the universe' },
 ]
 
-const companyPaths = ['/', '/industry-atlas', '/companies', '/organizations', '/company-associations', '/recruitment-targeting']
+const companyPaths = ['/', '/industry-atlas', '/companies', '/organizations', '/company-associations', '/industry-bodies', '/recruitment-targeting']
 
 const creditRiskNavLinks = [
   { to: '/map', label: 'Map' },
