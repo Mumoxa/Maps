@@ -21,7 +21,7 @@ const fixture = () => ({
 test('industry-body records are evidence-backed with explicit research gaps', () => {
   assert.deepEqual(validateIndustryBodyIntelligence(fixture()), [])
   assert.equal(industryBodies.some((body) => body.id === 'body-aspasa'), true)
-  assert.equal(bodyDirectoryLeads.every((lead) => lead.status !== 'confirmed'), true)
+  assert.equal(bodyDirectoryLeads.every((lead) => ['directory-listed', 'historical', 'unverified'].includes(lead.status)), true)
 })
 
 test('adding a new market without association-first coverage fails the gate', () => {
