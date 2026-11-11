@@ -17,6 +17,11 @@
     "membershipBasis": "voluntary",
     "evidenceUrl": "https://aspasa.co.za/about/",
     "checkedOn": "2026-11-11",
-    "notes": "ASPASA describes producer, associate and individual memberships. The institution is not a statutory regulator. Directory-listed companies are kept separately pending company-identity and membership verification."
+    "notes": "ASPASA describes producer, associate and individual memberships. The institution is not a statutory regulator. Directory-listed companies are kept separately pending company-identity and membership verification.",
+    "taxonomyNodeIds": [
+      "MIN-QUARRY",
+      "MIN-QUARRY-AGG",
+      "MIN-QUARRY-SAND"
+    ]
   }
 ]

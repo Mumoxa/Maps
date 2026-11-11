@@ -9,6 +9,7 @@ export interface IndustryBodyQualityInput {
   coverage: IndustryBodyResearchCoverage[]
   organizationIds: ReadonlySet<string>
   industryIds: ReadonlySet<string>
+  taxonomyNodeIds: ReadonlySet<string>
   trackSlugs: ReadonlySet<string>
 }
 
@@ -22,7 +23,8 @@ function validUrl(value: string): boolean {
 }
 function validDate(value: string): boolean {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false
-  return new Date(value).toISOString().slice(0, 10) === value
+  const parsed = new Date(value)
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value
 }
 function uniqueIds(rows: { id: string }[], label: string, errors: string[]): void {
   const seen = new Set<string>()
@@ -45,6 +47,9 @@ export function validateIndustryBodyIntelligence(input: IndustryBodyQualityInput
       errors.push(`body ${body.id}: name, website, evidence URL and checkedOn are required`)
     }
     if (body.membershipDirectoryUrl && !validUrl(body.membershipDirectoryUrl)) errors.push(`body ${body.id}: invalid directory URL`)
+    for (const nodeId of body.taxonomyNodeIds) {
+      if (!input.taxonomyNodeIds.has(nodeId)) errors.push(`body ${body.id}: unknown national taxonomy node ${nodeId}`)
+    }
     for (const industryId of body.industryIds) {
       if (!input.industryIds.has(industryId)) errors.push(`body ${body.id}: unknown sourcing industry ${industryId}`)
     }

@@ -4,6 +4,8 @@ import { industryBodies, companyBodyLinks, bodyDirectoryLeads, bodyResearchCover
 import { validateIndustryBodyIntelligence } from '../src/data/organizations/industryBodiesQuality'
 import { organizations, industries } from '../src/data/organizations/load'
 import { talentTracks } from '../src/data/tracks'
+import { getTaxonomyNodeIds } from '../src/data/taxonomy/load'
+import { readFileSync } from 'node:fs'
 
 const fixture = () => ({
   bodies: industryBodies,
@@ -12,6 +14,7 @@ const fixture = () => ({
   coverage: bodyResearchCoverage,
   organizationIds: new Set(organizations.map((org) => org.id)),
   industryIds: new Set(industries.map((industry) => industry.id)),
+  taxonomyNodeIds: new Set(getTaxonomyNodeIds()),
   trackSlugs: new Set(talentTracks.map((track) => track.slug)),
 })
 
@@ -41,4 +44,21 @@ test('duplicate directory names are rejected within one body', () => {
   const input = fixture()
   input.leads = [...input.leads, { ...input.leads[0], id: 'lead-duplicate' }]
   assert.match(validateIndustryBodyIntelligence(input).join(' '), /duplicate directory name/)
+})
+
+test('national taxonomy anchors are validated before association links are accepted', () => {
+  const input = fixture()
+  input.bodies = [{ ...input.bodies[0], taxonomyNodeIds: ['MIN-NONEXISTENT'] }]
+  assert.match(validateIndustryBodyIntelligence(input).join(' '), /unknown national taxonomy node/)
+})
+
+test('agent entry points include the mandatory association-first preflight', () => {
+  const entries = [
+    'AGENTS.md', 'CLAUDE.md', '.github/copilot-instructions.md',
+    '.claude/agents/TEAM.md', '.claude/skills/repo-guardrails/SKILL.md',
+    'docs/adding-to-the-talent-map.md',
+  ]
+  for (const path of entries) {
+    assert.match(readFileSync(path, 'utf8'), /industry-body-intelligence\.md/, path)
+  }
 })

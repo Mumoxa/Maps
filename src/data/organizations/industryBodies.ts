@@ -21,6 +21,8 @@ export interface IndustryBody {
   specialistNiches: string[]
   /** Existing Maps sourcing-industry ids; empty where the national taxonomy is more precise. */
   industryIds: string[]
+  /** Verified national taxonomy branches represented by the body. */
+  taxonomyNodeIds: string[]
   membershipBasis: 'voluntary' | 'statutory' | 'mixed' | 'not-applicable' | 'unknown'
   evidenceUrl: string
   checkedOn: string

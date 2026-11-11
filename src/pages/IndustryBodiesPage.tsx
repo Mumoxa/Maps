@@ -33,15 +33,19 @@ export function IndustryBodiesPage() {
   const [params, setParams] = useSearchParams()
   const [query, setQuery] = useState('')
   const bodyParam = params.get('body')
-  const selectedBody = industryBodies.filter((body) => body.id === bodyParam)[0] ?? industryBodies[0] ?? null
+  const nodeId = params.get('node') ?? ''
+  const selectedBody = industryBodies.filter((body) => body.id === bodyParam)[0]
+    ?? (nodeId ? industryBodies.filter((body) => body.taxonomyNodeIds.includes(nodeId))[0] : null)
+    ?? industryBodies[0] ?? null
 
   const filteredBodies = useMemo(() => {
     const needle = query.trim().toLowerCase()
     return industryBodies.filter((body) => (
-      !needle || [body.name, body.acronym, body.category, body.jurisdiction, ...body.specialistNiches]
-        .some((part) => part.toLowerCase().includes(needle))
+      (!nodeId || body.taxonomyNodeIds.includes(nodeId)) &&
+      (!needle || [body.name, body.acronym, body.category, body.jurisdiction, ...body.specialistNiches]
+        .some((part) => part.toLowerCase().includes(needle)))
     ))
-  }, [query])
+  }, [query, nodeId])
   const selectedLeads = selectedBody ? bodyDirectoryLeadsByBody.get(selectedBody.id) ?? [] : []
   const selectedLinks = selectedBody ? companyBodyLinks.filter((link) => link.bodyId === selectedBody.id) : []
   const pending = bodyResearchCoverage.filter((record) => record.status !== 'reviewed')
@@ -89,6 +93,7 @@ export function IndustryBodiesPage() {
                 placeholder="e.g. aggregates, ASPASA, mining" />
             </label>
             <p>Unresearched sectors are unknown, not evidence that no association exists.</p>
+            {nodeId && <p>Industry Atlas scope: {nodeId}. <Link to="/industry-bodies">Clear scope</Link></p>}
           </section>
 
           <section aria-labelledby="industry-body-list">
@@ -113,6 +118,9 @@ export function IndustryBodiesPage() {
             <section aria-labelledby="industry-body-detail">
               <h2 id="industry-body-detail">{selectedBody.name}</h2>
               <p>{selectedBody.category} · {selectedBody.jurisdiction} · {selectedBody.membershipBasis} participation</p>
+              <p>{selectedBody.taxonomyNodeIds.map((node) => (
+                <Link key={node} to={`/industry-atlas?node=${encodeURIComponent(node)}`}>{node} (Industry Atlas) </Link>
+              ))}</p>
               <p>{selectedBody.notes}</p>
               <p>
                 <a href={selectedBody.website} target="_blank" rel="noopener noreferrer">Official website</a>

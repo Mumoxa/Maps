@@ -39,8 +39,8 @@ inaccessible directories as pending, not "no members."
 
 The new files under `markets/organizations/industry-body-intelligence/` are:
 
-- `bodies.json`: one row per external body. Body type and member-directory URL are
-  factual institutional attributes.
+- `bodies.json`: one row per external body. Body type, member-directory URL
+  and verified national taxonomy node IDs are factual institutional attributes.
 - `company-links.json`: *only* canonical company-to-body relationships with
   direct evidence, dated observation and explicit company/entity scope. "Member",
   "regulated by", "accredited by" and "affiliated with" are different relationships.
