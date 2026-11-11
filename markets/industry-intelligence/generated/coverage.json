@@ -1,0 +1,37 @@
+{
+  "generatedOn": "2026-11-11",
+  "sourceCompanyUniverse": 2731,
+  "applicationCompanyUniverse": 2475,
+  "additionalSourceOnlyOrganizations": 256,
+  "companiesResearched": 113,
+  "companiesWithConfirmedRelationship": 110,
+  "companiesResearchedWithoutConfirmedRelationship": 3,
+  "companiesPending": 2618,
+  "distinctBodies": 24,
+  "bodiesWithAccessibleDirectories": 18,
+  "associationMemberRows": 657,
+  "distinctAssociationMemberCompanies": 614,
+  "additionalMemberCompaniesDiscovered": 437,
+  "proposedCompanyRecords": 438,
+  "relationshipsByStatus": {
+    "Confirmed": 549,
+    "Historical": 68,
+    "Unverified": 44,
+    "Unknown": 1,
+    "Not applicable": 0
+  },
+  "identityWarnings": [
+    "6 ambiguous additional-source names were not auto-merged.",
+    "Proposed and unresolved directory identities are not canonical Maps organizations and are excluded from application-company coverage numerators.",
+    "Exact normalized source-name matching is not proof of legal identity; parent brands, subsidiaries and trading names require manual review.",
+    "SAIA logo destinations and Minerals Council commodity/business-unit rows can differ from legal names; original directory names are preserved."
+  ],
+  "scopeNotes": [
+    "Application universe reproduced from visibleOrganizations composition: 688 curated plus 1787 dataset-only organizations.",
+    "The expanded source universe additionally reconciles Salesforce, data-science, hackathon, CA Western Cape, accountant-company and property-workspace source names. It is not asserted to exhaust every future or external organization.",
+    "ASPASA operations and associates are Historical because the official artwork is undated and published under a 2025-03 upload path; no current complete ASPASA register was established.",
+    "MBAWC contains 25 new-portal rows only. The separate 346-row legacy search and 120-page 2025 PDF were not fully re-extracted.",
+    "SAPOA contains directory pages 1–5 only. SAFCEC rows are Unverified homepage-logo leads. CESA, DMPR, MHSC, FSCA, CGCSA and SARMA have no imported company rows in this batch.",
+    "Recruitment tiers are brief-specific navigation aids, not universal rankings, candidate-suitability findings or proof of current employment."
+  ]
+}

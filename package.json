@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run validate:data && npm run validate:contacts && npm run validate:contact-employers && npm run validate:organizations && npm run validate:taxonomy && npm run atlas:coverage && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "build": "npm run validate:data && npm run validate:contacts && npm run validate:contact-employers && npm run validate:organizations && npm run intelligence:validate && npm run validate:taxonomy && npm run atlas:coverage && tsc -b && vite build && node -e \"require('node:fs').copyFileSync('dist/index.html','dist/404.html')\"",
     "deploy": "npx wrangler pages deploy dist --project-name maps",
     "test": "node scripts/run-tests.mjs",
     "validate:data": "node --import tsx scripts/validate-market-data.ts",
@@ -33,7 +33,9 @@
     "atlas:coverage": "node --import tsx scripts/atlas-coverage.ts",
     "atlas:identity": "node --import tsx scripts/atlas-identity-review.ts",
     "atlas:merge": "node --import tsx scripts/merge-organizations.ts",
-    "atlas:promote": "node --import tsx scripts/promote-verified.ts"
+    "atlas:promote": "node --import tsx scripts/promote-verified.ts",
+    "intelligence:build": "node --import tsx scripts/build-industry-intelligence.ts",
+    "intelligence:validate": "node --import tsx scripts/validate-industry-intelligence.ts"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.3.0",

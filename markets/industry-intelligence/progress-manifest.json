@@ -1,0 +1,60 @@
+{
+  "generatedOn": "2026-11-11",
+  "status": "verified-partial-coverage",
+  "batches": [
+    {
+      "id": "repository-inventory",
+      "status": "completed-with-documented-source-limits",
+      "records": 2731,
+      "next": "Review additional-source aliases and any market files not composed by visibleOrganizations before calling the source universe exhaustive."
+    },
+    {
+      "id": "aspasa-proof-of-concept",
+      "status": "historical-evidence-complete-current-register-pending",
+      "records": 66,
+      "next": "Obtain and inspect the linked 2026 map or a dated current company register; reconfirm producer, associate and leadership currency."
+    },
+    {
+      "id": "minerals-council",
+      "status": "current-page-imported",
+      "records": 66,
+      "next": "Review legal entities for duplicate business units and associations; do not merge commodity units automatically."
+    },
+    {
+      "id": "financial-directories",
+      "status": "current-pages-imported",
+      "records": 240,
+      "next": "Resolve bank/insurer legal entities and add specific PA/FSCA registers separately from membership."
+    },
+    {
+      "id": "property-directories",
+      "status": "sa-reit-complete-sapoa-partial",
+      "records": 115,
+      "next": "Continue SAPOA at page 6; import SA REIT advisory members as a separate category if required."
+    },
+    {
+      "id": "agribusiness-directories",
+      "status": "current-pages-imported",
+      "records": 114,
+      "next": "Import Agbiz Grain associates separately and reconcile GWK/VKB and other related legal entities."
+    },
+    {
+      "id": "construction-directories",
+      "status": "partial-and-mixed-evidence",
+      "records": 55,
+      "next": "Resolve MBAWC pagination/API or extract the 2025 directory; obtain a row-level SAFCEC register; query current CESA members firm by firm."
+    },
+    {
+      "id": "regulators-and-professional-bodies",
+      "status": "institutional-scope-established-company-links-pending",
+      "records": 0,
+      "next": "Add only company-specific current DMPR, FSCA, PA and certification records. Keep MHSC tripartite representation and IQSA individual membership separate."
+    },
+    {
+      "id": "cgcsa-and-sarma",
+      "status": "no-row-level-current-register-established",
+      "records": 0,
+      "next": "Obtain a current member register or company-specific disclosures. Do not turn CGCSA board employers or old SARMA claims into current membership."
+    }
+  ]
+}
