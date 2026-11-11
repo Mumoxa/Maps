@@ -1,0 +1,68 @@
+[
+  {
+    "id": "lead-aspasa-001",
+    "bodyId": "body-aspasa",
+    "publishedCompanyName": "AFRIMAT",
+    "organizationId": null,
+    "category": "producer-or-operator",
+    "status": "directory-listed",
+    "sourceUrl": "https://aspasa.co.za/?da_image=map",
+    "checkedOn": "2026-11-11",
+    "note": "Named in an ASPASA published regional operating-site map. Whether this is current corporate membership and which legal entity holds it remain unverified; do not infer current membership or Tier 1 sourcing status."
+  },
+  {
+    "id": "lead-aspasa-002",
+    "bodyId": "body-aspasa",
+    "publishedCompanyName": "AFRISAM (PTY) LTD",
+    "organizationId": null,
+    "category": "producer-or-operator",
+    "status": "directory-listed",
+    "sourceUrl": "https://aspasa.co.za/?da_image=map",
+    "checkedOn": "2026-11-11",
+    "note": "Named in an ASPASA published regional operating-site map. Whether this is current corporate membership and which legal entity holds it remain unverified; do not infer current membership or Tier 1 sourcing status."
+  },
+  {
+    "id": "lead-aspasa-003",
+    "bodyId": "body-aspasa",
+    "publishedCompanyName": "PPC AGGREGATE QUARRIES (PTY) LTD",
+    "organizationId": null,
+    "category": "producer-or-operator",
+    "status": "directory-listed",
+    "sourceUrl": "https://aspasa.co.za/?da_image=map",
+    "checkedOn": "2026-11-11",
+    "note": "Named in an ASPASA published regional operating-site map. Whether this is current corporate membership and which legal entity holds it remain unverified; do not infer current membership or Tier 1 sourcing status."
+  },
+  {
+    "id": "lead-aspasa-004",
+    "bodyId": "body-aspasa",
+    "publishedCompanyName": "RAUMIX AGGREGATES (PTY) LTD",
+    "organizationId": null,
+    "category": "producer-or-operator",
+    "status": "directory-listed",
+    "sourceUrl": "https://aspasa.co.za/?da_image=map",
+    "checkedOn": "2026-11-11",
+    "note": "Named in an ASPASA published regional operating-site map. Whether this is current corporate membership and which legal entity holds it remain unverified; do not infer current membership or Tier 1 sourcing status."
+  },
+  {
+    "id": "lead-aspasa-005",
+    "bodyId": "body-aspasa",
+    "publishedCompanyName": "PORTLAND QUARRY (PTY) LTD",
+    "organizationId": null,
+    "category": "producer-or-operator",
+    "status": "directory-listed",
+    "sourceUrl": "https://aspasa.co.za/?da_image=map",
+    "checkedOn": "2026-11-11",
+    "note": "Named in an ASPASA published regional operating-site map. Whether this is current corporate membership and which legal entity holds it remain unverified; do not infer current membership or Tier 1 sourcing status."
+  },
+  {
+    "id": "lead-aspasa-006",
+    "bodyId": "body-aspasa",
+    "publishedCompanyName": "CIOLLI BROS (PTY) LTD",
+    "organizationId": null,
+    "category": "producer-or-operator",
+    "status": "directory-listed",
+    "sourceUrl": "https://aspasa.co.za/?da_image=map",
+    "checkedOn": "2026-11-11",
+    "note": "Named in an ASPASA published regional operating-site map. Whether this is current corporate membership and which legal entity holds it remain unverified; do not infer current membership or Tier 1 sourcing status."
+  }
+]

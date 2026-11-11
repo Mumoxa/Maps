@@ -1,0 +1,77 @@
+[
+  {
+    "scopeType": "market-track",
+    "scopeId": "accounting-finance",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "market-track",
+    "scopeId": "calypso",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "market-track",
+    "scopeId": "credit-risk",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "market-track",
+    "scopeId": "data-science-ml",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "market-track",
+    "scopeId": "hackathons",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "market-track",
+    "scopeId": "murex",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "market-track",
+    "scopeId": "salesforce",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "market-track",
+    "scopeId": "sap-erp",
+    "status": "not-started",
+    "checkedOn": "",
+    "sourceUrls": [],
+    "notes": "Legacy track; no completed industry-body mapping is asserted. Association-first research is required before a new recruitment targeting assignment."
+  },
+  {
+    "scopeType": "specialist-niche",
+    "scopeId": "quarrying-and-aggregates",
+    "status": "in-progress",
+    "checkedOn": "2026-11-11",
+    "sourceUrls": [
+      "https://aspasa.co.za/about/",
+      "https://aspasa.co.za/?da_image=map"
+    ],
+    "notes": "ASPASA identified and initial directory company leads captured; expansion, identity matching and membership verification remain incomplete."
+  }
+]

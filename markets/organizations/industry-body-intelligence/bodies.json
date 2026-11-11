@@ -1,0 +1,22 @@
+[
+  {
+    "id": "body-aspasa",
+    "name": "Aggregate and Sand Producers Association of Southern Africa",
+    "acronym": "ASPASA",
+    "category": "trade-association",
+    "jurisdiction": "South Africa",
+    "website": "https://aspasa.co.za/",
+    "membershipDirectoryUrl": "https://aspasa.co.za/member-list/",
+    "specialistNiches": [
+      "quarrying",
+      "aggregates",
+      "sand production",
+      "small surface mines"
+    ],
+    "industryIds": [],
+    "membershipBasis": "voluntary",
+    "evidenceUrl": "https://aspasa.co.za/about/",
+    "checkedOn": "2026-11-11",
+    "notes": "ASPASA describes producer, associate and individual memberships. The institution is not a statutory regulator. Directory-listed companies are kept separately pending company-identity and membership verification."
+  }
+]
