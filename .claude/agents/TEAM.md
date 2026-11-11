@@ -28,3 +28,13 @@ This pattern fits the repo because the app has one shared user journey, multiple
 - Never expose or imply private candidate data beyond what the product explicitly supports.
 - Record findings as `P0`, `P1`, `P2`, or `P3`.
 - Safe, obvious `P0` and `P1` fixes should be applied immediately after review.
+
+## Mandatory market-mapping preflight (all agents)
+
+Before researching any company market, specialist sourcing assignment, new
+market track or candidate shortlist, read `docs/industry-body-intelligence.md`.
+Start at the specialist niche, discover relevant governing/trade/professional
+bodies and reverse-map their member directories; reconcile companies before
+role-specific tiering or people research. Record source and unknowns.
+The Product Owner, research agent, data reviewer, QA agent and release gate
+must check the `npm run validate:industry-bodies` result.
