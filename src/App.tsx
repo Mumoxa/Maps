@@ -33,6 +33,9 @@ import { LoadingSpinner } from './components/ui/LoadingSpinner'
 const ContactDirectory = lazy(() =>
   import('./pages/ContactDirectory').then(module => ({ default: module.ContactDirectory })),
 )
+const IndustryIntelligencePage = lazy(() =>
+  import('./pages/IndustryIntelligencePage').then(module => ({ default: module.IndustryIntelligencePage })),
+)
 
 function AppRoutes() {
   const element = useRoutes([
@@ -58,6 +61,10 @@ function AppRoutes() {
     // Canonical company intelligence, addressed by the canonical organization id.
     { path: '/organizations/:organizationId', element: <OrganizationPage /> },
     { path: '/company-associations', element: <CompanyAssociationsPage /> },
+    {
+      path: '/industry-bodies',
+      element: <Suspense fallback={<LoadingSpinner size="lg" />}><IndustryIntelligencePage /></Suspense>,
+    },
     { path: '/recruitment-targeting', element: <RecruitmentTargetingPage /> },
     { path: '/companies/:slug', element: <CompanyPage /> },
     { path: '/profiles', element: <ProfileDirectory /> },

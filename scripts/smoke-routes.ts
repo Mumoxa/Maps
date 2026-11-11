@@ -78,6 +78,7 @@ const pageModules: Record<string, [string, string]> = {
   '/segments': ['/src/pages/SegmentDirectory.tsx', 'SegmentDirectory'],
   '/companies': ['/src/pages/CompanyDirectory.tsx', 'CompanyDirectory'],
   '/company-associations': ['/src/pages/CompanyAssociationsPage.tsx', 'CompanyAssociationsPage'],
+  '/industry-bodies?view=networks&network=network-aggregates-saturc': ['/src/pages/IndustryIntelligencePage.tsx', 'IndustryIntelligencePage'],
   '/profiles': ['/src/pages/ProfileDirectory.tsx', 'ProfileDirectory'],
   '/shortlist': ['/src/pages/ShortlistPage.tsx', 'ShortlistPage'],
   '/markets/salesforce': ['/src/pages/SalesforceEcosystemPage.tsx', 'SalesforceEcosystemPage'],
