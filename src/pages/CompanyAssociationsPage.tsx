@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowSquareOut, Download, FloppyDisk, SlidersHorizontal, Users, X } from '@phosphor-icons/react'
 import { Breadcrumb } from '../components/ui/Breadcrumb'
 import { Drawer } from '../components/ui/Drawer'
@@ -19,6 +19,11 @@ import {
   targetDropPayload,
 } from '../data/organizations/workspace'
 import { atlasNodeTitle, isUnclassifiedBranch } from '../data/organizations/atlas'
+import {
+  branchPendingHref,
+  branchProfessionalsHref,
+  companyUniverseHref,
+} from '../data/organizations/links'
 import { filterCompanyViews, viewsAtNode } from '../data/organizations/universeView'
 import { industryAssociations } from '../data/organizations/industryDiscovery'
 import { AssociationGroups } from '../components/atlas/AssociationGroups'
@@ -315,9 +320,17 @@ export function CompanyAssociationsPage() {
               </p>
             </div>
             <div className="page-head-aside">
-              <span className="page-head-meta"><b>{stats.organizations}</b> companies in the register</span>
-              <span className="page-head-meta"><b>{stats.mappedProfessionals}</b> mapped professionals</span>
-              <span className="page-head-meta"><b>{stats.pendingVerification}</b> pending verification</span>
+              <span className="page-head-meta">
+                <Link to={companyUniverseHref({ nodeId })}><b>{stats.organizations}</b> companies in the register</Link>
+              </span>
+              <span className="page-head-meta">
+                {nodeId
+                  ? <Link to={branchProfessionalsHref(nodeId)}><b>{stats.mappedProfessionals}</b> mapped professionals</Link>
+                  : <Link to="/contacts"><b>{stats.mappedProfessionals}</b> mapped professionals</Link>}
+              </span>
+              <span className="page-head-meta">
+                <Link to={branchPendingHref(nodeId)}><b>{stats.pendingVerification}</b> pending verification</Link>
+              </span>
               <span className="page-head-meta">Last research {stats.lastResearchDate || 'not recorded'}</span>
             </div>
           </header>
@@ -474,10 +487,17 @@ export function CompanyAssociationsPage() {
                   </>
                 ) : (
                   <>
-                    <span><b>{scopedFiltered.length}</b> companies in scope</span>
+                    <span>
+                      <Link to={companyUniverseHref({ nodeId })}><b>{scopedFiltered.length}</b> companies in scope</Link>
+                    </span>
                     <span>{associations?.coverage.clusters ?? 0} evidence clusters</span>
                     <span>{associations?.coverage.edges ?? 0} rendered associations</span>
                     <span>{associations?.coverage.withUnknownRelationship ?? 0} with nothing evidenced</span>
+                    {nodeId && (
+                      <span>
+                        <Link to={branchProfessionalsHref(nodeId)}>Open the mapped professionals in this branch</Link>
+                      </span>
+                    )}
                   </>
                 )}
               </div>

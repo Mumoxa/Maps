@@ -38,3 +38,15 @@ export function useData(): DataContextValue {
   if (!ctx) throw new Error('useData must be used within DataProvider')
   return ctx
 }
+
+/**
+ * The loaded dataset when a provider is present, otherwise null.
+ *
+ * The company universe is built from the bundled datasets, so it needs the same
+ * credit-risk employers the directory shows. Data-backed surfaces have always
+ * used it; a route-level test that mounts a page outside the provider must still
+ * be able to build a universe rather than crash, hence the optional read.
+ */
+export function useOptionalData(): DataContextValue | null {
+  return useContext(DataContext)
+}

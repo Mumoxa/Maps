@@ -11,6 +11,13 @@ import { useData } from '../context/DataContext'
 import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
 import { atlasNodeTitle, isUnclassifiedBranch, UNCLASSIFIED_BRANCH_ID } from '../data/organizations/atlas'
 import {
+  branchFootprintHref,
+  branchPendingHref,
+  branchVerifiedHref,
+  branchWithProfessionalsHref,
+  companyUniverseHref,
+} from '../data/organizations/links'
+import {
   companyExportColumns,
   exportCompanyViewsCsv,
   filterCompanyViews,
@@ -157,8 +164,12 @@ export function CompanyDirectory() {
             </div>
             <div className="page-head-aside">
               <span className="page-head-meta"><b>{summary.organizations}</b> in view</span>
-              <span className="page-head-meta"><b>{views.length}</b> in the universe</span>
-              <span className="page-head-meta"><b>{summary.verified}</b> verified</span>
+              <span className="page-head-meta">
+                <Link to={companyUniverseHref()}><b>{views.length}</b> in the universe</Link>
+              </span>
+              <span className="page-head-meta">
+                <Link to={branchVerifiedHref(nodeId)}><b>{summary.verified}</b> verified</Link>
+              </span>
               <span className="page-head-meta"><b>{summary.datasetOnly}</b> dataset-only</span>
             </div>
           </header>
@@ -204,7 +215,7 @@ export function CompanyDirectory() {
                 <option value="credit-risk">Credit risk dataset (track entry point)</option>
                 <option value="accounting-finance">Accounting &amp; finance dataset</option>
                 <option value="search-bank">Search bank dataset</option>
-                <option value="contacts">Contact directory (5,070 contacts)</option>
+                <option value="contacts">Contact directory</option>
               </select>
             </div>
             <button type="button" className="facet-filter-trigger" onClick={() => setFiltersOpen(true)} aria-expanded={filtersOpen} aria-haspopup="dialog">
@@ -242,15 +253,47 @@ export function CompanyDirectory() {
               />
               <h2 className="facet-heading">Coverage of this view</h2>
               <ul className="assoc-coverage-list">
-                <li><span>Verified records</span><span className="assoc-coverage-counts">{summary.verified}</span></li>
-                <li><span>Pending verification</span><span className="assoc-coverage-counts">{summary.pendingVerification}</span></li>
-                <li><span>With mapped professionals</span><span className="assoc-coverage-counts">{summary.withMappedProfessionals}</span></li>
-                <li><span>With a footprint band</span><span className="assoc-coverage-counts">{summary.footprintEstablished}</span></li>
-                <li><span>Not yet classified</span><span className="assoc-coverage-counts">{summary.datasetOnly}</span></li>
+                <li>
+                  <Link to={branchVerifiedHref(nodeId)}>
+                    <span>Verified records</span>
+                    <span className="assoc-coverage-counts">{summary.verified}</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={branchPendingHref(nodeId)}>
+                    <span>Pending verification</span>
+                    <span className="assoc-coverage-counts">{summary.pendingVerification}</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={branchWithProfessionalsHref(nodeId)}>
+                    <span>With mapped professionals</span>
+                    <span className="assoc-coverage-counts">{summary.withMappedProfessionals}</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={branchFootprintHref(nodeId)}>
+                    <span>With a footprint band</span>
+                    <span className="assoc-coverage-counts">{summary.footprintEstablished}</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={companyUniverseHref({ filters: { hasMappedProfessionals: 'no' }, nodeId })}>
+                    <span>With no mapped professional</span>
+                    <span className="assoc-coverage-counts">{summary.organizations - summary.withMappedProfessionals}</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to={companyUniverseHref({ nodeId: UNCLASSIFIED_BRANCH_ID })}>
+                    <span>No national taxonomy placement</span>
+                    <span className="assoc-coverage-counts">{atlas.totals.unclassifiedOrganizations}</span>
+                  </Link>
+                </li>
               </ul>
               <p className="assoc-coverage-note">
-                Mapped coverage only. This is not a claim that every South African company has been
-                identified.
+                Mapped coverage only. {summary.datasetOnly} companies in view are known only from a Maps
+                dataset rather than a curated record. This is not a claim that every South African
+                company has been identified.
               </p>
             </aside>
 

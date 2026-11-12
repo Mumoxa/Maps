@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowSquareOut, Check, Plus } from '@phosphor-icons/react'
+import { atlasBranchHref, companyProfessionalsHref } from '../../data/organizations/links'
 import type { OrganizationIndex } from '../../data/organizations/load'
 import { companyDossier } from '../../data/organizations/query'
 import type { AssociationMatch, AssociationTier, RoleContext } from '../../data/organizations/types'
@@ -77,7 +79,7 @@ export function CompanyInspector({
         </button>
         <button type="button" className="btn btn-ghost btn-sm" onClick={onCompare}>Compare with another company</button>
         <button type="button" className="btn btn-ghost btn-sm" onClick={onRecenter}>Recenter the map here</button>
-        <a className="btn btn-ghost btn-sm" href={`/companies?q=${encodeURIComponent(dossier.identity.name)}`}>Open in company directory</a>
+        <Link className="btn btn-ghost btn-sm" to={`/companies?q=${encodeURIComponent(dossier.identity.name)}`}>Open in company directory</Link>
       </div>
 
       <section className="assoc-section" aria-labelledby="assoc-facts-heading">
@@ -96,7 +98,7 @@ export function CompanyInspector({
               ? <ul className="assoc-taxonomy-paths">
                   {dossier.taxonomy.map((entry) => (
                     <li key={`${entry.industryId}-${entry.path}`}>
-                      {entry.path}
+                      <Link to={atlasBranchHref(entry.nodeId)}>{entry.path}</Link>
                       <span className="assoc-taxonomy-source">
                         {entry.source === 'taxonomy'
                           ? 'directly classified in the national taxonomy'
@@ -240,15 +242,23 @@ export function CompanyInspector({
               <dt>From datasets</dt>
               <dd>{dossier.talent.sources.map((source) => `${source.dataset}: ${source.count}`).join('; ')}</dd>
             </div>
+            <div className="detail-fact">
+              <dt>People list</dt>
+              <dd>
+                <Link to={companyProfessionalsHref(dossier.identity.id)}>
+                  Open the contact-directory list for this company
+                </Link>
+              </dd>
+            </div>
           </dl>
         ) : (
           <p className="assoc-section-note">
             No professional has been mapped at this company yet. The company stays visible so the gap is research work, not a zero.
           </p>
         )}
-        <a className="btn btn-ghost btn-sm" href={`/talent-search?q=${encodeURIComponent(dossier.identity.name)}`}>
+        <Link className="btn btn-ghost btn-sm" to={`/talent-search?q=${encodeURIComponent(dossier.identity.name)}`}>
           Search candidates mentioning {dossier.identity.name}
-        </a>
+        </Link>
       </section>
 
       <section className="assoc-section" aria-labelledby="assoc-sources-heading">

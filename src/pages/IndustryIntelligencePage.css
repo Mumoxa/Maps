@@ -35,6 +35,45 @@
   color: var(--color-text);
 }
 
+.ii-scope-notice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-primary-100);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius);
+  background: var(--color-primary-50);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+.ii-scope-notice p {
+  flex: 1 1 26rem;
+  margin: 0;
+}
+
+.ii-scope-notice strong {
+  color: var(--color-text);
+}
+
+.ii-scope-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  font-weight: 500;
+}
+
+@media (max-width: 40rem) {
+  .ii-scope-notice {
+    padding: var(--space-3) var(--space-4);
+  }
+}
+
 .ii-view-tabs {
   display: flex;
   gap: var(--space-1);
@@ -529,10 +568,26 @@
 }
 
 .ii-metric {
+  display: block;
   padding: var(--space-4);
   border: var(--rule);
   border-radius: var(--radius);
   background: var(--ii-panel);
+  color: inherit;
+  text-decoration: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.ii-metric:hover {
+  border-color: var(--color-primary-300);
+  box-shadow: var(--shadow-xs);
+  color: inherit;
+}
+
+.button.is-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .ii-metric strong {
