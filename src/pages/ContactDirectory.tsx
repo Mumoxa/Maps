@@ -29,6 +29,9 @@ import { canonicalCompanyName } from '../data/companyNormalization'
 import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
 import { resolveEmployerOrganizationId } from '../data/organizations/load'
 import type { OrganizationIndex } from '../data/organizations/load'
+import { atlasNodeTitle, isUnclassifiedBranch } from '../data/organizations/atlas'
+import { contactsInScope, hasProfessionalScope } from '../data/organizations/professionals'
+import { atlasBranchHref, branchCompaniesHref, companyAssociationsHref, companyDossierHref } from '../data/organizations/links'
 import type { Contact, ContactPosition } from '../data/contacts'
 
 const PAGE_SIZE = 48
@@ -350,7 +353,7 @@ function ContactCard({ data, onToggleFacet, companyIndex }: { data: ContactCardD
 
 export function ContactDirectory() {
   const [searchParams, setSearchParams] = useSearchParams()
-  const { index: companyIndex } = useCompanyUniverse()
+  const { index: companyIndex, atlas } = useCompanyUniverse()
   const [query, setQuery] = useState(() => searchParams.get('q') ?? '')
   const [selections, setSelections] = useState<ContactSelections>(() => {
     const fromUrl = readContactSelections(searchParams)
@@ -362,19 +365,61 @@ export function ContactDirectory() {
   const [filtersOpen, setFiltersOpen] = useState(false)
   // Private dataset: keep this route out of search indexes while it is mounted.
   useNoIndex()
-  useEffect(() => { document.title = 'SA Talent Map | Contact Directory' }, [])
-  const facets = useMemo(() => buildContactFacets(contacts), [])
-  const results = useMemo(() => filterContacts(contacts, query, selections), [query, selections])
+
+  // Two scope parameters, both written by the count links elsewhere in the
+  // product: `node` for a national taxonomy branch, `org` for one company.
+  // Neither changes what a person is; they narrow the same directory, so the
+  // number a reader clicked and the list they land on are derived from the same
+  // placement.
+  const nodeParam = searchParams.get('node') ?? ''
+  const nodeId = nodeParam && (atlas.nodes.has(nodeParam) || isUnclassifiedBranch(nodeParam)) ? nodeParam : null
+  const orgParam = searchParams.get('org') ?? ''
+  const organizationId = orgParam && (companyIndex.byId.has(orgParam) || companyIndex.employersByOrg.has(orgParam))
+    ? orgParam
+    : null
+  const scope = useMemo(() => ({ nodeId, organizationId }), [nodeId, organizationId])
+  const scopeActive = hasProfessionalScope(scope)
+  const scopedContacts = useMemo(
+    () => (scopeActive ? contactsInScope(companyIndex, atlas, scope) : contacts),
+    [companyIndex, atlas, scope, scopeActive],
+  )
+  const scopeLabel = organizationId
+    ? companyIndex.byId.get(organizationId)?.name
+      ?? companyIndex.employersByOrg.get(organizationId)?.canonicalName
+      ?? organizationId
+    : nodeId
+      ? atlasNodeTitle(atlas, nodeId)
+      : ''
+
+  useEffect(() => {
+    document.title = scopeLabel ? `SA Talent Map | Mapped professionals in ${scopeLabel}` : 'SA Talent Map | Contact Directory'
+  }, [scopeLabel])
+
+  const facets = useMemo(() => buildContactFacets(scopedContacts), [scopedContacts])
+  const results = useMemo(() => filterContacts(scopedContacts, query, selections), [scopedContacts, query, selections])
   const selectedCount = activeContactFilterCount(selections)
   const visibleContacts = results.slice(0, visibleCount)
 
   useEffect(() => setVisibleCount(PAGE_SIZE), [query, selections])
 
+  // Scope parameters survive every filter change: a facet toggle must not
+  // silently drop the branch or company the reader arrived from.
   useEffect(() => {
     const next = writeContactSelections(new URLSearchParams(), selections)
     if (query.trim()) next.set('q', query)
+    if (nodeId) next.set('node', nodeId)
+    if (organizationId) next.set('org', organizationId)
     setSearchParams(next, { replace: true })
-  }, [query, selections, setSearchParams])
+  }, [query, selections, nodeId, organizationId, setSearchParams])
+
+  const clearScope = useCallback(() => {
+    setSearchParams((previous) => {
+      const next = new URLSearchParams(previous)
+      next.delete('node')
+      next.delete('org')
+      return next
+    }, { replace: true })
+  }, [setSearchParams])
 
   function toggleSelection(key: ContactFacetKey, value: string) {
     setSelections(current => {
@@ -397,19 +442,46 @@ export function ContactDirectory() {
       <div className="container">
         <div className="page-head">
           <div>
-            <h1>Contact directory</h1>
+            <h1>{scopeActive ? `Mapped professionals in ${scopeLabel}` : 'Contact directory'}</h1>
             <p>
-              Every sourced person is retained with their available company, title, sector, location, contact
-              details and source trail. Missing information stays explicitly unfilled.
+              {scopeActive
+                ? 'Every sourced person whose current position resolves to a company inside this scope. The scope comes from the count you opened; it narrows the same directory rather than creating a second one.'
+                : 'Every sourced person is retained with their available company, title, sector, location, contact details and source trail. Missing information stays explicitly unfilled.'}
             </p>
           </div>
           <div className="page-head-aside">
             <div className="contact-stats">
-              <div><strong>{contacts.length.toLocaleString()}</strong><span>unique contacts</span></div>
+              <div><strong>{scopedContacts.length.toLocaleString()}</strong><span>{scopeActive ? 'in this scope' : 'unique contacts'}</span></div>
               <div><strong>{CONTACT_COMPANY_COUNT.toLocaleString()}</strong><span>employer name variants</span></div>
             </div>
           </div>
         </div>
+
+        {scopeActive && (
+          <p className="callout">
+            Scoped to <strong>{scopeLabel}</strong>. {scopedContacts.length.toLocaleString()} mapped professional{scopedContacts.length === 1 ? '' : 's'} hold
+            a sourced position {organizationId ? 'at this company' : 'at a company placed in this branch'}. The rest of the directory is unchanged.{' '}
+            {nodeId && (
+              <>
+                <Link to={atlasBranchHref(nodeId)}>Open the branch in the Industry Atlas</Link>
+                {' · '}
+                <Link to={branchCompaniesHref(nodeId)}>See the companies in this branch</Link>
+                {' · '}
+              </>
+            )}
+            {organizationId && (
+              <>
+                <Link to={companyDossierHref(organizationId)}>Open the company dossier</Link>
+                {' · '}
+                <Link to={companyAssociationsHref(organizationId)}>Company associations</Link>
+                {' · '}
+              </>
+            )}
+            <button type="button" className="assoc-link-button" onClick={clearScope}>
+              Clear scope
+            </button>
+          </p>
+        )}
 
         <div className="contact-toolbar">
           <div className="contact-search">
@@ -515,7 +587,14 @@ export function ContactDirectory() {
                 )}
               </>
             ) : (
-              <div className="empty-state"><h2>No contacts match</h2><p>Clear a checkbox or try a broader search.</p></div>
+              <div className="empty-state">
+                <h2>No contacts match</h2>
+                <p>
+                  {scopeActive
+                    ? `No sourced contact in this scope matches the current filters${selectedCount > 0 ? '; clear a checkbox' : ''}. An empty result is a research gap, not a statement that nobody works here.`
+                    : 'Clear a checkbox or try a broader search.'}
+                </p>
+              </div>
             )}
           </section>
         </div>

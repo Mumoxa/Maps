@@ -12,6 +12,24 @@ export interface IntelligenceFilters {
   tier: '' | '1' | '2' | '3'
 }
 
+/**
+ * A taxonomy-branch scope for the body explorer.
+ *
+ * Industry bodies are not classified into the national taxonomy - a body is a
+ * membership organisation, not an operating company. What *is* placed is each
+ * company the research reconciled, so a branch scope asks the only question the
+ * data can answer: which bodies list a researched member company that sits in
+ * this branch. `null` means unscoped, which is not the same as an empty set.
+ */
+export interface IntelligenceScope {
+  nodeCompanyIds: Set<string> | null
+}
+
+function inScope(companyId: string | null, scope?: IntelligenceScope): boolean {
+  if (!scope?.nodeCompanyIds) return true
+  return Boolean(companyId && scope.nodeCompanyIds.has(companyId))
+}
+
 export const emptyIntelligenceFilters: IntelligenceFilters = {
   query: '', bodyId: '', category: '', status: '', participantType: '', region: '', networkId: '', tier: '',
 }
@@ -32,10 +50,11 @@ function classificationMap(networkId: string): Map<string, 1 | 2 | 3> {
   return new Map(recruitmentClassifications.filter((item) => item.networkId === networkId).map((item) => [item.memberId, item.tier]))
 }
 
-export function filterAssociationMembers(filters: IntelligenceFilters): AssociationMember[] {
+export function filterAssociationMembers(filters: IntelligenceFilters, scope?: IntelligenceScope): AssociationMember[] {
   const tiers = filters.networkId ? classificationMap(filters.networkId) : null
   return industryIntelligence.members.filter((member) => {
     const body = bodyById.get(member.bodyId)
+    if (!inScope(member.companyId, scope)) return false
     if (filters.query && !matchesText(member, filters.query)) return false
     if (filters.bodyId && member.bodyId !== filters.bodyId) return false
     if (filters.category && body?.category !== filters.category) return false
@@ -51,9 +70,19 @@ export function filterAssociationMembers(filters: IntelligenceFilters): Associat
   })
 }
 
-export function filterIndustryBodies(filters: IntelligenceFilters): IndustryBody[] {
-  const matchingMemberBodies = new Set(filterAssociationMembers({ ...filters, bodyId: '', category: '' }).map((member) => member.bodyId))
+export function filterIndustryBodies(filters: IntelligenceFilters, scope?: IntelligenceScope): IndustryBody[] {
+  const matchingMemberBodies = new Set(filterAssociationMembers({ ...filters, bodyId: '', category: '' }, scope).map((member) => member.bodyId))
+  const bodiesInScope = scope?.nodeCompanyIds ? new Set<string>() : null
+  if (bodiesInScope) {
+    for (const member of industryIntelligence.members) {
+      if (inScope(member.companyId, scope)) bodiesInScope.add(member.bodyId)
+    }
+    for (const relationship of industryIntelligence.relationships) {
+      if (inScope(relationship.companyId, scope)) bodiesInScope.add(relationship.bodyId)
+    }
+  }
   return industryIntelligence.bodies.filter((body) => {
+    if (bodiesInScope && !bodiesInScope.has(body.id)) return false
     if (filters.bodyId && body.id !== filters.bodyId) return false
     if (filters.category && body.category !== filters.category) return false
     const text = normalized([body.officialName, body.acronym, ...body.industries, ...body.subIndustries, ...body.geographicCoverage].join(' '))
@@ -65,10 +94,11 @@ export function filterIndustryBodies(filters: IntelligenceFilters): IndustryBody
   })
 }
 
-export function filterCompanyRelationships(filters: IntelligenceFilters): CompanyBodyRelationship[] {
-  const memberIds = new Set(filterAssociationMembers({ ...filters, status: '' }).map((member) => member.id))
+export function filterCompanyRelationships(filters: IntelligenceFilters, scope?: IntelligenceScope): CompanyBodyRelationship[] {
+  const memberIds = new Set(filterAssociationMembers({ ...filters, status: '' }, scope).map((member) => member.id))
   return industryIntelligence.relationships.filter((relationship) => {
     const body = bodyById.get(relationship.bodyId)
+    if (!inScope(relationship.companyId, scope)) return false
     if (filters.status && relationship.status !== filters.status) return false
     if (filters.bodyId && relationship.bodyId !== filters.bodyId) return false
     if (filters.category && body?.category !== filters.category) return false

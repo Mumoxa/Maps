@@ -7,12 +7,17 @@ import { Pagination } from '../components/ui/Pagination'
 import { bodyById, industryIntelligence, recruitmentNetworks } from '../data/industryIntelligence/load'
 import {
   associationMembersCsv,
+  emptyIntelligenceFilters,
   filterAssociationMembers,
   filterCompanyRelationships,
   filterIndustryBodies,
   type IntelligenceFilters,
+  type IntelligenceScope,
 } from '../data/industryIntelligence/query'
 import type { AssociationMember, EvidenceStatus, ParticipantType } from '../data/industryIntelligence/types'
+import { industryBodiesHref as bodiesHref } from '../data/organizations/links'
+import { atlasNodeTitle, companiesAtNode, isUnclassifiedBranch } from '../data/organizations/atlas'
+import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
 import progressManifest from '../../markets/industry-intelligence/progress-manifest.json'
 import './IndustryIntelligencePage.css'
 
@@ -68,6 +73,20 @@ export function IndustryIntelligencePage() {
   const requestedView = searchParams.get('view') as ExplorerView | null
   const view: ExplorerView = requestedView && requestedView in viewLabels ? requestedView : 'bodies'
   const filters = useMemo(() => readFilters(searchParams), [searchParams])
+  const { index, atlas } = useCompanyUniverse()
+  const nodeParam = searchParams.get('node') ?? ''
+  const nodeId = nodeParam && (atlas.nodes.has(nodeParam) || isUnclassifiedBranch(nodeParam)) ? nodeParam : null
+  // A body is a membership organisation, not an operating company, so it has no
+  // taxonomy placement of its own. The branch scope is therefore the set of
+  // bodies that name a researched member company the atlas places in the branch.
+  const nodeCompanyIds = useMemo(
+    () => (nodeId ? new Set(companiesAtNode(atlas, index, nodeId)) : null),
+    [nodeId, atlas, index],
+  )
+  const scope = useMemo<IntelligenceScope>(() => ({ nodeCompanyIds }), [nodeCompanyIds])
+  const branchBodyCount = nodeCompanyIds
+    ? filterIndustryBodies(emptyIntelligenceFilters, scope).length
+    : null
   const activeNetworkId = view === 'networks' ? filters.networkId || recruitmentNetworks[0]?.id || '' : filters.networkId
   const effectiveFilters = useMemo(() => ({ ...filters, networkId: activeNetworkId }), [filters, activeNetworkId])
   const page = Math.max(1, Number.parseInt(searchParams.get('page') ?? '1', 10) || 1)
@@ -89,21 +108,35 @@ export function IndustryIntelligencePage() {
   }, [setParams])
   const resetFilters = useCallback(() => {
     setSearchInput('')
-    setSearchParams(view === 'bodies' ? {} : { view }, { replace: true })
-  }, [setSearchParams, view])
+    const next: Record<string, string> = view === 'bodies' ? {} : { view }
+    if (nodeId) next.node = nodeId
+    setSearchParams(next, { replace: true })
+  }, [setSearchParams, view, nodeId])
+
+  const scopedBodiesHref = useCallback(
+    (options: Parameters<typeof bodiesHref>[0] = {}) => bodiesHref({ ...options, node: nodeId }),
+    [nodeId],
+  )
 
   useEffect(() => { setSearchInput(filters.query) }, [filters.query])
 
-  const filteredMembers = useMemo(() => filterAssociationMembers(effectiveFilters), [effectiveFilters])
-  const filteredBodies = useMemo(() => filterIndustryBodies(filters), [filters])
-  const filteredRelationships = useMemo(() => filterCompanyRelationships(effectiveFilters), [effectiveFilters])
+  const filteredMembers = useMemo(
+    () => filterAssociationMembers(effectiveFilters, scope),
+    [effectiveFilters, scope],
+  )
+  const filteredBodies = useMemo(() => filterIndustryBodies(filters, scope), [filters, scope])
+  const filteredRelationships = useMemo(
+    () => filterCompanyRelationships(effectiveFilters, scope),
+    [effectiveFilters, scope],
+  )
   const filteredLeadership = useMemo(() => industryIntelligence.leadership.filter((leader) => {
+    if (nodeCompanyIds && !filteredBodies.some((body) => body.id === leader.bodyId)) return false
     if (filters.bodyId && leader.bodyId !== filters.bodyId) return false
     if (filters.status && leader.verificationStatus !== filters.status) return false
     const body = bodyById.get(leader.bodyId)
     const text = [leader.individualName, leader.associationRole, leader.currentEmployer, leader.corporateTitle, body?.officialName ?? '', body?.acronym ?? ''].join(' ').toLowerCase()
     return !filters.query || text.includes(filters.query.toLowerCase())
-  }), [filters])
+  }), [filters, filteredBodies, nodeCompanyIds])
   const activeRows = view === 'company-map' ? filteredRelationships : filteredMembers
   const totalPages = Math.max(1, Math.ceil(activeRows.length / PAGE_SIZE))
   const visibleMembers = filteredMembers.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE)
@@ -118,19 +151,39 @@ export function IndustryIntelligencePage() {
     }, { 1: [], 2: [], 3: [] } as Record<1 | 2 | 3, AssociationMember[]>)
   }, [filteredMembers, activeNetworkId])
 
+  // Row totals per body, respecting the branch scope. A scoped card has to count
+  // the rows its button will actually open.
+  const memberCountsByBody = useMemo(() => {
+    const counts = new Map<string, { total: number; confirmed: number }>()
+    for (const member of filterAssociationMembers(emptyIntelligenceFilters, scope)) {
+      const entry = counts.get(member.bodyId) ?? { total: 0, confirmed: 0 }
+      entry.total += 1
+      if (member.verificationStatus === 'Confirmed') entry.confirmed += 1
+      counts.set(member.bodyId, entry)
+    }
+    return counts
+  }, [scope])
+
   const exportCsv = useCallback(() => {
     download(`industry-association-members-${activeNetworkId || filters.bodyId || 'filtered'}.csv`, associationMembersCsv(filteredMembers, activeNetworkId))
   }, [filteredMembers, activeNetworkId, filters.bodyId])
-
-  const selectBody = useCallback((bodyId: string) => {
-    setSearchParams({ view: 'members', body: bodyId }, { replace: true })
-  }, [setSearchParams])
 
   return (
     <ErrorBoundary>
       <main className="page ii-page">
         <div className="container container-wide">
-          <Breadcrumb crumbs={[{ label: 'Home', to: '/' }, { label: 'Industry bodies' }]} />
+          <Breadcrumb
+            crumbs={[
+              { label: 'Home', to: '/' },
+              ...(nodeId
+                ? [
+                  { label: 'Industry Atlas', to: '/industry-atlas' },
+                  { label: atlasNodeTitle(atlas, nodeId), to: `/industry-atlas?node=${encodeURIComponent(nodeId)}` },
+                ]
+                : []),
+              { label: 'Industry bodies' },
+            ]}
+          />
           <header className="page-head ii-hero">
             <div>
               <span className="ii-eyebrow"><ShareNetwork size={16} aria-hidden /> External industry intelligence</span>
@@ -138,16 +191,45 @@ export function IndustryIntelligencePage() {
               <p>Follow companies into the associations, professional bodies, statutory schemes and regulators around them—and back out to other directory participants. Membership, regulation, committee representation and operational similarity stay explicitly separate.</p>
             </div>
             <div className="page-head-aside">
-              <span className="page-head-meta"><b>{coverage.distinctBodies}</b> body records</span>
-              <span className="page-head-meta"><b>{coverage.associationMemberRows}</b> directory rows</span>
-              <span className="page-head-meta"><b>{coverage.companiesResearched}</b> existing identities researched</span>
-              <span className="page-head-meta"><b>{coverage.proposedCompanyRecords}</b> proposed companies</span>
+              <span className="page-head-meta">
+                <Link to={bodiesHref({ view: 'bodies' })}><b>{coverage.distinctBodies}</b> body records in the whole register</Link>
+              </span>
+              <span className="page-head-meta">
+                <Link to={bodiesHref({ view: 'members' })}><b>{coverage.associationMemberRows}</b> directory rows</Link>
+              </span>
+              <span className="page-head-meta">
+                <Link to={bodiesHref({ view: 'company-map' })}><b>{coverage.companiesResearched}</b> existing identities researched</Link>
+              </span>
+              <span className="page-head-meta">
+                <Link to={bodiesHref({ view: 'coverage' })}><b>{coverage.proposedCompanyRecords}</b> proposed companies</Link>
+              </span>
             </div>
           </header>
 
           <div className="ii-coverage-notice" role="note">
-            <strong>Verified partial coverage.</strong> {coverage.companiesPending.toLocaleString()} of {coverage.sourceCompanyUniverse.toLocaleString()} reconciled source identities are still pending. Proposed companies are not inserted into the canonical organization register. Historical and unverified rows never display as current confirmed membership.
+            <strong>Verified partial coverage.</strong>{' '}
+            <Link to={bodiesHref({ view: 'coverage' })}>{coverage.companiesPending.toLocaleString()}</Link> of{' '}
+            {coverage.sourceCompanyUniverse.toLocaleString()} reconciled source identities are still pending.{' '}
+            <Link to={bodiesHref({ view: 'company-map' })}>See the companies already researched</Link>. Proposed
+            companies are not inserted into the canonical organization register. Historical and unverified rows
+            never display as current confirmed membership.
           </div>
+
+          {nodeId && (
+            <div className="ii-scope-notice">
+              <p>
+                Scoped to <strong>{atlasNodeTitle(atlas, nodeId)}</strong>: {branchBodyCount} of{' '}
+                {coverage.distinctBodies} bodies list a researched member company the atlas places in
+                this branch. Bodies are not classified into the national taxonomy themselves, so a
+                body missing here is a gap in membership research, not a finding that the branch has
+                no association.
+              </p>
+              <div className="ii-scope-actions">
+                <Link to={`/industry-atlas?node=${encodeURIComponent(nodeId)}`}>Open this branch in the Industry Atlas</Link>
+                <Link to={bodiesHref({ view })}>Remove the branch scope</Link>
+              </div>
+            </div>
+          )}
 
           <nav className="ii-view-tabs" aria-label="Industry intelligence views">
             {(Object.entries(viewLabels) as [ExplorerView, string][]).map(([id, label]) => (
@@ -215,8 +297,7 @@ export function IndustryIntelligencePage() {
               <div className="ii-section-heading"><div><h2 id="ii-bodies-title">Industry Body Master Directory</h2><p>{filteredBodies.length} bodies match. Directory availability describes the latest review, not membership completeness.</p></div></div>
               <div className="ii-body-grid">
                 {filteredBodies.map((body) => {
-                  const bodyMembers = industryIntelligence.members.filter((member) => member.bodyId === body.id)
-                  const confirmed = bodyMembers.filter((member) => member.verificationStatus === 'Confirmed').length
+                  const counts = memberCountsByBody.get(body.id) ?? { total: 0, confirmed: 0 }
                   return (
                     <article className="ii-body-card" key={body.id}>
                       <div className="ii-card-topline"><span>{body.category.replace(/-/g, ' ')}</span><span>{body.participationBasis}</span></div>
@@ -226,12 +307,18 @@ export function IndustryIntelligencePage() {
                       <dl className="ii-body-facts">
                         <div><dt>Represents</dt><dd>{body.represents}</dd></div>
                         <div><dt>Coverage</dt><dd>{body.geographicCoverage.join('; ')}</dd></div>
-                        <div><dt>Saved rows</dt><dd>{bodyMembers.length} ({confirmed} confirmed)</dd></div>
+                        <div><dt>Saved rows</dt><dd>{counts.total} ({counts.confirmed} confirmed)</dd></div>
                         <div><dt>Last verified</dt><dd>{body.lastVerified}</dd></div>
                       </dl>
                       <div className="ii-tag-list">{body.subIndustries.slice(0, 5).map((item) => <span key={item}>{item}</span>)}</div>
                       <div className="ii-card-actions">
-                        <button type="button" className="button button-primary" onClick={() => selectBody(body.id)} disabled={bodyMembers.length === 0}>Explore {bodyMembers.length} rows</button>
+                        {counts.total > 0 ? (
+                          <Link className="button button-primary" to={scopedBodiesHref({ view: 'members', bodyId: body.id })}>
+                            Explore {counts.total} rows
+                          </Link>
+                        ) : (
+                          <span className="button button-primary is-disabled" aria-disabled="true">No saved rows yet</span>
+                        )}
                         <a href={body.sourceUrl} target="_blank" rel="noreferrer" aria-label={`Official evidence for ${body.acronym}`}>Official evidence <ArrowSquareOut size={14} aria-hidden /></a>
                       </div>
                     </article>
@@ -300,7 +387,13 @@ export function IndustryIntelligencePage() {
               <div className="ii-table-wrap"><table className="ii-table"><caption className="sr-only">Company to external body relationships</caption>
                 <thead><tr><th>Company / source identity</th><th>External body</th><th>Relationship</th><th>Basis</th><th>Status and evidence</th></tr></thead>
                 <tbody>{visibleRelationships.map((relationship) => (
-                  <tr key={relationship.id}><td><strong>{relationship.companyName}</strong><span className="ii-cell-note">{relationship.companyId}</span></td><td>{bodyById.get(relationship.bodyId)?.officialName}</td><td><span>{relationship.relationshipType.replace(/-/g, ' ')}</span><span>{relationship.membershipCategory || 'Category not established'}</span></td><td>{relationship.participationBasis}</td><td><StatusBadge status={relationship.status} /><a className="ii-evidence-link" href={relationship.evidenceUrl} target="_blank" rel="noreferrer">Source <ArrowSquareOut size={13} aria-hidden /></a><span className="ii-cell-note">{relationship.subIndustry}</span></td></tr>
+                  <tr key={relationship.id}>
+                    <td>
+                      {relationship.companyId.startsWith('org-')
+                        ? <Link to={`/organizations/${encodeURIComponent(relationship.companyId)}`}><strong>{relationship.companyName}</strong></Link>
+                        : <strong>{relationship.companyName}</strong>}
+                      <span className="ii-cell-note">{relationship.companyId}</span>
+                    </td><td>{bodyById.get(relationship.bodyId)?.officialName}</td><td><span>{relationship.relationshipType.replace(/-/g, ' ')}</span><span>{relationship.membershipCategory || 'Category not established'}</span></td><td>{relationship.participationBasis}</td><td><StatusBadge status={relationship.status} /><a className="ii-evidence-link" href={relationship.evidenceUrl} target="_blank" rel="noreferrer">Source <ArrowSquareOut size={13} aria-hidden /></a><span className="ii-cell-note">{relationship.subIndustry}</span></td></tr>
                 ))}</tbody></table></div>
               {filteredRelationships.length === 0 && <div className="ii-empty"><h3>No relationships match</h3><p>Unknown is used when research has not established membership; an empty filter result is not a negative finding.</p></div>}
               <Pagination page={Math.min(page, totalPages)} totalPages={totalPages} total={filteredRelationships.length} onChange={(next) => setFilter('page', String(next))} />
@@ -320,12 +413,18 @@ export function IndustryIntelligencePage() {
             <section aria-labelledby="ii-coverage-title" className="ii-coverage">
               <div className="ii-section-heading"><div><h2 id="ii-coverage-title">Research Coverage Report</h2><p>Calculated from the saved inventory and relationship output on {coverage.generatedOn}; no manual coverage totals.</p></div><button type="button" className="button button-secondary" onClick={exportCsv}><Download size={16} aria-hidden /> Export current member CSV</button></div>
               <div className="ii-metric-grid">
-                {[
-                  ['Application companies', coverage.applicationCompanyUniverse], ['Additional source-only identities', coverage.additionalSourceOnlyOrganizations],
-                  ['Existing identities researched', coverage.companiesResearched], ['With confirmed external relationship', coverage.companiesWithConfirmedRelationship],
-                  ['Researched without confirmed relationship', coverage.companiesResearchedWithoutConfirmedRelationship], ['Pending', coverage.companiesPending],
-                  ['Association member rows', coverage.associationMemberRows], ['Proposed company records', coverage.proposedCompanyRecords],
-                ].map(([label, value]) => <div className="ii-metric" key={label}><strong>{Number(value).toLocaleString()}</strong><span>{label}</span></div>)}
+                {([
+                  ['Application companies', coverage.applicationCompanyUniverse, bodiesHref({ view: 'coverage' })],
+                  ['Additional source-only identities', coverage.additionalSourceOnlyOrganizations, bodiesHref({ view: 'coverage' })],
+                  ['Existing identities researched', coverage.companiesResearched, bodiesHref({ view: 'company-map' })],
+                  ['With confirmed external relationship', coverage.companiesWithConfirmedRelationship, bodiesHref({ view: 'company-map', status: 'Confirmed' })],
+                  ['Researched without confirmed relationship', coverage.companiesResearchedWithoutConfirmedRelationship, bodiesHref({ view: 'company-map' })],
+                  ['Pending', coverage.companiesPending, bodiesHref({ view: 'coverage' })],
+                  ['Association member rows', coverage.associationMemberRows, bodiesHref({ view: 'members' })],
+                  ['Proposed company records', coverage.proposedCompanyRecords, bodiesHref({ view: 'coverage' })],
+                ] as [string, number, string][]).map(([label, value, href]) => (
+                  <Link className="ii-metric" key={label} to={href}><strong>{Number(value).toLocaleString()}</strong><span>{label}</span></Link>
+                ))}
               </div>
               <div className="ii-coverage-columns">
                 <section><h3>Scope and caveats</h3><ul>{coverage.scopeNotes.map((note) => <li key={note}>{note}</li>)}</ul></section>

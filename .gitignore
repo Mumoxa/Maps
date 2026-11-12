@@ -33,3 +33,6 @@ incoming/
 
 # Vite writes timestamped config bundles during build/dev; never commit them.
 vite.config.ts.timestamp-*.mjs
+
+# Local scratch scripts (never shipped)
+.tmp/

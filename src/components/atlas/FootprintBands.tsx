@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { WarningCircle } from '@phosphor-icons/react'
 import type { OrganizationIndex } from '../../data/organizations/load'
+import { branchFootprintHref } from '../../data/organizations/links'
 import {
   FOOTPRINT_DEFINITIONS,
   FOOTPRINT_LABELS,
@@ -14,6 +15,8 @@ import type { FootprintGroup } from '../../data/organizations/atlas'
 interface FootprintBandsProps {
   groups: FootprintGroup[]
   index: OrganizationIndex
+  /** Branch the bands are scoped to, so a band can open its full company list. */
+  nodeId?: string | null
   /** Companies rendered per band before a "show all" control appears. */
   initialVisible?: number
   onOpenCompany?: (organizationId: string) => void
@@ -38,6 +41,7 @@ interface FootprintBandsProps {
 export function FootprintBands({
   groups,
   index,
+  nodeId = null,
   initialVisible = 12,
   onOpenCompany,
   linkSuffix = '',
@@ -59,6 +63,7 @@ export function FootprintBands({
           band={group.band}
           organizationIds={group.organizationIds}
           index={index}
+          nodeId={nodeId}
           initialVisible={initialVisible}
           onOpenCompany={onOpenCompany}
           linkSuffix={linkSuffix}
@@ -72,6 +77,7 @@ function Band({
   band,
   organizationIds,
   index,
+  nodeId,
   initialVisible,
   onOpenCompany,
   linkSuffix,
@@ -79,6 +85,7 @@ function Band({
   band: FootprintBand
   organizationIds: string[]
   index: OrganizationIndex
+  nodeId: string | null
   initialVisible: number
   onOpenCompany?: (organizationId: string) => void
   linkSuffix: string
@@ -94,7 +101,17 @@ function Band({
     <section className={`footprint-band footprint-band-${band}`} aria-labelledby={`band-${band}`}>
       <header className="footprint-band-head">
         <h3 id={`band-${band}`} className="footprint-band-title">{FOOTPRINT_LABELS[band]}</h3>
-        <span className="footprint-band-count">{organizationIds.length}</span>
+        {organizationIds.length > 0 ? (
+          <Link
+            className="footprint-band-count footprint-band-count-link"
+            to={branchFootprintHref(nodeId, band)}
+            title={`Open every company in this branch classified as ${FOOTPRINT_LABELS[band]}`}
+          >
+            {organizationIds.length}
+          </Link>
+        ) : (
+          <span className="footprint-band-count">{organizationIds.length}</span>
+        )}
       </header>
       <p className="footprint-band-definition">{FOOTPRINT_DEFINITIONS[band]}</p>
 

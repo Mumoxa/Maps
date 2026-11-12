@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { CaretDown, CaretRight } from '@phosphor-icons/react'
+import { associationClusterHref } from '../../data/organizations/links'
 import type { OrganizationIndex } from '../../data/organizations/load'
 import {
   EVIDENCE_CLASS_LABELS,
@@ -120,7 +122,20 @@ function GroupCard({
           <li key={cluster.key} className="assoc-cluster">
             <div className="assoc-cluster-head">
               <strong>{cluster.label}</strong>
-              <span className="assoc-cluster-count">{cluster.organizationIds.length}</span>
+              {(() => {
+                const href = associationClusterHref(group.kind, cluster.key)
+                return href ? (
+                  <Link
+                    className="assoc-cluster-count assoc-cluster-count-link"
+                    to={href}
+                    title={`Open the ${cluster.organizationIds.length} companies that share this in the Company Universe`}
+                  >
+                    {cluster.organizationIds.length}
+                  </Link>
+                ) : (
+                  <span className="assoc-cluster-count">{cluster.organizationIds.length}</span>
+                )
+              })()}
             </div>
             {cluster.evidence && <p className="assoc-cluster-evidence">{cluster.evidence}</p>}
             <ul className="assoc-cluster-members">

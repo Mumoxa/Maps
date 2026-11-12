@@ -76,7 +76,15 @@ export interface CompanyDossier {
   }
   industries: { id: string; name: string; primary: boolean; pocket: string; evidence: string; sourceUrl: string }[]
   /** National taxonomy placement: a direct link where one exists, otherwise derived through the industry crosswalk. */
-  taxonomy: { industryId: string; industryName: string; source: 'industry' | 'taxonomy'; macroSector: string; path: string }[]
+  taxonomy: {
+    /** National taxonomy node the company resolves to, for a drill-through link. */
+    nodeId: string
+    industryId: string
+    industryName: string
+    source: 'industry' | 'taxonomy'
+    macroSector: string
+    path: string
+  }[]
   macroSectors: string[]
   capabilities: DossierCapability[]
   locations: { city: string; province: string; sourceUrl: string }[]
@@ -188,6 +196,7 @@ export function companyDossier(index: OrganizationIndex, organizationId: string)
       sourceUrl: link.sourceUrl,
     })),
     taxonomy: organizationTaxonomy(organization).entries.map((entry) => ({
+      nodeId: entry.node.id,
       industryId: entry.industryId,
       industryName: entry.source === 'taxonomy'
         ? entry.node.name

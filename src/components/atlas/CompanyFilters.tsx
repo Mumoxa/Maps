@@ -5,7 +5,7 @@ import {
   FOOTPRINT_BANDS,
   FOOTPRINT_SHORT_LABELS,
 } from '../../data/organizations/footprint'
-import { facetCounts } from '../../data/organizations/universeView'
+import { facetCounts, summarizeViews } from '../../data/organizations/universeView'
 import type { CompanyView } from '../../data/organizations/universeView'
 import { getTaxonomyNode } from '../../data/taxonomy/load'
 import { SCALE_BUCKETS } from '../../data/organizations/discovery'
@@ -58,6 +58,7 @@ export function CompanyFilters({
   const [capabilitySearch, setCapabilitySearch] = useState('')
 
   const dimensions = useMemoDimensions(views, index, capabilitySearch)
+  const coverage = summarizeViews(views)
 
   const toggle = (key: keyof AssociationFilters, value: string) => {
     const current = filters[key] as string[]
@@ -65,9 +66,15 @@ export function CompanyFilters({
     onChange({ ...filters, [key]: next })
   }
 
+  const peopleOptions: { value: AssociationFilters['hasMappedProfessionals']; label: string; count: number }[] = [
+    { value: 'any', label: 'Any coverage', count: coverage.organizations },
+    { value: 'yes', label: 'Has mapped professionals', count: coverage.withMappedProfessionals },
+    { value: 'no', label: 'No mapped professional', count: coverage.organizations - coverage.withMappedProfessionals },
+  ]
+
   const activeCount = dimensions.reduce(
     (total, dimension) => total + (filters[dimension.key] as string[]).length,
-    0,
+    filters.hasMappedProfessionals === 'any' ? 0 : 1,
   )
 
   return (
@@ -99,11 +106,40 @@ export function CompanyFilters({
             groups: [],
             status: [],
             confidence: [],
+            hasMappedProfessionals: 'any',
           })}
         >
           Clear {activeCount} filter{activeCount === 1 ? '' : 's'}
         </button>
       )}
+
+      <section className="facet-group" aria-labelledby={`${idPrefix}-people-label`}>
+        <h3 className="facet-group-label" id={`${idPrefix}-people-label`}>Mapped professionals</h3>
+        <p className="assoc-filter-hint">
+          People records already linked to a company: contact directory, accounting &amp; finance pool
+          and credit-risk profiles.
+        </p>
+        <ul className="facet-options" role="radiogroup" aria-labelledby={`${idPrefix}-people-label`}>
+          {peopleOptions.map((option) => {
+            const inputId = `${idPrefix}-people-${option.value}`
+            return (
+              <li key={option.value}>
+                <label className="facet-option" htmlFor={inputId}>
+                  <input
+                    id={inputId}
+                    type="radio"
+                    name={`${idPrefix}-people`}
+                    checked={filters.hasMappedProfessionals === option.value}
+                    onChange={() => onChange({ ...filters, hasMappedProfessionals: option.value })}
+                  />
+                  <span className="facet-option-label">{option.label}</span>
+                  <span className="facet-option-count">{option.count}</span>
+                </label>
+              </li>
+            )
+          })}
+        </ul>
+      </section>
 
       {dimensions.map((dimension) => {
         const selected = filters[dimension.key] as string[]

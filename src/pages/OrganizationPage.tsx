@@ -7,6 +7,15 @@ import { ErrorBoundary } from '../components/ui/ErrorBoundary'
 import { useCompanyUniverse } from '../hooks/useCompanyUniverse'
 import { contactDirectoryUrlForEmployer, resolveOrganizationRedirect } from '../data/organizations/load'
 import { atlasNodeTitle } from '../data/organizations/atlas'
+import {
+  atlasBranchHref,
+  companiesInIndustryHref,
+  companiesInProvinceHref,
+  companiesWithCapabilityHref,
+  companyBodiesHref,
+  companyProfessionalsHref,
+  PEOPLE_DATASET_LABELS,
+} from '../data/organizations/links'
 import { classifyFootprint, FOOTPRINT_SHORT_LABELS } from '../data/organizations/footprint'
 import { companyDossier } from '../data/organizations/query'
 import { EVIDENCE_CLASS_LABELS } from '../data/organizations/industryDiscovery'
@@ -174,7 +183,11 @@ export function OrganizationPage() {
                       return (
                         <li key={link.industryId}>
                           <div className="dossier-industry-head">
-                            <strong>{industry?.name ?? link.industryId}</strong>
+                            <strong>
+                              <Link to={companiesInIndustryHref(link.industryId)} title={`Open every company placed in ${industry?.name ?? link.industryId}`}>
+                                {industry?.name ?? link.industryId}
+                              </Link>
+                            </strong>
                             {link.primary && <span className="chip">Primary</span>}
                             <span className="chip">{link.confidence}</span>
                           </div>
@@ -200,7 +213,11 @@ export function OrganizationPage() {
                     <h3>National taxonomy placement</h3>
                     <ul>
                       {dossier.taxonomy.map((entry) => (
-                        <li key={`${entry.industryId}-${entry.path}`}>{entry.path}</li>
+                        <li key={`${entry.industryId}-${entry.path}`}>
+                          <Link to={atlasBranchHref(entry.nodeId)} title="Open this national branch in the Industry Atlas">
+                            {entry.path}
+                          </Link>
+                        </li>
                       ))}
                     </ul>
                     <p className="assoc-section-note">
@@ -318,9 +335,15 @@ export function OrganizationPage() {
                     <dt>South African locations</dt>
                     <dd>
                       {organization.locations.length > 0
-                        ? organization.locations
-                          .map((location) => `${location.city ? `${location.city}, ` : ''}${location.province}`)
-                          .join('; ')
+                        ? organization.locations.map((location, position) => (
+                          <span key={`${location.city}-${location.province}-${position}`}>
+                            {position > 0 ? '; ' : ''}
+                            {location.city ? `${location.city}, ` : ''}
+                            {location.province
+                              ? <Link to={companiesInProvinceHref(location.province)}>{location.province}</Link>
+                              : 'province not recorded'}
+                          </span>
+                        ))
                         : 'No sourced location yet'}
                     </dd>
                   </div>
@@ -328,7 +351,15 @@ export function OrganizationPage() {
                     <dt>Professionals mapped</dt>
                     <dd>
                       {dossier && dossier.talent.mappedProfessionals > 0
-                        ? `${dossier.talent.mappedProfessionals} (${dossier.talent.sources.map((source) => `${source.dataset}: ${source.count}`).join('; ')})`
+                        ? (
+                          <>
+                            {dossier.talent.mappedProfessionals}
+                            {' '}({dossier.talent.sources
+                              .map((source) => `${PEOPLE_DATASET_LABELS[source.dataset] ?? source.dataset}: ${source.count}`)
+                              .join('; ')}){' '}
+                            <Link to={companyProfessionalsHref(organization.id)}>Open the people list</Link>
+                          </>
+                        )
                         : 'None mapped yet'}
                     </dd>
                   </div>
@@ -349,6 +380,9 @@ export function OrganizationPage() {
                   )}
                   <Link className="btn btn-ghost btn-sm" to={`/company-associations?focus=${encodeURIComponent(organization.id)}`}>
                     Association exploration
+                  </Link>
+                  <Link className="btn btn-ghost btn-sm" to={companyBodiesHref(organization.name)}>
+                    Industry bodies
                   </Link>
                   <Link className="btn btn-ghost btn-sm" to={`/recruitment-targeting?org=${encodeURIComponent(organization.id)}`}>
                     Recruitment targeting
@@ -454,7 +488,11 @@ function CapabilityGroup({
         <ul className="assoc-capability-list">
           {observed.map((link) => (
             <li key={link.capabilityId}>
-              <strong>{index.capabilityById.get(link.capabilityId)?.name ?? link.capabilityId}</strong>
+              <strong>
+                <Link to={companiesWithCapabilityHref(link.capabilityId)} title="Open every company that evidences this capability">
+                  {index.capabilityById.get(link.capabilityId)?.name ?? link.capabilityId}
+                </Link>
+              </strong>
               <span>{link.evidence}</span>
               {link.sourceUrl && (
                 <a href={link.sourceUrl} target="_blank" rel="noreferrer">

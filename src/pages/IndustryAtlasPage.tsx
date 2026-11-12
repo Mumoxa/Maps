@@ -12,9 +12,18 @@ import {
   UNCLASSIFIED_BRANCH_ID,
   atlasNodeTitle,
   childrenWithCounts,
-  companiesAtNode,
   isUnclassifiedBranch,
 } from '../data/organizations/atlas'
+import {
+  branchAssociationsHref,
+  branchCompaniesHref,
+  branchFootprintHref,
+  branchPendingHref,
+  branchProfessionalsHref,
+  branchVerifiedHref,
+  branchWithProfessionalsHref,
+  industryBodiesHref,
+} from '../data/organizations/links'
 import { filterCompanyViews, groupByFootprint, paginate, summarizeViews, viewsAtNode } from '../data/organizations/universeView'
 import type { CompanyView } from '../data/organizations/universeView'
 import { companyExportColumns, exportCompanyViewsCsv } from '../data/organizations/universeView'
@@ -94,15 +103,15 @@ export function IndustryAtlasPage() {
   )
   const filtered = useMemo(() => filterCompanyViews(scoped, filters, index), [scoped, filters, index])
   const summary = useMemo(() => summarizeViews(filtered), [filtered])
+  // Coverage of the branch itself, before the reader's filters. This is what the
+  // branch header reports and what each count links to, so the number and the
+  // list it opens are derived from one set.
+  const branchSummary = useMemo(() => summarizeViews(scoped), [scoped])
 
   const node = selectedNodeId && !isUnclassifiedBranch(selectedNodeId) ? atlas.nodes.get(selectedNodeId) : null
   const childNodes = useMemo(
     () => (selectedNodeId && !isUnclassifiedBranch(selectedNodeId) ? childrenWithCounts(atlas, selectedNodeId) : []),
     [atlas, selectedNodeId],
-  )
-  const branchCompanies = useMemo(
-    () => (selectedNodeId ? companiesAtNode(atlas, index, selectedNodeId) : []),
-    [atlas, index, selectedNodeId],
   )
   const filteredGroups = useMemo(() => groupByFootprint(filtered), [filtered])
 
@@ -237,32 +246,57 @@ export function IndustryAtlasPage() {
                     <dl className="atlas-coverage">
                       <div>
                         <dt>Companies in branch</dt>
-                        <dd>{branchCompanies.length}</dd>
+                        <dd>
+                          <Link className="atlas-coverage-link" to={branchCompaniesHref(selectedNodeId)}>
+                            {branchSummary.organizations}
+                          </Link>
+                        </dd>
                       </div>
                       <div>
                         <dt>Verified</dt>
-                        <dd>{node?.counts.verified ?? 0}</dd>
+                        <dd>
+                          <Link className="atlas-coverage-link" to={branchVerifiedHref(selectedNodeId)}>
+                            {branchSummary.verified}
+                          </Link>
+                        </dd>
                       </div>
                       <div>
                         <dt>Pending verification</dt>
-                        <dd>{node?.counts.pendingVerification ?? summary.pendingVerification}</dd>
+                        <dd>
+                          <Link className="atlas-coverage-link" to={branchPendingHref(selectedNodeId)}>
+                            {branchSummary.pendingVerification}
+                          </Link>
+                        </dd>
                       </div>
                       <div>
                         <dt>With mapped professionals</dt>
-                        <dd>{node?.counts.withMappedProfessionals ?? 0}</dd>
+                        <dd>
+                          <Link className="atlas-coverage-link" to={branchWithProfessionalsHref(selectedNodeId)}>
+                            {branchSummary.withMappedProfessionals}
+                          </Link>
+                        </dd>
+                        <dd className="atlas-coverage-sub">
+                          <Link to={branchProfessionalsHref(selectedNodeId)}>Open the professionals list</Link>
+                        </dd>
                       </div>
                       <div>
                         <dt>Footprint established</dt>
-                        <dd>{node?.counts.footprintEstablished ?? 0}</dd>
+                        <dd>
+                          <Link className="atlas-coverage-link" to={branchFootprintHref(selectedNodeId)}>
+                            {branchSummary.footprintEstablished}
+                          </Link>
+                        </dd>
                       </div>
                       <div>
                         <dt>Last research</dt>
-                        <dd>{node?.lastResearchDate ?? 'not recorded'}</dd>
+                        <dd className="atlas-coverage-plain">{branchSummary.lastResearchDate ?? 'not recorded'}</dd>
                       </div>
                     </dl>
                     <p className="assoc-coverage-note">
-                      Coverage counts what Maps has researched. A zero is a gap in the map, not a
-                      claim that no company operates there, and this is not a claim of national
+                      Coverage counts what Maps has researched. Every figure opens the list behind it:
+                      companies, verified companies, companies still pending, companies holding mapped
+                      people and companies with an established footprint. A zero is a gap in the map,
+                      not a claim that no company operates there, and this is not a claim of national
                       completeness.
                     </p>
                   </div>
@@ -274,7 +308,7 @@ export function IndustryAtlasPage() {
                       </h3>
                       <ul className="atlas-child-grid">
                         {childNodes.map((child) => (
-                          <li key={child.id}>
+                          <li key={child.id} className="atlas-child-item">
                             <button
                               type="button"
                               className={`atlas-child ${child.counts.organizations === 0 ? 'atlas-child-empty' : ''}`}
@@ -293,6 +327,16 @@ export function IndustryAtlasPage() {
                                   : ' · no mapped companies yet'}
                               </span>
                             </button>
+                            {child.counts.organizations > 0 && (
+                              <div className="atlas-child-actions">
+                                <Link to={branchCompaniesHref(child.id)}>Open {child.counts.organizations} companies</Link>
+                                {child.counts.withMappedProfessionals > 0 && (
+                                  <Link to={branchProfessionalsHref(child.id)}>
+                                    {child.counts.withMappedProfessionals} with people
+                                  </Link>
+                                )}
+                              </div>
+                            )}
                           </li>
                         ))}
                       </ul>
@@ -310,7 +354,13 @@ export function IndustryAtlasPage() {
                       description="Clear the filters, or choose a different branch. An empty branch is a real research gap and is reported as zero rather than filled in."
                     />
                   ) : (
-                    <FootprintBands groups={filteredGroups} index={index} onOpenCompany={openCompany} linkSuffix={linkSuffix} />
+                    <FootprintBands
+                      groups={filteredGroups}
+                      index={index}
+                      nodeId={selectedNodeId}
+                      onOpenCompany={openCompany}
+                      linkSuffix={linkSuffix}
+                    />
                   )}
                 </section>
               ) : (
@@ -371,11 +421,17 @@ export function IndustryAtlasPage() {
                 <section className="atlas-scope-links" aria-label="Next steps for this branch">
                   <h3>Take this industry further</h3>
                   <div className="atlas-scope-actions">
-                    <Link className="btn btn-ghost btn-sm" to={`/companies?node=${encodeURIComponent(selectedNodeId)}`}>
+                    <Link className="btn btn-ghost btn-sm" to={branchCompaniesHref(selectedNodeId)}>
                       Open this branch in the company directory
                     </Link>
-                    <Link className="btn btn-ghost btn-sm" to={`/company-associations?node=${encodeURIComponent(selectedNodeId)}`}>
+                    <Link className="btn btn-ghost btn-sm" to={branchProfessionalsHref(selectedNodeId)}>
+                      Open the mapped professionals in this branch
+                    </Link>
+                    <Link className="btn btn-ghost btn-sm" to={branchAssociationsHref(selectedNodeId)}>
                       Explore associations in this branch
+                    </Link>
+                    <Link className="btn btn-ghost btn-sm" to={industryBodiesHref({ view: 'bodies', node: selectedNodeId })}>
+                      Open the industry bodies with members in this branch
                     </Link>
                     <Link className="btn btn-ghost btn-sm" to={`/recruitment-targeting?node=${encodeURIComponent(selectedNodeId)}`}>
                       Apply a recruitment brief to this branch
@@ -394,6 +450,7 @@ export function IndustryAtlasPage() {
                 <CompanySummaryPanel
                   index={index}
                   view={inspectView}
+                  nodeId={selectedNodeId}
                   linkSuffix={linkSuffix}
                   onClose={() => setParams((params) => { params.delete('inspect'); return params })}
                 />
@@ -448,7 +505,7 @@ export function IndustryAtlasPage() {
           subtitle="Company intelligence"
         >
           <div ref={inspectorLayer}>
-            <CompanySummaryPanel index={index} view={inspectView} linkSuffix={linkSuffix} />
+            <CompanySummaryPanel index={index} view={inspectView} nodeId={selectedNodeId} linkSuffix={linkSuffix} />
           </div>
         </Drawer>
       )}
@@ -493,16 +550,29 @@ function MacroSectorLanding({
             .slice()
             .sort((left, right) => right.counts.organizations - left.counts.organizations)
             .map((root) => (
-              <li key={root.id}>
-                <button type="button" className="atlas-macro" onClick={() => onSelect(root.id)}>
+              <li key={root.id} className="atlas-macro">
+                <button type="button" className="atlas-macro-open" onClick={() => onSelect(root.id)}>
                   <span className="atlas-macro-name">{root.node.name}</span>
-                  <span className="atlas-macro-count">{root.counts.organizations} companies</span>
-                  <span className="atlas-macro-meta">
-                    {root.counts.verified} verified · {root.counts.footprintEstablished} with footprint ·{' '}
-                    {root.counts.withMappedProfessionals} with people
-                  </span>
+                  <span className="atlas-macro-count">{root.counts.organizations} companies mapped</span>
                   {root.node.saContext && <span className="atlas-macro-context">{root.node.saContext}</span>}
                 </button>
+                <div className="atlas-macro-links">
+                  <Link to={branchCompaniesHref(root.id)}>
+                    <b>{root.counts.organizations}</b> companies
+                  </Link>
+                  <Link to={branchVerifiedHref(root.id)}>
+                    <b>{root.counts.verified}</b> verified
+                  </Link>
+                  <Link to={branchFootprintHref(root.id)}>
+                    <b>{root.counts.footprintEstablished}</b> with footprint
+                  </Link>
+                  <Link to={branchWithProfessionalsHref(root.id)}>
+                    <b>{root.counts.withMappedProfessionals}</b> with people
+                  </Link>
+                  {root.counts.withMappedProfessionals > 0 && (
+                    <Link to={branchProfessionalsHref(root.id)}>professionals</Link>
+                  )}
+                </div>
               </li>
             ))}
         </ul>

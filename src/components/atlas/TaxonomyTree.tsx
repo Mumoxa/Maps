@@ -1,7 +1,9 @@
 import { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { CaretDown, CaretRight } from '@phosphor-icons/react'
 import type { AtlasNode, IndustryAtlas } from '../../data/organizations/atlas'
 import { UNCLASSIFIED_BRANCH_ID, isUnclassifiedBranch } from '../../data/organizations/atlas'
+import { branchCompaniesHref, companyUniverseHref } from '../../data/organizations/links'
 
 interface TaxonomyTreeProps {
   atlas: IndustryAtlas
@@ -37,6 +39,11 @@ export function TaxonomyTree({
   onToggleOnlyPopulated,
 }: TaxonomyTreeProps) {
   const [manuallyExpanded, setManuallyExpanded] = useState<Set<string>>(() => new Set())
+
+  // The whole universe, not only the placed part: the root row promises "all
+  // industries", and a count that excluded the backlog would be a smaller number
+  // than the list it opens.
+  const universeTotal = atlas.totals.mappedOrganizations + atlas.totals.unclassifiedOrganizations
 
   /** Ancestors of the selected branch, so the current path is always open. */
   const pathIds = useMemo(() => {
@@ -103,15 +110,24 @@ export function TaxonomyTree({
         </label>
       </div>
 
-      <button
-        type="button"
-        className={`atlas-tree-root ${selectedNodeId === null ? 'selected' : ''}`}
-        onClick={() => onSelect(null)}
-        aria-current={selectedNodeId === null ? 'true' : undefined}
-      >
-        <span>All industries</span>
-        <span className="atlas-tree-count">{atlas.totals.mappedOrganizations}</span>
-      </button>
+      <div className="atlas-tree-root-row">
+        <button
+          type="button"
+          className={`atlas-tree-root ${selectedNodeId === null ? 'selected' : ''}`}
+          onClick={() => onSelect(null)}
+          aria-current={selectedNodeId === null ? 'true' : undefined}
+        >
+          <span>All industries</span>
+        </button>
+        <Link
+          className="atlas-tree-count atlas-tree-count-link"
+          to={companyUniverseHref()}
+          title={`Open all ${universeTotal} companies in the universe`}
+          aria-label={`Open all ${universeTotal} companies in the universe`}
+        >
+          {universeTotal}
+        </Link>
+      </div>
 
       <ul className="atlas-tree-list" role="tree" aria-label="Industry taxonomy">
         {rows.map((row) => {
@@ -148,22 +164,47 @@ export function TaxonomyTree({
                   onClick={() => onSelect(row.id)}
                 >
                   <span className="atlas-tree-name">{row.name}</span>
-                  <span className="atlas-tree-count">{row.organizations}</span>
                 </button>
+                {row.organizations > 0 ? (
+                  <Link
+                    className="atlas-tree-count atlas-tree-count-link"
+                    to={branchCompaniesHref(row.id)}
+                    title={`Open the ${row.organizations} companies mapped in ${row.name}`}
+                    aria-label={`Open the ${row.organizations} companies mapped in ${row.name}`}
+                  >
+                    {row.organizations}
+                  </Link>
+                ) : (
+                  <span
+                    className="atlas-tree-count atlas-tree-count-empty"
+                    title={`No mapped companies in ${row.name} yet. This is a gap in the map, not a claim that none operate there.`}
+                  >
+                    0
+                  </span>
+                )}
               </div>
             </li>
           )
         })}
       </ul>
 
-      <button
-        type="button"
-        className={`atlas-tree-root ${isUnclassifiedBranch(selectedNodeId ?? '') ? 'selected' : ''}`}
-        onClick={() => onSelect(UNCLASSIFIED_BRANCH_ID)}
-      >
-        <span>Not yet classified</span>
-        <span className="atlas-tree-count">{atlas.totals.unclassifiedOrganizations}</span>
-      </button>
+      <div className="atlas-tree-root-row">
+        <button
+          type="button"
+          className={`atlas-tree-root ${isUnclassifiedBranch(selectedNodeId ?? '') ? 'selected' : ''}`}
+          onClick={() => onSelect(UNCLASSIFIED_BRANCH_ID)}
+        >
+          <span>Not yet classified</span>
+        </button>
+        <Link
+          className="atlas-tree-count atlas-tree-count-link"
+          to={branchCompaniesHref(UNCLASSIFIED_BRANCH_ID)}
+          title={`Open the ${atlas.totals.unclassifiedOrganizations} employers with no placement yet`}
+          aria-label={`Open the ${atlas.totals.unclassifiedOrganizations} employers with no placement yet`}
+        >
+          {atlas.totals.unclassifiedOrganizations}
+        </Link>
+      </div>
       <p className="atlas-tree-note">
         Employers Maps already references but has not yet placed in the national taxonomy. They are
         listed, not hidden, and not invented into a sector.
